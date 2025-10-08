@@ -90,8 +90,8 @@
 			Durchflutung oder magnetische Spannung $\varTheta$ (Theta) = Gesamtstrom einer durchfluteten Fläche
 			\begin{eqa}
 				\onslide<2->\varTheta &= \sum_{\mathrm{n}} I_{\mathrm{n}} = N\cdot I\qquad\text{(vereinfacht)}\\
-				\onslide<3->\varTheta &= \iint\limits_A \vec{J}\cdot\d\vec{A} \qquad\text{(allgemein)}\\
-				\onslide<4->\varTheta &= \oint\limits_s \vec{H}\cdot \d\vec{s} \qquad{\left[\mathrm{A}\right]}
+				\onslide<3->\varTheta &= \iint_A \vec{J}\cdot\d\vec{A} \qquad\text{(allgemein)}\\
+				\onslide<4->\varTheta &= \oint_s \vec{H}\cdot \d\vec{s} \qquad{\left[\mathrm{A}\right]}
 				\onslide<1->
 			\end{eqa}
 			\onslide<4->$H$ ist die magnetische Feldstärke\\
@@ -106,13 +106,13 @@
 		Die linke Seite der Gleichung stellt das geschlossene Linienintegral über die magnetische Feldstärke $\vec{H}$ dar. Diese geschlossene Linie $\d\vec{s}$ entspricht dabei dem Rand der Fläche $A$.
 		
 		\begin{equation}
-			\varTheta = \oint\limits_s \vec{H}\cdot \d\vec{s} = \iint\limits_A \vec{J}\,\d\vec{A}\label{Durchflutung}
+			\varTheta = \oint_s \vec{H}\cdot \d\vec{s} = \iint_A \vec{J}\,\d\vec{A}\label{Durchflutung}
 		\end{equation}
 		
 		Da in den allermeisten Fällen der Strom durch einen Leiter transportiert wird und folglich die Richtung des Stromes als auch die Stromstärke eindeutig bekannt sind, genügt es in diesem Fall, das Integral (wie in der Gleichung \ref{Durchflutungsgesetz} dargestellt) durch die Anzahl der stromführenden Leiter $N$ multipliziert mit der Stromstärke $I$ zu ersetzen.
 		
 		\begin{eq}
-			\varTheta = \oint\limits_s \vec{H}\cdot \d\vec{s} = N\cdot I\label{Durchflutungsgesetz} \qquad [\mathrm{A}]
+			\varTheta = \oint_s \vec{H}\cdot \d\vec{s} = N\cdot I\label{Durchflutungsgesetz} \qquad [\mathrm{A}]
 		\end{eq}
 		
 		\begin{Merksatz}{Magnetische Durchflutung}
@@ -161,7 +161,7 @@
 		In dem Fall wird das Integral $\oint \vec{H}\cdot\,\d\vec{s}$ zur Länge des Integrationsweges (Gleichung \ref{GlmagnFeldstaerke}). Diese Länge wird mittlere Feldlinienlänge genannt und mit $\ell_{\mathrm{m}}$ bezeichnet. Sie steht für den Mittelwert der Summe aller Feldlinien, die sich innerhalb des kreisförmigen Feldes befinden. Die magnetische Feldstärke kann in solchen Anordnungen einfach mit der Gleichung \ref{GlmagnFeldstaerke1} ermittelt werden.
 		
 		\begin{eqa}
-			\varTheta &= \oint\limits_s \vec{H}\cdot \d\vec{s} = |\vec{H}| \cdot \ell_{\mathrm{m}}\label{GlmagnFeldstaerke}\\
+			\varTheta &= \oint_s \vec{H}\cdot \d\vec{s} = |\vec{H}| \cdot \ell_{\mathrm{m}}\label{GlmagnFeldstaerke}\\
 			|\vec{H}| &=\frac{\varTheta}{\ell_{\mathrm{m}}}\qquad\left[\frac{\mathrm{A}}{\mathrm{m}}\right]\label{GlmagnFeldstaerke1}
 		\end{eqa}
 		
@@ -189,7 +189,7 @@
 			Wenn $\vec{H}$ über dem Integrationsweg $\d\vec{s}$ konstant ist:
 			\begin{flushleft}
 				\begin{eqa}
-					\oint\limits_s \vec{H}\cdot \d\vec{s} = |\vec{H}| \cdot \ell_{\mathrm{m}}\\
+					\oint_s \vec{H}\cdot \d\vec{s} = |\vec{H}| \cdot \ell_{\mathrm{m}}\\
 					|\vec{H}| =\frac{\varTheta}{\ell_{\mathrm{m}}}\qquad \left[\frac{\mathrm{A}}{\mathrm{m}}\right]
 				\end{eqa}
 			\end{flushleft}
@@ -258,7 +258,7 @@ Das machen wir über die gleiche Formel. In der Aufgabe wird ein gerader Leiter 
 		Im allgemeinen Fall (ohne die oben genannten Einschränkungen) gilt:
 		
 		\begin{eq}
-			\varPhi = \iint\limits_A \vec{B}\cdot\d \vec{A} \label{magnFlussFormel}
+			\varPhi = \iint_A \vec{B}\cdot\d \vec{A} \label{magnFlussFormel}
 		\end{eq}
 		\begin{Merksatz}{Magnetische Flussdichte}
 			Die magnetische Flussdichte $\vec{B}$ beschreibt die Konzentration des magnetischen Flusses $\varPhi$ senkrecht auf einer Fläche $A$.
