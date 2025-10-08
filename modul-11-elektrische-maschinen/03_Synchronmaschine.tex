@@ -72,7 +72,25 @@
 \begin{frame}\ftb{Feldverläufe}
 	\s{
 		\fo{width=\textwidth}{}{Synchronmaschine_Feldverlaeufe}{
-			\put(10.23,23.3){\input{Tikz/src/synchronmaschine_feldverlaeufe_drehfeld}
+			\put(10.23,23.3){\begin{tikzpicture}[domain=0:36, samples=360, scale=0.982]
+					\foreach \n in {0,...,3}{
+							\draw[very thin, color=gray] (\n*4, 1) -- (\n*4,-1.5);
+						}
+					\draw (-0.1,0) -- (12.1,0);
+					\draw[->] (0,-1.1) -- (0,1.2) node[above] {$I$};
+					\draw (0.1, 0) node[below] {0};
+					\foreach \n in {1,...,6}{
+							\draw (\n*2, 0.1) -- (\n*2,-0.1);
+							\fill[fill=white] (\n*2 - 0.1,-0.5) rectangle ++(0.2,0.4); % weißes Overlay über Linie hinter Zahlen
+							\draw (\n*2, 0) node[below] {\pgfmathparse{60*\n}\pgfmathprintnumber[]{\pgfmathresult}\degree};
+						}
+					\draw[color=statorw1, scale=1/3, smooth, very thick] plot[id=drehfeldverlauf1] function{3 * cos(0.0556 * pi * x)};
+					\draw[color=statorw1] (1.8,0.55) node[above] {$I_1$};
+					\draw[color=statorw2, scale=1/3, smooth, very thick] plot[id=drehfeldverlauf3] function{3 * cos(0.0556 * pi * x - pi * 2/3)};
+					\draw[color=statorw2] (5.8,0.55) node[above] {$I_2$};
+					\draw[color=statorw3, scale=1/3, smooth, very thick] plot[id=drehfeldverlauf2] function{3 * cos(0.0556 * pi * x + pi * 2/3)};
+					\draw[color=statorw3] (9.8,0.55) node[above] {$I_3$};
+				\end{tikzpicture}
 			}
 			
 			\put(12.5, 21.5){\color{statorw1}$I_1$} \put(38, 21.5){\color{statorw1}$I_1$} \put(63.6, 21.5){\color{statorw1}$I_1$} \put(89.3, 21.5){\color{statorw1}$I_1$}
@@ -217,7 +235,7 @@
 	\b{Komplexes einphasiges ESB des Vollpolgenerators (z.B. im Netzbetrieb):}
 	\fu{
 		\input{Tikz/src/ESB_vollpolgenerator}
-		}{{\bf Komplexes einphasiges ESB eines Vollpolgenerators.} Beispielsweise im Netzbetrieb.}
+	}{{\bf Komplexes einphasiges ESB eines Vollpolgenerators.} Beispielsweise im Netzbetrieb.}
 \end{frame}
 
 
