@@ -83,7 +83,7 @@ jobs:
         [[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
         chmod 400 ~/.ssh/config
         ssh-add <(echo "${{secrets.SFTP_KEY}}")
-        sftp -o StrictHostKeyChecking=no ${{secrets.SFTP_USERNAME}}@${{secrets.SFTP_SERVER}}:modul-12-schaltvorgaenge <<< $'put modul-12-schaltvorgaenge/Folien.pdf'
+        sftp -o StrictHostKeyChecking=no ${{secrets.SFTP_USERNAME}}@${{secrets.SFTP_SERVER}}:modul-12-schaltvorgaenge <<< $'put modul-12-schaltvorgaenge/TeXAux/Folien.pdf'
 
     # Compile Handout only if files in this module are changed
     - name: compile Handout

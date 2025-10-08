@@ -12,8 +12,9 @@
 % example2: \tikzmarkin<2-3>[above left offset={0,\hfoffuppera}, below right offset={0,\hfofflowera}]{markerid} \int^{\pi}_{0}f(x)\d x \tikzmarkend{markerid}
 % option: blend mode=multiply (to not overshadow stuff behind the highlight box) and (in beamer mode) <n>, <n->, <n-m> for overlay (ignored in article)
 
-\usepackage{enumitem} % Aufzählungen nummerisch oder alphabetisch
-\usepackage{todonotes}	%Anmerkungen und to-dos erstellen
+\usepackage{enumitem} 		% Aufzählungen nummerisch oder alphabetisch
+\usepackage{todonotes}		% Anmerkungen und to-dos erstellen
+\usepackage{chngcntr} 		% Nummerierung von Formeln, Bildern usw. nur auf Chapter-Ebene
 
 % Symbolverzeichnis
 \makenomenclature
@@ -78,7 +79,7 @@
 \renewcommand{\Loesung}[1]{}
 
 %Beispiel
-\newtcbtheorem[number within=section]{bsp}{Beispiel}{enhanced,
+\newtcbtheorem[number within=chapter]{bsp}{Beispiel}{enhanced,
 	before skip=1cm,
 	after skip=1cm,
 	colframe=GETgreen,
@@ -157,3 +158,13 @@
 ]{biblatex} %biblatex mit biber laden
 \addbibresource{../Templates/Literatur.bib}
 \usepackage[nottoc,notlot,notlof]{tocbibind}	%% Literaturverzeichnis im TOC
+
+% Nummerierungen auf Modulebene
+\numberwithin{equation}{chapter}
+\counterwithout*{equation}{section}
+\numberwithin{figure}{chapter}
+\counterwithout*{figure}{section}
+\numberwithin{table}{chapter}
+\counterwithout*{table}{section}
+\numberwithin{theorem}{chapter}
+\counterwithout*{theorem}{section}

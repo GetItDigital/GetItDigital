@@ -7,14 +7,14 @@
 
 \begin{frame}{}
 	\s{
-	
-		Die im vorherigen Modul eingeführten Bauteilgleichungen, welche den Zusammenhang zwischen Spannung 
-		und Strom an den einzelnen Bauteilen aufzeigen, reichen nicht aus, um sämtliche Spannungen und Ströme 
-		innerhalb eines Netzwerkens zu berechnen. Die Kirchhoffschen Regeln, auch Maschen- bzw. Knotenregel genannt, 
-		liefern die hierzu benötigten Gleichungen. 
+
+		Die im vorherigen Modul eingeführten Bauteilgleichungen, welche den Zusammenhang zwischen Spannung
+		und Strom an den einzelnen Bauteilen aufzeigen, reichen nicht aus, um sämtliche Spannungen und Ströme
+		innerhalb eines Netzwerkens zu berechnen. Die Kirchhoffschen Regeln, auch Maschen- bzw. Knotenregel genannt,
+		liefern die hierzu benötigten Gleichungen.
 	}
 	\ftx{Lernziele: Kirchhoffsche Regeln}
-	
+
 	\begin{Lernziele}{Kirchhoffsche Regeln}
 		Die Studierenden können
 		\begin{itemize}
@@ -22,177 +22,174 @@
 			\item die Kirchhoffschen Regeln auf einfache Widerstandsnetzwerke anwenden
 		\end{itemize}
 	\end{Lernziele}
-	
+
 	\speech{folie9}{1}{Im vorangegangenen Video wurde der Grundstromkreis mit seinen Maschen, Knoten und Zweigen eingeführt.
 		Jetzt stellt sich die Frage, wie genau sich Strom und Spannung im Netzwerk aufteilen.
-		Dafür reichen die Bauteilgleichungen allein nicht aus. 
+		Dafür reichen die Bauteilgleichungen allein nicht aus.
 		Genau hier kommen die Kirchhoffschen Regeln ins Spiel.
 		Diese liefern uns die nötigen Gleichungen, um alle Spannungen und Ströme im Netzwerk berechnen zu können.
 		Man unterscheidet dabei zwei zentrale Gesetze, nämlich die Knotenregel zur Beschreibung von Stromverzweigungen, und die Maschenregel zur Beschreibung von Spannungen
 		in geschlossenen Pfaden.
-		Nach dem Durcharbeiten dieses Kapitels solltet ihr in der Lage sein, 
+		Nach dem Durcharbeiten dieses Kapitels solltet ihr in der Lage sein,
 		die Kernaussagen der Kirchhoffschen Regeln wiederzugeben, sowie
 		sie auf einfache Widerstandsnetzwerke anzuwenden.}
 		\silence{4}
-	
+
 \end{frame}
 
 
 
 \begin{frame}
 	\ftx{Knotenregel I (1. Kirchhoffsche Regel)}
-	
+
 	\s{
-	
-	
-	
+
+
+
 		\subsection{Knotenregel (1. Kirchhoffsche Regel)}
-		
+
 		Die Knotenregel sagt aus, dass die Summe aller in einen Knoten hereinfließenden Ströme identisch zu Summe aller herausfließenden Ströme ist:
-		
-		
+
+
 		\begin{Merksatz}{}
-			
+
 			\begin{center}
 				Summe der zufließenden Ströme\\
 				=\\
 				Summe der abfließenden Ströme\\
 			\end{center}
-			
+
 		\end{Merksatz}
-		
+
 		Mathematisch ausgedrückt resultiert dies in folgendem Zusammenhang:
 		\begin{equation}
 			\sum I_\mathrm{zu} = \sum I_\mathrm{ab}
 		\end{equation}
-		
+
 		Dabei ist zu beachten, dass die Ströme entsprechend ihrer Zählpfeilrichtung gewertet werden.
 		In den Knoten hereinfließende Ströme werden positiv, aus dem Knoten herausfließende Ströme
 		werden negativ gezählt. Falls die tatsächliche Richtung eines Stromes im Vorfeld nicht bekannt ist,
 		kann die Zählpfeilrichtung willkürlich festgelegt werden. Die tatsächliche Stromrichtung ergibt sich
-		aus dem Zahlenwert als Rechenergebnis. Ist dieses für einen Strom negativ, sprich $I < 0$, 
+		aus dem Zahlenwert als Rechenergebnis. Ist dieses für einen Strom negativ, sprich $I < 0$,
 		fließt der reale Strom in die entgegengesetzte Richtung.\\
-		
+
 		Alternativ lässt sich dieser Zusammenhang auch dadurch ausdrücken, dass die Summe aller Ströme in einem Knoten gleich 0 ist:
-		
-		
+
+
 		\begin{equation}
 			\sum_{i=1}^{n} = 0
 		\end{equation}
-		
+
 		Auf den beispielhaften Knoten in Abbildung \ref{fig:knoten} angewendet ergeben sich folgende Gleichungen:
-		
-		
+
+
 		\begin{figure}[h!]
 			\centering
 			{\includesvg[width=0.25\textwidth]{knotenregel1}}
-			
-			{\caption{Einfacher Beispielknoten}}
-			\label{fig:knoten}
+
+			{\caption{Einfacher Beispielknoten}\label{fig:knoten}}
 		\end{figure}
-		
-		
-		
-		
-		
+
+
+
+
+
 		\begin{equation*}
 			I_1 = I_2 + I_3
 		\end{equation*}
 		\begin{equation*}
 			I_1 - I_2 - I_3 = 0
 		\end{equation*}
-		
-		Der Knoten, auf den sich die Regel bezieht, muss jedoch nicht nur aus einem Punkt bestehen. 
-		Vielmehr ist möglich, sogenannte \textbf{Hüllknoten} zu definieren, die einen Bereich 
+
+		Der Knoten, auf den sich die Regel bezieht, muss jedoch nicht nur aus einem Punkt bestehen.
+		Vielmehr ist möglich, sogenannte \textbf{Hüllknoten} zu definieren, die einen Bereich
 		innerhalb einer Schaltung vollständig umschließen.
-		Angewendet auf den in Abbildung 3.2
-		%\ref{fig:knoten2} 
+		Angewendet auf den in Abbildung \ref{fig:knoten2}
 		gezeigten Hüllknoten ergibt sich die Gleichung
-		
+
 		\begin{equation*}
 			I_1 + I_2 - I_3 - I_4 = 0
 		\end{equation*}
-		
-		
+
+
 		\begin{figure}[h!]
 			\begin{center}
 				\input{Tikz/src/2_kirchhoff/Huellknoten_Skript}
 			\end{center}
-			\label{fig:knoten2}
-			\caption{Hüllknoten einer elektrischen Schaltung}
+			\caption{Hüllknoten einer elektrischen Schaltung\label{fig:knoten2}}
 		\end{figure}
-		
+
 		Die Knotenregel ist durch die Verallgemeinerung des Ladungserhaltungssatzes für quellenfreie
 		Strömungsfelder nicht nur auf diskrete Bauelemente anwendbar. Vielmehr kann sie auf jede reale
 		Struktur angewendet werden. In Abbildung \ref{fig:huell} ist die in den Draht hereinfließende Stromstärke
 		$I$ folglich genauso hoch wie die gesamte Stromstärke, welche aus der Hüllfläche des Blechausschnitts heraustritt.
-		
-		
-		
+
+
+
 		\begin{figure}[h!]
 			\centering
 			\s{\includesvg[width=0.6\textwidth]{blechausschnitt}}
-			
+
 			\s{\caption{An einen Blechausschnitt angeschlossener Draht. Die Stromstärke $I$ fließt in den Draht hinein, während eine
-					Stromdichte $\vec{J}$ aus dem Blechausschnitt herausfließt.}}
-			\label{fig:huell}
+					Stromdichte $\vec{J}$ aus dem Blechausschnitt herausfließt.\label{fig:huell}}}
+
 		\end{figure}
-		
+
 		Allgemein lässt sich dieser Zusammenhang über das geschlossene Flächenintegral über die Hüllfläche $\vec{A}$ beschreiben:
-		
+
 		\begin{equation}
-			\iint_A \vec{J} \cdot d\vec{A} = 0 
+			\iint_A \vec{J} \cdot d\vec{A} = 0
 		\end{equation}
-		
-		
+
+
 		%\begin{equation*}
 		%	I_1 = I_2 + I_3
-		
-		
+
+
 		%\end{equation*}
-		
-		
-		
-		
+
+
+
+
 	}
-	
+
 	\b{
-	
+
 		\begin{columns}
 			\column[t]{0.58\textwidth}
-			
+
 			\vspace{-20pt}
 			\begin{Merksatz}{}
 				\begin{center}
 					Summe zufließender Ströme\\
-					
+
 					=\\
-					
+
 					Summe abfließender Ströme\\
 				\end{center}
-				
+
 			\end{Merksatz}
-			
+
 			%	\vspace{5pt}
-			
-			
-			
-			
-			
+
+
+
+
+
 			\begin{equation*}
 				\sum I_\mathrm{zu} = \sum I_\mathrm{ab}
 			\end{equation*}
-			
+
 			\phantom{.}\\
-			
-			
-			
-			
+
+
+
+
 			\only<2->{
-			
+
 				Alternativ: zufließende Ströme positiv, abfließende Ströme negativ zählen:\\
-				
-				
+
+
 				\begin{equation*}
 					\sum_{k=1}^{n}I_k = 0
 				\end{equation*}
@@ -202,10 +199,10 @@
 				\centering
 				\includesvg[width=0.7\textwidth]{knotenregel1}
 			\end{figure}
-			
-			
+
+
 			$I_1 = I_2 + I_3$\\
-			
+
 			\phantom{text}\\
 			\pause
 			$I_1-I_2-I_3=0$
@@ -213,9 +210,9 @@
 		\speech{folie10}{1}{Starten wir mit der ersten Kirchhoffschen Regel, der Knotenregel.
 			Sie besagt,
 			Der gesamte elektrische Strom, der in einen Knoten reinfließt, muss auch wieder rausfließen.
-			Oder mathematisch ausgedrückt, 
+			Oder mathematisch ausgedrückt,
 			Die Summe der zufließenden Ströme ist gleich der Summe der abfließenden Ströme.
-			Verdeutlicht wird dies im nebenstehenden Beispiel. Der Strom I eins fließt in den Knoten hinein und befindet sich dementsprechend auf der linken Seite der Gleichung, 
+			Verdeutlicht wird dies im nebenstehenden Beispiel. Der Strom I eins fließt in den Knoten hinein und befindet sich dementsprechend auf der linken Seite der Gleichung,
 			während die Ströme I zwei und I drei aus dem Knoten herausfließen und somit auf der rechten Seite der Gleichung stehen.}
 		\silence{2}
 		\speech{folie10}{2}{ Alternativ kann man diesen Zusammenhang auch so ausdrücken,
@@ -227,55 +224,55 @@
 			Falls man dieses Vorzeichen entgegen der tatsächlichen Stromflussrichtung gesetzt hat, resultiert dies rechnerisch in einem negativen Wert des Stromes, was für uns allerdings auch kein Problem darstellt.}
 	}
 	\silence{4}
-	
+
 \end{frame}
 
 \begin{frame}
 	\b{
 		\ftx{Knotenregel II}
-		
+
 		\begin{columns}
 			\column[t]{0.5\textwidth}
 			Anwendung auf Hüllknoten:
-			
+
 			\vspace{-5pt}
-			
+
 			\begin{figure}[h!]
 				\begin{center}
 					\input{Tikz/src/2_kirchhoff/Huellknoten_Folien}
 				\end{center}
-				
+
 			\end{figure}
 			\vspace{-12pt}
-			
+
 			\begin{equation*}
 				I_1 + I_2 - I_3 - I_4 = 0
 			\end{equation*}
-			
-			
-			
+
+
+
 			\column[t]{0.5\textwidth}
 			\pause
-			
+
 			Anwendung auf geometrische Strukturen:
-			
+
 			\begin{figure}[h!]
 				\centering
 				\includesvg[width=0.9\textwidth]{blechausschnitt}
 			\end{figure}
-			
+
 			\begin{equation*}
-				\iint_A \vec{J} \cdot d\vec{A} = 0 
+				\iint_A \vec{J} \cdot d\vec{A} = 0
 			\end{equation*}
-			
-			
-			
+
+
+
 		\end{columns}
 		\speech{folie11}{1}{
-			Ein solcher Knoten muss nicht nur ein einzelner Punkt sein. Auch ein Bereich der Schaltung, welcher von einer Linie vollständig umschlossen wird, kann als ein sogenannter 
+			Ein solcher Knoten muss nicht nur ein einzelner Punkt sein. Auch ein Bereich der Schaltung, welcher von einer Linie vollständig umschlossen wird, kann als ein sogenannter
 			Hüllknoten betrachtet werden. Auch hier gilt die Regel, dass der Strom, der irgendwo in diesen Hüllknoten hereinfließt, irgendwo wieder herausfließen muss.
 			In diesem Beispiel stellt der grüne Kreis den Hüllknoten dar. Dieser enthält eine Schaltung aus vier Widerständen. In diese Schaltung fließen die Ströme I eins sowie I zwei.
-			Hingegen verlassen die Ströme I drei und I vier den Bereich. 
+			Hingegen verlassen die Ströme I drei und I vier den Bereich.
 			Folglich werden die Ströme eins und Zwei mit positivem Vorzeichen gezählt, während I drei und I vier ein negatives Vorzeichen haben. Die Summe dieser Ströme ist null.}
 			\silence{2}
 		\speech{folie11}{2}{
@@ -292,21 +289,21 @@
 
 \begin{frame}
 	\ftx{Beispiel: Parallelschaltung von Widerständen}
-	
+
 	\subsection{Anwendungsfall Knotenregel: Parallelschaltung von Widerständen}
-	
+
 	\s{
-	
-		Ein grundlegender Anwendungsfall für die Knotenregel ist die Parallelschaltung von Widerständen. 
+
+		Ein grundlegender Anwendungsfall für die Knotenregel ist die Parallelschaltung von Widerständen.
 		Dabei teilt sich der Strom in einem gemeinsamen Knoten und jeweils ein Teilstrom durchfließt die einzelnen Widerstände.
 		Nach dem Passieren der jeweiligen Wiederstände vereinigen sich die Teilströme wieder, und fließen als Gesamtstrom weiter.
 		Dargestellt ist dies in Beispiel \ref{bsp:knoten}.
-		
+
 		\begin{bsp}{Parallelschaltung von Widerständen}{knoten}
-			
+
 			Bei der Parallelschaltung teilen sich die Ströme an den gemeinsamen
 			Knoten auf. Wie groß ist die Stromstärke $I_3$ im Verhältnis zu den Stromstärken $I_0$ bzw. $I_1$ und $I_2$?\\
-			
+
 			%	\begin{figure}
 			\begin{center}
 				\input{Tikz/src/2_kirchhoff/Parallelschaltung_Widerstand_Skript}
@@ -327,27 +324,27 @@
 			\begin{equation*}
 				\rightarrow I_3 = I_0
 			\end{equation*}
-			
-			
-			
-			
+
+
+
+
 		\end{bsp}
-		
+
 		Wird einer der Widerstände durch eine ideal leitende Verbindung ersetzt (Leitwert geht gegen
 		unendlich, Widerstand folglich gegen 0), verändert sich der Stromfluss im Bereich
-		zwischen den beiden Knoten (Beispiel \ref{bsp:knoten2}). 
-		
-		
-		
+		zwischen den beiden Knoten (Beispiel \ref{bsp:knoten2}).
+
+
+
 		\begin{bsp}{Parallelschaltung mit Leiter}{knoten2}
-			
+
 			Ein Widerstand wird durch eine leitende Verbindung ersetzt.
 			Wie groß sind die Stromstärken  $I_1$ bzw. $I_2$?\\
-			
+
 			\begin{center}
 				\input{Tikz/src/2_kirchhoff/Parallelschaltung_Leiter_Skript}
 			\end{center}
-			
+
 			\begin{equation*}
 				I_0=I_1+I_2
 			\end{equation*}
@@ -363,95 +360,95 @@
 			\begin{equation*}
 				\rightarrow I_0 = I_2 = I_3
 			\end{equation*}
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
 		\end{bsp}
 	}
 	\b{
-	
+
 		\begin{columns}
 			\column[t]{0.6\textwidth}
-			
-			
-			
-			
+
+
+
+
 			%\vspace{-20pt}
-			
+
 			Bei der Parallelschaltung teilen sich die Ströme an den gemeinsamen
 			Knoten auf. Wie groß ist der Strom $I_3$?\\
-			
-			
+
+
 			\column[t]{0.4\textwidth}
-			
+
 			\input{Tikz/src/2_kirchhoff/Parallelschaltung_Widerstand_Folien}
-			
+
 		\end{columns}
 		\begin{columns}
 			\column[t]{0.6\textwidth}
 			\vspace{-50pt}
-			
-			
-			
-			
+
+
+
+
 			\pause
-			
-			
+
+
 			$I_0-I_1-I_2 = 0$\\
 			$I_0 = I_1 + I_2$\\
 			$I_1+I_2 = I_3$\\
 			$\rightarrow I_3 = I_0$
-			
+
 			\pause
-			
+
 			\column[t]{0.4\textwidth}
-			
+
 			\phantom{.}
-			
+
 		\end{columns}
-		
+
 		\phantom{.}\\
 		\begin{columns}
 			\column[t]{0.6\textwidth}
 			\vspace{-10pt}
-			
-			
+
+
 			Ein Widerstand wird durch eine leitende Verbindung ersetzt.
 			Wie groß ist der Strom $I_2$?\\
-			
+
 			\column[t]{0.4\textwidth}
-			
+
 			\input{Tikz/src/2_kirchhoff/Parallelschaltung_Leiter_Folien}
-			
+
 		\end{columns}
 		\begin{columns}
 			\column[t]{0.6\textwidth}
-			
-			
+
+
 			\pause
 			\vspace{-55pt}
 			$I_0 = I_1 + I_2$\\
-			
+
 			$U_2 = R_2 \cdot I_2 = 0 \cdot I_2$\\
 			$U_1 = R_1 \cdot I_1  \stackrel{!}{=} U_2 =0 $\\
 			$\rightarrow I_1 =0$\\
 			$\rightarrow I_2 = I_0 = I_3$
-			
+
 			\column[t]{0.4\textwidth}
 			\phantom{.}\\
-			
-			
+
+
 		\end{columns}
-		
+
 		\speech{folie12}{1}{Ein klassischer Fall für die Anwendung der Knotenregel ist die Parallelschaltung von Widerständen. Hierbei stellt sich zum Beispiel die Frage wie groß
 			der Strom I drei ist.}
 			\silence{2}
 		\speech{folie12}{2}{Zur Beantwortung dieser Frage müssen die Knotengleichungen aufgestellt werden. Der Gesamtstrom I null teilt sich am Knoten auf,
-			ein Teilstrom fließt durch den Widerstand R eins, der andere durch R zwei.  
-			Im Knoten unterhalb der Widerstände fließen die Ströme I eins und Zwei in den Knoten hinein, während I drei aus ihm herausfließt. 
+			ein Teilstrom fließt durch den Widerstand R eins, der andere durch R zwei.
+			Im Knoten unterhalb der Widerstände fließen die Ströme I eins und Zwei in den Knoten hinein, während I drei aus ihm herausfließt.
 			Aus der Anwendung der Knotenregel auf beide Knoten ergibt sich somit I null ist gleich I eins plus I zwei, was wiederum gleich I3 ist. }
 			\silence{2}
 		\speech{folie12}{3}{Jetzt wollen wir uns anschauen, was passiert, wenn einer der Widerstände durch einen idealen Leiter ersetzt wird.}
@@ -461,7 +458,7 @@
 			Eingesetzt in die Knotengleichung ergibt sich also, dass
 			Ih null gleich Ih zwei gleich Ih drei ist.}
 			\silence{10}
-		
+
 	}
 \end{frame}
 
@@ -471,156 +468,156 @@
 \begin{frame}
 	\subsection{Maschenregel (2. Kirchhoffscher Satz)}
 	\s{
-	
-		Der 2. Kirchhoffsche Satz (Maschenregel) besagt, dass die \textbf{Summe aller Spannungen} in einer Masche \textbf{Null} ergibt. 
+
+		Der 2. Kirchhoffsche Satz (Maschenregel) besagt, dass die \textbf{Summe aller Spannungen} in einer Masche \textbf{Null} ergibt.
 		Analog zur Richtung der Ströme muss auch hier zwingend die Richtung der einzelnen Teilspannungen berücksichtigt
 		werden. Zeigt der Richtungspfeil einer Teilspannung entgegen der Umlaufrichtung der Masche, so muss
 		diese Teilspannung mit einem negativen Vorzeichen versehen werden. Ist die Richtung einer anliegenden Spannung
-		nicht bekannt, so kann auch hier eine willkürliche Zählpfeilrichtung angenommen werden. Eine gegensätzlich 
-		anliegende Spannung äußert sich in Rechnungen auch hier mit einem negativen Vorzeichen. 
-		
+		nicht bekannt, so kann auch hier eine willkürliche Zählpfeilrichtung angenommen werden. Eine gegensätzlich
+		anliegende Spannung äußert sich in Rechnungen auch hier mit einem negativen Vorzeichen.
+
 		\begin{Merksatz}{Maschenregel}
-			
+
 			\begin{equation}
 				\sum_{k=1}^{n} U_k = 0
 			\end{equation}
-			
-			
+
+
 		\end{Merksatz}
-		
-		Gleichbedeutend mit der obigen Definition lässt sich feststellen, dass die Summe 
+
+		Gleichbedeutend mit der obigen Definition lässt sich feststellen, dass die Summe
 		aller gleichsinnig geschalteten Spannungen an Spannungsquellen der Spannung entspricht, welche
-		an den Verbrauchern abfällt. 
-		
+		an den Verbrauchern abfällt.
+
 		\begin{Merksatz}{Maschenregel 2}
 			Spannungssumme an Spannungsquellen = Spannungssumme an Verbrauchern
 		\end{Merksatz}
-		
+
 		Angewendet auf das in Abbildung \ref{fig:masche} gezeigte Beispielnetzwerk ergeben sich folgende Maschengleichungen:
-		
+
 		\begin{equation*}
 			U_1+U_2-U_3-U_4 =0
 		\end{equation*}
 		beziehungsweise
-		
-		
-		
+
+
+
 		\begin{equation*}
 			U_1+U_2 = U_3+U_4
 		\end{equation*}
 		%$U_1+U_2 = U_3+U_4$\\
 		%$U_1+U_2-U_3-U_4 =0$\\
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
 		\begin{figure}[h!]
 			\begin{center}
 
 				\input{Tikz/src/2_kirchhoff/Netzwerk_Spannung_Wiederstaende}
-				
+
 			\end{center}
 			\caption{Beispielnetzwerk bestehend aus zwei Spannungsquellen und zwei Widerständen}
 			\label{fig:masche}
 		\end{figure}
-		
+
 		Die Maschengleichung gilt auch, falls in die Masche zusätzliche Ströme eingespeist werden,
 		oder einzelne Zweipole während des Umlaufs um eine geschlossene Masche mehrfach durchlaufen werden.
-		
+
 		Der allgemeine Zusammenhang, jegliche aufintegrierte Spannung entlang einer geschlossene Kontur 0 ergibt, kann
-		nach den Maxwell Gleichungen folgendermaßen beschrieben werden: 
-		
+		nach den Maxwell Gleichungen folgendermaßen beschrieben werden:
+
 		\begin{equation}
 			\oint_{s} \vec{E} d\vec{s} = 0
 		\end{equation}
-		
-		
-		
+
+
+
 	}
-	
-	
+
+
 	\b{
 		\ftx{Maschenregel (2. Kirchhoffscher Satz)}
 		\begin{columns}
 			\column[t]{0.65\textwidth}
-			
+
 			\vspace{-70pt}
-			
+
 			Bei geschlossenem Maschenumlauf:
 			\vspace{-5pt}
 			%\hspace{-40pt}
 			\begin{Merksatz}{}
-				
+
 				\begin{center}
 
 
 					Summe der Spannungsquellen\\
 					\quad \quad\ \quad =\\
 					Spannungssumme an Verbrauchern
-					
+
 				\end{center}
 			\end{Merksatz}
-			
+
 			\column[c]{0.35\textwidth}
-			
+
 			\vspace{10pt}
 			%    \vspace{60pt}
 			%    \hspace{30pt}
-			
+
 			\input{Tikz/src/2_kirchhoff/Netzwerk_Spannung_Wiederstaende}
-			
+
 			\vspace{10pt}
-			
-			
+
+
 			$U_1+U_2 = U_3+U_4$\\
-			
+
 		\end{columns}
-		
+
 		\pause
 		\begin{columns}
 
 			\column[t]{0.65\textwidth}
-			
+
 			\vspace{-25pt}
-			
-			
+
+
 			Oder:\\
 			Bei geschlossenem Maschenumlauf Teilspannung vorzeichenrichtig aufsummieren.\\
-			
+
 			\vspace*{-20pt}
-			
+
 			\begin{Merksatz}{}
 				$\sum_{k=1}^{n} U_k = 0$
 			\end{Merksatz}
-			
+
 			\column[t]{0.35\textwidth}
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
 			$U_1+U_2-U_3-U_4 =0$\\
-			
-			
+
+
 			\phantom{.}\\
-			
+
 			\pause
-			
+
 			Allgemeine Beschreibung nach den Maxwell Gleichungen:
-			
+
 			\vspace{10pt}
-			
+
 			$\oint_{s} \vec{E} d\vec{s} = 0$
-			
-			
+
+
 		\end{columns}
 		\speech{folie13}{1}{Die zweite Kirchhoffsche Regel ist die Maschenregel. Sie besagt
 			dass die Summe aller Spannungsquellen in einer geschlossenen Masche gleich der Summe an Spannungen über die Verbraucher ist.
@@ -633,12 +630,12 @@
 			die Spannungen entgegen der Umlaufrichtung hingegen negativ.
 			Generell kann die Umlaufrichtung sowie die Richtung der Spannung dabei frei gewählt werden.
 			Auch hier gilt wie beim Knotensatz, dass eine in der realität andersherum anliegende Spannung beim Berechnen lediglich ein negatives Vorzeichen erhält.}
-		
+
 		\speech{folie13}{3}{Die Maschenregel lässt sich auch physikalisch durch Maxwells Gleichungen ausdrücken.
 			Die aufintegrierte elektrische Feldstärke entlang eines geschlossenen Weges ergibt null, wobei die genaue Herleitung dieses Zusammenhanges über den Umfang dieser Einführung hinaus geht.}
 			\silence{4}
 			}
-	
+
 \end{frame}
 
 %\begin{frame}
@@ -647,20 +644,20 @@
 %		% Zeichne die Spannungsquellen in Reihe
 %		\draw (0,0) to[battery1, l_=$V_1$] (0,3)
 %				   to[battery1, l_=$V_2$] (0,6);
-%	
+%
 %		% Verbinde die Spannungsquellen mit den Widerständen durch Leitungen
 %		\draw (0,6) -- (4,6);
 %		\draw (0,0) -- (4,0);
-%	
+%
 %		% Zeichne die Widerstände in Reihe
 %		\draw (4,0) to[R, l_=$R_1$] (4,3)
 %				   to[R, l_=$R_2$] (4,6);
-%	
+%
 %		% Zeichne den kreisförmigen Pfeil in der Mitte
 %		\draw[->, thick] (2,5) arc[start angle=90, end angle=-270, radius=1]
 %		\node at (2,2) {Masche};
 %	\end{circuitikz}
-%\end{frame}	
+%\end{frame}
 
 
 
@@ -669,159 +666,159 @@
 \begin{frame}
 
 	\subsection{Anwendungsfall Maschenregel: Reihenschaltung von Widerständen}
-	
+
 	\s{
-	
+
 		Während die Knotenpunkte in elektrischen Netzwerken vor allem für den Strom von Bedeutung sind, sind die Zweige und somit auch Maschen vor allem für
 		die Berechnung der Spannungen von Interesse.
 		Bei einer Reihenschaltung von Widerständen in einem Zweig addieren sich alle Teilspannungen vorzeichenrichtig zu einer Gesamtspannung auf.
 		Ein Anwendungsfall zur Ermittlung einer Teilspannung ist in Beispiel \ref{bsp:reihe} dargestellt.
-		
-		
-		
+
+
+
 		\begin{bsp}{Reihenschaltungen in Netzwerken}{reihe}
-			
-			
+
+
 			Bei der Reihenschaltung addieren sich die Spannungen zu einer
 			Gesamtspannung auf.\\
 			Wie groß ist die Spannung $U_0$?
-			
+
 			\begin{center}
 
 				\input{Tikz/src/2_kirchhoff/Netzwerk_Reihenschaltung}
-				
+
 			\end{center}
-			
+
 			Masche entgegen dem Uhrzeigersinn aufstellen:
-			
+
 			\begin{equation*}
 				U_2-U_0-U_3 =0
 			\end{equation*}
-			
+
 			\begin{equation*}
 				\rightarrow U_0 = U_2- U_3
 			\end{equation*}
-			
-			
-			
-			
+
+
+
+
 		\end{bsp}
-		
-		
-		Die Maschenregel lässt sich auch anwenden, wenn die Masche, auf die sie angewendet wird, eine Unterbrechungsstelle hat (siehe Beispiel \ref{bsp:reihe2}). 
-		
+
+
+		Die Maschenregel lässt sich auch anwenden, wenn die Masche, auf die sie angewendet wird, eine Unterbrechungsstelle hat (siehe Beispiel \ref{bsp:reihe2}).
+
 		\begin{bsp}{Reihenschaltungen mit Unterbrechungsstelle}{reihe2}
-			
-			
+
+
 			Eine Verbindung wird unterbrochen. Wie groß ist die Spannung $U_1$ an der Unterbrechungsstelle?
-			
+
 			\begin{center}
 
 				\input{Tikz/src/2_kirchhoff/Netzwerk_Reihenschaltung_Unterbrechung}
-				
+
 			\end{center}
-			
+
 			Masche entgegen dem Uhrzeigersinn aufstellen:
-			
+
 			%\begin{equation*}
 			%U_2+U_1-U_0-U_3 = 0
 			%\end{equation*}
-			
+
 			\begin{equation*}
 				U_2+U_1-U_0-U_3 = 0
 			\end{equation*}
-			
+
 			Ermitteln der Spannung $U_2$ mit Hilfes des Ohmschen Gesetzes:
-			
-			
+
+
 			\begin{equation*}
 				U_2=I_2 \cdot R_2
 			\end{equation*}
-			
+
 			\begin{equation*}
 				\rightarrow I_2 = 0
 			\end{equation*}
-			
+
 			\begin{equation*}
 				\rightarrow U_2 = 0
 			\end{equation*}
-			
-			Einsetzen in Ausgangsgleichung und nach $U_1$ auflösen:		
-			
+
+			Einsetzen in Ausgangsgleichung und nach $U_1$ auflösen:
+
 			\begin{equation*}
 				U_1 = U_0 + U_3
 			\end{equation*}
 
-			
+
 		\end{bsp}
-		
+
 	}
-	
+
 	\newpage
-	
+
 	\b{
-		
+
 		\ftx{Beispiel: Reihenschaltung von Widerständen}
 		\begin{columns}
 			\column[t]{0.6\textwidth}
-			
+
 			\vspace{-50pt}
 			Bei der Reihenschaltung addieren sich die Spannungen zu einer
 			Gesamtspannung auf.\\
 			Wie groß ist die Spannung $U_0$?
-			
-			
+
+
 			\column[c]{0.4\textwidth}
-			
+
 			\input{Tikz/src/2_kirchhoff/Netzwerk_Reihenschaltung}
 
 		\end{columns}
-		
+
 		\begin{columns}
 			\column[t]{0.6\textwidth}
-			
+
 			\pause
-			
+
 			\vspace{-30pt}
 			$U_2-U_0-U_3 =0$\\
 			$\rightarrow U_0 = U_2- U_3$
-			
+
 			\column[t]{0.4\textwidth}
-			
+
 			\phantom{.}\\
-			
+
 		\end{columns}
-		
+
 		\begin{columns}
 			\column[t]{0.6\textwidth}
 			\pause
-			
+
 			Eine Verbindung wird unterbrochen. Wie groß ist die Spannung $U_1$ an
 			der Unterbrechungsstelle?
-			
+
 			\column[t]{0.4\textwidth}
-			
+
 			\input{Tikz/src/2_kirchhoff/Netzwerk_Reihenschaltung_Unterbrechung}
-			
+
 		\end{columns}
-		
-		\pause 
-		
+
+		\pause
+
 		\begin{columns}
 			\column[t]{0.6\textwidth}
-			
+
 			\vspace{-55pt}
-			
+
 			$U_2+U_1-U_0-U_3 = 0$\\
 			$U_2=I_2 \cdot R_2$\\
 			$\rightarrow I_2 = 0$\\
 			$\rightarrow U_2 = 0$\\
 			$U_1 = U_0 + U_3$
-			
+
 			\column[t]{0.4\textwidth}
-			
+
 		\end{columns}
-		
+
 		\speech{folie14}{1}{Ein typischer Anwendungsfall der Maschenregel ist die Reihenschaltung von Widerständen. Hier kann beispielsweise eine Teilspannung gesucht sein.
 			In diesem Beispiel wird die Größe der Spannung U null bestimmt.}
 			\silence{2}
@@ -833,13 +830,13 @@
 		\speech{folie14}{4}{Auch hier bilden wir die Masche entgegen dem Uhrzeigersinn. So ergibt sich, U zwei Plus U eins minus U null minus U drei ist gleich 0.}
 		\silence{2}
 		\speech{folie14}{4}{Da durch die geöffnete Leitung kein Strom mehr fließt, gilt an dieser Stelle,
-			I gleich 0. 
-			Dem Ohmschen Gesetz U gleich R mal I zu Folge ist U zwei gleich 0, weil I zwei gleich 0 ist. Durch Einsetzen in die Ausgleichsgleichung erhalten wir das Ergebnis, 
+			I gleich 0.
+			Dem Ohmschen Gesetz U gleich R mal I zu Folge ist U zwei gleich 0, weil I zwei gleich 0 ist. Durch Einsetzen in die Ausgleichsgleichung erhalten wir das Ergebnis,
 			dass U eins gleich U null Plus U drei ist.
 			Als Fazit können wir festhalten:
 			Die Maschenregel funktioniert also auch bei Stromunterbrechungen beziehungsweise offenen Leitungen.}
 			\silence{4}
 	}
-	
-	
+
+
 \end{frame}
