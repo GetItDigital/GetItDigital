@@ -1,8 +1,4 @@
-%\newsection{Kapitel1}
-
-%Hier den Inhalt mit \input einfügen und die folgenden Zeilen entfernen
-
-
+\newvideofile{Modul03SpannungStromquellen}{Spannungs und Stromquellen}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Einleitung in die Spannungs- und Stromquellen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Spannungs- und Stromquelle}
@@ -19,7 +15,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Lernziele für Spannungs- und Stromquellen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-    \ftx{Lernzielle: Spannungs- und Stromquelle}
+    \ftx{Lernziele: Spannungs- und Stromquelle}
     \begin{Lernziele}{Spannungs- und Stromquelle}
         Die Studierenden können
         \begin{itemize}
@@ -29,8 +25,8 @@
         \end{itemize}
     \end{Lernziele}
     
-    \speech{02_Spannungs_und_Stromquellen}{1}{
-        In dem nun folgenden Abschnitt des Moduls werden wir uns mit Spannungs- und Stromquellen beschäftigen. Diese sind wichtig.
+    \speech{02_Spannungs_und_Stromquellen1}{1}{
+        In dem nun folgenden Abschnitt des Moduls werden wir uns mit Spannungs- und Stromquellen beschäftigen. Diese sind sehr wichtig.
         Bisher haben wir uns zum Beispiel den Stromfluss vorgestellt durch einen Ladungsträgerausgleich zwischen zwei geladenen Körpern
         und haben dann auch gesehen, das ist ein transienter Strom, der dabei fließt. Und dieser transiente Strom wird mit der Zeit kleiner,
         weil ja irgendwann die Ladungsträger ausgeglichen sind. Wir müssen also Quellen haben. Und diese Quellen modellieren wir eben mit Strom- und Spannungsquellen.
@@ -42,13 +38,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Lernziele  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Spannungsquellen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Einführung in Spannungsquellen und das Schaltsymbol %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Spannungsquellen}
 \s{
     Die am häufigsten vorkommende Art der Energiequellen für elektrische Systeme ist die Spannungsquelle.
-    Im idealen Fall zeichnet sich dadruch aus, dass sie unabhängig vom angeschlossenen Verbraucher eine konstante Spannung ausgibt.
+    Im idealen Fall zeichnet sich dadurch aus, dass sie unabhängig vom angeschlossenen Verbraucher eine konstante Spannung ausgibt.
     Abbildung \ref{fig:spannungsquelle} zeigt das Schaltsymbol einer idealen Spannungsquelle mit der konstanten Ausgangsspannung $U_{\mathrm{q}}$.
 }
 
@@ -59,7 +56,7 @@
 %%%%%%
 
 \begin{frame}
-    \ftx{Spannugsquelle}
+    \ftx{Spannungsquelle}
     \b{
         \begin{itemize}
             \item Ideale Spannungsquelle, liefert stets eine konstante Spannung $U_\mathrm{q}$, unabhängig von der Last oder dem Strom
@@ -68,49 +65,55 @@
     \begin{figure}[H]
         \centering
         \input{Tikz/src/02_Spannungs_Stromquellen/Ideale_Spannungsquelle}
-        \s{\caption{\textbf{Ideale allgemeine Spannungsquelle.} Liefert stets eine konstante Spannung $U_\mathrm{q}$, unabhängig von der Last und passt den Strom automatisch an, um die konstante Spannung aufrechzuerhalten.}}
+        \s{\caption{\textbf{Ideale allgemeine Spannungsquelle.} Liefert stets eine konstante Spannung $U_\mathrm{q}$, unabhängig von der Last und passt den Strom automatisch an, um die konstante Spannung aufrechtzuerhalten.}}
         \label{fig:spannungsquelle}
     \end{figure}
-    \speech{02_Spannungs_und_Stromquellen}{2}{
+
+    \b{
+        \only<2->{
+            \begin{itemize}
+            \centering
+            \item  $ U_\mathrm{q} = R \cdot I \Rightarrow \lim\limits_{R \to 0} \frac{U_\mathrm{q}}{R} \rightarrow \infty$
+        \end{itemize}
+        }
+    }
+    \speech{02_Spannungs_und_Stromquellen2}{1}{
         Betrachten wir als erstes mal die Spannungsquellen, und das ist auch das, was man meistens im Kopf hat,
         wenn man von Quellen elektrischer Energie spricht. Denn das ist das, was uns im Alltag immer wieder begegnet.
         Sowohl die Steckdose als auch Batterien kann man relativ gut mit dem Verhalten einer Spannungsquelle beschreiben.
-        
         Was macht so eine Spannungsquelle?
-        Eine Spannungsquelle liefert eine konstante Quellspannung UQ, und zwar völlig egal, wie groß der Strom ist, der fließen muss,
+        Eine Spannungsquelle liefert eine konstante Quellspannung, U Q und zwar völlig egal, wie groß der Strom ist, der fließen muss,
         um die angeschlossene Last zu versorgen. Abhängig davon, was wir jetzt hier an diesen Klemmen anhängen, welcher Widerstand, 
-        stellt sich entsprechend ein Strom I ein, wobei die Ausgangsspannung UQ in jedem Fall immer gleich bleiben wird.
+        stellt sich entsprechend ein Strom I ein, wobei die Ausgangsspannung, U Q in jedem Fall immer gleich bleiben wird.
         Das ist eben genau die ideale Spannungsquelle.
-        
         Was würde jetzt passieren, wenn wir an die Ausgangsklemmen einen Kurzschluss anschließen würden?
         Ein Kurzschluss ist definitionsgemäß eine Verbindung mit einem Widerstand von 0 Ohm.
-        Wenn wir jetzt auf das Ohmsche Gesetz schauen, U = R · I bzw. I = U / R, und wir teilen die Spannung UQ durch 0 Ohm,
+    }
+        \speech{02_Spannungs_und_Stromquellen2}{2}{
+        Wenn wir jetzt auf das Ohmsche Gesetz schauen, U ist gleich R mal I beziehungsweise I gleich U durch R, und wir teilen die Spannung U Q durch 0 Ohm,
         dann erhalten wir einen unendlichen Strom. Und genau das tut diese sogenannte ideale Spannungsquelle: 
         Sie treibt einen unendlich hohen Strom.
-        
         Was heißt das im Umkehrschluss? Diese Spannungsquelle gibt letztlich eine unendlich hohe Leistung ab.
         Und das kann natürlich nicht sein, spätestens dann, wenn man sieht, dass diese Leistung die Quelle zerstören würde.
         Ein Kurzschluss ist also kein zulässiger Zustand.
-        
         Apropos abgegebene Leistung:
         Wenn wir uns anschauen, wie hier Strom und Spannung gefeilt sind, dann stellen wir fest,
-        dass sie entgegengesetzt gezeigt werden, also: Strom I und Spannung UQ zeigen in entgegengesetzte Richtung.
+        dass sie entgegengesetzt gezeigt werden, also: Strom I und Spannung U Q zeigen in entgegengesetzte Richtung.
         Das ist gewollt, anders als beim ohmschen Widerstand, bei dem U und I in dieselbe Richtung zeigen.
         Wir verwenden bei Quellen immer das sogenannte Generator- oder Erzeuger-Zählpfeilsystem.
         Warum machen wir das? Weil dann eine Leistung positiv gezählt wird, wenn die Quelle Leistung abgibt.
-        
         Zusammengefasst:
-        Die Quellspannung UQ ist bei der idealen Spannungsquelle immer konstant, egal, welche Last angeschlossen ist.
-        Dies bedeutet aber auch: Bei einem Kurzschluss würde die abgegebene Leistung unendlich, was verhindert werden muss.
+        Die Quellspannung U Q ist bei der idealen Spannungsquelle immer konstant, egal, welche Last angeschlossen ist.
+        Dies bedeutet aber auch: Bei einem Kurzschluss würde die abgegebene Leistung unendlich sein, was verhindert werden muss.
     }
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Schaltbild ideale Spannungsquelle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \s{
-    In Abbildung \ref{fig:spannungsquelle} führen die Linien ins leere, was als offene Klemmen bezeichnet wird. 
+    In Abbildung \ref{fig:spannungsquelle} führen die Linien ins Leere, was als offene Klemmen bezeichnet wird. 
     Da der Schaltkreis nicht geschlossen ist, fließt auch dementsprechend kein Strom. Würden in dem Fall die Klemmen kurzgeschlossen werden, 
-    dann würde die Quelle versuchen die Spannung aufrecht zu erhalten und es würde ein unendlich hoher Strom fließen. 
-    Warum dies so gefährlich ist, wird im Abschnitt \ref{sec:mod re spannungsquelle} anhand einer realen Spannugsquelle deutlich. 
+    dann würde die Quelle versuchen die Spannung aufrechtzuerhalten und es würde ein unendlich hoher Strom fließen. 
+    Warum dies so gefährlich ist, wird im Abschnitt \ref{sec:mod re spannungsquelle} anhand einer realen Spannungsquelle deutlich. 
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Modellierung realer Spannungsquellen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,7 +155,7 @@
         \s{\caption{\textbf{Reale Spannungsquelle mit Innenwiderstand.} Die Spannung $U_\mathrm{q}$ wird durch den Innenwiderstand \(R_\mathrm{i}\) beeinflusst und ist an den Ausgangsklemmen dadurch geringer.}}
         \label{fig:re spannungsquelle}
     \end{figure}
-    \speech{02_Spannungs_und_Stromquellen}{3}{
+    \speech{02_Spannungs_und_Stromquellen3}{1}{
         Die gerade vorgestellte ideale Spannungsquelle kann es in der Realität niemals geben.
         Warum? Weil wir innerhalb der Spannungsquelle Leiter benötigen, und die haben einen Widerstand, wie wir gelernt haben.
         An diesen internen Leitern fällt eine Spannung URI ab, abhängig vom fließenden Strom.
@@ -226,7 +229,7 @@
     \end{itemize}
     \end {Merksatz}
     
-    \speech{02_Spannungs_und_Stromquellen}{4}{
+    \speech{02_Spannungs_und_Stromquellen4}{1}{
         Wir können also für die Spannungsquelle folgende beiden Merksätze zusammenfassen:
         
         1. Eine Spannungsquelle, egal ob real oder ideal, darf nie kurzgeschlossen werden, 
@@ -263,7 +266,7 @@
         \label{fig:id stromquelle}
     \end{figure}
     
-    \speech{02_Spannungs_und_Stromquellen}{5}{
+    \speech{02_Spannungs_und_Stromquellen5}{1}{
         Wir haben die Spannungsquelle kennengelernt. Das ist auch das, was wir aus unserem bisherigen Alltag am besten kennen, weil die meisten Quellen, die wir verwenden, sich wie Spannungsquellen verhalten. Dennoch gibt es auch in der Realität Stromquellen. Hier dargestellt als ideale Stromquelle. Und bei der idealen Stromquelle ist der Strom, der fließt, immer gleich. Das heißt, der Quellstrom I_Q fließt tatsächlich völlig unabhängig davon, welche Lasten wir einstellen. Die Spannung, die Ausgangsspannung, die sich ergibt, stellt sich eben entsprechend der Last ein.
         Ähnlich wie beim Kurzschluss und der Spannungsquelle dürfen wir die Stromquelle niemals leer laufen lassen. Warum? Wenn wir jetzt hier einen Leerlauf anschließen, der ja definitionsgemäß gleich einem unendlich großen Widerstand ist, müsste sich eine unendlich große Spannung einstellen, damit dieser Strom fließen kann. Das ist ein Zustand wiederum der unendlichen Leistungsabgabe, den wir verhindern müssen. Das heißt, eine Stromquelle darf niemals leer laufen.
         Das ist etwas, das wir aus unserem alltäglichen Leben eigentlich kaum kennen. Warum? Weil wir eigentlich immer mit Spannungsquellen zu tun haben, die wir eben nicht kurzschließen dürfen, aber durchaus leer laufen lassen dürfen. Bei einer Stromquelle ist es genau umgekehrt. Die benutzen wir vor allem zum Modellieren von verschiedenen Sachen. Und ein Beispiel für eine Quelle, die wir sehr gut als Stromquelle modellieren können, ist zum Beispiel der Blitz. Bei einem Blitz haben wir einen eingeprägten Strom, der eben durch die Entladung zwischen Wolke und Erde entsteht. Der Strom sind 50 kA. Die Spannung des Blitzes stellt sich dann entsprechend der Last ein, die wir haben. Und das ist der Grund, warum zum Beispiel Blitzschutzeinrichtungen an Gebäuden möglichst niederohmig sein sollten, also sehr kleine Widerstände haben sollten, damit die Spannung, die sich daran aufbaut, möglichst klein ist.
@@ -323,7 +326,7 @@
         \end{equation}
     }
     
-    \speech{02_Spannungs_und_Stromquellen}{6}{
+    \speech{02_Spannungs_und_Stromquellen6}{1}{
         Bei der realen Stromquelle haben wir wieder einen Innenwiderstand. Dieser Innenwiderstand darf aber in keinem Fall in Reihe liegen, denn dann würde er den Ausgangsstrom ja überhaupt nicht beeinflussen. Bei einer Reihenschaltung ist der Strom durch alle Elemente gleich. Wir müssen dem Strom einen sogenannten Verzweigungspunkt liefern, indem wir den Innenwiderstand parallel zur Quelle schalten. Dann fließt ein Teil des Quellstroms durch den Innenwiderstand, und ein anderer Teil fließt als Ausgangsstrom I durch die angeschlossene Last.
         Wenn jetzt die angeschlossene Last einen sehr viel kleineren Widerstand hat als der Innenwiderstand R_I, dann fließt ein Großteil des Quellstroms durch die Last, und ein sehr viel kleinerer Teil des Stroms durch den Innenwiderstand. Sie werden in den folgenden Modulen auch noch die Knotenregel kennenlernen und sehen, dass der Quellstrom I_Q genau gleich ist der Summe aus I und I_RI.
         Wie muss also der Innenwiderstand sein, damit eine Stromquelle möglichst ideales Verhalten zeigt? Der Innenwiderstand einer Stromquelle sollte möglichst groß sein. Auch das widerspricht dem natürlichen Gefühl. Da sagt man normalerweise: Innenwiderstände sollten klein sein, damit die Verluste klein sind. Hier ist es genau umgekehrt. Der Innenwiderstand sollte möglichst groß sein. Achtung: Bei der realen Stromquelle ist ein möglichst großer Innenwiderstand absolut wünschenswert. Auch hier: Wenn der Innenwiderstand klein wäre und wir dann die Quelle leerlaufen lassen, flösse der gesamte Strom I_Q durch den Innenwiderstand. Wir hätten einen ähnlichen Effekt wie beim Kurzschluss der realen Spannungsquelle, im R_I würde eine extrem hohe Leistung umgesetzt, was zur Zerstörung der Quelle führen würde.
@@ -350,7 +353,7 @@
     \end{itemize}
     \end {Merksatz}
     
-    \speech{02_Spannungs_und_Stromquellen}{7}{
+    \speech{02_Spannungs_und_Stromquellen7}{1}{
         Somit können wir die folgenden Merksätze zusammenfassen:
         Eine Stromquelle darf nie im Leerlauf betrieben werden, egal ob ideal oder real. Denn bei der idealen Stromquelle würde eine unendliche Leistung umgesetzt. Bei der realen Stromquelle würde in der Quelle selbst, am Innenwiderstand, eine extrem große Leistung umgesetzt werden.
         Bei der Stromquelle ist der Strom immer derselbe, völlig egal, welche Last wir anschließen bei der idealen Stromquelle bzw. abhängig vom Verhältnis der Widerstände bei der realen Stromquelle. Die Spannung, die wir an der Klemme abgreifen können, stellt sich entsprechend ein.
@@ -365,7 +368,7 @@
 \s{
     Spannungs\- und Stromquellen können bezüglich ihres Klemmenverhaltens ineinander umgerechnet werden. 
     Voraussetzung dafür ist, dass sowohl der Kurzschlussstrom $I_\mathrm{K}$ als auch die Leerlaufspannung $U_\mathrm{L}$ bei beiden Quellen gleich sind.
-    Abbildung \ref{fig:Umrechnung} zeigt die Überführung der Schaltbilder ineinander.
+    Abbildung \ref{fig:Umrechnung2} zeigt die Überführung der Schaltbilder ineinander.
     Weiterführende Inhalte zur Umrechnung und Leistungsanpassung folgen in Modul 4. 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Umrechnen Strom in Spannungsquelle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -379,21 +382,20 @@
 
                 \input{Tikz/src/02_Spannungs_Stromquellen/Umwandlung_Gleichspannung_Strom}
 
-            \label{fig:Umrechnung}
+            \label{fig:Umrechnung1}
             
         \end{figure}
     }
     
-    \speech{02_Spannungs_und_Stromquellen}{8}{ % ToDo: only 1 , bzw. ich bin nicht sicher ob der Text zur Umwandlung von Strom in Spannungsquelle geeignet ist
+    \speech{02_Spannungs_und_Stromquellen7}{1}{ % ToDo: only 1 , bzw. ich bin nicht sicher ob der Text zur Umwandlung von Strom in Spannungsquelle geeignet ist
         Wir haben jetzt gesehen, dass es Strom- und Spannungsquellen gibt. Und letztlich haben beide an ihren Klemmen einen Ausgangsstrom I und eine Ausgangsspannung U. Bei realen Quellen wird das tatsächliche Verhalten maßgeblich vom Innenwiderstand RI mitbestimmt.
-        Es ergibt sich für eine Spannungsquelle das folgende Bild: Wir haben eine Ausgangsspannung U0. Wir haben einen Strom I, der sowohl durch den Innenwiderstand als auch durch den angeschlossenen Widerstand fließt, und demzufolge eine Spannung U, die an dem Widerstand R abfällt.   
-    }
+        Es ergibt sich für eine Spannungsquelle das folgende Bild: Wir haben eine Ausgangsspannung U_0. Wir haben einen Strom I, der sowohl durch den Innenwiderstand als auch durch den angeschlossenen Widerstand fließt, und demzufolge eine Spannung U, die an dem Widerstand R abfällt.}
     
-    \speech{02_Spannungs_und_Stromquellen}{9}{ % ToDo: only 2 
+    \speech{02_Spannungs_und_Stromquellen7}{2}{ % ToDo: only 2 
         Letztlich kommt es also darauf an, welcher Strom I durch den Lastwiderstand R fließt und dann einen Spannungsabfall U hervorruft. Das können wir so wie hier dargestellt mit einer Spannungsquelle natürlich erreichen.
     }
     
-    \speech{02_Spannungs_und_Stromquellen}{10}{ % ToDo: only 3
+    \speech{02_Spannungs_und_Stromquellen7}{3}{ % ToDo: only 3
         Wir können aber genau denselben Spannungsabfall U und genau denselben Strom I durch eine Stromquelle I0 mit einem Widerstand RI erreichen. Maßgeblich für die Umrechnung dieser beiden Quellen ist, dass sie dasselbe Verhalten an der Last zeigen. Das heißt, der Strom I und die Spannung U an dem Lastwiderstand R gleich bleiben.
         Wie kann man das jetzt erreichen? Man rechnet einfach und stellt dann bei den Rechnungen fest, dass I0 gleich sein muss U0 durch RI, wobei RI in beiden Fällen gleich sein muss. Wenn das gegeben ist, sind diese beiden Quellen komplett äquivalent.
     }
@@ -401,7 +403,7 @@
     % ToDo: Hillgärtner: Hier steht jetzt 0 ist gleich RI mal I0. I0 taucht nirgendwo auf. Das kann also schon mal nicht sein. Das müsste dann I sein. Oder aber es bezieht sich auf die Stromquelle. Das ist dann aber auf der Folie 68 sehr verwirrend, muss man dazu sagen. Ferner liegt die Spannung U an dem Widerstand R an. Ich würde die dann, wenn, UR nennen. Das ist eindeutiger vielleicht. Oder UA für Ausgangsspannung. Und vielleicht auch den Widerstand nicht zwischen den beiden offenen Kreisen legen, sondern nochmal eine Drahtbrücke nach rechts legen, dass man deutlich sieht, dass das die Ausgangsspannung U an den Punkten belassen. Weil so könnte man meinen, dass die Formel U0 ist gleich RI mal I0 mal U. Das gibt ja überhaupt keinen Sinn. Also das Bild muss bitte nochmal angepasst werden. 
     % ToDo: Hillgärtner: Die Berechnung dazu oder die Berechnungen dazu sind jetzt hier nicht aufgeführt. Das fände ich aber durchaus sehr sinnvoll. Das macht vieles klarer. Das kann ich nicht alles über die Tonspur bringen, glaube ich. 
     
-    \speech{02_Spannungs_und_Stromquellen}{11}{ % ToDo: only 4
+    \speech{02_Spannungs_und_Stromquellen7}{4}{ % ToDo: only 4
         Das ermöglicht uns aber auch, reale Quellen zu bewerten, ob sie denn eher eine Spannungsquelle oder eher eine Stromquelle sind. Wir nehmen mal als Beispiel einen Lastwiderstand von 100 Ohm und einen Innenwiderstand von 1 Ohm. Das heißt, der Lastwiderstand ist sehr, sehr viel größer als der Innenwiderstand. Damit haben wir tatsächlich eher ein Spannungsquellenverhalten.
         Denn wenn jetzt der Innenwiderstand 1 Ohm ist, der Lastwiderstand 100 Ohm, dann fließt bei 10 Volt U0 ziemlich genau ein Strom von 100 mA – genau genommen 99,9 mA. Wenn wir jetzt den Lastwiderstand erhöhen auf 1 kOhm, dann ändert sich der Strom, aber die Spannung, die an dem Lastwiderstand abfällt, bleibt nahezu gleich bei nahezu 10 Volt.
         Das heißt immer dann, wenn der Lastwiderstand groß ist im Vergleich zum Innenwiderstand, haben wir eher Spannungsquellenverhalten – völlig egal, ob wir die linke oder die rechte Schaltung haben.
@@ -417,7 +419,7 @@
         \input{Tikz/src/02_Spannungs_Stromquellen/Umwandlung_Gleichspannung_Strom}
         \caption{\textbf{Umwandlung einer Gleichspannungsquelle in eine Stromquelle.} Der Innenwiderstand der Spannungsquelle wird dabei zum Parallelwiderstand der
             Stromquelle, wobei die resultierende Stromquelle einen konstanten Strom liefert, der durch den Widerstand bestimmt wird.}
-        \label{fig:Umrechnung}
+        \label{fig:Umrechnung2}%%ist gleiches bild wie Label{Urechnung1} 
         
     \end{figure}
 }
@@ -457,30 +459,42 @@
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Übersicht der verschiedenen Schaltzeichen von Spannungs- und Stromquellen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-    \ftx{Verschiedenen Spannungs- und Stromquellen}
+%%%%%%%%%% neue Variable für diesen Fall
+\newlength{\mpwidth}
+\setlength{\mpwidth}{0.18\textwidth}
+%\newlength{\mpheight}
+%\setlength{\mpheight}{3.8cm}
+
+%%%%%%%%
+\begin{frame}%veränderungen von JW höhe der Bounding box von TIKZ
+    \ftx{Verschiedene Spannungs- und Stromquellen}
     \b{
         \begin{figure}[h]
+            
             \centering
-            \begin{minipage}[t]{0.18\textwidth}
+            \begin{minipage}[t]{\mpwidth}
                 \input{Tikz/src/02_Spannungs_Stromquellen/Allgemeine_Spannungsquelle}
-                \caption*{Allgemeine\\ Spannungsquelle}
+                \captionsetup{skip=-6pt}
+
+                \caption*{\footnotesize Allgemeine Spannungsquelle}
             \end{minipage}
             \hfill
-            \only<2->{\begin{minipage}[t]{0.18\textwidth}
+            \only<2->{\begin{minipage}[t]{\mpwidth}
                     \input{Tikz/src/02_Spannungs_Stromquellen/Gleichspannungsquelle}
-                    \caption*{Gleichspannungsquelle}
+                    %\captionsetup{aboveskip=-10pt}
+                    \caption*{\footnotesize Gleichspannungsquelle}
                 \end{minipage}
                 \hfill
-                \begin{minipage}[t]{0.18\textwidth}
+                \begin{minipage}[t]{\mpwidth}
                     \input{Tikz/src/02_Spannungs_Stromquellen/Wechselspannungsquelle}
-                    \caption*{Wechselspannungsquelle}
+                    \captionsetup{skip=-6pt}
+                    \caption*{\footnotesize Wechselspannungsquelle}
                 \end{minipage}
                 \hfill
-                \begin{minipage}[t]{0.18\textwidth}
+                \begin{minipage}[t]{\mpwidth}
                     \input{Tikz/src/02_Spannungs_Stromquellen/Zeitlich_veraenderliche_Spannungsquelle}
-                    \captionsetup{justification=raggedright, singlelinecheck=false}
-                    \caption*{Zeitlich beliebig veränderliche Spannungsquelle}
+                \captionsetup{skip=-6pt}
+                    \caption*{\footnotesize Zeitlich beliebig veränderliche Spannungsquelle}
                 \end{minipage}}
             
             
@@ -489,28 +503,29 @@
                 \vspace{0.3cm}
             }
             
-            \only<3->{\begin{minipage}[t]{0.18\textwidth}
+            \only<3->{\begin{minipage}[t]{\mpwidth}
                     \input{Tikz/src/02_Spannungs_Stromquellen/Allgemeine_Stromquelle}
-                    \caption*{Allgemeine\\ Stromquelle}
+                    %\captionsetup{skip=-7pt}
+                    \caption*{\footnotesize Allgemeine\\ Stromquelle}
                 \end{minipage}
                 \hfill
                 \hspace{3.9cm}
-                \begin{minipage}[t]{0.18\textwidth}
+                \begin{minipage}[t]{\mpwidth}
                     \input{Tikz/src/02_Spannungs_Stromquellen/Wechselstromquelle}
-                    \captionsetup{justification=raggedright, singlelinecheck=false}
-                    \caption*{Wechselstromquelle}
+                    %\captionsetup{justification=raggedright, singlelinecheck=false}
+                    \caption*{\footnotesize Wechselstromquelle}
                 \end{minipage}
                 \hfill
-                \begin{minipage}[t]{0.18\textwidth}
+                \begin{minipage}[t]{\mpwidth}
                     \input{Tikz/src/02_Spannungs_Stromquellen/Zeitlich_veraenderliche_Stromquelle}
-                    \captionsetup{justification=raggedright, singlelinecheck=false}
-                    \caption*{Zeitlich beliebig veränderliche Stromquelle}
+                    %\captionsetup{skip=-5pt,width=1.3\textwidth,justification=raggedright, singlelinecheck=false}
+                    \caption*{\footnotesize Zeitlich beliebig veränderliche Stromquelle}
                 \end{minipage}}
             
         \end{figure}
     }% nur Folie
     
-    \speech{02_Spannungs_und_Stromquellen}{12}{ % ToDo: only 1
+    \speech{02_Spannungs_und_Stromquellen8}{1}{ % ToDo: only 1
         Wir haben bisher das Symbol kennengelernt für eine allgemeine Spannungsquelle. 
         Das heißt, bei diesem Symbol, was Sie hier sehen, ein Kreis, durch den senkrecht ein Strich geht, 
         das bezeichnet eine allgemeine Spannungsquelle. 
@@ -519,7 +534,7 @@
         das kann alles sein.    
     }
     
-    \speech{02_Spannungs_und_Stromquellen}{13}{ % ToDo: only 2 - 4
+    \speech{02_Spannungs_und_Stromquellen8}{2}{ % ToDo: only 2 - 4
         Da wir aber sehr häufig Gleich- und Wechselspannungskreise haben, gibt es auch hierfür gesonderte Symbole. 
         Die Gleichspannungsquelle ist ein Kreis mit zwei sich seitlich überstehenden Platten. 
         Das soll zum Beispiel einen Kondensator, eine Anode oder eine Batterie symbolisieren. 
@@ -530,7 +545,7 @@
         dargestellt durch einen Kreis mit einem Pfeil.    
     }
     
-    \speech{02_Spannungs_und_Stromquellen}{14}{ % ToDo: only 5 - 7
+    \speech{02_Spannungs_und_Stromquellen8}{3}{ % ToDo: only 5 - 7
         Für die Stromquelle gilt das Gleiche. 
         Wir haben bisher, unten links dargestellt, die allgemeine Stromquelle verwendet. 
         Das ist ein Kreis mit einem waagrechten Strich darin. 

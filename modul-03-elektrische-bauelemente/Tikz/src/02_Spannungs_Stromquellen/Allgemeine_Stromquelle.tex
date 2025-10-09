@@ -1,6 +1,17 @@
+\b{
+\begin{circuitikz}[scale=0.8]
+    \draw (0,0) to[I] (0,3)
+    to[short,-o] (1.5,3)
+    (0,0) to[short,-o] (1.5,0)
+    (0,2.4)   to[short, color=current, i_={\textcolor{current}{$i(t)$}}](0,2.5);
+\end{circuitikz}    
+}
+
+\s{
 \begin{circuitikz}[scale=0.9]
     \draw (0,0) to[I] (0,3)
     to[short,-o] (1.5,3)
     (0,0) to[short,-o] (1.5,0)
     (0,2.4)   to[short, color=current, i_={\textcolor{current}{$i(t)$}}](0,2.5);
 \end{circuitikz}
+}

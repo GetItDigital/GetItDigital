@@ -1,3 +1,23 @@
+\b{
+    \begin{circuitikz}[scale=0.8]
+    % Zeichne den offenen Kreis
+    \draw[line width=1pt] (0,-0.04) arc[start angle=10,end angle=170,radius=0.42];
+    \draw[line width=1pt] (0,-0.19) arc[start angle=-10,end angle=-170,radius=0.42];
+
+    % Zeichne den Pfeil in der Mitte des offenen Kreises
+    \draw[-latex, thick, line width=1.1pt] (-0.42,-0.45)    to node[right] {} (-0.42,0.25);
+
+    % Anschlüsse
+    \draw (-0.42,0.3) -- (-0.42,1.4) to[short, -o] (1.08,1.4)
+    (-0.42,-1.6)to[short, -o] (1.08,-1.6)
+    (-0.42,0.8)                to[short, color=current, i_={\textcolor{current}{$i(t)$}}]
+    (-0.42,0.9);
+    \draw (-0.42,-0.55) -- (-0.42,-1.6);
+
+\end{circuitikz}
+}
+
+\s{
 \begin{circuitikz}[scale=0.9]
     % Zeichne den offenen Kreis
     \draw[line width=1pt] (0,-0.04) arc[start angle=10,end angle=170,radius=0.42];
@@ -14,3 +34,4 @@
     \draw (-0.42,-0.55) -- (-0.42,-1.6);
 
 \end{circuitikz}
+}

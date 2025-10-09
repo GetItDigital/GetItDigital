@@ -1,3 +1,16 @@
+\b{
+    \begin{circuitikz}[scale=0.8]
+    \draw (0,0.88) -- (0,1.95);
+    \draw [thick](0,0.46) circle (0.43);
+    \draw (0, 0.03) -- (0,-1.05);
+    \draw[-latex, thick, line width=1.1pt] (0,0.8)    to node[right] {} (0,0.1);
+    \draw (0,1.95)                  to[short,-o] (1.5,1.95)
+    (0,-1.05)                 to[short,-o] (1.5,-1.05);
+    \draw[-latex, thick, draw=voltage] (1.5,1.45) to node[right, color=voltage] {$u(t)$} (1.5,-0.55);
+\end{circuitikz}
+}
+
+\s{
 \begin{circuitikz}[scale=0.9]
     \draw (0,0.88) -- (0,1.95);
     \draw [thick](0,0.46) circle (0.43);
@@ -7,3 +20,4 @@
     (0,-1.05)                 to[short,-o] (1.5,-1.05);
     \draw[-latex, thick, draw=voltage] (1.5,1.45) to node[right, color=voltage] {$u(t)$} (1.5,-0.55);
 \end{circuitikz}
+}
