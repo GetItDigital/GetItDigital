@@ -191,7 +191,9 @@
 	Leistung und Wirkungsgrad behandelt. Es ist wichtig, zu Beginn eine klare Unterscheidung zwischen 
 	Energie und Arbeit zu treffen, da diese beiden Größen eng miteinander verbunden sind und sich 
 	sogar die selbe Einheit teilen, jedoch unterschiedliche Dinge beschreiben.}
+
 \newvideofile{EinleitungEnergieundLeistung}{Einleitung}
+%; TODO im Video steht "Videotitel af der Folie. ersetzen durch "Einleitung"
 \begin{frame} \ftx{Lernziele: Unterschied von Energie, Arbeit, Leistung} % ToDo: In manchen Lernzielen verrutscht der letzte Buchstabe des Titels in den Text der Infobox
 \begin{Lernziele}{Energie und Leistung} % Infokasten mit Lernzielen
 Die Studierenden
@@ -239,15 +241,15 @@ Und du kannst die Effizienz von Energieumwandlungssystemen analysieren.
 \begin{frame} \ftx{Pumpspeicherkraftwerk}
 	\begin{figure}[H]
 		\centering
-		\b{\includesvg[width=0.7\textwidth]{Wasserkraftwerk_V5}} %%% Text ist zu groß
+		\b{\scalebox{0.8}{\includesvg[width=0.9\textwidth]{Wasserkraftwerk_V5}}} %%% width0.9 für passende textgröße in svg; scalebox um alles gleichzeitig zu skalieren
 		\s{\includesvg[width=0.8\textwidth]{Wasserkraftwerk_V5}
 			\caption{\textbf{Pumpspeicherkraftwerk.} Der Aufbau bestehend aus einem Oberbecken,
 			einem Unterbecken, sowie Turbinen und einer elektrischen Maschine. Es dient der Speicherung von Energie durch das Hochpumpen von Wasser und der Rückgewinnung
 			durch die Abgabe von Wasserkraft zur Stromerzeugung.}}
 			\label{fig:Pumpspeicherkraftwerk}
 		\end{figure}
-		% ToDo: Video: Im Video wird an dieser Stelle nicht die Grafik des Pumpspeicherkraftwerkes angezeigt, sondern bereits eine Folie weiter der Merksatz.
-
+%; seed 933424 ganz gut
+%; TODO : mehr bilder und veränderungen im Video, aktuell recht trocken
 		\speech{00_Einleitung2}{1}{ % hier titel einfügen
 			Um uns klarzumachen, was Arbeit, Energie und Leistung eigentlich bedeuten, habe ich ein Beispiel mitgebracht.
 			Ein Pumpspeicherkraftwerk.
@@ -269,23 +271,24 @@ Und du kannst die Effizienz von Energieumwandlungssystemen analysieren.
 			Nachts hingegen, wenn die Sonne weg ist und auch der Wind meistens nachlässt, fehlt uns Energie.
 			Eine mögliche Lösung ist: der Einsatz von Gaskraftwerken.
 			Diese Gasturbinen sind zwar schnell regelbar, aber sie sind nicht CO2neutral, wenn Erdgas verbrannt wird.
-			Damit kommen wir unserem Ziel, CO2freie Stromerzeugung, nur bedingt näher.
+			Damit kommen wir unserem Ziel, CO2 freie Stromerzeugung, nur bedingt näher.
 			Eine echte Alternative ist da das Pumpspeicherkraftwerk.
 			Wie gesagt:
 			Darin wird Energie quasi gespeichert.
 			Wenn tagsüber zu viel Strom im Netz ist, zum Beispiel durch Sonne und Wind, wird Wasser aus dem Unterbecken ins Oberbecken gepumpt.
 			Die Höhe zwischen den beiden Becken liegt meist zwischen 30 und 100 Metern, je nach geologischer Lage.
-			Das Pumpen kostet Energie, die wird aus dem Netz entnommen.Denn das Wasser muss ja irgendwie nach oben.
-			Abends, wenn die Photovoltaik abnimmt, kann das Wasser dann durch eine Turbine zurück ins Unterbecken fließen.
+			Das Pumpen kostet Energie, die wird aus dem Netz entnommen. Denn das Wasser muss ja irgendwie nach oben.
+			%; TODO abends übergang nicht gut, falscher satzbau photoovaoltaik nimmt ab?
+			Abends, wenn die Versorgung durch Photovoltaik Anlagen abnimmt, kann das Wasser dann durch eine Turbine zurück ins Unterbecken fließen.
 			Oder besser gesagt: Es fällt einfach runter.
-			Dabei nutzt es die potenzielle Energie aus der Höhe, nimmt Fahrt auf und treibt die Turbine an.
+			Dabei nutzt es die potentielle Energie aus der Höhe, nimmt Fahrt auf und treibt die Turbine an.
 			Die Turbine ist mit einer elektrischen Maschine gekoppelt, auf derselben Welle.
-			Und diese Maschine wandelt die potenzielle Energie des Wassers in elektrische Energie um.
+			Und diese Maschine wandelt die potentielle Energie des Wassers in elektrische Energie um.
 			Dabei wird Arbeit verrichtet.
 			Denn immer wenn wir Energie wandeln, verrichten wir Arbeit.
 			Das ist der Unterschied:
 			Energie kann gespeichert werden, Arbeit wird verrichtet, wenn Energie gewandelt wird.
-			Beispiel:
+			Beispiel:%;TODO irgendein wortfehler in der ki, 
 			Wenn wir Wasser nach oben pumpen, verrichten wir Arbeit. Diese Energie steckt danach im Oberbecken.
 			Lassen wir das Wasser runter, wird Energie entnommen und Arbeit in der Turbine verrichtet.
 			Die Energie, die dabei entsteht, können wir dann wieder elektrisch nutzen.
@@ -338,8 +341,7 @@ Und du kannst die Effizienz von Energieumwandlungssystemen analysieren.
 		
 	\end{Merksatz}
 	
-	% ToDo: Video: Der Sprechtext ist ebenfalls eine Folie zu spät.
-	
+	% 761423 guter seed
 	\speech{00_Einleitung3}{1}{Auch hier nochmal der ganz wichtige Merksatz: Energie kann gespeichert werden, Arbeit wird verrichtet. Was das bedeutet, haben wir gerade am Beispiel des Pumpspeicherkraftwerks gesehen. Wenn Wasser hochgepumpt wird, dann ist die Energie in Form von potenzieller Energie gespeichert. Wenn es dann wieder herunterläuft, gibt es diese Energie an das System ab. In der Turbine wird Arbeit verrichtet, und dabei wird Energie gewandelt.}
 	
 \end{frame}
