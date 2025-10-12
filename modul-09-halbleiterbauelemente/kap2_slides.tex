@@ -1412,11 +1412,7 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
     \end{figure}
     }
     \speech{Feldeffekttransistor}{1}{Bislang haben wir uns mit Bipolartransistoren beschäftigt. Jetzt lernen wir den Feldeffekttransistor kennen.
-    Die Steuerung erfolgt hier nicht durch einen Basisstrom, sondern rein durch eine Spannung am Gate, also über ein elektrisches Feld.
-    Man unterscheidet hauptsächlich zwei Typen:
-    den Metall-Oxid-Halbleiter-FET, kurz: MOSFET
-    und den Junction-FET, kurz: JayFET
-    Der MOSFET ist in der modernen Elektronik besonders wichtig - zum Beispiel in Logikschaltungen, Mikroprozessoren oder Speicherzellen.}
+    Die Steuerung erfolgt hier nicht durch einen Basisstrom, sondern rein durch eine Spannung am Gate, also über ein elektrisches Feld. Man unterscheidet hauptsächlich zwei Typen: den Metall-Oxid-Halbleiter-FET, kurz: MOSFET und den Junction-FET, kurz: JayFET. Der MOSFET ist in der modernen Elektronik besonders wichtig - zum Beispiel in Logikschaltungen, Mikroprozessoren oder Speicherzellen.} %986529
 \end{frame}
 
 \begin{frame}
@@ -1441,6 +1437,15 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             %\label{fig:SchrittweiseBeschaltung1}
         \end{figure}
     }
+    \speech{FET_Elektrisches_Verhalten}{1}{Hier sehen wir den Querschnitt eines n-Kanal-MOSFETs.
+    Schauen wir uns zunächst einmal nur die Elemente an - ohne schon Spannungen anzulegen:
+    Unten liegt das sogenannte Substrat oder auch Bulk - hier p-dotiert.
+    Links und rechts davon liegen zwei n-dotierte Zonen: das sind Source und Drain.
+    Zwischen Source und Drain liegt die Gate-Elektrode - allerdings isoliert vom Halbleitermaterial durch eine dünne Oxidschicht.
+    An den pn-Übergängen bilden sich Raumladungszonen, die man Verarmungszonen nennt.
+    Was du dir merken solltest:
+    Zwischen Gate und Halbleiter fließt kein Strom, da sie durch das Oxid getrennt sind.
+    In den meisten Anwendungen ist Bulk direkt mit Source verbunden, also auf gleichem Potenzial.} %seed: 986542
 \end{frame}
 
 \begin{frame}
@@ -1452,6 +1457,11 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             %\label{fig:SchrittweiseBeschaltung1}
         \end{figure}
     }
+    \speech{FET_Elektrisches_Verhalten}{1}{Was passiert, wenn wir nun eine Spannung zwischen Drain und Source anlegen?
+    Noch nichts - denn es gibt keinen leitenden Kanal zwischen den beiden.
+    Das p-dotierte Substrat liegt dazwischen und wirkt wie eine Sperrschicht.
+    Der Strom kann also nicht fließen, weil es keinen Weg für die Elektronen von Source zum Drain gibt.
+    Der Transistor ist in diesem Zustand gesperrt - man sagt auch: selbstsperrend.} %seed: 956267
 \end{frame}
 
 \begin{frame}
