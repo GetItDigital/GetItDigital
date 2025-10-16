@@ -1426,6 +1426,15 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
         \end{figure}
 
     }
+        \speech{FET_Elektrisches_Verhalten}{1}{Hier sehen wir den Querschnitt eines n-Kanal-MOSFETs.
+        Schauen wir uns zunächst einmal nur die Elemente an - ohne schon Spannungen anzulegen:
+        Unten liegt das sogenannte Substrat oder auch Bulk - hier p-dotiert.
+        Links und rechts davon liegen zwei n-dotierte Zonen: das sind Source und Drain.
+        Zwischen Source und Drain liegt die Gate-Elektrode - allerdings isoliert vom Halbleitermaterial durch eine dünne Oxidschicht.
+        An den pn-Übergängen bilden sich Raumladungszonen, die man Verarmungszonen nennt.
+        Was du dir merken solltest:
+        Zwischen Gate und Halbleiter fließt kein Strom, da sie durch das Oxid getrennt sind.
+        In den meisten Anwendungen ist Bulk direkt mit Source verbunden, also auf gleichem Potenzial.} %seed: 986542
 \end{frame}
 
 \begin{frame}
@@ -1437,15 +1446,11 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             %\label{fig:SchrittweiseBeschaltung1}
         \end{figure}
     }
-    \speech{FET_Elektrisches_Verhalten}{1}{Hier sehen wir den Querschnitt eines n-Kanal-MOSFETs.
-    Schauen wir uns zunächst einmal nur die Elemente an - ohne schon Spannungen anzulegen:
-    Unten liegt das sogenannte Substrat oder auch Bulk - hier p-dotiert.
-    Links und rechts davon liegen zwei n-dotierte Zonen: das sind Source und Drain.
-    Zwischen Source und Drain liegt die Gate-Elektrode - allerdings isoliert vom Halbleitermaterial durch eine dünne Oxidschicht.
-    An den pn-Übergängen bilden sich Raumladungszonen, die man Verarmungszonen nennt.
-    Was du dir merken solltest:
-    Zwischen Gate und Halbleiter fließt kein Strom, da sie durch das Oxid getrennt sind.
-    In den meisten Anwendungen ist Bulk direkt mit Source verbunden, also auf gleichem Potenzial.} %seed: 986542
+        \speech{FET_Elektrisches_Verhalten}{2}{Was passiert, wenn wir nun eine Spannung zwischen Drain und Source anlegen?
+        Noch nichts - denn es gibt keinen leitenden Kanal zwischen den beiden.
+        Das p-dotierte Substrat liegt dazwischen und wirkt wie eine Sperrschicht.
+        Der Strom kann also nicht fließen, weil es keinen Weg für die Elektronen von Source zum Drain gibt.
+        Der Transistor ist in diesem Zustand gesperrt - man sagt auch: selbstsperrend.} %seed: 956267
 \end{frame}
 
 \begin{frame}
@@ -1457,11 +1462,7 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             %\label{fig:SchrittweiseBeschaltung1}
         \end{figure}
     }
-    \speech{FET_Elektrisches_Verhalten}{2}{Was passiert, wenn wir nun eine Spannung zwischen Drain und Source anlegen?
-    Noch nichts - denn es gibt keinen leitenden Kanal zwischen den beiden.
-    Das p-dotierte Substrat liegt dazwischen und wirkt wie eine Sperrschicht.
-    Der Strom kann also nicht fließen, weil es keinen Weg für die Elektronen von Source zum Drain gibt.
-    Der Transistor ist in diesem Zustand gesperrt - man sagt auch: selbstsperrend.} %seed: 956267
+    
 \end{frame}
 
 \begin{frame}
@@ -1485,19 +1486,6 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             %\label{fig:ohmscherBereichn-KanalMOSFET}
         \end{figure}
     }
-\end{frame}
-
-\begin{frame}
-    \b{ \frametitle{Feldeffekttransistor -- Elektrisches Verhalten}
-        \begin{figure}[H]
-            \centering
-            \includesvg[width=\textwidth]{Bilder/kap4/Ausgangskennlinienfeldn-KanalMOSFET}
-            %\caption{\textbf{Ausgangskennlinienfeld n-Kanal MOSFET.} Ausgangskennlinienfeld eines n-Kanal MOSFETs 
-            %(selbstsperrend) mit dem linearen- und Sättigungsbereich. Drainstrom als Folge der Drain-Source-Spannung bei 
-            %verschiedenen Gate-Source-Spannungen.}  
-            %\label{fig:Ausgangskennlinienfeldn-KanalMOSFET}
-        \end{figure}
-    }
     \speech{FET_Elektrisches_Verhalten}{5}{Jetzt legen wir eine positive Spannung am Gate an - gegenüber dem Bulk beziehungsweise Source.
     Das führt dazu, dass Elektronen aus dem Substrat an die Grenzfläche unter dem Gate gezogen werden.
     Je nach Höhe dieser Gate-Spannung entsteht dort eine sogenannte Inversionsschicht - also ein leitfähiger n-Kanal.
@@ -1512,12 +1500,31 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
     \b{ \frametitle{Feldeffekttransistor -- Elektrisches Verhalten}
         \begin{figure}[H]
             \centering
+            \includesvg[width=\textwidth]{Bilder/kap4/Ausgangskennlinienfeldn-KanalMOSFET}
+            %\caption{\textbf{Ausgangskennlinienfeld n-Kanal MOSFET.} Ausgangskennlinienfeld eines n-Kanal MOSFETs 
+            %(selbstsperrend) mit dem linearen- und Sättigungsbereich. Drainstrom als Folge der Drain-Source-Spannung bei 
+            %verschiedenen Gate-Source-Spannungen.}  
+            %\label{fig:Ausgangskennlinienfeldn-KanalMOSFET}
+        \end{figure}
+    }
+        \speech{FET_Elektrisches_Verahlten}{6}{Hier sehen wir das Ausgangskennlinienfeld eines n-Kanal-MOSFET. Auf der x-Achse ist die Drain-Source-Spannung U D S aufgetragen, auf der y-Achse der Drainstrom I D. Jede Kurve zeigt das Verhalten für eine bestimmte Gate-Spannung U G S. Im linken Bereich verläuft die Kennlinie linear - der MOSFET wirkt hier wie ein normaler Widerstand. Im rechten Bereich geht die Kennlinie in die Sättigung über – der Strom erreicht ein Maximum, obwohl U D S weiter steigt.} %seed: 998563 
+\end{frame}
+
+\begin{frame}
+    \b{ \frametitle{Feldeffekttransistor -- Elektrisches Verhalten}
+        \begin{figure}[H]
+            \centering
             \includesvg[width= 0.7\textwidth]{Bilder/kap4/SaettigungsbereichN-KanalMOSFET}
             %\caption{\textbf{Sättigungsbereich n-Kanal MOSFET.} Querschnitt eines n-Kanal MOSFETs (selbstsperrend) mit angelegter 
             %Spannung $U_{GS}$ und $U_{DS}$}  
             %\label{fig:SaettigungsbereichN-KanalMOSFET}
         \end{figure}
     }
+    \speech{FET_Elektrisches_Verhalten}{7}{Hier siehst du nochmal im Querschnitt, was im Sättigungsbereich passiert:
+    Die Drain-Source-Spannung ist jetzt so groß, dass sich der Kanal nicht mehr gleichmäßig über die gesamte Strecke bildet.
+    In der Nähe des Drain verengt sich der Kanal, teilweise bis zur vollständigen Abschnürung - man spricht vom pinch-off.
+    Trotzdem bleibt der Strom nahezu konstant - aber eine Steigerung des Stroms ist nicht mehr möglich
+    Nochmal zur Erinnerung: Die Anschlüsse Bulk und Source sind in der Regel gebrückt und liegen auf dem gleichen Potenzial.} %seed: 998568
 \end{frame}
 
 \begin{frame}
@@ -1529,6 +1536,11 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             \item Durch $U_\mathrm{GS}$ erfolgt eine Inversion der Ladungsträger unterhalb des Gates.
         \end{itemize}
         }
+        \speech{FET_Elektrisches_Verhalten}{8}{Und hier ein paar Merksätze zum n-Kanal-MOSFET:
+    Er hat drei Anschlüsse: Gate, Source und Drain.
+    Der vierte Anschluss Bulk liegt auf dem Potential von Source
+    Die Steuerung erfolgt spannungsbasiert - über das elektrische Feld
+    Im Gegensatz zum Bipolartransistor fließt am Gate kein Strom - dadurch ist der FET leistungsverlustfrei steuerbar} %seed: 998582
 \end{frame}
 
 \begin{frame}
@@ -1590,6 +1602,13 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             \end{figure}
         \end{table}
     }
+    \speech{FETs}{1}{Hier sehen wir die beiden Grundtypen des JeyFETs - den n-Kanal-JeyFET und den p-Kanal-JeyFET.
+    Gezeigt sind jeweils das Schaltsymbol, die Eingangskennlinie und die Ausgangskennlinie.
+    Das Funktionsprinzip ist bei beiden gleich: Der Stromfluss durch den Kanal wird durch die Spannung am Gate beeinflusst.
+    Beim n-JeyFET sind Elektronen die Hauptladungsträger, beim p-JeyFET dagegen die Löcher.
+    In den Kennlinien sieht man:
+    Die Eingangskennlinie zeigt, dass das Gate wie eine Diode wirkt - je nach Polarität in Sperr- oder Durchlassrichtung.
+    In der Ausgangskennlinie erkennt man die typische Abhängigkeit des Drainstroms von der Gate-Spannung.} %seed: 998622 
 \end{frame}
 
 \begin{frame}
@@ -1635,6 +1654,14 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             \end{figure}
     \end{table}
     }
+    \speech{FETs}{2}{Hier sehen wir nun die beiden Varianten des selbstsperrenden MOSFETs - also Transistoren, die ohne Gate-Spannung nicht leiten.
+    Links der n-Kanal-MOSFET, rechts der p-Kanal-MOSFET.
+    Unterschied:
+    Der n-Kanal benötigt eine positive Gate-Spannung, um leitend zu werden,
+    der p-Kanal entsprechend eine negative Gate-Spannung.
+    In den Kennlinien ist das sehr schön zu erkennen:
+    Ohne Gate-Spannung ist der Kanal gesperrt.
+    Erst wenn U G S die Schwellenspannung überschreitet, bildet sich ein leitender Kanal - und der Drainstrom steigt.} %seed: 998625 
 \end{frame}
 
 
