@@ -47,7 +47,6 @@ aber die Summe all dieser Energieformen bleibt gleich der ursprünglichen potenz
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% erste Makros für TTS %%%%%%%%%%%%%%%%%%%%%%%% test
-% ToDo: Video: Das Intro vom Video wird erstellt, aber danach kommt nichts. auch kein Outro.
 
 \speech{01_Energie1}{1}{ % ToDo: dieser Teil soll bei only 1 kommen %;TODO weitere graphen mit kinetischer, potentieller und (Temperatur?)
 Auch hier sehen wir nochmal ein einfaches Bild mit dem zentralen Hinweis:
@@ -59,15 +58,14 @@ Am linken Rand, wo der Ball ursprünglich gestartet ist, sehen wir den Anfang se
 Er fällt in einer Wurfparabel nach unten.
 Dabei wird potenzielle Energie, also seine Lageenergie, in kinetische Energie gewandelt.
 Der Ball wird immer schneller.
-Jede und jeder, der mal einen Ball aus dem Fenster geworfen hat, kennt das:
+Jede und jeder, der mal einen Ball aus dem Fenster geworfen hat, kennt das.
 Je höher er gestartet ist, desto schneller wird er beim Fallen.
 Das ist genau die Wirkung der potenziellen Energie.
 Wenn der Ball auf dem Boden auftrifft, kommt es zu einem elastischen Stoß.
 Das hat mit dem Impulserhaltungssatz zu tun, den lernst du später im Physikunterricht.
 Die kinetische Energie beim Aufprall wandelt sich beim Hochfliegen wieder in potenzielle Energie um.
 Deshalb springt der Ball fast wieder auf dieselbe Höhe.
-Fast, aber eben nicht ganz.
-Warum?
+Fast, aber eben nicht ganz. Warum?
 Weil Verluste entstehen.
 Zum Beispiel:
 Wenn der Ball auf den Boden auftrifft, wird er leicht verformt.
@@ -86,18 +84,18 @@ Die Energie bleibt erhalten, aber sie wechselt die Form.
 	Energie kann weder erzeugt noch vernichtet werden.
 	Es wandeln sich lediglich die Energieformen.
 	Wie definieren wir Energie nun genau?
-	Wie sehr häufig in der Physik oder auch in der Elektrotechnik versuchen wir das mit einer Formel zu beschreiben.
+	Wie so häufig in der Physik oder auch in der Elektrotechnik versuchen wir das mit einer Formel zu beschreiben.
 
 }
-\speech{01_Energie1}{3}{% von JW hinzugefügt %; TODO etwas laut
-%; TODO schlechter übergang (zu schnell zum nächsten speech)
+\speech{01_Energie1}{3}{
 	In der unteren Hälfte der Folie sehen wir eine Formel.
 	Und diese Formel sagt uns im Grunde Folgendes:
 	Wir können Energie mathematisch beschreiben, und das erlaubt uns, damit zu rechnen und Systeme zu analysieren.
 	Wenn wir diese Formel in Worte fassen, dann ergibt sich daraus eine allgemeine Definition von Energie.
 	Und diese Definition hilft uns, Energieformen zu vergleichen, Umwandlungen zu bewerten und letztlich auch technische Systeme zu planen.
 	}
-\end{frame} % diese zeile habe ich aus zeile 118 hochkopiert, da es dort falsch schien
+	\silence{2}
+\end{frame}
 
 
 \begin{frame}
@@ -142,19 +140,21 @@ In der Physik beschreibt Energie die Fähigkeit, Arbeit zu verrichten, und tritt
 }
 \begin{frame}
 	\ftx{Verschiedene Energieformen}
-\begin{Merksatz}{Die Energieformen auf einen Blick} % Entweder Items verwenden, oder gegen Tabelle ersetzen (sieht nicht schön aus)
-
-	Kinetische Energie (Bewegungsenergie) \\
-	Potenzielle Energie (Lageenergie) \\
-	Thermische Energie (Wärmeenergie) \\
-	Elektrische Energie \\
-	Chemische Energie \\
-	Kernenergie \\
-	Strahlungsenergie % ToDo: Strahlunsenergie muss auch bei den anderen Aufzählungen mit aufgenommen wreden.
+\begin{Merksatz}{Die Energieformen auf einen Blick}
+\begin{itemize}
+	
+	\item Kinetische Energie (Bewegungsenergie) \\
+	\item Potenzielle Energie (Lageenergie) \\
+	\item Thermische Energie (Wärmeenergie) \\
+	\item Elektrische Energie \\
+	\item Chemische Energie \\
+	\item Kernenergie \\
+	\item Strahlungsenergie %; TODO: Strahlunsenergie muss auch bei den anderen Aufzählungen mit aufgenommen wreden.
+\end{itemize}
 	
 \end{Merksatz}
 
-\speech{01_Energie3}{1}{  %; TODO sehr viel text bei sehr wenig bild
+\speech{01_Energie3}{1}{ %guter seed %; TODO sehr viel text bei sehr wenig bild
 Welche Energieformen haben wir denn eigentlich?
 Hier sehen wir einige, die wir in der Elektrotechnik und in der Physik sehr häufig antreffen.
 Zum einen die kinetische Energie, das ist die Bewegungsenergie.
@@ -184,7 +184,7 @@ Dort wird Energie gespeichert und über einen chemischen Prozess wieder abgegebe
 Und zuletzt: Die Kernenergie.
 Wenn wir Atomkerne spalten, wird sehr viel Energie frei.
 Diese liegt oft in Form von thermischer Energie vor, aber auch in Form elektromagnetischer Wellen, also radioaktiver Strahlung.
-Auch das ist eine Energieform: Strahlungsenergie.
+Auch das ist eine Energieform: die Strahlungsenergie.
 }
 
 \end{frame}
@@ -253,24 +253,24 @@ Eingesetzt ergibt dies die folgende vereinfachte Darstellung.
 			E = \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s} \quad \quad [E] = \text{1 Joule = 1 J = 1 Nm} 
 		\end{equation*}
 		
-\speech{01_Energie4}{1}{ %; TODO Vektorbild Kraft vektor und bewegung zur visualisierung
-	Wir haben jetzt viel über Energie geredet, haben gesehen, was Energie ist. Was wir dann aber in der Regel in der Physik immer brauchen, ist auch eine formenmäßige Beschreibung der Energie. Und ganz allgemein, unabhängig davon, welche Energieform wir betrachten, ist die Energie definiert über das Skalarprodukt der Kraft F, die wir aufwenden, multipliziert mit dem Streckenelement ds. Wenn wir also unsere Kraft entlang der Wegstrecke verrichten, dann sind Kraftvektor und Wegstreckenvektor genau gleichgerichtet parallel zueinander und aus dem Skalarprodukt zweier Vektoren wird einfach das Produkt der Beträge dieser beiden Vektoren. Wenn die Wegstrecke, die wir verbringen, senkrecht zu dem Kraftvektor steht, verrichten wir demzufolge keine Arbeit. Die Energie ist null. Warum? Weil dann, dass die beiden Vektoren senkrecht zueinander stehen und das Skalarprodukt aus zwei senkrecht aufeinander stehenden Vektoren ist nun mal null. Das heißt, wir müssen hier die geometrischen Gegebenheiten, wie ist unsere Strecke, wie ist die Kraft, die wir dafür aufbringen müssen, mit berücksichtigen und das ist der Grund, warum wir das Ganze als sogenanntes Linienintegral beschreiben. Ein Linienintegral ist also eine dreidimensionale Schreibung mit Vektoren, wo wir die beiden Richtungen der Vektoren mit berücksichtigen.}
+\speech{01_Energie4}{1}{ %; TODO Vektorbild Kraft vektor und bewegung zur visualisierung? ; TODO: Wird ab "Streckenelement ds" sehr laut (neuer seed ) ;TODO: Skalarprofduktzweier orthogonaler Vektoren als Bild?
+Wir haben jetzt viel über Energie geredet, haben gesehen, was Energie ist. Was wir dann aber in der Regel in der Physik immer brauchen, ist auch eine formel-mäßige Beschreibung der Energie. Und ganz allgemein, unabhängig davon, welche Energieform wir betrachten, ist die Energie definiert über das Skalarprodukt der Kraft F, die wir aufwenden, multipliziert mit dem Streckenelement ds. Wenn wir also unsere Kraft entlang der Wegstrecke verrichten, dann sind Kraftvektor und Wegstreckenvektor genau gleichgerichtet parallel zueinander und aus dem Skalarprodukt zweier Vektoren wird einfach das Produkt der Beträge dieser beiden Vektoren. Wenn die Wegstrecke, die wir verbringen, senkrecht zu dem Kraftvektor steht, verrichten wir demzufolge keine Arbeit. Die Energie ist null. Und Warum? Weil dann die beiden Vektoren senkrecht zueinander stehen und das Skalarprodukt aus zwei senkrecht aufeinander stehenden Vektoren ist nun mal null. Das heißt, wir müssen hier die geometrischen Gegebenheiten, wie ist unsere Strecke, wie ist die Kraft, die wir dafür aufbringen müssen, mit berücksichtigen und das ist der Grund, warum wir das Ganze als sogenanntes Linienintegral beschreiben. Ein Linienintegral ist also eine dreidimensionale Schreibung mit Vektoren, wo wir die beiden Richtungen der Vektoren mit berücksichtigen.}
 
 
 \end{frame}
 \begin{frame}%;TODO schöner sortieren
 	\ftx{Die elektrische Energie}
 	\begin{itemize}
-	\item Eine elektrische Kraft $\vec{F}_\mathrm{{el}}$ liegt vor, wenn eine Ladung $Q$ einem elektrischen Feld $\vec{E}$ ausgesetzt ist
+	\item Eine elektrische Kraft $\vec{F}_\mathrm{{el}}$ liegt vor, wenn eine Ladung $Q$ einem elektrischen Feld $\vec{E}$ ausgesetzt ist.
 	\end{itemize}
 
 	 \begin{equation*}
 			\vec{F}_\mathrm{{el}} = Q \cdot \vec{E}   
 	\end{equation*}
 		
-	\begin{itemize}
-		\item ... %; TODO doppelpunkte, mittn in folie, gehören da nicht nicht hin
-	\end{itemize}
+	%\begin{itemize}
+	%	\item ... %; TODO doppelpunkte, mittn in folie, gehören da nicht nicht hin
+	%\end{itemize}
 		
 	\begin{equation*}
 			E_\mathrm{el} = Q \cdot \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s}
@@ -281,13 +281,13 @@ Eingesetzt ergibt dies die folgende vereinfachte Darstellung.
 			E_\mathrm{el} = Q \cdot U   \quad\quad  [E] = \text{1 Joule = 1 J = 1 Ws}
 		\end{equation*}
 
-\speech{01_Energie5}{1}{ %; TODO F_el wird fel ausgesprochen %;TODO der ladungskraft satz ist furchtbar betont und macht so kein sinn (neuer seed)
-
+\speech{01_Energie5}{1}{%; Q wurde englisch ausgesprochen-> seed zu 933424 verändert
 Wenn wir jetzt die elektrische Energie betrachten möchten, dann gehen wir genauso vor wie vorher auch. Wir betrachten als erstes mal die elektrische Kraft F-EL, die wir ja im ersten Modul kennengelernt haben, die Ladungskraft, und die war definiert als die Ladungsmenge Q, die wir im elektrischen Feld zum Beispiel bewegen möchten, mal dem elektrischen Feld selber.
-Die elektrische Energie ergibt sich dann einfach daraus, dass wir die Formel für F-EL, ist gleich Q mal E, einsetzen in die Formel der allgemeinen
-Energiebeschreibung, nämlich dass die Energie E gleich das Linienintegral von P1 nach P2 FDS ist. Wir setzen also F ist gleich Q mal E in dieses Linienintegral ein und da die Ladungsmenge Q nicht davon abhängig ist, von dem was wir aufintegrieren, sondern eine Konstante ist, können wir diese direkt vor das Integralzeichen ziehen, wie immer bei Konstanten, die unabhängig von den Integranten und Integralen sind. Wir erhalten also für die elektrische Energie, dass diese gleich der Ladung Q mal den Linienintegral von P1 nach P2 EDS ist. Wenn wir uns also senkrecht zu den elektrischen Feldlinien bewegen, dann wird keine Energie aufgewand. Was heißt das denn? Wir haben ja vorher gesehen, dass die elektrischen Feldlinien senkrecht zu den Äquipotentiallinien sind. Genau das sehen wir auch hier an dieser Formel.%; TODO aquipotentiallinien mi tvektror als bild einfügen
- Denn wenn wir uns auf einer Äquipotentiallinie bewegen, also die Wegrichtung senkrecht zu den elektrischen Feldlinien ist, dann bringen wir keine elektrische Energie auf. Das war auch genau das, was wir bei der Einführung des elektrischen Feldes und der Äquipotentiallinie gesehen haben. Das sehen wir wieder hier am Beispiel dieses Linienintegrals.
+Die elektrische Energie ergibt sich dann einfach daraus, dass wir die Formel für F-EL, ist gleich Q mal E, in die Formel der allgemeinen
+Energiebeschreibung einsetzen, nämlich dass die Energie E gleich das Linienintegral von P1 nach P2 FDS ist. Wir setzen also F ist gleich Q mal E in dieses Linienintegral ein. Und da die Ladungsmenge Q nicht davon abhängig ist, von dem was wir aufintegrieren, sondern eine Konstante ist, können wir diese direkt vor das Integralzeichen ziehen, wie immer bei Konstanten, die unabhängig von den Integranten und Integralen sind. Wir erhalten also für die elektrische Energie, dass diese gleich der Ladung Q mal den Linienintegral von P1 nach P2 EDS ist. Wenn wir uns also senkrecht zu den elektrischen Feldlinien bewegen, dann wird keine Energie aufgewand. Was heißt das denn? Wir haben ja vorher gesehen, dass die elektrischen Feldlinien senkrecht zu den Äquipotentiallinien sind. Genau das sehen wir auch hier an dieser Formel.%; TODO aquipotentiallinien mi tvektror als bild einfügen
+Denn wenn wir uns auf einer Äquipotentiallinie bewegen, also die Wegrichtung senkrecht zu den elektrischen Feldlinien ist, dann bringen wir keine elektrische Energie auf. Das war auch genau das, was wir bei der Einführung des elektrischen Feldes und der Äquipotentiallinie gesehen haben. Das sehen wir hier am Beispiel dieses Linienintegrals.
 }
+\silence{2}
 
 
 \end{frame}
@@ -330,12 +330,10 @@ Energiebeschreibung, nämlich dass die Energie E gleich das Linienintegral von P
 	
 \end{figure}}
 
-\speech{01_Energie6}{1}{% guter seed
-	Welche Arten der elektrischen Energiespeicher gibt es jetzt? Wir können prinzipiell unsere Energie relativ gut im Feld speichern. Wir haben ja gesehen, dass Felder generell irgendwie was mit Energie zu tun haben, egal ob das das Gravitationsfeld der Erde ist oder aber auch das elektrische und das magnetische Feld, was sich eben ergibt, wenn wir Ströme und Spannungen haben. Und wenn wir Energie vor allem im elektrischen Feld speichern, dann sind wir hier auf der linken Seite. Das ist ein Modell eines Plattenkondensators. Das heißt, wir haben zwei leitfähige Platten, die stehen sich gegenüber. Und auf der einen Platte sind positive Ladungen, auf der anderen Platte negative Ladungen. Dadurch baut sich das in Rot gezeichnete elektrische Feld auf. Und in diesem elektrischen Feld können wir Energie speichern. Das ist also ein Kondensator oder eine Kapazität, genauer gesagt. Und das Bauteil, was damit verwandt ist, ist ein Kondensator. Diese sind aber nicht unbedingt gleichzusetzen. Das werden wir später nochmal sehen.% (weggelassen da verwirrend->) Er kann in seinem elektrischen Feld elektrische Energie speichern.
-	Auf der rechten Seite sehen wir eine Spule. Und diese Spule besitzt eine Induktivität. Und die Induktivität ist letztlich ein Maß dafür, wie viel Energie wir in dem magnetischen Feld dieses Bauteiles speichern können. Und auch das Magnetfeld überträgt Kräfte und ähnliches. Also ist es auch dafür verantwortlich, dass wir dort Energie speichern können. Das beschreiben wir mit dem Induktivitätsbegriff. Auch hier müssen wir später nochmal genauer unterscheiden, was ist eine Spule, was ist eine Induktivität. Dazu kommen wir dann aber später, wenn wir die Bauteile im nächsten Modul genauer beschreiben. Letztlich sind das aber die beiden Energiespeicher, die wir in der Elektrotechnik erstmal simpel zur Verfügung stehen haben. Einmal die Speicherung im elektrischen Feld, einmal die Speicherung im Magnetfeld. Das eine wäre die Kapazität auf der linken Seite, das andere die Induktivität auf der rechten Seite.
-
-}
-
+\speech{01_Energie6}{1}{% guter seed aber komischer laut am enfang. wird später leiser. das es zu laut nach "das werden wir später nochmal sehen" hat sich von alleine gelöst
+	Welche Arten der elektrischen Energiespeicher gibt es jetzt? Wir können prinzipiell unsere Energie relativ gut im Feld speichern. Wir haben ja gesehen, dass Felder generell irgendwie was mit Energie zu tun haben, egal ob das das Gravitationsfeld der Erde ist oder aber auch das elektrische und das magnetische Feld, was sich eben ergibt, wenn wir Ströme und Spannungen haben. Und wenn wir Energie vor allem im elektrischen Feld speichern, dann sind wir hier auf der linken Seite. Das ist ein Modell eines Plattenkondensators. Das heißt, wir haben zwei leitfähige Platten, die stehen sich gegenüber. Und auf der einen Platte sind positive Ladungen, auf der anderen Platte negative Ladungen. Dadurch baut sich das in Rot gezeichnete elektrische Feld auf. Und in diesem elektrischen Feld können wir Energie speichern. Das ist also ein Kondensator oder genauer gesagt eine Kapazität. Und das Bauteil, was damit verwandt ist, ist ein Kondensator. Diese sind aber nicht unbedingt gleichzusetzen. Das werden wir später nochmal sehen.% (weggelassen da verwirrend->) Er kann in seinem elektrischen Feld elektrische Energie speichern.
+	Auf der rechten Seite sehen wir eine Spule. Und diese Spule besitzt eine Induktivität. Und die Induktivität ist letztlich ein Maß dafür, wie viel Energie wir in dem magnetischen Feld dieses Bauteiles speichern können. Und auch das Magnetfeld überträgt Kräfte und ähnliches. Also ist es auch dafür verantwortlich, dass wir dort Energie speichern können. Das beschreiben wir mit dem Induktivitätsbegriff. Auch hier müssen wir später nochmal genauer unterscheiden, was ist eine Spule, was ist eine Induktivität. Dazu kommen wir dann aber später, wenn wir die Bauteile im nächsten Modul genauer beschreiben. Letztlich sind das aber die beiden Energiespeicher, die wir in der Elektrotechnik erstmal simpel zur Verfügung stehen haben. Einmal die Speicherung im elektrischen Feld, einmal die Speicherung im Magnetfeld. Das eine wäre die Kapazität auf der linken Seite und das andere die Induktivität auf der rechten Seite.}
+\silence{2}
 \end{frame}
 \s{
 		In Abbildung \ref{fig:Elektrische Energiespeicher} sind die beiden grundlegenden elektrischen Energiespeicher dargestellt. Dabei wird links die Energie in einem elektrischen Feld gespeichert. 
@@ -362,8 +360,8 @@ Energiebeschreibung, nämlich dass die Energie E gleich das Linienintegral von P
 					\caption{\textbf{Chemischer Energiespeicher.} Einfacher aufbau einer Batterie.}}
 				\label{fig:Chemischer Energiespeicher}
 			\end{figure}
-\speech{01_Energie7}{1}{%9
-Ein Energiespeicher, den wir in der Elektrotechnik auch benutzen, der aber jetzt nicht klassisch im elektrischen oder magnetischen Feld Energie speichert, sondern tatsächlich eine Energiewandlung vornimmt, wäre ein sogenannter Akkumulator oder auch eine Batterie. Die hat eine negativ beladene Anode und eine positiv beladene Kathode. Wir haben in der Mitte einen Separator, die Anode trägt Material, die Kathode trägt Material. Diese Materialien können über einen sogenannten Ionstrom miteinander reagieren. Dafür braucht es ein Trägermaterial, das ist das Elektrolyt, und der Separator ist dafür da, das Elektrolyt durchzulassen, aber ansonsten zu isolieren, weil wir ansonsten intern innerhalb der Batterie bereits einen Kurzschluss hätten. Es finden also an Anoden und Kathoden elektrochemische Reaktionen statt, wodurch Ladungsträger frei werden und in einem Strom fließen können. Und dieser Strom gibt Energie in das System. Woher kommt die Energie? Durch die Wandlung der Materialien. Das heißt, dort wird chemische Energie in elektrische Energie gewandelt.
+\speech{01_Energie7}{1}{
+Ein Energiespeicher, den wir in der Elektrotechnik auch benutzen, der aber jetzt nicht klassisch im elektrischen oder magnetischen Feld Energie speichert, sondern tatsächlich eine Energiewandlung vornimmt, wäre ein sogenannter Akkumulator oder auch eine Batterie. Die hat eine negativ beladene Anode und eine positiv beladene Kathode. Wir haben in der Mitte einen Separator, die Anode trägt Material und auch die Kathode trägt Material. Diese Materialien können über einen sogenannten Ionenstrom miteinander reagieren. Dafür braucht es ein Trägermaterial, das ist das Elektrolyt, und der Separator ist dafür da, das Elektrolyt durchzulassen, aber ansonsten zu isolieren, weil wir ansonsten intern innerhalb der Batterie bereits einen Kurzschluss hätten. Es finden also an Anode und Kathode elektrochemische Reaktionen statt, wodurch Ladungsträger frei werden und in einem Strom fließen können. Und dieser Strom gibt Energie in das System. Woher kommt die Energie? Durch die Wandlung der Materialien. Das heißt, dort wird chemische Energie in elektrische Energie gewandelt.
 Ein weiteres sehr ähnliches Beispiel chemische Energie in elektrische Energie zu wandeln, wäre zum Beispiel eine Brennstoffzelle, in der wir Wasserstoff und Sauerstoff miteinander reagieren lassen. Dabei werden ebenfalls Elektronen freigesetzt, die zum Stromfluss beitragen können. Und dabei entsteht letztlich Wasser als einziges neues chemisches Produkt. Das kann dann aus dem System entweichen. Innerhalb einer Batterie hingegen bleibt die Gesamtmasse im System gleich. Aber beim Laden und Entladen werden sich die Gewichte von Anode und Kathode jeweils verändern, weil wirklich Material von der Anode zur Kathode beziehungsweise der Kathode zur Anode wandert.
 }
 
