@@ -65,7 +65,7 @@
     \immediate\write\speechRenderVideoScript{cp ../Templates/VideoTitle.tex VideoTitle.tex}
     \immediate\write\speechRenderVideoScript{latexmk -pdf -output-directory=TeXAux VideoTitle.tex}
     \immediate\write\speechRenderVideoScript{rm VideoTitle.tex}
-    \immediate\write\speechRenderVideoScript{cd TeXAuX}
+    \immediate\write\speechRenderVideoScript{cd TeXAux}
     \immediate\write\speechRenderVideoScript{convert -limit memory 2GB -limit map 2GB -density 350 -colorspace sRGB VideoTitle.pdf video/VideoTitle_\printvideoname.png}
     \immediate\write\speechRenderVideoScript{cp video/VideoTitle_\printvideoname.png ../Videos/\GetItDigitalModulnumber_\thevideocounter_\printvideoname.png}
     \immediate\write\speechRenderVideoScript{rm VideoTitle.*}

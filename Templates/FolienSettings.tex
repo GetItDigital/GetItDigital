@@ -37,6 +37,10 @@
 }
 \newenvironment{bsp}[2][\ ]{}{}
 
+% Remove numbering from unstarred math environments (equation, align, alignat, gather, flalign, multline) by redefining amsmath internals
+\renewcommand{\label@in@display}{\gdef\df@label} % \label in align-like environments ignored (\ref -> ??), prevents "multiple \label's" error
+\renewcommand{\@eqnswtrue}{\@eqnswfalse} % prevents numbering of unstarred math environments
+
 %Highlighting
 \newcommandx*\highlight[5][3=\hfofflower, 4=\hfoffupper,5=2]{\tikzmarkin<#5>[blend mode=multiply]{#1}(0,#3)(0,#4)#2\tikzmarkend{#1}}
 % usage: \highlight{markerid}{markercontent}[offset below][offset upper][beamer overlay]

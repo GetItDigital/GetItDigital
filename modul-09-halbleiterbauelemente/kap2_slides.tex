@@ -1741,6 +1741,10 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             %\label{fig:QuerschnittCMOSStruktur}
         \end{figure}
     }
+    \speech{FET_Aufbau}{1}{Hier sehen wir den Querschnitt einer CMOS-Struktur.
+    CMOS steht für Complementary Metal-Oxide-Semiconductor - also die Kombination aus einem n-Kanal- und einem p-Kanal-MOSFET.
+    Beide Transistoren werden im gleichen Substrat gefertigt, aber in unterschiedlichen Dotierungsinseln.
+    So können sie auf engem Raum nebeneinander liegen und bilden die Grundlage für digitale Schaltungen wie Inverter, Gatter und Prozessoren.} %seed: 834677 
 \end{frame}
 
 \begin{frame}
@@ -1753,6 +1757,11 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             %\label{fig:QuerschnittN-KanalJFET}
         \end{figure}
     }
+    \speech{FET_Aufbau}{2}{Hier sehen wir den Querschnitt eines n-Kanal-JeyFET.
+    Rechts die Source, links die Drain-Zone - dazwischen liegt ein n-Kanal, durch den Elektronen fließen können.
+    Das Gate besteht aus p-dotierten Bereichen, die seitlich in den Kanal hineinragen.
+    Legt man eine negative Gate-Spannung an, vergrößern sich die Sperrschichten und engen den Kanal ein - bis er schließlich komplett abgeschnürt wird.
+    So steuert der JeyFET den Stromfluss.}
 \end{frame}
 
 \begin{frame}
@@ -1763,6 +1772,10 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             \item JFETs weisen den einfachsten Aufbau von FETs auf.
         \end{itemize}
         }
+    \speech{FET_Aufbau}{3}{CMOS Technik nutzt n- und p-Kanal-MOSFETs gleichzeitig - und ermöglicht dadurch extrem stromsparende, digitale Schaltungen.
+    Die wichtigsten Punkte hier:
+    Der Jey FET ist einfacher aufgebaut als der MOSFET, wird aber heute seltener eingesetzt.
+    Die Steuerung erfolgt über die Verbreiterung oder Verengung des Kanals durch die Gate-Spannung.} %seed: 834837
 \end{frame}
 
 \begin{frame}
@@ -1783,6 +1796,11 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             %\label{fig:MOSFETAlsSteuerbarerWiderstand}
         \end{figure}
     }
+    \speech{FET_Anwendungen}{1}{Ein MOSFET kann nicht nur als Schalter oder Verstärker arbeiten - er lässt sich im linearen Bereich auch als steuerbarer Widerstand einsetzen.
+    Links siehst du einen Spannungsteiler, bei dem der untere Widerstand durch einen MOSFET ersetzt wurde.
+    Je nach Gate-Spannung verändert sich der Widerstandswert dieses Transistors - und damit auch die Teilung der Spannung.
+    Rechts ist das Prinzip noch einmal vereinfacht dargestellt:
+    Der MOSFET wirkt wie ein variabler Widerstand, der rein elektrisch gesteuert werden kann.} %seed: 834879
 \end{frame}
 
 \begin{frame}
@@ -1791,6 +1809,10 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
         Der ohmsche Widerstand eines MOSFETs kann durch $U_\mathrm{GS}$ gesteuert werden, 
         der Durchgangswiderstand ist allerdings gering und der Wertebereich sehr schmal.  
         }
+    \speech{FET_Anwendung}{2}{Merken wir uns also:
+    Ein MOSFET kann im ohmschen Bereich seiner Kennlinie wie ein spannungsabhängiger Widerstand verwendet werden.
+    Das ist besonders praktisch für analoge Schaltungen, etwa in Verstärkern oder regelbaren Filtern.
+    Der Durchgangswiderstand ist allerdings gering und der Wertebereich sehr schmal.} %seed: 834912
 \end{frame}
 
 \begin{frame}
@@ -1811,6 +1833,10 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             %\label{fig:MOSFETAlsSchalter}
         \end{figure}
     }
+    \speech{FET_Anwendung}{3}{Noch häufiger wird der MOSFET als elektronischer Schalter verwendet.
+    Liegt die Gate-Spannung unterhalb der Schwellenspannung, sperrt der Transistor - die Drain-Source-Strecke ist hochohmig. Der Schalter ist also geöffnet.
+    Liegt die Gate-Spannung oberhalb der Schwellenspannung, ist der Transistor leitend - die Drain-Source-Strecke verhält sich wie ein kleiner Widerstand. Der Schalter ist also geschlossen.
+    Der große Vorteil: Am Gate fließt praktisch kein Strom, die Schaltzeiten sind sehr kurz, und man kann auch große Ströme im Drain-Source Pfad steuern.} %seed: 834921
 \end{frame}
 
 \begin{frame}
@@ -1820,6 +1846,8 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
         diesem Szenario ist ihre hohe Schaltgeschwindigkeit, der niedrige Widerstand im leitenden Zustand
         sowie der hohe Eingangswiderstand am Gate.
         }
+    \speech{FET_Anwendung}{4}{Das Wichtigste in einem Satz:
+    Der MOSFET funktioniert wie ein spannungs-gesteuerter Schalter, der schnell, verlustarm und effizient zwischen Leiten und Sperren umschalten kann.} %seed: 835073
 \end{frame}
 
 \begin{frame}
@@ -1838,6 +1866,16 @@ Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleist
             %\label{fig:MOSFETAlsInverter}
         \end{figure}
     }
+    \speech{FET_Anwendungen}{5}{Eine der bekanntesten Anwendungen ist der C MOS-Inverter.
+    Im Schaltbild siehst du:
+    Oben ein p-Kanal-MOSFET, unten ein n-Kanal-MOSFET.
+    Beide sind am gleichen Eingangssignal angeschlossen.
+    Das Funktionsprinzip ist einfach:
+    Liegt der Eingang auf Low, leitet der p-Kanal-FET - und der Ausgang liegt auf High.
+    Liegt der Eingang auf High, leitet der n-Kanal-FET - und der Ausgang liegt auf Low.
+    Die Spannungsverläufe rechts zeigen diesen Zusammenhang deutlich:
+    Aus einem hohen Eingangssignal wird ein niedriges Ausgangssignal, und umgekehrt.
+    Genau dieses Prinzip bildet die Grundlage aller digitalen Logikgatter - vom einfachen Inverter bis hin zu komplexen Mikroprozessoren.} %seed: 835115
 \end{frame}
 
 
