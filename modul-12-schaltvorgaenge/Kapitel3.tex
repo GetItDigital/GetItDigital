@@ -79,7 +79,7 @@ Wir lernen die Zeitkonstante Tau kennen und verstehen und berechnen Lade- und En
         RC- oder RL-Glied $\Longrightarrow$ \textbf{DGL} 1. Ordnung
 
         \begin{equation*}
-            a_1 \cdot \dt\, y(t) + a_0 \cdot y(t) = b
+            a_1 \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, y(t) + a_0 \cdot y(t) = b
         \end{equation*}
     \end{minipage}%
     \begin{minipage}{0.48\textwidth}\centering
@@ -193,7 +193,7 @@ Die Exponentialform resultiert aus dem flüchtigen Zustand, das heißt der homog
     und ergibt sich aus der Lösung der linearen, gewöhnlichen DGL 1. Ordnung mit konstanten Koeffizienten.
     Durch Umformung ($a_0=1$) lässt sich die Zeitkonstante $\tau$ direkt aus der DGL ablesen ($a_1=\tau$).:
     \begin{equation}\label{eq:dgl:tau}
-        \tau \cdot \dt\,y(t) + y(t) = b(t)
+        \tau \cdot \frac{\mathrm{d}}{\mathrm{d}t}\,y(t) + y(t) = b(t)
     \end{equation}
     Dadurch lässt sich die homogene Lösung direkt angeben mit.:
     \begin{equation}
@@ -313,15 +313,15 @@ Die Orientierungswerte sind zum Beispiel hilfreich bei der Dimensionierung von B
                 &\text{mit}\quad \ecv{u_R} = R \cdot \eci{i} \\
             &&&&
                 R \cdot {\color{red} i} + \ecv{u_C}    &= \ecv{U_q}&&&
-                &\text{mit}\quad \eci{i} = C \cdot \dt \ecv{u_C} \\
+                &\text{mit}\quad \eci{i} = C \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C} \\
             &\text{DGL}:&&&
-                R \cdot C \cdot \dt \ecv{u_C}  + \ecv{u_C}   &= \ecv{U_q}
+                R \cdot C \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}  + \ecv{u_C}   &= \ecv{U_q}
                 \\[-15pt]&\hphantom{R1ooooooo}&&&\hphantom{L3oooooooooooooooooooo}&\hphantom{R3ooo}&&&&\hphantom{R5oooooooooooooooooooooo}\nonumber% Dummy-Zeile A für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
             \end{align*}%
         \textbf{2.) Homogene Lösung, allg.:} (flüchtig) (ohne Störterm)%
         \begin{align*}%
             &\text{DGL}_{h}:&&&
-                RC \cdot \dt \ecv{u_{C,\mathrm{h}}} + \ecv{u_{C,\mathrm{h}}} &= 0 &&&
+                RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_{C,\mathrm{h}}} + \ecv{u_{C,\mathrm{h}}} &= 0 &&&
                     &\text{Ansatz:}\quad
                     \ecv{u_{C,\mathrm{h}}} = K \cdot \mathrm{e}^{\lambda t}\\
             &&&&
@@ -337,7 +337,7 @@ Die Orientierungswerte sind zum Beispiel hilfreich bei der Dimensionierung von B
         \textbf{3.) Partikulare Lösung:} (eingeschwungen) (für $t \to \infty$)%
         \begin{align*}%
             &\text{DGL}_{p}:&&&
-                \redcancel{RC \cdot \dt \ecv{u_{C,p}}} + \ecv{u_{C,p}} &= \ecv{U_q} &&&
+                \redcancel{RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_{C,p}}} + \ecv{u_{C,p}} &= \ecv{U_q} &&&
                     &\text{mit}\quad \ecv{u_{C,p}} = konst.  \\
             &\text{part. Lsg.}:&&&
                 \ecv{u_{C,p}} &= \ecv{U_q}
@@ -367,7 +367,7 @@ Die Orientierungswerte sind zum Beispiel hilfreich bei der Dimensionierung von B
         \begin{align*}%
             &\text{Strom:}&&&
                 \eci{i} &= \frac{\ecv{U_q}}{R} \cdot \mathrm{e}^{-\sfrac{t}{\tau}} &&&
-                &\text{mit}\quad \eci{i} = C \cdot \dt \ecv{u_C}
+                &\text{mit}\quad \eci{i} = C \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}
             \\[-15pt]&\hphantom{R1oooooooooooo}&&&\hphantom{L3ooo}&\hphantom{R3oooooooooooooooo}&&&&\hphantom{R5oooooooooooooooooooooo}\nonumber% Dummy-Zeile B für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
         \end{align*}
         \endgroup
@@ -402,8 +402,8 @@ Die Orientierungswerte sind zum Beispiel hilfreich bei der Dimensionierung von B
                 \ecv{u_R} + \ecv{u_C}  &= 0&&&
                 &\text{mit}\quad \ecv{u_R} = R \cdot \eci{i} \\
             &\text{DGL}:&&&
-                RC \cdot \dt \ecv{u_C}  + \ecv{u_C}   &= 0 &&&
-                &\text{mit}\quad \eci{i} = C \cdot \dt \ecv{u_C}
+                RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}  + \ecv{u_C}   &= 0 &&&
+                &\text{mit}\quad \eci{i} = C \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}
             \\[-15pt]&\hphantom{R1ooooooo}&&&\hphantom{L3oooooooooooooooooooo}&\hphantom{R3ooo}&&&&\hphantom{R5oooooooooooooooooooooo}\nonumber% Dummy-Zeile A für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
         \end{align*}%
         \textbf{2.) Homogene Lösung, allg.:} (flüchtig) Identisch zu Beispiel \ref{bsp:rc:chargedc}%
@@ -434,7 +434,7 @@ Die Orientierungswerte sind zum Beispiel hilfreich bei der Dimensionierung von B
         \begin{align*}%
             &\text{Strom:}&&&
                 \eci{i} &= - \frac{\ecv{U_q}}{R} \cdot \mathrm{e}^{-\sfrac{t}{\tau}} &&&
-                &\text{mit}\quad \eci{i} = C \cdot \dt \ecv{u_C}
+                &\text{mit}\quad \eci{i} = C \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}
             \\[-15pt]&\hphantom{R1oooooooooooo}&&&\hphantom{L3ooo}&\hphantom{R3oooooooooooooooo}&&&&\hphantom{R5oooooooooooooooooooooo}\nonumber% Dummy-Zeile B für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
         \end{align*}
         \endgroup
@@ -463,7 +463,7 @@ Die Orientierungswerte sind zum Beispiel hilfreich bei der Dimensionierung von B
 \resizebox{0.9\textwidth}{!}{% to fit on slide
 \begin{minipage}{\textwidth}%
 \begin{align*}
-&\textbf{1. DGL}&\hspace{15pt}\ecv{U_q} &= RC \cdot \dt \ecv{u_C} + \ecv{u_C} \vphantom{\Big|}\\
+&\textbf{1. DGL}&\hspace{15pt}\ecv{U_q} &= RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C} + \ecv{u_C} \vphantom{\Big|}\\
 &\textbf{2. Homogene Lösung}&\hspace{15pt}\ecv{u_{C,h}} &= K \cdot \mathrm{e}^{-\sfrac{t}{\tau}} \hspace{15pt}\text{mit } \tau = RC \vphantom{\Big|}\\
 &\textbf{3. Partikulare Lösung}&\hspace{15pt}\ecv{u_{C,p}} &= \ecv{U_q} \vphantom{\Big|}\\
 &\textbf{4. Inhomogene Lösung}&\hspace{15pt}\ecv{u_C} &= K \cdot \mathrm{e}^{-\sfrac{t}{\tau}} + \ecv{U_q} \vphantom{\Big|}\\
@@ -490,7 +490,7 @@ Unten sehen wir die 5 Schritte des Berechnungsverfahrens in Kurzform und die daz
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
     \vspace{0.8cm}
     \textbf{DGL 1. Ordnung:}\\[0.85em]
-    $a_1 \cdot \dt y(t) + a_0 \cdot y(t)=b$\\
+    $a_1 \cdot \frac{\mathrm{d}}{\mathrm{d}t} y(t) + a_0 \cdot y(t)=b$\\
 \end{minipage}
 \end{minipage}
 \vspace{0.75cm}
@@ -507,12 +507,12 @@ Ausgehend von der Maschengleichung wird $\ecv{u_R}$ in Abhängigkeit von $\ecv{u
 \onslide<3->{% <--- Overlay
 &&
     R \cdot {\color{red} i} + \ecv{u_C}    &= \ecv{U_q}&
-        &\text{mit}\quad \ecv{u_R} = R \cdot \eci{i} \vphantom{\dt}
+        &\text{mit}\quad \ecv{u_R} = R \cdot \eci{i} \vphantom{\frac{\mathrm{d}}{\mathrm{d}t}}
 }\\[2pt]%
 \onslide<4->{% <--- Overlay
 &\text{DGL}:&
-    R \cdot C \cdot \dt\, \ecv{u_C}  + \ecv{u_C}   &= \ecv{U_q}&
-        &\text{mit}\quad \eci{i} = C \cdot \dt\, \ecv{u_C}
+    R \cdot C \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \ecv{u_C}  + \ecv{u_C}   &= \ecv{U_q}&
+        &\text{mit}\quad \eci{i} = C \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \ecv{u_C}
 }%
 \end{align*}%
 
@@ -539,7 +539,7 @@ Und die Quellenspannung U q entspricht der Störgröße b.
 \textbf{2.) Homogene Lösung, allg.:} (flüchtig) (ohne Störterm)\\[-1em]
 \begin{align*}
 &\text{DGL}_{h}:&
-    RC \cdot \dt \ecv{u_{C,h}} + \ecv{u_{C,h}} &= 0 &
+    RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_{C,h}} + \ecv{u_{C,h}} &= 0 &
         &\text{Ansatz: }
         \ecv{u_{C,h}} = K \cdot \mathrm{e}^{\lambda t}\\
 && K \cdot(
@@ -556,8 +556,8 @@ Und die Quellenspannung U q entspricht der Störgröße b.
 \textbf{3. Partikulare Lösung:} (eingeschwungen) (für $t \to \infty$)\\[-1em]
 \begin{align*}
 &\text{DGL}_{p}:&
-    \redcancel{RC \cdot \dt \ecv{u_{C,p}}} + \ecv{u_{C,p}} &= \ecv{U_q}
-        &&\text{mit}\quad \left.\dt\right|_{t \to \infty} = 0  \\
+    \redcancel{RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_{C,p}}} + \ecv{u_{C,p}} &= \ecv{U_q}
+        &&\text{mit}\quad \left.\frac{\mathrm{d}}{\mathrm{d}t}\right|_{t \to \infty} = 0  \\
 &\text{part. Lsg.}:&
     \ecv{u_{C,p}} &= \ecv{U_q} %
 \\[-15pt]&\hphantom{R1oooooooooo}&\hphantom{L2oooooooooooooooooooooo}&\hphantom{R2oooo}&&\hphantom{R3oooooooooooooooooo}% Dummy-Zeile RL-DC für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
@@ -606,7 +606,7 @@ Da es sich um Gleichgrößen handelt, ist die zeitliche Ableitung von u c p glei
     \ecv{u_C}(t) &= \ecv{U_q} \left( 1 - \mathrm{e}^{-\sfrac{t}{\tau}} \right) \\[2pt]
 &\text{Strom: }&
     \eci{i_C}(t) &= \frac{\ecv{U_q}}{R} \cdot \mathrm{e}^{-\sfrac{t}{\tau}} &
-    &\text{mit}\quad \eci{i_C} = C \cdot \dt \ecv{u_C}
+    &\text{mit}\quad \eci{i_C} = C \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}
 \\[-15pt]&\hphantom{R1oooooooooo}&\hphantom{L2oooooooo}&\hphantom{R2oooooooooooooooooo}&&\hphantom{R3oooooooooooooooooo}% Dummy-Zeile RL-DC für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
 \end{align*}%
 
@@ -667,7 +667,7 @@ Ausgehend von der selben Schaltung bestimmen wir nun den Entladevorgang des R C 
 \resizebox{0.9\textwidth}{!}{% to fit on slide
 \begin{minipage}{\textwidth}%
 \begin{align*}
-&\textbf{1. DGL}&\hspace{15pt} 0 &= RC \cdot \dt \ecv{u_C} + \ecv{u_C}\\
+&\textbf{1. DGL}&\hspace{15pt} 0 &= RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C} + \ecv{u_C}\\
 &\textbf{2. Homogene Lösung}&\hspace{15pt}\ecv{u_{C,h}} &= K \cdot \mathrm{e}^{-\sfrac{t}{\tau}} \hspace{15pt}\text{mit } \tau = RC\\[0.5em]
 &\textbf{3. Partikulare Lösung}&\hspace{15pt}\ecv{u_{C,p}} &= 0\\[0.35em]
 &\textbf{4. Inhomogene Lösung}&\hspace{15pt}\ecv{u_C} &= K \cdot \mathrm{e}^{-\sfrac{t}{\tau}}\\[0.3em]
@@ -699,7 +699,7 @@ Unten sind die fünf Schritte des Berechnungsverfahrens mit den jeweiligen Teill
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
     \vspace{0.8cm}
     \textbf{DGL 1. Ordnung:}\\[0.85em]
-    $a_1 \cdot \dt y(t) + a_0 \cdot y(t)=b$\\
+    $a_1 \cdot \frac{\mathrm{d}}{\mathrm{d}t} y(t) + a_0 \cdot y(t)=b$\\
 \end{minipage}
 \end{minipage}%
 \vspace{0.75cm}
@@ -718,9 +718,9 @@ Ausgehend von der Maschengleichung wird $\ecv{u_R}$ in Abhängigkeit von $\ecv{u
         &&\text{mit}\quad
         \ecv{u_R} = R \cdot \eci{i_R} = R \cdot \eci{i}\\
 &\text{DGL}:&
-    RC \cdot \dt \ecv{u_C}  + \ecv{u_C}   &= 0
+    RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}  + \ecv{u_C}   &= 0
         &&\text{mit}\quad
-        \eci{i} = \eci{i_C} = C \cdot \dt \ecv{u_C}
+        \eci{i} = \eci{i_C} = C \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}
 \end{align*}%
 
 \speech{SchaltvorgaengeDC2RCEntladevorgang2}{1}{%
@@ -735,7 +735,7 @@ Dadurch erhalten wir die homogene D G L aus dem Ladevorgang.
 \textbf{2.) Homogene Lösung, allg.:} (flüchtig)\\[-1.5em]
 \begin{align*}
 &\text{DGL}_{h}:&
-    RC \cdot \dt \ecv{u_{C,h}} + \ecv{u_{C,h}} &= 0 &
+    RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_{C,h}} + \ecv{u_{C,h}} &= 0 &
         &\text{Ansatz: }\ecv{u_{C,h}} = K \cdot \mathrm{e}^{\lambda t}\\
 &\text{char. Polynom:}&\Rightarrow\quad
     RC \cdot \lambda + 1 &= 0 &
@@ -761,7 +761,7 @@ Dadurch erhalten wir die homogene D G L aus dem Ladevorgang.
     \ecv{u_C}(t) &= \ecv{U_q} \cdot  \mathrm{e}^{-\sfrac{t}{\tau}}\\
 &\text{Strom: }&
     \eci{i_C}(t) &= - \frac{\ecv{U_q}}{R} \cdot \mathrm{e}^{-\sfrac{t}{\tau}}&
-    &\text{mit}\quad \eci{i_C} = C \cdot \dt \ecv{u_C}
+    &\text{mit}\quad \eci{i_C} = C \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}
 \end{align*}% new alignments
 
 \speech{SchaltvorgaengeDC2RCEntladevorgang3}{1}{%
@@ -862,16 +862,16 @@ und unterscheiden sich in diesem Beispiel nur beim Störterm (der Anregung), den
             \ecv{u_R} + \ecv{u_L}  &= \ecv{U_q}&&&
             &\text{mit}\quad \ecv{u_R} = R \cdot \eci{i} \\
         &&&&
-            R \cdot \eci{i} + L \cdot \dt \eci{i} &= \ecv{U_q} &&&
-            &\text{mit}\quad \ecv{u_L} = L \cdot \dt \eci{i} \\
+            R \cdot \eci{i} + L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i} &= \ecv{U_q} &&&
+            &\text{mit}\quad \ecv{u_L} = L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i} \\
         &\text{DGL}:&&&
-        \frac{L}{R} \cdot \dt \eci{i}  + \eci{i}  &= \frac{\ecv{U_q}}{R}
+        \frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i}  + \eci{i}  &= \frac{\ecv{U_q}}{R}
         \\[-15pt]&\hphantom{R1oooooooooo}&&&\hphantom{L3ooooooooooo}&\hphantom{R3ooooooooooooooo}&&&&\hphantom{R5oooooooooooooooooo}\nonumber% Dummy-Zeile RL-DC für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
     \end{align*}%
     \textbf{2.) Homogene Lösung, allg.:} (flüchtig) (ohne Störterm)%
     \begin{align*}%
         &\text{DGL}_{h}:&&&
-            \frac{L}{R} \cdot \dt \eci{i_{\mathrm h}} + \eci{i_{\mathrm h}} &= 0 &&&
+            \frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i_{\mathrm h}} + \eci{i_{\mathrm h}} &= 0 &&&
                 &\text{Ansatz:}\quad
                 \eci{i_{\mathrm h}} = K \cdot \mathrm{e}^{\lambda t}\\
         &\text{char. Pol.:}&&&
@@ -885,7 +885,7 @@ und unterscheiden sich in diesem Beispiel nur beim Störterm (der Anregung), den
     \textbf{3.) Partikulare Lösung:} (eingeschwungen) mit $t \to \infty$%
     \begin{align*}%
         &\text{DGL}_{p}:&&&
-            \redcancel{\frac{L}{R} \cdot \dt \eci{i_{\mathrm p}}} + \eci{i_{\mathrm p}} &= \frac{\ecv{U_q}}{R} &&&
+            \redcancel{\frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i_{\mathrm p}}} + \eci{i_{\mathrm p}} &= \frac{\ecv{U_q}}{R} &&&
                 &\text{mit}\quad \eci{i_{\mathrm p}} = konst.  \\
         &\text{part. Lsg.}:&&&
             \eci{i_{\mathrm p}} &= \frac{\ecv{U_q}}{R}
@@ -918,10 +918,10 @@ und unterscheiden sich in diesem Beispiel nur beim Störterm (der Anregung), den
     \begin{align*}%
         %&&&&
         %    \ecv{u_L} &= \frac{\ecv{U_q}}{R} \cdot L \cdot \frac{R}{L} \cdot \mathrm{e}^{-\sfrac{t}{\tau}} &&&
-        %    &\text{mit}\quad \ecv{u_L} = L \cdot \dt \eci{i} \\
+        %    &\text{mit}\quad \ecv{u_L} = L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i} \\
         &\text{Spannung:}&&&
             \ecv{u_L} &= \ecv{U_q} \cdot \mathrm{e}^{-\sfrac{t}{\tau}} &&&
-            &\text{mit}\quad \ecv{u_L} = L \cdot \dt \eci{i}
+            &\text{mit}\quad \ecv{u_L} = L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i}
         \\[-15pt]&\hphantom{R1oooooooooo}&&&\hphantom{L3ooooooooooo}&\hphantom{R3ooooooooooooooo}&&&&\hphantom{R5oooooooooooooooooo}\nonumber% Dummy-Zeile RL-DC für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
     \end{align*}
     \endgroup
@@ -988,7 +988,7 @@ Zur Überprüfung bestimmen wir im folgenden detailliert den Ladevorgang und dan
 \resizebox{0.9\textwidth}{!}{% to fit on slide
 \begin{minipage}{\textwidth}%
 \begin{align*}
-&\textbf{1. DGL}&\hspace{15pt}\frac{\ecv{U_q}}{R} &= \frac{L}{R} \cdot \dt\, \eci{i} + \eci{i}\\[-2pt]
+&\textbf{1. DGL}&\hspace{15pt}\frac{\ecv{U_q}}{R} &= \frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \eci{i} + \eci{i}\\[-2pt]
 &\textbf{2. Homogene Lösung}&\hspace{15pt}\eci{i_{\mathrm{h}}} &= K \cdot \mathrm{e}^{-\sfrac{t}{\tau}} \quad\text{mit}\quad \tau = \frac{L}{R}\\[-2pt]
 &\textbf{3. Partikulare Lösung}&\hspace{15pt}\eci{i_{\mathrm{p}}} &= \frac{\ecv{U_q}}{R}\\[-2pt]
 &\textbf{4. Inhomogene Lösung}&\hspace{15pt}\eci{i} &= K \cdot \mathrm{e}^{-\sfrac{t}{\tau}} + \frac{\ecv{U_q}}{R}\\[-2pt]
@@ -1017,7 +1017,7 @@ Unten sind die fünf Rechenschritte mit Teillösungen zusammen gefasst, welche w
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
     \vspace{0.8cm}
     \textbf{DGL 1. Ordnung:}\\[0.85em]
-    $a_1 \cdot \dt y(t) + a_0 \cdot y(t)=b$\\
+    $a_1 \cdot \frac{\mathrm{d}}{\mathrm{d}t} y(t) + a_0 \cdot y(t)=b$\\
 \end{minipage}
 \end{minipage}
 \vspace{0.75cm}
@@ -1031,13 +1031,13 @@ Unten sind die fünf Rechenschritte mit Teillösungen zusammen gefasst, welche w
     \ecv{u_R} + \ecv{u_L}  &= \ecv{U_q}&
         &\text{mit}\quad \ecv{u_R} = R \cdot \eci{i} \\
 &&
-    R \cdot \eci{i} + L \cdot \dt \eci{i} &= \ecv{U_q} &
-        &\text{mit}\quad \ecv{u_L} = L \cdot \dt \eci{i} \\
+    R \cdot \eci{i} + L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i} &= \ecv{U_q} &
+        &\text{mit}\quad \ecv{u_L} = L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i} \\
 &&
-    L \cdot \dt \eci{i} + R \cdot \eci{i} &= \ecv{U_q} &
-        &\text{mit}\quad \ecv{u_L} = L \cdot \dt \eci{i} \\
+    L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i} + R \cdot \eci{i} &= \ecv{U_q} &
+        &\text{mit}\quad \ecv{u_L} = L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i} \\
 &\text{DGL}:&
-    \frac{L}{R} \cdot \dt \eci{i}  + \eci{i}  &= \frac{\ecv{U_q}}{R}
+    \frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i}  + \eci{i}  &= \frac{\ecv{U_q}}{R}
 \end{align*}%
 
 \speech{SchaltvorgaengeDC2RLLadevorgang2}{1}{%
@@ -1056,7 +1056,7 @@ bei der die Einzelterme die gleiche Einheit wie unsere gesuchte Größe haben.
 \textbf{2.) Homogene Lösung, allg.:} (flüchtig) (ohne Störterm)%
 \begin{align*}%
     &\text{DGL}_{h}:&&&
-        \frac{L}{R} \cdot \dt \eci{i_{\mathrm h}} + \eci{i_{\mathrm h}} &= 0 &&&
+        \frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i_{\mathrm h}} + \eci{i_{\mathrm h}} &= 0 &&&
             &\text{Ansatz:}\quad
             \eci{i_{\mathrm h}} = K \cdot \mathrm{e}^{\lambda t}\\
     &\text{char. Pol.}:&&&
@@ -1071,7 +1071,7 @@ bei der die Einzelterme die gleiche Einheit wie unsere gesuchte Größe haben.
 \textbf{3.) Partikulare Lösung:} (eingeschwungen) mit $t \to \infty$%
 \begin{align*}%
     &\text{DGL}_{p}:&&&
-        \redcancel{\frac{L}{R} \cdot \dt \eci{i_{\mathrm p}}} + \eci{i_{\mathrm p}} &= \frac{\ecv{U_q}}{R} &&&
+        \redcancel{\frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i_{\mathrm p}}} + \eci{i_{\mathrm p}} &= \frac{\ecv{U_q}}{R} &&&
             &\text{mit}\quad \eci{i_{\mathrm p}} = konst.  \\
     &\text{part. Lsg.}:&&&
         \eci{i_{\mathrm p}} &= \frac{\ecv{U_q}}{R}
@@ -1119,7 +1119,7 @@ Spannung $\ecv{u_L}$ aus Strom $\eci{i}$ bestimmen:%
 \begin{align*}%
     &\text{Spannung:}&&&
         \ecv{u_L} &= \ecv{U_q} \cdot \mathrm{e}^{-\sfrac{t}{\tau}} &&&
-        &\text{mit}\quad \ecv{u_L} = L \cdot \dt \eci{i}
+        &\text{mit}\quad \ecv{u_L} = L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i}
     \\[-15pt]&\hphantom{R1oooooooooo}&&&\hphantom{L3ooooooooooo}&\hphantom{R3ooooooooooooooo}&&&&\hphantom{R5oooooooooooooooooo}\nonumber% Dummy-Zeile RL-DC für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
 \end{align*}%
 
@@ -1175,18 +1175,18 @@ Beide Ergebnisse sind plausibel.
             &\text{mit}\quad \ecv{u_R} = R \cdot \eci{i} \\
         &&&&
             R \cdot \eci{i} + \ecv{u_L} &= \ecv{U_q} &&&
-            &\left| \cdot \dt \right. \\
+            &\left| \cdot \frac{\mathrm{d}}{\mathrm{d}t} \right. \\
         &&&&
-        R \cdot \frac{\ecv{u_L}}{L}  + \dt \ecv{u_L}  &= \dt \ecv{U_q} &&&
-            &\text{mit}\quad \ecv{u_L} = L \cdot \dt \eci{i} \\
+        R \cdot \frac{\ecv{u_L}}{L}  + \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_L}  &= \frac{\mathrm{d}}{\mathrm{d}t} \ecv{U_q} &&&
+            &\text{mit}\quad \ecv{u_L} = L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i} \\
         &\text{DGL}:&&&
-            \frac{L}{R} \cdot \dt \ecv{u_L} + \ecv{u_L}  &= 0
+            \frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_L} + \ecv{u_L}  &= 0
             \\[-15pt]&\hphantom{R1ooooooo}&&&\hphantom{L3oooooooooooooooooooo}&\hphantom{R3ooo}&&&&\hphantom{R5oooooooooooooooooooooo}\nonumber% Dummy-Zeile A für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
         \end{align*}%
     \textbf{2.) Homogene Lösung, allg.:} (flüchtig) (ohne Störterm)%
     \begin{align*}%
         &\text{DGL}_{h}:&&&
-            \frac{L}{R} \cdot \dt \ecv{u_{L,h}} + \ecv{u_{L,h}} &= 0 &&&
+            \frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_{L,h}} + \ecv{u_{L,h}} &= 0 &&&
                 &\text{Ansatz:}\quad
                 \ecv{u_{L,h}} = K \cdot \mathrm{e}^{\lambda t}\\
         %&&&&
@@ -1202,7 +1202,7 @@ Beide Ergebnisse sind plausibel.
     \textbf{3.) Partikulare Lösung:} (eingeschwungen) mit $t \to \infty$%
     \begin{align*}%
         &\text{DGL}_{p}:&&&
-            \redcancel{\frac{L}{R} \cdot \dt \ecv{u_{L,p}}} + \ecv{u_{L,p}} &= 0 &&&
+            \redcancel{\frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_{L,p}}} + \ecv{u_{L,p}} &= 0 &&&
                 &\text{mit}\quad \ecv{u_{L,p}} = konst.  \\
         &\text{part. Lsg.}:&&&
             \ecv{u_{L,p}} &= 0
@@ -1320,7 +1320,7 @@ Beide Ergebnisse sind plausibel.
 \resizebox{0.9\textwidth}{!}{% to fit on slide
 \begin{minipage}{\textwidth}%
 \begin{align*}
-&\textbf{1. DGL}&\hspace{15pt} 0 &= \frac{L}{R} \cdot \dt\, \eci{i} + \eci{i} \vphantom{\frac{L}{R}}\\[-2pt]
+&\textbf{1. DGL}&\hspace{15pt} 0 &= \frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \eci{i} + \eci{i} \vphantom{\frac{L}{R}}\\[-2pt]
 &\textbf{2. Homogene Lösung}&\hspace{15pt}\eci{i_{\mathrm{h}}} &= K \cdot \mathrm{e}^{-\sfrac{t}{\tau}} \quad\text{mit}\quad \tau = \frac{L}{R} \vphantom{\frac{L}{R}}\\[-2pt]
 &\textbf{3. Partikulare Lösung}&\hspace{15pt}\eci{i_{\mathrm{p}}} &= 0 \vphantom{\frac{L}{R}}\\[-2pt]
 &\textbf{4. Inhomogene Lösung}&\hspace{15pt}\eci{i} &= K \cdot \mathrm{e}^{-\sfrac{t}{\tau}} \vphantom{\frac{U_q}{R}} \vphantom{\frac{L}{R}}\\[-2pt]
@@ -1414,7 +1414,7 @@ Sie lernen:
     RC- oder RL-Glied $\Longrightarrow$ \textbf{DGL} 1. Ordnung
 
     \begin{equation*}
-        a_1 \cdot \dt\, y(t) + a_0 \cdot y(t) = b
+        a_1 \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, y(t) + a_0 \cdot y(t) = b
     \end{equation*}
 \end{minipage}%
 \begin{minipage}{0.48\textwidth}\centering
@@ -1476,7 +1476,7 @@ Durch den ideal gewählten Schaltzeitpunkt entfällt der Einschwingvorgang volls
 
     Die inhomogene DGL von $u_C$ für $t \geq t_0$ ergibt sich analog zu Beispiel \ref{bsp:rc:chargedc} zu:
     \begin{align}
-        RC \cdot \dt \ecv{u_C}(t) + \ecv{u_C}(t) ={}& \ecv{u_q}(t) \\
+        RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}(t) + \ecv{u_C}(t) ={}& \ecv{u_q}(t) \\
         \text{mit} \quad &\ecv{u_q}(t) = \ecv{\hat{U}_q} \cdot \cos(\omega t + \varphi_q)
     \end{align}
     Gegenüber Beispiel \ref{bsp:rc:chargedc} ist lediglich der Störterm verändert. Der Gleichspannungsterm $U_q$ ist hier durch den Wechselspannungsterm $u_q$ ersetzt.
@@ -1595,7 +1595,7 @@ Durch den ideal gewählten Schaltzeitpunkt entfällt der Einschwingvorgang volls
 \resizebox{0.95\textwidth}{!}{% to fit on slide
 \begin{minipage}{\textwidth}\vspace{-0.75cm}%
 \begin{align*}
-&\textbf{1. DGL}&                   \ecv{u_q} &= RC \cdot \dt \ecv{u_C}(t) + \ecv{u_C}(t) = \ecv{\hat{U}_q} \cdot \cos(\omega t + \varphi_q)\\
+&\textbf{1. DGL}&                   \ecv{u_q} &= RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}(t) + \ecv{u_C}(t) = \ecv{\hat{U}_q} \cdot \cos(\omega t + \varphi_q)\\
 &\textbf{2. Homogene Lösung}&       \ecv{u_{C,\mathrm{h}}} &= K \cdot \mathrm{e}^{-\frac{t-t_0}{\tau}} \quad\text{mit}\quad \tau = RC \vphantom{\mathrm{e}^{-\frac{t-t_0}{\tau}}}\\
 &\textbf{3. Partikulare Lösung}&    \ecv{u_{C,\mathrm{p}}} &= \ecv{\hat{U}_{C,\mathrm{p}}} \cdot \cos(\omega t + \varphi_{C,\mathrm{p}}) \vphantom{\mathrm{e}^{-\frac{t-t_0}{\tau}}}\\
 &\textbf{4. Inhomogene Lösung}&     \ecv{u_C} &= K \cdot \mathrm{e}^{-\frac{t-t_0}{\tau}} + \ecv{\hat{U}_{C,\mathrm{p}}} \cdot \cos(\omega t + \varphi_{C,\mathrm{p}}) \vphantom{\mathrm{e}^{-\frac{t-t_0}{\tau}}}\\
@@ -1630,13 +1630,13 @@ Hier sehen kurz zur Übersicht die fünf Schritte des Berechnungsverfahrens und 
         \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
             \vspace{0.8cm}
             \textbf{DGL 1. Ordnung:}\\[0.85em]
-            $a_1 \cdot \dt y(t) + a_0 \cdot y(t)=b$\\
+            $a_1 \cdot \frac{\mathrm{d}}{\mathrm{d}t} y(t) + a_0 \cdot y(t)=b$\\
         \end{minipage}%
     \end{minipage}%
     \vspace{0.85cm}
     \textbf{1.) DGL aufstellen:} für $\ecv{u_c}$ ($t \geq t_0$)\\[-1em]
     \begin{align*}
-        RC \cdot \dt \ecv{u_C}(t) + \ecv{u_C}(t) ={}& \ecv{u_q}(t) \\
+        RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}(t) + \ecv{u_C}(t) ={}& \ecv{u_q}(t) \\
         \text{mit} \quad &\ecv{u_q}(t) = \ecv{\hat{U}_q} \cdot \cos(\omega t + \varphi_q)\quad\text{(Störterm)}
     \end{align*}\pause
 
@@ -1793,7 +1793,7 @@ Beim großen Tau wird nahezu der doppelte negative Scheitelwert erreicht und üb
     Im Beispiel ist die DGL der partikulären Lösung nach Gleichung \ref{eq:grundlagen:dgl:komplex} transformiert:
     \begin{align*}
         &\text{DGL$_{\mathrm p}$:}&
-            \frac{L}{R} \cdot \dt \eci{i_{\mathrm p}} + \eci{i_{\mathrm p}} &= \frac{\ecv{u_q}}{R} &
+            \frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i_{\mathrm p}} + \eci{i_{\mathrm p}} &= \frac{\ecv{u_q}}{R} &
             &\text{mit}\quad \ecv{u_q} = \Re\left\{\ecv{\underline{\hat{U}}_q}\cdot\mathrm{e}^{\mathrm{j}\omega t}\right\} \vphantom{\Bigg|}\\
         &\text{transformiert:}&
             \Leftrightarrow\quad
@@ -1823,7 +1823,7 @@ Beim großen Tau wird nahezu der doppelte negative Scheitelwert erreicht und üb
         \textbf{1.) DGL aufstellen:} von $\eci{i}$ für $t \geq t_0$, Lösung aus Bsp. \ref{bsp:rl:chargedc:dgli}
         \begin{align*}
             &\text{DGL}:&&&
-                \frac{L}{R} \cdot \dt \eci{i}  + \eci{i}   &= \frac{\ecv{u_q}}{R}&&&
+                \frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i}  + \eci{i}   &= \frac{\ecv{u_q}}{R}&&&
                 &\text{mit}\quad \ecv{u_q} = \ecv{\hat{U}_q} \cdot \cos(\omega t + \varphi_q)
             \\[-15pt]&\hphantom{R1oooooooooo}&&&\hphantom{L3ooooooooooo}&\hphantom{R3ooooooooooooooo}&&&&\hphantom{R5ooooooooooooooooooooooo}\nonumber% D Dummy-Zeile RL-AC Step 1-3 für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
         \end{align*}%
@@ -1873,7 +1873,7 @@ Beim großen Tau wird nahezu der doppelte negative Scheitelwert erreicht und üb
                 \eci{i}(t) &= -\eci{\hat{I}_{\mathrm p}} \cdot \cos(\omega t_0 + \varphi_I) \cdot \mathrm{e}^{-\frac{t-t_0}{\tau}} + \eci{\hat{I}_{\mathrm p}} \cdot \cos(\omega t + \varphi_I)
             \\[-15pt]&\hphantom{R1oooooooooo}&&&\hphantom{L3oooooo}&\hphantom{R3ooooooooooooooooooooooooooooooooooooooooooo}&&&&\hphantom{R5}\nonumber% Dummy-Zeile RL-AC Step 4-5 für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
         \end{align*}
-        Spannung $\ecv{u_L}$ über der Induktivität $L$ über $\ecv{u_L} = L \cdot \dt \eci{i}$ berechnen.
+        Spannung $\ecv{u_L}$ über der Induktivität $L$ über $\ecv{u_L} = L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i}$ berechnen.
         \begin{align*}
             &\text{Spannung:}&&&
                 \ecv{u_L}(t) &= R \cdot \eci{\hat{I}_{\mathrm p}} \cdot \cos(\omega t_0 + \varphi_I) \cdot \mathrm{e}^{-\frac{t-t_0}{\tau}} - \omega L \cdot \eci{\hat{I}_{\mathrm p}} \cdot \sin(\omega t + \varphi_I)
@@ -1901,7 +1901,7 @@ Beim großen Tau wird nahezu der doppelte negative Scheitelwert erreicht und üb
 \resizebox{0.95\textwidth}{!}{% to fit on slide
 \begin{minipage}{\textwidth}\vspace{-0.75cm}%
 \begin{align*}
-&\textbf{1. DGL}&                   \frac{\ecv{u_q}}{R} &= \frac{L}{R} \cdot \dt\, \eci{i} + \eci{i} =\frac{\ecv{\hat{U}_q}}{R} \cdot \cos(\omega t + \varphi_q)\\
+&\textbf{1. DGL}&                   \frac{\ecv{u_q}}{R} &= \frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \eci{i} + \eci{i} =\frac{\ecv{\hat{U}_q}}{R} \cdot \cos(\omega t + \varphi_q)\\
 &\textbf{2. Homogene Lösung}&       \eci{i_{\mathrm{h}}}&= K \cdot \mathrm{e}^{-\frac{t-t_0}{\tau}}\quad\text{mit}\quad \tau = \frac{L}{R}\\
 &\textbf{3. Partikulare Lösung}&    \eci{i_{\mathrm p}} &= \eci{\hat{I}_{\mathrm p}} \cdot \cos(\omega t + \varphi_I)\\
 &\textbf{4. Inhomogene Lösung}&     \eci{i} &= K \cdot \mathrm{e}^{-\frac{t-t_0}{\tau}} + \eci{\hat{I}_{\mathrm p}} \cdot \cos(\omega t + \varphi_I)\\
@@ -1934,14 +1934,14 @@ Diese werden wir nun im Einzelnen ausführlicher berechnen.
         \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
             \vspace{0.8cm}
             \textbf{DGL 1. Ordnung:}\\[0.85em]
-            $a_1 \cdot \dt y(t) + a_0 \cdot y(t)=b$\\
+            $a_1 \cdot \frac{\mathrm{d}}{\mathrm{d}t} y(t) + a_0 \cdot y(t)=b$\\
         \end{minipage}%
     \end{minipage}%
     \vspace{0.85cm}
     \textbf{1.) DGL aufstellen:} für $\eci{i}$ mit $t\geq t_0$
     \begin{align*}
         &\text{DGL}:&&&
-            \frac{L}{R} \cdot \dt \eci{i}  + \eci{i}   &= \frac{\ecv{u_q}}{R}&&&
+            \frac{L}{R} \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i}  + \eci{i}   &= \frac{\ecv{u_q}}{R}&&&
             &\text{mit}\quad \ecv{u_q} = \ecv{\hat{U}_q} \cdot \cos(\omega t + \varphi_q)
     \end{align*}%
     \pause% <-- overlay
@@ -2018,7 +2018,7 @@ Achtung: Phi q ist beliebig wählbar, da t null variabel ist, dadurch kann phi q
         \\[-15pt]&\hphantom{R1oooooooooo}&&&\hphantom{L3oooooo}&\hphantom{R3oooooooooooooooooooooooooooooooooooooooooooooo}\nonumber% Dummy-Zeile RL-AC Step 4-5 Folien für horizontales Alignment zwischen align-Umgebungen [15pt hoch]
     \end{align*}\pause
 
-    Spannung $\ecv{u_L}$ mit $\ecv{u_L} = L \cdot \dt \eci{i}$ berechnen:
+    Spannung $\ecv{u_L}$ mit $\ecv{u_L} = L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i}$ berechnen:
     \begin{align*}
         &\text{Spannung:}&&&
             \ecv{u_L}(t) &= R \cdot \eci{\hat{I}_{\mathrm p}} \cdot \cos(\omega t_0 + \varphi_I) \cdot \mathrm{e}^{-\frac{t-t_0}{\tau}} - \omega L \cdot \eci{\hat{I}_{\mathrm p}} \cdot \sin(\omega t + \varphi_I)
@@ -2083,8 +2083,8 @@ Zur Übung können Sie:
     \textbf{1.) DGL aufstellen:} für $\ecv{u_C}$ für $t \geq 0$
     \begin{align}
         \ecv{u_L} + \ecv{u_R} +\ecv{u_C} &= \ecv{u} \nonumber\\
-        L \cdot \dt \eci{i} + R \cdot \eci{i} + \ecv{u_C}&= \ecv{U_q} \nonumber\\
-        LC \cdot \dt[2] \ecv{u_C} + RC \cdot \dt \ecv{u_C} + \ecv{u_C} &= \ecv{U_q} \label{eq:dgl:rlc:dc}
+        L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i} + R \cdot \eci{i} + \ecv{u_C}&= \ecv{U_q} \nonumber\\
+        LC \cdot \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} \ecv{u_C} + RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C} + \ecv{u_C} &= \ecv{U_q} \label{eq:dgl:rlc:dc}
     \end{align}
     Aufgrund der zwei verschiedenen Energiespeichern ergibt sich eine DGL 2. Ordnung.
 
@@ -2093,7 +2093,7 @@ Zur Übung können Sie:
     Die Form der homogenen Lösung ist abhängig von der Art der Eigenwerte.
     \begin{align}
         &\text{hom. DGL:}&
-            LC \cdot \dt[2] \ecv{u_{C,\mathrm{h}}} + RC \cdot \dt \ecv{u_{C,\mathrm{h}}} + \ecv{u_{C,\mathrm{h}}} &= 0
+            LC \cdot \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} \ecv{u_{C,\mathrm{h}}} + RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_{C,\mathrm{h}}} + \ecv{u_{C,\mathrm{h}}} &= 0
                 &&\text{mit}\quad \ecv{u_{C,\mathrm{h}}} = K \cdot \mathrm{e}^{\lambda t} \label{eq:dgl:rlc:homo}\\[6pt]
         &\text{char. Polynom:}&
             \lambda^2 + \frac{R}{L} \cdot \lambda + \frac{1}{LC} &= 0 \nonumber\\[6pt]
@@ -2137,7 +2137,7 @@ Zur Übung können Sie:
 
     %\textbf{DGL}: inhomogen, linear, gewöhnlich, 2. Ordnung, mit konst. Koeffizienten
     \begin{align*}
-    &\text{\textbf{DGL} (für $\ecv{u_C}$ für $t \geq 0$):}&    LC \cdot \dt[2] \ecv{u_C} + RC \cdot \dt \ecv{u_C} + \ecv{u_C} &= \ecv{U_q}\\[-20pt]
+    &\text{\textbf{DGL} (für $\ecv{u_C}$ für $t \geq 0$):}&    LC \cdot \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} \ecv{u_C} + RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C} + \ecv{u_C} &= \ecv{U_q}\\[-20pt]
     &\hphantom{R1oooooooooooooooooooo}&\hphantom{L2oooooooooooooooooooooooooooooo}&\hphantom{R2ooo} % Dummy-Zeile für horizontales Alignment zwischen Frames
     \end{align*}
 
@@ -2166,15 +2166,15 @@ Zur Übung können Sie:
     \begin{align*}
         \textbf{1.) DGL:}\qquad
          \ecv{u_L} + \ecv{u_R} +\ecv{u_C} &= \ecv{u} \nonumber\\
-        L \cdot \dt \eci{i} + R \cdot \eci{i} + \ecv{u_C}&= \ecv{U_q} \nonumber\\
-        LC \cdot \dt[2] \ecv{u_C} + RC \cdot \dt \ecv{u_C} + \ecv{u_C} &= \ecv{U_q} %\label{eq:dgl:rlc:dc}
+        L \cdot \frac{\mathrm{d}}{\mathrm{d}t} \eci{i} + R \cdot \eci{i} + \ecv{u_C}&= \ecv{U_q} \nonumber\\
+        LC \cdot \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} \ecv{u_C} + RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C} + \ecv{u_C} &= \ecv{U_q} %\label{eq:dgl:rlc:dc}
     \end{align*}
     \end{minipage}
 \end{minipage}\vspace{2pt}
 
 \begin{align*}
     &\textbf{homogene DGL:}&
-        LC \cdot \dt[2] \ecv{u_{C,\mathrm{h}}} + RC \cdot \dt \ecv{u_{C,\mathrm{h}}} + \ecv{u_{C,\mathrm{h}}} &= 0  %\label{eq:dgl:rlc:homo}
+        LC \cdot \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} \ecv{u_{C,\mathrm{h}}} + RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_{C,\mathrm{h}}} + \ecv{u_{C,\mathrm{h}}} &= 0  %\label{eq:dgl:rlc:homo}
         \\[-20pt]
         &\hphantom{R1oooooooooooooooooooo}&\hphantom{L2oooooooooooooooooooooooooooooo}&\hphantom{R2ooo} % Dummy-Zeile für horizontales Alignment zwischen Frames
         \\[6pt]
@@ -2355,15 +2355,15 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
     \pause%
     \textbf{5.) Konstanten bestimmen:} (wie bekannt)
 
-    \s{Sei $\ecv{u_C}(0)=0$ und $\eci{i}(0)=0 \Rightarrow \dt\, \ecv{u_C}(0) = 0 $ als Anfangsbedingungen (AB) gegeben, so folgt:}%
-    \b{\vspace{4pt}Anfangsbedingungen (AB): $\ecv{u_C}(0)=0$ und $\eci{i}(0)=0 \Rightarrow \dt\, \ecv{u_C}(0) = 0 $}
+    \s{Sei $\ecv{u_C}(0)=0$ und $\eci{i}(0)=0 \Rightarrow \frac{\mathrm{d}}{\mathrm{d}t}\, \ecv{u_C}(0) = 0 $ als Anfangsbedingungen (AB) gegeben, so folgt:}%
+    \b{\vspace{4pt}Anfangsbedingungen (AB): $\ecv{u_C}(0)=0$ und $\eci{i}(0)=0 \Rightarrow \frac{\mathrm{d}}{\mathrm{d}t}\, \ecv{u_C}(0) = 0 $}
 
     \begin{align*}
         &\hphantom{1Rooooooo}&\hphantom{2Loooooo}&\hphantom{2Roooooooooooooooooooooooooooooooooo}&\hphantom{3Loooooo}&\hphantom{3Roooooooooo}\\[-15pt] % Dummyzeile alignment zwischen align-Umgebungen[ca. 16pt hoch], RLCs part. Lösung je Fall
         &\text{1. AB:}&
             \ecv{u_C}(0) &= K_1 \cdot \redcancel{\mathrm{e}^{\lambda_1 0}} + K_2 \cdot \redcancel{\mathrm{e}^{\lambda_2 0}} + \ecv{U_q} \overset{!}{=} 0 & \Rightarrow\quad K_1 &= -K_2 -\ecv{U_q}\\
         &\text{2. AB:}&
-            \dt \ecv{u_C}(0) &= K_1 \cdot \lambda_1 \cdot \redcancel{\mathrm{e}^{\lambda_1 0}} + K_2 \cdot \lambda_2 \cdot \redcancel{\mathrm{e}^{\lambda_2 0}} + \redcancel{0} \overset{!}{=} 0 &  \Rightarrow\quad K_1 &= - K_2 \frac{\lambda_2}{\lambda_1} \nonumber\\
+            \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}(0) &= K_1 \cdot \lambda_1 \cdot \redcancel{\mathrm{e}^{\lambda_1 0}} + K_2 \cdot \lambda_2 \cdot \redcancel{\mathrm{e}^{\lambda_2 0}} + \redcancel{0} \overset{!}{=} 0 &  \Rightarrow\quad K_1 &= - K_2 \frac{\lambda_2}{\lambda_1} \nonumber\\
         &\Longrightarrow&
             K_1 &=  \frac{\ecv{U_q}}{\frac{\lambda_1}{\lambda_2}-1} \quad\text{und}\quad
                 K_2 = \frac{\ecv{U_q}}{\frac{\lambda_2}{\lambda_1}-1}
@@ -2440,15 +2440,15 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
     %\pause%
     \textbf{5.) Konstanten bestimmen:} (wie bekannt)
 
-    \s{Sei $\ecv{u_C}(0)=0$ und $\eci{i}(0)=0 \Rightarrow \dt\, \ecv{u_C}(0) = 0 $ als Anfangsbedingungen (AB) gegeben, so folgt:}%
-    \b{\vspace{4pt}Anfangsbedingungen (AB): $\ecv{u_C}(0)=0$ und $\eci{i}(0)=0 \Rightarrow \dt\, \ecv{u_C}(0) = 0 $}
+    \s{Sei $\ecv{u_C}(0)=0$ und $\eci{i}(0)=0 \Rightarrow \frac{\mathrm{d}}{\mathrm{d}t}\, \ecv{u_C}(0) = 0 $ als Anfangsbedingungen (AB) gegeben, so folgt:}%
+    \b{\vspace{4pt}Anfangsbedingungen (AB): $\ecv{u_C}(0)=0$ und $\eci{i}(0)=0 \Rightarrow \frac{\mathrm{d}}{\mathrm{d}t}\, \ecv{u_C}(0) = 0 $}
 
     \begin{align*}
         &\hphantom{1Rooooooo}&\hphantom{2Loooooo}&\hphantom{2Roooooooooooooooooooooooooooooooooo}&\hphantom{3Loooooo}&\hphantom{3Roooooooooo}\\[-15pt] % Dummyzeile alignment zwischen align-Umgebungen[ca. 16pt hoch], RLCs part. Lösung je Fall
         &\text{1. AB:}&
             \ecv{u_C}(0) &= \left( K_1 + \redcancel{K_2 \cdot 0 }\right) \redcancel{\cdot \mathrm{e}^{\lambda 0}} + \ecv{U_q} \overset{!}{=} 0 & \Rightarrow\quad K_1 &= -\ecv{U_q}\\
         &\text{2. AB:}&
-            \dt \ecv{u_C}(0) &= \left( K_1 + \redcancel{K_2 \cdot 0} \right) \cdot \lambda \cdot \redcancel{\mathrm{e}^{\lambda 0}} + K_2 \cdot \redcancel{\mathrm{e}^{\lambda 0}} \overset{!}{=} 0 & \Rightarrow\quad K_2 &= -K_1 \cdot \lambda \nonumber\\
+            \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}(0) &= \left( K_1 + \redcancel{K_2 \cdot 0} \right) \cdot \lambda \cdot \redcancel{\mathrm{e}^{\lambda 0}} + K_2 \cdot \redcancel{\mathrm{e}^{\lambda 0}} \overset{!}{=} 0 & \Rightarrow\quad K_2 &= -K_1 \cdot \lambda \nonumber\\
             &\Longrightarrow&
         K_1 &= -\ecv{U_q} \quad\text{und}\quad
                 K_2 = +\ecv{U_q} \cdot \lambda
@@ -2542,7 +2542,7 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
         &\text{1. AB:}&
             \ecv{u_C}(0) &= \redcancel{\mathrm{e}^{-\delta 0}} \cdot C_0 \cdot \sin(\redcancel{\omega_d t } + \varphi_0) + \ecv{U_q} \overset{!}{=} 0\\
         &\text{2. AB:}&
-            \dt \ecv{u_C}(0) &= -\delta \cdot \redcancel{\mathrm{e}^{-\delta 0}} \cdot C_0 \cdot \sin(\varphi_0) + \mathrlap{\redcancel{\mathrm{e}^{-\delta 0}} \cdot C_0 \cdot \omega_d \cdot \cos(\varphi_0) \overset{!}{=} 0 }\nonumber\\
+            \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}(0) &= -\delta \cdot \redcancel{\mathrm{e}^{-\delta 0}} \cdot C_0 \cdot \sin(\varphi_0) + \mathrlap{\redcancel{\mathrm{e}^{-\delta 0}} \cdot C_0 \cdot \omega_d \cdot \cos(\varphi_0) \overset{!}{=} 0 }\nonumber\\
         &\Longrightarrow&
         C_0 &=  -\frac{\ecv{U_q}}{\sin(\varphi_0)} \quad\text{und}\quad
             \varphi_0 = \arctan\left(\frac{\omega_d}{\delta}\right)
@@ -2569,7 +2569,7 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
         &\text{1. AB:}&
             \ecv{u_C}(0) &= \redcancel{\mathrm{e}^{-\delta 0}} \cdot C_0 \cdot \sin(\redcancel{\omega_d t } + \varphi_0) + \ecv{U_q} \overset{!}{=} 0\\
         &\text{2. AB:}&
-            \dt \ecv{u_C}(0) &= -\delta \cdot \redcancel{\mathrm{e}^{-\delta 0}} \cdot C_0 \cdot \sin(\varphi_0) + \mathrlap{\redcancel{\mathrm{e}^{-\delta 0}} \cdot C_0 \cdot \omega_d \cdot \cos(\varphi_0) \overset{!}{=} 0 }\nonumber\\
+            \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C}(0) &= -\delta \cdot \redcancel{\mathrm{e}^{-\delta 0}} \cdot C_0 \cdot \sin(\varphi_0) + \mathrlap{\redcancel{\mathrm{e}^{-\delta 0}} \cdot C_0 \cdot \omega_d \cdot \cos(\varphi_0) \overset{!}{=} 0 }\nonumber\\
         &\Longrightarrow&
         C_0 &=  -\frac{\ecv{U_q}}{\sin(\varphi_0)} \quad\text{und}\quad
             \varphi_0 = \arctan\left(\frac{\omega_d}{\delta}\right)
@@ -2784,12 +2784,12 @@ nach Gl. \ref{eq:dgl:rlc:homolsg:periodisch:zeigeraddition} wie im Folgenden als
     Aus der Lage der Eigenwerte im Ortskurvendiagramm lassen sich Rückschlüsse auf das Einschwingverhalten des RLC-Serienschwingkreises ziehen.
     Das Vorgehen ist üblich bei der Stabilitätsanalyse von Systemen im Rahmen der Regelungstechnik und stammt als Methode aus der Systemtheorie.
 
-    Für verschwindende Anfangsbedingungen ($\dt[i]\,u_C(0)=0\ \forall i$) lässt sich die DGL aus Gl. \ref{eq:dgl:rlc:dc}
+    Für verschwindende Anfangsbedingungen ($\frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\,u_C(0)=0\ \forall i$) lässt sich die DGL aus Gl. \ref{eq:dgl:rlc:dc}
     mithilfe der Laplace-Transformation direkt im Bildbereich beschreiben. Durch umstellen der transformierten Ausgangsgröße $U_C(s)$
     nach der Eingangsgröße $U(s)$ ergibt sich die Übertragungsfunktion $G(s)$ des RLC-Serienschwingkreises:
 
     \begin{align}
-        u(t) &= LC \cdot \dt[2]\,u_{C}(t) + RC \cdot \dt\,u_{C}(t) + u_{C}(t)& &\bigg|\,\mathscr{L}\\
+        u(t) &= LC \cdot \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}\,u_{C}(t) + RC \cdot \frac{\mathrm{d}}{\mathrm{d}t}\,u_{C}(t) + u_{C}(t)& &\bigg|\,\mathscr{L}\\
         U(s) &= LC \cdot s^2 \cdot U_C(s) + RC \cdot s \cdot U_C(s) + U_C(s) \vphantom{\bigg|}\\
         G(s) &= \frac{U_C(s)}{U(s)} = \frac{\text{Ausgangsgröße}(s)}{\text{Eingangsgröße}(s)} \vphantom{\bigg|}\\
         %\quad\widehat{=} \underline{F}(\mathrm{j}(\omega)) = \frac{\underline{U}_C}{\underline{U}}
@@ -2942,7 +2942,7 @@ nach Gl. \ref{eq:dgl:rlc:homolsg:periodisch:zeigeraddition} wie im Folgenden als
     Q_{\mathrm{S}} &= \frac{X_{L,0}}{R} = \frac{\omega_0 L}{R} = \frac{\omega_0}{2\delta}&
     &\text{Maß für Schwingungsfähigkeit} \vphantom{\bigg|}\\
 &\text{Vgl. homo. DGL:}&
-    %0 &= \dt[2]\,y + 2\delta \cdot \dt\,y + \omega_0^2 \cdot y&
+    %0 &= \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}\,y + 2\delta \cdot \frac{\mathrm{d}}{\mathrm{d}t}\,y + \omega_0^2 \cdot y&
     0 &= \ddot y + 2\delta \cdot \dot y + \omega_0^2 \cdot y&
     &\text{linear gedämpfte Schwingung} \vphantom{\bigg|}
 \end{align*}

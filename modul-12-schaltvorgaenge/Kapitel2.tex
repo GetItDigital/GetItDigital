@@ -100,8 +100,8 @@
             & periodisch$^1$        & \glqq in gleichen Abständen, regelmäßig [auftretend, wiederkehrend]\grqq \s{\cite{duden}}\b{[\footnotemark[\value{footnote}]]}\\% Hier: in der Regel auf Zeitabstände bezogen \\
             & zeitinvariant$^1$     & invariant/unveränderlich über die Zeit\\
             & gewöhnlich$^2$  & Ableitung(en) nach einer unabhängigen Variable (z.B. Zeit $t$), Vgl. partiell\\
-            & homogen$^2$     & Form gewöhnlich: $\sum a_i(t) \dt[i]\, f_i(y(t)) \overset{!}{=} 0$ \quad mit Störfunktion $b=0$ $\vphantom{\Big|}$\\
-            & linear$^2$      & Form gewöhnlich: $\sum a_i(t) \dt[i]\, y(t) = b(t)$\qquad d.h. mit $\dt[i]\, y(t)$ linear $\vphantom{\Big|}$\\
+            & homogen$^2$     & Form gewöhnlich: $\sum a_i(t) \frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\, f_i(y(t)) \overset{!}{=} 0$ \quad mit Störfunktion $b=0$ $\vphantom{\Big|}$\\
+            & linear$^2$      & Form gewöhnlich: $\sum a_i(t) \frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\, y(t) = b(t)$\qquad d.h. mit $\frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\, y(t)$ linear $\vphantom{\Big|}$\\
             & Ordnung$^2$     & \makebox[7mm][l]{$n$} $[1]$ d.h. höchstens Ableitung der Ordnung $n$ in DGL \\
             \s{%
             &&\\[-4pt]%\midrule
@@ -349,9 +349,9 @@ Andernfalls müssen die Anfangsbedingungen im Bildbereich mit eingearbeitet werd
 
     und den folgenden Strom-Spannungs-Beziehungen (Komponenten-Gl.) für $R$, $L$ und $C$.:
     \begin{align}
-        &\text{Widerstand:}  & \ecv{u_R}(t) &= R \cdot \eci{i_R}(t) \vphantom{\dt} &&\label{eq:grundlagen:bauteilgleichung:widerstand}\\
-        &\text{Induktivität:}& \ecv{u_L}(t) &= L \cdot \dt\, \eci{i_L}(t)          &&\label{eq:grundlagen:bauteilgleichung:induktivitaet}\\
-        &\text{Kapazität:}   & \eci{i_C}(t) &= C \cdot \dt\, \ecv{u_C}(t)          &&\label{eq:grundlagen:bauteilgleichung:kapazitaet}
+        &\text{Widerstand:}  & \ecv{u_R}(t) &= R \cdot \eci{i_R}(t) \vphantom{\frac{\mathrm{d}}{\mathrm{d}t}} &&\label{eq:grundlagen:bauteilgleichung:widerstand}\\
+        &\text{Induktivität:}& \ecv{u_L}(t) &= L \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \eci{i_L}(t)          &&\label{eq:grundlagen:bauteilgleichung:induktivitaet}\\
+        &\text{Kapazität:}   & \eci{i_C}(t) &= C \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \ecv{u_C}(t)          &&\label{eq:grundlagen:bauteilgleichung:kapazitaet}
     \end{align}
     In welcher Reihenfolge die Gleichungen am geschicktesten aufgestellt, umgeformt und ineinander eingesetzt werden ist 
     abhängig von der jeweiligen Schaltungstopologie und der Zielgröße. 
@@ -438,12 +438,12 @@ Beide Varianten werden im Folgenden kurz erläutert und dann anhand eines einfac
         \begin{equation*}\begin{aligned}
         \begin{split}
             &t\geq0&\textbf{Kirchhoff:}&&&&&\textbf{Komponenten:}\\
-                &\text{Knoten:}& \eci{i_R} = \eci{i_C} &= \eci{i} &&&& \eci{i_C} = C \cdot \dt\, \ecv{u_C}\\
+                &\text{Knoten:}& \eci{i_R} = \eci{i_C} &= \eci{i} &&&& \eci{i_C} = C \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \ecv{u_C}\\
                 &\text{Masche:}& \ecv{u_R} + \ecv{u_C} &= \ecv{u} &&&& \ecv{u_R} = R \cdot \eci{i_R}\\[+5pt]
             \hline\\[-10pt]%
             \onslide<2->{% start overlay
                 && R \cdot \eci{i} + \ecv{u_C} &= \ecv{U_q} \\
-                &\textbf{DGL: }& RC \cdot \dt \ecv{u_C} + \ecv{u_C} &= \ecv{U_q} &&&&\quad\text{1. Ord.}
+                &\textbf{DGL: }& RC \cdot \frac{\mathrm{d}}{\mathrm{d}t} \ecv{u_C} + \ecv{u_C} &= \ecv{U_q} &&&&\quad\text{1. Ord.}
             }% end overlay
         \end{split}\end{aligned}
         \end{equation*}
@@ -455,7 +455,7 @@ Beide Varianten werden im Folgenden kurz erläutert und dann anhand eines einfac
             \ecv{\underline{U}_C} &= \ecv{\underline{U}_q} \cdot \frac{ \frac{1}{\mathrm{j}\omega C} }{R + \frac{1}{\mathrm{j}\omega C} } \vphantom{\bigg|}\\
             \left(R + \frac{1}{\mathrm{j}\omega C}\right) \cdot \ecv{\underline{U}_C} &= \ecv{\underline{U}_q} \cdot \frac{1}{\mathrm{j}\omega C} \vphantom{\bigg|}\\
             \left(\mathrm{j}\omega \cdot RC + 1\right) \cdot \ecv{\underline{U}_C} &= \ecv{\underline{U}_q} \vphantom{\bigg|}\\
-            \textbf{DGL}:\quad RC\cdot \dt\, \ecv{u_C} + \ecv{u_C} &= \ecv{U_q} \vphantom{\bigg|}
+            \textbf{DGL}:\quad RC\cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \ecv{u_C} + \ecv{u_C} &= \ecv{U_q} \vphantom{\bigg|}
         \end{align*}
         }%
     \end{minipage}
@@ -831,8 +831,8 @@ Diese Werte können wir als Anfangsbedingungen für die Berechnung des Schaltvor
     \end{align}
     %Und den zugehörigen DGL: 
     %\begin{align*}
-    %    \sum_{i=0}^{n} a_i \cdot \dt[i]\, y_{\mathrlap{\mathrm{h}}\hphantom{h}}(t) &= 0 \\
-    %    \sum_{i=0}^{n} a_i \cdot \dt[i]\, y_{\mathrlap{\mathrm{p}}\hphantom{h}}(t) &= b(t) \\    
+    %    \sum_{i=0}^{n} a_i \cdot \frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\, y_{\mathrlap{\mathrm{h}}\hphantom{h}}(t) &= 0 \\
+    %    \sum_{i=0}^{n} a_i \cdot \frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\, y_{\mathrlap{\mathrm{p}}\hphantom{h}}(t) &= b(t) \\    
     %\end{align*}
     Die Zerlegung von Ausgleichsvorgängen in einen eingeschwungenen und einen flüchtigen Zustand 
     findet sich in ähnlicher Form in den Lehrbüchern von Albach\cite{albach}, Hagmann\cite{hagmann} und Weißgerber\cite{weissgerber3}.  
@@ -858,12 +858,12 @@ Diese Werte können wir als Anfangsbedingungen für die Berechnung des Schaltvor
     \begin{equation*}\begin{aligned}%
     % inhom. DGL - DGL eingeschwungen = hom. DGL (flüchtig)
     \begin{split}
-        \sum a_i\cdot \dt[i]\ y_{\hphantom{e}} &= b(t) \\
+        \sum a_i\cdot \frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\ y_{\hphantom{e}} &= b(t) \\
     \mathllap{\huge\mathbf - \hspace{5pt}} 
-        \ec[blue]{\sum a_i \cdot \dt[i]\ y_{\mathrlap{\mathrm{e}}\hphantom{e}}} &\ec[blue]{{}= b(t)}\\[+5pt]
+        \ec[blue]{\sum a_i \cdot \frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\ y_{\mathrlap{\mathrm{e}}\hphantom{e}}} &\ec[blue]{{}= b(t)}\\[+5pt]
     \hline\\[-15pt]
     \mathllap{\huge\mathbf = \hspace{5pt}} 
-        \ec[red]{\sum a_i \cdot \dt[i]\ y_{\mathrlap{\mathrm{f}}\hphantom{e}}} &\ec[red]{{}= 0}
+        \ec[red]{\sum a_i \cdot \frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\ y_{\mathrlap{\mathrm{f}}\hphantom{e}}} &\ec[red]{{}= 0}
     \end{split}\end{aligned}
     \end{equation*}
 }%
@@ -903,7 +903,7 @@ Deshalb ist unser y e die partikuläre Lösung unserer D G L und y f die homogen
 \b{%
     \begin{align*}
         &\textbf{Homogene DGL:}& 
-            \sum_{i=0}^{n} a_i \cdot \dt[i]\, y_{\mathrm{h}} &= 0 &
+            \sum_{i=0}^{n} a_i \cdot \frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\, y_{\mathrm{h}} &= 0 &
             &\text{(gew., lin., konst. Koeff.)}\vphantom{\bigg|}\\[4pt]
         \onslide<2-|handout:1>{
         &\text{Ansatz:}&
@@ -933,7 +933,7 @@ Deshalb ist unser y e die partikuläre Lösung unserer D G L und y f die homogen
     Für die Lösung von gewöhnlicher, linearer, homogener DGLen mit konstanten Koeffizienten der Form:
     
     \begin{equation}\label{eq:grundlagen:dgl:homogen}
-        \sum_{i=0}^{n} a_i \cdot \dt[i]\, y_{\mathrm{h}} = 0
+        \sum_{i=0}^{n} a_i \cdot \frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\, y_{\mathrm{h}} = 0
     \end{equation}
 
     wird in der Regel der Ansatz einer Exponentialfunktion verwendet:
@@ -949,7 +949,7 @@ Deshalb ist unser y e die partikuläre Lösung unserer D G L und y f die homogen
     % Ref: Hagmann, Grundlagen Elektrotechnik, AULA Verlag, Aufl. 18, 2020 --- S. 364
     % -> DGL 1. Ord. -> Trennung der Variablen -> Exponentialansatz
     %\begin{align*}
-    %    \dt y_{\mathrm{h}} &= \lambda \cdot y_{\mathrm{h}} \\
+    %    \frac{\mathrm{d}}{\mathrm{d}t} y_{\mathrm{h}} &= \lambda \cdot y_{\mathrm{h}} \\
     %    \frac{\d y_{\mathrm{h}}}{y_{\mathrm{h}}} &= \lambda \,\d t \\
     %    \int_{y_0}^{y_1} \frac{1}{y_{\mathrm{h}}} \,\d y_{\mathrm{h}} &= \lambda \int_{0}^{t_1} \d t \\
     %    \ln{\left(\frac{y_0}{y_1}\right)} &= \lambda \cdot t_1 \\
@@ -962,8 +962,8 @@ Deshalb ist unser y e die partikuläre Lösung unserer D G L und y f die homogen
     Durch Einsetzen des Exponential-Ansatzes in \ref{eq:grundlagen:dgl:homogen}, Differenzieren und Ausklammern:
     % Charakteristische Polynom
     \begin{align}
-        %\sum_{i=0}^{n} a_i \cdot \dt[i]\, y_{\mathrm{h}}(t) &= 0 \nonumber\\
-        \sum_{i=0}^{n} a_i \cdot \dt[i]\, K \cdot \mathrm{e}^{\lambda t} &= 0 \nonumber\\[2pt]
+        %\sum_{i=0}^{n} a_i \cdot \frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\, y_{\mathrm{h}}(t) &= 0 \nonumber\\
+        \sum_{i=0}^{n} a_i \cdot \frac{\mathrm{d}^{i}}{\mathrm{d}t^{i}}\, K \cdot \mathrm{e}^{\lambda t} &= 0 \nonumber\\[2pt]
         \left(\sum_{i=0}^{n} a_i \cdot \lambda^i \right) K \cdot \mathrm{e}^{\lambda t} &= 0 \nonumber\\[4pt]
     \end{align}
     kann das \textbf{charakteristische Polynom} aufgestellt werden:
@@ -1013,8 +1013,8 @@ Deshalb ist unser y e die partikuläre Lösung unserer D G L und y f die homogen
         Dieses Beispiel ist nahezu unverändert übernommen aus \cite[S. 241]{albach}. 
         Gesucht ist die allgemeine Lösung der folgenden homogenen DGL 5. Ordnung:
         \begin{equation*}
-            %\dt[5] y(t) + 7 \dt[4] y(t) + 26 \dt[3] y(t) + 62 \dt[2] y(t) + 8 \dt y(t) + 75 y(t) = 0
-            \dt[\ecr{5}] y(t) + \ecb{7} \dt[\ecr{4}] y(t) + \ecb{26} \dt[\ecr{3}] y(t) + \ecb{62} \dt[\ecr{2}] y(t) + \ecb{8} \dt y(t) + \ecb{75} y(t) = 0
+            %\frac{\mathrm{d}^{5}}{\mathrm{d}t^{5}} y(t) + 7 \frac{\mathrm{d}^{4}}{\mathrm{d}t^{4}} y(t) + 26 \frac{\mathrm{d}^{3}}{\mathrm{d}t^{3}} y(t) + 62 \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} y(t) + 8 \frac{\mathrm{d}}{\mathrm{d}t} y(t) + 75 y(t) = 0
+            \frac{\mathrm{d}^{\ecr{5}}}{\mathrm{d}t^{\ecr{5}}} y(t) + \ecb{7} \frac{\mathrm{d}^{\ecr{4}}}{\mathrm{d}t^{\ecr{4}}} y(t) + \ecb{26} \frac{\mathrm{d}^{\ecr{3}}}{\mathrm{d}t^{\ecr{3}}} y(t) + \ecb{62} \frac{\mathrm{d}^{\ecr{2}}}{\mathrm{d}t^{\ecr{2}}} y(t) + \ecb{8} \frac{\mathrm{d}}{\mathrm{d}t} y(t) + \ecb{75} y(t) = 0
         \end{equation*}
         Das charakteristische Polynom:
         \begin{equation*}
@@ -1072,12 +1072,12 @@ wie im folgenden Beispiel gezeigt wird.
 \b{\vspace{5pt}% % Beispiel aus bsp-box gekürzt
     Gesucht ist die allgemeine Lösung der folgenden homogenen DGL 5. Ordnung:\footnotemark
     \begin{equation*}
-        % \dt[5] y(t) + 7 \dt[4] y(t) + 26 \dt[3] y(t) + 62 \dt[2] y(t) + 8 \dt y(t) + 75 y(t) = 0
+        % \frac{\mathrm{d}^{5}}{\mathrm{d}t^{5}} y(t) + 7 \frac{\mathrm{d}^{4}}{\mathrm{d}t^{4}} y(t) + 26 \frac{\mathrm{d}^{3}}{\mathrm{d}t^{3}} y(t) + 62 \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} y(t) + 8 \frac{\mathrm{d}}{\mathrm{d}t} y(t) + 75 y(t) = 0
         \only<1,2| handout:0>{%
-            \dt[5] y(t) + 7 \dt[4] y(t) + 26 \dt[3] y(t) + 62 \dt[2] y(t) + 8 \dt y(t) + 75 y(t) = 0
+            \frac{\mathrm{d}^{5}}{\mathrm{d}t^{5}} y(t) + 7 \frac{\mathrm{d}^{4}}{\mathrm{d}t^{4}} y(t) + 26 \frac{\mathrm{d}^{3}}{\mathrm{d}t^{3}} y(t) + 62 \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} y(t) + 8 \frac{\mathrm{d}}{\mathrm{d}t} y(t) + 75 y(t) = 0
         }%
         \only<3-| handout:1>{
-            \dt[\ecr{5}] y(t) + \ecb{7} \dt[\ecr{4}] y(t) + \ecb{26} \dt[\ecr{3}] y(t) + \ecb{62} \dt[\ecr{2}] y(t) + \ecb{8} \dt y(t) + \ecb{75} y(t) = 0
+            \frac{\mathrm{d}^{\ecr{5}}}{\mathrm{d}t^{\ecr{5}}} y(t) + \ecb{7} \frac{\mathrm{d}^{\ecr{4}}}{\mathrm{d}t^{\ecr{4}}} y(t) + \ecb{26} \frac{\mathrm{d}^{\ecr{3}}}{\mathrm{d}t^{\ecr{3}}} y(t) + \ecb{62} \frac{\mathrm{d}^{\ecr{2}}}{\mathrm{d}t^{\ecr{2}}} y(t) + \ecb{8} \frac{\mathrm{d}}{\mathrm{d}t} y(t) + \ecb{75} y(t) = 0
         }%
     \end{equation*}
 
@@ -1198,18 +1198,18 @@ Eine Herleitung der Umformung kann am Ende des Moduls im Exkurs für die Herleit
             \underline{\hat{Y}} &= \hat{Y} \cdot \mathrm{e}^{\mathrm{j} \varphi} 
             \vphantom{\bigg|}\\
     \end{align*}
-    Ableitungen nach der Zeit $\dt$ werden im komplexen Zahlenraum durch $\mathrm{j} \omega$ ersetzt:
+    Ableitungen nach der Zeit $\frac{\mathrm{d}}{\mathrm{d}t}$ werden im komplexen Zahlenraum durch $\mathrm{j} \omega$ ersetzt:
     \begin{align*}
     % for preview comment out \intertext{}
-    %\intertext{Ableitungen nach der Zeit $\dt$ werden im komplexen Zahlenraum durch $\mathrm{j} \omega$ ersetzt:}
-        \dt y(t) &= \hat{Y} \cdot \omega \cdot \cos(\omega t + \varphi + \frac{\pi}{2}) &
+    %\intertext{Ableitungen nach der Zeit $\frac{\mathrm{d}}{\mathrm{d}t}$ werden im komplexen Zahlenraum durch $\mathrm{j} \omega$ ersetzt:}
+        \frac{\mathrm{d}}{\mathrm{d}t} y(t) &= \hat{Y} \cdot \omega \cdot \cos(\omega t + \varphi + \frac{\pi}{2}) &
             &\Longleftrightarrow& 
             \mathrm{j} \omega \cdot  \underline{\hat{Y}} &= \hat{Y} \cdot \omega \cdot \mathrm{e}^{\mathrm{j} \left(\varphi + \frac{\pi}{2}\right)}
     \end{align*}
     Der Faktor $\mathrm{j}\omega$ entspricht rücktransformiert dem Vorfaktor $\omega$ und einer Phasenverschiebung von $\sfrac{\pi}{2}$. 
     Dadurch gilt allgemein bei DGLen sinusförmiger Größen (Index $ac$) der Form in Gleichung \ref{eq:grundlagen:dgl:inhomogen}: 
     \begin{equation}
-        \sum_{i=0}^n a_i \cdot \left(\dt\right)^i y_{ac} = b_{ac}
+        \sum_{i=0}^n a_i \cdot \left(\frac{\mathrm{d}}{\mathrm{d}t}\right)^i y_{ac} = b_{ac}
         \qquad \Longleftrightarrow \qquad 
         \sum_{i=0}^n a_i \cdot \left(\mathrm{j}\omega\right)^i \cdot \underline{\hat{Y}} = \underline{\hat{B}}
         \label{eq:grundlagen:dgl:komplex}

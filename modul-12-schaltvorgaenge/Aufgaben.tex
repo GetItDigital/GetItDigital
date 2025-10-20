@@ -34,7 +34,7 @@ bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
 \item[a)] DGL für $u_C(t \geq 0)$:
     \begin{align*}
         R_1 \cdot \eci{i} + R_2 \cdot \eci{i} + \ecv{u_C} &= \ecv{U_q} \\
-        \underbrace{(R_1 + R_2) \cdot C}_{\ =\tau} \cdot \dt\, \ecv{u_C} + \ecv{u_C} &= \ecv{U_q}
+        \underbrace{(R_1 + R_2) \cdot C}_{\ =\tau} \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \ecv{u_C} + \ecv{u_C} &= \ecv{U_q}
     \end{align*}
 \item[b)] Zeitverlauf $u_C$ für $t\geq0$:
     \begin{align*}
@@ -47,8 +47,8 @@ bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
 \item[c)] Spannung $u_2(t)$ aus $u_C(t)$ für $t \geq 0$:
 \begin{align*}
     \ecv{u_2} &= \eci{i} \cdot R_2 + \ecv{u_C} \\
-    &= C \cdot R_2 \cdot \dt\, \ecv{u_C} + \ecv{u_C} \\
-    &= C \cdot R_2 \cdot \dt\, \left(1 - \mathrm{e}^{-\frac{t}{\tau}}\right) \cdot \ecv{U_q} + \left(1 - \mathrm{e}^{-\frac{t}{\tau}}\right) \cdot \ecv{U_q} \\
+    &= C \cdot R_2 \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \ecv{u_C} + \ecv{u_C} \\
+    &= C \cdot R_2 \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \left(1 - \mathrm{e}^{-\frac{t}{\tau}}\right) \cdot \ecv{U_q} + \left(1 - \mathrm{e}^{-\frac{t}{\tau}}\right) \cdot \ecv{U_q} \\
     &= \frac{C \cdot R_2}{\tau} \cdot \mathrm{e}^{-\frac{t}{\tau}} \cdot \ecv{U_q} + \left(1 - \mathrm{e}^{-\frac{t}{\tau}}\right) \cdot \ecv{U_q} \\
     &= \frac{R_2}{R_1 + R_2} \cdot \mathrm{e}^{-\frac{t}{\tau}}  \cdot \ecv{U_q} + \left(1 - \mathrm{e}^{-\frac{t}{\tau}}\right) \cdot \ecv{U_q} \\
     &= \left( 1 + \frac{R_2}{R_1+R_2} \cdot \mathrm{e}^{-\frac{t}{\tau}} - \mathrm{e}^{-\frac{t}{\tau}} \right) \cdot \ecv{U_q} \\
@@ -104,10 +104,10 @@ bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
  \begin{align*}
     u_{R1} + u_C &= U_q &  u_{R_1} &= R_1 \cdot i_{R1}\\
     R_1 \cdot i_{R1} + u_C &= U_q &  i_{R1} &= i_{R2} + i_C\\
-    R_1 \cdot (i_C + i_{R2}) + u_C &= U_q &  i_C &= C \cdot \dt\, u_C \qquad i_{R2} = \frac{u_C}{R_2}\\
-    C \cdot R_1 \cdot \dt\, u_C + \frac{R_1}{R_2} \cdot u_C + u_C &= U_q &&\Big| \cdot R_2\\
-    C \cdot R_1 \cdot R_2 \cdot  \dt\, u_C + \left(R_1 + R_2 \right) \cdot u_C &= U_q \cdot R_2 &&\Big| : (R_1+R_2)\\
-    \underbrace{C \cdot \frac{R_1 \cdot R_2}{R_1+R_2}}_{\tau} \cdot \dt\, u_C + u_C &= U_q \cdot \frac{R_2}{R_1+R_2}
+    R_1 \cdot (i_C + i_{R2}) + u_C &= U_q &  i_C &= C \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, u_C \qquad i_{R2} = \frac{u_C}{R_2}\\
+    C \cdot R_1 \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, u_C + \frac{R_1}{R_2} \cdot u_C + u_C &= U_q &&\Big| \cdot R_2\\
+    C \cdot R_1 \cdot R_2 \cdot  \frac{\mathrm{d}}{\mathrm{d}t}\, u_C + \left(R_1 + R_2 \right) \cdot u_C &= U_q \cdot R_2 &&\Big| : (R_1+R_2)\\
+    \underbrace{C \cdot \frac{R_1 \cdot R_2}{R_1+R_2}}_{\tau} \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, u_C + u_C &= U_q \cdot \frac{R_2}{R_1+R_2}
  \end{align*}
 
  \underline{2. Homogene Lösung und 3. Partikuläre Lösung ($t \to \infty$)}
@@ -133,7 +133,7 @@ bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
         u_{R1}(t) &= U_q - u_C(t) \\
             &= U_q - U_q \cdot \frac{R_2}{R_1+R_2} \cdot \left( 1 - \mathrm{e}^{-\frac{t}{\tau}} \right) \\
             &= U_q \cdot \frac{R_1}{R_1+R_2} + U_q \cdot \frac{R_2}{R_1+R_2} \cdot \mathrm{e}^{-\frac{t}{\tau}} \\[4pt]
-        i_C(t) &= C \cdot \dt\, u_C(t) \\
+        i_C(t) &= C \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, u_C(t) \\
             &= C \cdot U_q \cdot \frac{R_2}{R_1+R_2} \cdot \frac{1}{\tau} \cdot \mathrm{e}^{-\frac{t}{\tau}} \\
             &= U_q \cdot \frac{\colorcancel{C}{purple} \cdot \redcancel{R_2}}{\colorcancel{R_1+R_2}{violet}} \cdot \frac{\colorcancel{R_1+R_2}{violet}}{\colorcancel{C}{purple} \cdot R_1 \cdot \redcancel{R_2}}  \cdot \mathrm{e}^{-\frac{t}{\tau}}\\
             &= \frac{U_q}{R_1} \cdot \mathrm{e}^{-\frac{t}{\tau}}
@@ -195,7 +195,7 @@ Die Kapazität entlädt langsamer als in Aufgabe c) ($\tau_2 > \tau$), da $R_2 >
 \Loesung{
     % Übernommen von Prof. Exknowski, FH SWF Hagen, 2024, ET3 (Übung 7, Aufgabe 1), leicht verändert
     \begin{align*}
-        \text{DGL (allgemein):}&& \frac{L}{R}\cdot\dt\, i &= \frac{U_1}{R_1} \quad\text{(Einschalten)}\\
+        \text{DGL (allgemein):}&& \frac{L}{R}\cdot\frac{\mathrm{d}}{\mathrm{d}t}\, i &= \frac{U_1}{R_1} \quad\text{(Einschalten)}\\
         \text{Lösungsansatz:}&& i &= \frac{U_0}{R}\cdot(1-e^{-\frac{t}{\tau}})\quad\text{mit}\quad\tau=\frac{L}{R}
     \end{align*}
         \\
@@ -216,18 +216,18 @@ Die Kapazität entlädt langsamer als in Aufgabe c) ($\tau_2 > \tau$), da $R_2 >
         i(t=50\,ms)&=\frac{U_0}{R}\cdot(1-e^{-\frac{t}{\tau}})\\
         &=\frac{2,8\,kV}{5\,\Omega}\cdot(1-e^{-\frac{50\,ms}{20\,ms}})\\
         &=0,56\,kA\cdot(0,918)=0,514\,kA\\\\
-        u_L&=L\cdot\dt i_L = \frac{L}{R}\cdot U_0 \cdot (-\frac{1}{\tau})\cdot(-e^{-\frac{t}{\tau}})\\
+        u_L&=L\cdot\frac{\mathrm{d}}{\mathrm{d}t} i_L = \frac{L}{R}\cdot U_0 \cdot (-\frac{1}{\tau})\cdot(-e^{-\frac{t}{\tau}})\\
         &= U_0\cdot e^{-\frac{t}{\tau}}\\\\
         u_L(t=50\,ms)&=2,8\,kV\cdot e^{-\frac{50\,ms}{20\,ms}}=229,8\,V\\
         t_0&=5\cdot\tau=5\cdot20\,ms=100\,ms
         \end{align*}
     d) Entladevorgang, Spulen -Strom und -Spannung nach $t = t_1 + 50\,ms$.\\[-1em]
         \begin{align*}
-            \text{DGL (Entladevorgang):}&& \frac{L}{R}\cdot\dt\, i+i &=0\\
+            \text{DGL (Entladevorgang):}&& \frac{L}{R}\cdot\frac{\mathrm{d}}{\mathrm{d}t}\, i+i &=0\\
             \text{Lösungsansatz:}&& i &= \frac{U_0}{R}\cdot e^{-\frac{t}{\tau}}\quad\text{mit}\quad\tau=\frac{L}{R}\\
         \end{align*}
         \begin{align*}
-            u_L&=L\cdot\dt i = \frac{L}{R}\cdot u_0\cdot (-\frac{1}{\tau})\cdot e^{-\frac{t}{\tau}}\\
+            u_L&=L\cdot\frac{\mathrm{d}}{\mathrm{d}t} i = \frac{L}{R}\cdot u_0\cdot (-\frac{1}{\tau})\cdot e^{-\frac{t}{\tau}}\\
             &=-U_0\cdot e^{-\frac{t}{\tau}}\\
             i(50\,ms)&=\frac{2,8\,kV}{5\Omega}\cdot e^{-\frac{50\,ms}{20\,ms}}=46\,A\\
             u_L(50\,ms)&=-2,8\,kV\cdot e^{-\frac{50\,ms}{20\,ms}}=-230\,V
@@ -250,11 +250,11 @@ Bestimmen Sie die Zeitkonstante $\tau$, den Widerstand $R$, sowie die Spannung $
 \Loesung{%
 
     \begin{align*}
-        \text{DGL:}&&\quad\frac{L}{R}\cdot\dt i+i&=\frac{U_0}{R}\\
+        \text{DGL:}&&\quad\frac{L}{R}\cdot\frac{\mathrm{d}}{\mathrm{d}t} i+i&=\frac{U_0}{R}\\
         \text{Lösung:}&&i&=\frac{U_0}{R}\cdot(1-e^{-\frac{t}{\tau}})\quad\text{mit}\quad \tau = \frac{L}{R}
     \end{align*}
     \begin{align*}
-        u_L &= L\cdot\dt i =U_0\cdot e^{-\frac{t}{\tau}}\\
+        u_L &= L\cdot\frac{\mathrm{d}}{\mathrm{d}t} i =U_0\cdot e^{-\frac{t}{\tau}}\\
         u_R &= u-u_L = U_0\cdot(1-e^{-\frac{t}{\tau}})\\
         i(t=3\,ms)&= \frac{U_0}{R}\cdot(1-e^{-\frac{t}{\tau}})\\
         u_L(t=3\,ms)&= U_0\cdot e^{-\frac{t}{\tau}} = 26\,V\\
@@ -302,13 +302,13 @@ $R_1$ und $R_2$ nach dem Schaltzeitpunkt ($t>0$) als Parallelschaltung $R_{12}$ 
 \begin{align*}
     \ecv{U_q} &= \ecv{u_{12}} + \ecv{u_C} &&\text{mit}\quad \ecv{u_{12}} \mathrlap{\text{ über Parallelschaltung aus $R_1$ und $R_2$}}\\
     &= R_{12} \cdot \eci{i_{12}} + \ecv{u_C} &&\text{mit}\quad R_{12}=R_1||R_2,& \eci{i_{12}}&=\eci{i_C}+\eci{i_3}\\
-    &= R_{12} \cdot (\eci{i_C} + \eci{i_3}) + \ecv{u_C} &&\text{mit}\quad \eci{i_{C}}=C\cdot\dt\,\ecv{u_C},& \eci{i_3}&=\frac{\ecv{u_C}}{{R_3}}\\
-    &= R_{12} \cdot (C \cdot \dt\,\ecv{u_C} + \frac{\ecv{u_C}}{{R_3}}) + \ecv{u_C}\\
-    &= C \cdot R_{12} \cdot \dt\,\ecv{u_C} + \left( \frac{R_{12}}{{R_3}} + 1 \right) \cdot \ecv{u_C}& &\bigg|\ \cdot R_3\\
+    &= R_{12} \cdot (\eci{i_C} + \eci{i_3}) + \ecv{u_C} &&\text{mit}\quad \eci{i_{C}}=C\cdot\frac{\mathrm{d}}{\mathrm{d}t}\,\ecv{u_C},& \eci{i_3}&=\frac{\ecv{u_C}}{{R_3}}\\
+    &= R_{12} \cdot (C \cdot \frac{\mathrm{d}}{\mathrm{d}t}\,\ecv{u_C} + \frac{\ecv{u_C}}{{R_3}}) + \ecv{u_C}\\
+    &= C \cdot R_{12} \cdot \frac{\mathrm{d}}{\mathrm{d}t}\,\ecv{u_C} + \left( \frac{R_{12}}{{R_3}} + 1 \right) \cdot \ecv{u_C}& &\bigg|\ \cdot R_3\\
     \ecv{U_q} \cdot R_3
-    &= C \cdot R_{12} \cdot R_3 \cdot \dt\,\ecv{u_C} + \left(R_{12}+R_3\right) \cdot \ecv{u_C}& &\bigg| :\left(R_{12}+R_3\right)\\
+    &= C \cdot R_{12} \cdot R_3 \cdot \frac{\mathrm{d}}{\mathrm{d}t}\,\ecv{u_C} + \left(R_{12}+R_3\right) \cdot \ecv{u_C}& &\bigg| :\left(R_{12}+R_3\right)\\
     \ecv{U_q} \cdot \frac{R_3}{R_{12}+R_3}
-    &= \underbrace{C \cdot \frac{R_{12} \cdot R_3}{R_{12} + R_3}}_{\tau} \cdot \dt\,\ecv{u_C} + \ecv{u_C}& &\Longrightarrow\quad \tau=C \cdot \frac{R_{12} \cdot R_3}{R_{12} + R_3} 
+    &= \underbrace{C \cdot \frac{R_{12} \cdot R_3}{R_{12} + R_3}}_{\tau} \cdot \frac{\mathrm{d}}{\mathrm{d}t}\,\ecv{u_C} + \ecv{u_C}& &\Longrightarrow\quad \tau=C \cdot \frac{R_{12} \cdot R_3}{R_{12} + R_3} 
 \end{align*}
 \textbf{3. Homogene Lösung} (flüchtig) und \textbf{2. Partikuläre Lösung} ($t \to \infty$, eingeschwungen):
 \begin{align*}
@@ -385,11 +385,11 @@ Zeitkonstante $\tau$ sowie Anfangs- und Endwerte des Stromes $i_3$ für Skizze:\
     \item[b)] DGL für $i_L(t)$ ($t \geq t_0$):
     \begin{align*}
         \ecv{u_1} &= \ecv{u_{R_1}} + \ecv{u_L} \\
-        &= R_1 \cdot (\eci{i_2} + \eci{i_L}) + L \cdot \dt\, \eci{i_L}\\
-        &= R_1 \cdot \left( \frac{\ecv{u_L}}{R_2} + \eci{i_L} \right) + L \cdot \dt\, \eci{i_L}\\
-        &= \frac{R_1}{R_2} \cdot L \cdot \dt\, \eci{i_L} + R_1 \cdot \eci{i_L} + L \cdot \dt\, \eci{i_L}  \\
-        &= L \cdot \left( \frac{R_1}{R_2} + 1 \right) \cdot \dt\, \eci{i_L} + R_1 \cdot \eci{i_L} \qquad \bigg| \cdot \frac{1}{R_1}\\
-        \frac{\ecv{u_1}}{R_1} &= \underbrace{L \cdot \left( \frac{1}{R_1} + \frac{1}{R_2} \right)}_{\ =\tau} \cdot \dt\, \eci{i_L} + \eci{i_L}\\ 
+        &= R_1 \cdot (\eci{i_2} + \eci{i_L}) + L \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \eci{i_L}\\
+        &= R_1 \cdot \left( \frac{\ecv{u_L}}{R_2} + \eci{i_L} \right) + L \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \eci{i_L}\\
+        &= \frac{R_1}{R_2} \cdot L \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \eci{i_L} + R_1 \cdot \eci{i_L} + L \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \eci{i_L}  \\
+        &= L \cdot \left( \frac{R_1}{R_2} + 1 \right) \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \eci{i_L} + R_1 \cdot \eci{i_L} \qquad \bigg| \cdot \frac{1}{R_1}\\
+        \frac{\ecv{u_1}}{R_1} &= \underbrace{L \cdot \left( \frac{1}{R_1} + \frac{1}{R_2} \right)}_{\ =\tau} \cdot \frac{\mathrm{d}}{\mathrm{d}t}\, \eci{i_L} + \eci{i_L}\\ 
         \tau &= L \cdot \left( \frac{1}{R_1} + \frac{1}{R_2} \right) = \frac{L}{R_1||R_2}
     \end{align*}
     \item[c)] Schaltzeitpunkte für minimalen und maximalen flüchtigen Zustand ($t_{min},\ t_{max}$). \\ 
