@@ -1,6 +1,10 @@
 
 
 \section{Induktivität \label{Spule}}
+\b{\begin{frame} \ftx{Induktivität}
+	\f{trim=0 0.7cm 0 0.5cm,clip,width=0.35\textwidth}{width=0.4\textwidth}{Spule4}{{\bf Luftspule aus Lackdraht.} Luftspulen besitzen keinen magnetischen Kern und haben dadurch eine vergleichsweise geringere Induktivität als Spulen mit weichmagnetischem Kern. }	
+	\end{frame}
+}
 \begin{frame} \ftx{Induktivität} \index{Induktivität}
 	\s{
 	 Die Induktivität beschreibt die Fähigkeit, elektrische Energie in einem magnetischen Feld zu speichern. Bauelemente, die diese Fähigkeit besitzen, werden Spule (Abbildung \ref{InduktivitaetB}), Drossel oder auch Induktivität genannt.
@@ -9,7 +13,11 @@
 		\begin{columns}
 		\column[c]{0.5\textwidth}
 	}
-	\f{trim=0 0.7cm 0 0.5cm,clip,width=0.35\textwidth}{width=0.6\textwidth}{Spule4}{{\bf Luftspule aus Lackdraht.} Luftspulen besitzen keinen magnetischen Kern und haben dadurch eine vergleichsweise geringere Induktivität als Spulen mit weichmagnetischem Kern. \label{InduktivitaetB}}
+	% \f{trim=0 0.7cm 0 0.5cm,clip,width=0.35\textwidth}{width=0.6\textwidth}{Spule4}{{\bf Luftspule aus Lackdraht.} Luftspulen besitzen keinen magnetischen Kern und haben dadurch eine vergleichsweise geringere Induktivität als Spulen mit weichmagnetischem Kern. \label{InduktivitaetB}}
+	\fo{width=0.5\textwidth}{width=\textwidth}{Magnetisches_Feld_Leiterschleife_Induktion}{
+		\put(31.5, 18){\color{current}$I$}
+		\put(65, 4){\color{current}$I$}
+	}{{\bf Elektromagnetisches einer Induktivität.} Die Induktivität beschreibt, in welchem Maße sich ein Magnetfeldum eine stromdurchflossene Leiterschleife aufbaut. \label{InduktivitaetB}}
 	\s{
 		Die Funktionsweise einer Induktivität beruht auf dem elektromagnetischen Feld, das durch den Stromfluss erzeugt wird. Dieses elektromagnetische Feld induziert einen Strom in benachbarten Leiterspulen des Bauelemnts. Durch diesen Effekt kann elektrische Energie vorübergehend in einem magnetischen Feld gespeichert werden. Zum besseren Verständnis wird im Folgenden die Funktion der Induktivität schrittweise erklärt. 
 		Eine Leiterschleife wird von Strom durchflossen. Dieser Strom erzeugt ein Magnetfeld, dessen Stärke proportional zur Stromstärke ist -- je stärker der Strom, desto stärker das Magnetfeld. Wird die Stromstärke kontinuierlich geändert, erzeugt dies ebenso eine Änderung des Magnetfeldes, welche wiederum (wie in Kapitel \ref{KapInduktion} beschrieben) eine Spannung in benachbarten Leiterschleifen induziert. Diese induzierte Spannung wirkt gemäß der Lenzschen Regel der Änderung des Stroms entgegen. Folglich wirkt beim Einschalten der Stromquelle an der Spule die induzierte Spannung dem Stromfluss entgegen, sodass der Strom erst allmählich ansteigt. Beim Ausschalten der Spule bewirkt die induzierte Spannung, dass der Strom noch eine Zeit lang nachfließt. Diese Gegebenheit, auch Selbstinduktion genannt, ermöglicht eine magnetische Speicherung.
@@ -18,7 +26,7 @@
 		Rechnerisch lässt si./ch die Induktivität $L$ mit der Einheit Henry (H) auf zwei unterschiedliche Weisen ermitteln. Zum einen kann sie mittels der Relation des entstehenden Magnetfelds $N \cdot \varPhi$ zu dem verursachenden Strom $I$ (wie in Gleichung \ref{InduktivitaetFormel}) berechnet werden.
 	}
 	\pause
-	%Josef, hier würde ich ein Bildwechsel in das Model zur Funktionsweise einer Induktivität 
+	
 	\b{\column[c]{0.5\textwidth}}
 
 	\begin{eq}
