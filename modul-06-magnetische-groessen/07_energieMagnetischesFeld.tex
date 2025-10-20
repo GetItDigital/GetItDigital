@@ -1,4 +1,21 @@
+\newvideofile{06.EnergieMagnetischesFeld}{Energie im magnetischen Feld}
 \section{Energie im magnetischen Feld}
+\v{
+	%Videoframe 
+	\begin{frame}{Lernziele}
+		\begin{Lernziele}{Energie im magnetischen Feld}
+			Du kannst ...
+			\begin{itemize}
+				\item ... erklären, wie in einer Induktivität magnetische Energie gespeichert wird.
+				\item ... den Zusammenhang zwischen Spannung, Strom und Energie in einer Induktivität herleiten.
+				\item ... die gespeicherte magnetische Energie mit der Formel \( W_m = \tfrac{1}{2} \, L \, I^2 \) berechnen.
+				\item ... den Energiegehalt eines Magnetfelds über Feldgrößen wie Flussdichte und Feldstärke bestimmen.
+				\item ... erläutern, wie aus der Energiedichte im Luftspalt die Kraft eines Elektromagneten entsteht.
+			\end{itemize}
+		\end{Lernziele}
+\speech{MagnetischeEnergieLernziele}{1}{Im letzten Video habt ihr gelernt, dass eine Induktivität Energie in einem Magnetfeld speichern kann. In dieser Lerneinheit schauen wir uns genauer an, wie sich diese Energie berechnen lässt. Schritt für Schritt seht ihr, wie man die magnetische Energie in einer Spule bestimmt – einmal über den Strom und einmal über die magnetischen Feldgrößen. Zum Schluss erfahrt ihr, wie sich aus dieser gespeicherten Energie die Kraftwirkung eines Magnetfelds ableiten lässt.}	
+\end{frame}
+}
 \begin{frame} \ftx{Energie im magnetischen Feld} 
 	\s{Um die Energie, die in einer Spule gespeichert ist, zu berechnen, wird die in der Abbildung \ref{AbbSpule1} illustrierte Ringkernspule an eine Gleichspannungsquelle angeschlossen. Zum Zeitpunkt $t = 0$ wird die Spannungsquelle eingeschaltet. Die Spannung an der Spule ist dadurch zu jedem Zeitpunkt $t > 0$ gleich der Quellenspannung $U$. 
 	Der durch die Spule geleitene Strom wird nach Gleichung \ref{GLInduktivitaet2} linear ansteigen. Die dadurch zugeführte Energie erzeugt eine Flussdichte im Spulenkern. 
@@ -57,7 +74,45 @@
 	\nomenclature[FF]{$F$}{Kraft \nomunit{N}}
 	\nomenclature[FP]{$P$}{Wirkleistung \nomunit{W}}
 	\nomenclature[FW]{$W$}{Energie \nomunit{J}}
-
+\end{frame}
+\begin{frame}
+\v{
+	\begin{minipage}[t]{0.42\textwidth}
+    	\centering
+    	\fo{width=0.9\textwidth}{width=0.9\textwidth}{Ringspule_MagFeld}{
+     		 \put(6, 53){\color{current}$I$}
+     		 \put(11, 1){\color{current}$I$}
+     		 \put(76, 15){\color{magnetfeld}$\ell_{\mathrm{m}}$}
+   		}{\bf Geschlossene Ringkernspule.}
+  	\end{minipage}%
+ 		 \hfill
+  	\begin{minipage}[t]{0.55\textwidth}
+   		\begin{eqa}
+		\begin{aligned}
+     		\onslide<1->{ u &= L\cdot\frac{\mathrm{d} i}{\mathrm{d} t}}\\
+      		\onslide<2->{ p &= u\cdot i = \frac{\mathrm{d} W}{\mathrm{d} t}}\\
+      		\onslide<3->{ \mathrm{d} W_{\mathrm{m}} &= L\cdot i_{\mathrm{L}} \cdot \mathrm{d} i_{\mathrm{L}} }
+		\end{aligned}
+		\end{eqa}
+    \vspace{0.5em}
+		\begin{eqa}
+    	\begin{aligned}
+       	 	\onslide<4->{W_{\mathrm{m}} &= L\cdot \int\limits_0^I i_{\mathrm{L}}\cdot \mathrm{d}i_{\mathrm{L}} 
+        	= \tfrac{1}{2}\,L\,I^2 \\[0.3em]
+       		\onslide<5->&= \tfrac{1}{2}\,N\,\Phi\,I}
+      	\end{aligned}
+		\end{eqa}
+  	\end{minipage}
+	\speech{MagnetischeEnergieStrom}{1}{Wie wir zuvor gelernt haben ergibt sich die Spannung an einer Induktivität aus dem Induktivitätswert L, multipliziert mit der zeitlichen Änderung des Stroms di nach dt. Wenn wir an diese Induktivität eine konstante Spannung U anlegen, steigt der Strom in der Induktivität linear an.}
+	\silence{2}
+	\speech{MagnetischeEnergieStrom}{2}{Durch diesen Anstieg führen wir der Induktivität eine Energie zu, die wir jetzt berechnen wollen. Dazu schauen wir uns als erstes einmal die elektrische Energie an, die der Spule zuführen, und das machen wir über die Leistung. Die elektrische Leistung p ist bekanntlich das Produkt aus Spannung u und Strom i. Da wir die Momentangrößen betrachten, schreiben wir die beiden Variabeln auch klein. Die Leistung kann aber auch als die zeitliche Ableitung der Energie definiert werden. Hier haben wir jetzt nicht die Energie geschrieben, sondern die Arbeit, aber Arbeit ist ja nichts anderes als eine Energieänderung. Wenn wir also die Arbeit bestimmen, die wir in diese Spule hineinstecken, dann haben wir zwangsläufig am Ende, den Energieinhalt in dieser Spule. Folglich können wir die Energie formal als d W nach dt definieren.}
+	\silence{2}
+	\speech{MagnetischeEnergieStrom}{3}{Im nächsten Schritt stellen wir die Formel nach d W um, und bringen das d t auf die andere Seite der Gleichung. So erhalten wir, d W ist gleich u mal i mal d t. In dieser Gleichung ergänzen wir nun ein paar Indizes. Wir betrachten hier speziell die magnetische Arbeit, die wir in die Induktivität hineinstecken. Wir bezeichnen die magnetische Arbeit mit W m, wobei das m für magnetisch steht. Die Spannung und der Strom an der Induktivität schreiben wir als U L und I L, weil sie direkt aus der Induktivität stammen. Das kleine Zeitintervall dt bleibt dabei erhalten – es ist einfach nur auf die andere Seite der Gleichung gewandert. Jetzt können wir in diese Gleichung die Formel für die Spannung der Induktivität, U L ist gleich L mal d I durch d t, einsetzen. Machen wir das, dann steht in der Gleichung jetzt: L mal d I nach d t, mal I L, mal d t. Wie wir sehen, lassen sich die beiden d t aus der Gleichung kürzen, und wir erhalten für die Berechnung der magnetischen Arbeit: d W m ist gleich die Induktivität L, mal i L, mal d i L. Das bedeutet, die kleine Änderung der magnetischen Energie hängt direkt von der kleinen Änderung des Stroms ab – die zeitliche Änderung d t spielt in dieser Beziehung keine Rolle mehr.}
+	\silence{2}
+	\speech{MagnetischeEnergieStrom}{4}{Nun haben wir die beiden differential Elemente d W m und d i l die wir auflösen möchten, um die magnetische Arbeit W m zu bestimmen. Das machen wir, indem wir das Differenzial auflösen. Und ein Differenzial lösen wir bekanntlich über seine Umkehrform auf – nämlich über das Integral. Wenn wir nun beide Seiten der Gleichung integrieren, summieren wir alle kleinen Energieänderungen d W m auf und erhalten dadurch die gesamte magnetische Energie W m. Auf der linken Seite ergibt das Integral über d W m also einfach W m. Auf der rechten Seite haben wir L mal das Integral über i L mal d i L. Die Induktivität L können wir dabei vor das Integral ziehen, denn sie bleibt während unserer Betrachtung konstant. Sie hängt nur von der Geometrie der Spule ab und ändert sich nicht, solange der Aufbau gleich bleibt. Es bleibt also das Integral über i L mal d i L. Dieses Integral kennen Sie sicher aus der Schulmathematik – es ist die Stammfunktion von i Quadrat durch zwei. Setzen wir das ein, ergibt sich W m ist gleich ein halb mal L mal i L zum Quadrat.}
+	\silence{2}
+	\speech{MagnetischeEnergieStrom}{5}{Das können wir auch auf eine andere Weise ausdrücken. Wir können nämlich das L in der Formel für die Energie durch die Gleichung für die Induktivität ersetzen. Diese haben wir uns im letzten Video schon hergeleitet. Sie lautet L ist gleich N mal Phi durch I. Das ist die Formel für einfache Anordnungen einer Induktivität – also N mal dem magnetischen Fluss, geteilt durch den Strom. Wenn wir diesen Ausdruck nun einsetzen, erhalten wir für die magnetische Energie W m ist gleich ein halb mal N mal Phi mal I. Das ist nun schlussendlich eine griffige Formel, die wir für die Berechnung der Energie, die in einem magnetischen Feld gespeichert ist, einfach verwenden können.}
+	}
 \end{frame}
 \begin{frame} \ftx{Energie im magnetischen Feld} 
 	\s{Die magnetische Energie kann auch aus den Feldgrößen durch Integration mit der magnetischen Flussdichte errechnet werden:
@@ -65,13 +120,14 @@
 		W_{\mathrm{m}} = \ell_{\mathrm{m}}\cdot A\cdot \int_0^{B_L} H\d B = \ell_{\mathrm{m}}\cdot A \cdot \frac{B_{\mathrm{L}}^2}{2\cdot \mu_{\mathrm{r}}\cdot \mu_0} 
 	\end{equation}}
 	\b{Berechnung über die Feldgrößen:
-	\begin{equation}
+	\begin{equation*}
 		\begin{aligned}
 		\onslide<1->{W_{\mathrm{m}} &= \ell_{\mathrm{m}}\cdot A\cdot \int\limits_0^{B_L} H\d B \\
 		  &= \ell_{\mathrm{m}}\cdot A \cdot \frac{B_{\mathrm{L}}^2}{2\cdot \mu_{\mathrm{r}}\cdot \mu_0}} \\[10pt]
-		\onslide<2->{\frac{W_{\mathrm{m}}}{V} &= \frac{B_{\mathrm{L}}^2}{2\cdot \mu_0} = \frac{F}{A}}
-		\end{aligned}
-	\end{equation}}
+		\onslide<2->{\frac{W_{\mathrm{m}}}{V} &= \frac{B_{\mathrm{L}}^2}{2\cdot \mu_0} = \frac{F}{A}} \\
+		\onslide<3->{F &= \frac{B_{\mathrm{L}}^2}{2\cdot \mu_0} \cdot A}
+	\end{aligned}
+	\end{equation*}}
 	\pause
 	\s{Bei einem Elektromagneten hat die Energiedichte im Luftspalt (also die Energie pro Volumen des Luftspalts) eine besondere Bedeutung: Sie steht für die \glqq Kraft des Elektromagneten\grqq. Die maximale Kraftwirkung befindet sich genau am Übergang vom Luftspalt zum Eisenkern -- entspricht also einem theoretisch unendlich schmalen Luftspalt. Da der Luftspalt, wie der Name schon sagt, meistens mit Luft gefüllt ist, ist im Normalfall $\mu_{\mathrm{r}} = 1$ und kann weggelassen werden.
 	
@@ -79,4 +135,9 @@
 		\frac{W_{\mathrm{m}}}{V} = \frac{B_{\mathrm{L}}^2}{2\cdot \mu_0} = \frac{F}{A}
 	\end{eq}
 	}
+\speech{MagnetischeEnergieFeldgroesse}{1}{Wir können die Energie aber auch auf eine andere Art berechnen, nämlich über die Feldgrößen selbst. Die Berechnung der magnetischen Arbeit W m über die Feldgrößen ergibt sich aus der magnetischen Länge L m, multipliziert mit der Querschnittsfläche A und mit dem Integral über die magnetische Feldstärke H in Abhängigkeit von B, also H mal d B. Die beiden Größen L m und A sind während der Betrachtung konstant, sie hängen nicht von B ab und können daher vor das Integral gezogen werden. An dieser Stelle ersparen wir uns die Herleitung der Formel, denn sie ist etwas aufwendiger als zuvor. In eurer Formelsammlung könnt ihr euch die Gleichung: magnetische Länge L m, mal der Querschnittsfläche A, mal der magnetischen Flussdichte B zum Quadrat, geteilt durch zwei mal der magnetischen Feldkonstanten Mü null, mal der relativen Permeabilität Mü r, notieren. Mittels dieser Gleichung könnt ihr die magnetische Energie W m über die Feldgrößen berechnen.}
+\silence{2}
+\speech{MagnetischeEnergieFeldgroesse}{2}{Wir werden die Energiedichte im Magnetfeld noch häufiger verwenden, zum Beispiel in Übungsaufgaben oder auch in Klausuraufgaben. Sie ist ein nützliches Werkzeug, denn über die im Feld gespeicherte Energie kann man andere physikalische Größen berechnen, zum Beispiel die Kraft. Bei einem Elektromagneten hat die Energiedichte im Luftspalt eine besondere Bedeutung. Das liegt daran, dass die magnetische Kraft ausschließlich im Luftspalt entsteht. Die Energie pro Volumen im Luftspalt ist daher ein Maß für die dort wirkende Kraft. Um die Kraft zu berechnen, setzen wir die magnetische Energie im Luftspalt gleich der mechanischen Energie. Aus der Energiedichte können wir dann die sogenannte Kraftdichte ableiten. Kraftdichte bedeutet Kraft pro Fläche. Die Fläche ist hier die Querschnittsfläche des Luftspalts. Die magnetische Energiedichte lautet: w gleich B Quadrat geteilt durch zwei mal mü r mal mü null. Dabei steht B für die magnetische Flussdichte, mü r für die relative Permeabilität und mü null für die magnetische Feldkonstante. Wenn wir diese Energiedichte auf den Luftspalt anwenden, erhalten wir die Kraftdichte. Sie lautet: F geteilt durch A ist gleich B Quadrat geteilt durch zwei mal die Permeabilitätskonstante mü null. Das bedeutet: Die Kraft pro Fläche hängt direkt von der magnetischen Flussdichte ab.}
+\silence{2}
+\speech{MagnetischeEnergieFeldgroesse}{3}{Das war die Kraftdichte, also die Kraft pro Fläche. Wenn wir nun die gesamte Kraft berechnen möchten, müssen wir diese Gleichung nur nach der Kraft umstellen. Dazu bringen wir die Fläche A nun auf die andere Seite. So erhalten wir die Formel: F ist gleich magnetisch Flussdichte B Quadrat geteilt durch zwei mal die Permeabilitätskonstante mü null, mal der Fläche A. Damit können wir jetzt die magnetische Anziehungskraft eines Elektromagneten im Luftspalt berechnen. So, ihr habt nun gesehen, wie sich die magnetische Energie über den Strom und die Feldgrößen berechnen lässt und wie daraus die Kraft eines Magnetfelds entsteht. Ich empfehle euch jetzt, die vorhandenen Übungsaufgaben in Moodle zu bearbeiten, um das Gelernte sicher anwenden zu können.}
 \end{frame}
