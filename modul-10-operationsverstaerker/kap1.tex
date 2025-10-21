@@ -143,11 +143,10 @@
                     \item Sie werden in der Regel aufgrund ihres ursprünglichen Einsatzes in Analogrechnern als \glqq Operationsverstärker\grqq{} bezeichnet.}
                 \end{itemize}
             \end{columns}}
-    
-    %Gesprochener Text 
-    %\speech{Einführung Operationsverstärker}{1}{Im letzten Kapitel haben wir besprochen, wie man Signale mit kleinen Eingangsamplituden durch ein- und mehrstufige Transistorverstärker verstärken kann. Diese Verstärkerschaltungen wurden vor allem in der Mess-, Steuer- und Regelungstechnik verwendet und bis in die 1950er Jahre aus diskreten Elektronenröhren oder Transistoren aufgebaut. Mit der Entwicklung der integrierten Schaltungen in den späten 1960er Jahren wurde die Fertigung und Miniaturisierung von Schaltungen möglich, was wiederum die Bereitstellung von modularen Bausteinen für die Hardwareentwicklung ermöglichte.
-    %Das gilt auch für die in den 1940er Jahren entwickelten Differenzverstärker, die aufgrund ihres weit verbreiteten Einsatzes in Analogrechnern auch als Operationsverstärker bezeichnet werden. Diese Verstärker sind als Universalverstärker konzipiert und ihre Funktion wird nur durch die äußere Beschaltung bestimmt. Mit dem gleichen Baustein kann man also Spannungen verstärken, Rechenoperationen wie Addition, Subtraktion oder Integration durchführen und Signale schalten. Operationsverstärker sind in der Mess- und Regeltechnik, der Signalverarbeitung und der Signalformung unerlässlich.
-    %Im Folgenden wird ein Operationsverstärker gezeigt, der aus diskreten Transistoren aufgebaut ist, sowie ein integrierter Schaltkreis. Durch die direkte Kopplung der Verstärkerstufen können Operationsverstärker sowohl Gleich- als auch Wechselspannungen verstärken und gehören deshalb zur Gruppe der Gleichspannungsverstärker.}
+    \speech{OPV}{5}{Operationsverstärker haben ihren Ursprung in den Analogrechnern der neunzehnhundertvierziger und fünfziger Jahre.
+        Damals wollte man mit Schaltungen mathematische Operationen wie Addition, Subtraktion oder Integration durchführen - daher der Name Operationsverstärker.
+        rüher wurden sie diskret mit Röhren oder Transistoren aufgebaut, heute sind sie fast immer als integrierte Schaltungen erhältlich.
+        Ein wichtiger Punkt: Das Verhalten eines OPVs wird nicht durch seinen internen Aufbau allein bestimmt, sondern vor allem durch die externe Beschaltung.} %seed: 988446
 \end{frame}
 
 \begin{frame}
@@ -168,6 +167,13 @@
     \label{fig:Komparator}
     \end{figure}
     }
+    \speech{OPV}{6}{Hier sehen wir das Normsymbol eines Operationsverstärkers.
+    Er hat zwei Eingänge: den invertierenden Eingang mit dem Minuszeichen und den nicht-invertierenden Eingang mit dem Pluszeichen.
+    Was macht der OP V?
+    Er verstärkt die Differenzspannung zwischen diesen beiden Eingängen - und das mit einer sehr großen Verstärkung.
+    Das bedeutet: Schon kleinste Unterschiede zwischen plus und minus Eingang entscheiden darüber, ob die Ausgangsspannung an die obere oder an die untere Maximal-Grenze gezogen wird. 
+    Diese Grenze wird maßgeblich durch die Versorgungsspannung U B festgelegt. Diese Spannung wird dem OP V über zwei extra Anschlüsse bereit gestellt die im Normsymbol nicht dargestellt sind.} %seed: 988461
+
 \end{frame}
 
 \begin{frame}
