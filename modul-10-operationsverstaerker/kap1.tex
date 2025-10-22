@@ -187,49 +187,14 @@
             }{Verhalten eines vereinfachten Operationsverstärkers bei Anlegen einer positiven Differenzspannung am Eingang 
             \label{fig:Funktionsweise OPV Folien ohne Pfeile}}
     \end{figure}
-   } 
+   }
+   \speech{Funktionsweise_OPV}{1}{Um besser zu verstehen, wie das funktioniert, schauen wir uns ein vereinfachtes Transistormodell an.
+    In der Mitte erkennen wir zwei Transistoren, T eins und T zwei. Sie bilden eine Differenzverstärkerstufe.
+    Transistor T drei wirkt als Stromquelle, die den Differenzverstärker versorgt.
+    Und T vier übernimmt die Ausgangsstufe, die das Signal verstärkt an den Ausgang weitergibt.} %seed: 876902 
 \end{frame}
 
-%\speech{
-%Abbildung 1.3 zeigt das Verhalten eines vereinfachten Operationsverstärkers, wenn eine positive Differenzspannung am Eingang anliegt.  
-%Die Schaltung ist in drei farblich hervorgehobene Bereiche unterteilt.  
-%Ein roter Bereich links, ein violetter Bereich unten und ein gelber Bereich rechts.  
-%Blaue Pfeile zeigen, wie sich das elektrische Potenzial an verschiedenen Punkten der Schaltung verändert.  
-%
-%Der rote Bereich stellt eine Differenzverstärkerstufe dar.  
-%Diese besteht aus zwei Transistoren, die die Differenzspannung am Eingang verarbeiten.  
-%Der positive Eingang erhält eine höhere Spannung als der negative Eingang, wodurch sich der Stromfluss in den Transistoren ändert.  
-%
-%Der violette Bereich enthält zwei Dioden.  
-%Diese Dioden stabilisieren das Spannungsverhalten zwischen den Transistoren und den nachfolgenden Verstärkerstufen.  
-%
-%Der gelbe Bereich zeigt die Ausgangsstufe des Operationsverstärkers.  
-%Die Versorgungsspannung ist durch Plus U B und Minus U B gekennzeichnet.  
-%Ein Lastwiderstand ist zwischen dem Ausgang und der negativen Versorgungsspannung geschaltet.  
-%Die Spannung U A stellt die Ausgangsspannung dar, die sich entsprechend der Eingangsdifferenzspannung verändert.  
-%
-%Die Abbildung zeigt, wie eine kleine Änderung der Eingangsspannung eine größere Änderung der Ausgangsspannung bewirkt.  
-%}
 
-%\speech {Funktionsweise von Operationsverstärkern}{1}{
- %   Die Funktionsweise lässt sich gut an einem vereinfachten Ersatzschaltbild erklären. 
- %In dieser Abbildung ist ein vereinfachtes Ersatzschaltbild eines OPVs aus Bipolartransistoren dargestellt. 
- %Heute werden Operationsverstärker vermehrt aus Feldeffekttransistoren (FET) aufgebaut. 
- %Die Umsetzung der Verstärkerschaltungen mit FETs erfolgt aber sehr ähnlich zu Bipolartransistoren, 
- %weswegen die Funktionsweise hier mit einer Art von Transistoren gezeigt werden soll. 
- %Die NPN-Transistoren $T_1$ und $T_2$ sind identisch und bilden den Eingang des Operationsverstärkers. 
- %Zwischen dem mit „+“ gekennzeichneten Eingang und dem mit „-“ gekennzeichneten Eingang 
- %wird die zu verstärkende Differenzspannung $U_{\textnormal{Diff}}$ angelegt. Die Eingänge werden als nicht-invertierender Eingang 
- %„+“ und invertierender Eingang „-“ bezeichnet. Dieser Differenzverstärker am Eingang des OPVs ist in der unteren Abbildung rot umrandet. 
- %Der Transistor $T_3$ funktioniert durch die Verschaltung mit den Dioden $D_1$ und $D_2$ wie eine Konstantspannungsquelle bzw. Strombegrenzung. 
- %Die zwei Dioden sorgen für eine Regulierung der Basisspannung an $T_3$. Dieser Teil der Schaltung ist lila markiert. 
- %Wenn die nicht-invertierte Eingangsspannung steigt, sinkt der Widerstand des Transistors $T_2$. 
- %Das führt zu einer Reduktion der Spannung am Kollektor von $T_2$ und einem Anstieg am Emitter. 
- %Da die Basis des Transistors $T_4$ mit dem Kollektor von $T_2$ verbunden ist, 
- %verursacht dies eine entsprechende Spannungsreduktion an der Basis von $T_4$. 
- %Infolgedessen wird der Kollektor-Emitter-Pfad des PNP-Transistors $T_4$ hochohmiger, 
- %so dass mehr Strom durch den Lastwiderstand $R_{\textnormal{L}}$ fließt. 
- %Dadurch erhöht sich der Spannungsabfall über $R_{\textnormal{L}}$ und somit die Spannung am Ausgang $U_{\textnormal{A}}$.} 
 
 
 \begin{frame}
@@ -269,15 +234,7 @@
                 \label{fig:Funktionsweise OPV 1 Folien Teil 1}}
         \end{figure}   
         Eine positive Differenzspannung (A) führt zu einer Reduktion des Widerstands von $T_2$, was zu einer Spannungsreduktion an dessen Kollektor und einem Anstieg am Emitter führt (B). $T_3$ fungiert als Stromquelle.}
-    %\speech{Funktionsweise von Operationsverstärkern Folie 1}{1}{
-    % Die Funktionsweise von Operationsverstärkern lässt sich gut an einem vereinfachten Ersatzschaltbild erklären. 
-    %Die NPN-Transistoren T1 und T2 sind identisch und bilden den Eingang des Operationsverstärkers. 
-    %Zwischen dem mit „+“ gekennzeichneten Eingang und dem mit „-“ gekennzeichneten Eingang wird die zu verstärkende Differenzspannung angelegt. 
-    %Die Eingänge werden als nicht-invertierender Eingang „+“ und invertierender Eingang „-“ bezeichnet. 
-    % Dieser Differenzverstärker ist in der unteren Abbildung rot umrandet. 
-    %Der Transistor T3 funktioniert durch die Verschaltung mit den Dioden D1 und D2 wie eine Konstantspannungsquelle bzw. Strombegrenzung. 
-    %Die zwei Dioden sorgen für eine Regulierung der Basisspannung an T3. Dieser Teil der Schaltung ist lila markiert.
-    %}
+   
 
 \end{frame}
 
@@ -291,6 +248,9 @@
             \label{fig:Funktionsweise OPV 1 Folien Teil 2}}
     \end{figure}   
 Durch die Spannungserhöhung an der Basis von $T_4$ (C) führt der Kollektor-\linebreak Emitter-Pfad von $T_4$ mehr Strom (D), was zu einem erhöhten Spannungsabfall am Lastwiderstand $R_{\textnormal{L}}$ und somit zu einer höheren Ausgangsspannung $U_{\textnormal{A}}$ führt.}
+\speech{Funktionsweise_OPV}{3}{Schauen wir uns die Wirkung einer positiven Eingangsspannung an:
+Liegt am nicht-invertierenden Eingang eine positive Spannung, dann leitet Transistor T zwei stärker. Dadurch fließt mehr Strom über T zwei, und T vier wird ebenfalls stärker durchgesteuert.
+Die Folge: Die Ausgangsspannung steigt.} %seed: 876907 
 \end{frame}
 
 \begin{frame}
@@ -328,29 +288,9 @@ Durch die Spannungserhöhung an der Basis von $T_4$ (C) führt der Kollektor-\li
                 \label{fig:Funktionsweise OPV 2 Folien}}
             \end{figure}  
             Eine höhere invertierte Eingangsspannung  hingegen verringert den Widerstand im Kollektor-Emitter-Pfad von $T_1$. Der dadurch erhöhte Widerstand von $T_4$ verringert den Stromfluss durch $R_{\textnormal{L}}$, wodurch die Spannung $U_{\textnormal{A}}$ ebenfalls sinkt.            }
-    %\speech{Funktionsweise von Operationsverstärkern Folie 2}{1}{
-    %Wenn sich die invertierte Eingangsspannung erhöht, verringert sich der Widerstand im Kollektor-Emitter-Pfad des Transistors T1. Das führt zu einer niedrigeren Spannung am Kollektor von T1 und einer höheren Spannung am Emitter. Da die Emitter von T1 und T2 miteinander verbunden sind, steigt auch die Spannung am Emitter von T2. Dadurch verringert sich die Spannungsdifferenz zwischen Basis und Emitter von T2, was den Kollektor-Emitter-Pfad von T2 resistiver macht. Infolgedessen steigt die Spannung am Kollektor von T2, was die Basisspannung von T4 erhöht. Dadurch wird T4 resistiver, was den Stromfluss durch den Widerstand RL verringert und die Spannung an RL senkt. So kann die Ausgangsspannung dieses Operationsverstärkers zwischen Ub+ und Ub- gesteuert werden.    
-    %}
-
-    %\speech{
-%Abbildung 1.4 zeigt das Verhalten eines vereinfachten Operationsverstärkers, wenn eine negative Differenzspannung am Eingang anliegt.  
-%Blaue Pfeile markieren, wie sich das elektrische Potenzial an verschiedenen Punkten der Schaltung verändert.  
-%
-%Die Schaltung besteht aus mehreren Transistoren, Dioden und Widerständen.  
-%Die wichtigsten Komponenten sind die Transistoren T1, T2, T3 und T4 sowie die Dioden D1 und D2.  
-%Die Versorgungsspannungen sind mit Plus U B und Minus U B gekennzeichnet.  
-%Am Ausgang liegt die Spannung U A an, die durch die Eingangsspannung gesteuert wird.  
-%
-%Der Transistor T1 erhält eine negative Differenzspannung, wodurch er weniger Strom leitet.  
-%Der Transistor T2 übernimmt mehr Strom und beeinflusst den Stromfluss durch die nachfolgenden Transistoren T3 und T4.  
-%Dies führt dazu, dass sich die Ausgangsspannung U A entsprechend verändert.  
-%
-%Die Dioden D1 und D2 stabilisieren die Schaltung und sorgen für eine konstante Vorspannung der nachfolgenden Transistoren.  
-%Der Lastwiderstand R L ist zwischen dem Ausgang U A und der negativen Versorgungsspannung Minus U B geschaltet.  
-%
-%Die Abbildung zeigt, dass der Operationsverstärker symmetrisch arbeitet.  
-%Eine negative Eingangsspannung führt dazu, dass die Ausgangsspannung sich in die entgegengesetzte Richtung verschiebt.  
-%}
+            \speech{4}{Funktionsweise_OPV}{Umgekehrt, wenn die Spannung am invertierenden Eingang größer ist, leitet Transistor T eins stärker. Dann sinkt der Strom durch T zwei, und T vier wird weniger durchgesteuert.
+            Die Ausgangsspannung fällt.
+            Wir sehen also: Der OP V verstärkt die Differenz der Eingangsspannungen - genau das ist sein Grundprinzip.} %seed: 875598
 \end{frame}
 
 \begin{frame}
@@ -393,6 +333,11 @@ Durch die Spannungserhöhung an der Basis von $T_4$ (C) führt der Kollektor-\li
                     \item	Der verfügbare Ausgangsstrom ist durch die Quelle und den Transistor $T_4$ vorgegeben. }
                 \end{itemize}
             \end{columns}}
+            \speech{Funktionsweise_OPV}{7}{Schon aus dieser vereinfachten Schaltung lassen sich einige wichtige Eigenschaften ableiten.
+        Erstens: Die Eingangsströme sind sehr gering, da die Transistoren in der Eingangsstufe fast keinen Strom aufnehmen.
+        Zweitens: Die Ausgangsspannung kann nicht unendlich groß werden, sondern ist durch die Versorgungsspannung begrenzt.
+        Drittens: Der Ausgangsstrom ist ebenfalls nicht beliebig, sondern wird durch die Ausgangstransistoren limitiert.
+        Das sind genau die Punkte, die wir später im Detail noch weiter betrachten werden.} %seed: 875607
         \end{frame}
     %\speech{Wichtige Eigenschaften von Operationsverstärkern}{1}{
         %In dieser Schaltung lassen sich bereits einige wichtige Eigenschaften eines realen Operationsverstärkers erkennen:
