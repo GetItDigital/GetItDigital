@@ -130,7 +130,7 @@
     \speech{OPV_Eigenschaften}{4}{Hier sehen wir zwei verschiedene Darstellungen des Operationsverstärkers. Oben die ältere Version und unten das neue Schaltzeichen. Hier erkennen wir auch die Anschlüsse plus U B und  minus U B für die Versorgungsspannung.
 
     Für unsere Betrachtungen spielt der interne Aufbau des OPV oft keine Rolle. Wir behandeln ihn stattdessen als eine Black-Box - ein System, das wir nur über Eingangs- und Ausgangsgrößen beschreiben.
-    Das erleichtert die Modellierung: Wir konzentrieren uns auf Eingangsspannung, Eingangsstrom, Ausgangsspannung und Ausgangsstrom - mehr brauchen wir für die meisten Anwendungen gar nicht.}
+    Das erleichtert die Modellierung: Wir konzentrieren uns auf Eingangsspannung, Eingangsstrom, Ausgangsspannung und Ausgangsstrom - mehr brauchen wir für die meisten Anwendungen gar nicht.}  %seed: 875629
 \end{frame}
 
 \begin{frame}
@@ -193,6 +193,25 @@
                 Gleichtakt-\linebreak unterdrückung & $CMR = \infty$~dB  & $CMR$~=~86~dB\\
                 \hline
             \end{tabular}}
+            \speech{OPV_Eigenschaften}{5}{In dieser Tabelle vergleichen wir die idealen Eigenschaften eines OP V mit den realen Werten.
+
+            Ein idealer Operationsverstärker hätte:
+            -eine unendliche Leerlaufverstärkung,
+            -eine unendliche Eingangsimpedanz,
+            -eine Ausgangsimpedanz von null,
+            -und eine unendliche Bandbreite.
+
+            Die Realität sieht natürlich anders aus:
+            Typische Leerlaufverstärkungen liegen zwischen 10 hoch fünf und 10 hoch sechs, also immer noch sehr groß, aber nicht unendlich.
+            Die Eingangsimpedanz beträgt oft einige Megaohm, manchmal sogar Gigaohm.
+            Die Ausgangsimpedanz ist klein, aber nicht null.
+            Und die Bandbreite ist durch das Verstärkungs-Bandbreite-Produkt begrenzt.
+
+            Dazu kommen weitere praktische Größen: die Slew Rate, also wie schnell die Ausgangsspannung maximal ansteigen kann, 
+            die Offsetspannung, die den Arbeitspunkt verschiebt
+            und die Gleichtaktunterdrückung (CMR), die angibt, wie gut Gleichtaktanteile am Eingang unterdrückt werden.
+
+            Merken wir uns: Der ideale OP V ist ein hilfreiches Denkmodell - aber die realen Werte bestimmen letztlich, wie gut eine Schaltung funktioniert.} %seed: 875654 
 \end{frame}
 
 \begin{frame}
@@ -200,7 +219,7 @@
         Mit den oben gemachten Angaben kann die Kennlinie eines Operationsverstärkers konstruiert werden. 
         Diese ist in der folgenden Abbildung dargestellt:
 
-        %\speech{1}{Mit den oben gemachten Angaben kann die Kennlinie eines Operationsverstärkers konstruiert werden. Diese ist in der folgenden Abbildung dargestellt.}
+    
      
 
         \begin{center}
@@ -220,33 +239,7 @@
         Der Headroom ist eine wichtige Größe für die Auslegung von Operarationsverstärker. 
         Operationsverstärker, bei denen dieser Headroom sehr gering ist, werden von den Herstellern zumeist als \glqq Rail-to-Rail\grqq{} Verstärker klassifiziert. 
 
-     %   \speech{
-     %       Abbildung 2.2 zeigt die Kennlinie eines Operationsverstärkers.  
-     %       Das Diagramm stellt die Ausgangsspannung U A in Abhängigkeit von der Eingangsdifferenzspannung U Diff dar.  
-     %       
-     %       Die Kennlinie besteht aus drei unterschiedlichen Bereichen.  
-     %       Der lineare Bereich ist grün markiert.  
-     %       In diesem Bereich ist die Verstärkung des Operationsverstärkers konstant.  
-     %       Kleine Änderungen der Eingangsspannung führen zu proportionalen Änderungen der Ausgangsspannung.  
-     %       
-     %       Der nichtlineare Bereich ist gelb markiert.  
-     %       Hier beginnt die Verstärkung abzunehmen, da sich die Kennlinie zu den Sättigungswerten hin krümmt.  
-     %       
-     %       Der Sättigungsbereich ist rot markiert.  
-     %       In diesem Bereich erreicht die Ausgangsspannung ihr Maximum oder Minimum.  
-     %       Eine weitere Erhöhung oder Verringerung der Eingangsspannung hat keine Wirkung mehr.  
-     %       
-     %       Zusätzlich ist eine gestrichelte Linie eingezeichnet, die die idealisierte, offsetfreie Kennlinie darstellt.  
-     %       Die tatsächliche Kennlinie ist jedoch leicht verschoben, was auf eine Offsetspannung zurückzuführen ist.  
-     %       Diese Verschiebung ist im Diagramm mit einem kleinen grünen Rechteck markiert.  
-     %       
-     %       Zwei Spannungsdifferenzen sind als grüne Pfeile eingezeichnet.  
-     %       Die Differenz Delta U B stellt die Änderung der Eingangsspannung dar.  
-     %       Die Differenz Delta U A zeigt die entsprechende Änderung der Ausgangsspannung.  
-     %       
-    %        Die Abbildung zeigt, dass ein Operationsverstärker im linearen Bereich als Verstärker arbeitet.  
-    %        Wenn die Eingangsspannung zu groß wird, tritt eine Begrenzung im Sättigungsbereich auf.  
-    %        }
+     
                 
 
         \begin{Merksatz}{}  
@@ -255,10 +248,7 @@
         \end{Merksatz}
         }
 
-%\speech {1}{
-%Merke: Um das Rechnen mit Operationsverstärkern zu erleichtern, wird häufig ein vereinfachtes Modell verwendet. 
-%Es ist wichtig die Grenzen dieses Modells zu kennen und diese bei der Bauteilauswahl und Schaltungsplanung zu berücksichtigen. 
-%}
+
     \b{
     \frametitle{Allgemeine Kennlinie eines Operationsverstärkers}
     \begin{columns}
@@ -276,4 +266,16 @@
                     }
                 \end{itemize}
             \end{columns}}
+        \speech{OPV_Eigenschaften}{8}{Zum Abschluss dieses Videos schauen wir uns die allgemeine Kennlinie eines O P V an.
+
+        Im mittleren Bereich verhält sich der Verstärker linear: Die Ausgangsspannung folgt der Eingangsdifferenz, verstärkt mit der Leerlaufverstärkung. Das sehen wir am grünen Teil der Kennlinie.
+        Aber dieser Bereich ist begrenzt:
+
+        Nach oben und unten verhält sich der O P V nicht mehr linear bevor er seinen Sättigungsbereich erreicht. Hier kann die Ausgangspannung nicht weiter verstärkt werden.
+
+        Ganz bis an die Grenzen der Versorgungsspannung kommt der Ausgang oft nicht heran - dieser Abstand wird als Headroom bezeichnet.
+
+        Zusätzlich gibt es die Offsetspannung, die die Kennlinie ein Stück nach links oder rechts verschiebt.
+
+        Das bedeutet: In der Praxis arbeiten wir mit O P Vs am besten in ihrem linearen Bereich, und wir müssen immer die Grenzen durch Versorgungsspannung und Offset im Blick behalten.} %seed: 875664 
 \end{frame}
