@@ -5,6 +5,12 @@
         Wie groß muss die Spannung am Ausgang des Verstärkers sein, damit der Lautsprecher bei 1 kHz 25~W aufnimmt. 
         Wie kann hier vorgegangen werden, wenn eine Operationsverstärkerschaltung für die Lösung genutzt werden soll? \par
         \fu{\resizebox{\textwidth}{!}{\input{Tikz/src/OPVBeispielproblem.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite \label{fig:Beispielproblem 1 Folien}}.
+        \speech{Gegenkopplung}{1}{In den vorherigen Videos haben wir uns auf den inneren Aufbau des Verstärkers seine charakteristischen Größen konzentriert. Nun schauen wir uns die Beschaltungsmöglichkeiten an.
+Starten wir mit einer kleinen Motivation:
+Angenommen, wir wollen ein Musiksignal von unserem Handy über einen Lautsprecher wiedergeben.
+Das Handy liefert vielleicht eine Spannung von rund einem Volt.
+Der Lautsprecher braucht aber 25 Watt an 4 Ohm - das entspricht einer Ausgangsspannung von ungefähr zehn Volt.
+Wir brauchen also eine Schaltung, die diese Verstärkung übernimmt - einen Verstärker.} %seed: 875677
 \end{frame}}
 
 %\speech {1}{
@@ -28,13 +34,6 @@
             \end{itemize}
         \end{Lernziele}
     }
-
-%\speech{1}{
-%    Lernziele: Operationsverstärker.
-%    Die Studierenden können verschiedene Operationsverstärkerschaltungen und mögliche Einsatzgebiete nennen. 
-%    Sie können die Funktion von vorliegenden Operationsverstärkerschaltungen bestimmen und mithilfe der Kirchhoff'schen Gesetze die Verstärkung berechnen. 
-%    Sie können wichtige Eigenschaften von Operationsverstärkerschaltungen benennen.    
-%}
 
     Dazu soll ein Problem dargestellt werden, für dessen Lösung ein Operationsverstärker verwendet werden soll. Anhand dieses Problems soll die Verwendung von Operationsverstärkern Schritt für Schritt motiviert werden. \par
     \begin{bsp}{ Teil 1: Entwicklung einer Verstärkerschaltung für Musiksignale}{ Beispiel Verstaerkung }
@@ -64,6 +63,10 @@
         Wie kann nun mithilfe eines Operationsverstärkers der mit einem \glqq ?\grqq{} gekennzeichneten Teil der Schaltung ersetzt werden, um eine notwendige Verstärkung von 5 zu erreichen. 
         \fu{\resizebox{\textwidth}{!}{\input{Tikz/src/OPVBeispielproblem.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite \label{fig:Beispielproblem 1 Folien 2}} 
     }
+    \speech{Gegenkopplung}{2}{Hier sehen wir die einfache Rechnung:
+    Mit 25 Watt an 4 Ohm brauchen wir eine Spannung von zehn Volt.
+    Das heißt, wir benötigen eine Spannungsverstärkung von zehn zu eins, also den Faktor zehn.
+    Wie können wir das mit einem Operationsverstärker umsetzen?} %seed: 875681 
 \end{frame}
 
 \begin{frame}
@@ -71,42 +74,20 @@
             \frametitle{Prinzip der Gegenkopplung - Lösung des Beispielproblems (2)}
              \fu{\resizebox{0.28\textwidth}{!}{\input{Tikz/src/Verschaltungdesverstaerkers_ersterTeil.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite \label{fig:Beispielproblem 1 Folien 2 Abbildung 1}} 
         }
+    \speech{Gegenkopplung}{3}{Schauen wir uns nun einige Beispiele für Verschaltungsarten an. 
+Wenn wir einen OP V einfach so beschalten, ohne weitere Widerstände und ohne Rückführung, dann arbeitet er wie ein Komparator.
+Das heißt: Schon eine winzige Differenz zwischen den beiden Eingängen entscheidet darüber, ob der Ausgang auf plus U B oder auf minus U B geht.
+Man sieht hier auch die Slew Rate, also die maximale Geschwindigkeit, mit der der Ausgang überhaupt ansteigen kann.
+Kurz gesagt: Ohne Rückkopplung ist der OP V nur als Komparator geeignet, nicht als linearer Verstärker.} %seed: 875682 
     \end{frame}
     \begin{frame}
         \b{
             \frametitle{Prinzip der Gegenkopplung - Lösung des Beispielproblems (2)}
              \fu{\resizebox{0.8\textwidth}{!}{\input{Tikz/src/Verschaltungdesverstaerkers_zweiterTeil.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite \label{fig:Beispielproblem 1 Folien 2 Abbildung 2}} 
         }
+        \speech{Gegenkopplung}{4}{Wenn wir den Ausgang auf den invertierenden Eingang legen, erzeugen wir eine Rückführung. Das Resultat: Die Ausgangsspannung kann jetzt maximal den Betrag der eingangsseitigen Spannungsdifferenz erreichen. Aber natürlich nur wenn der OP V nicht schon vorher in den Sättigungsbereich kommt. Der OP V versucht nun ständig, die Differenzspannung zwischen plus und minus Eingang auf null zu regeln.} %seed: 875683        
     \end{frame}
 
-%\speech{
-% Beispiel 3.1: Teil 1: Entwicklung einer Verstärkerschaltung für Musiksignale.
-% Bei der Entwicklung von Hi-Fi-Geräten müssen Verstärker an die Last (also den Lautsprecher) angepasst werden.
-% Dazu wird ein Leistungsverstärker (d.h. eine Endstufe) benötigt. Eine solche Endstufe, die geeignet ist, das Signal eines Handys so zu verstärken, dass ein Lautsprecher damit betrieben werden kann soll hier aufgebaut werden.
-% Ein vereinfachtes Ersatzschaltbild des Lautsprechers ist durch eine Induktivität mit einem in Reihe geschalteten Widerstand gegeben (siehe Abbildung \ref{fig:Beispielproblem 1}).
-% Das Eingangsspannungsniveau ist 1~V und es soll ein 4~$\mathrm{\Omega}$ Lautsprecher betrieben werden (4~$\mathrm{\Omega}$ bedeutet, dass der Lautsprecher bei 1~kHz eine Impedanz von 4~$\Omega$ aufweist).
-% Wie groß muss die Spannung am Ausgang des Verstärkers sein, damit der Lautsprecher bei 1~kHz 25 W aufnimmt? Wie kann hier vorgegangen werden, wenn eine Operationsverstärkerschaltung für die Lösung genutzt werden soll?
-% Lösung: Zunächst muss dazu die Spannung berechnet werden, die der Verstärker ausgeben soll.
-% U A = sqrt(P * R) = sqrt(25 W * 4 $\Omega$) = 10 V
-% Wie kann nun mithilfe eines Operationsverstärkers der mit einem ? gekennzeichneten Teil der Schaltung ersetzt werden, um eine notwendige Verstärkung von 10 zu erreichen (siehe Abbildung \ref{fig:Beispielproblem 1})?
-%} 
-
-%\speech{
-%Abbildung 3.1 zeigt eine Schaltung mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite.  
-%Die Signalquelle liefert eine Wechselspannung mit einer Amplitude von 1 Volt.  
-%Das Signal wird an eine unbekannte Schaltung weitergeleitet, die durch ein Fragezeichen gekennzeichnet ist.  
-%Diese Schaltung verstärkt oder verändert das Signal und gibt es an die Ausgangslast weiter.  
-%
-%Die Ausgangslast ist in einem gestrichelten Rechteck markiert und stellt ein Ersatzschaltbild für einen Lautsprecher dar.  
-%Diese Last besteht aus einem Widerstand von 2 Ohm in Reihe mit einer Induktivität von 100 Millihenry.  
-%Die Induktivität beeinflusst das Verhalten der Last in Abhängigkeit von der Frequenz des Eingangssignals.  
-%
-%Die Aufgabe besteht darin, den Verstärkungsfaktor der unbekannten Schaltung zu bestimmen.  
-%Der Verstärkungsfaktor ist definiert als das Verhältnis der Ausgangsspannung U A zur Eingangsspannung U E.  
-%Mathematisch ausgedrückt als V gleich U A geteilt durch U E.  
-%
-%Um den Verstärkungsfaktor zu berechnen, müssen die Eigenschaften der unbekannten Schaltung sowie die Auswirkungen der komplexen Last berücksichtigt werden.  
-%}
 
 
 
@@ -127,7 +108,7 @@
     \fu{
         \resizebox{\textwidth}{!}{\input{Tikz/src/Verschaltungdesverstaerkers.tex}}
         }{Verschaltung eines Verstärkers als Komperator (A), Impedanzwandler (C) und nicht-invertierender Verstärker (D)
-        \label{fig: Verschaltung Verstaerker}}       
+        \label{fig: Verschaltung Verstaerker}}      
 \end{frame}
 
 %\speech {
