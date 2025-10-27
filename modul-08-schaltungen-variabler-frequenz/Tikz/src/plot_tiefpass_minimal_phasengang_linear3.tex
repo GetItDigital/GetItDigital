@@ -6,7 +6,7 @@
         ymode=linear,
         ylabel shift = -5pt,
         ylabel={$\varphi(\omega)\ [\degree]$},
-        xlabel={$\omega\ [\mathrm{Hz}]$},
+        xlabel={$\omega\ [\frac{1}{\mathrm{s}}]$},
         xmin=0, xmax=1e3,
         domain=1e0:1e3, 
         ymin=-90, ymax=0,
@@ -24,7 +24,7 @@
         extra tick style={grid=none},
     ]
         %\addplot[mark=none] coordinates{(0,0)} node[anchor=west,black,xshift=5pt] {$\varphi(\omega)\ [\degree]$}; % yaxis label in graph
-        %\addplot[mark=none] coordinates{(500,-90)} node[anchor=center,black,yshift=-1pt] {$\omega\ [\mathrm{Hz}]$};      % xaxis label in graph
+        %\addplot[mark=none] coordinates{(500,-90)} node[anchor=center,black,yshift=-1pt] {$\omega\ [\frac{1}{\mathrm{s}}]$};      % xaxis label in graph
 
         \addplot[mark=none,very thick,]   {atan(-x*0.01)}; % 1/(1+(omega*100*100*10^-6)^0.5)^2 % 100 Ohm, 100 uF
 

@@ -6,7 +6,7 @@
         ymode=linear,
         ylabel shift = -5pt,
         ylabel={$A(\omega)$},
-        xlabel={$\omega\ [\mathrm{Hz}]$},
+        xlabel={$\omega [\frac{1}{\mathrm{s}}]$},
         xmin=0, xmax=1e3,
         domain=1e0:1e3, 
         ymin=-0, ymax=1,
@@ -33,7 +33,7 @@
         %ytick distance=0.25,
     ]     
         %\addplot[mark=none] coordinates{(0,1)} node[anchor=west,xshift=0pt] {$A(\omega)$};                   % yaxis label in graph
-        %\addplot[mark=none] coordinates{(500,0)} node[anchor=center,black,yshift=1pt] {$\omega\ [\mathrm{Hz}]$};      % xaxis label in graph
+        %\addplot[mark=none] coordinates{(500,0)} node[anchor=center,black,yshift=1pt] {$\omega [\mathrm{s}^{-1}]$};      % xaxis label in graph
 
         \addplot[mark=none,very thick,]   {1/(1+(x*0.01)^2)^0.5}; % 1/(1+(omega*100*100*10^-6)^0.5)^2 % 100 Ohm, 100 uF
 

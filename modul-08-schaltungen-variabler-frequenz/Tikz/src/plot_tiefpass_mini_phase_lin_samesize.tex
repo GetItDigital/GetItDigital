@@ -12,7 +12,7 @@
     % invisible boundbox
     \draw[draw=none](-0.3,-0.125) rectangle (+5.5,+2); % bbox % set draw=black (debug) or draw=none (final)
 \begin{axis}[%
-    xlabel={$\omega\ [\mathrm{Hz}]$},
+    xlabel={$\omega\ [\mathrm{s}^{-1}]$},
     xmin=-200, xmax=1100,       % alignment solution with x-axis (bigger than y-labels):
     domain=0:1100, 
     ymin=-120, ymax=50,
@@ -26,6 +26,6 @@
     xtick=\empty,
 ]   % varphi(omega) = arctan(-omega*tau)
     \addplot[mark=none,very thick,]   {atan(-x*\ttau)}  node [pos=0.35,anchor=south] {$\varphi(\omega)$};% plot + plotlabel
-    %\addplot[mark=none] coordinates{(950,-30)} node {$\omega\ \left[\mathrm{Hz}\right]$};% x-axis label
+    %\addplot[mark=none] coordinates{(950,-30)} node {$\omega\ \left[\mathrm{s}^{-1}\right]$};% x-axis label
 \end{axis}%
 \end{tikzpicture}% Keine Leerzeichen danach!

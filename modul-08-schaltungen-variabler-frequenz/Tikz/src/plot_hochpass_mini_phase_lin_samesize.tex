@@ -8,12 +8,12 @@
 %   plot_hochpass_mini_phase_lin_samesize.tex
 % TODO: Alignment via invisible boundbox
 \def\ttau{0.01}%                % Zeitkonstante tau = 0.01 s
-\def\omegag{100}%               % Grenzfrequenz omega_g = 1/tau = 100 Hz
+\def\omegag{100}%               % Grenzfrequenz omega_g = 1/tau = 100 s^-1
 \begin{tikzpicture}%
     % invisible boundbox
     \draw[draw=none](-0.3,-0.125) rectangle (+5.5,+2); % bbox % set draw=black (debug) or draw=none (final)
 \begin{axis}[%
-    xlabel={$\omega\ [\mathrm{Hz}]$},
+    xlabel={$\omega [\frac{1}{\mathrm{s}}]$},
     xmin=-200, xmax=1100,       % alignment solution with x-axis (bigger than y-labels):
     domain=0:1100, 
     ymin=-35, ymax=120,
@@ -27,6 +27,6 @@
     xtick=\empty,
 ]   % varphi(omega) = arctan(-omega*tau)
     \addplot[mark=none,very thick,]   {atan(\omegag/x)}  node [pos=0.35,anchor=south] {$\varphi(\omega)$};% plot + plotlabel
-    %\addplot[mark=none] coordinates{(950,-30)} node {$\omega\ \left[\mathrm{Hz}\right]$};% x-axis label
+    %\addplot[mark=none] coordinates{(950,-30)} node {$\omega\ \left[\mathrm{s}^{-1}\right]$};% x-axis label
 \end{axis}%
 \end{tikzpicture}% Keine Leerzeichen danach!
