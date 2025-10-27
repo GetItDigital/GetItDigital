@@ -68,7 +68,7 @@ Zudem lernen Sie Unterschiede im Verhalten von idealen und realen Schaltern kenn
 
 	\begin{figure}[H]\centering
 		% Bild: Bartolomeo Pinelli, Ausschnitt aus \textit{A Peasant Family Cooking over a Campfire}, CC0 1.0. \url{https://commons.wikimedia.org/w/index.php?curid=81414513}
-		\includegraphics[width=0.3\textwidth]{Bilder/Ausschnitt_A_Peasant_Family_Cooking_over_a_Campfire_by_Bartolomeo_Pinelli_CC0_1.0.png} % 320x319px
+		\includegraphics[width=0.3\textwidth, alt={Gemäldeausschnitt eines Kochtopfes über einem Lagerfeuer}]{Bilder/Ausschnitt_A_Peasant_Family_Cooking_over_a_Campfire_by_Bartolomeo_Pinelli_CC0_1.0.png} % 320x319px
 		\caption{Erhitzen einer Flüssigkeit\protect\footnotemark}\label{fig:einfuehrung:ausgleichsvorgang:temperaturausgleich}
 	\end{figure}
 	\footnotetext{Bartolomeo Pinelli, Ausschnitt aus \textit{A Peasant Family Cooking over a Campfire}, Lizenz CC0 1.0\newline\qquad\url{https://commons.wikimedia.org/w/index.php?curid=81414513}}
@@ -86,10 +86,10 @@ Zudem lernen Sie Unterschiede im Verhalten von idealen und realen Schaltern kenn
 \b{%
 	\begin{minipage}{\textwidth}% Obere Hälfte
 		\begin{minipage}{0.48\textwidth}\centering
-			\resizebox{0.9\textwidth}{!}{\includegraphics{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}}
+			\resizebox{0.9\textwidth}{!}{\includegraphics[alt={Schaltbild: R C Reihenschaltung mit Schalter, der von Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq schaltet.}]{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}}
 		\end{minipage}%
 		\begin{minipage}{0.48\textwidth}\centering
-			\includegraphics{Tikz/pdf/plot_rc_charge_uc_transition.pdf}
+			\includegraphics[alt={Zeitverlauf der Spannung uC an der Kapazität während des Ladevorgangs. Exponentielle Näherung an Spannungswert.}]{Tikz/pdf/plot_rc_charge_uc_transition.pdf}
 		\end{minipage}
 	\end{minipage}
 	\vspace{0.5cm}
@@ -100,7 +100,7 @@ Zudem lernen Sie Unterschiede im Verhalten von idealen und realen Schaltern kenn
 			\underline{Analogie: Wasser erhitzen}\footnotemark
 			\vspace{2mm}
 
-			\includegraphics[width=0.4\textwidth]{Bilder/Ausschnitt_A_Peasant_Family_Cooking_over_a_Campfire_by_Bartolomeo_Pinelli_CC0_1.0.png}%
+			\includegraphics[width=0.4\textwidth, alt={Gemäldeausschnitt eines Kochtopfes über einem Lagerfeuer}]{Bilder/Ausschnitt_A_Peasant_Family_Cooking_over_a_Campfire_by_Bartolomeo_Pinelli_CC0_1.0.png}%
 			\pause
 		\end{minipage}%
 		\begin{minipage}[t]{0.48\textwidth}%\centering
@@ -147,7 +147,7 @@ Zum Beispiel durch Schalthandlungen, bei DC-Netzwerken durch Änderung von Spann
 
 \b{% Beamer only, extra frame
 \begin{frame}\ftx{\subsecname\,- Beispiele}
-	\includegraphics[width=\textwidth]{Bilder/Ausgleichsvorgaenge_Beispiele_ET3_S_Exknowski_FH_SWF.png}% Provisorisch mit Genehmigung von Prof. Exknowski
+	\includegraphics[width=\textwidth, alt={Abbildung zweier Beispiele von Ausgleichsvorgängen. Erstens eine Roboterhand, die eine Glühbirne hält. Die Sprungantwort zeigt entweder ein aperiodisches Einschwingen oder eines mit Überschwingen, wobei die Glühbirne zerbricht. Zweitens ein Motorquerschnitt. Die Sprungantwort ist entweder eine schnelle oder eine langsame exponnentielle Annäherung, wie sie bei Fahrzeugen vorkommt.}]{Bilder/Ausgleichsvorgaenge_Beispiele_ET3_S_Exknowski_FH_SWF.png}% Provisorisch mit Genehmigung von Prof. Exknowski
 \speech{EinfuehrungAusgleichsvorgaengeBeispiele}{1}{%
 Hier sind weitere Beispiele für ähnliches Systemverhalten. Auch Einschwingvorgänge bei Regelungsprozessen können als Ausgleichsvorgänge betrachtet werden. 
 
@@ -185,7 +185,7 @@ Während der Ausgleichsvorgänge strebt die betrachtete Systemgröße einen stat
 % Bsp. Einschwingvorgang nach Schalten als Schaltvorgang. Vgl. DC und AC 
 \b{\centering Beispiel Schaltvorgang bei Gleich- und Wechselspannung.
 }%
-\fu{\includegraphics{Tikz/pdf/plot_transient_persistent.pdf}}%
+\fu{\includegraphics[alt={Zeitverläufe von Ausgleichsvorgängen bei Gleich- und bei Wechselspannung im Vergleich. Von stationär über transient bis stationär. Eingeschwungen ist der Verlauf einer Gleichgröße oder einer Wechselgröße zu sehen.}]{Tikz/pdf/plot_transient_persistent.pdf}}%
 	{Vergleich: Ausgleichsvorgang AC, DC\label{fig:plot:transient_persistent}}
 \s{
 	% Bild-Erklärung: Vorgänge, Zustände
@@ -234,11 +234,11 @@ Während der Ausgleichsvorgänge strebt die betrachtete Systemgröße einen stat
 \textbf{Beispiel aus der Leistungselektronik:} 
 
 \begin{minipage}{0.38\textwidth}\centering
-	\includegraphics[width=\textwidth]{Bilder/Tiefsetzsteller_Schaltung_GET2_J_Böcker_Uni_Paderborn_cut.png}
+	\includegraphics[width=\textwidth, alt={Schaltbild eines Tiefsetzstellers: L C Reihenschaltung mit U2 über C. Die L C Reihenschaltung ist bei gezeigter Schalterstellung kurzgeschlossen während U1 an offenen Klemmen anliegt. In der anderen Schalterstellung liegt U1 über der L C Reihenschaltung an.}]{Bilder/Tiefsetzsteller_Schaltung_GET2_J_Böcker_Uni_Paderborn_cut.png}
 	Tiefsetzsteller mit Glättungskondensator\footnotemark
 \end{minipage}%
 \begin{minipage}{0.58\textwidth}\centering
-	\includegraphics[width=0.9\textwidth]{Bilder/Tiefsetzsteller_Zeitverläufe_GET2_J_Böcker_Uni_Paderborn_cut_edit.png}
+	\includegraphics[width=0.9\textwidth, alt={Zeitverläufe von Spannungen und Strömen am Tiefsetzsteller.}] {Bilder/Tiefsetzsteller_Zeitverläufe_GET2_J_Böcker_Uni_Paderborn_cut_edit.png}
 \end{minipage}
 \footnotetext{Schaltbild und Zeitverlauf: Joachim Böcker, GET2, Universität Paderborn, modifiziert (gekürzt)}
 
