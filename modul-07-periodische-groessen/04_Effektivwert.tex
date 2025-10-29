@@ -23,6 +23,11 @@
         \end{itemize}
     \end{Lernziele}
 
+    %Der Effektivwert. Oft kann es schwierig werden, mit zeitlich veränderlichen Größen zu Arbeiten.
+    %Um Größen Vereinfacht vergleichen zu können wird der Effektivwert eingeführt.
+    %Hier soll nun die Funktion des Effektivwertes erklärt und
+    %Die Einflüsse auf den Effektivwert vermittelt werden.
+    %Der Effektivwert von Wechselspannungen und Wechselströmen soll berechnet werden können.
 \end{frame}
 
 %Grundlagen
@@ -56,13 +61,19 @@
         abhängig ist. 
     }
 
+    \onslide<2->{
     \b{
         Bei der Berechnung des Effektivwertes ist das folgende Additionstheorem hilfreich:
     }
 
     \begin{eq}
         \sin^2(x)=\frac{1}{2}(1-\cos(2x))         \label{GleichungEff2}
-    \end{eq}
+    \end{eq}}
+
+    %Wie bereits angedeutet dient der Effektivwert der besseren Vergleichbarkeit.
+    %Er wird durch den quadratischen Mittelwert auch R M S genannt gebildet.
+    %Die Abkürzung steht für Root Mean Square. 
+    %In der Anwendung wird unter anderem das angegebene Additionstheorem genutzt.
 \end{frame}
 
 %Amplitude und Kurvenform
@@ -82,20 +93,25 @@
     \b{
         Zusammenhang zwischen Amplitudenwert und Effektivwert:
         \begin{itemize}
-            \item Die Amplitude beschreibt den Scheitelwert $\hat{U}$ der Sinusspannung
-            \item Verschiedene Amplituden bei unterschiedlichen Sinusspannungen
-            \item Der Effektivwert ist direkt proportional zum Amplitudenwert $U_\mathrm{Eff} \sim \hat{U}$
+            \item<1-> Die Amplitude beschreibt den Scheitelwert $\hat{U}$ der Sinusspannung
+            \item<2-> Verschiedene Amplituden bei unterschiedlichen Sinusspannungen
+            \item<3-> Der Effektivwert ist direkt proportional zum Amplitudenwert $U_\mathrm{Eff} \sim \hat{U}$
         \end{itemize}
     }
 
+    \onslide<2->{
     \fu{
         %vergrößern auf Folienbreite
 		\resizebox{0.5\textwidth}{!}{
 			\input{Tikz/src/Effektivwert/Sinusspannungen_untersch_Amplitudenwerte}
 		}
 	}{{\bf Sinusspannungen mit unterschiedlichen Amplitudenwerten.} Gewichtung von den Amplitudenwerten $\hat{U}_1=1\,V$, 
-    $\hat{U}_2=2\,V$ und $\hat{U}_3=4\,V$. \label{BildAmplituden}}
+    $\hat{U}_2=2\,V$ und $\hat{U}_3=4\,V$. \label{BildAmplituden}}}
 
+    %Der Scheitelwert einer Sinusspannung wird auch als Ampltudenwert bezeichnet.
+    %Dargestellt werden hier verschiedene Amplituden von unterschiedlichen Sinusspannungen.
+    %Der Effektivwert ist direkt proportional zum Ampltudenwert.
+    %So verfügt U Drei über den größten Effektivwert und U 1 über den kleinsten Effektivwert.
 \end{frame}
 
 \begin{frame}
@@ -144,6 +160,7 @@
     }
 
     \b{
+        \onslide<2->{
         Formfaktoren von verschiedenen Kurvenformen:
         
         \begin{table}[H]
@@ -161,7 +178,7 @@
                 & $ 1 $ \\[+4pt]
             \hline
         \end{tabular}
-        \end{table}
+        \end{table}}
     }
 
 
@@ -175,6 +192,10 @@
         Der Effektivwert ist linear proportional zum Scheitelwert. Der Umrechnungfaktor vom Effektivwert zum Scheitelwert 
         heißt Scheitelfaktor und hängt von der Kurvenform des Singals ab. 
     \end{Merksatz}
+
+    %Der Effektivwert ist linear proportional zum Scheitelwert einer Wechselspannung oder eines Wechselstromes.
+    %Der Umrechnungsfaktor vom Effektivwert zum Scheitelwert wird als Scheitelfaktor bezeichnet.
+    %Dieser Scheitelfaktor hängt von der Kurvenform des Signals ab.
 \end{frame}
 
 
@@ -254,6 +275,10 @@
             I_\mathrm{Eff} = \frac{\hat{I}}{\sqrt{2}}   \qquad \text{und}   \qquad      U_\mathrm{Eff} = \frac{\hat{U}}{\sqrt{2}} \nonumber
         \end{eq}
     \end{Merksatz}
+
+    %Für rein Sinusförmige Schwingungen gilt der Scheitelfaktor Wurzel Zwei. 
+    %Das gilt für die Effektivwerte und Scheitelwerte von Strömen,
+    %genauso wie für die Effektivwerte und Scheitelwerte von Spannungen. 
 \end{frame}
 
 
@@ -329,5 +354,12 @@
 
     \end{enumerate}
     \end{bsp}
+
+    %Aufgabe
+    %An einer Haushaltssteckdose sollte immer eine Sinusförmige Wechselspannung anliegen.
+    %Die Sinusform hat einen Scheitelfaktor von Wurzel Zwei.
+    %Außerdem liefert der Haushaltsanschluss über eine Phase Immer einen Effektivwert von 230 Volt.
+    %Der Amplitudenwert ergibt sich aus dem Produkt des Scheitelfaktors und des Effektivwertes.
+    %Die Rechteckform 
 \end{frame}
 \newpage
