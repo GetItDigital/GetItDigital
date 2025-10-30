@@ -14,7 +14,7 @@
 		\column[c]{0.5\textwidth}
 	}
 	% \f{trim=0 0.7cm 0 0.5cm,clip,width=0.35\textwidth}{width=0.6\textwidth}{Spule4}{{\bf Luftspule aus Lackdraht.} Luftspulen besitzen keinen magnetischen Kern und haben dadurch eine vergleichsweise geringere Induktivität als Spulen mit weichmagnetischem Kern. \label{InduktivitaetB}}
-	\fo{width=0.5\textwidth, alt={XX}}{width=\textwidth}{Magnetisches_Feld_Leiterschleife_Induktion}{
+	\fo{width=0.5\textwidth, alt={Ein Draht, der eine Schleife bildet. Durch die Leiterschleife fließt elektrischer Strom (I), wodurch ein Magnetfeld, dargestellt durch kreisförmige Linien um die Schleife herum, erzeugt wird. Die Polarität des Magnetfeldes wird durch die Buchstaben 'N' (Nordpol) und 'S' (Südpol) angezeigt. Die Richtung der Magnetfeldlinien wird durch Pfeile entlang der Linien verdeutlicht.}}{width=\textwidth}{Magnetisches_Feld_Leiterschleife_Induktion}{
 		\put(31.5, 18){\color{current}$I$}
 		\put(65, 4){\color{current}$I$}
 	}{{\bf Elektromagnetisches einer Induktivität.} Die Induktivität beschreibt, in welchem Maße sich ein Magnetfeldum eine stromdurchflossene Leiterschleife aufbaut. \label{InduktivitaetB}}
@@ -40,7 +40,7 @@
 		\begin{eq}
 			L=\frac{N^2}{R_{\mathrm{m}}} \label{InduktivitaetFormel2} \qquad [\mathrm{H}]
 		\end{eq}
-		\f{width=0.5\textwidth}{height=0.7\textheight}{Spule_Ringkern1b}{{\bf Foto einer Ringkernspule.} Die ringförmige Bauweise bringt die Besonderheit mit sich, dass sich der magnetische Fluss vor allem innerhalb des Kerns bewegt, wodurch magnetische Störfelder reduziert werden.}
+		\f{width=0.5\textwidth, alt={Fotografie einer Ringkernspule. Der ringförmige Eisenkern ist von Kuperdraht umwickelt. Am unteren Ende befinden sich die Anschlüsse des Kupferdrahts.}}{height=0.7\textheight}{Spule_Ringkern1b}{{\bf Foto einer Ringkernspule.} Die ringförmige Bauweise bringt die Besonderheit mit sich, dass sich der magnetische Fluss vor allem innerhalb des Kerns bewegt, wodurch magnetische Störfelder reduziert werden.}
 	}
 	\s{
 		\begin{Merksatz}{Induktivität}
@@ -67,7 +67,7 @@
 	}
 	\pause
 	\fu{
-		\input{Tikz/src/schaltzeichen_induktivitaet}
+		\input{Tikz/src/schaltzeichen_induktivitaet}\alttext{Das Bild zeigt zwei elektrische Schaltkreise: Der obere Abschnitt zeigt einen rechteckigen, schwarz gefüllten Block, durch den ein Strom (I) fließt, während eine Spannung (U) angelegt ist. Die Pfeile zeigen die Richtung des Stroms und der Spannung an. Es ist das Schaltzeichen einer Spule nach nach IEC 617-4. Der untere Abschnitt zeigt eine Wellenlinie, ebenfalls mit der gleichen Strom- (i) und Spannungsrichtung (U). Es ist das Schaltzeichen einer Spule nach DIN EN 60617-4.}
 	}{Schaltzeichen der Induktivität \label{AbbSchaltzeichenInduktivitaet}}
 
 	\b{\end{columns}}
@@ -186,7 +186,7 @@
 	\begin{frame}\ftx{Beispiel: Induktivität}
 		Bei einer Spule mit Eisenkern und Luftspalt soll der Einfluss des Luftspaltes $d$ auf die Induktivität $L$ untersucht werden. Die Spule hat $N=100$ Windungen. Die relative Permeabilität beträgt $\mu_{\mathrm{r}}=2000$. Die mittlere Eisenkernlänge beträgt $\ell_{\mathrm{m}}=5\,\mathrm{cm}$. Die Querschnittsfläche beträgt $A=1\,\mathrm{cm}^2$.
 
-		\foo{}{width=0.4\textwidth, alt={XX}}{Ringspule_MagFeld_Luftspalt}{
+		\foo{}{width=0.4\textwidth, alt={Das Bild zeigt einen ringförmigen Eisenkern, der von Drähten umwickelt ist. Rote Pfeile an den Drahtenden markieren die Richtung des elektrischen Stroms (I), der durch die Spule fließt. Neben dieser sogenannten Ringkernspule mit Luftspalt befindet sich in Grau die Darstellung des Luftspalts (d) und eine Fläche (A), die die Querschnittsfläche des Eisenkerns zeigt. Die Spule hat eine mittlere Feldlinienlänge (lm), die sich innerhalb des ringförmigen Eisenkerns befindet.}}{Ringspule_MagFeld_Luftspalt}{
 			\put(5, 46){\color{current}$I$}
 			\put(9, 0){\color{current}$I$}
 			\put(60, 51){\color{flaeche}$A$}

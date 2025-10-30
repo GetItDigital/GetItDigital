@@ -739,6 +739,11 @@ U_{\textnormal{A}}(t) =
     \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{7}{Der umgekehrte Fall ist der Differenzierer.
+    Jetzt liegt im Eingang noch ein Kondensator.
+    Das Ergebnis: Am Ausgang erscheint die Ableitung des Eingangssignals.
+    Ein Rechtecksignal am Eingang wird so zu scharfen Spannungsspitzen am Ausgang. Die Schaltung zeigt also ein Hochpassverhalten.
+    Praktisch verwendet man oft Varianten, die eher wie ein Bandpass arbeiten, um Rauschen zu vermeiden.} %seed: 8854332
 \end{frame}
 
 %Folie Logarithmierer
@@ -812,6 +817,10 @@ U_{\textnormal{A}}(t) =
     \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{8}{Noch spannender wird es, wenn wir eine Diode in den Rückkopplungszweig legen.
+Dann bildet der OP V die logarithmische Kennlinie der Diode nach.
+Das heißt: Am Ausgang steht die logarithmierte Eingangsspannung.
+Solche Schaltungen braucht man zum Beispiel bei Signalaufbereitung oder in Analogrechnern.} %seed: 885433  
 \end{frame}
 
 %Folie Potenzierer
@@ -867,6 +876,9 @@ U_{\textnormal{A}}(t) =
     \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{9}{Ähnlich können wir mit Dioden oder Transistoren auch eine exponentielle Kennlinie aufbauen.
+    Dann ergibt sich am Ausgang ein Signal, das eine Potenzfunktion oder eine e-Funktion des Eingangssignals darstellt.
+    Auch das war in klassischen Analogrechnern ein zentrales Werkzeug.}%seed: 885434 
 \end{frame}
 
 %Folie Insutrmentenverstärker 
@@ -968,6 +980,9 @@ U_{\textnormal{A}}(t) =
     \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{10}{Hier sehen wir einen Instrumentenverstärker.
+Das ist im Prinzip ein sehr präziser Differenzverstärker, bei dem die Eingangsstufe hochohmig ist und die Verstärkung über einen einzigen Widerstand eingestellt werden kann.
+Die große Stärke: Er unterdrückt Gleichtaktsignale sehr gut - ideal, um zum Beispiel kleine Sensorsignale aus verrauschten Umgebungen herauszufiltern.} %seed: 885435 
 \end{frame}
 
 
@@ -1029,4 +1044,10 @@ Verstärkung $V = \frac{U_\mathrm{A}}{U_\mathrm{E}} = 1$
     \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{11}{Zum Schluss nochmal der Impedanzwandler, manchmal auch Spannungsfolger genannt.
+    Hier wird der Ausgang direkt mit dem invertierenden Eingang verbunden, während das Eingangssignal auf den nichtinvertierenden Eingang gelegt wird.
+    Das Ergebnis:
+    Die Ausgangsspannung entspricht genau der Eingangsspannung.
+    Der Eingangswiderstand ist extrem hoch, der Ausgangswiderstand extrem niedrig.
+    Damit eignet sich diese Schaltung hervorragend als Pufferstufe - sie belastet die Quelle nicht, kann aber selbst größere Ströme liefern.} %seed: 885464 
 \end{frame}
