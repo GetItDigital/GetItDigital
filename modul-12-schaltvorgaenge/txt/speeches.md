@@ -1,43 +1,3 @@
-# Selbstgeschrieben
-
-- Video 1: Kapitel 1 -  Einführung
-- Video 2: Kapitel 2 -  Grundlagen 
-    + Kapitel 2.1 -  Definitionen (__Glossar__), 
-    + Kapitel 2.2 -  Berechnungsmethoden (__Bild-/Zeitbereich__), 
-    + Kapitel 2.3 -  Differentialgleichungen (__Eigenschaften__, __Form__, __Aufstellen__, __Ordnung__)
-- Video 3: Kapitel 2 -  Grundlagen
-    + Kapitel 2.4 - Berechnungsverfahren im Zeitbereich 
-    + (__Anfangsbedingungen__, __Zerlegung in eingeschwungen, flüchtig__, __hom. Lsg.__, __Beispiel__, __part. Lsg.__, __5 Schritte__)
-- Video 4: Kapitel 3.1 -    Schaltvorgänge berechnen: bei Gleichspannung 1/2
-- Video 5: Kapitel 3.1 -    Schaltvorgänge berechnen: bei Gleichspannung 2/2
-- Video 6: Kapitel 3.2 -    Schaltvorgänge berechnen: bei sinusförmiger Anregung
-- Video 7: Kapitel 3.3 -    Schaltvorgänge berechnen: bei RLC-Serienschwingkreisen
-- Video 8: Kapitel 3.4 -    Schaltvorgänge berechnen: Exkurse zu Serienschwingkreisen
-
-
-## Video 1 (03-09) Einführung
-[schon_kopiert]
-
-## Video 2 (10-17) Grundlagen1
-[schon_kopiert]
-
- ## Video 3 (18-) Grundlagen2
-[schon_kopiert]
-
-## Video 4 DC1
-[schon_kopiert]
-
-## Video 5 DC2
-[schon_kopiert]
-
-## Video 6 AC
-[schon_kopiert]
-
-# Video 7 RLC
-
-
-
-
 # Speech Texte für Videos
 -------------------------
 
@@ -52,8 +12,8 @@ Text Drafts:
 - [x] V4 K3.1   24-30: Schaltvorgänge bei Gleichspannung: Beispiel RC Laden, Zeitkonstante einführen, 5 Steps short und Detail
 - [x] V5 K3.1   31-40: Bsp. RC Entladen, 5 Steps detail; Vgl RC Laden/Entladen, Vgl. RL (zu erwartend), RL Laden 5 steps Detail, RL Entladen 5 Steps short
 - [x] V6 K3.2   41-50: Schaltvorgänge bei sinusförmiger Anregung, Allg., Bsp. RC an u_q(t), Konsequenzen (Überspannungen-/Ströme, Schaltzeitpunkt), Bsp. RL an u_q(t)
-- [ ] V7 K3.3   51-59: Bsp. RLCs, Fallunterscheidung, 5 Steps für jeden Fall: yh -> Diskriminante, w_d, delta bei period. Fall einführen
-- [ ] V8 K3.4   60-64: Exkurse: yh period. Fall Herleitung (Überlagerung abklingender Schwingungen); Ortskurve/Systemtheorie/Regelungstechnik; Vgl. delta, w_d, w_0, Güte
+- [x] V7 K3.3   51-59: Bsp. RLCs, Fallunterscheidung, 5 Steps für jeden Fall: yh -> Diskriminante, w_d, delta bei period. Fall einführen
+- [x] V8 K3.4   60-64: Exkurse: yh period. Fall Herleitung (Überlagerung abklingender Schwingungen); Ortskurve/Systemtheorie/Regelungstechnik; Vgl. delta, w_d, w_0, Güte
 
 ## Prompts für Ollama
 

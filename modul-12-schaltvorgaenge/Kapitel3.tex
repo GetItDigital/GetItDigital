@@ -84,7 +84,7 @@ Wir lernen die Zeitkonstante Tau kennen und verstehen und berechnen Lade- und En
     \end{minipage}%
     \begin{minipage}{0.48\textwidth}\centering
         \pause
-        \resizebox{0.8\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rc_cycle_seperate_u.pdf}}
+        \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rc_cycle_seperate_u.pdf}
         Schaltvorgänge bei RC-Glied (DC)
     \end{minipage}
 }%
@@ -259,7 +259,7 @@ Wegen des einen Energiespeichers C, hat die D G L erste Ordnung und die Zeitverl
 \speech{SchaltvorgaengeDC1Zeitkonstante}{2}{%
 Rechts sehen wir im Zeitverlaufsdiagramm die Spannung u C an der Kapazität. 
 Die Spannung u C ist zu Beginn null und steigt ab dem Schaltzeitpunkt t gleich null exponentiell bis zum Endwert U q.
-Die dazughörige Gleichung ist: u C von t ist gleich U q (der Endwert) mal Klammer auf eins minus e hoch minus t durch tau Klammer zu. 
+Die dazugehörige Gleichung ist: u C von t ist gleich U q (der Endwert) mal Klammer auf eins minus e hoch minus t durch tau Klammer zu. 
 Der Term: Eins minus e hoch minus t durch tau, entspricht einer exponentiellen Annäherung von null an eins. 
 }% Speech Ende
 \speech{SchaltvorgaengeDC1Zeitkonstante}{3}{%
@@ -456,7 +456,7 @@ Die Orientierungswerte sind zum Beispiel hilfreich bei der Dimensionierung von B
     \end{aligned}\end{equation*}
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \resizebox{!}{4.25cm}{\includegraphics{Tikz/pdf/plot_rc_charge_uc_i_seperate.pdf}}
+    \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rc_charge_uc_i_seperate.pdf}
 \end{minipage}
 \end{minipage}
 % Untere Hälfte
@@ -577,7 +577,7 @@ Hier folgt: Tau ist gleich R C.
 Die partikuläre Lösung, das heißt den eingeschwungenen Zustand für t gegen unendlich, erhalten wir entweder durch Netzwerkberechnung oder leiten ihn aus der D G L ab.
 Für beide Herangehensweisen gilt, dass die eingeschwungenen Größen Gleichgrößen sind, weil die Anregung eine Gleichspannung ist. (D C Fall) 
 Aus der Gleichstrom Netzwerkberechnung wissen wir, dass die Kapazität wie eine offene Klemme wirkt. Es fließt kein Strom und die gesamte Spannung U q liegt über C an.
-Alternativ können wir wie hier gezeigt ist die D G L für die partikläre Lösung herannehmen.
+Alternativ können wir wie hier gezeigt ist die D G L für die partikuläre Lösung herannehmen.
 Da es sich um Gleichgrößen handelt, ist die zeitliche Ableitung von u c p gleich Null und der erste Teil der D G L verschwindet.
 Übrig bleibt, dass u C p gleich der Anregung U q ist. 
 }% Speech Ende
@@ -611,7 +611,7 @@ Da es sich um Gleichgrößen handelt, ist die zeitliche Ableitung von u c p glei
 \end{align*}%
 
 \speech{SchaltvorgaengeDC1RCLadevorgang4}{1}{%
-Die allgemeine Lösung der inhomogenen D G L erhalten wir durch Überlagerung unserer homogenen und unserer partiklären Lösung.
+Die allgemeine Lösung der inhomogenen D G L erhalten wir durch Überlagerung unserer homogenen und unserer partikulären Lösung.
 U c ist gleich u c h plus u c p. Oder alternativ ist gleich u c f plus u c e. 
 Eingesetzt ergibt sich daraus die allgemein Lösung: u c von t ist gleich K mal e hoch minus t durch Tau plus U q. 
 }% Speech Ende
@@ -660,7 +660,7 @@ Ausgehend von der selben Schaltung bestimmen wir nun den Entladevorgang des R C 
     \end{aligned}\end{equation*}
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \resizebox{!}{4.25cm}{\includegraphics{Tikz/pdf/plot_rc_discharge_uc_i_seperate.pdf}}
+    \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rc_discharge_uc_i_seperate.pdf}
 \end{minipage}
 \end{minipage}
 % Untere Hälfte
@@ -725,7 +725,7 @@ Ausgehend von der Maschengleichung wird $\ecv{u_R}$ in Abhängigkeit von $\ecv{u
 
 \speech{SchaltvorgaengeDC2RCEntladevorgang2}{1}{%
 Die D G L wird im gleichen Verfahren aufgestellt wie beim Ladevorgang. 
-Da die Maschie nicht mehr durch die Spannungsquelle, sondern durch den Kurzschluss geschlossen wird, entfällt allerdings der Störterm. 
+Da die Masche nicht mehr durch die Spannungsquelle, sondern durch den Kurzschluss geschlossen wird, entfällt allerdings der Störterm. 
 Dadurch erhalten wir die homogene D G L aus dem Ladevorgang.
 }% Speech Ende
 \end{frame}
@@ -787,7 +787,7 @@ Daraus ergibt sich für den Strom i C von t ist gleich Minus U q durch R mal e h
     }%
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \resizebox{0.6\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rc_cycle_seperate_u.pdf}}%
+    \includegraphics[width=0.6\textwidth]{Tikz/pdf/plot_rc_cycle_seperate_u.pdf}%
 \end{minipage}
 \end{minipage}\hfill%
 % Untere Hälfte
@@ -939,7 +939,7 @@ und unterscheiden sich in diesem Beispiel nur beim Störterm (der Anregung), den
     }%
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \resizebox{0.6\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rl_cycle_seperate_i.pdf}}%
+    \includegraphics[width=0.6\textwidth]{Tikz/pdf/plot_rl_cycle_seperate_i.pdf}%
 \end{minipage}
 \end{minipage}\hfill%
 % Untere Hälfte
@@ -981,7 +981,7 @@ Zur Überprüfung bestimmen wir im folgenden detailliert den Ladevorgang und dan
     \end{aligned}\end{equation*}
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \resizebox{!}{4.00cm}{\includegraphics{Tikz/pdf/plot_rl_charge_ul_i_seperate.pdf}}
+    \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rl_charge_ul_i_seperate.pdf}
 \end{minipage}
 \end{minipage}
 % Untere Hälfte
@@ -1084,9 +1084,9 @@ Da die Lösung in Exponentialform auftritt, schreiben wir direkt Lambda ist glei
 Dadurch können wir die homogene Lösung direkt in die Form K mal e hoch minus t durch Tau bringen mit Tau ist gleich L durch R.
 }% Speech Ende
 \speech{SchaltvorgaengeDC2RLLadevorgang3}{2}{%
-Für die partikläre Lösung bestimmen wir den eingeschwungenen Zustand. 
-Wir können annehmen, dass i p konstant ist, wodurch der Differentialterm entfällt. 
-Daraus folgt i p ist gleich U q durch R.
+Für die partikuläre Lösung bestimmen wir den eingeschwungenen Zustand. 
+Wir können annehmen, dass I p konstant ist, wodurch der Differentialterm entfällt. 
+Daraus folgt I p ist gleich U q durch R.
 }% Speech Ende
 \end{frame}
 
@@ -1313,7 +1313,7 @@ Beide Ergebnisse sind plausibel.
     \end{aligned}\end{equation*}
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \resizebox{!}{4.25cm}{\includegraphics{Tikz/pdf/plot_rl_discharge_ul_i_seperate.pdf}}
+    \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rl_discharge_ul_i_seperate.pdf}
 \end{minipage}
 \end{minipage}
 % Untere Hälfte
@@ -1365,10 +1365,10 @@ In diesem Video werden wir uns die Besonderheiten beim Schalten bei sinusförmig
 Hierfür wandeln wir leicht die Beispiele aus den vorigen Videos ab und betrachten 
 Schaltvorgänge bei einfachen R C und R L Serienschaltungen bei Anregung mit Wechselspannung.
 Sie lernen:
-* Schaltvorgänge bei A C Anregung zu berechnen, 
-* welche Rolle Frequenz und Schaltzeitpunkt spielen,
-* die Gefahr von Überströmen und -spannungen bei Schaltvorgängen abzuschätzen und
-* Möglichkeiten zur Vermeidung von Schaltvorgängen bei A C Anregung kennen.
+Schaltvorgänge bei A C Anregung zu berechnen, 
+welche Rolle Frequenz und Schaltzeitpunkt spielen,
+die Gefahr von Überströmen und -spannungen bei Schaltvorgängen abzuschätzen und
+Möglichkeiten zur Vermeidung von Schaltvorgängen bei A C Anregung kennen.
 }% Speech Ende
 \end{frame}%
 }% Video Only Frame Ende
@@ -1419,20 +1419,18 @@ Sie lernen:
 \end{minipage}%
 \begin{minipage}{0.48\textwidth}\centering
     \pause
-    \resizebox{0.8\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rc_charge_uc_ac_different_t0.pdf}}
+    \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rc_charge_uc_ac_different_t0.pdf}
     Vergleich: Schaltzeitpunkte $t_0$ und $t_1$
 \end{minipage}
 }%
 
 \speech{SchaltvorgaengeAC}{1}{%
-Fangen wir mit den grötßten Unterschieden zu Schaltvorgängen bei D C Anregung an.
-Schaltvorgänge bei AC Anregung sind
-* frequenzabhängig und
-* schaltzeitpunktabhängig.
+Fangen wir mit den größten Unterschieden von Schaltvorgängen bei AC und bei DC Anregung an.
+Schaltvorgänge bei AC Anregung sind frequenzabhängig und schaltzeitpunktabhängig.
 }% Speech Ende
 \speech{SchaltvorgaengeAC}{2}{%
 Wir leiten uns beide Merkmale anhand zweier einfacher Beispiele her.
-Die Berechnung erfolgt analog zu den D C Beispielen mit dem bekannten Berechnungsverfahren. 
+Die Berechnung erfolgt analog zu den DC Beispielen mit dem bekannten Berechnungsverfahren. 
 Zunächst für eine Serienschaltung aus C und R und dann für eine Serienschaltung aus L und R. 
 }% Speech Ende
 \speech{SchaltvorgaengeAC}{3}{%
@@ -1443,9 +1441,9 @@ Pausieren Sie am Besten kurz das Video und überlegen Sie selbst eine Lösung, b
 }% Speech Ende
 \speech{SchaltvorgaengeAC}{4}{%
 Rechts sehen wir drei Zeitverläufe dargestellt. Zum Vergleich sind zwei Schaltvorgänge für unterschiedliche Schaltzeitpunkte dargestellt.
-* Oben ist die Wechselspannung u q zu sehen, welche als AC Anregung dient. 
-* In der Mitte ist der Schaltvorgang für die Spannung u C abgebildet, wenn bei t null geschalten wird.
-* Unten ist der Schaltvorgang für die Spannung u C abgebildet, wenn bei t eins geschalten wird.
+Oben ist die Wechselspannung u q zu sehen, welche als AC Anregung dient. 
+In der Mitte ist der Schaltvorgang für die Spannung u C abgebildet, wenn bei t null geschalten wird.
+Unten ist der Schaltvorgang für die Spannung u C abgebildet, wenn bei t eins geschalten wird.
 Der erste Schaltvorgang im mittleren Plot ist als Überlagerung von u C in blau aus dem
 flüchtigen Zustand u C f in schwarz gestrichelt und dem eingeschwungenen Zustand u C e in schwarz dargestellt.
 Der eingeschwungene Zustand ist sinusförmig, der flüchtige Zustand exponentiell abklingend. 
@@ -1588,7 +1586,7 @@ Durch den ideal gewählten Schaltzeitpunkt entfällt der Einschwingvorgang volls
     \end{aligned}\end{equation*}
 \end{minipage}\pause%
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
-    \resizebox{0.75\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rc_charge_uc_ac_different_t0_short.pdf}}
+    \includegraphics[width=0.75\textwidth]{Tikz/pdf/plot_rc_charge_uc_ac_different_t0_short.pdf}
 \end{minipage}%
 \end{minipage}\pause\hfill%
 % Untere Hälfte
@@ -1608,12 +1606,12 @@ Durch den ideal gewählten Schaltzeitpunkt entfällt der Einschwingvorgang volls
 \speech{SchaltvorgaengeACbeiRC1}{1}{%
 Gehen wir das Beispiel Schritt für Schritt durch. 
 Oben links ist unsere bekannte Schaltung aus den DC Beispielen. 
-Zum Schaltzeitpunkt t null wird ein zuvor kurzgeschlossenes R C Serienglied an eine ideale Wechselspannungsquelle u q geschlossen. 
-Gegeben ist die Spannung u C zum Schaltzeitpunkt t null, die Wechselspannung u q, die Komponenten R, C und die Kreisfrequenz omega. 
-Gesucht ist u c für t größer gleich t null.
+Zum Schaltzeitpunkt t null wird ein zuvor kurzgeschlossenes R C Serienglied an eine ideale Wechselspannungsquelle U Q geschlossen. 
+Gegeben ist die Spannung U C zum Schaltzeitpunkt t null, die Wechselspannung U Q, die Komponenten R, C und die Kreisfrequenz omega. 
+Gesucht ist U C für t größer gleich t null.
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRC1}{2}{%
-Die Lösung bestimmen wir allgemein für einen variablen Schaltzeitpunkt. Je nach t null wird der Zeitverlauf für u C zum Beispiel die rechts gezeigte Form annehmen.
+Die Lösung bestimmen wir allgemein für einen variablen Schaltzeitpunkt. Je nach t null wird der Zeitverlauf für U C zum Beispiel die rechts gezeigte Form annehmen.
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRC1}{3}{%
 Hier sehen kurz zur Übersicht die fünf Schritte des Berechnungsverfahrens und die zugehörigen Teillösungen die wir im Folgenden ausführlich berechnen werden.
@@ -1685,22 +1683,25 @@ Die Zeitkonstante tau gleich R C entspricht hier wieder dem negativen Kehrwert d
 
 \speech{SchaltvorgaengeACbeiRC3}{1}{%
 Im dritten Schritt bestimmen wir die Partikuläre Lösung, das heißt den eingeschwungenen Zustand. 
-Aufgrund der sinusförmigen Eingangsspannung u q erhalten wir in unserer eingeschwungenen L Z I Schaltung 
-auch eine sinusförmige Ausgangsspannung u C P mit gleicher Kreisfrequenz omega wie bei der Anregung u q. 
-Im Zeitbereich dargestellt ist unsere partikuläre Lösung u C p gleich dem Scheitelwert U C p Dach mal Kosinus von omega t plus Phi C P.
-Die Amplitude U C p Dach und den Phasenwinkel Phi C p können wir nun mittels komplexer Wechselstromrechnung bestimmen.
-Zur Erinnerung, unser u C p von t im Zeitbereich ist der Realteil des komplexen Amplitudenzeigers U C p Dach komplex mal e hoch j omega t. 
-Der komplexe Amplitudenzeiger U C p Dach komplex ist gleich U C p Dach reell mal e hoch j Phi C p. 
+Aufgrund der sinusförmigen Eingangsspannung U Q erhalten wir in unserer eingeschwungenen L Z I Schaltung 
+auch eine sinusförmige Ausgangsspannung U C P mit gleicher Kreisfrequenz omega wie bei der Anregung U Q. 
+}% Speech Ende
+\silence{1}%
+\speech{SchaltvorgaengeACbeiRC3}{1}{%
+Im Zeitbereich dargestellt ist unsere partikuläre Lösung U C P gleich dem Scheitelwert U C P Dach mal Kosinus von omega t plus Phi C P.
+Die Amplitude U C P Dach und den Phasenwinkel Phi C P können wir nun mittels komplexer Wechselstromrechnung bestimmen.
+Zur Erinnerung, unser U C P von t im Zeitbereich ist der Realteil des komplexen Amplitudenzeigers U C P Dach komplex mal e hoch j omega t. 
+Der komplexe Amplitudenzeiger U C P Dach komplex ist gleich U C P Dach reell mal e hoch j Phi C P. 
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRC3}{2}{%
-Durch den Komplexen Spannungsteiler können wir U C p komplex in Abhängigkeit von U q komplex und den Impedanzen Z C und R bestimmen. 
+Durch den Komplexen Spannungsteiler können wir U C P komplex in Abhängigkeit von U Q komplex und den Impedanzen Z C und R bestimmen. 
 Durch etwas Umformung kommen wir auf die Form: 
-U c P Dach komplex ist gleich U q Dach komplex durch eins plus j omega C R. 
+U C P Dach komplex ist gleich U Q Dach komplex durch eins plus j omega C R. 
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRC3}{3}{%
 Durch Betragsbildung erhalten wir die Amplitude U C P dach mit der Lösungen unten links
 und durch Winkelbestimmung erhalten wir den Lastphasenwinkel Phi C P mit der Lösung unten rechts.
-Der Winkel Phi C P ist die Phasendifferenz der Quellenspannung u q und der eingeschwungenen Spannung u C P. 
+Der Winkel Phi C P ist die Phasendifferenz der Quellenspannung U Q und der eingeschwungenen Spannung U C P. 
 }% Speech Ende
 \end{frame}
 
@@ -1723,21 +1724,21 @@ Der Winkel Phi C P ist die Phasendifferenz der Quellenspannung u q und der einge
     \end{align*}%
 
 \speech{SchaltvorgaengeACbeiRC4}{1}{%
-Im vierten Schritten erhalten wir die allgemeine Lösung der inhomogenen Lösung durch Überlagerung.
+Im vierten Schritten erhalten wir die allgemeine Lösung der inhomogenen D G L durch Überlagerung.
 Die Lösung besteht wie wir sehen aus einer abklingenden Exponentialkurve und einem sinusförmigen Schwingung.
 Im fünften Schritt bestimmen wir die Konstanten durch Einsetzen unserer Anfangsbedingung.
 Die Kapazität sei zum Schaltzeitpunkt vollständig entladen. 
 Der Exponentialterm reduziert sich zu e hoch null gleich eins und kann somit gekürzt werden. 
 Durch Umstellen erhalten wir unsere Konstante K. Wie wir sehen können, entspricht unser K mit
-K ist gleich Minus U C P Dach mal Kosinus von omega mal t null plus Phi C p, 
+K ist gleich Minus U C P Dach mal Kosinus von omega mal t null plus Phi C P, 
 genau dem negativen Wert des eingeschwungenen Zustandes zum Schaltzeitpunkt.
-Unser K kann damit je nach Schaltzeitpunkt jeden Wert zwischen dem negativen und positiven Scheitelwert von U C p annehmen.
+Unser K kann damit je nach Schaltzeitpunkt jeden Wert zwischen dem negativen und positiven Scheitelwert von U C P annehmen.
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRC4}{2}{%
 Die eindeutige Lösung unten ergibt sich durch Einsetzen von K in die allgemeine Lösung oben.  
-Aus der Lösung können wir gut mehrere Eigenschaften des Zeitverhaltens von u C ablesen.
-Aufgrund der Anfangsbedingung heben sich u C h und u C p zum Schaltzeitpunkt gegenseitig auf.
-Liegt der Schaltzeitpunkt exakt im Nulldurchgang des eingeschwungenen Zustandes u C p, 
+Aus der Lösung können wir gut mehrere Eigenschaften des Zeitverhaltens von U C ablesen.
+Aufgrund der Anfangsbedingung heben sich U C H und U C P zum Schaltzeitpunkt gegenseitig auf.
+Liegt der Schaltzeitpunkt exakt im Nulldurchgang des eingeschwungenen Zustandes U C P, 
 ist unser K gleich Null und es kommt zu keinem Einschwingvorgang. 
 Umgekehrt wird der Einschwingvorgang maximal, wenn exakt während der Minima oder Maxima des eingeschwungenen Zustandes u C P geschalten wird!
 }% Speech Ende
@@ -1753,7 +1754,7 @@ Umgekehrt wird der Einschwingvorgang maximal, wenn exakt während der Minima ode
         \underline{Beispiel:} Trennschalter im Netz
     \end{minipage}%
     \begin{minipage}{0.48\textwidth}\centering
-        \resizebox{0.8\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rc_charge_uc_ac_different_tau.pdf}}
+        \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rc_charge_uc_ac_different_tau.pdf}
         Vergleich: kleines und großes $\tau$
     \end{minipage}%
 
@@ -1767,13 +1768,13 @@ Der dreifache Scheitelwert ist möglich, wenn die Anfangsbedingung wäre, dass z
 }% Speech Ende
 \speech{SchaltvorgaengeACUeberspannungenundstroeme}{3}{%
 Durch geschicktes Schalten lassen sich Ausgleichsvorgänge aber auch vollständig vermeiden. 
+Ein praktisches Beispiel sind Trennschalter im Netz, die idealerweise ohne Last und deshalb während Nulldurchgängen schalten.
 }% Speech Ende
 \speech{SchaltvorgaengeACUeberspannungenundstroeme}{4}{%
-Ein praktisches Beispiel sind Trennschalter im Netz, die idealerweise ohne Last und deshalb während Nulldurchgängen schalten.
 Rechts sehen wir exemplarisch zwei Schaltvorgänge bei ungünstigsten Schaltzeitpunkten mit verschiedenen Zeitkonstanten zum Vergleich. 
 Oben ist die Anregung zu sehen, in der Mitte ist der Schaltvorgang mit kleinerem Tau dargestellt 
 und unten der bei Schaltvorgang mit Tau deutlich größer als die Periodendauer groß T. 
-Beim kleinen Tau kommt es bereits zu einer leichten Überspanung, die schnell abklingt.
+Beim kleinen Tau kommt es bereits zu einer leichten Überspannung, die schnell abklingt.
 Beim großen Tau wird nahezu der doppelte negative Scheitelwert erreicht und über mehrere Periodendauern Überspannungen erzeugt.
 }% Speech Ende
 \end{frame}
@@ -1894,7 +1895,7 @@ Beim großen Tau wird nahezu der doppelte negative Scheitelwert erreicht und üb
     \end{aligned}\end{equation*}
 \end{minipage}\pause%
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
-    \resizebox{0.75\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rl_charge_il_ac_different_t0_short.pdf}}%
+    \includegraphics[width=0.75\textwidth]{Tikz/pdf/plot_rl_charge_il_ac_different_t0_short.pdf}%
 \end{minipage}%
 \end{minipage}\pause\hfill%
 % Untere Hälfte
@@ -2025,23 +2026,23 @@ Achtung: Phi q ist beliebig wählbar, da t null variabel ist, dadurch kann phi q
     \end{align*}%
 
 \speech{SchaltvorgaengeACbeiRL4}{1}{%
-Die allgemeine Lösung erhalten wir wieder durch Überlagerung der homogenen und der partiklären Lösung. 
+Die allgemeine Lösung erhalten wir wieder durch Überlagerung der homogenen und der partikulären Lösung. 
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRL4}{2}{%
-Als Anfangsbedingung sei angenommen, dass i von t Null gleich null ist, das heißt zum Einschaltzeitpunkt kein Strom fließt. 
+Als Anfangsbedingung sei angenommen, dass I von t null gleich null ist, das heißt zum Einschaltzeitpunkt kein Strom fließt. 
 Aus dieser Anfangsbedingung können wir die Konstante K bestimmen.
 Durch Einsetzen in die allgemeine Lösung oben erhalten wir wieder unsere eindeutige Lösung.
 Wie auch beim R C Beispiel kann unser K je nach Schaltzeitpunkt alle Werte zwischen 
 dem negativen und dem positiven Scheitelwert I p Dach annehmen.
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRL4}{3}{%
-Die Spannung u L an der Induktivität erhalten wir mit u L ist gleich L mal d nach d t von i. 
-Achtung: Anders als der Strom, kann die Spannung u L springen! 
+Die Spannung U L an der Induktivität erhalten wir mit U L ist gleich L mal d nach d t von I. 
+Achtung: Anders als der Strom, kann die Spannung U L springen! 
 Wir sehen das an der Gleichung, dass sich der Exponentialterm und der sinusförmige Term zum Schaltzeitpunkt nicht direkt aufheben. 
 Zur Übung können Sie:
-* 1. den Zeitverlauf für die Spannung u L in diesem Beispiel skizzieren,
-* 2. den Zeitverlauf für den Strom beim R C Beispiel skizzieren und
-* 3. Überlegen, welche Zeitverläufe sich beim Zurückschalten von Wechselspannungsquelle zu Kurzschluss ergeben.
+Erstens den Zeitverlauf für die Spannung U L in diesem Beispiel skizzieren.
+Zweitens den Zeitverlauf für den Strom beim R C Beispiel skizzieren.
+Und drittens überlegen, welche Zeitverläufe sich beim Zurückschalten von Wechselspannungsquelle zu Kurzschluss ergeben.
 }% Speech Ende
 \end{frame}
 
@@ -2050,6 +2051,27 @@ Zur Übung können Sie:
 
 \subsection{bei RLC-Serienschwingkreisen}
 \label{sec:schaltvorgaengezeitbereich:rlc}
+
+\v{% Video only Frame
+\newvideofile{SchaltvorgaengeRLC1}{Schaltvorgänge bei RLC-Serienschwingkreisen [1/2]}
+\begin{frame}\ftx{Entladevorgang \subsubsecname}
+    \begin{Lernziele}{Video - Schaltvorgänge bei RLC-Serienschwingkreisen [1/2]}
+        Sie lernen in diesem Video:
+        \begin{itemize}\b{\setlength\itemsep{0.7em}}
+            \item Schaltvorgänge bei RLC-Gliedern bei Gleichspannung im Zeitbereich zu berechnen,
+            \item die Fallunterscheidung bei RLC-Gliedern zu verstehen und anzuwenden und
+            \item Einschwingvorgänge bei RLC-Gliedern zu analysieren.
+        \end{itemize}
+    \end{Lernziele}
+\speech{SchaltvorgaengeRLC1Lernziele}{1}{%
+Willkommen zum siebten Video der Videoreihe für das Modul Schaltvorgänge. 
+In diesem Video steigen wir ein in die Berechnung von Schaltvorgängen bei RLC-Gliedern im Zeitbereich bei Gleichspannung. 
+Wir lernen die Fallunterscheidung für periodische und aperiodische Einschwingvorgänge bei Schwingkreisen kennen und anwenden.
+Und wir analysieren Einschwingvorgänge bei RLC-Gliedern.
+}% Speech Ende
+\end{frame}
+}% Video only Frame Ende
+
 \begin{frame}\ftx{\subsecname}
 \s{%
     Systeme mit zwei unterschiedlichen Energiespeichern (Induktivität $L$ und Kapazität $C$) sind
@@ -2125,13 +2147,13 @@ Zur Übung können Sie:
 \b{%
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3.5cm][]{0.48\textwidth}\centering
-        \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}}%
+        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
         \vspace{5pt}
 
         Wegen $L$ und $C$ $\Rightarrow$ Schwingkreis
     \end{minipage}%
     \begin{minipage}[t][3.5cm][]{0.48\textwidth}\centering
-        \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rlcs_charge_dc_uc.pdf}}%
+        \includegraphics[width=\textwidth]{Tikz/pdf/plot_rlcs_charge_dc_uc.pdf}%
     \end{minipage}
 \end{minipage}\vspace{2pt}
 
@@ -2150,13 +2172,22 @@ Zur Übung können Sie:
         \end{tabular}
     \end{table}
 }% Ende Folien only
+\speech{SchaltvorgaengeRLC1Allgemein1}{1}{%
+Gegeben sei der RLC-Serienschwingkreis wie im Schaltbild oben links dargestellt.
+Durch die zwei verschiedenen Energiespeicher ist das System prinzipiell schwingungsfähig.
+Das Systemverhalten kann durch eine D G L zweiter Ordnung beschrieben werden.
+Abhängig von den Werten der Bauelemente $R$, $L$ und $C$ ergeben sich verschiedene Einschwingverhalten bei Anregung mit Gleichspannung $U_q$.
+Dabei sind drei Fälle möglich, diese sind rechts im Zeitverlaufsdiagramm dargestellt und unten in der Tabelle gegenübergestellt.
+Möglich ist ein aperiodischer Fall, ein aperiodischer Grenzfall und ein periodischer Fall.
+Die Fälle können anhand verschiedener Merkmale wie der Diskriminante D, welche wir im Folgenden genauer betrachten, oder anhand der Schwingkreisgüte Q bestimmt werden.
+}% Speech Ende
 \end{frame}%
 
 \begin{frame}\ftx{\subsecname}% Fortsetzung für Folien
 \b{%
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3.5cm][]{0.48\textwidth}\centering
-        \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}}%
+        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
         \vspace{5pt}
 
         Ansatz:\quad  $\ecv{u_{C,\mathrm{h}}} = K \cdot \mathrm{e}^{\lambda t}$
@@ -2189,6 +2220,12 @@ Zur Übung können Sie:
         }&
 \end{align*}
 }% Ende Folien only
+\speech{SchaltvorgaengeRLC1Allgemein2}{1}{%
+Um Schaltvorgänge bei RLC Gliedern zu berechnen, gehen wir nach dem bekannten Verfahren vor.
+Im ersten Schritt stellen wir die D G L auf, hier für die Kondensatorspannung u C, und bestimmen anhand des charakteristischen Polynoms die Eigenwerte lambda eins und lambda zwei.
+An dieser Stelle ergibt sich eine Besonderheit. Der Term unter der Wurzel, die sogenannte Diskriminante D, kann je nach Werten der Bauelemente R, L und C entweder positiv, null oder negativ sein.
+Dadurch ergeben sich für die Eigenwerte drei verschiedene Fälle.
+}% Speech Ende
 \end{frame}
 
 %-------------------------------------------------------------------------------------------------%
@@ -2237,7 +2274,7 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
 \b{% Beginn Folien only
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
-        \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}}%
+        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
     \end{minipage}%
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
         \begin{align*}
@@ -2276,6 +2313,21 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
 }% Ende overlay onslide
 }% Ende overlay only
 }% Ende Folien only
+\speech{SchaltvorgaengeRLC1Fallunterscheidung}{1}{%
+Je nach Diskriminante D ergeben sich unterschiedliche Eigenwerte lambda eins und lambda zwei.
+Bei einer positiven Diskriminante sind die Eigenwerte verschieden und reell.
+Bei einer Diskriminante von null sind die Eigenwerte identisch und reell.
+Bei einer negativen Diskriminante sind die Eigenwerte komplex konjugiert.
+}% Speech Ende
+\speech{SchaltvorgaengeRLC1Fallunterscheidung}{2}{%
+Wie wir wissen, bestimmt die Art der Eigenwerte die Form der homogenen Lösung.
+Rechts sehen sie die allgemeine Form der homogenen Lösung für zwei unterschiedliche Eigenwerte beziehungsweise für zwei identische Eigenwerte.
+}% Speech Ende
+\speech{SchaltvorgaengeRLC1Fallunterscheidung}{3}{%
+Hier sehen Sie die drei Fälle der Fallunterscheidung noch einmal in tabellarischer Form gegenübergestellt.
+Die drei Fälle werden wir im Folgenden nacheinander einzeln betrachten. 
+Wie wir sehen werden, lässt sich die homogene Lösung für den aperiodischen Fall und den periodischen Fall noch weiter spezifizieren.
+}% Speech Ende
 \end{frame}
 
 %-------------------------------------------------------------------------------------------------%
@@ -2291,7 +2343,7 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
 \b{% Anfang Folien only
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
-        \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}}%
+        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
     \end{minipage}%
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
         \begin{align*}
@@ -2343,6 +2395,18 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
 %    Die partikuläre Lösung $\ecv{u_{C,\mathrm{p}}}$ entspricht der Gleichspannung $\ecv{U_q}$, da sich die Kapazität für $t \to \infty$ vollständig aufgeladen hat.
 %    Im Gegensatz zur homogenen Lösung ist $\ecv{u_{C,\mathrm{p}}}$ für alle drei Fälle identisch.
 %}%
+\speech{SchaltvorgaengeRLC1FallunterscheidungAperiodisch1}{1}{%
+Beginnen wir beim aperiodischen Fall, auch Kriechfall genannt, bei positiver Diskriminante D.
+Wie in der Gleichung für lambda eins und zwei oben rechts zu erkennen ist, ergeben sich in diesem Fall zwei verschiedene, reelle Eigenwerte.
+Hierbei können nur negative Werte auftreten, da der Term vor der Wurzel betragsmäßig immer größer ist als der Wurzelterm.
+}% Speech Ende
+\speech{SchaltvorgaengeRLC1FallunterscheidungAperiodisch1}{2}{%
+Die homogene Lösung besteht aus der Überlagerung zweier Exponentialfunktionen mit den Eigenwerten lambda eins und lambda zwei.
+Die Konstanten K eins und K zwei müssen beide reell sein, damit die Lösung reellwertig bleibt.
+Der flüchtige Zustand entspricht damit der Addition zweier Exponentialfunktionen.
+Dabei dominiert die langsamer Exponentialfunktion, das heißt die mit der größeren Zeitkonstante.
+Die partikuläre Lösung, das heißt der eingeschwungene Zustand, entspricht in diesem Beispiel der Gleichspannung U q.
+}% Speech Ende
 \end{frame}%
 %
 \begin{frame}\ftx{\subsubsecname}% Aperiodischer Fall: Zweiter Frame
@@ -2369,6 +2433,15 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
                 K_2 = \frac{\ecv{U_q}}{\frac{\lambda_2}{\lambda_1}-1}
     \end{align*}
 
+\speech{SchaltvorgaengeRLC1FallunterscheidungAperiodisch2}{1}{%
+Die allgemeine Lösung ergibt sich durch Überlagerung von homogener und partikulärer Lösung.
+}% Speech Ende
+\speech{SchaltvorgaengeRLC1FallunterscheidungAperiodisch2}{2}{%
+Die Konstanten K eins und K zwei können wie gewohnt durch Einsetzen der Anfangsbedingungen bestimmt werden.
+Als Anfangsbedingungen seien die Kondensatorspannung u C von null Volt und der Strom i von null Ampere gegeben.
+Durch Einsetzen in die allgemeine Lösung und deren erste Ableitung ergeben sich zwei Gleichungen mit zwei Unbekannten.
+Durch Auflösen nach K eins und K zwei ergeben sich die hier dargestellten Ausdrücke.
+}% Speech Ende
 \end{frame}
 
 %-------------------------------------------------------------------------------------------------%
@@ -2386,7 +2459,7 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
 \b{% Anfang Folien only
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
-        \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}}%
+        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
     \end{minipage}%
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
         \begin{align*}
@@ -2427,6 +2500,13 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
         \ecv{u_{C,\mathrm{p}}} &= \ecv{U_q}
     \\[-15pt] &\hphantom{1rrrrrrrrrrrrrrrr} &   \hphantom{2llllll}&\hphantom{\mathrel{\phantom{=}}2rrrrrrrrrrrrrrrrrrrrrrrrrrr}     &&\hphantom{3rrrrrrrrrrrrrrrrrrrrrrrr} \nonumber
     \end{align*}
+\speech{SchaltvorgaengeRLC1FallunterscheidungGrenzfall1}{1}{%
+Beim aperiodischen Grenzfall ist die Diskriminante D exakt null. Dadurch sind beide Eigenwerte identisch, reell und negativ.
+}% Speech Ende
+\speech{SchaltvorgaengeRLC1FallunterscheidungGrenzfall1}{2}{%
+Die homogene Lösung ergibt sich durch Überlagerung der zwei Ansätze, einmal mit dem Exponentialterm und einmal mit dem Exponentialterm multipliziert mit der Zeit t.
+Die partikuläre Lösung entspricht wie in den anderen beiden Fällen der Gleichspannung U q.
+}% Speech Ende
 \end{frame}
 
 
@@ -2453,6 +2533,11 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
         K_1 &= -\ecv{U_q} \quad\text{und}\quad
                 K_2 = +\ecv{U_q} \cdot \lambda
     \end{align*}%
+\speech{SchaltvorgaengeRLC1FallunterscheidungGrenzfall2}{1}{%
+Durch Überlagerung von homogener und partikulärer Lösung ergibt sich die allgemeine Lösung.
+Und durch Einsetzen der Anfangsbedingungen können die Konstanten K eins und K zwei bestimmt werden.
+Achtung: In diesem Fall ergeben sich unterschiedliche Einheiten für K eins und K zwei.
+}% Speech Ende
 \end{frame}
 
 %-------------------------------------------------------------------------------------------------%
@@ -2469,7 +2554,7 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
 \b{% Anfang Folien only
     \begin{minipage}{\textwidth}\centering
         \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
-            \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}}%
+            \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
         \end{minipage}%
         \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
             \begin{align*}
@@ -2513,6 +2598,21 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
     und der \textbf{gedämpften Eigenkreisfrequenz} $\omega_d$\index{Größe>Eigenkreisfrequenz, gedämpft} (pos. Imaginärteil der EW).
     Eine Herleitung für Gl. \ref{eq:dgl:rlc:homolsg:periodisch} aus Gl. \ref{eq:dgl:rlc:homolsg:periodisch:herleitung} erfolgt in Kapitel \ref{sec:schaltvorgaengezeitbereich:exkurse:herleitung}.
 }% Ende Skript only
+\speech{SchaltvorgaengeRLC1FallunterscheidungPeriodisch1}{1}{%
+Der periodische Fall ist durch eine negative Diskriminante D gekennzeichnet.
+Dadurch ergeben sich zwei komplex konjugierte Eigenwerte mit negativem Realteil.
+Durch Umformung mit der imaginären Einheit j lässt sich der Real- und Imaginärteil ablesen.
+Hierfür wird die Wurzel aus dem negativen Term als j mal die Wurzel aus dem positiven Term dargestellt.
+Der Betrag des negativen Realteils wird als Abklingkonstante delta bezeichnet.
+Der Betrag des Imaginärteils wird als gedämpfte Eigenkreisfrequenz omega d bezeichnet.
+}% Speech Ende
+\speech{SchaltvorgaengeRLC1FallunterscheidungPeriodisch1}{2}{%
+Im periodischen Fall entspricht die homogene Lösung einer exponentiell abklingenden sinusförmigen Schwingung mit der Abklingkonstante delta und der gedämpften Eigenkreisfrequenz omega d.
+Die zu bestimmenden Konstanten sind die Amplitude C null und die Phasenverschiebung Phi null.
+Eine genaue Herleitung findet sich im Video über Exkurse zu RLC Schwingkreisen.
+Kurz gesagt, entspricht die homogene Lösung bei unterschiedlichen Eigenwerten allgemein der Überlagerung zweier Exponentialfunktionen.
+Durch Anwendung der Eulerschen Formel lassen sich diese in die hier gezeigte Form umwandeln.
+}% Speech Ende
 \end{frame}
 
 
@@ -2578,11 +2678,19 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
     In der gewählten Skalierung beträgt $\omega_0$ das vierfache der Abklingkonstante $\delta$ (Güte $Q_S = 2$).
 
     \begin{figure}[H]\centering%
-        \resizebox{0.7\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rlcs_charge_dc_uc_periodisch.pdf}}%
+        \includegraphics[width=0.7\textwidth]{Tikz/pdf/plot_rlcs_charge_dc_uc_periodisch.pdf}%
         \caption{Spannung $u_C(t)$ im periodischen Fall mit zugehörige Konstanten: $C_0$, $\varphi_0$, $\delta$, $\omega_d$}%
         \label{fig:rlc:dc:uc:periodisch}%
     \end{figure}%
     }% Ende Skript only
+\speech{SchaltvorgaengeRLC1FallunterscheidungPeriodisch2}{1}{%
+Die partikuläre Lösung, die allgemeine Lösung und die Bestimmung der Konstanten erfolgen wie gewohnt.
+Oben rechts ist der zeitliche Verlauf der Kondensatorspannung u C im periodischen Fall dargestellt.
+Wie zu erkennen ist, entspricht die Konstante C null der Schwingung der Amplitude zum Zeitpunkt null.
+Die Phasenverschiebung Phi null gibt an, wie weit die Schwingung zu Beginn verschoben ist.
+Die Abklingkonstante delta bestimmt die Geschwindigkeit des Abklingens der Schwingung und entspricht damit der Zeitkonstante der einhüllenden Exponentialfunktion.
+Die gedämpfte Eigenkreisfrequenz omega d bestimmt die Frequenz der Schwingung.
+}% Speech Ende
 \end{frame}
 
 
@@ -2599,18 +2707,37 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
 %-------------------------------------------------------------------------------------------------%
 
 \newpage% Achtung: Layout für eine A4-Seite im Skript vorgesehen!
-\subsubsection{Herleitung der homogenen Lösung im periodischen Fall}
+\subsubsection{Herleitung der homogenen Lösung im periodischen Fall}%
 \label{sec:schaltvorgaengezeitbereich:exkurse:herleitung}
+\v{% Video only Frame
+\newvideofile{SchaltvorgaengeRLC2Exkurse}{Schaltvorgänge bei RLC-Serienschwingkreisen (Exkurse) [2/2]}
+\begin{frame}\ftx{Entladevorgang \subsubsecname}
+    \begin{Lernziele}{Video - Schaltvorgänge bei RLC-Serienschwingkreisen [2/2]}
+        Sie lernen in diesem Video:
+        \begin{itemize}\b{\setlength\itemsep{0.7em}}
+            \item die Herleitung der homogenen Lösung im periodischen Fall zu verstehen,
+            \item komplexer Eigenwerte im Ortskurvendiagramm zu analysieren, und
+            \item die Zusammenhänge zwischen $\delta$, $\omega_d$, $\omega_0$ und $Q_S$ zu verstehen.
+        \end{itemize}
+    \end{Lernziele}
+\speech{SchaltvorgaengeRLC2ExkurseLernziele}{1}{%
+Willkommen zum letzten Video der Videoreihe für das Modul Schaltvorgänge. 
+In diesem Video vertiefen wir einige Aspekte im Bezug auf Schaltvorgängen bei RLC-Gliedern. 
+Wir lernen die Herleitung der homogenen Lösung im periodischen Fall zu verstehen.
+Außerdem führen wir eine Nullstellenbetrachtung für komplexe Eigenwerte durch und wenden diese an.
+Abschließend betrachten wir die Zusammenhänge zwischen der Abklingkonstante delta, der gedämpften Eigenkreisfrequenz omega d, der Resonanzkreisfrequenz omega null und der Schwingkreisgüte Q S.
+}% Speech Ende
+\end{frame}%
+}% Video only Frame Ende
 %
 \begin{frame}[t]\ftx{Exkurs: \subsubsecname}
 \s{% Anfang Skript only
 Aus der allgemeinen homog. Lösung im periodischen Fall (Gl. \ref{eq:dgl:rlc:homolsg:cases}) folgt mit $\lambda_{1/2}$ (Gl. \ref{eq:dgl:rlc:lambda:periodisch}):
 }% Ende Skript only
 \ifvmode\vspace*{-\baselineskip}\setlength{\parskip}{0ex}\fi% Ref: https://tex.stackexchange.com/questions/543846/how-can-i-ignore-empty-lines-before-after-and-inside-an-equation-environment
-\begin{align}
-    &&
-        \ecv{u_{C,\mathrm{h}}} &= \mathrm{e}^{-\delta t} \cdot \left( K_1 \cdot \mathrm{e}^{+\mathrm{j}\omega_d t} + K_2 \cdot \mathrm{e}^{-\mathrm{j}\omega_d t} \right) \nonumber\\
-\end{align}
+\begin{align*}
+    \ecv{u_{C,\mathrm{h}}} &= \mathrm{e}^{-\delta t} \cdot \left( K_1 \cdot \mathrm{e}^{+\mathrm{j}\omega_d t} + K_2 \cdot \mathrm{e}^{-\mathrm{j}\omega_d t} \right)
+\end{align*}%
 $K_1$ und $K_2$ müssen komplex konjugiert sein, damit $\ecv{u_{C,\mathrm{h}}}$ reell ist! \s{\cite[Vgl. S. 379]{hagmann}}
 \begin{align}
 % uncomment intertext for math preview in VSCode
@@ -2642,7 +2769,16 @@ $K_1$ und $K_2$ müssen komplex konjugiert sein, damit $\ecv{u_{C,\mathrm{h}}}$ 
             }\right]
     \label{eq:dgl:rlc:homolsg:periodisch:herleitung}
 \end{align}%
+\speech{SchaltvorgaengeRLC2ExkursePeriodisch1}{1}{%
+Die homogene Lösung im periodischen Fall von RLC Schwingkreisen ergibt sich durch Einsetzen der komplexen Eigenwerte in die allgemeine Form der homogenen Lösung.
+Durch Ausklammern des Exponentialterms e hoch minus delta t ergibt sich die obige Gleichung.
+Damit die homogene Lösung, und damit auch die gesamte Lösung, reell ist, müssen die Konstanten K eins und K zwei komplex konjugiert sein.
+Durch Einsetzen der komplex konjugierten Konstanten und Anwendung der Eulerschen Formel lassen sich die Exponentialfunktionen in Sinus- und Kosinusfunktionen umwandeln.
+Mit etwas Umformung, Sortieren und Kürzen ergibt sich die unten gezeigte Form der homogenen Lösung.
+Diese entspricht der exponentiell abklingenden Überlagerung einer Sinus- und einer Kosinusschwingung bei gleicher Frequenz omega d.
+}% Speech Ende
 \end{frame}%
+%
 \begin{frame}[t]\ftx{Exkurs: \subsubsecname}% Exkurs Herleitung: Zweiter Frame
 \s{% Anfang Skript only
 Die homogene Lösung entspricht im periodischen Fall einer abklingenden ($\mathrm{e}^{-\delta t}$)
@@ -2676,9 +2812,14 @@ und Phasenverschiebung von $\sfrac{\pi}{2}$ zueinander. %
                 &&\text{mit}\quad \lambda_{1/2} = -\delta \pm \mathrm{j} \cdot \omega_d
     \end{align*}%
 }% Ende Folien only
+\speech{SchaltvorgaengeRLC2ExkursePeriodisch2}{1}{%
+Die Überlagerung zweier Schwingungen gleicher Frequenz kann zu einer einzelnen Schwingung mit gleicher Frequenz, aber anderer Amplitude und Phasenverschiebung zusammengefasst werden.
+In der Abbildung sind links die Zeitverläufe und rechts die komplexen Amplitudenzeiger im Zeigerdiagramm dargestellt.
+In diesem Beispiel wird die blaue Schwingung z 1 und die rote Schwingung z 2 überlagert. 
+Die Amplitude und Phasenverschiebung der resultierenden Schwingung z null können durch geometrische Addition der Amplitudenzeiger im Zeigerdiagramm bestimmt werden.
+Die zu bestimmenden Konstanten sind entweder C eins und C zwei in der Schreibweise oben oder C null und Phi null in der Schreibweise unten.
+}% Speech Ende
 \end{frame}%
-%
-% <- no linebreak (Skript)
 %
 \begin{frame}[t]\ftx{Exkurs: \subsubsecname}% Exkurs Herleitung: Dritter Frame
 \s{% Anfang Skript only
@@ -2740,6 +2881,15 @@ nach Gl. \ref{eq:dgl:rlc:homolsg:periodisch:zeigeraddition} wie im Folgenden als
         &&\text{mit}\quad \lambda_{1/2} = -\delta \pm \mathrm{j} \cdot \omega_d
 \end{align*}
 }% Ende Skript only
+\speech{SchaltvorgaengeRLC2ExkursePeriodisch3}{1}{%
+Hier ist die selbe Überlagerung noch einmal in mathematischer Form dargestellt.
+Links sind die Zeitfunktionen der einzelnen Schwingungen und der resultierenden Schwingung gezeigt.
+In der Mitte sind die komplexen Amplitudenzeiger in Polarform und rechts in kartesischer Form dargestellt.
+Die Amplitude C null der resultierenden Schwingung ergibt sich aus dem Satz des Pythagoras.
+Die Phasenverschiebung Psi der resultierenden Schwingung ergibt sich aus dem Arkustangens des Verhältnisses der Amplituden C zwei und C eins.
+Welche Konstanten letztlich zu bestimmen sind, hängt von der gewählten Form der homogenen Lösung ab.
+In der unten gezeigten Form ist dabei am deutlichsten zu erkennen, dass der flüchtige Zustand im periodischen Fall einer abklingenden sinusförmigen Schwingung entspricht.
+}% Speech Ende
 \end{frame}
 
 %-------------------------------------------------------------------------------------------------%
@@ -2802,7 +2952,7 @@ nach Gl. \ref{eq:dgl:rlc:homolsg:periodisch:zeigeraddition} wie im Folgenden als
 \b{% Anfang Folien only
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
-        \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}}%
+        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
     \end{minipage}%
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
         %\includegraphics{Tikz/pdf/plot_rlcs_charge_dc_uc.pdf}%
@@ -2837,9 +2987,23 @@ nach Gl. \ref{eq:dgl:rlc:homolsg:periodisch:zeigeraddition} wie im Folgenden als
     \end{minipage}
 \end{minipage}
 }% Ende Folien only
+\speech{SchaltvorgaengeRLC2ExkurseOrtskurve}{1}{%
+In diesem Exkurs betrachten wir die Fallunterscheidung bei RLC Serienschwingkreisen anhand der Lage der Eigenwerte im komplexen Zahlenraum.
+Diese Betrachtungsweise wird in ähnlicherweise auch in der Systemtheorie zur Stabilitätsanalyse von Systemen verwendet. 
+Die Eigenwerte entsprechen dabei den Polstellen der Übertragungsfunktion des Systems. Ein genauerer Vergleich wird im Skript angestellt.
+Im Ortskurvendiagramm links sind die exemplarisch Eigenwerte für alle drei Fälle dargestellt. 
+Da der Realteil aller Eigenwerte in jedem Fall negativ ist, ist das System immer stabil.
+Im aperiodischen Fall haben wir zwei reelle, negative Eigenwerte. Dabei dominiert die Nullstelle näher an der Imaginärachse das Einschwingverhalten des Systems, da die zugehörige Exponentialfunktion langsamer abklingt.
+Bei konstanter Abklingkonstante und zunehmender ungedämpfter Eigenkreisfrequenz, mehr dazu gleich, bewegen sich die Eigenwerte aufeinander zu und verschmelzen im aperiodischen Grenzfall zu einer doppelten Nullstelle.
+Diese ist, bei konstanter Abklingkonstante, der schnellste aperiodische Fall.
+Wenn die ungedämpfte Eigenkreisfrequenz weiter erhöht wird, bewegen sich die Eigenwerte in den periodischen Fall.
+Die Eigenwerte sind dann komplex konjugiert und bewegen sich bei zunehmender ungedämpfter Eigenkreisfrequenz parallel zur Imaginärachse nach oben und unten.
+Mit zunehmendem Abstand von der Realachse, steigt auch die Schwingungsfähigkeit des Systems und damit die Frequenz der Schwingung. 
+}% Speech Ende
 \end{frame}
 
 %-------------------------------------------------------------------------------------------------%
+
 \newpage% Achtung: Layout für eine A4-Seite im Skript vorgesehen!
 \subsubsection{Abklingkonstante, Eigen- und Resonanzkreisfrequenz, Güte}
 \label{sec:schaltvorgaengezeitbereich:exkurse:eigenfrequenz}
@@ -2914,7 +3078,7 @@ nach Gl. \ref{eq:dgl:rlc:homolsg:periodisch:zeigeraddition} wie im Folgenden als
 \b{%
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
-        \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}}%
+        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
     \end{minipage}%
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
         %\includegraphics{Tikz/pdf/plot_rlcs_charge_dc_uc.pdf}%
@@ -2945,9 +3109,27 @@ nach Gl. \ref{eq:dgl:rlc:homolsg:periodisch:zeigeraddition} wie im Folgenden als
     %0 &= \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}\,y + 2\delta \cdot \frac{\mathrm{d}}{\mathrm{d}t}\,y + \omega_0^2 \cdot y&
     0 &= \ddot y + 2\delta \cdot \dot y + \omega_0^2 \cdot y&
     &\text{linear gedämpfte Schwingung} \vphantom{\bigg|}
-\end{align*}
-%Die Güte $Q_{\mathrm{S}}$ ist Maß für die Schwingungsfähigkeit.
-
-%Die Resonanzfrequenz ist gleich der ungedämpften Eigenfrequenz.
+\end{align*}%
+\speech{SchaltvorgaengeRLC2ExkurseGroessen}{1}{%
+In diesem Exkurs betrachten wir den Zusammenhang von Größen bei der Betrachtung von Resonanzphänomenen und von periodischen Schaltvorgängen bei RLC-Serienschwingkreisen.
+Resonanzen treten auf, wenn die Frequenz einer externen Anregung mit der Resonanzfrequenz f null, übereinstimmt. 
+Resonanzphänomene werden ausführlich in Modul acht erläutert.
+Die Resonanzfrequenz f null wird auch ungedämpfte Eigenfrequenz genannt, da sie die Frequenz ist, bei der das System ohne äußere Dämpfung, in diesem Fall ohne Widerstand R, schwingen würde.
+Die Gleichung für die zugehörige Resonanzkreisfrequenz omega null ergibt sich aus der Resonanzbedingung, dass der Blindanteil der Gesamtimpedanz bei Resonanz verschwindet.
+An der Gleichung für die Eigenwerte oben rechts können wir durch Einsetzen den Zusammenhang von omega d und omega null erkennen. 
+Die gedämpfte Eigenkreisfrequenz omega d entspricht dem geometrischen Mittel aus omega null und delta,
+das heißt der Wurzel aus der Differenz von omega null zum Quadrat und delta zum Quadrat.
+Bei verschwindender Dämpfung, also für delta gleich null, ist die omega d gleich omega null.
+Ein weiterer Zusammenhang besteht zwischen der Schwingkreisgüte Q S, kurz Güte genannt, und dem Verhältnis von omega null zu delta.
+Die Güte ist ein Maß für die Schwingungsfähigkeit eines Schwingkreises.
+Sie entspricht dem Verhältnis von Blindleistung zu Verlustleistung im Resonanzfall. Beim Serienschwingkreis entspricht Q damit dem Verhältnis vom Blindwiderstand der Induktivität bei Resonanz zur Serienresistenz R.
+Die selbe Umformung für die Güte kann auch für den RLC Parallelschwingkreis angewendet werden.
+In beiden Fällen ergibt sich der selbe Zusammenhang.
+Die Güte ist proportional zum Verhältnis von omega null zu delta. 
+Dadurch kann die Güte ebenso als Indikator für die Fallunterscheidung herangezogen werden.
+Anhand der Koeffizienten der homogenen DGL lassen sich so die Größen delta und omega null direkt ablesen.
+Die DGL in der unten gezeigten Form beschreibt allgemein das Verhalten von Systemen zweiter Ordnung mit linear gedämpfter Schwingung.
+Vielen Dank für Ihre Aufmerksamkeit.
+}% Speech Ende
 }% Ende Folien only
 \end{frame}

@@ -36,7 +36,9 @@ Sehr geehrte Studierende,
 herzlich willkommen zum Video Einführung in Schaltvorgänge.
 In diesem Video werden die Inhalte aus Kapitel 1 des Moduls Schaltvorgänge vorgestellt.
 Hier sehen Sie die Lernziele des Kapitels und dieses Videos.
-
+}% Speech Ende
+\silence{1}
+\speech{EinfuehrungLernziele}{1}{%
 Anhand von Ausgleichsvorgängen im Allgemeinen mit einfachen Beispielen aus der Physik
 werden wir den Begriff Schaltvorgang näher erläutern und Analogien heraus arbeiten.
 Sie werden Ursachen, den typischen Ablauf und eine grobe Definition von Schaltvorgängen kennen lernen
@@ -86,7 +88,7 @@ Zudem lernen Sie Unterschiede im Verhalten von idealen und realen Schaltern kenn
 \b{%
 	\begin{minipage}{\textwidth}% Obere Hälfte
 		\begin{minipage}{0.48\textwidth}\centering
-			\resizebox{0.9\textwidth}{!}{\includegraphics[alt={Schaltbild: R C Reihenschaltung mit Schalter, der von Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq schaltet.}]{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}}
+			\includegraphics[width=0.9\textwidth, alt={Schaltbild: R C Reihenschaltung mit Schalter, der von Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq schaltet.}]{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}
 		\end{minipage}%
 		\begin{minipage}{0.48\textwidth}\centering
 			\includegraphics[alt={Zeitverlauf der Spannung uC an der Kapazität während des Ladevorgangs. Exponentielle Näherung an Spannungswert.}]{Tikz/pdf/plot_rc_charge_uc_transition.pdf}
@@ -119,23 +121,24 @@ Zudem lernen Sie Unterschiede im Verhalten von idealen und realen Schaltern kenn
 Was sind nun Schaltvorgänge? Um diese Frage zu beantworten, fangen wir mit einem kleinem Beispiel an.
 In der Schaltung links sehen wir eine R C Reihenschaltung.
 Diese kann über einen Schalter entweder kurzgeschlossen werden oder an eine ideale Gleichspannungsquelle U q geschlossen werden.
-
 Was passiert nun, wenn die Schalterstellung wechselt und die Spannung U q an die R C Reihenschaltung angeschlossen wird?
-
-Ist die Kapazität zum Schaltzeitpunkt entladen (das heißt die Spannung u C an der Kapazität ist gleich null), so stellt sich der rechts zu sehende Zeitverlauf ein.
+}% Speech Ende
+\silence{1}
+\speech{EinfuehrungAusgleichsvorgaenge}{1}{%
+Ist die Kapazität zum Schaltzeitpunkt entladen, das heißt die Spannung u C an der Kapazität ist gleich null, so stellt sich der rechts zu sehende Zeitverlauf ein.
 Wie zu sehen ist, steigt die Spannung u c an der Kapazität zunächst schnell und dann immer langsamer an und konvergiert am Ende gegen eine konstante Spannung.
 Am Ende dieses Ladevorganges hat sich ein stationärer Zustand eingestellt.
 Vor dem Schalten hatten wir ebenfalls einen stationären Zustand als die Kapazität vollständig entladen war.
 Das was sich zwischen diesen beiden stationären Zuständen abspielt wird als Ausgleichsvorgang bezeichnet.
 Von der angeschlossenen Spannungsquelle fließt solange Energie in die Kapazität, bis sich die Spannungen sich angeglichen haben.
-Am Ende fließt kein Strom mehr und die Kapazität hat die Spannung U_q erreicht.
+Am Ende fließt kein Strom mehr und die Kapazität hat die Spannung U q erreicht.
 }% Speech Ende
 \speech{EinfuehrungAusgleichsvorgaenge}{2}{%
 Im Prinzip basieren alle makroskopischen Prozesse auf Ausgleichsvorgängen, je nachdem wie weit die Systemgrenzen gewählt werden.
 Betrachten wir dieses Bild von einem Topf, der über einem Lagerfeuer erhitzt wird.
 Nehmen wir an, der Topf ist mit Wasser gefüllt, das zunächst Umgebuntstemperatur hat.
 Bei bei genügend Wärmezufuhr wird das Wasser anfangen zu kochen und schließlich unter Normaldruck eine konstante Temperatur von ungefähr hundert Grad Celsius erreichen.
-Die zugeführte Energie entspricht dann exakt der abgeführten Energie (z.B. durch Verdunstung).
+Die zugeführte Energie entspricht dann exakt der abgeführten Energie zum Beispiel durch Verdunstung.
 }%
 \speech{EinfuehrungAusgleichsvorgaenge}{3}{%
 Ursache für den Temperaturausgleich ist das Feuer machen unter dem Topf.
@@ -150,17 +153,17 @@ Zum Beispiel durch Schalthandlungen, bei DC-Netzwerken durch Änderung von Spann
 	\includegraphics[width=\textwidth, alt={Abbildung zweier Beispiele von Ausgleichsvorgängen. Erstens eine Roboterhand, die eine Glühbirne hält. Die Sprungantwort zeigt entweder ein aperiodisches Einschwingen oder eines mit Überschwingen, wobei die Glühbirne zerbricht. Zweitens ein Motorquerschnitt. Die Sprungantwort ist entweder eine schnelle oder eine langsame exponnentielle Annäherung, wie sie bei Fahrzeugen vorkommt.}]{Bilder/Ausgleichsvorgaenge_Beispiele_ET3_S_Exknowski_FH_SWF.png}% Provisorisch mit Genehmigung von Prof. Exknowski
 \speech{EinfuehrungAusgleichsvorgaengeBeispiele}{1}{%
 Hier sind weitere Beispiele für ähnliches Systemverhalten. Auch Einschwingvorgänge bei Regelungsprozessen können als Ausgleichsvorgänge betrachtet werden. 
-
 Im obigen Beispiel sehen wir einen Beispiel aus der Robotik.
 Links zu sehen ist eine Roboterhand, die eine Glühbirne hält. 
 Zum Halten, muss der Fingerdruck auf einen festen Wert regeln. 
 Kommt es zu einem Überschwingen wie bei der orangenen Sprungantwort im mittleren Diagramm, kann dies den Bruch der Birne bedeuten
 wie rechts im Bild angedeutet ist. Für eine feine Motorik muss das System schnell, aber auch präzise reagieren wie bei der blauen Sprungantwort ohne Überschwingen dargestellt ist. 
-
+}% Speech Ende
+\silence{1}
+\speech{EinfuehrungAusgleichsvorgaengeBeispiele}{1}{%
 Im unteren Beispiel sehen wir ein Beispiel aus der Automobilindustrie. 
 Links sehen wir den Querschnitt eines Verbrennungsmotors. Für ein angenehmes Fahrverhalten müssen Drehzahl- und Drehomentregelung stimmen.
 Auch ohne Überschwingen kann eine zu abrupte Beschleunigung oder Abbremsung gerade beim Personentransport zu unerwünschten Folgen führen.
-
 All diese Beispiele haben gemein, dass eine plötzliche Änderung, in diesem Fall durch den Sprung der Sollgröße im Regelkreis, einen Ausgleichsvorgang nach sich zieht.
 Während der Ausgleichsvorgänge strebt die betrachtete Systemgröße einen stationären Zustand an. 
 }% Ende Speech
@@ -207,20 +210,23 @@ Während der Ausgleichsvorgänge strebt die betrachtete Systemgröße einen stat
 	beim Vergleich idealer und realer Schalter.
 }%
 \speech{EinfuehrungSchaltvorgaenge}{1}{%
- Hier sehen wir zwei Beispiele von Schaltvorgängen. Diese sind nichts anderes als Ausgleichsvorgänge in elektrischen Schaltungen,
- ausgelöst durch plötzliche Änderungen wie Schaltaktionen.
- Im obigen Beispiel sehen wir einen Einschwingvorgang bei Anregung mit einer Gleichspannung.
- Der Verlauf ähnelt dem Ladevorgang der Kapazität über den Widerstand. 
- Im unteren Beispiel sehen wir einen Einschwingvorgang bei Anregung mit einer Wechselspannung.
- In diesem Fall schwingt sich die Systemgröße s auf eine konstante Sinusform ein. 
- Mit den gepunkteten Verläufen wird angedeutet, wie sich der Zeitverlauf von s während des Schaltvorganges aus der
- Überlagerung einer Sinusschwingung wie im eingeschwungenen Zustand und einer Exponentialkurve wie im DC Fall ergibt. 
- Der Schaltvorgang bezeichnet den Zustand des Überganges bei dem ein stationärer Zustand angestrebt wird aber. 
- Stationär heißt im D C Fall ein konstanter Wert oder im A C Fall eine konstante Amplitude, Frequenz und Phase.
- Ausgleichsvorgänge werden insbesondere im Hochspannungsbereich oft Transienten genannt,
- abgeleitet vom lateinischen Wort *transire*, was zu Deutsch so viel wie *übergehen* bedeutet.
- Das Adjektiv *transient* bedeutet so viel wie übergangsweise. Das Gegenteil dazu ist *persistent*,
- vom lateinischen *persistere*, zu Deutsch *verharren*. 
+Hier sehen wir zwei Beispiele von Schaltvorgängen. Diese sind nichts anderes als Ausgleichsvorgänge in elektrischen Schaltungen,
+ausgelöst durch plötzliche Änderungen wie Schaltaktionen.
+Im obigen Beispiel sehen wir einen Einschwingvorgang bei Anregung mit einer Gleichspannung.
+Der Verlauf ähnelt dem Ladevorgang der Kapazität über den Widerstand. 
+Im unteren Beispiel sehen wir einen Einschwingvorgang bei Anregung mit einer Wechselspannung.
+In diesem Fall schwingt sich die Systemgröße s auf eine konstante Sinusform ein. 
+}% Speech Ende
+\silence{1}%
+\speech{EinfuehrungSchaltvorgaenge}{1}{%
+Mit den gepunkteten Verläufen wird angedeutet, wie sich der Zeitverlauf von s während des Schaltvorganges aus der
+Überlagerung einer Sinusschwingung wie im eingeschwungenen Zustand und einer Exponentialkurve wie im DC Fall ergibt. 
+Der Schaltvorgang bezeichnet den Zustand des Überganges bei dem ein stationärer Zustand angestrebt wird aber. 
+Stationär heißt im D C Fall ein konstanter Wert oder im A C Fall eine konstante Amplitude, Frequenz und Phase.
+Ausgleichsvorgänge werden insbesondere im Hochspannungsbereich oft Transienten genannt,
+abgeleitet vom lateinischen Wort transire, was zu Deutsch so viel wie übergehen bedeutet.
+Das Adjektiv transient bedeutet so viel wie übergangsweise. Das Gegenteil dazu ist persistent,
+vom lateinischen persistere, zu Deutsch verharren. 
  }% Speech Ende
 \end{frame}
 
@@ -311,7 +317,7 @@ Im hier gezeigten Tiefsetzsteller wird beispielsweise die Gleichspannung U eins 
 Das Spannungsverhältnis wird dabei durch den Tastgrad bestimmt, das heißt durch das Verhältnis von der Zeit bei geschlossenem Schalter 
 während einer Periodendauer zur gesamten Periodendauer. 
 In der oberen Schalterstellung lädt die Induktivität, wobei der Strom i L näherungsweise linear ansteigt und 
-in der unteren Schalterstellung entlädt die Induktivität nährungsweise linear. 
+in der unteren Schalterstellung entlädt die Induktivität näherungsweise linear. 
 Andere Beispiele in denen Schaltvorgänge auftreten sind zum Beispiel das Ein- und Ausschalten von elektrischen Geräten, 
 die Änderung von Eingangssignalen bei A D und bei D A Convertern und Fahrradlampen mit Kondensator, wenn die Dynamospannung weg bricht. 
 }% Speech Ende}
@@ -452,14 +458,14 @@ Die Latenzen und Verluste resultieren auf ohmschen, kapazitiven und induktiven p
 }%
 \speech{EinfuehrungSchalterIdealVsReal2}{1}{%
 Links sehen wir das Schaltbild eines MOSFET Schalters mit Gain, Drain und Source Anschlüssen.
-Ideal betrachtet treten keine paraisären Effekte auf.
+Ideal betrachtet treten keine parasitären Effekte auf.
 }% Speech Ende
 \speech{EinfuehrungSchalterIdealVsReal2}{2}{%
-Real betrachtet treten kapazitive Effektische zwischen allen drei Anschlüssen auf.
+Real betrachtet treten kapazitive Effekte zwischen allen drei Anschlüssen auf.
 Das führt dazu, dass die Gate-Source Spannung, um den Schalter zu Öffnen oder zu Schließen sich nicht instantan ändern kann.
 Bevor der MOSFET seinen Zustand zwischen Sperren und Durchlass wechselt, müssen die Kapazitäten erst entladen oder geladen werden,
 wodurch Latenzen beim Schalten entstehen.
-Im Rahmen des Moduls fokussieren wir uns ausschließlich auf Schaltvorgänge, das heißt auf die Ausgleichsvorgänge *nach* dem Schalten.
+Im Rahmen des Moduls fokussieren wir uns ausschließlich auf Schaltvorgänge, das heißt auf die Ausgleichsvorgänge nach dem Schalten.
 Real betrachtet kommt es bereits während des Schaltens zu Ausgleichsvorgängen innerhalb der jeweiligen Schalter.
 Zur Vereinfachung werden in diesem Modul stets ideale Schalter angenommen.
 }% Speech Ende

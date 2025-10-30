@@ -1,6 +1,7 @@
 \immediate\write18{makeindex -g -s ../Templates/Arbeit.ist TeXAux/Skript.idx}
 \immediate\write18{cat TeXAux/Skript.nlo | sort | uniq -w 55 | makeindex -i -s nomencl.ist -o TeXAux/Skript.nls}
 \immediate\write18{cd TeXAux;gnuplot *.gnuplot;cd ..;}
+\immediate\write18{Tikz/sh/tikz_externalize.sh}
 
 \documentclass[aspectratio=1610]{beamer}
 \input{Modulsettings.tex}					% Modulspezifische Settings einbinden

@@ -143,11 +143,9 @@ Beginnen wir mit der Definition von wichtigen Begriffen für das Thema Schaltvor
 Die Tabelle, die Sie hier auf dieser Folie sehen, dient als Nachschlagewerk mit Kurzdefinitionen einiger wichtiger Begriffe. 
 Sie kann bei Bedarf im Sinne eines Glossars verwendet werden. Im Skript ist eine etwas ausführlichere Variante der Tabelle hinterlegt.
 Die einzelnen Begriffe werden an den Stellen im Modul, wenn diese erstmalig Verwendung finden, ausführlicher beschrieben.
-
-An dieser Stelle sei darauf hingeweisen, dass es für die verschiedenen hier gelisteten Vorgänge leicht unterschiedliche Definitionen in der Fachliteratur gibt.
-Die Begriffe "Ausgleichsvorgang", "Einschwingvorgang", "Schaltvorgang" und "Transiente" haben teils überschneidende Bedeutungen und werden teils synonym verwendet. 
+An dieser Stelle sei darauf hingewiesen, dass es für die verschiedenen hier gelisteten Vorgänge leicht unterschiedliche Definitionen in der Fachliteratur gibt.
+Die Begriffe Ausgleichsvorgang, Einschwingvorgang, Schaltvorgang und Transiente haben teils überschneidende Bedeutungen und werden teils synonym verwendet. 
 Die hier gezeigten Definitionen können im Rahmen dieses Moduls unbeschränkt angewandt werden und sind tendentiell etwas allgemeiner definiert, als in den Literaturquellen des beiliegenden Skriptes. 
-
 Schaltvorgänge können im Kontext des Moduls als Ausgleichsvorgänge nach dem Schalten verstanden werden. 
 }% Speech Ende
 \end{frame}
@@ -299,37 +297,43 @@ Schaltvorgänge können im Kontext des Moduls als Ausgleichsvorgänge nach dem S
     % Bild: Flussdiagramm, Berechnungsmethoden für Schaltvorgänge
     Schaltvorgänge können im Zeit- und Bildbereich berechnet werden.
     \begin{center}
-        \resizebox{0.75\textwidth}{!}{\includegraphics{Tikz/pdf/plot_flussdiagramm_dgl_berechnungsmethoden.pdf}}
+        \includegraphics[width=0.75\textwidth]{Tikz/pdf/plot_flussdiagramm_dgl_berechnungsmethoden.pdf}
     \end{center}
     Beide Methoden basieren auf dem Lösen von Differentialgleichungen.
 }%
 \speech{Grundlagen1Berechnungsmethoden}{1}{%
 Kommen wir zu den allgemeinen Berechnungsmethoden für Schaltvorgänge. 
 Prinzipiell gibt es zwei Ansätze, um die Zeitverläufe von Systemgrößen wie Strom oder Spannung während eines Schaltvorganges zu berechnen.
-
-Bei der *ersten Methode* wird der Schaltvorgang im Zeitbereich berechnet - wie hier in der oberen Bildhälfte zu sehen ist.
+}%
+\silence{1}%
+\speech{Grundlagen1Berechnungsmethoden}{1}{%
+Bei der ersten Methode wird der Schaltvorgang im Zeitbereich berechnet - wie hier in der oberen Bildhälfte zu sehen ist.
 Ausgangspunkt der Methode ist die Differentialgleichung der Schaltung für die Systemgröße f.
 Durch lösen der Differentialgleichung lässt sich der gesuchte Zeitverlauf f von t bestimmen.
-
 Die Methode im Zeitbereich ist diejenige, welche wir hier im Modul ausführlich bearbeiten. 
 Die Methode bietet sich gerade zu Beginn an, um ein Verständnis für die physikalischen Abläufe während eines Schaltvorganges zu entwickeln.
 Für diese Methode wird der Zeitverlauf auf anschauliche Weise in einen flüchtigen und einen eingeschwungenen Zustand zerlegt wie später noch gezeigt wird.
-
-Bei der *zweiten Methode* wird die gleiche Differentialgleichung als Ausgangspunkt genommen, allerdings wird diese im Bildbereich gelöst. 
+}%
+\silence{2}%
+\speech{Grundlagen1Berechnungsmethoden}{1}{%
+Bei der zweiten Methode wird die gleiche Differentialgleichung als Ausgangspunkt genommen, allerdings wird diese im Bildbereich gelöst. 
 Vorraussetzung ist, dass die Differentialgleichung für t größer gleich 0 gilt, was bei Schaltvorgängen gegeben ist. 
 Die Methode im Bildbereich ist weniger anschaulich und etwas abstrakter durch die mathematische Repräsentation im Bildbereich.
 Daher wird die Methode an dieser Stelle kurz erklärt, aber im Rahmen des Moduls nicht ausführlicher behandelt. 
-
+}%
+\silence{3}%
+\speech{Grundlagen1Berechnungsmethoden}{1}{%
 In den meisten Fällen, insbesondere bei komplexeren Schaltung oder gekoppelten Schaltvorgängen, ist die Berechnung im Bildbereich deutlich einfacher. 
 Wie links zu sehen ist, wird die Differentialgleichung durch die Laplace-Transformation in eine algebraische Form gebracht. 
-Das bedeutet, dass Integrale und Differentiale durch die Transforamtion entfallen und die Gleichung - wie unten zu sehen ist - 
+Das bedeutet, dass Integrale und Differentiale durch die Transformation entfallen und die Gleichung - wie unten zu sehen ist - 
 algebraisch nach der Bildfunktion groß F von s aufgelöst werden kann. Durch Rücktransformation wird so der Zeitverlauf klein f von t bestimmt. 
-
+}%
+\silence{4}%
+\speech{Grundlagen1Berechnungsmethoden}{1}{%
 Der große Vorteil ist, dass die algebraische Umformung im Bildbereich in der Regel einfacher zu berechnen ist als das Lösen der Differentialgleichung im Zeitbereich. 
 Für die Transformation und Rücktransformation gibt es entsprechende Korrespondenztabellen.
 Vereinfacht wird das Verfahren zusätzlich, bei verschwindenden Anfangsbedingungen, das heißt wenn f von t oder deren Ableitungen zum Schaltzeitpunkt gleich Null sind.
 Andernfalls müssen die Anfangsbedingungen im Bildbereich mit eingearbeitet werden. 
-
 Ähnliche Ansätze im Bildbereich zu rechnen finden wir auch bei der komplexen Wechselstromrechnung oder beim Aufstellen von Differentialgleichungen.
 }% Speech Ende
 \end{frame}
@@ -394,13 +398,14 @@ Andernfalls müssen die Anfangsbedingungen im Bildbereich mit eingearbeitet werd
 \speech{Grundlagen1DGL}{1}{%
 Wie erhalten wir nun die erforderlichen Differentialgleichungen? 
 Die Schaltungen die wir in diesem Modul betrachten werden, bestehen aus den links gezeigten Komponenten. 
-Das sind zum Einen die passiven Komponenten: Elektrische Widerstände R, Induktivtitäen L, Kapazitäten C und Leitungen, 
+Das sind zum Einen die passiven Komponenten: Elektrische Widerstände R, Induktivitäten L, Kapazitäten C und Leitungen, 
 zum Anderen die aktiven Komponenten: Spannungsquellen U und Stromquellen I. 
-
+}% Speech Ende
+\silence{1}%
+\speech{Grundlagen1DGL}{1}{%
 Das Vorhandensein von Energiespeichern, das heißt von Induktivitäten oder Kapazitäten, führt zu Schaltvorgängen und Differentialgleichungen. 
 Wie rechts bei den Komponenten Gleichungen zu sehen ist, ist die Spannung u L an Induktivtitäten proportional zur zeitlichen Ableitung des Stromes i L. 
 Das heißt der Strom i L kann niemals springen, ist also stetig. Genauso verhält es sich mit dem Strom i C bei Kapazitäten, der proportional zur zeitlichen Ableitung der Spannung u C ist. Daher kann die Spannung u C niemals springen, ist also stetig. 
-
 Die Differentialgleichung erhalten wir durch Anwendung der Komponentengleichung und der Kirchhoff'schen Regeln, also der Knoten- und Maschenregel. 
 }% Speech Ende
 \end{frame}
@@ -408,7 +413,7 @@ Die Differentialgleichung erhalten wir durch Anwendung der Komponentengleichung 
 \begin{frame}\ftx{\subsecname}% 
 \b{% Folie: Aufstellungsmethoden für DGL (Zeitbereich, Bildbereich)
     Mögliche Vorgehensweisen zum Aufstellen von Differentialgleichungen:\\[5pt]
-    \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/plot_flussdiagramm_dgl_aufstellen.pdf}}
+    \includegraphics[width=\textwidth]{Tikz/pdf/plot_flussdiagramm_dgl_aufstellen.pdf}
 }
 \speech{Grundlagen1DGLAufstellen}{1}{%
 Das hier gezeigte Flussdiagramm stellt prinzipiell zwei Vorgehensweisen dar, um die gesuchte Differentialgleichung - oben rechts im Bild - auf zu stellen.
@@ -463,26 +468,26 @@ Beide Varianten werden im Folgenden kurz erläutert und dann anhand eines einfac
 \speech{Grundlagen1DGLAufstellenBeispiel}{1}{%
 Gegeben sei die oben gezeigte Schaltung. 
 Die R C Serienschaltung ist über einen Schalter entweder in der Ausgangsstellung kurzgeschlossen 
-oder ab dem Schaltzeitpunkt t gleich null an eine ideale Gleichspannungsquelle U q angeschlossen. 
-Gesucht sei die Spannung u c an der Kapazität für t größer gleich 0.
-Wir sehen hier die Knoten und Maschengleichung und die Komponentengleichungen für i C und für u R. 
+oder ab dem Schaltzeitpunkt T gleich null an eine ideale Gleichspannungsquelle U Q angeschlossen. 
+Gesucht sei die Spannung U C an der Kapazität für T größer gleich Null.
+Wir sehen hier die Knoten und Maschengleichung und die Komponentengleichungen für I C und für U R. 
 Da es sich um eine Serienschaltung handelt fließt der gleiche Strom durch R und durch C.
 }% Speech Ende
 \speech{Grundlagen1DGLAufstellenBeispiel}{2}{%
-Deshalb setzen wir zunächst R mal i in die Maschengleichung für u R  ein
-Als nächsten Schritt ersetzen wir i durch C mal der zeitlichen Ableitung von u C. 
-Dadurch erhalten wir die D G L erster Ordnung: R C mal der ersten Ableitung von u C plus u C ist gleich U q. 
+Deshalb setzen wir zunächst R mal I in die Maschengleichung für U R ein
+Als nächsten Schritt ersetzen wir I durch C mal der zeitlichen Ableitung von U C. 
+Dadurch erhalten wir die D G L erster Ordnung: R C mal der ersten Ableitung von U C plus U C ist gleich U Q. 
 }% Speech Ende
 \speech{Grundlagen1DGLAufstellenBeispiel}{3}{%
 Zum Vergleich stellen wir nun die D G L für die gleiche Schaltung mit der zweiten Methode auf. 
-Da wir die D G L für u C bestimmen wollen, beginnen wir mit dem komplexen Spannungsteiler für U C. 
-U C ist gleich U q mal Z C geteilt durch R + Z C. 
-In dieser Form haben wir bereits nur unsere gewünschte Zielgröße u C, 
-die Spannungsquelle U q als unsere Störquelle und die Variablen R und C, die unsere konstanten Koeffizienten bilden.
+Da wir die D G L für U C bestimmen wollen, beginnen wir mit dem komplexen Spannungsteiler für U C. 
+U C ist gleich U Q mal Z C geteilt durch R plus Z C. 
+In dieser Form haben wir bereits nur unsere gewünschte Zielgröße U C, 
+die Spannungsquelle U Q als unsere Störquelle und die Variablen R und C, die unsere konstanten Koeffizienten bilden.
 Durch algebraische Umformung stellen wir wir die Gleichung um. 
-Auf die linke Seite kommen erstens alle jot omega Terme, zweitens unsere Zielgröße u C in komplexer Form. 
-Wichtig ist, dass die jot omega Terme im Zähler stehen, damit diese am Ende zu Differntialoperatoren umgewandelt werden können.
-Auf die rechte Seite kommt unser komplexes U q als Störterm. 
+Auf die linke Seite kommen erstens alle J omega Terme, zweitens unsere Zielgröße U C in komplexer Form. 
+Wichtig ist, dass die J omega Terme im Zähler stehen, damit diese am Ende zu Differntialoperatoren umgewandelt werden können.
+Auf die rechte Seite kommt unser komplexes U Q als Störterm. 
 Durch Rücktransformation in den Zeitbereich erhalten wir unsere Differentialgleichung. 
 }% Speech Ende
 \end{frame}
@@ -544,22 +549,25 @@ Hier sehen wir eine kurze Zusammenfassung von Schaltungskomponenten, System- und
 Links sind die linearen, zeitinvarianten Schaltungskomponenten, aus denen sich unsere Schaltungen zusammen setzen. 
 Oben rechts sehen wir, welche Eigenschaften der D G L sich aus den Systemeigenschaften der Schaltung ableiten lassen. 
 Beinhaltet die Schaltung Energiespeicher, das heißt Induktivitäten oder Kapazitäten, so erhalten wir eine D G L. 
-
+}% Speech Ende
+\silence{1}%
+\speech{Grundlagen1DGLEigenschaften}{1}{%
 Die Zusammenhänge von Schaltungstopologie und Eigenschaften und Form der D G L zu verstehen hilft uns zum Beispiel 
 beim Aufstellen der D G L, da wir wissen, welche Form diese annehmen muss. 
 Außerdem kann uns dieses Wissen später helfen das Systemverhalten zum Teil direkt aus der Form der D G L abzuleiten.
-
 Wenn alle Komponenten einer Schaltung linear sind, ist auch die zugehörige D G L linear. 
-Bei allen Komponenten gehen wir von Zeitinvariant aus, das heißt zum Beispiel, dass der elektrische Widerstand R sich nicht über die Zeit verändert.
-Daraus lässt sich ableiten, dass die Konstanten a i unserer Differentialgleichung konstant sind, da diese nur von den Werten für R, L und oder C abhängen. 
-
+Bei allen Komponenten gehen wir von Zeitinvarianz aus, das heißt zum Beispiel, dass der elektrische Widerstand R sich nicht über die Zeit verändert.
+Daraus lässt sich ableiten, dass die Konstanten A I unserer Differentialgleichung konstant sind, da diese nur von den Werten für R, L und oder C abhängen. 
+}% Speech Ende
+\silence{2}%
+\speech{Grundlagen1DGLEigenschaften}{1}{%
 Unten sehen wir die allgemeine Form einer gewöhnlichen, linearen, inhomogenen Differentialgleichung der Ordnung n mit konstanten Koeffizienten.
 Die D G L ist gewöhnlich, weil sie nur von einer Variable, hier der Zeit t, abhängt. 
 Die D G L ist linear, weil nur lineare Terme enthalten sind. 
-Die D G L ist inhomogen, da sie eine Störgröße b von t auf der rechten Seite der Gleichung enthält. 
+Die D G L ist inhomogen, da sie eine Störgröße B von T auf der rechten Seite der Gleichung enthält. 
 Die Störgröße stellt unsere Anregung dar, das heißt in ihr finden wir Strom oder Spannung von angeschlossenen Strom- oder Spannungsquellen. 
 Ohne Anregung, zum Beispiel beim Entladen einer Kapazität über einen Widerstand, entfällt die Störgröße auf der rechten Seite und wir erhalten eine homogene D G L.
-Die D G L hat die Ordnung n, da die n te Ableitung die höchst auftretende Ableitung der Schaltungsgröße y ist.
+Die D G L hat die Ordnung N, da die Ente Ableitung die höchst auftretende Ableitung der Schaltungsgröße Y ist.
 }% Speech Ende
 \end{frame}
 
@@ -599,19 +607,19 @@ Die D G L hat die Ordnung n, da die n te Ableitung die höchst auftretende Ablei
 \b{%
     \begin{figure}[H]\centering% Bilder horizontal angeordnet
         \begin{subfigure}{0.24\textwidth}\centering
-            \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/circ_example_ordnung_01.pdf}}
+            \includegraphics[width=\textwidth]{Tikz/pdf/circ_example_ordnung_01.pdf}
             \caption*{1 En.sp. $\rightarrow$ 1. Ord.}
         \end{subfigure}
         \begin{subfigure}{0.24\textwidth}\centering
-            \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/circ_example_ordnung_02.pdf}}
+            \includegraphics[width=\textwidth]{Tikz/pdf/circ_example_ordnung_02.pdf}
             \caption*{2 En.sp. $\rightarrow$ 2. Ord.}
         \end{subfigure}
         \begin{subfigure}{0.24\textwidth}\centering
-            \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/circ_example_ordnung_03.pdf}}
+            \includegraphics[width=\textwidth]{Tikz/pdf/circ_example_ordnung_03.pdf}
             \caption*{2 En.sp. $\rightarrow$ 2. Ord.}
         \end{subfigure}
         \begin{subfigure}{0.24\textwidth}\centering
-            \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/circ_example_ordnung_04.pdf}}
+            \includegraphics[width=\textwidth]{Tikz/pdf/circ_example_ordnung_04.pdf}
             \caption*{2 En.sp. $\rightarrow$ 2. Ord.}
         \end{subfigure}
         \label{fig:plot:beispielordnungdgl}
@@ -652,11 +660,11 @@ Schaltvorgänge in Serienschwingkreisen werden später ausführlich behandelt.
     \end{itemize}
     \end{Lernziele}
 \speech{Grundlagen2Lernziele}{1}{%
- Wilkommen zum zweiten Grundlagen Video des Moduls Schaltvorgänge.
- In diesem Video behandeln wir das letzte Grundlagen Unterkapitel Berechnugnsverfahren im Zeitbereich.
- Wir lernen die Bedeutung von Anfangsbedingungen für Schaltvorgänge zu verstehen, 
- wie Schaltvorgänge in flüchtige und eingeschwungene Zustände zerlegt werden können und
- darauf aufbauend ein Berechnungsverfahren für Schaltvorgänge im Zeitbereich kennen und verstehen.
+Wilkommen zum zweiten Grundlagen Video des Moduls Schaltvorgänge.
+In diesem Video behandeln wir das letzte Grundlagen Unterkapitel Berechnugnsverfahren im Zeitbereich.
+Wir lernen die Bedeutung von Anfangsbedingungen für Schaltvorgänge zu verstehen, 
+wie Schaltvorgänge in flüchtige und eingeschwungene Zustände zerlegt werden können und
+darauf aufbauend ein Berechnungsverfahren für Schaltvorgänge im Zeitbereich kennen und verstehen.
 }% Speech Ende
 \end{frame}
 }% Video only Frame Ende
@@ -749,10 +757,10 @@ Da Kapazitäten Energie in Form elektrischer Energie speichern, ist die Spannung
 u C an einer Kapazität stetig und kann sich nicht schlagartig ändern.
 Da Induktivitäten Energie in Form magnetischer Energie speichern, ist der Strom 
 i L durch eine Induktivität stetig und kann sich ebenfalls nicht schlagartig ändern. 
-Kennen wir also den Zustand der Schaltungsgrößen u C und i L unmittelbar vor dem Schaltzeitpunkt ...
+Kennen wir also den Zustand der Schaltungsgrößen u C und i L unmittelbar vor dem Schaltzeitpunkt 
 }% Speech Ende
 \speech{Grundlagen2Anfangsbedingungen}{5}{%
-... so kennen wir aufgrund dieser Stetigkeitsbedingungen auch die Werte für u C und i L 
+ so kennen wir aufgrund dieser Stetigkeitsbedingungen auch die Werte für u C und i L 
 unmittelbar nach dem Schaltzeitpunkt, das heißt während des Schaltvorganges. 
 Diese Werte können wir als Anfangsbedingungen für die Berechnung des Schaltvorganges verwenden.
 }% Speech Ende
@@ -876,7 +884,7 @@ Subtrahieren wir y e von y, bleibt der zeitlich abklingende flüchtige Zustand y
 }% Speech Ende
 \speech{Grundlagen2Zerlegung}{2}{%
 In diesem Beispiel Schaltvorgang nähert sich y exponentiell einem konstanten Grenzwert an. 
-Dieser durch die D C Anregung bedingte konstante Endwert von y ist unser eingeschwungenen Zustand y e. 
+Dieser durch die D C Anregung bedingte konstante Endwert von y ist unser eingeschwungener Zustand y e. 
 Der abklingende Exponentialverlauf y f ist unser flüchtiger Zustand. 
 Wie wir gleich sehen werden, lassen sich beide Zustände einzeln gut berechnen,
 sodass wir y durch die Überlagerung beider Zustände bestimmen können.
@@ -1052,6 +1060,9 @@ Die Form der Lösung hängt von der Art der Eigenwerte ab,
 die lambdas können einfache Nullstellen oder mehrfache Nullstellen sein.
 Bei einfachen Nullstellen wählen wir den ersten Lösungsansatz K mal e hoch lambda t
 mit dem jeweiligen Index i für K und lambda.
+}% Speech Ende
+\silence{1}
+\speech{Grundlagen2HomogeneLoesung}{3}{%
 Bei mehrfachen Nullstellen wählen wir den zweiten Lösungsansatz. Dieser basiert auf der Variation der Konstanten des ersten Lösungsansatzes,
 um auch bei gleichen Nullstellen linear unabhängige Lösungen zu erhalten.
 Hierfür wird der Exponentialansatz jeder weiteren gleichen Nullstelle mit dem Faktor t hoch j-1 multipliziert. 
@@ -1240,11 +1251,11 @@ Eine Herleitung der Umformung kann am Ende des Moduls im Exkurs für die Herleit
 \speech{Grundlagen2PartikulaereLoesung}{1}{%
 Kommen wir zur Berechnung der partikulären Lösung y p, das heißt zur Berechnung des eingeschwungenen Zustandes y e.
 Im eingeschwungenen Zustand verhält sich unsere Schaltung stationär. 
-In linearen, zeitinvariatnen Systemen bedeutet das, dass unser y p 
+In linearen, zeitinvarianten Systemen bedeutet das, dass unser y p 
 bei DC-Anregung eine Gleichgröße mit konstantem Wert ist und
 bei AC-Anregung eine sinusförmige Wechselgröße ist mit gleicher Frequenz wie die Anregung.
 Zur Bestimmung wenden wir die bekannten Methoden zur Netzwerkberechnung an. 
-Dazu gehören zum Beispiel Knoten- und Maschenregeln, daraus abgeleit Spannungs- und Stromteiler in realer oder komplexer Form. 
+Dazu gehören zum Beispiel Knoten- und Maschenregeln, daraus abgeleitet Spannungs- und Stromteiler in realer oder komplexer Form. 
 Im DC Fall verhalten sich Kapazitäten wie offene Schaltungen und Induktivitäten wie Kurzschlüsse.
 Im AC Fall rechnen wir mit deren Impedanzen oder Admittanzen.
 }% Speech Ende
