@@ -1,5 +1,8 @@
 %Effektivwert
 
+
+\newvideofile{Effektiv}{Effektivwert}
+
 \begin{frame}
     \fta{Effektivwert} \label{Kap.Effektivwert}
 
@@ -23,11 +26,13 @@
         \end{itemize}
     \end{Lernziele}
 
-    %Der Effektivwert. Oft kann es schwierig werden, mit zeitlich veränderlichen Größen zu Arbeiten.
-    %Um Größen Vereinfacht vergleichen zu können wird der Effektivwert eingeführt.
-    %Hier soll nun die Funktion des Effektivwertes erklärt und
-    %Die Einflüsse auf den Effektivwert vermittelt werden.
-    %Der Effektivwert von Wechselspannungen und Wechselströmen soll berechnet werden können.
+    \speech{EffektivLrnz}{1}{
+    Der Effektivwert. 
+    Oft kann es schwierig werden, mit zeitlich veränderlichen Größen zu Arbeiten.
+    Um Größen Vereinfacht vergleichen zu können, Wird der Effektivwert eingeführt.
+    Hier soll nun die Funktion des Effektivwertes erklärt und
+    Die Einflüsse auf den Effektivwert vermittelt werden.
+    Der Effektivwert von Wechselspannungen und Wechselströmen soll anschließend berechnet werden können.}
 \end{frame}
 
 %Grundlagen
@@ -70,10 +75,10 @@
         \sin^2(x)=\frac{1}{2}(1-\cos(2x))         \label{GleichungEff2}
     \end{eq}}
 
-    %Wie bereits angedeutet dient der Effektivwert der besseren Vergleichbarkeit.
-    %Er wird durch den quadratischen Mittelwert auch R M S genannt gebildet.
-    %Die Abkürzung steht für Root Mean Square. 
-    %In der Anwendung wird unter anderem das angegebene Additionstheorem genutzt.
+    \speech{EffektivGrund}{1}{Wie bereits angedeutet dient der Effektivwert der besseren Vergleichbarkeit.
+    Er wird durch den quadratischen Mittelwert, auch Er Em Es genannt, gebildet.
+    Die Abkürzung steht für Root Mean Square.} 
+    \speech{EffektivGrund}{2}{In der Anwendung wird unter anderem das angegebene Additionstheorem genutzt.}
 \end{frame}
 
 %Amplitude und Kurvenform
@@ -108,10 +113,10 @@
 	}{{\bf Sinusspannungen mit unterschiedlichen Amplitudenwerten.} Gewichtung von den Amplitudenwerten $\hat{U}_1=1\,V$, 
     $\hat{U}_2=2\,V$ und $\hat{U}_3=4\,V$. \label{BildAmplituden}}}
 
-    %Der Scheitelwert einer Sinusspannung wird auch als Ampltudenwert bezeichnet.
-    %Dargestellt werden hier verschiedene Amplituden von unterschiedlichen Sinusspannungen.
-    %Der Effektivwert ist direkt proportional zum Ampltudenwert.
-    %So verfügt U Drei über den größten Effektivwert und U 1 über den kleinsten Effektivwert.
+    \speech{EffektivAmpli}{1}{Der Scheitelwert einer Sinusspannung wird auch als Amplitudenwert bezeichnet.}
+    \speech{EffektivAmpli}{2}{Dargestellt werden hier verschiedene Amplituden von unterschiedlichen Sinusspannungen.}
+    \speech{EffektivAmpli}{3}{Der Effektivwert ist direkt proportional zum Amplitudenwert.
+    So verfügen gemäß ihrer Amplituden U Drei über den größten Effektivwert und U Eins über den kleinsten Effektivwert.}
 \end{frame}
 
 \begin{frame}
@@ -181,7 +186,10 @@
         \end{table}}
     }
 
-
+    \speech{EffektivKurvor}{1}{Die direkte Abhängigkeit zwischen dem Scheitelwert und dem Effektivwert wird über den Scheitelfaktor C dargestellt.}
+    \speech{EffektivKurvor}{2}{Der Scheitelfaktor hängt dabei von der jeweiligen Kurvenform ab. 
+    So beträgt der Scheitelfaktor einer Sinusspannung beispielsweise Wurzel Zwei,
+    Der Scheitelfaktor einer Dreieckspannung Wurzel Drei und der Scheitelfaktor einer Rechteckspannung Eins.}
 \end{frame}
 
 
@@ -193,9 +201,9 @@
         heißt Scheitelfaktor und hängt von der Kurvenform des Singals ab. 
     \end{Merksatz}
 
-    %Der Effektivwert ist linear proportional zum Scheitelwert einer Wechselspannung oder eines Wechselstromes.
-    %Der Umrechnungsfaktor vom Effektivwert zum Scheitelwert wird als Scheitelfaktor bezeichnet.
-    %Dieser Scheitelfaktor hängt von der Kurvenform des Signals ab.
+    \speech{EffektivMrk}{1}{Der Effektivwert ist linear proportional zum Scheitelwert einer Wechselspannung oder eines Wechselstromes.
+    Der Umrechnungsfaktor vom Effektivwert zum Scheitelwert wird als Scheitelfaktor bezeichnet.
+    Dieser Scheitelfaktor hängt von der Kurvenform des Signals ab.}
 \end{frame}
 
 
@@ -224,9 +232,10 @@
         entsteht:
     }
 
+    \onslide<2->{
     \begin{eq}
         I_\mathrm{Eff}=\sqrt{\frac{\hat{I}^2}{2T}\int_{0}^T {1-\cos(2\omega t) dt}}      \label{GleichungEff4}
-    \end{eq}
+    \end{eq}}
 
     \s{
         Nach der Differenzregel können Differenzen in einem Integranden gesondert bestimmt werden. Auf diese Weise werden
@@ -234,14 +243,18 @@
         bestimmt. 
     }
 
+    
+    \onslide<3->{
     \begin{eq}
         \text{mit} \quad \int_0^T 1 dt = T \quad \text{und} \quad \int_0^T \cos(2 \omega t) dt = 0        \label{GleichungEff5}
-    \end{eq}
+    \end{eq}}
 
     \s{
         Durch das Auflösen des Integrals entsteht:
     }
 
+    
+    \onslide<4->{
     \begin{eq}
         I_\mathrm{Eff} = \sqrt{\frac{\hat{I}^2}{2T}\cdot (T - 0)}          \label{GleichungEff6}
     \end{eq}
@@ -252,7 +265,7 @@
 
     \begin{eq}
         I_\mathrm{Eff} = \sqrt{\frac{\hat{I}^2}{2}}              \label{GleichungEff7}
-    \end{eq}
+    \end{eq}}
 
     \s{
         Nun wird noch aus dem Zähler und dem Nenner getrennt die Wurzel gezogen. Der selbe Zusammenhang lässt sich so auch 
@@ -263,6 +276,14 @@
     \end{eq}
     }
 
+    \speech{EffektivHerl}{1}{Nun folgt eine kurze Herleitung des Effektivwertes eines sinusförmigen Wechselstromes.
+    Als Funktion wird der Wechselstrom im zeitbereich betrachtet. 
+    Die Funktion des Wechselstromes wird in die Effektivwertgleichung eingesetz.}
+    \speech{EffektivHerl}{2}{Durch die Faktorenregel können unabhängige Konstanten aus dem Integral gezogen werden. 
+    Über das vorgestellte Additionstheorem gelangt man zu dem angegebenen Ausdruck.}
+    \speech{EffektivHerl}{3}{Aus der Summe von Integralen können die einzelnen Bestandteile jeweils für sich integriert werden.}
+    \speech{EffektivHerl}{4}{Folgend wird das Produkt innerhalb der Wurzel aufgelöst, 
+    was direkt zum Scheitelfaktor Wurzel Zwei für Sinusschwingungen führt.}
 \end{frame}
 
 
@@ -276,9 +297,9 @@
         \end{eq}
     \end{Merksatz}
 
-    %Für rein Sinusförmige Schwingungen gilt der Scheitelfaktor Wurzel Zwei. 
-    %Das gilt für die Effektivwerte und Scheitelwerte von Strömen,
-    %genauso wie für die Effektivwerte und Scheitelwerte von Spannungen. 
+    \speech{EffektivMrk2}{1}{Für rein Sinusförmige Schwingungen gilt der Scheitelfaktor Wurzel Zwei. 
+    Das gilt für die Effektivwerte und Scheitelwerte von Strömen,
+    genauso wie für die Effektivwerte und Scheitelwerte von Spannungen.}
 \end{frame}
 
 
@@ -311,6 +332,9 @@
 		}
 	}{{\bf Formverlauf einer Sinusspannung.} Sinusspannung mit einem Amplitudenwert von $4\,V$ und zugehörigem Effektivwert von $4\,V/\sqrt{2}$. \label{BildEff1}}
 
+    \speech{EffektivFestzeiger}{1}{Folgend wird der Formverlauf einer Sinusspannung dargestellt.
+    Der Amplitudenwert dieser Sinusspannung beträgt Vier Volt.}
+    \speech{EffektivFestzeiger}{2}{Der Effektivwert der Sinusspannung wird über den Faktor Wurzel Zwei gebildet und bleibt dauerhaft auf dem Niveau.}
 \end{frame}
 
 
@@ -330,7 +354,7 @@
             Die folgenden Aufgaben sollen zum besseren Verständnis des Effektivwertes bearbeitet werde: 
             \begin{itemize}
                 \item[a)] Berechnung des Amplitudenwertes der Spannung an einer Haushaltssteckdose.
-                \item[b)] Berechneng des Effektivwertes davon ausgehend, dass es sich um ein Rechtsecksignal handeln würde.
+                \item[b)] Berechnung des Effektivwertes davon ausgehend, dass es sich um ein Dreiecksignal handeln würde.
             \end{itemize}
         }
 
@@ -338,28 +362,30 @@
             \item[a)]
             Der Amplitudenwert an einer Steckdose mit einem Effektivwert von 230V beträgt: 
             \begin{eqa}
-                \hat{U} &= I_\mathrm{Eff} \cdot \sqrt{2} = 230V \cdot \sqrt{2}      \nonumber   \\
+                \hat{U} &= U_\mathrm{Eff} \cdot \sqrt{2} = 230V \cdot \sqrt{2}      \nonumber   \\
                 \hat{U} &= 325,269V         \nonumber
             \end{eqa}  
         }
 
         \only<3>{	
             \item[b)]
-            Der Effektivwert einer Rechteckspannung mit einem Scheitelwert von 325V beträgt: 
+            Der Effektivwert einer Dreieckspannung mit einem Scheitelwert von 325V beträgt: 
             \begin{eqa}
-                U_\mathrm{Rechteck} &= \frac{\hat{U}}{\sqrt{3}} = \frac{325V}{\sqrt{3}}      \nonumber   \\
-                U_\mathrm{Rechteck} &= 187,639V         \nonumber
+                U_\mathrm{Dreieck} &= \frac{\hat{U}}{\sqrt{3}} = \frac{325V}{\sqrt{3}}      \nonumber   \\
+                U_\mathrm{Dreieck} &= 187,639V         \nonumber
             \end{eqa}  
         }
 
     \end{enumerate}
     \end{bsp}
 
-    %Aufgabe
-    %An einer Haushaltssteckdose sollte immer eine Sinusförmige Wechselspannung anliegen.
-    %Die Sinusform hat einen Scheitelfaktor von Wurzel Zwei.
-    %Außerdem liefert der Haushaltsanschluss über eine Phase Immer einen Effektivwert von 230 Volt.
-    %Der Amplitudenwert ergibt sich aus dem Produkt des Scheitelfaktors und des Effektivwertes.
-    %Die Rechteckform 
+    \speech{EffektivBsp}{1}{Zum Ende noch eine Beispielaufgabe.
+    Im ersten Teil soll der Amplitudenwert an einer Haushaltssteckdose berechnet werden.
+    Anschließend soll im Zweiten Teil davon ausgehend der Effektivwert eben jener Haushaltssteckdoese mit einer Dreiecks-Kurvenform  berechnet werden.}
+    \speech{EffektivBsp}{2}{An einer Haushaltssteckdose sollte immer eine Sinusförmige Wechselspannung von Zweihundertdreißig Volt anliegen.
+    Die Sinusform hat einen Scheitelfaktor von Wurzel Zwei.
+    Der Amplitudenwert ergibt sich aus dem Produkt des Scheitelfaktors und des Effektivwertes.}
+    \speech{EffektivBsp}{3}{Die Dreieckform hat einen Scheitelfaktor von Wurzel Drei.
+    Ausgehend vom errechneten Scheitelwert wird über den Scheitelfaktor der Dreieckspannung der neue Effektivwert berechnet.} 
 \end{frame}
 \newpage
