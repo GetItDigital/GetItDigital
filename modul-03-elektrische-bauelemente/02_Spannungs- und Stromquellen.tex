@@ -141,7 +141,7 @@
 %%%%%%  Kurzschlussstrom I_K erwähnen
 %%%%%%  I_K = U_0 / R_i
 
-\begin{frame} % ToDo: Hillgärtner: Hinweis: Vielleicht sollte URI als Spannungsabfall an RI noch in die Darstellung aufgenommen werden.
+\begin{frame}%; TODO: Hillgärtner: Hinweis: Vielleicht sollte URI als Spannungsabfall an RI noch in die Darstellung aufgenommen werden.
     \ftx{Spannungsquelle}
     \b{
         \begin{itemize}
@@ -326,10 +326,10 @@
         \end{equation}
     }
     
-    \speech{02_Spannungs_und_Stromquellen6}{1}{
+    \speech{02_Spannungs_und_Stromquellen6}{1}{%;TODO schlimmer seed
         Bei der realen Stromquelle haben wir wieder einen Innenwiderstand. Dieser Innenwiderstand darf aber in keinem Fall in Reihe liegen, denn dann würde er den Ausgangsstrom ja überhaupt nicht beeinflussen. Bei einer Reihenschaltung ist der Strom durch alle Elemente gleich. Wir müssen dem Strom einen sogenannten Verzweigungspunkt liefern, indem wir den Innenwiderstand parallel zur Quelle schalten. Dann fließt ein Teil des Quellstroms durch den Innenwiderstand, und ein anderer Teil fließt als Ausgangsstrom I durch die angeschlossene Last.
-        Wenn jetzt die angeschlossene Last einen sehr viel kleineren Widerstand hat als der Innenwiderstand R_I, dann fließt ein Großteil des Quellstroms durch die Last, und ein sehr viel kleinerer Teil des Stroms durch den Innenwiderstand. Du wirst in den folgenden Modulen auch noch die Knotenregel kennenlernen und sehen, dass der Quellstrom I_Q genau gleich ist der Summe aus I und I_RI.
-        Wie muss also der Innenwiderstand sein, damit eine Stromquelle möglichst ideales Verhalten zeigt? Der Innenwiderstand einer Stromquelle sollte möglichst groß sein. Auch das widerspricht dem natürlichen Gefühl. Da sagt man normalerweise: Innenwiderstände sollten klein sein, damit die Verluste klein sind. Hier ist es genau umgekehrt. Der Innenwiderstand sollte möglichst groß sein. Achtung: Bei der realen Stromquelle ist ein möglichst großer Innenwiderstand absolut wünschenswert. Auch hier: Wenn der Innenwiderstand klein wäre und wir dann die Quelle leerlaufen lassen, flösse der gesamte Strom I_Q durch den Innenwiderstand. Wir hätten einen ähnlichen Effekt wie beim Kurzschluss der realen Spannungsquelle, im R_I würde eine extrem hohe Leistung umgesetzt, was zur Zerstörung der Quelle führen würde.
+        Wenn jetzt die angeschlossene Last einen sehr viel kleineren Widerstand hat als der Innenwiderstand R-I, dann fließt ein Großteil des Quellstroms durch die Last, und ein sehr viel kleinerer Teil des Stroms durch den Innenwiderstand. Du wirst in den folgenden Modulen auch noch die Knotenregel kennenlernen und sehen, dass der Quellstrom I-Q genau gleich ist der Summe aus I und I-R-I.
+        Wie muss also der Innenwiderstand sein, damit eine Stromquelle möglichst ideales Verhalten zeigt? Der Innenwiderstand einer Stromquelle sollte möglichst groß sein. Auch das widerspricht dem natürlichen Gefühl. Da sagt man normalerweise: Innenwiderstände sollten klein sein, damit die Verluste klein sind. Hier ist es genau umgekehrt. Der Innenwiderstand sollte möglichst groß sein. Achtung: Bei der realen Stromquelle ist ein möglichst großer Innenwiderstand absolut wünschenswert. Auch hier: Wenn der Innenwiderstand klein wäre und wir dann die Quelle leerlaufen lassen, flösse der gesamte Strom I-Q durch den Innenwiderstand. Wir hätten einen ähnlichen Effekt wie beim Kurzschluss der realen Spannungsquelle, im R-I würde eine extrem hohe Leistung umgesetzt, was zur Zerstörung der Quelle führen würde.
     }
     
 \end{frame}
@@ -373,7 +373,8 @@
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Umrechnen Strom in Spannungsquelle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%% Abbildung aus dem Albach (muss noch erstellt werden!!)
+%%% Abbildung aus dem Albach (muss noch erstellt werden!!) 
+%; TODO hier fehlen only abbildungen die zum sprechtext passen
 \begin{frame}
     \ftx{Umwandlung einer Spannungsquelle in eine Stromquelle}
     \b{
@@ -386,32 +387,23 @@
             
         \end{figure}
     }
+    %; TODO: only 1 , bzw. ich bin nicht sicher ob der Text zur Umwandlung von Strom in Spannungsquelle geeignet ist
+    \speech{02_Spannungs_und_Stromquellen8}{1}{
+        Wir haben jetzt gesehen, dass es Strom- und Spannungsquellen gibt. Und letztlich haben beide an ihren Klemmen einen Ausgangsstrom I und eine Ausgangsspannung U. Bei realen Quellen wird das tatsächliche Verhalten maßgeblich vom Innenwiderstand R-I mitbestimmt.
+        Es ergibt sich für eine Spannungsquelle das folgende Bild: Wir haben eine Ausgangsspannung U-0. Wir haben einen Strom I, der sowohl durch den Innenwiderstand als auch durch den angeschlossenen Widerstand fließt, und demzufolge eine Spannung U, die an dem Widerstand R abfällt.
+        Letztlich kommt es also darauf an, welcher Strom I durch den Lastwiderstand R fließt und dann einen Spannungsabfall U hervorruft. Das können wir so wie hier dargestellt mit einer Spannungsquelle natürlich erreichen.}
     
-    \speech{02_Spannungs_und_Stromquellen7}{1}{ % ToDo: only 1 , bzw. ich bin nicht sicher ob der Text zur Umwandlung von Strom in Spannungsquelle geeignet ist
-        Wir haben jetzt gesehen, dass es Strom- und Spannungsquellen gibt. Und letztlich haben beide an ihren Klemmen einen Ausgangsstrom I und eine Ausgangsspannung U. Bei realen Quellen wird das tatsächliche Verhalten maßgeblich vom Innenwiderstand RI mitbestimmt.
-        Es ergibt sich für eine Spannungsquelle das folgende Bild: Wir haben eine Ausgangsspannung U_0. Wir haben einen Strom I, der sowohl durch den Innenwiderstand als auch durch den angeschlossenen Widerstand fließt, und demzufolge eine Spannung U, die an dem Widerstand R abfällt.}
-    
-    \speech{02_Spannungs_und_Stromquellen7}{2}{ % ToDo: only 2 
-        Letztlich kommt es also darauf an, welcher Strom I durch den Lastwiderstand R fließt und dann einen Spannungsabfall U hervorruft. Das können wir so wie hier dargestellt mit einer Spannungsquelle natürlich erreichen.
+    \speech{02_Spannungs_und_Stromquellen8}{2}{
+        Wir können aber genau denselben Spannungsabfall U und genau denselben Strom I durch eine Stromquelle mit einem Widerstand R-I erreichen. Maßgeblich für die Umrechnung dieser beiden Quellen ist, dass sie dasselbe Verhalten an der Last zeigen. Das heißt, der Strom I und die Spannung U an dem Lastwiderstand R für beide Quellen gleich ist.
+        Wie kann man das jetzt erreichen? Man rechnet einfach und stellt dann bei den Rechnungen fest, dass I-0 gleich U-0 durch R-I sein muss, wobei R-I in beiden Fällen gleich ist. Wenn das gegeben ist, sind diese beiden Quellen komplett äquivalent.
     }
     
-    \speech{02_Spannungs_und_Stromquellen7}{3}{ % ToDo: only 3
-        Wir können aber genau denselben Spannungsabfall U und genau denselben Strom I durch eine Stromquelle I0 mit einem Widerstand RI erreichen. Maßgeblich für die Umrechnung dieser beiden Quellen ist, dass sie dasselbe Verhalten an der Last zeigen. Das heißt, der Strom I und die Spannung U an dem Lastwiderstand R gleich bleiben.
-        Wie kann man das jetzt erreichen? Man rechnet einfach und stellt dann bei den Rechnungen fest, dass I0 gleich sein muss U0 durch RI, wobei RI in beiden Fällen gleich sein muss. Wenn das gegeben ist, sind diese beiden Quellen komplett äquivalent.
-    }
-    
-    % ToDo: Hillgärtner: Hier steht jetzt 0 ist gleich RI mal I0. I0 taucht nirgendwo auf. Das kann also schon mal nicht sein. Das müsste dann I sein. Oder aber es bezieht sich auf die Stromquelle. Das ist dann aber auf der Folie 68 sehr verwirrend, muss man dazu sagen. Ferner liegt die Spannung U an dem Widerstand R an. Ich würde die dann, wenn, UR nennen. Das ist eindeutiger vielleicht. Oder UA für Ausgangsspannung. Und vielleicht auch den Widerstand nicht zwischen den beiden offenen Kreisen legen, sondern nochmal eine Drahtbrücke nach rechts legen, dass man deutlich sieht, dass das die Ausgangsspannung U an den Punkten belassen. Weil so könnte man meinen, dass die Formel U0 ist gleich RI mal I0 mal U. Das gibt ja überhaupt keinen Sinn. Also das Bild muss bitte nochmal angepasst werden. 
-    % ToDo: Hillgärtner: Die Berechnung dazu oder die Berechnungen dazu sind jetzt hier nicht aufgeführt. Das fände ich aber durchaus sehr sinnvoll. Das macht vieles klarer. Das kann ich nicht alles über die Tonspur bringen, glaube ich. 
-    
-    \speech{02_Spannungs_und_Stromquellen7}{4}{ % ToDo: only 4
-        Das ermöglicht uns aber auch, reale Quellen zu bewerten, ob sie denn eher eine Spannungsquelle oder eher eine Stromquelle sind. Wir nehmen mal als Beispiel einen Lastwiderstand von 100 Ohm und einen Innenwiderstand von 1 Ohm. Das heißt, der Lastwiderstand ist sehr, sehr viel größer als der Innenwiderstand. Damit haben wir tatsächlich eher ein Spannungsquellenverhalten.
-        Denn wenn jetzt der Innenwiderstand 1 Ohm ist, der Lastwiderstand 100 Ohm, dann fließt bei 10 Volt U0 ziemlich genau ein Strom von 100 mA – genau genommen 99,9 mA. Wenn wir jetzt den Lastwiderstand erhöhen auf 1 kOhm, dann ändert sich der Strom, aber die Spannung, die an dem Lastwiderstand abfällt, bleibt nahezu gleich bei nahezu 10 Volt.
-        Das heißt immer dann, wenn der Lastwiderstand groß ist im Vergleich zum Innenwiderstand, haben wir eher Spannungsquellenverhalten – völlig egal, ob wir die linke oder die rechte Schaltung haben.
-        Umgekehrt, wenn der Lastwiderstand klein ist gegenüber dem Innenwiderstand, dann haben wir eher Stromquellenverhalten. Das heißt, der Strom stellt sich entsprechend der Last ein und die Ausgangsspannung bleibt nahezu konstant, weil sie überwiegend am Innenwiderstand abfällt – auch da wieder völlig unabhängig davon, ob wir die linke oder die rechte Schaltung haben.
-        Wir sehen also: Wir können eine Stromquelle in eine Spannungsquelle wandeln und umgekehrt. Und wir haben zusätzlich gelernt, wie können wir bei einer realen Quelle bewerten, ob das Verhalten eher dem einer Spannungsquelle oder einer Stromquelle entspricht – nämlich indem wir das Verhältnis zwischen Lastwiderstand und Innenwiderstand betrachten.
-    }
+    %; Done: Hillgärtner: Hier steht jetzt 0 ist gleich RI mal I0. I0 taucht nirgendwo auf. Das kann also schon mal nicht sein. Das müsste dann I sein. Oder aber es bezieht sich auf die Stromquelle. Das ist dann aber auf der Folie 68 sehr verwirrend, muss man dazu sagen. Ferner liegt die Spannung U an dem Widerstand R an. Ich würde die dann, wenn, UR nennen. Das ist eindeutiger vielleicht. Oder UA für Ausgangsspannung. Und vielleicht auch den Widerstand nicht zwischen den beiden offenen Kreisen legen, sondern nochmal eine Drahtbrücke nach rechts legen, dass man deutlich sieht, dass das die Ausgangsspannung U an den Punkten belassen. Weil so könnte man meinen, dass die Formel U0 ist gleich RI mal I0 mal U. Das gibt ja überhaupt keinen Sinn. Also das Bild muss bitte nochmal angepasst werden. 
+    % ; done: Hillgärtner: Die Berechnung dazu oder die Berechnungen dazu sind jetzt hier nicht aufgeführt. Das fände ich aber durchaus sehr sinnvoll. Das macht vieles klarer. Das kann ich nicht alles über die Tonspur bringen, glaube ich. 
+%; TODO only 3 fehlt in "Umwandlung_Gleichspannung_Strom.tex" muss weiter eingeteilt werden in kleinere onlys und einzelne textelemente
     
 \end{frame}
+
 
 \s{
     \begin{figure}[H]
@@ -423,6 +415,19 @@
         
     \end{figure}
 }
+\begin{frame}
+    \ftx{Umwandlung einer Spannungsquelle in eine Stromquelle}
+    \b{
+%TODO Folie erstellen
+    }
+    \speech{02_Spannungs_und_Stromquellen9}{1}{
+        Das ermöglicht uns aber auch, reale Quellen zu bewerten, ob sie denn eher eine Spannungsquelle oder eher eine Stromquelle sind. Wir nehmen mal als Beispiel einen Lastwiderstand von 100 Ohm und einen Innenwiderstand von 1 Ohm. Das heißt, der Lastwiderstand ist sehr, sehr viel größer als der Innenwiderstand. Damit haben wir tatsächlich eher ein Spannungsquellenverhalten.
+        Denn wenn jetzt der Innenwiderstand 1 Ohm ist, der Lastwiderstand 100 Ohm, dann fließt bei 10 Volt U0 ziemlich genau ein Strom von 100 mA – genau genommen 99,9 mA. Wenn wir jetzt den Lastwiderstand erhöhen auf 1 kOhm, dann ändert sich der Strom, aber die Spannung, die an dem Lastwiderstand abfällt, bleibt nahezu gleich bei nahezu 10 Volt.
+        Das heißt immer dann, wenn der Lastwiderstand groß ist im Vergleich zum Innenwiderstand, haben wir eher Spannungsquellenverhalten – völlig egal, ob wir die linke oder die rechte Schaltung haben.
+        Umgekehrt, wenn der Lastwiderstand klein ist gegenüber dem Innenwiderstand, dann haben wir eher Stromquellenverhalten. Das heißt, der Strom stellt sich entsprechend der Last ein und die Ausgangsspannung bleibt nahezu konstant, weil sie überwiegend am Innenwiderstand abfällt – auch da wieder völlig unabhängig davon, ob wir die linke oder die rechte Schaltung haben.
+        Wir sehen also: Wir können eine Stromquelle in eine Spannungsquelle wandeln und umgekehrt. Und wir haben zusätzlich gelernt, wie können wir bei einer realen Quelle bewerten, ob das Verhalten eher dem einer Spannungsquelle oder einer Stromquelle entspricht – nämlich indem wir das Verhältnis zwischen Lastwiderstand und Innenwiderstand betrachten.
+    }
+\end{frame}
 
 
 % \begin{figure}[H]
@@ -525,7 +530,7 @@
         \end{figure}
     }% nur Folie
     
-    \speech{02_Spannungs_und_Stromquellen8}{1}{ % ToDo: only 1
+    \speech{02_Spannungs_und_Stromquellen10}{1}{ % ; TODO: only 1
         Wir haben bisher das Symbol kennengelernt für eine allgemeine Spannungsquelle. 
         Das heißt, bei diesem Symbol, was du hier siehst, ein Kreis, durch den senkrecht ein Strich geht, 
         das bezeichnet eine allgemeine Spannungsquelle. 
@@ -534,7 +539,7 @@
         das kann alles sein.    
     }
     
-    \speech{02_Spannungs_und_Stromquellen8}{2}{ % ToDo: only 2 - 4
+    \speech{02_Spannungs_und_Stromquellen10}{2}{ % ; TODO: only 2 - 4
         Da wir aber sehr häufig Gleich- und Wechselspannungskreise haben, gibt es auch hierfür gesonderte Symbole. 
         Die Gleichspannungsquelle ist ein Kreis mit zwei sich seitlich überstehenden Platten. 
         Das soll zum Beispiel einen Kondensator, eine Anode oder eine Batterie symbolisieren. 
@@ -545,7 +550,7 @@
         dargestellt durch einen Kreis mit einem Pfeil.    
     }
     
-    \speech{02_Spannungs_und_Stromquellen8}{3}{ % ToDo: only 5 - 7
+    \speech{02_Spannungs_und_Stromquellen10}{3}{ % ; TODO: only 5 - 7
         Für die Stromquelle gilt das Gleiche. 
         Wir haben bisher, unten links dargestellt, die allgemeine Stromquelle verwendet. 
         Das ist ein Kreis mit einem waagrechten Strich darin. 
