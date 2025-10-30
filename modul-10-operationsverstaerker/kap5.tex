@@ -68,11 +68,17 @@
 	\b{\frametitle{Operationsverstärker als Analogrechner}
         Es soll eine Schaltung entworfen werden, die folgende Funktion umsetzt:
         \begin{equation}
-            U_{\textnormal{A}} = \int U_{\textnormal{E1}} +x \cdot U_{\textnormal{E1}} - 2\cdot U_{\textnormal{E2}} 
+            U_{\textnormal{A}} = \int U_{\textnormal{E1}}~dt +x \cdot U_{\textnormal{E1}} - 2\cdot U_{\textnormal{E2}} 
         \end{equation}
 
         Wie kann das erreicht werden? Überlegen Sie sich zunächst, welche Grundschaltungen hierfür zu kombinieren sind. 
         }
+    \speech{OPV_als_Analogrechner}{1}{Schauen wir uns nun an, wie man einen Operationsverstärker als Analogrechner nutzen kann.
+    Die Aufgabe lautet: Wir sollen eine Schaltung entwerfen, die folgendes berechnet:
+    U A gleich Integral von U E eins dt plus x mal U E eins minus 2 mal U E zwei.
+    Wir erkennen sofort: Hier stecken mehrere mathematische Operationen drin.
+    Einmal ein Integral von U E eins, dann eine Multiplikation mit einem Faktor x, und schließlich eine Subtraktion von zwei mal U E zwei.
+    Das Ziel ist also, diese drei Terme mit OP V-Grundschaltungen nachzubilden.} %seed: 885471
 \end{frame}
 
 \begin{frame}
@@ -90,6 +96,12 @@
         \end{figure}
         Durch eine Kombination von einer Integratorschaltung und einem Summierer ist also das gewünschte Verhalten zu erreichen. Ist es mit dieser Schaltung möglich x=0 zu wählen?
         }
+    \speech{OPV_als_Analogrechner}{2}{Hier sehen wir die Lösungsschaltung.
+    Im linken Zweig haben wir einen Integrator, der die erste Operation übernimmt - also das Integral von : U E  eins
+    Im rechten Teil steckt ein Summierer, mit dem wir die anderen beiden Terme addieren beziehungsweise subtrahieren.
+    Durch die Wahl der Widerstände können wir die Faktoren so einstellen, dass genau die geforderte Funktion herauskommt.
+    Ein interessanter Punkt ist die Frage nach dem Faktor x:
+    x gleich 0 ist nur möglich, wenn wir den Widerstand R zwei komplett weglassen. Dann verschwindet dieser Anteil aus der Schaltung.} %seed: 885507
 \end{frame}
 
 \begin{frame}
@@ -107,35 +119,13 @@
         Wie der Formel zu entnehmen ist, müssen nun die Bauteilwerte nur noch so gewählt werden, dass sich die richtigen Vorfaktoren ergeben.
         Eine Wahl von x=0 ist nur möglich, wenn der Widerstand $R_2$ weggelassen wird. 
     }
+    \speech{OPV_als_Analogrechner}{3}{Zum Schluss sehen wir hier die formale Berechnung.
+    Wir setzen die Bauteile R1 bis R5 und den Kondensator C ein und erhalten:
+    U A gleich in Klammern eins geteilt durch R1 mal C mal Integral von U E eins dt plus in Klammern R3 geteilt durch R2 mal U E eins minus in Klammern R4 geteilt durch R5 mal U E zwei.
+    Damit haben wir genau das, was gefordert war:
+    den Integrator,
+    den Faktor x,
+    und den Term minus 2 mal U E zwei, wenn wir die Widerstände passend wählen.
+    Wir sehen also: Mit einer geschickten Kombination von Integrator und Summierer können wir komplexe mathematische Funktionen rein analog mit Operationsverstärkern realisieren.} %seed: 887673
 \end{frame}
 
-%\speech{Beispiel 5.1: Beispiel Analogrechner}{1}{
-%    Es soll eine Schaltung entworfen werden, die folgende Funktion umsetzt:
-%    \begin{equation}
-%        U_{\textnormal{A}} = \int U_{\textnormal{E1}} dt +x \cdot U_{\textnormal{E1}} - 2\cdot U_{\textnormal{E2}}
-%    \end{equation}
-%    Lösung: Zunächst muss die Gleichung in zwei Teilprobleme zerlegt werden, die mithilfe von Operationsverstärkerschaltungen gelöst werden können.
-%    Das erste Teilproblem bildet die Integration des Eingangssignals $U_{E1}$. Dazu soll zunächst eine Integratorschaltung verwendet werden.
-%    Das zweite Teilproblem bildet die Addition der Signale. Dafür kann ein Summierer verwendet werden.
-%    Durch eine Kombination von einer Integratorschaltung und einem Summierer ist also das gewünschte Verhalten zu erreichen. Ist es mit dieser Schaltung möglich x=0 zu wählen?
-%   
-%    \begin{equation}
-%        U_{\textnormal{A}} = \underbrace{\left[ -\frac{1}{R_1 \cdot C} \int_{0}^{t} U_{\textnormal{E1}}~dt -\frac{R_2}{R_1} \cdot U_{\textnormal{E1}} \right]}_{Formel~des~Integrators} \underbrace{\cdot\left(-\frac{R_5}{R_3}\right)-\frac{R_5}{R_4}\cdot U_{\textnormal{E2}}}_{Formel~des~Summierers} 
-%    \end{equation}
-%    Dies kann nun wie folgt umgeformt werden
-%    \begin{equation}
-%        U_{\textnormal{A}} = \underbrace{\frac{R_5}{R_1 \cdot R_3 \cdot C}}_{\stackrel{!}{=}1} \int_{0}^{t} U_{\textnormal{E1}}~dt + \underbrace{\frac{R_2 R_5}{R_1 R_3}}_{\stackrel{!}{=}x} U_{\textnormal{E1}} -\underbrace{\frac{R_5}{R_4}}_{\stackrel{!}{=}2} \cdot U_{\textnormal{E2}} 
-%    \end{equation}
-%
-%    Wie der Formel zu entnehmen ist, müssen nun die Bauteilwerte nur noch so gewählt werden, dass sich die richtigen Vorfaktoren ergeben.
-%    Eine Wahl von x=0 ist nur möglich, wenn der Widerstand $R_2$ weggelassen wird. In diesem Fall ergibt sich ein \glqq idealer\grqq{}, der in der Realität so allerdings in der Regel nicht aufgebaut wird.   
-%}
-%\speech{
-%Abbildung 5.1 zeigt eine elektronische Schaltung zur Lösung einer Analogrechneraufgabe. Die Schaltung ist in zwei farblich gekennzeichnete Bereiche unterteilt: einen gelben Bereich links und einen violetten Bereich rechts.
-%
-%Im linken Bereich befindet sich ein Operationsverstärker mit einer Rückkopplungsschleife, die aus einem Widerstand und einem Kondensator besteht. Der nicht-invertierende Eingang des Operationsverstärkers ist mit Masse verbunden. Der invertierende Eingang ist über einen Widerstand mit der Eingangsspannung U E 1 verbunden. Die Ausgangsspannung dieses Verstärkers wird auf eine nachfolgende Stufe weitergeleitet.
-%
-%Im rechten Bereich befindet sich eine weitere Operationsverstärkerschaltung mit mehreren Widerständen. Zwei Eingangsspannungen, U E 1 und U E 2, werden an die Schaltung angelegt. Die Widerstände R 3 und R 4 bestimmen die Verstärkungsfaktoren für die Eingangssignale. Am Ausgang des zweiten Operationsverstärkers liegt die Ausgangsspannung U A an.
-%
-%Die Kombination dieser beiden Operationsverstärkerschaltungen erlaubt eine spezifische Signalverarbeitung, die für die Analogrechneraufgabe erforderlich ist.
-%}

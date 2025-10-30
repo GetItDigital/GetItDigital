@@ -108,46 +108,17 @@ Kurz gesagt: Ohne Rückkopplung ist der OP V nur als Komparator geeignet, nicht 
     \fu{
         \resizebox{\textwidth}{!}{\input{Tikz/src/Verschaltungdesverstaerkers.tex}}
         }{Verschaltung eines Verstärkers als Komperator (A), Impedanzwandler (C) und nicht-invertierender Verstärker (D)
-        \label{fig: Verschaltung Verstaerker}}      
+        \label{fig: Verschaltung Verstaerker}}
+        \speech{Gegenkopplung}{5}{Wenn wir noch zwei Widerstände verbauen, führen wir nur einen Teil der Ausgangsspannung zurück an den invertierenden Eingang.
+Das Ergebnis: Wir können die Verstärkung der Schaltung mit den Widerständen einstellen.
+Die Formel lautet:
+V gleich eins plus  R zwei geteilt durch R eins.
+Das ist der klassische nichtinvertierende Verstärker.
+
+Damit lässt sich unser Lautsprecherproblem elegant lösen: Wir brauchen nur die passenden Widerstände.} %seed: 875701      
 \end{frame}
 
-%\speech {
-%    Wie aus vorherigen Kapiteln bekannt ist, besitzen Operationsverstärker einen invertierenden und einen nicht-invertierenden Eingang. Existiert zwischen diesen beiden Eingängen eine Spannungsdifferenz, so verstärkt der Operationsverstärker diese Differenz um ein Vielfaches, bis die Spannung die maximale Ausgangsspannung des Operationsverstärkers erreicht (siehe A in Abbildung \ref{fig: Verschaltung Verstaerker}).
-%    Die Slew-Rate (zu deutsch: Anstiegsrate) gibt an, wie schnell dieser Anstieg geschehen kann. Wird die Ausgangsspannung nicht auf den Eingang zurückgeführt, steigt die Ausgangspannung, bis das Niveau der Versorgungsspannung erreicht wird. Eine solche Beschaltung des Verstärkers wird als Komperatorschaltung bezeichet.
-% Dieses Verhalten ist für die meisten Anwendungen bei denen der Eingangsspannungssignal mit geringer Amplitude verstärkt werden soll, nicht erwünscht.
-% Stattdessen werden Operationsverstärker meistens in der sogenannten Gegenkopplung (B) betrieben, bei der der Ausgang auf den invertierenden Eingang zurückgeführt wird.
-% Der in (B) eingezeichnete Schalter sei zunächst geöffnet und der Operationsverstärker werde nicht mit Spannung versorgt. Zum Zeitpunkt 0 s wird der Schalter geschlossen und die Versorgungsspannung des Verstärkers eingeschaltet, wodurch die Rückführung des Ausgangssignals $U_{\textnormal{A}}$ aktiv wird (C).
-% Durch die Rückkopplung des Ausgangssignal wird so erreicht, dass die Spannung am invertierenden Eingang auf das Spannungsniveau der Ausgangsspannung angeglichen wird.
-% Die in (C) dargestellte Verstärkerschaltung hat die Verstärkung 1 und wird als Impedanzwandler bezeichnet, da der Verstärker in dieser Schaltungsart aufgrund seiner hohen Eingangsimpedanz verwendet werden kann, um eine Schaltung mit hochohmigem Eingang zu realisieren (dies ist beispielsweise bei Messschaltungen für Spannungsmessungen notwendig).
-% Für die Lösung des Anwendungsproblems ist diese Schaltung allerdings noch nicht geeignet, da eine Verstärkung von 5 gefordert ist.
-% Um diese zu erreichen werden in die Verstärkerschaltung nun zusätzlich Widerstände eingebaut (wie in (D) dargestellt ist)\footnote{Es lässt sich feststellen, dass sich für $R_2 = 0$ und $R_1 = \infty$ wieder die Schaltung des Impedanzwandlers ergibt. Der Impedanzwandler ist also ein Spezialfall des nicht-invertierenden Verstärkers.}.
-%}
-%\speech{
-%Abbildung 3.2 zeigt verschiedene Verschaltungen eines Operationsverstärkers und deren zugehörige Ausgangsverläufe.  
-%Es sind vier verschiedene Konfigurationen dargestellt:  
-%Ein Komparator, zwei Varianten eines Impedanzwandlers und ein nichtinvertierender Verstärker.  
-%
-%Im oberen Bereich der Abbildung sind die jeweiligen Schaltungen zu sehen.  
-%Im unteren Bereich sind die entsprechenden Ausgangsdiagramme dargestellt, die den zeitlichen Verlauf der Ausgangsspannung U A zeigen.  
-%
-%Schaltung A zeigt einen Operationsverstärker als Komparator.  
-%Der nichtinvertierende Eingang erhält eine konstante Spannung von 1 Volt.  
-%Der invertierende Eingang ist auf 0 Volt gelegt.  
-%Da die Eingangsspannung am nichtinvertierenden Eingang größer ist, springt die Ausgangsspannung auf den maximalen positiven Wert.  
-%Das untere Diagramm zeigt den Ausgangsverlauf als sprunghafte Änderung.  
-%
-%Schaltung B und C zeigen einen Operationsverstärker als Impedanzwandler, auch Unity-Gain-Buffer genannt.  
-%Hierbei wird die Eingangsspannung direkt am nichtinvertierenden Eingang angelegt.  
-%Der Ausgang ist mit dem invertierenden Eingang verbunden, sodass eine Verstärkung von Eins entsteht.  
-%Das untere Diagramm zeigt, dass die Ausgangsspannung genau der Eingangsspannung folgt.  
-%
-%Schaltung D zeigt einen nichtinvertierenden Verstärker.  
-%Ein Spannungsteiler aus den Widerständen R1 und R2 bestimmt die Verstärkung.  
-%Die Ausgangsspannung U A ist größer als die Eingangsspannung.  
-%Das untere Diagramm zeigt eine Verstärkung des Signals, wobei die Ausgangsspannung von 1 Volt auf 5 Volt ansteigt.  
-%
-%Die Abbildung zeigt, wie sich unterschiedliche Verschaltungen auf die Ausgangsspannung auswirken.  
-%}
+
 
 \begin{frame}
     \s{
@@ -174,83 +145,14 @@ Kurz gesagt: Ohne Rückkopplung ist der OP V nur als Komparator geeignet, nicht 
         Operationsverstärkers zu entnehmen. In diesem Fall könnte z.B. $R_2=9~\textnormal{k}\Omega$ und $R_1=1~\textnormal{k}\Omega$ gewählt werden.
     \end{bsp} 
 
-%\speech{1}{
-%Beispiel 3.2: Teil 2: Entwicklung einer Verstärkerschaltung für Musiksignale.
-%Im letzten Schritt muss ermittelt werden, wie die Widerstände in (D) gewählt werden müssen, damit sich eine Verstärkung von 5 ergibt. Dazu müssen zunächst die Maschengleichungen aufgestellt werden.
-%Eine wichtige Annahme zur Aufstellung dieser Maschengleichung ist, dass davon ausgegangen wird, dass der Verstärker durch die Rückkopplung des Ausgangsignal die beiden Eingangssignale angleicht.
-%Hier darf also geschrieben werden \glqq Annahme: $U_{\textnormal{dif}}~=~0$~V\grqq{}.
-%Somit ergibt sich für den invertierenden Eingang $U_{\textnormal{E-}}~=~1$~V.
-%Da weiterhin davon ausgegangen wird, dass kein Strom in die Eingänge hineinfließt gilt $I_{\textnormal{R1}}~=~I_{\textnormal{R2}}$.
-%Die Maschengleichung lautet auf Grundlage dieser Annahmen
-%\begin{equation}
-%    U_{\textnormal{A}} = U_{\textnormal{R1}} + U_{\textnormal{R2}} = U_{\textnormal{E}} + I_{\textnormal{R2}} \cdot R_{\textnormal{2}} = U_{\textnormal{E}} + \frac{U_{\textnormal{E}}}{R_{\textnormal{1}}} \cdot R_{\textnormal{2}}
-%\end{equation}
-%Wird diese Gleichung nach $R_2/R_1$ gelöst, ergibt sich das Verhältnis der Widerstände für das oben beschriebene 
-%Problem zu $R_2/R_1 = 9$. Die Widerstände sollten hier nicht zu groß gewählt werden, da dann der Ausgleichsstrom zwischen
-%Ausgang und Eingang zu klein werden könnte. Das kann zu einem starken Rauschen am Verstärkerausgang führen. Übliche Widerstandswerte sind in der Regel den Beispielschaltungen des Datenblattes eines
-%Operationsverstärkers zu entnehmen. In diesem Fall könnte z.B. $R_2=9~\textnormal{k}\Omega$ und $R_1=1~\textnormal{k}\Omega$ gewählt werden.
-%}
+
         \par
         Ähnnlich wie für die oben dargestellte Schaltung lassen sich auch für alle weiteren Operationsverstärkerschaltungen Übertragungsfunktionen herleiten. Das soll hier allerdings nicht gezeigt werden.
         Weitere Übertragungsfuktionen für einige ausgewählte Operationsverstärkergrundschaltungen können Tabelle \ref{tab:Grundschaltungen} entnommen werden. 
         In dieser Tabelle sind die die Schaltungen, die Bodediagramme mit Phasengang (rot) und Amplitudengang (blau) und die Übertragungsfunktionen angegeben. 
         Nachdem nun die Beschaltung von Verstärkern vorgestellt wurde, soll im Folgenden Kapitel nun noch eine wichtige Eigenschaft von Verstärkerschaltungen thematisiert werden, die sich aus den genutzen Verstärkerbausteinen und der äußeren Verschaltung ergibt: Die Stabilität der Verstärkerschaltung.
         
-%\speech {1}{
-% Ähnlich wie für die oben dargestellte Schaltung lassen sich auch für alle weiteren Operationsverstärkerschaltungen Übertragungsfunktionen herleiten. Das soll hier allerdings nicht gezeigt werden.
-%    Weitere Übertragungsfuktionen für einige ausgewählte Operationsverstärkergrundschaltungen können Tabelle \ref{tab:Grundschaltungen} entnommen werden.
-%    In dieser Tabelle sind die die Schaltungen, die Bodediagramme mit Phasengang (rot) und Amplitudengang (blau) und die Übertragungsfunktionen angegeben.
-%    Nachdem nun die Beschaltung von Verstärkern vorgestellt wurde, soll im Folgenden Kapitel nun noch eine wichtige Eigenschaft von Verstärkerschaltungen thematisiert werden, die sich aus den genutzen Verstärkerbausteinen und der äußeren Verschaltung ergibt: Die Stabilität der Verstärkerschaltung.   
-%}
-        
-%\speech{
-%Tabelle 3.1 zeigt verschiedene Grundschaltungen mit Operationsverstärkern.  
-%Die Tabelle ist in drei Spalten unterteilt.  
-%Die erste Spalte zeigt die Schaltung, die zweite Spalte enthält den Frequenzgang und die Gleichung,  
-%und die dritte Spalte gibt eine Erklärung mit den wichtigsten Eigenschaften.  
-%
-%Erste Zeile: Nichtinvertierender Verstärker.  
-%Die Ausgangsspannung ist phasengleich mit der Eingangsspannung.  
-%Die Verstärkung ist eins plus das Verhältnis von R2 zu R1.  
-%Der Verstärker hat einen sehr hohen Eingangswiderstand und einen niedrigen Ausgangswiderstand.  
-%Anwendungsbeispiel ist ein Impedanzwandler.  
-%
-%Zweite Zeile: Invertierender Verstärker.  
-%Die Ausgangsspannung ist um 180 Grad phasenverschoben zur Eingangsspannung.  
-%Die Verstärkung ist das Verhältnis von R2 zu R1.  
-%Der Widerstand R1 bestimmt den Eingangswiderstand.  
-%Anwendungsbeispiel ist ein aktiver Spannungsteiler für hohe Spannungen.  
-%
-%Dritte Zeile: Komparator.  
-%Die Ausgangsspannung ist entweder hoch oder niedrig, je nach Vergleich der Eingänge.  
-%Wenn die nichtinvertierende Spannung größer ist als die invertierende Spannung,  
-%geht die Ausgangsspannung auf den oberen Versorgungswert.  
-%Andernfalls geht sie auf den unteren Versorgungswert.  
-%Wird verwendet in Zweipunktreglern und Analog-Digital-Wandlern.  
-%
-%Vierte Zeile: Summierer.  
-%Der Summierer basiert auf einem invertierenden Verstärker.  
-%Die Ausgangsspannung ist eine gewichtete Summe mehrerer Eingangsspannungen.  
-%Wird verwendet in Analogrechnern und zur Mischung von Signalen.  
-%
-%Fünfte Zeile: Subtrahierer.  
-%Diese Schaltung bildet die Differenz zwischen zwei Eingangsspannungen.  
-%Wenn alle Widerstände gleich sind, entspricht die Ausgangsspannung genau der Differenz der Eingänge.  
-%Diese Schaltung wird als Differenzverstärker verwendet.  
-%
-%Sechste Zeile: Integrierer.  
-%Der Integrierer summiert die Eingangsspannung über die Zeit.  
-%Die Ausgangsspannung entspricht dem negativen Integral des Eingangssignals.  
-%Wird als aktiver Tiefpassfilter verwendet.  
-%
-%Siebte Zeile: Differenzierer.  
-%Der Differenzierer bildet die Ableitung des Eingangssignals.  
-%Die Ausgangsspannung ist proportional zur zeitlichen Änderung der Eingangsspannung.  
-%Wird als Hochpassfilter eingesetzt, zeigt in der Praxis aber oft ein Bandpassverhalten.  
-%
-%Diese Tabelle gibt einen Überblick über wichtige Operationsverstärkerschaltungen  
-%und ihre typischen Anwendungen in der Signalverarbeitung.  
-%}
+
 
 
 
@@ -329,6 +231,14 @@ Kurz gesagt: Ohne Rückkopplung ist der OP V nur als Komparator geeignet, nicht 
         \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{1}{Hier sehen wir die Standardbeschaltung.
+    Das Eingangssignal liegt am nichtinvertierenden Eingang.
+    Ein Teil der Ausgangsspannung wird über R1 und R2 zurückgeführt.
+    Eigenschaften dieser Schaltung sind folgende:
+    Die Ausgangsspannung ist phasengleich zum Eingang.
+    Der Eingangswiderstand ist sehr hoch, der Ausgangswiderstand sehr niedrig.
+    Die Verstärkung lässt sich sauber über R1 und R2 einstellen und mit der unten abgebildeten Formel berechnen. 
+    Typische Anwendungen sind Impedanzwandler oder einfache Verstärker mit hoher Eingangsimpedanz.} %seed: 877869
 \end{frame}
 
 
@@ -436,6 +346,14 @@ U_{\textnormal{A}} = \left(1+\frac{R_2}{R_1}\right) U_{\textnormal{E}}
         \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{2}{Jetzt das Gegenstück: der invertierende Verstärker.
+    Hier legen wir das Eingangssignal über einen Widerstand R1 direkt an den invertierenden Eingang.
+    Am nichtinvertierenden Eingang liegt Masse.
+    Eigenschaften dieser Schaltung:
+    Die Ausgangsspannung ist um hundertachtzig Grad phasenverschoben - also invertiert.
+    Der Verstärkungsfaktor ist V gleich minus R2  geteilt durch R1. 
+    Die Eingangsimpedanz entspricht R1.
+    Das macht die Schaltung sehr gut geeignet als aktiver Spannungsteiler.} %seed: 896223 
 \end{frame}
 
 %Folie Komparator
@@ -508,6 +426,11 @@ V_2: U_{\textnormal{E+}} < U_{\textnormal{E-}} \Rightarrow U_{\textnormal{A}} \a
         \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{3}{Hier nochmal der Komparator zum Vergleich.
+Er vergleicht die Spannungen am Plus- und  Minus-Eingang:
+Ist U E plus größer, geht der Ausgang auf plus U B.
+Ist U E minus größer, geht er auf minus U B.
+Das Prinzip findet man zum Beispiel bei Zweipunktreglern oder in der Analog-Digital Wandlung.} %seed: 896323 
 \end{frame}
 
 %Folie Summierer
@@ -579,6 +502,10 @@ U_{\textnormal{A}} = \underbrace{\frac{R_3} {R_1}}_{V_1} \cdot U_{\textnormal{E1
         \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{4}{Mit O P Vaus können wir auch mehrere Signale addieren.
+    Dazu legen wir die Eingangssignale über Widerstände auf den invertierenden Eingang.
+    Der O P Vau sorgt dann dafür, dass die Summenspannung am Ausgang entsteht.
+    So entstehen Addierer-Schaltungen, die in Analogrechnern oder Mischpulten verwendet werden.} %seed: 896345 
 \end{frame}
 
 %Folie Subtrahierer
@@ -650,6 +577,11 @@ U_{\textnormal{A}} = \underbrace{\frac{R_3} {R_1}}_{V_1} \cdot U_{\textnormal{E1
         \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{5}{Ganz ähnlich können wir Signale auch subtrahieren.
+    Das passiert in einer Schaltung, die oft auch Differenzverstärker genannt wird.
+    Wenn alle Widerstände gleich groß sind, dann gilt:
+    U A gleich in Klammern U 2 minus U 1 mal Verstärkung
+    Diese Schaltung ist besonders wichtig, wenn wir kleine Differenzsignale aus großen Gleichtaktstörungen herausziehen wollen.} %seed: 896347
 \end{frame}
 
 
@@ -723,6 +655,11 @@ U_{\textnormal{A}} = \underbrace{\frac{R_3} {R_1}}_{V_1} \cdot U_{\textnormal{E1
     \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{6}{Eine weitere wichtige Grundschaltung ist der Integrierer.
+Im Rückkopplungszweig liegt parallel zum Widerstand ein Kondensator.
+Das Ergebnis: Am Ausgang erscheint das Integral des Eingangssignals.
+So können wir zum Beispiel aus einem Rechtecksignal ein Dreiecksignal machen.
+In der Signalverarbeitung ist das auch die Grundlage für aktive Tiefpassfilter.} %seed: 896349
 \end{frame}
 
 %Folie Differenzierer
@@ -802,6 +739,11 @@ U_{\textnormal{A}}(t) =
     \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{7}{Der umgekehrte Fall ist der Differenzierer.
+    Jetzt liegt im Eingang noch ein Kondensator.
+    Das Ergebnis: Am Ausgang erscheint die Ableitung des Eingangssignals.
+    Ein Rechtecksignal am Eingang wird so zu scharfen Spannungsspitzen am Ausgang. Die Schaltung zeigt also ein Hochpassverhalten.
+    Praktisch verwendet man oft Varianten, die eher wie ein Bandpass arbeiten, um Rauschen zu vermeiden.} %seed: 8854332
 \end{frame}
 
 %Folie Logarithmierer
@@ -875,6 +817,10 @@ U_{\textnormal{A}}(t) =
     \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{8}{Noch spannender wird es, wenn wir eine Diode in den Rückkopplungszweig legen.
+Dann bildet der OP V die logarithmische Kennlinie der Diode nach.
+Das heißt: Am Ausgang steht die logarithmierte Eingangsspannung.
+Solche Schaltungen braucht man zum Beispiel bei Signalaufbereitung oder in Analogrechnern.} %seed: 885433  
 \end{frame}
 
 %Folie Potenzierer
@@ -930,6 +876,9 @@ U_{\textnormal{A}}(t) =
     \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{9}{Ähnlich können wir mit Dioden oder Transistoren auch eine exponentielle Kennlinie aufbauen.
+    Dann ergibt sich am Ausgang ein Signal, das eine Potenzfunktion oder eine e-Funktion des Eingangssignals darstellt.
+    Auch das war in klassischen Analogrechnern ein zentrales Werkzeug.}%seed: 885434 
 \end{frame}
 
 %Folie Insutrmentenverstärker 
@@ -1031,6 +980,9 @@ U_{\textnormal{A}}(t) =
     \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{10}{Hier sehen wir einen Instrumentenverstärker.
+Das ist im Prinzip ein sehr präziser Differenzverstärker, bei dem die Eingangsstufe hochohmig ist und die Verstärkung über einen einzigen Widerstand eingestellt werden kann.
+Die große Stärke: Er unterdrückt Gleichtaktsignale sehr gut - ideal, um zum Beispiel kleine Sensorsignale aus verrauschten Umgebungen herauszufiltern.} %seed: 885435 
 \end{frame}
 
 
@@ -1092,4 +1044,10 @@ Verstärkung $V = \frac{U_\mathrm{A}}{U_\mathrm{E}} = 1$
     \end{itemize}
     \end{columns}
     }
+    \speech{Grundschaltungen}{11}{Zum Schluss nochmal der Impedanzwandler, manchmal auch Spannungsfolger genannt.
+    Hier wird der Ausgang direkt mit dem invertierenden Eingang verbunden, während das Eingangssignal auf den nichtinvertierenden Eingang gelegt wird.
+    Das Ergebnis:
+    Die Ausgangsspannung entspricht genau der Eingangsspannung.
+    Der Eingangswiderstand ist extrem hoch, der Ausgangswiderstand extrem niedrig.
+    Damit eignet sich diese Schaltung hervorragend als Pufferstufe - sie belastet die Quelle nicht, kann aber selbst größere Ströme liefern.} %seed: 885464 
 \end{frame}
