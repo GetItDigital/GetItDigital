@@ -1,10 +1,10 @@
 \begin{circuitikz}[scale=0.9]
 
-    % Ideale Spannungsquelle
-    \draw (0,9) to[V] (0,6)
-    to[short,-o] (2,6)
-    (0,9) to[short, i, name=I, -o] (2,9);
-    \iarrmore {I}{$I$};
-    \draw[-latex, thick, draw=voltage] (2,8.5)  to node[right, color=voltage] {$U_\mathrm{q}$} (2,6.5);
+    % % Ideale Spannungsquelle
+    \draw(0,9) to[V,name=uq] (0,6) to[short,-o](2,6) (0,9) to[short,i,-o,name=I] (2,9); %spannugnsquelle mit ports und Strompfeil ortsname erstellen
+    \iarrmore {I}{$I$}; %Strompfeil an stelle I platzieren
+    \draw[-latex, thick, color=voltage] 
+        ($(uq.west)+(0.7,0)$) -- node[right, voltage] {$U_\mathrm{q}$} ($(uq.east)+(0.7,0)$);%west und east,,das quelle gedreht
+
 
 \end{circuitikz}
