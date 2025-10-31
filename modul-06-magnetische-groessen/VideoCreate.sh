@@ -7,7 +7,13 @@ cd TeXAux
 rm -f -r video
 mkdir video
 echo "Creating PNG files from PDF..."
-convert -limit memory 4GB -limit map 4GB -density 320 -colorspace sRGB Video.pdf video/Folien.png
+
+# Konvertiert PDF in Schritten von 100 Seiten auf ein mal, um Speicherüberlauf zu vermeiden
+convert -limit memory 4GB -limit map 4GB -density 320 -colorspace sRGB Video.pdf[0-99] video/Folien-%d.png 2>/dev/null
+convert -limit memory 4GB -limit map 4GB -density 320 -colorspace sRGB Video.pdf[100-199] video/Folien-%d.png 2>/dev/null
+convert -limit memory 4GB -limit map 4GB -density 320 -colorspace sRGB Video.pdf[200-299] video/Folien-%d.png 2>/dev/null
+convert -limit memory 4GB -limit map 4GB -density 320 -colorspace sRGB Video.pdf[300-399] video/Folien-%d.png 2>/dev/null
+
 echo "PNGs done."
 
 # Alle erzeugten WAVs auf ihre Dauer untersuchen und die Dauer in Folien-RenderVideo.sh in der passenden Zeile hinter "-t " einfügen
