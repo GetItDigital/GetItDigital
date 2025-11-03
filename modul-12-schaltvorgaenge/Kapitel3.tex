@@ -522,15 +522,17 @@ das heißt ab unmittelbar nach dem Schaltzeitpunkt t gleich null.
 Wie im Beispiel in den Grundlagen beginnen wir mit der Maschengleichung:
 }% Speech Ende
 \speech{SchaltvorgaengeDC1RCLadevorgang2}{2}{%
-u R plus u C ist gleich U q.
-Dann ersetzen wir u R durch R mal i.
+U R plus U C ist gleich U q.
 }% Speech Ende
 \speech{SchaltvorgaengeDC1RCLadevorgang2}{3}{%
-Und ersetzen i durch C mal d nach d t von u c. 
+Dann ersetzen wir U R durch R mal i.
+}% Speech Ende
+\speech{SchaltvorgaengeDC1RCLadevorgang2}{4}{%
+Und ersetzen C durch C mal D nach D T von U C. 
 Wenn wir unsere D G L mit der allgemeinen Form oben rechts vergleichen, erkennen wir:
 R C entspricht unserem konstanten Koeffizienten a eins. 
-u c von t entspricht unserer Systemgröße y von t. 
-Und die Quellenspannung U q entspricht der Störgröße b.
+U C von T entspricht unserer Systemgröße Y von T. 
+Und die Quellenspannung U Q entspricht der Störgröße B.
 }% Speech Ende
 \end{frame}
 
@@ -567,22 +569,21 @@ Und die Quellenspannung U q entspricht der Störgröße b.
 Um die flüchtige Lösung zu bestimmen, bestimmen wir als nächsten Schritt die Lösung der homogenen D G L, das heißt für die D G L ohne Störterm. 
 Aus der D G L können wir direkt das charakteristische Polynom ableiten: R C mal lambda plus eins.
 Die Nullstelle erhalten wir durch Umformung. Lambda ist gleich minus eins durch R C. 
-Unsere homogene Lösung entspricht allgemein dem Exponentialansatz K mal e hoch lambda t.
+Unsere homogene Lösung entspricht allgemein dem Exponentialansatz K mal E hoch lambda t.
 Für eine bessere Lesbarkeit der Eigenschaften schreiben wir den Exponentialansatz in Abhängigkeit der Zeitkonstante auf. 
-Unsere homogene Lösung ist K mal e hoch minus t durch Tau. 
+Unsere homogene Lösung ist K mal E hoch minus T durch Tau. 
 Mit lambda ist gleich Minus eins durch Tau erhalten wir durch Einsetzen unserer Nullstelle den Wert für Tau. 
 Hier folgt: Tau ist gleich R C. 
 }% Speech Ende
 \speech{SchaltvorgaengeDC1RCLadevorgang3}{2}{%
 Die partikuläre Lösung, das heißt den eingeschwungenen Zustand für t gegen unendlich, erhalten wir entweder durch Netzwerkberechnung oder leiten ihn aus der D G L ab.
 Für beide Herangehensweisen gilt, dass die eingeschwungenen Größen Gleichgrößen sind, weil die Anregung eine Gleichspannung ist. (D C Fall) 
-Aus der Gleichstrom Netzwerkberechnung wissen wir, dass die Kapazität wie eine offene Klemme wirkt. Es fließt kein Strom und die gesamte Spannung U q liegt über C an.
+Aus der Gleichstrom Netzwerkberechnung wissen wir, dass die Kapazität wie eine offene Klemme wirkt. Es fließt kein Strom und die gesamte Spannung U Q liegt über C an.
 Alternativ können wir wie hier gezeigt ist die D G L für die partikuläre Lösung herannehmen.
-Da es sich um Gleichgrößen handelt, ist die zeitliche Ableitung von u c p gleich Null und der erste Teil der D G L verschwindet.
-Übrig bleibt, dass u C p gleich der Anregung U q ist. 
+Da es sich um Gleichgrößen handelt, ist die zeitliche Ableitung von U C P gleich Null und der erste Teil der D G L verschwindet.
+Übrig bleibt, dass U C P gleich der Anregung U Q ist.
 }% Speech Ende
 \end{frame}
-
 
 \begin{frame}\ftx{Ladevorgang \subsubsecname}
 \textbf{4.) Inhomogene Lösung, allg.:} (Überlagerung)\\[-1em]
@@ -618,13 +619,13 @@ Eingesetzt ergibt sich daraus die allgemein Lösung: u c von t ist gleich K mal 
 \speech{SchaltvorgaengeDC1RCLadevorgang4}{2}{%
 Die Konstanten bestimmen wir durch einsetzen der Anfangsbedingung. Die Kapazität sei zum Zeitpunkt t gleich Null unmittelbar vor dem Schalten vollständig entladen. 
 Der Exponentialterm entfällt für t gleich null.
-Durch Umformung erhalten wir K ist gleich Minus U q.
-Durch Einsetzen von K und Ausklammern von U q erhalten wir die spezielle allgemeine Lösung:
-u c von t ist gleich U q mal Klammer auf eins minus e hoch minus t durch lambda Klammer zu. 
-Den Strom können wir aus der Beziehung i gleich C mal d nach d t von u C an der Kapazität herleiten. 
+Durch Umformung erhalten wir K ist gleich Minus U Q.
+Durch Einsetzen von K und Ausklammern von U Q erhalten wir die spezielle allgemeine Lösung:
+U C von t ist gleich U Q mal Klammer auf eins minus e hoch minus t durch lambda Klammer zu. 
+Den Strom können wir aus der Beziehung I gleich C mal d nach d t von U C an der Kapazität herleiten. 
 Hier mit tau gleich R C eingesetzt.
-Durch kürzen erhalten wir den Stromverlauf i c von t ist gleich U q durch R mal e hoch minus t durch Tau. 
-Der maximale Anfangsstrom i C null ist also U q durch R. 
+Durch kürzen erhalten wir den Stromverlauf I C von t ist gleich U Q durch R mal e hoch minus t durch Tau. 
+Der maximale Anfangsstrom I C null ist also U Q durch R. 
 }% Speech Ende
 \end{frame}
 }% Ende Folien only Multi Frame
@@ -1647,15 +1648,15 @@ Hier sehen kurz zur Übersicht die fünf Schritte des Berechnungsverfahrens und 
 \speech{SchaltvorgaengeACbeiRC2}{1}{%
 Der erste Schritt, das Aufstellen der D G L ist im Prinzip identisch zu den D C Beispielen. 
 Der Unterschied ist nur, dass unser Störterm keine Gleichgröße ist, sondern eine Wechselspannung.
-Hier ist unser Störterm u q von t gleich dem Scheitelwert U q Dach mal Kosinus von omega t plus Phi q.
-Der Phasenwinkel Phi q kann hier Null gesetzt werden, hilft uns aber später zu erkennen, an welcher Stelle der Phasenwinkel der Quellenspannung eine Rolle spielt. 
+Hier ist unser Störterm U Q von t gleich dem Scheitelwert U Q Dach mal Kosinus von omega T plus Phi Q.
+Der Phasenwinkel Phi Q kann hier Null gesetzt werden, hilft uns aber später zu erkennen, an welcher Stelle der Phasenwinkel der Quellenspannung eine Rolle spielt. 
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRC2}{2}{%
 Der zweite Schritt, die Erstellung der homogenen Lösung, kann aus der Lösung im DC Beispiel übernommen werden. 
-Da der Störmterm in der homogenen D G L Null ist, sind beide Lösungen identisch. 
+Da der Störterm in der homogenen D G L Null ist, sind beide Lösungen identisch. 
 Die einzige Anpassung die vorgenommen wird, ist die zeitliche Verschiebung des Exponentialansatzes. 
-Die Exponentialkurve beginnt nicht bei t gleich null sondern beim Schaltzeitpunkt t Null.
-Die Zeitkonstante tau gleich R C entspricht hier wieder dem negativen Kehrwert des Eigenwertes, das heißt minus eins durch Lambda. 
+Die Exponentialkurve beginnt nicht bei T gleich Null sondern beim Schaltzeitpunkt T Null.
+Die Zeitkonstante Tau gleich R C entspricht hier wieder dem negativen Kehrwert des Eigenwertes, das heißt minus eins durch Lambda. 
 }% Speech Ende
 \end{frame}
 
@@ -1683,8 +1684,8 @@ Die Zeitkonstante tau gleich R C entspricht hier wieder dem negativen Kehrwert d
 
 \speech{SchaltvorgaengeACbeiRC3}{1}{%
 Im dritten Schritt bestimmen wir die Partikuläre Lösung, das heißt den eingeschwungenen Zustand. 
-Aufgrund der sinusförmigen Eingangsspannung U Q erhalten wir in unserer eingeschwungenen L Z I Schaltung 
-auch eine sinusförmige Ausgangsspannung U C P mit gleicher Kreisfrequenz omega wie bei der Anregung U Q. 
+Aufgrund der sinusförmigen Eingangsspannung U Q erhalten wir in unserer linearen zeitinvarianten Schaltung 
+auch eine sinusförmige Ausgangsspannung U C P mit gleicher Kreisfrequenz omega wie bei der Anregung U Q im eingeschwungenen Zustand. 
 }% Speech Ende
 \silence{1}%
 \speech{SchaltvorgaengeACbeiRC3}{1}{%
@@ -2176,7 +2177,7 @@ Und wir analysieren Einschwingvorgänge bei RLC-Gliedern.
 Gegeben sei der RLC-Serienschwingkreis wie im Schaltbild oben links dargestellt.
 Durch die zwei verschiedenen Energiespeicher ist das System prinzipiell schwingungsfähig.
 Das Systemverhalten kann durch eine D G L zweiter Ordnung beschrieben werden.
-Abhängig von den Werten der Bauelemente $R$, $L$ und $C$ ergeben sich verschiedene Einschwingverhalten bei Anregung mit Gleichspannung $U_q$.
+Abhängig von den Werten der Bauelemente R, L und C ergeben sich verschiedene Einschwingverhalten bei Anregung mit Gleichspannung U Q.
 Dabei sind drei Fälle möglich, diese sind rechts im Zeitverlaufsdiagramm dargestellt und unten in der Tabelle gegenübergestellt.
 Möglich ist ein aperiodischer Fall, ein aperiodischer Grenzfall und ein periodischer Fall.
 Die Fälle können anhand verschiedener Merkmale wie der Diskriminante D, welche wir im Folgenden genauer betrachten, oder anhand der Schwingkreisgüte Q bestimmt werden.
