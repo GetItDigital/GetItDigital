@@ -33,7 +33,7 @@
 		\end{itemize}
 		\column[c]{0.45\textwidth}
 		\s{
-			\fo{width=0.7\textwidth, alt={XX}}{}{Aufbau_Synchronmaschine1}{
+			\fo{width=0.7\textwidth, alt={Schematische Schnittansicht einer fremderregten Synchronmaschine. Das Bild zeigt die verschiedenen Komponenten des Motors, einschließlich des Gehäuses, der Lager, des Läufers, der Erregerwicklung sowie des Statorblechpakets und der Statorwicklungen.}}{}{Aufbau_Synchronmaschine1}{
 				\put(83,0){\line(-1,1){37.5}}\put(83.3,0){Statorwicklungen}
 				\put(83,6){\line(-1,1){33.5}}\put(83.3,6){Statorblechpaket}
 				\put(89,18){\line(-1,1){32}}\put(89.3,18){Erregerwicklung}
@@ -51,7 +51,7 @@
 
 \begin{frame} \ftx{Aufbau einer fremderregten Synchronmaschine}
 	\s{
-		\fo{width=0.8\textwidth, alt={XX}}{}{Aufbau_Synchronmaschine2}{
+		\fo{width=0.8\textwidth, alt={Querschnitt einer remderregten Synchronmaschine. In der Mitte befindet sich der Rotor mit der Erregerwicklung. Dieser wird ringförmig umschlossen vom Stator, der drei Statorwicklungen enthält. Diese sind jeweils um 120 Grad zueinander versetzt angeordnet.}}{}{Aufbau_Synchronmaschine2}{
 			\put(32.3,16.1){\line(1,1){15}}\put(11,16.1){Statorwicklung 1}
 			\put(86,66){\line(-1,-1){12.7}}\put(86.3,66){Statorwicklung 2}
 			\put(91,10.4){\line(-1,1){12.4}}\put(91.3,10.4){Statorwicklung 3}
@@ -71,7 +71,7 @@
 
 \begin{frame}\ftb{Feldverläufe}
 	\s{
-		\fo{width=\textwidth, alt={XX}}{}{Synchronmaschine_Feldverlaeufe}{
+		\fo{width=\textwidth, alt={Das Diagramm zeigt drei sinusförmige Wellen, die die Ströme I1, I2 und I3 darstellen. Die Sinuskurven sind um 120 Grad zueinander versetzt. Unterhalb des Diagramms befindet sich jeweils an den Positionen 0, 120, 240 und 360 Grad eine Abbildung des Querschnitts einer fremderregten Synchronmaschine. Die in den Abbildungen eingezeichneten Flussrichtungen der Ströme innerhalb der drei Statorwickungen verhalten sich analog zu den im Diagramm dargestellten Sinuskurven.}}{}{Synchronmaschine_Feldverlaeufe}{
 			\put(10.23,23.3){\begin{tikzpicture}[domain=0:36, samples=360, scale=0.982]
 					\foreach \n in {0,...,3}{
 							\draw[very thin, color=gray] (\n*4, 1) -- (\n*4,-1.5);
@@ -223,7 +223,7 @@
 
 \begin{frame}\ftx{Drehmoment}
 	\fu{
-		\input{Tikz/src/drehmomentkennlinie_synchron}
+		\input{Tikz/src/drehmomentkennlinie_synchron}\alttext{Ein Diagramm, das zwei Kurven zeigt. Auf der X-Achse wird der Polradwinkel von 0 bis 180 Grad dargestellt. Auf der Y-Achse wird der Drehmoment abgebildet. Zwei parabelförmige Kurven UN und einhalb UN von 0 bix 180 Grad, deren Maximum bei 90 Grad liegt, sind in das Diargramm eingezeichnet. Das Maximum der Kurve von einhalb UN liegt etwa auf halber Höhe des Maximums von UN.}
 	}{{\bf Drehmomentkennlinie in Abhängigkeit vom Polradwinkel.}}
 \end{frame}
 
@@ -234,7 +234,7 @@
 	\s{Im Netzbetrieb ist die Klemmenspannung $U_1$ und die Frequenz $\omega$ fest vorgegeben. Das ist ein häufiger Betriebsfall für die Synchronmaschine.}
 	\b{Komplexes einphasiges ESB des Vollpolgenerators (z.B. im Netzbetrieb):}
 	\fu{
-		\input{Tikz/src/ESB_vollpolgenerator}
+		\input{Tikz/src/ESB_vollpolgenerator}\alttext{Schaltbild eines einphasigen Vollpolgenerators. Auf der linken Seite bedindet sich eine Reihenschaltung bestehend aus einem Widerstand R1, einer Induktivität X1 Sigma, einer Induktivität XH und einer Spannungsquelle Up, welche über die Spannungsquelle U1 geschlossen ist. Parallel zu U1 und Up ist zwischen X1 Sigma und Xh die Spannung Uq eingezeichntet. An der Anordnung liegt der Strom I1 an. Auf der rechten Seite bedindet sich eine Induktivität mit dem Strom IE.}
 	}{{\bf Komplexes einphasiges ESB eines Vollpolgenerators.} Beispielsweise im Netzbetrieb.}
 \end{frame}
 

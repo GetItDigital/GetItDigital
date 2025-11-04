@@ -3,9 +3,9 @@
 	\s{Der Transformator ist eine ruhende elektrische Maschine und dient der Energiewandlung von elektrischer Energie über den magnetischen Kreis zurück in elektrische Energie, wobei insbesondere die Spannungshöhe gewandelt wird. Transformatoren gibt es in verschiedenen Ausführungen und Leistungsklassen von wenigen Watt (Abbildung \ref{bildtrafo2}) bis in den hohen Megawattbereich (Abbildung \ref{bildtrafo1}).\index{Transformator}}
 	\begin{columns}
 		\column[c]{0.55\textwidth}
-		\f{width=\textwidth}{width=\textwidth}{20120329Umspannwerk_Altlussheim06.jpg}{{\bf Ein 40 MVA Leistungstransformator.} Aufgenommen im Umspannwerk Altlußheim. \label{bildtrafo1}{\tiny(Quelle: Wikimedia, Lizenz CC0)}}
+		\f{width=\textwidth, alt={Ein großer, rechteckiger Leistungstransformator in grauer Farbe steht in einer Freiluftanlage. Er hat mehrere Hochspannungsleitungen, die nach oben führen, und ist auf einer betonierten Fläche platziert.}}{width=\textwidth}{20120329Umspannwerk_Altlussheim06.jpg}{{\bf Ein 40 MVA Leistungstransformator.} Aufgenommen im Umspannwerk Altlußheim. \label{bildtrafo1}{\tiny(Quelle: Wikimedia, Lizenz CC0)}}
 		\column[c]{0.4\textwidth}
-		\f{width=0.4\textwidth}{width=0.7\textwidth}{Transformator2b.png}{{\bf Fotografie eines Kleintransformators.} \label{bildtrafo2}}
+		\f{width=0.4\textwidth, alt={Ein quadratischer Kleintransformator mit einem schwarzen Gehäuse und zwei Spulen. Der Transformator hat an den Seiten mehrere Kontaktstifte.}}{width=0.7\textwidth}{Transformator2b.png}{{\bf Fotografie eines Kleintransformators.} \label{bildtrafo2}}
 	\end{columns}
 	\b{
 		\vspace{0.5cm}
@@ -38,7 +38,7 @@
 
 		In Energieversorgungsnetzen (siehe Abbildung \ref{Abbversorgungsnetz}) gibt es mehrere Spannungsebenen. Die Höchst\-spannungs\-ebene, die in Europa überwiegend $380\,$kV beträgt, dient als Übertragungsnetz zum Transport elektrischer Leistung über weitere Strecken, also mehrere hundert Kilometer auch über Länder\-grenzen hinweg. Große Kraftwerke sind dort direkt angekoppelt. Die Hochspannungsebene\index{Hochspannung} ($110\,$kV oder $220\,$kV) nennt sich Verteilnetz und dient der Ankopplung von Städten und großen Industrien. Die Mittelspannungsebene\index{Mittelspannung} ($5-35\,$kV) sorgt für die Ankopplung der Ortznetztransformatoren zur Versorgung von einzelnen Straßenzügen. Während die höheren Spannungsebenen normalerweise mit Freileitungen ausgeführt sind, ist das Mittelspannungsnetz überwiegend mit Erdkabeln realisiert. Im ländlichen Bereich werden aber auch hier Freileitungen eingesetzt.}
 
-	\s{\f{width=\textwidth}{width=\textwidth}{Stromversorgung_gesamt.pdf}{\bf{Struktur der öffentlichen Stromversorgung. \label{Abbversorgungsnetz}}} Das Stromnetz ist in mehrere Spannungsebenen unterteilt, die den Transport und die Verteilung der Energie ermöglichen.}
+	\s{\f{width=\textwidth, alt={Das Bild ist ein Diagramm, das die Struktur des deutschen Stromversorgungssystems veranschaulicht. Oben im Diagramm sind die Höchstspannungsleitungen abgebildet, die für die Übertragung von Strom mit Spannungen von 220 kV oder 380 kV zuständig sind. Diese Leitungen sind entscheidend für die Fernübertragung von Elektrizität von großen Kraftwerken zu regionalen Verteilerstationen. Unterhalb der Hochspannungsleitungen gibt es verschiedene Abschnitte, die unterschiedliche Spannungsebenen beschreiben. Der erste Bereich widmet sich der Hochspannung mit Spannungen um 110 kV zeigt Icons für Stromquelle, Transformation und Verteilung. Zudem sind hier Symbole verschiedener Energieerzeugungsarten abgebildet für: Windkraft, Wasserkraft und Solarenergie. Darunter folgt der Abschnitt für die Mittelspannung, der Spannungen zwischen 10 kV und 30 kV umfasst. Hier sind gezeichnete Stromleitungen zu sehen, die zu unterschiedlichen Umspannwerken führen, um die Energie weiter zu verteilen. Die Symbole zeigen die Verteilung des Stroms an städtische Gebiete. Am unteren Ende des Diagramms befindet sich der Abschnitt für die Niederspannung, der Spannungen bis 400 V. Auf dieser Ebene sind Wohnhäuser oder kleinere Verbraucher dargestellt, symbolisch dafür, dass auf dieser Ebene die Endverbraucher an das Stromnetz angeschlossen sind.}}{width=\textwidth}{Stromversorgung_gesamt.pdf}{\bf{Struktur der öffentlichen Stromversorgung. \label{Abbversorgungsnetz}}} Das Stromnetz ist in mehrere Spannungsebenen unterteilt, die den Transport und die Verteilung der Energie ermöglichen.}
 	\b{\f{}{height=0.85\textheight}{Stromversorgung_p1}{}}
 
 	\speech{OeffentlicheVersorgung}{1}{Ein wichtiges Anwendungsfeld von Transformatoren ist die öffentliche Energieversorgung. Durch Hochtransformieren der Spannung sinken die Verluste bei der Stromübertragung. Erst mit Transformatoren wird eine flächendeckende Energieversorgung möglich, da Kraftwerke die Verbraucher über weite Distanzen hinweg effizient mit Energie versorgen können.
@@ -92,7 +92,7 @@
 	\fu{
 		\b{\vspace{-0.8cm}}
 		\resizebox{\textwidth}{!}{
-			\input{Tikz/src/magnetische_kopplung}
+			\input{Tikz/src/magnetische_kopplung}\alttext{Schematische Darstellung von zwei nebeneinanderliegenden Leiterschleifen aus Draht. Das Magnetfelt der linken Leiterschleife ragt dabei in die rechte Leiterschleife, wodurch in diese Spannung induziert wird.}
 		}
 		\b{\vspace{-1.5cm}}
 	}{{\bf Prinzip der magnetische Kopplung eines Transformators.} Die Spannung $\underline{U}_1$ der linken Leiterschleife erzeugt einen magnetischen Fluss $\varPhi$, welcher in der rechten Leiterschleife die Spannung $\underline{U}_2$ induziert. \label{AbbMagnetischeKopplung}} %von JK
@@ -169,7 +169,7 @@
 	\begin{columns}
 		\column[c]{0.62\textwidth}
 		\fu{
-			\input{Tikz/src/aufbau_Trafo}
+			\input{Tikz/src/aufbau_Trafo}\alttext{Schematische Darstellung eins Transformators mit einem ringförmigen Magnetkern. Um den Kern ist auf der linken und auf der rechten Seite ein Leiter zur Spule gewickelt. Die beiden Spulen sind also durch den selben Magnetkern vebunden.}
 		}{{\bf Schematischer Aufbau des Transformators.} Zwei Spulen sind mittels eines ferromagnetischen Kerns miteinander gekopppelt. Die Windungszahlen bestimmen dabei das Übersetzungsverhältnis der Spannung. \label{AbbTrafoAufbau}}
 
 		\s{In dem Schaltbild des idealen Transformators werden die magnetisch gekoppelten Spulen als nebeneinanderstehende, schwarz ausgefüllte Rechtecke dargestellt (siehe Abbildung \ref{AbbTrafoESBIdeal}). Die zwei Striche zwischen den Spulen weisen darauf hin, dass diese mittels eines durchgehenden magnetisch leitenden Kerns verbunden sind. Die Punkte an den jeweiligen Spulen geben Aufschluss über die Führung der Wicklung. Sie können sich unten oder oben befinden. Liegen sie dabei auf der gleichen Höhe, ist die Phasenlage der beiden Spulen gleich. Liegen diese auf unterschiedlichen Höhen, bedeutet dies einen umgekehrten Wicklungssinn und dadurch eine Phasenverschiebung von $180\degree$.}
@@ -177,7 +177,7 @@
 		\column[c]{0.38\textwidth}
 		\pause
 		\fu{
-			\input{Tikz/src/ideales_Schaltbild_Trafo}
+			\input{Tikz/src/ideales_Schaltbild_Trafo}\alttext{Schaltbild eines Transformators. Zwei gegenüberliegende Spulen werden durch gefüllte Rechtecke dargestellt, von denen jweils eine Zu- und Ableitung führt. Zwischen den beiden Spulen symbolisieren zwei parallel verlaufende Linien die Kopplung der beiden Spulen.}
 		}{{\bf Ideales Schaltbild eines Transformators.} \label{AbbTrafoESBIdeal}}
 		\b{\begin{eqa}
 				\textit{ü} < 1 &\rightarrow \text{Spannung hoch}\nonumber\\
@@ -278,7 +278,7 @@
 				\end{circuitikz}
 			}
 			\s{
-				\input{Tikz/src/ersatzschaltbild_Trafo}
+				\input{Tikz/src/ersatzschaltbild_Trafo}\alttext{Schaltbild eines realen Transformators. Zwei gegenüberliegende Spulen werden durch gefüllte Rechtecke dargestellt, von denen jweils eine Zu- und Ableitung führt. Zwischen den beiden Spulen symbolisieren zwei parallel verlaufende Linien die Kopplung der beiden Spulen. An den Kontakten des linken Stromkreises befinden sich vor der Primärspule des Transormators (links) in Reihe geschaltet ein Widerstand R1 und eine Spule L Sigma 1. Prallel zur Primärspule befindet sich eine Spule Lh. Auf Seiten der Sekundärspule (rechts) befinden sich nur eine in Reihe geschaltete Spule L Sigma 2 und ein Widerstand R2.}
 			}
 		}
 	}{{\bf Ersatzschaltbild eines galvanisch getrennten Transformators.} \label{AbbTrafoESBReal}}
@@ -286,7 +286,7 @@
 	\s{Anschließend wird in dem T-Ersatzschaltbild des Transformators (Abbildung \ref{AbbTrafoESBReal1}) unterstellt, dass keine galvanische Trennung zwischen Primär- und Sekundärseite besteht, obwohl dies in der Realität natürlich der Fall ist. Dieser Schritt ermöglicht die Umrechnung der Größen der Sekundärseite auf die Primärseite und die Anwendung der aus Modul 4 bekannten Rechenregeln. Die Umrechnungsgrößen werden als gestrichne Größen, in diesem Beispiel als $\underline{U}^\prime_2$, $\underline{I}^\prime_2$, ${R}^\prime_2$ und ${L}^\prime_{\sigma2}$, gekennzeichnet.
 		\fu{
 			%\resizebox{\textwidth}{!}{
-			\input{Tikz/src/t-Ersatzschaltbild_Trafo}
+			\input{Tikz/src/t-Ersatzschaltbild_Trafo}\alttext{Vereinfachtes Ersatzschaltbild eines Transformators. Das Schaltbild ist weitgehend identisch zum Ersatzschaltbiild eines realen Transformators, nur wird hier die galvanische Trennung, in Form der Primär- und Sekundärspule weggelassen.}
 			%}
 		}{{\bf T-Ersatzschaltbild eines Transformators.} \label{AbbTrafoESBReal1}}
 	}

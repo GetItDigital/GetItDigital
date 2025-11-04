@@ -2,7 +2,7 @@
 \newvideofile{asynchronmaschine}{Asynchronmaschine}
 \s{Die Asynchronmaschine ist ebenfalls eine Drehfeldmaschine. Der Stator ist identisch zum Stator der Synchronmaschine, der Rotor ist hingegen in der häufigsten Version dieses Maschinentyps, beim sogenannten Käfigläufer, passiv.}
 \begin{frame}\ftx{Asynchronmaschine Aufbau}\index{Asynchronmaschine>Aufbau}\s{\subsection{Aufbau}}
-	\fo{width=0.65\textwidth, alt={XX}}{height=0.9\textheight}{Aufbau_Asynchron_Kaefig1}{
+	\fo{width=0.65\textwidth, alt={Schematische Schnittansicht einer Käfigläufer-Asynchronmaschine. Das Bild zeigt die verschiedenen Komponenten des Motors, einschließlich des Gehäuses mit Blechpaket und den darin befindlichen Drehstromwicklungen. Außerdem ist der Läuferkäfig zu sehen, der mit Blechpaketen bestückt ist, sowie am hinteren Ende die Lüfterflügel, die von einer Flügelhaube abgedeckt werden.}}{height=0.9\textheight}{Aufbau_Asynchron_Kaefig1}{
 		\uncover<1->{\put(79,0){\line(-1,1){29.5}}\put(79.2,0){Gehäuse mit Blechpaket}}
 		\uncover<3->{\put(79,6){\line(-1,1){27}}\put(79.3,6){Drehstromwicklung}}
 		\uncover<2->{\put(90,12){\line(-1,1){40}}\put(90.3,12){Läuferkäfig}}
@@ -25,7 +25,7 @@
 		\item Zusammen bilden diese Komponenten einen Käfig (ähnlich Hamsterkäfig).
 		\item Stäbe werden geschrägt ausgeführt zur Reduktion von Oberwellen im umlaufenden magnetischen Feld.
 	\end{itemize}
-		\f{width=0.5\textwidth}{height=0.6\textheight}{Aufbau_Asynchron_Kaefig2}{{\bf Käfig eines Asynchronrotors.} Zur Hälfte mit Blechpaket gezeigt.}
+		\f{width=0.5\textwidth, alt={Schematische Darstellung eines Kupferzylinders, dessen ringförmige Vorder- und Rückseite mit Lamellen verbunden sind. Die Lücken zwischen den Lammellen sind mit Blechpaketen gefüllt.}}{height=0.6\textheight}{Aufbau_Asynchron_Kaefig2}{{\bf Käfig eines Asynchronrotors.} Zur Hälfte mit Blechpaket gezeigt.}
 \end{frame}
 
 
@@ -92,7 +92,7 @@
 		\column[c]{0.7\textwidth}
 		\s{
 			\fu{
-				\input{Tikz/src/klosssche_kennlinie.tex}
+				\input{Tikz/src/klosssche_kennlinie.tex}\alttext{Diagramm, das den Zusammenhang aus Drehzahl und Drehmoment einer Asynchronmaschine zeigt. Die Drehzahl wird auf der X-Achse abgebildet von S (links) bis Minus S (rechts), während das Drehmoment auf der Y-Achse dargestellt wird. Innerhalb des Diagramms befindet sich eine Kurve, die die Drehzahl/Drehmomenten-Kennlinie zeigt. Sie bewegt sich langsam steigend im positiven Bereich von S von der linken Seite des Diagramms immer steiler werdend, bis sie kurz vor dem Nullpunkt ein Maximum am Punkt SK erreicht und genau zum Nullpunkt hin steil abfällt. Auf der negativen Seite von S des Diagramms verhält sich die Kurve äquivalent, jedoch über die Y-Achse gespiegelt. Links befindet sich der Bereich, an dem die Asynchronmaschine als Bremse fungiert, bis zum Punkt des Stillstands, an dem s = 1 ist. In dem rechts davon folgenden Bereich agiert die Asynchronmaschine als Motor bis zum Maximum SK. Auf der negativen Seite von S wirkt die Asynchronmaschine ab dem Minimum Minus SK als Generator. Das Diagramm zeigt, dass sich die Asynchronmaschine untersynchron verhält, wenn S > 0 ist, und übersynchron, wenn S < 0 ist.}
 				}{{\bf Klossche Kennlinie.} Drehzahl/Drehmomenten-Kennlinie einer Asynchronmaschine. \label{kloss}}
 		}
 		\b{
