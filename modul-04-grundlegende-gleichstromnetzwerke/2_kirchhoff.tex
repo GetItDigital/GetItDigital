@@ -87,6 +87,8 @@
 			\centering
 			{\includesvg[width=0.25\textwidth]{knotenregel1}}
 
+\alttext{Schematische Darstellung eines elektrischen Knotens mit drei angeschlossenen Leitungen. Die Ströme I1, I2 und I3 sind als rote Pfeile eingezeichnet, die auf den Knoten zufließen bzw. von ihm abfließen.}
+
 			{\caption{Einfacher Beispielknoten}\label{fig:knoten}}
 		\end{figure}
 
@@ -117,6 +119,8 @@
 				\input{Tikz/src/2_kirchhoff/Huellknoten_Skript}
 			\end{center}
 			\caption{Hüllknoten einer elektrischen Schaltung\label{fig:knoten2}}
+			\alttext{Schematische Darstellung eines elektrischen Netzwerks mit vier Widerständen, die ein rechteckiges Schaltungsnetz bilden. Die Ströme I1, I2, I3 und I4 sind an den vier Anschlussleitungen als rote Pfeile eingezeichnet. Eine blaue Kreislinie markiert den Hüllknoten, der das gesamte System umschließt.}
+
 		\end{figure}
 
 		Die Knotenregel ist durch die Verallgemeinerung des Ladungserhaltungssatzes für quellenfreie
@@ -132,6 +136,7 @@
 
 			\s{\caption{An einen Blechausschnitt angeschlossener Draht. Die Stromstärke $I$ fließt in den Draht hinein, während eine
 					Stromdichte $\vec{J}$ aus dem Blechausschnitt herausfließt.\label{fig:huell}}}
+					\alttext{Schematische Darstellung eines zylindrischen Drahtes, der senkrecht mit einem flachen Blechabschnitt verbunden ist. Der elektrische Strom I fließt von oben in den Draht hinein, dargestellt durch einen nach unten gerichteten roten Pfeil. Aus dem Blechabschnitt tritt die Stromdichte J radial nach außen aus, angezeigt durch mehrere rote Pfeile entlang der zylindrischen Mantelfläche. Die beiden Hüllflächen 1 und 2 markieren die Eingangs- und Ausgangsflächen des betrachteten Stromsystems.}
 
 		\end{figure}
 
@@ -306,7 +311,7 @@
 
 			%	\begin{figure}
 			\begin{center}
-				\input{Tikz/src/2_kirchhoff/Parallelschaltung_Widerstand_Skript}
+				\input{Tikz/src/2_kirchhoff/Parallelschaltung_Widerstand_Skript}\alttext{Schaltskizze einer elektrischen Parallelschaltung mit zwei Widerständen R1 und R2. Der Gesamtstrom I0 teilt sich am oberen Knoten in die Teilströme I1 und I2 auf, die jeweils durch die Widerstände R1 und R2 fließen. Die Spannungen U1 und U2 sind entlang der Widerstände eingezeichnet und verlaufen von oben nach unten. Am unteren Knoten vereinigen sich die Teilströme wieder zum Gesamtstrom I3.}			
 			\end{center}
 			%\end{figure}
 			\begin{equation*}
@@ -342,7 +347,8 @@
 			Wie groß sind die Stromstärken  $I_1$ bzw. $I_2$?\\
 
 			\begin{center}
-				\input{Tikz/src/2_kirchhoff/Parallelschaltung_Leiter_Skript}
+				\input{Tikz/src/2_kirchhoff/Parallelschaltung_Leiter_Skript}\alttext{Darstellung einer elektrischen Parallelschaltung mit einem Widerstand R1 und einem zusätzlichen Leiterzweig ohne Widerstand. Der Gesamtstrom I0 teilt sich am oberen Knoten in die Ströme I1, der durch den Widerstand R1 fließt, und I2, der den parallelen Leiter ohne Widerstand durchläuft. Beide Ströme verlaufen von oben nach unten und vereinigen sich am unteren Knoten wieder zum Gesamtstrom I3. Die Spannungen U1 und U2 sind entlang der beiden Zweige markiert und zeigen den Spannungsabfall in identischer Richtung von oben nach unten.}
+
 			\end{center}
 
 			\begin{equation*}
@@ -519,8 +525,7 @@
 
 		\begin{figure}[h!]
 			\begin{center}
-
-				\input{Tikz/src/2_kirchhoff/Netzwerk_Spannung_Wiederstaende}
+				\input{Tikz/src/2_kirchhoff/Netzwerk_Spannung_Wiederstaende}\alttext{Schematische Darstellung eines elektrischen Netzwerks mit zwei Spannungsquellen und zwei Widerständen. Auf der linken Seite sind die Spannungsquellen U1 und U2 in Serie geschaltet und durch Pfeile nach unten gekennzeichnet. Auf der rechten Seite befinden sich die Widerstände R2 und R1, die ebenfalls in Serie geschaltet sind, mit den Spannungsabfällen U4 und U3 in vertikaler Richtung nach unten. In der Mitte ist eine Masche eingezeichnet, die den geschlossenen Umlauf des Stromkreises visualisiert.}
 
 			\end{center}
 			\caption{Beispielnetzwerk bestehend aus zwei Spannungsquellen und zwei Widerständen}
@@ -685,7 +690,8 @@
 
 			\begin{center}
 
-				\input{Tikz/src/2_kirchhoff/Netzwerk_Reihenschaltung}
+				\input{Tikz/src/2_kirchhoff/Netzwerk_Reihenschaltung}\alttext{Schaltskizze eines elektrischen Netzwerks mit zwei Widerständen und einer Spannungsquelle. Der linke Widerstand R2 ist mit der Spannung U2 beschriftet, der rechte Widerstand R3 mit der Spannung U3. Unter R3 ist eine Spannungsquelle U0 eingezeichnet, deren Richtung ebenfalls nach unten zeigt. Alle Elemente sind zwischen zwei horizontalen Leiterbahnen verbunden, die die obere und untere Potenzialebene des Stromkreises darstellen.}
+
 
 			\end{center}
 
@@ -714,7 +720,8 @@
 
 			\begin{center}
 
-				\input{Tikz/src/2_kirchhoff/Netzwerk_Reihenschaltung_Unterbrechung}
+				\input{Tikz/src/2_kirchhoff/Netzwerk_Reihenschaltung_Unterbrechung}\alttext{Schaltskizze eines elektrischen Netzwerks mit zwei Widerständen und einer Spannungsquelle. Der linke Zweig enthält den Widerstand R2 mit der Spannung U2, die nach unten zeigt, sowie eine weitere Spannung U1 über eine Unterbrechungsstelle innerhalb dieses Zweiges. Der rechte Zweig enthält den Widerstand R3 mit der Spannung U3 und darunter eine Spannungsquelle U0, deren Richtung ebenfalls nach unten zeigt. Beide Zweige sind parallel zwischen zwei horizontalen Leiterbahnen geschaltet.}
+
 
 			\end{center}
 

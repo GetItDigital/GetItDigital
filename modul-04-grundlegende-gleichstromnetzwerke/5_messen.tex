@@ -19,7 +19,8 @@
 		\begin{center}
 		\tikzset{component/.style={draw,thick,circle,fill=white,minimum size =0.75cm,inner sep=0pt}}
 
-		\input{Tikz/src/5_messen/Spannung_messen_ideal}
+		\input{Tikz/src/5_messen/Spannung_messen_ideal}\alttext{Schematische Darstellung einer realen Spannungsquelle, die einen Lastwiderstand Ra speist. Der Strom I fließt durch den Lastwiderstand. Ein ideales Voltmeter, dargestellt in Blau, ist parallel zu Ra geschaltet und misst die Spannung Umess über dem Lastwiderstand.}
+
 		\end{center}
 		\caption{Eine reale Spannungsquelle (Kasten links) speist einen Lastwiderstand $R_\mathrm{a}$.
 		Die darüber abfallende Spannung wird mit einem idealen Voltmeter (blau) gemessen\label{fig:voltmeterideal}}
@@ -46,7 +47,8 @@
 \tikzset{component/.style={draw,thick,circle,fill=white,minimum size =0.75cm,inner sep=0pt}}
 
 
-\input{Tikz/src/5_messen/Spannung_messen_real}
+\input{Tikz/src/5_messen/Spannung_messen_real}\alttext{Schaltskizze einer realen Spannungsquelle, die einen Lastwiderstand Ra speist. Die über Ra anliegende Spannung U wird durch ein reales Voltmeter gemessen, das einen endlichen Innenwiderstand RiV besitzt. Das Voltmeter ist parallel zum Lastwiderstand geschaltet und zeigt einen zusätzlichen Strom IRiV, der sich zum Laststrom IR addiert. Das Voltmeter und sein Innenwiderstand sind in Blau hervorgehoben.}
+
 
 		\end{center}
 
@@ -234,7 +236,8 @@ Sind sowohl der Innenwiderstand als auch der zu vermessende Widerstand bekannt, 
 		\begin{center}
 		\tikzset{component/.style={draw,thick,circle,fill=white,minimum size =0.75cm,inner sep=0pt}}
 
-		\input{Tikz/src/5_messen/Strom_messen_ideal}
+		\input{Tikz/src/5_messen/Strom_messen_ideal}\alttext{Schaltskizze einer realen Spannungsquelle, die einen Lastwiderstand Ra speist. In Reihe zum Lastwiderstand befindet sich ein ideales Amperemeter, dargestellt als roter Kreis mit der Beschriftung A. Der Strom I fließt durch das Amperemeter und den Lastwiderstand. Der durchgezogene rote Pfeil kennzeichnet die Stromrichtung. Das Amperemeter ist in Rot hervorgehoben.}
+
 		\end{center}
 
 		\caption{Eine reale Spannungsquelle (Kasten links) speist einen Lastwiderstand $R_\mathrm{a}$.
@@ -250,7 +253,8 @@ Sind sowohl der Innenwiderstand als auch der zu vermessende Widerstand bekannt, 
 		\begin{center}
 		\tikzset{component/.style={draw,thick,circle,fill=white,minimum size =0.75cm,inner sep=0pt}}
 
-		\input{Tikz/src/5_messen/Strom_messen_real}
+		\input{Tikz/src/5_messen/Strom_messen_real}\alttext{Schaltskizze einer realen Spannungsquelle, die einen Lastwiderstand Ra speist. In Reihe zum Lastwiderstand befindet sich ein reales Amperemeter, dargestellt als roter Kreis mit der Beschriftung A, sowie der rot gezeichnetete Vorwiderstand RiA. Der Strom I fließt durch das Amperemeter und den Lastwiderstand. Der rote Pfeil kennzeichnet die Stromrichtung.}
+
 		\end{center}
 
 		\caption{Messung der Stromstärke $I$ durch einen Lastwiderstand $R_\mathrm{a}$ durch ein
@@ -423,7 +427,8 @@ Unter Kenntnis des Innenwiderstandes und des zu messenden Widerstandes lässt si
 		\begin{center}
 		\tikzset{component/.style={draw,thick,circle,fill=white,minimum size =0.75cm,inner sep=0pt}}
 
-		\input{Tikz/src/5_messen/Stromrichtiges_Messen}
+		\input{Tikz/src/5_messen/Stromrichtiges_Messen}\alttext{Schaltskizze einer stromrichtigen Messschaltung mit einer realen Spannungsquelle. Die Quelle speist den Lastwiderstand Ra. In Reihe zum Lastwiderstand ist ein Amperemeter A geschaltet, das den Strom I misst. Parallel zu Lastwiderstand und Amperemeter ist ein Voltmeter V geschaltet, das die Spannung U über Ra erfasst.}
+
 		\end{center}
 
 
@@ -546,7 +551,7 @@ Als Faustregel gilt häufig, dass diese Schaltung verwendet wird, wenn der zu me
 			\begin{center}
 			\tikzset{component/.style={draw,thick,circle,fill=white,minimum size =0.75cm,inner sep=0pt}}
 
-			\input{Tikz/src/5_messen/Spannungsrichtiges_Messen}
+			\input{Tikz/src/5_messen/Spannungsrichtiges_Messen}\alttext{Schaltskizze einer spannungsrichtigen Messschaltung mit einer realen Spannungsquelle. Die Quelle speist den Lastwiderstand Ra. Parallel zum Lastwiderstand ist ein Voltmeter geschaltet, das die Spannung misst. In Reihe zu Lastwiderstand und Voltmeter ist ein Amperemeter geschaltet, das sowohl den Strum durch den Messwiderstand als auch durch das Voltmeter erfasst.}
 
 			\end{center}
 			\caption{Stromrichtige Messchaltung zur Bestimmung der Stromstärke $I$ sowie der Spannung $U$ an einem Lastwiderstand $R_\mathrm{a}$\label{fig:spannungsrichtig}}

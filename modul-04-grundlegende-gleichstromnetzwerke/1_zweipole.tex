@@ -17,7 +17,7 @@
 	\begin{frame} 
 		\begin{minipage}{0.45\textwidth}
 			
-			\f{width=\textwidth}{width=0.7\textwidth}{netzklein.png}{Symbolbild eines kleinen elektrischen Netzwerkes auf einer Platine  \label{fig:platine}}
+			\f{width=\textwidth, alt={Nahaufnahme einer elektronischen Leiterplatte mit zahlreichen integrierten Schaltkreisen, Kondensatoren, Widerständen und Leiterbahnen.}}{width=0.7\textwidth}{netzklein.png}{Symbolbild eines kleinen elektrischen Netzwerkes auf einer Platine  \label{fig:platine}}
 			%	\fo{width=\textwidth, alt={XX}}{width=\textwidth}{Magnetisches_Feld_Leiter}{
 			%	\put(60.5, 9){\color{red}$I$}
 			%	}{{\bf Magnetisches Feld um einen stromdurchflossenen Leiter.} Die Rich\-tung des Feldes kann mit der \glqq Rechten-Hand-Regel\grqq\ veranschaulicht werden.}
@@ -25,7 +25,7 @@
 		\hfill\pause
 		\begin{minipage}{0.45\textwidth}
 			
-			\f{width=\textwidth}{width=0.7\textwidth}{netzgross.png}{Symbolbild eines großen elektrischen Netzwerkes  \label{fig:stromnetz}}
+			\f{width=\textwidth}{width=0.7\textwidth, alt={Weitwinkeldarstellung eines großflächigen Umspannwerks mit zahlreichen Hochspannungsmasten und elektrischen Leitungen, die ein weit verzweigtes Stromnetz symbolisieren. Im Hintergrund sind Windkraftanlagen und Kühltürme eines Kraftwerks zu erkennen.}}{netzgross.png}{Symbolbild eines großen elektrischen Netzwerkes  \label{fig:stromnetz}}
 			%	\fo{width=\textwidth, alt={XX}}{width=\textwidth}{Magnetisches_Feld_Leiterschleife}{
 			%	\put(31.5, 18){\color{red}$I$}
 			%	\put(65, 4){\color{red}$I$}
@@ -87,12 +87,12 @@
 			
 			\column[t]{0.5\textwidth}
 			
-			\f{width=\textwidth}{width=0.7\textwidth}{netzgross.png}{Symbolbild eines kleinen elektrischen Netzwerkes auf einer Platine}
+			\f{width=\textwidth}{width=0.7\textwidth, alt={Weitwinkeldarstellung eines großflächigen Umspannwerks mit zahlreichen Hochspannungsmasten und elektrischen Leitungen, die ein weit verzweigtes Stromnetz symbolisieren. Im Hintergrund sind Windkraftanlagen und Kühltürme eines Kraftwerks zu erkennen.}}{netzgross.png}{Symbolbild eines kleinen elektrischen Netzwerkes auf einer Platine}
 			\begin{center}
 				Symbolbilder
 			\end{center}
 			
-			\f{width=\textwidth}{width=0.7\textwidth}{netzklein.png}{Symbolbild eines kleinen elektrischen Netzwerkes auf einer Platine}
+			\f{width=\textwidth, alt={Nahaufnahme einer elektronischen Leiterplatte mit zahlreichen integrierten Schaltkreisen, Kondensatoren, Widerständen und Leiterbahnen.}}{width=0.7\textwidth}{netzklein.png}{Symbolbild eines kleinen elektrischen Netzwerkes auf einer Platine}
 			
 		\end{columns}
 		\speech{elektrische_netzwerke}{1}{, Elektrische Netzwerke sind heute überall verbaut – in unseren Smartphones, Computern oder im riesigen Stromnetz, das ganze Städte versorgt.
@@ -287,6 +287,7 @@
 			\end{center}
 			\caption{Allgemeine Darstellung eines Zweipols mit den gleich großen Stromstärken $I_1$ und $I_2$ sowie der anliegender Spannung $U$}
 			\label{fig:zweipol}
+			\alttext{Schematische Darstellung eines allgemeinen Zweipols als rechteckiger Block mit zwei Anschlussklemmen auf der rechten Seite. Zwei rote Pfeile, beschriftet mit I1 und I2, kennzeichnen die gleich großen ein- und ausgehenden Stromstärken. Ein blauer Pfeil, beschriftet mit $U$, zeigt die anliegende Spannung zwischen den Klemmen}
 		\end{figure}
 		
 		Einige der bereits aus vorherigen Kapiteln bekannte Zweipole sind in Tabelle \ref{tab:schaltzeichen} beispielhaft aufgeführt.
@@ -326,8 +327,10 @@
 			\column[t]{0.3\textwidth}
 			
 			\vspace{10pt}
-			
+			\fu{
 			\input{Tikz/src/1_zweipole/Zweipol_allgemein}
+			\alttext{Schematische Darstellung eines allgemeinen Zweipols als rechteckiger Block mit zwei Anschlussklemmen auf der rechten Seite. Zwei rote Pfeile, beschriftet mit I1 und I2, kennzeichnen die gleich großen ein- und ausgehenden Stromstärken. Ein blauer Pfeil, beschriftet mit $U$, zeigt die anliegende Spannung zwischen den Klemmen}
+			}
 			
 		\end{columns}
 		
@@ -526,6 +529,7 @@
 			\end{center}
 			\caption{Der elektrische Grundstromkreis mit eingezeichneten Zweigen, Knoten und Maschen}
 			\label{fig:grundstromkreis}
+			\alttext{Schematische Darstellung eines elektrischen Grundstromkreises mit vier Widerständen, einer Spannungsquelle sowie markierten Knoten, Zweigen und einer Masche. Die oberen Leiterverbindungen bilden eine geschlossene Schleife, während die unteren Widerstände über eine gestrichelte Linie als Zweig hervorgehoben sind. Die roten Pfeile kennzeichnen die Richtung der Knotenströme.}
 		\end{figure}
 		Dabei bilden die idealisierten Zweipole \textbf{Zweige}, die wie in Abb. \ref{fig:grundstromkreis}
 		auch aus mehreren direkt hintereinandergeschalteten Zweipolen bestehen können. Durch alle Elemente eines Zweiges fließt
@@ -565,7 +569,10 @@
 			}
 			\only<7->{Wie teilen sich Strom und Spannung in einem Netzwerk auf?}
 			\column[c]{0.5\textwidth}
+			%\fu{
 			\input{Tikz/src/1_zweipole/Elektrischer_Grundstromkreis_Folien}
+			%\alttext{Schematische Darstellung eines elektrischen Grundstromkreises mit vier Widerständen, einer Spannungsquelle sowie markierten Knoten, Zweigen und einer Masche. Die oberen Leiterverbindungen bilden eine geschlossene Schleife, während die unteren Widerstände über eine gestrichelte Linie als Zweig hervorgehoben sind. Die roten Pfeile kennzeichnen die Richtung der Knotenströme.}
+			%}
 		\end{columns}
 		\speech{folie8}{1}{ Mit den nun eingeführten Zweipolen können wir jetzt ein elektrisches Netzwerk aufbauen. 
 		Beispielhaft ist hier ein Netzwerk bestehend aus vier Widerständen und einer Spannungsquelle dargestellt.}
