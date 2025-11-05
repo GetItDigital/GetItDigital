@@ -1,4 +1,7 @@
 %Scheinleistung, Wirkleistung und Blindleistung
+
+\newvideofile{Leistung}{Wirkleistung, Blindleistung und Scheinleistung}
+
 \begin{frame}
     \fta{Scheinleistung, Wirkleistung und Blindleistung}
 
@@ -17,6 +20,11 @@
         \end{itemize}
     \end{Lernziele}
 
+    \speech{LeistungLrnz}{1}{Durch die Verwendung von Wechselströmen sind Leistungen nicht Konstant
+    und müssen daher komplex betrachtet werden. 
+    Am Ende des Kapitels soll der Unterschied zwischen der Augenblicksleistung, 
+    der Wirkleistung und der Blindleistung bekannt sein.
+    Sowie die Scheinleistung bestimmt und kategorisiert werden können.}
 \end{frame}
 
 %Grundlagen
@@ -48,6 +56,7 @@
         folgende Integralformel:
     }
 
+    \onslide<2->{
     \b{
         Die Grundlage der Leistungsberechnung von Wechselgrößen ist der arithmetische Mittelwert:
         \begin{itemize}
@@ -58,7 +67,7 @@
 
     \begin{eq}
         \overline{u(t)}=\frac{1}{T}\int_{t}^{t+T} u(t)dt \label{ArythMittel}
-    \end{eq}
+    \end{eq}}
 
     \s{
         In der Formel steht $T$ für die Periodenlänge. Hier ist $t$ dabei ein beliebig wählbarer Zeitpunkt, ab welchem die Betrachtung 
@@ -67,14 +76,22 @@
         der Abbildung \ref{BildLei1} dargestellt wird. 
     }
 
+    \onslide<3->{
     \b{
         Mit:
         \begin{itemize}
-            \item T=Periodenlänge
-            \item t=belibig wählbarer Anfangszeitpunkt (meistens t=0)
+            \item T = Periodenlänge
+            \item t = belibig wählbarer Anfangszeitpunkt (meistens t=0)
         \end{itemize} 
-    }
+    }}
 
+    \speech{LeistungAddit}{1}{Ein paar Grundlagen zuvor.
+    Zur Herleitung der Augenblicksleistung aus sinusförmigen Quellen 
+    kann das angegebene Additionstheorem genutzt werden.}
+    \speech{LeistungAddit}{2}{Über den Arithmetischen Mittelwert wird ein konstanter Wert für die Leistung bestimmt.
+    Das Vorgehen ist hier ähnlich wie bei der Berechnung des Effektivwertes. .}
+    \speech{LeistungAddit}{3}{Groß Tee beschreibt hier die Periodendauer und klein Tee den Startpunkt des Betrachtungszeitraumes.
+    Oft wird klein Tee als Null gewählt.}
 \end{frame}
     
 
@@ -84,11 +101,11 @@
     \b{
         Beispiel der Mittelwertbildung anhand einer Sägezahnspannung:
         \begin{itemize}
-            \item Zuerst wird eine Funktion über eine Periodenlänge aufgestellt
+            \item<2-> Zuerst wird eine Funktion über eine Periodenlänge aufgestellt
             \begin{eq}
                 u(t)=\frac{10~V}{T}\cdot t
             \end{eq}
-            \item<2-> Arithmetischer Mittelwert $\overline{u(t)}$:
+            \item<3-> Arithmetischer Mittelwert $\overline{u(t)}$:
         \end{itemize}
     }
 
@@ -125,6 +142,12 @@
         und Spannungen errechnet werden soll.
     }
 
+    \speech{LeistungArith}{1}{Anhand der angegebenen sonderform einer Dreickecksspannung, 
+    der Sägezahnspannung, soll der Mittelwert bestimmt werden.
+    Die Sägezahnspannung ist hier um einen Gleichanteil angehoben.}
+    \speech{LeistungArith}{2}{Hierfür wird die Funktion über eine Periode aufgestellt.}
+    \speech{LeistungArith}{3}{Durch den gezeigten Verlauf kann bereits abgeschätzt werden, 
+    dass der Mittelwert bei Fünf Volt liegen sollte.}
 \end{frame}
 
 \begin{frame}
@@ -139,6 +162,7 @@
             \overline{u(t)}=\frac{1}{T}\int_{0}^{T} \frac{10~V}{T}\cdot t~dt
         \end{eq}
         
+        \onslide<2->{
         \begin{itemize}
             \item Nach auflösen des Integrals erhält man den arithmetischen Mittelwert der Sägezahnspannung
         \end{itemize}
@@ -150,9 +174,16 @@
 
         \begin{itemize}
             \item Der arithmetische Mittelwert bei reinen Wechselgrößen ist immer null
-        \end{itemize}
+        \end{itemize}}
     }
 
+    \speech{LeistungArithBsp}{1}{Die bereits aufgestellte Funktion für den Verlauf der Sägezahnspannung 
+    wird in die Gleichung für den arithmetischen Mittelwert eingesetzt.}
+    \speech{LeistungArithBsp}{2}{So erhält man den dargestellten Ausdruck des arithmetischen Mittelwertes für die Sägezahnspannung.
+    Für die untere Grenze Null ergibt sich der Ausdruck zu Null.
+    Wird für klein Tee, Groß Tee eingesetzt, 
+    lässt sich das Tee wegkürzen und man gelangt zu dem Ergebnis von Fünf Volt.}
+    \speech{LeistungArithBsp}{3}{Bei reinen Wechselgrößen wird der Mittelwert durch die symmetrie des Verlaufes immer zu Null.}
 \end{frame}
 
 
@@ -177,6 +208,8 @@
         P = U \cdot I = I^2 \cdot R = \frac{U^2}{R}     \label{GleichungLei1}
     \end{eq}
     
+    \speech{LeistungGleich}{1}{Die Leistung bei Gleichstrom ergibt sich aus dem Produkt der Spannung und dem Strom.
+    Durch das Umstellen lässt sich die Leistung auch Über die Quadtratur des Stromes oder der Spannung bestimmen.}
 \end{frame}
 
 
@@ -237,6 +270,12 @@
         \text{sinusförmig:} \quad p(t) &= \frac{\hat{U}\cdot\hat{I}}{2}(\underbrace{\cos(\varphi_\mathrm{U}-\varphi_\mathrm{I})}_\text{konstanter Anteil} + \underbrace{\cos(2\omega t +\varphi_\mathrm{U}+\varphi_\mathrm{I})}_\text{zeitabhängiger Anteil})    \label{GleichungLei4}
     \end{eqa}
     
+    \speech{LeistungAugenblick}{1}{Bei Wechselstrom wird die Leistung mit den zeitabhängigen Wechselgrößen berechnet.}
+    \speech{LeistungAugenblick}{2}{Die Zeitabhängigen Größen sind die Spannung Uh von Tee und Ih von Tee in der angegebenen Form.}
+    \speech{LeistungAugenblick}{3}{Die Augenblicksleistung kann über Produkt für jeden Zeitpunkt Tee berechnet werden.
+    Über das zum Anfang vorgestellte Additionsteorem lässt sich die Augenblicksleistung für Sinusförmige Wechselgrößen bestimmen.
+    Hierbei lassen sich die Trigonometrischen Funktionen in einen konstanen Anteil und einen zeitabhnängigen Anteil
+    welcher von Tee abhängig ist, unterteilen.}
 \end{frame}
 
 
@@ -244,7 +283,7 @@
     \ftx{Augenblicksleistung}
 
     \begin{Merksatz}{Augenblicksleistung}
-        Die Augenblicksleistung ist das Produkt aus den Aufgeblickswerten der Spannung und des Stromes. 
+        Die Augenblicksleistung ist das Produkt aus den Augenlickswerten der Spannung und des Stromes. 
 
         \begin{eq}
             p(t)=u(t)\cdot i(t)      \nonumber
@@ -252,6 +291,7 @@
 
     \end{Merksatz}
 
+    \speech{LeistungMrk1}{1}{Die Augenblicksleistung P von Tee ist das Produkt aus den Augenlickswerten der Spannung Uh von Tee und des Stromes Ih von Tee. }
 \end{frame}
 
 \begin{frame}
@@ -299,14 +339,20 @@
 
     \b{
         \begin{itemize}
-            \item<3-> Mittlere Lesitung an einem idealen Wirderstand ohne Phasenverschiebung zwischen Spannung und Strom:
+            \item<3-> Mittlere Leistung an einem idealen Wirderstand ohne Phasenverschiebung zwischen Spannung und Strom:
                 \begin{eq}
                     \overline{p}_\mathrm{Ohm} = \frac{\hat{U}}{\sqrt{2}} \cdot \frac{\hat{I}}{\sqrt{2}} = \frac{\hat{U}\cdot\hat{I}}{2} = U \cdot I   \nonumber
                 \end{eq}
         \end{itemize}
     }
 
-
+    \speech{LeistungMittl}{1}{Bei der Berechnung der Leistung wird mit den Effektivwerten der Spannung und des Stromes gerechnet.}
+    \speech{LeistungMittl}{2}{Außerdem spielt hier die Phasenverschiebung zwischen der Spannung und dem Strom eine Rolle.
+    Bei der Leistungsberechnung wird dieser Faktor als Leistungsfaktor bezeichnet.
+    Der Leistungsfaktor gibt außerdem das Verhältnis zwischen den verschiedenen Leistungsarten an.}
+    \speech{LeistungMittl}{3}{An einem idealen Widerstand, also einen rein ohmschen Verbraucher ohne Blindanteil, 
+    Beträgt die Phasenverschiebung zwischen dem Strom und der Spannung Null.
+    So beträgt der Leistungsfaktor Eins, sodass reine Wirkleistung übertragen wird.}
 \end{frame}
 
 
@@ -317,7 +363,7 @@
         Ähnlich verhält es sich mit der Augenblicksleistung an Spulen und Kondensatoren. An einer Induktivität eilt der 
         Strom der Spannung um 90° nach ($+\pi/2$). Der Verlauf der Spannung und des Stromes an einer Induktivität wird in der Abbildung 
         \ref{BildInduktiveLast} dargestellt. Dazu wird in grün die Augenblicksleistung an der Induktivität dargestellt. Der 
-        Konstante Anteil der Augenblicksleistung an einer Induktivität beträgt Null. An dem Verlauf lässt sich das Pulsieren 
+        konstante Anteil der Augenblicksleistung an einer Induktivität beträgt Null. An dem Verlauf lässt sich das Pulsieren 
         der Augenblicksspannung mit der doppelten Frequenz der Spannung bzw. des Stromes feststellen. Die positiven und 
         negativen Halbwellen der Augenblicksleistung heben sich gegenseitig im Mittel auf.  Das heißt, dass die aufgenommene 
         Leistung wieder vollständig abgegeben wird und so von der Induktivität keine Leistung aufgenommen wird. 
@@ -327,7 +373,7 @@
         Augenblicksleistung an einer Induktivität:
         \begin{itemize}
             \item<1-> Spannung und Strom um $+\pi/2$ phasenverschoben
-            \item<1-> Gleichanteil gleich null
+            \item<2-> Gleichanteil gleich null
             \item<2-> Augenblicksleistung pulsiert mit doppelter Frequenz
             \item<2-> Die aufgenommene Leistung innerhalb einer Periode wird vollständig wieder abgegeben
         \end{itemize}
@@ -341,6 +387,13 @@
     doppelte Frequenz gegenüber der Spannung bzw. des Stromes auf. Die positiven und negativen Halbwellen heben sich gegenseitig
     auf, die aufgenommene Leistung wird vollständig wieder abgegeben. \label{BildInduktiveLast}}
 
+    \speech{LeistungMittlIndu}{1}{Die Leistung an einer Induktivität wird ähnlich ermittelt.
+    Wie bereits bekannt sind an einer Induktivität die Spannung und der Strom Phasenverschoben.
+    Die Verläufe werden in Blau und Rot dargestellt.}
+    \speech{LeistungMittlIndu}{2}{Hinzu kommt der Verlauf der Leistung in Grün.
+    Die Leistung pulsiert mit der doppelten Frequenz.
+    Dabei ist die Fläche der positiven Halbwelle Gleich der Fläche der negativen Halbwelle.
+    Es wird somit keine Wirkleistung übertragen.}
 \end{frame}
 
 \begin{frame}
@@ -358,7 +411,7 @@
         Augenblicksleistung an einer Kapazität:
         \begin{itemize}
             \item<1-> Spannung und Strom um $-\pi/2$ phasenverschoben
-            \item<1-> Konstanter Anteil der Augenblicksleistung gleich Null 
+            \item<2-> Konstanter Anteil der Augenblicksleistung gleich Null 
             \item<2-> Augenblicksleistung pulsiert mit doppelter Frequenz
             \item<2-> Aufgenommene Leistung wird vollständig wieder abgegeben
         \end{itemize}
@@ -371,6 +424,13 @@
     }{{\bf Verlauf des Stromes, der Spannung und der zeitabhängigen Leistung an einer kapazitiven Last.} Die Augenblicksleistung weist die 
     doppelte Frequenz gegenüber der Spannung bzw. des Stromes auf. Die positiven und negativen Halbwellen heben sich gegenseitig
     auf, die aufgenommene Leistung wird vollständig wieder abgegeben. \label{BildKapazitiveLast}}
+
+    \speech{LeistungMittlKapa}{1}{Auch bei einer Kapazität ist liegt eine Phasenverschiebung zwischen dem Strom und der Spannung vor.
+    Die jeweiligen Verläufe sind im Grafen Abgebildet.}
+    \speech{LeistungMittlKapa}{2}{Auch hier ist bei der Leistung der Gleichanteil gleich Null.
+    Die Leistung pulsiert mit der doppelten Frequenz.
+    So wird die Aufgenommene Leistung wieder vollständig abgegeben.
+    Die Leistung, welche bei der Übertragung anfällt und keine Wirkleistung darstellt wird auch Blindleistung genannt.}
 \end{frame}
 
 
@@ -443,6 +503,10 @@
         abgegeben.
     }
 
+    \speech{LeistungBlind}{1}{}
+    \speech{LeistungBlind}{2}{}
+    \speech{LeistungBlind}{3}{}
+    \speech{LeistungBlind}{4}{}
 \end{frame}
 
 
@@ -461,6 +525,7 @@
 
     \end{Merksatz}
 
+    \speech{LeistungMrk2}{1}{}
 \end{frame}
 
 
@@ -550,6 +615,11 @@
             \end{minipage}
     }
     
+    \speech{LeistungSchein}{1}{Scheinleistung erklärung
+    Setzt sich aus beiden Leistungsarten zusammen.
+    An einem idealen Widerstand entspricht die Scheinleistung der Wirkleistung am Widerstand.}
+    \speech{LeistungSchein}{2}{}
+    \speech{LeistungSchein}{3}{}
 \end{frame}
 
 \begin{frame}
@@ -585,6 +655,8 @@
         P = \cos(\varphi) \cdot S    \qquad \qquad      Q=S\cdot \sin(\varphi)          \label{GleichungSch1}
     \end{eq}
 
+    \speech{LeistungArten}{1}{}
+    \speech{LeistungArten}{2}{}
 \end{frame}
 
 
@@ -600,6 +672,8 @@
         \end{eq}
 
     \end{Merksatz}
+    
+    \speech{LeistungMrk3}{1}{}
 \end{frame}
 
 
