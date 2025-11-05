@@ -13,6 +13,27 @@
 }
 %\end{frame}
 
+\newvideofile{Wiederholung}{Wiederholung - Frequenzabhängigkeit elektrischer Bauelemente}
+\v{% Video only Frame
+\begin{frame}\ftx{\secname}
+    \begin{Lernziele}{Video - Wiederholung - Frequenzabhängigkeit elektrischer Bauelemente}
+        Nach diesem Video werden Sie die folgenden Lernziele erreicht haben:
+        \begin{itemize}\b{\setlength\itemsep{0.7em}}
+            \item{die Phasenverschiebung bei $R$, $L$ und $C$ bei AC Anregung kennen,}% Wissen
+            \item{das Verhalten von Induktivitäten und Kapazitäten kennen, und} % Wissen
+            \item{die wichtigsten Eigenschaften von $R$, $L$ und $C$ im Vergleich verstehen.} % Können
+        \end{itemize}
+    \end{Lernziele}
+\speech{01Wiederholung1Lernziele}{1}{%
+Wilkommen zum ersten Video des Moduls Schaltungen variabler Frequenz.
+In diesem Video geht es um die Wiederholung einiger Grundlagen bezüglich der Frequenzabhängigkeit elektrischer Bauelemente.
+Zu den Lernzielen dieses Videos gehört, dass Sie die Phasenverschiebung bei Widerständen, Induktivitäten und Kapazitäten kennen,
+das frequenzvariable Verhalten von Induktivitäten und Kapazitäten kennen,
+und die wichtigsten Eigenschaften der linearen Zweipole Widerstand, Induktivität und Kapazität in Bezug auf Frequenzabhängigkeit zu verstehen.
+}% Ende speech
+\end{frame}
+}% Ende Video only Frame
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Frequenzabhängigkeit elektrischer Bauelemente}
@@ -92,6 +113,24 @@
     \end{minipage}
     \speech{folie1}{1}{Dies ist ein Beispiel Text. A + i mal B gleich C komplex. Hundert Volt Spannung.}
 }% end Folien-only
+\speech{01Wiederholung2FrequenzabhaengigkeitElBauelemente}{1}{%
+In diesem Abschnitt werden wir die Phasenverschiebung bei Widerständen, Induktivitäten und Kapazitäten wiederholen.
+Rechts sehen wir dazu die Schaltsymbole der jeweiligen Bauelemente, links die Spannungs- und Stromverläufe bei Anregung mit einer sinusförmigen Wechselspannung.
+Beginnen wir beim elektrischen Widerstand R. 
+Wie im obigen Diagramm dargestellt ist, sind Spannung und Strom bei einem Widerstand immer in Phase.
+Das bedeutet, dass Maxima, Minima und Nulldurchgänge von Spannung und Strom gleichzeitig auftreten.
+}% Ende speech
+\speech{01Wiederholung3FrequenzabhaengigkeitElBauelemente}{2}{%
+Bei Induktivitäten L hingegen eilt der Strom der Spannung um 90 Grad hinterher bei Anregung mit einer sinusförmigen Wechselgröße.
+Das bedeutet, dass der Strom das Maximum erst eine Viertel Periode nach der Spannung erreicht.
+}% Ende speech
+\speech{01Wiederholung4FrequenzabhaengigkeitElBauelemente}{3}{%
+Bei Kapazitäten C ist es genau umgekehrt.
+Hier eilt die Spannung dem Strom um 90 Grad hinterher.
+Das bedeutet, dass die Spannung ihr Maximum erst eine Viertel Periode nach dem Strom erreicht.
+Die Phasenverschiebungen bei Induktivitäten und Kapazitäten beträgt immer betragsmäßig 90 Grad.
+Dadurch können diese Bauelemente keine Wirkleistung verrichten, sondern nur Blindleistung und werden daher auch Blindwiderstände genannt.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -143,11 +182,11 @@
 }
 \b{% Folien-only
 \begin{columns}
-\column{0.35\textwidth}
+\column{0.4\textwidth}
     \textbf{Induktivität}%
     \begin{itemize}
         \item Impedanz: $\underline{Z}_{\mathrm L} = \mathrm{j}\omega L$
-        \item DGL: $\ecv{u_{\mathrm L}} = L \cdot \frac{\d}{\d t}\, \eci{i_{\mathrm L}}$
+        \item Zeitb.: $\ecv{u_{\mathrm L}} = L \cdot \frac{\d}{\d t}\, \eci{i_{\mathrm L}}$
         \item Energie im Magnetfeld
         \item Ströme stetig (keine Sprünge)
     \end{itemize}
@@ -155,7 +194,7 @@
     \textbf{Kapazität}%
     \begin{itemize}
         \item Impedanz: $\underline{Z}_{\mathrm C} = -\mathrm{j}\frac{1}{\omega C}$
-        \item DGL: $\eci{i_{\mathrm C}} = C \cdot \frac{\d}{\d t}\, \ecv{u_{\mathrm C}}$
+        \item Zeitb.: $\eci{i_{\mathrm C}} = C \cdot \frac{\d}{\d t}\, \ecv{u_{\mathrm C}}$
         \item Energie im elektrischen Feld
         \item Spannungen stetig (keine Sprünge)
     \end{itemize}
@@ -165,7 +204,7 @@
     \vspace{2cm}
     \includegraphics{Tikz/pdf/circ_bauteil_C_u_i_mini.pdf}% Schaltsymbol
 
-\column{0.5\textwidth}
+\column{0.45\textwidth}
     \begin{figure}[H]\centering
         \includegraphics[width=0.5\textwidth]{./Bilder/Spule.png}
         \par Spule
@@ -177,6 +216,22 @@
     \end{figure}
 \end{columns}
 }% end Folien-only
+\speech{01Wiederholung3InduktivitaetenKapazitaeten}{1}{%
+Betrachten wir nun das Verhalten von Induktivitäten und Kapazitäten im Vergleich.
+Von links nach rechts sehen Sie zunächst die wichtigsten Eigenschaften von Induktivitäten und Kapazitäten,
+in der Mitte die jeweiligen Schaltsymbole und rechts Fotos von realen Bauelementen, mit denen Induktivitäten und Kapazitäten realisiert werden.
+Beginnen wir mit der Induktivität.
+}% Speech Ende
+\silence{1}%
+\speech{01Wiederholung3InduktivitaetenKapazitaeten}{1}{%
+In der Wechselstromrechnung wird die Induktivität durch ihre Impedanz beschrieben, die proportional zur Kreisfrequenz und Induktivität ist.
+Im Zeitbereich ausgedrückt, ist die U proportional zu L mal der zeitlichen Ableitung von I.
+Dadurch dass die Energie bei Induktivitäten im Magnetfeld gespeichert wird, sind Ströme in Induktivitäten stetig, das heißt sie können keine Sprünge aufweisen.
+Bei Kapazitäten verhält es sich genau umgekehrt. 
+Die Admittanz ist proportional zur Kreisfrequenz und Kapazität, dadurch ist die Impedanz negativ und umgekehrt proportional zur Kreisfrequenz und Kapazität.
+Im Zeitbereich ausgedrückt, ist der I proportional zu C mal der zeitlichen Ableitung von U.
+Dadurch dass die Energie bei Kapazitäten im elektrischen Feld gespeichert wird, sind Spannungen in Kapazitäten stetig, das heißt sie können keine Sprünge aufweisen.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -198,59 +253,67 @@
                 & \textbf{Kapazität} \\[+4pt]   % Col 5
         \hline%
         %\textbf{Symbol}
-        \includegraphics{Tikz/pdf/circ_bauteil_tabelle_text_symbol.pdf}% Symbol (vertikal zentriert)
+        \includegraphics{Tikz/pdf/circ_bauteil_tabelle_text_symbol.pdf}% Symbol (vertikal zentriert); Schriftart entspricht Textfont im Skript (mit Serifen), nicht in den Folien (ohne Serifen)
                 & \includegraphics{Tikz/pdf/circ_bauteil_tabelle_zweipol.pdf}
                 & \includegraphics{Tikz/pdf/circ_bauteil_tabelle_R.pdf}
                 & \includegraphics{Tikz/pdf/circ_bauteil_tabelle_L.pdf}
                 & \includegraphics{Tikz/pdf/circ_bauteil_tabelle_C.pdf} \\[+4pt]
-        \hline &&&&\\[-6pt]
-        %\textbf{Bauteil}
-        %        & Zweipol
-        %        & Widerstand
-        %        & Spule
-        %        & Kondensator \\[+4pt]
-        %\hline &&&&\\[-6pt]
+        \hline &&&&\\[-6pt] % Dummyline für vertikalen Abstand
         \textbf{Einheit}
                 & $ \left[\textit{Form.z.}\right] = \mathrm{Einheit} $ 
                 & $ \left[R\right] = \Omega\ \text{(Ohm)} $     
                 & $ \left[L\right] = \mathrm{H}\ \text{(Henry)} $ 
-                & $ \left[C\right] = \mathrm{F}\ \text{(Farad)} $ \\[+4pt]
-        \hline &&&&\\[-6pt]
-        \textbf{Zeitbereich}
+                & $ \left[C\right] = \mathrm{F}\ \text{(Farad)} $ \\[+10pt]
+        \hline %&&&&\\[-6pt]
+        \textbf{Zeitbereich} $\vphantom{\bigg|}$ % vphantom für vertikalen Abstand
                 & $ \frac{\d}{\d t} $ bzw. $ \int \d t $ 
                 & $ \ecv{u_{\mathrm{R}}} = R \cdot \eci{i_{\mathrm R}} $     
                 & $ \ecv{u_{\mathrm{L}}} = L \cdot \frac{\d}{\d t}\, \eci{i_{\mathrm{L}}} $ 
-                & $ \eci{i_{\mathrm{C}}} = C \cdot \frac{\d}{\d t}\, \ecv{u_{\mathrm{C}}} $ \\[+4pt]
-        \hline &&&&\\[-6pt]
-        \textbf{Frequenzb.}
+                & $ \eci{i_{\mathrm{C}}} = C \cdot \frac{\d}{\d t}\, \ecv{u_{\mathrm{C}}} $ \\[+10pt]
+        \hline %&&&&\\[-6pt]
+        \textbf{Frequenzb.} $\vphantom{\bigg|}$ % vphantom für vertikalen Abstand
                 & $ \mathrm{j}\omega $ bzw. $ \frac{1}{\mathrm{j}\omega} $
                 & $ \ecv{\underline{U}_{\mathrm R}} = R                   \cdot \eci{\underline{I}_{\mathrm R}} $ 
                 & $ \ecv{\underline{U}_{\mathrm L}} = \mathrm{j}\omega L  \cdot \eci{\underline{I}_{\mathrm L}} $
-                & $ \eci{\underline{I}_{\mathrm C}} = \mathrm{j}\omega C  \cdot \ecv{\underline{U}_{\mathrm C}} $ \\[+4pt]
-        \hline &&&&\\[-6pt]
-        \textbf{Impedanz}
+                & $ \eci{\underline{I}_{\mathrm C}} = \mathrm{j}\omega C  \cdot \ecv{\underline{U}_{\mathrm C}} $ \\[+10pt]
+        \hline %&&&&\\[-6pt]
+        \textbf{Impedanz} $\vphantom{\bigg|}$ % vphantom für vertikalen Abstand
                 & $ \underline{Z} = \frac{\ecv{\underline{U}}}{\eci{\underline{I}}} $
                 & $ \underline{Z}_{\mathrm R} = R $ 
                 & $ \underline{Z}_{\mathrm L} = \mathrm{j}\omega L $
-                & $ \underline{Z}_{\mathrm C} = -\mathrm{j}\frac{1}{\omega C} $ \\[+4pt]
-        \hline &&&&\\[-6pt]
-        \textbf{Wirkanteil}
+                & $ \underline{Z}_{\mathrm C} = -\mathrm{j}\frac{1}{\omega C} $ \\[+10pt]
+        \hline %&&&&\\[-6pt]
+        \textbf{Wirkanteil} $\vphantom{\bigg|}$ % vphantom für vertikalen Abstand
                 & $ R = \Re\{\underline{Z}\} $
                 & $ R = \frac{U}{I} $
                 & $ 0 $
-                & $ 0 $ \\[+4pt]
-                \hline &&&&\\[-6pt]
-        \textbf{Blindanteil}
+                & $ 0 $ \\[+10pt]
+                \hline %&&&&\\[-6pt]
+        \textbf{Blindanteil} $\vphantom{\bigg|}$ % vphantom für vertikalen Abstand
                 & $ X = \Im\{\underline{Z}\} $
                 & $ 0 $
                 & $ X_{\mathrm L} = \omega L $
-                & $ X_{\mathrm C} = -\frac{1}{\omega C}$ \\[+4pt]
+                & $ X_{\mathrm C} = -\frac{1}{\omega C}$ \\[+10pt]
         \hline
     \end{tabular}
     } % end resizebox
     \end{table}
     
 % Für Schaltungen variabler Frequenz: Frequenzvariablen Eigenschaften von Bauteilen, dafür zeitvariante 
+\speech{01Wiederholung4VergleichLinearerZweipoleRLC}{1}{%
+Hier sehen Sie zur Zusammenfassung und Übersicht eine Gegenüberstellung der linearen Bauelemente Widerstand R, Induktivität L und Kapazität C.
+Von oben nach unten sind die wichtigsten Größen und Eigenschaften der Bauelemente aufgelistet, von links nach rechts die jeweiligen Bauelemente.
+Für uns relevant für die folgenden Kapitel sind vor allem die komplexen Strom- und Spannungsbeziehungen im Frequenzbereich, also die Impedanzen respektive Admittanzen.
+}% Speech Ende
+\silence{1}%
+\speech{01Wiederholung4VergleichLinearerZweipoleRLC}{1}{%
+Achten Sie bei der Angabe der Reaktanzen X, also der Imaginärteile der Impedanzen Z immer auf die Vorzeichen.
+Die Reaktanz der Kapazität ist negativ, die der Induktivität positiv.
+Umgekehrt ist die Suszeptanz B, das ist der Imaginärteil der Admittanz Y, bei Kapazitäten positiv und bei Induktivitäten negativ.
+Bei Schwierigkeiten bei der komplexen Wechselstromrechnung empfehle ich Ihnen, das Modul 7 periodische Größen nochmals durchzuarbeiten.
+Die Grundlagen der komplexen Wechselstromrechnung sind Vorraussetzung für das Verständnis der folgenden Kapitel.
+Vielen Dank fürs Zuhören.
+}% Speech Ende
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -260,7 +323,6 @@
 \s{
 \subsection{Zweitore (Vierpole)}
 \begin{frame}\ftx{\subsecname}
-
 
     % Wiederholung Eintor
     Die Frequenzabhängigkeit von Eintoren (Zweipole) haben wir in Modul 3 bereits untersucht.  

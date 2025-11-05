@@ -1,6 +1,27 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Logarithmische Darstellung, Frequenzgang, Grenzfrequenz}
+\section{Logarithmische Darstellung, Frequenzgang, Grenzfrequenz}%
 \label{sec:frequenzganglog}%
+%
+\newvideofile{LogDarstellungAllgemeinDefinitionen}{Logarithmische Darstellung - Allgemeines und Definitionen}%
+\v{% Video only Frame
+\begin{frame}\ftx{\secname}
+    \begin{Lernziele}{Video - Logarithmische Darstellung, Allgemeines}
+        Sie lernen in diesem Video:
+        \begin{itemize}\b{\setlength\itemsep{0.7em}}
+        \item{Unterschiede zwischen linearer und logarithmischer Darstellung kennen,}
+        \item{Dezibel als Einheit kennen und zu verwenden, und}
+        \item{Grenzfrequenzen von Filterschaltungen kennen und zu bestimmen.}
+        \end{itemize}
+    \end{Lernziele}
+\speech{04LogDarstellung1Lernziele}{1}{%
+Wilkommen zum Video über logarithmische Darstellungen.
+Sie lernen in diesem Video Unterschiede zwischen linearer und logarithmischer Darstellung kennen.
+Außerdem lernen Sie Dezibel als Einheit kennen und zu verwenden, 
+sowie Grenzfrequenzen von Filterschaltungen kennen und zu bestimmen.
+}% Ende speech
+\end{frame}%
+}% Ende Video only Frame
+%
 \begin{frame}\ftx{\secname}%
 \s{\index{logarithmische Darstellung}%
     % Einleitung
@@ -30,7 +51,7 @@
 \end{frame}%
 
 \begin{frame}\ftx{\secname}%
-% <--- here is an empty page (Skript), dunno why... o.o, disappears if surrounding \begin{frame}...\b{...}\end{frame} is commented out --->
+% <--- here is an empty page (Skript), unknown why, disappears if surrounding \begin{frame}...\b{...}\end{frame} is commented out --->
 \s{% single page comic strips (left and right)
     \begin{figure}[H]
         \begin{subfigure}{.5\textwidth}\centering% left
@@ -69,6 +90,40 @@
             \tiny Quelle: xkcd \#482, \textit{Depth}, \url{https://xkcd.com/485/} (Abruf: 04.04.2024)}%
 \end{columns}%
 }%
+\speech{04LogDarstellung2Comic}{1}{%
+Beginnen wir mit einem lockeren Einstieg in das Thema logarithmische Darstellung.
+Links sehen Sie das obere Drittel des Comic Strips Height von XKCD. 
+Hier wird humorvoll dargestellt, wie eine logarithmische Skala es ermöglich t,
+Objekte in Höhen extrem unterschiedlicher Größenordnungen übersichtlich in einem Diagramm darzustellen.
+Der Comic beginnt mit der Grenze des sichtbaren Teil des Universums in sechs und vierzig Milliarden Lichtjahren Entfernung. 
+Knapp darunter kommt die Grenze von einer Milliarde Lichtjahre. 
+Bei etwas über einer Millionen Lichtjahre liegt die Andromeda Galaxie.
+Die Grenze von Tausend Lichtjahren ist nicht eingezeichnet, liegt aber ungefähr auf Höhe des Orionnebels oder Betageuze.
+Die Höhe im Comic entspricht relativ maßstabsgetreu der Entfernung der dargestellten Objekten im All bei logarithmischer Skalierung.
+}% Ende speech
+\speech{04LogDarstellung2Comic}{2}{%
+Auf dieser Folie sehen Sie den mittleren Teil des Comics.
+Hier sind Objekte von etwas unterhalb von Tausend Lichtjahren bis zum Mond der Erde dargestellt.
+Die Voyager One Raumsonde befindet sich in etwa einen Lichttag entfernung von der Erde.
+Das entspricht in etwa drei mal zehn hoch minus drei Lichtjahren.
+Die Sonne wiederum ist mit circa fünfhundert Lichtsekunden Entfernung ungefähr sechzehn mal zehn hoch minus sechs Lichtjahre entfernt.
+}% Ende speech
+\speech{04LogDarstellung2Comic}{3}{%
+Hier sehen Sie den unteren Teil des Comics, wo wir über den geostationären Orbit bei circa sechsunddreißigtausend Kilometer Höhe hinaus bis zur Erdoberfläche zoomen.
+Die Größe der Objekte ist nicht maßstabsgetreu, um die Objekte erkennbar zu machen, aber die Höhenpositionen sind es.
+Ein gleichmäßiger Abstand auf der Y Achse entspricht dem gleichen Faktor in der Höhe.
+Auf die gleiche Weise können wir auch sehr kleine Größenordnungen darstellen, wie im Comic Depth von XKCD auf der rechten Seite.
+Im ersten Drittel des Comics sehen wir Lebewesen und Objekte ab einer ungefähr menschlichen Größe,
+von Computern, über Mäuse, CPU Sockets, Moskitos, Staubmilben, Haare, sowie nicht näher definierte Elemente einer Prozessoreinheit in verschiedenen Größenordnungen.
+}% Ende speech
+\speech{04LogDarstellung2Comic}{4}{%
+Im mittleren Teil des Depth Comics sehen wir Rust Mites zu Deutsch Rost Milben mit einer Größe im zwei bis dreistelligen Mikrometerbereich. 
+Darunter kommen Spermien, Baktereophagen, Carbon Nanotubes bis hin zu regelmäßig angeordneten Silizium Atomen.
+}% Ende speech
+\speech{04LogDarstellung2Comic}{5}{%
+Am Ende des Comics sehen wir eine Elektronenwolke, einen Siliziumkern und schließlich ein Proton mit einer Größe von etwa einem Femtometer,
+also zehn hoch minus fünfzehn Metern, neben einigen Anspielungen und Witzen.
+}% Ende speech
 \end{frame}%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -130,7 +185,24 @@
                     %\item keine negativen log. Werte für reelle x, y
                 \end{itemize}
         \end{columns}
-    }
+    }%
+\speech{04LogDarstellung3Potenzfunktionen}{1}{%
+Vergleichen wir nun die lineare Darstellung von Potenzfunktionen auf der linken Seite 
+mit der doppelt-logarithmischen Darstellung auf der rechten Seite.
+Wie in den beiden Comics zuvor, ist es möglich in logarithmischer Darstellung 
+sehr große Wertebereiche übersichtlich darzustellen.
+Ein weiterer Vorteil der doppelt-logarithmischen Darstellung ist, 
+dass Potenzfunktionen als Geraden dargestellt werden können,
+was gerade bei der Analyse von Amplitudengängen von Filtern und Verstärkern hilfreich ist.
+}% Ende speech
+\silence{1}
+\speech{04LogDarstellung3Potenzfunktionen}{1}{%
+In der linearen Darstellung links, sind alle 
+Potenzfunktionen mit Exponenten ungleich null oder eins gekrümmt.
+In der doppelt-logarithmischen Darstellung rechts hingegen, 
+sind alle Potenzfunktionen Geraden mit Steigung entsprechend ihrem Exponenten.
+Eine Verschiebung der Kurve wird durch Multiplikation und eine Streckung durch Änderung des Exponenten erreicht.
+}% Ende speech
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -253,8 +325,41 @@
     Üblich ist die Bezeichnungen $G$ (von engl. Gain) für die Verstärkung von Bauteilen oder $D$ (von engl. Damping) für deren Dämpfung.
     Beide Angaben werden typischerweise in $\dB$ und falls nicht näher deklariert in Bezug auf Spannungspegel angegeben.
     In Datenblättern wird die Dämpfung in $\dB$ teilweise auch mit negativem Vorzeichen angegeben.
-}
+}%
 
+
+\speech{04LogDarstellung4Dezibel}{1}{%
+Kommen wir nun zur Definition des Dezibels.
+Das Dezibel ist eine Hilfsmaßeinheit zur Kennzeichnung dekadisch-logarithmischer Verhältnisse zweier einheitengleicher Größen.
+Verwendung findet es unter anderem in der Signaltheorie und Nachrichtentechnik, beispielsweise um die Verstärkung oder Dämpfung
+eines Bauteils oder einer Signalstrecke anzugeben. In unserem Fall dient es zur Beschreibung des Amplitudenganges von Filtern.
+}% Ende speech
+\silence{1}
+\speech{04LogDarstellung4Dezibel}{1}{%
+Das Dezibel ist definiert als das zehnfache des dekadisch-logarithmischen Verhältnisses zweier einheitengleicher Leistungsgrößen, 
+wie in der ersten Gleichung gezeigt ist.
+Der Faktor zehn stammt von der Umrechnung der Basiseinheit Bel in Dezibel, welche auf Alexander Graham Bell zurückgeht.
+Da die Leistung proportional zum Quadrat von Spannung oder Strom ist, 
+muss bei der Verwendung von Dezibel als Einheit unterschieden werden,
+ob es sich auf Leistungsgrößen oder sogenannte Leistungswurzelgrößen bezieht.
+Der Faktor zwei bei letzterer entspricht der Quadratproportionalität, 
+welche vor die Logarithmusfunktion gezogen wird.
+}% Ende speech
+\silence{2}
+\speech{04LogDarstellung4Dezibel}{1}{%
+In der Tabelle unten sind typische Dezibelwerte für bestimmte Spannungsverhältnisse aufgelistet, 
+welche eine schnelle Abschätzung ermöglichen.
+Anders als die SI-Einheit Neper, welche auf dem natürlichen Logarithmus basiert, 
+ist das Dezibel in der Praxis weiter verbreitet.
+Das liegt vor allem daran, dass die Umrechnung von typischen Spannungsverhältnissen in Dezibel 
+relativ einfach mit Hilfe von Faustformeln möglich ist.
+Drei Dezibel entsprechen beispielsweise dem Faktor zwei bei Leistungsgrößen, 
+wie bei der Messung des Schalldruckpegels in Bezug auf eine Nenn Schall Leistung. 
+Bei Spannungen entsprechen drei Dezibel dem Faktor Wurzel zwei, sechs Dezibel dem Faktor zwei 
+und zwanzig Dezibel entsprechen dem Faktor zehn.
+Die Addition der Dezibelwerte entspricht der Multiplikation der entsprechenden Verhältnisse. 
+Das heißt sechsundzwanzig Dezibel entsprechen zum Beispiel dem Faktor zwanzig bei Spannungen.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -381,12 +486,52 @@
             }
         \end{minipage}\hfill
     \end{minipage}\hfill
-}
+}%
+\speech{04LogDarstellung5Grenzfrequenz}{1}{%
+Kommen wir nun zur Grenzfrequenz F G einfacher Filterschaltungen und der daraus abgeleiteten Grenzkreisfrequenz Omega G.
+Für einfache Filterschaltungen ist die Grenzfrequenz definiert als die Frequenz, bei der das Verhältnis von Ausgangs- zu Eingangsspannung
+den Wert Eins durch Wurzel Zwei annimmt, wie in der Gleichung gezeigt ist.
+Dies entspricht einer Dämpfung von drei Dezibel beziehungsweise einer Ausgangsleistung, die die Hälfte der Eingangsleistung beträgt.
+}% Ende speech
+\speech{04LogDarstellung5Grenzfrequenz}{2}{%
+Die Grenzfrequenz teilt den Frequenzbereich des Amplitudenganges in einen Durchlassbereich und einen Sperrbereich.
+Im Durchlassbereich ist die Ausgangsspannung größer als der Wert bei der Grenzfrequenz, im Sperrbereich kleiner.
+}% Ende speech
+\speech{04LogDarstellung5Grenzfrequenz}{3}{%
+Als Beispiel betrachten wir einen R C Tiefpass erster Ordnung.
+Anders als ein idealer Tiefpass mit keiner Dämpfung im Durchlassbereich und unendlicher Dämpfung im Sperrbereich mit einer unendlich steilen Flanke dazwischen,
+zeigt der reale Tiefpass einen kontinuierlichen Übergang zwischen Durchlass- und Sperrbereich.
+Die Grenzfrequenz dient hier als sinnvolle Abgrenzung zwischen beiden Bereichen.
+Im folgenden Video werden wir die Grenzkreisfrequenz Omega G bei des gezeigten Tiefpasses bestimmen und den Frequenzgang anschließend in einem Bode-Diagramm darstellen.
+Vielen Dank für Ihre Aufmerksamkeit. 
+}% Ende speech
 \end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Tiefpass 1. Ordnung}
-\label{sec:frequenzganglog:tiefpass}
+\label{sec:frequenzganglog:tiefpass}%
+%
+\newvideofile{LogDarstellungFrequenzgangFilterOrdnung}{Logarithmische Darstellung - Frequenzgang von Filterschaltungen verschiedener Ordnung}%
+\v{% Video only Frame
+\begin{frame}\ftx{\secname}
+    \begin{Lernziele}{Video - Logarithmische Darstellung, Frequenzgang von Filterschaltungen verschiedener Ordnung}
+        Sie lernen in diesem Video:
+        \begin{itemize}\b{\setlength\itemsep{0.7em}}
+        \item Bodediagramme zu konstruieren und zu interpretieren.
+        \item Funktionsweise von Bandpass- und Bandsperrfilter kennen und verstehen.
+        \item Aufbau und Verhalten von Filtern höherer Ordnung kennen und verstehen. 
+        \end{itemize}
+    \end{Lernziele}
+\speech{05LogDarstellung1Lernziele}{1}{%
+Wilkommen zum Video über logarithmische Darstellungen von Frequenzgängen von Filterschaltungen verschiedener Ordnung.
+Sie lernen in diesem Video Bodediagramme zu konstruieren und zu interpretieren.
+Zudem lernen Sie die Funktionsweise von Bandpass- und Bandsperrfiltern kennen und verstehen.
+Abschließend lernen Sie den prinzipiellen Aufbau und das frequenzabhängige Übertragungsverhalten von Filtern höherer Ordnung kennen und verstehen.
+}% Ende speech
+\end{frame}%
+}% Ende Video only Frame
+%
 \begin{frame}\ftx{\subsecname}%
 \index{Filter>Tiefpass}%
 \s{%
@@ -506,7 +651,34 @@
                 \onslide<7->{\includegraphics{Tikz/pdf/plot_tiefpass_detail_phasengang_log.pdf}}
         \end{minipage}\hfill
     \end{minipage}\hfill
-}
+}%
+\speech{05LogDarstellung2TiefpassErsterOrdnung}{1}{%
+Kommen wir nun zurück zum Tiefpass erster Ordnung.
+Auf der linken Seite sehen Sie die Schaltung eines RC-Tiefpasses erster Ordnung mit dem zugehörigen 
+Frequenzgang, Amplitudengang und Phasengang, wie in den Videos zu Frequenzgängen bereits hergeleitet wurde.
+Beginnen wir mit der Bestimmung der Grenzkreisfrequenz Omega G, bevor wir die logarithmische Darstellung betrachten.
+}% Ende speech
+\speech{05LogDarstellung2TiefpassErsterOrdnung}{2}{%
+Der Amplitudengang A von Omega G wird gleichgesetzt mit Eins durch Wurzel Zwei.
+}% Ende speech
+\speech{05LogDarstellung2TiefpassErsterOrdnung}{3}{%
+Durch Umstellen erhalten wir den Term Omega G ist gleich dem Kehrwert von R C.
+}% Ende speech
+\speech{05LogDarstellung2TiefpassErsterOrdnung}{4}{%
+Die Phasendifferenz bei der Grenzkreisfrequenz beträgt dabei minus 45 Grad.
+}% Ende speech
+\speech{05LogDarstellung2TiefpassErsterOrdnung}{5}{%
+Setzen wir Omega G in die Gleichungen für den Frequenzgang, Amplitudengang und Phasengang ein,
+können wir die Größen R und C eliminieren und erhalten normierte Ausdrücke in Abhängigkeit von Omega durch Omega G.
+Der Frequenzgang lässt sich so Komponenten unabhängig nur in Abhängigkeit der normierten Frequenz darstellen. 
+}% Ende speech
+\speech{05LogDarstellung2TiefpassErsterOrdnung}{6}{%
+Für den Amplitudengang ergibt sich in doppelt logarithmischer Darstellung der folgende Verlauf, hier für eine Grenzkreisfrequenz von Hundert pro Sekunde.
+}% Ende speech
+\speech{05LogDarstellung2TiefpassErsterOrdnung}{7}{%
+Für den Phasengang in einfach logarithmischer Darstellung, das heißt mit linearer Y Achse, ergibt sich der folgende gezeigte Verlauf.
+Die gemeinsame Darstellung von Amplituden- und Phasengang wie hier gezeigt, wird als Bode-Diagramm bezeichnet und ist die übliche Darstellungsform von Frequenzgängen.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -566,6 +738,11 @@
     Beim Phasengang ist in linearer Darstellung die Steigung (Ableitung) für $\omega \to 0$ minimal und negativ.
     In logarithmischer Darstellung scheint $\varphi(\omega)$ für $\omega \to 0$ jedoch am flachesten (Steigung gegen $0$).
 }
+\speech{05LogDarstellung3TiefpassLinLog}{1}{%
+Hier noch einmal im Vergleich noch einmal links die lineare und rechts die logarithmische Darstellung des Amplituden- und Phasenganges eines Tiefpasses erster Ordnung.
+Deutlich zu erkennen ist der Unterschied in der Skalierung der Achsen. Im Bode Diagramm rechts lassen sich deutlich größere Wertebereiche abbilden.
+Zudem ist insbesondere der Amplitudengang deutlich einfacher zu interpretieren und zu skizzieren.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -573,18 +750,41 @@
 \subsubsection{Tiefpass 1. Ordnung, Amplitudengang}
 \begin{frame}\ftx{\subsubsecname}\centering
     \includegraphics{Tikz/pdf/plot_tiefpass_detail_amplitudengang_log_norm_detail.pdf}
+\speech{05LogDarstellung4AmplitudengangDetail}{1}{%
+Sehen wir uns den Amplitudengang eines Tiefpasses erster Ordnung im Detail an.
+Wie zu erkennen ist, ist der Verlauf im Durchlassbereich nahezu konstant bei zehn hoch null, also dem Faktor eins, was null Dezibel entspricht.
+Im Sperrbereich fällt der Amplitudengang mit einer konstanten Steigung von minus zwanzig Dezibel pro Dekade ab, das entspricht dem Faktor zehn pro Dekade.
+Wie wir später noch sehen werden, bestimmt die Ordnung des Filters die Steigung im Sperrbereich.
+Das liegt daran, dass der Amplitudengang im Sperrbereich bei Filtern erster Ordnung näherungsweise proportional zu eins durch Omega ist.
+Die Grenzfrequenz liegt bei exakt eins durch Wurzel zwei also circa null Komma sieben null sieben. Das entspricht sehr genau den minus drei Dezibel.
+}% Ende speech
+\silence{1}
+\speech{05LogDarstellung4AmplitudengangDetail}{1}{%
+Die Y Achsen Schritte sind links einheitenlos in Dekaden angegeben und rechts in zwanzig Dezibel Schritten.
+Üblich ist eine der beiden Darstellungen, hier sind zur Verdeutlichung der Dezibel Skala beide Darstellungen gezeigt.
+Die linearen Zwischenschritte in Null Komma Eins Schritten einer Dekade verteilen sich durch die logarithmische Skalierung entsprechend.
+Zu erkennen ist, dass sich viele dieser Zwischenschritte sehr exakt mit ganzzahligen Dezibel Schritten auf der rechten Seite decken, wodurch die Umrechnung zwischen beiden Skalen erleichtert wird.
+Das heißt Null komma eins entspricht minus zwanzig Dezibel, Null komma zwei entspricht minus vierzehn Dezibel, null Komma vier entspricht minus acht Dezibel und so weiter.
+}% Ende speech
 \end{frame}
+%
 \subsubsection{Tiefpass 1. Ordnung, Phasengang}
 \begin{frame}\ftx{\subsubsecname}\centering
     \includegraphics{Tikz/pdf/plot_tiefpass_detail_phasengang_log_norm_detail.pdf}
+\speech{05LogDarstellung5PhasengangDetail}{1}{%
+Beim Phasengang eines Tiefpasses erster Ordnung in halb logarithmischer Darstellung, sehen wir, 
+dass der Verlauf im Durchlassbereich bei null Grad beginnt und sich asymptotisch auf minus neunzig Grad im Sperrbereich zubewegt.
+Der Übergangsbereich um die Grenzfrequenz ist durch eine S Kurve gekennzeichnet dem Wendepunkt bei der Grenzfrequenz mit minus fünfundvierzig Grad.
+Die S Kurve ist symmetrisch um diesen Wendepunkt und ungefähr drei bis vier Dekaden breit.
+}% Ende speech
 \end{frame}
-}
+}% End Beamer only
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Vergleich Tief- und Hochpass 1. Ordnung}
 \label{sec:frequenzganglog:vergleichtiefpasshochpass}
 \begin{frame}\ftx{\subsubsecname}
-\s{
+\s{%
     Abbildung \ref{plot:tiefpass:hochpass:vergleich} zeigt die Frequenzgänge eines Tiefpass 
     und eines Hochpass 1. Ordnung im Bode-Diagramm zum Vergleich. 
     Der Frequenzbereich (x-Achse) ist in beiden Fällen auf die jeweilige Grenzfrequenz normiert.
@@ -605,8 +805,8 @@
         \caption{Vergleich Tief- und Hochpass 1. Ordnung, Bode-Diagramme}
         \label{plot:tiefpass:hochpass:vergleich}
     \end{figure}
-}
-\b{
+}%
+\b{%
     \centering
     \begin{columns}
         \column{0.5\textwidth}\centering\textbf{Tiefpass}
@@ -616,7 +816,17 @@
         \includegraphics{Tikz/pdf/plot_hochpass_detail_amplitudengang_log_norm.pdf}\hfill%
         \includegraphics{Tikz/pdf/plot_hochpass_detail_phasengang_log_norm.pdf}%
     \end{columns}
-}
+}%
+\speech{05LogDarstellung6TiefpassHochpassVergleich}{1}{%
+Beim Vergleich der Bode-Diagramme von Tief- und Hochpass erster Ordnung fällt auf,
+dass beide Filtertypen spiegelbildliche Amplitudengänge besitzen.
+Der Tiefpass sperrt bei hohen Frequenzen, während der Hochpass bei niedrigen Frequenzen sperrt.
+Die Dämpfungssteigung im Sperrbereich beträgt bei beiden Filtertypen betragsmäßig zwanzig Dezibel pro Dekade.
+Die Phasengänge hingegen wirken auf den ersten Blick identisch.
+Sie unterscheiden sich jedoch im Wertebereich.
+Beim Tiefpass bewegt sich der Phasengang S förmig von null Grad auf minus neunzig Grad,
+während der Hochpass von plus neunzig Grad auf null Grad verläuft.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -736,8 +946,8 @@
     Gut zu erkennen ist das Hochpassverhalten im unteren Sperrbereich (mit $+20\dB/\mathrm{Dek}$ und $\varphi(\omega) > 0\degree$)
     und das Tiefpassverhalten im oberen Sperrbereich (mit $-20\dB/\mathrm{Dek}$ und $\varphi(\omega) > 0\degree$).
 
-}
-\b{
+}%
+\b{%
     \begin{columns}[c]
         \column{0.6\textwidth}\centering% linke Spalte
             \resizebox{\linewidth}{!}{\includegraphics{Tikz/pdf/plot_bandpass_amplitudengang_no_xaxis_small.pdf}}\hfill%
@@ -754,7 +964,28 @@
     \end{columns}
     Frequenzgang\footnote{Bei rückwirkungsfreier Serienschaltung aus Multiplikation der Einzelnfrequenzgänge}:%
     $\underline{F}_{BP}(\mathrm{j}\omega)=\underline{F}_{TP}(\mathrm{j}\omega)\cdot\underline{F}_{TP}(\mathrm{j}\omega)$%
-}
+}%
+\speech{05LogDarstellung7BandpassZweiterOrdnung}{1}{%
+Hoch- und Tiefpass können auch kombiniert werden, um Bandpass- und Bandsperren-Filter zu realisieren.
+Hier sehen Sie exemplarisch den Bode-Diagramm eines Bandpasses zweiter Ordnung,
+der durch die Serienschaltung eines Tiefpasses und eines Hochpasses erster Ordnung realisiert wurde.
+Wie im Schaltbild oben rechts zu sehen ist, sorgt ein Spannungsfolger zwischen beiden Filtern für Rückwirkungsfreiheit.
+Dadurch kann der Gesamtfrequenzgang als Produkt der Einzelfrequenzgänge berechnet werden.
+}% Ende speech
+\silence{1}%
+\speech{05LogDarstellung7BandpassZweiterOrdnung}{1}{%
+Liegt die Grenzfrequenz des Hochpasses unterhalb der Grenzfrequenz des Tiefpasses, 
+so wird der Bereich zwischen beiden Grenzfrequenzen durch gelassen, während Frequenz außerhalb dieses Frequenzbandes gesperrt werden.
+Die Differenz der beiden Grenzfrequenzen definiert die Bandbreite des Filters und damit die Breite des durchgelassenen Frequenzbandes.
+Die Mittenfrequenz liegt dabei im Bodediagramm exakt in der Mitte zwischen beiden Grenzfrequenzen.
+Sie ist definiert als geometrisches Mittel der beiden Grenzfrequenzen, dass heißt als Wurzel aus dem Produkt beider Grenzfrequenzen.
+}% Ende speech
+\silence{2}%
+\speech{05LogDarstellung7BandpassZweiterOrdnung}{1}{%
+Links im Bode Diagramm sind die Sperrbereiche und der Durchlassbereich markiert, sowie die im jeweiligen Sperrbereich dominierenden Filtertypen.
+Eine Bandsperre kann im Prinzip durch eine Art Parallelschaltung von Tief- und Hochpass realisiert werden, wird hier jedoch nicht näher erläutert. 
+Bei Bandsperren wird umgekehrt ein Frequenzband herausgefiltert, während Frequenzen außerhalb des Bandes durchgelassen werden.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -763,11 +994,24 @@
 \subsubsection{Bandpass 2. Ordnung - Amplitudengang, Detail}
 \begin{frame}\ftx{\subsubsecname}\centering
     \includegraphics{Tikz/pdf/plot_bandpass_amplitudengang.pdf}
+\speech{05LogDarstellung8BandpassAmplitudengangDetail}{1}{%
+Sehen wir uns den Amplitudengang des Bandpasses im Detail an. Der Gesamt Amplitudengang entspricht genau der Überlagerung der Amplitudengänge von Tief- und Hochpass.
+Im Durchlassbereich zwischen den beiden Grenzfrequenzen liegt der Amplitudengang nahezu konstant bei eins, also null Dezibel.
+Außerhalb des Durchlassbereiches fällt der Amplitudengang mit einer Steigung von jeweils zwanzig Dezibel pro Dekade ab.
+Die Ordnung des Filters bemisst sich an der summierten Steilheit der Flanken aller Sperrbereiche.
+In diesem Fall ist das zwei mal zwanzig Dezibel pro Dekade, da es zwei Flanken gibt, was einer Gesamtsteilheit von vierzig Dezibel pro Dekade entspricht.
+Da wir die Schaltung des Filters kennen, können wir die Ordnung auch daraus ableiten, dass der Bandpass aus zwei Filtern erster Ordnung besteht, also insgesamt zweiter Ordnung ist. 
+}% Ende speech
 \end{frame}
 
 \subsubsection{Bandpass 2. Ordnung - Phasengang, Detail}
 \begin{frame}\ftx{\subsubsecname}\centering
     \includegraphics{Tikz/pdf/plot_bandpass_phasengang.pdf}
+\speech{05LogDarstellung9BandpassPhasengangDetail}{1}{%
+Beim Phasengang können wir gut die Überlagerung der Phasengänge von Tief- und Hochpassverhalten erkennen.
+In der Mittenfrequenz heben sich die Phasenverschiebungen beider Filtertypen gegenseitig auf, sodass die Gesamtphasenverschiebung null Grad beträgt.
+Im unteren Sperrbereich dominiert das Hochpassverhalten mit einer positiven Phasenverschiebung, während im oberen Sperrbereich das Tiefpassverhalten mit einer negativen Phasenverschiebung dominiert.
+}% Ende speech
 \end{frame}
 }% Ende Beamer-only
 
@@ -805,5 +1049,13 @@
 }
 \b{
     \includegraphics{Tikz/pdf/plot_tiefpass_5_ord_amplitudengang_vergleich.pdf}
-}
+}%
+\speech{05LogDarstellung10HoehereOrdnung}{1}{%
+In der Praxis gibt es eine Vielzahl von Filtern unterschiedlicher Bauart und Ordnung.
+Hier sind exemplarisch einige Amplitudengänge von typischen Tiefpass Filtern höherer Ordnung dargestellt.
+Wie zu erkennen ist, unterscheiden sich die gezeigten Filter wesentlich im Verlauf des Amplitudenganges.
+Ein gleichmäßigerer Verlauf kann auf Kosten einer geringeren Steilheit im Sperrbereich einhergehen,
+während eine steilere Flanke im Sperrbereich mit stärkeren Schwankungen im Durchlassbereich einhergehen kann. 
+Die Wahl eines geeigneten Filters hängt stark von der jeweiligen Anwendung ab.
+}% Ende speech
 \end{frame}

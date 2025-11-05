@@ -26,6 +26,29 @@
 \end{Lernziele}
 \end{frame}
 
+\newvideofile{FrequenzgangDefinitionenBspTiefpass}{Frequenzgang: Definitionen, Beispiel Tiefpass}
+\v{% Video only Frame
+\begin{frame}\ftx{\secname}
+    \begin{Lernziele}{Video - Frequenzgang, Definitionen, Beispiel Tiefpass}
+        Sie lernen in diesem Video:
+        \begin{itemize}\b{\setlength\itemsep{0.7em}}
+            \item{die Definition von Frequenzgang, Amplitudengang und Phasengang kennen,}% Wissen, Verständnis
+            \item{Frequenzgänge anhand der Schaltungstopologie algebreaisch zu bestimmen,}% Anwendung
+            \item{und die Funktionsweise und das Grenzverhalten einfacher Tiefpässe und Hochpässe zu bestimmen.}% Analyse
+        \end{itemize}
+    \end{Lernziele}
+\speech{02Frequenzgang1Lernziele}{1}{%
+Wilkommen zum Video über den Frequenzgang, Amplitudengang und Phasengang.
+Sie lernen in diesem Video die Definition und Bedeutung der Begriffe Frequenzgang, Amplitudengang und Phasengang kennen und verstehen.
+Am Beispiel eines einfachen Tiefpassfilters lernen Sie den Frequenzgang anhand der Schaltungstopologie zu berechnen, 
+dessen Funktionsweise zu verstehen und dessen Grenzverhalten zu analysieren. 
+Gleiches wird für einen einfachen Hochpassfilter durchgeführt.
+}% Ende speech
+\end{frame}
+}% Ende Video only Frame
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}\ftx{\secname}
 \b{%
     \begin{minipage}[t][3.5cm][t]{\textwidth}% upper half
@@ -61,10 +84,40 @@
         % Currently linear change in amplitude and phase. Could also use "real" change, e.g. Tiefpass behaviour  
     \end{minipage}%
 }%
+\speech{02Frequenzgang2ZweitorUebertragungsverhalten}{1}{%
+Beginnen wir mit der Analyse des frequenzvariablen Verhaltens elektrischer Netze in Form von Zweitoren.
+In der dargestellten Abbildung sehen wir das einfachste Beispiel eines Zweitors in einem elektrischen Netzwerk.
+Das Netzwerk sei gespeist von der Quelle links und über das Zweitor in der Mitte mit einer Last rechts verbunden.
+}% Ende speech
+\speech{02Frequenzgang2ZweitorUebertragungsverhalten}{2}{%
+Wie sieht das Übertragungsverhalten des Zweitors aus? 
+Wie wirkt es das Zweitor auf die Signale U 1 oder I 1 am Eingang im Vergleich zu den Signalen U 2 oder I 2 am Ausgang aus?
+}% Ende speech
+\speech{02Frequenzgang2ZweitorUebertragungsverhalten}{3}{%
+Für unsere Anwendungsfälle gehen wir idealerweise immer von linearen und zeitinvarianten Systemen aus, kurz LZI-Systeme.
+Diese bringen einige Eigenschaften mit sich, die wir uns nun anschauen wollen.
+}% Ende speech
+\speech{02Frequenzgang2ZweitorUebertragungsverhalten}{4}{%
+Wird ein LZI-System mit einer sinusförmigen Spannung U 1 mit der Kreisfrequenz Omega angeregt,
+wie in der Grafik rechts dargestellt ist, so erhalten wir aufgrund der Linearität ebenfalls eine sinusförmige Spannung U 2 am Ausgang. 
+}% Ende speech
+\speech{02Frequenzgang2ZweitorUebertragungsverhalten}{5}{%
+Die Sinusförmige Ausgangsspannung hat dabei die selbe Frequenz wie die Eingangsspannung, das heißt Omega zwei gleich Omega eins, kurz Omega. 
+Die Spannung am Ausgang kann sich jedoch in der Amplitude und Phase von der Eingangsspannung unterscheiden.
+}% Ende speech
+\speech{02Frequenzgang2ZweitorUebertragungsverhalten}{5}{%
+Beim Analysieren von Zweitoren ist es daher interessant zu wissen, wie groß die Phasenverschiebung Delta Phi zwischen Ein- und Ausgangsspannung ist und 
+wie das Amplitudenverhältnis U zwei Dach durch U eins Dach aussieht.
+}% Ende speech
+\speech{02Frequenzgang2ZweitorUebertragungsverhalten}{6}{%
+Die Phasenverschiebung und Amplitudenverhältnis sind dabei in der Regel frequenzabhängig, also Funktionen der Kreisfrequenz Omega, 
+wie hier rechts im Diagramm für unterschiedliche Frequenzen dargestellt ist.
+}% Ende speech Tonlose Slides für Quasi Animation durch Overlay
+\silence{7}
+\silence{8}
+\silence{9}
+\silence{10}
 \end{frame}
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -149,6 +202,26 @@
 %Der Frequenzgang bezieht sich in der Regel auf Spannungen, nicht auf Ströme, da in der Regel Spannungs- 
 %statt Stromquellen verwendet werden. In diesem Skript bezieht sich der Frequenzgang daher immer auf Spannungen.
 \end{columns}
+\speech{02Frequenzgang3Definitionen}{1}{%
+Kommen wir nun zu den Definitionen von Frequenzgang, Amplitudengang und Phasengang.
+Beginnen wir mit dem Zweitor, dem Grundbaustein unserer Analyse.
+Das Zweitor wird mit einer sinusförmigen Spannung U eins angeregt und befindet sich im eingeschwungenen Zustand.
+}% Ende speech
+\speech{02Frequenzgang3Definitionen}{2}{%
+Das System sei linear und zeitinvariant. Das bedeutet, dass die Sinusform am Ausgang U zwei erhalten bleibt.
+Die Ausgangsspannung kann sich jedoch in Amplitude und Phase von der Eingangsspannung unterscheiden.
+Wie beschreiben wir nun die Änderung von Eingangs- zu Ausgangsspannung?
+}% Ende speech
+\speech{02Frequenzgang3Definitionen}{3}{%
+Hier kommt der Frequenzgang ins Spiel. Der Frequenzgang F von J Omega beschreibt das Verhältnis der komplexen Ausgangsspannung U zwei zur komplexen Eingangsspannung U eins.
+Der Frequenzgang kann auch in Polarkoordinaten durch den Amplitudengang und den Phasengang ausgedrückt werden.
+}% Ende speech
+\speech{02Frequenzgang3Definitionen}{4}{%
+Der Amplitudengang A von Omega beschreibt den Betrag des Frequenzganges und damit das Amplitudenverhältnis zwischen Ausgangs- und Eingangsspannung.
+}% Ende speech
+\speech{02Frequenzgang3Definitionen}{5}{%
+Der Phasengang Phi von Omega beschreibt die Phase des Frequenzganges und damit die Phasendifferenz zwischen Ausgangs- und Eingangsspannung.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -338,6 +411,26 @@
             &\text{mit}\quad a,\beta \in \mathbb{R}\\
     \end{align}
     }% COMMENT ENDE
+
+\speech{02Frequenzgang4EinfacherTiefpass}{1}{%
+Nehmen wir das hier dargestellte R C Serienglied als Beispiel eines Zweitors. 
+Mit der Eingangsspannung über beiden Bauteilen und der Ausgangsspannung über der Kapazität handelt es sich um einen einfachen Tiefpass-Filter.
+Der Name Tiefpass leitet sich von dem Verhalten her, dass Signale tiefer Frequenzen nahezu unverändert passieren, 
+Signale hoher Frequenzen jedoch stark gedämpft werden.
+}% Ende speech
+\speech{02Frequenzgang4EinfacherTiefpass}{2}{%
+Den Frequenzgang des Tiefpasses können wir mittels der komplexen Wechselstromrechnung bestimmen.
+Durch Anwendung der komplexen Spannungsteilerregel und Vereinfachung erhalten wir die rechts dargestellte Gleichung für den Frequenzgang.
+Das Spannungsverhältnis entspricht dem Verhältnis der Impedanz der Kapazität zur Summe der Impedanzen von Widerstand und Kapazität.
+Durch Erweiterung mit J Omega C lässt sich der Bruch deutlich vereinfachen. 
+Die kartesische Form am Ende erhalten wir durch Erweiterung des Bruches mit dem konjugiert komplexen Wert des Nenners. 
+}% Ende speech
+\speech{02Frequenzgang4EinfacherTiefpass}{3}{%
+Für den Amplitudengang bietet sich die Form mit dem Nenner 1 plus J Omega C R an.
+Der Gesamtbetrag entspricht dem Betrag des Zählers, hier eins, durch den Betrag des Nenners.
+Für den Phasengang bietet sich die kartesische Form an, da hier Real- und Imaginärteil direkt abgelesen werden können.
+Der Nenner hat als rein reelle Größe keinen Einfluss auf die Phasenlage.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -484,6 +577,32 @@
     Da es physikalisch keine negativen Frequenzen gibt, gilt $\omega>0 \rightarrow x>0$, wodurch der Wertebereich des Phasengangs 
     nur den halben Wertebereich des Arcustangens abdeckt, also von $-90\degree$ bis $0\degree$.
 }%
+\speech{02Frequenzgang5EinfacherTiefpassGrenzverhalten}{1}{%
+Betrachten wir nun das Grenzverhalten des Tiefpasses für sehr niedrige und sehr hohe Frequenzen.
+Dazu bestimmen wir die Grenzwerte des Amplitudengangs und des Phasengangs.
+}% Ende speech
+\speech{02Frequenzgang5EinfacherTiefpassGrenzverhalten}{2}{%
+Für Omega gegen null, verschwindet der Term Omega C R im Nenner des Amplitudengangs.
+Der Amplitudengang geht gegen eins, was bedeutet, dass der Tiefpass bei sehr niedrigen Frequenzen kaum dämpft.
+Für Omega gegen unendlich wächst der Term Omega C R stark an.
+Der Amplitudengang geht gegen null, was bedeutet, dass der Tiefpass bei sehr hohen Frequenzen stark dämpft.
+}% Ende speech
+\speech{02Frequenzgang5EinfacherTiefpassGrenzverhalten}{3}{%
+Die gezeigten Grenzwerte lassen sich gut anhand des Schaltbildes erklären.
+Bei einer Gleichspannung am Eingang sperrt die Kapazität, wodurch die gesamte Spannung am Ausgang anliegt.
+Bei sehr hohen Frequenzen verhält sich die Kapazität wie ein Kurzschluss,
+wodurch die Ausgangsspannung gegen null geht.
+Als passives Zweitor, kann der gezeigte Tiefpass niemals verstärken, das heißt der Amplitudengang ist immer kleiner oder gleich eins.
+}% Ende speech
+\speech{02Frequenzgang5EinfacherTiefpassGrenzverhalten}{4}{%
+Bei der Grenzwertbetrachtung des Phasenganges hilft es, die Form der Arkustangensfunktion zu kennen.
+Für Omega gegen null geht der Phasengang gegen null Grad, was bedeutet, dass der Tiefpass bei sehr niedrigen Frequenzen kaum Phasenverschiebung aufweist.
+Für Omega gegen unendlich geht der Phasengang gegen minus neunzig Grad, was bedeutet, dass der Tiefpass bei sehr hohen Frequenzen eine Phasenverschiebung bis minus neunzig Grad aufweist.
+}% Ende speech
+\speech{02Frequenzgang5EinfacherTiefpassGrenzverhalten}{5}{%
+Hier sehen wir die grafische Darstellung des Amplituden- und Phasenganges in linearer Skalierung.
+Da keine negativen Frequenzen existieren, beginnen beide Kurven bei null.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -582,6 +701,15 @@
                 \end{align*}
             }%
     \end{columns}
+\speech{02Frequenzgang6EinfacherHochpass}{1}{%
+Tauschen wir im RC-Tiefpass die Positionen von Widerstand und Kapazität,
+so erhalten wir einen RC-Hochpass erster Ordnung wie im Schaltbild oben rechts dargestellt.
+Der Hochpass lässt hohe Frequenzen nahezu ungedämpft passieren,
+während niedrige Frequenzen stark gedämpft werden.
+Den Frequenzgang des Hochpasses können wir genauso wie beim Tiefpass mittels der komplexen Wechselstromrechnung bestimmen.
+Über den komplexen Spannungsteiler erhalten wir die rechts dargestellte Gleichung für den Frequenzgang.
+Amplitudengang und Phasengang bestimmen wir durch Betragsbildung und Phasenberechnung des Frequenzganges.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -680,9 +808,16 @@
 
     Eine logarithmische Darstellung des Frequenzganges wird in Kapitel \ref{sec:frequenzganglog:vergleichtiefpasshochpass} eingeführt.
 }%
+\speech{02Frequenzgang7EinfacherHochpassGrenzverhalten}{1}{%
+Untersuchen wir nun das Grenzverhalten des Hochpasses für sehr niedrige und sehr hohe Frequenzen.
+Dazu bestimmen wir die Grenzwerte des Amplitudengangs und des Phasengangs.
+Der Rechenweg ist analog zum Tiefpass, weshalb an dieser Stelle nur die Ergebnisse dargestellt werden.
+Da bei niedrigen Frequenzen die Kapazität sperrt, fällt die gesamte Spannung über dieser ab.
+Bei hohen Frequenzen verhält sich die Kapazität wie ein Kurzschluss, wodurch die gesamte Spannung über dem Widerstand abfällt.
+Der Phasengang kann Werte zwischen null und plus neunzig Grad annehmen.
+}% Ende speech
 \end{frame}
 
-            
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Vergleich passive Filter 1. Ordnung mit $L$ und $R$}
@@ -760,12 +895,22 @@ RC % Zeile 2
     $\omega_g$, welche vollständigkeitshalber mit in der Tabelle aufgeführt ist.
 }%
 
+\speech{02Frequenzgang8VergleichRLFilter}{1}{%
+Das gleiche Filterverhalten wie bei R C Filtern lässt sich auch mit R L Filtern realisieren.
+In der Tabelle sind die Schaltbilder und die zugehörigen Frequenzgänge von R L und R C Filtern erster Ordnung gegenübergestellt.
+Die Filter unterscheiden sich lediglich in der Anordnung von L und R beziehungsweise R und C.
+Wenn wir uns die Gleichungen der Frequenzgänge anschauen, stellen wir fest, dass sie sich nur im Faktor L durch R beziehungsweise C mal R vor Omega unterscheiden.
+Dieser Faktor entspricht dem Kehrwert der Grenzkreisfrequenz Omega G, welche in der Tabelle rechts aufgeführt ist.
+Die Grenzkreisfrequenz wird im Kapitel über logarithmische Darstellung des Frequenzganges noch näher erläutert.
+Zur Übung können Sie die Herleitung der Frequenzgänge der R L Filter analog zu den R C Filtern durchführen.
+}% Ende speech
 \end{frame}
 
 %-------------------------------------------------------------------------------------------------%
 % Aufgabenstellung + Schaltbild in einem Frame:
 
 \subsection{Beispiel Filterschaltung: Aufgabe}
+\newvideofile{FrequenzgangBspAufgabe}{Frequenzgang: Beispiel Aufgabe}% Aufgabenstellung statt Video-Lernziele
 \begin{frame}\ftx{\subsecname}
 \begin{bsp}{Filterschaltung: Aufgabe}{}% label as second madatory argument is printed in Folien, can't escape with \b{...} -> no label for this bsp
 \noindent%
@@ -795,6 +940,19 @@ RC % Zeile 2
     \end{minipage}	
 \end{minipage}
 \end{bsp}%
+\speech{03Frequenzgang1BspAufgabenstellung}{1}{%
+In diesem Video berechnen wir die folgende Beispiel Aufgabe zu einer passiven Filterschaltung.
+Gegeben ist die links gezeigte Schaltung mit zwei Widerständen R eins und R zwei in Reihe und einer Kapazität C, die sich parallel an R eins anliegt. 
+Die Eingangsspannung U eins liegt über der gesamten Schaltung an, während die Ausgangsspannung U zwei über der Kapazität C abgegriffen wird. 
+Die Ein- und Ausgangsspannung sind sinusförmig mit gleicher Frequenz. 
+Die Aufgabenstellung besteht aus drei Teilen.
+In Teil A bestimmen wir den Frequenzgang F gleich U zwei komplex durch U eins komplex allgemein.
+In Teil B skizzieren wir den Amplituden- und Phasengang des Frequenzganges für die angegebenen Bauteilwerte 
+R eins gleich neunhundert Ohm, R zwei gleich einhundert Ohm und C gleich eins Komma zwei fünf Mikrofarad.
+In Teil C berechnen wir die Frequenz, bei welcher die Ausgangsamplitude halb so groß ist wie die Eingangsamplitude.
+Zudem bestimmen wir die Phasenverschiebung der Ausgangsspannung gegenüber der Eingangsspannung bei dieser Frequenz.
+Pausieren Sie das Video, um die Aufgabe zu bearbeiten, bevor die Musterlösung präsentiert wird.
+}% Ende speech
 \end{frame}%
 %
 %-------------------------------------------------------------------------------------------------%
@@ -901,7 +1059,7 @@ RC % Zeile 2
 
 	Ges.: Frequenz $f_{1}$ bei der $\hat{U}_2 = \frac{1}{2}\hat{U}_1$ und Phasenverschiebung $u_2$ zu $u_1$ bei $f_1$:\b{\hfill}\vspace{-10pt}%
     \begin{align*}%
-        A(\omega_1) &= \frac{R_1}{\sqrt{(R_1+R_2)^2+(\omega CR_1R_2)^2}} \overset{!}{=} \frac{1}{2} & 
+        A(\omega_1) &= \frac{R_1}{\sqrt{(R_1+R_2)^2+(\omega_1 CR_1R_2)^2}} \overset{!}{=} \frac{1}{2} & 
         &\text{mit}&
         A(\omega) = \frac{U_2}{U_1} = \frac{\hat{U}_2}{\hat{U}_1} \overset{!}{=} \left.\frac{1}{2}\right|_{f=f_1}
         \\[+2pt]
@@ -924,4 +1082,44 @@ RC % Zeile 2
 	% Reference for +- symbol with paranthesis around minus, +- mit runden Klammern um das Minus:
 	% https://tex.stackexchange.com/questions/17550/plus-minus-symbol-with-parenthesis-around-the-minus-sign
 \end{bsp}% splitted bsp-box with evil framebreaks to stretch content over multiple frames
+\speech{03Frequenzgang2LoesungA1}{1}{%
+Den Frequenzgang erhalten wir durch Anwendung der komplexen Spannungsteilerregel.
+Die Ausgangsspannung liegt über dem Parallelzweig aus R eins und C.
+Die Eingangsspannung liegt über der gesamten Schaltung, dass heißt über R zwei in Reihe mit dem Parallelzweig.
+Die Impedanz der Kapazität Z C ist gleich eins durch j Omega C.
+Durch Einsetzen in die Spannungsteilerformel und anschließendes Umformen erhalten wir die dargestellte Gleichung für den Frequenzgang.
+Durch den Parallelzweig und den Spannungsteiler können sehr komplizierte Ausdrücke mit verschachtelten Brüchen entstehen.
+Um den Bruch zu vereinfachen wird hier der Gesamtbruch mit dem Nenner der Parallelimpedanz erweitert.
+Im nächsten Schritt wird mit J Omega C erweitert, um die Brüche im Zähler und Nenner zu beseitigen.
+Der letzte Schritt ist die Umformung in die kartesische Form durch Erweiterung mit dem konjugiert komplexen Wert des Nenners.
+}% Ende speech
+\speech{03Frequenzgang3LoesungA2}{2}{%
+Hier sind oben nochmal die letzten beiden Formen des Frequenzganges dargestellt.
+Für den Amplitudengang bestimmen wir den Betrag des Frequenzganges. Für den Betrag bietet sich die erste Form an. 
+Da der Zähler rein reell ist, müssen wir nur den Betrag des Nenners bilden.
+Für den Phasengang bietet sich die kartesische Form an. Den Nenner können wir dann ignorieren, da er rein reell ist.
+Der Phasengang ergibt sich somit aus dem Arkustangens des Verhältnisses von Imaginär- zu Realteil des Zählers.
+Alternativ können wir den Phasengang auch aus der ersten Form des Frequenzganges bestimmen.
+Der Phasengang entspricht dann der Differenz der Phase des Zählers minus der Phase des Nenners.
+Da die Phase des Zählers null ist, vereinfacht sich die Gleichung zu minus Arkustangens 
+von Klammer auf dem Imaginärteil des Nenners durch den Realteil des Nenners Klammer zu. 
+}% Ende speech
+\speech{03Frequenzgang4LoesungB}{3}{%
+Für die Skizze in Aufgabenteil B hilft es zunächst das Grenzverhalten des Amplituden- und Phasenganges zu bestimmen.
+Der Amplitudengang geht für sehr niedrige Frequenzen gegen den Spannungsteiler R eins durch R eins plus R zwei, da die Kapazität sich wie offene Klemmen verhält.
+Für sehr hohe Frequenzen geht der Amplitudengang gegen null, da die Kapazität sich wie ein Kurzschluss verhält.
+Der Phasengang geht für sehr niedrige Frequenzen gegen null Grad, für sehr hohe Frequenzen gegen minus neunzig Grad.
+Die Skizzen des Amplituden- und Phasenganges sind rechts dargestellt.
+Die Verläufe sind ähnlich wie bei einem Tiefpass erster Ordnung, jedoch mit einem anderen Anfangswert beziehungsweise Maximalwert für den Amplitudengang.
+}% Ende speech
+\speech{03Frequenzgang5LoesungC}{4}{%
+In Aufgabenteil C soll die Frequenz bestimmt werden, bei der die Ausgangsamplitude halb so groß ist wie die Eingangsamplitude.
+Dazu setzen wir den Amplitudengang von Omega eins gleich ein Halb und stellen nach Omega eins um.
+Durch Kehrwertbildung und Quadrieren, können wir den Wurzelausdruck zunächst in den Zähler bringen und anschließend eliminieren.
+Nach einigem Umformen erhalten wir einen Ausdruck wie Omega eins Quadrat ist gleich einer Konstante. 
+Da die Kreisfrequenz positiv sein muss, wählen wir nur die positive Wurzel.
+Die Frequenz F eins ergibt sich durch Teilen der Kreisfrequenz durch zwei Pi, mit dem Ergebnis von etwa zwei Komma eins eins sieben Kilohertz.
+Anschließend können wir die Phasenverschiebung bei dieser Frequenz berechnen, indem wir Omega eins in die Gleichung für den Phasengang einsetzen.
+Die Phasenverschiebung beträgt minus sechsundfünfzig Komma zwei fünf Grad. 
+}% Ende speech
 \end{frame}
