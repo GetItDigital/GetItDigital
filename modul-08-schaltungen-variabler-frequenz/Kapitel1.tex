@@ -61,8 +61,8 @@ Gleiches wird für einen einfachen Hochpassfilter durchgeführt.
     \end{minipage}
     \hspace{0.02\linewidth}% for vertical alignment % ref: https://tex.stackexchange.com/questions/378548/vertical-alignment-of-side-by-side-minipages
     \begin{minipage}[c][4cm][c]{0.48\textwidth}% left col
-        \only<2>{$\mathrlap{\textbf{Wie sieht das Übertragungsverhalten aus?}}$}%
-        \onslide<3->{\textbf{Linear und zeitinvariant (LZI):}}
+        \only<beamer:2| handout:0>{$\mathrlap{\textbf{Wie sieht das Übertragungsverhalten aus?}}$}%
+        \onslide<beamer:3-| handout>{\textbf{Linear und zeitinvariant (LZI):}}
         \begin{itemize}
             \item<4-> Sinusform am Eingang $u_1(\omega t)$
             \item<5-> $\rightarrow$ Sinusform am Ausgang $u_2(\omega t)$
@@ -111,12 +111,16 @@ wie das Amplitudenverhältnis U zwei Dach durch U eins Dach aussieht.
 }% Ende speech
 \speech{02Frequenzgang2ZweitorUebertragungsverhalten}{6}{%
 Die Phasenverschiebung und Amplitudenverhältnis sind dabei in der Regel frequenzabhängig, also Funktionen der Kreisfrequenz Omega, 
-wie hier rechts im Diagramm für unterschiedliche Frequenzen dargestellt ist.
+wie hier rechts im Diagramm für unterschiedliche Frequenzen dargestellt ist. Hier für Omega gleich K eins.
 }% Ende speech Tonlose Slides für Quasi Animation durch Overlay
 \silence{7}
+\speech{02Frequenzgang2ZweitorUebertragungsverhalten}{7}{Omega gleich K zwei.}%
 \silence{8}
+\speech{02Frequenzgang2ZweitorUebertragungsverhalten}{8}{Omega gleich K drei.}%
 \silence{9}
+\speech{02Frequenzgang2ZweitorUebertragungsverhalten}{9}{Omega gleich K vier.}%
 \silence{10}
+\speech{02Frequenzgang2ZweitorUebertragungsverhalten}{10}{Omega gleich K fünf.}%
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
