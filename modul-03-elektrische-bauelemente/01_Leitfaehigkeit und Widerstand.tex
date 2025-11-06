@@ -125,29 +125,63 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Leitfähigkeit %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Die elektrische Leitfähigkeit}
+
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
-	
+	\b{
 	Aus Modul 1 ist die Definition der Stromdichte $J$ und des Stromes $I$ bekannt.
 	Durch Einsetzen der Formeln 2 und 3 in Formel 1 ergibt sich die Formel 4:
-	\only<2->{
-		\begin{equation}
-			J=\frac{\Delta I}{\Delta A}
-		\end{equation}}
-	\only<3->{
-		\begin{equation}
-			I = \frac{\Delta Q}{\Delta t}
-		\end{equation}}
-	\only<4->{
-		\begin{equation}
-			\Delta V=\Delta A \cdot \Delta x \Leftrightarrow \Delta A = \frac{\Delta V}{\Delta x}
-		\end{equation}}
-	\only<5->{
-		\begin{equation}
-			J=\frac{\Delta Q \cdot \Delta x }{\Delta t \cdot \Delta V}
-		\end{equation}}
+	\vspace*{0.5cm}
+	% 	\begin{equation}
+	% 		J=\frac{\Delta I}{\Delta A}
+	% 	\end{equation}
 	
-	\vspace{0.1cm}
+	% 	\begin{equation}
+	% 		I = \frac{\Delta Q}{\Delta t}
+	% 	\end{equation}
+	
+	% 	\begin{equation}
+	% 		\Delta V=\Delta A \cdot \Delta x \Leftrightarrow \Delta A = \frac{\Delta V}{\Delta x}
+	% 	\end{equation}
+	% \only<2->{
+	% 	\begin{equation}
+	% 		J=\frac{\Delta Q \cdot \Delta x }{\Delta t \cdot \Delta V}
+	% 	\end{equation}}
+
+	\begin{enumerate}
+	\centering
+    \item \( J = \dfrac{\Delta I}{\Delta A} \)
+    \vspace*{0.5cm}
+    \only<2->{\item \( I = \dfrac{\Delta Q}{\Delta t} \)
+    \item \( \Delta V = \Delta A \cdot \Delta x \quad \Leftrightarrow \quad \Delta A = \dfrac{\Delta V}{\Delta x} \)}
+    \vspace*{0.5cm}
+    \only<3->{ \item \( J = \dfrac{\Delta Q \cdot \Delta x}{\Delta t \cdot \Delta V} \)}
+	
+	\end{enumerate}
+	
+		
+	}
+	\s{
+	Aus Modul 1 ist die Definition der Stromdichte $J$ und des Stromes $I$ bekannt.
+	Durch Einsetzen der Formeln \ref{eq:dQ/dt} und \ref{eq:dV/dx} in Formel \ref{eq:dI/dA} ergibt sich die Formel \ref{eq:J=.}:
+	
+		\begin{equation}\label{eq:dI/dA}
+			J=\frac{\Delta I}{\Delta A}
+		\end{equation}
+	
+		\begin{equation}\label{eq:dQ/dt}
+			I = \frac{\Delta Q}{\Delta t}
+		\end{equation}
+	
+		\begin{equation}\label{eq:dV/dx}
+			\Delta V=\Delta A \cdot \Delta x \Leftrightarrow \Delta A = \frac{\Delta V}{\Delta x}
+		\end{equation}
+	
+		\begin{equation}\label{eq:J=.}
+			J=\frac{\Delta Q \cdot \Delta x }{\Delta t \cdot \Delta V}
+		\end{equation}
+
+	}
 	
 	\speech{01_Leitfaehigkeit_und_Widerstand3}{1}{%; TODO: only 1
 		Wir blicken noch einmal zurück auf das Modul 1. Dort haben wir die Stromdichte J definiert und auch den Strom I. Wir hatten den Strom I ja beschrieben als die zeitliche Varianz der Ladungsgänge Q und die Stromdichte J ergibt sich dann eigentlich aus der Fläche, die durchströmt wird.
@@ -173,28 +207,66 @@
 	
 \end{frame}
 
-\subsection{Die elektrische Leitfähigkeit}
+
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
+	\b{
+	Durch Einsetzen der aus Modul 1 bekannten Formeln der Driftgeschwindigkeit $v_{\mathrm{el}}$ und der Raumladungsdichte $\rho$ in die Formel 4,
+	ergibt sich die Formel 5 für die Stromdichte.
 	
-	Durch Einsetzen der aus Modul 1 bekannten Driftgeschwindigkeit $v_{el}$ und der Raumladungsdichte $\rho$ in die Formel 4,
-	ergibt sich die Formel 7 für die Stromdichte.
-	\only<2->{
 		\begin{equation}
-			v_{el}=\frac{\Delta x}{\Delta t}
-		\end{equation}}
-	\only<3->{
+			v_{\mathrm{el}}=\frac{\Delta x}{\Delta t}
+		\end{equation}
+	
 		\begin{equation}
 			\rho = \frac{\Delta Q}{\Delta V}
-		\end{equation}}
-	\only<4->{
-		\begin{equation}
-			\vec{J}=\rho \cdot \vec{v_{el}}
-		\end{equation}}
-	\only<5->{ \\
-		Da die Geschwindigkeit immer einen Betrag und eine Richtung hat, ist die Stromdichte ebenfalls ein Vektor.
+		\end{equation}
+	\only<2->{
+		\begin{enumerate}
+			 \setcounter{enumi}{4} % startet bei 5
+			\centering
+			\item \( \vec{J}=\rho \cdot \vec{v_{\mathrm{el}}} \)	
+		\end{enumerate}
+	Da die Geschwindigkeit immer einen Betrag und eine Richtung hat, ist die Stromdichte ebenfalls ein Vektor.}
 	}
-	\vspace{0.1cm}
+	\s{
+	Durch Einsetzen der aus Modul 1 bekannten Driftgeschwindigkeit $v_{\mathrm{el}}$ und der Raumladungsdichte $\rho$ in die Formel \ref{eq:J=.},
+	ergibt sich die Formel \ref{eq:J=rho*v} für die Stromdichte.
+	
+		\begin{equation}
+			v_{\mathrm{el}}=\frac{\Delta x}{\Delta t}
+		\end{equation}
+	
+		\begin{equation}
+			\rho = \frac{\Delta Q}{\Delta V}
+		\end{equation}
+	
+		\begin{equation}\label{eq:J=rho*v}
+			\vec{J}=\rho \cdot \vec{v_{\mathrm{el}}}
+		\end{equation}
+	
+	Da die Geschwindigkeit immer einen Betrag und eine Richtung hat, ist die Stromdichte ebenfalls ein Vektor.
+
+	Die Driftgeschwindigkeit $\vec{v_{\mathrm{el}}}$ der freien Ladungsträger verhält sich proportional zum elektrischen Feld $\vec{E}$,
+	jedoch in entgegengesetzter Richtung. Der Proportionalitätsfaktor wird auch als Elektronenbeweglichkeit $\mu_e$ bezeichnet.
+
+		\begin{equation}
+			\vec{v_{\mathrm{el}}}=- \mu_e \cdot \vec{E}
+		\end{equation}
+
+		Die Raumladungsdichte $\rho$ setzt sich aus der Elementarladung $e^-$ und der Ladungsträgerdichte $n_e$, zusammen.
+		Aufgrund der negativen Ladung von Elektronen, ergibt sich ein negatives Vorzeichen.
+	
+		\begin{equation}
+			\rho = - n_e \cdot e^-
+		\end{equation}
+	
+		Das Einsetzen von $\vec{v_{\mathrm{el}}}$ und $\rho$ in die Formel \ref{eq:J=rho*v} ergibt den folgenden Ausdruck:
+	
+		\begin{equation}
+			\vec{J} = (-n_e \cdot e^-) \cdot (-\mu_e \cdot \vec{E})  = n_e \cdot \mu_e \cdot e^- \vec{E}
+		\end{equation}
+		}
 	
 	\speech{01_Leitfaehigkeit_und_Widerstand4}{1}{%; TODO: only 6 bzw. da wo es passt
 		Denn wir hatten ja im Modul 1 ebenfalls die Driftgeschwindigkeit der Elektronen VEL und die Raumladungsdichte Rho kennengelernt. Und das setzen wir jetzt in die gerade hergeleitete Folie J ist gleich Delta Q mal Delta X geteilt durch Delta T mal Delta V ein.
@@ -215,37 +287,32 @@
 	\speech{01_Leitfaehigkeit_und_Widerstand4}{5}{%; TODO: only 10 bzw. da wo es passt
 		Das ist hier nochmal in dem Satz zusammengefasst. Da die Geschwindigkeit immer einen Betrag und eine Richtung hat, ist die Stromdichte ebenfalls ein Vektor.
 	}
+
 \end{frame}
 
 
-\subsection{Die elektrische Leitfähigkeit}
+
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
-	
-	Die Driftgeschwindigkeit $\vec{v_{el}}$ der freien Ladungsträger verhält sich proportional zum elektrischen Feld $\vec{E}$,
+	\b{
+	Die Driftgeschwindigkeit $\vec{v_{\mathrm{el}}}$ der freien Ladungsträger verhält sich proportional zum elektrischen Feld $\vec{E}$,
 	jedoch in entgegengesetzter Richtung. Der Proportionalitätsfaktor wird auch als Elektronenbeweglichkeit $\mu_e$ bezeichnet.
-	\only<2->{
+	
 		\begin{equation}
-			\vec{v_{el}}=- \mu_e \cdot \vec{E}
-		\end{equation}}
-	\only<3->{ \\
-		Die Raumladungsdichte $\rho$ setzt sich aus der Elementarladung $e^-$ und der Ladungsträgerdichte $n_e$, zusammen.
-		Aufgrund der negativen Ladung von Elektronen, ergibt sich ein negatives Vorzeichen.
-	}
-	\only<4->{
+			\vec{v_{\mathrm{el}}}=- \mu_e \cdot \vec{E}
+		\end{equation}
+	\only<2->{Die Raumladungsdichte $\rho$ setzt sich aus der Elementarladung $e^-$ und der Ladungsträgerdichte $n_e$, zusammen.
+	Aufgrund der negativen Ladung von Elektronen, ergibt sich ein negatives Vorzeichen.
+	
 		\begin{equation}
 			\rho = - n_e \cdot e^-
-		\end{equation}
-	}
-	\only<5->{ \\
-		Das Einsetzen von $\vec{v_{el}}$ und $\rho$ in die Formel 7 ergibt den folgenden Ausdruck:
-	}
-	\only<6->{
+		\end{equation}}
+	\only<3->{Das Einsetzen von $\vec{v_{\mathrm{el}}}$ und $\rho$ in die Formel 5 ergibt den folgenden Ausdruck:
 		\begin{equation}
-			\vec{J} = (-n_e \cdot e^-) \cdot (-\mu_e \cdot \vec{E})
+			\vec{J} = (-n_e \cdot e^-) \cdot (-\mu_e \cdot \vec{E}) =n_e \cdot \mu_e \cdot e^- \vec{E}
 		\end{equation}
 	}
-	\vspace{0.1cm}
+	}
 	
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{1}{%; TODO: only 1
 		Wenn wir nun noch mal auf die Driftgeschwindigkeit schauen, dann haben wir ja vorher kennengelernt in Methode 1, dass die Driftgeschwindigkeit VEL als Vektor sich proportional zum elektrischen Feld verhält, jedoch in entgegengesetzter Richtung. Diese entgegengesetzte Richtung kommt daher, dass unsere Ladungsträger in der Regel negativ beladen sind, weil es Elektronen sind, und wir eben genau das negative Vorzeichen dieser Ladung mit berücksichtigen müssen. Und daher bewegt sich das Elektron immer entgegengesetzt dem elektrischen Feld. Der Proportionalitätsfaktor zu dieser Beweglichkeit oder zu diesem Verhältnis wird Elektronenbeweglichkeit µe genannt.
@@ -268,35 +335,40 @@
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{6}{%; TODO: only 6
 		J als Vektor ist gleich minus NE mal e multipliziert mit minus µe mal E. Wir erhalten also letztlich einen Zusammenhang zwischen der Stromdichte J und dem elektrischen Feld E. Diesen gilt es jetzt näher zu betrachten.
 	}
-	
-	
-	
-	
+
 \end{frame}
 
 
-
-\subsection{Die elektrische Leitfähigkeit}
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
-	Die Minuszeichen heben sich auf und es ergibt sich folgende Formel für die Stromdichte $\vec{J}$:
-	\only<2->{
-		\begin{equation}
-			\vec{J}=n_e \cdot \mu_e \cdot e^- \vec{E}
-		\end{equation}}
-	\only<3->{ \\
-		Die materialabhängigen Komponenten $n_e$ und $\mu_e$ sowie die Naturkonstante $e^-$ ergeben multipliziert die spezifische Leitfähigkeit $\kappa$:
-	}\only<4->{
+	\b{Die materialabhängigen Komponenten $n_e$ und $\mu_e$ sowie die Naturkonstante $e^-$ ergeben multipliziert die spezifische Leitfähigkeit $\kappa$:
+	
 		\begin{equation}
 			\kappa = n_e \cdot \mu_e \cdot e^-
-		\end{equation}}
-	\only<5->{ \\
-		Zusammengefasst ergibt diese Darstellung die Beschreibung des ohmschen Gesetzes:
+		\end{equation}
+	
+	\only<2->{\vspace*{0.3cm}Zusammengefasst ergibt diese Darstellung die Beschreibung des ohmschen Gesetzes:
+	\vspace*{0.5cm}
+	\begin{enumerate}
+		\centering
+		\setcounter{enumi}{5}
+		\item \( \vec{J}=\kappa \cdot \vec{E} \, \Leftrightarrow \, \vec{E}=\frac{\vec{J}}{\kappa} \)
+	\end{enumerate}
+		
+	}}
+	\s{Die materialabhängigen Komponenten $n_e$ und $\mu_e$ sowie die Naturkonstante $e^-$ ergeben multipliziert die spezifische Leitfähigkeit $\kappa$:
+	
 		\begin{equation}
-			\vec{J}=\kappa \cdot \vec{E} \leftrightarrow \vec{E}=\frac{\vec{J}}{\kappa}
+			\kappa = n_e \cdot \mu_e \cdot e^-
+		\end{equation}
+
+	Zusammengefasst ergibt diese Darstellung die Beschreibung des ohmschen Gesetzes:
+
+		\begin{equation}\label{eq:E=J/k}
+			\vec{J}=\kappa \cdot \vec{E} \, \Leftrightarrow \, \vec{E}=\frac{\vec{J}}{\kappa}
 		\end{equation}
 	}
-	\vspace{0.1cm}
+		
 	
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{1}{%; TODO: only 7
 		Wenn wir auf die vorhergehende Folie schauen, sehen wir, dass wir zwei Minuszeichen in multiplikativer Folge haben, sodass sich die Minuszeichen aufheben.
@@ -322,24 +394,36 @@
 
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
-	
+	\b{
 	\begin{equation}
-		U_{12}=\int_{P_1}^{P_2} \vec{E} \mathrm{d}\vec{s}
+		U_{12}=\int_{P_1}^{P_2} \vec{E} \cdot \mathrm{d}\vec{s}
 	\end{equation}
-	\only<2->{ \\
-		Da das elektrische Feld parallel zur Leitungslänge verläuft, ergibt sich das Skalarprodukt:
+	\only<2->{Da das elektrische Feld parallel zur Leitungslänge verläuft, ergibt sich das Skalarprodukt:
 	}\only<3->{
 		\begin{equation}
-			U_{12}=\int_{x=0}^{x=l} \vec{E} \mathrm{d}\vec{x}
+			U_{12}=\int_{s=0}^{s=l} \vec{E} \cdot \mathrm{d}\vec{s}
 		\end{equation}}
-	\only<4->{ \\
-		Durch Einsetzen der umgestellten Formel 13 nach $\vec{E}$, folgt:
+	\only<4->{Durch Einsetzen der umgestellten Formel 6 nach $\vec{E}$, folgt:
 	}\only<5->{
 		\begin{equation}
-			U_{12}=\int_{0}^{l} \frac{J}{\kappa} \mathrm{d}x
+			U_{12}=\int_{0}^{l} \frac{J}{\kappa} \cdot \mathrm{d}s
 		\end{equation}
-	}
-	\vspace{0.1cm}
+	}}
+	\s{ % TODO: Inhalt
+		\begin{equation}\label{eq:u=Eds}
+		U_{12}=\int_{P_1}^{P_2} \vec{E} \cdot \mathrm{d}\vec{s}
+	\end{equation}
+	Da das elektrische Feld parallel zur Leitungslänge verläuft, ergibt sich das Skalarprodukt:
+	
+		\begin{equation}
+			U_{12}=\int_{s=0}^{s=l} \vec{E} \cdot \mathrm{d}\vec{s}
+		\end{equation}
+	    Durch Einsetzen der umgestellten Formel \ref{eq:E=J/k} nach $\vec{E}$, folgt:
+
+		\begin{equation}
+			U_{12}=\int_{0}^{l} \frac{J}{\kappa} \cdot \mathrm{d}s
+		\end{equation}
+		}
 	
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{1}{%; TODO: only 7
 		Um jetzt, wie gesagt, auf die bekannte Form des Ohm’schen Gesetzes in Strom und Spannung, also skalaren Größen zu kommen, schauen wir uns als erstes nochmal die Definition der Spannung an. Die Spannung U12 war definiert als das Linienintegral von P1 nach P2 E·ds. Das können wir weiter umformulieren.
@@ -365,27 +449,41 @@
 
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
-	
+	\b{
 	Da es sich um ein homogenes Material handelt ist das $\kappa$ konstant.
 	\only<2->{
 		\begin{equation}
-			U_{12}=\frac{1}{\kappa}\cdot\int_{0}^{l} J \mathrm{d}x
+			U_{12}=\frac{1}{\kappa} \cdot \int_{0}^{l} J \cdot \mathrm{d}s
 		\end{equation}}
-	\only<3->{ \\
-		
-		Die folgende Formel für die Stromdichte $J$ ist aus Modul 1 bekannt:
+	\only<3->{Die folgende Formel für die Stromdichte $J$ ist aus Modul 1 bekannt:
 	}\only<4->{
 		\begin{equation}
 			J=\frac{I}{A}
 		\end{equation}
-	}\only<5->{ \\
-		Duch Einsetzen der Formel ergibt sich folgender Ausdruck:
+	}\only<5->{Duch Einsetzen der Formel ergibt sich folgender Ausdruck:
 	}\only<6->{
 		\begin{equation}
-			U_{12}=\frac{1}{\kappa}\cdot\int_{0}^{l} \frac{I}{A} \mathrm{d}x
+			U_{12}=\frac{1}{\kappa}\cdot\int_{0}^{l} \frac{I}{A} \cdot \mathrm{d}s
 		\end{equation}
+	}}
+	\s{
+		Da es sich um ein homogenes Material handelt ist das $\kappa$ konstant.
+	
+		\begin{equation}
+			U_{12}=\frac{1}{\kappa} \cdot \int_{0}^{l} J \cdot \mathrm{d}s
+		\end{equation}
+	Die folgende Formel für die Stromdichte $J$ ist aus Modul 1 bekannt:
+
+		\begin{equation}
+			J=\frac{I}{A}
+		\end{equation}
+	Duch Einsetzen der Formel ergibt sich folgender Ausdruck:
+	
+		\begin{equation}
+			U_{12}=\frac{1}{\kappa}\cdot\int_{0}^{l} \frac{I}{A} \cdot \mathrm{d}s
+		\end{equation}
+	
 	}
-	\vspace{0.1cm}
 	
 	\speech{01_Leitfaehigkeit_und_Widerstand8}{1}{%; TODO: only 1 Formeln und Sonderzeichen anpassen!
 		Da wir davon ausgegangen sind, ein homogenes Material zu haben, ist Kappa konstant.
@@ -413,24 +511,20 @@
 	
 \end{frame}
 
-\b{
+	\b{
 	\begin{frame}[t]
 		\ftx{Die elektrische Leitfähigkeit}
 		Da die Querschnittsfläche $A$ ebenfalls konstant ist, kann das Integral aufgelöst werden:
-		\only<2->{
+		
 			\begin{equation}
 				U_{12}=\frac{1}{\kappa}\cdot \frac{I}{A} \cdot l
-			\end{equation}}
-		\only<3->{ \\
-			Durch Umstellung ergibt sich:}
-		\only<4->{
+			\end{equation}
+		\only<2->{Durch Umstellung ergibt sich:
+		
 			\begin{equation}
 				U_{12}=\frac{l}{A\cdot\kappa}\cdot I
 			\end{equation}}
-		\only<5->{ \\
-			Da $\frac{l}{A\cdot\kappa}$ der elektrische Widerstand ist, ergibt sich folgende Vereinfachung:
-		}
-		\only<6->{
+		\only<3->{Da $\frac{l}{A\cdot\kappa}$ der elektrische Widerstand ist, ergibt sich folgende Vereinfachung:
 			\begin{equation}
 				U=R \cdot I
 			\end{equation}}
@@ -474,9 +568,26 @@
 		%- Danach: Folien 57 bis 60
 		%Hinweis Ende.
 		
-	\end{frame}
-}
-\s{
+	\end{frame}}
+	\s{
+		Da die Querschnittsfläche $A$ ebenfalls konstant ist, kann das Integral aufgelöst werden:
+		
+			\begin{equation}
+				U_{12}=\frac{1}{\kappa}\cdot \frac{I}{A} \cdot l
+			\end{equation}
+	
+			Durch Umstellung ergibt sich:
+	
+			\begin{equation}
+				U_{12}=\frac{l}{A\cdot\kappa}\cdot I
+			\end{equation}
+
+			Da $\frac{l}{A\cdot\kappa}$ der elektrische Widerstand ist, ergibt sich folgende Vereinfachung:
+		
+			\begin{equation}
+				U=R \cdot I
+			\end{equation}
+	
 	Die elektrische Leitfähigkeit sagt aus, wie gut ein Material Ladungsträger transportieren kann, also wie gut elektrischer Strom durch sie fließt.
 	Sehr gut leitfähige Materialien werden Leiter (im Extremfall auch Supraleiter) genannt, während sehr schlecht leitende Materialien als Isolatoren bezeichnet werden.
 	Zu den leitfähigen Medien zählen Metalle wie Kupfer, Silber, Aluminium und Gold, welche in der Elektrotechnik am häufigsten verwendet werden.
@@ -492,7 +603,7 @@
 }
 
 \subsection{Driftverhalten von Elektronen in Leitern}
-\begin{frame}
+\begin{frame}[t]
 	\ftx{Driftverhalten von Elektronen in Leitern}
 	
 	
@@ -546,16 +657,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Driftverhalten %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \s{
 	Sobald sich ein Leiter in einem elektrischen Feld befindet, wirkt auf die Elektronen die Coulomb-Kraft, 
-	so dass sich ihre zufällige Bewegungsrichtung in eine gerichtete Bewegung ändert, welche entgegengesetzt zur Feldrichtung zeigt (Abb.\ref{fig:Elektronenbewegung gerichtet}). 
+	so dass sich ihre zufällige Bewegungsrichtung in eine gerichtete Bewegung ändert, welche entgegengesetzt zur Feldrichtung zeigt (Abb.\,\ref{fig:Elektronenbewegung gerichtet}). 
 	Diese gerichtete Bewegung der Ladungsträger wird als Stromfluss bezeichnet (vgl. Modul 1).
-	Allerdings kommt es auch weiterhin zu Stößen mit den Atomrümpfen. Diese führen letztlich zu einer Abschwächung der gerichteten Bewegung und somit des Stroms (vgl. Abb.\ref{fig:Elektronenbewegung gerichtet}). 
+	Allerdings kommt es auch weiterhin zu Stößen mit den Atomrümpfen. Diese führen letztlich zu einer Abschwächung der gerichteten Bewegung und somit des Stroms (vgl. Abb.\,\ref{fig:Elektronenbewegung gerichtet}). 
 	Da sich die Atomrümpfe mit steigender Temperatur stärker bewegen, nimmt die Stoßwahrscheinlichkeit der Elektronen bei steigender Temperatur zu.
-	\\
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Grafik Elektronenbewegung gerichtet %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
+\begin{frame}[t]
 
 	\ftx{Driftverhalten von Elektronen in Leitern}
 	
@@ -566,6 +676,7 @@
 		
 		\begin{figure}[H]
 			\centering
+			\hspace*{-0.35cm}
 			\includesvg[width=0.8\textwidth]{Elektronenbewegung_gerichtet}
 		\end{figure}
 	}
