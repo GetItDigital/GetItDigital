@@ -5,7 +5,7 @@
 
 
 
-	\section{Der Wirkungsgrad}
+\section{Der Wirkungsgrad}
 	
 \s{
 Der Wirkungsgrad beschreibt das Verhältnis von abgegebener Leistung (Nutzleistung) 
@@ -15,9 +15,10 @@ mit der ein System Energie umwandelt. Am Beispiel eines Elektromotors zeigt Abbi
 \begin{frame}
    \ftx{Der Wirkungsgrad}
 \s{\begin{figure}[H]
-
-		\input{Tikz/src/04_Wirkungsgrad/Wirkungsgrad_eines_Elektromotors}
-		
+\centering
+		%\input{Tikz/src/04_Wirkungsgrad/Wirkungsgrad_eines_Elektromotors}
+		\scalebox{1.1}{
+		\includesvg[width=0.8\textwidth]{Wirkungsgrad_Copy}}
 	\caption{\textbf{Wirkungsgrad eines Elektromotors.} Zeigt das Verhältnis der abgegebenen
 	 Leistung zur zugeführten Leistung. Der Wirkungsgrad beschreibt die Effizienz des Motors bei der Umwandlung von Energie.}
 	\label{fig:Wirkungsgrad}
@@ -25,8 +26,10 @@ mit der ein System Energie umwandelt. Am Beispiel eines Elektromotors zeigt Abbi
 \b{
 	Der Wirkungsgrad beschreibt das Verhältnis von abgegebener zu zugeführter Leistung
     \begin{figure}[H]
-	
-		\input{Tikz/src/04_Wirkungsgrad/Wirkungsgrad_eines_Elektromotors}
+		\centering
+	\scalebox{1}{
+		\includesvg[width=1\textwidth]{Wirkungsgrad_Copy}}
+		%\input{Tikz/src/04_Wirkungsgrad/Wirkungsgrad_eines_Elektromotors}}
 
 	\end{figure}
 
@@ -58,7 +61,7 @@ Mathematisch wird der Wirkungsgrad $\eta$ (eta) wie folgt definiert:
 }
 \end{frame}
 
-\begin{frame}	
+%\begin{frame}	
 \ftx{Der Wirkungsgrad}
 \s{
 	Im realen Fall wird der Wirkungsgrad nie 100 \% betragen, da eine Energiewandlung grundsätzlich mit Verlusten behaftet ist.
@@ -75,27 +78,28 @@ Ein Paradebeispiel für die Relevanz des Wirkungsgrades ist die klassische Glüh
 Strom durch einen Draht fließt, der sich dabei so stark erhitzt, dass er zu leuchten beginnt.
 Dabei werden weniger als 5 \% der eingesetzten Energie in Licht umgewandelt. Mehr als 95 \% der Energie werden in
 Wärme umgewandelt. Aufgrund der schlechten Effizienz wurden Glühlampen seit 2009 in der EU schrittweise verboten. 
-Abbildung \ref{fig:Energieumwandlung Glühlampe und Energiesparlampe} zeigt links eine klassische Glühlampe und rechts eine Energiesparlampe.
+% Abbildung \ref{fig:Energieumwandlung Glühlampe und Energiesparlampe} zeigt links eine klassische Glühlampe und rechts eine Energiesparlampe.
 
-\begin{figure}[H]
-	\hspace{-0.8cm}
+% \begin{figure}[H]
+	% \hspace{-0.8cm}
 
-	\input{Tikz/src/04_Wirkungsgrad/Energieumwandlung_in_Gluehlampe_Energiesparlampe}
+	% \input{Tikz/src/04_Wirkungsgrad/Energieumwandlung_in_Gluehlampe_Energiesparlampe}
 
-	\caption{\textbf{Energieumwandlung in Glühlampe und Energiesparlampe.} Zeigt das eine Glühlampe den Großteil der aufgenommenen
-	 elektrischen Energie in Wärme und nur einen kleinen Teil in Licht umwandelt, wandelt die Energiesparlampe einen deutlich höheren Anteil der elektrischen Energie in Licht um.}
-	\label{fig:Energieumwandlung Glühlampe und Energiesparlampe}
-\end{figure}
+	% \caption{\textbf{Energieumwandlung in Glühlampe und Energiesparlampe.} Zeigt das eine Glühlampe den Großteil der aufgenommenen
+	%  elektrischen Energie in Wärme und nur einen kleinen Teil in Licht umwandelt, wandelt die Energiesparlampe einen deutlich höheren Anteil der elektrischen Energie in Licht um.}
+	% \label{fig:Energieumwandlung Glühlampe und Energiesparlampe}
+% \end{figure}
 }
 
-	\b{\begin{figure}[H]
-		\hspace{-0.8cm}
+	% \b{\begin{figure}[H]
+		% \hspace{-0.8cm}
 		
-		\input{Tikz/src/04_Wirkungsgrad/Energieumwandlung_in_Gluehlampe_Energiesparlampe}
+		% \input{Tikz/src/04_Wirkungsgrad/Energieumwandlung_in_Gluehlampe_Energiesparlampe}
 
-	\end{figure}
-}
-\end{frame}
+	% \end{figure}
+%}
+%\end{frame}
+%; TODO "sonder dem System als Nutzenergie zur Vergügung steht" ? macht kein Sinn?
 \s{
 Ein hoher Wirkungsgrad ist in vielen Anwendungen erstrebenswert, da dies bedeutet, dass weniger
 Energie in i.d.R. nicht gewünschte Energieformen gewandelt wird, sondern dem System als Nutzenergie zur Verfügung steht. 
@@ -148,24 +152,24 @@ können dazu beitragen, den Energiebedarf zu reduzieren und Treibhausgasemission
 	
 	\input{Tikz/src/04_Wirkungsgrad/Beispiel_Schaltung_Wirkungsgrad}
 
-	\s{\caption{Beispiel Schaltung Wirkungsgrad}}
+	\s{\caption{\textbf{Beispiel Schaltung Wirkungsgrad.} Das Bild zeigt die Abgabe von Wärme und Licht am Verbraucher. Das Verhältnis von Licht z uWärme entspricht dem Wirkungsgrad.}}
 	\label{fig:Nennleistung}
 \end{figure}
 \end{frame}
 
 % Beschriftung der Komponenten.
 
-\begin{frame}
-	\ftx{Der Wirkungsgrad}
-\begin{figure}[H]
+% \begin{frame}
+	% \ftx{Der Wirkungsgrad}
+% \begin{figure}[H]
 	
-	\input{Tikz/src/04_Wirkungsgrad/Einfache_Schaltung}
+	% \input{Tikz/src/04_Wirkungsgrad/Einfache_Schaltung}
 
-    \s{\caption{\textbf{Einfache Schaltung.} zeigt eine einfache elektrische Schaltung, die aus einer Batterie, einem Schalter und einer Glühlampe besteht. Durch das Schließen
-	 des Schalters wird der Stromkreis geschlossen, wodurch die Glühlampe leuchtet, indem elektrische Energie in Licht und Wärme umgewandelt wird.}} 
-    \label{fig:Schaltkreis}
-\end{figure}
-\end{frame}
+    % \s{\caption{\textbf{Einfache Schaltung.} zeigt eine einfache elektrische Schaltung, die aus einer Batterie, einem Schalter und einer Glühlampe besteht. Durch das Schließen
+	%  des Schalters wird der Stromkreis geschlossen, wodurch die Glühlampe leuchtet, indem elektrische Energie in Licht und Wärme umgewandelt wird.}} 
+    % \label{fig:Schaltkreis}
+% \end{figure}
+% \end{frame}
 
 \s{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -11,5 +11,10 @@
 
 		% Draw voltage arrows
 		\draw[-latex, thick, draw=voltage] (-0.6,2)  to node[midway,left,  color=voltage] {$U_\mathrm{q}$} (-0.6,1);
+
+		%draw squiqqly lines
+		\draw[-latex,orange,decorate,decoration={snake,amplitude=3pt,pre length=0.5pt,post length=3pt}] (4.35,1.75) -- node[pos=1,anchor=west] {Wärme} ++(0.7,0.7);
+
+		\draw[-latex,green,decorate,decoration={snake,amplitude=3pt,pre length=0.5pt,post length=3pt}] (4.37,1.30) -- node[pos=1,anchor=west] {Licht} ++(0.7,-0.7);
 		
 	\end{tikzpicture}
