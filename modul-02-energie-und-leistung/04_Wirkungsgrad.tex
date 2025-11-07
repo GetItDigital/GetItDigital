@@ -99,20 +99,16 @@ Wärme umgewandelt. Aufgrund der schlechten Effizienz wurden Glühlampen seit 20
 	% \end{figure}
 %}
 %\end{frame}
-%; TODO "sonder dem System als Nutzenergie zur Vergügung steht" ? macht kein Sinn?
 \s{
 Ein hoher Wirkungsgrad ist in vielen Anwendungen erstrebenswert, da dies bedeutet, dass weniger
-Energie in i.d.R. nicht gewünschte Energieformen gewandelt wird, sondern dem System als Nutzenergie zur Verfügung steht. 
+Energie in der Regel nicht gewünschte Energieformen gewandelt wird, sondern dem System als Nutzenergie zur Verfügung steht. 
 In der Praxis sind jedoch viele Faktoren wie Materialbeschaffenheit,
 Bauweise und Betriebsbedingungen entscheidend für die Maximierung des Wirkungsgrades.
 In der Umwelt- und Energietechnik spielt der Wirkungsgrad eine entscheidende Rolle, da er direkt
 mit dem Energieverbrauch und den Umweltauswirkungen zusammenhängt. Effizientere Systeme
 können dazu beitragen, den Energiebedarf zu reduzieren und Treibhausgasemissionen zu verringern.
 }
-% Mehr auf Energiesparlampe eingehen: (wieso ist die besser?)
-% technische Umsetzung? Warum ist die Besser? (weniger Abwärme)
-% Bei Gelichem Licht, weniger Wärme, dadurch weniger Verluste, Dadurch besserer Wirkungsgrad.
-% Wie werden die ESL technisch realisiert und wie bekommt man es hin weniger wärme zu produzieren..
+
 
 
 
@@ -152,9 +148,16 @@ können dazu beitragen, den Energiebedarf zu reduzieren und Treibhausgasemission
 	
 	\input{Tikz/src/04_Wirkungsgrad/Beispiel_Schaltung_Wirkungsgrad}
 
-	\s{\caption{\textbf{Beispiel Schaltung Wirkungsgrad.} Das Bild zeigt die Abgabe von Wärme und Licht am Verbraucher. Das Verhältnis von Licht z uWärme entspricht dem Wirkungsgrad.}}
+	\s{\caption{\textbf{Beispiel Schaltung Wirkungsgrad.} Das Bild zeigt die Abgabe von Wärme und Licht am Verbraucher. Das Verhältnis von Licht zu Wärme entspricht dem Wirkungsgrad.}}
 	\label{fig:Nennleistung}
 \end{figure}
+\b{
+\begin{itemize}
+	\item $P_\mathrm{zu}=U \cdot I$
+	\item $\eta=5\%$
+	\item $P_\mathrm{v}=P_\mathrm{zu}\cdot \eta$
+	\item $P_\mathrm{ab}=P_\mathrm{zu}\cdot(1-\eta)$
+\end{itemize}}
 \end{frame}
 
 % Beschriftung der Komponenten.
