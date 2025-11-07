@@ -468,7 +468,7 @@ Beide Varianten werden im Folgenden kurz erläutert und dann anhand eines einfac
 \speech{Grundlagen1DGLAufstellenBeispiel}{1}{%
 Gegeben sei die oben gezeigte Schaltung. 
 Die R C Serienschaltung ist über einen Schalter entweder in der Ausgangsstellung kurzgeschlossen 
-oder ab dem Schaltzeitpunkt T gleich null an eine ideale Gleichspannungsquelle U Q angeschlossen. 
+oder ab dem Schaltzeitpunkt T gleich null an eine ideale Gleichspannungsquelle U Kuh angeschlossen. 
 Gesucht sei die Spannung U C an der Kapazität für T größer gleich Null.
 Wir sehen hier die Knoten und Maschengleichung und die Komponentengleichungen für I C und für U R. 
 Da es sich um eine Serienschaltung handelt fließt der gleiche Strom durch R und durch C.
@@ -476,18 +476,18 @@ Da es sich um eine Serienschaltung handelt fließt der gleiche Strom durch R und
 \speech{Grundlagen1DGLAufstellenBeispiel}{2}{%
 Deshalb setzen wir zunächst R mal I in die Maschengleichung für U R ein
 Als nächsten Schritt ersetzen wir I durch C mal der zeitlichen Ableitung von U C. 
-Dadurch erhalten wir die DGL erster Ordnung: R C mal der ersten Ableitung von U C plus U C ist gleich U Q. 
+Dadurch erhalten wir die DGL erster Ordnung: R C mal der ersten Ableitung von U C plus U C ist gleich U Kuh. 
 }% Speech Ende
 \speech{Grundlagen1DGLAufstellenBeispiel}{3}{%
 Zum Vergleich stellen wir nun die DGL für die gleiche Schaltung mit der zweiten Methode auf. 
 Da wir die DGL für U C bestimmen wollen, beginnen wir mit dem komplexen Spannungsteiler für U C. 
-U C ist gleich U Q mal Z C geteilt durch R plus Z C. 
+U C ist gleich U Kuh mal Z C geteilt durch R plus Z C. 
 In dieser Form haben wir bereits nur unsere gewünschte Zielgröße U C, 
-die Spannungsquelle U Q als unsere Störquelle und die Variablen R und C, die unsere konstanten Koeffizienten bilden.
+die Spannungsquelle U Kuh als unsere Störquelle und die Variablen R und C, die unsere konstanten Koeffizienten bilden.
 Durch algebraische Umformung stellen wir wir die Gleichung um. 
-Auf die linke Seite kommen erstens alle J omega Terme, zweitens unsere Zielgröße U C in komplexer Form. 
-Wichtig ist, dass die J omega Terme im Zähler stehen, damit diese am Ende zu Differntialoperatoren umgewandelt werden können.
-Auf die rechte Seite kommt unser komplexes U Q als Störterm. 
+Auf die linke Seite kommen erstens alle J Omega Terme, zweitens unsere Zielgröße U C in komplexer Form. 
+Wichtig ist, dass die J Omega Terme im Zähler stehen, damit diese am Ende zu Differntialoperatoren umgewandelt werden können.
+Auf die rechte Seite kommt unser komplexes U Kuh als Störterm. 
 Durch Rücktransformation in den Zeitbereich erhalten wir unsere Differenzialgleichung. 
 }% Speech Ende
 \end{frame}
@@ -879,27 +879,27 @@ Diese Werte können wir als Anfangsbedingungen für die Berechnung des Schaltvor
 \speech{Grundlagen2Zerlegung}{1}{%
 Um die Differenzialgleichung zu lösen hilft es, die gesuchte Systemgröße während des Schaltvorganges 
 in einen eingeschwungenen Zustand und einen flüchtigen Zustand zu zerlegen.
-Der eingeschwungene Zustand Ypsilon e ist der stationäre Zustand, den unsere Systemgröße Ypsilon während des Schaltvorganges anstrebt. 
-Subtrahieren wir Ypsilon e von y, bleibt der zeitlich abklingende flüchtige Zustand Ypsilon F übrig.
+Der eingeschwungene Zustand Ypsilon E ist der stationäre Zustand, den unsere Systemgröße Ypsilon während des Schaltvorganges anstrebt. 
+Subtrahieren wir Ypsilon E von Ypsilon, bleibt der zeitlich abklingende flüchtige Zustand Ypsilon F übrig.
 }% Speech Ende
 \speech{Grundlagen2Zerlegung}{2}{%
 In diesem Beispiel Schaltvorgang nähert sich Ypsilon exponentiell einem konstanten Grenzwert an. 
-Dieser durch die D C Anregung bedingte konstante Endwert von Ypsilon ist unser eingeschwungener Zustand Ypsilon e. 
+Dieser durch die D C Anregung bedingte konstante Endwert von Ypsilon ist unser eingeschwungener Zustand Ypsilon E. 
 Der abklingende Exponenzialverlauf Ypsilon F ist unser flüchtiger Zustand. 
 Wie wir gleich sehen werden, lassen sich beide Zustände einzeln gut berechnen,
 sodass wir Ypsilon durch die Überlagerung beider Zustände bestimmen können.
 }% Speech Ende
 \speech{Grundlagen2Zerlegung}{3}{%
 Mathematisch entspricht diese Zerlegung genau der Zerlegung von Ypsilon 
-in eine partikuläre Lösung Ypsilon p der DGL und die allgemeine Lösung der homogenen DGL Ypsilon h, 
+in eine partikuläre Lösung Ypsilon P der DGL und die allgemeine Lösung der homogenen DGL Ypsilon H, 
 im Folgenden kurz homogene Lösung genannt.
-Da Ypsilon für große T gleich Ypsilon e ist, muss auch Ypsilon e die DGL erfüllen und zwar für alle t.
+Da Ypsilon für große T gleich Ypsilon E ist, muss auch Ypsilon E die DGL erfüllen und zwar für alle Tee.
 Der eingeschwungene Zustand ist deshalb eine partikuläre Lösung der DGL. 
 }% Speech Ende
 \speech{Grundlagen2Zerlegung}{4}{%
-Nehmen wir nun die allgemeine DGL und subtrahieren von dieser die DGL mit eingesetzter Lösung Ypsilon e,
+Nehmen wir nun die allgemeine DGL und subtrahieren von dieser die DGL mit eingesetzter Lösung Ypsilon E,
 so erhalten wir die homogene DGL für Ypsilon F ohne Störterm.
-Deshalb ist unser Ypsilon e die partikuläre Lösung unserer DGL und Ypsilon F die homogene Lösung unserer DGL.
+Deshalb ist unser Ypsilon E die partikuläre Lösung unserer DGL und Ypsilon F die homogene Lösung unserer DGL.
 }% Speech Ende
 \end{frame}
 
@@ -1047,26 +1047,26 @@ Die homogene DGL erhalten wir, indem wir in unserer DGL den Störterm gleich Nul
 \speech{Grundlagen2HomogeneLoesung}{2}{%
 Als erster Schritt bestimmen wir die Eigenwerte Lambda I unserer DGL.
 Dafür benötigen wir das charakteristische Polynom.
-Dieses erhalten wir, indem wir den Exponenzialansatz K mal e hoch Lambda T für Ypsilon h einsetzen. 
+Dieses erhalten wir, indem wir den Exponenzialansatz K mal E hoch Lambda T für Ypsilon H einsetzen. 
 Durch I faches Differenzieren ergeben sich die I fachen Potenzen von Lambda als Koeffizienten vor dem Exponenzialansatz. 
 Der Exponenzialterm wird ausgeklammert und eliminiert.  
 Als Abkürzung kann das charakteristische Polynom auch direkt aus der DGL abgelesen werden, 
-hierfür wird jede I te Ableitung von Ypsilon h durch den Term Lambda hoch I ersetzt.
-Die Nullstellen des charakteristischen Polynoms sind die Eigenwerte Lambda i.  
+hierfür wird jede I te Ableitung von Ypsilon H durch den Term Lambda hoch I ersetzt.
+Die Nullstellen des charakteristischen Polynoms sind die Eigenwerte Lambda I.  
 }% Speech Ende
 \speech{Grundlagen2HomogeneLoesung}{3}{%
-Die homogene Lösung ist eine Linearkombination von exakt n linear unabhängigen Lösungen der homogenen DGL.
+Die homogene Lösung ist eine Linearkombination von exakt N linear unabhängigen Lösungen der homogenen DGL.
 Die Form der Lösung hängt von der Art der Eigenwerte ab,
 die Lambdas können einfache Nullstellen oder mehrfache Nullstellen sein.
-Bei einfachen Nullstellen wählen wir den ersten Lösungsansatz K mal e hoch Lambda T
+Bei einfachen Nullstellen wählen wir den ersten Lösungsansatz K mal E hoch Lambda T
 mit dem jeweiligen Index I für K und Lambda.
 }% Speech Ende
 \silence{1}
 \speech{Grundlagen2HomogeneLoesung}{3}{%
 Bei mehrfachen Nullstellen wählen wir den zweiten Lösungsansatz. Dieser basiert auf der Variation der Konstanten des ersten Lösungsansatzes,
 um auch bei gleichen Nullstellen linear unabhängige Lösungen zu erhalten.
-Hierfür wird der Exponenzialansatz jeder weiteren gleichen Nullstelle mit dem Faktor T hoch j-1 multipliziert. 
-Also T hoch null für die erste Nullstelle, T hoch eins für die zweite Nullstelle usw.
+Hierfür wird der Exponenzialansatz jeder weiteren gleichen Nullstelle mit dem Faktor T hoch J minus eins multipliziert. 
+Also T hoch null für die erste Nullstelle, T hoch eins für die zweite Nullstelle und so weiter.
 Achtung Komplexe Eigenwerte sind möglich, treten aber immer nur paarweise komplex, konjugiert auf. 
 Solche Systeme sind prinzipiell schwingungsfähig. Mehr dazu im Kapitel Schaltvorgänge bei Schwingkreisen.
 Wichtig Die Realteile der Eigenwerte eines stabilen Systems sind immer negativ.
@@ -1148,24 +1148,24 @@ Auf dieser Folie sehen wir exemplarisch ein Beispiel für eine homogene DGL fün
 Aus den konstanten Koeffizienten lesen wir zunächst direkt die Koeffizienten für das charakteristische Polynom ab.
 }% Speech Ende
 \speech{Grundlagen2HomogeneLoesungBeispiel}{3}{%
-Hier sind zum Verdeutlichen die Koeffizienten in blau und die Potenzen von Lambda bzw. der Ableitungen von Ypsilon von Tee in rot hervor gehoben. 
-Die Eigenwerte Lambda 1 bis Lambda 5 erhalten wir nun durch Bestimmung der Nullstellen des charakteristischen Polynoms.
+Hier sind zum Verdeutlichen die Koeffizienten in blau und die Potenzen von Lambda beziehungsweise der Ableitungen von Ypsilon von Tee in rot hervor gehoben. 
+Die Eigenwerte Lambda eins bis Lambda fünf erhalten wir nun durch Bestimmung der Nullstellen des charakteristischen Polynoms.
 }% Speech Ende
 \speech{Grundlagen2HomogeneLoesungBeispiel}{4}{%
 In diesem Fall erhalten wir eine gemischte Konstellation mit einer einfachen Nullstelle und zwei doppelte konjugierte, komplexe Nullstellen. 
-Für die einfache Nullstelle Lambda 1 wählen wir den ersten Lösungsansatz mit dem einfachen Exponenzialterm K1 mal e hoch Lambda 1 mal t. 
+Für die einfache Nullstelle Lambda 1 wählen wir den ersten Lösungsansatz mit dem einfachen Exponenzialterm K eins mal E hoch Lambda eins mal t. 
 Für die zwei doppelten Nullstellen Lambda zwei und drei, sowie Lambda vier und fünf wählen wir den Exponenzialansatz mit Variation der Konstanten.
 }% Speech Ende
 \speech{Grundlagen2HomogeneLoesungBeispiel}{5}{%
 Hier sehen wir die resultierende allgemeine Lösung mit eingefärbten Koeffizienten K eins bis K fünf. 
-Für die doppelten Nullstellen erhalten wir K zwei plus K drei mal t, beziehungsweise K vier plus K fünf mal T als Koeffizienten für Exponenzialtermen.
+Für die doppelten Nullstellen erhalten wir K zwei plus K drei mal Tee, beziehungsweise K vier plus K fünf mal Tee als Koeffizienten für Exponenzialtermen.
 }% Speech Ende
 \speech{Grundlagen2HomogeneLoesungBeispiel}{6}{%
 Wie hier farblich hervorgehoben zu erkennen ist, ergeben sich aus den beiden komplex konjugierten Nullstellen je ein exponentiell abklingender Sinus- und ein Kosinusterm.
-Der Realteil der komplex konjugierten Nullstellen, hier die in orange hervorgehobe minus eins, 
-bestimmt die Abklingrate des Exponenzialterms, e hoch Realteil von Lambda mal t, hier e hoch minus t. 
-Der Imaginärteil der komplex konjugierten Nullstellen, hier die in magenta hervorgehobene minus 2 vor dem jot, 
-bestimmt die Kreisfrequenz des Sinus- und des Kosinusterms, hier Sinus von zwei T beziehungsweise Kosinus von zwei t.
+Der Realteil der komplex konjugierten Nullstellen, hier die in orange hervorgehobene minus eins, 
+bestimmt die Abklingrate des Exponenzialterms, E hoch Realteil von Lambda mal Tee, hier E hoch minus Tee. 
+Der Imaginärteil der komplex konjugierten Nullstellen, hier die in magenta hervorgehobene plus beziehungsweise minus zwei J, 
+bestimmt die Kreisfrequenz des Sinus- und des Kosinusterms, hier Sinus beziehungsweise Kosinus von zwei Tee.
 Eine Herleitung der Umformung kann am Ende des Moduls im Exkurs für die Herleitung der homogenen Lösung im periodischen Fall bei Serienschwingkreisen nachgesehen werden. 
 }% Speech Ende
 \end{frame}
@@ -1249,9 +1249,9 @@ Eine Herleitung der Umformung kann am Ende des Moduls im Exkurs für die Herleit
     \end{itemize}
 }%
 \speech{Grundlagen2PartikulaereLoesung}{1}{%
-Kommen wir zur Berechnung der partikulären Lösung Ypsilon p, das heißt zur Berechnung des eingeschwungenen Zustandes Ypsilon e.
+Kommen wir zur Berechnung der partikulären Lösung Ypsilon P, das heißt zur Berechnung des eingeschwungenen Zustandes Ypsilon E.
 Im eingeschwungenen Zustand verhält sich unsere Schaltung stationär. 
-In linearen, zeitinvarianten Systemen bedeutet das, dass unser Ypsilon p 
+In linearen, zeitinvarianten Systemen bedeutet das, dass unser Ypsilon P 
 bei DC-Anregung eine Gleichgröße mit konstantem Wert ist und
 bei AC-Anregung eine sinusförmige Wechselgröße ist mit gleicher Frequenz wie die Anregung.
 Zur Bestimmung wenden wir die bekannten Methoden zur Netzwerkberechnung an. 
@@ -1316,7 +1316,7 @@ Im dritten Schritt wird der eingeschwungene Zustand, das heißt die partikuläre
 Im vierten Schritt wird die allgemeine Lösung durch Überlagerung aufgestellt, das heißt durch Addition beider Einzellösungen. 
 Im fünften Schritt werden die Konstanten der allgemeinen Lösung durch Einsetzen der Anfangsbedingungen berechnet. 
 Die Anfangsbedingungen ergeben sich aus den Stetigkeitsbedingungen für U C und I L, wenn diese vor dem Schaltzeitpunkt bekannt sind.
-Handelt es sich bei Schritt eins um eine homogene Differenzialgleichung entfallen die Schritte drei und vier mit Ypsilon e gleich Null.
+Handelt es sich bei Schritt eins um eine homogene Differenzialgleichung entfallen die Schritte drei und vier mit Ypsilon E gleich Null.
 }% Speech Ende
 \end{frame}
 

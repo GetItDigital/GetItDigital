@@ -64,10 +64,10 @@
 
 [06Ortskurven1Lernziele]
 [06Ortskurven2Definition]
-[06Ortskurven3ZshZeigerdiagramm]
-[06Ortskurven4ImpedanzortskurveRLGliedRvar]
-[06Ortskurven5ImpedanzortskurveRLGliedwvar]
-[06Ortskurven6AdmittanzortskurveInversionOrtskurven]
+[06Ortskurven3Merke]
+[06Ortskurven4ImpedanzRLGliedRvar]
+[06Ortskurven5ImpedanzRLGliedwvar]
+[06Ortskurven6AdmittanzInversionOrtskurven]
 [06Ortskurven7GrundschaltungenReihe]
 [06Ortskurven8GrundschaltungenParallel]
 

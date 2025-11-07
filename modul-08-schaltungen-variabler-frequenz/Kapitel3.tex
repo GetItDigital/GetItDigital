@@ -1,8 +1,25 @@
-% Kapitel 3 - Ortskurven
-%           - Impedanzortskurven
-%           - Admittanzortskurven
-%           - Ortskurven Grundschaltungen
-\section{Ortskurven}
+\section{Ortskurven}%
+%
+\newvideofile{Ortskurven}{Ortskurven}%
+\v{% Video only Frame
+\begin{frame}\ftx{\secname}
+    \begin{Lernziele}{Video - Ortskurven}
+        Sie lernen in diesem Video:
+        \begin{itemize}\b{\setlength\itemsep{0.7em}}
+            \item Ortskurven und deren Anwendungsbereiche kennen,
+            \item Ortskurven zu konstruieren und zu interpretieren, und
+            \item Impedanz- und Admittanzortskurven von Grundschaltungen kennen.
+        \end{itemize}
+    \end{Lernziele}
+\speech{06Ortskurven1Lernziele}{1}{%
+Wilkommen zum Video über Ortskurven.
+Sie lernen in diesem Video Ortskurven und deren Anwendungsbereiche anhand von Beispielen kennen,
+Ortskurven prinzipiell zu konstruieren und zu interpretieren, und
+die Impedanz- und Admittanzortskurven von typischen Grundschaltungen wie R C und R L Gliedern kennen.
+}% Ende speech
+\end{frame}%
+}% Ende Video only Frame
+%
 \begin{frame}\ftx{\secname}
 \index{Ortskurve}%
 \s{%
@@ -48,7 +65,7 @@
         Beispiel Stromortskurve einer Asynchrommaschine mit Leistungsgrößen\label{fig:ortskurve:stromortskurve:asm:leistung}%
     }%
     Ortskurven eignen sich gut zur Visualisierung von Systemzuständen, -größen und deren Einfluss aufeinander.
-}
+}%
 
 \b{%
     \centering
@@ -71,7 +88,30 @@
     \end{minipage}\hfill\vspace{5pt}%
 
     \only<2-| handout:2->{\textbf{Beispiel:} Stromortskurve einer Asynchrommaschine für $\underline{I}_s(s)$}
-}
+}%
+\speech{06Ortskurven2Definition}{1}{%
+Die Ortskurve ist definiert als die graphische Darstellung einer komplexen Größe in Abhängigkeit eines reellen Parameters in der komplexen Ebene.
+Die Darstellung von Zeigern in der komplexen Ebene kennen wir bereits aus dem Zeigerdiagramm.
+Die Ortskurve kann als Verallgemeinerung eines Zeigers verstanden werden.
+Im Gegensatz zum Zeigerdiagramm wird im Ortskurvendiagramm eine Zeigerschar, also die Menge aller möglichen Zeigerpositionen, dargestellt.
+Die Ortskurve beschreibt also die Kurve, welche die Spitze eines Zeigers bei Variation eines Parameters beschreibt.
+}% Ende speech
+\speech{06Ortskurven2Definition}{2}{%
+Ortskurven werden in vielen verschiedenen Bereichen angewandt, um mögliche Zustände eines Systems zu visualisieren.
+Links sehen sie die Stromortskurve einer Asynchronmaschine, auch Heylandkreis oder Ossannakreis genannt, als Beispiel einer Ortskurve.
+Der dargestellte Kreis ist die Ortskurve für den komplexen Statorstrom I S in Abhängigkeit des Schlupfes S dar.
+Je nach Schlupfwert befindet sich der Zeiger für den Statorstrom an einer anderen Position auf der Ortskurve.
+}% Ende speech
+\speech{06Ortskurven2Definition}{3}{%
+Für welche Anwendungen eignet sich die Ortskurve als Darstellungsform?
+Wie wir an der Stromortskurve sehen können, eignet sich diese Darstellungsform gut zur Visualisierung verschiedener Betriebszustände. 
+In diesem Fall sind sind das beispielsweise der Motor-, der Brems- und der Generatorbetrieb der Asynchronmaschine.
+}% Ende speech
+\speech{06Ortskurven2Definition}{4}{%
+Ortskurven eignen sich daher gut zur Visualisierung von Systemzuständen, -größen und deren Einfluss aufeinander.
+Bei der Stromortskurve einer Asynchronmaschine lassen sich so auch weitere Systemgrößen graphisch ermitteln, wie links anhand der eingezeichneten Leistungsgerade gezeigt ist.
+Unter Berücksichtigung anderer Systemgrößen und der Maßstäbe im Diagramm, lassen sich direkt verschiedene Leistungsgrößen und Drehmomente ablesen.
+}% Ende speech
 \end{frame}
 
 
@@ -101,6 +141,11 @@
     \begin{Merksatz}{Ortskurve}
         Zeigt Größe in komplexer Ebene parameterabhängig als Kurve (Punkteschar).
     \end{Merksatz}
+\speech{06Ortskurven3Merke}{1}{%
+Merken wir uns den Unterschied zwischen Zeigerdiagramm und Ortskurve.
+Im Zeigerdiagramm zeigt ein Zeiger eine komplexe Größe in der komplexen Ebene an, also einen einzelnen Punkt.
+In der Ortskurve hingegen wird die komplexe Größe als Kurve dargestellt, die von einem realen Parameter abhängt, also eine Punkteschar.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -181,7 +226,7 @@
         \includegraphics{Tikz/pdf/plot_ortskurve_RLs_wLvar.pdf}}% wL=p*w0L0, p in [0,3]; R=konst.
         {RL-Glied (Serienschaltung)}
 
-\end{bsp}
+\end{bsp}%
 \end{frame}
 }% end skript only, 
 % note: column environment breaks bsp-box -> \s{frame with bsp-box}, \b{frame with columns}
@@ -204,7 +249,14 @@
 
     \column[c]{0.5\textwidth}
     \includegraphics{Tikz/pdf/plot_ortskurve_RLs_Rvar.pdf}
-\end{columns}
+\end{columns}%
+\speech{06Ortskurven4ImpedanzRLGliedRvar}{1}{%
+Kommen wir zur Impedanzortskurve einer R L Reihenschaltung mit variablem Widerstand.
+Links sehen Sie das Schaltbild mit der zugehörigen Impedanzgleichung und rechts die Impedanzortskurve in rot dargestellt.
+Bei variablem Widerstand ändert sich nur der Realteil der Impedanz, während der Imaginärteil konstant bleibt.
+Die Impedanzortskurve verläuft daher horizontal entlang der Realachse.
+Exemplarisch sind die Impedanzen für R gleich null, für R gleich dem einfachen Referenzwiderstand R null und für R gleich dem dreifachen Referenzwiderstand R null als Zeiger eingezeichnet.  
+}% Ende speech
 \end{frame}
 
 \subsection{Impedanzortskurve - RLs-Glied, $\omega$ variabel}
@@ -225,7 +277,15 @@
 
     \column{0.5\textwidth}
     \includegraphics{Tikz/pdf/plot_ortskurve_RLs_wLvar.pdf}
-\end{columns}
+\end{columns}%
+\speech{06Ortskurven5ImpedanzRLGliedwvar}{1}{%
+Auf die gleiche Art und Weise können wir die Impedanzortskurve für die R L Reihenschaltung für eine variable Frequenz konstruieren.
+Links sehen Sie wieder das Schaltbild mit der zugehörigen Impedanzgleichung, dieses mal mit der variablen Kreisfrequenz P mal Omega null.
+Rechts sehen Sie die Impedanzortskurve in rot dargestellt, dieses mal mit variablem Imaginärteil und konstantem Realteil.
+Die Impedanzortskurve verläuft daher vertikal entlang der Imaginärachse.
+Die selbe Impedanzortskurve ergibt sich auch, bei variabler Induktivität L anstelle der variablen Frequenz. 
+Das sind einfache Beispiele für die Konstruktion von Impedanzortskurven. Wie sieht es aber mit Admittanzortskurven der gleichen Schaltungen aus?
+}% Ende speech
 \end{frame}
 }% end beamer only
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -288,6 +348,25 @@
         Beispiel Möbius-Transformation, Inversion von Gitter\protect\footnotemark\label{fig:plot:moebiusinversion}%
     }
     \footnotetext{Angelehnt an MoebiusInversion.svg von Chrislb, CC-BY-SA-2.0-DE, 2005, \url{https://commons.wikimedia.org/wiki/File:MoebiusInversion.svg}}
+\speech{06Ortskurven6AdmittanzInversionOrtskurven}{1}{%
+Die Konstruktion der Admittanzortskurve funktioniert prinzipiell identisch wie bei der Impedanzortskurve. 
+Da die Admittanz der Kehrwert der Impedanz ist, ergeben sich bestimmte geometrische Beziehungen zwischen Impedanz- und Admittanzortskurve.
+Allgemein ist die Kehrwertbildung einer komplexen Größe ein Spezialfall der Möbius-Transformation, genauer gesagt die Inversion.
+Möbios-Transformationen sind winkeltreu und bijektiv. Das bedeutet, dass Winkel zwischen zwei Zeigern oder Kurven in einer Impedanzortskurve
+gleich dem Winkel zwischen den entsprechenden Zeigern oder Kurven in der Admittanzortskurve sind. 
+Zudem wird jeder Punkt der Impedanzortskurve eindeutig auf einen Punkt der Admittanzortskurve abgebildet und vice versa.
+}% Ende speech
+\silence{1}%
+\speech{06Ortskurven6AdmittanzInversionOrtskurven}{1}{%
+Bei Inversionen ergeben sich speziell für Geraden und Kreisen die in der Tabelle dargestellten Beziehungen.
+Kreise und Geraden werden jeweils auf Kreise und Geraden abgebildet.
+In der exemplarischen Inversion des Gitters links sehen wir diese Beziehungen veranschaulicht.
+Aus den horizontalen und vertikalen Geraden des ursprünglichen Gitters werden Kreise, die durch den Ursprung verlaufen.
+Je näher eine Gerade am Ursprung liegt, desto größer ist der Radius des entsprechenden Kreises in der invertierten Ortskurve.
+Die Achsen, welche als Geraden durch den Ursprung verlaufen, werden auf sich selbst abgebildet und bleiben Geraden durch den Ursprung.
+Die Geraden durch den Ursprung entsprechen dem Grenzfall von Kreisen mit unendlichem Radius.
+Bei der Konstruktion von Impedanz- und Admittanzortskurven hilft es sich zu veranschaulichen, wie sich eine Schaltung verhält, wenn eine der Größen gegen null oder unendlich geht.
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -361,7 +440,16 @@
         \\\hline
     \end{tabular}
 \end{table}
-\b{\frametitle{\subsecname{} - in Reihe}} 
+\b{\frametitle{\subsecname{} - in Reihe}}%
+\speech{06Ortskurven7GrundschaltungenReihe}{1}{%
+Hier sehen Sie eine Übersicht der Impedanz- und Admittanzortskurven für die Grundschaltungen R L und R C in Serienschaltung.
+Die Impedanzortskurven sind in der mittleren Spalte und die Admittanzortskurven in der rechten Spalte dargestellt.
+Wie Sie sehen können, erhalten wir bei der Impedanzkurve jeweils eine Halbgerade, das heißt von einem Punkt bis ins unendlich laufend
+entweder im ersten oder im vierten Quadranten. Bei den zugehörigen Admittanzortskurven erhalten wir jeweils einen Halbkreis
+im gegenüberliegenden Quadranten. Der Realteil bleibt dabei immer positiv, da es sich um passive verlustbehaftete Schaltungen handelt.
+Zur Veranschaulichung hilft es, sich die Grenzfälle anzusehen, wenn der Blindwiderstand gegen null oder unendlich geht.
+Bei den Serienschaltungen kann die Impedanz gegen unendlich gehen, wenn R oder X gegen unendlich geht, wodurch die Admittanz gegen null geht.
+}% Ende speech
 \end{frame}
 \b{%Start beamer only - Tabellenteil 2
 \begin{frame}
@@ -395,5 +483,16 @@
             \\\hline
         \end{tabular}
     \end{table}
+\speech{06Ortskurven8GrundschaltungenParallel}{1}{%
+Hier sehen Sie zur Übersicht noch die Impedanz- und Admittanzortskurven für die Grundschaltungen R L und R C in Parallelschaltung.
+Im Gegensatz zu den Serienschaltungen verlaufen hier die Impedanzortskurven jeweils als Halbkreise und die zugehörigen Admittanzortskurven als Halbgeraden.
+Auch hier sind die Impedanz- und Admittanzortskurven jeweils in der rechten Halbebene, da der Realteil der Impedanz und Admittanz immer positiv ist.
+Schauen wir uns die Grenzfälle an. Bei den Parallelschaltungen kann die Admittanz, also der komplexe Leitwert, gegen unendlich gehen, 
+wenn der Blindwiderstand oder der Widerstand gegen null geht.
+Bei komplexeren Schaltungen können wir die Gesamtortskurve teils durch Überlagerung der Einzelortskurven konstruieren.
+In Serienschaltungen addieren sich die Impedanzen, und somit auch die Impedanzortskurven, während sich in Parallelschaltungen die Admittanzen addieren.
+Fügen wir beispielsweise einen elektrischen Widerstand in Serie zu einer der Parallelschaltungen hinzu, verschiebt sich die Impedanzortskurve um den Betrag des Widerstands nach rechts.
+Die Impedanz- und Admittanzortskurven der Grundschaltungen im Kopf zu haben, kann dadurch helfen, komplexere Ortskurven zu verstehen und zu konstruieren.
+}% Ende speech
 \end{frame}
 }%Ende beamer only - Tabellenteil 2

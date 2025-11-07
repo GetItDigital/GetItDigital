@@ -1,11 +1,27 @@
-% Kapitel 4 - Resonanzkreise, Schwingungen, Ortskurven
-%       - Resonanzkreis, Resonanzfrequenz
-%       - Schwingungen, Dämpfung
-%       - Ortskurven, Pol-Nullstellen-Diagramm
-
-
 \section{Resonanzkreise}
-\label{sec:resonanzkreise}
+\label{sec:resonanzkreise}%
+%
+\newvideofile{ResonanzkreiseDefinitionenIdealeSchwingkreise}{Resonanzkreise - Definitionen und ideale Schwingkreise}%
+\v{% Video only Frame
+\begin{frame}\ftx{\secname}
+    \begin{Lernziele}{Video - Resonanzkreise, Definitionen und ideale Schwingkreise}
+        Sie lernen in diesem Video:
+        \begin{itemize}
+            \item die Resonanzbedingung, bei der Resonanzerscheinungen auftreten,
+            \item die wichtigsten Definitionen zur Beschreibung von Resonanzkreisen kennen, und
+            \item das Resonanzverhalten idealer Schwingkreise zu berechnen und zu verstehen.
+        \end{itemize}
+    \end{Lernziele}
+\speech{07Resonanzkreise1Lernziele}{1}{%
+Wilkommen zum Video über Resonanzkreise.
+In diesem Video erhalten Sie einen kurzen Überblick über die Grundlagen zum Thema Resonanzkreise.
+Sie lernen, unter welcher Bedingung  Resonanzerscheinungen auftreten,
+die wichtigsten Größen und deren Definitionen zur Beschreibung von Resonanzkreisen kennen,
+und das Resonanzverhalten von Schaltungen am Beispiel idealer Schwingkreise zu berechnen und zu verstehen.
+}% Ende speech
+\end{frame}%
+}% Ende Video only Frame
+%
 \begin{frame}\ftx{\secname}%
 \index{Resonanzkreis}%
 \index{Schwingkreis}
@@ -169,6 +185,30 @@
     \end{minipage}
 \end{minipage}
 }% Ende Beamer only
+\speech{07Resonanzkreise2Resonanzerscheinung}{1}{%
+Auf dieser Folie sehen Sie zwei Arten von Schwingungen gegenübergestellt. 
+In der oberen Bildhälfte ist das Beispiel einer freien Schwingung gezeigt und in der unteren das Beispiel einer erzwungenen Schwingung. 
+Links sehen wir jeweils das zugehörige Schaltbild, in der Mitte die Zeitverläufe von Strom und Spannung und rechts die Randbedingungen beziehungsweise die Anregung.
+}% Ende speech
+\silence{1}%
+\speech{07Resonanzkreise2Resonanzerscheinung}{1}{%
+Beginnen wir bei der freien Schwingung oben. Gegeben sei der RLC Serienschwingkreis wie im Schaltbild links dargestellt.
+Die Kapazität sei zu Beginn auf die Spannung U null geladen und es fließt noch kein Strom. 
+Im Zeitverlauf in der Mitte sehen wir, dass Strom und Spannung mit einer Eigenkreisfrequenz des Schwingkreises oszilliert.
+Die Amplituden klingen aufgrund der Dämpfung durch den Widerstand ab.}% Ende speech
+\silence{2}%
+\speech{07Resonanzkreise2Resonanzerscheinung}{1}{%
+Bei der erzwungenen Schwingung unten im Bild sehen wir den gleichen RLC Serienschwingkreis, diesmal aber mit Anregung durch eine ideale Spannungsquelle im eingeschwungenen Zustand.
+In diesem Fall schwingen Strom und Spannung mit der Frequenz der Spannungsquelle, welche auch Erregerfrequenz genannt wird.
+Unabhängig davon an welchem Bauelement die Spannungsquelle angeschlossen ist, wird die Schaltung im eingeschwungenen Zustand mit der Erregerfrequenz schwingen.
+Deshalb vernachlässigen wir an dieser Stelle, dass die ideale Spannungsquelle nicht direkt an einer Kapazität angeschlossen werden kann, 
+da dies ohne Innenwiderstand zu unendlich großen Strömen bei Spannungssprüngen führen würde.
+}% Ende speech
+\silence{3}%
+\speech{07Resonanzkreise2Resonanzerscheinung}{1}{%
+Wichtig ist an dieser Stelle, dass Schwingkreise prinzipiell schwingungsfähig sind und mit einer Eigenfrequenz schwingen können. 
+Werden diese mit einer Erregerfrequenz nahe ihrer Eigenfrequenz angeregt, kann es zu einer Resonanz kommen.
+}% Ende speech
 \end{frame}
 %-------------------------------------------------------------------------------------------------%
 
@@ -287,7 +327,29 @@
     \end{align*}
 
 \end{columns}
-}
+}%
+\speech{07Resonanzkreise3Definitionen}{1}{%
+Das Wort Resonanz leitet sich vom lateinischen Wort resonare ab, was so viel wie widerhallen bedeutet.
+Am Beispiel der Schwingkreise, auch Resonanzkreise genannt, links im Bild erläutern wir nun die wichtigsten Definitionen im Zusammenhang mit Resonanz.
+Prinzipiell gibt es zwei Grundtypen von Resonanzkreisen, den Reihen- und den Parallel-Resonanzkreis wie links gezeigt.
+In beiden Schwingkreisen sind eine Induktivität und eine Kapazität verbaut, welche Energie in magnetischer beziehungsweise elektrischer Form speichern können.
+Bei der freien Schwingung wird die Energie zwischen diesen beiden Formen hin und her gewandelt.
+Bei einer erzwungenen Schwingung hängt das Verhalten des Schwingkreises von der Frequenz der Anregung ab.
+Bei niedrigen Frequenzen dominiert die Kapazität, bei hohen Frequenzen die Induktivität.
+Im Resonanzfall heben sich die Effekte von Induktivität und Kapazität gegenseitig auf.
+Die Resonanzbedingung wie rechts gezeigt besagt, dass im Resonanzfall der Imaginärteil der Gesamtimpedanz gleich null ist.
+}% Ende speech
+\silence{1}
+\speech{07Resonanzkreise3Definitionen}{1}{%
+Die Frequenz bei der die Resonanzbedingung erfüllt ist, wird als Resonanzfrequenz F null bezeichnet.
+Der Betrag der Reaktanz der Induktivität beziehungsweise der Kapazität im Resonanzfall wird als Kennwiderstand X k bezeichnet.
+Analog dazu ist der Kennleitwert B k definiert als der Betrag des Leitwertes der Induktivität beziehungsweise der Kapazität im Resonanzfall.
+Als Schwingkreisgüte Q wird das Verhältnis von Blindleistungsbetrag der Induktivität oder der Kapazität zur Wirkleistung des Schwingkreises im Resonanzfall definiert.
+Sie ist ein Maß für die Schwingungsfähigkeit eines Systems und wäre beim idealen Schwingkreis unendlich groß, da keine Verluste auftreten.
+Bei der Eigenkreisfrequenz wird zwischen der gedämpften Eigenkreisfrequenz f d und der ungedämpften Eigenkreisfrequenz f null unterschieden.
+Die ungedämpfte Eigenkreisfrequenz entspricht exakt der Resonanzkreisfrequenz, die gedämpfte Eigenkreisfrequenz ist bei realen Schwingkreisen, das heißt mit elektrischem Widerstand, 
+geringfügig kleiner als die Resonanzkreisfrequenz. Die Eigenfrequenzen und das freie Schwingverhalten werden in Modul zwölf Schaltvorgänge näher behandelt.
+}% Ende speech
 \end{frame}
 
 %-------------------------------------------------------------------------------------------------%
@@ -401,6 +463,33 @@ mit $R$, $L$ und $C$ alle in Reihe oder alle parallel.
     \omega_0 = \frac{1}{\sqrt{LC}}
 \end{equation*}
 }%Ende Beamer only
+\speech{07Resonanzkreise4IdealeSchwingkreise}{1}{%
+Kommen wir zur Berechnung der Resonanzfrequenz an idealen LC Schwingkreisen, hier links der Reihenschwingkreis und rechts der Parallelschwingkreis.
+Beim Beispiel links sei angenommen, dass der Serienschwingkreis mit einer konstanten Wechselspannung U angeregt wird. 
+Die Spannung U komplex ist gleich dem Strom I komplex mal der Impedanz des Schwingkreises.
+Die Resonanzbedingung ist erfüllt, wenn der Imaginärteil der Impedanz gleich null ist. 
+Da die anliegende Spannung von der Spannungsquelle getrieben wird, 
+muss im Resonanzfall der Strom theoretisch gegen unendlich gehen, da die Gesamt Reaktanz gegen null geht.
+Der Resonanzfall im Serienschwingkreis wird deshalb auch als spannungsbezogene Resonanz bezeichnet, da sich die Spannungen über L und C gegenseitig aufheben.
+}% Ende speech
+\silence{1}%
+\speech{07Resonanzkreise4IdealeSchwingkreise}{1}{%
+Beim Parallelschwingkreis rechts im Bild nehmen wir an, dass dieser mit einem konstanten Wechselstrom I angeregt wird. 
+Die Strom I komplex ist gleich der Spannung U komplex mal dem Admittanz des Schwingkreises.
+Die Resonanzbedingung ist erfüllt, wenn der Imaginärteil der Admittanz gleich null ist, da dann auch der Imaginärteil der Impedanz null ist.
+Im Parallelschwingkreis muss im Resonanzfall die Spannung theoretisch gegen unendlich gehen, da der Gesamtleitwert gegen null geht.
+Der Resonanzfall im Parallelschwingkreis wird deshalb auch als strombezogene Resonanz bezeichnet, da sich die Ströme über L und C gegenseitig aufheben.
+}% Ende speech
+\silence{2}%
+\speech{07Resonanzkreise4IdealeSchwingkreise}{1}{%
+Das Resonanzverhalten unterscheidet sich also grundlegend, je nachdem, ob es sich um einen Reihen- oder Parallelschwingkreis handelt.
+Im spannungsbezogenen Fall beim Serienschwingkreis heben sich die Spannungen über L und C auf es kommt zu Überströmen.
+Im strombezogenen Fall beim Parallelschwingkreis heben sich die Ströme über L und C auf es kommt zu Überspannungen.
+Die Resonanzfrequenz ist in beiden Fällen jedoch identisch. 
+Wenn wir nach Omega null umstellen, erhalten wir in beiden Fällen die Resonanzkreisfrequenz eins durch Wurzel aus L C.
+In den nächsten beiden Videos untersuchen wir genauer das Verhalten von realen RLC Serienschwingkreisen und danach von Parallelschwingkreisen im Resonanzfall.
+Vielen Dank fürs Zuhören. 
+}% Ende speech
 \end{frame}
 
 %-------------------------------------------------------------------------------------------------%

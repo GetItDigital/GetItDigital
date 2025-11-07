@@ -100,13 +100,13 @@ Können wir bereits abschätzen, wie die Lade- und Entladevorgänge bei Gleichsp
 \speech{SchaltvorgaengeDC1}{3}{%
 Wie aus den Grundlagen bekannt ist, ergibt sich für ein einfaches R C oder ein einfaches R L Glied 
 jeweils eine DGL erster Ordnung, da in beiden Fällen nur ein Energiespeicher vorhanden ist (C oder L).
-Die DGL wird daher die hier gezeigte Form: A eins mal erste Ableitung von Ypsilon von Tee plus A null mal Ypsilon von Tee ist gleich b annehmen.
+Die DGL wird daher die hier gezeigte Form: A eins mal erste Ableitung von Ypsilon von Tee plus A null mal Ypsilon von Tee ist gleich B annehmen.
 Und wie sehen die Zeitverläufe prinzipiell aus?
 }% Speech Ende
 \speech{SchaltvorgaengeDC1}{4}{%
 Bei einer DGL erster Ordnung erhalten wir einen einzelnen Eigenwert Lambda. 
 Dadurch entstehen wie rechts im Diagramm dargestellt ist, charakteristischen Exponentialverläufe beim Laden und Entladen bei Gleichspannung. 
-Die Exponenzialform resultiert aus dem flüchtigen Zustand, das heißt der homogenen Lösung K mal e hoch Lambda T für einfache Nullstellen. 
+Die Exponenzialform resultiert aus dem flüchtigen Zustand, das heißt der homogenen Lösung K mal E hoch Lambda Tee für einfache Nullstellen. 
 }% Speech Ende
 \end{frame}
 
@@ -258,9 +258,9 @@ Wegen des einen Energiespeichers C, hat die DGL erste Ordnung und die Zeitverlä
 }% Speech Ende
 \speech{SchaltvorgaengeDC1Zeitkonstante}{2}{%
 Rechts sehen wir im Zeitverlaufsdiagramm die Spannung U C an der Kapazität. 
-Die Spannung U C ist zu Beginn null und steigt ab dem Schaltzeitpunkt T gleich null exponentiell bis zum Endwert U q.
-Die dazugehörige Gleichung ist: U C von Tee ist gleich U q (der Endwert) mal Klammer auf eins minus e hoch minus T durch tau Klammer zu. 
-Der Term: Eins minus e hoch minus T durch tau, entspricht einer exponentiellen Annäherung von null an eins. 
+Die Spannung U C ist zu Beginn null und steigt ab dem Schaltzeitpunkt Tee gleich null exponentiell bis zum Endwert U q.
+Die dazugehörige Gleichung ist: U C von Tee ist gleich U q (der Endwert) mal Klammer auf eins minus e hoch minus Tee durch Tau Klammer zu. 
+Der Term: Eins minus e hoch minus Tee durch Tau, entspricht einer exponentiellen Annäherung von null an eins. 
 }% Speech Ende
 \speech{SchaltvorgaengeDC1Zeitkonstante}{3}{%
 Dieses Tau wird als Zeitkonstante bezeichnet und hat die gleiche Einheit wie die Zeit. 
@@ -272,10 +272,10 @@ In dem hier gezeigten Schaltbild entspricht die Zeitkonstante Tau dem Produkt au
 Die hier gezeigte Tabelle zeigt welche Wert nach einem, nach drei oder nach fünf Tau 
 in der mittleren Zeile bei einer exponentiellen Annäherung erreicht werden und
 in der unteren Zeile bei einem exponentiellen Abfall erreicht werden.
-Beide Verläufe näheren sich einem Endwert (eins oder null), erreichen diesen aber nie.
+Beide Verläufe näheren sich dem Endwert eins oder null, erreichen diesen aber nie.
 Deshalb gilt als Faustregel, dass ein Exponenzialverlauf nach fünf Tau eingeschwungen ist.
 Dann hat der Wert ca. neunundneunzig Prozent der Differenz zum Endwert überbrückt.
-Nach einem Tau sind es ca. dreiundsechzig Prozent, nach drei Tau ca. fünfundneunzig Prozent.
+Nach einem Tau sind es ca. dreiundsechzig Prozent, nach drei Tau circa fünfundneunzig Prozent.
 Die Orientierungswerte sind zum Beispiel hilfreich bei der Dimensionierung von Bauteilen oder beim Abschätzen von Latenzen.
 }% Speech Ende
 \end{frame}
@@ -474,11 +474,11 @@ Die Orientierungswerte sind zum Beispiel hilfreich bei der Dimensionierung von B
 
 \speech{SchaltvorgaengeDC1RCLadevorgang1}{1}{%
 Kommen wir zur eigentlichen Berechnung des Ladevorganges beim gerade gezeigten R C Glied. 
-Oben links sehen wir die gegebenen Größen, das ist U C unmittelbar vor dem Schalten, die Quellenspannug U Q und die Komponenten R und C. 
-Gesucht ist U C während des Schaltvorganges für T größer gleich null. 
-Oben rechts sehen wir die Zeitverläufe für U C und darunter für den Strom i. 
+Oben links sehen wir die gegebenen Größen, das ist U C unmittelbar vor dem Schalten, die Quellenspannug U Kuh und die Komponenten R und C. 
+Gesucht ist U C während des Schaltvorganges für Tee größer gleich null. 
+Oben rechts sehen wir die Zeitverläufe für U C und darunter für den Strom I. 
 Wichtig: Die Spannung U C ist stetig, der Strom I kann jedoch springen, was er in diesem Fall auch tut!
-Unten sehen wir die 5 Schritte des Berechnungsverfahrens in Kurzform und die dazugehörigen Teillösungen die wir im folgenden Einzeln durch gehen.
+Unten sehen wir die fünf Schritte des Berechnungsverfahrens in Kurzform und die dazugehörigen Teillösungen die wir im folgenden Einzeln durch gehen.
 }% Speech Ende
 \end{frame}
 
@@ -517,22 +517,22 @@ Ausgehend von der Maschengleichung wird $\ecv{u_R}$ in Abhängigkeit von $\ecv{u
 \end{align*}%
 
 \speech{SchaltvorgaengeDC1RCLadevorgang2}{1}{%
-Schritt eins ist das Aufstellen der DGL für unsere gesuchte Größe U c von Tee für den Zeitraum T größer gleich null, 
-das heißt ab unmittelbar nach dem Schaltzeitpunkt T gleich null.
+Schritt eins ist das Aufstellen der DGL für unsere gesuchte Größe U C von Tee für den Zeitraum Tee größer gleich null, 
+das heißt ab unmittelbar nach dem Schaltzeitpunkt Tee gleich null.
 Wie im Beispiel in den Grundlagen beginnen wir mit der Maschengleichung:
 }% Speech Ende
 \speech{SchaltvorgaengeDC1RCLadevorgang2}{2}{%
-U R plus U C ist gleich U q.
+U R plus U C ist gleich U Kuh.
 }% Speech Ende
 \speech{SchaltvorgaengeDC1RCLadevorgang2}{3}{%
-Dann ersetzen wir U R durch R mal i.
+Dann ersetzen wir U R durch R mal I.
 }% Speech Ende
 \speech{SchaltvorgaengeDC1RCLadevorgang2}{4}{%
-Und ersetzen C durch C mal D nach D T von U C. 
+Und ersetzen I durch C mal der zeitlichen Ableitung von U C. 
 Wenn wir unsere DGL mit der allgemeinen Form oben rechts vergleichen, erkennen wir:
 R C entspricht unserem konstanten Koeffizienten a eins. 
 U C von Tee entspricht unserer Systemgröße Ypsilon von T. 
-Und die Quellenspannung U Q entspricht der Störgröße B.
+Und die Quellenspannung U Kuh entspricht der Störgröße B.
 }% Speech Ende
 \end{frame}
 
@@ -571,17 +571,17 @@ Aus der DGL können wir direkt das charakteristische Polynom ableiten: R C mal L
 Die Nullstelle erhalten wir durch Umformung. Lambda ist gleich minus eins durch R C. 
 Unsere homogene Lösung entspricht allgemein dem Exponentialansatz K mal E hoch Lambda t.
 Für eine bessere Lesbarkeit der Eigenschaften schreiben wir den Exponenzialansatz in Abhängigkeit der Zeitkonstante auf. 
-Unsere homogene Lösung ist K mal E hoch minus T durch Tau. 
+Unsere homogene Lösung ist K mal E hoch minus Tee durch Tau. 
 Mit Lambda ist gleich Minus eins durch Tau erhalten wir durch Einsetzen unserer Nullstelle den Wert für Tau. 
 Hier folgt: Tau ist gleich R C. 
 }% Speech Ende
 \speech{SchaltvorgaengeDC1RCLadevorgang3}{2}{%
-Die partikuläre Lösung, das heißt den eingeschwungenen Zustand für T gegen unendlich, erhalten wir entweder durch Netzwerkberechnung oder leiten ihn aus der DGL ab.
-Für beide Herangehensweisen gilt, dass die eingeschwungenen Größen Gleichgrößen sind, weil die Anregung eine Gleichspannung ist. (D C Fall) 
-Aus der Gleichstrom Netzwerkberechnung wissen wir, dass die Kapazität wie eine offene Klemme wirkt. Es fließt kein Strom und die gesamte Spannung U Q liegt über C an.
+Die partikuläre Lösung, das heißt den eingeschwungenen Zustand für Tee gegen unendlich, erhalten wir entweder durch Netzwerkberechnung oder leiten ihn aus der DGL ab.
+Für beide Herangehensweisen gilt, dass die eingeschwungenen Größen Gleichgrößen sind, weil die Anregung eine Gleichspannung ist. Also der DC Fall vorliegt.
+Aus der Gleichstrom Netzwerkberechnung wissen wir, dass die Kapazität wie eine offene Klemme wirkt. Es fließt kein Strom und die gesamte Spannung U Kuh liegt über C an.
 Alternativ können wir wie hier gezeigt ist die DGL für die partikuläre Lösung herannehmen.
 Da es sich um Gleichgrößen handelt, ist die zeitliche Ableitung von U C P gleich Null und der erste Teil der DGL verschwindet.
-Übrig bleibt, dass U C P gleich der Anregung U Q ist.
+Übrig bleibt, dass U C P gleich der Anregung U Kuh ist.
 }% Speech Ende
 \end{frame}
 
@@ -619,13 +619,13 @@ Eingesetzt ergibt sich daraus die allgemein Lösung: U c von Tee ist gleich K ma
 \speech{SchaltvorgaengeDC1RCLadevorgang4}{2}{%
 Die Konstanten bestimmen wir durch einsetzen der Anfangsbedingung. Die Kapazität sei zum Zeitpunkt T gleich Null unmittelbar vor dem Schalten vollständig entladen. 
 Der Exponenzialterm entfällt für T gleich null.
-Durch Umformung erhalten wir K ist gleich Minus U Q.
-Durch Einsetzen von K und Ausklammern von U Q erhalten wir die spezielle allgemeine Lösung:
-U C von Tee ist gleich U Q mal Klammer auf eins minus e hoch minus T durch Lambda Klammer zu. 
-Den Strom können wir aus der Beziehung I gleich C mal d nach d T von U C an der Kapazität herleiten. 
+Durch Umformung erhalten wir K ist gleich Minus U Kuh.
+Durch Einsetzen von K und Ausklammern von U Kuh erhalten wir die spezielle allgemeine Lösung:
+U C von Tee ist gleich U Kuh mal Klammer auf eins minus e hoch minus T durch Lambda Klammer zu. 
+Den Strom können wir aus der Beziehung I gleich C mal der zeitlichen Ableitung von U C an der Kapazität herleiten. 
 Hier mit tau gleich R C eingesetzt.
-Durch kürzen erhalten wir den Stromverlauf I C von Tee ist gleich U Q durch R mal e hoch minus T durch Tau. 
-Der maximale Anfangsstrom I C null ist also U Q durch R. 
+Durch kürzen erhalten wir den Stromverlauf I C von Tee ist gleich U Kuh durch R mal e hoch minus T durch Tau. 
+Der maximale Anfangsstrom I C null ist also U Kuh durch R. 
 }% Speech Ende
 \end{frame}
 }% Ende Folien only Multi Frame
@@ -1000,12 +1000,12 @@ Zur Überprüfung bestimmen wir im folgenden detailliert den Ladevorgang und dan
 
 \speech{SchaltvorgaengeDC2RLLadevorgang1}{1}{%
 Beginnen wir beim Ladevorgang. Oben links sehen Sie das Schaltbild.
-Zu Beginn ist das R L Glied kurzgeschlossen und ab T gleich null ist das R L Glied an die Spannungsquelle U q geschlossen.
-Zu Beginn fließt kein Strom, U q, R und L sind bekannt, gesucht ist der Strom I für T größer gleich null.
-Oben rechts sehen Sie die Zeitverläufe für U L und i. U l springt bei T gleich null von null auf U q.
+Zu Beginn ist das R L Glied kurzgeschlossen und ab T gleich null ist das R L Glied an die Spannungsquelle U Kuh geschlossen.
+Zu Beginn fließt kein Strom, U Kuh, R und L sind bekannt, gesucht ist der Strom I für T größer gleich null.
+Oben rechts sehen Sie die Zeitverläufe für U L und I. Die Spannung U L springt bei T gleich null von null auf U Kuh.
 Weil I stetig ist, fließt zu Beginn kein Strom und die volle Quellenspannung liegt über L an.
 U L fällt dann exponentiell auf Null ab.
-Der Strom nähert sich ab T gleich null exponentiell seinem Endwert U q durch R, da der Widerstand R den maximalen Strom begrenzt.
+Der Strom nähert sich ab Tee gleich null exponentiell seinem Endwert U Kuh durch R, da der Widerstand R den maximalen Strom begrenzt.
 Unten sind die fünf Rechenschritte mit Teillösungen zusammen gefasst, welche wir im Folgenden einzeln durch gehen.
 }% Speech Ende
 \end{frame}
@@ -1043,9 +1043,9 @@ Unten sind die fünf Rechenschritte mit Teillösungen zusammen gefasst, welche w
 
 \speech{SchaltvorgaengeDC2RLLadevorgang2}{1}{%
 Die DGL stellen wir am Besten ausgehend von der Maschengleichung auf.
-U R und U L ist gleich U q. 
-Durch Einsetzen der Komponentengleichungen für R und für L erhalten wir die Gleichung in Abhängigkeit von unserer gesuchten Größe i:
-L mal d nach d T von I plus R mal I ist gleich U q.
+U R und U L ist gleich U Kuh. 
+Durch Einsetzen der Komponentengleichungen für R und für L erhalten wir die Gleichung in Abhängigkeit von unserer gesuchten Größe I:
+L mal der zeitlichen Ableitung von I plus R mal I ist gleich U Kuh.
 Theoretisch könnten wir nun bereits weiter rechnen, allerdings bietet es sich an, 
 die DGL weiter umzuformen, dass unsere gesuchte Größe I ohne Koeffizienten einzeln steht.
 Also teilen wir durch R und erhaltene unten gezeigte DGL, 
@@ -1082,12 +1082,12 @@ bei der die Einzelterme die gleiche Einheit wie unsere gesuchte Größe haben.
 \speech{SchaltvorgaengeDC2RLLadevorgang3}{1}{%
 Durch Aufstellen des charakteristschen Polnoms können wir den Eigenwert Lambda bestimmen.
 Da die Lösung in Exponenzialform auftritt, schreiben wir direkt Lambda ist gleich minus eins durch Tau ist gleich minus R durch L.
-Dadurch können wir die homogene Lösung direkt in die Form K mal e hoch minus T durch Tau bringen mit Tau ist gleich L durch R.
+Dadurch können wir die homogene Lösung direkt in die Form K mal e hoch minus Tee durch Tau bringen mit Tau ist gleich L durch R.
 }% Speech Ende
 \speech{SchaltvorgaengeDC2RLLadevorgang3}{2}{%
 Für die partikuläre Lösung bestimmen wir den eingeschwungenen Zustand. 
-Wir können annehmen, dass I p konstant ist, wodurch der Differenzialterm entfällt. 
-Daraus folgt I p ist gleich U q durch R.
+Wir können annehmen, dass I P konstant ist, wodurch der Differenzialterm entfällt. 
+Daraus folgt I P ist gleich U Kuh durch R.
 }% Speech Ende
 \end{frame}
 
@@ -1129,14 +1129,14 @@ Die Allgemeine Lösung ergibt sich durch Überlagerung beider Lösungen.
 }% Speech Ende
 \speech{SchaltvorgaengeDC2RLLadevorgang4}{2}{%
 und durch einsetzen unserer Anfangsbedingung bestimmen wir unsere Konstante.
-I von null ist gleich K mal e hoch null plus U q durch R ist gleich Null.
-Daraus folgt K ist gleich minus U q durch R.
-Die eindeutige Lösung ergibt: UU q durch R mal Klammer auf eins minus e hoch minus T durch tau Klammer zu.
-Die Spannung U L lässt sich über U L gleich L mal d nach d T von I bestimmen.
-Durch Einsetzen und Vereinfachung folgt: U L ist gleich U q mal e hoch minus Lambda durch tau.
+I von null ist gleich K mal e hoch null plus U Kuh durch R ist gleich Null.
+Daraus folgt K ist gleich minus U Kuh durch R.
+Die eindeutige Lösung ergibt: U Kuh durch R mal Klammer auf eins minus e hoch minus Tee durch Tau Klammer zu.
+Die Spannung U L lässt sich über U L gleich L mal der zeitlichen Ableitung von I bestimmen.
+Durch Einsetzen und Vereinfachung folgt: U L ist gleich U q mal e hoch minus Lambda durch Tau.
 Als Probe können wir überlegen, ob die Ergebnisse plausibel sind.
-Der Strom I von Tee entspricht einer exponentiellen Annäherung an den maximalen Strom U q durch R.
-Die Spannung fällt exponentiell ab vom Maximalwert U q.
+Der Strom I von Tee entspricht einer exponentiellen Annäherung an den maximalen Strom U Kuh durch R.
+Die Spannung fällt exponentiell ab vom Maximalwert U Kuh.
 Da die Induktivität lädt, passt die positive Spannung gemäß Verbraucherzählpfeilsystem.
 Da der eingeschwungene Strom konstant ist, geht U L gegen null.
 Beide Ergebnisse sind plausibel.
@@ -1607,8 +1607,8 @@ Durch den ideal gewählten Schaltzeitpunkt entfällt der Einschwingvorgang volls
 \speech{SchaltvorgaengeACbeiRC1}{1}{%
 Gehen wir das Beispiel Schritt für Schritt durch. 
 Oben links ist unsere bekannte Schaltung aus den DC Beispielen. 
-Zum Schaltzeitpunkt T null wird ein zuvor kurzgeschlossenes R C Serienglied an eine ideale Wechselspannungsquelle U Q geschlossen. 
-Gegeben ist die Spannung U C zum Schaltzeitpunkt T null, die Wechselspannung U Q, die Komponenten R, C und die Kreisfrequenz omega. 
+Zum Schaltzeitpunkt T null wird ein zuvor kurzgeschlossenes R C Serienglied an eine ideale Wechselspannungsquelle U Kuh geschlossen. 
+Gegeben ist die Spannung U C zum Schaltzeitpunkt T null, die Wechselspannung U Kuh, die Komponenten R, C und die Kreisfrequenz omega. 
 Gesucht ist U C für T größer gleich T null.
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRC1}{2}{%
@@ -1648,7 +1648,7 @@ Hier sehen kurz zur Übersicht die fünf Schritte des Berechnungsverfahrens und 
 \speech{SchaltvorgaengeACbeiRC2}{1}{%
 Der erste Schritt, das Aufstellen der DGL ist im Prinzip identisch zu den D C Beispielen. 
 Der Unterschied ist nur, dass unser Störterm keine Gleichgröße ist, sondern eine Wechselspannung.
-Hier ist unser Störterm U Q von Tee gleich dem Scheitelwert U Q Dach mal Kosinus von omega T plus Phi Q.
+Hier ist unser Störterm U Kuh von Tee gleich dem Scheitelwert U Kuh Dach mal Kosinus von omega T plus Phi Q.
 Der Phasenwinkel Phi Q kann hier Null gesetzt werden, hilft uns aber später zu erkennen, an welcher Stelle der Phasenwinkel der Quellenspannung eine Rolle spielt. 
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRC2}{2}{%
@@ -1684,25 +1684,25 @@ Die Zeitkonstante Tau gleich R C entspricht hier wieder dem negativen Kehrwert d
 
 \speech{SchaltvorgaengeACbeiRC3}{1}{%
 Im dritten Schritt bestimmen wir die Partikuläre Lösung, das heißt den eingeschwungenen Zustand. 
-Aufgrund der sinusförmigen Eingangsspannung U Q erhalten wir in unserer linearen zeitinvarianten Schaltung 
-auch eine sinusförmige Ausgangsspannung U C P mit gleicher Kreisfrequenz omega wie bei der Anregung U Q im eingeschwungenen Zustand. 
+Aufgrund der sinusförmigen Eingangsspannung U Kuh erhalten wir in unserer linearen zeitinvarianten Schaltung 
+auch eine sinusförmige Ausgangsspannung U C P mit gleicher Kreisfrequenz omega wie bei der Anregung U Kuh im eingeschwungenen Zustand. 
 }% Speech Ende
 \silence{1}%
 \speech{SchaltvorgaengeACbeiRC3}{1}{%
-Im Zeitbereich dargestellt ist unsere partikuläre Lösung U C P gleich dem Scheitelwert U C P Dach mal Kosinus von omega T plus Phi C P.
-Die Amplitude U C P Dach und den Phasenwinkel Phi C P können wir nun mittels komplexer Wechselstromrechnung bestimmen.
+Im Zeitbereich dargestellt ist unsere partikuläre Lösung U C P gleich dem Scheitelwert U C P Dach mal Kosinus von omega T plus Vieh Zeh P.
+Die Amplitude U C P Dach und den Phasenwinkel Vieh Zeh P können wir nun mittels komplexer Wechselstromrechnung bestimmen.
 Zur Erinnerung, unser U C P von Tee im Zeitbereich ist der Realteil des komplexen Amplitudenzeigers U C P Dach komplex mal e hoch J Omega t. 
-Der komplexe Amplitudenzeiger U C P Dach komplex ist gleich U C P Dach reell mal e hoch J Phi C P. 
+Der komplexe Amplitudenzeiger U C P Dach komplex ist gleich U C P Dach reell mal e hoch J Vieh Zeh P. 
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRC3}{2}{%
-Durch den Komplexen Spannungsteiler können wir U C P komplex in Abhängigkeit von U Q komplex und den Impedanzen Z C und R bestimmen. 
+Durch den Komplexen Spannungsteiler können wir U C P komplex in Abhängigkeit von U Kuh komplex und den Impedanzen Z C und R bestimmen. 
 Durch etwas Umformung kommen wir auf die Form: 
-U C P Dach komplex ist gleich U Q Dach komplex durch eins plus J Omega C R. 
+U C P Dach komplex ist gleich U Kuh Dach komplex durch eins plus J Omega C R. 
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRC3}{3}{%
 Durch Betragsbildung erhalten wir die Amplitude U C P dach mit der Lösungen unten links
-und durch Winkelbestimmung erhalten wir den Lastphasenwinkel Phi C P mit der Lösung unten rechts.
-Der Winkel Phi C P ist die Phasendifferenz der Quellenspannung U Q und der eingeschwungenen Spannung U C P. 
+und durch Winkelbestimmung erhalten wir den Lastphasenwinkel Vieh Zeh P mit der Lösung unten rechts.
+Der Winkel Vieh Zeh P ist die Phasendifferenz der Quellenspannung U Kuh und der eingeschwungenen Spannung U C P. 
 }% Speech Ende
 \end{frame}
 
@@ -1731,7 +1731,7 @@ Im fünften Schritt bestimmen wir die Konstanten durch Einsetzen unserer Anfangs
 Die Kapazität sei zum Schaltzeitpunkt vollständig entladen. 
 Der Exponenzialterm reduziert sich zu e hoch null gleich eins und kann somit gekürzt werden. 
 Durch Umstellen erhalten wir unsere Konstante K. Wie wir sehen können, entspricht unser K mit
-K ist gleich Minus U C P Dach mal Kosinus von omega mal T null plus Phi C P, 
+K ist gleich Minus U C P Dach mal Kosinus von omega mal T null plus Vieh Zeh P, 
 genau dem negativen Wert des eingeschwungenen Zustandes zum Schaltzeitpunkt.
 Unser K kann damit je nach Schaltzeitpunkt jeden Wert zwischen dem negativen und positiven Scheitelwert von U C P annehmen.
 }% Speech Ende
@@ -1765,7 +1765,7 @@ Insbesondere bei großen Zeitkonstanten sind Überspannungen und -Ströme mögli
 \speech{SchaltvorgaengeACUeberspannungenundstroeme}{2}{%
 Durch ungünstige Schaltzeitpunkte während der Minima oder Maxima des eingeschwungenen Zustandes, 
 können so Werte bis zum doppelten oder dreifachen Scheitelwert erreicht werden. 
-Der dreifache Scheitelwert ist möglich, wenn die Anfangsbedingung wäre, dass z.B. U C von Tee null gleich der einfach Scheitelwert ist. 
+Der dreifache Scheitelwert ist möglich, wenn die Anfangsbedingung wäre, dass die Spannung während des Schaltzeitpunktes im Scheitelpunkt liegt. 
 }% Speech Ende
 \speech{SchaltvorgaengeACUeberspannungenundstroeme}{3}{%
 Durch geschicktes Schalten lassen sich Ausgleichsvorgänge aber auch vollständig vermeiden. 
@@ -1958,7 +1958,7 @@ Diese werden wir nun im Einzelnen ausführlicher berechnen.
 \speech{SchaltvorgaengeACbeiRL2}{1}{%
 Das Aufstellen der DGL erfolgt wieder analog zum DC Beispiel. 
 Genau wie beim R C Beispiel ist unsere Störgröße sinusförmig. Hier ist unsere Störgröße der Strom U q durch R
-mit U q gleich U q Dach mal Kosinus von omega T plus Phi q.
+mit U q gleich U q Dach mal Kosinus von omega T plus Vieh Kuh.
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRL2}{2}{%
 Die homogene Lösung können wir wieder aus unserem D C Beispiel übernehmen, hier mit allgemeinem Schaltzeitpunkt T null.
@@ -1986,11 +1986,11 @@ Die Zeitkonstante ergibt sich wieder durch Tau gleich L durch R.
 
 \speech{SchaltvorgaengeACbeiRL3}{1}{%
 Für die partikuläre Lösung wenden wir wieder die komplexe Wechselstromrechnung an. 
-Statt eines komplexen Spannungsteilers, transformieren wir die DGL in den Bildbereich und ersetzen dabei die Differenzialoperatoren d nach d T durch J omega. 
-Durch Ausklammern und Umstellen erhalten wir unseren komplexen Amplitudenzeiger 
-I p Dach komplex gleich U q Dach komplex durch R mal eins im Zähler geteilt durch eins plus jot omega mal L durch R im Nenner.
-Jetzt wieder den Betrag und die Phasenlage für I p bestimmen. 
-Achtung: Phi q ist beliebig wählbar, da T null variabel ist, dadurch kann phi q zur Vereinfachung auch null gesetzt werden.
+Statt eines komplexen Spannungsteilers, transformieren wir die DGL in den Bildbereich und ersetzen dabei den Differenzialoperator d nach d Tee mit J Omega. 
+Durch Ausklammern und Umstellen erhalten wir unseren komplexen Amplituden Zeiger 
+I P Dach komplex gleich U Kuh Dach komplex durch R mal eins im Zähler, geteilt durch eins plus J Omega mal L durch R im Nenner.
+Jetzt wieder den Betrag und die Phasenlage für I P bestimmen. 
+Achtung: Vieh Kuh ist beliebig wählbar, da Tee null variabel ist, dadurch kann Vieh Kuh zur Vereinfachung auch null gesetzt werden.
 }% Speech Ende
 \end{frame}
 
@@ -2177,7 +2177,7 @@ Und wir analysieren Einschwingvorgänge bei RLC-Gliedern.
 Gegeben sei der RLC-Serienschwingkreis wie im Schaltbild oben links dargestellt.
 Durch die zwei verschiedenen Energiespeicher ist das System prinzipiell schwingungsfähig.
 Das Systemverhalten kann durch eine DGL zweiter Ordnung beschrieben werden.
-Abhängig von den Werten der Bauelemente R, L und C ergeben sich verschiedene Einschwingverhalten bei Anregung mit Gleichspannung U Q.
+Abhängig von den Werten der Bauelemente R, L und C ergeben sich verschiedene Einschwingverhalten bei Anregung mit Gleichspannung U Kuh.
 Dabei sind drei Fälle möglich, diese sind rechts im Zeitverlaufsdiagramm dargestellt und unten in der Tabelle gegenübergestellt.
 Möglich ist ein aperiodischer Fall, ein aperiodischer Grenzfall und ein periodischer Fall.
 Die Fälle können anhand verschiedener Merkmale wie der Diskriminante D, welche wir im Folgenden genauer betrachten, oder anhand der Schwingkreisgüte Q bestimmt werden.
@@ -2604,11 +2604,11 @@ Der periodische Fall ist durch eine negative Diskriminante D gekennzeichnet.
 Dadurch ergeben sich zwei komplex konjugierte Eigenwerte mit negativem Realteil.
 Durch Umformung mit der imaginären Einheit J lässt sich der Real- und Imaginärteil ablesen.
 Hierfür wird die Wurzel aus dem negativen Term als J mal die Wurzel aus dem positiven Term dargestellt.
-Der Betrag des negativen Realteils wird als Abklingkonstante delta bezeichnet.
-Der Betrag des Imaginärteils wird als gedämpfte Eigenkreisfrequenz omega d bezeichnet.
+Der Betrag des negativen Realteils wird als Abklingkonstante Delta bezeichnet.
+Der Betrag des Imaginärteils wird als gedämpfte Eigenkreisfrequenz Omega D bezeichnet.
 }% Speech Ende
 \speech{SchaltvorgaengeRLC1FallunterscheidungPeriodisch1}{2}{%
-Im periodischen Fall entspricht die homogene Lösung einer exponentiell abklingenden sinusförmigen Schwingung mit der Abklingkonstante delta und der gedämpften Eigenkreisfrequenz omega d.
+Im periodischen Fall entspricht die homogene Lösung einer exponentiell abklingenden sinusförmigen Schwingung mit der Abklingkonstante Delta und der gedämpften Eigenkreisfrequenz Omega D.
 Die zu bestimmenden Konstanten sind die Amplitude C null und die Phasenverschiebung Phi null.
 Eine genaue Herleitung findet sich im Video über Exkurse zu RLC Schwingkreisen.
 Kurz gesagt, entspricht die homogene Lösung bei unterschiedlichen Eigenwerten allgemein der Überlagerung zweier Exponenzialfunktionen.
@@ -3116,19 +3116,26 @@ In diesem Exkurs betrachten wir den Zusammenhang von Größen bei der Betrachtun
 Resonanzen treten auf, wenn die Frequenz einer externen Anregung mit der Resonanzfrequenz F null, übereinstimmt. 
 Resonanzphänomene werden ausführlich in Modul acht erläutert.
 Die Resonanzfrequenz F null wird auch ungedämpfte Eigenfrequenz genannt, da sie die Frequenz ist, bei der das System ohne äußere Dämpfung, in diesem Fall ohne Widerstand R, schwingen würde.
-Die Gleichung für die zugehörige Resonanzkreisfrequenz omega null ergibt sich aus der Resonanzbedingung, dass der Blindanteil der Gesamtimpedanz bei Resonanz verschwindet.
-An der Gleichung für die Eigenwerte oben rechts können wir durch Einsetzen den Zusammenhang von omega d und omega null erkennen. 
-Die gedämpfte Eigenkreisfrequenz omega d entspricht dem geometrischen Mittel aus omega null und delta,
-das heißt der Wurzel aus der Differenz von omega null zum Quadrat und delta zum Quadrat.
-Bei verschwindender Dämpfung, also für delta gleich null, ist die omega d gleich omega null.
-Ein weiterer Zusammenhang besteht zwischen der Schwingkreisgüte Q S, kurz Güte genannt, und dem Verhältnis von omega null zu delta.
+Die Gleichung für die zugehörige Resonanzkreisfrequenz Omega null ergibt sich aus der Resonanzbedingung, dass der Blindanteil der Gesamtimpedanz bei Resonanz verschwindet.
+An der Gleichung für die Eigenwerte oben rechts können wir durch Einsetzen den Zusammenhang von Omega D und Omega null erkennen.
+}% Speech Ende
+\silence{1}%
+\speech{SchaltvorgaengeRLC2ExkurseGroessen}{1}{%
+Die gedämpfte Eigenkreisfrequenz Omega D entspricht dem geometrischen Mittel aus Omega null und Delta,
+das heißt der Wurzel aus der Differenz von Omega null zum Quadrat und Delta zum Quadrat.
+Bei verschwindender Dämpfung, also für Delta gleich null, ist die Omega D gleich Omega null.
+Ein weiterer Zusammenhang besteht zwischen der Schwingkreisgüte Q S, kurz Güte genannt, und dem Verhältnis von Omega null zu Delta.
 Die Güte ist ein Maß für die Schwingungsfähigkeit eines Schwingkreises.
 Sie entspricht dem Verhältnis von Blindleistung zu Verlustleistung im Resonanzfall. Beim Serienschwingkreis entspricht Q damit dem Verhältnis vom Blindwiderstand der Induktivität bei Resonanz zur Serienresistenz R.
 Die selbe Umformung für die Güte kann auch für den RLC Parallelschwingkreis angewendet werden.
-In beiden Fällen ergibt sich der selbe Zusammenhang.
-Die Güte ist proportional zum Verhältnis von omega null zu delta. 
+An der Gleichung für die Eigenwerte oben rechts können wir durch Einsetzen den Zusammenhang von Omega D und Omega null erkennen.
+}% Speech Ende
+\silence{1}%
+\speech{SchaltvorgaengeRLC2ExkurseGroessen}{1}{%
+In beiden Fällen ergibt sich der folgende Zusammenhang.
+Die Güte ist proportional zum Verhältnis von Omega null zu Delta. 
 Dadurch kann die Güte ebenso als Indikator für die Fallunterscheidung herangezogen werden.
-Anhand der Koeffizienten der homogenen DGL lassen sich so die Größen delta und omega null direkt ablesen.
+Anhand der Koeffizienten der homogenen DGL lassen sich so die Größen Delta und Omega null direkt ablesen.
 Die DGL in der unten gezeigten Form beschreibt allgemein das Verhalten von Systemen zweiter Ordnung mit linear gedämpfter Schwingung.
 Vielen Dank für Ihre Aufmerksamkeit.
 }% Speech Ende
