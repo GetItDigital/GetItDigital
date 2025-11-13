@@ -33,6 +33,7 @@ Ein anschauliches Beispiel: Wenn ein Ball von einer Höhe fallen gelassen wird, 
 aber die Summe all dieser Energieformen bleibt gleich der ursprünglichen potenziellen Energie des Balls. Dies stellt dar, wie Energie erhalten bleibt, auch wenn sie ihre Form ändert.
 }
 
+\b{\vspace*{-1.2cm}}
 \only<2->{\begin{Merksatz} 
 	
 		Energie ist eine Erhaltungsgröße. \\
@@ -41,11 +42,9 @@ aber die Summe all dieser Energieformen bleibt gleich der ursprünglichen potenz
 		
 \end{Merksatz}
 }
-\b{
+\b{\vspace*{-0.5cm}
 \only<3->{
-% TODO VOn JW hinzugefügt ist das die richtige Formel?
-\vspace*{-0.3cm}
- \LARGE \begin{itemize}\centering\item $E= F \cdot s $ \end{itemize}
+  \begin{equation} E = \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s}\end{equation}
 }}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% erste Makros für TTS %%%%%%%%%%%%%%%%%%%%%%%% test
@@ -103,7 +102,7 @@ Die Energie bleibt erhalten, aber sie wechselt die Form.
 \begin{frame}
 	\ftx{Lernziele: Die Elektrische Ladung}
 
-	\begin{Lernziele}{Die Elektrische Ladung}
+	\begin{Lernziele}{Die Elektrische Ladung} %%% TODO: Passt das Überhaupt??
         Die Studierenden können
         \begin{itemize}
 			\item die Eigenschaften elektrischer Ladungen sowie im Zusammenhang stehende physikalische Phänomene beschreiben
@@ -118,14 +117,9 @@ Die Energie bleibt erhalten, aber sie wechselt die Form.
 	\speech{01_Energie2}{1}{In diesem Video wird die elektrische Ladung eingeführt. Ziel ist es, dass ihr im Anschluss an dieses Video die Eigenschaften 
 	elektrischer Ladungen sowie die von ihr ausgehenden Phänomene beschreiben könnt. Dazu gehören unter anderem die elektrischen Felder sowie Kräfte, welche mit Hilfe des Coulombschen Gesetzes berechnet werden können.} 
 
-
 \end{frame}
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 \subsection{Die verschiedenen Energieformen}
 \label{sec:energieformen}
@@ -142,15 +136,20 @@ In der Physik beschreibt Energie die Fähigkeit, Arbeit zu verrichten, und tritt
 }
 \begin{frame}
 	\ftx{Verschiedene Energieformen}
+\b{
+\begin{itemize}
+	\item Energie beschreibt die Fähigkeit, Arbeit zu verrichten, und tritt in verschiedenen Formen auf
+\end{itemize}
+}
 \begin{Merksatz}{Die Energieformen auf einen Blick}
 \begin{itemize}
 	
-	\item Kinetische Energie (Bewegungsenergie) \\
-	\item Potenzielle Energie (Lageenergie) \\
-	\item Thermische Energie (Wärmeenergie) \\
-	\item Elektrische Energie \\
-	\item Chemische Energie \\
-	\item Kernenergie \\
+	\item Kinetische Energie (Bewegungsenergie)
+	\item Potenzielle Energie (Lageenergie)
+	\item Thermische Energie (Wärmeenergie)
+	\item Elektrische Energie
+	\item Chemische Energie
+	\item Kernenergie
 	\item Strahlungsenergie
 \end{itemize}
 	
@@ -206,17 +205,20 @@ Aus dem Grund wird im Folgenden von einer vorhandenen Energiequelle ausgegangen,
 
 % Die folgende Formel steht allgemeingültig für die Energie $E$ und besteht dabei 
 % aus der aufintegrierten Strecke zwischen zwei Punkten $P_1$ und $P_2$ über eine Kraft $\vec{F}$.
-Die Energie $E$ wird im allgemeinen über die aufintegrierte Strecke zwischen zwei Punkten $P_\mathrm{1}$ und $P_\mathrm{2}$ über eine Kraft $\vec{F}$ definiert. 
+Die Energie $E$ (siehe Abbildung \ref{fig:E=F*s}) wird im allgemeinen über die aufintegrierte Strecke zwischen zwei Punkten $P_\mathrm{1}$ und $P_\mathrm{2}$ über eine Kraft $\vec{F}$ definiert.
 
-
+\begin{figure}[H]
+	\centering
+			\includesvg[width=0.6\textwidth]{Kraft_Energie.svg}
+			\caption{\textbf{Beispiel der Energieberechnug.} Zerlegung der Kraft \(\vec{F}\) in eine parallele Komponente \(\vec{F}_\mathrm{p}\) und eine senkrechte Komponente \(\vec{F}_\mathrm{s}\). Nur die parallele Komponente wirkt entlang des Weges \(\vec{s}\) und verrichtet Arbeit.}
+			\label{fig:E=F*s}
+\end{figure}
 \begin{equation}
 	E = \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s} \quad\quad [E] = \text{1 Joule = 1 J = 1 Nm} \label{eq:Fds}
 \end{equation}
 
 Eine elektrische Kraft $\vec{F}_\mathrm{{el}}$ liegt vor, wenn eine Ladung $Q$ einem elektrischen Feld $\vec{E}$ ausgesetzt ist. 
 Aus der Multiplikation beider Größen ergibt sich der folgende Ausdruck:
-
-
 
 \begin{equation}
 	\vec{F}_\mathrm{{el}} = Q \cdot \vec{E}   
@@ -225,7 +227,6 @@ Aus der Multiplikation beider Größen ergibt sich der folgende Ausdruck:
 Eingesetzt in die Formel \ref{eq:Fds} ergibt die Integration über die elektrische Feldstärke $\vec{E}$ die elektrische Energie $E_\mathrm{{el}}$. 
 Da die Ladungsmenge $Q$ nicht von der Strecke abhängig ist, kann diese vor das Integral gezogen werden.
 
-
 \begin{equation}
 	E_\mathrm{el} = Q \cdot \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s}
 \end{equation}
@@ -233,51 +234,54 @@ Da die Ladungsmenge $Q$ nicht von der Strecke abhängig ist, kann diese vor das 
 Aus Modul 1 ist bekannt, dass das Integral über ein elektrisches Feld bei konstanten Bedingungen die Spannung $U$ ist. 
 Eingesetzt ergibt dies die folgende vereinfachte Darstellung.
 %Die Formel sagt aus, dass elektrische Energie eine Ladungsmenge multipliziert mit einer Spannung ist.
-\newpage
-\begin{equation*}
-	[E_\mathrm{el}] = \text{1 Joule = 1 J = 1 Ws} 
-\end{equation*}
-\vspace{0.1cm}
-\begin{equation}
-    E_\mathrm{el} = Q \cdot U
-\end{equation}
 
+\begin{equation}
+	 E_\mathrm{el} = Q \cdot U \quad\quad [E_\mathrm{el}] = \text{1 Joule = 1 J = 1 Ws} 
+\end{equation}
 }% nur Skript
 
 \b{
 \begin{frame}
 		\ftx{Die Energie}
 		\begin{itemize}
-	    \item Wird im allgemeinen über die aufintegrierte Strecke zwischen zwei Punkten $P_\mathrm{1}$ und $P_\mathrm{2}$ über eine Kraft $\vec{F}$ definiert
+	    \item Energie wird im allgemeinen über die aufintegrierte Strecke zwischen zwei Punkten $P_\mathrm{1}$ und $P_\mathrm{2}$ über eine Kraft $\vec{F}$ definiert
 	    \end{itemize}
 
 		\begin{equation*}
 			E = \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s} \quad \quad [E] = \text{1 Joule = 1 J = 1 Nm} 
 		\end{equation*}
+		\begin{figure}[H]
+			\includesvg[width=0.6\textwidth]{Kraft_Energie.svg}
+			\label{fig:E=F*s}
+		\end{figure}
 		
 \speech{01_Energie4}{1}{ %; TODO Vektorbild Kraft vektor und bewegung zur visualisierung? ; TODO: Wird ab "Streckenelement ds" sehr laut (neuer seed ) ;TODO: Skalarprofduktzweier orthogonaler Vektoren als Bild?
 Wir haben jetzt viel über Energie geredet, haben gesehen, was Energie ist. Was wir dann aber in der Regel in der Physik immer brauchen, ist auch eine formel-mäßige Beschreibung der Energie. Und ganz allgemein, unabhängig davon, welche Energieform wir betrachten, ist die Energie definiert über das Skalarprodukt der Kraft F, die wir aufwenden, multipliziert mit dem Streckenelement ds. Wenn wir also unsere Kraft entlang der Wegstrecke verrichten, dann sind Kraftvektor und Wegstreckenvektor genau gleichgerichtet parallel zueinander und aus dem Skalarprodukt zweier Vektoren wird einfach das Produkt der Beträge dieser beiden Vektoren. Wenn die Wegstrecke, die wir verbringen, senkrecht zu dem Kraftvektor steht, verrichten wir demzufolge keine Arbeit. Die Energie ist null. Und Warum? Weil dann die beiden Vektoren senkrecht zueinander stehen und das Skalarprodukt aus zwei senkrecht aufeinander stehenden Vektoren ist nun mal null. Das heißt, wir müssen hier die geometrischen Gegebenheiten, wie ist unsere Strecke, wie ist die Kraft, die wir dafür aufbringen müssen, mit berücksichtigen und das ist der Grund, warum wir das Ganze als sogenanntes Linienintegral beschreiben. Ein Linienintegral ist also eine dreidimensionale Schreibung mit Vektoren, wo wir die beiden Richtungen der Vektoren mit berücksichtigen.}
 
-
 \end{frame}
-\begin{frame}%;TODO schöner sortieren
-	\ftx{Die elektrische Energie}
-	\begin{itemize}
-	\item Eine elektrische Kraft $\vec{F}_\mathrm{{el}}$ liegt vor, wenn eine Ladung $Q$ einem elektrischen Feld $\vec{E}$ ausgesetzt ist.
-	\end{itemize}
 
-	 \begin{equation*}
+\begin{frame}
+	\ftx{Die elektrische Energie}
+	
+%;TODO schöner sortieren
+  \begin{itemize}
+    \item Eine elektrische Kraft $\vec{F}_\mathrm{el}$ wirkt auf eine Ladung $Q$, wenn sie sich in einem elektrischen Feld $\vec{E}$ befindet
+  \end{itemize}
+	\begin{equation*}
 			\vec{F}_\mathrm{{el}} = Q \cdot \vec{E}   
 	\end{equation*}
-		
+	\begin{itemize}
+    \item Eingesetzt in die allgemeine Formel der Energie bekommt man:
+  \end{itemize}
 	\begin{equation*}
 			E_\mathrm{el} = Q \cdot \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s}
 	\end{equation*}
-		
-		
-		\begin{equation*}
-			E_\mathrm{el} = Q \cdot U   \quad\quad  [E] = \text{1 Joule = 1 J = 1 Ws}
-		\end{equation*}
+	 \begin{itemize}
+    \item Bei einem konstanten Feld entspricht das Integral über das elektrische Feld der Spannung $U$, durch das Einsetzen ergibt sich die folgende Formel für die elektrische Energie:
+  	 \end{itemize}
+	\begin{equation*}
+			E_\mathrm{el} = Q \cdot U   \quad\quad  [E_\mathrm{el}] = \text{1 Joule = 1 J = 1 Ws}
+	\end{equation*}
 
 \speech{01_Energie5}{1}{%; Q wurde englisch ausgesprochen-> seed zu 933424 verändert
 Wenn wir jetzt die elektrische Energie betrachten möchten, dann gehen wir genauso vor wie vorher auch. Wir betrachten als erstes mal die elektrische Kraft F-EL, die wir ja im ersten Modul kennengelernt haben, die Ladungskraft, und die war definiert als die Ladungsmenge Q, die wir im elektrischen Feld zum Beispiel bewegen möchten, mal dem elektrischen Feld selber.
@@ -315,18 +319,28 @@ Denn wenn wir uns auf einer Äquipotentiallinie bewegen, also die Wegrichtung se
 \begin{frame}
 		\ftx{Elektrische Energiespeicher}
 	\b{\begin{figure}[H]
-		\centering
-		\begin{minipage}[H]{0.45\textwidth}
-		\hspace{-2cm}
-			\includesvg[width=1.4\textwidth]{Idealer_Plattenkondensator}
-		\end{minipage}
-		\begin{minipage}[H]{0.45\textwidth}
-			\hspace{-3.05cm}
-			\includesvg[width=2\textwidth]{Spule}
-		\end{minipage}
-
-	
+\centering
+\begin{minipage}[t]{0.49\textwidth}
+    \centering
+	\hspace*{-1cm}
+    \includesvg[width=1.15\textwidth]{Idealer_Plattenkondensator}
+    
+     \only<2->{\begin{itemize}
+		\vspace{0.22cm}
+        \item Der ideale Plattenkondensator speichert die Energie im elektrischen Feld.
+    \end{itemize}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}
+    \centering
+	\hspace*{-1cm}
+    \includesvg[width=1.1\textwidth]{Magnetisches_Feld_Spule}
+    \vspace{0.2cm}
+     \only<2->{\begin{itemize}
+        \item Die ideale Spule speichert die Energie im magnetischen Feld.
+    \end{itemize}}
+\end{minipage}
 \end{figure}}
+
 
 \speech{01_Energie6}{1}{% guter seed aber komischer laut am enfang. wird später leiser. das es zu laut nach "das werden wir später nochmal sehen" hat sich von alleine gelöst
 	Welche Arten der elektrischen Energiespeicher gibt es jetzt? Wir können prinzipiell unsere Energie relativ gut im Feld speichern. Wir haben ja gesehen, dass Felder generell irgendwie was mit Energie zu tun haben, egal ob das das Gravitationsfeld der Erde ist oder aber auch das elektrische und das magnetische Feld, was sich eben ergibt, wenn wir Ströme und Spannungen haben. Und wenn wir Energie vor allem im elektrischen Feld speichern, dann sind wir hier auf der linken Seite. Das ist ein Modell eines Plattenkondensators. Das heißt, wir haben zwei leitfähige Platten, die stehen sich gegenüber. Und auf der einen Platte sind positive Ladungen, auf der anderen Platte negative Ladungen. Dadurch baut sich das in Rot gezeichnete elektrische Feld auf. Und in diesem elektrischen Feld können wir Energie speichern. Das ist also ein Kondensator oder genauer gesagt eine Kapazität. Und das Bauteil, was damit verwandt ist, ist ein Kondensator. Diese sind aber nicht unbedingt gleichzusetzen. Das werden wir später nochmal sehen.% (weggelassen da verwirrend->) Er kann in seinem elektrischen Feld elektrische Energie speichern.
@@ -351,13 +365,21 @@ Denn wenn wir uns auf einer Äquipotentiallinie bewegen, also die Wegrichtung se
 }
 \begin{frame}
 	\ftx{Chemischer Energiespeicher}
-	\begin{figure}[H] % Hier vielleicht Beschriftung oberhalb der Batterie anbringen, damit die Bildunterschrift besser zur Geltung kommt.
+	\b{
+		\begin{figure}[H]
+		  \centering
+		  \includesvg[width=1\textwidth]{Chemischer_Speicher}
+		\end{figure}
+		\begin{itemize}
+		\item Die Batterie speichert Energie in chemischer Form durch elektrochemische Reaktionen
+	\end{itemize}
+	}
+	\s{\begin{figure}[H] % Hier vielleicht Beschriftung oberhalb der Batterie anbringen, damit die Bildunterschrift besser zur Geltung kommt.
 		\centering
-					\b{\includesvg[width=1\textwidth]{Chemischer_Speicher}}
-					\s{\includesvg[width=1\textwidth]{Chemischer_Speicher}
-					\caption{\textbf{Chemischer Energiespeicher.} Einfacher aufbau einer Batterie.}}
+					\includesvg[width=1\textwidth]{Chemischer_Speicher}
+					\caption{\textbf{Chemischer Energiespeicher.} Einfacher aufbau einer Batterie.}
 				\label{fig:Chemischer Energiespeicher}
-			\end{figure}
+		\end{figure}}
 \speech{01_Energie7}{1}{
 Ein Energiespeicher, den wir in der Elektrotechnik auch benutzen, der aber jetzt nicht klassisch im elektrischen oder magnetischen Feld Energie speichert, sondern tatsächlich eine Energiewandlung vornimmt, wäre ein sogenannter Akkumulator oder auch eine Batterie. Die hat eine negativ beladene Anode und eine positiv beladene Kathode. Wir haben in der Mitte einen Separator, die Anode trägt Material und auch die Kathode trägt Material. Diese Materialien können über einen sogenannten Ionenstrom miteinander reagieren. Dafür braucht es ein Trägermaterial, das ist das Elektrolyt, und der Separator ist dafür da, das Elektrolyt durchzulassen, aber ansonsten zu isolieren, weil wir ansonsten intern innerhalb der Batterie bereits einen Kurzschluss hätten. Es finden also an Anode und Kathode elektrochemische Reaktionen statt, wodurch Ladungsträger frei werden und in einem Strom fließen können. Und dieser Strom gibt Energie in das System. Woher kommt die Energie? Durch die Wandlung der Materialien. Das heißt, dort wird chemische Energie in elektrische Energie gewandelt.
 Ein weiteres sehr ähnliches Beispiel chemische Energie in elektrische Energie zu wandeln, wäre zum Beispiel eine Brennstoffzelle, in der wir Wasserstoff und Sauerstoff miteinander reagieren lassen. Dabei werden ebenfalls Elektronen freigesetzt, die zum Stromfluss beitragen können. Und dabei entsteht letztlich Wasser als einziges neues chemisches Produkt. Das kann dann aus dem System entweichen. Innerhalb einer Batterie hingegen bleibt die Gesamtmasse im System gleich. Aber beim Laden und Entladen werden sich die Gewichte von Anode und Kathode jeweils verändern, weil wirklich Material von der Anode zur Kathode beziehungsweise der Kathode zur Anode wandert.

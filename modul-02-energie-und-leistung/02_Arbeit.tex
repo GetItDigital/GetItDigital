@@ -22,30 +22,29 @@
 		W = \Delta E \quad \quad [W] = \text{1 Joule = 1 J = 1 Nm}  
 	\end{equation}}
 
-\begin{frame}
+\begin{frame}[t]
 	\ftx{Die Arbeit}
 \b{
 	%;TODO verschönern
 	\begin{itemize}
-		\item Arbeit ist die änderung der Energieform
+		\item Arbeit ist die Änderung der Energieform
 	\end{itemize}
 
-	\begin{align*}
-		W &= \Delta E \quad \quad [W] = \text{1 Joule = 1 J = 1 Nm}\\
-	W &= - \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s}\\ 
-	\end{align*}
-
 	\begin{equation*}
-		%  \quad,\quad \text{J} % Denke ist zuviel wenn da wieder J steht
-	\end{equation*}
-
+		W = \Delta E \quad \quad [W] = \text{1 Joule = 1 J = 1 Nm}
+	\end{equation*}	
+	\vspace*{1cm}
+	\only<2->{\begin{equation*}
+			W = - \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s}
+	\end{equation*}}
+	
 }% nur Folien
 
 \speech{02_Arbeit1}{1}{
 	Wir haben jetzt verschiedene Arten der Energie kennengelernt. Wir haben gesehen, wie wir Energie berechnen können, nämlich über das Linienintegral. Und letztlich hatten wir bei der Einführung am Beispiel des Pumpspeicherkraftwerks auch den Begriff der Arbeit definiert. Arbeit ist nichts anderes als die Änderung einer Energieform. Das heißt, die Arbeit, die wir verrichten, ist das Delta, also die Differenz der Energie vorher und nachher. 
 }
 % ToDo: Video: An dieser Stelle bricht das Video ab. Es fehlt auch der Abspann.
-\end{frame}
+
 	%%% Es folgt die Formel für die Arbeit (W).
 	%%% Die Änderung der Energie dE (also der Wechsel der Energie von einer Form in eine Andere), entspricht einer Änderung, also einem Prozess, also einer Arbeit, während Energie auch ruhend gelagert werden kann, passiwert bei der umsetzung von Arbeit immer etwas.
 	%%% Der folgende Text an der Stelle könnte etwas unpassend sein.
@@ -70,21 +69,21 @@ einem Energiespeicher für Arbeit verwendet wird. Dieses Vorzeichen ist kontexta
 Wird Energie entnommen, gilt die Arbeit als negativ, da sie von der gespeicherten Gesamtenergie abgezogen wird, 
 was eine Verringerung der Systemenergie signalisiert.
 }
-\begin{frame}
-	\b{\fta{Die Arbeit}}
+\b{\vspace*{-0.5cm}}
+\only<2->{
 	\begin{Merksatz}
 	
 	Das Vorzeichen der Arbeit ist kontextabhängig: % und beschreibt, ob die Arbeit ein Energieniveau anhebt oder absenkt.
 	Die Arbeit ist positiv, wenn Energie einem System hinzugefügt wird
 	und negativ, wenn Energie einem System entnommen wird.
 
-	\end{Merksatz}
+	\end{Merksatz}}
 % JWHier weiter machen, neuer seed und folie vervollständigen
-\speech{02_Arbeit2}{1}{%;TODO weitere Folie hinzufügen mit formeln/folgende folie vorziehen %;TODO neuer seed. klingt aktuell sehr unsicher und langsam -> neuer seed im test
+\speech{02_Arbeit2}{2}{%;TODO weitere Folie hinzufügen mit formeln/folgende folie vorziehen %;TODO neuer seed. klingt aktuell sehr unsicher und langsam -> neuer seed im test
 Das heißt, wenn wir jetzt nochmal an das Pumpspeicherkraftwerk von gerade denken, dann haben wir eine gewisse potenzielle Energie im Oberbecken gespeichert. Diese ist abhängig von der Höhe zwischen Ober- und Unterbecken, und der Menge an Wasser, dem Volumen, beziehungsweise damit verknüpft, dem Gewicht. Das ist die Energie. Und wenn wir dieses Wasser durch die Turbine laufen lassen, dann wird Arbeit verrichtet. Und zwar genau so viel Arbeit, wie wir Energie aus dem Oberbecken in das Unterbecken verlagern. Das ist die Arbeit, die wir verrichten. Demzufolge können wir das formelmäßig genauso beschreiben. Die Arbeit W ist gleich dem Linienintegral von P1 nach P2 über F-d-s, wobei hier jetzt noch das negative Vorzeichen dazukommt. Die Einheit für die Arbeit ist Joule, beziehungsweise Newtonmeter, das kann man ineinander umrechnen. Wohingegen die Energie in Wattstunden zum Beispiel angegeben wird.
 }
-
 \end{frame}
+
 	%%%%%% ENDE Einleitung ARBEIT %%%%%%
 	%%%%%% START elektrische Arbeit %%%%
 
@@ -104,23 +103,33 @@ Das heißt, wenn wir jetzt nochmal an das Pumpspeicherkraftwerk von gerade denke
 }
 \begin{frame}
 	\ftx{Die elektrische Arbeit}
-	\b{
-		\begin{equation*}
-			\vec{E} = \frac{\vec{F}_\mathrm{el}}{Q} \quad \Rightarrow \quad \vec{F}_\mathrm{el} = Q \cdot \vec{E} 
-		\end{equation*}
+	\begin{overlayarea}{\textwidth}{0.9\textheight}
+
+	\b{\only<1->{
+		\begin{itemize}\centering
+  			\item $\displaystyle \vec{E} = \frac{\vec{F}_\mathrm{el}}{Q} 
+  			\quad \Rightarrow \quad 
+  			\vec{F}_\mathrm{el} = Q \cdot \vec{E}$
+		\end{itemize}
+
+		\begin{itemize}\centering
+  			\item $\displaystyle W_\mathrm{el} = \int_{P_\mathrm{1}}^{P_\mathrm{2}} - Q \cdot \vec{E} \cdot \mathrm{d}\vec{s}  
+			\quad \Rightarrow \quad
+			 W_\mathrm{el} = - Q \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s} $
+		\end{itemize}
 	
-		\begin{equation*}
-			W_\mathrm{el} = \int_{P_\mathrm{1}}^{P_\mathrm{2}} - Q \cdot \vec{E} \cdot \mathrm{d}\vec{s}  \quad \Rightarrow \quad W_\mathrm{el} = - Q \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s}
-		\end{equation*}
+		\begin{itemize}\centering
+  			\item $\displaystyle W_\mathrm{{el}} = Q \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s} 
+			\quad \Rightarrow \quad 
+			W_\mathrm{{el}} = Q \cdot U $
+		\end{itemize}
 		
-	
-		\begin{equation*}
-			W_\mathrm{{el}} = Q \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s} \quad \Rightarrow \quad W_\mathrm{{el}} = Q \cdot U
-			\end{equation*}
-	
-		\begin{equation*}			
-			I = \frac{\mathrm{d}Q}{\mathrm{d}t} \quad \Rightarrow \quad 	Q = I \cdot t 
-		\end{equation*}	
+	\begin{itemize}\centering
+  			\item $\displaystyle I = \frac{\mathrm{d}Q}{\mathrm{d}t}
+			 \quad \Rightarrow \quad
+			  	Q = I \cdot t $
+		\end{itemize}}
+		
 }	
 
 \speech{02_Arbeit3}{1}{% klingt seh gut mit seed 933424
@@ -129,7 +138,7 @@ Wenn wir jetzt die elektrische Arbeit, die wir verrichten, mit F-EL gleich Q mal
 Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja gesagt, dass der Strom I die zeitliche Veränderung der Ladungsmenge Q ist: I ist gleich d-Q durch d-t. Es folgt also letztlich, dass wir die Ladung Q beschreiben können als den Strom I mal die Zeit T, die der Strom fließt. Das setzen wir nun ein in die gerade hergeleitete Formel und erhalten: W-EL ist gleich Q mal U. Wir ersetzen also das Q durch I mal T und erhalten:
 }
 
-\end{frame}
+
 \s{
 	\begin{equation}
 		\vec{E} = \frac{\vec{F}_\mathrm{el}}{Q} \quad \Rightarrow \quad \vec{F}_\mathrm{el} = Q \cdot \vec{E} 
@@ -165,13 +174,8 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 
 	\begin{equation}			
 		I = \frac{\mathrm{d}Q}{\mathrm{d}t} \quad \Rightarrow \quad 	Q = I \cdot t 
-		\end{equation}		
-}			
-
-
-\begin{frame}
-	\ftx{Die elektrische Arbeit}
-\s{
+	\end{equation}		
+			
 	Eingesetzt ergibt dies nun folgenden Ausdruck, welcher verdeutlicht, dass das Verrichten oder Aufbringen von Arbeit einen Stromfluss voraussetzt.
 
 	\begin{equation}
@@ -179,13 +183,15 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 	\end{equation}
 }
 \b{
-	Eingesetzt ergibt dies nun folgenden Ausdruck
+\only<2->{\begin{itemize}
+	\item Eingesetzt ergibt dies nun folgenden Ausdruck
+		  \end{itemize}
 
 	\begin{equation*}
 		W_\mathrm{{el}} = U \cdot I \cdot t \quad \quad [W_\mathrm{el}] = \text{1 Joule = 1 J = 1 Ws} 
-	\end{equation*}
-}
-		\begin{Merksatz}
+	\end{equation*}}
+
+		\only<3->{ \vspace{-5.75cm} \begin{Merksatz}
 
 			\begin{itemize}
 				\item Für das Verrichten einer Arbeit wird immer eine Zeitdauer benötigt.
@@ -193,12 +199,22 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 				\item Das Verrichten elektrischer Arbeit bedarf immer eines Stromflusses.
 			\end{itemize}
 
-		\end{Merksatz}
+		\end{Merksatz}}}
+	\end{overlayarea}
+		\s{\begin{Merksatz}
+
+			\begin{itemize}
+				\item Für das Verrichten einer Arbeit wird immer eine Zeitdauer benötigt.
+				\item Ein Momentanzustand ist immer der Ist-Zustand der Energieverteilung.
+				\item Das Verrichten elektrischer Arbeit bedarf immer eines Stromflusses.
+			\end{itemize}
+
+		\end{Merksatz}}
+	
 
 \speech{02_Arbeit4}{1}{ %seed imer noch nicht perfekt, aber schon ok
  W-EL ist gleich U mal I mal T. Auch hier ist die Einheit wieder Joule. Ein Joule ist gleich eine Wattsekunde. Es gilt natürlich genauso, dass für das Verrichten der Arbeit immer eine Zeitdauer benötigt wird. Energie können wir speichern, die ist immer da. Wenn wir aber wissen wollen, wie viel Arbeit verrichtet wird, brauchen wir eine gewisse Zeit. Der Momentanzustand ist immer der Zustand der Energieverteilung – wo also wie viel Energie im System gespeichert ist. Wenn wir elektrische Arbeit verrichten wollen, dann brauchen wir immer einen Stromfluss. Wenn wir keinen Stromfluss haben, wird keine Arbeit verrichtet. Genauso übrigens, wenn keine Spannung anliegt.%Es nur dann wird Arbeit verrichtet. %auskommentiert, da klingt nicht sinnvoll
 }
-
 \end{frame}
 
 			
