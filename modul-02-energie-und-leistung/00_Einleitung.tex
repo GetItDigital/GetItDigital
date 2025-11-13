@@ -235,8 +235,10 @@ Und du kannst die Effizienz von Energieumwandlungssystemen analysieren.
 	Die Energie innerhalb eines geschlossenen Systems muss nämlich gleich bleiben. In der Physik wird diese grundlegende Eigenschaft als Energieerhaltung bezeichnet.
 }
 
-
 \begin{frame} \ftx{Pumpspeicherkraftwerk}
+
+	\begin{overlayarea}{\textwidth}{0.9\textheight}
+\only<1->{
 	\begin{figure}[H]
 		\centering
 		\b{\scalebox{0.8}{\includesvg[width=0.9\textwidth]{Wasserkraftwerk_V5}}} %%% width0.9 für passende textgröße in svg; scalebox um alles gleichzeitig zu skalieren
@@ -245,8 +247,17 @@ Und du kannst die Effizienz von Energieumwandlungssystemen analysieren.
 			einem Unterbecken, sowie Turbinen und einer elektrischen Maschine. Es dient der Speicherung von Energie durch das Hochpumpen von Wasser und der Rückgewinnung
 			durch die Abgabe von Wasserkraft zur Stromerzeugung.}}
 			\label{fig:Pumpspeicherkraftwerk}
+
 		\end{figure}
-%; seed 933424 ganz gut
+}
+\b{\only<2->{
+	\vspace{-6.15cm} % Abstand nach oben, damit der Merksatz über dem Bild sitzt
+		\begin{Merksatz}
+	
+			Energie kann gespeichert werden, Arbeit wird verrichtet.
+		\end{Merksatz}}}
+	\end{overlayarea}
+	%; seed 933424 ganz gut
 		\speech{00_Einleitung2}{1}{ % hier titel einfügen
 			Um uns klarzumachen, was Arbeit, Energie und Leistung eigentlich bedeuten, habe ich ein Beispiel mitgebracht.
 			Ein Pumpspeicherkraftwerk.
@@ -302,7 +313,8 @@ Und du kannst die Effizienz von Energieumwandlungssystemen analysieren.
 			Arbeit wird immer dann verrichtet, wenn Energie gewandelt wird.
 			Und um Arbeit zu verrichten, brauchen wir Energie, die wir aber nicht erzeugen, sondern wandeln.
 		}
-
+	% 761423 guter seed
+	\speech{00_Einleitung2}{3}{Auch hier nochmal der ganz wichtige Merksatz: Energie kann gespeichert werden, Arbeit wird verrichtet. Was das bedeutet, haben wir gerade am Beispiel des Pumpspeicherkraftwerks gesehen. Wenn Wasser hochgepumpt wird, dann ist die Energie in Form von potenzieller Energie gespeichert. Wenn es dann wieder herunterläuft, gibt es diese Energie an das System ab. In der Turbine wird Arbeit verrichtet, und dabei wird Energie gewandelt.}
 	\end{frame}
 
 \s{
@@ -330,15 +342,11 @@ Und du kannst die Effizienz von Energieumwandlungssystemen analysieren.
 	Im Folgenden werden die Begriffe der Energie, Leistung, elektrischer Arbeit und Wirkungsgrad detailierter erläutert. 
 	Für das Verständnis werden hier die Grundlagen aus dem vorherigen Kapitel zu Ladung, elektrischem Potential und elektrischer Stromstärke vorausgesetzt.
 }
-\begin{frame} \ftx{Merksatz:}
+\s{
 	\begin{Merksatz} 
 
 		Energie kann gespeichert werden, Arbeit wird verrichtet.
 		
 	\end{Merksatz}
-	
-	% 761423 guter seed
-	\speech{00_Einleitung3}{1}{Auch hier nochmal der ganz wichtige Merksatz: Energie kann gespeichert werden, Arbeit wird verrichtet. Was das bedeutet, haben wir gerade am Beispiel des Pumpspeicherkraftwerks gesehen. Wenn Wasser hochgepumpt wird, dann ist die Energie in Form von potenzieller Energie gespeichert. Wenn es dann wieder herunterläuft, gibt es diese Energie an das System ab. In der Turbine wird Arbeit verrichtet, und dabei wird Energie gewandelt.}
-	
-\end{frame}
+}
 
