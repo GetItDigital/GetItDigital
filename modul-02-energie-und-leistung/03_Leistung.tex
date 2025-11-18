@@ -12,44 +12,40 @@
 	Sie wird definiert als eine Menge an Energie, die pro Zeiteinheit umgesetzt wird. 
 	Die SI-Einheit der Leistung ist das Watt (W), wobei ein Watt einem Joule pro Sekunde entspricht. 
 	Anders gesagt ist die zuvor beschriebene Arbeit das Integral der Leistung über die Zeit.
-	
-
 		\begin{equation}
 			W = \int P \cdot \mathrm{d}t
-			\end{equation}
+		\end{equation}
 	
-	Durch Umstellung der Formel ergibt sich, dass die Leistung $P$ die Änderung der Arbeit über die Zeit ist.
-	
-		\begin{equation}
+Durch Umstellung der Formel ergibt sich, dass die Leistung $P$ die Änderung der Arbeit über die Zeit ist.
+	\begin{equation}
 			P = \frac{\mathrm{d}W}{\mathrm{d}t} \label{eq:PdWdt}
-			\end{equation}
+	\end{equation}
 }
-\begin{frame}
+\begin{frame}[t]
 \ftx{Die Leistung}
 \b{
+	\begin{itemize}\centering
+		\item $\displaystyle W = \int P \cdot \mathrm{d}t $
+	\end{itemize}
+Durch Umstellung der Formel ergibt sich, dass die Leistung $P$ die Änderung der Arbeit über die Zeit ist
 \begin{equation*}
-	W = \int P \cdot \mathrm{d}t
-\end{equation*}
-
-Durch Umstellung der Formel ergibt sich, dass die Leistung $P$ die Änderung der Arbeit über die Zeit ist.
-
-\begin{equation*}
-	P = \frac{\mathrm{d}W}{\mathrm{d}t}
-\end{equation*}
+	P = \frac{\mathrm{d}W}{\mathrm{d}t} 
+\end{equation*}\vspace*{0.5cm}
 	
-	Bei gleichbleibender Arbeit über die Zeit ergibt sich der folgende Ausdruck:
-	\begin{equation*}
-		P = \frac{W_\mathrm{{el}}}{t} = \frac{U \cdot I \cdot \colorcancel{\phantom{t}t\phantom{t}}{red}}
-		{\colorcancel{\phantom{t}t\phantom{t}}{red}} = U \cdot I \quad \quad [P] = \text{1 Watt = 1 W}
-	\end{equation*}
+\only<2->{\textbf{Die elektrische Leistung:}\vspace*{0.5cm}
 
-}
+Bei gleichbleibender Arbeit über die Zeit ergibt sich der folgende Ausdruck:
+\begin{equation*}
+	P = \frac{W_\mathrm{{el}}}{t} = \frac{U \cdot I \cdot \colorcancel{\phantom{t}t\phantom{t}}{red}}
+		{\colorcancel{\phantom{t}t\phantom{t}}{red}} = U \cdot I \quad \quad [P] = \text{1 Watt = 1 W} 
+\end{equation*}
+		
+}}
 \end{frame}
 
 	\subsection{Die elektrische Leistung}
 
 \s{
-
 	Im Fall der elektrischen Leistung ergibt sich bei gleichbleibender Arbeit über die Zeit nach Einsetzen der elektrischen Arbeit $W_\mathrm{{el}}$ aus Formel \ref{eq:WUIt} der folgende Ausdruck:
 
 	\begin{equation}
@@ -63,7 +59,7 @@ Durch Umstellung der Formel ergibt sich, dass die Leistung $P$ die Änderung der
 \s{
 	Neben der elektrischen Leistung gibt es noch weitere Leistungsgrößen, welche sich aus den verschiedenen Energieformen ergeben.
 	Ergänzend zu den in Abschnitt \ref{sec:energieformen} erörterten Energieformen, sind in der folgenden Tabelle die entsprechenden Leistungen aufgelistet. 
-	Dabei wird jeweils die Potentialgröße mit der Flussgröße multipliziert. Die Tabelle gilt nur für Gleichspannung. \\
+	Dabei wird jeweils die Potentialgröße mit der Flussgröße multipliziert. Die Tabelle gilt nur für Gleichspannung.
 }
 
 	%%%%% Leistungs Tabelle einfach
@@ -88,7 +84,7 @@ Durch Umstellung der Formel ergibt sich, dass die Leistung $P$ die Änderung der
 	% 	\caption{Arten von Leistung} 
 	% 	\label{tab:groessen} % Label für Verweise
 	% 	\end{table}
-\begin{frame}
+\begin{frame}[t]
 	\ftx{Verschiedene Leistungsarten}
 	%%%%% Leistungs Tabelle Kästchen
 	{\renewcommand{\arraystretch}{1.2} % <--- hier direkt vor der Tabelle
@@ -112,15 +108,14 @@ Durch Umstellung der Formel ergibt sich, dass die Leistung $P$ die Änderung der
 			\s{\caption{\textbf{Arten von Leistung.} Zeigt die verschiedenen Arten von Leistung in verschiedenen physikalischen Systemen.}}
 			\label{tab:groessen} % Label für Verweise
 		\end{table}}
-\end{frame}
-\begin{frame}
-	\ftx{Merksatz: Leistung}
+
+\only<2->{
 	\begin{Merksatz}
 
 	Energie beschreibt das Potential Arbeit zu verrichten.	
 	Elektrische Arbeit ist die Leistung die über eine Zeit verrichtet wird.
 	Leistung ist die verrichtete Arbeit pro Zeit
-	\end{Merksatz}
+	\end{Merksatz}}
 \end{frame}
 \s{
 	Die verschiedenen Leistungsarten sind relevant für die Effizienz eines Systems. 

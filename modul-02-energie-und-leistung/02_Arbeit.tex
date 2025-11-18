@@ -25,7 +25,7 @@
 \begin{frame}[t]
 	\ftx{Die Arbeit}
 \b{
-	%;TODO verschönern
+	
 	\begin{itemize}
 		\item Arbeit ist die Änderung der Energieform
 	\end{itemize}
@@ -170,8 +170,6 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 	Da für einen elektrischen Energietransport eine elektrische Stromstärke notwendig ist, kann nun der aus Modul 1 bekannte Zusammenhang zwischen elektrischer Stromstärke $I$ und der Ladung $Q$ verwendet und umgestellt werden, 
 	um die Ladung $Q$ in der Formel \ref{eq:WQU} auszutauschen. Ein konstanter Stromfluss $I$ ergibt sich aus einer gleichmäßigen Bewegung der Ladungsträger $Q$ über die Zeit $t$.
 	In diesem Fall kann auf den Differentialoperator ($\mathrm{d}$) verzichtet werden. Durch Umstellung nach $Q$ ergibt sich folgende Formel:
-	
-
 	\begin{equation}			
 		I = \frac{\mathrm{d}Q}{\mathrm{d}t} \quad \Rightarrow \quad 	Q = I \cdot t 
 	\end{equation}		
@@ -193,7 +191,7 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 
 		\only<3->{ \vspace{-5.75cm} \begin{Merksatz}
 
-			\begin{itemize}
+			\begin{itemize} % TODO: Finde keinen Speech von den Merksatz. von FS
 				\item Für das Verrichten einer Arbeit wird immer eine Zeitdauer benötigt.
 				\item Ein Momentanzustand ist immer der Ist-Zustand der Energieverteilung.
 				\item Das Verrichten elektrischer Arbeit bedarf immer eines Stromflusses.
@@ -236,6 +234,7 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 }
 \begin{frame}
 	\ftx{Wegintegral der elektrischen Arbeit}
+	\begin{overlayarea}{\textwidth}{0.9\textheight}
 	\s{
 	\begin{figure}[H]
 		
@@ -286,12 +285,14 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 	\rightarrow \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} = 0
 	\end{equation}
 
+Das Ergebnis des Ringintegrals verdeutlicht ein fundamentales Prinzip der Physik: In einem statischen Feld ist die über einen geschlossenen Weg verrichtete Arbeit immer Null. Dies bestätigt die Wegunabhängigkeit der Arbeit in diesen Feldern und zeigt, dass die verrichtete Arbeit ausschließlich von den Anfangs- und Endpunkten abhängt und nicht vom spezifischen Weg zwischen diesen Punkten. 
 
-		Das Ergebnis des Ringintegrals verdeutlicht ein fundamentales Prinzip der Physik: In einem statischen Feld ist die über einen geschlossenen Weg
-		verrichtete Arbeit immer Null. Dies bestätigt die Wegunabhängigkeit der Arbeit in diesen Feldern und zeigt, dass die verrichtete Arbeit ausschließlich
-		von den Anfangs- und Endpunkten abhängt und nicht vom spezifischen Weg zwischen diesen Punkten. 
+\begin{Merksatz}
+
+	Das Ringintegral einer Ladung in einem statischen elektrischen Feld ist unabhängig von der Ladungsmenge immer gleich Null.
+	
+\end{Merksatz}
 		  
-
 	% Wie im Abschnitt über elektrische Felder erklärt wird, beeinflussen sich zwei Ladungen Q gegenseitig, 
 	% indem sie Kräfte aufeinander ausüben, was zu einem elektrischen Feld führt. 
 	% Im Kontext der elektrischen Arbeit erfolgt die Verschiebung einer Ladung innerhalb eines elektrischen Feldes. 
@@ -301,33 +302,31 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 	% in einem elektrischen System übertragen wird. Sie wird üblicherweise in der Einheit Joule gemessen. \\
 	% Elektrische Arbeit wird durch die Spannung (U) und die Ladung (Q) bestimmt, die durch ein elektrisches System fließen. \\
 }% nur skript	
-\b{
-	\begin{equation*}
-		\left| W_\mathrm{el} \right| = \left| -Q \cdot \int_{s_\mathrm{1}} \vec{E} \cdot \mathrm{d}\vec{s}\; \right| = \left| -Q \cdot \int_{s_\mathrm{2}}\vec{E} \cdot \mathrm{d}\vec{s}\; \right| %= 
-	%- Q \cdot \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot d\vec{s} - Q \cdot \int_{P_\mathrm{2}}^{P_\mathrm{1}} \vec{E} \cdot d\vec{s}
-	\end{equation*}
-    \begin{equation*}
-	W_\mathrm{el} = - Q \cdot \int_{s_\mathrm{1}} \vec{E} \cdot \mathrm{d}\vec{s} -Q \cdot \int_{s_\mathrm{2}}\vec{E} \cdot \mathrm{d}\vec{s} = - Q \cdot \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} = 0
-	\rightarrow \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} = 0
-	\end{equation*}
-}
-
-\speech{02_Arbeit5}{1}{
-	Betrachten wir doch das Wegintegral der elektrischen Arbeit einmal genauer. Wir bewegen eine Ladung Q auf zwei unterschiedlichen Kurven. Und die Kurven seien einmal die Kurve S1, die von Punkt P1 zum Punkt P2 geht. Anschließend betrachten wir das Wegintegral vom Punkt P2 zum Punkt P1. Das ist die Kurve S2. [...] Genau dasselbe können wir uns wieder am Beispiel der potenziellen Energie begreiflich machen. Wenn wir in der Achterbahn sitzen und wir starten, dann kommen wir genau auf derselben Höhe wieder an. Abzüglich der Reibungsverluste. Genauso ist es im elektrischen Feld.
-}
-
-\end{frame}
-\begin{frame}%; TODO Merksatz elektrische Arbeit fehlt
-	\ftx{Wegintegral der elektrischen Arbeit}
-	\begin{Merksatz}
+\b{                               % TODO: Formel richtig? von FS
+	\begin{itemize} \centering
+		\item $\displaystyle \left| W_\mathrm{el} \right| = \left| -Q \cdot \int_{s_\mathrm{1}} \vec{E} \cdot \mathrm{d}\vec{s}\; \right| = \left| -Q \cdot \int_{s_\mathrm{2}}\vec{E} \cdot \mathrm{d}\vec{s}\; \right| $
+		\item  $\displaystyle W_\mathrm{el} = - Q \cdot \int_{s_\mathrm{1}} \vec{E} \cdot \mathrm{d}\vec{s} -Q \cdot \int_{s_\mathrm{2}}\vec{E} \cdot \mathrm{d}\vec{s} = - Q \cdot \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} = 0
+	\rightarrow \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} = 0 $
+	\end{itemize}
+    
+% TODO Merksatz elektrische Arbeit fehlt (???? von FS)
+	\only<2->{\vspace*{-4.5cm}\begin{Merksatz}
 
 	Das Ringintegral einer Ladung in einem statischen elektrischen Feld ist unabhängig von der Ladungsmenge immer gleich Null.
 	
-	\end{Merksatz}
-	\speech{02Arbeit6}{1}{
+	\end{Merksatz}}
+
+}
+\end{overlayarea}
+% TODO: Speech geht nicht auf die Formeln etc. ein. von FS
+	\speech{02_Arbeit5}{1}{
+	Betrachten wir doch das Wegintegral der elektrischen Arbeit einmal genauer. Wir bewegen eine Ladung Q auf zwei unterschiedlichen Kurven. Und die Kurven seien einmal die Kurve S1, die von Punkt P1 zum Punkt P2 geht. Anschließend betrachten wir das Wegintegral vom Punkt P2 zum Punkt P1. Das ist die Kurve S2. [...] Genau dasselbe können wir uns wieder am Beispiel der potenziellen Energie begreiflich machen. Wenn wir in der Achterbahn sitzen und wir starten, dann kommen wir genau auf derselben Höhe wieder an. Abzüglich der Reibungsverluste. Genauso ist es im elektrischen Feld.
+}
+	\speech{02Arbeit5}{2}{
 
 	}
 \end{frame}
+
 	%%%%%%%%%%%%%%%% ENDE des Abschnittes ARBEIT %%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -5,99 +5,78 @@
 \section{Die Energie} % Definition der Energie
 \newvideofile{energie}{Energie}
 \s{
-Die gespeicherte Arbeitsleistung wird nach aufgewendeter Arbeit als Energie bezeichnet. 
-Wenn beispielsweise ein Objekt erwärmt wird, liegt diese gespeicherte Wärme als thermische Energie vor. 
-Bei der Abgabe der Energie an die Umwelt wird nun wieder Arbeit verrichtet. Energie ist also die Fähigkeit eines Objektes, Arbeit zu verrichten.
-Sie ist, wie oben beschrieben, eine Erhaltungsgröße, was bedeutet, dass Energie weder erschaffen noch zerstört werden kann.
-Dieses Kapitel beschäftigt sich eingehend mit den Konzepten der Energieerhaltung, der Vorstellung verschiedener Energieformen und Methoden ihrer Speicherung.
+Die gespeicherte Arbeitsleistung wird nach aufgewendeter Arbeit als Energie bezeichnet. Wenn beispielsweise ein Objekt erwärmt wird, liegt diese gespeicherte Wärme als thermische Energie vor. Bei der Abgabe der Energie an die Umwelt wird nun wieder Arbeit verrichtet. Energie ist also die Fähigkeit eines Objektes, Arbeit zu verrichten. Sie ist, wie oben beschrieben, eine Erhaltungsgröße, was bedeutet, dass Energie weder erschaffen noch zerstört werden kann. Dieses Kapitel beschäftigt sich eingehend mit den Konzepten der Energieerhaltung, der Vorstellung verschiedener Energieformen und Methoden ihrer Speicherung.
 
 \subsection{Der Energieerhaltungssatz} % Energieerhaltungssatz (evtl. nur etwas über Energieerhaltung erzählen)
-Der Energieerhaltungssatz besagt, dass die Gesamtmenge der Energie in 
-einem abgeschlossenen System konstant bleibt, auch wenn Energie zwischen verschiedenen Formen umgewandelt werden kann. 
-Das bedeutet, dass Energie weder erschaffen noch zerstört werden kann, sondern nur von einer Form in eine andere übergehen kann.
+Der Energieerhaltungssatz besagt, dass die Gesamtmenge der Energie in einem abgeschlossenen System konstant bleibt, auch wenn Energie zwischen verschiedenen Formen umgewandelt werden kann. Das bedeutet, dass Energie weder erschaffen noch zerstört werden kann, sondern nur von einer Form in eine andere übergehen kann.
 }
 
-\begin{frame}
-	\ftx{Der Energieerhaltungssatz}
+\begin{frame}[t]
+	\ftx{Der Energieerhaltungssatz} 
+\s{
 \begin{figure}[H]
 	\centering
-	    \b{\includesvg[width=0.4\textwidth]{Ball}}
-		\s{\includesvg[width=0.4\textwidth]{Ball}  
-		\caption{\textbf{Energieerhaltungssatz.} Die potentielle Energie des Balls wird in kinetische Energie umgewandelt, während der Gesamtenergiegehalt konstant bleibt.}}
+		\includesvg[width=0.4\textwidth]{Ball}  
+		\caption{\textbf{Energieerhaltungssatz.} Die potentielle Energie des Balls wird in kinetische Energie umgewandelt, während der Gesamtenergiegehalt konstant bleibt.}
 		\label{fig:Energie eines Balls}
 	\end{figure}
 
-\s{
-Ein anschauliches Beispiel: Wenn ein Ball von einer Höhe fallen gelassen wird, wird seine potenzielle Energie (die Energie, die er aufgrund seiner Position hat) in kinetische Energie 
-(die Energie der Bewegung) umgewandelt, während er fällt. Am Boden angelangt, kann ein Teil dieser kinetischen Energie in andere Energieformen wie Wärme oder Schall umgewandelt werden, 
-aber die Summe all dieser Energieformen bleibt gleich der ursprünglichen potenziellen Energie des Balls. Dies stellt dar, wie Energie erhalten bleibt, auch wenn sie ihre Form ändert.
-}
+Ein anschauliches Beispiel: Wenn ein Ball von einer Höhe fallen gelassen wird, wird seine potenzielle Energie (die Energie, die er aufgrund seiner Position hat) in kinetische Energie (die Energie der Bewegung) umgewandelt, während er fällt. Am Boden angelangt, kann ein Teil dieser kinetischen Energie in andere Energieformen wie Wärme oder Schall umgewandelt werden,  aber die Summe all dieser Energieformen bleibt gleich der ursprünglichen potenziellen Energie des Balls. Dies stellt dar, wie Energie erhalten bleibt, auch wenn sie ihre Form ändert.
 
-\b{\vspace*{-1.2cm}}
-\only<2->{\begin{Merksatz} 
+\begin{Merksatz} 
 	
 		Energie ist eine Erhaltungsgröße. \\
 		Energie kann weder erzeugt noch vernichtet werden. \\
 		Energie kann lediglich die Energieform ändern.
 		
-\end{Merksatz}
-}
-\b{\vspace*{-0.5cm}
-\only<3->{
-  \begin{equation} E = \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s}\end{equation}
-}}
+\end{Merksatz}}
 
+ \b{
+        \begin{columns}[T]
+
+            % -------- Bild links --------
+            \begin{column}{0.51\textwidth}
+                \centering
+                \includesvg[width=0.8\textwidth]{Ball}
+            \end{column}
+
+            % -------- Formel rechts (only 2) --------
+            \begin{column}{0.49\textwidth}\vspace*{1.2cm}
+                \only<2->{
+                    \begin{itemize}
+                        \item $\displaystyle E_\text{ges} = E_\text{pot} + E_\text{kin} + E_\text{V} = \text{konst.} $
+                    \end{itemize}
+                }
+            \end{column}
+
+        \end{columns}
+
+        % -------- Merksatz unten (only 3) --------
+        \only<3->{
+            \begin{Merksatz}
+
+                Energie ist eine Erhaltungsgröße. \\
+                Energie kann weder erzeugt noch vernichtet werden. \\
+                Energie kann lediglich die Energieform ändern.
+            \end{Merksatz}
+        }
+    }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% erste Makros für TTS %%%%%%%%%%%%%%%%%%%%%%%% test
 
-\speech{01_Energie1}{1}{
-Auch hier sehen wir nochmal ein einfaches Bild mit dem zentralen Hinweis:
-Der Energieerhaltungssatz gilt immer. Ich hatte es bereits erwähnt:
-Energie kann immer nur gewandelt werden.
-In einem geschlossenen System bleibt die Gesamtenergie immer gleich.
-Wie bei diesem Ball im Bild.
-Am linken Rand, wo der Ball ursprünglich gestartet ist, sehen wir den Anfang seiner Bewegung.
-Er fällt in einer Wurfparabel nach unten.
-Dabei wird potenzielle Energie, also seine Lageenergie, in kinetische Energie gewandelt.
-Der Ball wird immer schneller.
-Jede und jeder, der mal einen Ball aus dem Fenster geworfen hat, kennt das.
-Je höher er gestartet ist, desto schneller wird er beim Fallen.
-Das ist genau die Wirkung der potenziellen Energie.
-Wenn der Ball auf dem Boden auftrifft, kommt es zu einem elastischen Stoß.
-Das hat mit dem Impulserhaltungssatz zu tun, den lernst du später im Physikunterricht.
-Die kinetische Energie beim Aufprall wandelt sich beim Hochfliegen wieder in potenzielle Energie um.
-Deshalb springt der Ball fast wieder auf dieselbe Höhe.
-Fast, aber eben nicht ganz. Warum?
-Weil Verluste entstehen.
-Zum Beispiel:
-Wenn der Ball auf den Boden auftrifft, wird er leicht verformt.
-Der Gummi knickt ein. Das nennt man Verformungsarbeit.
-Ein Teil der Energie geht also in eine andere Form über, nicht mehr potenziell oder kinetisch.
-Zusätzlich haben wir Reibung.
-Denn:
-Wir sind nicht im Vakuum. Die Luft wirkt auf den Ball, und auch das erzeugt Verluste in Form von Wärme.
-Das zeigt nochmal anschaulich, was der Energieerhaltungssatz bedeutet:
-Die Energie bleibt erhalten, aber sie wechselt die Form.
-}
+%%% Text Reihe geändert weil die Formel am Ende nicht gut aussieht bzw. Merksatz am Ende sein sollte. von FS %%%
+\speech{01_Energie1}{1}{ 
+Auch hier sehen wir nochmal ein einfaches Bild mit dem zentralen Hinweis: Der Energieerhaltungssatz gilt immer. Ich hatte es bereits erwähnt: Energie kann immer nur gewandelt werden. In einem geschlossenen System bleibt die Gesamtenergie immer gleich. Wie bei diesem Ball im Bild. Am linken Rand, wo der Ball ursprünglich gestartet ist, sehen wir den Anfang seiner Bewegung. Er fällt in einer Wurfparabel nach unten. Dabei wird potenzielle Energie, also seine Lageenergie, in kinetische Energie gewandelt. Der Ball wird immer schneller. Jede und jeder, der mal einen Ball aus dem Fenster geworfen hat, kennt das. Je höher er gestartet ist, desto schneller wird er beim Fallen. Das ist genau die Wirkung der potenziellen Energie. Wenn der Ball auf dem Boden auftrifft, kommt es zu einem elastischen Stoß. Das hat mit dem Impulserhaltungssatz zu tun, den lernst du später im Physikunterricht. Die kinetische Energie beim Aufprall wandelt sich beim Hochfliegen wieder in potenzielle Energie um. Deshalb springt der Ball fast wieder auf dieselbe Höhe. Fast, aber eben nicht ganz. Warum? Weil Verluste entstehen.
+Zum Beispiel: Wenn der Ball auf den Boden auftrifft, wird er leicht verformt. Der Gummi knickt ein. Das nennt man Verformungsarbeit. Ein Teil der Energie geht also in eine andere Form über, nicht mehr potenziell oder kinetisch. Zusätzlich haben wir Reibung.
+Denn: Wir sind nicht im Vakuum. Die Luft wirkt auf den Ball, und auch das erzeugt Verluste in Form von Wärme. Das zeigt nochmal anschaulich, was der Energieerhaltungssatz bedeutet: Die Energie bleibt erhalten, aber sie wechselt die Form.
+} % Text angepasst von FS % TODO: Finde der Speech ist zu Allgemein für die Formel...
 \speech{01_Energie1}{2}{
-	Zusammenfassung:
-	Energie ist eine Erhaltungsgröße.
-	Die Gesamtenergie in einem geschlossenen System bleibt immer gleich.
-	Energie kann weder erzeugt noch vernichtet werden.
-	Es wandeln sich lediglich die Energieformen.
-	Wie definieren wir Energie nun genau?
-	Wie so häufig in der Physik oder auch in der Elektrotechnik versuchen wir das mit einer Formel zu beschreiben.
-
-}
-\speech{01_Energie1}{3}{
-	In der unteren Hälfte der Folie sehen wir eine Formel.
-	Und diese Formel sagt uns im Grunde Folgendes:
-	Wir können Energie mathematisch beschreiben, und das erlaubt uns, damit zu rechnen und Systeme zu analysieren.
-	Wenn wir diese Formel in Worte fassen, dann ergibt sich daraus eine allgemeine Definition von Energie.
-	Und diese Definition hilft uns, Energieformen zu vergleichen, Umwandlungen zu bewerten und letztlich auch technische Systeme zu planen.
+	Wie definieren wir Energie nun genau? Wie so häufig in der Physik oder auch in der Elektrotechnik versuchen wir das mit einer Formel zu beschreiben. In der Linken Hälfte der Folie sehen wir eine Formel die uns Folgendes sagt: Wir können Energie mathematisch beschreiben, und das erlaubt uns, damit zu rechnen und Systeme zu analysieren. Wenn wir diese Formel in Worte fassen, dann ergibt sich daraus eine allgemeine Definition von Energie. Und diese Definition hilft uns, Energieformen zu vergleichen, Umwandlungen zu bewerten und letztlich auch technische Systeme zu planen.
 	}
+\speech{01_Energie1}{3}{
+	Zusammenfassung: Energie ist eine Erhaltungsgröße. Die Gesamtenergie in einem geschlossenen System bleibt immer gleich. Energie kann weder erzeugt noch vernichtet werden. Es wandeln sich lediglich die Energieformen.
+}
 	\silence{2}
 \end{frame}
-
 
 \begin{frame}
 	\ftx{Lernziele: Die Elektrische Ladung}
@@ -210,7 +189,7 @@ Die Energie $E$ (siehe Abbildung \ref{fig:E=F*s}) wird im allgemeinen über die 
 \begin{figure}[H]
 	\centering
 			\includesvg[width=0.6\textwidth]{Kraft_Energie.svg}
-			\caption{\textbf{Beispiel der Energieberechnug.} Zerlegung der Kraft \(\vec{F}\) in eine parallele Komponente \(\vec{F}_\mathrm{p}\) und eine senkrechte Komponente \(\vec{F}_\mathrm{s}\). Nur die parallele Komponente wirkt entlang des Weges \(\vec{s}\) und verrichtet Arbeit.}
+			\caption{\textbf{Beispiel der Energieberechnug.} Zerlegung der Kraft \(\vec{F}\) in eine parallele Komponente \(\vec{F}_\mathrm{p}\) und eine senkrechte Komponente \(\vec{F}_\mathrm{s}\). Nur die parallele Komponente wirkt entlang des Weges \(\vec{s}\) und überträgt Energie an das Objekt.}
 			\label{fig:E=F*s}
 \end{figure}
 \begin{equation}
