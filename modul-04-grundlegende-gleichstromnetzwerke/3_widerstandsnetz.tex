@@ -50,12 +50,13 @@
 	\s{
 
 		\subsection{Reihenschaltung von Widerständen}
+		\index{Reihenschaltung}
 
 		In einer Reihenschaltung werden alle Bauelemente vom gleichen Strom $I$ durchflossen
 		(siehe Abbildung \ref{fig:reihenschaltung}).
 
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\begin{center}
 				\input{Tikz/src/3_widerstandsnetz/Reihenschaltung_Wiederstaende_1}\alttext{Schematische Darstellung einer Reihenschaltung bestehend aus einer Spannungsquelle U0 und zwei in Serie geschalteten Widerständen R1 und R2. Der elektrische Strom I verläuft im Uhrzeigersinn durch die Schaltung.}
 				\caption{Reihenschaltung von zwei Widerständen und einer Spannungsquelle}
@@ -84,7 +85,7 @@
 		zu $R_1 + R_2 = R_\mathrm{ges}$ zusammenfassen (Abbildung \ref{fig:rges}).
 
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\begin{center}
 				\input{Tikz/src/3_widerstandsnetz/Reihenschaltung_Wiederstaende_2}\alttext{Darstellung einer elektrischen Schaltung. Eine Spannungsquelle U0 treibt den Strom I im Uhrzeigersinn durch die Schaltung. Der Gesamtwiderstand Rges ist rechts im Stromkreis eingezeichnet, über ihm liegt die Spannung Uges, die mit einem Pfeil nach unten gekennzeichnet ist. Die Spannung U0 der Quelle ist ebenfalls nach unten gerichtet.}
 				\caption{Zusammenfassen von $R_1$ und $R_2$ zu $R_\mathrm{ges}$}
@@ -280,7 +281,7 @@
 
 
 	\s{
-
+		\index{Parallelschaltung}
 		\subsection{Parallelschaltung von Widerständen}
 
 		In einer Parallelschaltung von Widerständen liegt an allen Bauelementen die selbe Spannung an (siehe Abbildung \ref{fig:parallelschaltung}):
@@ -291,7 +292,7 @@
 
 
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\begin{center}
 
 				\input{Tikz/src/3_widerstandsnetz/Parallelschaltung_Wiederstaende_1}\alttext{Schaltskizze einer elektrischen Parallelschaltung mit zwei Widerständen R1 und R2, die an eine Spannungsquelle U0 angeschlossen sind. Der Gesamtstrom I0 teilt sich am oberen Knoten in die Teilströme I1 durch R1 und I2 durch R2 auf. Beide Widerstände sind parallel zwischen denselben Knoten verbunden und werden von den Spannungen U1 beziehungsweise U2 durchflossen, die identisch zur Quellenspannung U0 ausgerichtet sind. Alle Spannungen sind durch Pfeile nach unten dargestellt.}
@@ -327,7 +328,7 @@
 		Wie bei der Reihenschaltung im Kapitel 4.1 ist es auch bei der Parallelschaltung von Widerständen
 		häufig von Vorteil, diese zu einem Gesamtwiderstand $R_\mathrm{ges}$ zusammenzufassen (siehe Abbildung \ref{fig:parallelzusammen}):
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\begin{center}
 
 				\input{Tikz/src/3_widerstandsnetz/Parallelschaltung_Wiederstaende_2}\alttext{Darstellung einer elektrischen Schaltung. Eine Spannungsquelle U0 treibt den Strom I im Uhrzeigersinn durch die Schaltung. Der Gesamtwiderstand Rges ist rechts im Stromkreis eingezeichnet, über ihm liegt die Spannung Uges, die mit einem Pfeil nach unten gekennzeichnet ist. Die Spannung U0 der Quelle ist ebenfalls nach unten gerichtet.}
@@ -619,8 +620,8 @@
 
 	\subsection{Spannungsteiler an Widerständen}
 
-	\s{
-
+	\s{	
+		\index{Spannungsteiler}
 		Ein Anwendungsfall der Reihenschaltung von zwei Widerständen ist der Spannungsteiler. Er wird genutzt, um eine
 		Eingangsspannung $U_0$ in zwei kleinere Teilspannungen aufzuteilen, und so eine genau definierte Ausgangsspannung $U_2$ bereitzustellen.
 
@@ -631,7 +632,7 @@
 		Zunächst sei der in Abbildung \ref{fig:spannungsteiler} dargestellte Spannungsteiler unbelastet,
 		d.h. es ist kein Lastwiderstand an den offenen Klemmen angeschlossen.
 		Alle Bauelemente werden vom gleichen Strom $I$ durchflossen:
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\begin{center}
 
 				\input{Tikz/src/3_widerstandsnetz/Spannungsteiler_unbelastet}\alttext{Schematische Darstellung eines unbelasteten Spannungsteilers mit zwei Widerständen R1 und R2. Die Spannungsquelle mit der Spannung U0 treibt den Strom I durch den oberen Widerstand R1, an dem die Teilspannung U1 abfällt. Der zweite Widerstand R2 ist in Reihe geschaltet, über ihm liegt die Spannung U2. Beide Spannungen U1 und U2 addieren sich zur Gesamtspannung U0. Der Strompfeil I ist rot eingezeichnet, die Spannungspfeile U0, U1 und U2 sind blau dargestellt.}
@@ -667,7 +668,7 @@
 		\end{Merksatz}
 
 
-		\begin{bsp}{Unbelasteter Spannungsteiler}{Spannungsteiler}
+		\begin{bsp}{Unbelasteter Spannungsteiler}{Spannungsteiler_unbel}
 
 			Eine Eingangsspannung von $U_0 = 24$ V soll mit einem Spannungsteiler auf $U_2 = 6$ V reduziert werden.
 			Wie ist das Verhältnis der Widerstände von $R_2$ zu $R_1$ zu wählen?
@@ -720,7 +721,7 @@
 
 
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\begin{center}
 
 				\input{Tikz/src/3_widerstandsnetz/Spannungsteiler_belastet}\alttext{Schematische Darstellung eines belasteten Spannungsteilers mit einer Spannungsquelle U0, den Widerständen R1 und R2 sowie einem zusätzlichen Lastwiderstand RL. Die Spannungsquelle U0 treibt den Strom I durch R1, an dem die Spannung U1 abfällt. Die Spannung U2 liegt über dem Parallelzweig aus R2 und RL, der durch eine gestrichelte Linie hervorgehoben ist. Der Strompfeil I ist rot markiert, die Spannungspfeile U0, U1 und U2 sind in Blau dargestellt.}
@@ -734,7 +735,7 @@
 
 
 
-		\begin{bsp}{Belasteter Spannungsteiler}{Spannungsteiler}
+		\begin{bsp}{Belasteter Spannungsteiler}{Spannungsteiler_bel}
 
 			Ein Spannungsteiler soll eine Eingangsspannung von $U_0 = 20$ V auf die Ausgangsspannung von $U_2 = 5$ V reduzieren.
 			Der Spannungsteiler wird mit $R_\mathrm{L} = 200 \, \Omega$ belastet.
@@ -924,11 +925,12 @@
 	\s{
 
 		\subsection{Stromteiler in Widerstandsnetzwerken}
+		\index{Stromteiler}
 
 		Eine wie in Abbildung \ref{fig:stromteiler} dargestellte Parallelschaltung von zwei Widerständen teilt einen in eine
 		Schaltung fließenden Strom $I_0$ in zwei Teilströme $I_1$ sowie $I_2$. Eine solche Schaltung wird als Stromteiler bezeichnet.
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 
 			\begin{center}
 				\input{Tikz/src/3_widerstandsnetz/Stromteiler}\alttext{Schaltskizze einer Parallelschaltung mit zwei Widerständen R1 und R2, die an einer gemeinsamen Spannungsquelle U0 betrieben werden. Der Gesamtstrom I0 teilt sich in die Teilströme I1 und I2 auf, die durch R1 bzw. R2 fließen. Alle Spannungen über den Widerständen sind mit U0 bezeichnet und verlaufen vertikal nach unten, während die Strompfeile I0, I1 und I2 rot markiert sind.}
@@ -1244,6 +1246,9 @@
 
 		\subsubsection{Kurzschluss- und Leerlaufversuch an der Ersatzspannungsquelle}
 
+		\index{Kurzschlussversuch}
+		\index{Leerlaufversuch}
+
 		\paragraph{Die reale Spannungsquelle}\\
 
 		\phantom{text}\\
@@ -1315,6 +1320,7 @@
 
 
 		\paragraph{Die Ersatzspannungsquelle}\\
+		\index{Ersatzspannugnsquelle}
 
 		\phantom{text}\\
 
@@ -1328,7 +1334,7 @@
 		ihren zwei Anschlussklemmen.
 
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 
 			\begin{center}
 
@@ -1360,7 +1366,7 @@
 			U = U_0 - I \cdot R_\mathrm{i}
 		\end{equation*}
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\centering
 			\s{\includesvg[width=0.6\textwidth]{kennlinie_ersatzspannungsquelleskript}}
 			\alttext{Kennlinie der Ersatzspannungsquelle im U-I-Diagramm. Auf der y-Achse ist die Spannung U(I) aufgetragen, auf der x-Achse die Stromstärke I. Die Kurve verläuft linear fallend von der Leerlaufspannung U0 bei I = 0 bis zum Kurzschlussstrom IK = U0/Ri, bei dem die Klemmenspannung null beträgt. Die Grafik verdeutlicht den linearen Zusammenhang zwischen Spannung und Stromstärke einer realen Spannungsquelle mit Innenwiderstand Ri.}
@@ -1378,7 +1384,7 @@
 
 		Beim Leerlaufversuch werden die beiden Klemmen der Ersatzspannungsquelle offen gelassen (Abbildung \ref{fig:leerlauf1}).
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\begin{center}
 
 				\input{Tikz/src/3_widerstandsnetz/Ermittlung_Leerlaufspannung}\alttext{Schematische Darstellung zur Bestimmung der Leerlaufspannung UL einer Ersatzspannungsquelle. Der Spannungsquelle ist als Zweipol dargestellt, dessen Ausgang offen ist, sodass kein Strom fließt. Zwischen den offenen Klemmen liegt die gemessene Spannung U = UL an, die der Leerlaufspannung der Quelle entspricht.}
@@ -1404,7 +1410,7 @@
 		ideal leitende Verbindung zwischen ihnen hergestellt (Abbildung \ref{fig:kurzschluss1}).
 
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\begin{center}
 
 				\input{Tikz/src/3_widerstandsnetz/Ermittlung_Kurzschlussstrom}\alttext{Schematische Darstellung zur Bestimmung des Kurzschlusstroems IK einer Ersatzspannungsquelle. Der Spannungsquelle ist als Zweipol dargestellt, dessen Ausgang kurzgeschlossen ist, sodass keine Spannung abfällt. Zwischen den Klemmen fließt der Strim IK}
@@ -1964,19 +1970,18 @@
 	\ftx{Die Ersatzstromquelle}
 
 
+
 	\s{
 
 		\paragraph{Die Ersatzstromquelle}\\
 		\phantom{text}\\
-
-
-
+		\index{Ersatzstromquelle}
 
 		Alternativ zur Ersatzspannungsquelle kann ein aktiver Zweipol auch als Ersatzstromquelle dargestellt werden
 		(Abbildung \ref{fig:ersatzstromquelle2}). Auch sie kann durch eine ideale Stromquelle $I_0$ sowie einen zusammengefassten
 		Innenwiderstand $R_\mathrm{i}$ vollständig charakterisiert werden.
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\begin{center}
 
 				\input{Tikz/src/3_widerstandsnetz/Ersatzstromquelle}\alttext{Darstellung einer Ersatzstromquelle, bestehend aus einer idealen Stromquelle I0 und einem parallel geschalteten Innenwiderstand Ri. Der Innenwiderstand leitet den Strom IRi ab, der gemäß IRi = U/Ri berechnet wird. Die anliegende Spannung U fällt über dem Lastwiderstand Ra ab. Der gestrichelte Kasten markiert den Bereich der Ersatzstromquelle.}
@@ -1999,7 +2004,7 @@
 		\end{equation*}
 
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\centering
 			\includesvg[width=0.6\textwidth]{kennlinie_ersatzstromquelleskript}\alttext{Kennlinie einer Ersatzstromquelle. Auf der y-Achse ist die Stromstärke I(U), auf der x-Achse die Spannung U dargestellt. Die rote Gerade fällt linear von I0 bei U = 0 bis auf 0 bei UL = I0 * Ri ab.}
 

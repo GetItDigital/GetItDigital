@@ -7,7 +7,7 @@
 
 \begin{frame}{}
 	\s{
-
+		\index{Kirchhoffsche Regeln}
 		Die im vorherigen Modul eingeführten Bauteilgleichungen, welche den Zusammenhang zwischen Spannung
 		und Strom an den einzelnen Bauteilen aufzeigen, reichen nicht aus, um sämtliche Spannungen und Ströme
 		innerhalb eines Netzwerkens zu berechnen. Die Kirchhoffschen Regeln, auch Maschen- bzw. Knotenregel genannt,
@@ -45,7 +45,7 @@
 	\s{
 
 
-
+		\index{Knotenregel}
 		\subsection{Knotenregel (1. Kirchhoffsche Regel)}
 
 		Die Knotenregel sagt aus, dass die Summe aller in einen Knoten hereinfließenden Ströme identisch zu Summe aller herausfließenden Ströme ist:
@@ -83,7 +83,7 @@
 		Auf den beispielhaften Knoten in Abbildung \ref{fig:knoten} angewendet ergeben sich folgende Gleichungen:
 
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\centering
 			{\includesvg[width=0.25\textwidth]{knotenregel1}}
 
@@ -102,7 +102,7 @@
 		\begin{equation*}
 			I_1 - I_2 - I_3 = 0
 		\end{equation*}
-
+		\index{Hüllknoten}
 		Der Knoten, auf den sich die Regel bezieht, muss jedoch nicht nur aus einem Punkt bestehen.
 		Vielmehr ist möglich, sogenannte \textbf{Hüllknoten} zu definieren, die einen Bereich
 		innerhalb einer Schaltung vollständig umschließen.
@@ -114,7 +114,7 @@
 		\end{equation*}
 
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\begin{center}
 				\input{Tikz/src/2_kirchhoff/Huellknoten_Skript}
 			\end{center}
@@ -130,7 +130,7 @@
 
 
 
-		\begin{figure}[h!]
+		\begin{figure}[ht]
 			\centering
 			\s{\includesvg[width=0.6\textwidth]{blechausschnitt}}
 
@@ -242,7 +242,7 @@
 
 			\vspace{-5pt}
 
-			\begin{figure}[h!]
+			\begin{figure}[ht]
 				\begin{center}
 					\input{Tikz/src/2_kirchhoff/Huellknoten_Folien}
 				\end{center}
@@ -474,7 +474,7 @@
 \begin{frame}
 	\subsection{Maschenregel (2. Kirchhoffscher Satz)}
 	\s{
-
+		\index{Maschenregel}
 		Der 2. Kirchhoffsche Satz (Maschenregel) besagt, dass die \textbf{Summe aller Spannungen} in einer Masche \textbf{Null} ergibt.
 		Analog zur Richtung der Ströme muss auch hier zwingend die Richtung der einzelnen Teilspannungen berücksichtigt
 		werden. Zeigt der Richtungspfeil einer Teilspannung entgegen der Umlaufrichtung der Masche, so muss
