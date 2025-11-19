@@ -509,7 +509,7 @@ Vielen Dank fürs Zuhören.
             \item das Stromverhalten im Resonanzfall zu berechnen und zu verstehen.
         \end{itemize}
     \end{Lernziele}
-\speech{07Resonanzkreise1Lernziele}{1}{%
+\speech{08ResonanzkreiseRLCSerie01Lernziele}{1}{%
 Willkommen zum Video über Resonanzkreise, speziell über den RLC Serienschwingkreis.
 In diesem Video lernen Sie das frequenzabhängige Verhalten eines RLC Serienschwingkreises zu analysieren.
 Hierzu gehört, den Einfluss der Güte auf das Impedanzverhalten in Abhängigkeit der Frequenz zu verstehen und zu berechnen.
@@ -664,7 +664,16 @@ Zudem lernen Sie das Überspannungsverhalten und das Stromverhalten im Resonanzf
     \begin{equation*}
         \omega_{d} = \sqrt{\frac{1}{LC} - \left(\frac{R}{2L}\right)^2}
     \end{equation*}
-}
+}%
+\speech{08ResonanzkreiseRLCSerie02Resonanzverhalten}{1}{%
+Beginnen wir mit der Untersuchung des Resonanzverhaltens eines RLC Serienschwingkreises.
+Oben links sehen Sie das Schaltbild des Schwingkreises. 
+Die Impedanz Z komplex des RLC Serienschwingkreises ist gegeben durch die Summe des ohmschen Widerstands R und der Reaktanzen von L und C, wie oben rechts gezeigt.
+Die Resonanzbedingung ist erfüllt, wenn der Imaginärteil der Impedanz gleich null ist.
+Das bedeutet, dass sich die Reaktanzen von L und C gegenseitig aufheben, wie rechts in Fall zwei gezeigt.
+Bei Erregerfrequenzen unterhalb der Resonanzfrequenz dominiert die Kapazität, weshalb die Impedanz ohmsch-kapazitiv ist, wie in Fall eins gezeigt.
+Bei Erregerfrequenzen oberhalb der Resonanzfrequenz dominiert die Induktivität, weshalb die Impedanz ohmsch-induktiv ist, wie in Fall drei gezeigt.
+}% Ende speech
 \end{frame}
 
 %.................................................................................................%
@@ -725,7 +734,27 @@ ist die Wirkleistung $P$ des Schwingkreis immer positiv mit $P=\Re\{\underline{U
 Bei reell eingeprägtem Strom $\underline{I}$ ist der Realanteil der Gesamtspannung $\underline{U}$ daher immer positiv.
 Der Zeiger der Gesamtspannung $\underline{U}$ deutet also entweder in den ersten Quadranten (ohmsch-induktiv), 
 in den vierten Quadranten (ohmsch-kapazitiv) oder auf die reale Achse (rein ohmsch).
-}
+}%
+\speech{08ResonanzkreiseRLCSerie03Zeigerdiagramm}{1}{%
+Zur besseren Veranschaulichung der drei Fälle können wir diese mittels eines Zeigerdiagramms darstellen.
+Angenommen, der RLC Serienschwingkreis wird mit einem konstanten Strom I komplex angeregt.
+Die Gesamtspannung U komplex ist die Summe der Spannungen über R, L und C, wie oben in der Gleichung gezeigt.
+Die Resonanzkreisfrequenz Omega null ist identisch mit der des idealen LC Serienschwingkreises,
+da der Widerstand R den Blindanteil der Impedanz nicht beeinflusst.
+}% Ende speech
+\speech{08ResonanzkreiseRLCSerie03Zeigerdiagramm}{2}{%
+Im Zeigerdiagramm links sehen wir den Fall eins, bei dem die Erregerfrequenz kleiner als die Resonanzfrequenz ist.
+Hier dominiert die Kapazität, weshalb die Impedanz ohmsch-kapazitiv ist. 
+Der Betrag der Spannung über C ist größer als der über L, der Phasenwinkel der Gesamtspannung kleiner ist als der Phasenwinkel des Stromes.
+Anders ausgedrückt, eilt der Gesamtspannungszeiger dem Stromzeiger hinterher.
+Im mittleren Zeigerdiagramm sehen wir den Resonanzfall, bei dem die Erregerfrequenz gleich der Resonanzfrequenz ist.
+Hier heben sich die Spannungen über L und C gegenseitig auf, weshalb die Impedanz rein ohmsch ist.
+Das heißt die Gesamtspannung ist in Phase mit dem Strom.
+Im rechten Zeigerdiagramm sehen wir den Fall drei, bei dem die Erregerfrequenz größer als die Resonanzfrequenz ist.
+Hier dominiert die Induktivität, weshalb die Impedanz ohmsch-induktiv ist.
+Das heißt der Gesamtspannungszeiger eilt dem Stromzeiger voraus.
+Die genaue Länge der Zeiger hängt vom jeweiligen Frequenzverhältnis und den Bauteilwerten ab.
+}% Ende speech
 \end{frame}
 
 %.................................................................................................%
@@ -798,7 +827,20 @@ dem induktiven Verlauf annähert mit $\lim_{\omega\rightarrow \infty}|Z|=|X_L|$.
         \smash{X_k = |X_{L,0}| = |X_{C,0}| = \sqrt{\frac{L}{C}}}
     \end{equation*}
 \end{minipage}
-}
+}%
+\speech{08ResonanzkreiseRLCSerie04Impedanzkurve}{1}{%
+Betrachten wir nun die Impedanzkurve eines RLC Serienschwingkreises in Abhängigkeit der Frequenz.
+Die Impedanz Z komplex des RLC Serienschwingkreises ist gegeben durch die Summe des ohmschen Widerstands R und der Reaktanzen von L und C, wie oben gezeigt.
+Die Impedanzkurve zeigt den Betrag der Impedanz, der Gesamtreaktanz, der Reaktanz der Induktivität, der Reaktanz der Kapazität 
+und des ohmschen Widerstands R in Abhängigkeit der Frequenz bezogen auf die Resonanzfrequenz, respektive der Kreisfrequenz bezogen auf die Resonanzkreisfrequenz.
+Der ohmsche Widerstand R ist frequenzunabhängig und erscheint als horizontale Linie in der Impedanzkurve.
+Die Reaktanz der Induktivität ist proportional zur Frequenz und erscheint als lineare Kurve.
+Die Reaktanz der Kapazität ist proportional zum Kehrwert der Frequenz und erscheint als hyperbolische Kurve.
+Im Resonanzfall sind die Reaktanzen von L und C betragsmäßig gleich groß und heben sich gegenseitig auf.
+Dadurch ist die Impedanz im Resonanzfall rein ohmsch und entspricht genau dem ohmschen Widerstand R, wie unten links gezeigt. 
+Die Beträge der Reaktanzen von L und C entsprechen im Resonanzfall dem sogenannten Kennwiderstand X k, wie unten rechts gezeigt. 
+Durch einsetzen der Resonanzkreisfrequenz in die Formeln für die Reaktanzen erhalten wir den Kennwiderstand als Wurzel aus L durch C. 
+}% Ende speech
 \end{frame}
 
 %.................................................................................................%
@@ -900,6 +942,21 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
     \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rlcs_phikurve_guete.pdf}}
 \end{minipage}
 }%
+\speech{08ResonanzkreiseRLCSerie05Güte}{1}{%
+Der Kennwiderstand hilft uns dabei, das Impedanzverhalten eines RLC Serienschwingkreises bauteilunabhängig, nur in Abhängigkeit der Frequenz und der Güte darzustellen.
+Links sehen Sie die entsprechenden Formeln für die Impedanz Z komplex und die normierte Impedanz Z durch den Kennwiderstand X k.
+Rechts in der oberen Grafik sehen Sie die Resonanzkurve des Impedanzbetrags normiert auf X k für verschiedene Gütefaktoren.
+Wie Sie erkennen können, hat die Güte den größten Einfluss auf die Impedanz im Bereich der Resonanzfrequenz.
+Je höher die Güte, desto geringer ist die Impedanz im Resonanzfall bezogen auf den Kennwiderstand X k.
+Umgekehrt ausgedrückt, je höher die Güte, desto geringer ist der ohmsche Widerstand R im Verhältnis zum Kennwiderstand X k.
+}% Ende speech
+\speech{08ResonanzkreiseRLCSerie05Güte}{2}{%
+Die Güte Q beschreibt allgemein das Verhältnis von speichernder zu verlustbehafteter Energie in einem Schwingkreis im Resonanzfall.
+Im Reihenschwingkreis entspricht die Güte damit wie unten links gezeigt dem Verhältnis des Kennwiderstands X k zum ohmschen Widerstand R.
+Wie Sie in der unteren Grafik rechts sehen können, hat die Güte auch einen Einfluss auf die Phasenkurve des Schwingkreises bei konstantem Kennwiderstand.
+Je höher die Güte, desto steiler ist der Übergang der Phasenverschiebung im Bereich der Resonanzfrequenz von minus neunzig Grad, also rein kapazitiv, 
+zu plus neunzig Grad, also rein induktiv. Die Güte ist damit auch ein Maß für die Resonanzschärfe des Schwingkreises.
+}% Ende speech
 \end{frame}
 
 %-------------------------------------------------------------------------------------------------%
@@ -1032,7 +1089,24 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
     \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rlcs_spannung_resonanz.pdf}}\newline% TODO RENAME
     $U_q(\omega_0) \Rightarrow$ Überspannung!
 \end{minipage}
-}
+}%
+\speech{08ResonanzkreiseRLCSerie06Spannungsresonanz}{1}{%
+Wie wir bereits feststellen konnten, kann es bei Anregung eines Reihenschwingkreises zu einer Spannungsresonanz kommen.
+Die Spannungen über der Induktivität und der Kapazität heben sich im Resonanzfall betragsmäßig auf,
+wodurch die Gesamtimpedanz des Schwingkreises minimal ist und nur dem ohmschen Widerstand entspricht.
+Die Spannungen über der Induktivität und der Kapazität können dabei deutlich höhere Werte als die Gesamtspannung an den Klemmen des Schwingkreises annehmen.
+Rechts sehen Sie die Spannungskurven der einzelnen Komponenten in Abhängigkeit der Frequenz normiert auf die Resonanzfrequenz.
+Wie Sie erkennen können, ergeben sich im Bereich um die Resonanzfrequenz herum deutlich höhere Spannungen 
+über den Blindwiderständen im Vergleich zum ohmschen Widerstand.
+}% Ende speech
+\speech{08ResonanzkreiseRLCSerie06Spannungsresonanz}{1}{%
+Der Spannungsteiler für die Induktivität wie Sie links sehen können und ebenso der Spannungsteiler für die Kapazität wie wir 
+auf der nächsten Folie noch sehen werden, ist lediglich abhängig von der Frequenz der Anregung, der Resonanzfrequenz und der Güte des Schwingkreises.
+Die Güte entspricht beim Reihenschwingkreis wie bereits gezeigt dem Verhältnis von Kennwiderstand zum ohmschen Widerstand.
+Das bedeutet, die Güte entspricht exakt dem Verhältnis der Überspannung an der Induktivität respektive der Kapazität zur Gesamtspannung im Resonanzfall.
+Die maximal erreichbaren Spannungswerte liegen zwar nicht exakt bei der Resonanzfrequenz, allerdings ist die Abweichung sehr gering.
+Daher gilt die Güte auch als Maß für die Spannungsüberhöhung im Resonanzfall.
+}% Ende speech
 \end{frame}
 
 \b{%
@@ -1064,9 +1138,25 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
         \frac{\underline{U}_C}{\underline{U}} &= 
             \frac{-\mathrm{j}\frac{\omega_0}{\omega}}{\frac{1}{Q}+\mathrm{j}\left(\frac{\omega}{\omega_0}-\frac{\omega_0}{\omega}\right)}
     \end{align*}
-\end{minipage}
+\end{minipage}%
+\speech{08ResonanzkreiseRLCSerie07Nebenrechnung}{1}{%
+Auf dieser Folie sehen Sie die Nebenrechnung zur Herleitung für die Resonanzkreisfrequenz, den Kennwidesrtand, die Güte und die Spannungsteiler der einzelnen Bauteile 
+des RLC Serienschwingkreises bei Anregung mit einer konstanten Spannungsquelle.
+Links sehen Sie das Schaltbild und die zugehörigen Gleichungen. 
+Anhand der Impedanzgleichung wird über die Resonanzbedingung die Resonanzkreisfrequenz bestimmt.
+Der Kennwiderstand entspricht dem Betrag der Reaktanzen im Resonanzfall.
+Die Güte leitet sich allgemein vom Verhältnis der Blindleistung zur Wirkleistung ab.
+Die Blindleistung bezieht sich dabei betragsmäßig entweder auf die Induktivität oder die Kapazität.
+Die Stromgrößen kürzen sich heraus, sodass die Güte als Verhältnis der Überspannung zur Gesamtspannung im Resonanzfall dargestellt werden kann.
+Damit entspricht die Güte exakt dem Verhältnis von Kennwiderstand zu Wirkwiderstand.
+}% Ende speech
+\speech{08ResonanzkreiseRLCSerie07Nebenrechnung}{1}{%
+Bei den Spannungsteilern rechts sehen Sie zunächst die allgemeinen Formeln für die Spannungsteiler der einzelnen Bauteile.
+Durch Erweiterung mit dem Kehrwert des Kennwiderstandes können lassen sich die Impedanzterme normieren und mithilfe der Resonanzkreisfrequenz und der Güte ausdrücken.
+Ein Vorteil dieser Darstellung ist, dass das Spannungsverhalten des Schwingkreises sich nur in Abhängigkeit der Frequenz, der Resonanzfrequenz und der Güte beschreiben lässt.
+}% Ende speech
 \end{frame}
-}
+}%
 
 %-------------------------------------------------------------------------------------------------%
 \subsubsection{Stromkurve des RLC-Reihenschwingkreises}\label{sec:resonanzkreise:rlcs:stromkurve}
@@ -1123,7 +1213,7 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
         \intertext{Strom}
         \underline{I} &= \frac{I_0}{1 + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)Q}\\
         \intertext{Maximalstrom, Güte}
-        \underline{I}_0 &= \frac{\underline{U}_q}{R}
+        I_0 &= \frac{U_q}{R}
         \qquad Q = \frac{X_k}{R}        
     \end{align*}
     \end{minipage}\hfill%
@@ -1133,7 +1223,16 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
 
         Begrenzung durch $R$
     \end{minipage}
-}
+}%
+\speech{08ResonanzkreiseRLCSerie08Stromkurve}{1}{%
+Kommen wir zur Betrachtung des Stromverhaltens des RLC Serienschwingkreises bei Anregung mit einer konstanten Spannungsquelle.
+Die Stromkurve ist in der Abbildung rechts für verschiedene Gütefaktoren bei gleichem Kennwiderstand dargestellt.
+Wie Sie erkennen können, ist der Strombetrag maximal bei der Resonanzfrequenz und umso größer, je höher die Güte des Schwingkreises ist.
+Der Reihenschwingkreis weist hier ein Bandpassverhalten auf, da der Strom bei Frequenzen weit unterhalb und oberhalb der Resonanzfrequenz 
+durch die hohen Blindwiderstände stark gedämpft ist.
+Der Maximaltrom im Resonanzfall ist dabei durch den ohmschen Widerstand begrenzt.
+Links sehen Sie die zugehörigen Formeln für den Strom und den Maximalstrom.
+}% Ende speech
 \end{frame}
 
 \b{%
@@ -1150,15 +1249,24 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
 \end{minipage}\hfill%
 \begin{minipage}{0.65\textwidth}\centering
     \begin{align*}
-        \underline{I} &= \frac{\underline{U}_q}{\underline{Z}} \\
-        &= \frac{\underline{U}_q}{R + \mathrm{j}\left(\omega L - \frac{1}{\omega C}\right)} \\
-        &= \frac{\underline{U}_q}{R + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)X_k} \\
-        &= \frac{\underline{U}_q}{R} \cdot \frac{1}{1 + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)\frac{X_k}{R}} \\
-        &= \underline{I}_0 \cdot \frac{1}{1 + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)Q}
+        \underline{I} &= \frac{U_q}{\underline{Z}} \\
+        &= \frac{U_q}{R + \mathrm{j}\left(\omega L - \frac{1}{\omega C}\right)} \\
+        &= \frac{U_q}{R + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)X_k} \\
+        &= \frac{U_q}{R} \cdot \frac{1}{1 + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)\frac{X_k}{R}} \\
+        &= I_0 \cdot \frac{1}{1 + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)Q}
     \end{align*}
-\end{minipage}
+\end{minipage}%
+\speech{08ResonanzkreiseRLCSerie09Nebenrechnung}{1}{%
+Hier sehen Sie die Nebenrechnung zur Herleitung des Stroms im RLC Serienschwingkreis bei Anregung mit einer konstanten Spannungsquelle.
+Links sind die relevanten Gleichungen für die Impedanz, die Reaktanzen, den Kennwiderstand, die Güte und die Resonanzkreisfrequenz dargestellt.
+Die Reaktanzen können mithilfe des Kennwiderstandes und dem Verhältnis aus Kreisfrequenz und Resonanzkreisfrequenz ausgedrückt werden.
+Rechts sehen Sie die Herleitung des Stroms.
+Das Stromverhalten des Reihenschwingkreises bei konstanter Spannung lässt sich dabei vollständig durch die Frequenz, die Resonanzfrequenz und die Güte beschreiben.
+Der Klammerterm mit der Differenz aus dem Verhältnis von Kreisfrequenz zu Resonanzkreisfrequenz und dessen Kehrwert wird auch als relative Verstimmung bezeichnet.
+Die Schreibweise eignet sich beispielsweise zur Bestimmung der Bandbreite des Bandpassverhaltens wie in den Übungsaufgaben am Beispiel eines Parallelschwingkreises gezeigt wird.
+}% Ende speech
 \end{frame}
-}
+}%
 
 %-------------------------------------------------------------------------------------------------%
 \subsubsection{Spannungskurve des RLC-Reihenschwingkreis}
@@ -1195,6 +1303,16 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
 
     Die Spannungskurve entspricht daher exakt dem Verlauf der Impedanzkurve in Abbildung \ref{fig:plot:rlcs:resonanzkurve:impedanz}.
 }%
+\speech{08ResonanzkreiseRLCSerie10Spannungskurve}{1}{%
+Kommen wir zur letzten Folie dieses Videos. 
+An dieser Stelle untersuchen wir das Spannungsverhalten des RLC Serienschwingkreises bei Anregung mit einer konstanten Stromquelle.
+Im Gegensatz zur vorherigen Betrachtung mit konstanter Spannung,
+ist die Spannung über den Schwingkreis nun proportional zur Impedanz des Schwingkreises.
+Die Spannungskurve rechts entspricht daher exakt dem Verlauf der Impedanzkurve, die wir bereits in einer vorherigen Folie untersucht haben.
+Das Spannungsminimum ergibt sich dabei im Resonanzfall und entspricht dem Verhältnis aus dem elektrischen Widerstand zum Strom der Quelle.
+Im nächsten Video untersuchen wir das Resonanzverhalten des RLC Parallelschwingkreises und vergleichen die Ergebnisse mit jenen des Serienschwingkreises.
+Vielen Dank für Ihre Aufmerksamkeit! 
+}% Ende speech
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1204,6 +1322,30 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
 % Viel Copy-Paste von Kapitel "RLC-Serienschwingkreis - Resonanzverhalten"
 \subsection{RLC-Parallelschwingkreis - Resonanzverhalten}\label{sec:resonanzkreise:rlcp}
 \index{Schwingkreis>RLC-Parallelschwingkreis}%
+%
+\newvideofile{ResonanzkreiseRLCParallelschwingkreis}{Resonanzkreise - RLC Parallelschwingkreis}%
+\v{% Video only Frame
+\begin{frame}\ftx{\secname}
+    \begin{Lernziele}{Video - Resonanzkreise, RLC Parallelschwingkreis}
+        Sie lernen in diesem Video: 
+        \begin{itemize}
+            \item das frequenzabhängige Verhalten eines RLC Parallelschwingkreises zu analysieren, dazu gehört u.a.,
+            \item den Einfluss der Güte auf das Admittanzverhalten,
+            \item das Überstromverhalten im Resonanzfall, und
+            \item das Spannungsverhalten im Resonanzfall zu berechnen und zu verstehen.
+        \end{itemize}
+    \end{Lernziele}
+\speech{09ResonanzkreiseRLCParallel01Lernziele}{1}{%
+Willkommen zum letzten Video über Resonanzkreise, speziell über den RLC Parallelschwingkreis.
+In diesem Video lernen Sie das frequenzabhängige Verhalten eines RLC Parallelschwingkreises zu analysieren.
+Hierzu gehört, den Einfluss der Güte auf das Admittanzverhalten in Abhängigkeit der Frequenz zu verstehen und zu berechnen.
+Zudem lernen Sie das Überstromverhalten und das Spannungsverhalten im Resonanzfall zu berechnen und zu verstehen.
+Der Aufbau des Videos orientiert sich an dem vorherigen Video über den RLC Serienschwingkreis.
+Sie werden daher viele Parallelen zu den dort behandelten Inhalten erkennen.
+}% Ende speech
+\end{frame}%
+}% Ende Video only Frame
+%
 \begin{frame}\ftx{\subsecname}%
     \b{%
         \begin{minipage}{0.4\textwidth}%
@@ -1303,7 +1445,31 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
             Die Fallunterscheidung wird in Abbildung \ref{fig:plot:rlcp:zeigerdiagramm} anhand eines Zeigerdiagramms 
             und in Abbildung \ref{fig:plot:rlcp:admittanzkurve} anhand einer Admittanzkurve verdeutlicht.
         }%
-\end{frame}
+\speech{09ResonanzkreiseRLCParallel02Resonanzverhalten}{1}{%
+Beginnen wir mit der Untersuchung des Resonanzverhaltens eines RLC Parallelschwingkreises wie im Schaltbild oben links gezeigt.
+Die Resonanzbedingung ist identisch zu jener des Serienschwingkreises.
+Im Resonanzfall sind Spannung und Strom in Phase, was bedeutet, dass die Impedanz respektive Admittanz rein reellwertig ist.
+Beim Parallelschwingkreis bietet es sich an, mit dem Imaginärteil der Admittanz zu arbeiten wie oben rechts in der Gleichung dargestellt.
+Zur Erinnerung, der Realteil der Admittanz wird als Leitwert G bezeichnet und der Imaginärteil wird als Suszeptanz B bezeichnet.
+}% Ende speech
+\speech{09ResonanzkreiseRLCParallel02Resonanzverhalten}{1}{%
+Wie auch beim Serienschwingkreis können wir drei Fälle unterscheiden, die von der Frequenz der Anregung im Verhältnis zur Resonanzfrequenz abhängen.
+Der Parallelschwingkreis verhält sich damit in gewisser Weise umgekehrt zum Serienschwingkreis.
+Bei niedrigen Frequenzen dominiert im Parallelschwingkreis der induktive Anteil, während im Serienschwingkreis der kapazitive Anteil überwiegt.
+Bei hohen Frequenzen verhält es sich genau umgekehrt.
+Die drei Fälle sehen Sie rechts einmal zusammengefasst.
+}% Ende speech
+\speech{09ResonanzkreiseRLCParallel02Resonanzverhalten}{1}{%
+Im ersten Fall, das heißt für Frequenzen unterhalb der Resonanzfrequenz, ist der Betrag der Suszeptanz der Induktivität größer als jener der Kapazität,
+weshalb der induktive Anteil überwiegt und der Schwingkreis ohmsch-induktiv wirkt.
+Zur Veranschaulichung können Sie sich den Grenzfall vorstellen, wenn die Anregungsfrequenz gegen null geht.
+Im Gleichstromfall wirkt die Induktivität wie ein Kurzschluss, weshalb der ohmsche Anteil und der kapazitive Anteil vernachlässigbar sind.
+Im zweiten Fall, das heißt bei Anregung mit der Resonanzfrequenz, heben sich die Suszeptanzen der Induktivität und der Kapazität auf.
+Der Schwingkreis wirkt rein ohmsch mit einer Admittanz, die genau dem Leitwert des Widerstands entspricht.
+Im dritten Fall, das heißt für Frequenzen oberhalb der Resonanzfrequenz, überwiegt der kapazitive Anteil.
+Der Schwingkreis wirkt ohmsch-kapazitiv, da die Suszeptanz der Kapazität größer ist als jene der Induktivität.
+}% Ende speech
+\end{frame}%
 
 %-------------------------------------------------------------------------------------------------%
 
@@ -1365,8 +1531,28 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
     ist der Realanteil des Gesamtstrom $\underline{I}$ immer positiv.
     Der Zeiger des Gesamtstrom $\underline{I}$ deutet also entweder in den ersten Quadranten (ohmsch-induktiv), 
     auf die reale Achse (rein ohmsch) oder in den vierten Quadranten (ohmsch-kapazitiv).
-    }
-\end{frame}
+    }%
+\speech{09ResonanzkreiseRLCParallel03Zeigerdiagramm}{1}{%
+Hier sehen Sie die Fallunterscheidung des RLC Parallelschwingkreises anhand von Zeigerdiagrammen.
+Die drei Fälle entsprechen jenen, die wir bereits zuvor besprochen haben.
+Wie im Schaltbild oben links dargestellt, wird der Schwingkreis mit einer konstanten Spannung angeregt.
+Die Ströme durch die einzelnen Bauteile ergeben sich aus der Spannung multipliziert mit den jeweiligen Admittanzen wie oben rechts in der Gleichung erkennbar ist.
+Im Zeigerdiagramm des ersten Falles, das heißt für Frequenzen unterhalb der Resonanzfrequenz, überwiegt der induktive Anteil.
+Der induktive Strom ist deutlich größer als der kapazitive Strom. 
+Da der induktivie Strom der Spannung hinterher eilt, ist der Phasenwinkel für den induktiven Strom also neunzig Grad kleiner als der Phasenwinkel der reellen Spannung.  
+Zur Erinnerung, die Umlaufrichtung der Zeiger zur Bestimmung der zugehörigen zeitlichen Wechselgrößen ist gegen den Uhrzeigersinn.
+Der Gesamtstrom zeigt daher in den vierten Quadranten, was einer ohmsch-induktiven Impedanz entspricht.
+}% Ende speech
+\speech{09ResonanzkreiseRLCParallel03Zeigerdiagramm}{1}{%
+Im Resonanzfall, hier im zweiten Fall dargestellt, heben sich die Ströme durch Induktivität und Kapazität gegenseitig auf.
+Der Gesamtstrom ist rein reell und damit in Phase mit der Spannung.
+Der Schwingkreis wirkt rein ohmsch mit einer Admittanz, die genau dem Leitwert des Widerstands entspricht.
+Der dritte Fall verhält sich genau umgekehrt zum ersten Fall.
+Für Frequenzen oberhalb der Resonanzfrequenz überwiegt der kapazitive Anteil, dass heißt der kapazitive Strom ist größer als der induktive Strom.
+Respektive ist die kapazitive Suszeptanz betragsmäßig größer als die induktive Suszeptanz.
+Die Gesamtschaltung verhält sich dann ohmsch-kapazitiv.
+}% Ende speech
+\end{frame}%
 
 %-------------------------------------------------------------------------------------------------%
 
@@ -1438,8 +1624,21 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
             \smash{B_k = |B_{C,0}| = |B_{L,0}| = \sqrt{\frac{C}{L}}}
         \end{equation*}
     \end{minipage}
-}
-\end{frame}
+}%
+\speech{09ResonanzkreiseRLCParallel04Admittanzkurve}{1}{%
+Betrachten wir nun das Admittanzverhalten des RLC Parallelschwingkreises in Abhängigkeit der Frequenz.
+Oben links sehen Sie nochmals das Schaltbild des Parallelschwingkreises mit der Admittanzgleichung oben rechts.
+Die Resonanzbedingung und die Resonanzfrequenz sind identisch zu jenen des Serienschwingkreises.
+Im Resonanzfall ist die Admittanz rein ohmsch und entspricht exakt dem ohmschen Leitwert G des Widerstands.
+Die Admittanzkurve rechts zeigt den Betrag der Gesamtadmittanz, den ohmschen Leitwert, die Gesamt Suszeptanz und die Beträge der Suszeptanzen von Induktivität und Kapazität.
+Auf den ersten Blick sehen die Verläufe exakt wie die Impedanzkurven des Serienschwingkreises aus.
+Der Unterschied liegt darin, dass der in diesem Fall die Suszeptanz der Kapazität linear verläuft, wie an der roten gestrichelten Linie zu erkennen ist.
+Die Suszeptanz der Induktivität verläuft hyperbolisch, wie an der grünen gestrichelten Linie zu erkennen ist.
+Ansonsten entspricht das Admittanzverhalten exakt dem Impedanzverhalten des Serienschwingkreises.
+Als Kenngröße für den Parallelschwingkreis verwenden wir allerdings den Kennleitwert BK anstatt des Kennwiderstands RK.
+Dieser entspricht dem Betrag der Suszeptanzen von Induktivität und Kapazität im Resonanzfall und damit exakt dem Kehrwert des Kennwiderstands des Serienschwingkreises.
+}% Ende speech
+\end{frame}%
 
 
 %-------------------------------------------------------------------------------------------------%
@@ -1535,8 +1734,22 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
         \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rlcp_admittanzkurve_guete_noxaxis.pdf}}
         \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rlcp_phikurve_guete.pdf}}
     \end{minipage}
-    }
-    \end{frame}    
+    }%
+\speech{09ResonanzkreiseRLCParallel05Güte}{1}{%
+Betrachten wir nun den Einfluss der Güte auf die Admittanzkurve eines RLC Parallelschwingkreises.
+Die Admittanz lässt sich wie in der Gleichung oben links dargestellt über die Bauteilgrößen ausdrücken.
+Normiert auf den Kennleitwert BK lässt sich die Admittanz auch in Abhängigkeit der Güte und der Resonanzkreisfrequenz darstellen. 
+Achtung, die Güte entspricht beim Parallelschwingkreis dem Verhältnis von Kennleitwert BK zum Wirkleitwert G.
+Beim Serienschwingkreis entspricht die Güte dem Verhältnis von Kennwiderstand RK zum Wirkwiderstand R.
+Ansonsten ist das Admittanzverhalten prinzipiell identisch zum Impedanzverhalten des Serienschwingkreises.
+Wie rechts an der Admittanzkurve zu erkennen ist, bestimmt die Güte den Wert der Admittanz im Resonanzfall, bei konstantem Kennleitwert BK.
+Je höher die Güte, desto kleiner der Wirkleitwert G und desto kleiner die Admittanz im Resonanzfall.
+An der Phasenkurve der Admittanz unten rechts ist zu erkennen, dass die Güte auch den Phasenverlauf der Admittanz beeinflusst.
+Je höher die Güte, desto steiler der Phasenverlauf im Bereich der Resonanzfrequenz.
+Anders als beim Serienschwingkreis, ist die Güte beim Parallelschwingkreis umso höher, je kleiner der Wirkleitwert, das heißt je größer der ohmsche Parallelwiderstand R ist. 
+Geht der Wirkleitwert gegen null, ist die Güte theoretisch unendlich groß und der Schwingkreis ideal beziehungsweise ungedämpft.
+}% Ende speech
+\end{frame}%   
 
 %-------------------------------------------------------------------------------------------------%
 
@@ -1640,8 +1853,20 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
         \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rlcp_strom_resonanz.pdf}}% 
         \par Stromqelle $I_q(\omega_0) \Rightarrow$ Überstrom!
     \end{minipage}
-    }
-    \end{frame}
+    }%
+\speech{09ResonanzkreiseRLCParallel06Stromesonanz}{1}{%
+Wie wir am idealen Parallelschwingkreis gesehen haben, kann es bei Anregung mit einer konstanten Stromquelle zu einer Stromresonanz kommen.
+Betrachten wir dazu die Stromkurve eines realen RLC-Parallelschwingkreises bei Anregung mit einer konstanten Stromquelle mit variabler Frequenz.
+Oben links sehen Sie nochmals das Schaltbild des Parallelschwingkreises mit der und links sehen sie exemplarisch die Stromteilerregel für den Kondensatorstrom.
+So wie es beim Serienschwingkreis zu Überspannungen kommen kann, können im Parallelschwingkreis Überströme auftreten.
+Wie wir am Stromverlauf rechts erkennen, ist der Wirkstrom durch den Widerstand maximal bei der Resonanzfrequenz.
+Die Blindströme durch die Induktivität und Kapazität heben sich im Resonanzfall gegenseitig auf. 
+Diese Blindströme sind von außerhalb der Schaltung nicht messbar, können aber um ein Vielfaches größer als der Wirkstrom beziehungsweise der Quellenstrom sein.
+Das Verhältnis von Überstrom zu Gesamtstrom im Resonanzfall ist durch die Güte des Parallelschwingkreises beschrieben.
+Auch wenn die exakten Maximalwerte der Blindströme leicht oberhalb beziehungsweise unterhalb der Resonanzfrequenz liegen,
+ist die Güte eine gute Näherung für das Verhältnis des maximal möglichen Überstromes zum Gesamtstrom.
+}% Ende speech
+\end{frame}%
 
 %-------------------------------------------------------------------------------------------------%
 
@@ -1706,7 +1931,7 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
         %\underline{I} &= \frac{\underline{U}_q}{\underline{Z}}\\
         \underline{U} &= \frac{U_0}{1 + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)Q}\\
         \intertext{Maximalspannung, Güte}
-        \underline{U}_0 &= \frac{\underline{I}_q}{G}
+        U_0 &= \frac{I_q}{G}
         \qquad Q = \frac{B_k}{G}        
     \end{align*}
     \end{minipage}\hfill%
@@ -1715,8 +1940,19 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
         \par Spannung maximal bei $\omega_0$
         \par Begrenzung durch $G$
     \end{minipage}
-}
-\end{frame}
+}%
+\speech{09ResonanzkreiseRLCParallel07Spannungskurve}{1}{%
+Betrachten wir nun das Spannungsverhalten eines RLC Parallelschwingkreises bei Anregung mit einer konstanten Stromquelle.
+Oben links sehen Sie nochmals das Schaltbild des Parallelschwingkreises und links die Gleichung für die Spannung in Abhängigkeit der Maximalspannung U null.
+Die Maximalspannung ist durch den Quellenstrom I Kuh und den Wirkleitwert G begrenzt. 
+Rechts sehen Sie die Spannungskurve des Parallelschwingkreises für verschiedene Gütefaktoren bei konstantem Quellenstrom und gleichbleibendem Kennleitwert BK.
+Wie zu erwarten ist die Spannung im Resonanzfall maximal, da die Admittanz im Resonanzfall minimal ist.
+Je höher die Güte, respektive je geringer der Wirkleitwert G, desto größer ist dabei die maximale Spannung.
+Wie der Serienschwingkreis auch, weist der Parallelschwingkreis eine Art Bandpassverhalten auf.
+In den Übungen zu diesem Modul finden Sie eine Aufgabe zur Berechnung der Bandbreite eines Parallelschwingkreises,
+da das Bandpassverhalten hier nicht weiter vertieft wird.
+}% Ende speech
+\end{frame}%
 
 \b{
 \begin{frame}{Nebenrechnung}
@@ -1733,21 +1969,31 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
 \begin{minipage}{0.65\textwidth}\centering
     \begin{align*}
         \underline{U} &= \frac{\underline{I}_q}{\underline{Y}} \\
-        &= \frac{\underline{I}_q}{G + \mathrm{j}\left(\omega C - \frac{1}{\omega L}\right)} \\
-        &= \frac{\underline{I}_q}{G + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)B_k} \\
-        &= \frac{\underline{I}_q}{G} \cdot \frac{1}{1 + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)\frac{B_k}{G}} \\
-        &= \underline{U}_0 \cdot \frac{1}{1 + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)Q}
+        &= \frac{I_q}{G + \mathrm{j}\left(\omega C - \frac{1}{\omega L}\right)} \\
+        &= \frac{I_q}{G + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)B_k} \\
+        &= \frac{I_q}{G} \cdot \frac{1}{1 + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)\frac{B_k}{G}} \\
+        &= U_0 \cdot \frac{1}{1 + \mathrm{j}\left(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}\right)Q}
     \end{align*}
 \end{minipage}
-\end{frame}
-}
+\speech{09ResonanzkreiseRLCParallel08Nebenrechnung}{1}{%
+Hier ist noch die Nebenrechnung zur Herleitung der Spannung des RLC Parallelschwingkreises bei Anregung mit einer konstanten Stromquelle.
+Links sehen Sie nochmals die Gleichungen der Suszeptanzen der Induktivität und der Kapazität, ausgedrückt durch den Kennleitwert und das Verhalten von 
+Kreisfrequenz zur Resonanzkreisfrequenz. Unten links sind zur Erinnerung die Definitionen des Kennleitwertes, der Güte und der Resonanzkreisfrequenz aufgeführt.
+Rechts sehen Sie die Herleitung der Spannung in mehreren Schritten.
+Zuerst wird die Spannung als Quotient aus Quellenstrom und Admittanz dargestellt.
+Dann werden die Suszeptanzen durch den Kennleitwert und die Resonanzkreisfrequenz ersetzt.
+Im nächsten Schritt wird der gesamte Bruch mit dem Kehrwert des Wirkleitwertes erweitert.
+So lässt sich der Spannungsverlauf normiert auf die Maximalspannung U null mithilfe der Güte und der Resonanzkreisfrequenz ausdrücken.
+}% Ende speech
+\end{frame}%
+}%
 
 %-------------------------------------------------------------------------------------------------%
 
 \subsubsection{Stromkurve des RLC-Parallelschwingkreises}
 \begin{frame}\ftx{\subsubsecname}
 % RLCp an Uq
-\b{
+\b{%
     \begin{minipage}{0.3\textwidth}
     \resizebox{1.1\textwidth}{!}{\includegraphics{Tikz/pdf/circ_schwingkreis_rlcp_komplex_2_const_u.pdf}}
     \begin{align*}
@@ -1763,8 +2009,8 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
         \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/plot_rlcp_admittanzkurve_guete.pdf}}\newline
         Stromkurve $\sim$ Admittanzkurve
     \end{minipage}
-}
-\s{
+}%
+\s{%
     Die Stromkurve des RLC-Parallelschwingkreises bei Anregung mit einer konstanten Spannungsquelle $\underline{U}_q$
     ergibt sich aus der Admittanz $\underline{Y}$ und der Spannungsquelle $\underline{U}_q$:
 
@@ -1775,5 +2021,13 @@ Je höher die Güte (Resonanzschärfe), desto steiler ist der Übergang im Berei
     Damit ist der Strom $\underline{I}$ direkt proportional zur Admittanz $\underline{Y}$ und damit zur Kreisfrequenz $\omega$.
     Die Stromkurve des RLC-Parallelschwingkreises entspricht also der Admittanzkurve des Schwingkreises
     wie sie in Abbildung \ref{fig:plot:rlcp:resonanzkurve} dargestellt ist.
-}
+}%
+\speech{09ResonanzkreiseRLCParallel09Stromkurve}{1}{%
+Kommen wir zur letzten Folie dieses Videos.
+Zum Abschluss betrachten wir noch kurz das Stromverhalten eines RLC Parallelschwingkreises bei Anregung mit einer konstanten Spannungsquelle.
+Links sehen Sie nochmals das Schaltbild des Parallelschwingkreises mit der Spannungsquelle und die Gleichungen für die Spannung und den Strom in Abhängigkeit der Admittanz.
+Rechts sehen Sie die Admittanzkurve des Parallelschwingkreises normiert auf den Kennleitwert BK für verschiedene Gütefaktoren.
+Da der Strom direkt proportional zur Admittanz ist, entspricht die Stromkurve des Parallelschwingkreises exakt der Admittanzkurve.
+Vielen Dank für Ihre Aufmerksamkeit.
+}% Ende speech
 \end{frame}
