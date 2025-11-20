@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="flächenladung_neu.svg"
+   sodipodi:docname="flächenladung.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,11 +25,11 @@
      inkscape:document-units="mm"
      inkscape:zoom="3.9156336"
      inkscape:cx="426.49547"
-     inkscape:cy="366.99041"
+     inkscape:cy="366.86272"
      inkscape:window-width="1920"
-     inkscape:window-height="1002"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1001"
+     inkscape:window-x="-7"
+     inkscape:window-y="-7"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:pageshadow="2"
@@ -72,9 +72,9 @@
          transform="matrix(0.82738775,0,0,0.82738775,-169.57787,90.055238)"><tspan
            x="288.2117"
            y="179.31223"
-           id="tspan43019"><tspan
-             style="font-size:15.4343px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold Italic'"
-             id="tspan43017">$Q$</tspan></tspan></text>
+           id="tspan5830"><tspan
+             style="font-style:normal;font-weight:normal;font-size:15.4343px;font-family:Calibri;-inkscape-font-specification:Calibri"
+             id="tspan5828">$Q$</tspan></tspan></text>
     </g>
     <text
        xml:space="preserve"
