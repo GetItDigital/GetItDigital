@@ -188,9 +188,9 @@
 \section{Einleitung} % erste Kapitelebene
 
 \s{
-	In diesem Kapitel werden die Konzepte von Energie, elektrischer Arbeit, 
-	Leistung und Wirkungsgrad behandelt. Es ist wichtig, zu Beginn eine klare Unterscheidung zwischen 
-	Energie und Arbeit zu treffen, da diese beiden Größen eng miteinander verbunden sind und sich 
+	In diesem Kapitel werden die Konzepte von Energie, elektrischer Arbeit,
+	Leistung und Wirkungsgrad behandelt. Es ist wichtig, zu Beginn eine klare Unterscheidung zwischen
+	Energie und Arbeit zu treffen, da diese beiden Größen eng miteinander verbunden sind und sich
 	sogar die selbe Einheit teilen, jedoch unterschiedliche Dinge beschreiben.}
 \begin{frame} \ftx{Lernziele: Unterschied von Energie, Arbeit, Leistung}
 \begin{Lernziele}{Energie und Leistung} % Infokasten mit Lernzielen
@@ -201,121 +201,120 @@ Die Studierenden
 	\item verstehen, wie Energie in elektrischen Systemen umgewandelt und genutzt wird.
 	\item können die elektrische Arbeit, Leistung und den Wirkungsgrad berechnen.
 	\item können die Effizienz von Energieumwandlungssystemen analysieren.
-	      
-	\end{itemize}
-   	\end {Lernziele} % Infokasten Ende
+
+\end{itemize}
+\end {Lernziele} % Infokasten Ende
 
 \speech{00_Einleitung1}{1}{
-Die Lernziele dieses Moduls oder besser gesagt der folgenden Folien sind die folgenden.
-Du kannst Energie, elektrische Arbeit, Leistung und den Wirkungsgrad benennen.
-Du verstehst, wie Energie in elektrischen Systemen umgewandelt und genutzt wird.
-Du kannst die elektrische Arbeit, Leistung und den Wirkungsgrad berechnen.
-Und du kannst die Effizienz von Energieumwandlungssystemen analysieren.
+	Die Lernziele dieses Moduls oder besser gesagt der folgenden Folien sind die folgenden.
+	Du kannst Energie, elektrische Arbeit, Leistung und den Wirkungsgrad benennen.
+	Du verstehst, wie Energie in elektrischen Systemen umgewandelt und genutzt wird.
+	Du kannst die elektrische Arbeit, Leistung und den Wirkungsgrad berechnen.
+	Und du kannst die Effizienz von Energieumwandlungssystemen analysieren.
 }
 
 
 \end{frame}
 
 \s{
-	Am Beispiel eines Pumpspeicherkraftwerks (\ref{fig:Pumpspeicherkraftwerk}) werden die unterschiedlichen Größen anschaulich voneinander abgegrenzt. 
-	Ein Pumpspeicherkraftwerk dient dazu, elektrische Energie in potentielle Energie umzuwandeln und umgekehrt. 
-	Sobald der elektrische Energiebedarf der Verbraucher geringer ist als das verfügbare Angebot, 
-	pumpt die elektrische Maschine des Pumpspeicherkraftwerks Wasser von einem niedrigeren auf ein höheres Niveau. 
+	Am Beispiel eines Pumpspeicherkraftwerks (\ref{fig:Pumpspeicherkraftwerk}) werden die unterschiedlichen Größen anschaulich voneinander abgegrenzt.
+	Ein Pumpspeicherkraftwerk dient dazu, elektrische Energie in potentielle Energie umzuwandeln und umgekehrt.
+	Sobald der elektrische Energiebedarf der Verbraucher geringer ist als das verfügbare Angebot,
+	pumpt die elektrische Maschine des Pumpspeicherkraftwerks Wasser von einem niedrigeren auf ein höheres Niveau.
 	% Bei diesem Prozess wird ein Elektromotor betrieben, welcher durch Magnetfelder angetrieben wird. 
 	% Um diese Magnetfelder zu schaffen, muss ein elektrischer Strom durch Spulen fließen. 
 	% Bei diesem Prozess wird elektrische Arbeit verrichtet. Die entstandenen Magnetfelder entfalten Kräfte, 
 	% welche den Motor in Bewegung versetzen und somit elektrische in mechanische Arbeit umwandeln. Sobald das Wasser 
 	% in das Oberbecken gepumpt wurde, hat es ein höheres Potential als das Wasser im Unterbecken. 
 	% Folglich dient es dort als Speichermedium für potentielle Energie.
-	Bei diesem Prozess wird die elektrische Maschine als (Pumpen)Motor betrieben. Dieser erzeugt über das magnetische Feld, 
-	welches durch einen elektrischen Strom in der Motorwicklung erzeugt wird, eine Drehbewegung, mit deren Hilfe das Wasser ins Oberbecken gepumpt wird. 
-	Der elektrische Motor wandelt also elektrische Energie (den Stromfluss durch die Motorwicklung) in mechanische Arbeit um (das Wasser wird in das Oberbecken gepumpt). 
-	Sobald das Wasser im Oberbecken angekommen ist, hat es ein höheres Potential als vorher im Unterbecken. Somit speichert das Wasser im Oberbecken potentielle Energie 
-	und zwar im Falle einer verlustfreien Pumpe, die mit einem verlustfreien Elektromotor angetrieben wird, genauso viel wie im elektrischen System als elektrische Energie zugeführt wurde.  
+	Bei diesem Prozess wird die elektrische Maschine als (Pumpen)Motor betrieben. Dieser erzeugt über das magnetische Feld,
+	welches durch einen elektrischen Strom in der Motorwicklung erzeugt wird, eine Drehbewegung, mit deren Hilfe das Wasser ins Oberbecken gepumpt wird.
+	Der elektrische Motor wandelt also elektrische Energie (den Stromfluss durch die Motorwicklung) in mechanische Arbeit um (das Wasser wird in das Oberbecken gepumpt).
+	Sobald das Wasser im Oberbecken angekommen ist, hat es ein höheres Potential als vorher im Unterbecken. Somit speichert das Wasser im Oberbecken potentielle Energie
+	und zwar im Falle einer verlustfreien Pumpe, die mit einem verlustfreien Elektromotor angetrieben wird, genauso viel wie im elektrischen System als elektrische Energie zugeführt wurde.
 	Die Energie innerhalb eines geschlossenen Systems muss nämlich gleich bleiben. In der Physik wird diese grundlegende Eigenschaft als Energieerhaltung bezeichnet.
 }
 
 \begin{frame} \ftx{Pumpspeicherkraftwerk}
 
 	\begin{overlayarea}{\textwidth}{0.9\textheight}
-\only<1->{
-	\begin{figure}[H]
-		\centering
-		\b{\scalebox{0.8}{\includesvg[width=0.9\textwidth]{Wasserkraftwerk_V5}}} %%% width0.9 für passende textgröße in svg; scalebox um alles gleichzeitig zu skalieren
-		\s{\includesvg[width=0.8\textwidth]{Wasserkraftwerk_V5}
-			\caption{\textbf{Pumpspeicherkraftwerk.} Der Aufbau bestehend aus einem Oberbecken,
-			einem Unterbecken, sowie Turbinen und einer elektrischen Maschine. Es dient der Speicherung von Energie durch das Hochpumpen von Wasser und der Rückgewinnung
-			durch die Abgabe von Wasserkraft zur Stromerzeugung.}}
-			\label{fig:Pumpspeicherkraftwerk}
+		\only<1->{
+			\begin{figure}[H]
+				\centering
+				\b{\scalebox{0.8}{\includesvg[width=0.9\textwidth]{Wasserkraftwerk_V5}}} %%% width0.9 für passende textgröße in svg; scalebox um alles gleichzeitig zu skalieren
+				\s{\includesvg[width=0.8\textwidth]{Wasserkraftwerk_V5}
+					\caption{\textbf{Pumpspeicherkraftwerk.} Der Aufbau bestehend aus einem Oberbecken,
+						einem Unterbecken, sowie Turbinen und einer elektrischen Maschine. Es dient der Speicherung von Energie durch das Hochpumpen von Wasser und der Rückgewinnung
+						durch die Abgabe von Wasserkraft zur Stromerzeugung.}}
+				\label{fig:Pumpspeicherkraftwerk}
 
-		\end{figure}
-}
-\b{\only<2->{
-	\vspace{-6.15cm} % Abstand nach oben, damit der Merksatz über dem Bild sitzt
-		\begin{Merksatz}
-	
-			Energie kann gespeichert werden, Arbeit wird verrichtet.
-		\end{Merksatz}}}
+			\end{figure}
+		}
+		\b{\only<2->{
+				\vspace{-6.15cm} % Abstand nach oben, damit der Merksatz über dem Bild sitzt
+				\begin{Merksatz}
+					Energie kann gespeichert werden, Arbeit wird verrichtet.
+				\end{Merksatz}}}
 	\end{overlayarea}
 	%; seed 933424 ganz gut
-		\speech{00_Einleitung2}{1}{ % hier titel einfügen
-			Um uns klarzumachen, was Arbeit, Energie und Leistung eigentlich bedeuten, habe ich ein Beispiel mitgebracht.
-			Ein Pumpspeicherkraftwerk.
-			Diese Kraftwerke werden heutzutage ziemlich häufig eingesetzt.
-			Sie dienen letztlich dazu, Energie in Form von potentieller Energie zu speichern, indem Wasser vom Unterbecken ins Oberbecken gepumpt wird.
-			Und das passiert zu Zeiten, wo mehr elektrische Energie im Netz verfügbar ist, als gerade gebraucht wird.
-			Das wäre sonst ein instabiler Zustand. Denn ein elektrisches Energienetz muss immer ausbalanciert sein.
-			Es muss genauso viel Energie bereitgestellt werden, wie entnommen wird.
-			Wenn das nicht der Fall ist, dann entstehen Probleme:
-			Die Frequenz schwankt.
-			Es kommt zu Über- oder Unterspannung.
-			je nachdem, in welche Richtung das System kippt.
-			Gerade jetzt, wo wir uns von großen thermischen Kraftwerken entfernen, die wir wenigstens in bestimmten Bereichen
-			gut regeln konnten, hin zu regenerativen Energien, ist das eine echte Herausforderung.
-			In Deutschland, bedingt durch die geografische Lage, setzen wir dabei hauptsächlich auf Wind- und Solarenergie.
-			Diese Formen sind aber sehr volatil.
-			Das heißt:
-			An sonnigen, leicht windigen Tagen im Sommer haben wir einen riesigen Energieüberschuss.
-			Nachts hingegen, wenn die Sonne weg ist und auch der Wind meistens nachlässt, fehlt uns Energie.
-			Eine mögliche Lösung ist: der Einsatz von Gaskraftwerken.
-			Diese Gasturbinen sind zwar schnell regelbar, aber sie sind nicht CO2neutral, wenn Erdgas verbrannt wird.
-			Damit kommen wir unserem Ziel, CO2 freie Stromerzeugung, nur bedingt näher.
-			Eine echte Alternative ist da das Pumpspeicherkraftwerk.
-			Wie gesagt:
-			Darin wird Energie quasi gespeichert.
-			Wenn tagsüber zu viel Strom im Netz ist, zum Beispiel durch Sonne und Wind, wird Wasser aus dem Unterbecken ins Oberbecken gepumpt.
-			Die Höhe zwischen den beiden Becken liegt meist zwischen 30 und 100 Metern, je nach geologischer Lage.
-			Das Pumpen kostet Energie, die wird aus dem Netz entnommen. Denn das Wasser muss ja irgendwie nach oben.
-			Abends, wenn die Versorgung durch Photovoltaik Anlagen abnimmt, kann das Wasser dann durch eine Turbine zurück ins Unterbecken fließen.
-			Oder besser gesagt: Es fällt einfach runter.
-			Dabei nutzt es die potentielle Energie aus der Höhe, nimmt Fahrt auf und treibt die Turbine an.
-			Die Turbine ist mit einer elektrischen Maschine gekoppelt, auf derselben Welle.
-			Und diese Maschine wandelt die potentielle Energie des Wassers in elektrische Energie um.
-			Dabei wird Arbeit verrichtet.
-			Denn immer wenn wir Energie wandeln, verrichten wir Arbeit.
-			Das ist der Unterschied:
-			Energie kann gespeichert werden, Arbeit wird verrichtet, wenn Energie gewandelt wird.
-			Beispiel:
-			Wenn wir Wasser nach oben pumpen, verrichten wir Arbeit. Diese Energie steckt danach im Oberbecken.
-			Lassen wir das Wasser runter, wird Energie entnommen und Arbeit in der Turbine verrichtet.
-			Die Energie, die dabei entsteht, können wir dann wieder elektrisch nutzen.
-			Denn: Energie kann nicht verloren gehen. Sie kann weder erzeugt noch vernichtet werden.
-			Sie wird nur gewandelt. Das ist der Grundsatz der Energieerhaltung.
-			Wenn wir also potenzielle Energie aus dem Wasser entnehmen, wandeln wir sie in elektrische Energie um.
-			Allerdings entstehen dabei Verluste. 
-			Aber: Diese Energie ist nicht verschwunden, sie wurde nur in Wärme, Schall oder andere Energieformen umgewandelt.
-			Für uns Elektrotechniker sind das natürlich Verluste, weil wir weniger nutzbare Energie erhalten.
-			Zum Beispiel:
-			Im Oberbecken waren 5 Gigawattstunden gespeichert, elektrisch können wir aber nur 4,5 Gigawattstunden entnehmen.
-			Die fehlende halbe Gigawattstunde ist nicht weg, sie wurde in Wärme oder Schall gewandelt.
-			Fazit:
-			Energie kann gespeichert werden.
-			Arbeit wird immer dann verrichtet, wenn Energie gewandelt wird.
-			Und um Arbeit zu verrichten, brauchen wir Energie, die wir aber nicht erzeugen, sondern wandeln.
-		}
+	\speech{00_Einleitung2}{1}{ % hier titel einfügen
+		Um uns klarzumachen, was Arbeit, Energie und Leistung eigentlich bedeuten, habe ich ein Beispiel mitgebracht.
+		Ein Pumpspeicherkraftwerk.
+		Diese Kraftwerke werden heutzutage ziemlich häufig eingesetzt.
+		Sie dienen letztlich dazu, Energie in Form von potentieller Energie zu speichern, indem Wasser vom Unterbecken ins Oberbecken gepumpt wird.
+		Und das passiert zu Zeiten, wo mehr elektrische Energie im Netz verfügbar ist, als gerade gebraucht wird.
+		Das wäre sonst ein instabiler Zustand. Denn ein elektrisches Energienetz muss immer ausbalanciert sein.
+		Es muss genauso viel Energie bereitgestellt werden, wie entnommen wird.
+		Wenn das nicht der Fall ist, dann entstehen Probleme:
+		Die Frequenz schwankt.
+		Es kommt zu Über- oder Unterspannung.
+		je nachdem, in welche Richtung das System kippt.
+		Gerade jetzt, wo wir uns von großen thermischen Kraftwerken entfernen, die wir wenigstens in bestimmten Bereichen
+		gut regeln konnten, hin zu regenerativen Energien, ist das eine echte Herausforderung.
+		In Deutschland, bedingt durch die geografische Lage, setzen wir dabei hauptsächlich auf Wind- und Solarenergie.
+		Diese Formen sind aber sehr volatil.
+		Das heißt:
+		An sonnigen, leicht windigen Tagen im Sommer haben wir einen riesigen Energieüberschuss.
+		Nachts hingegen, wenn die Sonne weg ist und auch der Wind meistens nachlässt, fehlt uns Energie.
+		Eine mögliche Lösung ist: der Einsatz von Gaskraftwerken.
+		Diese Gasturbinen sind zwar schnell regelbar, aber sie sind nicht CO2neutral, wenn Erdgas verbrannt wird.
+		Damit kommen wir unserem Ziel, CO2 freie Stromerzeugung, nur bedingt näher.
+		Eine echte Alternative ist da das Pumpspeicherkraftwerk.
+		Wie gesagt:
+		Darin wird Energie quasi gespeichert.
+		Wenn tagsüber zu viel Strom im Netz ist, zum Beispiel durch Sonne und Wind, wird Wasser aus dem Unterbecken ins Oberbecken gepumpt.
+		Die Höhe zwischen den beiden Becken liegt meist zwischen 30 und 100 Metern, je nach geologischer Lage.
+		Das Pumpen kostet Energie, die wird aus dem Netz entnommen. Denn das Wasser muss ja irgendwie nach oben.
+		Abends, wenn die Versorgung durch Photovoltaik Anlagen abnimmt, kann das Wasser dann durch eine Turbine zurück ins Unterbecken fließen.
+		Oder besser gesagt: Es fällt einfach runter.
+		Dabei nutzt es die potentielle Energie aus der Höhe, nimmt Fahrt auf und treibt die Turbine an.
+		Die Turbine ist mit einer elektrischen Maschine gekoppelt, auf derselben Welle.
+		Und diese Maschine wandelt die potentielle Energie des Wassers in elektrische Energie um.
+		Dabei wird Arbeit verrichtet.
+		Denn immer wenn wir Energie wandeln, verrichten wir Arbeit.
+		Das ist der Unterschied:
+		Energie kann gespeichert werden, Arbeit wird verrichtet, wenn Energie gewandelt wird.
+		Beispiel:
+		Wenn wir Wasser nach oben pumpen, verrichten wir Arbeit. Diese Energie steckt danach im Oberbecken.
+		Lassen wir das Wasser runter, wird Energie entnommen und Arbeit in der Turbine verrichtet.
+		Die Energie, die dabei entsteht, können wir dann wieder elektrisch nutzen.
+		Denn: Energie kann nicht verloren gehen. Sie kann weder erzeugt noch vernichtet werden.
+		Sie wird nur gewandelt. Das ist der Grundsatz der Energieerhaltung.
+		Wenn wir also potenzielle Energie aus dem Wasser entnehmen, wandeln wir sie in elektrische Energie um.
+		Allerdings entstehen dabei Verluste.
+		Aber: Diese Energie ist nicht verschwunden, sie wurde nur in Wärme, Schall oder andere Energieformen umgewandelt.
+		Für uns Elektrotechniker sind das natürlich Verluste, weil wir weniger nutzbare Energie erhalten.
+		Zum Beispiel:
+		Im Oberbecken waren 5 Gigawattstunden gespeichert, elektrisch können wir aber nur 4,5 Gigawattstunden entnehmen.
+		Die fehlende halbe Gigawattstunde ist nicht weg, sie wurde in Wärme oder Schall gewandelt.
+		Fazit:
+		Energie kann gespeichert werden.
+		Arbeit wird immer dann verrichtet, wenn Energie gewandelt wird.
+		Und um Arbeit zu verrichten, brauchen wir Energie, die wir aber nicht erzeugen, sondern wandeln.
+	}
 	% 761423 guter seed
 	\speech{00_Einleitung2}{3}{Auch hier nochmal der ganz wichtige Merksatz: Energie kann gespeichert werden, Arbeit wird verrichtet. Was das bedeutet, haben wir gerade am Beispiel des Pumpspeicherkraftwerks gesehen. Wenn Wasser hochgepumpt wird, dann ist die Energie in Form von potenzieller Energie gespeichert. Wenn es dann wieder herunterläuft, gibt es diese Energie an das System ab. In der Turbine wird Arbeit verrichtet, und dabei wird Energie gewandelt.}
-	\end{frame}
+\end{frame}
 
 \s{
 	% Sobald die Nachfrage nach elektrischer Energie das Angebot übersteigt, wird das Wasser wieder abgelassen, 
@@ -325,28 +324,28 @@ Und du kannst die Effizienz von Energieumwandlungssystemen analysieren.
 	% Dieser Zusammenhang aus Arbeit pro Zeit ist die Leistung. Bei solch einem Aufwand ist es nicht verwunderlich, dass dieser Prozess verlustbehaftet ist. 
 	% Es muss also mehr Energie in die Umwandlung und Speicherung gesteckt werden, als herauskommt. 
 	% Das Verhältnis der entnommenen zur investierten Energie ist der Wirkungsgrad.
-	
-	Sobald die Nachfrage nach elektrischer Energie das Angebot übersteigt, wird das Wasser aus dem Oberbecken über eine Turbine abgelassen. 
-	Die Turbine wandelt also die vorher gespeicherte potentielle Energie des Wassers im Oberbecken in mechanische Arbeit um. 
-	Diese Arbeit verrichtet in der elektrischen Maschine eine Drehbewegung. Da die Maschine nun als Generator arbeitet, 
-	wandelt diese die an ihr verrichtete mechanische Arbeit in elektrische Energie um. Bei diesem Prozess kann über ein Schleusenventil 
-	im Oberbecken die Wassermenge, welche innerhalb einer gewissen Zeit durch die Turbine fließt, reduziert werden. Somit wird weniger 
-	potentielle Energie in mechanische Arbeit und somit elektrische Energie pro Zeit gewandelt. Die verrichtete Arbeit pro Zeit wird 
-	als Leistung bezeichnet. Die Leistung eines Systems gibt also an, wie viel Arbeit pro Zeit verrichtet werden kann. 
-	Sie ist eine wichtige Kenngröße elektrischer Systeme. Innerhalb der elektrischen Maschine wird ein Teil der zugeführten Energie 
-	im Leitungswiederstand in Wärme umgewandelt, welche in die Umgebung abgegeben wird. Ferner treten auch in den mechanischen Elementen (Pumpe, Turbine) 
+
+	Sobald die Nachfrage nach elektrischer Energie das Angebot übersteigt, wird das Wasser aus dem Oberbecken über eine Turbine abgelassen.
+	Die Turbine wandelt also die vorher gespeicherte potentielle Energie des Wassers im Oberbecken in mechanische Arbeit um.
+	Diese Arbeit verrichtet in der elektrischen Maschine eine Drehbewegung. Da die Maschine nun als Generator arbeitet,
+	wandelt diese die an ihr verrichtete mechanische Arbeit in elektrische Energie um. Bei diesem Prozess kann über ein Schleusenventil
+	im Oberbecken die Wassermenge, welche innerhalb einer gewissen Zeit durch die Turbine fließt, reduziert werden. Somit wird weniger
+	potentielle Energie in mechanische Arbeit und somit elektrische Energie pro Zeit gewandelt. Die verrichtete Arbeit pro Zeit wird
+	als Leistung bezeichnet. Die Leistung eines Systems gibt also an, wie viel Arbeit pro Zeit verrichtet werden kann.
+	Sie ist eine wichtige Kenngröße elektrischer Systeme. Innerhalb der elektrischen Maschine wird ein Teil der zugeführten Energie
+	im Leitungswiederstand in Wärme umgewandelt, welche in die Umgebung abgegeben wird. Ferner treten auch in den mechanischen Elementen (Pumpe, Turbine)
 	sowie an den Wänden der Rohrleitungen Reibungsverluste auf, welche letztlich ebenfalls als Wärme in die Umgebung abgegeben werden.
 	Folglich ist die Menge an elektrischer Energie, die dem System zugeführt wird immer größer als die Menge an elektrischer Energie,
 	die dem System entnommen werden kann. Das Verhältnis der entnommenen zur zugeführten Energie wird als Wirkungsgrad beschrieben.
-	
-	Im Folgenden werden die Begriffe der Energie, Leistung, elektrischer Arbeit und Wirkungsgrad detailierter erläutert. 
+
+	Im Folgenden werden die Begriffe der Energie, Leistung, elektrischer Arbeit und Wirkungsgrad detailierter erläutert.
 	Für das Verständnis werden hier die Grundlagen aus dem vorherigen Kapitel zu Ladung, elektrischem Potential und elektrischer Stromstärke vorausgesetzt.
 }
 \s{
-	\begin{Merksatz} 
+	\begin{Merksatz}
 
 		Energie kann gespeichert werden, Arbeit wird verrichtet.
-		
+
 	\end{Merksatz}
 }
 
