@@ -1,107 +1,89 @@
+\newvideofile{OPV_Stabilitaet}{Stabilität}
 \begin{frame}
     \fta{Stabilität von Verstärkerschaltungen}
     \s{
-    Durch die Rückführung des Ausgangssignals auf das Eingangssignal ergibt sich ein Regelkreis. Dieser Regelkreis ist allerdings nicht immer stabil, d.h. die Rückführung führt nicht dazu, dass die Ausgangsgröße sich nur so lange ändert, wie am Eingang auch eine Differenzspannung vorliegt\footnote{Dies ist eine Vereinfachung. In der Regelungstechnik wird zwischen Lyapunov-Stabilität und BIBO-Stabilität unterschieden (siehe hierzu z.B. \glqq Regelungstechnik\grqq{} von Otto Föllinger)}.
-    Dies wird deutlich, wenn das Ausgangssignal auf den nicht-invertierenden anstatt den invertierenden Eingang zurückgeführt wird. Wird nun eine Spannungssdifferenz an den Eingang angelegt und am Ausgang verstärkt ausgegeben, so führt diese Ausgangsspannung zu einer erneuten Erhöhung der Spannungsdifferenz am Eingang. 
-    Das System ist also nicht stabil. Ein ähnliches Phänomen kann beobachtet werden, wenn in der Verstärkerschaltung Energiespeicher (Kondensatoren oder Spulen) verwendet werden. Eine solche Schaltung weißt immer eine Stabilitätsgrenze auf, die dann erreicht wird, wenn das auf den invertierenden Eingang rückgekoppelte Signal, eine Phasenverschiebung von 180$^{\circ}$ aufweist.
-    In diesem Fall wird die Gegenkopplung zur Mitkopplung und die Schaltung wird instabil. 
-    Das ist aber nicht die einzige Möglichkeit, wie eine Schaltung instabil werden kann. Auch kann die Schaltung ins Schwingen geraten, wenn die Energiespeicher nicht richtig dimensioniert werden. Aus diesem Grund sind Stabilitätsanalysen der entworfenen Schaltungen unerlässlich. 
-    
-    Es sollen im Rahmen dieses Kapitels folgende Kompetenzen erworben werden:
+        Durch die Rückführung des Ausgangssignals auf das Eingangssignal ergibt sich ein Regelkreis. Dieser Regelkreis ist allerdings nicht immer stabil, d.h. die Rückführung führt nicht dazu, dass die Ausgangsgröße sich nur so lange ändert, wie am Eingang auch eine Differenzspannung vorliegt\footnote{Dies ist eine Vereinfachung. In der Regelungstechnik wird zwischen Lyapunov-Stabilität und BIBO-Stabilität unterschieden (siehe hierzu z.B. \glqq Regelungstechnik\grqq{} von Otto Föllinger)}.
+        Dies wird deutlich, wenn das Ausgangssignal auf den nicht-invertierenden anstatt den invertierenden Eingang zurückgeführt wird. Wird nun eine Spannungssdifferenz an den Eingang angelegt und am Ausgang verstärkt ausgegeben, so führt diese Ausgangsspannung zu einer erneuten Erhöhung der Spannungsdifferenz am Eingang.
+        Das System ist also nicht stabil. Ein ähnliches Phänomen kann beobachtet werden, wenn in der Verstärkerschaltung Energiespeicher (Kondensatoren oder Spulen) verwendet werden. Eine solche Schaltung weißt immer eine Stabilitätsgrenze auf, die dann erreicht wird, wenn das auf den invertierenden Eingang rückgekoppelte Signal, eine Phasenverschiebung von 180$^{\circ}$ aufweist.
+        In diesem Fall wird die Gegenkopplung zur Mitkopplung und die Schaltung wird instabil.
+        Das ist aber nicht die einzige Möglichkeit, wie eine Schaltung instabil werden kann. Auch kann die Schaltung ins Schwingen geraten, wenn die Energiespeicher nicht richtig dimensioniert werden. Aus diesem Grund sind Stabilitätsanalysen der entworfenen Schaltungen unerlässlich.
 
+        Es sollen im Rahmen dieses Kapitels folgende Kompetenzen erworben werden:
 
-%\speech{1}{
-%    Stabilität von Verstärkerschaltungen
-%    Durch die Rückführung des Ausgangssignals auf das Eingangssignal ergibt sich ein Regelkreis. Dieser Regelkreis ist allerdings nicht immer stabil, d.h. die Rückführung führt nicht dazu, dass die Ausgangsgröße sich nur so lange ändert, wie am Eingang auch eine Differenzspannung vorliegt\footnote{Dies ist eine Vereinfachung. In der Regelungstechnik wird zwischen Lyapunov-Stabilität und BIBO-Stabilität unterschieden (siehe hierzu z.B. \glqq Regelungstechnik\grqq{} von Otto Föllinger)}.
-%    Dies wird deutlich, wenn das Ausgangssignal auf den nicht-invertierenden anstatt den invertierenden Eingang zurückgeführt wird. Wird nun eine Spannungssdifferenz an den Eingang angelegt und am Ausgang verstärkt ausgegeben, so führt diese Ausgangsspannung zu einer erneuten Erhöhung der Spannungsdifferenz am Eingang.
-%    Das System ist also nicht stabil. Ein ähnliches Phänomen kann beobachtet werden, wenn in der Verstärkerschaltung Energiespeicher (Kondensatoren oder Spulen) verwendet werden. Eine solche Schaltung weißt immer eine Stabilitätsgrenze auf, die dann erreicht wird, wenn das auf den invertierenden Eingang rückgekoppelte Signal, eine Phasenverschiebung von 180$^{\circ}$ aufweist.
-%    In diesem Fall wird die Gegenkopplung zur Mitkopplung und die Schaltung wird instabil.
-%    Das ist aber nicht die einzige Möglichkeit, wie eine Schaltung instabil werden kann. Auch kann die Schaltung ins Schwingen geraten, wenn die Energiespeicher nicht richtig dimensioniert werden. Aus diesem Grund sind Stabilitätsanalysen der entworfenen Schaltungen unerlässlich.
-%    Es sollen im Rahmen dieses Kapitels folgende Kompetenzen erworben werden:
-%}
-    \s{
-        \begin{Lernziele}{Operationsverstärker}
-            \title{Lernziele: Stabilität von Verstärkerschaltungen}
-            Die Studierenden können
-            \begin{itemize}
-                \item Stabilitätsanalysen durchführen und Ergebnisse der Analyse beurteilen.
-                \item Bauteile in OPV-Schaltungen dem Stabilitätskriterien entsprechend dimensionieren.
-            \end{itemize}
-        \end{Lernziele}
+        \s{
+            \begin{Lernziele}{Operationsverstärker}
+                \title{Lernziele: Stabilität von Verstärkerschaltungen}
+                Die Studierenden können
+                \begin{itemize}
+                    \item Stabilitätsanalysen durchführen und Ergebnisse der Analyse beurteilen.
+                    \item Bauteile in OPV-Schaltungen dem Stabilitätskriterien entsprechend dimensionieren.
+                \end{itemize}
+            \end{Lernziele}
+        }
+
+        Einige der Stabilitätskriterien, die zur Stabilitätsbewertung herangezogen werden sind im Folgenden beschrieben.
+        Die Bewertung der Stabilität von Operationsverstärkerschaltungen ist eine wichtige Fähigkeit für Studierende der Elektrotechnik, egal ob die Schaltungen von Grund auf entworfen oder Fehler in bestehenden Schaltungen behoben werden sollen.
+        Diese Bewertung stellt sicher, dass Operationsverstärkerschaltungen zuverlässig und effektiv arbeiten, was für ihre Integration in verschiedene elektronische Systeme unerlässlich ist. Im Folgenden wird erläutert, welche Methoden zur Bewertung der Stabilität verwendet werden.
     }
-    
 
-    Einige der Stabilitätskriterien, die zur Stabilitätsbewertung herangezogen werden sind im Folgenden beschrieben.
-    Die Bewertung der Stabilität von Operationsverstärkerschaltungen ist eine wichtige Fähigkeit für Studierende der Elektrotechnik, egal ob die Schaltungen von Grund auf entworfen oder Fehler in bestehenden Schaltungen behoben werden sollen. 
-    Diese Bewertung stellt sicher, dass Operationsverstärkerschaltungen zuverlässig und effektiv arbeiten, was für ihre Integration in verschiedene elektronische Systeme unerlässlich ist. Im Folgenden wird erläutert, welche Methoden zur Bewertung der Stabilität verwendet werden.
-
-   } 
-	\b{\frametitle{Stabilität des Operationsverstärker-Regelkreis}
-    Durch die Rückführung des Ausgangssignal ergibt sich ein Regelkreis. Dieser muss auf Stabilität überprüft werden. Dazu werden 3 Methoden vorgstellt:
-    \begin{itemize}
-    \item Die Frequengangzanalyse auf Grundlage des Bodediagramms
-    \item Die Untersuchung der Übertragungsfunktion auf ihre Pollagen
-    \item Die Analyse des Einschwingverhaltens
-    \end{itemize}}
-    \speech{StabilitaetOPV}{1}{In diesem Abschnitt geht es um die Stabilität eines Operationsverstärkers.
-    Immer wenn wir eine Gegenkopplung einsetzen, entsteht ein Regelkreis. Und dieser Regelkreis kann – abhängig von den Bauteilen und der Frequenz – instabil werden.
-    Instabil bedeutet: Der Ausgang beginnt zu schwingen oder zeigt starkes Überschwingen, obwohl das Eingangssignal konstant ist.
-    Es gibt drei grundlegende Möglichkeiten, die Stabilität eines Systems zu beurteilen:
-    Erstens über den Frequenzgang - also durch ein Bode-Diagramm,
-    zweitens über die Übertragungsfunktion, also die Lage der Pole,
-    und drittens über das Einschwingverhalten, also die Reaktion auf einen Sprung.
-    Wir schauen uns jetzt alle drei Methoden einmal der Reihe nach an.} %seed: 885467
+    \b{
+        \frametitle{Stabilität des Operationsverstärker-Regelkreis}
+        Durch die Rückführung des Ausgangssignal ergibt sich ein Regelkreis. Dieser muss auf Stabilität überprüft werden. Dazu werden 3 Methoden vorgstellt:
+        \begin{itemize}
+            \item Die Frequengangzanalyse auf Grundlage des Bodediagramms
+            \item Die Untersuchung der Übertragungsfunktion auf ihre Pollagen
+            \item Die Analyse des Einschwingverhaltens
+        \end{itemize}
+    }
+    \speech{StabilitaetOPV_Methoden}{1}{In diesem Abschnitt geht es um die Stabilität eines Operationsverstärkers. Immer wenn wir eine Gegenkopplung einsetzen, entsteht ein Regelkreis. Und dieser Regelkreis kann – abhängig von den Bauteilen und der Frequenz – instabil werden. Instabil bedeutet: Der Ausgang beginnt zu schwingen oder zeigt starkes Überschwingen, obwohl das Eingangssignal konstant ist. Es gibt drei grundlegende Möglichkeiten, die Stabilität eines Systems zu beurteilen: Erstens über den Frequenzgang - also durch ein Bode-Diagramm, zweitens über die Übertragungsfunktion, also die Lage der Pole, und drittens über das Einschwingverhalten, also die Reaktion auf einen Sprung. Wir schauen uns jetzt alle drei Methoden einmal der Reihe nach an.}
+    %seed: 885467
+    \silence{3}
 \end{frame}
 
 %Frequenzganganalyse
 \begin{frame}
     \frametitle{Frequenzgangsanalyse (experimentell/simulativ)}
     \s{
-    Eine grundlegende Technik ist die Frequenzganganalyse. 
-    Bei diesem Verfahren wird untersucht, wie sich die Verstärkung und die Phase einer Operationsverstärkerschaltung ändern, wenn die Frequenz des Eingangssignals variiert. Werkzeuge wie Bodediagramme werden häufig zur Visualisierung dieser Reaktion eingesetzt und helfen bei der Identifizierung potenzieller Stabilitätsprobleme wie Verstärkungsspitzen oder Phasenverschiebungen, die zu Instabilität führen könnten.
-    Ein wichtiges Kriterium bildet hier die Phasenreserve. Die Bestimmung dieser Größe ist ein quantitativer Ansatz zur Stabilitätsbewertung. Sie hilft bei der Messung der Stabilitätsspanne innerhalb eines Rückkopplungssystems, indem sie die Phasendifferenz zwischen der tatsächlichen Phasenverschiebung bei der Durchtrittsfrequenz (also 0 dB) und 180$^{\circ}$ betrachtet. Dieser Punkt wird als \glqq kritischer Punkt\grqq{} bezeichnet, da bei einer Phasenverschiebung über 180$^{\circ}$ und einer Verstärkung über 0 dB, die Rückkopplung zur Mitkopplung wird. 
-    Wenn die Phasendifferenz einen bestimmten Schwellenwert überschreitet, in der Regel etwa 45$^{\circ}$, wird davon ausgegangen, dass das System weit genug von der Stabilitätsgrenze entferent ist.
-    Diese Analyse findet normalerweise graphisch auf Grundlage des Bodediagramms statt. 
+        Eine grundlegende Technik ist die Frequenzganganalyse.
+        Bei diesem Verfahren wird untersucht, wie sich die Verstärkung und die Phase einer Operationsverstärkerschaltung ändern, wenn die Frequenz des Eingangssignals variiert. Werkzeuge wie Bodediagramme werden häufig zur Visualisierung dieser Reaktion eingesetzt und helfen bei der Identifizierung potenzieller Stabilitätsprobleme wie Verstärkungsspitzen oder Phasenverschiebungen, die zu Instabilität führen könnten.
+        Ein wichtiges Kriterium bildet hier die Phasenreserve. Die Bestimmung dieser Größe ist ein quantitativer Ansatz zur Stabilitätsbewertung. Sie hilft bei der Messung der Stabilitätsspanne innerhalb eines Rückkopplungssystems, indem sie die Phasendifferenz zwischen der tatsächlichen Phasenverschiebung bei der Durchtrittsfrequenz (also 0 dB) und 180$^{\circ}$ betrachtet. Dieser Punkt wird als \glqq kritischer Punkt\grqq{} bezeichnet, da bei einer Phasenverschiebung über 180$^{\circ}$ und einer Verstärkung über 0 dB, die Rückkopplung zur Mitkopplung wird.
+        Wenn die Phasendifferenz einen bestimmten Schwellenwert überschreitet, in der Regel etwa 45$^{\circ}$, wird davon ausgegangen, dass das System weit genug von der Stabilitätsgrenze entferent ist.
+        Diese Analyse findet normalerweise graphisch auf Grundlage des Bodediagramms statt.
     }
-        \begin{center}
-        \b{Bei dieser Methode wird das Bodediagramm im relevanten Frequenzbereich betrachtet.} 
-        \f{width=\textwidth}{width=0.9\textwidth}{Bilder/kap4/Amplitudengang Regelkreis und Phasengang.pdf}{Bestimmung der Phasenreserve auf Grundlage des Bodediagramms} 
+    \begin{center}
+        \b{Bei dieser Methode wird das Bodediagramm im relevanten Frequenzbereich betrachtet.}
+        \f{width=\textwidth}{width=0.9\textwidth}{Bilder/kap4/Amplitudengang Regelkreis und Phasengang.pdf}{Bestimmung der Phasenreserve auf Grundlage des Bodediagramms}
         \label{fig:Frequenzganganalyse}
     \end{center}
-    \b{Auf dieser Grundlage wird die Phasenlage am 0 dB-Durchtrittspunkt der Amplitude bestimmt. Besteht ein geringer Abstand zu -180° ist das System instabil.}  %Inspiration: https://www.google.com/search?client=firefox-b-d&sca_esv=07fc2a91d39bc3b9&sca_upv=1&sxsrf=ADLYWIJlgSTFsuVgmDjND0631smrCLZH5g:1720507056816&q=phasenreserve&udm=2&fbs=AEQNm0A6bwEop21ehxKWq5cj-cHa02QUie7apaStVTrDAEoT1A_pRBhSGXWPGL0_xk71SHFUmHSJWGPXoD9Kj5_rnHbWMOqF2geje-KRnle5TYvzlu3NqubtU_abXJaIrzdDTfJXR1IEap8k1YruTZC6a9-SgzP6gSnzb0vwoljHMAsMGnOtcGrx634vR4spXb0931ZlkiFj&sa=X&ved=2ahUKEwjcztGfrJmHAxUygP0HHerJD6MQtKgLegQIDRAB&biw=1536&bih=835&dpr=1.25#vhid=kWaDK2aKHZdoUM&vssid=mosaic         
-    \speech{StabilitaetOPV}{2}{Beginnen wir mit der Frequenzganganalyse.
-    Hier messen oder simulieren wir, wie sich die Verstärkung und die Phasenverschiebung des offenen Regelkreises mit der Frequenz verändern.
-    Im Amplitudengang sehen wir die Durchtrittsfrequenz - das ist der Punkt, an dem der Betrag der Schleifenverstärkung gleich eins ist, also 0 deziBel.
-    Entscheidend ist nun, wie groß die Phasenreserve bei dieser Frequenz ist.
-    Liegt die Phase bei minus hundertachtzig Grad genau dort, wo die Verstärkung noch größer als eins ist, dann kommt es zur Mitkopplung - und das System beginnt zu schwingen.
-    Wir brauchen also genügend Abstand, also Phasenreserve, um sicherzustellen, dass der Regelkreis stabil bleibt.} %seed: 885468
+    \b{
+        Auf dieser Grundlage wird die Phasenlage am 0 dB-Durchtrittspunkt der Amplitude bestimmt. Besteht ein geringer Abstand zu -180° ist das System instabil.}  %Inspiration: https://www.google.com/search?client=firefox-b-d&sca_esv=07fc2a91d39bc3b9&sca_upv=1&sxsrf=ADLYWIJlgSTFsuVgmDjND0631smrCLZH5g:1720507056816&q=phasenreserve&udm=2&fbs=AEQNm0A6bwEop21ehxKWq5cj-cHa02QUie7apaStVTrDAEoT1A_pRBhSGXWPGL0_xk71SHFUmHSJWGPXoD9Kj5_rnHbWMOqF2geje-KRnle5TYvzlu3NqubtU_abXJaIrzdDTfJXR1IEap8k1YruTZC6a9-SgzP6gSnzb0vwoljHMAsMGnOtcGrx634vR4spXb0931ZlkiFj&sa=X&ved=2ahUKEwjcztGfrJmHAxUygP0HHerJD6MQtKgLegQIDRAB&biw=1536&bih=835&dpr=1.25#vhid=kWaDK2aKHZdoUM&vssid=mosaic         
+    \speech{StabilitaetOPV_sim}{1}{Beginnen wir mit der Frequenzganganalyse. Hier messen oder simulieren wir, wie sich die Verstärkung und die Phasenverschiebung des offenen Regelkreises mit der Frequenz verändern. Im Amplitudengang sehen wir die Durchtrittsfrequenz - das ist der Punkt, an dem der Betrag der Schleifenverstärkung gleich eins ist, also 0 deziBel. Entscheidend ist nun, wie groß die Phasenreserve bei dieser Frequenz ist. Liegt die Phase bei minus hundertachtzig Grad genau dort, wo die Verstärkung noch größer als eins ist, dann kommt es zur Mitkopplung - und das System beginnt zu schwingen. Wir brauchen also genügend Abstand, also Phasenreserve, um sicherzustellen, dass der Regelkreis stabil bleibt.}
+    %seed: 885468
+    \silence{3}
 \end{frame}
 
 
 \begin{frame}
     \frametitle{Analyse der Übertragungsfunktion (analytisch)}
     \s{
-    \par
-    Liegt die Übertragungsfunktion der Operationsverstärkerschaltung vor, kann auch direkt eine Stabilitätsanalyse durchgeführt werden. Dazu werden die Pole der Übertragungsfunktion (z.B. im Laplacebereich) analysiert. Liegen diese in der linken s-Halbebene (also sind alle Pole negativ), weißt die Schaltung ein stabiles Übertragungsverhalten auf.
-    Bei diesem Ansatz sowie bei der Frequnzanalyse (sofern das Bodediagramm nicht experimentell ermittelt wurde) muss beachtet werden, dass die Übertragungsfunktion meist nur für einen bestimmten Frequenzbereich gültig ist, da z.B. die Dynamik des Operationsverstärkers bei diesen Methoden in der Regel nicht berücksichtigt wird.
-    \begin{center}
-        %\input{Bilder/kap4/Filter.png}
-        \f{width=0.8\textwidth}{width=0.8\textwidth}{Bilder/kap4/Polstellenneu.pdf}{Systemantworten bei verschiedenen Pollagen }
-        \label{fig:Analyse des Schwingungsverhaltens}             
-    \end{center}
+        \par
+        Liegt die Übertragungsfunktion der Operationsverstärkerschaltung vor, kann auch direkt eine Stabilitätsanalyse durchgeführt werden. Dazu werden die Pole der Übertragungsfunktion (z.B. im Laplacebereich) analysiert. Liegen diese in der linken s-Halbebene (also sind alle Pole negativ), weißt die Schaltung ein stabiles Übertragungsverhalten auf.
+        Bei diesem Ansatz sowie bei der Frequnzanalyse (sofern das Bodediagramm nicht experimentell ermittelt wurde) muss beachtet werden, dass die Übertragungsfunktion meist nur für einen bestimmten Frequenzbereich gültig ist, da z.B. die Dynamik des Operationsverstärkers bei diesen Methoden in der Regel nicht berücksichtigt wird.
+        \begin{center}
+            %\input{Bilder/kap4/Filter.png}
+            \f{width=0.8\textwidth}{width=0.8\textwidth}{Bilder/kap4/Polstellenneu.pdf}{Systemantworten bei verschiedenen Pollagen }
+            \label{fig:Analyse des Schwingungsverhaltens}
+        \end{center}
     }
-%    \b{Bei dieser Methode wird werden die Polstellen der Übertragunsfunktion bestimmt. Unten ist dargestellt, welches %Ausgangsverhalten bei welchen Pollagen erwartet werden kann.
-%        \begin{center}
-%        %\input{Bilder/kap4/Filter.png}
-%        \f{width=1\textwidth}{width=0.5\textwidth}{Bilder/kap4/Polstellenneu.pdf}{Systemantworten bei verschiedenen Pollagen \cite%{Kolahi}}
-%        \label{fig:Analyse des Schwingungsverhaltens}             
-%    \end{center}
-%    }
-%    \speech{StabilitaetOPV}{3}{Ein anderer Ansatz ist die mathematische Analyse der Übertragungsfunktion.
-%    Hier betrachten wir die Pole des Systems in der sogenannten s-Ebene.
-%    Liegen alle Pole auf der linken Seite der s-Ebene, dann ist das System stabil - das heißt, Störungen klingen mit der Zeit ab.
-%    Liegt jedoch ein Pol auf der rechten Seite, wächst eine Störung mit der Zeit an - und das System wird instabil.
-%    Diese Methode ist besonders nützlich, wenn wir das Verhalten analytisch beschreiben und berechnen wollen.} %seed: 885469
+    \b{Bei dieser Methode wird werden die Polstellen der Übertragunsfunktion bestimmt. Unten ist dargestellt, welches %Ausgangsverhalten bei welchen Pollagen erwartet werden kann.
+        \begin{center}
+            %\input{Bilder/kap4/Filter.png}
+            \f{width=1\textwidth}{width=0.5\textwidth}{Bilder/kap4/Polstellenneu.pdf}{Systemantworten bei verschiedenen Pollagen} %\cite{Kolahi}
+        \end{center}
+    }
+    \speech{StabilitaetOPV_ana}{1}{Ein anderer Ansatz ist die mathematische Analyse der Übertragungsfunktion. Hier betrachten wir die Pole des Systems in der sogenannten s-Ebene. Liegen alle Pole auf der linken Seite der s-Ebene, dann ist das System stabil - das heißt, Störungen klingen mit der Zeit ab. Liegt jedoch ein Pol auf der rechten Seite, wächst eine Störung mit der Zeit an - und das System wird instabil. Diese Methode ist besonders nützlich, wenn wir das Verhalten analytisch beschreiben und berechnen wollen.}
+    %seed: 885469
+    \silence{3}
 \end{frame}
 
 
@@ -110,32 +92,27 @@
     \pagebreak
     \frametitle{Analyse des Einschwingverhaltens (experimentell/simulativ)}
     \s{
-    \par
-    Eine weitere wichtige Methode ist die Analyse des Einschwingverhaltens. Bei dieser Methode wird ein Spannungssprung auf die Verstärkerschaltung gegeben um zu untersuchen, wie eine Operationsverstärkerschaltung auf plötzliche Änderungen der Eingangssignale reagiert. Durch Beobachtung der Reaktion des Schaltkreises kann so eine Aussage getroffen werden, ob das System zur Instabilität neigt. In der Realität ist dieser Test sehr vorsichtig durchzuführen, da bei 
-    bei einer instabilen Schaltung schnell Bauteile zerstört werden können. Aus diesem Grund wird ein solcher Test heutzutage häufig rein simulativ durchgeführt. Als Faustregel lässt sich hier sagen: Wenn die Schaltung nach einer Anregung durch einen Einheitssprung gegen einen festen Wert strebt und keine Dauerschwingung ausführt, kann das Einschwingverhalten als stabil angenommen werden.
+        \par
+        Eine weitere wichtige Methode ist die Analyse des Einschwingverhaltens. Bei dieser Methode wird ein Spannungssprung auf die Verstärkerschaltung gegeben um zu untersuchen, wie eine Operationsverstärkerschaltung auf plötzliche Änderungen der Eingangssignale reagiert. Durch Beobachtung der Reaktion des Schaltkreises kann so eine Aussage getroffen werden, ob das System zur Instabilität neigt. In der Realität ist dieser Test sehr vorsichtig durchzuführen, da bei
+        bei einer instabilen Schaltung schnell Bauteile zerstört werden können. Aus diesem Grund wird ein solcher Test heutzutage häufig rein simulativ durchgeführt. Als Faustregel lässt sich hier sagen: Wenn die Schaltung nach einer Anregung durch einen Einheitssprung gegen einen festen Wert strebt und keine Dauerschwingung ausführt, kann das Einschwingverhalten als stabil angenommen werden.
     }
 
-    \b{Bei dieser Methode wird die Schaltung mit einem Eingangssignal angeregt und das Ausgangsverhalten beobachtet.} 
-        \begin{center}
+    \b{Bei dieser Methode wird die Schaltung mit einem Eingangssignal angeregt und das Ausgangsverhalten beobachtet.}
+    \begin{center}
         %\input{Bilder/kap4/Filter.png}
         \f{width=0.8\textwidth}{width=0.8\textwidth}{Bilder/kap4/ubertragunsverhalten-Einschwingverhalten.pdf}{Stabiles und instabiles Einschwingverhalten} %https://link.springer.com/chapter/10.1007/978-3-662-64375-4_52  
-        \label{fig:Einschwingverhalten}             
+        \label{fig:Einschwingverhalten}
     \end{center}
     \s{
-        Wie dargestellt wurde, ist die Stabilitätsanalyse ein komplexes Thema und soll hier nur angeschnitten werden. An dieser Stelle wird kein Wert auf Vollständigkeit gelegt. 
+        Wie dargestellt wurde, ist die Stabilitätsanalyse ein komplexes Thema und soll hier nur angeschnitten werden. An dieser Stelle wird kein Wert auf Vollständigkeit gelegt.
         Die genannten Analysemethoden sind Teil der Regelungstechnik und in der einschlägigen Literatur nachzulesen.
 
         \begin{Merksatz}{}
             Durch die Rückführung des Ausgangssignal auf den Eingang ergibt sich ein Regelkreis.
-            Die Stabilität dieses Regelkreises muss simulativ, experimentell oder analytisch überprüft werden. 
+            Die Stabilität dieses Regelkreises muss simulativ, experimentell oder analytisch überprüft werden.
         \end{Merksatz}
     }
-    \speech{StabilitaetOPV}{4}{Und schließlich können wir die Stabilität auch direkt im Zeitbereich beobachten - mit dem Einschwingverhalten.
-    Wenn wir das System mit einem Sprung anregen, sehen wir, wie es darauf reagiert:
-    Ein stabiles System nähert sich dem Endwert schnell und ohne große Überschwinger.
-    Ein grenzstabiler Regelkreis zeigt schon merkliche Schwingungen.
-    Und ein instabiles System beginnt zu oszillieren und schwingt nicht mehr aus.
-    In der Praxis nutzen wir diese Methode oft in der Simulation oder im Versuch, um das Verhalten eines Verstärkers zu überprüfen.
-    Damit haben wir drei verschiedene Wege kennengelernt, um die Stabilität eines OP V-Regelkreises zu bewerten - über den Frequenzgang, über die Polstellen und über das Einschwingverhalten.} %seed: 885470
+    \speech{StabilitaetOPV_exp}{1}{Und schließlich können wir die Stabilität auch direkt im Zeitbereich beobachten - mit dem Einschwingverhalten. Wenn wir das System mit einem Sprung anregen, sehen wir, wie es darauf reagiert: Ein stabiles System nähert sich dem Endwert schnell und ohne große Überschwinger. Ein grenzstabiler Regelkreis zeigt schon merkliche Schwingungen. Und ein instabiles System beginnt zu oszillieren und schwingt nicht mehr aus. In der Praxis nutzen wir diese Methode oft in der Simulation oder im Versuch, um das Verhalten eines Verstärkers zu überprüfen. Damit haben wir drei verschiedene Wege kennengelernt, um die Stabilität eines OP V-Regelkreises zu bewerten - über den Frequenzgang, über die Polstellen und über das Einschwingverhalten.}
+    %seed: 885470
+    \silence{3}
 \end{frame}
-
