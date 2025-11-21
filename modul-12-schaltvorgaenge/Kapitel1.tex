@@ -41,9 +41,9 @@ Hier sehen Sie die Lernziele des Kapitels und dieses Videos.
 \speech{EinfuehrungLernziele}{1}{%
 Zunächst werden wir den Begriff Schaltvorgang näher erläutern und Analogien herausarbeiten.
 Hierfür werden wir uns Ausgleichsvorgänge im Allgemeinen mit einfachen Beispielen aus der Physik anschauen.
-Im weiteren Verlauf werden wir Ursachen, den typischen Ablauf und eine grobe Definition von Schaltvorgängen kennen lernen.
-Anhand von Beispielen für Schaltvorgänge, werden Sie Herausforderungen und Möglichkeiten kennen lernen, die sich aus Schaltvorgängen ergeben.
-Zudem lernen Sie das Schaltverhalten idealer und realer Schalter zu unterscheiden.
+Im weiteren Verlauf werden wir Ursachen, den typischen Ablauf und eine grobe Definition von Schaltvorgängen kennenlernen.
+Anhand von Beispielen für Schaltvorgänge, werden Sie Herausforderungen und Möglichkeiten kennenlernen, die sich aus Schaltvorgängen ergeben.
+Zudem lernen Sie das Schaltverhalten idealer und realer Schalter kennen und zu unterscheiden.
 }% Speech Ende
 \end{frame}
 
@@ -124,11 +124,11 @@ Was passiert nun, wenn die Schalterstellung wechselt und die Spannung U q an die
 \silence{1}
 \speech{EinfuehrungAusgleichsvorgaenge}{1}{%
 Ist die Kapazität zum Schaltzeitpunkt entladen, das heißt die Spannung U C an der Kapazität ist gleich null, so stellt sich der rechts zu sehende Zeitverlauf ein.
-Wie zu sehen ist, steigt die Spannung U c an der Kapazität zunächst schnell und dann immer langsamer an und konvergiert am Ende gegen eine konstante Spannung.
+Wie zu sehen ist, steigt die Spannung U C an der Kapazität zunächst schnell und dann immer langsamer an und konvergiert am Ende gegen eine konstante Spannung.
 Am Ende dieses Ladevorganges hat sich ein stationärer Zustand eingestellt.
 Vor dem Schalten hatten wir ebenfalls einen stationären Zustand als die Kapazität vollständig entladen war.
 Das was sich zwischen diesen beiden stationären Zuständen abspielt wird als Ausgleichsvorgang bezeichnet.
-Von der angeschlossenen Spannungsquelle fließt solange Energie in die Kapazität, bis sich die Spannungen sich angeglichen haben.
+Von der angeschlossenen Spannungsquelle fließt solange Energie in die Kapazität, bis sich die Spannungen angeglichen haben.
 Am Ende fließt kein Strom mehr und die Kapazität hat die Spannung U q erreicht.
 }% Speech Ende
 \speech{EinfuehrungAusgleichsvorgaenge}{2}{%
@@ -151,9 +151,9 @@ Zum Beispiel durch Schalthandlungen, bei DC-Netzwerken durch Änderung von Spann
 	\includegraphics[width=\textwidth, alt={Abbildung zweier Beispiele von Ausgleichsvorgängen. Erstens eine Roboterhand, die eine Glühbirne hält. Die Sprungantwort zeigt entweder ein aperiodisches Einschwingen oder eines mit Überschwingen, wobei die Glühbirne zerbricht. Zweitens ein Motorquerschnitt. Die Sprungantwort ist entweder eine schnelle oder eine langsame exponnentielle Annäherung, wie sie bei Fahrzeugen vorkommt.}]{Bilder/Ausgleichsvorgaenge_Beispiele_ET3_S_Exknowski_FH_SWF.png}% Provisorisch mit Genehmigung von Prof. Exknowski
 \speech{EinfuehrungAusgleichsvorgaengeBeispiele}{1}{%
 Hier sind weitere Beispiele für ähnliches Systemverhalten. Auch Einschwingvorgänge bei Regelungsprozessen können als Ausgleichsvorgänge betrachtet werden. 
-Im obigen Beispiel sehen wir einen Beispiel aus der Robotik.
+Im obigen Beispiel sehen wir ein Beispiel aus der Robotik.
 Links zu sehen ist eine Roboterhand, die eine Glühbirne hält. 
-Zum Halten, muss der Fingerdruck auf einen festen Wert regeln. 
+Zum Halten muss der Fingerdruck auf einen festen Wert geregelt werden. 
 Kommt es zu einem Überschwingen wie bei der orangenen Sprungantwort im mittleren Diagramm, kann dies den Bruch der Birne bedeuten
 wie rechts im Bild angedeutet ist. Für eine feine Motorik muss das System schnell, aber auch präzise reagieren wie bei der blauen Sprungantwort ohne Überschwingen dargestellt ist. 
 }% Speech Ende
@@ -217,10 +217,10 @@ In diesem Fall schwingt sich die Systemgröße S auf eine konstante Sinusform ei
 }% Speech Ende
 \silence{1}%
 \speech{EinfuehrungSchaltvorgaenge}{1}{%
-Mit den gepunkteten Verläufen wird angedeutet, wie sich der Zeitverlauf von S während des Schaltvorganges aus der
+Mit den gepunkteten Verläufen wird angedeutet, wie sich der resultierende Zeitverlauf während des Schaltvorganges aus der
 Überlagerung einer Sinusschwingung wie im eingeschwungenen Zustand und einer Exponenzialkurve wie im DC Fall ergibt. 
-Der Schaltvorgang bezeichnet den Zustand des Überganges bei dem ein stationärer Zustand angestrebt wird aber. 
-Stationär heißt im D C Fall ein konstanter Wert oder im A C Fall eine konstante Amplitude, Frequenz und Phase.
+Der Schaltvorgang bezeichnet den Zustand des Überganges bei dem ein stationärer Zustand angestrebt wird. 
+Stationär heißt im DC Fall ein konstanter Wert oder im AC Fall eine konstante Amplitude, Frequenz und Phase.
 Ausgleichsvorgänge werden insbesondere im Hochspannungsbereich oft Transienten genannt,
 abgeleitet vom lateinischen Wort transire, was zu Deutsch so viel wie übergehen bedeutet.
 Das Adjektiv transient bedeutet so viel wie übergangsweise. Das Gegenteil dazu ist persistent,
@@ -374,8 +374,8 @@ die Änderung von Eingangssignalen bei A D und bei D A Convertern und Fahrradlam
 Für die Betrachtung von Schaltvorgängen werden im Rahmen des Moduls immer ideale Schalter angenommen. 
 Ideale Schalter zeichnen sich dadurch aus, dass sie verlustlos und instantan schalten. 
 Das bedeutet, dass Schaltaktionen sofort ohne Zeitverzögerung ausgeführt werden.
-Im Durchlassbetrieb wird eine unendlich große Leitfähigkeit (wie ein Kurzschluss) angenommen und
-im Sperrbetrieb wird ein unendlich großer elektrischer Widerstand (wie offene Klemmen) angenommen.
+Im Durchlassbetrieb wird eine unendlich große Leitfähigkeit wie bei einem Kurzschluss angenommen und
+im Sperrbetrieb wird ein unendlich großer elektrischer Widerstand wie bei offenen Klemmen angenommen.
 }% Speech Ende
 \speech{EinfuehrungSchalterIdealVsReal1}{2}{%
 In Realität kommt es bei realen Schaltern stets zu Verlusten und Latenzen. 
@@ -455,8 +455,8 @@ Die Latenzen und Verluste resultieren auf ohmschen, kapazitiven und induktiven p
 	\makebox[2cm][l]{\textbf{Eingrenz.:}} Annahme idealer Schalter 
 }%
 \speech{EinfuehrungSchalterIdealVsReal2}{1}{%
-Links sehen wir das Schaltbild eines MOSFET Schalters mit Gain, Drain und Source Anschlüssen.
-Ideal betrachtet treten keine parasitären Effekte auf.
+Links sehen wir das Schaltbild eines MOSFET-Schalters mit Gate-, Drain- und Source-Anschlüssen.
+Idealerweise treten keine parasitären Effekte auf.
 }% Speech Ende
 \speech{EinfuehrungSchalterIdealVsReal2}{2}{%
 Real betrachtet treten kapazitive Effekte zwischen allen drei Anschlüssen auf.

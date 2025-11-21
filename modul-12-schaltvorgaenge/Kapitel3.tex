@@ -614,7 +614,7 @@ Da es sich um Gleichgrößen handelt, ist die zeitliche Ableitung von U C P glei
 \speech{SchaltvorgaengeDC1RCLadevorgang4}{1}{%
 Die allgemeine Lösung der inhomogenen DGL erhalten wir durch Überlagerung unserer homogenen und unserer partikulären Lösung.
 U c ist gleich U c h plus U c p. Oder alternativ ist gleich U c F plus U c e. 
-Eingesetzt ergibt sich daraus die allgemein Lösung: U c von Tee ist gleich K mal e hoch minus T durch Tau plus U q. 
+Eingesetzt ergibt sich daraus die allgemeine Lösung U c von Tee ist gleich K mal e hoch minus T durch Tau plus U q. 
 }% Speech Ende
 \speech{SchaltvorgaengeDC1RCLadevorgang4}{2}{%
 Die Konstanten bestimmen wir durch einsetzen der Anfangsbedingung. Die Kapazität sei zum Zeitpunkt T gleich Null unmittelbar vor dem Schalten vollständig entladen. 
@@ -683,7 +683,7 @@ dass bei T gleich null von der Spannungsquelle zum Kurzschluss geschalten wird.
 Gesucht ist der Zeitverlauf für U C. Alle Konstanten und die Anfangsbedingung sind gegeben.
 Oben rechts sehen wir bereits die Zeitverläufe für U C und für i.
 U C ist zu Beginn vollständig geladen und fällt dann exponentiell auf null ab. 
-Der Strom beginnt bei null, macht dann einen Sprung auf Minus U q durch R und nähert sich von dann exponentiell der Null.
+Der Strom beginnt bei null, macht dann einen Sprung auf Minus U q durch R und nähert sich dann exponentiell der Null.
 Der Strom ist negativ im Verbraucherzählpfeilsystem, da die Kapazität beim Entladen als Quelle dient.
 Hier immer auf die korrekten Vorzeichen achten. 
 Unten sind die fünf Schritte des Berechnungsverfahrens mit den jeweiligen Teillösungen die wir nun einzeln durchgehen. 
@@ -705,7 +705,8 @@ Unten sind die fünf Schritte des Berechnungsverfahrens mit den jeweiligen Teill
 \vspace{0.75cm}
 % Hier Leerzeile für Abstand lassen
 
-\textbf{1.) DGL aufstellen:} für $\ecv{u_C}(t)$ ($t\geq 0$)\\[-1em]
+\textbf{1.) DGL aufstellen:} für $\ecv{u_C}(t)$ ($t\geq 0$)
+
 Ausgehend von der Maschengleichung wird $\ecv{u_R}$ in Abhängigkeit von $\ecv{u_C}$ ausgedrückt:
 % Comment out \intertext rows to enable math-preview in VSCode (or set \textbf to \text)
 %\intertext{Ausgehend von der Maschengleichung wird $\ecv{u_R}$ in Abhängigkeit von $\ecv{u_C}$ ausgedrückt:}\\[-1em]
@@ -805,11 +806,11 @@ Wenn wir den gerade betrachteten Lade- und Entladevorgang vergleichen, ergeben s
 In beiden Fällen sind die Verläufe exponentialförmig mit der gleichen Zeitkonstante Tau ist gleich R C. 
 Wenn wir die Anfangsbedingung allgemein als u c zum Schaltzeitpunkt T null formulieren. 
 Und den eingeschwungenen Zustand mit allgemein als U c e bezeichnen,
-können wir die Lösung für den Lade und den Entladevorgang der gezeigten Schaltung allgemein für einen Schaltzeitpunkt T null bestimmen.
+können wir die Lösung für den Lade- und den Entladevorgang der gezeigten Schaltung allgemein für einen Schaltzeitpunkt T null bestimmen.
 Durch etwas Umformung können wir die Lösung in die folgende Form bringen:
 In Worten: Die Spannung an der Kapazität ab Schaltzeitpunkt T null ist gleich der Startspannung plus einer exponentiellen Annäherung der Differenz von Endwert und Startwert.
 Mathematisch ausgedrückt: U c von Tee minus t0 ist gleich U c von Tee null, der Startwert, plus Klammer auf, die Differenz U c e minus U c von Tee null, Klammer zu, mal klammer auf Eins minus Exponent minus T minus T null durch Tau Exponent Ende, die exponentielle Annäherung, Klammer zu. 
-Die Rechenwege zur Berechnung von Lade- und Entladevorgängen bei D C Fällen sind prinzipiell identisch
+Die Rechenwege zur Berechnung von Lade- und Entladevorgängen bei DC Fällen sind prinzipiell identisch
 und unterscheiden sich in diesem Beispiel nur beim Störterm (der Anregung), den Anfangsbedingungen und den eingeschwungenen Zuständen (den Endwerten).
 }% Speech Ende
 \end{frame}
@@ -953,11 +954,11 @@ und unterscheiden sich in diesem Beispiel nur beim Störterm (der Anregung), den
 }% Ende Folien only
 
 \speech{SchaltvorgaengeDC2RLVergleich}{1}{%
-Kommen wir nun zum Lade- und Entladevorgang eines R L Seriengliedes bei Gleichspannung. 
-Die Schaltung ist identisch zu den Beispielen mit dem R C Glied aufgebaut, nur dass die Kapazität mit einer Induktivität ersetzt wurde.
+Kommen wir nun zum Lade- und Entladevorgang eines RL Seriengliedes bei Gleichspannung. 
+Die Schaltung ist identisch zu den Beispielen mit dem RC Glied aufgebaut, nur dass die Kapazität mit einer Induktivität ersetzt wurde.
 Da es sich zum eine Schaltung mit nur einem Energiespeicher handelt, erhalten wir wieder eine DGL erster Ordnung. 
 Im Gegensatz zur Kapazität ist hier allerdings I stetig und U L sprunghaft, da die Energie im Magnetfeld der Induktivität gespeicher ist. 
-Als Vermutung können wir aufstellen, dass die Zeitverläufe prinzipiell ähnlich aussehen wie bei den D C Schaltvorgängen beim R C Glied.
+Als Vermutung können wir aufstellen, dass die Zeitverläufe prinzipiell ähnlich aussehen wie bei den DC Schaltvorgängen beim RC Glied.
 Sie können das Video kurz pausieren und überlegen, 
 ob die hier aufgestellte Gleichung für den Strom plausibel ist und
 ob die Zeitverläufe oben rechts für den Strom I und die Spannung U L plausibel ist. 
@@ -1127,18 +1128,14 @@ Spannung $\ecv{u_L}$ aus Strom $\eci{i}$ bestimmen:%
 Die Allgemeine Lösung ergibt sich durch Überlagerung beider Lösungen.
 }% Speech Ende
 \speech{SchaltvorgaengeDC2RLLadevorgang4}{2}{%
-und durch einsetzen unserer Anfangsbedingung bestimmen wir unsere Konstante.
-I von null ist gleich K mal e hoch null plus U Kuh durch R ist gleich Null.
+Die Konstante K erhalten wir durch einsetzen der Anfangsbedingung.
+Für diese gilt, dass der Anfangsstrom i zum Zeitpunkt null gleich null ist.
 Daraus folgt K ist gleich minus U Kuh durch R.
-Die eindeutige Lösung ergibt: U Kuh durch R mal Klammer auf eins minus e hoch minus Tee durch Tau Klammer zu.
-Die Spannung U L lässt sich über U L gleich L mal der zeitlichen Ableitung von I bestimmen.
-Durch Einsetzen und Vereinfachung folgt: U L ist gleich U q mal e hoch minus Lambda durch Tau.
-Als Probe können wir überlegen, ob die Ergebnisse plausibel sind.
-Der Strom I von Tee entspricht einer exponentiellen Annäherung an den maximalen Strom U Kuh durch R.
-Die Spannung fällt exponentiell ab vom Maximalwert U Kuh.
-Da die Induktivität lädt, passt die positive Spannung gemäß Verbraucherzählpfeilsystem.
-Da der eingeschwungene Strom konstant ist, geht U L gegen null.
-Beide Ergebnisse sind plausibel.
+Eingesetzt in unsere allgemeine Lösung ergibt sich die eindeutige Lösung.
+Durch etwas Umformung erhalten wir die gezeigte Form. 
+Diese entspricht einer exponentiellen Annäherung des Stromes an den Endwert U Kuh durch R.
+Die Spannung an der Induktivität lässt sich über die Komponentengleichung für L bestimmen.
+Durch einsetzen der Zeitkonstante und Vereinfachung erhalten wir die gezeigte Form.
 }% Speech Ende
 \end{frame}
 }% Ende Folien only Multi Frame
@@ -1363,12 +1360,12 @@ Im nächsten Video geht es weiter mit Schaltvorgängen bei sinusförmigen Anregu
 Willkommen zum Lehrvideo zum Thema Schaltvorgänge bei sinusförmiger Anregung.
 In diesem Video werden wir uns die Besonderheiten beim Schalten bei sinusförmiger Anregung herleiten.
 Hierfür wandeln wir leicht die Beispiele aus den vorigen Videos ab und betrachten 
-Schaltvorgänge bei einfachen R C und R L Serienschaltungen bei Anregung mit Wechselspannung.
+Schaltvorgänge bei einfachen RC und RL Serienschaltungen bei Anregung mit Wechselspannung.
 Sie lernen:
-Schaltvorgänge bei A C Anregung zu berechnen, 
+Schaltvorgänge bei AC Anregung zu berechnen, 
 welche Rolle Frequenz und Schaltzeitpunkt spielen,
 die Gefahr von Überströmen und -spannungen bei Schaltvorgängen abzuschätzen und
-Möglichkeiten zur Vermeidung von Schaltvorgängen bei A C Anregung kennen.
+Möglichkeiten zur Vermeidung von Schaltvorgängen bei AC Anregung kennen.
 }% Speech Ende
 \end{frame}%
 }% Video Only Frame Ende
@@ -1435,15 +1432,15 @@ Zunächst für eine Serienschaltung aus C und R und dann für eine Serienschaltu
 }% Speech Ende
 \speech{SchaltvorgaengeAC}{3}{%
 In beiden Beispielen erhalten wir wieder eine DGL erster Ordnung.
-Im Vergleich zu den D C Beispielen unterscheiden sich die DGL en hier nur durch einen sinusförmigen Störterm b. 
+Im Vergleich zu den DC Beispielen unterscheiden sich die DGL en hier nur durch einen sinusförmigen Störterm b. 
 Warum hängt unser Schaltvorgang nun speziell von der Frequenz und vom Schaltzeitpunkt ab?
-Pausieren Sie am Besten kurz das Video und überlegen Sie selbst eine Lösung, bevor diese eingeblendet wird. 
+Pausieren Sie am besten kurz das Video und überlegen Sie selbst eine Lösung, bevor diese eingeblendet wird. 
 }% Speech Ende
 \speech{SchaltvorgaengeAC}{4}{%
 Rechts sehen wir drei Zeitverläufe dargestellt. Zum Vergleich sind zwei Schaltvorgänge für unterschiedliche Schaltzeitpunkte dargestellt.
 Oben ist die Wechselspannung u q zu sehen, welche als AC Anregung dient. 
-In der Mitte ist der Schaltvorgang für die Spannung u C abgebildet, wenn bei T null geschalten wird.
-Unten ist der Schaltvorgang für die Spannung u C abgebildet, wenn bei T eins geschalten wird.
+In der Mitte ist der Schaltvorgang für die Spannung u C abgebildet, wenn bei T null geschaltet wird.
+Unten ist der Schaltvorgang für die Spannung u C abgebildet, wenn bei T eins geschaltet wird.
 Der erste Schaltvorgang im mittleren Plot ist als Überlagerung von u C in blau aus dem
 flüchtigen Zustand U C F in schwarz gestrichelt und dem eingeschwungenen Zustand U C e in schwarz dargestellt.
 Der eingeschwungene Zustand ist sinusförmig, der flüchtige Zustand exponentiell abklingend. 
@@ -1614,7 +1611,7 @@ Gesucht ist U C für T größer gleich T null.
 Die Lösung bestimmen wir allgemein für einen variablen Schaltzeitpunkt. Je nach T null wird der Zeitverlauf für U C zum Beispiel die rechts gezeigte Form annehmen.
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRC1}{3}{%
-Hier sehen kurz zur Übersicht die fünf Schritte des Berechnungsverfahrens und die zugehörigen Teillösungen die wir im Folgenden ausführlich berechnen werden.
+Hier sehen wir kurz zur Übersicht die fünf Schritte des Berechnungsverfahrens und die zugehörigen Teillösungen die wir im Folgenden ausführlich berechnen werden.
 }% Speech Ende
 \end{frame}
 
@@ -1645,7 +1642,7 @@ Hier sehen kurz zur Übersicht die fünf Schritte des Berechnungsverfahrens und 
     \end{align*}%
 
 \speech{SchaltvorgaengeACbeiRC2}{1}{%
-Der erste Schritt, das Aufstellen der DGL ist im Prinzip identisch zu den D C Beispielen. 
+Der erste Schritt, das Aufstellen der DGL ist im Prinzip identisch zu den DC Beispielen. 
 Der Unterschied ist nur, dass unser Störterm keine Gleichgröße ist, sondern eine Wechselspannung.
 Hier ist unser Störterm U Kuh von Tee gleich dem Scheitelwert U Kuh Dach mal Kosinus von omega T plus Phi Q.
 Der Phasenwinkel Phi Q kann hier Null gesetzt werden, hilft uns aber später zu erkennen, an welcher Stelle der Phasenwinkel der Quellenspannung eine Rolle spielt. 
@@ -1699,8 +1696,8 @@ Durch etwas Umformung kommen wir auf die Form:
 U C P Dach komplex ist gleich U Kuh Dach komplex durch eins plus J Omega C R. 
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRC3}{3}{%
-Durch Betragsbildung erhalten wir die Amplitude U C P dach mit der Lösungen unten links
-und durch Winkelbestimmung erhalten wir den Lastphasenwinkel Vieh Zeh P mit der Lösung unten rechts.
+Durch Betragsbildung erhalten wir die Amplitude U C P Dach mit der Lösung unten links.
+Durch Winkelbestimmung erhalten wir den Lastphasenwinkel Vieh Zeh P mit der Lösung unten rechts.
 Der Winkel Vieh Zeh P ist die Phasendifferenz der Quellenspannung U Kuh und der eingeschwungenen Spannung U C P. 
 }% Speech Ende
 \end{frame}
@@ -1725,10 +1722,10 @@ Der Winkel Vieh Zeh P ist die Phasendifferenz der Quellenspannung U Kuh und der 
 
 \speech{SchaltvorgaengeACbeiRC4}{1}{%
 Im vierten Schritten erhalten wir die allgemeine Lösung der inhomogenen DGL durch Überlagerung.
-Die Lösung besteht wie wir sehen aus einer abklingenden Exponentialkurve und einem sinusförmigen Schwingung.
+Die Lösung besteht wie wir sehen aus einer abklingenden Exponentialkurve und einer sinusförmigen Schwingung.
 Im fünften Schritt bestimmen wir die Konstanten durch Einsetzen unserer Anfangsbedingung.
 Die Kapazität sei zum Schaltzeitpunkt vollständig entladen. 
-Der Exponenzialterm reduziert sich zu e hoch null gleich eins und kann somit gekürzt werden. 
+Der Exponenzialterm reduziert sich zu e hoch null gleich eins und kann gekürzt werden. 
 Durch Umstellen erhalten wir unsere Konstante K. Wie wir sehen können, entspricht unser K mit
 K ist gleich Minus U C P Dach mal Kosinus von omega mal T null plus Vieh Zeh P, 
 genau dem negativen Wert des eingeschwungenen Zustandes zum Schaltzeitpunkt.
@@ -1759,12 +1756,12 @@ Umgekehrt wird der Einschwingvorgang maximal, wenn exakt während der Minima ode
     \end{minipage}%
 
 \speech{SchaltvorgaengeACUeberspannungenundstroeme}{1}{%
-Insbesondere bei großen Zeitkonstanten sind Überspannungen und -Ströme möglich!
+Insbesondere bei großen Zeitkonstanten sind Überspannungen und -ströme möglich!
 }% Speech Ende
 \speech{SchaltvorgaengeACUeberspannungenundstroeme}{2}{%
 Durch ungünstige Schaltzeitpunkte während der Minima oder Maxima des eingeschwungenen Zustandes, 
 können so Werte bis zum doppelten oder dreifachen Scheitelwert erreicht werden. 
-Der dreifache Scheitelwert ist möglich, wenn die Anfangsbedingung wäre, dass die Spannung während des Schaltzeitpunktes im Scheitelpunkt liegt. 
+Der dreifache Scheitelwert ist möglich, wenn die Anfangsbedingung ist, dass die Spannung während des Schaltzeitpunktes im Scheitelpunkt liegt. 
 }% Speech Ende
 \speech{SchaltvorgaengeACUeberspannungenundstroeme}{3}{%
 Durch geschicktes Schalten lassen sich Ausgleichsvorgänge aber auch vollständig vermeiden. 
@@ -1919,7 +1916,7 @@ Gesucht ist I von Tee ab dem Schaltzeitpunkt T null. Zum Zeitpunkt T null fließ
 Die Berechnung erfolgt analog zum vorigen Beispiel am R C Glied. 
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRL1}{2}{%
-Oben rechts sind die sich Zeitverläufe von der Anregung U q der gesuchten Größe I von Tee und für einen Beispiel Schaltzeitpunkt T Null dargestellt. 
+Oben rechts sind die Zeitverläufe von der Anregung U q der gesuchten Größe I von Tee und für einen Beispiel Schaltzeitpunkt T Null dargestellt. 
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRL1}{3}{%
 Unten sehen Sie zur Übersicht und Zusammenfassung das Berechnungsverfahren mit Teillösungen.
@@ -1960,7 +1957,7 @@ Genau wie beim R C Beispiel ist unsere Störgröße sinusförmig. Hier ist unser
 mit U q gleich U q Dach mal Kosinus von omega T plus Vieh Kuh.
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRL2}{2}{%
-Die homogene Lösung können wir wieder aus unserem D C Beispiel übernehmen, hier mit allgemeinem Schaltzeitpunkt T null.
+Die homogene Lösung können wir wieder aus unserem DC Beispiel übernehmen, hier mit allgemeinem Schaltzeitpunkt T null.
 Die Zeitkonstante ergibt sich wieder durch Tau gleich L durch R. 
 }% Speech Ende
 \end{frame}
@@ -2037,9 +2034,9 @@ dem negativen und dem positiven Scheitelwert I p Dach annehmen.
 }% Speech Ende
 \speech{SchaltvorgaengeACbeiRL4}{3}{%
 Die Spannung U L an der Induktivität erhalten wir mit U L ist gleich L mal d nach d T von I. 
-Achtung: Anders als der Strom, kann die Spannung U L springen! 
-Wir sehen das an der Gleichung, dass sich der Exponenzialterm und der sinusförmige Term zum Schaltzeitpunkt nicht direkt aufheben. 
-Zur Übung können Sie:
+Achtung. Im Gegensatz zum Strom kann die Spannung U L springen! 
+Das sehen wir an der Gleichung, da sich der Exponenzialterm und der sinusförmige Term zum Schaltzeitpunkt nicht gegenseitig aufheben. 
+Zur Übung können Sie.
 Erstens den Zeitverlauf für die Spannung U L in diesem Beispiel skizzieren.
 Zweitens den Zeitverlauf für den Strom beim R C Beispiel skizzieren.
 Und drittens überlegen, welche Zeitverläufe sich beim Zurückschalten von Wechselspannungsquelle zu Kurzschluss ergeben.
@@ -2396,9 +2393,9 @@ Wie wir sehen werden, lässt sich die homogene Lösung für den aperiodischen Fa
 %    Im Gegensatz zur homogenen Lösung ist $\ecv{u_{C,\mathrm{p}}}$ für alle drei Fälle identisch.
 %}%
 \speech{SchaltvorgaengeRLC1FallunterscheidungAperiodisch1}{1}{%
-Beginnen wir beim aperiodischen Fall, auch Kriechfall genannt, bei positiver Diskriminante D.
+Beginnen wir beim aperiodischen Fall, auch Kriechfall genannt, mit positiver Diskriminante D.
 Wie in der Gleichung für Lambda eins und zwei oben rechts zu erkennen ist, ergeben sich in diesem Fall zwei verschiedene, reelle Eigenwerte.
-Hierbei können nur negative Werte auftreten, da der Term vor der Wurzel betragsmäßig immer größer ist als der Wurzelterm.
+Diese sind stets negativ, da der Term vor der Wurzel betragsmäßig größer ist als der Wurzelterm.
 }% Speech Ende
 \speech{SchaltvorgaengeRLC1FallunterscheidungAperiodisch1}{2}{%
 Die homogene Lösung besteht aus der Überlagerung zweier Exponentialfunktionen mit den Eigenwerten Lambda eins und Lambda zwei.
