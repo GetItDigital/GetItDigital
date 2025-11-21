@@ -1,14 +1,14 @@
 \begin{circuitikz}[scale=0.8]
     \centering
-    \draw (0,-0.3) to[V] (0,4.2)
-    -- (1,4.2) to[opening normal closed switch, l={Schalter wird bei $t_\mathrm{0} = 5\tau$ geöffnet}] (3,4.2)
+    \draw (0,-0.3) to [short] (0,4.2)
+    -- (1,4.2) to[closing normal open switch, l={Schalter wird bei $t_\mathrm{0} = 0$ geschlossen}] (3,4.2)
     -- (4,4.2);
     \draw (4,4.2)   to [C,i,v, name=C, l={$C$}] (4,2.2);
     \draw (4,0.2) -- (4,-0.2);
     \draw (4,-0.3) -- (0,-0.3);
     \draw (4,2.2)   to [R,v, name=R, l={$R$}] (4,-0.3);
-    \draw[-latex, thick, color=cyan] (-0.7,2.55)  to node[midway,left, color=cyan] {$U_\mathrm{q}$}
-    (-0.7,1.35);
+    %\draw[-latex, thick, color=cyan] (-0.7,2.55)  to node[midway,left, color=cyan] {$U_\mathrm{q}$}
+    %(-0.7,1.35);
     \iarrmore{C}{$i(t)$};
     \varrmore{C}{$u_\mathrm{C}(t)$};
     \varrmore{R}{$u_\mathrm{R}(t)$};
@@ -18,7 +18,7 @@
 \begin{tikzpicture}
     \begin{axis} [
             xlabel={Zeit},
-            ylabel={\textcolor{voltage} {$u_\mathrm{C}(t)$}\only<2->{/\textcolor{current}{$i(t)$}} } ,
+            ylabel={\textcolor{voltage} {$u_\mathrm{C}(t)$}}/\textcolor{current}{$i(t)$} ,
             % ylabel={
             % 	\textcolor{cyan}{$U_\mathrm{q}$}}
             % 	\only<3->{/ \textcolor{voltage}{$u_\mathrm{C}(t)$}}
@@ -29,7 +29,7 @@
             yticklabels={%
                     0,%
                     37\%,%
-                    63\%,%
+                    ,%l
                     100\%
                 },
             %yticklabels={0,37\%, 63\%, 100\%},
@@ -43,37 +43,35 @@
             font=\small,
             legend style={font=\scriptsize}
         ]
-        \addplot [voltage, domain=0:12, samples=100] {ifthenelse(x<0, 0, 1 - exp(-(x)))};
-        \only<2->{\addplot [current, domain=0:12, samples=100] {ifthenelse(x<0, 0,     exp(-(x)))};}
-
+        \addplot [current, domain=0:12, samples=100] {ifthenelse(x<0, 0,     exp(-(x)))};
+        \addplot [voltage, domain=0:12, samples=100] {ifthenelse(x<0, 0,  exp(-(x)))};
         %Schalter markierung in Graph
-        \addplot [cyan,thick, dotted] coordinates {(5,1) (5,0)};
+        %\addplot [cyan,thick, dotted] coordinates {(5,1) (5,0)};
 
-        % Markierung der Zeitkonstanten
-        \draw[dashed] (axis cs:1,0) -- (axis cs:1,0.63) node[right] {};
-        \draw[dashed] (axis cs:0,0.63) -- (axis cs:1,0.63) node[right] {};
-        
-        \only<2->{\draw[dashed] (axis cs:1,0) -- (axis cs:1,0.37) node[right] {};
-            \draw[dashed] (axis cs:0,0.37) -- (axis cs:1,0.37) node[right] {};}
-        \node[right] at (5,0.5) {$t_\mathrm{0}=5\tau$};
+                % Markierung der Zeitkonstanten
+        %\draw[dashed] (axis cs:1,0) -- (axis cs:1,0.63) node[right] {};
+        \draw[dashed] (axis cs:1,0) -- (axis cs:1,0.37) node[right] {};
+        \draw[dashed] (axis cs:0,0.37) -- (axis cs:1,0.37) node[right] {};
+        %\draw[dashed] (axis cs:0,0.63) -- (axis cs:1,0.63) node[right] {};
+        %\node[right] at (5,0.5) {$t_\mathrm{0}=5\tau$};
 
         % Punkte zur Hervorhebung
-        \addplot[
-            only marks,
-            mark=*,
-            mark options={scale=0.7, fill=black}
-        ]  coordinates {
-                (1, 0.63)
+        % \addplot[
+                % only marks,
+                % mark=*,
+                % mark options={scale=0.7, fill=black}
+            % ]  coordinates {
+                    % (1, 0.63)
 
-            };
-        \only<2->{ \addplot[
+                % };
+        \addplot[
                 only marks,
                 mark=*,
                 mark options={scale=0.7, fill=black}
             ]  coordinates {
                     (1, 0.37)
 
-                };}
+                };
 
     \end{axis}
 \end{tikzpicture}
