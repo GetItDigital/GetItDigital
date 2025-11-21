@@ -1,84 +1,71 @@
+\newvideofile{OPV_Analogrechner}{Analogrechner}
 \begin{frame}
     \fta{Operationsverstärker als Analogrechner}
     \s{
-    Neben dem Einsatz von Operationsverstärkern in Messverstärkern, werden OPVs auch in Analogrechnern eingesetzt.
-    Das mag in der Zeit hochperformanter Prozessoren nicht mehr relevant wirken, hat aber durchaus Vorteile. So kann die Berechnungszeit mithilfe von Operationsverstärkern deutlich reduziert werden.
-    Das macht vor allem in Anwendungen Sinn, in denen nur eine Rechenoperation (Multiplikation, Addition o.ä.) durchgeführt werden soll, aber so gut wie keine Latenzen auftreten dürfen.
-    Dies ist heutzutage noch häufig in der Regelungstechnik der Fall. 
+        Neben dem Einsatz von Operationsverstärkern in Messverstärkern, werden OPVs auch in Analogrechnern eingesetzt.
+        Das mag in der Zeit hochperformanter Prozessoren nicht mehr relevant wirken, hat aber durchaus Vorteile. So kann die Berechnungszeit mithilfe von Operationsverstärkern deutlich reduziert werden.
+        Das macht vor allem in Anwendungen Sinn, in denen nur eine Rechenoperation (Multiplikation, Addition o.ä.) durchgeführt werden soll, aber so gut wie keine Latenzen auftreten dürfen.
+        Dies ist heutzutage noch häufig in der Regelungstechnik der Fall.
     
-    Es sollen im Rahmen dieses Kapitels folgende Kompetenzen erworben werden:
-    \s{
-        \begin{Lernziele}{Operationsverstärker}
-            \title{Lernziele: Operationsverstärker als Analogrechner}
-            Die Studierenden können
-            \begin{itemize}
-                \item geeignete Operationsverstärkerschaltungen für eine Problemlösung angegeben.
-                \item Widerstandsverhältnisse berechnen.
-            \end{itemize}
-        \end{Lernziele}
-    }
-%\speech{Operationsverstärker als Analogrechner}{1}{
-%    Neben dem Einsatz von Operationsverstärkern in Messverstärkern, werden OPVs auch in Analogrechnern eingesetzt.
-%    Das mag in der Zeit hochperformanter Prozessoren nicht mehr relevant wirken, hat aber durchaus Vorteile. So kann die Berechnungszeit mithilfe von Operationsverstärkern deutlich reduziert werden.
-%    Das macht vor allem in Anwendungen Sinn, in denen nur eine Rechenoperation (Multiplikation, Addition o.ä.) durchgeführt werden soll, aber so gut wie keine Latenzen auftreten dürfen.
-%    Dies ist heutzutage noch häufig in der Regelungstechnik der Fall.
-%    Es sollen im Rahmen dieses Kapitels folgende Kompetenzen erworben werden:
-%}
-
-%\speech{Lernziele: Operationsverstärker als Analogrechner}{1}{
-%    Die Studierenden können geeignete Operationsverstärkerschaltungen für eine Problemlösung angeben und Widerstandsverhältnisse berechnen. 
-%    Sie können mithilfe von Operationsverstärkerschaltungen einen Analogrechner aufbauen und die Funktionsweise erklären.
-%}
-    Im Folgenden sollen ein Beispiel vorgestellt werden, das zeigen soll, wie mithilfe der in der Tabelle gegebenen Operationsverstärkergrundschaltungen 
-    ein Analogrechner aufgebaut werden kann.
-
-    \begin{bsp}{Beispiel Analogrechner}{Beispiel Analogrechner}
-        Es soll eine Schaltung entworfen werden, die folgende Funktion umsetzt:
-        \begin{equation}
-            U_{\textnormal{A}} = \int U_{\textnormal{E1}} dt +x \cdot U_{\textnormal{E1}} - 2\cdot U_{\textnormal{E2}} 
-        \end{equation}
-        
-        \textbf{Lösung}\\
-        Zunächst muss die Gleichung in zwei Teilprobleme zerlegt werden, die mithilfe von Operationsverstärkerschaltungen gelöst werden können.
-        Das erste Teilproblem bildet die Integration des Eingangssignals $U_{E1}$. Dazu soll zunächst eine Integratorschaltung verwendet werden.
-        Das zweite Teilproblem bildet die Addition der Signale. Dafür kann ein Summierer verwendet werden.
-        Durch eine Kombination von einer Integratorschaltung und einem Summierer ist also das gewünschte Verhalten zu erreichen. Ist es mit dieser Schaltung möglich x=0 zu wählen?
-        
-            \fu{
-            \resizebox{0.6\textwidth}{!}{\input{Tikz/src/Analogrechner.tex}}
-            }{Schaltung zur Lösung der Analogrechneraufgabe
-            \label{fig:Analogrechner}}
-
-        \begin{equation}
-            U_{\textnormal{A}} = \underbrace{\left[ -\frac{1}{R_1 \cdot C} \int_{0}^{t} U_{\textnormal{E1}}~dt -\frac{R_2}{R_1} \cdot U_{\textnormal{E1}} \right]}_{Formel~des~Integrators} \underbrace{\cdot\left(-\frac{R_5}{R_3}\right)-\frac{R_5}{R_4}\cdot U_{\textnormal{E2}}}_{Formel~des~Summierers} 
-        \end{equation}
-        Dies kann nun wie folgt umgeformt werden
-        \begin{equation}
-            U_{\textnormal{A}} = \underbrace{\frac{R_5}{R_1 \cdot R_3 \cdot C}}_{\stackrel{!}{=}1} \int_{0}^{t} U_{\textnormal{E1}}~dt + \underbrace{\frac{R_2 R_5}{R_1 R_3}}_{\stackrel{!}{=}x} U_{\textnormal{E1}} -\underbrace{\frac{R_5}{R_4}}_{\stackrel{!}{=}2} \cdot U_{\textnormal{E2}} 
-        \end{equation}
-
-        Wie der Formel zu entnehmen ist, müssen nun die Bauteilwerte nur noch so gewählt werden, dass sich die richtigen Vorfaktoren ergeben.
-        Eine Wahl von x=0 ist nur möglich, wenn der Widerstand $R_2$ weggelassen wird. In diesem Fall ergibt sich ein \glqq idealer\grqq{}, der in der Realität so allerdings in der Regel nicht aufgebaut wird. 
-
-    \end{bsp}
-   %% \f{width=1\textwidth}{width=\textwidth}{kap5/Analogrechner.tex}{Schaltung zur Lösung der Analogrechneraufgabe \label{fig:Analogrechner Skript}} 
-
-
-    }
-	\b{\frametitle{Operationsverstärker als Analogrechner}
-        Es soll eine Schaltung entworfen werden, die folgende Funktion umsetzt:
-        \begin{equation}
-            U_{\textnormal{A}} = \int U_{\textnormal{E1}}~dt +x \cdot U_{\textnormal{E1}} - 2\cdot U_{\textnormal{E2}} 
-        \end{equation}
-
-        Wie kann das erreicht werden? Überlegen Sie sich zunächst, welche Grundschaltungen hierfür zu kombinieren sind. 
+        Es sollen im Rahmen dieses Kapitels folgende Kompetenzen erworben werden:
+        \s{
+            \begin{Lernziele}{Operationsverstärker}
+                \title{Lernziele: Operationsverstärker als Analogrechner}
+                Die Studierenden können
+                \begin{itemize}
+                    \item geeignete Operationsverstärkerschaltungen für eine Problemlösung angegeben.
+                    \item Widerstandsverhältnisse berechnen.
+                \end{itemize}
+            \end{Lernziele}
         }
-    \speech{OPV_als_Analogrechner}{1}{Schauen wir uns nun an, wie man einen Operationsverstärker als Analogrechner nutzen kann.
-    Die Aufgabe lautet: Wir sollen eine Schaltung entwerfen, die folgendes berechnet:
-    U A gleich Integral von U E eins dt plus x mal U E eins minus 2 mal U E zwei.
-    Wir erkennen sofort: Hier stecken mehrere mathematische Operationen drin.
-    Einmal ein Integral von U E eins, dann eine Multiplikation mit einem Faktor x, und schließlich eine Subtraktion von zwei mal U E zwei.
-    Das Ziel ist also, diese drei Terme mit OP V-Grundschaltungen nachzubilden.} %seed: 885471
+    
+        Im Folgenden sollen ein Beispiel vorgestellt werden, das zeigen soll, wie mithilfe der in der Tabelle gegebenen Operationsverstärkergrundschaltungen
+        ein Analogrechner aufgebaut werden kann.
+    
+        \begin{bsp}{Beispiel Analogrechner}{Beispiel Analogrechner}
+            Es soll eine Schaltung entworfen werden, die folgende Funktion umsetzt:
+            \begin{equation}
+                U_{\textnormal{A}} = \int U_{\textnormal{E1}} dt +x \cdot U_{\textnormal{E1}} - 2\cdot U_{\textnormal{E2}}
+            \end{equation}
+    
+            \textbf{Lösung}\\
+            Zunächst muss die Gleichung in zwei Teilprobleme zerlegt werden, die mithilfe von Operationsverstärkerschaltungen gelöst werden können.
+            Das erste Teilproblem bildet die Integration des Eingangssignals $U_{E1}$. Dazu soll zunächst eine Integratorschaltung verwendet werden.
+            Das zweite Teilproblem bildet die Addition der Signale. Dafür kann ein Summierer verwendet werden.
+            Durch eine Kombination von einer Integratorschaltung und einem Summierer ist also das gewünschte Verhalten zu erreichen. Ist es mit dieser Schaltung möglich x=0 zu wählen?
+    
+            \fu{
+                \resizebox{0.6\textwidth}{!}{\input{Tikz/src/Analogrechner.tex}}
+            }{Schaltung zur Lösung der Analogrechneraufgabe
+                \label{fig:Analogrechner}}
+    
+            \begin{equation}
+                U_{\textnormal{A}} = \underbrace{\left[ -\frac{1}{R_1 \cdot C} \int_{0}^{t} U_{\textnormal{E1}}~dt -\frac{R_2}{R_1} \cdot U_{\textnormal{E1}} \right]}_{Formel~des~Integrators} \underbrace{\cdot\left(-\frac{R_5}{R_3}\right)-\frac{R_5}{R_4}\cdot U_{\textnormal{E2}}}_{Formel~des~Summierers}
+            \end{equation}
+            Dies kann nun wie folgt umgeformt werden
+            \begin{equation}
+                U_{\textnormal{A}} = \underbrace{\frac{R_5}{R_1 \cdot R_3 \cdot C}}_{\stackrel{!}{=}1} \int_{0}^{t} U_{\textnormal{E1}}~dt + \underbrace{\frac{R_2 R_5}{R_1 R_3}}_{\stackrel{!}{=}x} U_{\textnormal{E1}} -\underbrace{\frac{R_5}{R_4}}_{\stackrel{!}{=}2} \cdot U_{\textnormal{E2}}
+            \end{equation}
+    
+            Wie der Formel zu entnehmen ist, müssen nun die Bauteilwerte nur noch so gewählt werden, dass sich die richtigen Vorfaktoren ergeben.
+            Eine Wahl von x=0 ist nur möglich, wenn der Widerstand $R_2$ weggelassen wird. In diesem Fall ergibt sich ein \glqq idealer\grqq{}, der in der Realität so allerdings in der Regel nicht aufgebaut wird.
+    
+        \end{bsp}
+        %% \f{width=1\textwidth}{width=\textwidth}{kap5/Analogrechner.tex}{Schaltung zur Lösung der Analogrechneraufgabe \label{fig:Analogrechner Skript}} 
+    }
+
+    \b{
+        \frametitle{Operationsverstärker als Analogrechner}
+        Es soll eine Schaltung entworfen werden, die folgende Funktion umsetzt:
+        \begin{equation}
+            U_{\textnormal{A}} = \int U_{\textnormal{E1}}~dt +x \cdot U_{\textnormal{E1}} - 2\cdot U_{\textnormal{E2}}
+        \end{equation}
+    
+        Wie kann das erreicht werden? Überlegen Sie sich zunächst, welche Grundschaltungen hierfür zu kombinieren sind.
+    }
+    \speech{OPV_als_Analogrechner_1}{1}{Schauen wir uns nun an, wie man einen Operationsverstärker als Analogrechner nutzen kann. Die Aufgabe lautet: Wir sollen eine Schaltung entwerfen, die folgendes berechnet: U A gleich Integral von U E eins dt plus x mal U E eins minus 2 mal U E zwei. Wir erkennen sofort: Hier stecken mehrere mathematische Operationen drin. Einmal ein Integral von U E eins, dann eine Multiplikation mit einem Faktor x, und schließlich eine Subtraktion von zwei mal U E zwei. Das Ziel ist also, diese drei Terme mit OP V-Grundschaltungen nachzubilden.}
+    %seed: 885471
+    \silence{3}
 \end{frame}
 
 \begin{frame}
@@ -90,42 +77,33 @@
         \begin{figure}[ht]
             \centering
             \fu{
-            \resizebox{0.7\textwidth}{!}{\input{Tikz/src/Analogrechner.tex}}
+                \resizebox{0.7\textwidth}{!}{\input{Tikz/src/Analogrechner.tex}}
             }{Schaltung zur Lösung der Analogrechneraufgabe
-            \label{fig:Analogrechner2}}
+                \label{fig:Analogrechner2}}
         \end{figure}
         Durch eine Kombination von einer Integratorschaltung und einem Summierer ist also das gewünschte Verhalten zu erreichen. Ist es mit dieser Schaltung möglich x=0 zu wählen?
-        }
-    \speech{OPV_als_Analogrechner}{2}{Hier sehen wir die Lösungsschaltung.
-    Im linken Zweig haben wir einen Integrator, der die erste Operation übernimmt - also das Integral von : U E  eins
-    Im rechten Teil steckt ein Summierer, mit dem wir die anderen beiden Terme addieren beziehungsweise subtrahieren.
-    Durch die Wahl der Widerstände können wir die Faktoren so einstellen, dass genau die geforderte Funktion herauskommt.
-    Ein interessanter Punkt ist die Frage nach dem Faktor x:
-    x gleich 0 ist nur möglich, wenn wir den Widerstand R zwei komplett weglassen. Dann verschwindet dieser Anteil aus der Schaltung.} %seed: 885507
+    }
+    \speech{OPV_als_Analogrechner_2}{1}{Hier sehen wir die Lösungsschaltung. Im linken Zweig haben wir einen Integrator, der die erste Operation übernimmt - also das Integral von : U E  eins. Im rechten Teil steckt ein Summierer, mit dem wir die anderen beiden Terme addieren beziehungsweise subtrahieren. Durch die Wahl der Widerstände können wir die Faktoren so einstellen, dass genau die geforderte Funktion herauskommt. Ein interessanter Punkt ist die Frage nach dem Faktor x: x gleich 0 ist nur möglich, wenn wir den Widerstand R zwei komplett weglassen. Dann verschwindet dieser Anteil aus der Schaltung.}
+    %seed: 885507
+    \silence{3}
 \end{frame}
 
 \begin{frame}
-    \b{   
+    \b{
         \frametitle{Lösungsschritt 2: Rechnung}
-       
+
         \begin{equation}
-            U_{\textnormal{A}} = \underbrace{\left[ -\frac{1}{R_1 \cdot C} \int_{0}^{t} U_{\textnormal{E1}}~dt -\frac{R_2}{R_1} \cdot U_{\textnormal{E1}} \right]}_{Formel~des~Integrators} \underbrace{\cdot\left(-\frac{R_5}{R_3}\right)-\frac{R_5}{R_4}\cdot U_{\textnormal{E2}}}_{Formel~des~Summierers} 
+            U_{\textnormal{A}} = \underbrace{\left[ -\frac{1}{R_1 \cdot C} \int_{0}^{t} U_{\textnormal{E1}}~dt -\frac{R_2}{R_1} \cdot U_{\textnormal{E1}} \right]}_{Formel~des~Integrators} \underbrace{\cdot\left(-\frac{R_5}{R_3}\right)-\frac{R_5}{R_4}\cdot U_{\textnormal{E2}}}_{Formel~des~Summierers}
         \end{equation}
         Dies kann nun wie folgt umgeformt werden
         \begin{equation}
-            U_{\textnormal{A}} = \underbrace{\frac{R_5}{R_1 \cdot R_3 \cdot C}}_{\stackrel{!}{=}1} \int_{0}^{t} U_{\textnormal{E1}}~dt + \underbrace{\frac{R_2 R_5}{R_1 R_3}}_{\stackrel{!}{=}x} U_{\textnormal{E1}} -\underbrace{\frac{R_5}{R_4}}_{\stackrel{!}{=}2} \cdot U_{\textnormal{E2}} 
+            U_{\textnormal{A}} = \underbrace{\frac{R_5}{R_1 \cdot R_3 \cdot C}}_{\stackrel{!}{=}1} \int_{0}^{t} U_{\textnormal{E1}}~dt + \underbrace{\frac{R_2 R_5}{R_1 R_3}}_{\stackrel{!}{=}x} U_{\textnormal{E1}} -\underbrace{\frac{R_5}{R_4}}_{\stackrel{!}{=}2} \cdot U_{\textnormal{E2}}
         \end{equation}
 
         Wie der Formel zu entnehmen ist, müssen nun die Bauteilwerte nur noch so gewählt werden, dass sich die richtigen Vorfaktoren ergeben.
-        Eine Wahl von x=0 ist nur möglich, wenn der Widerstand $R_2$ weggelassen wird. 
+        Eine Wahl von x=0 ist nur möglich, wenn der Widerstand $R_2$ weggelassen wird.
     }
-    \speech{OPV_als_Analogrechner}{3}{Zum Schluss sehen wir hier die formale Berechnung.
-    Wir setzen die Bauteile R1 bis R5 und den Kondensator C ein und erhalten:
-    U A gleich in Klammern eins geteilt durch R1 mal C mal Integral von U E eins dt plus in Klammern R3 geteilt durch R2 mal U E eins minus in Klammern R4 geteilt durch R5 mal U E zwei.
-    Damit haben wir genau das, was gefordert war:
-    den Integrator,
-    den Faktor x,
-    und den Term minus 2 mal U E zwei, wenn wir die Widerstände passend wählen.
-    Wir sehen also: Mit einer geschickten Kombination von Integrator und Summierer können wir komplexe mathematische Funktionen rein analog mit Operationsverstärkern realisieren.} %seed: 887673
+    \speech{OPV_als_Analogrechner_3}{1}{Zum Schluss sehen wir hier die formale Berechnung. Wir setzen die Bauteile R1 bis R5 und den Kondensator C ein und erhalten: U A gleich in Klammern eins geteilt durch R1 mal C mal Integral von U E eins dt plus in Klammern R3 geteilt durch R2 mal U E eins minus in Klammern R4 geteilt durch R5 mal U E zwei. Damit haben wir genau das, was gefordert war: den Integrator, den Faktor x,  und den Term minus 2 mal U E zwei, wenn wir die Widerstände passend wählen. Wir sehen also: Mit einer geschickten Kombination von Integrator und Summierer können wir komplexe mathematische Funktionen rein analog mit Operationsverstärkern realisieren.}
+    %seed: 887673
+    \silence{3}
 \end{frame}
-

@@ -24,12 +24,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="2.6547418"
-     inkscape:cx="191.16737"
+     inkscape:cx="190.97902"
      inkscape:cy="374.04768"
-     inkscape:window-width="1920"
-     inkscape:window-height="1002"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="2160"
+     inkscape:window-height="1136"
+     inkscape:window-x="-2167"
+     inkscape:window-y="-7"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -275,7 +275,7 @@
        id="path1352-9" />
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.1398px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold Italic';letter-spacing:0px;stroke-width:0.167339"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.1398px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;letter-spacing:0px;stroke-width:0.167339"
        x="103.80296"
        y="108.77406"
        id="text18928"
@@ -284,7 +284,7 @@
        inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
          id="tspan18926"
-         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.1398px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold Italic';stroke-width:0.167339"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.1398px;font-family:Calibri;-inkscape-font-specification:Calibri;stroke-width:0.167339"
          x="103.80296"
          y="108.77406">$Q$</tspan></text>
     <rect
@@ -376,9 +376,9 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect15);display:inline;fill:#f02d2d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="409.5"
          y="469.66437"
-         id="tspan85823"><tspan
+         id="tspan1835"><tspan
            style="stroke:none"
-           id="tspan85821">$\vec{E}$</tspan></tspan></text>
+           id="tspan1833">$\vec{E}$</tspan></tspan></text>
     <path
        style="display:inline;fill:#ff0000;stroke:#f02d2d;stroke-width:0.635;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-3)"
        d="M 101.94672,70.262113 V 113.37488"

@@ -25,11 +25,11 @@
      showgrid="false"
      inkscape:zoom="3.7543719"
      inkscape:cx="263.69258"
-     inkscape:cy="221.0756"
+     inkscape:cy="221.20877"
      inkscape:window-width="1920"
-     inkscape:window-height="1002"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1001"
+     inkscape:window-x="-7"
+     inkscape:window-y="-7"
      inkscape:window-maximized="1"
      inkscape:current-layer="g1939-2" />
   <defs
@@ -78,7 +78,7 @@
            id="tspan11430"
            style="stroke-width:0.720235"
            x="4.3132148"
-           y="120.95802">$\mathrm{d}A$</tspan></text>
+           y="120.95802">$\mathrm{d}l$</tspan></text>
     </g>
   </g>
 </svg>

@@ -85,29 +85,24 @@
 \begin{frame}
 	\ftx{Induzierte Spannung}
 	\b{
-		\begin{minipage}{0.2\textwidth}
-			\centering
-			\begin{itemize}
-				\item[$\Rightarrow$]
-				\item[$\Rightarrow$]
-				\item[$\Rightarrow$]
-				\item[$\Rightarrow$]
-			\end{itemize}
-		\end{minipage}
-		\hfill
-		\begin{minipage}{0.8\textwidth}
-			\centering
-			\[
-			\begin{aligned}
-				U_\mathrm{i} & \sim \frac{\mathrm{d}\phi}{\mathrm{d}t}\\
-				U_\mathrm{i} & = -N \cdot \frac{\mathrm{d}\phi}{\mathrm{d}t}\\
-				U_\mathrm{i} & \sim \frac{\mathrm{d}I}{\mathrm{d}t}\\
-				U_\mathrm{i} & = -L \cdot \frac{\mathrm{d}I}{\mathrm{d}t}\\
-			\end{aligned}
-			\]
-		\end{minipage}
+		\begin{itemize}\centering
+			\item $U_\mathrm{i} \sim \frac{\mathrm{d}\phi}{\mathrm{d}t}$
+		\end{itemize}\centering
+		
+		\begin{itemize}\centering
+			\item $U_\mathrm{i}= -N \cdot \frac{\mathrm{d}\phi}{\mathrm{d}t}$
+		\end{itemize}\centering
+		
+		\begin{itemize}\centering
+			\item $U_\mathrm{i} \sim \frac{\mathrm{d}I}{\mathrm{d}t}$
+		\end{itemize}
+		
+		\begin{itemize}\centering
+			\item $U_\mathrm{i}= -L \cdot \frac{\mathrm{d}I}{\mathrm{d}t}$
+		\end{itemize}
 	}
 \end{frame}
+
 \s{
 	Der britische Physiker und Chemiker Michael Faraday führte mitte des 19. Jahrhunderts Experimente durch,
 	bei denen er eine Spule in der Nähe eines Magneten bewegte oder den Strom in einer benachbarten Spule veränderte.
@@ -146,17 +141,33 @@
 %%%%% Zeitabhängige Formeln für induktivität
 
 \begin{frame}
-	\ftx{Zeitabhängige Formeln der Induktivität}
-	\b{
-		$\bullet \quad $ Spannung über der Induktivität
-		\begin{equation*}
-			u_\mathrm{L}(t) = L \cdot \frac{di_\mathrm{L}(t)}{dt}
-		\end{equation*}
-		$\bullet \quad $ Strom durch die Induktivität
-		\begin{equation*}
-			i_\mathrm{L}(t) = \frac{1}{L} \cdot \int u_\mathrm{L}(t) \, dt
-		\end{equation*}
-	}
+	\begin{overlayarea}{\textwidth}{0.9\textheight}
+		\ftx{Zeitabhängige Formeln der Induktivität}
+		\b{
+			\vspace{0.6cm}
+				$\bullet \quad $ Spannung über der Induktivität
+				\begin{equation*}
+					u_\mathrm{L}(t) = L \cdot \frac{di_\mathrm{L}(t)}{dt}
+				\end{equation*}
+				$\bullet \quad $ Strom durch die Induktivität
+				\begin{equation*}
+					i_\mathrm{L}(t) = \frac{1}{L} \cdot \int u_\mathrm{L}(t) \, dt
+				\end{equation*}
+			
+			\only<2->{
+				\vspace{-1cm}
+				\begin{Merksatz}
+
+					\begin{itemize}
+						\item Der Strom durch eine Induktivität kann sich nicht sprunghaft ändern
+						\item Für DC stellt die Induktivität einen Kurzschluss daran
+						\item Bei plötzlichen Stromänderungen (Schalten) entstehen sehr hohe Spannungen
+					\end{itemize}
+				\end{Merksatz}
+				
+			}
+		}
+	\end{overlayarea}
 \end{frame}
 
 \s{
@@ -380,7 +391,7 @@
 	
 	\b{
 		\begin{equation*}
-			\mu = \mu_\mathrm{r} \cdot \mu_\mathrm{0} \quad,\quad \text{[H/m]}
+			\mu = \mu_\mathrm{r} \cdot \mu_\mathrm{0} \quad \quad \text{[H/m]}
 		\end{equation*}
 		
 		% Erklärungen der Permeabilität
@@ -436,7 +447,7 @@
 		
 		% Erklärung der Symbole und Herleitung der Einheiten
 		\begin{align*}
-			\mu & : \text{Permeabilitätskonstante]} \\
+			\mu & : \text{Permeabilitätskonstante} \\
 			I   & : \text{Elektrische Stromstärke}  \\
 			N   & : \text{Anzahl der Windungen}     \\
 			l   & : \text{Länge des Magnetkreises}

@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="linienladung_neu.svg"
+   sodipodi:docname="linienladung.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,12 +24,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.3273709"
-     inkscape:cx="326.96211"
-     inkscape:cy="195.87592"
+     inkscape:cx="326.96212"
+     inkscape:cy="195.49924"
      inkscape:window-width="1920"
-     inkscape:window-height="1002"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1001"
+     inkscape:window-x="-7"
+     inkscape:window-y="-7"
      inkscape:window-maximized="1"
      inkscape:current-layer="g1939-2" />
   <defs
@@ -78,7 +78,7 @@
            id="tspan11430"
            style="stroke-width:0.720235"
            x="9.4928684"
-           y="119.61514">$\mathrm{d}A$</tspan></text>
+           y="119.61514">$\mathrm{d}l$</tspan></text>
     </g>
   </g>
 </svg>

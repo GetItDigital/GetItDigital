@@ -1,281 +1,212 @@
-\s{\begin{frame}
-    \fta{Modellierung und charakteristische Größen}
-    Der vereinfachte Schaltplan des vorherigen Kapitels eignet sich zwar gut um die interne Funktionsweise zu illustrieren, ist für die Darstellung in größeren Schaltkreisen allerdings ungeeignet. 
-    Um Schaltpläne übersichtlicher zu gestalten werden Operationsverstärker in der Regel durch ein Normsymbol dargestellt. 
-    Der interne Aufbau des Verstärkers wird vernachlässigt und diesem allgemeinen Verstärker charakteristische Eigenschaften zugeordnet.
-    Ähnlich wie bei dem Transistorsymbol kann so der Operationsverstärker in einer Schaltung 
-    vereinfacht dargestellt werden kann. \par
+\s{
+    \begin{frame}
+        \fta{Modellierung und charakteristische Größen}
+        Der vereinfachte Schaltplan des vorherigen Kapitels eignet sich zwar gut um die interne Funktionsweise zu illustrieren, ist für die Darstellung in größeren Schaltkreisen allerdings ungeeignet.
+        Um Schaltpläne übersichtlicher zu gestalten werden Operationsverstärker in der Regel durch ein Normsymbol dargestellt.
+        Der interne Aufbau des Verstärkers wird vernachlässigt und diesem allgemeinen Verstärker charakteristische Eigenschaften zugeordnet.
+        Ähnlich wie bei dem Transistorsymbol kann so der Operationsverstärker in einer Schaltung
+        vereinfacht dargestellt werden kann. \par
 
-  %  \speech{1}{Modellierung und charakteristische Größen: Der vereinfachte Schaltplan des vorherigen Kapitels eignet sich zwar gut um die interne Funktionsweise zu illustrieren, ist für die Darstellung in größeren Schaltkreisen allerdings ungeeignet.
- %  Um Schaltpläne übersichtlicher zu gestalten werden Operationsverstärker in der Regel durch ein Normsymbol dargestellt. Der interne Aufbau des Verstärkers wird vernachlässigt und diesem allgemeinen Verstärker charakteristische Eigenschaften zugeordnet. Ähnlich wie bei dem Transistorsymbol kann so der Operationsverstärker in einer Schaltung vereinfacht dargestellt werden kann.
-%}    
+        Es sollen im Rahmen dieses Kapitels folgende Kompetenzen erworben werden:
+        \s{
+            \begin{Lernziele}{Operationsverstärker}
+                \title{Lernziele: Modellierung und charakteristische Größen}
+                Die Studierenden können
+                \begin{itemize}
+                    \item Unterschiede zwischen dem vereinfachten Operationsverstärkermodell und realen Operationsverstärkern beschreiben.
+                    \item Wichtige Bereiche der Operationsverstärkerkennlinie angeben.
+                \end{itemize}
+            \end{Lernziele}
+        }
 
-    Es sollen im Rahmen dieses Kapitels folgende Kompetenzen erworben werden:
-    \s{
-        \begin{Lernziele}{Operationsverstärker}
-            \title{Lernziele: Modellierung und charakteristische Größen}
-            Die Studierenden können
-            \begin{itemize}
-                \item Unterschiede zwischen dem vereinfachten Operationsverstärkermodell und realen Operationsverstärkern beschreiben.
-                \item Wichtige Bereiche der Operationsverstärkerkennlinie angeben.
-            \end{itemize}
-        \end{Lernziele}
-    }
+        Im Schaltungselement in Abbildung \ref{fig:opv englisch} (links) ist der invertierende Eingang, der
+        nicht-invertierende Eingang, der Ausgang sowie der Massebezug und die
+        Anschlüsse für die Versorgungspannungen dargestellt. Dieses Schaltzeichen ist
+        häufig im angloamerikanischen Raum und älteren Dokumenten zu finden und soll hier
+        nur aufgrund der Vollständigkeit eingeführt werden.
+        In diesem Dokument soll das neue Schaltzeichen (rechts) verwendet werden. Ist die Bezugsmasse nicht explizit dargestellt, wird bei dieser Darstellung davon ausgegangen, dass
+        der Ausgang einen Bezug zur Masse aufweist.
+        Aus didaktischen Gründen werden die Versorgungspannungen in diesem Dokument allerdings mit angegeben. Der ideale Verstärker besitzt in der rechten,
+        oberen Ecke darüber hinaus das Unendlichzeichen. Dies bedeutet, dass die Verstärkung nicht
+        begrenzt ist. Der Vorteil bei diesem Schaltungselement ist, dass auch Verstärker mit Verstärkerbegrenzungen
+        modelliert werden können. In diesem Fall wird das Symbol für „unendlich“ $\widehat{=}~\infty$ durch einen endlichen Wert ersetzt.
 
-%\speech{1}{Es sollen im Rahmen dieses Kapitels folgende Kompetenzen erworben werden:
- %Die Studierenden können Unterschiede zwischen dem vereinfachten Operationsverstärkermodell und realen Operationsverstärkern beschreiben. Sie können wichtige Bereiche der Operationsverstärkerkennlinie angeben.
-%}
+        \begin{figure}[ht]
+            \centering
+            \fu{
+                \resizebox{\textwidth}{!}{\input{Tikz/src/AltesVsNeuesSchaltzeichen.tex}}
+            }{Schaltungselement OPV im alt (links) und neu nach DIN EN 60617 Teil 13 (rechts)
+                \label{fig:opv englisch}}
+        \end{figure}
+    \end{frame}
+}
 
-    Im Schaltungselement in Abbildung \ref{fig:opv englisch} (links) ist der invertierende Eingang, der 
-    nicht-invertierende Eingang, der Ausgang sowie der Massebezug und die 
-    Anschlüsse für die Versorgungspannungen dargestellt. Dieses Schaltzeichen ist 
-    häufig im angloamerikanischen Raum und älteren Dokumenten zu finden und soll hier 
-    nur aufgrund der Vollständigkeit eingeführt werden. 
-    In diesem Dokument soll das neue Schaltzeichen (rechts) verwendet werden. Ist die Bezugsmasse nicht explizit dargestellt, wird bei dieser Darstellung davon ausgegangen, dass 
-    der Ausgang einen Bezug zur Masse aufweist. 
-    Aus didaktischen Gründen werden die Versorgungspannungen in diesem Dokument allerdings mit angegeben. Der ideale Verstärker besitzt in der rechten, 
-    oberen Ecke darüber hinaus das Unendlichzeichen. Dies bedeutet, dass die Verstärkung nicht 
-    begrenzt ist. Der Vorteil bei diesem Schaltungselement ist, dass auch Verstärker mit Verstärkerbegrenzungen 
-    modelliert werden können. In diesem Fall wird das Symbol für „unendlich“ $\widehat{=}~\infty$ durch einen endlichen Wert ersetzt.
-
-
-%\speech{1}{
-%Im Schaltungselement in der Abbildung (links) ist der invertierende Eingang, der nicht-invertierende Eingang, der Ausgang sowie der Massebezug und die Anschlüsse für die Versorgungspannungen dargestellt. 
-%Dieses Schaltzeichen ist häufig im angloamerikanischen Raum und älteren Dokumenten zu finden und soll hier nur aufgrund der Vollständigkeit eingeführt werden. In diesem Dokument soll das neue Schaltzeichen (rechts) verwendet werden. 
-%Ist die Bezugsmasse nicht explizit dargestellt, wird bei dieser Darstellung davon ausgegangen, dass der Ausgang einen Bezug zur Masse aufweist. Aus didaktischen Gründen werden die Versorgungspannungen in diesem Dokument allerdings mit angegeben. 
-%Der ideale Verstärker besitzt in der rechten, oberen Ecke darüber hinaus das Unendlichzeichen. Dies bedeutet, dass die Verstärkung nicht begrenzt ist. Der Vorteil bei diesem Schaltungselement ist, dass auch Verstärker mit Verstärkerbegrenzungen modelliert werden können. 
-%In diesem Fall wird das Symbol für „unendlich“ durch einen endlichen Wert ersetzt.
-%}
-
-
-    \begin{figure}[ht]
-        \centering
-        \fu{
-            \resizebox{\textwidth}{!}{\input{Tikz/src/AltesVsNeuesSchaltzeichen.tex}}
-            }{Schaltungselement OPV im alt (links) und neu nach DIN EN 60617 Teil 13 (rechts)                
-            \label{fig:opv englisch}}
-    \end{figure}
-\end{frame}}
-%\speech{
-%Abbildung 2.1 zeigt zwei unterschiedliche Schaltzeichen für einen Operationsverstärker.  
-%Links ist das alte Schaltzeichen dargestellt, rechts das neue Schaltzeichen nach der Norm DIN EN 60617 Teil 13.  
-%
-%Das alte Schaltzeichen auf der linken Seite besteht aus einem gleichschenkligen Dreieck, das nach rechts zeigt.  
-%Das Dreieck symbolisiert die Verstärkungsfunktion des Operationsverstärkers.  
-%An der linken Seite befinden sich zwei Eingänge.  
-%Der obere Eingang hat ein Minuszeichen und ist der invertierende Eingang.  
-%Der untere Eingang hat ein Pluszeichen und ist der nichtinvertierende Eingang.  
-%Die Differenzspannung U Diff liegt zwischen diesen beiden Eingängen.  
-%Die Versorgungsspannungen Plus U B und Minus U B sind am oberen und unteren Rand des Dreiecks angeschlossen.  
-%Die Ausgangsspannung U A wird an der rechten Spitze des Dreiecks ausgegeben.  
-%
-%Das neue Schaltzeichen auf der rechten Seite ist rechteckig.  
-%Der invertierende und der nichtinvertierende Eingang befinden sich ebenfalls auf der linken Seite.  
-%Die Versorgungsspannungen Plus U B und Minus U B sind am oberen und unteren Rand des Rechtecks eingezeichnet.  
-%Im Inneren des Symbols befindet sich eine kleine Kombination aus einem Dreieck und einer liegenden Acht.  
-%Dieses Zeichen symbolisiert die unendliche Verstärkung eines idealen Operationsverstärkers.  
-%Der Ausgang U A befindet sich wie zuvor an der rechten Seite.  
-%
-%Der Hauptunterschied zwischen den beiden Darstellungen besteht in der Form.  
-%Das alte Symbol nutzt ein Dreieck, während das neue Symbol ein Rechteck verwendet.  
-%Diese Änderung sorgt für eine einheitliche und normgerechte Darstellung in modernen Schaltplänen.  
-%}
-
+\newvideofile{OPV_Eigenschaften}{Eigenschaften}
 \begin{frame}
-    \s{Zwei der vier Anschlüsse\footnote{Die Anschlüsse für die Versorgungspannung werden hier nicht mitgezählt. Die ausgangsseitge hingegen wird als Anschluss verstanden.} des Verstärkers, auch Pole, können unter idealisierten Bedingungen jeweils zu einem sogenannten sogenannten \glqq Tor\grqq{} zusammengefasst werden. 
-    Der Operationsverstärker lässt sich so durch ein sogenanntes Zweitor modellieren. 
-    Dieses zeichnet sich dadurch aus, dass vereinfacht davon ausgegangen werden darf, dass das Übertragungsverhalten vollständig durch die Größen Strom- und Spannung beschrieben werden kann. 
-    Durch die Vereinfachung über das Zweitor kann also der interne Aufbau des Operationsverstärkers vernachlässigt und als „Blackbox“ betrachtet werden. 
-    Die zuvor recht komplizierte, innere Verschaltung der Transistoren kann durch das in Abbildung \ref{fig:opv englisch} dargestelle Bauteil modelliert werden. 
-    Zudem wird bei der Modellierung durch das Zweitor davon ausgegangen, dass kein Strom in die Eingänge des Operationsverstärkers hineinfließt \footnote{Dies ist notwendig, damit die sogenannte Torbedingung erfüllt ist. Die fordert das der Strom in die Eingänge gegengleich sein muss, also $I_+=I_-$.}. 
-      
-    In der folgenden Tabelle sind weitere Eigenschaften aufgeführt, die das Rechnen mit Operationsverstärkern erleichtert. 
-    Zudem sind in der Tabelle klassische Werte eines realen Operationsverstärkers angegeben, die je nach Verstärkertyp leicht variieren können und lediglich die Grenzen des Zweitor-Modells aufzeigen sollen.
+    \s{
+        Zwei der vier Anschlüsse\footnote{Die Anschlüsse für die Versorgungspannung werden hier nicht mitgezählt. Die ausgangsseitge hingegen wird als Anschluss verstanden.} des Verstärkers, auch Pole, können unter idealisierten Bedingungen jeweils zu einem sogenannten sogenannten \glqq Tor\grqq{} zusammengefasst werden.
+        Der Operationsverstärker lässt sich so durch ein sogenanntes Zweitor modellieren.
+        Dieses zeichnet sich dadurch aus, dass vereinfacht davon ausgegangen werden darf, dass das Übertragungsverhalten vollständig durch die Größen Strom- und Spannung beschrieben werden kann.
+        Durch die Vereinfachung über das Zweitor kann also der interne Aufbau des Operationsverstärkers vernachlässigt und als „Blackbox“ betrachtet werden.
+        Die zuvor recht komplizierte, innere Verschaltung der Transistoren kann durch das in Abbildung \ref{fig:opv englisch} dargestelle Bauteil modelliert werden.
+        Zudem wird bei der Modellierung durch das Zweitor davon ausgegangen, dass kein Strom in die Eingänge des Operationsverstärkers hineinfließt \footnote{Dies ist notwendig, damit die sogenannte Torbedingung erfüllt ist. Die fordert das der Strom in die Eingänge gegengleich sein muss, also $I_+=I_-$.}.
+    
+        In der folgenden Tabelle sind weitere Eigenschaften aufgeführt, die das Rechnen mit Operationsverstärkern erleichtert.
+        Zudem sind in der Tabelle klassische Werte eines realen Operationsverstärkers angegeben, die je nach Verstärkertyp leicht variieren können und lediglich die Grenzen des Zweitor-Modells aufzeigen sollen.
     }
 
-
-%\speech{1}{Zwei der vier Anschlüsse des Verstärkers, auch Pole, können unter idealiserten Bedingungen jeweils zu einem sogenannten sogenannten Tor zusammengefasst werden. 
-%Der Operationsverstärker lässt sich so durch ein sogenanntes Zweitor modellieren. 
-%Dieses zeichnet sich dadurch aus, dass vereinfacht davon ausgegangen werden darf, dass das Übertragungsverhalten vollständig durch die Größen Strom- und Spannung beschrieben werden kann. 
-%Durch die Vereinfachung über das Zweitor kann also der interne Aufbau des Operationsverstärkers vernachlässigt und als „Blackbox“ betrachtet werden. 
-%Die zuvor recht komplizierte, innere Verschaltung der Transistoren kann durch das in Abbildung \ref{fig:opv englisch} dargestelle Bauteil modelliert werden. 
-%Zudem wird bei der Modellierung durch das Zweitor davon ausgegangen, dass kein Strom in die Eingänge des Operationsverstärkers hineinfließt. 
-%In der folgenden Tabelle sind weitere Eigenschaften aufgeführt, die das Rechnen mit Operationsverstärkern erleichtert. 
-%Zudem sind in der Tabelle klassische Werte eines realen Operationsverstärkers angegeben, die je nach Verstärkertyp leicht variieren können und lediglich die Grenzen des Zweitor-Modells aufzeigen sollen.
-%}
     \b{
-    \fta{Modellierung und charakteristische Größen}
-    \begin{columns}
+        \fta{Modellierung und charakteristische Größen}
+        \begin{columns}
             \column[c]{0.4\textwidth}
             \begin{figure}[ht]
                 \centering
                 \fu{
                     \resizebox{.8\linewidth}{!}{\input{Tikz/src/AltesVsNeuesSchaltzeichen_ubereinander}}
-                    }{Darstellung OPV im englisch sprachigen Raum (links) und nach DIN EN 60617 Teil 13 (rechts)                }
-                \label{fig:opv englisch folien}
-            \end{figure}            
+                }{Darstellung OPV im englisch sprachigen Raum (links) und nach DIN EN 60617 Teil 13 (rechts)}
+            \end{figure}
             \column[c]{0.6\textwidth}
-                \begin{itemize}
-                    \onslide<1->{
-                    \item In Schaltungen wird der Opertionverstärker durch eines der beiden links abgebildeten Symbole dargestellt.
-                    }\onslide<2->{
-                    \item Der Operationsverstärker lässt sich so durch ein sogenanntes Zweitor modellieren. 
-                    }\onslide<3->{
-                    \item Dieses zeichnet sich dadurch aus, dass vereinfacht davon ausgegangen werden darf, dass das Übertragungsverhalten vollständig durch die Größen Strom- und Spannung beschrieben werden kann. 
-                    }\onslide<4->{
-                    \item Durch diese Vereinfachung kann der interne Aufbau des Operationsverstärkers vernachlässigt und als „Black-Box“ betrachtet werden.
-                    }
-                \end{itemize}
-            \end{columns}}
-    \speech{OPV_Eigenschaften}{4}{Hier sehen wir zwei verschiedene Darstellungen des Operationsverstärkers. Oben die ältere Version und unten das neue Schaltzeichen. Hier erkennen wir auch die Anschlüsse plus U B und  minus U B für die Versorgungsspannung.
-
-    Für unsere Betrachtungen spielt der interne Aufbau des OPV oft keine Rolle. Wir behandeln ihn stattdessen als eine Black-Box - ein System, das wir nur über Eingangs- und Ausgangsgrößen beschreiben.
-    Das erleichtert die Modellierung: Wir konzentrieren uns auf Eingangsspannung, Eingangsstrom, Ausgangsspannung und Ausgangsstrom - mehr brauchen wir für die meisten Anwendungen gar nicht.}  %seed: 875629
-\end{frame}
-
-\begin{frame}
-        \s{
-        \captionof{table}{Ideale und typische Operationsverstärkereigenschaften}
-        \label{tab:Ideale und typische Operationsverstärkereigenschaften}
-        \begin{tabular}{|L{3cm}|L{3cm}|L{3cm}|L{5cm}|}
-        \hline
-        \textbf{Bezeichnung} & \textbf{Ideale OPV-Eigenschaften} & \textbf{Typische Werte (z.B. OPA 121)} & \textbf{Erläuterung} \\ 
-        \hline
-        Leerlaufverstärkung & $V_{\textnormal{Leer}} = \infty$ & $V_{\textnormal{Leer}} = 10^6$ & Verstärkung der zwischen dem Eingängen anliegenden Spannung bei unbeschalteten OPV.\\
-        \hline
-        Eingangsimpedanz & $Z_{\textnormal{i}} = \infty$~Ω & $Z_i$ = $10^{13}$~Ω & Der von der Quelle aus betrachtet Lastwiderstand des OPVs. \\  
-        \hline
-        Ausgangsimpedanz & $Z_{\textnormal{a}} = 0$~Ω & $Z_{\textnormal{a}} =~50$ bis $100$~Ω  & Der von einer Last aus betrachtete Widerstand am Ausgang des OPVs.\\
-        \hline
-        Bandbreite & $B = \infty$~MHz & $B >$ 2~MHz &  Frequenzbereich in dem das Verstärkerverhalten den im Datenblatt angegebenen Verhalten entspricht. \\   
-        \hline
-        Phasenverschiebung & $\varphi$~=~0° & $\varphi >$~0° & Verzögerung des Ausgangs- gegenüber des Eingangssignals. \\
-        \hline
-        Slew Rate & $\infty$~V & 2~mV bis 1000 V/$\mu$s & Maximaler Spannungsanstieg pro Zeiteinheit.\\
-        \hline
-        Ausgangs-Aussteuerbarkeit & $\infty$ & auf max. $U_{\textnormal{B}}$ begrenzt & Maximaler Ausgangsspannungswert.\\
-        \hline
-        Eingangsruhestrom & $I_{\textnormal{Ruhe}}$ = 0~pA & $I_{\textnormal{Ruhe}} <$ 5~pA & Eingangsseitige Stromaufnahme bei Differenzspannnung $\Delta U_{\textnormal{Diff}}$~=~0. \\
-        \hline
-        Eingangsoffsetstrom & $I_{\textnormal{Off}}$ = 0~pA & $I_{\textnormal{Off}} < I_+-I_-$  & Differenz der beiden Eingangsruheströme \\
-        \hline
-        Eingangs-Offsetspannung & $U_{\textnormal{Off}}$ = 0~mV & $U_{\textnormal{Off}} < $ 2~mV & Ausgegebene Gleichspannung bei $\Delta U_{\textnormal{Diff}}$~=~0\\
-        \hline
-        Gleichtakt-\linebreak unterdrückung (engl.: Common Mode Rejection) & $CMR = \infty$~dB  & $CMR$~=~86~dB & Gibt an, wie gut der Verstärker Signale unterdrückt, die an beiden Eingängen gleichermaßen anliegen\\
-        \hline
-        \end{tabular}}
-        
-         \b{\fta{Charakteristische Werte}
-            \begin{tabular}{|L{4cm}|L{4cm}|L{4cm}|}
-                \hline
-                \textbf{Bezeichnung} & \textbf{Ideale OPV- \newline Eigenschaften} & \textbf{Typische Werte \newline (z.B. OPA 121)} \\ 
-                \hline
-                Leerlaufverstärkung & $V_{\textnormal{Leer}} = \infty$ & $V_{\textnormal{Leer}} = 10^6$\\
-                \hline
-                Eingangsimpedanz & $Z_{\textnormal{i}} = \infty$~Ω & $Z_i$ = $10^{13}$~Ω\\  
-                \hline
-                Ausgangsimpedanz & $Z_{\textnormal{a}} = 0$~Ω & $Z_{\textnormal{a}} = 50$ bis $100$~Ω\\
-                \hline
-                Bandbreite & $B = \infty$~MHz & $B >$ 2~MHz\\   
-                \hline
-                Phasenverschiebung & $\varphi$~=~0° & $\varphi >$~0°\\
-                \hline
-                Slew Rate & $\infty$~V & 2~mV bis 1000 V/$\mu$s\\
-                \hline
-                Ausgangs-Aussteuerbarkeit & $\infty$ & Rail-to-Rail\\
-                \hline
-                Eingangsruhestrom & $I_{\textnormal{Ruhe}}$ = 0~pA & $I_{\textnormal{Ruhe}} <$ 5~pA\\
-                \hline
-                Eingangsoffsetstrom & $I_{\textnormal{Off}}$ = 0~pA & $I_{\textnormal{Off}} < I_+-I_-$\\
-                \hline
-                Eingangs-Offsetspannung & $U_{\textnormal{Off}}$ = 0~mV & $U_{\textnormal{Off}} < $ 2~mV\\
-                \hline
-                Gleichtakt-\linebreak unterdrückung & $CMR = \infty$~dB  & $CMR$~=~86~dB\\
-                \hline
-            \end{tabular}}
-            \speech{OPV_Eigenschaften}{5}{In dieser Tabelle vergleichen wir die idealen Eigenschaften eines OP V mit den realen Werten.
-
-            Ein idealer Operationsverstärker hätte:
-            -eine unendliche Leerlaufverstärkung,
-            -eine unendliche Eingangsimpedanz,
-            -eine Ausgangsimpedanz von null,
-            -und eine unendliche Bandbreite.
-
-            Die Realität sieht natürlich anders aus:
-            Typische Leerlaufverstärkungen liegen zwischen 10 hoch fünf und 10 hoch sechs, also immer noch sehr groß, aber nicht unendlich.
-            Die Eingangsimpedanz beträgt oft einige Megaohm, manchmal sogar Gigaohm.
-            Die Ausgangsimpedanz ist klein, aber nicht null.
-            Und die Bandbreite ist durch das Verstärkungs-Bandbreite-Produkt begrenzt.
-
-            Dazu kommen weitere praktische Größen: die Slew Rate, also wie schnell die Ausgangsspannung maximal ansteigen kann, 
-            die Offsetspannung, die den Arbeitspunkt verschiebt
-            und die Gleichtaktunterdrückung (CMR), die angibt, wie gut Gleichtaktanteile am Eingang unterdrückt werden.
-
-            Merken wir uns: Der ideale OP V ist ein hilfreiches Denkmodell - aber die realen Werte bestimmen letztlich, wie gut eine Schaltung funktioniert.} %seed: 875654 
+            \begin{itemize}
+                \onslide<1->{
+                \item In Schaltungen wird der Opertionverstärker durch eines der beiden links abgebildeten Symbole dargestellt.
+                      }\onslide<2->{
+                \item Der Operationsverstärker lässt sich so durch ein sogenanntes Zweitor modellieren.
+                      }\onslide<3->{
+                \item Dieses zeichnet sich dadurch aus, dass vereinfacht davon ausgegangen werden darf, dass das Übertragungsverhalten vollständig durch die Größen Strom- und Spannung beschrieben werden kann.
+                      }\onslide<4->{
+                \item Durch diese Vereinfachung kann der interne Aufbau des Operationsverstärkers vernachlässigt und als „Black-Box“ betrachtet werden.
+                      }
+            \end{itemize}
+        \end{columns}
+    }
+    \speech{OPV_Eigenschaften}{4}{Hier sehen wir zwei verschiedene Darstellungen des Operationsverstärkers. Oben die ältere Version und unten das neue Schaltzeichen. Hier erkennen wir auch die Anschlüsse plus U B und  minus U B für die Versorgungsspannung. Für unsere Betrachtungen spielt der interne Aufbau des OPV oft keine Rolle. Wir behandeln ihn stattdessen als eine Black-Box - ein System, das wir nur über Eingangs- und Ausgangsgrößen beschreiben. Das erleichtert die Modellierung: Wir konzentrieren uns auf Eingangsspannung, Eingangsstrom, Ausgangsspannung und Ausgangsstrom - mehr brauchen wir für die meisten Anwendungen gar nicht.}
+    %seed: 875629
+    \silence{3}
 \end{frame}
 
 \begin{frame}
     \s{
-        Mit den oben gemachten Angaben kann die Kennlinie eines Operationsverstärkers konstruiert werden. 
+        \captionof{table}{Ideale und typische Operationsverstärkereigenschaften}
+        \label{tab:Ideale und typische Operationsverstärkereigenschaften}
+        \begin{tabular}{|L{3cm}|L{3cm}|L{3cm}|L{5cm}|}
+            \hline
+            \textbf{Bezeichnung}                                               & \textbf{Ideale OPV-Eigenschaften} & \textbf{Typische Werte (z.B. OPA 121)} & \textbf{Erläuterung}                                                                                \\
+            \hline
+            Leerlaufverstärkung                                                & $V_{\textnormal{Leer}} = \infty$  & $V_{\textnormal{Leer}} = 10^6$         & Verstärkung der zwischen dem Eingängen anliegenden Spannung bei unbeschalteten OPV.                 \\
+            \hline
+            Eingangsimpedanz                                                   & $Z_{\textnormal{i}} = \infty$~Ω   & $Z_i$ = $10^{13}$~Ω                    & Der von der Quelle aus betrachtet Lastwiderstand des OPVs.                                          \\
+            \hline
+            Ausgangsimpedanz                                                   & $Z_{\textnormal{a}} = 0$~Ω        & $Z_{\textnormal{a}} =~50$ bis $100$~Ω  & Der von einer Last aus betrachtete Widerstand am Ausgang des OPVs.                                  \\
+            \hline
+            Bandbreite                                                         & $B = \infty$~MHz                  & $B >$ 2~MHz                            & Frequenzbereich in dem das Verstärkerverhalten den im Datenblatt angegebenen Verhalten entspricht.  \\
+            \hline
+            Phasenverschiebung                                                 & $\varphi$~=~0°                    & $\varphi >$~0°                         & Verzögerung des Ausgangs- gegenüber des Eingangssignals.                                            \\
+            \hline
+            Slew Rate                                                          & $\infty$~V                        & 2~mV bis 1000 V/$\mu$s                 & Maximaler Spannungsanstieg pro Zeiteinheit.                                                         \\
+            \hline
+            Ausgangs-Aussteuerbarkeit                                          & $\infty$                          & auf max. $U_{\textnormal{B}}$ begrenzt & Maximaler Ausgangsspannungswert.                                                                    \\
+            \hline
+            Eingangsruhestrom                                                  & $I_{\textnormal{Ruhe}}$ = 0~pA    & $I_{\textnormal{Ruhe}} <$ 5~pA         & Eingangsseitige Stromaufnahme bei Differenzspannnung $\Delta U_{\textnormal{Diff}}$~=~0.            \\
+            \hline
+            Eingangsoffsetstrom                                                & $I_{\textnormal{Off}}$ = 0~pA     & $I_{\textnormal{Off}} < I_+-I_-$       & Differenz der beiden Eingangsruheströme                                                             \\
+            \hline
+            Eingangs-Offsetspannung                                            & $U_{\textnormal{Off}}$ = 0~mV     & $U_{\textnormal{Off}} < $ 2~mV         & Ausgegebene Gleichspannung bei $\Delta U_{\textnormal{Diff}}$~=~0                                   \\
+            \hline
+            Gleichtakt-\linebreak unterdrückung (engl.: Common Mode Rejection) & $CMR = \infty$~dB                 & $CMR$~=~86~dB                          & Gibt an, wie gut der Verstärker Signale unterdrückt, die an beiden Eingängen gleichermaßen anliegen \\
+            \hline
+        \end{tabular}
+    }
+        
+    \b{
+        \fta{Charakteristische Werte}
+        \begin{tabular}{|L{4cm}|L{4cm}|L{4cm}|}
+            \hline
+            \textbf{Bezeichnung}                & \textbf{Ideale OPV- \newline Eigenschaften} & \textbf{Typische Werte \newline (z.B. OPA 121)} \\
+            \hline
+            Leerlaufverstärkung                 & $V_{\textnormal{Leer}} = \infty$            & $V_{\textnormal{Leer}} = 10^6$                  \\
+            \hline
+            Eingangsimpedanz                    & $Z_{\textnormal{i}} = \infty$~Ω             & $Z_i$ = $10^{13}$~Ω                             \\
+            \hline
+            Ausgangsimpedanz                    & $Z_{\textnormal{a}} = 0$~Ω                  & $Z_{\textnormal{a}} = 50$ bis $100$~Ω           \\
+            \hline
+            Bandbreite                          & $B = \infty$~MHz                            & $B >$ 2~MHz                                     \\
+            \hline
+            Phasenverschiebung                  & $\varphi$~=~0°                              & $\varphi >$~0°                                  \\
+            \hline
+            Slew Rate                           & $\infty$~V                                  & 2~mV bis 1000 V/$\mu$s                          \\
+            \hline
+            Ausgangs-Aussteuerbarkeit           & $\infty$                                    & Rail-to-Rail                                    \\
+            \hline
+            Eingangsruhestrom                   & $I_{\textnormal{Ruhe}}$ = 0~pA              & $I_{\textnormal{Ruhe}} <$ 5~pA                  \\
+            \hline
+            Eingangsoffsetstrom                 & $I_{\textnormal{Off}}$ = 0~pA               & $I_{\textnormal{Off}} < I_+-I_-$                \\
+            \hline
+            Eingangs-Offsetspannung             & $U_{\textnormal{Off}}$ = 0~mV               & $U_{\textnormal{Off}} < $ 2~mV                  \\
+            \hline
+            Gleichtakt-\linebreak unterdrückung & $CMR = \infty$~dB                           & $CMR$~=~86~dB                                   \\
+            \hline
+        \end{tabular}
+    }
+    \speech{OPV_Eigenschaften_Tabelle}{1}{In dieser Tabelle vergleichen wir die idealen Eigenschaften eines OP V mit den realen Werten.
+        Ein idealer Operationsverstärker hätte: eine unendliche Leerlaufverstärkung, eine unendliche Eingangsimpedanz, eine Ausgangsimpedanz von null, und eine unendliche Bandbreite.
+        Die Realität sieht natürlich anders aus: Typische Leerlaufverstärkungen liegen zwischen 10 hoch fünf und 10 hoch sechs, also immer noch sehr groß, aber nicht unendlich. Die Eingangsimpedanz beträgt oft einige Megaohm, manchmal sogar Gigaohm. Die Ausgangsimpedanz ist klein, aber nicht null. Und die Bandbreite ist durch das Verstärkungs-Bandbreite-Produkt begrenzt.
+        Dazu kommen weitere praktische Größen: die Slew Rate, also wie schnell die Ausgangsspannung maximal ansteigen kann, die Offsetspannung, die den Arbeitspunkt verschiebt und die Gleichtaktunterdrückung (CMR), die angibt, wie gut Gleichtaktanteile am Eingang unterdrückt werden.
+    Merken wir uns: Der ideale OP V ist ein hilfreiches Denkmodell - aber die realen Werte bestimmen letztlich, wie gut eine Schaltung funktioniert.} 
+    %seed: 875654 
+    \silence{3}
+\end{frame}
+
+\begin{frame}
+    \s{
+        Mit den oben gemachten Angaben kann die Kennlinie eines Operationsverstärkers konstruiert werden.
         Diese ist in der folgenden Abbildung dargestellt:
-
-    
-     
-
+        
         \begin{center}
-        \f{width=0.5\textwidth}{width=0.8\textwidth}{kap2/Output_Voltage_Swing.pdf}{Kennlinie eines Operationsverstärkers {
-        \label{fig:Kennlinie OPV}}} 
+            \f{width=0.5\textwidth}{width=0.8\textwidth}{kap2/Output_Voltage_Swing.pdf}{Kennlinie eines Operationsverstärkers {
+            \label{fig:Kennlinie OPV}}}
         \end{center}
-
-        In Abbildung \ref{fig:Kennlinie OPV} ist die horizontale Verschiebung der Verstärkerkennlinie zu sehen, die sich durch die Offsetspannung $U_{\textnormal{Off}}$ ergibt. 
-        Darüber hinaus ist zu erkennen, dass der Verstärker in seinem spezifizierten Arbeitsbereich (in grün eingezeichnet) ein lineares Verstärkungsverhalten ggü. der angelegten Eingangsspannung aufweist. 
-        Die Steigung im linearen Bereich ist von der maximalen Verstärkung des genutzten Operationsverstärkers abhängig. 
+        
+        In Abbildung \ref{fig:Kennlinie OPV} ist die horizontale Verschiebung der Verstärkerkennlinie zu sehen, die sich durch die Offsetspannung $U_{\textnormal{Off}}$ ergibt.
+        Darüber hinaus ist zu erkennen, dass der Verstärker in seinem spezifizierten Arbeitsbereich (in grün eingezeichnet) ein lineares Verstärkungsverhalten ggü. der angelegten Eingangsspannung aufweist.
+        Die Steigung im linearen Bereich ist von der maximalen Verstärkung des genutzten Operationsverstärkers abhängig.
         Wird dieser spezifizierte Arbeitsbereich verlassen, weist die Ausgangspannung zunächst einen nichtlinearen Bezug zur Eingangsspannung auf (in gelb eingezeichnet). Die Ausgangsspannung steigt allerdings weiterhin, bis die Sättigung erreicht wird.
         Im rot markierten Bereich bleibt selbst bei weiterer Erhöhung der Eingangsdifferenzspannung die Ausgangsspannung konstant.
-        Solange also die Ausgangsspannung im Arbeitsbereich des Operationsverstärkers liegt, wird eine konstant verstärkte und mit einem Offset belegte Ausgangsspannung ausgegeben. 
-        Die tatsächlich erreichbare Ausgangsspannung wird über die Größe \glqq Output Voltage Swing\grqq{} angegeben. 
-        Die Differenz zur positiven bzw. negativen Versorgungsspannung ($+U_{\textnormal{B}}$ und $-U_{\textnormal{B}}$) wird als \glqq Headroom\grqq{} bezeichnet. 
+        Solange also die Ausgangsspannung im Arbeitsbereich des Operationsverstärkers liegt, wird eine konstant verstärkte und mit einem Offset belegte Ausgangsspannung ausgegeben.
+        Die tatsächlich erreichbare Ausgangsspannung wird über die Größe \glqq Output Voltage Swing\grqq{} angegeben.
+        Die Differenz zur positiven bzw. negativen Versorgungsspannung ($+U_{\textnormal{B}}$ und $-U_{\textnormal{B}}$) wird als \glqq Headroom\grqq{} bezeichnet.
         Der Headroom ist das Resultat eines PN-Übergangs der im Operationsverstärker verbauten Halbleiterbauteile und beträgt aus diesem Grund in der Regel 0,6 - 0,7 V.
-        Der Headroom ist eine wichtige Größe für die Auslegung von Operarationsverstärker. 
-        Operationsverstärker, bei denen dieser Headroom sehr gering ist, werden von den Herstellern zumeist als \glqq Rail-to-Rail\grqq{} Verstärker klassifiziert. 
-
-     
-                
-
-        \begin{Merksatz}{}  
-            Um das Rechnen mit Operationsverstärkern zu erleichtern, wird häfuig ein vereinfachtes Modell verwendet. 
-            Es ist wichtig die Grenzen dieses Modells zu kennen und diese bei der Bauteilauswahl und Schaltungsplanung zu berücksichtigen. 
+        Der Headroom ist eine wichtige Größe für die Auslegung von Operarationsverstärker.
+        Operationsverstärker, bei denen dieser Headroom sehr gering ist, werden von den Herstellern zumeist als \glqq Rail-to-Rail\grqq{} Verstärker klassifiziert.
+        
+        \begin{Merksatz}{}
+            Um das Rechnen mit Operationsverstärkern zu erleichtern, wird häfuig ein vereinfachtes Modell verwendet.
+            Es ist wichtig die Grenzen dieses Modells zu kennen und diese bei der Bauteilauswahl und Schaltungsplanung zu berücksichtigen.
         \end{Merksatz}
-        }
+    }
 
 
     \b{
-    \frametitle{Allgemeine Kennlinie eines Operationsverstärkers}
-    \begin{columns}
+        \frametitle{Allgemeine Kennlinie eines Operationsverstärkers}
+        \begin{columns}
             \column[c]{0.5\textwidth}
-            \f{width=0.9\textwidth}{width=0.9\textwidth}{kap2/Output_Voltage_Swing.pdf}{Kennlinie eines Operationsverstärkers} 
-            Kennlinie eines Operationsverstärkers            
+            \f{width=0.9\textwidth}{width=0.9\textwidth}{kap2/Output_Voltage_Swing.pdf}{Kennlinie eines Operationsverstärkers}
+            Kennlinie eines Operationsverstärkers
             \column[c]{0.4\textwidth}
-                \begin{itemize}
-                    \onslide<1->{
-                    \item $U_{\textnormal{Off}}$ ist die Offset-Spannung, die zu einer horizontalen Verschiebung der Kennlinie führt.
-                    }\onslide<2->{
-                    \item Im spezifizierten Ausgangs-\\spannungsbereich ist die Verstärkung linear.
-                    }\onslide<3->{
-                    \item Der Ausgangsspannungs-\\bereich wird im Datenblatt durch die größe \glqq Output Voltage Swing angegeben\grqq{}.
-                    }
-                \end{itemize}
-            \end{columns}}
-        \speech{OPV_Eigenschaften}{8}{Zum Abschluss dieses Videos schauen wir uns die allgemeine Kennlinie eines O P V an.
-
+            \begin{itemize}
+                \onslide<1->{
+                \item $U_{\textnormal{Off}}$ ist die Offset-Spannung, die zu einer horizontalen Verschiebung der Kennlinie führt.
+                      }\onslide<2->{
+                \item Im spezifizierten Ausgangs-\\spannungsbereich ist die Verstärkung linear.
+                      }\onslide<3->{
+                \item Der Ausgangsspannungs-\\bereich wird im Datenblatt durch die größe \glqq Output Voltage Swing angegeben\grqq{}.
+                      }
+            \end{itemize}
+        \end{columns}
+    }
+    \speech{OPV_Eigenschaften_Kennlinie}{3}{Zum Abschluss dieses Videos schauen wir uns die allgemeine Kennlinie eines O P V an.
         Im mittleren Bereich verhält sich der Verstärker linear: Die Ausgangsspannung folgt der Eingangsdifferenz, verstärkt mit der Leerlaufverstärkung. Das sehen wir am grünen Teil der Kennlinie.
-        Aber dieser Bereich ist begrenzt:
-
-        Nach oben und unten verhält sich der O P V nicht mehr linear bevor er seinen Sättigungsbereich erreicht. Hier kann die Ausgangspannung nicht weiter verstärkt werden.
-
-        Ganz bis an die Grenzen der Versorgungsspannung kommt der Ausgang oft nicht heran - dieser Abstand wird als Headroom bezeichnet.
-
-        Zusätzlich gibt es die Offsetspannung, die die Kennlinie ein Stück nach links oder rechts verschiebt.
-
-        Das bedeutet: In der Praxis arbeiten wir mit O P Vs am besten in ihrem linearen Bereich, und wir müssen immer die Grenzen durch Versorgungsspannung und Offset im Blick behalten.} %seed: 875664 
+        Aber dieser Bereich ist begrenzt: Nach oben und unten verhält sich der O P V nicht mehr linear bevor er seinen Sättigungsbereich erreicht. Hier kann die Ausgangspannung nicht weiter verstärkt werden. Ganz bis an die Grenzen der Versorgungsspannung kommt der Ausgang oft nicht heran - dieser Abstand wird als Headroom bezeichnet. Zusätzlich gibt es die Offsetspannung, die die Kennlinie ein Stück nach links oder rechts verschiebt.
+        Das bedeutet: In der Praxis arbeiten wir mit O P Vs am besten in ihrem linearen Bereich, und wir müssen immer die Grenzen durch Versorgungsspannung und Offset im Blick behalten.} 
+    %seed: 875664 
+    \silence{3}
 \end{frame}
