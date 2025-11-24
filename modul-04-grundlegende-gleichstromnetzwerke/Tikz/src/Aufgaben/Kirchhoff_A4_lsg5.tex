@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+    \draw(3,3) to[short,o-](2,3)
+    to[R,l_=$R_\mathrm{i}$](0,3)
+    to[V,v_,name=UQ](0,0)
+    to[short, -o](3,0)
+    to[R, l_=$R$](3,3);
+
+
+    \varrmore{UQ}{$U_{\mathrm{0}}$};
+  
+
+    \node at (3.0,3.3){A};
+    \node at (3.3,0){B};
+\end{tikzpicture}

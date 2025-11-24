@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+    \draw(3,3) to[short,o-](2,3)
+    to[R, i<_,l_=$R_1$, name = R1](0,3)
+    to[V,v_,name=UQ](0,0)
+    to[short](7,0)
+    to[V,v_,name=IQ](7,3)
+    to[R,l=$R_3$,-o](4,3)
+    to[short,i<, name=IK](3,3);
+
+    \draw(2.5,0)to[R, i_<, l=$R_2$,*-*, name = R2](2.5,3);
+    %\draw(5,0)to[R,l=$R_3$,*-*](5,3);
+    \iarrmore{R1}{$I_{\mathrm{1}}$};
+    \iarrmore{R2}{$I_{\mathrm{2}}$};
+    \iarrmore{IK}{$I_{\mathrm{K}}$};
+    \varrmore{UQ}{$U_{\mathrm{Q}}$};
+    \varrmore{IQ}{$I_{\mathrm{Q}} \cdot R_3$};
+    
+
+    \node at (3.2,3.3){A};
+    \node at (3.8,3.3){B};
+    \node[text=blue] at (1.2,1.5){M I};
+    \node[text=blue] at (5.2,1.5){M II};
+    \node[text=red] at (2.4,3.3){K I};
+    %\node at (5.2,1.3){M II};
+\end{tikzpicture}

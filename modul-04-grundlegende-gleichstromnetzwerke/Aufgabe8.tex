@@ -1,4 +1,4 @@
-\subsection{Kirchhoffsche Gestze 4}
+\subsection{Kirchhoffsche Gesetze 4}
 \Aufgabe{
     Gegeben ist die dargestellte Schaltung aus den drei Widerständen $R_1, R_2$ und $R_3$ und
     den beiden Quellen $U_{\mathrm{Q}}$ und $I_{\mathrm{Q}}$. \newline
@@ -18,5 +18,119 @@
 }
 
 \Loesung{
-	Hier entsteht eine Musterlösung...
+
+
+
+    \begin {enumerate}[label=\alph*)]
+        \item Bestimmen Sie den Innenwiderstand der Schaltung bezüglich der Klemmen A und B.
+        
+
+        Zum bestimmen des Innenwiderstandes: 
+         \begin{itemize}
+            \item Stromquellen öffnen
+            \item Spannungsquellen kurzschließen
+        \end{itemize}
+
+        \begin{center}
+            \input{Tikz/src/Aufgaben/Kirchhoff_A4_lsg}
+        \end{center}
+
+    
+    $ R_\mathrm{i,AB}= R_3 + \frac{R_1 \cdot R_2}{R_1 + R_2}$
+        
+
+
+        \item Berechnen Sie die Leerlaufspannung $U_{\mathrm{ABL}}$ zwischen den Klemmen A und B.
+        
+        Zur Bestimmung der Leerlaufspannung oft sinnvoll: Stromquelle in Spannungsquelle umrechnen:
+        \begin{itemize}
+            \item Parallelgeschalteten Innenwiderstand in Reihe schalten
+            \item Spannungspfeil der Ersatzspannungsquelle entgegen dem ursprünglichen Strompfeil zeichnen
+        \end{itemize}
+
+        \begin{center}
+            \input{Tikz/src/Aufgaben/Kirchhoff_A4_lsg2}
+        \end{center}
+
+            $I_\mathrm{R3} = 0 \rightarrow U_\mathrm{R3} = 0$\
+
+            $U_\mathrm{AB,L} = U_\mathrm{Q} \cdot \frac{R_2}{R_1+R_2} + I_\mathrm{Q} \cdot R_3$
+
+
+
+        
+        \item Geben Sie die Ersatzspannungsquelle für die Schaltung nach dem vorstehenden Bild an und kennzeichne die Größen.
+        
+        \begin{center}
+            \input{Tikz/src/Aufgaben/Kirchhoff_A4_lsg3}
+        \end{center}
+
+        $U_0 = U_\mathrm{AB,L} =  U_\mathrm{Q} \cdot \frac{R_2}{R_1+R_2} + I_\mathrm{Q} \cdot R_3$\\
+
+        $ R_\mathrm{i} = R_\mathrm{i,AB}= R_3 + \frac{R_1 \cdot R_2}{R_1 + R_2}$
+
+        
+
+        \item Welche Verlustleistung $P_{\mathrm{V}}$ wird in der Schaltung nach dem vorstehenden Bild umgesetzt?
+        
+        $P_\mathrm{V} = P_1 + P_2 + P_3 = U_\mathrm{R1} \cdot I_1 + U_\mathrm{R2} \cdot I_2 + U_\mathrm{R3} \cdot I_3$\
+
+        $= U_\mathrm{Q} \cdot \frac{R_1}{R_1+R_2} \cdot \frac{U_\mathrm{Q}}{R_1+R_2} +U_\mathrm{Q} \cdot \frac{R_2}{R_1+R_2} \cdot \frac{U_\mathrm{Q}}{R_1+R_2} + R_3 \cdot I_\mathrm{Q} \cdot I_\mathrm{Q} $
+
+        $= U_\mathrm{Q}^2 \cdot \frac{R_1}{(R_1+R_2)^2} + U_\mathrm{Q}^2 \cdot \frac{R_2}{(R_1+R_2)^2} + I_\mathrm{Q}^2 \cdot R_3 = \frac{U_\mathrm{Q}^2}{R_1+R_2} +I_\mathrm{Q}^2 \cdot R_3 $
+
+
+        \item Die Klemmen A und B werden kurzgeschlossen. Welcher Strom $I_{\mathrm{K}}$ fließt durch diese Verbindung
+        zwischen den Klemmen A und B?
+
+                \begin{center}
+            \input{Tikz/src/Aufgaben/Kirchhoff_A4_lsg4}
+        \end{center}
+
+        MI: $R_1 \cdot I_1$ + $R_2 \cdot I_2$             - $U_0$ = 0\\
+        MII: $- R_2 \cdot I_2 $ + $R_3 \cdot I_\mathrm{K}$      - $I_\mathrm{Q} \cdot R_3$ = 0\\
+        KI: $I_1$ - $I_2$ - $I_\mathrm{K}$ = 0\\
+
+        3 Gleichungen, 3 Unbekannte $\rightarrow$ Lösung über beispielsweise über Gauss-Algorithmus möglich.\\
+
+        Einfacher:\\
+        ESB aus c) 
+
+        \begin{center}
+            \input{Tikz/src/Aufgaben/Kirchhoff_A4_lsg3}
+        \end{center}
+
+        $U_0 = U_\mathrm{AB,L} =  U_\mathrm{Q} \cdot \frac{R_2}{R_1+R_2} + I_\mathrm{Q} \cdot R_3$\\
+
+        $ R_\mathrm{i} = R_\mathrm{i,AB}= R_3 + \frac{R_1 \cdot R_2}{R_1 + R_2}$\\
+
+        $\rightarrow I_\mathrm{K} = \frac{U_0}{R_\mathrm{i}}= \frac{U_\mathrm{Q}\cdot R_2 + I_\mathrm{Q} \cdot R_3 \cdot (R_1+R_2)}{R_1 \cdot R_2 + R_3 \cdot (R_1+R_2)} $
+
+
+
+
+
+
+        \item Welche Spannung $U_{\mathrm{AB}}$ stellt sich ein, wenn an die Klemmen A und B ein Widerstand $R$ angeschlossen wird? $(R_1 = R_2 = R_3 = R)$    
+    
+
+    Aus c), Widerstand $R$ eingefügt
+    \begin{center}
+        \input{Tikz/src/Aufgaben/Kirchhoff_A4_lsg5}
+    \end{center}
+    $R_\mathrm{i} = \frac{R \cdot R}{R + R} + R= \frac{1}{2} \cdot R + R = \frac{3}{2} \cdot R$\\
+
+    Aus d): $U_0 = U_\mathrm{Q} \cdot \frac{R}{R+R} + R \cdot I_\mathrm{Q} = \frac{1}{2} U_\mathrm{Q} + R \cdot I_\mathrm{Q}$
+
+    Spannungsteiler:\\
+    
+    $U_\mathrm{R} = U_0 \cdot \frac{R}{2,5 \cdot R}$\\
+
+    $ = 0,4 \cdot U_0 = U_\mathrm{Q} \cdot 0,5 \cdot 0,4 + I_\mathrm{Q} \cdot R \cdot 0,4 = 0,2 \cdot U_\mathrm{Q} + 0,4 \cdot R \cdot I_\mathrm{Q}$
+
+
+
+
+    \end{enumerate}
+
 }
