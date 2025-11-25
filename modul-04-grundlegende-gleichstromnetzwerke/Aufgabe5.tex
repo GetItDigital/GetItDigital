@@ -25,5 +25,81 @@
 }
 
 \Loesung{
-    Hier entsteht eine Musterlösung...
+    
+
+    \begin{enumerate}[label=\alph*)]
+        \item Parallelschaltung: $U_0 = U_1 = U_2 = U_3$\\
+        \begin{center}
+            \input{Tikz/src/Aufgaben/Kirchhoff_A1a} 
+        \end{center}
+
+        
+        
+        $I_1 = \frac{U_0}{R_1} = \frac{12 \, \mathrm{V}}{2 \, \Omega} = 6 \, \mathrm{A}$\\
+
+        $I_2 = \frac{U_0}{R_2} = \frac{12 \, \mathrm{V}}{4 \, \Omega} = 3 \, \mathrm{A}$\\
+
+        $I_1 = \frac{U_0}{R_3} = \frac{12 \, \mathrm{V}}{3 \, \Omega} = 4 \, \mathrm{A}$\\
+
+        $I_0 = I_1 + I_2 + I_3 = 13 \, \mathrm{A}$\\
+
+        Leistung bei Gleichspannung:\\
+        $P = U \cdot I = \frac{U^2}{R} = I^2 \cdot R$\\
+
+        $P_1 = U_1 \cdot I_1 = 72 \, \mathrm{W} $\\
+
+        $P_2 = U_2 \cdot I_2 = 36 \, \mathrm{W} $\\
+
+        $P_3 = U_3 \cdot I_3 = 48 \, \mathrm{W} $\\
+
+        $P_\mathrm{ges} = P_1 + P_2 + P_3 = 156 \, \mathrm{W}$
+
+        \item Zum besseren Verständnis umzeichnen:
+        \begin{center}
+            \input{Tikz/src/Aufgaben/Kirchhoff_A1b_lsg1}
+        \end{center}
+
+        $I_1 = I_0 = 3 \, \mathrm{A}$\\
+
+        $\rightarrow U_1 = R_1 \cdot I_1 = 2 \Omega \cdot 3 \, \mathrm{A} = 6 \, \mathrm{V}$\\
+
+        $I_2$? Stromteilerregel:\\
+
+        $I_2 = I_1 \cdot \frac{R_3 + R_4}{R_2 + R_3 + R_4} = 3 \, \mathrm{A} \cdot \frac{6 \, \Omega}{10 \, \Omega} = 1,8 \, \mathrm{A}$\\
+
+        $\rightarrow U_2 = R_2 \cdot I_2 = 4 \, \Omega \cdot 1,8 \, \mathrm{A} = 7,2 \, \mathrm{V}$\\
+
+        Berechnung von $U_4?$ Hier Spannungsteiler, theoretisch auch über Knotenregel möglich.\\
+
+        Über die Reihenschaltung $R_3 + R_4$ liegt eine Gesamtspannung an, die genausogroß wie die dazu parallelgeschaltete Spannung $U_2$ ist.\\
+
+        $U_4 = U_2 \cdot \frac{R_4}{R_3 + R_4} = 7,2 \, \mathrm{V} \cdot \frac{3 \, \Omega}{6 \, \Omega} = 3,6 \, \mathrm{V}$\\
+
+        $I_{34} = \frac{U_4}{R_4} = \frac{3,6 \, \mathrm{V}}{3 \, \Omega} = 1,2 \, \mathrm{A}$\\
+
+        $U_3 = R_3 \cdot I_{34} = 1,2 \, \mathrm{A} \cdot 3 \Omega = 3,6 \, \mathrm{V}$\\
+
+        Berechnung der Leistungen:\\
+
+        $P_1 = U_1 \cdot I_1 = 18 \, \mathrm{W} $\\
+
+        $P_2 = U_2 \cdot I_2 = 12,96 \, \mathrm{W} $\\
+
+        $P_3 = U_3 \cdot I_{34} = 4,32 \, \mathrm{W} $\\
+
+        $P_4 = U_4 \cdot I_{34} = 4,32 \, \mathrm{W} $\\
+
+        $P_\mathrm{ges} = P_1 + P_2 + P_3 + P_4 = 39,6 \, \mathrm{W}$
+
+
+
+
+
+
+
+
+
+
+        
+    \end{enumerate}  
 }

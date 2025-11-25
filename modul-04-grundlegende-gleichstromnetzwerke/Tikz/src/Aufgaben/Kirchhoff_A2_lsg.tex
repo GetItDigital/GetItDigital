@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+        \draw(0,0) to[V,v<,name=U0,-*] (0,3)
+        to[R,l=$R_1$,name=R1] (3,3)
+        to[R,l=$R_{23}$,name=R23](6,3)
+        to[R,l=$R_{456}$,name=R4](9,3)
+        to[short](9,0)
+        to[short,i_,name=rueck](0,0);
+
+ 
+        \varrmore{U0}{$U_0$};
+        \iarrmore{rueck}{$I_0$};
+       
+      
+        
+ 
+    \end{tikzpicture}

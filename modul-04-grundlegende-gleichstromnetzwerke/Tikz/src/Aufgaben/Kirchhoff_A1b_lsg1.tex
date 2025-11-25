@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+    \draw(0,0) to[I,i_,name=I0,-*] (0,6)
+    to[short] (3,6)
+    to[R,v,i,l=$R_1$,name=R1,-*] (3,4)
+    to[short] (3,3)
+    to[R,v,i,l=$R_2$,name=R2](3,1)
+    to[short] (3,0)
+    to[short] (0,0);
+    \draw(3,4)to[short] (5,4)
+    to[R,v,i,l=$R_3$,name=R3](5,2)
+    to[R,v,l=$R_4$,name=R4](5,0)
+    to[short,-*](3,0);
+
+
+    \iarrmore{I0}{$I_0$};
+    \iarrmore{R1}{$I_1$};
+    \iarrmore{R2}{$I_2$};
+    \iarrmore{R3}{$I_{34}$};
+    \varrmore{R1}{$U_1$};
+    \varrmore{R2}{$U_2$};
+    \varrmore{R3}{$U_3$};
+    \varrmore{R4}{$U_4$};
+
+
+\end{tikzpicture}
