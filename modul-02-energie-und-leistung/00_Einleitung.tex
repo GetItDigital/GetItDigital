@@ -243,16 +243,20 @@ Die Studierenden
 				\centering
 				\b{\scalebox{0.8}{\includesvg[width=0.9\textwidth]{Wasserkraftwerk_V5}}} %%% width0.9 für passende textgröße in svg; scalebox um alles gleichzeitig zu skalieren
 				\s{\includesvg[width=0.8\textwidth]{Wasserkraftwerk_V5}
-					\caption{\textbf{Pumpspeicherkraftwerk.} Der Aufbau bestehend aus einem Oberbecken,
-						einem Unterbecken, sowie Turbinen und einer elektrischen Maschine. Es dient der Speicherung von Energie durch das Hochpumpen von Wasser und der Rückgewinnung
-						durch die Abgabe von Wasserkraft zur Stromerzeugung.}}
+					\caption{\textbf{Pumpspeicherkraftwerk.} Aufbau mit Ober- und Unterbecken, Turbinen und elektrischer Maschine zur Energiespeicherung und Rückgewinnung.}
+						\alttext{Die Abbildung zeigt ein Pumpspeicherkraftwerk mit einem höher gelegenen Oberbecken und einem tiefer gelegenen Unterbecken. Beide Becken sind über eine Druckrohrleitung verbunden, in der sich Turbinen und eine elektrische Maschine befinden. Im Pumpbetrieb wird Wasser über die Maschine nach oben in das Oberbecken befördert, um Energie zu speichern. Im Turbinenbetrieb strömt das Wasser wieder nach unten, treibt die Turbinen an und erzeugt elektrische Energie. Die Grafik stellt die Funktionsweise und den Energiefluss des Systems schematisch dar.}}
 				\label{fig:Pumpspeicherkraftwerk}
 
 			\end{figure}
 		}
 		\b{\only<2->{
-				\vspace{-6.15cm} % Abstand nach oben, damit der Merksatz über dem Bild sitzt
+				\vspace{-8cm} % Abstand nach oben, damit der Merksatz über dem Bild sitzt
+				\begin{tikzpicture}{remember picture,overlay}
+						\fill[white,opacity=0.7](current page.south west) rectangle(current page.north east);
+			\end{tikzpicture}
+					\vspace{-8.65cm}
 				\begin{Merksatz}
+
 					Energie kann gespeichert werden, Arbeit wird verrichtet.
 				\end{Merksatz}}}
 	\end{overlayarea}

@@ -18,6 +18,7 @@ mit der ein System Energie umwandelt. Am Beispiel eines Elektromotors zeigt Abbi
 		\includesvg[width=0.8\textwidth]{Wirkungsgrad_Copy}}
 	\caption{\textbf{Wirkungsgrad eines Elektromotors.} Zeigt das Verhältnis der abgegebenen
 	 Leistung zur zugeführten Leistung. Der Wirkungsgrad beschreibt die Effizienz des Motors bei der Umwandlung von Energie.}
+	 \alttext{Die Abbildung zeigt einen Elektromotor, der schematisch von drei Pfeilen umgeben ist. Links weist ein breiter Pfeil auf den Motor und steht für die zugeführte Leistung. Rechts zeigt ein Pfeil vom Motor weg und symbolisiert die abgegebene Leistung. Ein weiterer Pfeil zeigt nach oben und kennzeichnet die Verluste, die während des Betriebs entstehen. Die Darstellung macht deutlich, dass ein Teil der zugeführten Energie in nutzbare mechanische Leistung umgewandelt wird, während ein anderer Teil als Verlust, zum Beispiel durch Wärme, abgeführt wird.}
 	\label{fig:Wirkungsgrad}
 	\end{figure}}
 \b{
@@ -139,7 +140,7 @@ können dazu beitragen, den Energiebedarf zu reduzieren und Treibhausgasemission
 
 %%%%%%%%%%%%%%%% Schaltbilder einer Glühbirne %%%%%%%%%%%%%%%%%
 
-\begin{frame}
+\begin{frame}[t]
 	\ftx{Der Wirkungsgrad}
 \begin{figure}[H]
 	\centering
@@ -147,14 +148,14 @@ können dazu beitragen, den Energiebedarf zu reduzieren und Treibhausgasemission
 	
 	\input{Tikz/src/04_Wirkungsgrad/Beispiel_Schaltung_Wirkungsgrad}
 
-	\s{\caption{\textbf{Beispiel Schaltung Wirkungsgrad.} Das Bild zeigt die Abgabe von Wärme und Licht am Verbraucher. Das Verhältnis von Licht zu Wärme entspricht dem Wirkungsgrad.}}
+	\s{\caption{\textbf{Beispiel Schaltung Wirkungsgrad.} Das Bild zeigt die Abgabe von Wärme und Licht am Verbraucher. Das Verhältnis von Licht zu Wärme entspricht dem Wirkungsgrad.}\alttext{Die Abbildung zeigt eine einfache elektrische Schaltung mit einer Glühlampe als Verbraucher. Links befindet sich eine Spannungsquelle, aus der der Strom durch die Leitung zur Lampe fließt. Ein Schalter ist in den Stromkreis eingebaut. An der Glühlampe wird die abgegebene Energie in Form von Licht und Wärme dargestellt. Die Darstellung macht deutlich, dass nur ein Teil der zugeführten elektrischen Energie in Licht umgesetzt wird, während der Rest als Wärme verloren geht, was dem Wirkungsgrad der Lampe entspricht.}}
 	\label{fig:Nennleistung}
 \end{figure}
 \b{
 \begin{itemize}
 	\item $P_\mathrm{zu}=U \cdot I$
 	\item $\eta=5\%$
-	\item $P_\mathrm{v}=P_\mathrm{zu}\cdot \eta$
+	\item $P_\mathrm{nutz}=P_\mathrm{zu}\cdot \eta$
 	\item $P_\mathrm{ab}=P_\mathrm{zu}\cdot(1-\eta)$
 \end{itemize}}
 \end{frame}
@@ -173,38 +174,35 @@ können dazu beitragen, den Energiebedarf zu reduzieren und Treibhausgasemission
 % \end{figure}
 % \end{frame}
 
-\s{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Beispiel Wirkungsgrad %%%
-\begin{frame}
-	\ftx{Der Wirkungsgrad}
-\begin{bsp}{Berechnungs des Wirkungsgrades}{}
+% \s{
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%% Beispiel Wirkungsgrad %%%
+% \begin{frame}
+% 	\ftx{Der Wirkungsgrad}
+% \begin{bsp}{Berechnungs des Wirkungsgrades}{}
 
-%Hier kommt ein Beispiel zur Berechnung des Wirkungsgrades rein.
+% Eine Wärmekraftmaschine entnimmt einer Wärmequelle eine Energie von \( Q_\text{zu} = 5000 \,\mathrm{J} \) und verrichtet dabei eine mechanische Arbeit von \( W = 1200 \,\mathrm{J} \).
 
-Eine Wärmekraftmaschine entnimmt einer Wärmequelle eine Energie von \( Q_\text{zu} = 5000 \,\mathrm{J} \) und verrichtet dabei eine mechanische Arbeit von \( W = 1200 \,\mathrm{J} \).
+% 		\vspace{0.3cm}
+% 		\textbf{Gesucht:} Wirkungsgrad \( \eta \)
 
-		\vspace{0.3cm}
-		\textbf{Gesucht:} Wirkungsgrad \( \eta \)
+% 		\vspace{0.2cm}
+% 		\textbf{Formel:}
+% 		\[
+% 			\eta = \frac{\text{Nutzarbeit}}{\text{Zugeführte Wärmeenergie}} \cdot 100\% = \frac{W}{Q_\text{zu}} \cdot 100\%
+% 		\]
 
-		\vspace{0.2cm}
-		\textbf{Formel:}
-		\[
-			\eta = \frac{\text{Nutzarbeit}}{\text{Zugeführte Wärmeenergie}} \cdot 100\% = \frac{W}{Q_\text{zu}} \cdot 100\%
-		\]
+% 		\vspace{0.2cm}
+% 		\textbf{Einsetzen:}
+% 		\[
+% 			\eta = \frac{1200\,\text{J}}{5000\,\text{J}} \cdot 100\% = 24\%
+% 		\]
 
-		\vspace{0.2cm}
-		\textbf{Einsetzen:}
-		\[
-			\eta = \frac{1200\,\text{J}}{5000\,\text{J}} \cdot 100\% = 24\%
-		\]
+% 		\vspace{0.2cm}
+% 		Der Wirkungsgrad beträgt \( \eta = 24\% \).
 
-		\vspace{0.2cm}
-		Der Wirkungsgrad beträgt \( \eta = 24\% \).
+% \end{bsp}
 
-\end{bsp}
-
-\end{frame}
-%%% Ende Beispiel Wirkungsgrad %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-}
+% \end{frame}}
+% %%% Ende Beispiel Wirkungsgrad %%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
