@@ -15,10 +15,11 @@
 
 \end{circuitikz}
 
-\begin{tikzpicture}
+\onslide<2->{
+    \begin{tikzpicture}
     \begin{axis} [
             xlabel={Zeit},
-            ylabel={\textcolor{voltage} {$u_\mathrm{C}(t)$}\only<2->{/\textcolor{current}{$i(t)$}} } ,
+            ylabel={\textcolor{voltage} {$u_\mathrm{C}(t)$}\only<3->{/\textcolor{current}{$i(t)$}} } ,
             % ylabel={
             % 	\textcolor{cyan}{$U_\mathrm{q}$}}
             % 	\only<3->{/ \textcolor{voltage}{$u_\mathrm{C}(t)$}}
@@ -44,7 +45,7 @@
             legend style={font=\scriptsize}
         ]
         \addplot [voltage, domain=0:12, samples=100] {ifthenelse(x<0, 0, 1 - exp(-(x)))};
-        \only<2->{\addplot [current, domain=0:12, samples=100] {ifthenelse(x<0, 0,     exp(-(x)))};}
+        \only<3->{\addplot [current, domain=0:12, samples=100] {ifthenelse(x<0, 0,     exp(-(x)))};}
 
         %Schalter markierung in Graph
         \addplot [cyan,thick, dotted] coordinates {(5,1) (5,0)};
@@ -53,7 +54,7 @@
         \draw[dashed] (axis cs:1,0) -- (axis cs:1,0.63) node[right] {};
         \draw[dashed] (axis cs:0,0.63) -- (axis cs:1,0.63) node[right] {};
         
-        \only<2->{\draw[dashed] (axis cs:1,0) -- (axis cs:1,0.37) node[right] {};
+        \only<3->{\draw[dashed] (axis cs:1,0) -- (axis cs:1,0.37) node[right] {};
             \draw[dashed] (axis cs:0,0.37) -- (axis cs:1,0.37) node[right] {};}
         \node[right] at (5,0.5) {$t_\mathrm{0}=5\tau$};
 
@@ -66,7 +67,7 @@
                 (1, 0.63)
 
             };
-        \only<2->{ \addplot[
+        \only<3->{ \addplot[
                 only marks,
                 mark=*,
                 mark options={scale=0.7, fill=black}
@@ -77,3 +78,4 @@
 
     \end{axis}
 \end{tikzpicture}
+}

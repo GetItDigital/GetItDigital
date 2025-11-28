@@ -142,7 +142,7 @@
 %%%%%%  Kurzschlussstrom I_K erwähnen
 %%%%%%  I_K = U_0 / R_i
 
-\begin{frame}%; TODO: Hillgärtner: Hinweis: Vielleicht sollte URI als Spannungsabfall an RI noch in die Darstellung aufgenommen werden.
+\begin{frame}
     \ftx{Spannungsquelle}
     \b{
         \begin{itemize}
@@ -322,7 +322,8 @@
     \speech{02_Spannungs_und_Stromquellen6}{1}{%;TODO schlimmer seed
         Bei der realen Stromquelle haben wir wieder einen Innenwiderstand. Dieser Innenwiderstand darf aber in keinem Fall in Reihe liegen, denn dann würde er den Ausgangsstrom ja überhaupt nicht beeinflussen. Bei einer Reihenschaltung ist der Strom durch alle Elemente gleich. Wir müssen dem Strom einen sogenannten Verzweigungspunkt liefern, indem wir den Innenwiderstand parallel zur Quelle schalten. Dann fließt ein Teil des Quellstroms durch den Innenwiderstand, und ein anderer Teil fließt als Ausgangsstrom I durch die angeschlossene Last.
         Wenn jetzt die angeschlossene Last einen sehr viel kleineren Widerstand hat als der Innenwiderstand R-I, dann fließt ein Großteil des Quellstroms durch die Last, und ein sehr viel kleinerer Teil des Stroms durch den Innenwiderstand. Du wirst in den folgenden Modulen auch noch die Knotenregel kennenlernen und sehen, dass der Quellstrom I-Q genau gleich der Summe aus I und I-R-I ist.
-        Wie muss also der Innenwiderstand sein, damit eine Stromquelle möglichst ideales Verhalten zeigt? Der Innenwiderstand einer Stromquelle sollte möglichst groß sein. Auch das widerspricht dem natürlichen Gefühl. Da sagt man normalerweise: Innenwiderstände sollten klein sein, damit die Verluste klein sind. Hier ist es genau umgekehrt. Der Innenwiderstand sollte möglichst groß sein. Achtung: Bei der realen Stromquelle ist ein möglichst großer Innenwiderstand absolut wünschenswert. Auch hier: Wenn der Innenwiderstand klein wäre und wir dann die Quelle leerlaufen lassen, flösse der gesamte Strom I-Q durch den Innenwiderstand. Wir hätten einen ähnlichen Effekt wie beim Kurzschluss der realen Spannungsquelle, im R-I würde eine extrem hohe Leistung umgesetzt, was zur Zerstörung der Quelle führen würde.
+        Wie muss also der Innenwiderstand sein, damit eine Stromquelle möglichst ideales Verhalten zeigt? Der Innenwiderstand einer Stromquelle sollte möglichst groß sein. Auch das widerspricht dem natürlichen Gefühl. Da sagt man normalerweise: Innenwiderstände sollten klein sein, damit die Verluste klein sind. Hier ist es genau umgekehrt. Der Innenwiderstand sollte möglichst groß sein. Achtung: Bei der realen Stromquelle ist ein möglichst großer Innenwiderstand absolut wünschenswert. Auch hier: Wenn der Innenwiderstand klein wäre und wir dann eine Last anschließen würden, würde der meiste Strom durch den Innenwiderstand fließen und nicht durch die Last.
+        %die Quelle leerlaufen lassen, flösse der gesamte Strom I-Q durch den Innenwiderstand. Wir hätten einen ähnlichen Effekt wie beim Kurzschluss der realen Spannungsquelle, im R-I würde eine extrem hohe Leistung umgesetzt, was zur Zerstörung der Quelle führen würde.
     }
     
 \end{frame}
@@ -531,7 +532,7 @@
 %\setlength{\mpheight}{3.8cm}
 
 %%%%%%%%
-\begin{frame}%veränderungen von JW höhe der Bounding box von TIKZ
+\begin{frame}
     \ftx{Verschiedene Spannungs- und Stromquellen}
     \b{
         \begin{figure}[h]
