@@ -46,7 +46,7 @@
             \item{DGL-Eigenschaften aus Schaltungseigenschaften ableiten können} % Verstehen, Analyse
         \end{itemize}
     \end{Lernziele}
-\speech{Grundlagen1Videoziele}{1}{%
+\speech{2Grundlagen1F1Videoziele}{1}{%
  Willkommen zu diesem Video über den ersten Teil der Grundlagen zum Modul Schaltvorgänge.
  Im ersten Grundlagen Video nähern wir uns dem Thema von eher theoretischer Seite her.
  Wie auf dieser Folie zu erkennen ist, lernen wir zunächst wichtige grundlegende Begriffsdefinitionen kennen und verstehen.
@@ -138,7 +138,7 @@
         }% end resizebox
     \b{\renewcommand{\thefootnote}{\arabic{footnote}}} % https://www.sascha-frank.com/footnote.html
     \end{table}
-\speech{Grundlagen1Definitionen}{1}{%
+\speech{2Grundlagen1F2Definitionen}{1}{%
 Beginnen wir mit der Definition von wichtigen Begriffen für das Thema Schaltvorgänge. 
 Die Tabelle, die Sie hier auf dieser Folie sehen, dient als Nachschlagewerk mit Kurzdefinitionen einiger wichtiger Begriffe. 
 Sie kann bei Bedarf im Sinne eines Glossars verwendet werden. Im Skript ist eine etwas ausführlichere Variante der Tabelle hinterlegt.
@@ -301,12 +301,12 @@ Schaltvorgänge können im Kontext des Moduls als Ausgleichsvorgänge nach dem S
     \end{center}
     Beide Methoden basieren auf dem Lösen von Differentialgleichungen.
 }%
-\speech{Grundlagen1Berechnungsmethoden}{1}{%
+\speech{2Grundlagen1F3Berechnungsmethoden}{1}{%
 Kommen wir zu den allgemeinen Berechnungsmethoden für Schaltvorgänge. 
 Prinzipiell gibt es zwei Ansätze, um die Zeitverläufe von Systemgrößen wie Strom oder Spannung während eines Schaltvorganges zu berechnen.
 }%
 \silence{1}%
-\speech{Grundlagen1Berechnungsmethoden}{1}{%
+\speech{2Grundlagen1F3Berechnungsmethoden}{1}{%
 Bei der ersten Methode wird der Schaltvorgang im Zeitbereich berechnet - wie hier in der oberen Bildhälfte zu sehen ist.
 Ausgangspunkt der Methode ist die Differenzialgleichung der Schaltung für die Systemgröße f.
 Durch Lösen der Differenzialgleichung lässt sich der gesuchte Zeitverlauf F von Tee bestimmen.
@@ -315,21 +315,21 @@ Die Methode bietet sich gerade zu Beginn an, um ein Verständnis für die physik
 Für diese Methode wird der Zeitverlauf auf anschauliche Weise in einen flüchtigen und einen eingeschwungenen Zustand zerlegt wie später noch gezeigt wird.
 }%
 \silence{2}%
-\speech{Grundlagen1Berechnungsmethoden}{1}{%
+\speech{2Grundlagen1F3Berechnungsmethoden}{1}{%
 Bei der zweiten Methode wird die gleiche Differenzialgleichung als Ausgangspunkt genommen, allerdings wird diese im Bildbereich gelöst. 
 Vorraussetzung ist, dass die Differenzialgleichung für T größer gleich 0 gilt, was bei Schaltvorgängen gegeben ist. 
 Die Methode im Bildbereich ist weniger anschaulich und etwas abstrakter durch die mathematische Repräsentation im Bildbereich.
 Daher wird die Methode an dieser Stelle kurz erklärt, aber im Rahmen des Moduls nicht ausführlicher behandelt. 
 }%
 \silence{3}%
-\speech{Grundlagen1Berechnungsmethoden}{1}{%
+\speech{2Grundlagen1F3Berechnungsmethoden}{1}{%
 In den meisten Fällen, insbesondere bei komplexeren Schaltung oder gekoppelten Schaltvorgängen, ist die Berechnung im Bildbereich deutlich einfacher. 
 Wie links zu sehen ist, wird die Differenzialgleichung durch die Laplace-Transformation in eine algebraische Form gebracht. 
 Das bedeutet, dass Integrale und Differenziale durch die Transformation entfallen und die Gleichung - wie unten zu sehen ist - 
 algebraisch nach der Bildfunktion groß F von S aufgelöst werden kann. Durch Rücktransformation wird so der Zeitverlauf klein F von Tee bestimmt. 
 }%
 \silence{4}%
-\speech{Grundlagen1Berechnungsmethoden}{1}{%
+\speech{2Grundlagen1F3Berechnungsmethoden}{1}{%
 Der große Vorteil ist, dass die algebraische Umformung im Bildbereich in der Regel einfacher zu berechnen ist als das Lösen der Differenzialgleichung im Zeitbereich. 
 Für die Transformation und Rücktransformation gibt es entsprechende Korrespondenztabellen.
 Vereinfacht wird das Verfahren zusätzlich, bei verschwindenden Anfangsbedingungen, das heißt wenn F von Tee oder deren Ableitungen zum Schaltzeitpunkt gleich Null sind.
@@ -395,14 +395,14 @@ Andernfalls müssen die Anfangsbedingungen im Bildbereich mit eingearbeitet werd
 \b{% Folie: Schaltungselemente + Kirchhoff + Komponentengleichungen
     \includegraphics{Tikz/pdf/slide_aktive_passive_bauele2.pdf}
 }%
-\speech{Grundlagen1DGL}{1}{%
+\speech{2Grundlagen1F4DGL}{1}{%
 Wie erhalten wir nun die erforderlichen Differenzialgleichungen? 
 Die Schaltungen die wir in diesem Modul betrachten werden, bestehen aus den links gezeigten Komponenten. 
 Das sind zum Einen die passiven Komponenten: Elektrische Widerstände R, Induktivitäten L, Kapazitäten C und Leitungen, 
 zum Anderen die aktiven Komponenten: Spannungsquellen U und Stromquellen I. 
 }% Speech Ende
 \silence{1}%
-\speech{Grundlagen1DGL}{1}{%
+\speech{2Grundlagen1F4DGL}{1}{%
 Das Vorhandensein von Energiespeichern, das heißt von Induktivitäten oder Kapazitäten, führt zu Schaltvorgängen und Differenzialgleichungen. 
 Wie rechts bei den Komponenten Gleichungen zu sehen ist, ist die Spannung U L an Induktivitäten proportional zur zeitlichen Ableitung des Stromes I L. 
 Das heißt der Strom I L kann niemals springen, ist also stetig. Genauso verhält es sich mit dem Strom I C bei Kapazitäten, der proportional zur zeitlichen Ableitung der Spannung U C ist. Daher kann die Spannung U C niemals springen, ist also stetig. 
@@ -415,7 +415,7 @@ Die Differenzialgleichung erhalten wir durch Anwendung der Komponentengleichung 
     Mögliche Vorgehensweisen zum Aufstellen von Differentialgleichungen:\\[5pt]
     \includegraphics[width=\textwidth]{Tikz/pdf/plot_flussdiagramm_dgl_aufstellen.pdf}
 }
-\speech{Grundlagen1DGLAufstellen}{1}{%
+\speech{2Grundlagen1F5DGLAufstellen}{1}{%
 Das hier gezeigte Flussdiagramm stellt prinzipiell zwei Vorgehensweisen dar, um die gesuchte Differenzialgleichung - oben rechts im Bild - auf zu stellen.
 Welches Vorgehen am geschicktesten ist, hängt stark von der Schaltungstopologie ab.
 Die erste Methode, hier in der oberen Bildhälfte dargestellt, wird in diesem Modul ausführlich behandelt und nutzt nur den Zeitbereich.
@@ -465,7 +465,7 @@ Beide Varianten werden im Folgenden kurz erläutert und dann anhand eines einfac
         }%
     \end{minipage}
     }% Beamer only Beispiel, Ende
-\speech{Grundlagen1DGLAufstellenBeispiel}{1}{%
+\speech{2Grundlagen1F6DGLAufstellenBeispiel}{1}{%
 Gegeben sei die oben gezeigte Schaltung. 
 Die R C Serienschaltung ist über einen Schalter entweder in der Ausgangsstellung kurzgeschlossen 
 oder ab dem Schaltzeitpunkt T gleich null an eine ideale Gleichspannungsquelle U Kuh angeschlossen. 
@@ -473,12 +473,12 @@ Gesucht sei die Spannung U C an der Kapazität für T größer gleich Null.
 Wir sehen hier die Knoten und Maschengleichung und die Komponentengleichungen für I C und für U R. 
 Da es sich um eine Serienschaltung handelt fließt der gleiche Strom durch R und durch C.
 }% Speech Ende
-\speech{Grundlagen1DGLAufstellenBeispiel}{2}{%
+\speech{2Grundlagen1F6DGLAufstellenBeispiel}{2}{%
 Deshalb setzen wir zunächst R mal I in die Maschengleichung für U R ein
 Als nächsten Schritt ersetzen wir I durch C mal der zeitlichen Ableitung von U C. 
 Dadurch erhalten wir die DGL erster Ordnung: R C mal der ersten Ableitung von U C plus U C ist gleich U Kuh. 
 }% Speech Ende
-\speech{Grundlagen1DGLAufstellenBeispiel}{3}{%
+\speech{2Grundlagen1F6DGLAufstellenBeispiel}{3}{%
 Zum Vergleich stellen wir nun die DGL für die gleiche Schaltung mit der zweiten Methode auf. 
 Da wir die DGL für U C bestimmen wollen, beginnen wir mit dem komplexen Spannungsteiler für U C. 
 U C ist gleich U Kuh mal Z C geteilt durch R plus Z C. 
@@ -544,14 +544,14 @@ Durch Rücktransformation in den Zeitbereich erhalten wir unsere Differenzialgle
     \centering%
     \includegraphics{Tikz/pdf/slide_aktive_passive_bauele.pdf}
 }%
-\speech{Grundlagen1DGLEigenschaften}{1}{%
+\speech{2Grundlagen1F7DGLEigenschaften}{1}{%
 Hier sehen wir eine kurze Zusammenfassung von Schaltungskomponenten, System- und DGL Eigenschaften und der Form der DGL. 
 Links sind die linearen, zeitinvarianten Schaltungskomponenten, aus denen sich unsere Schaltungen zusammen setzen. 
 Oben rechts sehen wir, welche Eigenschaften der DGL sich aus den Systemeigenschaften der Schaltung ableiten lassen. 
 Beinhaltet die Schaltung Energiespeicher, das heißt Induktivitäten oder Kapazitäten, so erhalten wir eine DGL. 
 }% Speech Ende
 \silence{1}%
-\speech{Grundlagen1DGLEigenschaften}{1}{%
+\speech{2Grundlagen1F7DGLEigenschaften}{1}{%
 Die Zusammenhänge von Schaltungstopologie und Eigenschaften und Form der DGL zu verstehen hilft uns zum Beispiel 
 beim Aufstellen der DGL, da wir wissen, welche Form diese annehmen muss. 
 Außerdem kann uns dieses Wissen später helfen das Systemverhalten zum Teil direkt aus der Form der DGL abzuleiten.
@@ -560,7 +560,7 @@ Bei allen Komponenten gehen wir von Zeitinvarianz aus, das heißt zum Beispiel, 
 Daraus lässt sich ableiten, die Konstanten A I unserer Differenzialgleichung sind konstant, da diese nur von den Werten für R, L und oder C abhängen. 
 }% Speech Ende
 \silence{2}%
-\speech{Grundlagen1DGLEigenschaften}{1}{%
+\speech{2Grundlagen1F7DGLEigenschaften}{1}{%
 Unten sehen wir die allgemeine Form einer gewöhnlichen, linearen, inhomogenen Differenzialgleichung der Ordnung N mit konstanten Koeffizienten.
 Die DGL ist gewöhnlich, weil sie nur von einer Variable, hier der Zeit T, abhängt. 
 Die DGL ist linear, weil nur lineare Terme enthalten sind. 
@@ -630,7 +630,7 @@ Die DGL hat die Ordnung N, da die Ente Ableitung die höchst auftretende Ableitu
     \footnotetext{nicht zusammenfassbar}
     \renewcommand{\thefootnote}{\arabic{footnote}}
 }%
-\speech{Grundlagen1DGLOrdnung}{1}{%
+\speech{2Grundlagen1F8DGLOrdnung}{1}{%
 Die Ordnung einer Differenzialgleichung entspricht exakt der Menge an nicht zusammenfassbarer Energiespeicher in der Schaltung.
 Auf dieser Folie sehen Sie einige Beispielschaltungen und die Anzahl der Energiespeicher und resultierenden Ordnung der DGL.
 Sind beispielsweise zwei Induktivitäten unmittelbar in Serie oder zwei Kapazitäten unmittelbar parallel zueinander, 
@@ -659,7 +659,7 @@ Schaltvorgänge in Serienschwingkreisen werden später ausführlich behandelt.
         \item ein Berechnungsverfahren für Schaltvorgänge kennen und verstehen.
     \end{itemize}
     \end{Lernziele}
-\speech{Grundlagen2Lernziele}{1}{%
+\speech{2Grundlagen2F01Lernziele}{1}{%
 Willkommen zum zweiten Grundlagen Video des Moduls Schaltvorgänge.
 In diesem Video behandeln wir das letzte Grundlagen Unterkapitel Berechnungsverfahren im Zeitbereich.
 Wir lernen die Bedeutung von Anfangsbedingungen für Schaltvorgänge zu verstehen, 
@@ -738,27 +738,27 @@ darauf aufbauend ein Berechnungsverfahren für Schaltvorgänge im Zeitbereich ke
         \lim_{\pm\infty \rightarrow t} \eci{i_L(t)} &= \eci{i_{L,t\pm}}
     \end{align*}
 }%
-\speech{Grundlagen2Anfangsbedingungen}{1}{%
+\speech{2Grundlagen2F02Anfangsbedingungen}{1}{%
 Differenzialgleichungen haben prinzipiell unendlich viele Lösungen. 
 }% Speech Ende
-\speech{Grundlagen2Anfangsbedingungen}{2}{%
+\speech{2Grundlagen2F02Anfangsbedingungen}{2}{%
 Um das Zeitverhalten einer gesuchten Schaltungsgröße zu bestimmen, müssen wir die allgemeine Lösung einer DGL auf eine konkrete, distinktive Lösung eingrenzen. 
 Zur Eingrenzung auf diese eindeutige Lösung bedarf es für eine DGL n ter Ordnung exakt n Anfangsbedingungen.
 }% Speech Ende
-\speech{Grundlagen2Anfangsbedingungen}{3}{%
+\speech{2Grundlagen2F02Anfangsbedingungen}{3}{%
 Eine Anfangsbedingung ist der Wert einer beliebigen Schaltungsgröße Ypsilon von Tee
 zu einem beliebigen Zeitpunktes während des Schaltvorganges.
 Wie erhalten wir also die benötigten Anfangsbedingungen, 
 wenn der Zeitverlauf während des Schaltvorganges noch unbekannt ist?
 Erinnern wir uns hierfür an die Ursache für Schaltvorgänge. 
 }% Speech Ende
-\speech{Grundlagen2Anfangsbedingungen}{4}{%
+\speech{2Grundlagen2F02Anfangsbedingungen}{4}{%
 Da Kapazitäten Energie in Form elektrischer Energie speichern, ist die Spannung 
 an einer Kapazität stetig und kann sich nicht schlagartig ändern.
 Da Induktivitäten Energie in Form magnetischer Energie speichern, ist der Strom 
 durch eine Induktivität stetig und kann sich ebenfalls nicht schlagartig ändern. 
 }% Speech Ende
-\speech{Grundlagen2Anfangsbedingungen}{5}{%
+\speech{2Grundlagen2F02Anfangsbedingungen}{5}{%
 Kennen wir also den Zustand der Schaltungsgrößen U C und i L unmittelbar vor dem Schaltzeitpunkt.
 So kennen wir aufgrund dieser Stetigkeitsbedingungen auch die Werte für U C und i L 
 unmittelbar nach dem Schaltzeitpunkt, das heißt während des Schaltvorganges. 
@@ -876,27 +876,27 @@ Diese Werte können wir als Anfangsbedingungen für die Berechnung des Schaltvor
     \end{equation*}
 }%
 \end{columns}
-\speech{Grundlagen2Zerlegung}{1}{%
+\speech{2Grundlagen2F03Zerlegung}{1}{%
 Um die Differenzialgleichung zu lösen hilft es, die gesuchte Systemgröße während des Schaltvorganges 
 in einen eingeschwungenen Zustand und einen flüchtigen Zustand zu zerlegen.
 Der eingeschwungene Zustand Ypsilon E ist der stationäre Zustand, den unsere Systemgröße Ypsilon während des Schaltvorganges anstrebt. 
 Subtrahieren wir Ypsilon E von Ypsilon, bleibt der zeitlich abklingende flüchtige Zustand Ypsilon F übrig.
 }% Speech Ende
-\speech{Grundlagen2Zerlegung}{2}{%
+\speech{2Grundlagen2F03Zerlegung}{2}{%
 In diesem Beispiel Schaltvorgang nähert sich Ypsilon exponentiell einem konstanten Grenzwert an. 
 Dieser durch die DC Anregung bedingte konstante Endwert von Ypsilon ist unser eingeschwungener Zustand Ypsilon E. 
 Der abklingende Exponenzialverlauf Ypsilon F ist unser flüchtiger Zustand. 
 Wie wir gleich sehen werden, lassen sich beide Zustände einzeln gut berechnen,
 sodass wir Ypsilon durch die Überlagerung beider Zustände bestimmen können.
 }% Speech Ende
-\speech{Grundlagen2Zerlegung}{3}{%
+\speech{2Grundlagen2F03Zerlegung}{3}{%
 Mathematisch entspricht diese Zerlegung genau der Zerlegung von Ypsilon 
 in eine partikuläre Lösung Ypsilon P der DGL und die allgemeine Lösung der homogenen DGL Ypsilon H, 
 im Folgenden kurz homogene Lösung genannt.
 Da Ypsilon für große T gleich Ypsilon E ist, muss auch Ypsilon E die DGL erfüllen und zwar für alle Tee.
 Der eingeschwungene Zustand ist deshalb eine partikuläre Lösung der DGL. 
 }% Speech Ende
-\speech{Grundlagen2Zerlegung}{4}{%
+\speech{2Grundlagen2F03Zerlegung}{4}{%
 Nehmen wir nun die allgemeine DGL und subtrahieren von dieser die DGL mit eingesetzter Lösung Ypsilon E,
 so erhalten wir die homogene DGL für Ypsilon F ohne Störterm.
 Deshalb ist unser Ypsilon E die partikuläre Lösung unserer DGL und Ypsilon F die homogene Lösung unserer DGL.
@@ -1040,11 +1040,11 @@ Deshalb ist unser Ypsilon E die partikuläre Lösung unserer DGL und Ypsilon F d
         \end{equation*}
     \end{bsp}
 }% Ende Skript only
-\speech{Grundlagen2HomogeneLoesung}{1}{%
+\speech{2Grundlagen2F04HomogeneLoesung}{1}{%
 Kommen wir zur Berechnung der homogenen Lösung. 
 Die homogene DGL erhalten wir, indem wir in unserer DGL den Störterm gleich Null setzen. 
 }% Speech Ende
-\speech{Grundlagen2HomogeneLoesung}{2}{%
+\speech{2Grundlagen2F04HomogeneLoesung}{2}{%
 Als erster Schritt bestimmen wir die Eigenwerte Lambda i unserer DGL.
 Dafür benötigen wir das charakteristische Polynom.
 Dieses erhalten wir, indem wir den Exponenzialansatz K mal E hoch Lambda T für Ypsilon h einsetzen. 
@@ -1054,7 +1054,7 @@ Als Abkürzung kann das charakteristische Polynom auch direkt aus der DGL abgele
 hierfür wird jede i-te Ableitung von Ypsilon h durch den Term Lambda hoch i ersetzt.
 Die Eigenwerte erhalten wir durch Bestimmung der Nullstellen des charakteristischen Polynoms.
 }% Speech Ende
-\speech{Grundlagen2HomogeneLoesung}{3}{%
+\speech{2Grundlagen2F04HomogeneLoesung}{3}{%
 Die homogene Lösung ist eine Linearkombination von exakt N linear unabhängigen Lösungen der homogenen DGL.
 Die Form der Lösung hängt von der Art der Eigenwerte ab,
 die Lambdas können einfache Nullstellen oder mehrfache Nullstellen sein.
@@ -1062,7 +1062,7 @@ Bei einfachen Nullstellen wählen wir den ersten Lösungsansatz K mal E hoch Lam
 mit dem jeweiligen Index I für K und Lambda.
 }% Speech Ende
 \silence{1}
-\speech{Grundlagen2HomogeneLoesung}{3}{%
+\speech{2Grundlagen2F04HomogeneLoesung}{3}{%
 Bei mehrfachen Nullstellen wählen wir den zweiten Lösungsansatz. Dieser basiert auf der Variation der Konstanten des ersten Lösungsansatzes,
 um auch bei gleichen Nullstellen linear unabhängige Lösungen zu erhalten.
 Hierfür wird der Exponenzialansatz jeder weiteren gleichen Nullstelle mit dem Faktor T hoch J minus eins multipliziert. 
@@ -1072,7 +1072,7 @@ Solche Systeme sind prinzipiell schwingungsfähig. Mehr dazu im Kapitel Schaltvo
 Wichtig. Die Realteile der Eigenwerte eines stabilen Systems sind immer negativ.
 Nur dann konvergiert die allgemeine Lösung für T gegen unendlich und strebt einen stationären Zustand an.
 }% Speech Ende
-\speech{Grundlagen2HomogeneLoesung}{4}{%
+\speech{2Grundlagen2F04HomogeneLoesung}{4}{%
 Bei gemischten Nullstellen, also einfachen und mehrfachen Nullstellen,
 ergibt sich die homogene Lösung aus einer Linearkombination der jeweiligen Lösungsansätze
 wie im folgenden Beispiel gezeigt wird.
@@ -1141,26 +1141,26 @@ wie im folgenden Beispiel gezeigt wird.
     \end{equation*}
     \footnotetext{leicht verändert aus: Manfred Albach, {\em Elektrotechnik 2}, Pearson Deutschland GmbH 3. Auflage, 2020.}
 }%
-\speech{Grundlagen2HomogeneLoesungBeispiel}{1}{%
+\speech{2Grundlagen2F05HomogeneLoesungBeispiel}{1}{%
 Auf dieser Folie sehen wir exemplarisch ein Beispiel für eine homogene DGL fünfter Ordnung. 
 }% Speech Ende
-\speech{Grundlagen2HomogeneLoesungBeispiel}{2}{%
+\speech{2Grundlagen2F05HomogeneLoesungBeispiel}{2}{%
 Aus den konstanten Koeffizienten lesen wir direkt die Koeffizienten für das charakteristische Polynom ab.
 }% Speech Ende
-\speech{Grundlagen2HomogeneLoesungBeispiel}{3}{%
+\speech{2Grundlagen2F05HomogeneLoesungBeispiel}{3}{%
 Hier sind zum Verdeutlichen die Koeffizienten in blau und die Potenzen von Lambda beziehungsweise der Ableitungen von Ypsilon von Tee in rot hervorgehoben. 
 Die Eigenwerte Lambda eins bis Lambda fünf erhalten wir nun durch Bestimmung der Nullstellen des charakteristischen Polynoms.
 }% Speech Ende
-\speech{Grundlagen2HomogeneLoesungBeispiel}{4}{%
+\speech{2Grundlagen2F05HomogeneLoesungBeispiel}{4}{%
 In diesem Fall erhalten wir eine gemischte Konstellation mit einer einfachen Nullstelle und zwei doppelte konjugierte, komplexe Nullstellen. 
 Für die einfache Nullstelle Lambda 1 wählen wir den ersten Lösungsansatz mit dem einfachen Exponenzialterm K eins mal E hoch Lambda eins mal t. 
 Für die zwei doppelten Nullstellen Lambda zwei und drei, sowie Lambda vier und fünf wählen wir den Exponenzialansatz mit Variation der Konstanten.
 }% Speech Ende
-\speech{Grundlagen2HomogeneLoesungBeispiel}{5}{%
+\speech{2Grundlagen2F05HomogeneLoesungBeispiel}{5}{%
 Hier sehen wir die resultierende allgemeine Lösung mit eingefärbten Koeffizienten K eins bis K fünf. 
 Für die doppelten Nullstellen erhalten wir K zwei plus K drei mal Tee, beziehungsweise K vier plus K fünf mal Tee als Koeffizienten für Exponenzialtermen.
 }% Speech Ende
-\speech{Grundlagen2HomogeneLoesungBeispiel}{6}{%
+\speech{2Grundlagen2F05HomogeneLoesungBeispiel}{6}{%
 Wie hier farblich hervorgehoben zu erkennen ist, ergeben sich aus den beiden komplex konjugierten Nullstellen je ein exponentiell abklingender Sinus- und ein Kosinusterm.
 Der Realteil der komplex konjugierten Nullstellen, hier die in orange hervorgehobene minus eins, 
 bestimmt die Abklingrate des Exponenzialterms, E hoch Realteil von Lambda mal Tee, hier E hoch minus Tee. 
@@ -1248,7 +1248,7 @@ Eine Herleitung der Umformung kann am Ende des Moduls im Exkurs für die Herleit
         \item[] AC: Komplexe Wechselstromrechnung (Impedanzen, Admittanzen)
     \end{itemize}
 }%
-\speech{Grundlagen2PartikulaereLoesung}{1}{%
+\speech{2Grundlagen2F06PartikulaereLoesung}{1}{%
 Kommen wir zur Berechnung der partikulären Lösung Ypsilon P, das heißt zur Berechnung des eingeschwungenen Zustandes Ypsilon E.
 Im eingeschwungenen Zustand verhält sich unsere Schaltung stationär. 
 In linearen, zeitinvarianten Systemen bedeutet das, dass unser Ypsilon P 
@@ -1307,7 +1307,7 @@ Im AC Fall rechnen wir mit deren Impedanzen oder Admittanzen.
     Aus elektrotechnischer Sicht kann es sich anbieten zunächst die den eingeschwungenen Zustand (partikuläre Lösung) 
     zu bestimmen. 
 }%
-\speech{Grundlagen2Zusammenfassung}{1}{%
+\speech{2Grundlagen2F07Zusammenfassung}{1}{%
 Unsere bisherigen Kenntnisse lassen sich nun zu einem Berechnungsverfahren zur Bestimmung von Differenzialgleichungen im Zeitbereich zusammen fassen. 
 Mit dem gezeigten Verfahren in fünf Schritten werden wir alle Schaltvorgänge im folgenden Kapitel berechnen.
 Als erster Schritt wird die Differenzialgleichung aufgestellt. 
