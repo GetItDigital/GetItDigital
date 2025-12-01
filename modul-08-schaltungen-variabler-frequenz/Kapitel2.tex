@@ -224,10 +224,10 @@ Eine Verschiebung der Kurve wird durch Multiplikation und eine Streckung durch �
 
 	\begin{align}% script only - with numbering
         &\textrm{Leistungsgrößen }(\textrm{z.B. }P,\ W)&
-            Q_{\mathrm{(P)}} &= \mathrm{log}\frac{P_2}{P_1}\ \operatorname{B} = 10\cdot \mathrm{log}\frac{P_1}{P_2}\ \dB &&
+            Q_{\mathrm{(P)}} &= \mathrm{log}\frac{P_2}{P_1}\ \operatorname{B} = 10\cdot \mathrm{log}\frac{P_1}{P_2}\,\dB &&
             \label{eq:def:dezibel:leistung}\\
         &\textrm{Leistungswurzelgr.}(\textrm{z.B. }U,\ I)&
-            Q_{\mathrm{(R)}} &= \mathrm{log}\frac{U_2^2}{U_1^2}\ \operatorname{B} = 20\cdot \mathrm{log}\frac{U_1}{U_2}\ \dB &&
+            Q_{\mathrm{(R)}} &= \mathrm{log}\frac{U_2^2}{U_1^2}\ \operatorname{B} = 20\cdot \mathrm{log}\frac{U_1}{U_2}\,\dB &&
             \label{eq:def:dezibel:wurzel}
     \end{align}%
 }%
@@ -235,9 +235,9 @@ Eine Verschiebung der Kurve wird durch Multiplikation und eine Streckung durch �
     \textbf{Dezibel} Hilfsmaßeinheit zur Kennzeichnung logarithmischer Verhältnisse zweier Größen.
 	\begin{align*}% beamer only - without numbering
         &\textrm{Leistungsgrößen }(\textrm{z.B. }P,\ W)&
-            Q_{\mathrm{(P)}} &= \mathrm{log}\frac{P_2}{P_1}\ \operatorname{B} = 10\cdot \mathrm{log}\frac{P_1}{P_2}\ \dB &&\\
+            Q_{\mathrm{(P)}} &= \mathrm{log}\frac{P_2}{P_1}\ \operatorname{B} = 10\cdot \mathrm{log}\frac{P_1}{P_2}\,\dB &&\\
         &\textrm{Leistungswurzelgr.}(\textrm{z.B. }U,\ I)&
-            Q_{\mathrm{(R)}} &= \mathrm{log}\frac{U_2^2}{U_1^2}\ \operatorname{B} = 20\cdot \mathrm{log}\frac{U_1}{U_2}\ \dB &&
+            Q_{\mathrm{(R)}} &= \mathrm{log}\frac{U_2^2}{U_1^2}\ \operatorname{B} = 20\cdot \mathrm{log}\frac{U_1}{U_2}\,\dB &&
     \end{align*}%
 }%
 \s{%
@@ -270,7 +270,7 @@ Eine Verschiebung der Kurve wird durch Multiplikation und eine Streckung durch �
             \hline &&&&&&&&\\[-11pt]
                 $\frac{U_2}{U_1}$   & $\frac{1}{\sqrt{2}}$    & $1$ 		& $\sqrt{2}$ 	& $2$           & $\sqrt{10}$   & $10$	        & $20$ 		& $100$ \\[+2pt]
             \hline &&&&&&&&\\[-11pt]
-                $Q_{\dB}$           & $-3\ \dB$               & $0\ \dB$ 	& $+3\ \dB$     & $+6\ \dB$     & $10\ \dB$     & $20\ \dB$     & $26\ \dB$ & $40\ \dB$ \\[+2pt]
+                $Q_{\dB}$           & $-3\,\dB$               & $0\,\dB$ 	& $+3\,\dB$     & $+6\,\dB$     & $10\,\dB$     & $20\,\dB$     & $26\,\dB$ & $40\,\dB$ \\[+2pt]
             \hline
         \end{tabular}
     \end{table}
@@ -292,23 +292,23 @@ Eine Verschiebung der Kurve wird durch Multiplikation und eine Streckung durch �
                 $\frac{1}{2}$ 	        & $1$ 		    & $2$ 	        & $4$ 	        & $10$          & $100$         & $400$ 	    & $10.000$ \\[+3pt]
             \hline &&&&&&&&&\\[-10pt]
                 \textbf{Verstärkung}       & $Q_{\dB}$     &
-                $-3\ \dB$ 			    & $0\ \dB$ 	    & $+3\ \dB$ 	& $+6\ \dB$     & $10\ \dB$     & $20\ \dB$     & $26\ \dB$	    & $40\ \dB$ \\[+3pt]
+                $-3\,\dB$ 			    & $0\,\dB$ 	    & $+3\,\dB$ 	& $+6\,\dB$     & $10\,\dB$     & $20\,\dB$     & $26\,\dB$	    & $40\,\dB$ \\[+3pt]
             \hline
         \end{tabular}
     \end{table}%
-    Dadurch, dass $3\dB$ sehr präzise dem Faktor $2$ bei Leistungen (Faktor $\sqrt{2}$ bei Spannungen) entspricht, 
+    Dadurch, dass $3\,\dB$ sehr präzise dem Faktor $2$ bei Leistungen (Faktor $\sqrt{2}$ bei Spannungen) entspricht, 
     beziehungsweise $6\dB$ dem Faktor $4$, lassen sich relativ einfach Abschätzungen vornehmen.
     Im Vergleich zur SI-Einheit Neper, welches auf dem natürlichen Logarithmus basiert, 
     hat sich das Dezibel daher als logarithmische Hilfsmaßeinheit in der Praxis durchgesetzt.
 
     Faustformeln für Spannungsverhältnisse: 
     \begin{itemize}
-        \item Faktor $1 = 0\dB$
-        \item Faktor $2 \approx 6\dB$
-        \item Faktor $4 \approx 12\dB$ \quad mit \quad $4 = 2^2 \approx 2\cdot 6\dB$
-        \item Faktor $5 \approx 14\dB$ \quad mit \quad $5 = 10 \cdot \frac{1}{2} \approx 20\dB - 6\dB$
-        \item Faktor $8 \approx 18\dB$ \quad mit \quad $8=2^3 \approx 3\cdot 6\dB$
-        \item Faktor $10 = 20\dB$ \quad $\Longrightarrow$ \quad $20 \dB / \mathrm{Dek}$ (spannungsbezogen)
+        \item Faktor $1 = 0\,\dB$
+        \item Faktor $2 \approx 6\,\dB$
+        \item Faktor $4 \approx 12\,\dB$ \quad mit \quad $4 = 2^2 \approx 2\cdot 6\,\dB$
+        \item Faktor $5 \approx 14\,\dB$ \quad mit \quad $5 = 10 \cdot \frac{1}{2} \approx 20\,\dB - 6\,\dB$
+        \item Faktor $8 \approx 18\,\dB$ \quad mit \quad $8=2^3 \approx 3\cdot 6\,\dB$
+        \item Faktor $10 = 20\,\dB$ \quad $\Longrightarrow$ \quad $20 \dB / \mathrm{Dek}$ (spannungsbezogen)
     \end{itemize}    
     
     Exemplarisch ist in Abbildung \ref{plot:tiefpass:bode:ampli:detail} die logarithmische y-Achse für $A(\omega)$ 
@@ -738,7 +738,7 @@ Die gemeinsame Darstellung von Amplituden- und Phasengang wie hier gezeigt, wird
     Die Steigung von $A(\omega)$ in linearer Darstellung geht sowohl
     für $\omega \to 0$ als auch für $\omega \to \infty$ zu gegen $0$. [Vgl. Kapitel \ref{sec:frequenzgang:tiefpass:grenzverhalten}]
     Im Bodediagramm ist die Steigung für $\omega \to 0$ ebenfalls null, nähert sich für $\omega \to \infty$ 
-    jedoch einer minimalen Steigung von $-20\ \dB/\mathrm{Dek}$ an. 
+    jedoch einer minimalen Steigung von $-20\,\dB/\mathrm{Dek}$ an. 
     Beim Phasengang ist in linearer Darstellung die Steigung (Ableitung) für $\omega \to 0$ minimal und negativ.
     In logarithmischer Darstellung scheint $\varphi(\omega)$ für $\omega \to 0$ jedoch am flachesten (Steigung gegen $0$).
 }
@@ -927,7 +927,7 @@ während der Hochpass von plus neunzig Grad auf null Grad verläuft.
 
     Die obere und untere Grenzkreisfrequenz $\omega_{\mathrm{go}}$ und $\omega_{\mathrm{gu}}$ sind
     in beiden Darstellungen gekennzeichnet (rot gestrichelte, vertikal),
-    ebenso wie die $-3\ \dB$ Grenze (schwarz gestrichelt, horizontal)
+    ebenso wie die $-3\,\dB$ Grenze (schwarz gestrichelt, horizontal)
     deren Schnitt mit $A(\omega)$ die Grenzfrequenzen definiert.
     
     Die Bandbreite ist im Amplitudengang angedeutet als Doppelfeil zwischen beiden Grenzfrequenzen.

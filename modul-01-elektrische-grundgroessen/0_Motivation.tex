@@ -70,7 +70,7 @@
 	
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
 	\ftb{Das SI-Einheitensystem}
 
 
@@ -99,13 +99,13 @@
 		\begin{tabular}{|c|c|c|c|}
 			\hline
 			\textbf{SI-Größe} & \textbf{Formelzeichen} & \textbf{Einheit} & \textbf{Basis} \\ \hline
-			\only<2->{Zeit} & \only<2->{$t$} & \only<2->{Sekunde, s} & \only<2->{$\Delta\nu$} \\ \hline
-			\only<3->{Länge} & \only<3->{$\ell$} & \only<3->{Meter, m} & \only<3->{$c, \mathrm{s}$} \\ \hline
-			\only<4->{Masse} & \only<4->{$m$} & \only<4->{Kilogramm, kg} & \only<4->{$h, \mathrm{s, m}$} \\ \hline
-			\only<5->{Stromstärke} & \only<5->{$I$} & \only<5->{Ampere, A} & \only<5->{$e, s$} \\ \hline
-			\only<6->{Temperatur} & \only<6->{$T$} & \only<6->{Kelvin, K} & \only<6->{$k_\mathrm{B}, \mathrm{s, m, kg}$} \\ \hline
-			\only<7->{Stoffmenge} & \only<7->{$n$} & \only<7->{Mol, mol} & \only<7->{$N_\mathrm{A}$} \\ \hline
-			\only<8->{Lichtstärke} & \only<8->{$I_v$} & \only<8->{Candela, cd} & \only<8->{$K_{\mathrm{cd}}, \mathrm{s, m, kg}$} \\ \hline
+			\onslide<2->{Zeit} & \onslide<2->{$t$} & \onslide<2->{Sekunde, s} & \onslide<2->{$\Delta\nu$} \\ \hline
+			\onslide<3->{Länge} & \onslide<3->{$\ell$} & \onslide<3->{Meter, m} & \onslide<3->{$c, \mathrm{s}$} \\ \hline
+			\onslide<4->{Masse} & \onslide<4->{$m$} & \onslide<4->{Kilogramm, kg} & \onslide<4->{$h, \mathrm{s, m}$} \\ \hline
+			\onslide<5->{Stromstärke} & \onslide<5->{$I$} & \onslide<5->{Ampere, A} & \onslide<5->{$e, s$} \\ \hline
+			\onslide<6->{Temperatur} & \onslide<6->{$T$} & \onslide<6->{Kelvin, K} & \onslide<6->{$k_\mathrm{B}, \mathrm{s, m, kg}$} \\ \hline
+			\onslide<7->{Stoffmenge} & \onslide<7->{$n$} & \onslide<7->{Mol, mol} & \onslide<7->{$N_\mathrm{A}$} \\ \hline
+			\onslide<8->{Lichtstärke} & \onslide<8->{$I_v$} & \onslide<8->{Candela, cd} & \onslide<8->{$K_{\mathrm{cd}}, \mathrm{s, m, kg}$} \\ \hline
 		\end{tabular}
 		\caption{SI-Einheiten und ihre Basisgrößen}
 		\label{tab:si_units}
@@ -113,13 +113,13 @@
 
 
 	\b{
-	\only<2>{Eine Sekunde ist das 9.192.631.770-fache der Periodendauer des
+	\only<handout:0| beamer:2>{Eine Sekunde ist das 9.192.631.770-fache der Periodendauer des
 	 Hyperfeinstrukturübergangs $\Delta v$ im Cäsium-Atom $ ^{133}Cs.$ \\
 
 	 \phantom{.}\\
 	$\Delta \nu$ = 9.192.631.770 Hz \quad    (Hyperfeinstrukturübergang $ ^{133}$Cs)}
 
-	\only<3>{Ein Meter ist die Länge der Strecke, die das Licht im Vakuum während der Dauer
+	\only<handout:0| beamer:3>{Ein Meter ist die Länge der Strecke, die das Licht im Vakuum während der Dauer
 	von $t = \frac{1}{299.792.458}$ s zurücklegt.
 
 	\phantom{.}\\
@@ -128,7 +128,7 @@
 
 	
 	
-	\only<4>{Das Kilogramm ist seit Mai 2019 vom genau definierten Planckschen Wirkungsquantum
+	\only<handout:0| beamer:4>{Das Kilogramm ist seit Mai 2019 vom genau definierten Planckschen Wirkungsquantum
 abhängig:  $1 \mathrm{kg} = \frac{h}{6,626 070 15\cdot 10^-{34}} \frac{\mathrm{s}}{\mathrm{m}^2}$
 
 \phantom{.}\\
@@ -137,7 +137,7 @@ $h = 6,626 070 15 \cdot 10^{-34} \mathrm{Js}$  \quad (Plancksches Wirkungsquantu
 }
 	
 
-\only<5>{Das Ampere ist seit 2019 durch die Elementarladung definiert. Ein Ampere ist der
+\only<handout:1| beamer:5>{Das Ampere ist seit 2019 durch die Elementarladung definiert. Ein Ampere ist der
 Stromfluss von $\frac{e}{1,602176634} \cdot 10^{-19} \, \frac{1}{\mathrm{s}}$ 
 Elementarladungen pro Sekunde.\\
 
@@ -148,7 +148,7 @@ $e = 1,602 176 634 \cdot 10^{-19} \mathrm{As}$ \quad (Elementarladung)
 }
 
 
-\only<6>{Ein Kelvin entspricht einer Änderung der thermodynamischen Temperatur, die mit
+\only<handout:0| beamer:6>{Ein Kelvin entspricht einer Änderung der thermodynamischen Temperatur, die mit
 einer Änderung der thermischen Energie ($kT$) um $1,380649 \cdot 10^{-23} \, \mathrm{J}$ einhergeht.
 
 \phantom{.}\\
@@ -156,7 +156,7 @@ einer Änderung der thermischen Energie ($kT$) um $1,380649 \cdot 10^{-23} \, \m
 $k_\mathrm{B} = 1,380 649 \cdot 10^{-23} \, \frac{\mathrm{kg \cdot m^2}}{\mathrm{s^2 \cdot K}} $ \quad (Boltzmann-Konstante)
 }
 
-\only<7>{Ein Mol ist die Stoffmenge eines Systems, das $6,022 140 76 \cdot 10^{23}$ eines bestimmten
+\only<handout:0| beamer:7>{Ein Mol ist die Stoffmenge eines Systems, das $6,022 140 76 \cdot 10^{23}$ eines bestimmten
 Einzelteilchens enthält.\\
 
 \phantom{.}\\
@@ -164,7 +164,7 @@ Einzelteilchens enthält.\\
 $N_\mathrm{A} = 6,022 140 76 \cdot 10^{23} \frac{1}{\mathrm{mol}}$  \quad (Avogadro-Konstante)
 }
 
-\only<8>{Eine Candela ist die Lichtstärke einer Strahlungsquelle, die mit einer Frequenz von
+\only<handout:0| beamer:8>{Eine Candela ist die Lichtstärke einer Strahlungsquelle, die mit einer Frequenz von
 540 THz emittiert und die eine Strahlungsintensität in dieser Richtung 
 von $\frac{1}{683} \frac{\mathrm{W}}{\mathrm{sr}}$ hat. \quad (sr = Raumwinkel Steradiant)\\
 
@@ -251,7 +251,8 @@ Grundlage unseres gesamten Einheitensystems zu bilden. Alle weiteren physikalisc
 
 \end{frame}
 
-\begin{frame}{Abgeleitete SI-Einheiten}
+\begin{frame}[t]{Abgeleitete SI-Einheiten}
+	\vspace{0.25cm}% Abstand wegen Top-aligned frame für "ruckelfreie" Overlays
 
 \s{Aus diesen sieben Grundeinheiten werden weitere 22 Größen mit eigener Bezeichnung hergeleitet. 
 Einige für die Elektrotechnik wichtige Beispiele sind nachfolgend aufgeführt:}	
@@ -263,16 +264,16 @@ Einige für die Elektrotechnik wichtige Beispiele sind nachfolgend aufgeführt:}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\textbf{Größe} & \textbf{Formel} & \textbf{Einheit} & \textbf{Basiseinheit} \\ \hline
-		\only<2->{Kraft} & \only<2->{F} & \only<2->{Newton, N} & \only<2->{1 N = 1 kg m/s$^2$} \\ \hline
-		\only<3->{Energie} & \only<3->{E} & \only<3->{Joule, J} & \only<3->{1 J = 1 Ws = 1 Nm = 1 kg m$^2$/s$^2$} \\ \hline
-		\only<4->{Leistung} & \only<4->{P} & \only<4->{Watt, W} & \only<4->{1 W = 1 J/s = 1 kg m$^2$/s$^3$} \\ \hline
-		\only<5->{Spannung} & \only<5->{U} & \only<5->{Volt, V} & \only<5->{1 V = 1 W/A = 1 Nm/As = 1 kg m$^2$/s$^3$A} \\ \hline
-		\only<6->{Ladung} & \only<6->{Q} & \only<6->{Coulomb, C} & \only<6->{1 C = 1 As} \\ \hline
-		\only<7->{Widerstand} & \only<7->{R} & \only<7->{Ohm, $\Omega$} & \only<7->{1 $\Omega$ = 1 V/A = 1 kg m$^2$/s$^3$A$^2$} \\ \hline
-		\only<8->{Kapazität} & \only<8->{C} & \only<8->{Farad, F} & \only<8->{1 F = 1 As/V = 1 s$^4$A$^2$/kg m$^2$} \\ \hline
-		\only<9->{Induktivität} & \only<9->{L} & \only<9->{Henry, H} & \only<9->{1 H = 1 Vs/A = 1 kg m$^2$/s$^2$A$^2$} \\ \hline
-		\only<10->{magn. Fluss} & \only<10->{$\Phi$} & \only<10->{Weber, Wb} & \only<10->{1 Wb = 1 Vs = 1 kg m$^2$/s$^2$A} \\ \hline
-		\only<11->{Flussdichte} & \only<11->{B} & \only<11->{Tesla, T} & \only<11->{1 T = 1 Vs/m$^2$ = 1 kg/s$^2$A} \\ \hline
+		\onslide<2->{Kraft} & \onslide<2->{F} & \onslide<2->{Newton, N} & \onslide<2->{1 N = 1 kg m/s$^2$} \\ \hline
+		\onslide<3->{Energie} & \onslide<3->{E} & \onslide<3->{Joule, J} & \onslide<3->{1 J = 1 Ws = 1 Nm = 1 kg m$^2$/s$^2$} \\ \hline
+		\onslide<4->{Leistung} & \onslide<4->{P} & \onslide<4->{Watt, W} & \onslide<4->{1 W = 1 J/s = 1 kg m$^2$/s$^3$} \\ \hline
+		\onslide<5->{Spannung} & \onslide<5->{U} & \onslide<5->{Volt, V} & \onslide<5->{1 V = 1 W/A = 1 Nm/As = 1 kg m$^2$/s$^3$A} \\ \hline
+		\onslide<6->{Ladung} & \onslide<6->{Q} & \onslide<6->{Coulomb, C} & \onslide<6->{1 C = 1 As} \\ \hline
+		\onslide<7->{Widerstand} & \onslide<7->{R} & \onslide<7->{Ohm, $\Omega$} & \onslide<7->{1 $\Omega$ = 1 V/A = 1 kg m$^2$/s$^3$A$^2$} \\ \hline
+		\onslide<8->{Kapazität} & \onslide<8->{C} & \onslide<8->{Farad, F} & \onslide<8->{1 F = 1 As/V = 1 s$^4$A$^2$/kg m$^2$} \\ \hline
+		\onslide<9->{Induktivität} & \onslide<9->{L} & \onslide<9->{Henry, H} & \onslide<9->{1 H = 1 Vs/A = 1 kg m$^2$/s$^2$A$^2$} \\ \hline
+		\onslide<10->{magn. Fluss} & \onslide<10->{$\Phi$} & \onslide<10->{Weber, Wb} & \onslide<10->{1 Wb = 1 Vs = 1 kg m$^2$/s$^2$A} \\ \hline
+		\onslide<11->{Flussdichte} & \onslide<11->{B} & \onslide<11->{Tesla, T} & \onslide<11->{1 T = 1 Vs/m$^2$ = 1 kg/s$^2$A} \\ \hline
 	\end{tabular}
 	\caption{Größen und ihre Basiseinheiten}
 	\label{tab:groessen_basiseinheiten}
@@ -280,16 +281,16 @@ Einige für die Elektrotechnik wichtige Beispiele sind nachfolgend aufgeführt:}
 
 \b{
 
-\only<2>{Kraft ist Masse mal Beschleunigung: $F = m \cdot a$}
-\only<3>{Oft vergleichbar mit Arbeit, wichtig für Energieerhaltung, Einheit auch Wattsekunde}
-\only<4>{Leistung ist Arbeit pro Zeit}
-\only<5>{”Stärke“einer Spannungsquelle - Analog zum Druck in einer Leitung}
-\only<6>{Menge an freien Elementarladungen}
-\only<7>{"Reibung" von elektrischem Strom}
-\only<8>{Fähigkeit, Ladungen zu speichern}
-\only<9>{Zentrale Eigenschaft einer elektrischen Spule}
-\only<10>{Analoge Eigenschaft eines Magnetfeldes zum elektrischen Strom}
-\only<11>{Gibt Stärke des magnetischen Flusses an, z.B. im MRT}
+\only<handout:1 |beamer:2>{Kraft ist Masse mal Beschleunigung: $F = m \cdot a$\\}
+\only<handout:0 |beamer:3>{Oft vergleichbar mit Arbeit, wichtig für Energieerhaltung, Einheit auch Wattsekunde\\}
+\only<handout:1 |beamer:4>{Leistung ist Arbeit pro Zeit\\}
+\only<handout:0 |beamer:5>{”Stärke“einer Spannungsquelle - Analog zum Druck in einer Leitung\\}
+\only<handout:0 |beamer:6>{Menge an freien Elementarladungen\\}
+\only<handout:0 |beamer:7>{"Reibung" von elektrischem Strom\\}
+\only<handout:0 |beamer:8>{Fähigkeit, Ladungen zu speichern\\}
+\only<handout:0 |beamer:9>{Zentrale Eigenschaft einer elektrischen Spule\\}
+\only<handout:0 |beamer:10>{Analoge Eigenschaft eines Magnetfeldes zum elektrischen Strom\\}
+\only<handout:0 |beamer:11>{Gibt Stärke des magnetischen Flusses an, z.B. im MRT\\}
 
 }
 
@@ -350,14 +351,14 @@ Einige für die Elektrotechnik wichtige Beispiele sind nachfolgend aufgeführt}
 		\begin{tabular}{|c|c||c|c|}
 			\hline
 			\textbf{Bezeichnung} & \textbf{Potenz} & \textbf{Potenz} & \textbf{Bezeichnung} \\ \hline
-			\only<2->{Dezi, d} & \only<2->{$10^{-1}$} & \only<2->{$10^1$} & \only<2->{Deka, da} \\ \hline
-			\only<3->{Zenti, c} & \only<3->{$10^{-2}$} & \only<3->{$10^2$} & \only<3->{Hekto, h} \\ \hline
-			\only<4->{Milli, m} & \only<4->{$10^{-3}$} & \only<4->{$10^3$} & \only<4->{Kilo, k} \\ \hline
-			\only<5->{Mikro, $\mu$} & \only<5->{$10^{-6}$} & \only<5->{$10^6$} & \only<5->{Mega, M} \\ \hline
-			\only<6->{Nano, n} & \only<6->{$10^{-9}$} & \only<6->{$10^9$} & \only<6->{Giga, G} \\ \hline
-			\only<7->{Piko, p} & \only<7->{$10^{-12}$} & \only<7->{$10^{12}$} & \only<7->{Tera, T} \\ \hline
-			\only<8->{Femto, f} & \only<8->{$10^{-15}$} & \only<8->{$10^{15}$} & \only<8->{Peta, P} \\ \hline
-			\only<9->{Atto, a} & \only<9->{$10^{-18}$} & \only<9->{$10^{18}$} & \only<9->{Exa, E} \\ \hline
+			\onslide<2->{Dezi, d} & \onslide<2->{$10^{-1}$} & \onslide<2->{$10^1$} & \onslide<2->{Deka, da} \\ \hline
+			\onslide<3->{Zenti, c} & \onslide<3->{$10^{-2}$} & \onslide<3->{$10^2$} & \onslide<3->{Hekto, h} \\ \hline
+			\onslide<4->{Milli, m} & \onslide<4->{$10^{-3}$} & \onslide<4->{$10^3$} & \onslide<4->{Kilo, k} \\ \hline
+			\onslide<5->{Mikro, $\mu$} & \onslide<5->{$10^{-6}$} & \onslide<5->{$10^6$} & \onslide<5->{Mega, M} \\ \hline
+			\onslide<6->{Nano, n} & \onslide<6->{$10^{-9}$} & \onslide<6->{$10^9$} & \onslide<6->{Giga, G} \\ \hline
+			\onslide<7->{Piko, p} & \onslide<7->{$10^{-12}$} & \onslide<7->{$10^{12}$} & \onslide<7->{Tera, T} \\ \hline
+			\onslide<8->{Femto, f} & \onslide<8->{$10^{-15}$} & \onslide<8->{$10^{15}$} & \onslide<8->{Peta, P} \\ \hline
+			\onslide<9->{Atto, a} & \onslide<9->{$10^{-18}$} & \onslide<9->{$10^{18}$} & \onslide<9->{Exa, E} \\ \hline
 		\end{tabular}
 		\label{tab:zehnerpotenzen}
 	\end{table}
@@ -395,11 +396,11 @@ Einige für die Elektrotechnik wichtige Beispiele sind nachfolgend aufgeführt}
 	}
 
 	\b{
-	\hspace{75pt}\only<10->{$1 \, \mathrm{m} = 100 \cdot 10^{-2} \, \mathrm{m} = 100\,\mathrm{cm}$}
+	\hspace{75pt}\onslide<10->{$1 \, \mathrm{m} = 100 \cdot 10^{-2} \, \mathrm{m} = 100\,\mathrm{cm}$}
 
-	\hspace{75pt}\only<11->{$1 \, \mathrm{m^2} = 100^2 \cdot (10^{-2} \, \mathrm{m})^2  = 10.000 \, \mathrm{cm}^2$}
+	\hspace{75pt}\onslide<11->{$1 \, \mathrm{m^2} = 100^2 \cdot (10^{-2} \, \mathrm{m})^2  = 10.000 \, \mathrm{cm}^2$}
 
-	\hspace{75pt}\only<12->{$1 \, \mathrm{m^3} = 100^3 \cdot (10^{-2} \, \mathrm{m})^3  = 1.000.000 \, \mathrm{cm}^3$}
+	\hspace{75pt}\onslide<12->{$1 \, \mathrm{m^3} = 100^3 \cdot (10^{-2} \, \mathrm{m})^3  = 1.000.000 \, \mathrm{cm}^3$}
 
 
 	}
