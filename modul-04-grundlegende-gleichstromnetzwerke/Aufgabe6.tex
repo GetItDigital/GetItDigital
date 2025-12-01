@@ -8,15 +8,60 @@
 
 \Loesung{
 
+    Berechnen Sie für die Schaltung den Gesamtwiderstand $R_{\mathrm{ges}}$ zwischen den Punkten A und B, die Ströme $I_0$, $I_3$, $I_5$ und die Spannung $U_6$.
+    Folgende Werte sind gegeben: \newline
+    $R_1 = 5 \ \Omega; R_2 = 10 \ \Omega; R_3 = 15 \ \Omega; R_4 = 20 \ \Omega; R_5 = 25 \ \Omega; R_6 = 40 \ \Omega; U_0 = 80 \ V$. \newline
+    
+
         \begin{center}
             \input{Tikz/src/Aufgaben/Kirchhoff_A2} 
         \end{center}
 
         Parallelgeschaltete Widerstände zusammenfassen:
 
-\begin{center}
+        \begin{center}
             \input{Tikz/src/Aufgaben/Kirchhoff_A2_lsg} 
         \end{center}
+
+        Widerstände berechnen:\\
+
+        $R_1 = 5 \, \Omega$\\
+
+        $R_{23} = \frac{R_2 \cdot R_3}{R_2+R_3} = \frac{10 \, \Omega \cdot 15 \, \Omega}{10 \, \Omega + 15 \, \Omega} = 6 \, \Omega$\\
+
+        $R_{456}$ über Kehrwert ausrechnen, im zweiten Schritt Hauptnenner bilden:\\
+
+        $\frac{1}{R_{456}} = \frac{1}{R_4} + \frac{1}{R_5}+ \frac{1}{R_6} = \frac{R_4 \cdot R_5 + R_4 \cdot R_6 + R_5 \cdot R_6}{R_4 \cdot R_5 \cdot R_6}$\\
+
+        $\rightarrow R_{456} = \frac{R_4 \cdot R_5 \cdot R_6}{R_4 \cdot R_5 + R_4 \cdot R_6 + R_5 \cdot R_6} $\\
+
+        $R_\mathrm{ges} = R_1 + R_{23} + R_{456} = 19,7 \, \Omega$\\
+
+        Gesamtstrom berechnen:\\
+
+        $I_0 = \frac{U_0}{R_\mathrm{ges}} = \frac{80 \, \mathrm{V}}{19,7 \, \Omega} = 4,1 \, \mathrm{A}$\\
+
+        Teilstrom $I_3$ mittels Stromteiler berechnen:\\
+
+        $I_3 = I_0 \cdot \frac{R_2}{R_2 + R_3} = 4,1 \, \mathrm{A} \cdot \frac{10 \, \Omega}{10 \, \Omega + 15 \, \Omega} = 1,6 \, \mathrm{A}$\\
+
+        $U_6$ mit Hilfe eines Spannungsteilers berechnen:
+
+       \begin{center}
+            \input{Tikz/src/Aufgaben/Kirchhoff_A2_lsg2} 
+       \end{center}
+
+       $R_{123} = R_1 + R_{23} = 11 \Omega$\\
+
+       Da die drei Widerstände parallel geschaltet sind, ist $U_6 = U_{456}$\\
+
+       $U_6 = U_0 \cdot \frac{R_{456}}{R_{123} + R_{456}} = 80 \, \mathrm{V} \cdot \frac{8,7 \, \Omega}{11 \, \Omega + 8,7 \, \Omega} = 35,3 \, \mathrm{V}$\\
+
+       $I_5 = \frac{U_5}{R_5} = \frac{U_6}{R_5} = 1,4 \, \mathrm{A}$
+       
+       
+
+
 
 
 

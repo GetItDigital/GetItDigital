@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+    \draw(0,6)to[short,i,name=zu,o-](4,6)
+    to[short,-*](4,5.5)
+    to[short](5.5,5.5)
+    to [R,v,i_,l=$R_1$,name=R1](5.5,3.5)
+    to[short,-*](5.5,3)
+    to[short](5.5,2.5)
+    to [R,v,i,l=$R_3$,name=R3](5.5,0.5)
+    to[short,-*](4,0.5)
+    to[short](4,0)
+    to[short,-o](0,0);
+    \draw(4,5.5)to[short](2.5,5.5)
+    to [R,v,i_,l=$R_2$,name=R2](2.5,3.5)
+    to[short,-*](2.5,3)
+    to[short](2.5,2.5)
+    to [R,v,i,l=$R_4$,name=R4](2.5,0.5)
+    to[short,-*](4,0.5);
+
+
+   % to [R,-*](2,1)
+   % to [R,i<^,name=R2](0,3);
+   % \draw(4,3) to[short,-o](4,0);
+   % \draw(2,5)to[rmeterwa,t=V](2,1);
+
+   % \iarrmore{zu}{$I$};
+    \iarrmore{R1}{$I_{13}$};
+    \varrmore{R1}{$U_1$};
+   % \iarrmore{R2}{$I_{24}$};
+
+    \node at (0,-0.4) {+};
+    \node at (4,-0.4) {-};
+    \node at (5.8,3) {A};
+    \node at (1.7,3) {B};
+   
+    \draw[->] (0,5.7) -- (0,0.3) node[midway, right] {24 V};
+\end{tikzpicture}

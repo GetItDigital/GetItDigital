@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+        \draw(0,0) to[V,v<,name=U0,-*] (0,3)
+        to[short](0.5,3)
+        to[R,v,l=$R_{123}$,name=U1](2.5,3)
+        to[short](3.5,3)
+        to[R,v,l=$R_{456}$,name=U4](5.5,3)
+        to[short](6,3)
+        to[short](6,0)
+        to[short,i_,name=rueck](0,0);
+
+ 
+        \varrmore{U1}{$U_{123}$};
+        \varrmore{U4}{$U_{456}$};
+        \varrmore{U0}{$U_0$};
+        \iarrmore{rueck}{$I_0$};
+       
+      
+    \end{tikzpicture}
