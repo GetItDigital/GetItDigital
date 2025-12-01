@@ -10,30 +10,113 @@
         Stellen Sie die Abgleichbedingung in möglichst allgemeiner Form als Funktion der Widerstände $R_1$ bis $R_4$ dar.      
     \end{enumerate}
     \begin{center}
-        
-   
-    \input{Tikz/src/Aufgaben/Kirchhoff_A3}
-\end{center}
+        \input{Tikz/src/Aufgaben/Kirchhoff_A3}
+    \end{center}
 }
 
 \Loesung{
 	    Für die Brückenschaltung sind folgende Werte gegeben: $R_1 = 4\ \mathrm{k}\Omega, R_2=20 \ \mathrm{k}\Omega, R_3 = 6 \ \mathrm{k}\Omega, R_4 = 20 \ \mathrm{k}\Omega$. \newline
+   \begin{center}
+        \input{Tikz/src/Aufgaben/Kirchhoff_A3}
+   \end{center}
    
-   \input{Tikz/src/Aufgaben/Kirchhoff_A3}
    
         Der Innenwiderstand des Voltmeters kann als unendlich groß angenommen werden. Berechnen Sie die folgenden Größen:
     \begin{enumerate}[label=\alph*)]
         \item  $I_{13}$ und $I_{24}$
         
-        Geringfügiges Umzeichnen erhöht die Übersicht: 
+        Geringfügiges Umzeichnen erhöht die Übersicht:
 
-        \input{Tikz/src/Aufgaben/Kirchhoff_A3_lsg1}
+        \begin{center}
+            \input{Tikz/src/Aufgaben/Kirchhoff_A3_lsg1}
+        \end{center}
+        
+
+        Zwei Möglichkeiten, um Teilströme zu ermitteln: Stromteiler oder Ohm´sches Gesetz.\\
+
+        1. Möglichkeit: Stromteiler\\
+
+        Gesamtstrom $I_0$ ermitteln:\\
+        $I_0 = \frac{U_0}{R_\mathrm{ges}}$\\
+        $R_\mathrm{ges}= (R_1 + R_3)||(R_2+R_4) = \frac{(R_1+R_3) \cdot (R_2+R_4)}{R_1 + R_2 + R_3 + R_4} = \frac{10 \, \mathrm{k} \Omega \cdot 40 \, \mathrm{k} \Omega}{50 \, \mathrm{k} \Omega} = 8 \, \mathrm{k} \Omega$\\
+        $I_\mathrm{0} = \frac{24 \, \mathrm{V}}{8 \, \mathrm{k} \Omega} = 3 \, \mathrm{mA}$\\
+
+        Teilstrom ausrechnen:\\
+        $I_{13} = I_0 \cdot \frac{R_2+R_4}{R_1+R_2+R_3+R_4} = 3 \, \mathrm{mA} \cdot \frac{40 \, \mathrm{k} \Omega}{50 \, \mathrm{k} \Omega} = 2,4 \, \mathrm{mA}$\\
+
+        Teilstrom $I_{24}$ mittels Knotenregel ausrechnen:\\
+        $I_0 = I_{13} + I_{24} \rightarrow I_{24} = I_0 - I_{13} = 3 \, \mathrm{mA}- 2,4 \, \mathrm{mA} = 0,6 \, \mathrm{mA}$\\
+
+        2. Möglichkeit, die hier, aber nicht immer anwendbar ist: Ohm´sches Gesetz:\\
+
+        $I_{13} = \frac{U_0}{R1+R_3} = \frac{24 \, \mathrm{V}}{10 \, \mathrm{k} \Omega} = 2,4 \, \mathrm{mA}$\\
+
+        $I_{24} = \frac{U_0}{R2+R_4} = \frac{24 \, \mathrm{V}}{40 \, \mathrm{k} \Omega} = 0,6 \, \mathrm{mA}$\\
 
 
-        \item $U_1,\ U_2, \ U_3$ und $U_4$
-        \item Die Spannung zwischen den Punkten A und B.
+
+
+
+        \item $U_1,\ U_2, \ U_3$ und $U_4$\\
+        
+        2 Möglichkeiten: Spannungsteiler oder Ohm´sches Gestz:\\
+        
+        Spannungsteiler:
+        \begin{center}
+        \input{Tikz/src/Aufgaben/Kirchhoff_A3_lsg2}
+        \end{center}
+        $U_3 = 24 \, \mathrm{V} \cdot \frac{R_3}{R1+R_3} = 14.4 \, \mathrm{V}$\\
+        Alternativ: \\
+        $U_3 = R_3 \cdot I_{13} = 14,4 \, \mathrm{V}$\\
+
+        $U_1$ kann beispielsweise mittels Maschenumlauf ermittelt werden, Spannungsteiler oder Ohm´sches Gesetz wären aber auch möglich:\\
+        $U_1 = U_0 - U_3 = 24 \, \mathrm{V} - 14,4 \, \mathrm{V} = 9,6 \, \mathrm{V}$\\
+
+        $U_2 = R_3 \cdot I_{24} = 12 \, \mathrm{V}$\\
+        $U_4 = R_3 \cdot I_{24} = 12 \, \mathrm{V}$\\
+
+
+
+
+
+
+        
+
+        \item Die Spannung zwischen den Punkten A und B.\\
+        
+        Zur Bestimmung der Spannung $U_\mathrm{AB}$ werden Maschen in das Ersatzschaltbild eingezeichnet:
+        \begin{center}
+        \input{Tikz/src/Aufgaben/Kirchhoff_A3_lsg3}
+        \end{center}
+        $M_1: U_2 - U_\mathrm{AB} - U_ 1 = 0$\\
+        $\rightarrow  U_\mathrm{AB} = U_2 - U_1 = 12 \, \mathrm{V} - 9,6 \, \mathrm{V} = 2,4 \, \mathrm{V}$\\
+
+        Kontrolle mit Masche $M2$:\\
+
+        $M2: U_\mathrm{AB} + U_4 - U_2 = 0$\\
+        $\rightarrow U_\mathrm{AB} = U_3 - U_4 = 14,4 \, \mathrm{V} - 12 \, \mathrm{V} = 2,4 \mathrm{V}$\\
+
         \item Wann wäre die Brücke abgeglichen, d. h. wann ist die Spannung zwischen den Punkten A und B Null?
-        Stellen Sie die Abgleichbedingung in möglichst allgemeiner Form als Funktion der Widerstände $R_1$ bis $R_4$ dar.      
+        Stellen Sie die Abgleichbedingung in möglichst allgemeiner Form als Funktion der Widerstände $R_1$ bis $R_4$ dar. \\
+
+        Es muss also gelten: $U_\mathrm{AB} = 0 \, \mathrm{V}$\\
+
+        Auf $M1$ bezogen bedeutet dies: $U_1 = U_2 \rightarrow I_{13} \cdot R_1 = I_{24} \cdot R_2$\\
+        Umgestellt nach $I_{24}$ ergibt sich: $I_{24} = I_{13} \cdot \frac{R_1}{R_2}$\\
+
+        Auf $M2$ bezogen bedeutet dies: $U_3 = U_4 \rightarrow I_{13} \cdot R_3 = I_{24} \cdot R_4$\\
+
+        Durch Einsetzen des Ausdruckes für $I_{24}$ aus $M1$ in die Gleichungen von $M2$ lässt sich $I_{24}$ eliminieren und das Gleichungssystem lösen.\\
+
+        $\rightarrow I_{13} \cdot R_3 = I_{13} \cdot \frac{R_1 \cdot R_4}{R_3}$\\
+
+        $\rightarrow \frac{R_1}{R_3} = \frac{R_2}{R_4}$
+ 
+    
+
+
+        
+        
     \end{enumerate}
     \begin{center}
         

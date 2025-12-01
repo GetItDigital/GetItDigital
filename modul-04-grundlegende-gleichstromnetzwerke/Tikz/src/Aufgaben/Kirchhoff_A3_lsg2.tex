@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+    \draw(4,5.5)to[short, o-](5.5,5.5)
+    to [R,v,i,l=$R_1$,name=R1](5.5,3.5)
+    to[short,-*](5.5,3)
+    to[short](5.5,2.5)
+    to [R,v,i,l=$R_3$,name=R3](5.5,0.5)
+    to[short,-o](4,0.5);
+ 
+
+
+
+   % to [R,-*](2,1)
+   % to [R,i<^,name=R2](0,3);
+   % \draw(4,3) to[short,-o](4,0);
+   % \draw(2,5)to[rmeterwa,t=V](2,1);
+
+   % \iarrmore{zu}{$I$};
+    \iarrmore{R1}{$I_{13}$};
+
+    \varrmore{R1}{$U_1$};
+
+    \varrmore{R3}{$U_3$};
+
+   % \iarrmore{R2}{$I_{24}$};
+
+
+  
+    \draw[->] (4,5.2) -- (4,0.8) node[midway, right] {24 V};
+\end{tikzpicture}
