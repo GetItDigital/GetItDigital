@@ -5,14 +5,14 @@
         node (mosfet1) [nigfete, anchor=G, tr circle] {};
     
     \draw (mosfet1.D)
-        to [short, -*] (2,2)
+        to [short, -*] (mosfet1.D |- 2,2)
         to [R, name=R, l=$R$, v<] ++(-3.5,0)
         to [V,v>,name=uv](-1.5,-1.25)
         to [short, -o](3,-1.25)
         (2,2) to[short, -o] (3,2);    
 
     \draw (mosfet1.S)
-        to [short, -*] (2,-1.25);
+        to [short, -*] (mosfet1.S |- 2,-1.25);
 
     \draw (3,-1.25) to[open,v<, name=uds] (3,2);
 

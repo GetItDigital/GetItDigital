@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="22.642057mm"
+   width="34mm"
    height="29.138115mm"
-   viewBox="0 0 22.642057 29.138115"
+   viewBox="0 0 33.999999 29.138115"
    version="1.1"
    id="svg1"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
@@ -26,16 +26,28 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="4.9094046"
-     inkscape:cx="62.634887"
-     inkscape:cy="82.698419"
+     inkscape:zoom="4.2441806"
+     inkscape:cx="64.205562"
+     inkscape:cy="85.764493"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     showgrid="false" />
+     showgrid="false"
+     showguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid407"
+       originx="0"
+       originy="0" />
+    <sodipodi:guide
+       position="31.749999,15.908949"
+       orientation="1,0"
+       id="guide456"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
   <defs
      id="defs1">
     <marker
@@ -65,55 +77,56 @@
      transform="translate(-10.794163,-11.401449)">
     <path
        style="fill:none;fill-opacity:1;stroke:#ff7f2a;stroke-width:0.544549;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:1.63365, 1.63365;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 63.032525,29.029378 h 4.208876 3.77911 10.979491"
+       d="m 63.032525,29.029378 h 4.208876 3.77911 l 20.087434,-0.01298"
        id="path3"
        sodipodi:nodetypes="cccc"
        transform="translate(-48.563782,-8.354532)" />
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#01949a;stroke-width:0.529851;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:4.2388, 1.0597, 0.529851, 1.0597;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 63.032525,34.043051 c 17.967477,0 17.967477,0 17.967477,0"
+       d="m 63.032525,34.043051 28.07542,-0.01298"
        id="path3-7"
-       transform="translate(-48.563782,-8.354532)" />
+       transform="translate(-48.563782,-8.354532)"
+       sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#de0078;stroke-width:0.529851;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 63.032525,39.049375 c 17.967477,0 17.967477,0 17.967477,0"
+       d="m 63.032525,39.049375 28.07542,-0.01298"
        id="path3-4"
-       transform="translate(-48.563782,-8.354532)" />
+       transform="translate(-48.563782,-8.354532)"
+       sodipodi:nodetypes="cc" />
     <g
        id="g140"
-       transform="translate(-48.563782,-8.354532)">
+       transform="translate(-48.563782,-8.354532)"
+       style="stroke-width:0.4;stroke-dasharray:none">
       <path
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker15)"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker15)"
          d="m 63.032525,45.667058 c 0,-22.761077 0,-22.761077 0,-22.761077"
          id="path3-4-0" />
     </g>
     <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.502997;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 62.783473,45.417124 c 18.216529,0 18.216529,0 18.216529,0"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 14.272037,37.112526 H 42.596509"
        id="path3-4-00"
-       transform="translate(-48.563782,-8.354532)" />
+       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       x="71.8106"
-       y="48.855289"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';text-align:center;text-anchor:middle;white-space:pre;inline-size:21.7741;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="28.295799"
+       y="40.500759"
        id="text4"
-       transform="translate(-48.563782,-8.354532)"><tspan
-         sodipodi:role="line"
-         id="tspan4"
-         style="font-size:3.52778px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
-         x="71.8106"
-         y="48.855289">Einzelatome</tspan></text>
+       transform="translate(0,1.0583333)"><tspan
+         x="28.295799"
+         y="40.500759"
+         id="tspan5980">Einzelatome</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:2.82223px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       x="10.907052"
+       x="10.377886"
        y="13.882968"
        id="text22"><tspan
          sodipodi:role="line"
          id="tspan22"
          style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
-         x="10.907052"
-         y="13.882968">E</tspan></text>
+         x="10.377886"
+         y="13.882968">$E$</tspan></text>
   </g>
 </svg>

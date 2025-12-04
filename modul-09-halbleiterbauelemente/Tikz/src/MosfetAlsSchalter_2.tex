@@ -1,7 +1,7 @@
 \begin{tikzpicture} 
 
-    \draw (0,3) node[vcc](VCC){$U_\mathrm{V}$}
-        to[R, l_=$R_\mathrm{L}$] (0,1)
+    \draw (0,3) node[right, color=voltage]{$U_\mathrm{V}$}
+        to[R, l_=$R_\mathrm{L}$, o-] (0,1)
         to[normal open switch, -*, l_={}](0,-2) node[ground]{}
         to[short, -o] (2,-2);
     \draw (0,1) to[short, *-o] (2,1);

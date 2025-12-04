@@ -1,12 +1,8 @@
 \begin{tikzpicture}
-    \draw (-1,1)  to [short, o-*] (2,1) to[short, -o] (4,1) node[right]{$5\,V$};
-    \draw (-1,-4)  to [short, o-*] (1.98,-4) to[short, -o] (4,-4) node[right]{$0\,V$};
-    
     % Input node
     \draw (-1,-1.5) node[left] {$E$} 
         to[short, o-*] (0,-1.5)
         to[short] (0,0);
-
     \draw (0,-1.5) 
         to[short] (0,-3);
 
@@ -26,11 +22,14 @@
     
     % Connecting PMOS and NMOS drains to output
     \draw (pmos.D) -- (nmos.D);
+
+    \draw (-1,1)  to [short, o-*] (pmos.S |- 2,1) to[short, -o] (4,1) node[right]{$5\,\mathrm{V}$};
+    \draw (-1,-4)  to [short, o-*] (pmos.S |- 2,-4) to[short, -o] (4,-4) node[right]{$0\,\mathrm{V}$};
+    \draw (pmos.D |- 2,-1.5) to[short, *-o] (4,-1.5)node[right]{$Q$};
     
-    \draw (1.98,-1.5) to[short, *-o] (4,-1.5)node[right]{$Q$};
     \draw (-1,-1.5) to[open, v, name=UGS1] (-1,-4); 
-    \varrmore {UGS1}{$U_\mathrm{GS1}$};
     \draw (-1,1) to[open, v<, name=UGS2]  (-1,-1.5); 
-    \varrmore {UGS2}{$U_\mathrm{GS2}$};
     
+    \varrmore {UGS1}{$U_\mathrm{GS1}$};
+    \varrmore {UGS2}{$U_\mathrm{GS2}$};    
 \end{tikzpicture}

@@ -6,8 +6,8 @@
     
     \draw (Q1.D) 
         to [short] (0,1)
-        to[R=$R_\mathrm{L}$] (0,3)
-        node[vcc](VCC){$U_\mathrm{V}$};
+        to[R=$R_\mathrm{L}$, -o] (0,3)
+        node[right, color=voltage]{$U_\mathrm{V}$};
     
     \draw (0,1) to[short, *-o] (2,1);
     
