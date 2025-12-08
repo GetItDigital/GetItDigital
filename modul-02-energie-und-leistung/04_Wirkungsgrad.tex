@@ -23,7 +23,7 @@ mit der ein System Energie umwandelt. Am Beispiel eines Elektromotors zeigt Abbi
 	\end{figure}}
 \b{
 	\begin{itemize}
-		\item Der Wirkungsgrad beschreibt das Verhältnis von abgegebener zu zugeführter Leistung
+		\item Der Wirkungsgrad beschreibt das Verhältnis von abgegebener zu zugeführter Leistung in einem System und ist ein Maß für die Effizienz
 	\end{itemize}
     \begin{figure}[H]
 		\centering
@@ -55,14 +55,14 @@ Mathematisch wird der Wirkungsgrad $\eta$ (eta) wie folgt definiert:
 
 \begin{equation}
 	\eta = \frac{P_\mathrm{{ab}}}{P_\mathrm{{zu}}} \cdot 100 \%
-\end{equation}
-}
+\end{equation}}
 
-	
 \b{
-	\begin{itemize}\centering
-		\item \( \eta = \frac{P_\mathrm{{ab}}}{P_\mathrm{{zu}}} \cdot 100 \% \)
-	\end{itemize}
+	\vspace*{-1.2cm}\only<2->{\begin{Merksatz}{Wirkungsgrad}
+		\begin{itemize}
+			\item \( \eta = \frac{P_\mathrm{{ab}}}{P_\mathrm{{zu}}} \cdot 100 \% \)
+		\end{itemize}
+	\end{Merksatz}}	
 }
 \end{frame}
 
@@ -147,13 +147,17 @@ können dazu beitragen, den Energiebedarf zu reduzieren und Treibhausgasemission
 
 \begin{frame}[t]
 	\ftx{Der Wirkungsgrad}
+	\b{\begin{itemize}
+	\item Beispielschaltung:
+	\end{itemize}\vspace*{-0.5cm}
+	}
 \begin{figure}[H]
 	\centering
 \hspace{1cm} % Um es in der Mitte zu haben
 	
 	\input{Tikz/src/04_Wirkungsgrad/Beispiel_Schaltung_Wirkungsgrad}
 
-	\s{\caption{\textbf{Beispielschaltung zum Wirkungsgrad.} Das Bild zeigt die Abgabe von Wärme und Licht am Verbraucher. Das Verhältnis von Licht zu Wärme entspricht dem Wirkungsgrad.}
+	\s{\caption{\textbf{Beispielschaltung zum Wirkungsgrad.} Zeigt die Abgabe von Wärme und Licht am Verbraucher. Das Verhältnis von Licht zu Wärme entspricht dem Wirkungsgrad.}
 	\alttext{Die Abbildung zeigt eine einfache elektrische Schaltung mit einer Glühlampe als Verbraucher. Links befindet sich eine Spannungsquelle, die einen Strom I durch die Leitung zur Lampe schickt. An der Glühlampe wird die abgegebene Energie in Form von Licht und Wärme dargestellt. Die Darstellung macht deutlich, dass nur ein Teil der zugeführten elektrischen Energie in Licht umgesetzt wird, während der Rest als Wärme verloren geht, was dem Wirkungsgrad der Lampe entspricht.}}
 	\label{fig:Nennleistung}
 \end{figure}
