@@ -12,25 +12,25 @@ Untersucht wird das Einschwingverhalten der Spannung $u_2$ am Ausgang
 bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
 \begin{minipage}[b]{0.5\textwidth}% links
     Die Schaltung ist vor dem Schaltzeitpunkt $t=0$ im stationären Zustand mit $u_2(t<0) = 0$.
-    \begin{itemize}
+    \begin{enumerate}
         \item[a)] Stellen Sie die DGL für $u_C$ für $t \geq 0$ auf.
         \item[b)] Bestimmen Sie die Funktion $u_C(t)$ für $t \geq 0$ inklusive aller Konstanten. 
         \item[c)] Bestimmen Sie die Funktion $u_2$ für $t \geq 0$ aus der Lösung b) für $u_C(t)$. Vereinfachen Sie soweit wie möglich.
-    \end{itemize}
+    \end{enumerate}
 \end{minipage}%
 \begin{minipage}[b]{0.5\textwidth}% rechts
     \begin{figure}[H]\centering\vspace{0pt}% empty spacing für vertical alignment for tikzpicture
         \includegraphics{Tikz/pdf/Uebungen/circ_uebung_einschaltverhalten_rs_rcs_dc.pdf}
     \end{figure}
 \end{minipage}
-\begin{itemize}
+\begin{enumerate}
     \item[d)] Skizzieren Sie qualitativ die Zeitverläufe der Spannungen $u_2$, $u_{R_2}$ und $u_C$ 
     vom stationären Zustand für $t<0$ bis die dargestellten Größen eingeschwungen sind ($t=5\tau$).  
     Kennzeichnen Sie Zeitkonstanten, Anfangs- und Endwerte der Verläufe. 
-\end{itemize}
+\end{enumerate}
 }
 \Loesung{
-\begin{itemize}
+\begin{enumerate}
 \item[a)] DGL für $u_C(t \geq 0)$:
     \begin{align*}
         R_1 \cdot \eci{i} + R_2 \cdot \eci{i} + \ecv{u_C} &= \ecv{U_q} \\
@@ -54,16 +54,16 @@ bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
     &= \left( 1 + \frac{R_2}{R_1+R_2} \cdot \mathrm{e}^{-\frac{t}{\tau}} - \mathrm{e}^{-\frac{t}{\tau}} \right) \cdot \ecv{U_q} \\
     &= \left( 1 - \frac{R_1}{R_1+R_2} \cdot \mathrm{e}^{-\frac{t}{\tau}} \right) \cdot \ecv{U_q}
 \end{align*}
-\end{itemize}
+\end{enumerate}
 \begin{minipage}{0.5\textwidth}
-\begin{itemize}
+\begin{enumerate}
     \item[d)] Skizze für $\ecv{u_C}$, $\ecv{u_2}$ und $\ecv{u_{R_2}}$.
     \begin{align*}
         \ecv{u_{R_2}}(0^-) &= \ecv{u_2}(0^-) = 0 \\
         \ecv{u_{R_2}}(0^+) &= \ecv{u_2}(0^+) = \frac{R_2}{R_1+R_2} \cdot \ecv{U_q}%\\
         %\ecv{u_{R_2}}(t>0) &= \frac{R_2}{R_1+R_2}\cdot\mathrm{e}^{-\frac{t}{\tau}}\cdot \ecv{U_q} 
     \end{align*}
-\end{itemize}
+\end{enumerate}
 \end{minipage}%
 \begin{minipage}{0.5\textwidth}
 \begin{figure}[H]
@@ -85,7 +85,7 @@ bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
     \end{figure}
 
     Zum Zeitpunkt $t = 0$ wird der Schalter umgelegt, so dass die Gleichspannung $U_q$ an der Schaltung anliegt. Die Kapazität ist vor dem Schaltzeitpunkt vollständig entladen.
-    \begin{itemize}
+    \begin{enumerate}
         \item[a)] Bestimmen Sie die Gleichung für die Spannung an der Kapazität $u_C(t)$ für $t \geq 0$. 
         \item[b)] Zeichnen Sie den zeitlichen Verlauf der Spannungen $u_C(t)$ und $u_{R1}(t)$ sowie des Stromes $i_C(t)$. Kennzeichnen Sie charakteristische Punkte.
         \item[c)] Nach vollständigem Aufladen der Kapazität $C$ auf $U_{0}$ wird der Schalter wieder in Ausgangsposition gebracht. 
@@ -93,7 +93,7 @@ bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
         \item[d)] Die Kapazität wird wie in c) entladen, allerdings mit offenem Schalter (Leerlauf). 
         Wie lange dauert der Entladevorgang (von $U_0$ bis $10\,\%\cdot U_0$)? 
         Vergleichen Sie die Dauer mit der aus c). 
-    \end{itemize}
+    \end{enumerate}
 \newpage % ACHTUNG <- PAGEBREAK (LAYOUT)
 }
 \Loesung{
@@ -143,7 +143,7 @@ bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
     Zeitverläufe:\\
     \includegraphics{Tikz/pdf/Uebungen/plot_uebung_einschaltverhalten_rc_schaltung.pdf}% Skizzen zu Aufgabenteil b) uC, uR1, iC
 \end{minipage}
-\begin{itemize}
+\begin{enumerate}
 \item[c)] Entladen von $C$ über Parallelschaltung aus $R_1$ und $R_2$ für $t'\geq0$ bis $U_0 \cdot 10\,\%$ \\
 Entlade-Zeitkonstante: $\tau_1= \tau = C \cdot \frac{R_1 \cdot R_2}{R_1+R_2}$:
 \begin{align*}
@@ -155,7 +155,7 @@ Entlade-Zeitkonstante: $\tau_1= \tau = C \cdot \frac{R_1 \cdot R_2}{R_1+R_2}$:
 \item[d)] Entladen von $C$ über $R_2$, wenn Schalter öffnet (Leerlauf) für $t'\geq0$ bis $U_0 \cdot 10\,\%$.\\
 Lösung wie bei Aufgabe c) nur mit Entlade-Zeitkonstante $\tau_2 = R_2 \cdot C$. \\
 Die Kapazität entlädt langsamer als in Aufgabe c) ($\tau_2 > \tau$), da $R_2 > R_1||R_2$.
-\end{itemize}
+\end{enumerate}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -179,17 +179,17 @@ Die Kapazität entlädt langsamer als in Aufgabe c) ($\tau_2 > \tau$), da $R_2 >
     
     Vor dem Zeitpunkt $t=0$ war die Spannung $u_1 = 0$, so dass zum Zeitpunkt $t=0$ keine Energie in der Spule gespeichert ist. Weiterhin gilt $t_1 \gg 5\tau$.
 
-    \begin{itemize}
+    \begin{enumerate}
         \item[a)] Es soll der Aufladevorgang ($0<t<t_1$) betrachtet werden. Es gilt $\tau = 1\,ms$ und $R=100\,\Omega$. Wie groß ist die Induktivität $L$?
         \item[b)] Es soll weiterhin der Aufladevorgang ($0<t<t_1$) betrachtet werden. Gegeben ist nun die Spannung $U_0=1\,kV$. Wie groß ist der Strom durch die Spule $i_L$ zum Zeitpunkt $t=3\tau$?
         \item[c)] Es wird weiterhin der Aufladevorgang betrachtet. Nun gilt jedoch: $R = 5\,\Omega$, $L=100\,mH$ und $U_0=2,8\,kV$.
-        \begin{itemize}
-        \item Nach welcher Zeit $t_0$ ist der Einschwingvorgang abgeschlossen?
-        \item Wie groß sind der Spulenstrom $i_L$ und die Spulenspannung $u_L$ nach $t=50\,ms$?
-        \end{itemize}
+        \begin{enumerate}
+        \item[c1)] Nach welcher Zeit $t_0$ ist der Einschwingvorgang abgeschlossen?
+        \item[c2)] Wie groß sind der Spulenstrom $i_L$ und die Spulenspannung $u_L$ nach $t=50\,ms$?
+        \end{enumerate}
         \item[d)] Nun soll der Entladevorgang ($t>t_1$) betrachtet werden. Es gelten die Werte aus dem vorangehenden Aufgabenteil. Wie groß sind Spulenstrom $i_L$ und Spulenspannung $u_L$ nach $t=t_1 +50\,ms$?
         \item[e)] Zeichnen Sie die zeitlichen Verläufe der Spulenspannung $u_L$, des Stromes $i_L$, sowie der Spannung $u_R$. Kennzeichnen Sie die Zeitkonstante $\tau$, sowie weitere charakteristische Punkte. Nehmen Sie an $t_1 = 120\,ms$.
-        \end{itemize}
+    \end{enumerate}
 }
 
 \Loesung{
@@ -351,7 +351,7 @@ Zeitkonstante $\tau$ sowie Anfangs- und Endwerte des Stromes $i_3$ für Skizze:\
     \begin{figure}[H]\centering
         \includegraphics{Tikz/pdf/Uebungen/circ_uebung_einschaltverhalten_rs_rlp.pdf}
     \end{figure}
-    \begin{itemize}
+    \begin{enumerate}
     \item[a)] Welcher Strom $i_{L,e}(t)$ stellt sich im eingeschwungenen Zustand bei der Induktivität ein? \\
     Bestimmen Sie die Amplitude und den Nullphasenwinkel des Stromes.
     \item[b)] Stellen Sie die DGL von $i_L(t)$ für $t \geq t_0$ auf.
@@ -363,10 +363,10 @@ Zeitkonstante $\tau$ sowie Anfangs- und Endwerte des Stromes $i_3$ für Skizze:\
     \item[d)] Sei zum Schaltzeitpunkt $t_0$ der eingeschwungene Zustand von $i_{L,e}(t)$ 
     bei seinem negativen Scheitelwert. Die Zeitkonstante $\tau$ beträgt eine Periodendauer $T=\frac{2\pi}{\omega}$.
     Bestimmen Sie das Strommaximum während des Einschwingvorgangs.
-    \end{itemize}
+    \end{enumerate}
 }
 \Loesung{
-    \begin{itemize}
+    \begin{enumerate}
     \item[a)] Eingeschwungener Zustand ($t \to \infty$) mit komplexer Wechselstromrechnung:
     \begin{align*}
         \eci{\underline{I}_{L,e}} &= \frac{\ecv{\underline{U}_L}}{\underline{Z}_L}
@@ -428,5 +428,5 @@ Zeitkonstante $\tau$ sowie Anfangs- und Endwerte des Stromes $i_3$ für Skizze:\
         &= \eci{\hat{I}_{L,e}} \cdot \left( \mathrm{e}^{-\frac{T/2}{T}} - \cos(\pi) \right) \\
         &= \eci{\hat{I}_{L,e}} \cdot \left( \mathrm{e}^{-\frac{1}{2}} + 1\right) = 1,606 \cdot \eci{\hat{I}_{L,e}}
     \end{align*}
-    \end{itemize}
+    \end{enumerate}
 }
