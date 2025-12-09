@@ -1,7 +1,10 @@
 %Lernziele Folie 1
 \newvideofile{Halbleiter}{Einführung}
+
+\section{Einführung}
 \begin{frame}
-    \b{ \frametitle{Einführung}
+    \b{ 
+        \frametitle{Einführung}
         \begin{Lernziele}{Halbleiter}
             \title{Lernziele: Halbleiter}
             Die Studierenden können
@@ -21,7 +24,8 @@
 
 %Einführung
 \begin{frame}
-    \b{\fta{Einführung}
+    \b{
+        \frametitle{Einführung}
         \begin{figure}[H]
             \centering
             \includegraphics[width=.8\textwidth]{Bilder/kap1/AufnahmenHalbleiterWiki.png}
@@ -36,7 +40,8 @@
 \end{frame}
 
 \begin{frame}
-    \b{\fta{Einführung}
+    \b{
+        \frametitle{Einführung}
         \begin{itemize}
             \item Halbleiterbauelemente sind zentral für die Funktion zahlreicher elektronischer Geräte wie Computer, Mobiltelefone und Solarzellen.
             \item Sie basieren auf Materialien, die weder gute Leiter noch gute Isolatoren sind. Ihre Funktionsweise kann mithilfe des Bändermodells erklärt werden.
@@ -51,25 +56,24 @@
 
 %Zusammenhang Bohrsche Atommodell und Bändermodell.
 \newvideofile{Baendermodell}{Bändermodell}
+\subsection{Das Bändermodell}
 \begin{frame}
     \b{\begin{columns}
             \frametitle{Das Bändermodell}
             \column[c]{0.3\textwidth}
             \begin{figure}[H]
                 \onslide<1->{
-                    \begin{minipage}[t]{0.48\textwidth}
-                        \begin{figure}[H]
-                            \centering
-                            \includesvg[width=1\textwidth]{Bilder/kap1/ZusammenhangBohrscheAtommodellundBaendermodell/ZusammenhangBohrscheAtommodellundBaendermodell_1}
-                        \end{figure}
-                    \end{minipage}
-                } \onslide<2->{
-                    \begin{minipage}[b]{0.48\textwidth}
-                        \begin{figure}[H]
-                            \centering
-                            \includesvg[width=1.1\textwidth]{Bilder/kap1/ZusammenhangBohrscheAtommodellundBaendermodell/ZusammenhangBohrscheAtommodellundBaendermodell_2}
-                        \end{figure}
-                    \end{minipage}
+                    \begin{figure}[H]
+                        \centering
+                        \includesvg[width=.7\linewidth]{Bilder/kap1/ZusammenhangBohrscheAtommodellundBaendermodell/ZusammenhangBohrscheAtommodellundBaendermodell_1}
+                    \end{figure}
+                    \vspace*{0.8cm}
+                }
+                \onslide<2->{
+                    \begin{figure}[H]
+                        \centering
+                        \includesvg[width=.8\linewidth]{Bilder/kap1/ZusammenhangBohrscheAtommodellundBaendermodell/ZusammenhangBohrscheAtommodellundBaendermodell_2}
+                    \end{figure}
                 }
                 %\caption{\textbf{Zusammenhang zwischen dem Bohrschen Atommodell und Bändermodell.} Darstellung des Zusammenhangs 
                 %zwischen dem Abstand von Elektronen zum Kern und Höhe des zugehörigen diskreten Energieniveau. Links: Bohrsche 
@@ -104,7 +108,7 @@
         \frametitle{Das Bändermodell}
         \begin{figure}[H]
             \centering
-            \includesvg[width=\textwidth]{Bilder/kap1/UebergangVonEnergieniveausZuBaendern}
+            \includesvg[width=.9\textwidth]{Bilder/kap1/UebergangVonEnergieniveausZuBaendern}
             \caption{\textbf{Übergang von Energieniveaus zu Bändern} Zusammenhang zwischen den möglichen Energiezustände in Abhängigkeit zur Anzahl der Atome. V.l.n.r. Energiezustände von Elektronen bei einem Einzelatom, 2 Atomen (Molekül) und einem Festkörper.}
             %\label{fig:UebergangVonEnergieniveausZuBaendern}
         \end{figure}
@@ -121,12 +125,13 @@
 \end{frame}
 
 %Bändermodell Eines Materials bei 0K
+\subsubsection{Einteilung von Materialien}
 \begin{frame}
     \b{
         \frametitle{Einteilung von Materialien}
         \begin{figure}[H]
             \centering
-            \includesvg[width=\textwidth]{Bilder/kap1/BaendermodelleinesMaterialsbei0K}
+            \includesvg[width=.7\textwidth]{Bilder/kap1/BaendermodelleinesMaterialsbei0K}
             \caption{\textbf{Bändermodell eines Materials bei 0 K} Darstellung der Energiebänder mit zugehöriger Beschriftung sowie deren alternativen Bezeichnungen.}
             %\label{fig:BandermodellEinesMaterialsBei0K}
         \end{figure}
@@ -145,7 +150,7 @@
         \frametitle{Einteilung von Materialien}
         \begin{figure}[H]
             \centering
-            \includesvg[width=\textwidth]{Bilder/kap1/BaendermodellverschiedenerMaterialien}
+            \includesvg[width=.95\textwidth]{Bilder/kap1/BaendermodellverschiedenerMaterialien}
             \caption{\textbf{Bändermodell verschiedener Halbleitermaterialien} V.l.n.r.: Leiter ohne und mit Überlappung, Halbleiter und Isolator}
             %\label{fig:BaendermodellVerschiedenerMaterialien}
         \end{figure}
@@ -164,18 +169,20 @@
 \begin{frame}
     \b{
         \frametitle{Einteilung von Materialien}
-        \textbf{Merke:}
-        \begin{itemize}
-            \onslide<1->{
-            \item Ladungsträger können nur definierte Energieniveaus im Festkörper besetzen.
-                  }
-                  \onslide<2->{
-            \item Bei $T=\mathrm{0\,K}$ ist das Valenzband das höchste besetzte Energieniveau, das darüberliegende Leistungsband beinhaltet keine freien Ladungsträger.
-                  }
-                  \onslide<3->{
-            \item Materialien können über die Bandlücke Kategorisiert werden.
-                  }
-        \end{itemize}}
+        \begin{Merksatz}{}
+            \begin{itemize}
+                \onslide<1->{
+                \item Ladungsträger können nur definierte Energieniveaus im Festkörper besetzen.
+                      }
+                      \onslide<2->{
+                \item Bei $T=\mathrm{0\,K}$ ist das Valenzband das höchste besetzte Energieniveau, das darüberliegende Leistungsband beinhaltet keine freien Ladungsträger.
+                      }
+                      \onslide<3->{
+                \item Materialien können über die Bandlücke Kategorisiert werden.
+                      }
+            \end{itemize}
+        \end{Merksatz}
+        }
     \speech{Einteilung_Materialien_Merke}{3}{Merken wir uns:
         Nur Elektronen im Leitungsband können sich frei durch das Material bewegen - und damit Strom leiten.
         Ob ein Stoff ein Leiter, Halbleiter oder Isolator ist, hängt also direkt von der Größe der Bandlücke ab.
@@ -187,6 +194,7 @@
 
 
 %Diamant-Gitterstruktur von Silizium
+\subsection{Halbleitermaterialien}
 \begin{frame}
     \b{
         \frametitle{Halbleitermaterialien}
@@ -237,18 +245,22 @@
 \begin{frame}
     \b{
         \frametitle{Halbleitermaterialien}
-        \textbf{Merke:}
-        \begin{itemize}
-            \onslide<1->{
-            \item Silizium ist das am weitesten verbreitete Halbleitermaterial.
-                  }
-                  \onslide<2->{
-            \item Verbindungshalbleiter bestehen aus zwei Materialen die in bestimmter Kombination Halbleiterverhalten aufweisen.
-                  }
-                  \onslide<3->{
-            \item Silizium ist aus der IV. Hauptguppe des Periodensystem, Verbindungshalbleiter typischerweise aus der III. und V. Hauptguppe.
-                  }
-        \end{itemize}}
+
+        \begin{Merksatz}{}
+            \begin{itemize}
+                \onslide<1->{
+                \item Silizium ist das am weitesten verbreitete Halbleitermaterial.
+                      }
+                      \onslide<2->{
+                \item Verbindungshalbleiter bestehen aus zwei Materialen die in bestimmter Kombination Halbleiterverhalten aufweisen.
+                      }
+                      \onslide<3->{
+                \item Silizium ist aus der IV. Hauptguppe des Periodensystem, Verbindungshalbleiter typischerweise aus der III. und V. Hauptguppe.
+                      }
+            \end{itemize}
+        \end{Merksatz}
+    }
+
     \speech{Halbleitermaterialien_Merke}{3}{Was solltest du dir merken?
         Silizium, aus der vierten Hauptgruppe, ist das am häufigsten genutzte Halbleitermaterial - weil es kostengünstig, verfügbar und gut verarbeitbar ist.
         Verbindungshalbleiter wie Galliumarsenid bestehen dagegen aus Elementen unterschiedlicher Hauptgruppen, oft der dritten und fünften.
@@ -312,15 +324,16 @@
 
 %Gitterstruktur und Bändermodell von Si - Abbildung 8
 \newvideofile{Ladungstraegertransport}{Ladungsträgertransport}
+\subsection{Ladungsträgertransport}
 \begin{frame}
     \b{
         \frametitle{Ladungsträgertransport}
         \onslide<1->{
             \begin{minipage}[t]{0.48\textwidth}
                 \begin{figure}[H]
-                    \centering
+                    \raggedright
                     \includesvg[width=\textwidth]{Bilder/kap1/GitterstrukturUndBaendermodellVonSi/GitterstrukturUndBaendermodellVonSi_1}
-                    \caption{\textbf{Gitterstruktur und Bändermodell von Si} reines Silizium bei T $=$ 0 K}
+                    \caption{Gitterstruktur und Bändermodell von \textbf{reinem Silizium} bei $T=0\,\mathrm{K}$}
                     \label{fig:GitterstrukturUndBaendermodellVonSi-1}
                 \end{figure}
             \end{minipage}
@@ -328,9 +341,9 @@
         \onslide<2->{
             \begin{minipage}[t]{0.48\textwidth}
                 \begin{figure}[H]
-                    \centering
+                    \raggedleft
                     \includesvg[width=\textwidth]{Bilder/kap1/GitterstrukturUndBaendermodellVonSi/GitterstrukturUndBaendermodellVonSi_2}
-                    \caption{\textbf{Gitterstruktur und Bändermodell von Si} reines Silizium bei T $>$ 0 K}
+                    \caption{Gitterstruktur und Bändermodell von \textbf{reinem Silizium} bei $T>0\,\mathrm{K}$}
                     \label{fig:GitterstrukturUndBaendermodellVonSi-2}
                 \end{figure}
             \end{minipage}
@@ -352,9 +365,9 @@
         \onslide<1->{
             \begin{minipage}[t]{0.48\textwidth}
                 \begin{figure}[H]
-                    \centering
+                    \raggedright
                     \includesvg[width=\textwidth]{Bilder/kap1/GitterstrukturUndBaendermodellVonN-dotiertesSi/GitterstrukturUndBaendermodellVonN-dotiertesSi_1}
-                    \caption{\textbf{Gitterstruktur und Bändermodell von n-dotiertem Si} n-dotierts Silizium bei T $=$ 0 K.}
+                    \caption{Gitterstruktur und Bändermodell von \textbf{n-dotiertem Silizium} bei $T=0\,\mathrm{K}$}
                     \label{fig:GitterstrukturUndBaendermodellVonN-DotiertesSi-1}
                 \end{figure}
             \end{minipage}
@@ -362,9 +375,9 @@
         \onslide<2->{
             \begin{minipage}[t]{0.48\textwidth}
                 \begin{figure}[H]
-                    \centering
+                    \raggedleft
                     \includesvg[width=\textwidth]{Bilder/kap1/GitterstrukturUndBaendermodellVonN-dotiertesSi/GitterstrukturUndBaendermodellVonN-dotiertesSi_2}
-                    \caption{\textbf{Gitterstruktur und Bändermodell von n-dotiertem Si} n-dotierts Silizium bei T $>$ 0 K.}
+                    \caption{Gitterstruktur und Bändermodell von \textbf{n-dotiertem Silizium} bei $T>0\,\mathrm{K}$}
                     \label{fig:GitterstrukturUndBaendermodellVonN-DotiertesSi-2}
                 \end{figure}
             \end{minipage}
@@ -386,9 +399,9 @@
         \onslide<1->{
             \begin{minipage}[t]{0.48\textwidth}
                 \begin{figure}[H]
-                    \centering
+                    \raggedright
                     \includesvg[width=\textwidth]{Bilder/kap1/GitterstrukturUndBaendermodellVonP-dotiertesSi/GitterstrukturUndBaendermodellVonP-dotiertesSi_1}
-                    \caption{\textbf{Gitterstruktur und Bändermodell von p-dotiertem Si} p-dotierts Silizium bei T $=$ 0 K.}
+                    \caption{Gitterstruktur und Bändermodell von \textbf{p-dotiertem Silizium} bei $T=0\,\mathrm{K}$}
                     \label{fig:GitterstrukturUndBaendermodellVonP-DotiertesSi-1}
                 \end{figure}
             \end{minipage}
@@ -396,9 +409,9 @@
         \onslide<2->{
             \begin{minipage}[t]{0.48\textwidth}
                 \begin{figure}[H]
-                    \centering
+                    \raggedleft
                     \includesvg[width=\textwidth]{Bilder/kap1/GitterstrukturUndBaendermodellVonP-dotiertesSi/GitterstrukturUndBaendermodellVonP-dotiertesSi_2}
-                    \caption{\textbf{Gitterstruktur und Bändermodell von p-dotiertem Si} p-dotierts Silizium bei T $>$ 0 K.}
+                    \caption{Gitterstruktur und Bändermodell von \textbf{p-dotiertem Silizium} bei $T>0\,\mathrm{K}$}
                     \label{fig:GitterstrukturUndBaendermodellVonP-DotiertesSi-2}
                 \end{figure}
             \end{minipage}
@@ -418,18 +431,21 @@
 \begin{frame}
     \b{
         \frametitle{Ladungsträgertransport}
-        \textbf{Merke:}
-        \begin{itemize}
-            \onslide<1->{
-            \item Durch thermische Anregung können freie Elektronen entstehen, die zum Ladungsträgertransport beitragen.
-                  } 
-            \onslide<2->{
-            \item Dotierung ist das gezielte Einbringen von Fremdatomen mit oder weniger Valenzelektronen als das Ausgangsmaterial.
-                  } 
-            \onslide<3->{
-            \item Für n-Dotierung kann Phosphor und für p-Dotierung Bor genutzt werden.
-                  }
-        \end{itemize}}
+    
+        \begin{Merksatz}{}
+            \begin{itemize}
+                \onslide<1->{
+                \item Durch thermische Anregung können freie Elektronen entstehen, die zum Ladungsträgertransport beitragen.
+                      }
+                      \onslide<2->{
+                \item Dotierung ist das gezielte Einbringen von Fremdatomen mit oder weniger Valenzelektronen als das Ausgangsmaterial.
+                      }
+                      \onslide<3->{
+                \item Für n-Dotierung kann Phosphor und für p-Dotierung Bor genutzt werden.
+                      }
+            \end{itemize}
+        \end{Merksatz}
+    }
     \speech{Ladungstraegertransport_Merke}{3}{Zusammengefasst:
         Temperatur kann Elektronen anregen - aber noch viel gezielter funktioniert das durch Dotierung.
         Dabei bringt man Atome mit mehr oder weniger Valenzelektronen ins Gitter ein.
@@ -501,13 +517,16 @@
 \begin{frame}
     \b{
         \frametitle{Ladungsträgertransport}
-        \textbf{Merke:}
-        \begin{itemize}
-            \onslide<1->{\item Driftstrom ist der Ladungsträgertransport auf Grund eines elektrischen Feldes.}
-                  \onslide<2->{\item Diffusionsstrom ist die Bewegung von Ladungsträgern auf Grund eines Konzentrationsunterschiedes.}
-                  \onslide<3->{\item Drift- und Diffusionsstrom ergeben zusammen den Gesamtstrom.}
-                  \onslide<4->{\item Eine externe Spannung führt zu einer Verschiebung des Bändermodells.}
-        \end{itemize}}
+    
+        \begin{Merksatz}{}
+            \begin{itemize}
+                \onslide<1->{\item Driftstrom ist der Ladungsträgertransport auf Grund eines elektrischen Feldes.}
+                \onslide<2->{\item Diffusionsstrom ist die Bewegung von Ladungsträgern auf Grund eines Konzentrationsunterschiedes.}
+                \onslide<3->{\item Drift- und Diffusionsstrom ergeben zusammen den Gesamtstrom.}
+                \onslide<4->{\item Eine externe Spannung führt zu einer Verschiebung des Bändermodells.}
+            \end{itemize}
+        \end{Merksatz}
+    }
     \speech{DriftDiffusion_Merke}{4}{Fassen wir kurz zusammen:
         Driftstrom entsteht durch ein elektrisches Feld,
         Diffusionsstrom durch Konzentrationsunterschiede.
@@ -516,8 +535,9 @@
     \silence{3}
 \end{frame}
 
-\newvideofile{pn-Uebergang}{pn-Übergang}
 
+\newvideofile{pn-Uebergang}{pn-Übergang}
+\subsection{pn-Übergang}
 \begin{frame}
     \b{
         \frametitle{pn-Übergang}
@@ -599,12 +619,16 @@
 \begin{frame}
     \b{
         \frametitle{pn-Übergang}
-        \textbf{Merke:}
-        \begin{itemize}
-            \onslide<1->{\item Der pn-Übergang kombiniert eine p- und n-dotierte Halbleiterschicht.}
-                  \onslide<2->{\item Im Übergangsbereich sind keine freien Ladungsträger, der Bereich wird Raumladungszone genannt.}
-                  \onslide<3->{\item In Durchlassrichtung wird die RLZ verkleinert, in Sperrrichtung wird diese vergrößert.}
-        \end{itemize}}
+    
+        \begin{Merksatz}{}
+            \begin{itemize}
+                \onslide<1->{\item Der pn-Übergang kombiniert eine p- und n-dotierte Halbleiterschicht.}
+                \onslide<2->{\item Im Übergangsbereich sind keine freien Ladungsträger, der Bereich wird Raumladungszone genannt.}
+                \onslide<3->{\item In Durchlassrichtung wird die RLZ verkleinert, in Sperrrichtung wird diese vergrößert.}
+            \end{itemize}
+        \end{Merksatz}
+    
+    }
     \speech{pn-Uebergang-Merke}{3}{Was du dir merken solltest:
         Der p n-Übergang ist die Verbindung von p- und n-dotierten Schichten,
         in der Raumladungszone gibt es keine freien Ladungsträger,

@@ -26,13 +26,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="2.56"
-     inkscape:cx="144.14062"
-     inkscape:cy="83.203125"
+     inkscape:zoom="3.6203867"
+     inkscape:cx="198.32136"
+     inkscape:cy="96.950969"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1009"
+     inkscape:window-x="4472"
+     inkscape:window-y="10"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -540,7 +540,7 @@
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.623001">$E_{\text{L}}$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:2.11667px;fill:#000000;stroke:none;stroke-width:0.623001;stroke-dasharray:0.623001, 0.623001"
+       style="font-size:1.41111px;fill:#000000;stroke:none;stroke-width:0.623001;stroke-dasharray:0.623001, 0.623001"
        x="66.454849"
        y="44.035934"
        id="text27105"><tspan
@@ -548,7 +548,7 @@
          id="tspan27103"
          x="66.454849"
          y="44.035934"
-         style="font-size:2.11667px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.623001">$E_{\mathrm{G}}\,\mathrm{\approx1,1\,eV}$</tspan></text>
+         style="font-size:1.41111px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.623001">$E_{\mathrm{G}}\,\mathrm{\approx1,1\,eV}$</tspan></text>
     <g
        id="use4669"
        transform="matrix(1.368249,0,0,1.368249,-146.45379,-7.056274)">

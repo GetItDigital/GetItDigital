@@ -1,19 +1,19 @@
 \begin{tikzpicture}
 
-\draw (0,0) node[npn] (Q1) {};
-\draw (-3,0)node[left]{B}  to[short,i,name=IB, o-] (Q1.B);
-\draw (0,3)node[above]{C}  to[short,i,name=IC, o-] (Q1.C);
-\draw (Q1.E) to[short,i,name=IE, -o] (0,-3)node[below]{E} ;
-\draw (0,3) to[open,v>,name=UCB] (-3,0);
-\draw (-3,0) to[open,v>,name=UBE] (0,-3);
-\draw (2.5,3) to[open,v>,name=UCE] (2.5,-3);
-\draw[thick] (-0.2,0) circle (1cm);
+    \draw (0,0) node[npn] (Q1) {};
+    \draw (-2,0)node[left]{B}  to[short,i,name=IB, o-] (Q1.B);
+    \draw (0,2)node[above]{C}  to[short,i,name=IC, o-] (Q1.C);
+    \draw (Q1.E) to[short,i,name=IE, -o] (0,-2)node[below]{E} ;
+    \draw (0,2) to[open,v>,name=UCB, voltage=european] (-2,0);
+    \draw (-2,0) to[open,v>,name=UBE, voltage=european] (0,-2);
+    \draw (1,2) to[open,v^>,name=UCE, voltage=european] (1,-2);
+    \draw[thick] (-0.2,0) circle (0.75cm);
 
-\iarrmore{IE}{$I_\mathrm{E}$};
-\iarrmore{IB}{$I_\mathrm{B}$};
-\iarrmore{IC}{$I_\mathrm{C}$};
-\varrmore{UCB}{$U_\mathrm{CB}$};
-\varrmore{UBE}{$U_\mathrm{BE}$};
-\varrmore{UCE}{$U_\mathrm{CE}$};
+    \iarrmore{IE}{$I_\mathrm{E}$};
+    \iarrmore{IB}{$I_\mathrm{B}$};
+    \iarrmore{IC}{$I_\mathrm{C}$};
+    \varrmore{UCB}{$U_\mathrm{CB}$};
+    \varrmore{UBE}{$U_\mathrm{BE}$};
+    \varrmore{UCE}{$U_\mathrm{CE}$};
 
 \end{tikzpicture}
