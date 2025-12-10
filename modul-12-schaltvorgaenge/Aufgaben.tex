@@ -20,7 +20,7 @@ bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
 \end{minipage}%
 \begin{minipage}[b]{0.5\textwidth}% rechts
     \begin{figure}[H]\centering\vspace{0pt}% empty spacing für vertical alignment for tikzpicture
-        \includegraphics{Tikz/pdf/Uebungen/circ_uebung_einschaltverhalten_rs_rcs_dc.pdf}
+        \includegraphics[alt={Schaltbild: Eine ideale Gleichspannungsquelle Uq wird über einen Schalter an eine Serienschaltung aus R1 und R2 und C angeschlossen. Spannung u1 über allen drei Bauteilen. Spannung u2 nur über R2 und C.}]{Tikz/pdf/Uebungen/circ_uebung_einschaltverhalten_rs_rcs_dc.pdf}
     \end{figure}
 \end{minipage}
 \begin{enumerate}
@@ -67,7 +67,7 @@ bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
 \end{minipage}%
 \begin{minipage}{0.5\textwidth}
 \begin{figure}[H]
-    \includegraphics{Tikz/pdf/Uebungen/plot_uebung_einschaltverhalten_rs_rcs_dc.pdf}
+    \includegraphics[alt={Plot: Zeitverlauf der Spannungen uC und u2 und uR2 bei Einschaltvorgang einer Serienschaltung aus R1 und R2 und C. Die Spannung uC nähert sich von null exponentiell Uq an. Die Spannung uR2 springt von null auf Uq*R2/(R1+R2) und fällt dann exponentiell auf null ab. Die Spannung u2 springt auf den selben Wert und nähert sich dann exponentiell der Spannung Uq. Alle drei Exponentialverläufe haben die gleiche Zeitkonstante tau. Deren Tangenten schneiden nach exakt ihren jeweiligen Endwert nach exakt einem tau.}]{Tikz/pdf/Uebungen/plot_uebung_einschaltverhalten_rs_rcs_dc.pdf}
 \end{figure}
 \end{minipage}
 \newpage % ACHTUNG <- PAGEBREAK (LAYOUT)
@@ -81,7 +81,7 @@ bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
     % Übernommen von Prof. Exknowski, FH SWF Hagen, 2024, ET3 (Übung 6, Aufgabe 2), leicht verändert
     Das Einschaltverhalten der dargestellten Schaltung soll untersucht werden.
     \begin{figure}[H]\centering
-        \includegraphics{Tikz/pdf/Uebungen/circ_uebung_einschaltverhalten_rc_schaltung.pdf}% U_q an R1 in Reihe mit (R2 parallel zu C) ab t=0
+        \includegraphics[alt={Schaltbild: Eine RC Schaltung mit zwei Widerständen wird mit Schalter vom Kurzschluss zum Anschluss an eine Gleichspannungsquelle Uq geschaltet. Die RC Schaltung besteht aus R1 in Reihe mit der Parallelschaltung aus R2 und C.}]{Tikz/pdf/Uebungen/circ_uebung_einschaltverhalten_rc_schaltung.pdf}% U_q an R1 in Reihe mit (R2 parallel zu C) ab t=0
     \end{figure}
 
     Zum Zeitpunkt $t = 0$ wird der Schalter umgelegt, so dass die Gleichspannung $U_q$ an der Schaltung anliegt. Die Kapazität ist vor dem Schaltzeitpunkt vollständig entladen.
@@ -141,7 +141,7 @@ bei Anschließen einer idealen Gleichspannungsquelle $U_q$.\\
 \end{minipage}%
 \begin{minipage}[t]{0.48\textwidth}\centering
     Zeitverläufe:\\
-    \includegraphics{Tikz/pdf/Uebungen/plot_uebung_einschaltverhalten_rc_schaltung.pdf}% Skizzen zu Aufgabenteil b) uC, uR1, iC
+    \includegraphics[alt={Plot: Gezeigt sind die Zeitverläufe für uC und für uR1 und für iC während des Schaltvorganges. uC nähert sich von null exponentiell dem Endwert Uq*R2/(R1+R2) an. uR1 springt von null auf Uq und fällt dann exponentiell ab auf den Wert Uq*R1/(R1+R2). iC springt von null auf Uq/R1 und fällt dann exponentiell auf null ab. Für alle drei Exponentialverläufe sind Tangenten eingezeichnet die nach der gleichen Zeitkonstante tau den jeweiligen Endwert schneiden.}]{Tikz/pdf/Uebungen/plot_uebung_einschaltverhalten_rc_schaltung.pdf}% Skizzen zu Aufgabenteil b) uC, uR1, iC
 \end{minipage}
 \begin{enumerate}
 \item[c)] Entladen von $C$ über Parallelschaltung aus $R_1$ und $R_2$ für $t'\geq0$ bis $U_0 \cdot 10\,\%$ \\
@@ -169,11 +169,11 @@ Die Kapazität entlädt langsamer als in Aufgabe c) ($\tau_2 > \tau$), da $R_2 >
 
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}{0.25\textwidth}\centering
-    \includegraphics{Tikz/pdf/Uebungen/circ_uebung_7.2.pdf}% Vgl. ET3 Judith Ackers, Übung 7.2
+    \includegraphics[alt={Schaltbild: Gezeigt ist eine RL Reihenschaltung mit Spannung u1 über R und L.}]{Tikz/pdf/Uebungen/circ_uebung_7.2.pdf}% Vgl. ET3 Judith Ackers, Übung 7.2
     \end{minipage}
     \quad\quad
     \begin{minipage}{0.25\textwidth}\centering
-    \includegraphics{Tikz/pdf/Uebungen/plot_uebung_7.2.pdf}% Vgl. ET3 Judith Ackers, Übung 7.2
+    \includegraphics[alt={Plot: Gezeigt ist der rechteckförmige Zeitverlauf der Spannung u1. Diese springt bei t=0 von 0 auf Uq. Bei t=t1 springt sie zurück auf 0.}]{Tikz/pdf/Uebungen/plot_uebung_7.2.pdf}% Vgl. ET3 Judith Ackers, Übung 7.2
     \end{minipage}
 \end{minipage}
     
@@ -234,7 +234,7 @@ Die Kapazität entlädt langsamer als in Aufgabe c) ($\tau_2 > \tau$), da $R_2 >
         \end{align*}
     e) Zeitliche Verläufe von $u_L, i_L, u_R$.\\[-2em]
     \begin{center}
-        \includegraphics{Tikz/pdf/Uebungen/plot_uebung_7.1_a.pdf}
+        \includegraphics[alt={Plot: Zeitverläufe für u1 und für uL und für iL. Der Zeitverlauf von u1 ist rechteckförmig. Bei t=0 springt u1 von 0 auf U0. Bei t=t1=10*tau springt u1 zurück auf 0. Die Spannung uL springt bei t=0 von null auf U0 und fällt dann mit Zeitkonstante tau exponentiell auf null ab. Bei t=t1 springt uL auf minus U0 und nähert sich dann mit dem gleichen tau exponentiell null an. Der Strom iL fängt bei 0 an und nähert sich ab t=0 exponentiell dem Wert U0/R. Bei t=t1 fällt iL exponentiell auf null ab. Die Zeitkonstanten sind gleich.}]{Tikz/pdf/Uebungen/plot_uebung_7.1_a.pdf}
     \end{center}
 }
 
@@ -291,7 +291,7 @@ Bestimmen Sie die Zeitkonstante $\tau$, den Widerstand $R$, sowie die Spannung $
     \hspace{0.3cm}
     \begin{minipage}{0.38\textwidth}
         \centering
-        \includegraphics{Tikz/pdf/Uebungen/circ_uebung_8.pdf}
+        \includegraphics[alt={Schaltbild: Zu sehen ist eine H-Brückenschaltung mit Anschluss an eine ideale Gleichspannungsquelle Uq. Die Brückenschaltung besteht aus drei Widerständen und einer Kapazität. Der linke Strang besteht aus R1 oben und C unten. Der rechte Strang besteht aus R2 oben und R3 unten. In der Mitte des H sind beide Stränge jeweils mittig über einen Schalter miteinander verbunden. }]{Tikz/pdf/Uebungen/circ_uebung_8.pdf}
     \end{minipage}
 }
 \Loesung{
@@ -336,7 +336,7 @@ Zeitkonstante $\tau$ sowie Anfangs- und Endwerte des Stromes $i_3$ für Skizze:\
 \end{align*}
 \end{minipage}% Plot
 \begin{minipage}{0.5\textwidth}\centering%
-\includegraphics{Tikz/pdf/Uebungen/plot_uebung_8.pdf}
+\includegraphics[alt={Plot: Gezeigt ist der Zeitverlauf i3 während eines Schaltvorganges. Der Strom ist zunächst konstant bei 100 mA und springt dann 500 mA. Von dort fällt er exponentiell auf 200 mA ab mit einer Zeitkonstante von 300 us.}]{Tikz/pdf/Uebungen/plot_uebung_8.pdf}
 \end{minipage}
 }
 
@@ -349,7 +349,7 @@ Zeitkonstante $\tau$ sowie Anfangs- und Endwerte des Stromes $i_3$ für Skizze:\
     Für $t<t_0$ ist die Schaltung im stationären Zustand.
     Die Quellenspannung ist gegeben durch $u_1(t) = \hat{U}_1 \cdot \sin(\omega t)$.
     \begin{figure}[H]\centering
-        \includegraphics{Tikz/pdf/Uebungen/circ_uebung_einschaltverhalten_rs_rlp.pdf}
+        \includegraphics[alt={Schaltbild: Gezeigt ist eine Schaltung aus R1 in Reihe mit der Parallelschaltung aus R2 und L. Die ganze Schaltung ist zunächst kurzgeschlossen und schaltet von dort auf den Anschluss einer idealen Wechselspannungsquelle u1.}]{Tikz/pdf/Uebungen/circ_uebung_einschaltverhalten_rs_rlp.pdf}
     \end{figure}
     \begin{enumerate}
     \item[a)] Welcher Strom $i_{L,e}(t)$ stellt sich im eingeschwungenen Zustand bei der Induktivität ein? \\

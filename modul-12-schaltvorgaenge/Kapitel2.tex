@@ -274,7 +274,7 @@ Schaltvorgänge können im Kontext des Moduls als Ausgleichsvorgänge nach dem S
     % Flussdiagramm
     Abbildung \ref{fig:plot:flussdiagrammbildbereich} stellt den Ablauf zur Berechnung im Zeit- und im Bildbereich zum Vergleich als Flussdiagramm gegenüber.
 
-    \fu{\includegraphics{Tikz/pdf/plot_flussdiagramm_dgl_berechnungsmethoden.pdf}}{Flussdiagramm, Berechnungsmethoden für Schaltvorgänge\label{fig:plot:flussdiagrammbildbereich}}
+    \fu{\includegraphics[alt={Flussdiagramm zur Berechnung von Schaltvorgängen im Zeit- und Bildbereich. Ausgangspunkt ist eine DGL für f(t). Im Zeitbereich wird die DGL gelöst um den Zeitverlauf f(t) zu bestimmen. Alternativ wird die DGL in den Bildbereich transformiert und bildet dort eine algebraische Gleichung. Durch algebraisches lösen wird die Bildfunktion F(s) bestimmt. Durch Rücktransformation in den Zeitbereich wird f(t) bestimmt.}]{Tikz/pdf/plot_flussdiagramm_dgl_berechnungsmethoden.pdf}}{Flussdiagramm, Berechnungsmethoden für Schaltvorgänge\label{fig:plot:flussdiagrammbildbereich}}
 
     Die Benennung und Darstellung beider Methoden sind angelehnt an \cite[S. 51]{weissgerber3}, 
     finden sich jedoch in ähnlicher Form auch in anderen Lehrbüchern zur Elektrotechnik, Regelungstechnik und Systemtheorie. 
@@ -293,11 +293,10 @@ Schaltvorgänge können im Kontext des Moduls als Ausgleichsvorgänge nach dem S
     Die Idee in den Bildbereich zu wechseln findet sich wieder in Abschnitt \ref{sec:grundlagen:dgl} bei der Aufstellung einer DGL 
     und in Abschnitt \ref{sec:grundlagen:zeitbereich:partikulaereloesung} bei der Anwendung komplexer Wechselstromrechnung (Vgl. Modul 7) zur Bestimmung eingeschwungener Zustände.
 }%
-\b{% Folie: Berechnungsmethoden für Schaltvorgänge
-    % Bild: Flussdiagramm, Berechnungsmethoden für Schaltvorgänge
+\b{%
     Schaltvorgänge können im Zeit- und Bildbereich berechnet werden.
-    \begin{center}
-        \includegraphics[width=0.75\textwidth]{Tikz/pdf/plot_flussdiagramm_dgl_berechnungsmethoden.pdf}
+    \begin{center}% Gleiche Bild wie im Skript, nur kleiner skaliert
+        \includegraphics[width=0.75\textwidth, alt={Flussdiagramm zur Berechnung von Schaltvorgängen im Zeit- und Bildbereich. Im Zeitbereich von DGL durch lösen zum Zeitverlauf. Im Bildbereich durch transformierte DGL in Form einer algebraischen Gleichung durch algebraisches lösen zur Bildfunktion und über Rücktransformation zum Zeitverlauf.}]{Tikz/pdf/plot_flussdiagramm_dgl_berechnungsmethoden.pdf}
     \end{center}
     Beide Methoden basieren auf dem Lösen von Differentialgleichungen.
 }%
@@ -367,7 +366,7 @@ Andernfalls müssen die Anfangsbedingungen im Bildbereich mit eingearbeitet werd
     Abbildung \ref{fig:plot:dglaufstellen} zeigt schematisch beide Vorgehensweisen im Vergleich. 
 
     % Bild: Aufstellungsmethoden für DGL (Zeitbereich, Bildbereich)
-    \fu{\includegraphics{Tikz/pdf/plot_flussdiagramm_dgl_aufstellen.pdf}}{Flussdiagramm, Aufstellungsmethoden für Differentialgleichungen\label{fig:plot:dglaufstellen}}
+    \fu{\includegraphics[alt={Flussdiagramm zur Aufstellung von DGLen im Zeit- und Bildbereich. Im Zeitbereich werden Kirchhoffsche Regeln und Bauteilgleichungen direkt verwendet. Im Bildbereich wird die komplexe Wechselstromrechnung mit Impedanzen und Admittanzen. Bei Rücktransformation wird j omega zu d/dt.}]{Tikz/pdf/plot_flussdiagramm_dgl_aufstellen.pdf}}{Flussdiagramm, Aufstellungsmethoden für Differentialgleichungen\label{fig:plot:dglaufstellen}}
 
     % Kirchhoff + Bauteilgleichungen
     Bei einfachen Schaltungen mit einer einzelnen Masche (reine Reihenschaltung) oder zwei einzelnen Knoten (reine Parallelschaltung)
@@ -393,7 +392,7 @@ Andernfalls müssen die Anfangsbedingungen im Bildbereich mit eingearbeitet werd
     % Beispiele
 }% Ende Skript only
 \b{% Folie: Schaltungselemente + Kirchhoff + Komponentengleichungen
-    \includegraphics{Tikz/pdf/slide_aktive_passive_bauele2.pdf}
+    \includegraphics[alt={Übersichtsgrafik: Links sind Schaltungssymbole für passive und aktive Bauelemente. Passiv sind R L C und Leitungen. Aktiv sind Spannungs- und Stromquellen. Rechts sind Gleichungen. Komponentengleichungen. Für R: u*R=i. Für L: u*L=di/dt. Für C: i*C=du/dt. Darunter sind die Kirchhoffschen Regeln. Für Knoten: Summe der Ströme ist null. Für Maschen: Summe der Spannungen ist null. Schriftzug: Energiespeicher in Schaltungen führen zu Schaltvorgängen und DGLen.}]{Tikz/pdf/slide_aktive_passive_bauele2.pdf}
 }%
 \speech{2Grundlagen1F4DGL}{1}{%
 Wie erhalten wir nun die erforderlichen Differenzialgleichungen? 
@@ -413,7 +412,7 @@ Die Differenzialgleichung erhalten wir durch Anwendung der Komponentengleichung 
 \begin{frame}\ftx{\subsecname}% 
 \b{% Folie: Aufstellungsmethoden für DGL (Zeitbereich, Bildbereich)
     Mögliche Vorgehensweisen zum Aufstellen von Differentialgleichungen:\\[5pt]
-    \includegraphics[width=\textwidth]{Tikz/pdf/plot_flussdiagramm_dgl_aufstellen.pdf}
+    \includegraphics[width=\textwidth, alt={Flussdiagramm zur Aufstellung von DGLen im Zeit- und Bildbereich. Im Zeitbereich werden Kirchhoffsche Regeln und Bauteilgleichungen direkt verwendet. Im Bildbereich wird die komplexe Wechselstromrechnung mit Impedanzen und Admittanzen. Bei Rücktransformation wird j omega zu d/dt.}]{Tikz/pdf/plot_flussdiagramm_dgl_aufstellen.pdf}
 }
 \speech{2Grundlagen1F5DGLAufstellen}{1}{%
 Das hier gezeigte Flussdiagramm stellt prinzipiell zwei Vorgehensweisen dar, um die gesuchte Differenzialgleichung - oben rechts im Bild - auf zu stellen.
@@ -431,7 +430,7 @@ Beide Varianten werden im Folgenden kurz erläutert und dann anhand eines einfac
     \b{% Beamer only Beispiel, Start
     % Obere Hälfte
     \begin{minipage}{\textwidth}\centering\vspace{5pt}%
-        \includegraphics{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}
+        \includegraphics[alt={Schaltbild: RC Reihenschaltung mit Schalter. Dieser schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}
     \end{minipage}
 
     % Untere Hälfte
@@ -542,7 +541,7 @@ Durch Rücktransformation in den Zeitbereich erhalten wir unsere Differenzialgle
 }%
 \b{%
     \centering%
-    \includegraphics{Tikz/pdf/slide_aktive_passive_bauele.pdf}
+    \includegraphics[alt={Links ist eine Übersicht über von Schaltungselementen gezeigt. Passive Elemente sind R L C und Leitungen. Aktive sind Strom- und Spannungsquellen. Rechts sind Systemeigenschaften zu DGL-Eigenschaften zugeordnet. Energiespeicher führen zu DGL. Lineares System zu linearer DGL. Zeitinvariantes System zu konstanten Koeffizienten. Unten ist eine DGL gegeben. Summe für i=0 bis i=n von a_i mal i-te Ableitung von y(t) ist gleich b(t). Mit n als Ordnung. a_i als konstante Koeffizienten. y(t) als Schaltungsgröße. b(t) als Störgröße.}]{Tikz/pdf/slide_aktive_passive_bauele.pdf}
 }%
 \speech{2Grundlagen1F7DGLEigenschaften}{1}{%
 Hier sehen wir eine kurze Zusammenfassung von Schaltungskomponenten, System- und DGL Eigenschaften und der Form der DGL. 
@@ -584,19 +583,19 @@ Die DGL hat die Ordnung N, da die Ente Ableitung die höchst auftretende Ableitu
     Abbildung \ref{fig:plot:beispielordnungdgl} zeigt exemplarisch mehrere Schaltungen und die Ordnung der zugehörigen DGL.
     \begin{figure}[H]\centering% Bilder vertikal angeordnet
         \begin{subfigure}{0.24\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_example_ordnung_01.pdf}
+            \includegraphics[alt={Schaltbild: Zweitor aus RC-Serienglied. Eingang über R und C. Ausgang über C.}]{Tikz/pdf/circ_example_ordnung_01.pdf}
         \end{subfigure}
         \caption*{1 Energiespeicher $\rightarrow$ DGL 1. Ord.}
         \begin{subfigure}{0.24\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_example_ordnung_02.pdf}
+            \includegraphics[alt={Schaltbild: RLC-Parallelschwingkreis.}]{Tikz/pdf/circ_example_ordnung_02.pdf}
         \end{subfigure}
         \caption*{2 Energiespeicher $\rightarrow$ DGL 2. Ord.}
         \begin{subfigure}{0.24\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_example_ordnung_03.pdf}
+            \includegraphics[alt={Schaltbild: Serienschaltung aus R und L1. Parallel dazu L2.}]{Tikz/pdf/circ_example_ordnung_03.pdf}
         \end{subfigure}
         \caption*{2 Energiespeicher $\rightarrow$ DGL 2. Ord.}
         \begin{subfigure}{0.24\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_example_ordnung_04.pdf}
+            \includegraphics[alt={Schaltbild: Parallelschaltung aus R1 und L. In Reihe mit Parallelschaltung aus R2 und C.}]{Tikz/pdf/circ_example_ordnung_04.pdf}
         \end{subfigure}
         \caption*{2 Energiespeicher $\rightarrow$ DGL 2. Ord.}
         \caption{Beispiel Schaltungen und Ordnung der Differentialgleichung}
@@ -607,19 +606,19 @@ Die DGL hat die Ordnung N, da die Ente Ableitung die höchst auftretende Ableitu
 \b{%
     \begin{figure}[H]\centering% Bilder horizontal angeordnet
         \begin{subfigure}{0.24\textwidth}\centering
-            \includegraphics[width=\textwidth]{Tikz/pdf/circ_example_ordnung_01.pdf}
+            \includegraphics[width=\textwidth, alt={Schaltbild: Zweitor aus RC-Serienglied. Eingang über R und C. Ausgang über C.}]{Tikz/pdf/circ_example_ordnung_01.pdf}
             \caption*{1 En.sp. $\rightarrow$ 1. Ord.}
         \end{subfigure}
         \begin{subfigure}{0.24\textwidth}\centering
-            \includegraphics[width=\textwidth]{Tikz/pdf/circ_example_ordnung_02.pdf}
+            \includegraphics[width=\textwidth, alt={Schaltbild: RLC-Parallelschwingkreis.}]{Tikz/pdf/circ_example_ordnung_02.pdf}
             \caption*{2 En.sp. $\rightarrow$ 2. Ord.}
         \end{subfigure}
         \begin{subfigure}{0.24\textwidth}\centering
-            \includegraphics[width=\textwidth]{Tikz/pdf/circ_example_ordnung_03.pdf}
+            \includegraphics[width=\textwidth, alt={Schaltbild: Serienschaltung aus R und L1. Parallel dazu L2.}]{Tikz/pdf/circ_example_ordnung_03.pdf}
             \caption*{2 En.sp. $\rightarrow$ 2. Ord.}
         \end{subfigure}
         \begin{subfigure}{0.24\textwidth}\centering
-            \includegraphics[width=\textwidth]{Tikz/pdf/circ_example_ordnung_04.pdf}
+            \includegraphics[width=\textwidth, alt={Schaltbild: Parallelschaltung aus R1 und L. In Reihe mit Parallelschaltung aus R2 und C.}]{Tikz/pdf/circ_example_ordnung_04.pdf}
             \caption*{2 En.sp. $\rightarrow$ 2. Ord.}
         \end{subfigure}
         \label{fig:plot:beispielordnungdgl}
@@ -803,13 +802,13 @@ Diese Werte können wir als Anfangsbedingungen für die Berechnung des Schaltvor
 
     % Bild
     \begin{figure}[H]\centering
-        \includegraphics{Tikz/pdf/plot_example_fluechtig_eingeschwungen.pdf}
+        \includegraphics[alt={Plot: Zeitverlauf einer Größe y(t) zerlegt in ye und yf. Dabei nähert sich y asymptotisch dem konstanten Wert ye an. Die Differenz der beiden ist yf und geht gegen null.}]{Tikz/pdf/plot_example_fluechtig_eingeschwungen.pdf}
         \caption{Ausgleichsvorgang zerlegt in eingeschwungenen und flüchtigen Zustand}
         \label{plot:example:fluechtig_eingeschwungen}
     \end{figure}%
 }%
 \b{%
-    \includegraphics{Tikz/pdf/plot_example_fluechtig_eingeschwungen_def.pdf}%
+    \includegraphics[alt={Plot: Zeitverlauf einer Größe y(t) zerlegt in ye und yf. Dabei nähert sich y asymptotisch dem konstanten Wert ye an. Die Differenz der beiden ist yf und geht gegen null.}]{Tikz/pdf/plot_example_fluechtig_eingeschwungen_def.pdf}%
     \pause%
 }%
 \s{%

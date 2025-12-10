@@ -84,7 +84,7 @@ Wir lernen die Zeitkonstante Tau kennen und verstehen und berechnen Lade- und En
     \end{minipage}%
     \begin{minipage}{0.48\textwidth}\centering
         \pause
-        \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rc_cycle_seperate_u.pdf}
+        \includegraphics[width=0.8\textwidth, alt={Plot: Zeitverlauf von Spannungen u(t) und uC(t) sowie von Strom i(t) bei einem RC-Glied. Spannung u schaltet von 0 auf konstanten Wert und später auf 0 zurück. Spannung uC steigt exponentiell annäherend an Endwert und später exponentiell abfallend auf 0 ab. Strom i springt von null auf Maximalwert und fällt exponentiell auf null ab. Später springt i auf negativen Maximalwert und nähert sich dann exponentiell null an.}]{Tikz/pdf/plot_rc_cycle_seperate_u.pdf}
         Schaltvorgänge bei RC-Glied (DC)
     \end{minipage}
 }%
@@ -137,7 +137,7 @@ Die Exponenzialform resultiert aus dem flüchtigen Zustand, das heißt der homog
 
     \begin{minipage}{0.95\textwidth}\centering
     \begin{minipage}[b]{0.48\textwidth}\centering
-        \fu{\includegraphics{Tikz/pdf/plot_rc_charge_uc_tau.pdf}}{Exp. Annäherung und $\tau$\label{fig:plot:rc:tau}}%
+        \fu{\includegraphics[alt={Plot: Zeitverlauf von Spannung uC. Zunächst uC=0 und ab t=0 exponentielle Annäherung von uC an Uq. Tangente im Ursprung schneidet nach einem Tau Uq.}]{Tikz/pdf/plot_rc_charge_uc_tau.pdf}}{Exp. Annäherung und $\tau$\label{fig:plot:rc:tau}}%
     \end{minipage}%
     \begin{minipage}[b]{0.48\textwidth}\centering
         \begin{table}[H]\centering
@@ -206,13 +206,13 @@ Die Exponenzialform resultiert aus dem flüchtigen Zustand, das heißt der homog
 % Obere Hälfte
 % links
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
-    \includegraphics{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}\\[4pt]
+    \includegraphics[alt={Schaltung: RC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}\\[4pt]
     \textbf{DGL 1. Ordnung} $\Rightarrow$ Exponentialverlauf.
 \end{minipage}%
 \pause%
 % rechts
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
-    \includegraphics{Tikz/pdf/plot_rc_charge_uc_tau.pdf}\\
+    \includegraphics[alt={Plot: Zeitverlauf von Spannung uC. Zunächst uC=0 und ab t=0 exponentielle Annäherung von uC an Uq. Tangente im Ursprung schneidet nach einem Tau Uq.}]{Tikz/pdf/plot_rc_charge_uc_tau.pdf}\\
     $\ecv{u_C}(t) = \ecv{U_q} \left( 1 - \mathrm{e}^{-\sfrac{t}{\tau}} \right)$
 \end{minipage}%
 \pause%
@@ -291,14 +291,14 @@ Die Orientierungswerte sind zum Beispiel hilfreich bei der Dimensionierung von B
 
         \begin{minipage}{\textwidth}\centering
         \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-            \includegraphics{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}%
+            \includegraphics[alt={Schaltung: RC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}%
             \begin{equation*}\begin{aligned}
             \text{gegeben:}&&       &\eci{i}(0),\ \ecv{U_q},\ R,\ C \\
             \text{gesucht:}&&       &\eci{i}(t), \ecv{u_L}(t)
             \end{aligned}\end{equation*}
         \end{minipage}
         \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-            \includegraphics{Tikz/pdf/plot_rc_charge_uc_i_seperate.pdf}
+            \includegraphics[alt={Plot: Zeitverlauf von uC und i beim laden eines RC Gliedes. Beide Größen sind vor t=0 null. Spannung uC nähert sich dann exponentiell Uq an. Strom i springt auf den Maximalwert Uq/R und fällt dann exponentiell auf 0 ab.}]{Tikz/pdf/plot_rc_charge_uc_i_seperate.pdf}
         \end{minipage}
         \end{minipage}
 
@@ -383,14 +383,14 @@ Die Orientierungswerte sind zum Beispiel hilfreich bei der Dimensionierung von B
 
         \begin{minipage}{\textwidth}\centering
             \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-                \includegraphics{Tikz/pdf/circ_switchable_rc_discharge.pdf}%
+                \includegraphics[alt={Schaltbild: RC Reihenschaltung mit Schalter. Schaltet von Anschluss einer Gleichspannungsquelle Uq zum Kurzschluss.}]{Tikz/pdf/circ_switchable_rc_discharge.pdf}%
                 \begin{equation*}\begin{aligned}
                     &\text{gegeben:}&       &\ecv{u_C}(0),\ \ecv{U_q},\ R,\ C \\
                     &\text{gesucht:}&       &\ecv{u_C}(t)
                 \end{aligned}\end{equation*}
             \end{minipage}
             \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-                \includegraphics{Tikz/pdf/plot_rc_discharge_uc_i_seperate.pdf}
+                \includegraphics[alt={Plot: Zeitverlauf von Spannung uC und Strom i beim Entladen eines RC-Glieds. Spannung uC startet bei Uq und fällt exponentiell auf 0 ab. Strom i startet bei null und springt dann auf minus Uq/R und nähert sich dann exponentiell 0 an.}]{Tikz/pdf/plot_rc_discharge_uc_i_seperate.pdf}
             \end{minipage}
         \end{minipage}\vspace{5pt}
 
@@ -449,14 +449,14 @@ Die Orientierungswerte sind zum Beispiel hilfreich bei der Dimensionierung von B
 % Obere Hälfte
 \begin{minipage}{\textwidth}\centering
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \includegraphics{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}%
+    \includegraphics[alt={Schaltbild: RC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}%
     \begin{equation*}\begin{aligned}
         &\text{gegeben:}&       &\ecv{u_C}(0),\ \ecv{U_q},\ R,\ C \\
         &\text{gesucht:}&       &\ecv{u_C}(t)
     \end{aligned}\end{equation*}
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rc_charge_uc_i_seperate.pdf}
+    \includegraphics[width=0.8\textwidth, alt={Plot: Zeitverlauf von uC und i beim laden eines RC Gliedes. Beide Größen sind vor t=0 null. Spannung uC nähert sich dann exponentiell Uq an. Strom i springt auf den Maximalwert Uq/R und fällt dann exponentiell auf 0 ab.}]{Tikz/pdf/plot_rc_charge_uc_i_seperate.pdf}
 \end{minipage}
 \end{minipage}
 % Untere Hälfte
@@ -485,7 +485,7 @@ Unten sehen wir die fünf Schritte des Berechnungsverfahrens in Kurzform und die
 \begin{frame}[t]\ftx{Ladevorgang \subsubsecname}
 \begin{minipage}{\textwidth}\centering
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-\includegraphics{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}
+\includegraphics[alt={Schaltbild: RC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
     \vspace{0.8cm}
@@ -653,14 +653,14 @@ Ausgehend von der selben Schaltung bestimmen wir nun den Entladevorgang des R C 
 % Obere Hälfte
 \begin{minipage}{\textwidth}\centering
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \includegraphics{Tikz/pdf/circ_switchable_rc_discharge.pdf}%
+    \includegraphics[alt={Schaltbild: RC Reihenschaltung mit Schalter. Schaltet vom Anschluss einer Gleichspannungsquelle Uq zum Kurzschluss.}]{Tikz/pdf/circ_switchable_rc_discharge.pdf}%
     \begin{equation*}\begin{aligned}
         &\text{gegeben:}&       &\ecv{u_C}(0),\ \ecv{U_q},\ R,\ C \\
         &\text{gesucht:}&       &\ecv{u_C}(t)
     \end{aligned}\end{equation*}
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rc_discharge_uc_i_seperate.pdf}
+    \includegraphics[width=0.8\textwidth, alt={Plot: Zeitverlauf von Spannung uC und Strom i beim Entladen eines RC-Glieds. Spannung uC startet bei Uq und fällt exponentiell auf 0 ab. Strom i startet bei null, springt dann auf negativ Uq/R und nähert sich dann exponentiell 0 an.}]{Tikz/pdf/plot_rc_discharge_uc_i_seperate.pdf}
 \end{minipage}
 \end{minipage}
 % Untere Hälfte
@@ -694,7 +694,7 @@ Unten sind die fünf Schritte des Berechnungsverfahrens mit den jeweiligen Teill
 \begin{frame}[t]\ftx{Entladevorgang \subsubsecname}
 \begin{minipage}{\textwidth}\centering
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \includegraphics{Tikz/pdf/circ_switchable_rc_discharge.pdf}%
+    \includegraphics[alt={Schaltbild: RC Reihenschaltung mit Schalter. Schaltet vom Anschluss einer Gleichspannungsquelle Uq zum Kurzschluss.}]{Tikz/pdf/circ_switchable_rc_discharge.pdf}%
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
     \vspace{0.8cm}
@@ -782,13 +782,13 @@ Daraus ergibt sich für den Strom I C von Tee ist gleich Minus U q durch R mal e
 \begin{minipage}{\textwidth}\centering%
 % Obere Hälfte
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
-    \includegraphics{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}\\[1em]% Leerzeile
+    \includegraphics[alt={Schaltbild: RC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rc_charge_dc.pdf}\\[1em]% Leerzeile
     {\flushleft% left alignment
     Rechenwege prinzipiell gleich für (DC) \\ Ladevorgang und Entladevorgang.%
     }%
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \includegraphics[width=0.6\textwidth]{Tikz/pdf/plot_rc_cycle_seperate_u.pdf}%
+    \includegraphics[width=0.6\textwidth, alt={Plot: Zeitverlauf von Spannung uC und i beim Lade- und Entladezyklus eines RC-Glieds. Beide Größen sind vor t=0 null. Spannung uC nähert sich dann exponentiell Uq an und danach exponentiell null an. Strom i springt auf den Maximalwert Uq/R und fällt dann exponentiell auf 0 ab. Danach springt i auf negativ Uq/R und nähert sich exponentiell 0 an.}]{Tikz/pdf/plot_rc_cycle_seperate_u.pdf}%
 \end{minipage}
 \end{minipage}\hfill%
 % Untere Hälfte
@@ -842,14 +842,14 @@ und unterscheiden sich in diesem Beispiel nur beim Störterm (der Anregung), den
 
     \begin{minipage}{\textwidth}\centering
         \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-            \includegraphics{Tikz/pdf/circ_switchable_rl_charge_dc.pdf}%
+            \includegraphics[alt={Schaltbild: RL Serienschaltung an Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rl_charge_dc.pdf}%
             \begin{equation*}\begin{aligned}
             \text{gegeben:}&&       &\eci{i}(0),\ \ecv{U_q},\ R,\ L \\
             \text{gesucht:}&&       &\ecv{u_L}(t),\ \eci{i}(t)
             \end{aligned}\end{equation*}
         \end{minipage}
         \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-            \includegraphics{Tikz/pdf/plot_rl_charge_ul_i_seperate.pdf}
+            \includegraphics[alt={Plot: Zeitverlauf von uL und i beim Laden eines RL Gliedes. Beide Größen sind vor t=0 null. Spannung uL springt auf den Maximalwert Uq und fällt dann exponentiell auf 0 ab. Strom i nähert sich exponentiell Uq/R an.}]{Tikz/pdf/plot_rl_charge_ul_i_seperate.pdf}
         \end{minipage}
     \end{minipage}
 
@@ -933,14 +933,14 @@ und unterscheiden sich in diesem Beispiel nur beim Störterm (der Anregung), den
 % Obere Hälfte
 \begin{minipage}{\textwidth}\centering%
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
-    \includegraphics{Tikz/pdf/circ_switchable_rl_charge_dc.pdf}\\[1em]% Leerzeile
+    \includegraphics[alt={Schaltbild: RL Serienschaltung an Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rl_charge_dc.pdf}\\[1em]% Leerzeile
     {\flushleft% left alignment
     Rechenweg bei RL-Glied prinzipiell gleich wie bei RC-Glied. (DGL 1. Ordnung) \\
     Achtung: $\eci{i}$ stetig, $\ecv{u_L}$ sprunghaft.%
     }%
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \includegraphics[width=0.6\textwidth]{Tikz/pdf/plot_rl_cycle_seperate_i.pdf}%
+    \includegraphics[width=0.6\textwidth, alt={Plot: Zeitverlauf von Strom i und Spannung uL beim Lade- und Entladezyklus eines RL-Glieds. Beide Größen sind vor t=0 null. Spannung uL springt auf einen Maximalwert und fällt dann exponentiell auf 0 ab. Strom i nähert sich exponentiell einem Endwert an und fällt dann exponentiell auf 0 ab. Danach springt i auf den negativen Maximalwert und nähert sich exponentiell 0 an.}]{Tikz/pdf/plot_rl_cycle_seperate_i.pdf}%
 \end{minipage}
 \end{minipage}\hfill%
 % Untere Hälfte
@@ -975,14 +975,14 @@ Zur Überprüfung bestimmen wir im folgenden detailliert den Ladevorgang und dan
 % Obere Hälfte
 \begin{minipage}{\textwidth}\centering%
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \includegraphics{Tikz/pdf/circ_switchable_rl_charge_dc.pdf}%
+    \includegraphics[alt={Schaltbild: RL Serienschaltung an Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rl_charge_dc.pdf}%
     \begin{equation*}\begin{aligned}
         &\text{gegeben:}&       &\eci{i}(0),\ \ecv{U_q},\ R,\ L \\
         &\text{gesucht:}&       &\eci{i}(t)
     \end{aligned}\end{equation*}
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rl_charge_ul_i_seperate.pdf}
+    \includegraphics[width=0.8\textwidth, alt={Plot: Zeitverlauf von uL und i beim Laden eines RL Gliedes. Beide Größen sind vor t=0 null. Spannung uL springt auf den Maximalwert Uq und fällt dann exponentiell auf 0 ab. Strom i nähert sich exponentiell Uq/R an.}]{Tikz/pdf/plot_rl_charge_ul_i_seperate.pdf}
 \end{minipage}
 \end{minipage}
 % Untere Hälfte
@@ -1013,7 +1013,7 @@ Unten sind die fünf Rechenschritte mit Teillösungen zusammen gefasst, welche w
 \begin{frame}[t]\ftx{Ladevorgang \subsubsecname}
 \begin{minipage}{\textwidth}\centering
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-\includegraphics{Tikz/pdf/circ_switchable_rl_charge_dc.pdf}
+\includegraphics[alt={Schaltbild: RL Serienschaltung an Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rl_charge_dc.pdf}
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
     \vspace{0.8cm}
@@ -1150,14 +1150,14 @@ Durch einsetzen der Zeitkonstante und Vereinfachung erhalten wir die gezeigte Fo
 
     \begin{minipage}{\textwidth}\centering
         \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-            \includegraphics{Tikz/pdf/circ_switchable_rl_charge_dc.pdf}%
+            \includegraphics[alt={Schaltbild: RL Serienschaltung an Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rl_charge_dc.pdf}%
             \begin{equation*}\begin{aligned}
             \text{gegeben:}&&       &\eci{i}(0),\ \ecv{U_q},\ R,\ L \\
             \text{gesucht:}&&       &\ecv{u_L}(t),\ \eci{i}(t)
             \end{aligned}\end{equation*}
         \end{minipage}
         \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-            \includegraphics{Tikz/pdf/plot_rl_charge_ul_i_seperate.pdf}
+            \includegraphics[alt={Plot: Zeitverlauf von uL und i beim Laden eines RL Gliedes. Beide Größen sind vor t=0 null. Spannung uL springt auf den Maximalwert Uq und fällt dann exponentiell auf 0 ab. Strom i nähert sich exponentiell Uq/R an.}]{Tikz/pdf/plot_rl_charge_ul_i_seperate.pdf}
         \end{minipage}
     \end{minipage}
 
@@ -1249,12 +1249,12 @@ Durch einsetzen der Zeitkonstante und Vereinfachung erhalten wir die gezeigte Fo
 
     \begin{figure}[H]\centering
         \begin{subfigure}{0.48\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_switchable_rl_discharge.pdf}
+            \includegraphics[alt={Schaltbild: RL Serienschaltung an Schalter. Schaltet vom Anschluss einer Gleichspannungsquelle Uq zum Kurzschluss.}]{Tikz/pdf/circ_switchable_rl_discharge.pdf}
             \caption{Schaltbild}
             \label{fig:circ:rl:discharge}
         \end{subfigure}
         \begin{subfigure}{0.48\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_rl_discharge_ul_i_seperate.pdf}
+            \includegraphics[alt={Plot: Zeitverlauf von uL und i beim Entladen eines RL Gliedes. Die Spannung uL springt von null auf den negativen Maximalwert Uq und nähert sich dann exponentiell null an. Der Strom i ist maximal bei Uq/R und fällt dann exponentiell auf null ab.}]{Tikz/pdf/plot_rl_discharge_ul_i_seperate.pdf}
             \caption{Spannungs- und Stromverlauf}
             \label{fig:plot:rl:discharge}
         \end{subfigure}
@@ -1275,12 +1275,12 @@ Durch einsetzen der Zeitkonstante und Vereinfachung erhalten wir die gezeigte Fo
 
     \begin{figure}[H]\centering
         \begin{subfigure}{0.48\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_switchable_rrl_charge_detail.pdf}
+            \includegraphics[alt={Schaltbild: RL Glied mit zwei Widerständen schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq. R1 in Serie mit L und R2 parallel zu L.}]{Tikz/pdf/circ_switchable_rrl_charge_detail.pdf}
             \caption{Schaltbild}
             \label{fig:circ:rl:charge}
         \end{subfigure}
         \begin{subfigure}{0.48\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_rrl_charge_dc.pdf}
+            \includegraphics[alt={Plot: Zeitverlauf für Ströme und Spannungen beim Laden des realen RL-Gliedes. Spannung uL springt von null auf Maximalwert Uq*R2/(R1+R2) und fällt dann exponentiell ab. Die Spannung uR1 springt von null auf Uq*R1/(R1+R2) und nähert sich dann exponentiell Uq an. Der Strom iL nähert sich von null exponentiell dem Endwert Uq/R1. Der Strom iR2 springen von null auf Uq/(R1+R2) und fällt dann auf null ab. iR1 ist die Summe aus iL und iR2.}]{Tikz/pdf/plot_rrl_charge_dc.pdf}
             \caption{Spannungs- und Stromverlauf}
             \label{fig:plot:rl:charge}
         \end{subfigure}
@@ -1303,14 +1303,14 @@ Durch einsetzen der Zeitkonstante und Vereinfachung erhalten wir die gezeigte Fo
 \begin{minipage}{\textwidth}\centering
 % Obere Hälfte
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \includegraphics{Tikz/pdf/circ_switchable_rl_discharge.pdf}%
+    \includegraphics[alt={Schaltbild: RL Serienschaltung an Schalter. Schaltet vom Anschluss einer Gleichspannungsquelle Uq zum Kurzschluss.}]{Tikz/pdf/circ_switchable_rl_discharge.pdf}%
     \begin{equation*}\begin{aligned}
         &\text{gegeben:}&       &\eci{i}(0),\ \ecv{U_q},\ R,\ L \\
         &\text{gesucht:}&       &\eci{i}(t)
     \end{aligned}\end{equation*}
 \end{minipage}
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-    \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rl_discharge_ul_i_seperate.pdf}
+    \includegraphics[width=0.8\textwidth, alt={Plot: Zeitverlauf von uL und i beim Entladen eines RL Gliedes. Die Spannung uL springt von null auf minus Uq und nähert sich dann exponentiell null an. Der Strom i ist maximal bei Uq/R und fällt dann exponentiell auf null ab.}]{Tikz/pdf/plot_rl_discharge_ul_i_seperate.pdf}
 \end{minipage}
 \end{minipage}
 % Untere Hälfte
@@ -1416,7 +1416,7 @@ Möglichkeiten zur Vermeidung von Schaltvorgängen bei AC Anregung kennen.
 \end{minipage}%
 \begin{minipage}{0.48\textwidth}\centering
     \pause
-    \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rc_charge_uc_ac_different_t0.pdf}
+    \includegraphics[width=0.8\textwidth, alt={Plot: Zeitverlauf von uC bei unterschiedlichen Schaltzeitpunkten t0 und t1 zerlegt in eingeschwungenen und flüchtigen Zustand. uC ist zunächst null. Beim Schaltzeitpunkt t0 zum Maximum des eingeschwungenen Zustandes entsteht ein Einschwingvorgang. Beim Schaltzeitpunkt t1 zum Nulldurchgang des eingeschwungenen Zustandes ist uC sofort eingeschwungen. }]{Tikz/pdf/plot_rc_charge_uc_ac_different_t0.pdf}
     Vergleich: Schaltzeitpunkte $t_0$ und $t_1$
 \end{minipage}
 }%
@@ -1461,7 +1461,7 @@ Durch den ideal gewählten Schaltzeitpunkt entfällt der Einschwingvorgang volls
     Die Kapazität $C$ ist zu Beginn vollständig entladen. Abbildung \ref{fig:circ:rc:charge:ac} zeigt das Schaltbild dieser Anordnung.
 
     \begin{figure}[H]\centering
-        \includegraphics{Tikz/pdf/circ_switchable_rc_charge_ac.pdf}%
+        \includegraphics[alt={Schaltbild: RC Serienschaltung an Schalter. Schaltet vom Kurzschluss zum Anschluss einer idealen Wechselspannungsquelle uq.}]{Tikz/pdf/circ_switchable_rc_charge_ac.pdf}%
         \caption{Schaltbild, RC-Glied (Reihe) nach Schalten an idealer Wechselspannungsquelle%\newline $R$ und $C$ in Reihe, für $t \geq t_0$ an idealer Wechselspannungsquelle $u_q$, vor $t=t_0$ kurzgeschlossen
         }
         \label{fig:circ:rc:charge:ac}
@@ -1543,12 +1543,12 @@ Durch den ideal gewählten Schaltzeitpunkt entfällt der Einschwingvorgang volls
 
     \begin{figure}[H]\centering
         \begin{subfigure}{0.48\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_rc_charge_uc_ac_different_t0.pdf} % u_C bei verschiedenen Schaltzeitpunkten
+            \includegraphics[alt={Plot: Zeitverlauf von uC bei unterschiedlichen Schaltzeitpunkten t0 und t1 zerlegt in eingeschwungenen und flüchtigen Zustand. uC ist zunächst null. Beim Schaltzeitpunkt t0 zum Maximum des eingeschwungenen Zustandes entsteht ein Einschwingvorgang. Beim Schaltzeitpunkt t1 zum Nulldurchgang des eingeschwungenen Zustandes ist uC sofort eingeschwungen.}]{Tikz/pdf/plot_rc_charge_uc_ac_different_t0.pdf} % u_C bei verschiedenen Schaltzeitpunkten
             \caption{Verschiedene Schaltzeitpunkte $t_0$}
             \label{fig:plot:rc:charge:ac:uc:vergleicht0}
         \end{subfigure}%
         \begin{subfigure}{0.48\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_rc_charge_uc_ac_different_tau.pdf} % u_C bei verschiedenen Zeitkonstanten
+            \includegraphics[alt={Plot: Zeitverlauf von uC bei großer und bei kleiner Zeitkonstante jeweils mit Schaltzeitpunkt zum Maximum des eingeschwungenen Zustandes. In beiden Fällen schwing uC sich von null in den eingeschwungenen Zustand ein. Bei großer Zeitkonstante entstehen Überspannungen mit fast dem doppelten Scheitelwert.}]{Tikz/pdf/plot_rc_charge_uc_ac_different_tau.pdf} % u_C bei verschiedenen Zeitkonstanten
             \caption{Verschiedene Zeitkonstanten $\tau$}
             \label{fig:plot:rc:charge:ac:uc:vergleichtau}
         \end{subfigure}
@@ -1576,14 +1576,14 @@ Durch den ideal gewählten Schaltzeitpunkt entfällt der Einschwingvorgang volls
 % Obere Hälfte
 \begin{minipage}{\textwidth}\centering%
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
-    \includegraphics{Tikz/pdf/circ_switchable_rc_charge_ac.pdf}
+    \includegraphics[alt={Schaltbild: RC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer idealen Wechselspannungsquelle uq.}]{Tikz/pdf/circ_switchable_rc_charge_ac.pdf}
     \begin{equation*}\begin{aligned}
         &\text{gegeben:}&       &\ecv{u_C}(t_0),\ \ecv{u_q}(t),\ R,\ C,\ \omega \\
         &\text{gesucht:}&       &\ecv{u_C}(t)\quad\text{für}\quad t \geq t_0
     \end{aligned}\end{equation*}
 \end{minipage}\pause%
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
-    \includegraphics[width=0.75\textwidth]{Tikz/pdf/plot_rc_charge_uc_ac_different_t0_short.pdf}
+    \includegraphics[width=0.75\textwidth, alt={Plot: Zeitverlauf von uC während Einschwingvorgang bei AC Anregung zerlegt in flüchtigen und eingeschwungenen Zustand. Der flüchtige Zustand nähert sich null an.}]{Tikz/pdf/plot_rc_charge_uc_ac_different_t0_short.pdf}
 \end{minipage}%
 \end{minipage}\pause\hfill%
 % Untere Hälfte
@@ -1620,7 +1620,7 @@ Hier sehen wir kurz zur Übersicht die fünf Schritte des Berechnungsverfahrens 
 \begin{frame}[t]\ftx{Schaltvorgänge \subsecname\ \subsubsecname}%Schritt 1&2
     \begin{minipage}{\textwidth}\centering%
         \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
-            \includegraphics{Tikz/pdf/circ_switchable_rc_charge_ac.pdf}
+            \includegraphics[alt={Schaltbild: RC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer idealen Wechselspannungsquelle uq.}]{Tikz/pdf/circ_switchable_rc_charge_ac.pdf}
         \end{minipage}%
         \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
             \vspace{0.8cm}
@@ -1751,7 +1751,7 @@ Umgekehrt wird der Einschwingvorgang maximal, wenn exakt während der Minima ode
         \underline{Beispiel:} Trennschalter im Netz
     \end{minipage}%
     \begin{minipage}{0.48\textwidth}\centering
-        \includegraphics[width=0.8\textwidth]{Tikz/pdf/plot_rc_charge_uc_ac_different_tau.pdf}
+        \includegraphics[width=0.8\textwidth, alt={Plot: Zeitverlauf von uC bei unterschiedlichen Zeitkonstanten tau. Bei großem Tau werden Überspannungen bis fast zum doppelten Scheitelwert erreicht. Schaltzeitpunkt jeweils zum Maximum des eingeschwungenen Zustandes. uC zu Beginn null.}]{Tikz/pdf/plot_rc_charge_uc_ac_different_tau.pdf}
         Vergleich: kleines und großes $\tau$
     \end{minipage}%
 
@@ -1807,14 +1807,14 @@ Beim großen Tau wird nahezu der doppelte negative Scheitelwert erreicht und üb
         $\ecv{u_q} = \ecv{\hat{U}_q} \cdot \cos(\omega t + \varphi_q)$ ab Schaltzeitpunkt $t=t_0$. Zuvor fließt kein Strom. \\[-6pt]
         \begin{minipage}{\textwidth}\centering
             \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-                \includegraphics{Tikz/pdf/circ_switchable_rl_charge_ac.pdf}%
+                \includegraphics[alt={Schaltbild: RL Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer idealen Wechselspannungsquelle uq.}]{Tikz/pdf/circ_switchable_rl_charge_ac.pdf}%
                 \begin{equation*}\begin{aligned}
                 \text{gegeben:}&&       &\eci{i}(t_0),\ \ecv{u_q},\ R,\ L \\
                 \text{gesucht:}&&       &\eci{i}(t),\ \ecv{u_L}(t)
                 \end{aligned}\end{equation*}
             \end{minipage}
             \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment
-                \includegraphics{Tikz/pdf/plot_rl_charge_il_ac_different_t0_short.pdf}
+                \includegraphics[alt={Plot: Zeitverlauf von iL während Einschwingvorgang bei AC Anregung zerlegt in flüchtigen und eingeschwungenen Zustand. Der flüchtige Zustand nähert sich null an.}]{Tikz/pdf/plot_rl_charge_il_ac_different_t0_short.pdf}
             \end{minipage}
         \end{minipage}
 
@@ -1885,14 +1885,14 @@ Beim großen Tau wird nahezu der doppelte negative Scheitelwert erreicht und üb
 % Obere Hälfte
 \begin{minipage}{\textwidth}\centering%
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
-    \includegraphics{Tikz/pdf/circ_switchable_rl_charge_ac.pdf}
+    \includegraphics[alt={Schaltbild: RL Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer idealen Wechselspannungsquelle uq.}]{Tikz/pdf/circ_switchable_rl_charge_ac.pdf}
     \begin{equation*}\begin{aligned}
         &\text{gegeben:}&       &\eci{i}(t_0),\ \ecv{u_q}(t),\ R,\ L,\ \omega \\
         &\text{gesucht:}&       &\eci{i}(t)\quad\text{für}\quad t \geq t_0
     \end{aligned}\end{equation*}
 \end{minipage}\pause%
 \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
-    \includegraphics[width=0.75\textwidth]{Tikz/pdf/plot_rl_charge_il_ac_different_t0_short.pdf}%
+    \includegraphics[width=0.75\textwidth, alt={Plot: Zeitverlauf von iL während Einschwingvorgang bei AC Anregung zerlegt in flüchtigen und eingeschwungenen Zustand. Der flüchtige Zustand nähert sich null an.}]{Tikz/pdf/plot_rl_charge_il_ac_different_t0_short.pdf}%
 \end{minipage}%
 \end{minipage}\pause\hfill%
 % Untere Hälfte
@@ -1927,7 +1927,7 @@ Diese werden wir nun im Einzelnen ausführlicher berechnen.
 \begin{frame}[t]\ftx{Schaltvorgänge \subsecname \, \subsubsecname}
     \begin{minipage}{\textwidth}\centering%
         \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
-            \includegraphics{Tikz/pdf/circ_switchable_rl_charge_ac.pdf}
+            \includegraphics[alt={Schaltbild: RL Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer idealen Wechselspannungsquelle uq.}]{Tikz/pdf/circ_switchable_rl_charge_ac.pdf}
         \end{minipage}%
         \begin{minipage}[t][][t]{0.48\textwidth}\centering\vspace{0cm}% vspace: input empty space before tikzpicture for top alignment%
             \vspace{0.8cm}
@@ -2085,12 +2085,12 @@ Und wir analysieren Einschwingvorgänge bei RLC-Gliedern.
 
     \begin{figure}[H]\centering
         \begin{subfigure}{0.48\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}
+            \includegraphics[alt={Schaltbild: RLC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}
             \caption{Schaltbild}
             \label{fig:circ:rlc:charge}
         \end{subfigure}
         \begin{subfigure}{0.48\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_rlcs_charge_dc_uc.pdf}
+            \includegraphics[alt={Plot: Zeitverlauf von uC bei Ladevorgang eines RLC-Gliedes mit Gleichspannung Uq. Darstellung der drei Fälle. Aperiodisch ist langsam. Aperiodischer Grenzfall ist schneller. Periodisch ist am schnellsten mit Überschwingen.}]{Tikz/pdf/plot_rlcs_charge_dc_uc.pdf}
             \caption{Spannungsverlauf, Fallunterscheidung}
             \label{fig:plot:rlc:charge}
         \end{subfigure}
@@ -2144,13 +2144,13 @@ Und wir analysieren Einschwingvorgänge bei RLC-Gliedern.
 \b{%
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3.5cm][]{0.48\textwidth}\centering
-        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
+        \includegraphics[width=\textwidth, alt={Schaltbild: RLC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
         \vspace{5pt}
 
         Wegen $L$ und $C$ $\Rightarrow$ Schwingkreis
     \end{minipage}%
     \begin{minipage}[t][3.5cm][]{0.48\textwidth}\centering
-        \includegraphics[width=\textwidth]{Tikz/pdf/plot_rlcs_charge_dc_uc.pdf}%
+        \includegraphics[width=\textwidth, alt={Plot: Zeitverlauf von uC bei Ladevorgang eines RLC-Gliedes mit Gleichspannung Uq. Darstellung der drei Fälle. Aperiodisch ist langsam. Aperiodischer Grenzfall ist schneller. Periodisch ist am schnellsten mit Überschwingen.}]{Tikz/pdf/plot_rlcs_charge_dc_uc.pdf}%
     \end{minipage}
 \end{minipage}\vspace{2pt}
 
@@ -2184,7 +2184,7 @@ Die Fälle können anhand verschiedener Merkmale wie der Diskriminante D, welche
 \b{%
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3.5cm][]{0.48\textwidth}\centering
-        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
+        \includegraphics[width=\textwidth, alt={Schaltbild: RLC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
         \vspace{5pt}
 
         Ansatz:\quad  $\ecv{u_{C,\mathrm{h}}} = K \cdot \mathrm{e}^{\lambda t}$
@@ -2271,7 +2271,7 @@ Der Zusammenhang zwischen $\lambda$ und $Q_S$ wird im optionalen Exkurs in Kapit
 \b{% Beginn Folien only
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
-        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
+        \includegraphics[width=\textwidth, alt={Schaltbild: RLC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
     \end{minipage}%
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
         \begin{align*}
@@ -2340,7 +2340,7 @@ Wie wir sehen werden, lässt sich die homogene Lösung für den aperiodischen Fa
 \b{% Anfang Folien only
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
-        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
+        \includegraphics[width=\textwidth, alt={Schaltbild: RLC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
     \end{minipage}%
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
         \begin{align*}
@@ -2456,7 +2456,7 @@ Durch Auflösen nach K eins und K zwei ergeben sich die hier dargestellten Ausdr
 \b{% Anfang Folien only
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
-        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
+        \includegraphics[width=\textwidth, alt={Schaltbild: RLC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
     \end{minipage}%
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
         \begin{align*}
@@ -2551,7 +2551,7 @@ Achtung: In diesem Fall ergeben sich unterschiedliche Einheiten für K eins und 
 \b{% Anfang Folien only
     \begin{minipage}{\textwidth}\centering
         \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
-            \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
+            \includegraphics[width=\textwidth, alt={Schaltbild: RLC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
         \end{minipage}%
         \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
             \begin{align*}
@@ -2630,7 +2630,7 @@ Durch Anwendung der Eulerschen Formel lassen sich diese in die hier gezeigte For
         \end{minipage}%
         \begin{minipage}[t][3cm][]{0.5\textwidth}\centering
             \vspace{10pt}
-            \includegraphics{Tikz/pdf/plot_rlcs_charge_dc_uc_periodisch.pdf}
+            \includegraphics[alt={Plot: Gezeigt ist der Einschwingvorgang eines RLC-Gliedes im periodischen Fall. Der Einschwingvorgang der Spannung uC entspricht einer exponentiell abklingenden Sinusschwingung um den angestrebten Endwert Uq herum. Der Verlauf beginnt bei uC=0. Als Hilfslinien sind eine ungedämpfte Sinusschwingung mit gleicher initalier Amplitude C0 und gleichem initialem Phasenwinkel phi0 eingezeichnet sowie die Einhüllende der abklingenden Schwingung von uC. Die Zeitkonstante der Einhüllenden entspricht 1/delta und die Periodendauer der Schwingung entspricht 2pi/omega d.}]{Tikz/pdf/plot_rlcs_charge_dc_uc_periodisch.pdf}
         \end{minipage}
     \end{minipage}\vspace{15pt}
     \textbf{5.) Konstanten bestimmen:} (wie bekannt)
@@ -2675,7 +2675,7 @@ Durch Anwendung der Eulerschen Formel lassen sich diese in die hier gezeigte For
     In der gewählten Skalierung beträgt $\omega_0$ das vierfache der Abklingkonstante $\delta$ (Güte $Q_S = 2$).
 
     \begin{figure}[H]\centering%
-        \includegraphics[width=0.7\textwidth]{Tikz/pdf/plot_rlcs_charge_dc_uc_periodisch.pdf}%
+        \includegraphics[width=0.7\textwidth, alt={Plot: Gezeigt ist der Einschwingvorgang eines RLC-Gliedes im periodischen Fall. Der Einschwingvorgang der Spannung uC entspricht einer exponentiell abklingenden Sinusschwingung um den angestrebten Endwert Uq herum. Der Verlauf beginnt bei uC=0. Als Hilfslinien sind eine ungedämpfte Sinusschwingung mit gleicher initalier Amplitude C0 und gleichem initialem Phasenwinkel phi0 eingezeichnet sowie die Einhüllende der abklingenden Schwingung von uC. Die Zeitkonstante der Einhüllenden entspricht 1/delta und die Periodendauer der Schwingung entspricht 2pi/omega d.}]{Tikz/pdf/plot_rlcs_charge_dc_uc_periodisch.pdf}%
         \caption{Spannung $u_C(t)$ im periodischen Fall mit zugehörige Konstanten: $C_0$, $\varphi_0$, $\delta$, $\omega_d$}%
         \label{fig:rlc:dc:uc:periodisch}%
     \end{figure}%
@@ -2782,7 +2782,7 @@ Die homogene Lösung entspricht im periodischen Fall einer abklingenden ($\mathr
 Überlagerung der Schwingungen $z_1$ und $-z_2$ mit gleicher Kreisfrequenz $\omega_d$
 und Phasenverschiebung von $\sfrac{\pi}{2}$ zueinander. %
 \begin{figure}[H]\centering
-    \includegraphics{Tikz/pdf/plot_zeigerdiagramm_schwingungen_addieren.pdf}\hfill% C1*cos(wt) - C2*sin(wt) = C0*sin(wt + phi0)
+    \includegraphics[alt={Plot: Gezeigt ist die Überlagerung zweier sinusförmiger Schwingungen gleicher Frequenz links im Zeitverlaufsdiagramm und rechts im Zeigerdiagramm. Die Schwingungen z1 und z2 sind um 90 Grad phasenverschoben. Die Schwingung z0 resultiert aus der Überlagerung von z1 und z2. Im Zeigerdiagramm werden hierfür die komplexen Amplitudenzeiger für z1 und z2 vektoriell addiert. Der resultierende Phasenwinkel für z0 liegt nun zwischen dem für z1 und dem für z2. Die Amplitude für z0 ist größer als für die um 90 grad verschobenen z1 und z2.}]{Tikz/pdf/plot_zeigerdiagramm_schwingungen_addieren.pdf}\hfill% C1*cos(wt) - C2*sin(wt) = C0*sin(wt + phi0)
     \begin{subfigure}{0.58\textwidth}\centering
         \caption{Zeitverläufe}%
     \end{subfigure}%
@@ -2801,7 +2801,7 @@ und Phasenverschiebung von $\sfrac{\pi}{2}$ zueinander. %
         \underbrace{\ec[blue]{2a}}_{C_1} \ec[blue]{\cdot \cos(\omega_d t)} \ec[red]{\,-} \underbrace{\ec[red]{2b}}_{C_2} {}\ec[red]{\cdot \sin(\omega_d t)}
         }\right]
     \end{align*}%
-    \includegraphics{Tikz/pdf/plot_zeigerdiagramm_schwingungen_addieren.pdf}% C1*cos(wt) - C2*sin(wt) = C0*sin(wt + phi0)%
+    \includegraphics[alt={Plot: Gezeigt ist die Überlagerung zweier sinusförmiger Schwingungen gleicher Frequenz links im Zeitverlaufsdiagramm und rechts im Zeigerdiagramm. Die Schwingungen z1 und z2 sind um 90 Grad phasenverschoben. Die Schwingung z0 resultiert aus der Überlagerung von z1 und z2. Im Zeigerdiagramm werden hierfür die komplexen Amplitudenzeiger für z1 und z2 vektoriell addiert. Der resultierende Phasenwinkel für z0 liegt nun zwischen dem für z1 und dem für z2. Die Amplitude für z0 ist größer als für die um 90 grad verschobenen z1 und z2.}]{Tikz/pdf/plot_zeigerdiagramm_schwingungen_addieren.pdf}% C1*cos(wt) - C2*sin(wt) = C0*sin(wt + phi0)%
     \vfill%
     \begin{align*}
         &&
@@ -2903,12 +2903,12 @@ In der unten gezeigten Form ist dabei am deutlichsten zu erkennen, dass der flü
 
     \begin{figure}[H]\centering
         \begin{subfigure}{0.48\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_rlcs_ortskurve_nst.pdf}
+            \includegraphics[alt={Plot: Gezeigt ist eine Ortskurve mit eingezeichneten Eigenwerten eines RLC Serienschwingkreises für die drei Fälle und wie diese sich von Fall zu Fall bewegen. Für D>0 sind beide Eigenwerte verschieden negativ reell und bewegen sich aufeinander zu. Für D=0 sind beide Eigenwerte identisch und negativ reell. Für D<0 bewegen sind die Eigenwerte komplex konjugiert und bewegen sich parallel zur Imaginärachse weg von der reellen Achse.}]{Tikz/pdf/plot_rlcs_ortskurve_nst.pdf}
             \caption{Ortskurve der Nullstellen $\lambda$}
             \label{fig:exkurse:nst}
         \end{subfigure}%
         \begin{subfigure}{0.48\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_rlcs_charge_dc_uc.pdf}
+            \includegraphics[alt={Plot: Zeitverlauf von uC bei Ladevorgang eines RLC-Gliedes mit Gleichspannung Uq. Darstellung der drei Fälle. Aperiodisch ist langsam. Aperiodischer Grenzfall ist schneller. Periodisch ist am schnellsten mit Überschwingen.}]{Tikz/pdf/plot_rlcs_charge_dc_uc.pdf}
             \caption{Spannungsverlauf, Fallunterscheidung}
             \label{fig:rlc:nst:dgl}
         \end{subfigure}
@@ -2949,7 +2949,7 @@ In der unten gezeigten Form ist dabei am deutlichsten zu erkennen, dass der flü
 \b{% Anfang Folien only
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
-        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
+        \includegraphics[width=\textwidth, alt={Schaltbild: RLC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
     \end{minipage}%
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
         %\includegraphics{Tikz/pdf/plot_rlcs_charge_dc_uc.pdf}%
@@ -2969,7 +2969,7 @@ In der unten gezeigten Form ist dabei am deutlichsten zu erkennen, dass der flü
 
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}{0.4\textwidth}\centering
-        \includegraphics{Tikz/pdf/plot_rlcs_ortskurve_nst.pdf}%
+        \includegraphics[alt={Plot: Gezeigt ist eine Ortskurve mit eingezeichneten Eigenwerten eines RLC Serienschwingkreises für die drei Fälle und wie diese sich von Fall zu Fall bewegen. Für D>0 sind beide Eigenwerte verschieden negativ reell und bewegen sich aufeinander zu. Für D=0 sind beide Eigenwerte identisch und negativ reell. Für D<0 bewegen sind die Eigenwerte komplex konjugiert und bewegen sich parallel zur Imaginärachse weg von der reellen Achse.}]{Tikz/pdf/plot_rlcs_ortskurve_nst.pdf}%
     \end{minipage}%
     \begin{minipage}{0.56\textwidth}\centering
         \begin{itemize}
@@ -3075,7 +3075,7 @@ Mit zunehmendem Abstand von der Realachse, steigt auch die Schwingungsfähigkeit
 \b{%
 \begin{minipage}{\textwidth}\centering
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
-        \includegraphics[width=\textwidth]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
+        \includegraphics[width=\textwidth, alt={Schaltbild: RLC Reihenschaltung mit Schalter. Schaltet vom Kurzschluss zum Anschluss einer Gleichspannungsquelle Uq.}]{Tikz/pdf/circ_switchable_rlc_charge_detail.pdf}%
     \end{minipage}%
     \begin{minipage}[t][3cm][]{0.48\textwidth}\centering
         %\includegraphics{Tikz/pdf/plot_rlcs_charge_dc_uc.pdf}%

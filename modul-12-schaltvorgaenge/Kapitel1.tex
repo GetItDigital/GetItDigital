@@ -186,8 +186,8 @@ Während der Ausgleichsvorgänge strebt die betrachtete Systemgröße einen stat
 % Bsp. Einschwingvorgang nach Schalten als Schaltvorgang. Vgl. DC und AC 
 \b{\centering Beispiel Schaltvorgang bei Gleich- und Wechselspannung.
 }%
-\fu{\includegraphics[alt={Zeitverläufe von Ausgleichsvorgängen bei Gleich- und bei Wechselspannung im Vergleich. Von stationär über transient bis stationär. Eingeschwungen ist der Verlauf einer Gleichgröße oder einer Wechselgröße zu sehen.}]{Tikz/pdf/plot_transient_persistent.pdf}}%
-	{Vergleich: Ausgleichsvorgang AC, DC\label{fig:plot:transient_persistent}}
+\fu{\includegraphics[alt={Das Bild zeigt einen Ausgleichsvorgang bei DC und einen bei AC Anregung. In beiden Fällen ist die Systemgröße s zunächst null. Im Übergangsbereich (transient) nähert sich s einem stationären Zustand (persistent). Im DC Fall nähert sich s asymptotisch einem konstanten Wert an. Im AC Fall nähert sich s asymptotisch einer Sinuskurve an. Der transiente Zustand entspricht im AC Fall der Überlagerung einer exponentiell abklingenden Kurve und der eingeschwungenen Sinuskurve.}]{Tikz/pdf/plot_transient_persistent.pdf}}%
+	{Vergleich: Ausgleichsvorgang DC, AC\label{fig:plot:transient_persistent}}
 \s{
 	% Bild-Erklärung: Vorgänge, Zustände
 	% stationär -> Schalten (instantan) -> Schaltvorgang (transient) -> stationärer Zustand (persistent)
@@ -238,11 +238,11 @@ vom lateinischen persistere, zu Deutsch verharren.
 \textbf{Beispiel aus der Leistungselektronik:} 
 
 \begin{minipage}{0.38\textwidth}\centering
-	\includegraphics[width=\textwidth, alt={Schaltbild eines Tiefsetzstellers: L C Reihenschaltung mit U2 über C. Die L C Reihenschaltung ist bei gezeigter Schalterstellung kurzgeschlossen während U1 an offenen Klemmen anliegt. In der anderen Schalterstellung liegt U1 über der L C Reihenschaltung an.}]{Bilder/Tiefsetzsteller_Schaltung_GET2_J_Böcker_Uni_Paderborn_cut.png}
+	\includegraphics[width=\textwidth, alt={Schaltbild eines Tiefsetzstellers: LC Reihenschaltung mit U2 über C. Die LC Reihenschaltung ist bei gezeigter Schalterstellung kurzgeschlossen während U1 an offenen Klemmen anliegt. In der anderen Schalterstellung liegt U1 über der LC Reihenschaltung an.}]{Bilder/Tiefsetzsteller_Schaltung_GET2_J_Böcker_Uni_Paderborn_cut.png}
 	Tiefsetzsteller mit Glättungskondensator\footnotemark
 \end{minipage}%
 \begin{minipage}{0.58\textwidth}\centering
-	\includegraphics[width=0.9\textwidth, alt={Zeitverläufe von Spannungen und Strömen am Tiefsetzsteller.}] {Bilder/Tiefsetzsteller_Zeitverläufe_GET2_J_Böcker_Uni_Paderborn_cut_edit.png}
+	\includegraphics[width=0.9\textwidth, alt={Zeitverläufe von Spannungen und Strömen am Tiefsetzsteller.}]{Bilder/Tiefsetzsteller_Zeitverläufe_GET2_J_Böcker_Uni_Paderborn_cut_edit.png}
 \end{minipage}
 \footnotetext{Schaltbild und Zeitverlauf: Joachim Böcker, GET2, Universität Paderborn, modifiziert (gekürzt)}
 
@@ -268,12 +268,12 @@ Ein-/Ausschalten, AD-/DA-Converter, Fahrradlicht mit Kondensator, ...
 
 	\begin{figure}[H]\centering
 		\begin{subfigure}{0.5\textwidth}\centering
-			\includegraphics[width=\textwidth]{Bilder/Tiefsetzsteller_Schaltung_GET2_J_Böcker_Uni_Paderborn_cut.png}
+			\includegraphics[width=\textwidth, alt={Schaltbild eines Tiefsetzstellers: LC Reihenschaltung mit U2 über C. Die LC Reihenschaltung ist bei gezeigter Schalterstellung kurzgeschlossen während U1 an offenen Klemmen anliegt. In der anderen Schalterstellung liegt U1 über der LC Reihenschaltung an.}]{Bilder/Tiefsetzsteller_Schaltung_GET2_J_Böcker_Uni_Paderborn_cut.png}
 			\caption{Schaltbild eines Tiefsetzstellers (Buck-Converter)}
 			\label{fig:circ:pulldown}
 		\end{subfigure}%
 		\begin{subfigure}{0.5\textwidth}\centering
-			\includegraphics[width=0.9\textwidth]{Bilder/Tiefsetzsteller_Zeitverläufe_GET2_J_Böcker_Uni_Paderborn_cut_edit.png}
+			\includegraphics[width=0.9\textwidth, alt={Zeitverläufe von Spannungen und Strömen am Tiefsetzsteller.}]{Bilder/Tiefsetzsteller_Zeitverläufe_GET2_J_Böcker_Uni_Paderborn_cut_edit.png}
 			\caption{Zeitverlauf von $u(t)$ und $i(t)$ am Tiefsetzsteller}
 			\label{fig:plot:pulldown}
 		\end{subfigure}
@@ -334,7 +334,7 @@ die Änderung von Eingangssignalen bei A D und bei D A Convertern und Fahrradlam
 	Der Schalter ist hierfür an eine lineare Gleichspannungsquelle mit Spannung $U_q$ angeschlossen.
 }
 \begin{figure}[H]\centering
-	\includegraphics{Tikz/pdf/circ_switch_ideal.pdf}
+	\includegraphics[alt={Schaltungsbild: Lineare Gleichspannungsquelle an idealen Schalter angeschlossen. Ausgangsspannung über Schalter.}]{Tikz/pdf/circ_switch_ideal.pdf}
 	\s{\caption{Schaltbild, Schalterspannung}}\b{\par Schalterspannung $\ecv{u(t)}$}
 	\label{fig:circ:switch}
 \end{figure}
@@ -345,12 +345,12 @@ die Änderung von Eingangssignalen bei A D und bei D A Convertern und Fahrradlam
 }
 \begin{figure}[H]\centering
 	\begin{subfigure}{0.48\textwidth}\centering
-		\includegraphics{Tikz/pdf/plot_switch_ideal.pdf}
+		\includegraphics[alt={Spannungsverlauf bei idealem Schalter: Spannung wechselt instantan zwischen zwei Zuständen ohne Übergangsphase.}]{Tikz/pdf/plot_switch_ideal.pdf}
 		\s{\caption{Spannung bei idealem Schalter}}\b{\par Ideal: verlustlos, instantan}
 		\label{fig:plot:schalter:ideal}
 	\end{subfigure}\pause
 	\begin{subfigure}{0.48\textwidth}\centering
-		\includegraphics{Tikz/pdf/plot_switch_real.pdf}
+		\includegraphics[alt={Spannungsverlauf bei realem Schalter: Spannung ändert sich nicht instantan. Übergangsphasen mit Verlusten und Latenzen.}]{Tikz/pdf/plot_switch_real.pdf}
 		\s{\caption{Spannung bei realem Schalter}}\b{\par Real: Verluste, Latenzen}
 		\label{fig:plot:schalter:real}
 	\end{subfigure}
@@ -414,13 +414,13 @@ Die Latenzen und Verluste resultieren auf ohmschen, kapazitiven und induktiven p
 % Ref: http://fmh-studios.de/theorie/mosfet/schaltverhalten/
 \begin{figure}[H]\centering
 	\begin{subfigure}{0.48\textwidth}\centering
-		\includegraphics{Tikz/pdf/circ_mosfet_ideal.pdf}
+		\includegraphics[alt={Schaltungsbild: MOSFET als idealer Schalter ohne parasitäre Kapazitäten.}]{Tikz/pdf/circ_mosfet_ideal.pdf}
 		\s{\caption{MOSFET, ohne Kapazitäten (ideal)}}\b{Ideal: keine parasitären Effekte}
 		\label{fig:circ:mosfet:ideal}
 	\end{subfigure}%
 	\onslide<2->{%
 	\begin{subfigure}{0.48\textwidth}\centering
-		\includegraphics{Tikz/pdf/circ_mosfet_capacitive_effects.pdf}
+		\includegraphics[alt={Schaltungsbild: MOSFET als realer Schalter mit parasitären Kapazitäten zwischen allen drei Anschlüssen.}]{Tikz/pdf/circ_mosfet_capacitive_effects.pdf}
 		\s{\caption{MOSFET, inkl. Kapazitäten (real)}}\b{Real: mit parasitären Kapazitäten}
 		\label{fig:circ:mosfet:kapazitiv}
 	\end{subfigure}

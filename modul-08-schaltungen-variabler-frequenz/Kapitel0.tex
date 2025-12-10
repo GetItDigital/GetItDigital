@@ -53,23 +53,29 @@ und die wichtigsten Eigenschaften der linearen Zweipole Widerstand, Induktivitä
 
     \begin{figure}[H]\centering
         \begin{subfigure}{0.68\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_bauteile_phasenverschiebung_r.pdf}
+            \includegraphics[alt={Plot zeigt sinusförmige Zeitverläufe für u und i bei R. Beide sind in Phase.}]%
+            {Tikz/pdf/plot_bauteile_phasenverschiebung_r.pdf}% uR, iR
         \end{subfigure}%
         \begin{subfigure}{0.28\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_bauteil_R_u_i.pdf}% R
+            \includegraphics[alt={Schaltsymbol für R. Weißes Rechteck mit zwei Anschlüssen. Einer je kurzer Seite.}]%
+            {Tikz/pdf/circ_bauteil_R_u_i.pdf}% R
         \end{subfigure}\hfill% newline
         \begin{subfigure}{0.68\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_bauteile_phasenverschiebung_l.pdf}
+            \includegraphics[alt={Plot zeigt sinusförmige Zeitverläufe für u und i bei L. Strom eilt 90 Grad voraus.}]%
+            {Tikz/pdf/plot_bauteile_phasenverschiebung_l.pdf}% uL, iL
         \end{subfigure}%
         \begin{subfigure}{0.28\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_bauteil_L_u_i.pdf}% L
+            \includegraphics[alt={Schaltsymbol für die Induktivität L. Schwarz ausgefülltes Rechteck mit zwei Anschlüssen. Jeweils einer an den kurzen Seiten.}]%
+            {Tikz/pdf/circ_bauteil_L_u_i.pdf}% L
         \end{subfigure}\hfill% newline
         \begin{subfigure}{0.68\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_bauteile_phasenverschiebung_c.pdf}
+            \includegraphics[alt={Plot zeigt sinusförmige Zeitverläufe für u und i bei C. Strom eilt u um 90 Grad nach.}]%
+            {Tikz/pdf/plot_bauteile_phasenverschiebung_c.pdf}% uC, iC
             \caption{Strom- und Spannungsverläufe}
         \end{subfigure}%
         \begin{subfigure}{0.28\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_bauteil_C_u_i.pdf}% C
+            \includegraphics[alt={Schaltsymbol für die Kapazität C. Zwei parallele Linien mit Zwischenraum. Von beiden Linien führt senkrecht ein Anschluss weg.}]%
+            {Tikz/pdf/circ_bauteil_C_u_i.pdf}% C
             \caption{Schaltsymbole}
         \end{subfigure}
         \caption{Phasenverschiebung bei $R$, $L$ und $C$}\label{fig:bauteile:phasenverschiebung}
@@ -166,10 +172,10 @@ Dadurch können diese Bauelemente keine Wirkleistung verrichten, sondern nur Bli
 
     \begin{figure}[H]\centering
         \begin{subfigure}{0.45\textwidth}\centering
-            \includegraphics[width=0.75\textwidth]{./Bilder/Spule.png}
+            \includegraphics[width=0.75\textwidth, alt={Foto einer Spule, die eine Induktivität realisiert. Zu sehen sind Kupferwicklungen um einen Kern herum.}]{./Bilder/Spule.png}
         \end{subfigure}%
         \begin{subfigure}{0.45\textwidth}\centering
-            \includegraphics[width=0.75\textwidth]{./Bilder/Kondensator.png}
+            \includegraphics[width=0.75\textwidth, alt={Foto eines Kondensators, der eine Kapazität realisiert. Zu sehen sind zwei parallele Metallplatten mit Luft im Zwischenraum.}]{./Bilder/Kondensator.png}
         \end{subfigure}
         \caption{Reale Induktivät (Spule, links) und Kapazitäten (Kondensator, rechts)}\label{fig:bauteile:realebauteile}
     \end{figure}
@@ -249,11 +255,11 @@ Die Energie ist bei Kapazitäten im elektrischen Feld gespeichert, dadurch sind 
                 & \textbf{Kapazität} \\[+4pt]   % Col 5
         \hline%
         %\textbf{Symbol}
-        \includegraphics{Tikz/pdf/circ_bauteil_tabelle_text_symbol.pdf}% Symbol (vertikal zentriert); Schriftart entspricht Textfont im Skript (mit Serifen), nicht in den Folien (ohne Serifen)
-                & \includegraphics{Tikz/pdf/circ_bauteil_tabelle_zweipol.pdf}
-                & \includegraphics{Tikz/pdf/circ_bauteil_tabelle_R.pdf}
-                & \includegraphics{Tikz/pdf/circ_bauteil_tabelle_L.pdf}
-                & \includegraphics{Tikz/pdf/circ_bauteil_tabelle_C.pdf} \\[+4pt]
+        \includegraphics[alt={Schriftzug: Symbol.}]{Tikz/pdf/circ_bauteil_tabelle_text_symbol.pdf}% Symbol (vertikal zentriert); Schriftart entspricht Textfont im Skript (mit Serifen), nicht in den Folien (ohne Serifen)
+                & \includegraphics[alt={Schaltsymbol für den allgemeinen Zweipol. Rechteck mit zwei Anschlüssen. Beschriftung Zweipol Eintor.}]{Tikz/pdf/circ_bauteil_tabelle_zweipol.pdf}
+                & \includegraphics[alt={Schaltsymbol für den elektrischen Widerstand R. Weißes Rechteck mit zwei Anschlüssen. Ein Anschluss je kurzer Seite.}]{Tikz/pdf/circ_bauteil_tabelle_R.pdf}
+                & \includegraphics[alt={Schaltsymbol für die Induktivität L. Schwarz ausgefülltes Rechteck mit zwei Anschlüssen. Ein Anschluss je kurzer Seite.}]{Tikz/pdf/circ_bauteil_tabelle_L.pdf}
+                & \includegraphics[alt={Schaltsymbol für die Kapazität C. Zwei parallele Linien mit Zwischenraum. Von beiden Linien führt senkrecht ein Anschluss weg.}]{Tikz/pdf/circ_bauteil_tabelle_C.pdf} \\[+4pt]
         \hline &&&&\\[-6pt] % Dummyline für vertikalen Abstand
         \textbf{Einheit}
                 & $ \left[\textit{Form.z.}\right] = \mathrm{Einheit} $ 
@@ -292,7 +298,7 @@ Die Energie ist bei Kapazitäten im elektrischen Feld gespeichert, dadurch sind 
                 & $ X_{\mathrm C} = -\frac{1}{\omega C}$ \\[+10pt]
         \hline
     \end{tabular}
-    } % end resizebox
+    } % end resizebox % Problem: Resizebox geht nicht mit alttext
     \end{table}
     
 % Für Schaltungen variabler Frequenz: Frequenzvariablen Eigenschaften von Bauteilen, dafür zeitvariante 
@@ -333,10 +339,10 @@ Vielen Dank fürs Zuhören.
     % Zeichne rechts einen Vierpol (Eingangspole links, Ausgangspole rechts) (U1 links oben nach unten, U2 rechts oben nach unten)
     \begin{figure}[h]
         \begin{subfigure}{0.48\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_eintor.pdf}
+            \includegraphics[alt={Schaltsymbol für einen allgemeinen Zweipol/Eintor. Strom I geht an einer Klemme hinein und an der anderen Klemme heraus. Spannung U von Klemme zu Klemme.}]{Tikz/pdf/circ_eintor.pdf}
         \end{subfigure}\hfill
         \begin{subfigure}{0.48\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_zweitor.pdf}
+            \includegraphics[alt={Schaltsymbol für einen allgemeinen Vierpol/Zweitor. Komplexe Spannung U1 über den zwei Eingangsklemmen und komplexe Spannung U2 über den zwei Ausgangsklemmen.}]{Tikz/pdf/circ_zweitor.pdf}
         \end{subfigure}
         \caption{Vergleich: Schaltzeichen eines allgemeinen Zwei- und Vierpols}
         \label{fig:vgl:zweipolvierpol}
@@ -348,7 +354,7 @@ Vielen Dank fürs Zuhören.
     Das Zweitormodell eignet sich gut zur Beschreibung von (frequenzabhängigen) Übertragungseigenschaften 
     von elektrischen Netzwerken. 
 
-    \fu{\includegraphics{Tikz/pdf/circ_zweitor_quelle_last.pdf}
+    \fu{\includegraphics[alt={Schaltungsbild mit Eintor Quelle über Zweitor Verbindungselement an Eintor Last angeschlossen.}]{Tikz/pdf/circ_zweitor_quelle_last.pdf}
     }{Verbindung einer Last über ein Zweitor mit der Quelle.\label{circ:quellezweitorlast}}% im Foliensatz im nächsten Kapitel (Freuqenzgang, Amplitudengang, Phasengang)
     
     Im einfachsten Fall wird wie in \ref{circ:quellezweitorlast} gezeigt, eine Quelle (Eintor) über ein Zweitor 
