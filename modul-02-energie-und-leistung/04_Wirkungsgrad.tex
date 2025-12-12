@@ -9,7 +9,7 @@ Der Wirkungsgrad beschreibt das Verhältnis von abgegebener Leistung (Nutzleistu
 zu aufgenommener Leistung (zugeführte Energie) in einem System und ist ein Maß für die Effizienz, 
 mit der ein System Energie umwandelt. Am Beispiel eines Elektromotors zeigt Abbildung \ref{fig:Wirkungsgrad} wie sich dessen Leistungsbilanz zusammensetzt.
 }
-\begin{frame}
+\begin{frame}[t]
    \ftx{Der Wirkungsgrad}
 \s{\begin{figure}[H]
 \centering
@@ -24,23 +24,19 @@ mit der ein System Energie umwandelt. Am Beispiel eines Elektromotors zeigt Abbi
 \b{
 	\begin{itemize}
 		\item Der Wirkungsgrad beschreibt das Verhältnis von abgegebener zu zugeführter Leistung in einem System und ist ein Maß für die Effizienz
-	\end{itemize}
+	\end{itemize}\vspace*{-0.5cm}
     \begin{figure}[H]
 		\centering
 	\scalebox{1}{
 		\includesvg[width=1\textwidth]{Wirkungsgrad_Copy}}
 		%\input{Tikz/src/04_Wirkungsgrad/Wirkungsgrad_eines_Elektromotors}}
-
 	\end{figure}
-
 }
 \s{
 	Der Elektromotor wird am Eingang mit elektrischer Energie versorgt, welche er in einer Eingangsleistung $P_\mathrm{zu}$ aufnimmt.
 	Die gewünschte Leistung am Ausgang $P_\mathrm{ab}$ ist in diesem Fall rotatorischer Natur. Die durch den Motor verursachte Abwärme, aber auch die verursachten Geräusche oder Reibung, ergeben zusammen die Verlustleistung $P_\mathrm{v}$. 
 	\begin{Merksatz}{Wirkungsgrad}
-		\begin{itemize}
-			\item Der Wirkungsgrad ist das Verhältnis von abgegebener zu zugeführter Leistung und beschreibt die Effizienz eines Systems.
-		\end{itemize}
+		 Der Wirkungsgrad ist das Verhältnis von abgegebener zu zugeführter Leistung und beschreibt die Effizienz eines Systems.
 	\end{Merksatz}
 }
 
@@ -58,12 +54,18 @@ Mathematisch wird der Wirkungsgrad $\eta$ (eta) wie folgt definiert:
 \end{equation}}
 
 \b{
-	\vspace*{-1.2cm}\only<2->{\begin{Merksatz}{Wirkungsgrad}
-		\begin{itemize}
-			\item \( \eta = \frac{P_\mathrm{{ab}}}{P_\mathrm{{zu}}} \cdot 100 \% \)
-		\end{itemize}
-	\end{Merksatz}}	
-}
+	% \only<2->{\vspace*{-1cm}\begin{Merksatz}{Wirkungsgrad}
+	% 	\begin{itemize}
+	% 		\item \( \eta = \frac{P_\mathrm{{ab}}}{P_\mathrm{{zu}}} \cdot 100 \% \)
+	% 	\end{itemize}
+	% \end{Merksatz}}	
+	\uncover<2->{\vspace*{-1cm}
+		\begin{Merksatz}{Wirkungsgrad}
+			\begin{itemize}
+				\item \( \eta = \frac{P_\mathrm{ab}}{P_\mathrm{zu}} \cdot 100\,\% \)
+			\end{itemize}
+		\end{Merksatz}
+}}
 \end{frame}
 
 %\begin{frame}	
@@ -149,7 +151,7 @@ können dazu beitragen, den Energiebedarf zu reduzieren und Treibhausgasemission
 	\ftx{Der Wirkungsgrad}
 	\b{\begin{itemize}
 	\item Beispielschaltung:
-	\end{itemize}\vspace*{-0.5cm}
+	\end{itemize}\vspace*{-1cm}
 	}
 \begin{figure}[H]
 	\centering
@@ -162,12 +164,25 @@ können dazu beitragen, den Energiebedarf zu reduzieren und Treibhausgasemission
 	\label{fig:Nennleistung}
 \end{figure}
 \b{
+% \begin{itemize}
+% 	\item $P_\mathrm{zu}=U_\mathrm{q} \cdot I$
+% 	\item $\text{Wirkungsgrad:} \,\, \eta=5\%$
+% 	\item $P_\mathrm{ab}=P_\mathrm{zu}\cdot \eta$
+% 	\item $P_\mathrm{v}= P_\mathrm{zu} - P_\mathrm{ab} = P_\mathrm{zu}\cdot(1-\eta)$
+% \end{itemize}
+	\uncover<2->{
 \begin{itemize}
-	\item $P_\mathrm{zu}=U \cdot I$
-	\item $\text{Wirkungsgrad:} \,\, \eta=5\%$
-	\item $P_\mathrm{nutz}=P_\mathrm{zu}\cdot \eta$
-	\item $P_\mathrm{ab}=P_\mathrm{zu}\cdot(1-\eta)$
-\end{itemize}}
+	\item Leistungsbilanz:
+	\end{itemize}
+\[
+\begin{aligned}
+P_\mathrm{zu} &= U_q \cdot I \\
+\eta &= 5\% \\
+P_\mathrm{ab} &= P_\mathrm{zu} \cdot \eta \\
+P_\mathrm{v} &= P_\mathrm{zu} - P_\mathrm{ab}
+\end{aligned}
+\]
+}}
 \end{frame}
 
 % Beschriftung der Komponenten.
