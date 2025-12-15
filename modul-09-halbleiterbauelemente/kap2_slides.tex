@@ -1230,24 +1230,48 @@
     \b{
         \frametitle{Bipolartransistor -- Anwendung/ Grundschaltungen}
         \begin{table}[H]
-            \centering
-            \begin{tabular}{|c|c|c|c|}
-                \hline
-                $r_\mathrm{e}$       & mittel z.B. 1$\mathrm{k \Omega}$    & klein z.B. 50$\mathrm{\Omega}$   & groß z.B. 100$\mathrm{k \Omega}$ \\
-                \hline
-                $r_\mathrm{a}$       & mittel z.B. 10$\mathrm{k \Omega}$   & groß z.B. 100$\mathrm{k \Omega}$ & klein z.B. 50$\mathrm{\Omega}$    \\
-                \hline
-                $v_\mathrm{i}$       & groß z.B. 100                       & $<$1 z.B. 0.9                    & groß z.B. 100                    \\
-                \hline
-                $v_\mathrm{u}$       & groß z.B. 100                       & groß z.B. 100                    & $<$1 z.B. 0.99                   \\
-                \hline
-                $v_\mathrm{p}$       & sehr groß z.B. 1$\mathrm{k \Omega}$ & groß z.B. 100                    & groß z.B. 100                    \\
-                \hline
-                $\varphi_\mathrm{u}$ & gegenphasig 180°                    & gleichphasig 0°                  & gleichphasig 0°                  \\
-                \hline
-            \end{tabular}
-            \caption{Elektrische Eigenschaften von Grundschaltungen}
-        \end{table}
+    \centering
+    %\begin{tabular}{ |p{4cm}|p{3.1cm}|p{3.5cm}|p{2.6cm}| }
+    \begin{tabular}{ |l|l|l|l| }
+        \hline
+            \textbf{Eigenschaft} & 
+            \textbf{Emitter\-schaltung} & 
+            \textbf{Kollektor\-schaltung} & 
+            \textbf{Basis\-schaltung} \\
+        \hline
+            Eingangswiderstand $r_\mathrm{e}$ & 
+            mittel $1\,\mathrm{k \Omega}$ & 
+            groß $>100\,\mathrm{k \Omega}$ &
+            klein $50\,\mathrm{\Omega}$ \\
+        \hline
+            Ausgangswiderstand $r_\mathrm{a}$ & 
+            mittel $10\,\mathrm{k \Omega}$ & 
+            klein $50\,\mathrm{\Omega}$ &
+            groß $100\,\mathrm{k \Omega}$ \\
+        \hline
+            Stromverstärkung $v_\mathrm{i}$ & 
+            groß 100 & 
+            groß 100 &
+            klein $<1$ \\
+        \hline
+            Spannungsverstärkung $v_\mathrm{u}$ & 
+            groß 100 &  
+            klein $<1$ &
+            groß 100 \\
+        \hline
+            Leistungsverstärkung $v_\mathrm{p}$ & 
+            sehr groß $1\,\mathrm{k}$ &  
+            groß 100 & 
+            groß 100 \\
+        \hline
+            Phasendrehung $\varphi_\mathrm{u}$ & 
+            gegenphasig 180° & 
+            gleichphasig 0° & 
+            gleichphasig 0° \\
+        \hline
+    \end{tabular}
+        \caption{Elektrische Eigenschaften von Grundschaltungen}
+    \end{table}
     }
     \speech{Bipolar_Grundschaltungen_Tabelle}{1}{Hier sehen wir einen Vergleich der Eigenschaften der Grundschaltungen.  Benötigt man beispielsweise eine hohe Stromverstärkung eignen sich die Emitter- und die Kollektorschaltung besser also die Basisschaltung.}
     \silence{3}
