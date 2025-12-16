@@ -188,33 +188,27 @@ Die Energie $E$ (siehe Abbildung \ref{fig:E=F*s}) wird im allgemeinen über die 
 \begin{equation}
 	E = \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s} \quad\quad [E] = \text{1 Joule = 1 J = 1 Nm} \label{eq:Fds}
 \end{equation}
-
 Eine elektrische Kraft $\vec{F}_\mathrm{{el}}$ liegt vor, wenn eine Ladung $Q$ einem elektrischen Feld $\vec{E}$ ausgesetzt ist. 
 Aus der Multiplikation beider Größen ergibt sich der folgende Ausdruck:
-
 \begin{equation}
 	\vec{F}_\mathrm{{el}} = Q \cdot \vec{E}   
 \end{equation}
-
 Eingesetzt in die Formel \ref{eq:Fds} ergibt die Integration über die elektrische Feldstärke $\vec{E}$ die elektrische Energie $E_\mathrm{{el}}$. 
 Da die Ladungsmenge $Q$ nicht von der Strecke abhängig ist, kann diese vor das Integral gezogen werden.
-
 \begin{equation}
 	E_\mathrm{el} = Q \cdot \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s}
 \end{equation}
-
 Aus Modul 1 ist bekannt, dass das Integral über ein elektrisches Feld bei konstanten Bedingungen die Spannung $U$ ist. 
 Eingesetzt ergibt dies die folgende vereinfachte Darstellung.
-%Die Formel sagt aus, dass elektrische Energie eine Ladungsmenge multipliziert mit einer Spannung ist.
-
 \begin{equation}
 	 E_\mathrm{el} = Q \cdot U \quad\quad [E_\mathrm{el}] = \text{1 Joule = 1 J = 1 Ws} 
 \end{equation}
-}% nur Skript
+}
 
-\b{
+
 \begin{frame}
 		\ftx{Die Energie}
+\b{
 		\begin{itemize}
 	    \item Die übertragene Energie ergibt sich aus dem Linienintegral des Skalarprodukts von Kraft und Weg
 	    \end{itemize}
@@ -227,36 +221,16 @@ Eingesetzt ergibt dies die folgende vereinfachte Darstellung.
 			\label{fig:E=F*s}
 		\end{figure}
 		
-\speech{01_Energie4}{1}{ %TODO: Wird ab "Streckenelement ds" sehr laut (neuer seed)
-Wir haben jetzt viel über Energie geredet, haben gesehen, was Energie ist. Was wir dann aber in der Regel in der Physik immer brauchen, ist auch eine formel-mäßige Beschreibung der Energie. Und ganz allgemein, unabhängig davon, welche Energieform wir betrachten, ist die Energie definiert über das Skalarprodukt der Kraft F, die wir aufwenden, multipliziert mit dem Streckenelement ds. Wenn wir also unsere Kraft entlang der Wegstrecke verrichten, dann sind Kraftvektor und Wegstreckenvektor genau gleichgerichtet parallel zueinander und aus dem Skalarprodukt zweier Vektoren wird einfach das Produkt der Beträge dieser beiden Vektoren. Wenn die Wegstrecke, die wir verbringen, senkrecht zu dem Kraftvektor steht, verrichten wir demzufolge keine Arbeit. Die Energie ist null. Und Warum? Weil dann die beiden Vektoren senkrecht zueinander stehen und das Skalarprodukt aus zwei senkrecht aufeinander stehenden Vektoren ist nun mal null. Das heißt, wir müssen hier die geometrischen Gegebenheiten, wie ist unsere Strecke, wie ist die Kraft, die wir dafür aufbringen müssen, mit berücksichtigen und das ist der Grund, warum wir das Ganze als sogenanntes Linienintegral beschreiben. Ein Linienintegral ist also eine dreidimensionale Schreibung mit Vektoren, wo wir die beiden Richtungen der Vektoren mit berücksichtigen.}
-% besserer Speech %
-% \speech{01_Energie4}{1}{
-% Schauen wir auf die Skizze: Der Körper bewegt sich von P eins nach P zwei entlang der Strecke s.
-% Auf ihn wirkt die Kraft F unter dem Winkel Alpha zur Bewegungsrichtung.
-
-% Entscheidend ist: Für die Arbeit zählt nur der Kraftanteil in Richtung der Bewegung.
-% Deshalb zerlegen wir F in zwei Komponenten:
-% F p, das ist die Komponente parallel zur Bewegung,
-% und F s, das ist die Komponente senkrecht zur Bewegung.
-
-% Die senkrechte Komponente F s verrichtet keine Arbeit,
-% weil sie keine Bewegung entlang der Strecke s erzeugt.
-
-% Mathematisch steckt das im Skalarprodukt:
-% Die kleine Arbeit d W ist gleich F mal d s mal Kosinus von Alpha.
-% Wenn Alpha null Grad ist, ist die Arbeit maximal.
-% Wenn Alpha neunzig Grad ist, ist der Kosinus null und es wird keine Arbeit verrichtet.
-
-% Für die gesamte Strecke von P eins nach P zwei addieren wir diese kleinen Beiträge entlang des Weges.
-% Das nennt man Linienintegral.
-% }
-
+\speech{01_Energie4}{1}{ % Angepasster speech von FS %TODO: Wird ab "Streckenelement ds" sehr laut (neuer seed)
+Wir haben jetzt viel über Energie geredet, haben gesehen, was Energie ist. Was wir dann aber in der Regel in der Physik immer brauchen, ist auch eine formel-mäßige Beschreibung der Energie. Und ganz allgemein, unabhängig davon, welche Energieform wir betrachten, ist die Energie definiert über das Skalarprodukt der Kraft F, die wir aufwenden, multipliziert mit dem Streckenelement ds. Wenn wir also unsere Kraft entlang der Wegstrecke verrichten, dann sind Kraftvektor und Wegstreckenvektor genau gleichgerichtet parallel zueinander und aus dem Skalarprodukt zweier Vektoren wird einfach das Produkt der Beträge dieser beiden Vektoren. Wenn die Wegstrecke, wie im Bild dargestellt nicht Parellel zur Kraft verläuft zählt nur der Kraftanteil in Richtung der Bewegung. Deshalb zerlegen wir F in zwei Komponenten: F p, das ist die Komponente parallel zur Bewegung, und F s, das ist die Komponente senkrecht zur Bewegung. Die senkrecht zur Bewegung stehende Kraft F s, 
+verrichten wir demzufolge keine Arbeit. Die Energie ist null. Und Warum? Weil dann die beiden Vektoren senkrecht zueinander stehen und das Skalarprodukt aus zwei senkrecht aufeinander stehenden Vektoren ist nun mal null. Das heißt, wir müssen hier die geometrischen Gegebenheiten, wie ist unsere Strecke, wie ist die Kraft, die wir dafür aufbringen müssen, mit berücksichtigen und das ist der Grund, warum wir das Ganze als sogenanntes Linienintegral beschreiben. Ein Linienintegral ist also eine dreidimensionale Schreibung mit Vektoren, wo wir die beiden Richtungen der Vektoren mit berücksichtigen.}
+}
 \end{frame}
+
 
 \begin{frame}[t]
 	\ftx{Die elektrische Energie}
-	
-%;TODO schöner sortieren
+\b{
   \begin{itemize}
     \item Eine elektrische Kraft $\vec{F}_\mathrm{el}$ wirkt auf eine Ladung $Q$, wenn sie sich in einem elektrischen Feld $\vec{E}$ befindet
   \end{itemize}
@@ -287,9 +261,9 @@ Wenn das elektrische Feld konstant ist, dann entspricht das Linienintegral einfa
 }
 \silence{2}
 
-
+}
 \end{frame}
-}% nur Folien
+
 
 	\subsection{Elektrische Energiespeicher}
 \s{
