@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="bohr_1.svg"
+   sodipodi:docname="atommodell_bohr.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -24,13 +24,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="7.5087437"
-     inkscape:cx="491.42708"
-     inkscape:cy="505.67713"
+     inkscape:zoom="0.66368545"
+     inkscape:cx="843.77321"
+     inkscape:cy="378.94457"
      inkscape:window-width="1920"
-     inkscape:window-height="1002"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1001"
+     inkscape:window-x="-7"
+     inkscape:window-y="-7"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -54,24 +54,6 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <use
-       x="0"
-       y="0"
-       inkscape:tiled-clone-of="#use30"
-       xlink:href="#use30"
-       transform="translate(-2.5500751,5.8802014)"
-       id="use1076"
-       width="100%"
-       height="100%" />
-    <use
-       x="0"
-       y="0"
-       inkscape:tiled-clone-of="#use30"
-       xlink:href="#use30"
-       transform="translate(1.7311785,8.6708056)"
-       id="use1086"
-       width="100%"
-       height="100%" />
     <ellipse
        style="fill:none;stroke:#000000;stroke-width:0.281799;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
        id="path857"
@@ -112,52 +94,31 @@
          cx="26.079409"
          cy="31.911942"
          r="2.9208722" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.70518px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#ffffff;stroke-width:0.427889"
-         x="24.263111"
-         y="33.426605"
-         id="text5420"><tspan
-           sodipodi:role="line"
-           id="tspan5418"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;stroke-width:0.427889"
-           x="24.263111"
-           y="33.426605">n</tspan></text>
     </g>
+    <circle
+       style="fill:#ff8080;stroke:#000000;stroke-width:0.022;stroke-linecap:square;paint-order:stroke markers fill"
+       id="path7748-0"
+       cx="106.09279"
+       cy="120.39463"
+       r="2.2673657" />
     <circle
        style="fill:#4d4d4d;stroke:#000000;stroke-width:0.281791;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
        id="path1317-5"
        cx="104.06329"
        cy="122.7057"
        r="2.3331299" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.55718px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#ffffff;stroke-width:0.341789"
-       x="102.71543"
-       y="123.91559"
-       id="text5420-9"><tspan
-         sodipodi:role="line"
-         id="tspan5418-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;stroke-width:0.341789"
-         x="102.71543"
-         y="123.91559">n</tspan></text>
+    <circle
+       style="fill:#ff8080;stroke:#000000;stroke-width:0.022;stroke-linecap:square;paint-order:stroke markers fill"
+       id="path7748-2"
+       cx="106.29211"
+       cy="124.33138"
+       r="2.2673657" />
     <circle
        style="fill:#4d4d4d;stroke:#000000;stroke-width:0.281791;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
        id="path1317-35"
        cx="102.91183"
        cy="125.64095"
        r="2.3331299" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.55718px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#ffffff;stroke-width:0.341789"
-       x="101.56399"
-       y="126.85082"
-       id="text5420-0"><tspan
-         sodipodi:role="line"
-         id="tspan5418-3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;stroke-width:0.341789"
-         x="101.56399"
-         y="126.85082">n</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.211343"
@@ -191,131 +152,28 @@
          style="font-size:5.64444px;stroke-width:0.211343"
          x="26.26005"
          y="97.622658">Neutron</tspan></text>
-    <path
-       style="fill:#999999;stroke:#999999;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 161.5214,151.04635 111.02724,128.12697"
-       id="path49045"
-       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
-       x="163.25674"
-       y="153.21861"
+       x="92.29567"
+       y="114.54881"
        id="text50937"><tspan
          sodipodi:role="line"
          id="tspan50935"
          style="font-size:5.64444px;stroke-width:0.264583"
-         x="163.25674"
-         y="153.21861">Atomkern</tspan><tspan
+         x="92.29567"
+         y="114.54881">Atomkern</tspan><tspan
          sodipodi:role="line"
          style="font-size:5.64444px;stroke-width:0.264583"
-         x="163.25674"
-         y="160.27417"
+         x="92.29567"
+         y="121.60436"
          id="tspan50939" /></text>
-    <text
-       xml:space="preserve"
-       style="font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;stroke-width:0.264583"
-       x="128.7748"
-       y="76.453735"
-       id="text75190"><tspan
-         sodipodi:role="line"
-         id="tspan75188"
-         style="font-size:5.64444px;stroke-width:0.264583"
-         x="128.7748"
-         y="76.453735">Elektronenhülle</tspan></text>
-    <g
-       id="use30"
-       transform="matrix(0.42818121,0,0,0.42818121,84.345629,85.541099)"
-       inkscape:tile-cx="114.60164"
-       inkscape:tile-cy="115.27437"
-       inkscape:tile-w="4.3310866"
-       inkscape:tile-h="4.3310866"
-       inkscape:tile-x0="112.43609"
-       inkscape:tile-y0="113.10883">
-      <g
-         id="g910"
-         transform="matrix(0.48437824,0,0,0.48437824,24.31597,53.89847)"
-         inkscape:export-filename="C:\Users\hbode\Desktop\TD Allgemein\get it digital\Materialsammlung\Kapitel 1\Inkscape_Bilder\metals_2.png"
-         inkscape:export-xdpi="300"
-         inkscape:export-ydpi="300"
-         style="display:inline;fill:#f46969;fill-opacity:1">
-        <circle
-           style="fill:#f46969;fill-opacity:1;stroke-width:0.365001;paint-order:stroke markers fill"
-           id="circle908"
-           cx="42.581379"
-           cy="45.061848"
-           r="11.162109" />
-      </g>
-      <path
-         id="path912"
-         style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.1;stroke-opacity:1"
-         d="m 44.544568,73.410506 v 1.918229 h -1.918229 v 0.79375 h 1.918229 v 1.91823 h 0.79375 v -1.91823 h 1.918229 v -0.79375 h -1.918229 v -1.918229 z" />
-    </g>
     <circle
        style="fill:#4d4d4d;stroke:#000000;stroke-width:0.281791;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
        id="path1317-3"
        cx="100.93213"
        cy="119.61927"
        r="2.3331299" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.55718px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#ffffff;stroke-width:0.341789"
-       x="99.584274"
-       y="120.82915"
-       id="text5420-3"><tspan
-         sodipodi:role="line"
-         id="tspan5418-0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;stroke-width:0.341789"
-         x="99.584274"
-         y="120.82915">n</tspan></text>
-    <use
-       x="0"
-       y="0"
-       inkscape:tiled-clone-of="#use30"
-       xlink:href="#use30"
-       transform="matrix(1.0538136,0,0,1.0538136,-88.437802,-37.069694)"
-       id="use1096"
-       width="100%"
-       height="100%" />
-    <g
-       id="g2007"
-       transform="translate(-1.5447987,-1.2458054)">
-      <circle
-         style="fill:#4d4d4d;stroke:#000000;stroke-width:0.281791;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill"
-         id="path1317-26"
-         cx="107.86115"
-         cy="121.18656"
-         r="2.3331299" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.55718px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#ffffff;stroke-width:0.341789"
-         x="106.51331"
-         y="122.39644"
-         id="text5420-96"><tspan
-           sodipodi:role="line"
-           id="tspan5418-5"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffffff;stroke-width:0.341789"
-           x="106.51331"
-           y="122.39644">n</tspan></text>
-    </g>
-    <use
-       x="0"
-       y="0"
-       inkscape:tiled-clone-of="#use30"
-       xlink:href="#use30"
-       transform="translate(4.4805831,5.531376)"
-       id="use1066"
-       width="100%"
-       height="100%" />
-    <use
-       x="0"
-       y="0"
-       inkscape:tiled-clone-of="#use30"
-       xlink:href="#use30"
-       id="use1056"
-       width="100%"
-       height="100%"
-       transform="translate(-5.1327184,2.989933)" />
     <g
        id="use28"
        transform="matrix(0.51966742,0,0,0.51966742,45.405626,50.018523)"
@@ -339,13 +197,6 @@
            cy="72.036949"
            r="11.162109" />
       </g>
-      <rect
-         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.1;stroke-opacity:1"
-         id="rect1207"
-         width="4.630208"
-         height="0.79375005"
-         x="43.409313"
-         y="144.2341" />
     </g>
     <use
        x="0"
@@ -383,5 +234,23 @@
        id="use1411"
        width="100%"
        height="100%" />
+    <circle
+       style="fill:#ff8080;stroke:#000000;stroke-width:0.022;stroke-linecap:square;paint-order:stroke markers fill"
+       id="path7748"
+       cx="99.490021"
+       cy="123.06065"
+       r="2.2673657" />
+    <circle
+       style="fill:#ff8080;stroke:#000000;stroke-width:0.022;stroke-linecap:square;paint-order:stroke markers fill"
+       id="path7748-4"
+       cx="102.30554"
+       cy="118.60068"
+       r="2.2673657" />
+    <circle
+       style="fill:#ff8080;stroke:#000000;stroke-width:0.0234435;stroke-linecap:square;paint-order:stroke markers fill"
+       id="path7748-7"
+       cx="21.079027"
+       cy="87.25621"
+       r="2.4161406" />
   </g>
 </svg>

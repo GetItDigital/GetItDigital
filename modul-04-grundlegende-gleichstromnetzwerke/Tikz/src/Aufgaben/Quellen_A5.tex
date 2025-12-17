@@ -1,0 +1,45 @@
+\begin{tikzpicture}
+ % --- Generator (linke Grafik) ---
+    % äußerer Rahmen
+    \draw[dashed] (0,-2.7) rectangle (5,2.7);
+
+    % Klemmenleitungen
+    \draw (1, 2) -- (4, 2);
+    \draw (1,-2) -- (4,-2);
+
+    % Klemmenpunkte und Bezeichnungen
+    \node[ocirc,label=right:$A_C$] (AC) at (4, 2) {};
+    \node[ocirc,label=right:$B_C$] (BC) at (4,-2) {};
+
+    % Klemmenspannung U_G
+    \draw[->] (4.2, 1.6) -- (4.2,-1.6) node[midway,right] {$U_G$};
+
+    % erste reale Quelle: U01 + Ri1
+    \draw[dashed] (0.5,-2.3) rectangle (1.5,2.3);
+    \draw (1,2) to[V,v, name=U1] (1,0)
+              to[R,l=$R_{i1}$, name=R1] (1,-2);
+
+      % zweite reale Quelle: U02 + Ri2
+    \draw[dashed] (2.5,-2.3) rectangle (3.5,2.3);
+    \draw (3,2) to[V,l=$U_{02}$,i>_=$I_2$] (3,0)
+              to[R,i,l=$R_{i2}$, name=R2] (3,-2);
+
+    % --- Verbraucher (rechte Grafik) ---
+    % äußerer Rahmen
+    \draw[dashed] (5.6,-2.7) rectangle (8.8,2.7);
+
+    % Klemmenpunkte
+    \node[ocirc,label=left:$A_V$] (AV) at (6.3, 2) {};
+    \node[ocirc,label=left:$B_V$] (BV) at (6.3,-2) {};
+
+    % Verbraucherzweig
+    \draw (AV) -- (8,2)
+          to[R,l=$R_V$,i>_=$I_V$] (8,-2)
+          -- (BV);
+
+    \varrmore{U1}{$U_{\mathrm{01}}$};
+    \iarrmore{R1}{$I_{\mathrm{1}}$};
+  %      \varrmore{U1}{$U_{\mathrm{01}}$};
+  %  \iarrmore{R1}{$I_{\mathrm{1}}$};
+    
+\end{tikzpicture}
