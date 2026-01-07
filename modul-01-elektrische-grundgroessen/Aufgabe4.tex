@@ -1,17 +1,60 @@
 \subsection{Ladungsträgergeschwindigkeit}
 \Aufgabe{
     Durch eine Kupferleitung mit dem Querschnitt $A = 1 \ mm^2$ und mit der Länge $L = 10 \ m$ fließt ein Strom $I = 8 \ A$. Ein $mm^3$ Kupfer enthält $8,5\cdot10^{19}$ Atome.
-    Es darf davon ausgegangen werden, dass jeweils 1 Elektron pro Atom am Ladungstransport beteiligt ist $(\vartheta = 20 \ ^\circ C)$.
-    \newline
-    \begin{enumerate}[label=\alph*)]
-        \item Bestimmen Sie die Driftgeschwindigkeit der Elektronen in der Kupferleitung.
-        \item Welche elektrische Feldstärke $E$ besteht in der Kupferleitung?
-        \item Wie hoch ist der Spannungsabfall $U$ in dieser Kupferleitung?
-        \item Welchen Widerstand hat die Kupferleitung bei den angegebenen Randbedingungen? Welchen Widerstand nimmt der Draht bei einer Erwärmung auf $\vartheta_{\mathrm{w}} = 180 \ ^\circ C$ an?
-        Wie groß ist die prozentuale Widerstandserhöhung?
-    \end{enumerate}
+    Es darf davon ausgegangen werden, dass jeweils 1 Elektron pro Atom am Ladungstransport beteiligt ist.\\
+
+    %newline
+
+    Bestimmen Sie die Driftgeschwindigkeit der Elektronen in der Kupferleitung.
+
 }
 
 \Loesung{
-	Hier entsteht eine Musterlösung...
+	\begin{figure}[ht]
+	    \centering
+	    \includesvg[width=0.4\textwidth]{stromgeschwindigkeit}
+    \end{figure}
+
+    Aus Skript bekannt:\\
+    
+    $\vec{v}_\mathrm{el} = - b_\mathrm{el} \cdot \vec{E}$\\
+
+    Die Ladungsmenge $\Delta Q$, die sich im betrachteten Volumen befindet, kann wie folgt berechnet werden: \\
+
+   $ \Delta Q = e \cdot N_\mathrm{el} = e \cdot n_\mathrm{el} \cdot V_1$\\
+
+   Mit $V_1 = \Delta s \cdot A$ und $\Delta s = v_\mathrm{el}  \cdot \Delta t$ ergibt sich:\\
+
+   $\Delta Q =  e \cdot n_\mathrm{el} \cdot v_\mathrm{el} \cdot \Delta t \cdot A$
+
+   Für $v_\mathrm{el}$ lässt sich nun die oben erwähnte Beziehung $\vec{v}_\mathrm{el} = - b_\mathrm{el} \cdot \vec{E}$\\ einsetzen.
+   Da das negative Vorzeichen hier lediglich angibt, dass sich die Ladungsträger entgegen der elektrischen Feldstärke bewegen, und laut Aufgabenstellung lediglich der Betrag der Geschwindigkeit gefordert ist, kann das Vorzeichen hier vernachlässigt werden.\\
+
+    $ \Delta Q =  e \cdot n_\mathrm{el} \cdot \Delta t \cdot A  b_\mathrm{el} \cdot E$\\
+
+    Da die Ladungsveränderung pro Zeitänderung die Stromstärke ergibt, gilt nach teilen durch $\Delta t$:\\
+
+    $ \frac{\Delta Q}{\Delta t} = I = e \cdot n_\mathrm{el} \cdot A  b_\mathrm{el} \cdot E$\\
+
+    $E$ ist in der Ausgansformel noch unbekannt, ein Umstellen nach E ergibt also:
+
+    $E = \frac{I}{e \cdot n_\mathrm{el} \cdot b_\mathrm{el} \cdot A}$
+
+    Eingesetzt in $\vec{v}_\mathrm{el} = - b_\mathrm{el} \cdot \vec{E}$ regibt sich: 
+
+
+
+
+	$v_\mathrm{el} = \cancel{b_\mathrm{el}} \cdot \frac{I}{e \cdot n_\mathrm{el} \cdot \cancel{b_\mathrm{el}} \cdot A}$
+
+
+Einsetzen der Zahlenwerte:
+
+	$v_\mathrm{el} = \frac{8 \mathrm{A}}{1,602 \cdot 10^{-19} \, \mathrm{As} \cdot 8,5 \cdot 10^{19} \, \mathrm{mm}^{-3} \cdot 1 \, \mathrm{mm}^2 }$\\
+
+\begin{equation*}
+	v_\mathrm{el} = 0,59 \frac{\mathrm{mm}}{s} 
+\end{equation*}	
+
+
 }

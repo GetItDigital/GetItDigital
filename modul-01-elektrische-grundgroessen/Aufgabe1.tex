@@ -1,38 +1,240 @@
-\subsection{Elektrisches Homogenfeld 1}
+\subsection{Elektrisches Feld}
 \Aufgabe{
-    Mit einem Dielektrikum, in dem maximal eine Feldstärke $E = 30 \ \frac{kV}{cm}$ zulässig ist, soll 
-	ein Kondensator für den Spannungsbereich von $100 \ kV$ realisiert werden.\\
 
-       \underline{Aufgabenteil 1}:\\
-		\phantom{text}\\
+\noindent
+Im Folgenden gilt immer $\varepsilon_r = 1$, falls nicht anders angegeben.
 
-        Das Dielektrikum wird zunächst in einem (idealen) \underline{Plattenkondensator} eingesetzt.\\
-        \begin{enumerate}[label=\alph*1)]
-            \item Skizzieren Sie die Anordnung.
-            \item Skizzieren Sie die Feldlinien in der Anordnung.
-            \item Wo ist der Ort der maximalen Feldstärke?
-            \item Skizzieren Sie den Verlauf des Betrags der elektrischen Feldstärke von einer Kondensatorplatte zur anderen $\left| E(x) \right|$, parallel zu den Kondensatorplatten
-            $\left| E_{Diel}(z) \right|$ und in den Kondensatorplatten $\left| E_{Pl}(z) \right|$.
-            \item Zeichnen Sie die 50\%-Äquipotentiallinie ein.
-            \item Berechnen Sie den minimalen Plattenabstand $d_{Pl,min}$ für die o.a. Randbedingungen.            
-        \end{enumerate} 
+\medskip
+\noindent
+In der $x$-$y$-Ebene eines kartesischen Koordinatensystems befinden sich auf der $x$-Achse im Abstand $a$ zwei Punktladungen $Q_1$ und $Q_2$ (siehe Abbildung). Es: $Q_1 = Q$, $Q_2 = 2Q$ und $Q > 0$.
 
-       \underline{Aufgabenteil} 2:\\
-	   \phantom{text}\\
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[scale=1.15, >={Stealth[length=2.2mm]}]
+    % Nur für die Skizze: visuelle Länge, die dem "a" entspricht
+    \def\aa{3.4}
 
-        Nun soll das \underline{Dielektrikum zwischen koaxialen Zylindern} eingesetzt werden.\\
-        $\left(E_r(r)=\frac{U}{r\cdot\ln\left(\frac{a}{b}\right)};\ r_a: \text{Außenradius}; r_i: Radius \ des \ Innenzylinders\right)$
-        \begin{enumerate}[label=\alph*2)]
-            \item Skizzieren Sie die Anordnung.
-            \item Skizzieren Sie die Feldlinien.
-            \item Wo ist der Ort der maximalen Feldstärke?
-            \item Skizzieren Sie den Verlauf der elektrischen Feldstärke $E_r(r)$ von $r=r_i$ bis $r=r_a$.
-            \item Zeichnen Sie die 50\%-Äquipotentiallinie ein.
-            \item Berechnen Sie den minimalen Außenradius $r_a$ für $r_i = 1;\ 2;\ 3;\ 4;\ 5;\ 10 \ cm$ und
-            die zugehörige Dicke des Dielektrikums $d_i$.                        
-        \end{enumerate}
+    \coordinate (Q1) at (0,0);
+    \coordinate (Q2) at (\aa,0);
+    \coordinate (P)  at ({\aa/2},{sqrt(3)/2*\aa});
+
+    % Achsen
+    \draw[->] (-0.9,0) -- (\aa+1.0,0) node[below right] {$x$};
+    \draw[->] (0,-0.8) -- (0,{sqrt(3)/2*\aa+1.0}) node[above left] {$y$};
+
+    % Dreieck
+    \draw (Q1) -- (Q2);
+    \draw (Q1) -- (P);
+    \draw (Q2) -- (P);
+
+    % Streckenbeschriftungen
+    \path (Q1) -- (Q2) node[midway, below] {$a$};
+    \path (Q1) -- (P)  node[midway, left]  {$a$};
+    \path (Q2) -- (P)  node[midway, right] {$a$};
+
+    % Punktladungen und Punkt P
+    \fill (Q1) circle (2.2pt) node[below left] {$Q_1$};
+    \fill (Q2) circle (2.2pt) node[below right] {$Q_2$};
+    \draw[fill=white] (P) circle (2.2pt) node[above right] {$P$};
+  \end{tikzpicture}
+\end{figure}
+
+\begin{enumerate}[label=\alph*)]
+  \item Wie groß ist die Kraft $F_2$ auf die Ladung $Q_2$?
+  \item Berechnen und skizzieren Sie die elektrische Feldstärke $\vec{E}$ im Punkt $P$.
+  \item Im Punkt $P$ wird eine dritte Ladung $Q_0 > 0$ positioniert. Welche Kraft $F_0$ wirkt auf sie?
+\end{enumerate}
+
+    % Mit einem Dielektrikum, in dem maximal eine Feldstärke $E = 30 \ \frac{kV}{cm}$ zulässig ist, soll 
+	% ein Kondensator für den Spannungsbereich von $100 \ kV$ realisiert werden.\\
+
+    %    \underline{Aufgabenteil 1}:\\
+	% 	\phantom{text}\\
+
+    %     Das Dielektrikum wird zunächst in einem (idealen) \underline{Plattenkondensator} eingesetzt.\\
+    %     \begin{enumerate}[label=\alph*1)]
+    %         \item Skizzieren Sie die Anordnung.
+    %         \item Skizzieren Sie die Feldlinien in der Anordnung.
+    %         \item Wo ist der Ort der maximalen Feldstärke?
+    %         \item Skizzieren Sie den Verlauf des Betrags der elektrischen Feldstärke von einer Kondensatorplatte zur anderen $\left| E(x) \right|$, parallel zu den Kondensatorplatten
+    %         $\left| E_{Diel}(z) \right|$ und in den Kondensatorplatten $\left| E_{Pl}(z) \right|$.
+    %         \item Zeichnen Sie die 50\%-Äquipotentiallinie ein.
+    %         \item Berechnen Sie den minimalen Plattenabstand $d_{Pl,min}$ für die o.a. Randbedingungen.            
+    %     \end{enumerate} 
+
+    %    \underline{Aufgabenteil} 2:\\
+	%    \phantom{text}\\
+
+    %     Nun soll das \underline{Dielektrikum zwischen koaxialen Zylindern} eingesetzt werden.\\
+    %     $\left(E_r(r)=\frac{U}{r\cdot\ln\left(\frac{a}{b}\right)};\ r_a: \text{Außenradius}; r_i: Radius \ des \ Innenzylinders\right)$
+    %     \begin{enumerate}[label=\alph*2)]
+    %         \item Skizzieren Sie die Anordnung.
+    %         \item Skizzieren Sie die Feldlinien.
+    %         \item Wo ist der Ort der maximalen Feldstärke?
+    %         \item Skizzieren Sie den Verlauf der elektrischen Feldstärke $E_r(r)$ von $r=r_i$ bis $r=r_a$.
+    %         \item Zeichnen Sie die 50\%-Äquipotentiallinie ein.
+    %         \item Berechnen Sie den minimalen Außenradius $r_a$ für $r_i = 1;\ 2;\ 3;\ 4;\ 5;\ 10 \ cm$ und
+    %         die zugehörige Dicke des Dielektrikums $d_i$.                        
+    %     \end{enumerate}
 }
 
 \Loesung{
-	Hier entsteht eine Musterlösung...
+\begin{enumerate}[label=\alph*)]
+  \item Wie groß ist die Kraft $F_2$ auf die Ladung $Q_2$?
+  \noindent Betrag der Coulomb-Kraft auf Ladung im Feld einer Punktladung (laut Skirpt):
+$$
+F_2 = Q_2 \cdot E_1
+    = Q_2 \cdot \frac{Q_1}{4\pi \varepsilon_0 a^2}
+$$
+  \item Skizzieren und berechnen Sie die elektrische Feldstärke $\vec{E}$ im Punkt $P$.
+  Die Positionen der Punktladungen und der Punkt $P$ bilden ein gleichseitiges Dreieck, sodass sich darin und für die elektrischen Feldstärken jeweils Winkel von $60^\circ$ ergeben.
+
+
+
+
+
+
+
+  
+\begin{tikzpicture}[
+  scale=1.15,
+  >={Stealth[length=2.2mm]},
+  line cap=round, line join=round
+]
+  % --- Geometrie (gleichseitiges Dreieck, Seitenlänge a) ---
+  \def\a{4.0} % Zeichenlänge für "a" (nur für die Skizze)
+
+  \coordinate (Q1) at (0,0);
+  \coordinate (Q2) at (\a,0);
+  \coordinate (M)  at (\a/2,0);
+  \coordinate (P)  at (\a/2,{sqrt(3)/2*\a});
+
+  % --- Feld-Vektorlängen (nur skizzenhaft, proportional: Q2=2Q -> |E2|=2|E1|) ---
+  \pgfmathsetmacro{\lone}{1.3}  % |E1|
+  \pgfmathsetmacro{\ltwo}{2.6}  % |E2| = 2|E1|
+
+  % Richtungen: von Q1 nach P => 60°, von Q2 nach P => 120°
+  \coordinate (E1end) at ($(P)+({\lone*cos(60)},{\lone*sin(60)})$);
+  \coordinate (E2end) at ($(P)+({\ltwo*cos(120)},{\ltwo*sin(120)})$);
+
+  % Komponenten-Endpunkte (x-Komponente zuerst, dann y)
+  \coordinate (E1xend) at ($(P)+({\lone*cos(60)},0)$);
+  \coordinate (E2xend) at ($(P)+({\ltwo*cos(120)},0)$);
+
+  % Resultierende via Parallelogramm
+  \coordinate (R) at ($(E1end)+({\ltwo*cos(120)},{\ltwo*sin(120)})$);
+
+  % --- Achsen ---
+  \draw[->] (-1.0,0) -- (\a+1.2,0) node[below right] {$x$};
+  \draw[->] (0,-0.9) -- (0,{sqrt(3)/2*\a+1.4}) node[above left] {$y$};
+
+  % --- Dreieck / Abstände ---
+  \draw (Q1) -- (Q2) -- (P) -- (Q1);
+  \draw[densely dotted] (P) -- (M);
+
+  \path (Q1) -- (Q2) node[midway, below] {$a$};
+  %\path (Q1) -- (P)  node[midway, left]  {$a$};
+  \path (Q2) -- (P)  node[midway, right] {$a$};
+
+  % --- Punkte ---
+  \fill (Q1) circle (2.2pt) node[below left] {$Q_1$};
+  \fill (Q2) circle (2.2pt) node[below right] {$Q_2$};
+  \fill (P)  circle (1.8pt) node[below right] {};
+
+  % --- Verbindungs-/Ortsvektor (optional, wie in Skizze) ---
+  \draw[->,very thick,magenta] (Q1) -- (P) node[midway, left] {$\vec{a}_1$};
+
+  % --- \vec{E}_1 (blau) + Komponenten ---
+  \draw[->,very thick,blue] (P) -- (E1end) node[midway, left] {$\vec{E}_1$};
+  \draw[->,blue] (P) -- (E1xend) node[midway, below] {$E_{1x}$};
+  \draw[->,blue] (E1xend) -- (E1end) node[midway, right] {$E_{1y}$};
+
+  % --- \vec{E}_2 (grün) + Komponenten ---
+  \draw[->,very thick,green!60!black] (P) -- (E2end) node[midway, left] {$\vec{E}_2$};
+  \draw[->,green!60!black] (P) -- (E2xend) node[midway, below] {$E_{2x}$};
+  \draw[->,green!60!black] (E2xend) -- (E2end) node[midway, left] {$E_{2y}$};
+
+  % --- Parallelogramm-Konstruktion (Hilfslinien) ---
+  \draw[thin,green!60!black] (E1end) -- (R);
+  \draw[thin,blue] (E2end) -- (R);
+
+  % --- Resultierende \vec{E} (rot) ---
+  \draw[->,very thick,red] (P) -- (R) node[midway, left] {$\vec{E}$};
+
+\end{tikzpicture}
+
+
+\noindent
+Für die resultierende Feldstärke $\vec{E}$ gilt zunächst:
+$$
+\vec{E}=\vec{E}_1+\vec{E}_2
+=
+\begin{bmatrix}
+E_{1x}\\
+E_{1y}
+\end{bmatrix}
++
+\begin{bmatrix}
+E_{2x}\\
+E_{2y}
+\end{bmatrix}
+=
+\begin{bmatrix}
+E_{1x}+E_{2x}\\
+E_{1y}+E_{2y}
+\end{bmatrix}
+=
+E_x\,\vec{e}_x+E_y\,\vec{e}_y
+$$
+
+\noindent
+Dabei gelten für die Beträge (Abstand jeweils $a$):
+$$
+E_1=\frac{Q_1}{4\pi\varepsilon_0 a^2}=\frac{Q}{4\pi\varepsilon_0 a^2},
+\qquad
+E_2=\frac{Q_2}{4\pi\varepsilon_0 a^2}=\frac{2Q}{4\pi\varepsilon_0 a^2}.
+$$
+
+\noindent
+Mit den trigonometrischen Funktionen folgt für die $x$-Komponenten:
+$$
+\begin{aligned}
+E_{1x} &= E_1\cos(60^\circ)=\frac{1}{2}E_1,\\
+E_{2x} &= -E_2\cos(60^\circ)=-\frac{1}{2}E_2,\\
+E_x &= E_{1x}+E_{2x}=\frac{E_1-E_2}{2}=-\frac{Q}{8\pi\varepsilon_0 a^2}.
+\end{aligned}
+$$
+
+\noindent
+Analog folgt für die $y$-Komponenten:
+$$
+\begin{aligned}
+E_{1y} &= E_1\sin(60^\circ)=\frac{\sqrt{3}}{2}E_1,\\
+E_{2y} &= E_2\sin(60^\circ)=\frac{\sqrt{3}}{2}E_2,\\
+E_y &= E_{1y}+E_{2y}=\frac{\sqrt{3}}{2}\left(E_1+E_2\right)
+= \frac{3\sqrt{3}\,Q}{8\pi\varepsilon_0 a^2}.
+\end{aligned}
+$$
+
+\noindent
+Damit ergibt sich die resultierende Feldstärke:
+$$
+\vec{E}=E_x\,\vec{e}_x+E_y\,\vec{e}_y
+=
+-\frac{Q}{8\pi\varepsilon_0 a^2}\,\vec{e}_x
++\frac{3\sqrt{3}\,Q}{8\pi\varepsilon_0 a^2}\,\vec{e}_y.
+$$
+
+
+
+
+
+
+  \item Im Punkt $P$ wird eine dritte Ladung $Q_0 > 0$ positioniert. Welche Kraft $F_0$ wirkt auf sie?
+  
+  Kraft auf Ladung $Q_0$ im Punkt $P$:
+$$
+\vec{F}_0 = Q_0 \cdot \vec{E}
+$$
+\end{enumerate}
 }
