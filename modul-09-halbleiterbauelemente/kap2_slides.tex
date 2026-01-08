@@ -991,7 +991,7 @@
         \end{itemize}
         \begin{figure}
             \centering
-            \includesvg[width= .7\textwidth]{Bilder/kap2/FolienStromsteuerungskennlinieKurvenschar}
+            \includesvg[width= .55\textwidth]{Bilder/kap2/FolienStromsteuerungskennlinieKurvenschar}
         \end{figure}
     }
     \speech{Bipolartransistor_StromKennlinie_UCE}{1}{Auch wenn wir die Kollektor-Emitter-Spannung verändern, bleibt dieser Zusammenhang zwischen Basisstrom und Kollektorstrom im aktiven Bereich erhalten.
@@ -1008,7 +1008,7 @@
         \end{itemize}
         \begin{figure}
             \centering
-            \includesvg[width= .7\textwidth]{Bilder/kap2/FolienRueckwirkungskennlinie}
+            \includesvg[width= .6\textwidth]{Bilder/kap2/FolienRueckwirkungskennlinie}
         \end{figure}
     }
     \speech{Bipolartransistor_Rueck}{1}{Hier siehst du die sogenannte Rückwirkungskennlinie: Sie zeigt die Basis-Emitter-Spannung in Abhängigkeit von der Kollektor-Emitter-Spannung. Man erkennt: Die Basis-Emitter-Spannung verändert sich nur sehr geringfügig, wenn sich die Kollektor-Emitter-Spannung ändert. Es gibt also eine geringe Rückwirkung, aber im praktischen Betrieb ist sie meist vernachlässigbar. Diese Kurve ist eher für Spezialfälle oder sehr präzise Anwendungen relevant - in den meisten Standardanwendungen kann man die Basis-Emitter-Spannung als konstant annehmen.}
@@ -1032,9 +1032,6 @@
         \frametitle{Bipolartransistor -- Elektrisches Verhalten}
         \begin{figure}[H]
             \onslide<1->{
-                \begin{itemize}
-                    \item Kleinsignal-Ersatzschaltbild eines Bipolartransistors.
-                \end{itemize}
                 \begin{minipage}[b]{0.48\textwidth}
                     \raggedright
                     \scalebox{0.9}{\input{Bilder/kap2/ErsatzschaltbildEinesBipolartransistors/ErsatzschaltbildEinesBipolartransistors_1}}
@@ -1046,7 +1043,9 @@
                     \scalebox{0.9}{\input{Bilder/kap2/ErsatzschaltbildEinesBipolartransistors/ErsatzschaltbildEinesBipolartransistors_2}}
                 \end{minipage}
             }
-        \end{figure}
+             \onslide<1->{
+                \caption{\textbf{Kleinsignal-Ersatzschaltbild eines Bipolartransistors.}}
+             }\end{figure}
     }
     \speech{Bipolartransistor_KSEB}{1}{Diese Folie zeigt das Kleinsignal-Ersatzschaltbild eines Bipolartransistors – in zwei Varianten. Links sehen wir: den differenziellen Basiswiderstand r B E, den Innenwiderstand r C E zwischen Kollektor und Emitter, die gesteuerte Stromquelle beta mal i B, und zusätzlich eine weitere Spannungsquelle: D mal U C E. Diese modelliert den Einfluss der Rückwirkung von der Kollektor-Emitter-Spannung auf die Basis-Emitter-Spannung.}
     \silence{1}
@@ -1079,11 +1078,11 @@
 
         \begin{figure}[H]
             \centering
-            \begin{minipage}[b]{0.48\textwidth}
+            \begin{minipage}[b]{0.54\textwidth}
                 \raggedright
-                \includesvg[width= .7\textwidth]{Bilder/kap3/ArbeitenMitTransistorkennlinie}
+                \includesvg[width=\textwidth]{Bilder/kap3/ArbeitenMitTransistorkennlinie}
             \end{minipage}
-            \begin{minipage}[b]{0.48\textwidth}
+            \begin{minipage}[b]{0.42\textwidth}
                 \raggedleft
                 \scalebox{0.8}{\input{Tikz/src/BeispieleinerTransistorschaltungzurBestimmungvonrelevantenParametern.tex}}
             \end{minipage}
@@ -1185,27 +1184,37 @@
 
 \subsubsection{Anwendung/Grundschaltung}
 \begin{frame}
-    \b{ 
+    \b{
         \frametitle{Bipolartransistor -- Anwendung/ Grundschaltungen}
         \begin{figure}[H]
             \onslide<1->{
-                \begin{minipage}[c]{0.3\textwidth}
+                \begin{minipage}[b]{0.31\textwidth}
                     \raggedright
                     \scalebox{0.9}{\input{Tikz/src/Grundschaltungen1.tex}}
+                    \centering
+                    Emitterschaltung\\
+                    \vspace*{0.5cm}
                 \end{minipage}
             }
             \onslide<2->{
-                \begin{minipage}[c]{0.3\textwidth}
+                \begin{minipage}[b]{0.31\textwidth}
                     \centering
                     \scalebox{0.9}{\input{Tikz/src/Grundschaltungen2.tex}}
+                    Kollektorschaltung\\
+                    \vspace*{0.5cm}
                 \end{minipage}
             }
             \onslide<3->{
-                \begin{minipage}[c]{0.3\textwidth}
+                \begin{minipage}[b]{0.31\textwidth}
                     \raggedleft
                     \scalebox{0.9}{\input{Tikz/src/Grundschaltungen3.tex}}
+                    \centering
+                    Basisschaltung\\
+                    \vspace*{0.5cm}
                 \end{minipage}
-                \caption{\textbf{Grundschaltungen npn-Bipolartransistor.} V.l.n.r Emitter-, Kollektor- und Basisschaltung.}
+            }
+            \onslide<1->{
+                \caption{\textbf{Grundschaltungen npn-Bipolartransistor.}}
             }
         \end{figure}}
     \speech{Bipolar_Grundschaltungen}{3}{Transistoren werden häufig in sogenannten Grundschaltungen betrieben. Die drei Varianten Emitter-, Kollektor- und Basis-Schaltung sehen wir hier von links nach rechts aufgereiht. Die Bezeichnung beschreibt an welchem der Kontakte das Bezugspotential der Schaltung anliegt.}
@@ -1218,24 +1227,27 @@
         \frametitle{Bipolartransistor -- Anwendung/ Grundschaltungen}
         \begin{figure}[H]
             \onslide<1->{
-                \begin{minipage}[b]{0.3\textwidth}
-                    \raggedright
-                    \scalebox{0.9}{\input{Tikz/src/EKBGrundschaltungen1.tex}}
+                \begin{minipage}[b]{0.48\textwidth}
+                    \centering
+                    \scalebox{1}{\input{Tikz/src/EKBGrundschaltungen1.tex}}
+                    Emitterschaltung
                 \end{minipage}
             }
             \onslide<2->{
-                \begin{minipage}[b]{0.3\textwidth}
+                \begin{minipage}[b]{0.48\textwidth}
                     \centering
-                    \scalebox{0.9}{\input{Tikz/src/EKBGrundschaltungen2.tex}}
+                    \scalebox{1}{\input{Tikz/src/EKBGrundschaltungen2.tex}}
+                    Kollektorschaltung
                 \end{minipage}
             }
             \onslide<3->{
-                \begin{minipage}[b]{0.3\textwidth}
-                    \raggedleft
-                    \scalebox{0.9}{\input{Tikz/src/EKBGrundschaltungen3.tex}}
+                \begin{minipage}[b]{0.48\textwidth}
+                    \centering
+                    \scalebox{1}{\input{Tikz/src/EKBGrundschaltungen3.tex}}
+                    Basisschaltung
                 \end{minipage}
             }
-            \caption{\textbf{Ersatzschaltbilder der Grundschaltungen.} V.l.n.r Emitter-, Kollektor- und Basisschaltung von npn-Transistoren.}
+            \caption{\textbf{Ersatzschaltbilder der Grundschaltungen.}}
         \end{figure}}
     \speech{Bipolar_Grundschaltungen_KSEB}{3}{Abhängig von der Schaltung kann auch das Ersatzschaltbild entsprechend umgeformt werden.}
     \silence{3}
