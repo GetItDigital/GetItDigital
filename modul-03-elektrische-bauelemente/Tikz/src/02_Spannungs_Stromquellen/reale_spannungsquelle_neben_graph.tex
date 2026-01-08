@@ -1,0 +1,13 @@
+\begin{circuitikz}[scale=0.9]
+    \draw (0,9) to[V] (0,5)
+    to[short,-o] (3.5,5)
+    (0.75,9) to[R, l=$R_\mathrm{i}$] (2.75,9)
+    to[short, i, name=I, -o] (3.5,9)
+    (3.5,8.2) to[R, v, name=R, l=$R$] (3.5,5.8);
+    \draw (0,9)  to[short] (0.75,9);
+    \draw (3.5,8.94)--(3.5,8.2) (3.5,5.8)--(3.5,5.06);
+    \iarrmore{I}{$I$};
+    \varrmore{R}{$U$};
+    \draw[-latex, thick, color=voltage] (1.1,8.5)  to node[midway,below,color=voltage] {$U_\mathrm{R_i}=R_\mathrm{i}I$} (2.45,8.5);
+    \draw[-latex, thick, color=voltage] (0.6,7.6)  to node[midway,right, color=voltage] {$U_\mathrm{q}$} (0.6,6.4);
+\end{circuitikz}

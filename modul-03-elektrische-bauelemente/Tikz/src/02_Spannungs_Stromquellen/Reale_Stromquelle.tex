@@ -7,6 +7,8 @@
     (0,6) to[short,-o] (2.5,6);
     \iarrmore {Iq}{$I_\mathrm{q}$};
     \iarrmore {I}{$I$};
-    \iarrmore {Ri}{$I_\mathrm{{Ri}}$};
+    
+    \node[currarrow, color=red, rotate=270] at (1.5,8.5){}; %Strompfeil I
+    \node[color=red,above] at (2.1,8.1){$I_\mathrm{R_i}$}; %Text für Strompfeil I
     \draw[-latex, thick, draw=voltage] (2.5,8.5)  to node[right, color=voltage] {$U$} (2.5,6.5);
 \end{circuitikz}
