@@ -1,5 +1,5 @@
 \begin{tikzpicture} 
-    \draw (0,-0.5) node[nigfete, tr circle] (Q1) {}
+    \draw (0,0) node[nigfete, tr circle] (Q1) {}
         (Q1.gate) node[anchor=south east] {G}
         (Q1.source) node[anchor=east] {S}
         (Q1.drain) node[anchor=east] {D};
@@ -15,10 +15,9 @@
         to[R=$R_\mathrm{in}$, -o] ++(-3,0);
     
     \draw (Q1.S) 
-        to[short, -*] (0,-2) node[ground]{}
-        to[short, -o] (2,-2);
+        to[short, -*] (0,-1) node[ground]{}
+        to[short, -o] (2,-1);
     
-    \draw (2,1) to[open,v>, name=ua] (2,-2);
+    \draw (2,1) to[open,v>, name=ua] (2,-1);
     \varrmore{ua}{$U_\mathrm{a}$};
-    
 \end{tikzpicture}

@@ -914,7 +914,7 @@
 
 \begin{frame}
     \b{
-        \frametitle{Ausgangskennlinie}
+        \frametitle{Bipolartransistor -- Ausgangskennlinie}
         \begin{figure}[H]
             \begin{minipage}[b]{0.35\textwidth}
                 \raggedright
@@ -987,11 +987,11 @@
     \b{
         \frametitle{Stromsteuerungskennlinie}
         \begin{itemize}
-            \item Kurvenschar bei variabler Kollektor-Emitter-Spannung $U_\mathrm{CE}$.
+            \item Kurvenschar von Stromsteuerungskennlinien bei variabler Kollektor-Emitter-Spannung $U_\mathrm{CE}$.
         \end{itemize}
         \begin{figure}
             \centering
-            \scalebox{0.9}{\includesvg[width= \textwidth]{Bilder/kap2/FolienStromsteuerungskennlinieKurvenschar}}
+            \includesvg[width= .7\textwidth]{Bilder/kap2/FolienStromsteuerungskennlinieKurvenschar}
         \end{figure}
     }
     \speech{Bipolartransistor_StromKennlinie_UCE}{1}{Auch wenn wir die Kollektor-Emitter-Spannung verändern, bleibt dieser Zusammenhang zwischen Basisstrom und Kollektorstrom im aktiven Bereich erhalten.
@@ -1003,9 +1003,12 @@
 \begin{frame}
     \b{
         \frametitle{Rückwirkungskennlinie}
+        \begin{itemize}
+            \item Kurvenschar von Rückwirkungskennlinien bei variablen Basisstrom $I_\mathrm{B}$.
+        \end{itemize}
         \begin{figure}
             \centering
-            \includesvg[width= \textwidth]{Bilder/kap2/FolienRueckwirkungskennlinie}
+            \includesvg[width= .7\textwidth]{Bilder/kap2/FolienRueckwirkungskennlinie}
         \end{figure}
     }
     \speech{Bipolartransistor_Rueck}{1}{Hier siehst du die sogenannte Rückwirkungskennlinie: Sie zeigt die Basis-Emitter-Spannung in Abhängigkeit von der Kollektor-Emitter-Spannung. Man erkennt: Die Basis-Emitter-Spannung verändert sich nur sehr geringfügig, wenn sich die Kollektor-Emitter-Spannung ändert. Es gibt also eine geringe Rückwirkung, aber im praktischen Betrieb ist sie meist vernachlässigbar. Diese Kurve ist eher für Spezialfälle oder sehr präzise Anwendungen relevant - in den meisten Standardanwendungen kann man die Basis-Emitter-Spannung als konstant annehmen.}
@@ -1029,6 +1032,9 @@
         \frametitle{Bipolartransistor -- Elektrisches Verhalten}
         \begin{figure}[H]
             \onslide<1->{
+                \begin{itemize}
+                    \item Kleinsignal-Ersatzschaltbild eines Bipolartransistors.
+                \end{itemize}
                 \begin{minipage}[b]{0.48\textwidth}
                     \raggedright
                     \scalebox{0.9}{\input{Bilder/kap2/ErsatzschaltbildEinesBipolartransistors/ErsatzschaltbildEinesBipolartransistors_1}}
@@ -1075,7 +1081,7 @@
             \centering
             \begin{minipage}[b]{0.48\textwidth}
                 \raggedright
-                \scalebox{0.5}{ \includesvg{Bilder/kap3/ArbeitenMitTransistorkennlinie}}
+                \includesvg[width= .7\textwidth]{Bilder/kap3/ArbeitenMitTransistorkennlinie}
             \end{minipage}
             \begin{minipage}[b]{0.48\textwidth}
                 \raggedleft
@@ -1088,8 +1094,11 @@
 \end{frame}
 
 \begin{frame}
-    \b{ 
+    \b{
         \frametitle{Bipolartransistor -- Beispiel 2.2}
+        \begin{itemize}
+            \item Arbeitspunkt A im Vierquadrantenkennlinienfeld eines Bipolartransistors.
+        \end{itemize}
         \begin{figure}[H]
             \centering
             \includesvg[scale=.5, pretex=\small]{Bilder/kap3/Vierquadranten-KennlinienfeldMitArbeitspunkt}
@@ -1147,6 +1156,9 @@
 \begin{frame}
     \b{
         \frametitle{Bipolartransistor -- Elektrisches Verhalten}
+        \begin{itemize}
+            \item Darstellung eines Wechselstrom Eingangssignals bei einem Bipolartransistor im Vierquadrantenkennlinienfeld.
+        \end{itemize}
         \begin{figure}[H]
             \centering
             \includesvg[scale=.5, pretex=\small]{Bilder/kap3/Vierquadranten-KennlinienfeldBeiACEingangssignal}
@@ -1159,6 +1171,9 @@
 \begin{frame}
     \b{
         \frametitle{Bipolartransistor -- Aufbau}
+        \begin{itemize}
+            \item \textbf{Aufbau npn-Bipolartransistor.} Schaltzeichen, idealer schematischer Aufbau, realer Aufbau.
+        \end{itemize}
         \begin{figure}[H]
             \centering
             \includesvg[width= 0.7\textwidth]{Bilder/kap3/Aufbaunpn-Bipolartransistor}
@@ -1319,9 +1334,12 @@
 \begin{frame}
     \b{
         \frametitle{Bipolartransistor -- Anwendung/ Grundschaltungen}
+        \begin{itemize}
+            \item Ein \textbf{Darlington-Transistor} bzw. Darlington-Schaltung kombiniert zwei Transistoren für eine höhere Stromverstärkung.
+        \end{itemize}
         \begin{figure}[H]
             \centering
-            \includesvg[width= 0.7\textwidth]{Bilder/kap3/DarlingtonTransistor}
+            \includesvg[width= 0.5\textwidth]{Bilder/kap3/DarlingtonTransistor}
         \end{figure}}
     \speech{Darlington-Transistor}{1}{Zum Schluss noch ein Spezialfall: der Darlington-Transistor.  Hier sind zwei Bipolartransistoren hintereinandergeschaltet - der Emitter des ersten geht direkt an die Basis des zweiten. Was bringt das?  Die Stromverstärkung der beiden multipliziert sich: Wenn der erste Transistor z.B. eine Verstärkung von einhundert hat, und der zweite auch, ergibt sich eine Gesamtverstärkung von hundert mal hundert = zehntausend.  Das bedeutet: Schon ein sehr kleiner Basisstrom am Eingang reicht aus, um einen sehr großen Kollektorstrom am Ausgang zu erzeugen. Darlington-Transistoren werden eingesetzt, wenn man besonders hohe Stromverstärkungen braucht - zum Beispiel bei Leistungstreibern, Motoransteuerungen oder Relais-Schaltungen.}
     \silence{3}
@@ -1347,7 +1365,8 @@
         \frametitle{Feldeffekttransistor -- Elektrisches Verhalten}
         \begin{figure}[H]
             \centering
-            \includesvg[width= 0.7\textwidth]{Bilder/kap4/Sperrbereichn-KanalMOSFET}
+            \includesvg[scale= 0.4]{Bilder/kap4/Sperrbereichn-KanalMOSFET}
+            \caption{Querschnitt eines n-Kanal MOSFETs (selbstsperrend) ohne angelegte Spannungen.}
         \end{figure}
     }
     \speech{FET_elektr_nMOS}{1}{Hier sehen wir den Querschnitt eines n-Kanal-MOSFETs. Schauen wir uns zunächst einmal nur die Elemente an - ohne schon Spannungen anzulegen: Unten liegt das sogenannte Substrat oder auch Bulk - hier p-dotiert. Links und rechts davon liegen zwei n-dotierte Zonen: das sind Source und Drain. Zwischen Source und Drain liegt die Gate-Elektrode - allerdings isoliert vom Halbleitermaterial durch eine dünne Oxidschicht. An den pn-Übergängen bilden sich Raumladungszonen, die man Verarmungszonen nennt. Was du dir merken solltest: Zwischen Gate und Halbleiter fließt kein Strom, da sie durch das Oxid getrennt sind. In den meisten Anwendungen ist Bulk direkt mit Source verbunden, also auf gleichem Potenzial.} 
@@ -1360,7 +1379,8 @@
         \frametitle{Feldeffekttransistor -- Elektrisches Verhalten}
         \begin{figure}[H]
             \centering
-            \includesvg[width= 0.7\textwidth]{Bilder/kap4/FolienMOSFETUDS}
+            \includesvg[scale= 0.4]{Bilder/kap4/FolienMOSFETUDS.svg}
+            \caption{Querschnitt eines n-Kanal MOSFETs (selbstsperrend) mit angelegter Drain-Source-Spannung.}
         \end{figure}
     }
     \speech{FET_elektr_nMOS_Uds}{1}{Was passiert, wenn wir nun eine Spannung zwischen Drain und Source anlegen? Noch nichts - denn es gibt keinen leitenden Kanal zwischen den beiden. Das p-dotierte Substrat liegt dazwischen und wirkt wie eine Sperrschicht.  Der Strom kann also nicht fließen, weil es keinen Weg für die Elektronen von Source zum Drain gibt. Der Transistor ist in diesem Zustand gesperrt - man sagt auch: selbstsperrend.}
@@ -1373,27 +1393,8 @@
         \frametitle{Feldeffekttransistor -- Elektrisches Verhalten}
         \begin{figure}[H]
             \centering
-            \includesvg[width= \textwidth]{Bilder/kap4/FolienMOSFETUGB}
-        \end{figure}
-    }
-\end{frame}
-
-\begin{frame}
-    \b{
-        \frametitle{Feldeffekttransistor -- Elektrisches Verhalten}
-        \begin{figure}[H]
-            \centering
-            \includesvg[width= \textwidth]{Bilder/kap4/FolienMOSFETSteuerspannung}
-        \end{figure}
-    }
-\end{frame}
-
-\begin{frame}
-    \b{
-        \frametitle{Feldeffekttransistor -- Elektrisches Verhalten}
-        \begin{figure}[H]
-            \centering
-            \includesvg[width= \textwidth]{Bilder/kap4/ohmscherBereichn-KanalMOSFET}
+            \includesvg[scale= 0.4]{Bilder/kap4/ohmscherBereichn-KanalMOSFET}
+            \caption{Querschnitt eines n-Kanal MOSFETs (selbstsperrend) mit angelegter Gate-Source-Spannung.}
         \end{figure}
     }
     \speech{FET_elektr_nMOS_ohm}{1}{Jetzt legen wir eine positive Spannung am Gate an - gegenüber dem Bulk beziehungsweise Source.  Das führt dazu, dass Elektronen aus dem Substrat an die Grenzfläche unter dem Gate gezogen werden. Je nach Höhe dieser Gate-Spannung entsteht dort eine sogenannte Inversionsschicht - also ein leitfähiger n-Kanal.  Damit ist eine Verbindung zwischen Source und Drain geschaffen.  Der Transistor ist jetzt prinzipiell einschaltbar - aber es fließt noch kein Strom, solange U D S gleich null ist.  Legen wir jetzt gleichzeitig eine Spannung zwischen Drain und Source an fließt ein Strom.  Die Stromstärke hängt dabei maßgeblich von der Gate-Spannung ab: Je höher U G S, desto breiter und besser leitfähig ist der Kanal - und desto mehr Strom kann durchfließen.}
@@ -1406,7 +1407,8 @@
         \frametitle{Feldeffekttransistor -- Elektrisches Verhalten}
         \begin{figure}[H]
             \centering
-            \includesvg[width=\textwidth]{Bilder/kap4/Ausgangskennlinienfeldn-KanalMOSFET}
+            \includesvg[width=.8\textwidth]{Bilder/kap4/Ausgangskennlinienfeldn-KanalMOSFET}
+            \caption{Ausgangskennlinienfeld eines n-Kanal MOSFETs bei verschiedenen Gate-Source-Spannungen.}
         \end{figure}
     }
     \speech{FET_elektr_nMOS_Ausgang}{1}{Hier sehen wir das Ausgangskennlinienfeld eines n-Kanal-MOSFET. Auf der x-Achse ist die Drain-Source-Spannung U D S aufgetragen, auf der y-Achse der Drainstrom I D. Jede Kurve zeigt das Verhalten für eine bestimmte Gate-Spannung U G S. Im linken Bereich verläuft die Kennlinie linear - der MOSFET wirkt hier wie ein normaler Widerstand. Im rechten Bereich geht die Kennlinie in die Sättigung über – der Strom erreicht ein Maximum, obwohl U D S weiter steigt.}
@@ -1419,12 +1421,13 @@
         \frametitle{Feldeffekttransistor -- Elektrisches Verhalten}
         \begin{figure}[H]
             \centering
-            \includesvg[width= 0.7\textwidth]{Bilder/kap4/SaettigungsbereichN-KanalMOSFET}
+            \includesvg[scale= 0.4]{Bilder/kap4/SaettigungsbereichN-KanalMOSFET}
+            \caption{Querschnitt eines n-Kanal MOSFETs (selbstsperrend) im Sättigungsbereich.}
         \end{figure}
     }
     \speech{FET_elektr_nMOS_Saettigung}{1}{Hier siehst du nochmal im Querschnitt, was im Sättigungsbereich passiert: Die Drain-Source-Spannung ist jetzt so groß, dass sich der Kanal nicht mehr gleichmäßig über die gesamte Strecke bildet. In der Nähe des Drain verengt sich der Kanal, teilweise bis zur vollständigen Abschnürung - man spricht vom pinch-off.  Trotzdem bleibt der Strom nahezu konstant - aber eine Steigerung des Stroms ist nicht mehr möglich Nochmal zur Erinnerung: Die Anschlüsse Bulk und Source sind in der Regel gebrückt und liegen auf dem gleichen Potenzial.}
-    %seed: 998568
     \silence{3}
+    %seed: 998568
 \end{frame}
 
 \begin{frame}
@@ -1629,7 +1632,8 @@
         \frametitle{Feldeffekttransistor -- Aufbau}
         \begin{figure}[H]
             \centering
-            \includesvg[width= \textwidth]{Bilder/kap4/QuerschnittCMOSStruktur}
+            \includesvg[width= .8\textwidth]{Bilder/kap4/QuerschnittCMOSStruktur}
+            \caption{Querschnitt einer CMOS-Struktur mit n-Kanal- und p-Kanal-MOSFET.}
         \end{figure}
     }
     \speech{FET_Aufbau_CMOS}{1}{Hier sehen wir den Querschnitt einer CMOS-Struktur. CMOS steht für Complementary Metal-Oxide-Semiconductor - also die Kombination aus einem n-Kanal- und einem p-Kanal-MOSFET. Beide Transistoren werden im gleichen Substrat gefertigt, aber in unterschiedlichen Dotierungsinseln. So können sie auf engem Raum nebeneinander liegen und bilden die Grundlage für digitale Schaltungen wie Inverter, Gatter und Prozessoren.}
@@ -1642,7 +1646,8 @@
         \frametitle{Feldeffekttransistor -- Aufbau}
         \begin{figure}[H]
             \centering
-            \includesvg[width= \textwidth]{Bilder/kap4/QuerschnittN-KanalJFET}
+            \includesvg[width= .7\textwidth]{Bilder/kap4/QuerschnittN-KanalJFET}
+            \caption{Querschnitt eines n-Kanal-JFETs.}
         \end{figure}
     }
     \speech{FET_Aufbau_nJFET}{1}{Hier sehen wir den Querschnitt eines n-Kanal-JeyFET. Rechts die Source, links die Drain-Zone - dazwischen liegt ein n-Kanal, durch den Elektronen fließen können.  Das Gate besteht aus p-dotierten Bereichen, die seitlich in den Kanal hineinragen. Legt man eine negative Gate-Spannung an, vergrößern sich die Sperrschichten und engen den Kanal ein - bis er schließlich komplett abgeschnürt wird. So steuert der JeyFET den Stromfluss.}
@@ -1673,28 +1678,23 @@
             \centering
             \begin{minipage}[c]{.48\textwidth}
                 \centering
-                \input{Tikz/src/MosfetAlsSteuerbarerWiderstand_1.tex}
+                \scalebox{0.9}{\input{Tikz/src/MosfetAlsSteuerbarerWiderstand_1.tex}}
             \end{minipage}
             \begin{minipage}[c]{.48\textwidth}
                 \centering
-                \input{Tikz/src/MosfetAlsSteuerbarerWiderstand_2.tex}
+                \scalebox{0.9}{\input{Tikz/src/MosfetAlsSteuerbarerWiderstand_2.tex}}
             \end{minipage}
         \end{figure}
-    }
-    \speech{FET_Anwendungen_Schaltungen}{1}{Ein MOSFET kann nicht nur als Schalter oder Verstärker arbeiten - er lässt sich im linearen Bereich auch als steuerbarer Widerstand einsetzen. Links siehst du einen Spannungsteiler, bei dem der untere Widerstand durch einen MOSFET ersetzt wurde. Je nach Gate-Spannung verändert sich der Widerstandswert dieses Transistors - und damit auch die Teilung der Spannung. Rechts ist das Prinzip noch einmal vereinfacht dargestellt: Der MOSFET wirkt wie ein variabler Widerstand, der rein elektrisch gesteuert werden kann.}
-    %seed: 834879
-    \silence{3}
-\end{frame}
 
-\begin{frame}
-    \b{
-        \frametitle{Feldeffekttransistor -- Anwendungen/ Grundschaltungen}
-    
         \begin{Merksatz}{}
             Der ohmsche Widerstand eines MOSFETs kann durch $U_\mathrm{GS}$ gesteuert werden,
             der Durchgangswiderstand ist allerdings gering und der Wertebereich sehr schmal.
         \end{Merksatz}
     }
+    \speech{FET_Anwendungen_Schaltungen}{1}{Ein MOSFET kann nicht nur als Schalter oder Verstärker arbeiten - er lässt sich im linearen Bereich auch als steuerbarer Widerstand einsetzen. Links siehst du einen Spannungsteiler, bei dem der untere Widerstand durch einen MOSFET ersetzt wurde. Je nach Gate-Spannung verändert sich der Widerstandswert dieses Transistors - und damit auch die Teilung der Spannung. Rechts ist das Prinzip noch einmal vereinfacht dargestellt: Der MOSFET wirkt wie ein variabler Widerstand, der rein elektrisch gesteuert werden kann.}
+    %seed: 834879
+    \silence{3}
+
     \speech{FET_Anwendung_Merke}{1}{Merken wir uns also: Ein MOSFET kann im ohmschen Bereich seiner Kennlinie wie ein spannungsabhängiger Widerstand verwendet werden. Das ist besonders praktisch für analoge Schaltungen, etwa in Verstärkern oder regelbaren Filtern. Der Durchgangswiderstand ist allerdings gering und der Wertebereich sehr schmal.}
     %seed: 834912
     \silence{3}
@@ -1707,31 +1707,27 @@
             \centering
             \begin{minipage}[c]{.48\textwidth}
                 \centering
-                \input{Tikz/src/MosfetAlsSchalter_1.tex}
+                \scalebox{0.9}{\input{Tikz/src/MosfetAlsSchalter_1.tex}}
             \end{minipage}
             \begin{minipage}[c]{.48\textwidth}
                 \centering
-                \input{Tikz/src/MosfetAlsSchalter_2.tex}
+                \scalebox{0.9}{\input{Tikz/src/MosfetAlsSchalter_2.tex}}
             \end{minipage}
         \end{figure}
-    }
-    \speech{FET_Anwendung_Schalter}{1}{Noch häufiger wird der MOSFET als elektronischer Schalter verwendet. Liegt die Gate-Spannung unterhalb der Schwellenspannung, sperrt der Transistor - die Drain-Source-Strecke ist hochohmig. Der Schalter ist also geöffnet. Liegt die Gate-Spannung oberhalb der Schwellenspannung, ist der Transistor leitend - die Drain-Source-Strecke verhält sich wie ein kleiner Widerstand. Der Schalter ist also geschlossen. Der große Vorteil: Am Gate fließt praktisch kein Strom, die Schaltzeiten sind sehr kurz, und man kann auch große Ströme im Drain-Source Pfad steuern.}
-    %seed: 834921
-    \silence{3}
-\end{frame}
 
-\begin{frame}
-    \b{
-        \frametitle{Feldeffekttransistor -- Anwendungen/ Grundschaltungen}
-    
         \begin{Merksatz}{}
             Der große Vorteil von MOSFETs in diesem Szenario ist ihre hohe Schaltgeschwindigkeit, der niedrige Widerstand im leitenden Zustand sowie der hohe Eingangswiderstand am Gate.
         \end{Merksatz}
     }
+    \speech{FET_Anwendung_Schalter}{1}{Noch häufiger wird der MOSFET als elektronischer Schalter verwendet. Liegt die Gate-Spannung unterhalb der Schwellenspannung, sperrt der Transistor - die Drain-Source-Strecke ist hochohmig. Der Schalter ist also geöffnet. Liegt die Gate-Spannung oberhalb der Schwellenspannung, ist der Transistor leitend - die Drain-Source-Strecke verhält sich wie ein kleiner Widerstand. Der Schalter ist also geschlossen. Der große Vorteil: Am Gate fließt praktisch kein Strom, die Schaltzeiten sind sehr kurz, und man kann auch große Ströme im Drain-Source Pfad steuern.}
+    %seed: 834921
+    \silence{3}
+
     \speech{FET_Anwendung_Schalter_Merke}{1}{Das Wichtigste in einem Satz: Der MOSFET funktioniert wie ein spannungs-gesteuerter Schalter, der schnell, verlustarm und effizient zwischen Leiten und Sperren umschalten kann.}
     %seed: 835073
     \silence{3}
 \end{frame}
+
 
 \begin{frame}
     \b{
@@ -1739,12 +1735,13 @@
         \begin{figure}[H]
             \begin{minipage}[h]{0.48\textwidth}
                 \centering
-                \input{Tikz/src/MosfetAlsInverter1.tex}
+                \scalebox{0.85}{\input{Tikz/src/MosfetAlsInverter1.tex}}
             \end{minipage}
             \begin{minipage}[c]{0.48\textwidth}
                 \centering
                 \includesvg[width=0.9\textwidth, pretex=\small]{Bilder/kap4/MosfetAlsInverter/MosfetAlsInverter3}
             \end{minipage}
+            \caption{MOSFET als Inverter mit zugehörigen Spannungsverläufen.}
         \end{figure}
     }
     \speech{FET_Anwendungen_Grundschaltung}{1}{Eine der bekanntesten Anwendungen ist der C MOS-Inverter. Im Schaltbild siehst du: Oben ein p-Kanal-MOSFET, unten ein n-Kanal-MOSFET. Beide sind am gleichen Eingangssignal angeschlossen. Das Funktionsprinzip ist einfach: Liegt der Eingang auf Low, leitet der p-Kanal-FET - und der Ausgang liegt auf High. Liegt der Eingang auf High, leitet der n-Kanal-FET - und der Ausgang liegt auf Low. Die Spannungsverläufe rechts zeigen diesen Zusammenhang deutlich: Aus einem hohen Eingangssignal wird ein niedriges Ausgangssignal, und umgekehrt. Genau dieses Prinzip bildet die Grundlage aller digitalen Logikgatter - vom einfachen Inverter bis hin zu komplexen Mikroprozessoren.}
