@@ -31,7 +31,7 @@
         und haben dann auch gesehen, das ist ein transienter Strom, der dabei fließt. Und dieser transiente Strom wird mit der Zeit kleiner,
         weil ja irgendwann die Ladungsträger ausgeglichen sind. Wir müssen also Quellen haben. Und diese Quellen modellieren wir eben mit Strom- und Spannungsquellen.
         Am Ende dieses Abschnittes solltest du den Unterschied zwischen Strom- und Spannungsquellen kennen und die dazugehörigen Schaltungssymbole.
-        Du kennst danach auch, wie reale Spannungs- und Stromquellen modelliert werden und kannst verschiedene Beispiele für diese Quellen benennen.
+        Du kennst danach auch, wie reale Spannungs und Stromquellen modelliert werden und kannst verschiedene Beispiele für diese Quellen benennen.
     }
 
 \end{frame}
@@ -89,9 +89,11 @@
         stellt sich entsprechend ein Strom I ein, wobei die Ausgangsspannung, U-Q in jedem Fall immer gleich bleiben wird.
         Das ist eben genau die ideale Spannungsquelle.
     }
+    \silence{3}
 
     \speech{02_Spannungs_und_Stromquellen2}{2}{Was würde jetzt passieren, wenn wir an die Ausgangsklemmen einen Kurzschluss anschließen würden? Ein Kurzschluss ist definitionsgemäß eine Verbindung mit einem Widerstand von 0 Ohm. .}
 
+    %
     \speech{02_Spannungs_und_Stromquellen2}{3}{
         Wenn wir jetzt auf das Ohmsche Gesetz schauen, U ist gleich R mal I beziehungsweise I gleich U durch R, und wir teilen die Spannung U-Q durch 0 Ohm,
         dann erhalten wir einen unendlichen Strom. Und genau das tut diese sogenannte ideale Spannungsquelle im Falle eines Kurzschluss.
@@ -158,7 +160,7 @@
         \input{Tikz/src/02_Spannungs_Stromquellen/Reale_Spannungsquelle}
 
         \begin{equation*}
-            U_\mathrm{q} = U + U_\mathrm{R_i}
+            U_\mathrm{q} = U_\mathrm{R_i} + U
         \end{equation*}
 
 
@@ -166,7 +168,7 @@
         \s{\caption{\textbf{Reale Spannungsquelle mit Innenwiderstand.} Die Spannung $U_\mathrm{q}$ wird durch den Innenwiderstand \(R_\mathrm{i}\) beeinflusst und ist an den Ausgangsklemmen dadurch geringer.}}
         \label{fig:re spannungsquelle}
     \end{figure}
-    %speech:neuer seed
+    %speech:neuer seed bei "einfügt" wir eineinfügt gesagt
     \speech{02_Spannungs_und_Stromquellen3}{1}{
         Die gerade vorgestellte ideale Spannungsquelle kann es in der Realität niemals geben.
         Warum? Weil wir innerhalb der Spannungsquelle Leiter benötigen und die haben einen Widerstand wie wir gelernt haben.
@@ -178,11 +180,11 @@
         Wenn wir die Spannungsbilanz aufstellen ergibt sich:
         U-Q ist gleich U-R-I plus U.
         Und was passiert bei einem Kurzschluss?
-        Dann würde der gesamte Strom nur durch den Innenwiderstand R-I fließen, was diesen extrem aufheizen würde.
+        Dann würde der gesamte Strom nur durch den Innenwiderstand R-I begrenzt werden und die gesamte Spannung U-Q fällt am innenwiderstand ab, was diesen extrem aufheizen würde.
         Die Quelle würde sehr heiß und im schlimmsten Fall zerstört werden.
         Wie sollte der Innenwiderstand R-I also idealerweise sein?
         Möglichst klein im Idealfall 0 Ohm dann verhält sich die reale Quelle wie eine ideale.
-        In der Praxis erreichen wir durchaus sehr kleine Werte zum Beispiel 1 milliOhm bei guten Autobatterien.
+        In der Praxis erreichen wir durchaus sehr kleine Werte. Zum Beispiel 1 milliOhm bei guten Autobatterien.
         Aber auch dann ist ein Kurzschluss keine gute Idee, denn bei 12 Volt und 1 milliOhm Innenwiderstand würden theoretisch 12.000 Ampere fließen.
         Das zeigt: Auch reale Spannungsquellen müssen geschützt werden, insbesondere gegen Kurzschlüsse.
     }
@@ -237,9 +239,9 @@
 
     \speech{02_Spannungs_und_Stromquellen4}{1}{
         Wir können also für die Spannungsquelle folgende beiden Merksätze zusammenfassen:
-        1.: Eine Spannungsquelle, egal ob real oder ideal, darf nie kurzgeschlossen werden,
+        erstens, Eine Spannungsquelle, egal ob real oder ideal, darf nie kurzgeschlossen werden,
         weil ansonsten unendlich hohe bzw. immer noch sehr hohe Ströme fließen werden.
-        2.: Ferner stellt sich bei der Spannungsquelle immer der Strom ein.
+        Zweitens, stellt sich bei der Spannungsquelle immer der Strom ein.
         Die Spannung bleibt im Fall der idealen Spannungsquelle immer gleich,
         wobei die Spannung bei der realen Spannungsquelle sich um den Spannungsabfall am Innenwiderstand reduziert.
     }
@@ -390,38 +392,34 @@
 
         \end{figure}
     }
-    %; TODO: optional, rechnung für umrechnung einfügen und speech dementsprechen ergänzen
-    %neuer seed
     \speech{02_Spannungs_und_Stromquellen8}{1}{
-        Wir haben jetzt gesehen, dass es Strom- und Spannungsquellen gibt. Und letztlich haben beide an ihren Klemmen einen Ausgangsstrom I und eine Ausgangsspannung U. Bei realen Quellen wird das tatsächliche Verhalten maßgeblich vom Innenwiderstand R-I mitbestimmt.
-        Es ergibt sich für eine Spannungsquelle das folgende Bild: Wir haben eine Quellspannung U-q. Wir haben einen Strom I, der sowohl durch den Innenwiderstand als auch durch den angeschlossenen Widerstand fließt, und demzufolge eine Spannung U, die an dem Widerstand R abfällt.
+        Wir haben jetzt gesehen, dass es Strom- und Spannungsquellen gibt. Und letztlich haben beide an ihren Klemmen einen Ausgangsstrom I und eine Ausgangsspannung U. Bei realen Quellen wird das tatsächliche Verhalten maßgeblich vom Innenwiderstand R-I mitbestimmt Es ergibt sich für eine Spannungsquelle das folgende Bild. Wir haben eine Quellspannung U-q und einen Strom I, der sowohl durch den Innenwiderstand als auch durch den angeschlossenen Widerstand fließt, und demzufolge eine Spannung U, die an dem Widerstand R abfällt.
         %Letztlich kommt es also darauf an, welcher Strom I durch den Lastwiderstand R fließt und dann einen Spannungsabfall U hervorruft.
         Das können wir so wie hier dargestellt mit einer Spannungsquelle natürlich erreichen.}
-
+\silence{4}
         %guter seed
     \speech{02_Spannungs_und_Stromquellen8}{2}{
         Wir können aber genau denselben Spannungsabfall U und genau denselben Strom I durch eine Stromquelle mit einem parrallelen Widerstand R-I erreichen. Maßgeblich für die Umrechnung dieser beiden Quellen ist, dass sie dasselbe Verhalten an der Last zeigen. Das heißt, der Strom I und die Spannung U an dem Lastwiderstand R für beide Quellen gleich ist.
         Wie kann man das jetzt erreichen?
         }
-
+\silence{4}
     \speech{02_Spannungs_und_Stromquellen8}{3}{
-        Wir betrachten zuerst die Spannungsquelle auf der linken Seite und berechnen die Spannung U, die an dem Lastwiderstand abfällt. Da es eine Serienschaltung ist, berechnet sich die Spannung einfach über den Spannungsteiler U ist gleich U-q mal R durch R-i plus R.
+        Wir betrachten zuerst die Spannungsquelle auf der linken Seite und berechnen die Spannung U, die an dem Lastwiderstand abfällt. Da es eine Serienschaltung aus R und R-I ist, berechnet sich die Spannung einfach über den Spannungsteiler U ist gleich U-q mal R durch R-i plus R.
         Wir haben nun auch die Anforderung, das der Strom durch die beiden Lastwiderstände gleich sein soll.
         Das erreicht man, indem die selbe Spannung die über den Lastwiderstand bei der Spannungsquelle abfällt auch in der Parallelschaltung der Stromquelle auf der rechten Seite anliegt.
     }
     \silence{2}
-    %neuer seed, ist schwäbisch geworden
     \speech{02_Spannungs_und_Stromquellen8}{4}{
-        Wir erinnern uns aber, bei einer Stromquelle wird der Strom I-q vorgegeben und die Spannung stellt sich ein. Welchen Strom brauchen wir also? Richtig. Wir brauchen den Strom, der durch die Parallelschaltung von Last- und innen-widerstand der Stromquelle fließt wenn die Spannung U anliegt.
-        Das ist der Strom i-q ist gleich U durch R parallel R-i.}
+        Wir erinnern uns aber, bei einer Stromquelle wird der Strom i-q vorgegeben und die Spannung stellt sich ein. Welchen Strom benötigen wir also? Richtig. Wir stellen den Strom ein, der durch die Parallelschaltung von Last und innenwiderstand der Stromquelle fließen würde, wenn die Spannung U anliegen würde.
+        Das ist der Strom i-q ist gleich U durch R parallel R-i    .}
+\silence{2}
 
     \speech{02_Spannungs_und_Stromquellen8}{5}{
-        Wenn wir nun unsere Spannungsteilerformel für U an der Spannungsquelle in die Formel für I-0 einsetzen, können wir einiges kürzen und erhalten dsas Ergebnis i-q ist gleich u-q durch R-i.
-        
+        Wenn wir nun unsere Spannungsteilerformel für U an der Spannungsquelle in die Formel für I-q einsetzen, können wir einiges kürzen und erhalten das Ergebnis i-q ist gleich u-q geteilt durch R-i.}
         %Wenn nun R-i bei beiden Quellen gleich ist, sehen wir, das diese Quellen nun komplett äquivalent sind.
-        %Man rechnet einfach und stellt dann bei den Rechnungen fest, dass I-Q gleich U-Q durch R-I sein muss, wobei R-I in beiden Fällen gleich ist. Wenn das gegeben ist, sind diese beiden Quellen komplett äquivalent.
+        %Man rechnet einfach und stellt dann bei den Rechnungen fest, dass I-Q gleich U-Q durch R-I sein muss, wobei R-I in beiden Fällen gleich ist. Wenn das gegeben ist, sind diese beiden Quellen komplett äquivalent.}
 
-    }
+
     \iffalse
         originaler sprechtext ohne Mathematische herleitung
         \speech{02_Spannungs_und_Stromquellen8}{2}{
@@ -466,16 +464,18 @@
             \end{minipage}
         \end{figure}
     }
-    % Speech text anpassen mehr auf Graphen eingehen
+    
     \speech{02_Spannungs_und_Stromquellen9}{1}{
-        Das ermöglicht uns aber auch, reale Quellen zu bewerten, ob sie denn eher eine Spannungsquelle oder eher eine Stromquelle sind. Wir nehmen mal als Beispiel einen reale Spannungsquelle mit einem variablen Lastwiderstand von 100 bis 1 kilo Ohm und einen Innenwiderstand von einem Ohm. Das heißt, der Lastwiderstand ist sehr, sehr viel größer als der Innenwiderstand. Damit haben wir tatsächlich eher ein Spannungsquellenverhalten.
+        Das ermöglicht uns aber auch, reale Quellen zu bewerten, ob sie sich eher wie eine Spannungsquelle oder eher eine Stromquelle verhalten. Wir nehmen mal als Beispiel einen reale Spannungsquelle mit einem variablen Lastwiderstand von 100 bis 1 kilo Ohm und einen Innenwiderstand von einem Ohm. Das heißt, der Lastwiderstand ist sehr, sehr viel größer als der Innenwiderstand. Damit haben wir tatsächlich eher ein Spannungsquellenverhalten.
     }
+    %; todo viel zu schnell
     \speech{02_Spannungs_und_Stromquellen9}{2}{
-        Denn wenn jetzt der Innenwiderstand 1 Ohm ist, der Lastwiderstand 100 Ohm, dann fließt bei U-0 gleich 10 Volt ziemlich genau ein Strom von 100 mA – genau genommen 99,9 mA. Wenn wir jetzt den Lastwiderstand auf 1 kilo-Ohm erhöhen, dann ändert sich der Strom, in rot zu sehen, aber die Spannung am in blau, die an dem Lastwiderstand abfällt bleibt, wie im graphen zu sehen ist, nahezu konstant bei etwa 10 Volt.
-        Das heißt immer dann, wenn der Lastwiderstand groß ist im Vergleich zum Innenwiderstand, haben wir eher Spannungsquellenverhalten. Völlig egal, ob wir eine Strom oder Spannungsquelle Schaltung haben.
-        Wenn wir den linken Teil des graphen betrachten, sehen wir die Spannung U-R fällt ab. Das liegt daran, das der Lastwiderstand so klein wird, dass der großteil der Spannung nun am innenwiderstand abfällt.
-        Wenn der LastWiderstand R 0 Ohm hat, also ein Kurzschluss ist, dann fällt die gesamte Spannung am Innenwiderstand R-i ab.
+        Denn wenn jetzt der Innenwiderstand ein Ohm ist und der Lastwiderstand einhundert Ohm beträgt, dann fließt bei U-0 gleich zehn Volt etwa ein Strom von hundert milli-Ampere. Wenn wir jetzt den Lastwiderstand auf ein kilo-Ohm erhöhen, dann ändert sich der Strom, in rot zu sehen, aber die Spannung in blau, die an dem Lastwiderstand abfällt, bleibt, wie im graphen zu sehen ist, nahezu konstant bei etwa Zehn Volt.
+        Das heißt immer dann, wenn der Lastwiderstand groß ist im Vergleich zum Innenwiderstand, haben wir eher Spannungsquellenverhalten. Völlig egal, ob wir die Schaltung einer Strom oder Spannungsquelle haben.
+        Wenn wir nun den linken Teil des graphen betrachten, sehen wir die Spannung U-R fällt bei kleinen Lastwiderständen ab. Das liegt daran, das der Lastwiderstand so klein wird, dass der großteil der Spannung nun am innenwiderstand abfällt.
+        Wenn der Lastwiderstand R Null Ohm hat, also ein Kurzschluss ist, dann fällt die gesamte Spannung am Innenwiderstand R-i ab. . .
     }
+    \silence{4}
 \end{frame}
 
 \begin{frame}
