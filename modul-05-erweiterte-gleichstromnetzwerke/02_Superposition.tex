@@ -53,7 +53,7 @@
     }
 
     \fu{
-        \input{Tikz/src/blackbox.tex}
+        \input{Tikz/src/blackbox.tex}\alttext{Die Grafik zeigt ein Blockdiagramm mit einem einzelnen rechteckigen Block T in der Mitte. Links führt ein waagerechter Pfeil mit der Bezeichnung F_E(Eingangsgröße) auf den Block zu, rechts verlässt ihn ein Pfeil mit der Bezeichnung F_A(Ausgangsgröße). Der Block T steht damit für ein System welches transformiert werden soll, dass die Eingangsgröße F_E in die Ausgangsgröße F_A überführt.}
         }{{\bf Blackbox in der Systemtheorie.} Eine Blackbox mit linksseitiger Eingangsgröße und rechtsseitiger Ausgangsgrößen.
         \label{BildBlackBox}}}
 
@@ -102,8 +102,7 @@
 
     \onslide<2->{
     \fu{
-        \input{Tikz/src/spannungsteilerblackbox.tex}
-        
+        \input{Tikz/src/spannungsteilerblackbox.tex}\alttext{Die Schaltung zeigt ein Zweipol-Netzwerk T als einfachen Spannungsteiler aus zwei in Serie geschalteten Widerständen R_1(oben) und R_2(unten). Zwischen den oberen und unteren Anschlussklemmen liegt die Eingangsspannung U_Ein in vertikaler Richtung an. Am Verbindungsknoten zwischen R_1 und R_2 wird die Ausgangsspannung U_A nach rechts abgegriffen.}
         }{{\bf Spannungsteiler als Blackbox.} Betrachtung eines elektrischen Netzwerkes als Blackbox mit Eingangsspannung und Ausgangsspannung.
         \label{BildElektrischesSystem}}}
 
@@ -166,15 +165,15 @@
     \fu{
         \resizebox{.9\textwidth}{!}{%
         \begin{minipage}{0.2\textwidth}
-            \input{Tikz/src/transformation1.tex}	
+            \input{Tikz/src/transformation1.tex}\alttext{Die Abbildung zeigt links einen Zeitverlauf x(t), der bei t_0 sprunghaft von 0 auf einen konstanten Wert ansteigt (Eingangssprung).}	
 		\end{minipage}
         \hspace{0.1cm}
         \begin{minipage}{0.5\textwidth}
-            \input{Tikz/src/transformation2.tex}	
+            \input{Tikz/src/transformation2.tex}\alttext{Dieses Signal x(t)  wird in einen Block T eingespeist.}		
 		\end{minipage}
         \hspace{0.1cm}
         \begin{minipage}{0.2\textwidth}
-            \input{Tikz/src/transformation3.tex}	
+            \input{Tikz/src/transformation3.tex}\alttext{Rechts ist der Ausgangsverlauf y(t)  dargestellt: Er beginnt ebenfalls bei t_0, steigt jedoch nicht sprunghaft, sondern verzögert und kontinuierlich an, bis er sich auf einem neuen konstanten Niveau einpendelt.}		
 		\end{minipage}
         }
 	}{{\bf Transformation eines kausalen Systems.} Aus $x(t)$ transformiertes System zu $y(t)$ für ein kausales System. \label{BildKausalesSystem}}}
@@ -263,15 +262,15 @@
         \resizebox{.6\textwidth}{!}{%
         \hspace{0.1cm}
         \begin{minipage}{0.3\textwidth}
-            \input{Tikz/src/umwandlungspannungsquelle1.tex}	
+            \input{Tikz/src/umwandlungspannungsquelle1.tex}\alttext{Die Grafik zeigt links eine ideale Spannungsquelle.}
 		\end{minipage}
         \hspace{0.1cm}
         \begin{minipage}{0.2\textwidth}
-            \input{Tikz/src/umwandlungspannungsquelle2.tex}	
+            \input{Tikz/src/umwandlungspannungsquelle2.tex}\alttext{Ein Pfeil weist auf eine Ersatzschaltung rechts hin.}	
 		\end{minipage}
         \hspace{0.1cm}
         \begin{minipage}{0.3\textwidth}
-            \input{Tikz/src/umwandlungspannungsquelle3.tex}		
+            \input{Tikz/src/umwandlungspannungsquelle3.tex}\alttext{Die Ersatzschaltung rechts zeigt nur noch eine durchgehende vertikale Leitung mit zwei Klemmen. Damit wird veranschaulicht, dass eine ideale Spannungsquelle im ausgeschalteten bzw. genullten Zustand (U_q=0) durch einen Kurzschluss ersetzt werden kann.}		
 		\end{minipage}
         \hspace{0.1cm}
         }
@@ -288,15 +287,15 @@
         \resizebox{.6\textwidth}{!}{%
         \hspace{0.1cm}
         \begin{minipage}{0.3\textwidth}
-            \input{Tikz/src/umwandlungstromquelle1.tex}	
+            \input{Tikz/src/umwandlungstromquelle1.tex}\alttext{Die Abbildung zeigt links eine ideale Stromquelle.}	
 		\end{minipage}
         \hspace{0.1cm}
         \begin{minipage}{0.2\textwidth}
-            \input{Tikz/src/umwandlungstromquelle2.tex}	
+            \input{Tikz/src/umwandlungstromquelle2.tex}\alttext{Ein Pfeil weist auf die Ersatzschaltung rechts hin.}	
 		\end{minipage}
         \hspace{0.1cm}
         \begin{minipage}{0.3\textwidth}
-            \input{Tikz/src/umwandlungstromquelle3.tex}		
+            \input{Tikz/src/umwandlungstromquelle3.tex}\alttext{Die Ersatzschaltung rechts hin zeigt nur noch zwei voneinander getrennte Klemmen ohne Verbindung. Damit wird veranschaulicht, dass eine ideale Stromquelle im genullten Zustand (I_q=0) durch einen Leerlauf, also offene Klemmen, ersetzt wird.}		
 		\end{minipage}
         \hspace{0.1cm}
         }
@@ -367,7 +366,7 @@
 
     \fu{
         \resizebox{.6\textwidth}{!}{%
-		\input{Tikz/src/ueberlagerungssatz.tex}
+		\input{Tikz/src/ueberlagerungssatz.tex}\alttext{Die Schaltung besteht aus einem rechteckigen Leitungsrahmen mit zwei Spannungsquellen U_1 links und U_2 rechts, deren Pfeile beide nach unten zeigen. Oben liegen zwei Widerstände in Serie: links R_1  zwischen der linken Quelle und einem mittleren Knoten, rechts R_3 zwischen diesem Knoten und der rechten Quelle. Vom mittleren oberen Knoten führt senkrecht nach unten ein weiterer Widerstand R_2 zu einem unteren Knoten, der die beiden unteren Anschlüsse der Spannungsquellen verbindet.}
 		}%
     }{{\bf Elektrisches Netzwerk mit zwei Spannungsquellen zur Erklärung des Überlagerungssatzes.} Die Spannungsquellen sollen
     nacheinander für das elektrische Netzwerk analysiert werden. \label{BildÜberlagerungssatz}}
@@ -393,7 +392,7 @@
 
     \fu{
         \resizebox{0.8\textwidth}{!}{%
-		\input{Tikz/src/ueberlagerungssatzquellen.tex}
+		\input{Tikz/src/ueberlagerungssatzquellen.tex}\alttext{Die Abbildung zeigt zwei getrennte Schaltungen mit identischer Widerstandsanordnung R_1, R_2, R_3: Oben liegen R_1 und R_3 in Serie, vom Knoten zwischen ihnen führt der Widerstand R_2 senkrecht nach unten zum unteren gemeinsamen Rückleiter. Links ist im Fall U_1 nur die linke Spannungsquelle U_1 in Serie mit dem Netzwerk aktiv, die rechte Quelle ist durch eine Leitung (Kurzschluss) ersetzt. Rechts ist im Fall U_2 nur die rechte Spannungsquelle U_2 aktiv, während die linke Quelle durch eine direkte Verbindung ersetzt ist.}
 		}%
     }{{\bf Elektrisches Netzwerk mit zwei Spannungsquellen zur Erklärung des Überlagerungssatzes.} Links wird das Netzwerk für die Analyse
     der Spannungsquelle $U_1$ und rechts für die Spannungsquelle $U_2$ gezeigt.  \label{BildÜberlagerungssatzQuellen}}
@@ -460,14 +459,14 @@
 
                 
                 \fu{
-                    \input{Tikz/src/superposition1.tex}
+                    \input{Tikz/src/superposition1.tex}\alttext{Die Schaltung besteht aus einem rechteckigen Rahmen mit drei senkrechten Zweigen zwischen einer gemeinsamen oberen und unteren Sammelschiene. Links liegt eine Spannungsquelle U_g mit einem Serienwiderstand R_i, in der Mitte ein Widerstand R_1, rechts ein Widerstand R_2 sowie ganz außen eine Stromquelle mit Strom I_g nach oben. Oben verbindet der Widerstand R_3 den Knoten über R_1 mit dem Knoten über R_2; durch R_3 fließt der Strom I_3 von links nach rechts.}
                 }{{\bf Beispiel.} Netzwerkanalyse mit Kirchhoffschen Regeln. \label{BildBeispielaufgabeSuperposition}}
                     }
 			\only<2>{			
 				\item[a)] Angabe der Ströme und Spannungen:
                 \begin{figure}[H]
                     \resizebox{0.65\textwidth}{!}{%   
-                        \input{Tikz/src/superposition2.tex}
+                        \input{Tikz/src/superposition2.tex}\alttext{Die Schaltung besteht aus zwei horizontalen Sammelschienen (oben und unten), zwischen denen drei senkrechte Widerstandszweige liegen: links die Serienschaltung aus Spannungsquelle U_g und Innenwiderstand R_i, in der Mitte R_1, rechts R_2. Über den drei Widerständen fallen die Spannungen U_Ri, U_1 und U_2 nach unten ab, die zugehörigen Ströme I_0, I_1 und I_2 sind ebenfalls nach unten eingezeichnet. Die oberen Knoten über R_1 und R_2 sind zusätzlich durch den Widerstand R_3 mit Spannung U_3 und Strom I_3(von links nach rechts) verbunden, und ganz rechts speist eine Stromquelle mit Strom I_g nach oben die obere Sammelschiene.}
                     }\centering                                                           
                 \end{figure}
                     }    
@@ -476,7 +475,7 @@
 				\onslide<3>{
                     \begin{figure}[H]
                         \resizebox{0.65\textwidth}{!}{%  
-                        \input{Tikz/src/superposition3.tex}
+                        \input{Tikz/src/superposition3.tex}\alttext{Die Schaltung hat zwei horizontale Sammelschienen (oben und unten), dazwischen drei senkrechte Zweige. Links liegt eine Spannungsquelle U_g mit dem Serienwiderstand R_i, durch den der Strom I_0 nach oben fließt und die Spannung U_Ri nach unten abgegriffen ist. In der Mitte und rechts stehen die Widerstände R_1 und R_2 mit Spannungen U_1 und U_2 sowie Strömen I_1 und I_2, jeweils nach unten gerichtet. Der obere Knoten über R_1(Knoten K_1) ist über den Widerstand R_3 mit dem oberen Knoten über R_2 verbunden; über R_3 liegen die Spannung U_3 und der Strom I_3 von links nach rechts.}
                         }\centering                                                           
                     \end{figure}
 					\begin{eqa}
@@ -492,7 +491,7 @@
 				\onslide<4>{
                     \begin{figure}[H]
                         \resizebox{0.65\textwidth}{!}{%  
-                        \input{Tikz/src/superposition4.tex}
+                        \input{Tikz/src/superposition4.tex}\alttext{Die Schaltung hat zwei horizontale Sammelschienen (oben und unten), zwischen denen drei senkrechte Widerstände liegen: ganz links R_i, in der Mitte R_1, rechts R_2; ganz rechts verbindet zusätzlich eine Stromquelle die untere mit der oberen Schiene. Die oberen Knoten über R_1 und R_2 heißen K_1 bzw. K_2 und sind über den Widerstand R_3 verbunden, auf dem die Spannung U_3 und der Strom I_3 von links nach rechts eingezeichnet sind. Durch R_i fließt der Strom I_0 nach oben, durch R_1 und R_2 die Ströme I_1 und I_2 nach unten, und die Stromquelle rechts speist den Strom I_g nach oben in die obere Schiene.}
                         }\centering                                                           
                     \end{figure}
 					\begin{eqa}

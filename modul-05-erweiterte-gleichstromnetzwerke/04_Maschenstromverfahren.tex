@@ -39,7 +39,7 @@
 
 	\fu{   
         \resizebox{0.7\textwidth}{!}{%                                         
-        \input{Tikz/src/Netzwerk_Maschenstrom}
+        \input{Tikz/src/Netzwerk_Maschenstrom}\alttext{Die Schaltung hat eine obere und eine untere Sammelschiene, zwischen denen drei Zweige liegen. Links befindet sich eine Spannungsquelle U_0 mit dem Serienwiderstand R_0; über R_0 ist die Spannung U_R0 und der Strom I_0 nach unten eingezeichnet. In der Mitte verbindet der Widerstand R_1 mit Spannung U_R1 und Strom I_1 nach unten die beiden Schienen, rechts liegt ein Zweig: ein Widerstand R_2 mit Spannung U_R2 und Strom I_2 nach oben parallel zu einer Stromquelle mit Strom I_q nach unten.}
         }                                                  
     }{{\bf Netzwerk für das Maschenstromverfahren.} Elektrisches Netzwerk mit einer Spannungsquelle, einer Stromquelle und drei Widerständen. Anhand des Netzwerkes wird 
     das Maschenstromverfahren erläutert. \label{BildMaschenstromverfahren}}   
@@ -70,7 +70,7 @@
 	}    
 
     \fu{                                     
-        \input{Tikz/src/Umwandlung_Stromquelle}                                                   
+        \input{Tikz/src/Umwandlung_Stromquelle}\alttext{Die Grafik zeigt links ein Zweipolnetzwerk: eine Stromquelle mit Strom I_q nach oben liegt parallel zu einem Widerstand R_i zwischen zwei Anschlussklemmen. Ein Pfeil zeigt auf die äquivalente Darstellung rechts: dort befindet sich eine Spannungsquelle U_q nach unten in Serie mit demselben Widerstand R_i im oberen Zweig. Beide Darstellungen beschreiben dasselbe äußere Verhalten des Zweipols.}                                                  
     }{{\bf Umwandlung einer Stromquelle.} Umwandlung einer Stromquelle mit Parallelwiderstand zur Spannungsquelle mit Serienwiderstand. \label{BildMasch1}}   
 
     \s{
@@ -131,7 +131,9 @@
 
     \fu{                                     % Beginn Bild Netzwerk 1 mit rotem Kreis
 		\resizebox{\textwidth}{!}{%
-        \input{Tikz/src/Umwandlung_Stromquelle_Netzwerk}
+        \input{Tikz/src/Umwandlung_Stromquelle_Netzwerk}\alttext{Die Abbildung zeigt links einen Stromkreis mit drei Zweigen zwischen oberer und unterer Sammelschiene; der rechte Zweig ist rot eingekreist und enthält eine Stromquelle I_q nach unten und parallel dazu den Widerstand R_2 mit Spannung U_R2 und Strom I_2 nach oben.
+Rechts ist derselbe Gesamtstromkreis dargestellt, oben liegt der Widerstand R_2(Strom I_2nach unten, Spannung U_R2), darunter eine Spannungsquelle U_2 nach unten.
+}
         }                                           
     }{{\bf Umwandlung einer Stromquelle in einem elektrischen Netzwerk.} Umwandlung der Stromquelle mit Parallelwiderstand 
     des zu berechnenden Netzwerkes in eine Spannungsquelle mit Reihenwiderstand. Die Transformation der Quelle findet im roten 
@@ -171,7 +173,7 @@
 
     \fu{    
         \resizebox{0.7\textwidth}{!}{%                                                 
-        \input{Tikz/src/Maschen_im_Netzwerk}
+        \input{Tikz/src/Maschen_im_Netzwerk}\alttext{Die Schaltung besteht aus einem rechteckigen Rahmen mit drei senkrechten Zweigen zwischen einer oberen und unteren Sammelschiene. Links liegt eine Spannungsquelle U_0 in Serie mit dem Widerstand R_0; rechts unten eine Spannungsquelle U_1, über ihr im selben Zweig der Widerstand R_2 mit Spannungsabfall U_R2. In der Mitte verbindet der Widerstand R_1(Spannung U_R1, Strom I_1 nach unten) die beiden Sammelschienen. Die beiden rechteckigen Teilbereiche links und rechts des Mittelschenkels bilden die Maschen M_1 und M_2, in denen die Ströme I_0(links) und I_2(rechts) festgelegt sind.}
         }                                                            
     }{{\bf Maschen im elektrischen Netzwerk.} Festlegung der Maschen $M_1$ und $M_2$ sowie der zugehörigen Maschenströme. 
     \label{BildMasch3}}                                                
@@ -226,7 +228,7 @@
 
     \fu{    
         \resizebox{0.7\textwidth}{!}{%                                                 
-        \input{Tikz/src/Festlegung_der_Zweige}
+        \input{Tikz/src/Festlegung_der_Zweige}\alttext{Die Schaltung ist dieselbe wie zuvor: ein Rechteck mit drei senkrechten Zweigen R_0 links, R_1 in der Mitte und R_2 rechts, links unten eine Spannungsquelle U_0, rechts unten U_1. Neu ist die farbliche Markierung: Der komplette linke Maschenweg über U_0, R_0, die obere und die untere Sammelschiene ist in Blau hervorgehoben. Der mittlere Zweig mit dem Widerstand R_1 ist zusätzlich als gestrichelte, grüne Linie betont, um den Spannungsabfall U_R1 bzw. den Bezug zwischen oberem und unterem Knoten in dieser Masche hervorzuheben.}
         }                                                            
     }{{\bf Festlegung der Zweige.} Elektrisches Netzwerk mit hervorgehobenen Zweigen zur Erstellung der Widerstandsmatrix für das Maschenstromverfahren
     \label{BildWiderstandsmatrix}}
@@ -401,7 +403,7 @@ Somit sind dann alle Größen des Netzwerkes identifiziert worden.}
 
     \fu{  
         \resizebox{0.4\textwidth}{!}{%                                     
-        \input{Tikz/src/Beispiel_Maschenanalyse}
+        \input{Tikz/src/Beispiel_Maschenanalyse}\alttext{Die Schaltung besitzt eine obere und eine untere Sammelschiene. Links liegt eine Spannungsquelle U_0 in Serie mit dem Widerstand R_0; in der Mitte verbindet ein senkrechter Zweig aus zwei in Reihe geschalteten Widerständen R_3 und R_4 die beiden Schienen. Vom oberen Knoten dieses Mittelzweigs geht nach rechts eine Reihenschaltung aus Spannungsquelle U_1 und Widerstand R_1, vom mittleren Knoten eine horizontale Leitung mit dem Widerstand R_5. Rechts unten befindet sich in der Hauptleitung eine Stromquelle, parallel dazu ein Nebenzweig mit dem Widerstand R_2; an allen Bauelementen sind Ströme und Spannungsabfälle mit Pfeilen gekennzeichnet.}
         }                  
     }{{\bf Beispiel.} Maschenstromanalyse an einem elektrischen Netzwerk. \label{BildMasch4}}                                            
     
@@ -412,7 +414,7 @@ Somit sind dann alle Größen des Netzwerkes identifiziert worden.}
             \item[a)] Vorbereitung des Netzwerkes:
 			\begin{figure}[H]
                 \resizebox{0.7\textwidth}{!}{%
-                    \input{Tikz/src/Vorbereitung_Netzwerk}	
+                    \input{Tikz/src/Vorbereitung_Netzwerk}\alttext{Die Schaltung hat eine obere und eine untere Sammelschiene; links speist eine Spannungsquelle U_0 mit dem Serienwiderstand R_0, in der Mitte verbinden die senkrechten Widerstände R_3(oben) und R_4(unten) die beiden Schienen. Vom oberen Mittelknoten führt nach rechts eine Serienschaltung aus Spannungsquelle U_1 und Widerstand R_1, vom mittleren Knoten eine waagerechte Leitung mit dem Widerstand R_5 zu einem rechten Knoten. Unten rechts ist in einem roten Kreis ein Teilnetz hervorgehoben, das aus einer Spannungsquelle U_2 und dem in Reihe liegenden Widerstand R_2 besteht, über den der Strom I_2 nach rechts fließt.}	
                     }\centering                                                           
                 \end{figure}
             }
@@ -421,7 +423,7 @@ Somit sind dann alle Größen des Netzwerkes identifiziert worden.}
             \onslide<3>{
                 \begin{figure}[H]
                 \resizebox{0.4\textwidth}{!}{%                                                        
-                    \input{Tikz/src/Maschen_definieren}
+                    \input{Tikz/src/Maschen_definieren}\alttext{Die Schaltung besitzt einen rechteckigen Rahmen mit drei senkrechten Zweigen: links eine Spannungsquelle U_0 mit Serienwiderstand R_0, in der Mitte zwei übereinander angeordnete Widerstände R_3(oben) und R_4(unten), rechts ein reiner Leitungszweig ohne Bauteil. Vom oberen mittleren Knoten führt nach rechts eine Serienschaltung aus Spannungsquelle U_1 und Widerstand R_1, vom mittleren Knoten eine waagerechte Leitung mit Widerstand R_5, vom unteren mittleren Knoten nach rechts eine Serienschaltung aus Spannungsquelle U_2 und Widerstand R_2. Ströme und Spannungsabfälle sind an allen Widerständen und Quellen eingezeichnet, und die drei geschlossenen Umläufe links, rechts oben und rechts unten sind als Maschen M_1, M_2 und M_3 markiert.}
                     }\centering                                                           
                 \end{figure}
             \pause

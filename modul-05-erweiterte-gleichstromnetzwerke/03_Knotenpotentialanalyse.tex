@@ -23,7 +23,7 @@
 
 	\fu{   
         \resizebox{0.7\textwidth}{!}{%                                         
-        \input{Tikz/src/knotenpotentialverfahren.tex}
+        \input{Tikz/src/knotenpotentialverfahren.tex}\alttext{Die Schaltung besitzt eine obere und eine untere Sammelschiene. Links speist eine Spannungsquelle U_0 mit dem Serienwiderstand R_0 den Rahmen, der Strom I_0 fließt dabei nach oben, über R_0 liegt die Spannung U_R0. In der Mitte verbindet der Widerstand R_1(mit U_R1, Strom I_1 nach unten) die beiden Schienen, rechts oben liegt der Widerstand R_3 zwischen dem mittleren oberen Knoten und einem rechten oberen Knoten, mit Spannung U_R3 und Strom I_3 nach rechts. Von diesem rechten oberen Knoten führen zwei parallele Zweige zur unteren Schiene: ein Widerstand R_2 mit Spannung U_R2 und Strom I_2 nach oben sowie eine Stromquelle mit Quellenstrom I_q2 nach unten.}
         }                                                  
     }{{\bf Netzwerk für das Knotenpotentialverfahren.} Elektrisches Netzwerk mit einer Spannungsquelle, einer Stromquelle und vier Widerständen. Anhand des Netzwerkes wird 
     das Knotenpotentialverfahren erläutert. \label{BildKnotenpotentialverfahren}}  
@@ -65,7 +65,7 @@
 
 	\fu{  
         \resizebox{0.7\textwidth}{!}{%                                     
-         \input{Tikz/src/knot1.tex}
+         \input{Tikz/src/knot1.tex}\alttext{Die Abbildung zeigt links eine ideale Spannungsquelle U_q mit einem Serienwiderstand R_i; die Quellspannung fällt über R_i als U_Ri ab. Ein Pfeil weist auf eine rechts dargestellte Ersatzschaltung, in der eine ideale Stromquelle mit Strom I_q parallel zu demselben Widerstand R_i liegt; durch R_i fließt der Strom I_Ri nach unten. Es wird damit die Umwandlung der Spannungsquelle mit Innenwiderstand in die äquivalente Stromquellenschaltung illustriert.}
 		}                                               
     }{{\bf Umwandlung einer Spannungsquelle.} Umwandlung einer Spannungsquelle mit Reihenwiderstand zur Stromquelle mit 
 	Parallelwiderstand. \label{BildKnot1}}}   
@@ -109,7 +109,7 @@
 	
 		\fu{   
         \resizebox{\textwidth}{!}{%                                         
-			\input{Tikz/src/knot2.tex}
+			\input{Tikz/src/knot2.tex}\alttext{Die Abbildung zeigt zwei nahezu identische Schaltungen, links und rechts nebeneinander, verbunden durch einen Pfeil. In der linken Schaltung ist der linke Zweig rot eingekreist: eine Spannungsquelle U_q0 mit einem Serienwiderstand R_i0. In der rechten Schaltung ist derselbe Zweig wieder rot eingekreist, jetzt jedoch als äquivalente Stromquelle I_q0 mit einem parallel dazu liegenden Leitwert bzw. Widerstand G_i0 dargestellt. Alle übrigen Zweige der Schaltung bleiben unverändert.}
         }                                                  
     }{{\bf Umwandlung des Netzwerkes für das Knotenpotentialverfahren.} Die Spannungsquelle $U_0$ wird zu der Stromquelle $I_\mathrm{q0}$, außerdem werden die 
 	Widerstandsangaben R zu Leitwerten G. \label{BildKnot2}}  
@@ -157,7 +157,7 @@
 		
 	\fu{   
 		\resizebox{0.7\textwidth}{!}{%                                         
-		\input{Tikz/src/knot3.tex}
+		\input{Tikz/src/knot3.tex}\alttext{Die Schaltung besitzt eine obere und eine untere Sammelschiene; dazwischen liegen drei senkrechte Leitwerte G_0(links), G_1(Mitte) und G_2(rechts). Über G_0 und G_2 fließen die Ströme I_0 bzw. I_2 von unten nach oben bei den Spannungen U_G0 und U_G2, parallel dazu sind jeweils Stromquellen I_q0 und I_q2 von oben nach unten zwischen denselben Knoten geschaltet. Die oberen Knoten K_1 und K_2 sind über den waagerechten Leitwert G_3 mit Strom I_3 nach rechts und Spannung U_G3 verbunden, während G_1 den oberen Leiter mit dem unteren Knoten K_0 verbindet (Strom I_1 nach unten, Spannung U_G1).}
 		}                                                  
 	}{{\bf Umgewandeltes Netzwerk.} Festlegung des Bezugsknotens $K_0$ und der fortlaufenden Knoten $K_1$ und $K_2$. \label{BildKnot3}}} 
 
@@ -254,7 +254,10 @@
 
 	\fu{
 		\resizebox{0.6\textwidth}{!}{%  
-		\input{Tikz/src/leitwertmatrix.tex}		
+		\input{Tikz/src/leitwertmatrix.tex}	\alttext{Die Schaltung ist das bekannte Leitwertnetz mit G_0, G_1, G_2 als vertikalen Zweigen und dem Leitwert G_3 zwischen den oberen Knoten K_1und K_2.
+Der durchgehende blaue Leiterzug markiert den Weg vom unteren linken Bezugsknoten über den Zweig mit G_0 nach oben und weiter entlang der oberen Sammelschiene bis zum Knoten K_1.
+Der grün gestrichelte Leiterzug zeigt den weiteren Verlauf vom Knoten K_1 über den Leitwert G_3 zum rechten oberen Knoten K_2.
+}	
 		}
 	}{{\bf Elektrisches Netzwerk mit hervorgehobenen Zweigen.} Erstellung der Leitwertmatrix für das Knotenpotentialverfahren 
 	\label{BildLeitwertmatrix}}
@@ -386,7 +389,7 @@
 
     \fu{  
         \resizebox{0.5\textwidth}{!}{%                                     
-        \input{Tikz/src/knot4.tex}
+        \input{Tikz/src/knot4.tex}\alttext{Die Abbildung zeigt einen rechteckigen Stromkreis mit oberer und unterer Sammelschiene. Links befindet sich eine Spannungsquelle U_0 mit dem Serienwiderstand R_0; in der Mitte verbindet eine vertikale Reihenschaltung aus R_3 und R_4 die beiden Schienen, rechts oben liegt ein Zweig aus Spannungsquelle U_1 und Widerstand R_1. Vom Knoten zwischen R_3 und R_4 führt ein horizontaler Zweig mit dem Widerstand R_5 zum rechten Rahmen, und rechts unten ist eine Stromquelle parallel zu einem Widerstand R_2 angeordnet. An allen Widerständen und Quellen sind die zugehörigen Spannungen U_R0, U_R3, U_R4, U_R5, U_R2, U_1, U_0 sowie die Ströme I_0, I_1, I_3, I_4, I_5, I_q2, I_2 eingezeichnet.}
         }                  
     }{{\bf Beispiel.} Knotenpotentialverfahren an einem elektrischen Netzwerk. \label{BildKnot4}}                                            
 }
@@ -396,7 +399,7 @@
             \item[a)] Vorbereitung des Netzwerkes:
 			\begin{figure}[H]
                 \resizebox{0.65\textwidth}{!}{%
-                    \input{Tikz/src/knot5.tex}	
+                    \input{Tikz/src/knot5.tex}\alttext{Die Schaltung besteht aus einer oberen und unteren Sammelschiene mit drei Hauptzweigen: links ein Leitwert G_0 parallel zu einer Stromquelle I_q0, in der Mitte die in Serie liegenden Leitwerte G_3 und G_4. Rechts ist der gemeinsame Knoten dieses Netzes über einen oberen Parallelzweig aus Leitwert G_1 und Stromquelle I_q1 sowie über einen unteren Parallelzweig aus Leitwert G_2 und Stromquelle I_q2 mit der unteren Schiene verbunden. Zwischen dem mittleren senkrechten Zweig und dem rechten Knoten liegt zusätzlich der horizontale Leitwert G_5; an allen Leitwerten sind Spannungen U_Gi und Ströme I_i mit eingezeichneter Richtung markiert.}	
                 }\centering                                                           
             \end{figure}
             }
@@ -405,7 +408,7 @@
             \onslide<3>{
 			\begin{figure}[H]
              	\resizebox{0.4\textwidth}{!}{%                                                        
-                    \input{Tikz/src/knot6.tex}
+                    \input{Tikz/src/knot6.tex}\alttext{Die Schaltung besitzt vier Knoten K_0, K_1, K_2 und K_3, die durch einen rechteckigen Leitungsrahmen verbunden sind. Links liegt an K_0 ein Zweig aus Leitwert G_0(Strom I_0 nach oben, Spannung U_G0) parallel zu einer Stromquelle I_q0. Zwischen K_2 und K_0 verläuft in der Mitte ein senkrechter Zweig mit den Leitwerten G_3(oben) und G_4(unten), vom Zwischenknoten K_1 führt waagrecht der Leitwert G_5 nach rechts zum Knoten K_3. An K_2 und K_0 sind jeweils weitere Zweige angeschlossen: oben G_1 parallel zu I_q1, unten G_2 parallel zu I_q2, deren Ströme und Spannungen im Bild eingetragen sind.}
                 }\centering                                                           
             \end{figure}
             \pause
