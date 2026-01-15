@@ -1,3 +1,184 @@
+\s{\section{Magnetischer Fluss und Flussdichte\label{Flussdichte}}}
+\newvideofile{MagnetischerKreis}{Magnetischer Kreis}
+\v{
+	%Videoframe
+	\begin{frame}{Lernziele}
+		\begin{Lernziele}{Magnetischer Fluss und Flussdichte}
+			Du kannst ...
+			\begin{itemize}
+				\item ... Grundgrößen wie magnetische Feldstärke, magnetischer Flussdichte, magnetischen Fluss und die Permeabilität definieren.
+				\item ... den Zusammenhang zwischen diesen Größen erklären.
+				\item ... das Verhalten ferromagnetischer Werkstoffe anhand der Hysterese-Kurve beschreiben.
+				\item ... Rechenaufgaben im magnetischen Kreis lösen.
+			\end{itemize}
+		\end{Lernziele}
+		\speech{LernzieleMagnetischerFluss}{1}{In diesem Video erhaltet ihr einen Einblick in die Grundgrößen des magnetischen Kreises. Dazu zählen die magnetische Flussdichte, der magnetische Fluss und die Permeabilität, die auch als magnetischer Widerstand bezeichnet wird. Darüber hinaus könnt ihr den Zusammenhang zwischen den jeweiligen Größen beschreiben und Rechnenbeispiele zum magnetischen Kreis lösen.}
+		\silence{2}
+		\speech{LernzieleMagnetischerFluss}{2}{Des Weiteren machen wir einen Exkurs in die Material-Kunde. Hier lernt ihr die ferromagnetischen Eigenschaften wie die Koerzi-tivfeldstärke, die Rema-nenz-Flussdichte und die Sättigung, anhand der Hysterése-Kurve kennen.}
+	\end{frame}
+}
+\v{
+	%Videoframe
+	\begin{frame}{Magnetischer Fluss}
+		Der Magnetische Fluss wird dargestellt mit dem Formelzeichen $\varPhi$ und der Einheit Weber (Wb).
+		\begin{eq}
+			\onslide<2->\mathrm{Wb}=\mathrm{V}\cdot\mathrm{s}=\frac{\mathrm{kg}\cdot\mathrm{m}^2}{\mathrm{s}^2\cdot\mathrm{A}}
+		\end{eq}
+		
+		\speech{magnetischerFluss}{1}{Der magnetische Fluss ist in Analogie zum elektrischen Kreis mit dem Strom vergleichbar. Entgegen der Bezeichnung findet hier jedoch kein Fluss von magnetischen Teilchen statt, sondern er ist sinnbildlich als die Menge des Magnetfelds zu verstehen und wirkt in Folge der magnetischen Spannung.}
+		\speech{magnetischerFluss}{2}{Das Formelzeichen des magnetischen Flusses ist Phi und die Einheit dazu ist Weber. Ein Weber entspricht einer Volt-Sekunde.}
+		\silence{2}
+		
+	\end{frame}
+}
+
+\begin{frame} \ftx{Magnetischer Fluss und Flussdichte}
+	\index{Magnetische Flussdichte}\index{Flussdichte}\index{Magnetischer Fluss}
+	\s{
+		Der magnetische Fluss ist analog zum elektrischen Kreis mit dem Strom vergleichbar. Entgegen der Terminologie findet jedoch kein Fluss von magnetischen Teilchen statt, sondern er ist sinnbildlich als \glqq die Menge an Magnetfeld\grqq\,zu verstehen und wirkt in Folge der magnetischen Spannung. Das Formelzeichen des magnetischen Flusses ist $\varPhi$, die Einheit ist Weber (Wb). Ein Weber (Wb) ist gleichbedeutend mit einer Volt-Sekunde (Vs).
+		
+		Die Kraftwirkung eines Magneten ist abgesehen vom magnetischen Fluss auch von der durchfluteten Fläche abhängig. Je dichter die Feldlinien konzentriert sind, desto größer ist die magnetische Wirkung. Das wird durch die magnetische Flussdichte $B$ beschrieben, die im einfachsten Fall (nicht gekrümmte Fläche, homogene Flussdichte) durch den Quotienten aus dem magnetischen Fluss $\varPhi$ und der Fläche $A$ definiert ist. Die Einheit der Flussdichte ist Tesla (T). Die Richtung der Flussdichte $\vec{B}$ ist senkrecht zur Fläche, was durch den Normalenvektor zur Fläche $\vec{A}$ ausgedrückt wird.
+		
+		\begin{eq}
+			\vec{B} = \frac{\varPhi}{\vec{A}}\qquad [\mathrm{T}]
+		\end{eq}
+		\nomenclature[ET]{T}{Tesla - magnetische Flussdichte \nomunit{$\mathrm{T}=\frac{\mathrm{V}\cdot\mathrm{s}}{\mathrm{m}^2}=\frac{\mathrm{kg}}{\mathrm{s}^2\cdot\mathrm{A}}$}}
+		
+		Im allgemeinen Fall (ohne die oben genannten Einschränkungen) gilt:
+		
+		\begin{eq}
+			\varPhi = \iint_A \vec{B}\cdot\d \vec{A} \label{magnFlussFormel}
+		\end{eq}
+		\begin{Merksatz}{Magnetische Flussdichte}
+			Die magnetische Flussdichte $\vec{B}$ beschreibt die Konzentration des magnetischen Flusses $\varPhi$ senkrecht auf einer Fläche $A$.
+		\end{Merksatz}
+		
+		Sowohl die magnetische Feldstärke als auch die magnetische Flussdichte sind vektorielle Größen. Sie lassen sich daher grafisch durch Feldlinien zeichnen. Der magnetische Fluss $\varPhi$ ist dagegen eine skalare Größe.
+		
+		Die magnetische Flussdichte $\vec{B}$ und die magnetische Feldstärke $\vec{H}$ sind über die Permeabilität\index{Permeabilität} $\mu$ verbunden. Die Permeabilität besteht aus dem Produkt einer materialunabhängigen Kenngröße, der magnetischen Feldkonstanten $\mu_0=1,256\,637\,062\cdot10^{-6}\,\frac{\mathrm{Vs}}{\mathrm{Am}}$, und einer materialspezifischen Permeabilität $\mu_{\mathrm{r}}$. Die magnetische Feldkonstante beschreibt die Permeabilität im Vakuum und war bis zur Neuordnung der SI-Einheiten im Jahr 2019 mit dem Wert $\mu_0 = 4\pi\cdot10^{-7}\,\frac{\mathrm{Vs}}{\mathrm{Am}}$ genau definiert. Jetzt ist sie mit einer Messunsicherheit behaftet.
+		
+	}
+	
+	\s{
+		\begin{eq}
+			\vec{B} = \mu_0\cdot\mu_{\mathrm{r}}\cdot \vec{H}\label{GlFlussdichte}
+		\end{eq}
+	}
+	
+	\b{
+		\begin{columns}
+			\begin{column}{0.7\textwidth}
+				\begin{minipage}{0.8\textwidth}
+					% Nicht linearer Zusammenhang zwischen B und H -> Neukurve und Sättigung
+					\onslide<1->{
+						\fu{
+							\begin{tikzpicture}[domain=-6:6, scale=0.73]
+								\draw[->] (-6.1, 0) -- (6.2, 0) node[right] {$H$};
+								\draw[->] (0, -5.1) -- (0, 5.2) node[above] {$B$};
+								\draw (-0.2, 0) node[below] {0};
+								
+								\onslide<3->{
+									\draw[color=blue, smooth, domain=0:6] plot[id=hysterese1] function{(((x-6.1)**3)/50)+4.485};
+									\draw[->, color=blue, thick] (1, 1.82) -- (1.05, 1.91);
+									\draw (6, 4.85) node[left] {Sättigung};
+									\draw[color=blue] (2.2, -1.5) node[right] {Neukurve};
+								}
+								% Magnetisierung bleibt bei Reduktion erhalten (Punkt Br)
+								\onslide<4->{
+									\draw[color=red, smooth] plot[id=hysterese2] function{9/(1+0.4*exp(-1.1*x))-4.5};
+									\draw[->, color=red, thick] (-0.55, 0.7) -- (-0.61, 0.55);
+									\draw (-6, -4.85) node[right] {Sättigung};
+									\draw (-0.2, 1.9) node[left] {$B_{\mathrm{r}}$} -- (0.2, 1.9);
+								}
+								% Gilt ebenso in andere Richtung -> Hystereseschleife
+								\onslide<5->{
+									\draw[color=red, smooth] plot[id=hysterese3] function{9/(1+2.5*exp(-1.1*x))-4.5};
+									\draw[->, color=red, thick] (0.55, -0.7) -- (0.61, -0.55);
+									\draw[color=red] (2.2, -2.3) node[right] {Hystereseschleife};
+									\draw (-0.2, -1.9) -- (0.2, -1.9);
+									
+								}
+								%Zum Entmagnetisieren umgekehrte Koeffizienzfeldstärke (Hc)
+								\onslide<6->{
+									\draw (-0.85, 0.2) -- (-0.85, -0.2);
+									\draw (-1.1, 0.2);
+									\draw (0.85, 0.2) -- (0.85, -0.2);
+									\draw (1.1, -0.2) node[below] {$H_{\mathrm{c}}$};
+								}
+							\end{tikzpicture}
+						}{}
+					}
+				\end{minipage}
+			\end{column}
+			
+			\begin{column}{0.3\textwidth}
+				\only<1-2>{Magnetische Flussdichte: \par  $\vec{B} \quad \left[\mathrm{T}\right]$\\
+					Permeabilität: \par
+					$\mu\quad \left[1\right]$
+					\begin{eq}
+						\vec{B} = \mu_0\cdot\mu_{\mathrm{r}}\cdot \vec{H}
+					\end{eq}
+					
+					\onslide<2->{
+						Magnetischer Fluss: \par $\varPhi\quad \left[\mathrm{Wb}\right]$
+						\begin{align*}
+							\varPhi & = \iint\limits_A \vec{B}\cdot\d \vec{A} \\
+							\vec{B} & = \frac{\varPhi}{\vec{A}}
+						\end{align*}}
+				}
+				\only<3->{%
+					
+					Hartmagnetisch: \\
+					$H_{\mathrm{c}} > 10\cdot 10^{3}\,\frac{\mathrm{A}}{\mathrm{m}}$\\
+					z. B. Permanentmagnete\\
+					\vspace{0.5cm}
+					Weichmagnetisch:\\
+					$H_{\mathrm{c}} < 500\,\frac{\mathrm{A}}{\mathrm{m}}$\\
+					z. B. Aktoren\\
+					\vspace{0.5cm}
+				}
+				\only<4->{
+					Remanenzflußdichte $B_{\mathrm{r}}$\\
+					\vspace{0.5cm}
+				}
+				\only<6->{
+					Koerzitivfeldstärke $H_{\mathrm{c}}$
+				}
+				
+			\end{column}
+		\end{columns}
+		
+		
+	}
+	\s{
+		In einem ferromagnetischen\index{Ferromagnetismus} Material verläuft der Zusammenhang zwischen der magnetischen Feld\-stärke $\vec{H}$ und der magnetischen Flussdichte $\vec{B}$ nicht linear.
+		Die Permeabilität geht mit steigender Magnetisierung in Sättigung, sodass die relative Permeabilität $\mu_{\mathrm{r}}$ von einem materialabhängigen Anfangswert gegen 1 läuft.
+		Wird das magnetische Feld wieder reduziert (oder auf Null gesetzt), bleibt die Magnetisierung in einem gewissen Maße erhalten (Punkt $B_{\mathrm{r}}$ in Abbildung \ref{Hysterese}).
+		Dieser Vorgang wird Remanenz\index{Remanenz} genannt. Die verbleibende magnetische Flussdichte bei einer magnetischen Feldstärke von Null ist die Remanenzflussdichte $B_{\mathrm{r}}$.
+		Um den Stoff wieder komplett zu untmagnetisieren\index{Entmagnetisieren}, wird eine umgekehrte magnetische Feldstärke, die Koerzitivfeldstärke\index{Koerzitivfeldstärke} $H_{\mathrm{c}}$, benötigt.\index{Magnetisierungskennlinie}
+		\fu{
+			\input{Tikz/src/magnetisierungskurve_ferro}\alttext{Das Diagramm zeigt das Verhalten eines magnetischen Materials in Bezug auf die magnetische Flussdichte (B) und die magnetische Feldstärke (H). Die Sättigungskurve beschreibt den schnellen Anstieg von der Flussdichte mit zunehmender Feldstärke, bis ein Sättigungswert erreicht wird, an dem das Material vollständig magnetisiert ist. Die Rückkehrkurve verläuft unterhalb der Sättigungskurve und zeigt, dass die Flussdichte langsamer sinkt, wenn das externe Feld reduziert wird. Der Remanenzpunkt (Br) kennzeichnet die verbleibende Flussdichte, wenn das Feld entfernt ist. Die Sättigungskurve hat eine S-Form und asymptotische Annäherung an einen maximalen Wert, während die Rückkehrkurve anfangs steiler verläuft. Der Bereich zwischen den Kurven stellt die Hystereseschleife dar.}
+		}{{\bf Magnetisierungskurve eines ferromagnetischen Materials.} Die magnetische Feldstärke und die magnetische Flussdichte verhalten sich nicht linear zueinander. \label{Hysterese}}
+		
+		Anhand der Koerzitivfeldstärke werden ferromagnetische Materialien in hart- und weichmagnetische Materialien unterschieden. Hartmagnetische Werkstoffe (z. B. starke Dauermagnete aus Neodym-Eisen-Bor) verfügen dabei über einen Wert für $H_{\mathrm{c}}$ größer als $10\cdot 10^{3}\,\frac{\mathrm{A}}{\mathrm{m}}$, bei weichmagentischen Werkstoffen (z. B. Magnetkerne aus Mangan-Zink-Ferrit) liegt $H_{\mathrm{c}}$ bei kleiner als $500\,\frac{\mathrm{A}}{\mathrm{m}}$. Hartmagnetische Werkstoffe werden hauptsächlich für Permanentmagnete eingesetzt.\\
+		
+	}
+	
+	
+	\speech{magnetischerFlussFlussdichte}{1}{Sowohl die magnetische Feldstärke als auch die magnetische Flussdichte sind vektorielle Größen. Sie lassen sich daher grafisch durch Feldlinien zeichnen. Der magnetische Fluss Phi ist dagegen eine skalare Größe. Die magnetische Flussdichte Vektor B und die magnetische Feldstärke Vektor H sind über die Permeabilität Mü verbunden. Die Permeabilität ist dabei das Produkt einer materialunabhängigen Kenngröße, der magnetischen Feldkonstanten Mü Null und einer material spezifischen Permeabilität Mü R. Hieraus ergibt sich die Formel zur Berechnung der magnetischen Flussdichte.}
+	\silence{2}
+	\speech{magnetischerFlussFlussdichte}{2}{Die Kraftwirkung eines Magneten ist abgesehen vom magnetischen Fluss auch von der durchfluteten Fläche abhängig. Je dichter die Feldlinien konzentriert sind, desto größer ist die magnetische Wirkung. Das wird durch die magnetische Flussdichte B beschrieben, die im einfachsten Fall einer nicht gekrümmten Fläche eine homogene Flussdichte darstellt und durch den Quotienten aus dem magnetischen Fluss Phi und der Fläche A definiert werden kann. Die Einheit der Flussdichte ist Tesla. Die Richtung der Flussdichte Vektor B ist senkrecht zur Fläche, was durch den Normalenvektor zur Fläche Vektor A ausgedrückt wird. Im allgemeinen Fall, ohne die genannten Einschränkungen, gilt: Phi gleich dem Doppelintegral über A von Vektor B multipliziert mit d Vektor A. Die magnetische Flussdichte Vektor B beschreibt also die Konzentration des magnetischen Flusses Phi senkrecht auf einer Fläche A.}
+	\silence{2}
+	\speech{magnetischerFlussFlussdichte}{3}{In einem ferromagnetischen Material ist der Zusammenhang zwischen der magnetischen Feldstärke Vektor H und der magnetischen Flussdichte Vektor B nicht linear. Die Permeabilität geht mit steigender Magnetisierung in Sättigung, sodass die relative Permeabilität Mü R von einem materialabhängigen Anfangswert gegen Eins läuft. }
+	\silence{2}
+	\speech{magnetischerFlussFlussdichte}{4}{Wird das magnetische Feld wieder reduziert oder auf Null gesetzt, bleibt die Magnetisierung in einem gewissen Maße erhalten, was in der Abbildung mit dem Punkt B R abzulesen ist.}
+	\speech{magnetischerFlussFlussdichte}{5}{Dieser Vorgang wird Remanenz genannt. Die verbleibende magnetische Flussdichte bei einer magnetischen Feldstärke von Null ist die Remanenzflussdichte. }
+	\speech{magnetischerFlussFlussdichte}{5}{Um den Stoff wieder komplett zu untmagnetisieren, wird eine umgekehrte magnetische  Koerzitivfeldstärke H C benötigt.}
+	\silence{2}
+	
+	
+\end{frame}
+
 \begin{frame} \ftx{Beispiel: Magnetische Flussdichte}
 	\begin{bsp}{Magnetische Flussdichte}{}
 		Im Inneren einer dicht gewickelten Ringspule soll die magnetische Feldstärke $H=100\,\frac{\mathrm{A}}{\mathrm{m}}$ erzeugt werden. Die Spule hat einen mittleren Radius von $5\,\mathrm{cm}$.
@@ -18,76 +199,111 @@
 			      \end{align*}
 		\end{enumerate}
 	\end{bsp}
-		\speech{magnetischeFlussdichte}{1}{Betrachen wir in einem Beispiel, wie sich die magnetische Flussdicht berechnen lässt. Gegeben ist die magnetische Feldstärke H mit 100 Ampere pro Meter und der Radius der Ringspule von 5 Zentimeter. Dazu soll zunächst die erforderliche Stromstärke I berechnet werden.}
-		\speech{magnetischeFlussdichte}{2}{Dazu kann wieder die aus dem vorherigen Beispiel bekannte Formel herangezogen werden, nach der die magnetische Feldstärke H multipliziert mit der mittleren Feldlinienlänge L M gleich der Wicklungszahl N multipliziert mit der Stromstärke I ist. Stellen wir diese Formel nach I um und setzen die gegebenen Werte ein, erhalten wir eine erforderliche Stromstärke von 157,08 mA.}
-		\speech{magnetischeFlussdichte}{1}{Nun soll die magnetische Flussdichte B für zwei unterschiedliche Fälle berechnet werden: einemal für eine Luftspule mit einer relativen Permeabilität von 1 und einmal für eine Spule mit Eisenkern mit einer relativen Permeabilität von 2000.}
-		\speech{magnetischeFlussdichte}{1}{Zur Berechnung der magnetischen Flussdichte dieser beiden Fälle können wir die Werte in die bekannte Formel einsetzten, nach der die magetische Flussdichte das Produkt aus der magnetischen Feldkonstante Mü Null, der relativen Permeabilität und der magnetischen Feldstärke ist.}
-
+	\speech{magnetischeFlussdichte}{1}{Betrachen wir in einem Beispiel, wie sich die magnetische Flussdichte berechnen lässt. Gegeben ist die magnetische Feldstärke H mit 100 Ampere pro Meter und der Radius der Ringspule von 5 Zentimeter. Dazu soll zunächst die erforderliche Stromstärke I berechnet werden.}
+	\speech{magnetischeFlussdichte}{2}{Dazu kann wieder die aus dem vorherigen Beispiel bekannte Formel herangezogen werden, nach der die magnetische Feldstärke H multipliziert mit der mittleren Feldlinienlänge L M gleich der Wicklungszahl N multipliziert mit der Stromstärke I ist. Stellen wir diese Formel nach I um und setzen die gegebenen Werte ein, erhalten wir die erforderliche Stromstärke.}
+	\speech{magnetischeFlussdichte}{3}{Nun soll die magnetische Flussdichte B für zwei unterschiedliche Fälle berechnet werden: einmal für eine Luftspule mit einer relativen Permeabilität von Eins und einmal für eine Spule mit Eisenkern mit einer relativen Permeabilität von Zweitausend.}
+	\speech{magnetischeFlussdichte}{4}{Zur Berechnung der magnetischen Flussdichte dieser beiden Fälle können wir die Werte in die bekannte Formel einsetzten, nach der die magetische Flussdichte das Produkt aus der magnetischen Feldkonstante Mü Null, der relativen Permeabilität und der magnetischen Feldstärke ist.}
+	\silence{2}
+	
 \end{frame}
 
+\newvideofile{MagnetischerWiderstand}{Der magnetische Widerstand}
 \section{Der magnetische Widerstand}
+\v{
+	%Videoframe 
+	\begin{frame}{Lernziele}
+		\begin{Lernziele}{Magnetischer Widerstand}
+			Du kannst ...
+			\begin{itemize}
+				\item ... den die Faktoren, die den magnetischen Widerstand definieren benennen.
+				\item ... den magnetischen Widerstand einer Ringkernspule berechnen.
+			\end{itemize}
+		\end{Lernziele}
+		\speech{LernzieleMagnetischerWiderstand}{1}{In diesem Video lernst du die Faktoren kennen, die den magnetischen Widerstand beeinflussen und du lernst, wie du den magnetischen Widerstand einer Rinkernspule einfach berechnen kannst.}
+	\end{frame}
+}
 
 \begin{frame} \ftx{Magnetischer Widerstand}\index{Magnetischer Widerstand}
-
+	
 	\s{
 		Im Kapitel \ref{durchflutung} wurde bereits die magnetische Spannung thematisiert, die auch Durchflutung genannt wird, sowie im Kapitel \ref{Flussdichte} der magnetische Fluss, der das Äquivalent zum elektrischen Strom darstellt. Es liegt daher die Vermutung nahe, dass es in einem magnetischen Kreis äquivalent zum ohmschen Widerstand auch einen magnetischen Widerstand\index{Magnetischer Widerstand} gibt. Er hat das Formelzeichen $R_{\mathrm{m}}$ und die Einheit $\frac{\mathrm{A}}{\mathrm{V}\mathrm{s}}$ und wird auch Reluktanz \index{Reluktanz}genannt.
-
+		
 		Ein Beispiel für einen magnetischen Kreis ist in Abbildung \ref{AbbMagnKreis} durch einen einfachen Eisenring mit einer einseitigen Spule dargestellt. Die Spule erzeugt eine Durchflutung $\varTheta$ analog zur elektrischen Spannung. Der Eisenkreis besteht aus vier Teilwiderständen, da der magnetische Widerstand sowohl von der Länge als auch von dem durchflossenen Querschnitt abhängig ist. Die vier Widerstände werden vom magnetischen Fluss $\varPhi$ durchströmt.
 	}
-
+	
 	\fu{
 		\input{Tikz/src/magnetischer_kreis}\alttext{Links im Bild ist ein magnetischer Kreis abgebildet, der aus einem Eisenring besteht. Dieser Ring ist von den vier magnetischen Teilwiderständen durchbrochen, die die vier Seiten des Eisenrings als darstellen. Diese Teilwiderstände sind abhängig von der Länge, dem Material und dem Querschnitt des Eisenrings. Rechts im Bild befindet sich die Abbildung eines Ersatzschaltbildes zu diesem Aufbau. Es zeigt, wie die magnetischen Teilwiderstände sowie der magnetische Fluss miteinander in Verbindung stehen, wenn eine Spannung an die Spule um den Eisenring angelegt wird und damit der magnetische Fluss die einzelnen Widerstände der vier Seiten des Eisenkerns nacheinander durchströmt.}
 	}{{\bf Magnetischer Kreis mit einem Eisenring.} Die vier magnetischen Teilwiderstände sind abhängig von der Länge, vom Material und dem Querschnitt des durchflossenen Eisenrings. \label{AbbMagnKreis}}
-
+	
 	\s{In einfachen Anordnungen (wie beispielsweise in Abbildung \ref{AbbMagnKreis} zu sehen) kann unter Vernachlässigung der Ecken der Widerstand durch die Gleichung \ref{GlmagnWiderstand} ausgedrückt werden. $\ell_{\mathrm{m}}$ ist wie bei der magnetischen Feldstärke die mittlere Feldlinienlänge des Widerstandes innerhalb des magnetischen Kreises. Zur Ermittlung der mittleren Feldlininenlänge ${\ell_{\mathrm{m}}}$ werden die Längen aller Seiten addiert.
-	$A$ ist die Querschnittsfläche, die vom magnetischen Fluss durchflossen wird. $\mu$ ist die Permeabilität\index{Permeabilität} des Materials.
-	Der magnetische Widerstand $R_{\mathrm{m}}$ berechnet sich nun aus der aufsummierten Länge der mittleren Feldlinienlänge ${\ell_{\mathrm{m}}}$ geteilt durch das Produkt der durchflossenen Querschnittsfläche $A$ und der Permeabilität $\mu_{\mathrm{r}} \cdot \mu_0$.
-	
-	\begin{eq}
-		R_{\mathrm{m}} =\frac{\ell_{\mathrm{m}}}{\mu_{\mathrm{r}}\cdot\mu_0\cdot A} \qquad\left[\frac{\mathrm{A}}{\mathrm{V}\cdot\mathrm{s}}\right]\label{GlmagnWiderstand} 
-	\end{eq}
-	
-	\begin{Merksatz}{Magnetischer Widerstand}
-		Für die Berechnung des magnetischen Widerstands $R_{\mathrm{m}}$ wird die mittlere Feldlinienlängen ${\ell_{\mathrm{m}}}$ durch das Produkt aus der Permeabilität des Materials ${\mu_{\mathrm{r}}\cdot\mu_0}$ und der Querschnittsfläche $A$ geteilt. Bei unterschiedlicher Materialbeschaffenheit oder unterschiedlicher Querschnittsflächen innerhalb des magnetisierten Körpers werden zunächst die Teilwiderstände errechnet und anschließenden zum Gesamtwiderstand aufsummiert.
-	\end{Merksatz}
+		$A$ ist die Querschnittsfläche, die vom magnetischen Fluss durchflossen wird. $\mu$ ist die Permeabilität\index{Permeabilität} des Materials.
+		Der magnetische Widerstand $R_{\mathrm{m}}$ berechnet sich nun aus der aufsummierten Länge der mittleren Feldlinienlänge ${\ell_{\mathrm{m}}}$ geteilt durch das Produkt der durchflossenen Querschnittsfläche $A$ und der Permeabilität $\mu_{\mathrm{r}} \cdot \mu_0$.
+		
+		\begin{eq}
+			R_{\mathrm{m}} =\frac{\ell_{\mathrm{m}}}{\mu_{\mathrm{r}}\cdot\mu_0\cdot A} \qquad\left[\frac{\mathrm{A}}{\mathrm{V}\cdot\mathrm{s}}\right]\label{GlmagnWiderstand}
+		\end{eq}
+		
+		\begin{Merksatz}{Magnetischer Widerstand}
+			Für die Berechnung des magnetischen Widerstands $R_{\mathrm{m}}$ wird die mittlere Feldlinienlängen ${\ell_{\mathrm{m}}}$ durch das Produkt aus der Permeabilität des Materials ${\mu_{\mathrm{r}}\cdot\mu_0}$ und der Querschnittsfläche $A$ geteilt. Bei unterschiedlicher Materialbeschaffenheit oder unterschiedlicher Querschnittsflächen innerhalb des magnetisierten Körpers werden zunächst die Teilwiderstände errechnet und anschließenden zum Gesamtwiderstand aufsummiert.
+		\end{Merksatz}
 	}
 	\pause	
-	\b{\begin{minipage}{0.5\textwidth}}
+	
 	\b{
-		\begin{eq}
-			R_{\mathrm{m}} =\frac{\ell_{\mathrm{m}}}{\mu_{\mathrm{r}}\cdot\mu_0\cdot A} \qquad\left[\frac{\mathrm{A}}{\mathrm{V} \cdot \mathrm{s}}\right]
-		\end{eq}}
-	\b{\end{minipage}}%
+		\begin{minipage}{0.5\textwidth}
+			\v{
+		\onslide<2-2>{
+				\begin{eq}
+					R_{\mathrm{m}} \qquad\left[\frac{\mathrm{A}}{\mathrm{V} \cdot \mathrm{s}}\right]
+				\end{eq}
+		}
+		\pause	
+		\pause
+	}%
+			\begin{eq}
+				R_{\mathrm{m}} =\frac{\ell_{\mathrm{m}}}{\mu_{\mathrm{r}}\cdot\mu_0\cdot A} \qquad\left[\frac{\mathrm{A}}{\mathrm{V} \cdot \mathrm{s}}\right]
+			\end{eq}
+		\end{minipage}
+	}%
+	
+	\speech{magnetischerWiderstand}{1}{In den vorangegangenen Videos wurde bereits die magnetische Spannung thematisiert, auch Durchflutung gennannt, wie auch der magnetische Fluss, der das Äquivalent zum elektrischen Strom darstellt. Es liegt daher die Vermutung nahe, dass in einem magnetischen Kreis äquivalent zum ohmschen Widerstand ebenso ein magnetischer Widerstand existiert.}
+	\speech{magnetischerWiderstand}{2}{Er hat das Formelzeichen R M und die Einheit Ampere durch Volt Sekunden. Der magnetische Widerstand wird auch Reluktanz genannt.}
+	\speech{magnetischerWiderstand}{3}{Ein Beispiel für einen magnetischen Kreis ist in der Abbildung durch einen einfachen Eisenring mit einer einseitigen Spule dargestellt. Die Spule erzeugt eine Durchflutung Theta, die sich analog zur elektrischen Spannung verhält. Der Eisenkreis besteht aus vier Teilwiderständen, wie im Schaltbild rechts dargestellt, da der magnetische Widerstand sowohl von der Länge als auch von dem durchflossenen Querschnitt abhängig ist. Alle vier Widerstände werden durchströmt vom magnetischen Fluss Phi.}
+	\speech{magnetischerWiderstand}{4}{In solchen einfachen Anordnungen kann unter Vernachlässigung der Ecken der Widerstand durch diese Gleichung ausgedrückt werden. L M ist wie bei der magnetischen Feldstärke die mittlere Feldlinienlänge des Widerstandes innerhalb des magnetischen Kreises. Zur Ermittlung der mittleren Feldlininenlänge L M werden einfach die Längen aller Seiten addiert. A ist die Querschnittsfläche, die vom magnetischen Fluss durchflossen wird. Mü ist die Permeabilität des Materials. Der magnetische Widerstand R M berechnet sich also aus der aufsummierten Länge der mittleren Feldlinienlänge L M geteilt durch das Produkt der durchflossenen Querschnittsfläche A und der Permeabilität, bestehend aus Mü R mal Mü Null.}
+	\silence{4}
+	
 \end{frame}
 
 \subsection{Der magnetische Kreis}
-\begin{frame} \ftx{Magnetischer Kreis}\index{Magnetischer Kreis}		
+\begin{frame} \ftx{Magnetischer Kreis}\index{Magnetischer Kreis}
 	\b{
 		Analog zum elektrischen Ohmschen Gesetz gilt für den magnetischen Kreis:
 		\begin{eqa}
 			\varTheta &= R_{\mathrm{m}}\cdot \varPhi
 		\end{eqa}
 	}
-	\s{Werden nun alle bekannten magnetischen Größen in ihrer Zusammenwirkung betrachtet, ergibt sich die magnetische Analogie zum Ohmschen Gesetz. Sie beschreibt, dass die magnetische Spannung $\varTheta$  dem Produkt aus dem magnetischen Widerstand $R_{\mathrm{m}}$ und dem magnetischen Fluss $\varPhi$ entspricht.	
-	\begin{eqa}
-		\varTheta &= R_{\mathrm{m}}\cdot \varPhi
-	\end{eqa}
-	\begin{Merksatz}{Zusammenhänge der magnetischen Feldgrößen}
-
-		Die magnetische Feldstärke $H$ im Spezialfall einer Ringkernspule errechnet sich aus dem Produkt der Windungsanzahl $N$ und dem Stromfluss $I$, geteilt durch die mittlere Feldlinienlänge $\ell_{\mathrm{m}}$. \par
-		\begin{equation*}
-			H=\frac{N\cdot I}{\ell_{\mathrm{m}}}
-		\end{equation*}		
-		Die magnetische Flussdichte $B$ wird durch  Multiplikation der magnetischen Feldstärke $H$ mit der Permeabilität $\mu_{\mathrm{r}} \cdot \mu_0$ bestimmt. \par
-		\begin{equation*}	
-			B = \mu_{\mathrm{r}} \cdot \mu_0 \cdot H 
-		\end{equation*}	
-
-		Der magnetische Fluss $\varPhi$ ergibt sich aus dem Integral der magnetischen Flussdichte $B$ über einer Fläche $A$.		\begin{equation*} 
-			\varPhi = \iint_A \vec{B} \cdot \mathrm{d} \vec{A}  
-		\end{equation*}	
-
-	\end{Merksatz}
+	\s{Werden nun alle bekannten magnetischen Größen in ihrer Zusammenwirkung betrachtet, ergibt sich die magnetische Analogie zum Ohmschen Gesetz. Sie beschreibt, dass die magnetische Spannung $\varTheta$  dem Produkt aus dem magnetischen Widerstand $R_{\mathrm{m}}$ und dem magnetischen Fluss $\varPhi$ entspricht.
+		\begin{eqa}
+			\varTheta &= R_{\mathrm{m}}\cdot \varPhi
+		\end{eqa}
+		\begin{Merksatz}{Zusammenhänge der magnetischen Feldgrößen}
+			
+			Die magnetische Feldstärke $H$ im Spezialfall einer Ringkernspule errechnet sich aus dem Produkt der Windungsanzahl $N$ und dem Stromfluss $I$, geteilt durch die mittlere Feldlinienlänge $\ell_{\mathrm{m}}$. \par
+			\begin{equation*}
+				H=\frac{N\cdot I}{\ell_{\mathrm{m}}}
+			\end{equation*}
+			Die magnetische Flussdichte $B$ wird durch  Multiplikation der magnetischen Feldstärke $H$ mit der Permeabilität $\mu_{\mathrm{r}} \cdot \mu_0$ bestimmt. \par
+			\begin{equation*}	
+				B = \mu_{\mathrm{r}} \cdot \mu_0 \cdot H 
+			\end{equation*}
+			
+			Der magnetische Fluss $\varPhi$ ergibt sich aus dem Integral der magnetischen Flussdichte $B$ über einer Fläche $A$.		\begin{equation*} 
+				\varPhi = \iint_A \vec{B} \cdot \mathrm{d} \vec{A}
+			\end{equation*}
+			
+		\end{Merksatz}
 	}
+	\speech{magnetischerKreis}{1}{Betrachten wir nun alle bekannten magnetischen Größen in ihrer Zusammenwirkung, ergibt sich die magnetische Analogie zum Ohmschen Gesetz. Sie beschreibt, dass die magnetische Spannung Theta dem Produkt aus dem magnetischen Widerstand R M und dem magnetischen Fluss Phi entspricht.}
+	\silence{2}
 \end{frame}
 
