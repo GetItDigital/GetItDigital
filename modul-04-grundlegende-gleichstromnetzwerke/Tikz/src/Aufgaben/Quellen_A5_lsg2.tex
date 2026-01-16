@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+    % Klemmenleitungen / Klemmen
+    \draw (4, 2)to[short] (5.5,2);
+    \draw (4,-2)to[short] (5.5,-2);
+
+    \draw (1, 2)to[short,-o] (4,2);
+    \draw (1,-2)to[short,-o] (4,-2);
+
+    % Klemmenspannung U_G
+    \draw[->] (4, 1.6) -- (4,-1.6) node[midway,right] {$U_\mathrm{G}$};
+
+    % --- Zusammenfassung: reale Spannungsquelle U0,ges in Serie mit Ri,ges ---
+    \draw[dashed] (0.2,-1.8) rectangle (3.0,1.7);
+
+    % Serienzweig: Spannungsquelle + Innenwiderstand
+    \draw (1,2)
+          to[V,v, name=Uges] (1,0)
+          to[R,l=$R_{i,\mathrm{ges}}$, name=Rges] (1,-2);
+
+    % Beschriftung U0,ges an der Quelle
+    \varrmore{Uges}{$U_{0,\mathrm{ges}}$};
+
+    % --- Verbraucherzweig ---
+    \draw (5.5,2)
+          to[R,l=$R_\mathrm{V}$] (5.5,-2);
+        
+\end{tikzpicture}

@@ -1,0 +1,66 @@
+\begin{tikzpicture}
+    % --- Generator (linke Grafik) ---
+    % äußerer Rahmen
+    %\draw[dashed] (0,-2.7) rectangle (5.1,2.7);
+
+    % Klemmenleitungen (Generator-Sammelschienen)
+
+
+    \draw (6, 2)to[short] (7.5,2);
+    \draw (6, -2)to[short] (7.5,-2);
+    
+    \draw (1, 2)to[short,-o] (6,2);
+    \draw (1, -2)to[short,-o] (6,-2);
+
+    % Klemmenpunkte und Bezeichnungen
+    %\node[ocirc,label=right:$A_\mathrm{G}$] (AC) at (4, 2) {};
+    %\node[ocirc,label=right:$B_\mathrm{G}$] (BC) at (4,-2) {};
+
+    % Klemmenspannung U_G
+    \draw[->] (6, 1.6) -- (6,-1.6) node[midway,right] {$U_G$};
+
+    % --- 1. Quelle: Norton (reale Stromquelle) I01 || Ri1 ---
+    \draw[dashed] (0.2,-1.6) rectangle (2.6,1.6);
+
+    % Abzweigpunkte von den Sammelschienen zur Quelle
+    \draw (1,2) -- (0.8,2);
+    \draw (1,-2) -- (0.8,-2);
+    \draw (1,2) -- (1.2,2);
+    \draw (1,-2) -- (1.2,-2);
+
+    % parallele Zweige: Stromquelle und Innenwiderstand
+    \draw (0.8,2)  to[I,i>, name=I1] (0.8,-2);
+    \draw (1.8,2)  to[R,l=$R_\mathrm{i1}$]   (1.8,-2);
+
+    % --- 2. Quelle: Norton (reale Stromquelle) I02 || Ri2 ---
+    \draw[dashed] (2.85,-1.6) rectangle (5.3,1.6);
+
+    % Abzweigpunkte von den Sammelschienen zur Quelle
+    \draw (3,2) -- (2.8,2);
+    \draw (3,-2) -- (2.8,-2);
+    \draw (3,2) -- (3.2,2);
+    \draw (3,-2) -- (3.2,-2);
+
+    % parallele Zweige: Stromquelle und Innenwiderstand
+    \draw (3.4,2)  to[I,i>, name=I2] (3.4,-2);
+    \draw (4.4,2)  to[R,l=$R_\mathrm{i2}$]   (4.4,-2);
+
+    % --- Verbraucher (rechte Grafik) ---
+    % äußerer Rahmen
+    %\draw[dashed] (5.6,-2.7) rectangle (8.8,2.7);
+
+
+
+    % Verbindung Generator -> Verbraucher
+    %\draw (AC) -- (AV);
+    %\draw (BC) -- (BV);
+
+    % Verbraucherzweig
+    \draw (AV) -- (7.5,2)
+          to[R,l=$R_V$] (7.5,-2)
+          -- (BV);
+
+  %  \iarrmore{RV}{$I_\mathrm{V}$};
+     \iarrmore{I1}{$I_\mathrm{01}$};
+     \iarrmore{I2}{$I_\mathrm{02}$};
+\end{tikzpicture}
