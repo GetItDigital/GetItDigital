@@ -13,7 +13,7 @@
     Diese dienen zur Beschreibung des frequenzvariablen Verhaltens elektrischer Netze in Form von Zweitoren wie in Abbildung \ref{fig:zweitor} gezeigt. 
     Am Beispiel einfacher passiver Filterschaltungen werden wir die Begriffe Frequenz-, Amplituden- und Phasengang einführen und deren Bedeutung und Anwendung erläutern. 
     \begin{figure}[H]\centering
-        \includegraphics{Tikz/pdf/circ_zweitor.pdf}
+        \includegraphics[alt={Schaltsymbol eines Zweitors als Rechteck mit vier Polen. Spannung U1 am Eingang und U2 am Ausgang.}]{Tikz/pdf/circ_zweitor.pdf}
         \caption{Schaltsymbol eines Zweitors (Vierpols) mit Eingang (links) und Ausgang (rechts)\label{fig:zweitor}} % in Folien im folgenden Kapitel (Frequenzgang, Amplitudengang, Phasengang)
     \end{figure}
 }%\s Ende
@@ -249,7 +249,7 @@ Der Phasengang Vieh von Omega beschreibt die Phase des Frequenzganges und damit 
         Signale hoher Frequenzen jedoch stark gedämpft (gefiltert) werden.
         Die Funktionsweise und das Verhalten des Tiefpasses lassen sich gut mittels einer Frequenzganganalyse veranschaulichen.
 
-        \fu{\includegraphics{Tikz/pdf/circ_tiefpass_rc_annotated.pdf}}{Schaltbild, RC-Tiefpass 1. Ordnung\label{circ:filter:rctief}}%
+        \fu{\includegraphics[alt={Schaltbild eines RC-Tiefpass-Filters 1. Ordnung. Spannung U1 über RC-Serienschaltung und Spannung U2 über C.}]{Tikz/pdf/circ_tiefpass_rc_annotated.pdf}}{Schaltbild, RC-Tiefpass 1. Ordnung\label{circ:filter:rctief}}%
 
         Der gezeigte Tiefpass besteht aus einer Serienschaltung aus $R$ und $C$ mit Eingangsspannung $\underline{U}_1$
         über beiden Elementen und Ausgangsspannung $\underline{U}_2$ über $C$.
@@ -538,12 +538,12 @@ Der Nenner hat als rein reelle Größe keinen Einfluss auf die Phasenlage.
 
     \begin{figure}[h]\centering
         \begin{subfigure}{0.45\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_tiefpass_mini_ampli_lin_samesize.pdf}
+            \includegraphics[alt={Darstellung des Amplitudengangs eines Tiefpass 1. Ordnung mit linearen Achsen. Der Verlauf von A(omega) beginnt bei 1 für omega=0 und fällt mit steigender Frequenz ab. Für hohe Frequenzen ist A(omega) leicht größer als null.}]{Tikz/pdf/plot_tiefpass_mini_ampli_lin_samesize.pdf}
             \caption{Amplitudengang $A(\omega)$, lineare Achsen}
             \label{plot:tiefpass:ampli:mini:lin}
         \end{subfigure}
         \begin{subfigure}{0.45\textwidth}\centering
-        \includegraphics{Tikz/pdf/plot_tiefpass_mini_phase_lin_samesize.pdf}
+        \includegraphics[alt={Darstellung des Phasengangs eines Tiefpass 1. Ordnung mit linearen Achsen. Der Verlauf von phi(omega) beginnt bei 0 Grad für omega=0 und fällt mit steigender Frequenz ab. Für hohe Frequenzen ist phi(omega) nahe -90 Grad.}]{Tikz/pdf/plot_tiefpass_mini_phase_lin_samesize.pdf}
             \caption{Phasengang $\varphi(\omega)$, lineare Achsen}
             \label{plot:tiefpass:phase:mini:lin}
         \end{subfigure}
@@ -565,7 +565,7 @@ Der Nenner hat als rein reelle Größe keinen Einfluss auf die Phasenlage.
     für sehr hohe Frequenzen ($f \rightarrow \infty$) der Potenzfunktion $\frac{1}{\omega CR}$ annähert.
     Abbildung \ref{plot:tiefpass:ampli:lin:approx} zeigt diese Näherungen für $A(x)=\frac{1}{\sqrt{1+x^2}}$ mit $x=\omega CR$.
 
-    \fu{\includegraphics{Tikz/pdf/plot_tiefpass_ampli_lin_approx.pdf}}{
+    \fu{\includegraphics[alt={Darstellung des Funktionsgraphen 1/sqrt(1+x*x) über x. Für x deutlich kleiner als 1 nähert sich der Graph 1 an. Für x deutlich größer als 1 nähert sich der Graph der Kurve 1/x.}]{Tikz/pdf/plot_tiefpass_ampli_lin_approx.pdf}}{
         Amplitudengang Tiefpass 1. Ordnung, lineare Achsen, Näherungen mit $x=\omega CR$ \label{plot:tiefpass:ampli:lin:approx}
     }
 
@@ -574,7 +574,7 @@ Der Nenner hat als rein reelle Größe keinen Einfluss auf die Phasenlage.
     Abbildung \ref{plot:tiefpass:phase:lin:approx} zeigt die Tangensfunktion und dessen Umkehrfunktion Arcustangens, sowie deren 
     jeweiligen Spiegelungen an der y-Achse in linearer Darstellung.
     
-    \fu{\includegraphics{Tikz/pdf/plot_tan_atan_mirror.pdf}}{
+    \fu{\includegraphics[alt={Darstellung der Tangensfunktion und deren Umkehrfunktion Arcustangens mit invertierten Achsen. Zusätzlich eingezeichnet sind die an der y-Achse gespiegelten Funktionen. Die überlagerten Funktionen formen ein symmetrisches Muster.}]{Tikz/pdf/plot_tan_atan_mirror.pdf}}{
         Phasengang Tiefpass 1. Ordnung, lineare Achsen, Vergleich Tangens/Arcustangens \label{plot:tiefpass:phase:lin:approx}
     }
 
@@ -638,7 +638,7 @@ Da keine negativen Frequenzen existieren, beginnen beide Kurven bei null.
                 Der Aufbau ist identisch mit dem RC-Tiefpass erster Ordnung, 
                 nur dass die Ausgangsspannung über $R$ statt über $C$ anliegt.
    
-                \fu{\includegraphics{Tikz/pdf/circ_hochpass_rc_annotated.pdf}}{Schaltbild, RC-Hochpass 1. Ordnung\label{circ:filter:rchoch}}%
+                \fu{\includegraphics[alt={Schaltbild eines RC-Hochpass-Filters 1. Ordnung. Spannung U1 über RC-Serienschaltung und Spannung U2 über R.}]{Tikz/pdf/circ_hochpass_rc_annotated.pdf}}{Schaltbild, RC-Hochpass 1. Ordnung\label{circ:filter:rchoch}}%
 
                 Die Herleitung des Frequenzganges erfolgt analog zum Vorgehen beim Tiefpass 
                 in Kapitel \ref{sec:frequenzgang:tiefpass:herleitung}.
@@ -804,12 +804,12 @@ Amplitudengang und Phasengang bestimmen wir durch Betragsbildung und Phasenberec
 
     \begin{figure}[h]\centering
         \begin{subfigure}{0.45\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_hochpass_mini_ampli_lin_samesize.pdf}
+            \includegraphics[alt={Darstellung des Amplitudengangs eines Hochpass 1. Ordnung mit linearen Achsen. Der Verlauf von A(omega) beginnt bei 0 für omega=0 und steigt mit steigender Frequenz an. Für hohe Frequenzen nähert sich A(omega) 1.}]{Tikz/pdf/plot_hochpass_mini_ampli_lin_samesize.pdf}
             \caption{Amplitudengang $A(\omega)$, lineare Achsen}
             \label{plot:hochpass:ampli:mini:lin}
         \end{subfigure}
         \begin{subfigure}{0.45\textwidth}\centering
-        \includegraphics{Tikz/pdf/plot_hochpass_mini_phase_lin_samesize.pdf}
+        \includegraphics[alt={Darstellung des Phasengangs eines Hochpass 1. Ordnung mit linearen Achsen. Der Verlauf von phi(omega) beginnt bei +90 Grad für omega=0 und fällt mit steigender Frequenz ab. Für hohe Frequenzen nähert sich phi(omega) 0 Grad.}]{Tikz/pdf/plot_hochpass_mini_phase_lin_samesize.pdf}
             \caption{Phasengang $\varphi(\omega)$, lineare Achsen}
             \label{plot:hochpass:phase:mini:lin}
         \end{subfigure}
@@ -883,15 +883,15 @@ RC % Zeile 2
                 &   $\quad\underline{F}(\mathrm{j}\omega)$
                 &   $\omega_g$
             \\\hline\parbox[c][2cm][c]{0.3cm}{\rotatebox[origin=c]{90}{\textbf{RL}}}
-                &   \parbox[c][2cm][c]{3.0cm}{\resizebox{\linewidth}{!}{\includegraphics{Tikz/pdf/circ_tiefpass_rl_annotated.pdf}}} % resizebox breaks tikz without parbox around
+                &   \parbox[c][2cm][c]{3.0cm}{\resizebox{\linewidth}{!}{\includegraphics[alt={Schaltbild eines RL-Tiefpasses. U1 über RL-Serienschaltung und U2 über R.}]{Tikz/pdf/circ_tiefpass_rl_annotated.pdf}}} % resizebox breaks tikz without parbox around
                 &   \parbox[c][2cm][c]{1.7cm}{$\dfrac{1}{1+\mathrm{j} \omega \frac{L}{R}}$}
-                &   \parbox[c][2cm][c]{3.0cm}{\resizebox{\linewidth}{!}{\includegraphics{Tikz/pdf/circ_hochpass_rl_annotated.pdf}}}
+                &   \parbox[c][2cm][c]{3.0cm}{\resizebox{\linewidth}{!}{\includegraphics[alt={Schaltbild eines RL-Hochpasses. U1 über RL-Serienschaltung und U2 über L.}]{Tikz/pdf/circ_hochpass_rl_annotated.pdf}}}
                 &   \parbox[c][2cm][c]{1.7cm}{$\dfrac{1}{1-\mathrm{j}\frac{R}{\omega L}}$}
                 &   \parbox[c][2cm][c]{0.5cm}{$\dfrac{R}{L}$}
             \\\hline\parbox[c][2cm][c]{0.3cm}{\rotatebox[origin=c]{90}{\textbf{RC}}}
-                &   \parbox[c][2cm][c]{3.0cm}{\resizebox{\linewidth}{!}{\includegraphics{Tikz/pdf/circ_tiefpass_rc_annotated.pdf}}}
+                &   \parbox[c][2cm][c]{3.0cm}{\resizebox{\linewidth}{!}{\includegraphics[alt={Schaltbild eines RC-Tiefpasses. U1 über RC-Serienschaltung und U2 über C.}]{Tikz/pdf/circ_tiefpass_rc_annotated.pdf}}}
                 &   \parbox[c][2cm][c]{1.7cm}{$\dfrac{1}{1+\mathrm{j}\omega CR}$}
-                &   \parbox[c][2cm][c]{3.0cm}{\resizebox{\linewidth}{!}{\includegraphics{Tikz/pdf/circ_hochpass_rc_annotated.pdf}}}
+                &   \parbox[c][2cm][c]{3.0cm}{\resizebox{\linewidth}{!}{\includegraphics[alt={Schaltbild eines RC-Hochpasses. U1 über RC-Serienschaltung und U2 über R.}]{Tikz/pdf/circ_hochpass_rc_annotated.pdf}}}
                 &   \parbox[c][2cm][c]{1.7cm}{$\dfrac{1}{1-\mathrm{j}\frac{1}{\omega CR}}$}
                 &   \parbox[c][2cm][c]{0.5cm}{\centering $\dfrac{1}{CR}$}
             \\\hline
@@ -927,8 +927,8 @@ Zur Übung können Sie die Herleitung der Frequenzgänge der R L Filter analog z
 \begin{bsp}{Filterschaltung: Aufgabe}{}% label as second madatory argument is printed in Folien, can't escape with \b{...} -> no label for this bsp
 \noindent%
 \begin{minipage}{\textwidth}
-    \begin{minipage}[c]{0.44\textwidth}
-        \fu{\includegraphics{Tikz/pdf/circ_aufgabe_filter.pdf}}{Filterschaltung, passiv}% Schaltbild
+    \begin{minipage}[c]{0.44\textwidth}% R2+(R1||C), u1 über gesamt, u2 über C
+        \fu{\includegraphics[alt={Schaltbild einer passiven Filterschaltung mit zwei Widerständen und einer Kapazität. R2 in Reihe zur Parallelschaltung aus R1 und C. Spannung u1 über die gesamte Schaltung und Spannung u2 über C.}]{Tikz/pdf/circ_aufgabe_filter.pdf}}{Filterschaltung, passiv}% Schaltbild
         \b{\vfill}%
         \begin{align*}
         u_1(t) &= \hat{U}_1\cdot \sin(\omega t)             & \underline{U}_1 &= \hat{U}_1\\
@@ -1052,12 +1052,12 @@ Pausieren Sie das Video, um die Aufgabe zu bearbeiten, bevor die Musterlösung p
             \qquad $\lim \limits_{\omega \to \infty} \varphi(\omega) = \arctan(-\infty) = -90\degree$\\
         \end{minipage}\hfill
         \begin{minipage}[c][6cm][c]{0.48\textwidth}
-            \resizeboxsb{0.75}{0.75}{% 90% textwidth skript, 100% textwidth beamer
-            \includegraphics{Tikz/pdf/plot_beispiel_filter_amplitudengang_lin.pdf}%
+            \resizeboxsb{0.75}{0.75}{% n % textwidth skript, m % textwidth beamer
+            \includegraphics[alt={Amplitudengang in linearer Darstellung. Für omega 0 bis 1*10^5*1/s. A(0)=0.9. A(omega) gegen 0 für große Frequenzen.}]{Tikz/pdf/plot_beispiel_filter_amplitudengang_lin.pdf}%
             }% end resizeboxsb
             \hfill
-            \resizeboxsb{0.75}{0.75}{% 90% textwidth skript, 100% textwidth beamer
-            \includegraphics{Tikz/pdf/plot_beispiel_filter_phasengang_lin.pdf}%
+            \resizeboxsb{0.75}{0.75}{% n % textwidth skript, m % textwidth beamer
+            \includegraphics[alt={Phasengang in linearer Darstellung. Für omega 0 bis 1*10^5*1/s. Phase 0 bei omega 0 und gegen -90 Grad für große Frequenzen.}]{Tikz/pdf/plot_beispiel_filter_phasengang_lin.pdf}%
             }% end resizeboxsb
         \end{minipage}
     \end{minipage}

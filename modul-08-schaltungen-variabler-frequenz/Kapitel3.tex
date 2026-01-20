@@ -54,14 +54,14 @@ die Impedanz- und Admittanzortskurven von typischen Grundschaltungen wie R C und
     in Abhängigkeit des Schlupfes $s$. 
     Die Darstellungsform eignet sich beispielsweise zur Visualisierung verschiedener Betriebszustände, 
     im Fall der Asynchronmaschine sind das der Motor-, Brems- und Generatorbetrieb.
-    \fu{\includegraphics{Tikz/pdf/plot_stromortskurve_asynchronmaschine.pdf}}{%
+    \fu{\includegraphics[alt={Stromortskurve einer Asynchronmaschine in der komplexen Ebene. Die kreisförmige Kurve zeigt den komplexen Statorstrom in Abhängigkeit des Schlupfes. Für s=0 bis s=1 Motor. Für s>1 Bremse. Für s<0 Generator.}]{Tikz/pdf/plot_stromortskurve_asynchronmaschine.pdf}}{%
         Beispiel Stromortskurve einer Asynchrommaschine mit Betriebszuständen\label{fig:ortskurve:stromortskurve:asm}%
     }%
     Im Beispiel der Stromortskurve einer Asynchronmaschine lassen sich zudem verschiedene Leistungswerte graphisch ermitteln
     wie in Abbildung \ref{fig:ortskurve:stromortskurve:asm:leistung} exemplarisch dargestellt ist. 
     Die Beispiele dienen der Veranschaulichung der Definition und möglicher Anwendungsbereiche von Ortskurven,
     weshalb von einer Herleitung beider Beispiele abgesehen wird. 
-    \fu{\includegraphics{Tikz/pdf/plot_stromortskurve_asynchronmaschine_leistung.pdf}}{%
+    \fu{\includegraphics[alt={Stromortskurve einer Asynchronmaschine in der komplexen Ebene mit Leistungsgrößen. Die Kurve zeigt den komplexen Statorstrom in Abhängigkeit des Schlupfes. Zusätzlich sind Wirkleistungen eingezeichnet.}]{Tikz/pdf/plot_stromortskurve_asynchronmaschine_leistung.pdf}}{%
         Beispiel Stromortskurve einer Asynchrommaschine mit Leistungsgrößen\label{fig:ortskurve:stromortskurve:asm:leistung}%
     }%
     Ortskurven eignen sich gut zur Visualisierung von Systemzuständen und dem Einfluss verschiedener Systemgrößen aufeinander.
@@ -164,8 +164,7 @@ In der Ortskurve hingegen wird die komplexe Größe als Kurve dargestellt, die v
     Konstruktion der Impedanzortskurve einer RL-Serienschaltung für variablen Widerstand $R$.
     Die Schaltung ist in Abbildung \ref{fig:circ:rls:Rvar} abgebildet.
 
-    % alttext: Schaltbild R und L in Serie, Beschriftung R und jwL
-    \fu{\includegraphics{Tikz/pdf/circ_rls_impedanzen.pdf}}{RL-Glied (Serienschaltung)\label{fig:circ:rls:Rvar}}
+    \fu{\includegraphics[alt={Abbildung einer RL-Reihenschaltung.}]{Tikz/pdf/circ_rls_impedanzen.pdf}}{RL-Glied (Serienschaltung)\label{fig:circ:rls:Rvar}}
 
     Die Impedanz des RL-Gliedes ist gegeben durch:
 
@@ -192,7 +191,7 @@ In der Ortskurve hingegen wird die komplexe Größe als Kurve dargestellt, die v
         \underline{Z}(p) = p \cdot R_0 + \mathrm{j}X_0
     \end{equation*}
 
-    \fu{\includegraphics{Tikz/pdf/plot_ortskurve_RLs_Rvar.pdf}}% R=p*R0, p in [0,3]; wL=konst.
+    \fu{\includegraphics[alt={Impedanzortskurve eines RL-Gliedes mit variablem Widerstand. Imaginärteil konstant bei X0. Realteil variiert von 0 bis 3 mal R0.}]{Tikz/pdf/plot_ortskurve_RLs_Rvar.pdf}}% R=p*R0, p in [0,3]; wL=konst.
         {Impedanzortskurve RL-Glied (Serie)\label{fig:plot:rls:Rvar}}
 
 \end{bsp}
@@ -203,7 +202,7 @@ In der Ortskurve hingegen wird die komplexe Größe als Kurve dargestellt, die v
     für variable Frequenz $f$ und oder variable Induktivität $L$.
     Aufbau wie in Beispiel \ref{bsp:ortskurve:z:rvar}, jedoch mit variabler Frequenz $\omega$.
 
-    \fu{\includegraphics{Tikz/pdf/circ_rls_impedanzen.pdf}}{RL-Glied (Serienschaltung)\label{fig:circ:RLs:wLvar}}
+    \fu{\includegraphics[alt={Abbildung einer RL-Reihenschaltung.}]{Tikz/pdf/circ_rls_impedanzen.pdf}}{RL-Glied (Serienschaltung)\label{fig:circ:RLs:wLvar}}
 
     Gesamtimpedanz allgemein: 
     \begin{align*}
@@ -223,7 +222,7 @@ In der Ortskurve hingegen wird die komplexe Größe als Kurve dargestellt, die v
 
     In der komplexen Ebene dargestellt:
     \fu{\captionsetup{labelformat=empty}%
-        \includegraphics{Tikz/pdf/plot_ortskurve_RLs_wLvar.pdf}}% wL=p*w0L0, p in [0,3]; R=konst.
+        \includegraphics[alt={Impedanzortskurve eines RL-Gliedes mit variabler Frequenz. Realteil konstant bei R0. Imaginärteil variiert von 0 bis 3 mal X0.}]{Tikz/pdf/plot_ortskurve_RLs_wLvar.pdf}}% wL=p*w0L0, p in [0,3]; R=konst.
         {RL-Glied (Serienschaltung)}
 
 \end{bsp}%
@@ -344,9 +343,7 @@ Das sind einfache Beispiele für die Konstruktion von Impedanzortskurven. Wie si
             \hline
         \end{tabular}
     \end{table}
-    \fu{\includegraphics{Tikz/pdf/plot_ortskurven_inversion.pdf}}{%
-        Beispiel Möbius-Transformation, Inversion von Gitter\protect\footnotemark\label{fig:plot:moebiusinversion}%
-    }
+    \fu{\includegraphics[alt={Beispiel Möbius-Transformation durch Inversion eines Gitters.}]{Tikz/pdf/plot_ortskurven_inversion.pdf}}{Beispiel Möbius-Transformation, Inversion von Gitter\protect\footnotemark\label{fig:plot:moebiusinversion}}%
     \footnotetext{Angelehnt an MoebiusInversion.svg von Chrislb, CC-BY-SA-2.0-DE, 2005, \url{https://commons.wikimedia.org/wiki/File:MoebiusInversion.svg}}
 \speech{06Ortskurven6AdmittanzInversionOrtskurven}{1}{%
 Die Konstruktion der Admittanzortskurve funktioniert prinzipiell identisch wie bei der Impedanzortskurve. 
@@ -393,48 +390,48 @@ Bei der Konstruktion von Impedanz- und Admittanzortskurven hilft es sich zu vera
         \textbf{Grundschaltung} & \textbf{$\mathbf{\underline{Z}}$-Ortskurve} & \textbf{$\mathbf{\underline{Y}}$-Ortskurve}
         \\\hline% RL-Serie
         % \parbox[...][Höhe][...]{Breite}{Content}
-        \parbox[c][4cm][c]{3.75cm}{\centering\includegraphics{Tikz/pdf/circ_ortskurve_minimal_R_RL.pdf}}% Schaltbild
+        \parbox[c][4cm][c]{3.75cm}{\centering\includegraphics[alt={Abbildung einer RL-Reihenschaltung.}]{Tikz/pdf/circ_ortskurve_minimal_R_RL.pdf}}% Schaltbild
         &
         \parbox[c][4cm][c]{3.75cm}{\centering%
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_R_RLZ_R.pdf}}\newline
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_R_RLZ_L.pdf}}
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Impedanzortskurve: RL-Reihenschaltung mit R = var. ergibt Gerade mit X=konst. (positiv)}]{Tikz/pdf/plot_ortskurve_minimal_R_RLZ_R.pdf}}\newline
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Impedanzortskurve: RL-Reihenschaltung mit X = var. ergibt Gerade mit R=konst.}]{Tikz/pdf/plot_ortskurve_minimal_R_RLZ_L.pdf}}
         }&
         \parbox[c][4cm][c]{3.75cm}{\centering%
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_R_RLY_R.pdf}}\newline
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_R_RLY_L.pdf}}
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Admittanzortskurve: RL-Reihenschaltung mit R = var. ergibt Halbkreis auf der Im-Achse mit B <= 0.}]{Tikz/pdf/plot_ortskurve_minimal_R_RLY_R.pdf}}\newline
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Admittanzortskurve: RL-Reihenschaltung mit X = var. ergibt Halbkreis auf der Re-Achse mit B <= 0.}]{Tikz/pdf/plot_ortskurve_minimal_R_RLY_L.pdf}}
         }\\\hline% RC-Serie
-        \parbox[c][4cm][c]{3.75cm}{\centering\includegraphics{Tikz/pdf/circ_ortskurve_minimal_R_RC.pdf}}% Schaltbild
+        \parbox[c][4cm][c]{3.75cm}{\centering\includegraphics[alt={Abbildung einer RC-Reihenschaltung.}]{Tikz/pdf/circ_ortskurve_minimal_R_RC.pdf}}% Schaltbild
         &
         \parbox[c][4cm][c]{3.75cm}{\centering%
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_R_RCZ_R.pdf}}\newline
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_R_RCZ_C.pdf}}
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Impedanzortskurve: RC-Reihenschaltung mit R = var. ergibt Gerade mit X = konst. (negativ)}]{Tikz/pdf/plot_ortskurve_minimal_R_RCZ_R.pdf}}\newline
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Impedanzortskurve: RC-Reihenschaltung mit X = var. ergibt Gerade mit R = konst.}]{Tikz/pdf/plot_ortskurve_minimal_R_RCZ_C.pdf}}
         }&
         \parbox[c][4cm][c]{3.75cm}{\centering%
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_R_RCY_R.pdf}}\newline
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_R_RCY_C.pdf}}
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Admittanzortskurve: RC-Reihenschaltung mit R = var. ergibt Halbkreis auf der Im-Achse mit B >= 0. }]{Tikz/pdf/plot_ortskurve_minimal_R_RCY_R.pdf}}\newline
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Admittanzortskurve: RC-Reihenschaltung mit X = var. ergibt Halbkreis auf der Re-Achse mit B >= 0. }]{Tikz/pdf/plot_ortskurve_minimal_R_RCY_C.pdf}}
         }
         \s{%Start Skript only, Tabellenteil 2
         \\\hline% RL-Parallel
-        \parbox[c][4cm][c]{3.75cm}{\centering\includegraphics{Tikz/pdf/circ_ortskurve_minimal_P_RL.pdf}}% Schaltbild
+        \parbox[c][4cm][c]{3.75cm}{\centering\includegraphics[alt={Abbildung einer RL-Parallelschaltung.}]{Tikz/pdf/circ_ortskurve_minimal_P_RL.pdf}}% Schaltbild
         &
         \parbox[c][4cm][c]{3.75cm}{\centering
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_P_RLZ_R.pdf}}\newline
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_P_RLZ_L.pdf}}
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Impedanzortskurve: RL-Parallelschaltung mit R = var. ergibt Halbkreis auf der Im-Achse mit X >= 0.}]{Tikz/pdf/plot_ortskurve_minimal_P_RLZ_R.pdf}}\newline
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Impedanzortskurve: RL-Parallelschaltung mit X = var. ergibt Halbkreis auf der Re-Achse mit X >= 0.}]{Tikz/pdf/plot_ortskurve_minimal_P_RLZ_L.pdf}}
         }&
         \parbox[c][4cm][c]{3.75cm}{\centering
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_P_RLY_R.pdf}}\newline
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_P_RLY_L.pdf}}
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Admittanzortskurve: RL-Parallelschaltung mit R = var. ergibt Gerade mit G >= 0 und B = konst. (negativ)}]{Tikz/pdf/plot_ortskurve_minimal_P_RLY_R.pdf}}\newline
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Admittanzortskurve: RL-Parallelschaltung mit X = var. ergibt Gerade mit G = konst. und B <= 0. }]{Tikz/pdf/plot_ortskurve_minimal_P_RLY_L.pdf}}
         }
         \\\hline% RC-Parallel
-        \parbox[c][4cm][c]{3.75cm}{\centering\includegraphics{Tikz/pdf/circ_ortskurve_minimal_P_RC.pdf}}% Schaltbild
+        \parbox[c][4cm][c]{3.75cm}{\centering\includegraphics[alt={Abbildung einer RC-Parallelschaltung.}]{Tikz/pdf/circ_ortskurve_minimal_P_RC.pdf}}% Schaltbild
         &
         \parbox[c][4cm][c]{3.75cm}{\centering
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_P_RCZ_R.pdf}}\newline
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_P_RCZ_C.pdf}}
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Impedanzortskurve: RC-Parallelschaltung mit R = var. ergibt Halbkreis auf der Im-Achse mit X <= 0.}]{Tikz/pdf/plot_ortskurve_minimal_P_RCZ_R.pdf}}\newline
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Impedanzortskurve: RC-Parallelschaltung mit X = var. ergibt Halbkreis auf der Re-Achse mit R >= 0 und X <= 0.}]{Tikz/pdf/plot_ortskurve_minimal_P_RCZ_C.pdf}}
         }&
         \parbox[c][4cm][c]{3.75cm}{\centering
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_P_RCY_R.pdf}}\newline
-            \resizebox{3.75cm}{!}{\includegraphics{Tikz/pdf/plot_ortskurve_minimal_P_RCY_C.pdf}}
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Admittanzortskurve: RC-Parallelschaltung mit R = var. ergibt Gerade mit G >= 0 und B = konst. (positiv)}]{Tikz/pdf/plot_ortskurve_minimal_P_RCY_R.pdf}}\newline
+            \resizebox{3.75cm}{!}{\includegraphics[alt={Admittanzortskurve: RC-Parallelschaltung mit X = var. ergibt Gerade mit G = konst. und B >= 0.}]{Tikz/pdf/plot_ortskurve_minimal_P_RCY_C.pdf}}
         }
         }%Ende Skript only, Tabellenteil 2
         \\\hline

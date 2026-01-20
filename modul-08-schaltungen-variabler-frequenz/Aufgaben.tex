@@ -54,7 +54,7 @@ Wie groß ist die Phasenverschiebung $\varphi$ bei einem RC-Hochpass 1. Ordnung,
 % Übernommen von Prof. Exknowski, FH SWF Hagen, 2024, ET3 (Übung 4, Aufgabe 1), leicht verändert, Vgl. Prof. Ackers Übung 4.4
 Gegeben ist unten dargestellte Schaltung mit $L = 20\,\mathrm{mH}$, einem Widerstand $R = 150\,\Omega$ und einem Kondensator mit $C = 1\,\mu \mathrm{F}$.\\
 \begin{minipage}{\textwidth}\centering
-    \includegraphics{Tikz/pdf/Uebungen/circ_uebung_rlcs_schwingkreis.pdf}% RLC-Reihenschaltung, u1 über RLC, u2 über C, Vgl. Prof. Ackers Übung 4.4
+    \includegraphics[alt={Schaltbild: RLC-Serienschwingkreis mit Spannungen u1 über RLC und u2 über C.}]{Tikz/pdf/Uebungen/circ_uebung_rlcs_schwingkreis.pdf}% RLC-Reihenschaltung, u1 über RLC, u2 über C, Vgl. Prof. Ackers Übung 4.4
 \end{minipage}
 \begin{enumerate}
     \item[a)] Geben Sie die Resonanzfrequenz der Schaltung an. Handelt es dich um Strom- oder Spannungsresonanz?
@@ -94,7 +94,7 @@ Da die Schaltung eine Reihenschaltung aus einem Widerstand, Kondensator und eine
 \end{align*}
 Der Betrag des Frequenzganges ist in folger Abbildung dargestellt.
 \begin{figure}[H]\centering
-    \includegraphics{Tikz/pdf/Uebungen/plot_uebung_rlcs_schwingkreis_amplitudengang.pdf}
+    \includegraphics[alt={Amplitudengang mit linearer Amplituden- und logarithmischer Frequenzachse. Amplitude steigt von 1 bis zu einem Maximum und fällt dann wieder ab.}]{Tikz/pdf/Uebungen/plot_uebung_rlcs_schwingkreis_amplitudengang.pdf}
 \end{figure}
 Die zugehörigen Werte sind:\\[5pt]
 % A(100)=1.000
@@ -131,8 +131,8 @@ Für $L=10\,\mathrm{mH}$ ist $Q_S < 1$, es kommt also zu keiner Spannungsüberh�
 Die unten dargestellte Schaltung soll untersucht werden. 
 Hierbei sollen für die Bauelemente die allgemeinen Werte $\mathrm{R}_1$, $\mathrm{R}_2$, L, C verwendet werden.
 %
-\begin{figure}[H]\centering
-    \includegraphics{Tikz/pdf/Uebungen/circ_uebung_vierpol_r_lcp_r.pdf}%  u1 über R1+(L||C)+R2, u2 über R2, Vgl. Prof. Ackers Übung 4.5
+\begin{figure}[H]\centering% alt: u1 über R1+(L||C)+R2 und u2 über R2
+    \includegraphics[alt={Schaltbild: Vierpol bestehend aus R1 und R2 in Reihe mit der Parallelschaltung aus L und C. Spannungen u1 über Gesamtschaltung und u2 über R2.}]{Tikz/pdf/Uebungen/circ_uebung_vierpol_r_lcp_r.pdf}%  u1 über R1+(L||C)+R2, u2 über R2, Vgl. Prof. Ackers Übung 4.5
 \end{figure}
 
 \begin{enumerate}
@@ -204,7 +204,7 @@ Mit:
 Der Amplitudengang und Phasengang sind in folgendem Bode-Diagramm dargestellt.
 
 \begin{figure}[H]\centering
-    \includegraphics{Tikz/pdf/Uebungen/plot_uebung_vierpol_r_lcp_r_bodediagramm.pdf}
+    \includegraphics[alt={Bodediagramm mit Amplituden- und Phasengang. Amplitudengang doppeltlogarithisch dargestellt mit Lücke (Polstelle) bei Resonanzfrequenz. Phasengang halblogarithmisch dargestellt. Phase bei niedrigen Frequenzen null Grad bis -45 Grad bei Resonanzfrequenz. Phase macht Sprung bei Resonanzfrequenz (Sprung) auf +45 Grad und fällt für hohe Frequenzen auf null Grad.}]{Tikz/pdf/Uebungen/plot_uebung_vierpol_r_lcp_r_bodediagramm.pdf}
 \end{figure}
 \begin{enumerate}
     \item[c)] Die Ausgangsspannung ergibt sich zu:
@@ -226,7 +226,7 @@ Der Amplitudengang und Phasengang sind in folgendem Bode-Diagramm dargestellt.
 \end{minipage}\hspace{0.05\textwidth}
 \begin{minipage}[t][0.5cm][t]{0.3\textwidth}%
     \,\\\rlap{% space, linebreak and rlap for top alignment of image
-    \includegraphics{Tikz/pdf/Uebungen/circ_uebung_rlcp_schwingkreis.pdf}% RLC-Parallelschwingkreis, Ackers Übung 5.4
+    \includegraphics[alt={Schaltbild: RLC-Parallelschwingkreis.}]{Tikz/pdf/Uebungen/circ_uebung_rlcp_schwingkreis.pdf}% RLC-Parallelschwingkreis, Ackers Übung 5.4
     }%
 \end{minipage}
 
@@ -257,7 +257,7 @@ Der Amplitudengang und Phasengang sind in folgendem Bode-Diagramm dargestellt.
     \item[b)] Betrag der Gesamptimpedanz in halblogarithmischer Darstellung:
 \end{enumerate}\vspace{-0.5cm}
 \begin{figure}[H]\centering%
-    \includegraphics{Tikz/pdf/Uebungen/plot_uebung_rlcp_schwingkreis_gesamtimpedanz.pdf}
+    \includegraphics[alt={Impedanzkurve in halblogarithmischer Darstellung. Die Kurve zeigt den Impedanzbetrag in abhängigkeit der Frequenz mit einem Maximum bei der Resonanzfrequenz. Für sehr niedrige und sehr hohe Frequnzen fällt der Impedanzbetrag auf null ab.}]{Tikz/pdf/Uebungen/plot_uebung_rlcp_schwingkreis_gesamtimpedanz.pdf}
 \end{figure}
 Die Gesamptimpedanz ist maximal bei Resonanzkreisfrequenz mit $\underline{Z}(\omega_0) = R$.
 \begin{enumerate}
@@ -326,7 +326,7 @@ Grenzfrequenzen, Bandbreite:
 Für die untenstehende hintereinandergeschalteten RC-Glieder gilt $R_1 = R_2 = R = 1000\,\Omega$ und $C_1 = C_2 = C = 1\,\mu\mathrm F$.
 \begin{figure}[H]
     \centering
-    \includegraphics{Tikz/pdf/Uebungen/circ_uebung_rc_filter_2_ord.pdf}% 2x RC-Tiefpass 1. Ordnung in Reihe
+    \includegraphics[alt={Schaltbild: Zwei hintereinandergeschaltete RC-Tiefpassglieder erster Ordnung mit gleichen Widerständen und Kapazitäten.}]{Tikz/pdf/Uebungen/circ_uebung_rc_filter_2_ord.pdf}% 2x RC-Tiefpass 1. Ordnung in Reihe
 \end{figure}
 \begin{enumerate}%\itemsep1mm
     \item[a)] Bestimmen Sie den Frequenzgang der Schaltung $\underline{F}(\mathrm{j}\omega) = \frac{\underline{U}_2}{\underline{U}_1}$.
@@ -373,7 +373,7 @@ nicht einfach multipliziert werden.
     \item[b)] Bode-Diagramm (Amplituden- und Phasengang) für RC-Tiefpassfilter 1. und 2. Ordnung:
 \end{enumerate}\vspace{-0.5cm}
 \begin{figure}[H]\centering
-    \includegraphics{Tikz/pdf/Uebungen/plot_uebung_rc_filter_2_ord_bodediagramm.pdf}% RC-Tiefpass Vgl. 1. Ordnung, 2. Ordnung
+    \includegraphics[alt={Bodediagramm: Amplituden- und Phasengang von RC-Tiefpassfiltern erster und zweiter Ordnung. Vergleich eines einzelnen RC Gliedes mit zwei hintereinandergeschalteten RC Gliedern. Einmal mit Entkopplung und einmal ohne. Die entkoppelte Variante verhält sich im Bereich der Grenzfrequenz schärfer.}]{Tikz/pdf/Uebungen/plot_uebung_rc_filter_2_ord_bodediagramm.pdf}% RC-Tiefpass Vgl. 1. Ordnung, 2. Ordnung
 \end{figure}
 Die Dämpfung im Sperrbereich beträgt bei 2. Ordnung (blau) das doppelte ($40\,\mathrm{dB}/\mathrm{Dek}$)
 im Vergleich zur 1. Ordnung (rot) ($20\,\mathrm{dB}/\mathrm{Dek}$).
@@ -426,7 +426,7 @@ Die Admittanzen sind abzulesen am jeweiligen Schnittpunkt des gespiegelten Imped
 Die Admittanzkurve entspricht dem Kreisabschnitt zwischen $\underline{Y}(f=5\,\mathrm{kHz})$ und $\underline{Y}(f=50\,\mathrm{kHz})$.
 \end{minipage}%
 \begin{minipage}{0.38\textwidth}
-    \includegraphics{Tikz/pdf/Uebungen/plot_uebung_impedanzortskurve_admittanzortskurve_rls.pdf}
+    \includegraphics[alt={Impedanzortskurve (erster Quadrant) und Admittanzortskurve (vierter Quadrant) zusammen dargestellt. Impedanzortskurve als Gerade parallel zur Im-Achse. Admittanzortskurve als Halbkreis auf der Re-Achse. Winkel für Zeiger von Z und Y bei gleicher Frequenz einfach negiert. }]{Tikz/pdf/Uebungen/plot_uebung_impedanzortskurve_admittanzortskurve_rls.pdf}
 \end{minipage}
 }
 
@@ -443,7 +443,7 @@ Die Admittanzkurve entspricht dem Kreisabschnitt zwischen $\underline{Y}(f=5\,\m
 \end{minipage}%
 \begin{minipage}{0.3\textwidth}
     % Schaltbild: R1 in Reihe zu C, zusammen parallel zu R2
-    \includegraphics{Tikz/pdf/Uebungen/circ_uebung_admittanzortskurve_rcs_rp.pdf}%
+    \includegraphics[alt={Schaltbild: Reihenschaltung aus R1 und Kapazität C. Beide zusammen parallel zu R2.}]{Tikz/pdf/Uebungen/circ_uebung_admittanzortskurve_rcs_rp.pdf}%
 \end{minipage}
 \begin{enumerate}
     \item[a)] Bestimmen Sie die Admittanz für $p=0$, $p=1$, $p=2$ und $p\to\infty$.
@@ -481,7 +481,7 @@ Die Admittanzkurve entspricht dem Kreisabschnitt zwischen $\underline{Y}(f=5\,\m
 \begin{minipage}{0.4\textwidth}
 \begin{enumerate}
 \item[b)] Skizze der Admittanzortskurve:
-\item[] \includegraphics{Tikz/pdf/Uebungen/plot_uebung_admittanzortskurve_rcs_rp.pdf}
+\item[] \includegraphics[alt={Admittanzortskurve der gegebenen Schaltung für p zwischen 0 und unendlich. Kurve als Halbkreis auf einer Parallelen zur Im-Achse im ersten Quadranten. B=0 für p gegen unendlich. B=maximal für p=0. Y bei 45 Grad als Zeiger eingezeichnet. }]{Tikz/pdf/Uebungen/plot_uebung_admittanzortskurve_rcs_rp.pdf}
 \item[c)] Strom eilt um $45\degree$ voraus für $\varphi=45\degree$.
     Schnittpunkt aus Gerade und Ortskurve.
 \end{enumerate}
@@ -514,7 +514,7 @@ Untersucht wird die hier gezeigte Messbrückenschaltung.
 \end{minipage}\hspace{0.05\textwidth}%
 \begin{minipage}[t][0.5cm][t]{0.45\textwidth}%
     \,\\\rlap{% Schaltbild der Wechselstrommessbrücke, top aligned (space, linebreak and rlap in minipage)
-    \includegraphics{Tikz/pdf/Uebungen/circ_uebung_wechselstrommessbruecke_allgemein.pdf}%
+    \includegraphics[alt={Schaltbild: Wechselstrommessbrücke mit Impedanzen Z1 bis Z4 an idealer Spannungsquelle U0. Erster Strang der Messbrücke Z1 in Reihe mit Z2. Parallel dazu zweiter Strang mit Z3 in Reihe mit Z4. Messspannung UB zwischen den Mittelpunkten der beiden Stränge.}]{Tikz/pdf/Uebungen/circ_uebung_wechselstrommessbruecke_allgemein.pdf}%
     }%
 \end{minipage}
 

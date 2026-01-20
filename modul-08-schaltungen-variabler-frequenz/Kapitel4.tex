@@ -80,12 +80,12 @@ und das Resonanzverhalten von Schaltungen am Beispiel idealer Schwingkreise zu b
 
     \begin{figure}[H]\centering
         \begin{subfigure}{0.4\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_schwingkreis_rlcs_frei.pdf}% Schaltbild
+            \includegraphics[alt={Schaltbild RLC-Serienschaltung über Schalter kurzgeschlossen mit Spannung u über C.}]{Tikz/pdf/circ_schwingkreis_rlcs_frei.pdf}% Schaltbild
             \caption{Schaltbild}
             \label{fig:resonanzkreise:rlcs:frei:circ}
         \end{subfigure}%
         \begin{subfigure}{0.58\textwidth}\centering
-            \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/plot_zeitverlauf_RLCs_gedaempft.pdf}}% Plot
+            \resizebox{\textwidth}{!}{\includegraphics[alt={Zeitverlauf der Kapazitätsspannung u und des Stromes i durch den RLC-Serienschwingkreis ab t=0. Frei schwingend (gedämpft).}]{Tikz/pdf/plot_zeitverlauf_RLCs_gedaempft.pdf}}% Plot
             \caption{Freie Schwingung}
             \label{fig:resonanzkreise:rlcs:frei:plot}
         \end{subfigure}
@@ -130,12 +130,12 @@ und das Resonanzverhalten von Schaltungen am Beispiel idealer Schwingkreise zu b
 
     \begin{figure}[H]\centering
         \begin{subfigure}{0.4\textwidth}\centering
-            \includegraphics{Tikz/pdf/circ_schwingkreis_rlcs_erzwungen.pdf}% Schaltbild
+            \includegraphics[alt={Schaltbild RLC-Schwingkreis mit idealer Spannungsquelle an C. Parallel zu C sind R und L in Reihe.}]{Tikz/pdf/circ_schwingkreis_rlcs_erzwungen.pdf}% Schaltbild
             \caption{Schaltbild}
             \label{fig:resonanzkreise:rlcs:erzwungen:circ}
         \end{subfigure}\hfill%
         \begin{subfigure}{0.58\textwidth}\centering
-            \resizebox{\textwidth}{!}{\includegraphics{Tikz/pdf/plot_zeitverlauf_RLCs_angeregt.pdf}}% Plot
+            \resizebox{\textwidth}{!}{\includegraphics[alt={Zeitverlauf der Kapazitätsspannung u und des Stromes i durch den RLC-Serienschwingkreis bei sinusförmiger Anregung. Erzwungene Schwingung mit Erregerkreisfrequenz. Amplitude konstant. }]{Tikz/pdf/plot_zeitverlauf_RLCs_angeregt.pdf}}% Plot
             \caption{Erzwungene Schwingung}
             \label{fig:resonanzkreise:rlcs:erzwungen:plot}
         \end{subfigure}
@@ -372,13 +372,13 @@ Das Thema Eigenfrequenzen wird in Modul 12 Schaltvorgänge näher behandelt.
     Berechnung der Resonanzfrequenz $\omega_0$ für LC-Serien- und LC-Parallelschwingkreise.
     \begin{figure}[H]\centering
         \begin{subfigure}{0.48\textwidth}\centering
-            \resizebox{6cm}{!}{\includegraphics{Tikz/pdf/circ_schwingkreis_lcs_komplex.pdf}}% textwidth different as below
+            \resizebox{6cm}{!}{\includegraphics[alt={Schaltbild: LC-Serienschwingkreis mit Gesamtspannung U über beiden Bauelementen.}]{Tikz/pdf/circ_schwingkreis_lcs_komplex.pdf}}% textwidth different as below
             \captionsetup{labelformat=empty}
             \caption{LC-Serienschwingkreis}
             \label{fig:circ:lcs}
         \end{subfigure}\hfill%
         \begin{subfigure}{0.48\textwidth}\centering
-            \resizebox{6cm}{!}{\includegraphics{Tikz/pdf/circ_schwingkreis_lcp_komplex.pdf}}% textwidth different as above
+            \resizebox{6cm}{!}{\includegraphics[alt={Schaltbild: LC-Parallelschwingkreis mit Gesamtstrom I durch beide Bauelemente.}]{Tikz/pdf/circ_schwingkreis_lcp_komplex.pdf}}% textwidth different as above
             \captionsetup{labelformat=empty}
             \caption{LC-Parallelschwingkreis}
             \label{fig:circ:lcp}
@@ -570,7 +570,7 @@ Zudem lernen Sie das Überspannungsverhalten und das Stromverhalten im Resonanzf
     Der Schwingkreis ist in Abbildung \ref{fig:circ:rlcs} gezeigt und entspricht dem idealen LC-Serienschwingkreis
     aus Beispiel \ref{bsp:resonanz:lc} mit einem zusätzlichen ohmschen Widerstand $R$ in Reihe.
 
-    \fu{\includegraphics{Tikz/pdf/circ_schwingkreis_rlcs_komplex_2.pdf}}{Schaltbild RLC-Serienschwingkreis\label{fig:circ:rlcs}}
+    \fu{\includegraphics[alt={Schaltbild: RLC-Serienschwingkreis.}]{Tikz/pdf/circ_schwingkreis_rlcs_komplex_2.pdf}}{Schaltbild RLC-Serienschwingkreis\label{fig:circ:rlcs}}
 
     Die Impedanz $\underline{Z}$ des RLC-Serienschwingkreis aus Abbildung \ref{fig:circ:rlcs} ist gegeben durch:
 
@@ -714,15 +714,15 @@ Die maßstabsgetreuen Längenverhältnisse $\frac{U_L}{U_C}$ entsprechen: $\frac
 \begin{figure}[H]\centering
     \captionsetup[subfigure]{justification=centering,}%
     \begin{subfigure}{0.3\textwidth}\centering
-        \includegraphics{Tikz/pdf/plot_zeigerdiagramm_rlcs_2.pdf}
+        \includegraphics[alt={Zeigerdiagramm RLC-Serienschwingkreis bei ohmsch-kapazitivem Verhalten. Frequenz kleiner als Resonanzfrequenz. UC betragsmäßig größer als UL.}]{Tikz/pdf/plot_zeigerdiagramm_rlcs_2.pdf}
         \caption{Fall 1: $\omega < \omega_0$\newline(ohmsch-kapazitiv)}
     \end{subfigure}\hfill%
     \begin{subfigure}{0.3\textwidth}\centering
-        \includegraphics{Tikz/pdf/plot_zeigerdiagramm_rlcs_3.pdf}
+        \includegraphics[alt={Zeigerdiagramm RLC-Serienschwingkreis bei Resonanzfall. Frequenz gleich Resonanzfrequenz. UC und UL heben sich auf.}]{Tikz/pdf/plot_zeigerdiagramm_rlcs_3.pdf}
         \caption{Fall 2: $\omega = \omega_0$\newline(rein ohmsch)}
     \end{subfigure}\hfill%
     \begin{subfigure}{0.3\textwidth}\centering
-        \includegraphics{Tikz/pdf/plot_zeigerdiagramm_rlcs_1.pdf}
+        \includegraphics[alt={Zeigerdiagramm RLC-Serienschwingkreis bei ohmsch-induktivem Verhalten. Frequenz größer als Resonanzfrequenz. UL betragsmäßig größer als UC.}]{Tikz/pdf/plot_zeigerdiagramm_rlcs_1.pdf}
         \caption{Fall 3: $\omega > \omega_0$\newline(ohmsch-induktiv)}
     \end{subfigure}
     \s{\caption{Zeigerdiagramm RLC-Serienschwingkreis}}
@@ -783,7 +783,7 @@ Gezeigt sind die Beträge der Impedanz $|\underline{Z}|$, der Reaktanz $|X|$,
 der Reaktanz der Induktivität $|X_L|$, der Reaktanz der Kapazität $|X_C|$ und des ohmschen Widerstandes $R$.
 
 \begin{figure}[H]\centering
-    \includegraphics{Tikz/pdf/plot_rlcs_impedanzkurve.pdf}
+    \includegraphics[alt={Impedanzkurve eines RLC-Serienschwingkreises in Abhängigkeit der Frequenz bezogen auf die Resonanzfrequenz. Gezeigt sind die Beträge der einzelnen Impedanzen. XC verläuft hyperbolisch. XL verläuft linear. Bei Resonanz ist X null und Z gleich R.}]{Tikz/pdf/plot_rlcs_impedanzkurve.pdf}
     \caption[Impedanzkurve RLC-Serienschwingkreis]{Impedanzkurve RLC-Serienschwingkreis\newline mit $R=10\ \Omega$, $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm{F}$}
     \label{fig:plot:rlcs:impedanzkurve}
 \end{figure}
@@ -893,7 +893,7 @@ Der Term $\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega}$ wird auch als relat
 Abbildung \ref{fig:plot:rlcs:resonanzkurve:impedanz} zeigt exemplarisch mehrere Resonanzkurven eines RLC-Serienschwingkreises für unterschiedliche Gütefaktoren $Q$ zum Vergleich.
 Die y-Achse zeigt den Impedanzbetrag normiert auf den Kennwiderstand $X_k$ und die x-Achse zeigt die Frequenz normiert auf die Resonanzfrequenz $\omega_0$. 
 
-\fu{\includegraphics{Tikz/pdf/plot_rlcs_impedanzkurve_guete.pdf}}{Resonanzkurve der Impedanz, RLC-Serienschwingkreis, Vergleich Güten\label{fig:plot:rlcs:resonanzkurve:impedanz}}
+\fu{\includegraphics[alt={Resonanzkurve der Impedanz eines RLC-Serienschwingkreises in Abhängigkeit der normierten Frequenz für verschiedene Gütefaktoren Q. Die Kurven zeigen den Impedanzbetrag normiert auf den Kennwiderstand Xk. Bei zunehmender Güte wird die Resonanzspitze schärfer.}]{Tikz/pdf/plot_rlcs_impedanzkurve_guete.pdf}}{Resonanzkurve der Impedanz, RLC-Serienschwingkreis, Vergleich Güten\label{fig:plot:rlcs:resonanzkurve:impedanz}}
 %\begin{figure}[H]\centering
 %    \begin{subfigure}{\textwidth}\centering
 %        \includegraphics{Tikz/pdf/plot_rlcs_impedanzkurve_guete_noxaxis.pdf}
@@ -919,7 +919,7 @@ Für Frequenzen weit unterhalb der Grenzfrequenz $\omega << \omega_0$ und weit o
 dominieren die Blindanteile der Impedanz wie in Kapitel \ref{sec:resonanzkreise:rlcs} gezeigt ist. 
 Daher ist der Einfluss der Güte auf die Impedanz bei diesen Frequenzen gering (Annäherung der Kurven).
 
-\fu{\includegraphics{Tikz/pdf/plot_rlcs_phikurve_guete.pdf}}{Resonanzkurve der Phase, RLC-Serienschwingkreis, Vergleich Güten\label{fig:plot:rlcs:resonanzkurve:phi}}
+\fu{\includegraphics[alt={Phasenkurve eines RLC-Serienschwingkreises in Abhängigkeit der normierten Frequenz für verschiedene Gütefaktoren Q. Die Kurven zeigen die Phasenverschiebung zwischen Spannung und Strom. Bei Frequenzen unterhalb der Resonanz ist die Phase nahe -90 Grad (kapazitiv) und bei Frequenzen oberhalb nahe +90 Grad (induktiv). Bei zunehmender Güte wird der Übergang steiler.}]{Tikz/pdf/plot_rlcs_phikurve_guete.pdf}}{Resonanzkurve der Phase, RLC-Serienschwingkreis, Vergleich Güten\label{fig:plot:rlcs:resonanzkurve:phi}}
 
 Abbildung \ref{fig:plot:rlcs:resonanzkurve:phi} zeigt die Phasenkurve des Schwingkreises für unterschiedliche Güten mit $\varphi = \varphi_U - \varphi_I$.
 Für Frequenzen deutlich unterhalb der Resonanzfrequenz $\omega << \omega_0$ ist die Phasenverschiebung $\varphi$ nahezu $-90^\circ$ (rein kapazitiv).
@@ -972,7 +972,7 @@ zu plus neunzig Grad, also rein induktiv. Die Güte ist damit auch ein Maß für
     Die Spannung $\underline{U}$ über den Schwingkreis entspricht der konstanten Quellenspannung $\underline{U}_q$ an dessen Außenklemmen
     wie in Abbildung \ref{fig:circ:rlcs:uq} gezeigt.
 
-    \fu{\includegraphics{Tikz/pdf/circ_schwingkreis_rlcs_komplex_2_const_u.pdf}}{Schaltbild RLC-Serienschwingkreis mit konstanter Spannungsquelle\label{fig:circ:rlcs:uq}}
+    \fu{\includegraphics[alt={Schaltbild eines RLC-Serienschwingkreises mit einer konstanten Spannungsquelle. Die Quelle ist an die Außenklemmen des Serienschwingkreises angeschlossen.}]{Tikz/pdf/circ_schwingkreis_rlcs_komplex_2_const_u.pdf}}{Schaltbild RLC-Serienschwingkreis mit konstanter Spannungsquelle\label{fig:circ:rlcs:uq}}
 
     Mit der Knoten- und Maschengleichung:
 
@@ -1012,9 +1012,7 @@ zu plus neunzig Grad, also rein induktiv. Die Güte ist damit auch ein Maß für
     in Abhängigkeit der Kreisfrequenz normiert auf die Resonanzkreisfrequenz.
     Die Normierung auf $\omega_0$ ermöglicht zum Beispiel den Vergleich der Güte von Reihenschwingkreisen mit unterschiedlichen Resonanzfrequenzen.
 
-    \fu{\includegraphics{Tikz/pdf/plot_rlcs_spannung_resonanz.pdf}}%
-    {Resonanzkurve der Spannung am RLC-Serienschwingkreis\newline
-    $U_q=10\ \mathrm{V},\ Q=3,162$\label{fig:plot:rlcs:spannungsresonanz}}
+    \fu{\includegraphics[alt={Resonanzkurve der Spannung am RLC-Serienschwingkreis in Abhängigkeit der normierten Frequenz. Gezeigt sind die Beträge der Spannungen über R und L und C. Die Spannung über L und C ist bei der Resonanzfrequenz deutlich höher als über R.}]{Tikz/pdf/plot_rlcs_spannung_resonanz.pdf}}{Resonanzkurve der Spannung am RLC-Serienschwingkreis\newline$U_q=10\ \mathrm{V},\ Q=3,162$\label{fig:plot:rlcs:spannungsresonanz}}
 
     Wie in der Abbildung zu erkennen ist, ergibt sich im Bereich der Resonanzfrequenz $\omega = \omega_0$ 
     eine deutlich höhere Spannung über $L$ und $C$ im Vergleich zum ohmschen Widerstand $R$. 
@@ -1166,10 +1164,7 @@ Ein Vorteil dieser Darstellung ist, dass das Spannungsverhalten des Schwingkreis
     Bei Anregung mit konstanter Spannung $\underline{U}_q$ ergibt sich für den RLC-Serienschwingkreis aus Abbildung \ref{fig:circ:rlcs:uq}
     ein frequenzabhängiger Stromverlauf. Dieser ist betragsmäßig in Abbildung \ref{fig:plot:rlcs:uq:i} für verschiedene Gütefaktoren $Q$ dargestellt.
    
-    \fu{\includegraphics{Tikz/pdf/plot_rlcs_stromkurve_uq_guete.pdf}}{%
-        Stromkurve des RLC-Serienschwingkreises bei konstanter Spannung\newline$X_k=31,6\ \Omega,\ U_q=10\ \mathrm{V},\ Q=var.$%
-        \label{fig:plot:rlcs:uq:i}%
-    }%
+    \fu{\includegraphics[alt={Stromkurve eines RLC-Serienschwingkreises bei konstanter Spannung in Abhängigkeit der normierten Frequenz für verschiedene Gütefaktoren Q. Die Kurven zeigen den Strombetrag normiert auf den Maximalstrom I0. Bei zunehmender Güte wird die Resonanzspitze schärfer.}]{Tikz/pdf/plot_rlcs_stromkurve_uq_guete.pdf}}{Stromkurve des RLC-Serienschwingkreises bei konstanter Spannung\newline$X_k=31,6\ \Omega,\ U_q=10\ \mathrm{V},\ Q=var.$\label{fig:plot:rlcs:uq:i}}%
     
     Der Strombetrag wird maximal bei Resonanzfrequenz wie der Graphik zu entnehmen ist.
     Wie in Abbildung \ref{fig:plot:rlcs:impedanzkurve} gezeigt ist, 
@@ -1294,7 +1289,7 @@ Die Schreibweise eignet sich beispielsweise zur Bestimmung der Bandbreite des Ba
     Wird ein RLC-Serienschwingkreis mit einem konstanten Strom $\underline{I}_q$ wie in Abbildung \ref{fig:circ:rlcs:iq}
     angeregt, ergeben sich Bauteilspannungen.
 
-    \fu{\includegraphics{Tikz/pdf/circ_schwingkreis_rlcs_komplex_2_const_i.pdf}}{Schaltbild RLC-Serienschwingkreis mit konstanter Stromquelle\label{fig:circ:rlcs:iq}}
+    \fu{\includegraphics[alt={Schaltbild: RLC-Serienschwingkreis mit konstanter Stromquelle.}]{Tikz/pdf/circ_schwingkreis_rlcs_komplex_2_const_i.pdf}}{Schaltbild RLC-Serienschwingkreis mit konstanter Stromquelle\label{fig:circ:rlcs:iq}}
 
     Die Bauteilspannungen sind dabei direkt proportional zu den jeweiligen Impedanzen. Für die Gesamtspannung gilt:
 
@@ -1407,7 +1402,7 @@ Sie werden daher viele Parallelen zu den dort behandelten Inhalten erkennen.
                 \underline{Y} = \underline{Z}^{-1} = G + \mathrm{j}B = \frac{\underline{I}}{\underline{U}}
             \end{equation}
         
-            \fu{\includegraphics{Tikz/pdf/circ_schwingkreis_rlcp_komplex_2.pdf}}{Schaltbild RLC-Parallelschwingkreis\label{fig:circ:rlcp}}
+            \fu{\includegraphics[alt={Schaltbild: RLC-Parallelschwingkreis.}]{Tikz/pdf/circ_schwingkreis_rlcp_komplex_2.pdf}}{Schaltbild RLC-Parallelschwingkreis\label{fig:circ:rlcp}}
         
             Die Admittanz $\underline{Y}$ des RLC-Parallelschwingkreis aus Abbildung \ref{fig:circ:rlcp} ist gegeben durch:
         
@@ -1510,15 +1505,15 @@ Der Schwingkreis wirkt ohmsch-kapazitiv, da die Suszeptanz der Kapazität größ
     \begin{figure}[H]\centering
         \captionsetup[subfigure]{justification=centering,}
         \begin{subfigure}{0.3\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_zeigerdiagramm_rlcp_2.pdf}
+            \includegraphics[alt={Zeigerdiagramm Fall 1: ohmsch-induktiv mit Frequenz kleiner als Resonanzfrequenz. IL betragsmäßig größer als IC.}]{Tikz/pdf/plot_zeigerdiagramm_rlcp_2.pdf}
             \caption{Fall 1: $\omega < \omega_0$\newline(ohmsch-induktiv)}
         \end{subfigure}\hfill%
         \begin{subfigure}{0.3\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_zeigerdiagramm_rlcp_3.pdf}
+            \includegraphics[alt={Zeigerdiagramm Fall 2: rein ohmsch mit Frequenz gleich Resonanzfrequenz. IL und IC betragsmäßig gleich.}]{Tikz/pdf/plot_zeigerdiagramm_rlcp_3.pdf}
             \caption{Fall 2: $\omega = \omega_0$\newline(rein ohmsch)}
         \end{subfigure}\hfill%
         \begin{subfigure}{0.3\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_zeigerdiagramm_rlcp_1.pdf}
+            \includegraphics[alt={Zeigerdiagramm Fall 3: ohmsch-kapazitiv mit Frequenz größer als Resonanzfrequenz. IC betragsmäßig größer als IL.}]{Tikz/pdf/plot_zeigerdiagramm_rlcp_1.pdf}
             \caption{Fall 3: $\omega > \omega_0$\newline(ohmsch-kapazitiv)}
         \end{subfigure}
         \s{\caption{Zeigerdiagramm RLC-Parallelschwingkreis}}
@@ -1578,7 +1573,7 @@ Die Gesamtschaltung verhält sich dann ohmsch-kapazitiv.
     der Suszeptanz der Kapazität $|B_C|$, der Suszeptanz der Induktivität $|B_L|$ und der ohmsche Leitwert $G$.
     
     \begin{figure}[H]\centering
-        \includegraphics{Tikz/pdf/plot_rlcp_admittanzkurve.pdf} % TODO WIP
+        \includegraphics[alt={Admittanzkurve eines RLC-Parallelschwingkreises in Abhängigkeit der Frequenz bezogen auf die Resonanzfrequenz. Gezeigt sind die Beträge der Admittanz respektive der Suszeptanzen und des ohmschen Leitwerts. BL verläuft hyperbolisch. BC verläuft linear. Bei Resonanzfrequenz ist Y gleich G und minimal.}]{Tikz/pdf/plot_rlcp_admittanzkurve.pdf} % TODO WIP
         \caption[Admittanzkurve RLC-Parallelschwingkreis]%
         {Admittanzkurve RLC-Parallelschwingkreis\newline mit $R=10\ \Omega$, $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm{F}$}
         \label{fig:plot:rlcp:admittanzkurve}
@@ -1705,7 +1700,7 @@ Dieser entspricht dem Betrag der Suszeptanzen von Induktivität und Kapazität i
     Abbildung \ref{fig:plot:rlcp:resonanzkurve} zeigt exemplarisch mehrere Resonanzkurven eines RLC-Parallelschwingkreises für unterschiedliche Gütefaktoren $Q$ zum Vergleich.
     Die y-Achse zeigt den Admittanzbetrag normiert auf den Kennleitwert $B_k$ und die x-Achse zeigt die Kreisfrequenz normiert auf die Resonanzkreisfrequenz $\omega_0$.
     
-    \fu{\includegraphics{Tikz/pdf/plot_rlcp_admittanzkurve_guete.pdf}}{Resonanzkurve RLC-Parallelschwingkreis, Vergleich Gütefaktoren\label{fig:plot:rlcp:resonanzkurve}}
+    \fu{\includegraphics[alt={Resonanzkurve eines RLC-Parallelschwingkreises in Abhängigkeit der Frequenz bezogen auf die Resonanzfrequenz bei verschiedenen Gütefaktoren. Gezeigt ist der Betrag der Admittanz bezogen auf den Kennleitwert. Bei zunehmender Güte wird die Resonanzspitze schärfer.}]{Tikz/pdf/plot_rlcp_admittanzkurve_guete.pdf}}{Resonanzkurve RLC-Parallelschwingkreis, Vergleich Gütefaktoren\label{fig:plot:rlcp:resonanzkurve}}
     
     Die Bauteilgrößen sind gleich gewählt wie für die Impedanzkurve des RLC-Serienschwingkreises in Abbildung \ref{fig:plot:rlcs:impedanzkurve}.
     Anhand der Gleichungen \ref{eq:rlcp:ybk} und \ref{eq:rlcp:ynorm} zeigt sich, dass die normierte Darstellung bei beiden Kurven den direkten Vergleich
@@ -1765,7 +1760,7 @@ Geht der Wirkleitwert gegen null, ist die Güte theoretisch unendlich groß und 
         Der Strom $\underline{I}$ durch den Schwingkreis entspricht dem konstanten Quellenstrom $\underline{I}_q$ an dessen Außenklemmen
         wie in Abbildung \ref{fig:circ:rlcp:iq} gezeigt ist.
 
-        \fu{\includegraphics{Tikz/pdf/circ_schwingkreis_rlcp_komplex_2_const_i.pdf}}{Schaltbild RLC-Parallelschwingkreis mit konstanter Stromquelle\label{fig:circ:rlcp:iq}}
+        \fu{\includegraphics[alt={Schaltbild: RLC-Parallelschwingkreises angeschlossen an konstante Stromquelle.}]{Tikz/pdf/circ_schwingkreis_rlcp_komplex_2_const_i.pdf}}{Schaltbild RLC-Parallelschwingkreis mit konstanter Stromquelle\label{fig:circ:rlcp:iq}}
     
         Mit der Knoten- und Maschengleichung:
         \begin{equation*}\begin{aligned}    % U_L = Uq * (Zk * w/w0)/(sqrt(R^2 + Zk^2 * (w/w0 - w0/w)^2)) 
@@ -1807,9 +1802,7 @@ Geht der Wirkleitwert gegen null, ist die Güte theoretisch unendlich groß und 
         Abbildung \ref{fig:plot:rlcp:stromresonanz} zeigt die Beträge der Ströme $I_R$, $I_L$, $I_C$  
         in Abhängigkeit der Kreisfrequenz normiert auf die Resonanzkreisfrequenz.
     
-        \fu{\includegraphics{Tikz/pdf/plot_rlcp_strom_resonanz.pdf}}%
-        {Resonanzkurve des Stromes am RLC-Parallelschwingkreis\newline
-        $U_q=10\ \mathrm{V},\ Q=3,162$\label{fig:plot:rlcp:stromresonanz}}
+        \fu{\includegraphics[alt={Resonanzkurve des Stromes am RLC-Parallelschwingkreis in Abhängigkeit der Frequenz bezogen auf die Resonanzfrequenz. Gezeigt sind die Beträge der Ströme IR (konstant) und IL sowie IC. Bei Resonanzfrequenz sind IL und IC betragsmäßig deutlich größer als IR.}]{Tikz/pdf/plot_rlcp_strom_resonanz.pdf}}{Resonanzkurve des Stromes am RLC-Parallelschwingkreis\newline$U_q=10\ \mathrm{V},\ Q=3,162$\label{fig:plot:rlcp:stromresonanz}}
     
         Wie in der Abbildung zu erkennen ist, ergibt sich im Bereich der Resonanzkreisfrequenz $\omega = \omega_0$ 
         eine Stromüberhöhung bei $L$ und $C$ im Vergleich zum ohmschen Widerstand $R$.
@@ -1878,10 +1871,7 @@ ist die Güte eine gute Näherung für das Verhältnis des maximal möglichen Ü
     ergibt sich für den RLC-Parallelschwingkreis aus Abbildung \ref{fig:circ:rlcp:iq}
     ein frequenzabhängiger Spannungsverlauf. Dieser ist betragsmäßig in Abbildung \ref{fig:plot:rlcp:iq:u} für verschiedene Gütefaktoren $Q$ dargestellt.
    
-    \fu{\includegraphics{Tikz/pdf/plot_rlcp_spannungskurve_iq_guete.pdf}}{%
-        Spannungskurve des RLC-Parallelschwingkreises bei konstantem Strom\newline$B_k=31,6\ \mathrm{mS},\ I_q=10\ \mathrm{mA},\ Q=var.$%
-        \label{fig:plot:rlcp:iq:u}%
-    }%
+    \fu{\includegraphics[alt={Spannungskurve des RLC-Parallelschwingkreises bei konstantem Strom in Abhängigkeit der Frequenz bezogen auf die Resonanzfrequenz bei verschiedenen Gütefaktoren. Gezeigt ist der Betrag der Spannung. Bei zunehmender Güte wird die Resonanzspitze schärfer.}]{Tikz/pdf/plot_rlcp_spannungskurve_iq_guete.pdf}}{Spannungskurve des RLC-Parallelschwingkreises bei konstantem Strom\newline$B_k=31,6\ \mathrm{mS},\ I_q=10\ \mathrm{mA},\ Q=var.$\label{fig:plot:rlcp:iq:u}}%
     
     Das Spannungsverhalten des RLC-Parallelschwingkreis ist analog zum Stromverhalten des RLC-Serienschwingkreises, 
     wie es in Kapitel \ref{sec:resonanzkreise:rlcs:stromkurve} beschrieben wurde. 

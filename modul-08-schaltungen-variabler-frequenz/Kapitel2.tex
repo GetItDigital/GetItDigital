@@ -55,11 +55,11 @@ sowie Grenzfrequenzen von Filterschaltungen kennen und zu bestimmen.
 \s{% single page comic strips (left and right)
     \begin{figure}[H]
         \begin{subfigure}{.5\textwidth}\centering% left
-            \resizebox{!}{.95\textheight}{\includegraphics{Bilder/xkcd_482_height_logaxis_large_scales_cc-2.5-by-sa.png}}
+            \resizebox{!}{.95\textheight}{\includegraphics[alt={Comic Strip Height von XKCD zeigt Objekte in verschiedenen Höhen auf einer logarithmischen Skala von der Grenze des beobachtbaren Universums in 46 Milliarden Lichtjahren Entfernung bis zu Menschen mit einer Größe von ein-zwei Metern mit maßstabsgetreuen Höhen. Zwischen einer Milliarde und einer Millionen Lichtjahre sind u.a. die Andromeda Galaxie und kollidierende Antennae Galaxien dargestellt. Zwischen einer Millionen und einem Lichtjahr Höhe sind u.a. der Orion Nebel und Betegeuze gezeigt. Einige Objekte: Voyager I - Pluto - Saturn - Jupiter - Sonne - Mond - Apollo 13 - GPS Satelliten - ISS - Weltraummüll - Flugzeuge - Mount Everest - Helicopter - Eiffelturm (325m) - Großen Pyramiden (140m) - Mammutbaum (115m) - Eiche (20m) - Brachosaurus (13m) - Giraffe (8m) - Menschen (ca. 2m)}]{Bilder/xkcd_482_height_logaxis_large_scales_cc-2.5-by-sa.png}}
                 \caption{Comic \textit{Height}, Log-Skala Höhe\cite[\#482]{xkcd}}%
         \end{subfigure}%
         \begin{subfigure}{.5\textwidth}\centering% right
-            \resizebox{!}{.95\textheight}{\includegraphics{Bilder/xkcd_485_depth_logaxis_small_scales_cc-2.5-by-sa.png}}
+            \resizebox{!}{.95\textheight}{\includegraphics[alt={Comic Strip Depth von XKCD zeigt Objekte in verschiedenen Tiefen auf einer logarithmischen Skala von einem Menschem bis zu Protonen. Der Comic zeigt in maßstabsgetreuer Größe in absteigender Reihenfolge überlagernd die Bestandteile eines Arbeitsrechner u.a. Gehäuse - DVD Laufwerke - Maus (Tier) - CPU-Socket - Mücke (Torrent) - CPU (upcoming Segfault) - Reiskorn - Staubmilbe - Haarquerschnitt - Rostmilbe - Spermium (Fork();) - Pter Norton vs. Bakteriophage - Memory - Carbon Nanotubes (Space Elevator) - Silizium Atome - Elektronenwolke - Siliziumkerne - Ipod Femto - Proton - Brian Greene knitting furiously (String theorist)}]{Bilder/xkcd_485_depth_logaxis_small_scales_cc-2.5-by-sa.png}}
                 \caption{Comic \textit{Depth}, Log-Skala Tiefe\cite[\#485]{xkcd}}%
         \end{subfigure}\hfill
         \caption{xkcd Comics zu logarithmischen Darstellungen von Größen}%
@@ -149,11 +149,11 @@ also zehn hoch minus fünfzehn Metern, neben einigen Anspielungen und Witzen.
 
         \begin{figure}[H]
             \begin{subfigure}{0.48\textwidth}\centering
-                \resizebox*{\textwidth}{!}{\includegraphics{Tikz/pdf/plot_potenzfunktionen_lin_scale.pdf}}
+                \resizebox*{\textwidth}{!}{\includegraphics[alt={Lineare Darstellung mehrerer Potenzfunktionen x^n als Kurven. Nur x^0 und x^1 sind Geraden. Alle Funktionen kreuzen sich in f(1)=1.}]{Tikz/pdf/plot_potenzfunktionen_lin_scale.pdf}}
                 \caption{Potenzfunktionen, lineare Achsen}
             \end{subfigure}%
             \begin{subfigure}{0.48\textwidth}\centering
-                \resizebox*{\textwidth}{!}{\includegraphics{Tikz/pdf/plot_potenzfunktionen_log_scale.pdf}}
+                \resizebox*{\textwidth}{!}{\includegraphics[alt={Logarithmische Darstellung mehrerer Potenzfunktionen x^n als Geraden. Alle Funktionen kreuzen sich in f(1)=1.}]{Tikz/pdf/plot_potenzfunktionen_log_scale.pdf}}
                 \caption{Potenzfunktionen, logarithmische Achsen}
             \end{subfigure}\hfill
             \caption{Vergleich lineare und logarithmische Skalierung von Potenzfunktionen}
@@ -427,8 +427,7 @@ Das heißt sechsundzwanzig Dezibel entsprechen zum Beispiel dem Faktor zwanzig b
     Abbildung \ref{plot:tiefpass:ampli:bereiche:lin} zeigt den Amplitudengang in Abhängigkeit von $\omega/\omega_g$.
     Neben dem realen Verlauf in rot, ist auch der Verlauf eines idealisierten Tiefpasses mit hoher Flankensteilheit in blau dargestellt.
 
-    \fu{\includegraphics{Tikz/pdf/plot_tiefpass_mini_ampli_lin_bereiche.pdf}%
-        }{Durchlassbereich und Sperrbereich eines einfachen Tiefpasses, lineare Skala\label{plot:tiefpass:ampli:bereiche:lin}}
+    \fu{\includegraphics[alt={Amplitudengang eines einfachen Tiefpasses in linearer Skala mit gekennzeichnetem Durchlass- und Sperrbereich. Ideal springt A(omega) schlagartig von 1 auf 0 bei der Grenzfrequenz. Real nimmt A(omega) langsam ab mit A(omega)=1/sqrt(2) bei der Grenzkreisfrequenz.}]{Tikz/pdf/plot_tiefpass_mini_ampli_lin_bereiche.pdf}}{Durchlassbereich und Sperrbereich eines einfachen Tiefpasses, lineare Skala\label{plot:tiefpass:ampli:bereiche:lin}}
     Eine Änderung der Grenzfrequenz führt in linearer Darstellung zu einer Stauchung oder Streckung des Amplitudenganges entlang der Frequenzachse.
 
     \textbf{Beispiel: Hochpass erster Ordnung}\index{Filter>Hochpass}
@@ -554,8 +553,7 @@ Abschließend lernen Sie den prinzipiellen Aufbau und das frequenzabhängige Üb
     Die Frequenzangabe auf der x-Achse wurde auf die Grenzfrequenz normiert und erfolgt daher einheitenlos.
 
     % Plot
-    \fu{\includegraphics{Tikz/pdf/plot_tiefpass_detail_amplitudengang_log_norm_detail.pdf}%
-        }{Bode-Diagramm Tiefpass 1. Ordnung, Amplitudengang\label{plot:tiefpass:bode:ampli:detail}}
+    \fu{\includegraphics[alt={Bode-Diagramm des Amplitudengangs eines Tiefpasses 1. Ordnung normiert auf die Grenzkreisfrequenz. Doppelt logarithmische Skalierung. Der Amplitudengang zeigt einen Durchlassbereich für Frequenzen unterhalb der Grenzfrequenz und einen Sperrbereich für Frequenzen oberhalb der Grenzfrequenz. Die Steigung im Sperrbereich beträgt -20 dB pro Dekade. Dämpfung bei Grenzfrequenz -3 dB.}]{Tikz/pdf/plot_tiefpass_detail_amplitudengang_log_norm_detail.pdf}}{Bode-Diagramm Tiefpass 1. Ordnung, Amplitudengang\label{plot:tiefpass:bode:ampli:detail}}
 
     % Näherungen
     Gut zu erkennen ist die Unterteilung des Frequenzbereiches in Durchlass- und Sperrbereich durch die Grenzfrequenz.
@@ -588,8 +586,7 @@ Abschließend lernen Sie den prinzipiellen Aufbau und das frequenzabhängige Üb
     Die Kurvenform des Phasenganges ähnelt der Kurvenform eines Arkustangens in linearer Darstellung bei entsprechender Verschiebung und Stauchung.
     
     % Plot
-    \fu{\includegraphics{Tikz/pdf/plot_tiefpass_detail_phasengang_log_norm_detail.pdf}%
-        }{Bode-Diagramm Tiefpass 1. Ordnung, Phasengang\label{plot:tiefpass:bode:phase:detail}}
+    \fu{\includegraphics[alt={Bode-Diagramm des Phasengangs eines Tiefpasses 1. Ordnung normiert auf die Grenzkreisfrequenz. Doppelt logarithmische Skalierung. Die Phasenverschiebung geht von 0 Grad bis -45 Grad im Durchlassbereich und von -45 Grad bis -90 Grad im Sperrbereich. S-förmiger Kurvenverlauf.}]{Tikz/pdf/plot_tiefpass_detail_phasengang_log_norm_detail.pdf}}{Bode-Diagramm Tiefpass 1. Ordnung, Phasengang\label{plot:tiefpass:bode:phase:detail}}
 
     Der Wertebereich des Phasenganges wird durch die beiden horizontalen Asymptoten 
     $\varphi(\omega) = 0\ \degree$ für $\omega \rightarrow 0$ und 
@@ -714,17 +711,17 @@ Die gemeinsame Darstellung von Amplituden- und Phasengang wie hier gezeigt, wird
 
     \begin{figure}[H]
         \begin{subfigure}{0.5\linewidth}\centering
-            \includegraphics{Tikz/pdf/plot_tiefpass_minimal_amplitudengang_linear3.pdf}
+            \includegraphics[alt={Lineare Darstellung des Amplitudengangs eines Tiefpasses 1. Ordnung. Die Amplitude bleibt für sehr niedrige Frequenzen gleich und fällt bei höheren Frequenzen ab. Die Kurve stagniert knapp über null.}]{Tikz/pdf/plot_tiefpass_minimal_amplitudengang_linear3.pdf}
         \end{subfigure}
         \begin{subfigure}{0.5\linewidth}\centering
-            \includegraphics{Tikz/pdf/plot_tiefpass_detail_amplitudengang_log.pdf}
+            \includegraphics[alt={Logarithmische Darstellung des Amplitudengangs eines Tiefpasses 1. Ordnung. Verlauf des Amplitudenganges ist unterhalb der Grenzfrequenz näherungsweise konstant und oberhalb der Grenzfrequenz näherungsweise gerade abfallend mit einer Steigung von einer Dekade pro Dekade. Abgerundeter Übergang an der Grenzfrequenz.}]{Tikz/pdf/plot_tiefpass_detail_amplitudengang_log.pdf}
         \end{subfigure}\hfill%
         \begin{subfigure}{0.5\linewidth}\centering
-            \includegraphics{Tikz/pdf/plot_tiefpass_minimal_phasengang_linear3.pdf}
+            \includegraphics[alt={Lineare Darstellung des Phasengangs eines Tiefpasses 1. Ordnung. Die Phasenverschiebung von 0 Grad bis -90 Grad. Kurvenverlauf zunächst steil und dann immer flacher.}]{Tikz/pdf/plot_tiefpass_minimal_phasengang_linear3.pdf}
             \caption{Lineare Darstellung}
         \end{subfigure}
         \begin{subfigure}{0.5\linewidth}\centering
-            \includegraphics{Tikz/pdf/plot_tiefpass_detail_phasengang_log.pdf}%
+            \includegraphics[alt={Logarithmische Darstellung des Phasengangs eines Tiefpasses 1. Ordnung. Die Phasenverschiebung von 0 Grad bis -45 Grad im Durchlassbereich und von -45 Grad bis -90 Grad im Sperrbereich. S-förmiger Kurvenverlauf. Wendepunkt bei Grenzfrequenz.}]{Tikz/pdf/plot_tiefpass_detail_phasengang_log.pdf}%
             \caption{Logarithmische Darstellung}
         \end{subfigure}
         \caption{Vergleich lineare und logarithmische Darstellung des Tiefpass 1. Ordnung}
@@ -795,15 +792,15 @@ Die S Kurve ist symmetrisch um diesen Wendepunkt und ungefähr drei bis vier Dek
 
     \begin{figure}[H]\centering
         \begin{subfigure}{0.48\linewidth}\centering
-            \includegraphics{Tikz/pdf/plot_tiefpass_detail_amplitudengang_log_norm.pdf}% Leerzeile für Zeilenumbruch:
+            \includegraphics[alt={Bode-Diagramm: Amplitudengang eines Tiefpass 1. Ordnung doppeltlogarithmisch skaliert. Konstant 1 unterhalb der Grenzfrequenz. Gerade abfallend oberhalb der Grenzfrequenz. }]{Tikz/pdf/plot_tiefpass_detail_amplitudengang_log_norm.pdf}% Leerzeile für Zeilenumbruch:
 
-            \includegraphics{Tikz/pdf/plot_tiefpass_detail_phasengang_log_norm.pdf}%
+            \includegraphics[alt={Bode-Diagramm: Phasengang eines Tiefpass 1. Ordnung halblogarithmisch skaliert. S-förmiger Verlauf von 0 Grad bis -90 Grad mit Wendepunkt bei der Grenzfrequenz.}]{Tikz/pdf/plot_tiefpass_detail_phasengang_log_norm.pdf}%
             \caption{Tiefpass 1. Ordnung}
         \end{subfigure}%
         \begin{subfigure}{0.48\linewidth}\centering
-            \includegraphics{Tikz/pdf/plot_hochpass_detail_amplitudengang_log_norm.pdf}% Leerzeile für Zeilenumbruch:
+            \includegraphics[alt={Bode-Diagramm: Amplitudengang eines Hochpass 1. Ordnung doppeltlogarithmisch skaliert. Gerade steigend unterhalb der Grenzfrequenz. Konstant 1 oberhalb der Grenzfrequenz. }]{Tikz/pdf/plot_hochpass_detail_amplitudengang_log_norm.pdf}% Leerzeile für Zeilenumbruch:
 
-            \includegraphics{Tikz/pdf/plot_hochpass_detail_phasengang_log_norm.pdf}%
+            \includegraphics[alt={Bode-Diagramm: Phasengang eines Hochpass 1. Ordnung halblogarithmisch skaliert. S-förmiger Verlauf von 90 Grad bis 0 Grad mit Wendepunkt bei der Grenzfrequenz.}]{Tikz/pdf/plot_hochpass_detail_phasengang_log_norm.pdf}%
             \caption{Hochpass 1. Ordnung}
         \end{subfigure}
         \caption{Vergleich Tief- und Hochpass 1. Ordnung, Bode-Diagramme}
@@ -897,9 +894,7 @@ während der Hochpass von plus neunzig Grad auf null Grad verläuft.
     Der symbolische Verstärkerblock zwischen beiden Filter verhindert eine Rückwirkung des Hochpass auf die Ausgangsspannung des Tiefpasses. 
     Nur unter der Annahme einer Rückwirkungsfreiheit lassen sich die Frequenzgänge von Tiefpass und Hochpass durch in Reihe Schalten multiplizieren.
 
-    \fu{\resizeboxsb{0.8}{1}{%
-        \includegraphics{Tikz/pdf/circ_bandpass.pdf}}%
-        }{Bandpass 2. Ordnung, Schaltbild\label{fig:circ:bandpass}}
+    \fu{\resizeboxsb{0.8}{1}{\includegraphics[alt={Schaltbild eines Bandpasses 2. Ordnung als Serienschaltung eines RC-Tiefpasses und eines RC-Hochpasses jeweils erster Ordnung. Symbolischer OP-Verstärkerblock zwischen beiden Filtern verhindert Rückwirkung.}]{Tikz/pdf/circ_bandpass.pdf}}}{Bandpass 2. Ordnung, Schaltbild\label{fig:circ:bandpass}}
 
     Eine Bandsperre lässt sich realisieren indem die Eingänge von Tief- und Hochpass parallel und deren Ausgänge in Serie geschalten werden.
     Dadurch erhalten beide Einzelfilter die gleiche Eingangsspannung und die Ausgangsspannungen werden addiert.
@@ -916,10 +911,10 @@ während der Hochpass von plus neunzig Grad auf null Grad verläuft.
 
     \begin{figure}[h]\centering
         \begin{subfigure}{\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_bandpass_amplitudengang_no_xaxis.pdf}
+            \includegraphics[alt={Bode-Diagramm des Amplitudengangs eines Bandpasses 2. Ordnung. Der Amplitudengang zeigt einen Durchlassbereich zwischen zwei Grenzkreisfrequenzen und Sperrbereiche außerhalb. Steigungen im Sperrbereich jeweils +/-20 dB pro Dekade. }]{Tikz/pdf/plot_bandpass_amplitudengang_no_xaxis.pdf}
         \end{subfigure}\newline
         \begin{subfigure}{\textwidth}\centering
-            \includegraphics{Tikz/pdf/plot_bandpass_phasengang.pdf}
+            \includegraphics[alt={Bode-Diagramm des Phasengangs eines Bandpasses 2. Ordnung. Der Phasengang zeigt eine Phasenverschiebung von +90 Grad bei niedrigen Frequenzen (Hochpassverhalten) und -90 Grad bei hohen Frequenzen (Tiefpassverhalten). Die Mittenkreisfrequenz liegt geometrisch in der Mitte zwischen den beiden Grenzkreisfrequenzen. Die Phasenverschiebung ist dort null (Hoch- und Tiefpassverhalten heben sich auf).}]{Tikz/pdf/plot_bandpass_phasengang.pdf}
         \end{subfigure}
         \caption{Bandpass 2. Ordnung, Bode-Diagramm}
         \label{plot:bandpass:bode}
@@ -1029,7 +1024,7 @@ Im unteren Sperrbereich dominiert das Hochpassverhalten mit einer positiven Phas
     höherer Ordnung im Vergleich. Zu erkennen sind ein Butterworth-, ein Tschebycheff-, ein Cauer-Filter
     im Vergleich mit einem idealen Tiefpass. 
 
-    \fu{\includegraphics{Tikz/pdf/plot_tiefpass_5_ord_amplitudengang_vergleich.pdf}}
+    \fu{\includegraphics[alt={Amplitudengang verschiedener Tiefpassfilter höherer Ordnung im Vergleich in halblogarithmischer Darstellung. Die Filter unterscheiden sich in Welligkeit und Steilheit.}]{Tikz/pdf/plot_tiefpass_5_ord_amplitudengang_vergleich.pdf}}
         {Beispiel Filter höherer Ordnung\label{plot:filter:hoehereOrdnung}}% Debug: Demo Modus; TODO: Rewrite ohne Matlab
 
     Ordnung anhand der summierten Steilheit der Flanken erklären.
