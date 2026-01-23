@@ -1,12 +1,11 @@
 \begin{tikzpicture}
-    \draw (4,2) node[op amp, noinv input up, anchor=+] (opamp) {}
-    (opamp.+) 
-    (opamp.-) 
-    (opamp.out) ;
+    \ctikzset{tripoles/en amp/input height=-0.45}
+    \draw (4,1.5) node[en amp, anchor=center] (opamp) {};
+  
     
     \draw (2,4) to[R,l=$R_\mathrm{1}$, -*] (2,2) to[R,l=$R_\mathrm{2}$,-*] (2,-1);
     \draw (2,2) -- (opamp.+);
-    \draw (opamp.out) to[short, -*] (7,1.5) -- (7,0) -- (3.5,0) -- (3.5, 1) -- (opamp.-);
+    \draw (opamp.out) to[short, -*] (7,1.5) -- (7,0) -- (2.8,0)  -- (opamp.-);
     \draw (7,1.5) -- (8,1.5) to[R,l=$R_\mathrm{L}$] (8,-1) -- (2,-1);
     \draw (2,-1) -- (0,-1);
     \draw (2,4) -- (0,4) to[V,name=V] (0,-1);

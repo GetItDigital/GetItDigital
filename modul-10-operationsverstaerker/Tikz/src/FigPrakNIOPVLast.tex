@@ -1,30 +1,29 @@
 \begin{tikzpicture}
+    \ctikzset{tripoles/en amp/input height=0.45}
     \draw
-    (0,0) node[op amp, anchor=+] (opamp) {}
-    (opamp.+) 
-    (opamp.-) 
-    (opamp.out) ;
+    (0,0) node[en amp, anchor=center] (opamp) {};
     \draw
         (opamp.up) -- ++(0,0.5) node[right] {$+$}; % Text leicht rechts
         \draw
         (opamp.down) -- ++(0,-0.5) node[right] {$-$}; % Text leicht rechts
     
-    \draw (opamp.out) to[short, -*] (4,0.5)to[R,l=$R_\mathrm{Last}$] (4,-1.5) to[short,-*] (-1,-1.5)node[ground]{};
+    \draw (opamp.out) to[short, -*] (4,0)to[R,l=$R_\mathrm{Last}$] (4,-2.25) to[short,-*] (-1,-2.25)node[ground]{};
     
-    \draw (-1,-1.5) -- (-3.5,-1.5);
+    \draw (-0.5,-2.25) to[short, -o] (-3.1,-2.25);
     
-\draw (opamp.-) to[short,-*] (0,3) -- (1,3) to[R,l=$R_\mathrm{R}$](4,3)--(4,0.5);
-    \draw (-2,2)node[ground]{} -- (-2,3) to[R,l=$R_\mathrm{E1}$] (0,3);
+\draw (opamp.-) to[short,-*] (-1.2,3) -- (-1.2,3) to[R,l=$R_\mathrm{R}$](4,3)--(4,0);
+    \draw (-3,2)node[ground]{} -- (-3,3) to[R,l=$R_\mathrm{E1}$] (-1,3);
     
-    \draw (-3.8,0) to[R,l=$R_\mathrm{3}$] (opamp.+);
+    \draw (-3.8,-0.5) to[R,l=$R_\mathrm{3}$] (opamp.+);
+    \draw (-3.8,-0.5) -- (-4.27,-0.5);
     
-    \draw (opamp.up) -- (1.1,4) to[short, -*] (-4,4) -- (-6,4) to[V,name=V1] (-6,2)node[ground]{};
+    \draw (opamp.up) -- (0,4) to[short, -*] (-4.5,4) -- (-6,4) to[V,name=V1] (-6,2)node[ground]{};
     
-    \draw (opamp.down) -- (1.1,-3) to[short,-*](-4,-3) -- (-6,-3) to[V,name=V2] (-6,-5)node[ground]{};
-    \draw (-4,-3) to[R,l=$R_\mathrm{2}$] (-4,-1) to[potentiometer, l=$P_\mathrm{1}$] (-4,1) to [R,l=$R_\mathrm{1}$](-4,4);
+    \draw (opamp.down) -- (0,-3) to[short,-*](-4.5,-3) -- (-6,-3) to[V,name=V2] (-6,-5)node[ground]{};
+    \draw (-4.5,-3) to[R,l=$R_\mathrm{2}$] (-4.5,-1.2) to[potentiometer, l=$P_\mathrm{1}$] (-4.5,0.25) to [R,l=$R_\mathrm{1}$](-4.5,4);
     
-    \draw (-3.1,0) to[open,v,name=ue](-3.1,-1.5);
-    \draw (3,0.5) to[open,v,name=ua](3,-1.5);
+    \draw (-3.1,-0.5) to[open,v,name=ue](-3.1,-2.25);
+    \draw (3,0) to[open,v,name=ua](3,-2.25);
     
     \varrmore{ua}{$U_\mathrm{A}$};
     \varrmore{ue}{$U_\mathrm{E}$};

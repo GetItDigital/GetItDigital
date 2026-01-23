@@ -1,23 +1,19 @@
 \begin{tikzpicture}
 \draw
-(0,0) node[op amp, anchor=+] (opamp) {}
-(opamp.+) 
-(opamp.-) 
-(opamp.out) ;
+(0,0) node[en amp,  anchor=center] (opamp) {};
 
 \draw (opamp.-) 
-    to[short, -*] (-1,1);
+    to[short, -*] (-1.2,1);
 \draw (-4,1)node[above] {$U_\mathrm{e}$}  to[ R, l=$R_\mathrm{n}$, o-]
-    (-1,1);
-\draw (-1,1) -- (-1,2.5)
+    (-1.2,1);
+\draw (-1.2,1) -- (-1.2,2.5)
     to[R, l=$R_\mathrm{f1}$, -*] (1,2.5)
     to[R, l=$R_\mathrm{f2}$, -*] (4,2.5)
-    to[short, -*] (4,0.5);
-\draw (opamp.out) to[short, -o] (5,0.5) node[above]{$U_\mathrm{a}$};
+    to[short, -*] (4,0);
+\draw (opamp.out) to[short, -o] (5,0) node[above]{$U_\mathrm{a}$};
 \draw (1,2.5) -- (1,4) 
     to[normal open switch, l=$S1$] (4,4)
     -- (4,2.5);
-\draw (opamp.+) -- (0,-2)node[ground]{};
+\draw (opamp.+) -- (-1.2,-2)node[ground]{};
 
-\draw (-4,-1) to[short, o-] (-3.5,-1) -- (-3.5,-2)node[ground]{};
 \end{tikzpicture}

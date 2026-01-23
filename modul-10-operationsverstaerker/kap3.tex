@@ -92,7 +92,7 @@
     \s{
         \pagebreak
         Wie aus vorherigen Kapiteln bekannt ist, besitzen Operationsverstärker einen invertierenden und einen nicht-invertierenden Eingang. Existiert zwischen diesen beiden Eingängen eine Spannungsdifferenz, so verstärkt der Operationsverstärker diese Differenz um ein Vielfaches, bis die Spannung die maximale Ausgangsspannung des Operationsverstärkers erreicht (siehe A in Abbildung \ref{fig: Verschaltung Verstaerker}).
-        Die Slew-Rate (zu deutsch: Anstiegsrate) gibt an, wie schnell dieser Anstieg geschehen kann. Wird die Ausgangsspannung nicht auf den Eingang zurückgeführt, steigt die Ausgangspannung, bis das Niveau der Versorgungsspannung erreicht wird. Eine solche Beschaltung des Verstärkers wird als Komperatorschaltung bezeichet.
+        Die Slew-Rate (zu deutsch: Anstiegsrate) gibt an, wie schnell dieser Anstieg geschehen kann. Wird die Ausgangsspannung nicht auf den Eingang zurückgeführt, steigt die Ausgangspannung, bis das Niveau der Versorgungsspannung erreicht wird. Eine solche Beschaltung des Verstärkers wird als Komparatorschaltung bezeichnet.
     
         Dieses Verhalten ist für die meisten Anwendungen bei denen der Eingangsspannungssignal mit geringer Amplitude verstärkt werden soll, nicht erwünscht.
         Stattdessen werden Operationsverstärker meistens in der sogenannten Gegenkopplung (B) betrieben, bei der der Ausgang auf den invertierenden Eingang zurückgeführt wird.
@@ -109,7 +109,7 @@
 
     \fu{
         \resizebox{\textwidth}{!}{\input{Tikz/src/Verschaltungdesverstaerkers.tex}}
-        }{Verschaltung eines Verstärkers als Komperator (A), Impedanzwandler (C) und nicht-invertierender Verstärker (D)
+        }{Verschaltung eines Verstärkers als Komparator (A), Impedanzwandler (C) und nicht-invertierender Verstärker (D)
         \label{fig: Verschaltung Verstaerker}}
 
     \speech{Gegenkopplung_Bsp_Lsg_3}{1}{Wenn wir noch zwei Widerstände verbauen, führen wir nur einen Teil der Ausgangsspannung zurück an den invertierenden Eingang. Das Ergebnis: Wir können die Verstärkung der Schaltung mit den Widerständen einstellen. Die Formel lautet: V gleich eins plus  R zwei geteilt durch R eins. Das ist der klassische nichtinvertierende Verstärker. Damit lässt sich unser Lautsprecherproblem elegant lösen: Wir brauchen nur die passenden Widerstände.} 
@@ -721,7 +721,7 @@
                           - R_2 C_2 \, \frac{dU_{\textnormal{E}}}{dt}(t)
                       \]
 
-                \item Nimmt eine Integration des Eingangssignals vor
+                \item Nimmt eine Differenziation des Eingangssignals vor
                 \item Wird als aktives Hochpassfilter verwendet (zeigt in der Realität meist Bandpassverhalten, wie hier dargestellt)
             \end{itemize}
         \end{columns}
@@ -792,12 +792,12 @@
                           U_{\textnormal{A}} =-U_{\textnormal{T}}\cdot \ln{\left(\frac{U_{\textnormal{E}}}{R_1\cdot I_S}\right)}
                       \]
                       \[
-                          U_{\textnormal{T}} = \frac{k_{\textnormal{B}} \cdot T}{e}
+                          U_{\textnormal{T}} = \frac{k_{\textnormal{B}} \cdot T}{\textnormal{e}}
                       \]
 
-                      \(e = \text{Elementarladung}\)
+                      \(\textnormal{e} = \text{Elementarladung}\)
 
-                      \(k_{\textnormal{B}} = \text{Boltzmannkonstante}\)
+                      \(\textnormal{k}_{\textnormal{B}} = \text{Boltzmannkonstante}\)
 
                       \(I_{\textnormal{s}} = \text{Sperrstrom der Diode}\)
                 \item Bildet den natürlichen Logarithmus des Eingangssignals

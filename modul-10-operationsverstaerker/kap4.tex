@@ -27,7 +27,7 @@
     }
 
     \b{
-        \frametitle{Stabilität des Operationsverstärker-Regelkreis}
+        \frametitle{Stabilität des Operationsverstärker-Regelkreises}
         Durch die Rückführung des Ausgangssignal ergibt sich ein Regelkreis. Dieser muss auf Stabilität überprüft werden. Dazu werden 3 Methoden vorgstellt:
         \begin{itemize}
             \item Die Frequengangzanalyse auf Grundlage des Bodediagramms
@@ -47,7 +47,7 @@
         Eine grundlegende Technik ist die Frequenzganganalyse.
         Bei diesem Verfahren wird untersucht, wie sich die Verstärkung und die Phase einer Operationsverstärkerschaltung ändern, wenn die Frequenz des Eingangssignals variiert. Werkzeuge wie Bodediagramme werden häufig zur Visualisierung dieser Reaktion eingesetzt und helfen bei der Identifizierung potenzieller Stabilitätsprobleme wie Verstärkungsspitzen oder Phasenverschiebungen, die zu Instabilität führen könnten.
         Ein wichtiges Kriterium bildet hier die Phasenreserve. Die Bestimmung dieser Größe ist ein quantitativer Ansatz zur Stabilitätsbewertung. Sie hilft bei der Messung der Stabilitätsspanne innerhalb eines Rückkopplungssystems, indem sie die Phasendifferenz zwischen der tatsächlichen Phasenverschiebung bei der Durchtrittsfrequenz (also 0 dB) und 180$^{\circ}$ betrachtet. Dieser Punkt wird als \glqq kritischer Punkt\grqq{} bezeichnet, da bei einer Phasenverschiebung über 180$^{\circ}$ und einer Verstärkung über 0 dB, die Rückkopplung zur Mitkopplung wird.
-        Wenn die Phasendifferenz einen bestimmten Schwellenwert überschreitet, in der Regel etwa 45$^{\circ}$, wird davon ausgegangen, dass das System weit genug von der Stabilitätsgrenze entferent ist.
+        Wenn die Phasendifferenz einen bestimmten Schwellenwert überschreitet, in der Regel etwa 45$^{\circ}$, wird davon ausgegangen, dass das System weit genug von der Stabilitätsgrenze entfernt ist.
         Diese Analyse findet normalerweise graphisch auf Grundlage des Bodediagramms statt.
     }
     \begin{center}
@@ -68,10 +68,10 @@
     \s{
         \par
         Liegt die Übertragungsfunktion der Operationsverstärkerschaltung vor, kann auch direkt eine Stabilitätsanalyse durchgeführt werden. Dazu werden die Pole der Übertragungsfunktion (z.B. im Laplacebereich) analysiert. Liegen diese in der linken s-Halbebene (also sind alle Pole negativ), weißt die Schaltung ein stabiles Übertragungsverhalten auf.
-        Bei diesem Ansatz sowie bei der Frequnzanalyse (sofern das Bodediagramm nicht experimentell ermittelt wurde) muss beachtet werden, dass die Übertragungsfunktion meist nur für einen bestimmten Frequenzbereich gültig ist, da z.B. die Dynamik des Operationsverstärkers bei diesen Methoden in der Regel nicht berücksichtigt wird.
+        Bei diesem Ansatz sowie bei der Frequenzanalyse (sofern das Bodediagramm nicht experimentell ermittelt wurde) muss beachtet werden, dass die Übertragungsfunktion meist nur für einen bestimmten Frequenzbereich gültig ist, da z.B. die Dynamik des Operationsverstärkers bei diesen Methoden in der Regel nicht berücksichtigt wird.
         \begin{center}
             %\input{Bilder/kap4/Filter.png}
-            \f{width=0.8\textwidth}{width=0.8\textwidth}{Bilder/kap4/Polstellenneu.pdf}{Systemantworten bei verschiedenen Pollagen }
+            \f{width=0.8\textwidth}{width=0.8\textwidth}{Bilder/kap4/Polstellenneu.pdf}{Systemantworten bei verschiedenen Polstellen-Lagen }
             \label{fig:Analyse des Schwingungsverhaltens}
         \end{center}
     }

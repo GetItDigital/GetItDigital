@@ -7,7 +7,7 @@
             Die Studierenden können
             \begin{itemize}
                 \item den Aufbau eines einfachen Operationsverstärkers angeben.
-                \item das Funktionsprinzip eines Operationalverstärkers erläutern.
+                \item das Funktionsprinzip eines Operationsverstärkers erläutern.
                 \item verschiedene Operationsverstärkerschaltungen und mögliche Einsatzgebiete nennen.
                 \item Unterschiede zwischen dem vereinfachten Operationsverstärkermodell und realen Operationsverstärkern beschreiben und wichtige Bereiche der Operationsverstärkerkennlinie angeben.
                 \item die Funktion von vorliegenden Operationsverstärkerschaltungen bestimmen und mithilfe der Kirchhoff'schen Gesetze die Verstärkung berechnen.
@@ -46,7 +46,7 @@
         Im vorherigen Modul wurde erläutert, wie mit Hilfe von ein- und mehrstufigen Transistorverstärkern,
         Signale mit geringen Eingangsamplituden verstärkt werden können. Diese Verstärkerschaltungen wurden
         vor allem in der Mess-, Steuer- und Regelungstechnik eingesetzt und bis in die 1950er Jahre diskret
-        aus Elektronenröhren oder Transistoren aufgebaut. Die Entwicklung der „integrated curcuits“ ermöglichte
+        aus Elektronenröhren oder Transistoren aufgebaut. Die Entwicklung der „integrated circuits“ ermöglichte
         ab Ende der 1960er Jahre die Miniaturisierung von Schaltungen und dadurch die Bereitstellung
         von modularen Bausteinen für die Hardwareentwicklung. Dies galt auch für die in den 1940er Jahren entwickelte
         Differenzverstärker, die aufgrund ihres zunächst sehr verbreiteten Einsatzes in Analogrechnern auch als
@@ -137,7 +137,7 @@
 \begin{frame}
     \b{
         \frametitle{Funktionsweise von Operationsverstärkern}
-        Die Funktionsweise lässt sich gut an folgender Schaltung nachvollziehen. Was passiert, wenn an dieser Schaltung eine positve Differenzspannung angelegt wird?
+        Die Funktionsweise lässt sich gut an folgender Schaltung nachvollziehen. Was passiert, wenn an dieser Schaltung eine positive Differenzspannung angelegt wird?
         \begin{figure}[ht]
             \centering
             \fu{\resizebox{0.7\textwidth}{!}{\input{Tikz/src/Funktionsweise_OPV_ohnePfeile.tex}}}
@@ -163,7 +163,7 @@
     
     Wenn die nicht-invertierte Eingangsspannung steigt (A), sinkt der Widerstand des Transistors $T_2$. 
     Dies führt zu einer Reduktion der Spannung an dessen Kollektor und zu einem Anstieg am Emitter~(B). Da die Basis des Transistors $T_4$ mit dem Kollektor von $T_2$ verbunden ist, verursacht dies einen entsprechende Spannungsreduktion an der Basis von $T_4$ (C). 
-    Infolgedessen wird der Kollektor-Emitter-Pfad des PNP-Transistors $T_4$ hochohmiger, so dass mehr Strom durch den Lastwiderstand $R_{\textnormal{L}}$ fließt~(D). 
+    Infolgedessen wird der Kollektor-Emitter-Pfad des PNP-Transistors $T_4$ niederohmiger, so dass mehr Strom durch den Lastwiderstand $R_{\textnormal{L}}$ fließt~(D). 
     Dadurch erhöht sich der Spannungsabfall über $R_{\textnormal{L}}$ und somit die Spannung am Ausgang $U_{\textnormal{A}}$ (die Ausgangsstufe des Verstärkers ist gelb markiert).
     
     \begin{minipage}{\textwidth}        
