@@ -1,0 +1,8 @@
+    \begin{circuitikz}
+        \ctikzset{tripoles/en amp/input height=-0.45}
+        \draw (0,0) node[en amp](E){};
+        \draw (E.out) to[short, -o] ++(0.25,0) node[right]{$U_\mathrm{A}$};
+        \draw (E.-) to[short, -o] ++(-0.25,0) node[left]{0\,V}; 
+        \draw (E.+) to[short, -o] ++(-0.25,0) node[left]{1V};
+        \draw (E.-) to [short, *-] ++(0, -1) to[short] (E.out |- 0,-1.5) to [short, -*] (E.out);
+    \end{circuitikz}

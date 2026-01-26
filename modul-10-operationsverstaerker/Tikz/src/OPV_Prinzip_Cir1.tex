@@ -1,0 +1,9 @@
+    \begin{circuitikz}
+        \ctikzset{tripoles/en amp/input height=-0.45}
+        \draw (0,0) node[en amp](E){};
+        \draw (E.out) node[ocirc]{} node[right]{$U_A$};
+        \draw (E.-) node[ocirc]{} node[left]{0\,V};
+        \draw (E.+) node[ocirc]{} node[left]{1\,V};
+        \draw (E.up) -- ++(0,0.25) node[above]{$+U_\mathrm{B}$} node[ocirc] {};
+        \draw (E.down) -- ++(0,-0.25) node[below]{$-U_\mathrm{B}$} node[ocirc] {};
+    \end{circuitikz} 

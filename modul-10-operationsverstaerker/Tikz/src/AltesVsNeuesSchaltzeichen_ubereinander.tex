@@ -1,35 +1,28 @@
 \begin{circuitikz}
-   \ctikzset{tripoles/en amp/input height=0.45}
-
    % Altes Schaltzeichen
-   \draw (0,0) node[op amp] (amerOpAmp) {};
-   \draw (amerOpAmp.up) -- ++(0,0.2) node[ocirc]{} node[above]{$+U_B$};
-   \draw (amerOpAmp.down) -- ++(0,-0.2) node[ocirc]{} node[below]{$-U_B$};
-   \draw (amerOpAmp.out) node[ocirc](oldOut){} node[right,yshift=-0.5cm]{};
-   \draw (amerOpAmp.-) node[ocirc](oldMinus){} node[left]{};
-   \draw (amerOpAmp.+) node[ocirc](oldPlus){} node[left]{};
-   \node at (0,-1.5) {\textbf{altes Schaltzeichen}};
-   
-   % Ground-Symbol und Spannungspfeil für altes Schaltzeichen
-   \draw[-{Triangle[width=3pt,length=4pt]}, color=spannung] ($(oldOut) + (0, -0.1)$) -- ($(oldOut) + (0, -1)$) node[midway, right] {$U_A$};
-   \draw[black] ($(oldOut) + (0, -1.05)$) -- ++(-0.2, 0) -- ++(0.4,0);
-   % Spannungspfeil U_Diff für altes Schaltzeichen
-   \draw[-{Triangle[width=3pt,length=4pt]}, color=spannung] ($(oldPlus) + (0, 0.1)$) -- ($(oldMinus) + (0, -0.1)$) node[midway, left] {$U_{\text{Diff}}$};
+   \draw (0,0) node[op amp] (US) {};
+   \draw (US.up) to[short, -o] ++(0,0.5) node[above] {$+U_\mathrm{B}$};
+   \draw (US.down) to[short, -o] ++(0,-0.5) node[below] {$-U_\mathrm{B}$};
+   \draw (US.out) to[short, -o] ++(0.25, 0) to[open, v^, name=ua, -o] ++(0,-1) to node[ground]{}++(0,-0.1);
+   \draw (US.-) to[short, -o] ++(-0.25,0) coordinate(ref1);
+   \draw (US.+) to[short, -o] ++(-0.25,0) to[open, v^, name=ud] (ref1);
+
+   \varrmore{ua}{$U_\mathrm{A}$};
+   \varrmore{ud}{$U_\mathrm{Diff}$};
+   \node at (0,-2) {\textbf{altes Schaltzeichen}};
+
 
    % Neues Schaltzeichen
-   \draw (0,-4) node[en amp](E){};
-   \draw (E.out)  node[ocirc](newOut){} node[right,yshift=-0.5cm]{};
-   \draw (E.-) node[ocirc](newMinus){} node[left]{};
-   \draw (E.+) node[ocirc](newPlus){} node[left]{};
-   \node at (0,-6) {\textbf{neues Schaltzeichen}};
-   \draw (E.up) -- ++(0,0.2) node[ocirc]{} node[above]{$+U_B$};
-   \draw (E.down) -- ++(0,-0.2) node[ocirc]{} node[below]{$-U_B$};
-   
-   % Ground-Symbol und Spannungspfeil für neues Schaltzeichen
-   \draw[-{Triangle[width=3pt,length=4pt]}, color=spannung] ($(newOut) + (0, -0.1)$) -- ($(newOut) + (0, -1)$) node[midway, right] {$U_A$};
-   \draw[black] ($(newOut) + (0, -1.05)$) -- ++(-0.2, 0) -- ++(0.4,0);
+   \ctikzset{tripoles/en amp/input height=0.45}
 
-   % Spannungspfeil U_Diff für neues Schaltzeichen
-   \draw[-{Triangle[width=3pt,length=4pt]}, color=spannung] ($(newPlus) + (0, 0.1)$) -- ($(newMinus) + (0, -0.1)$) node[midway, left] {$U_{\text{Diff}}$};
+   \draw (0,-5) node[en amp](EU){};
+   \draw (EU.up) to[short, -o] ++(0,0.5) node[above] {$+U_\mathrm{B}$};
+   \draw (EU.down) to[short, -o] ++(0,-0.5) node[below] {$-U_\mathrm{B}$};
+   \draw (EU.out) to[short, -o] ++(0.25, 0) to[open, v^, name=ua, -o] ++(0,-1) to node[ground]{}++(0,-0.1);
+   \draw (EU.-) to[short, -o] ++(-0.25,0) coordinate(ref1);
+   \draw (EU.+) to[short, -o] ++(-0.25,0) to[open, v^, name=ud] (ref1);
 
+   \varrmore{ua}{$U_\mathrm{A}$};
+   \varrmore{ud}{$U_\mathrm{Diff}$};
+   \node at (0,-7.5) {\textbf{neues Schaltzeichen}};
 \end{circuitikz}

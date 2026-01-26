@@ -6,7 +6,7 @@
         Das Eingangsspannungsniveau ist 1~V und es soll ein 4~$\mathrm{\Omega}$ Lautsprecher betrieben werden.
         Wie groß muss die Spannung am Ausgang des Verstärkers sein, damit der Lautsprecher bei 1 kHz 25~W aufnimmt.
         Wie kann hier vorgegangen werden, wenn eine Operationsverstärkerschaltung für die Lösung genutzt werden soll? \par
-        \fu{\resizebox{\textwidth}{!}{\input{Tikz/src/OPVBeispielproblem.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite \label{fig:Beispielproblem 1 Folien}}.
+        \fu{\resizebox{0.8\textwidth}{!}{\input{Tikz/src/OPVBeispielproblem.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite \label{fig:Beispielproblem 1 Folien}}.
     }
     \speech{Gegenkopplung}{1}{In den vorherigen Videos haben wir uns auf den inneren Aufbau des Verstärkers seine charakteristischen Größen konzentriert. Nun schauen wir uns die Beschaltungsmöglichkeiten an.
         Starten wir mit einer kleinen Motivation: Angenommen, wir wollen ein Musiksignal von unserem Handy über einen Lautsprecher wiedergeben. Das Handy liefert vielleicht eine Spannung von rund einem Volt.
@@ -61,7 +61,7 @@
             U_{\textnormal{A}} = \sqrt{P \cdot R} = \sqrt{25~\mathrm{W} \cdot 4~\mathrm{\Omega}} = 10~\textnormal{V}
         \end{equation}
         Wie kann nun mithilfe eines Operationsverstärkers der mit einem \glqq ?\grqq{} gekennzeichneten Teil der Schaltung ersetzt werden, um eine notwendige Verstärkung von 5 zu erreichen.
-        \fu{\resizebox{\textwidth}{!}{\input{Tikz/src/OPVBeispielproblem.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite \label{fig:Beispielproblem 1 Folien 2}}
+        \fu{\resizebox{0.8\textwidth}{!}{\input{Tikz/src/OPVBeispielproblem.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite \label{fig:Beispielproblem 1 Folien 2}}
     }
     \speech{Gegenkopplung_Bsp}{1}{Hier sehen wir die einfache Rechnung: Mit 25 Watt an 4 Ohm brauchen wir eine Spannung von zehn Volt. Das heißt, wir benötigen eine Spannungsverstärkung von zehn zu eins, also den Faktor zehn. Wie können wir das mit einem Operationsverstärker umsetzen?} 
     %seed: 875681 
@@ -71,21 +71,46 @@
 \begin{frame}
     \b{
         \frametitle{Prinzip der Gegenkopplung - Lösung des Beispielproblems (2)}
-        \fu{\resizebox{0.28\textwidth}{!}{\input{Tikz/src/Verschaltungdesverstaerkers_ersterTeil.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite \label{fig:Beispielproblem 1 Folien 2 Abbildung 1}}
+        \begin{center}
+            \begin{tabular}{ |>{\centering\arraybackslash}m{0.25\linewidth}|}
+                \hline
+                \large \textbf{A}                                 \\
+                \scalebox{0.8}{\input{Tikz/src/OPV_Prinzip_Cir1}} \\
+                \hline
+                \scalebox{1}{\input{Tikz/src/OPV_Prinzip_Fig1}}   \\
+                \hline
+            \end{tabular}
+        \end{center}
     }
-    \speech{Gegenkopplung_Bsp_Lsg_1}{1}{Schauen wir uns nun einige Beispiele für Verschaltungsarten an. Wenn wir einen OP V einfach so beschalten, ohne weitere Widerstände und ohne Rückführung, dann arbeitet er wie ein Komparator. Das heißt: Schon eine winzige Differenz zwischen den beiden Eingängen entscheidet darüber, ob der Ausgang auf plus U B oder auf minus U B geht. Man sieht hier auch die Slew Rate, also die maximale Geschwindigkeit, mit der der Ausgang überhaupt ansteigen kann. Kurz gesagt: Ohne Rückkopplung ist der OP V nur als Komparator geeignet, nicht als linearer Verstärker.} 
-        %seed: 875682 
+    \speech{Gegenkopplung_Bsp_Lsg_1}{1}{Schauen wir uns nun einige Beispiele für Verschaltungsarten an. Wenn wir einen OP V einfach so beschalten, ohne weitere Widerstände und ohne Rückführung, dann arbeitet er wie ein Komparator. Das heißt: Schon eine winzige Differenz zwischen den beiden Eingängen entscheidet darüber, ob der Ausgang auf plus U B oder auf minus U B geht. Man sieht hier auch die Slew Rate, also die maximale Geschwindigkeit, mit der der Ausgang überhaupt ansteigen kann. Kurz gesagt: Ohne Rückkopplung ist der OP V nur als Komparator geeignet, nicht als linearer Verstärker.}
+    %seed: 875682 
     \silence{3}
 \end{frame}
 
 \begin{frame}
     \b{
         \frametitle{Prinzip der Gegenkopplung - Lösung des Beispielproblems (2)}
-        \fu{\resizebox{0.8\textwidth}{!}{\input{Tikz/src/Verschaltungdesverstaerkers_zweiterTeil.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite \label{fig:Beispielproblem 1 Folien 2 Abbildung 2}}
+        \begin{center}
+            \begin{tabular}{ |>{\centering\arraybackslash}m{0.25\linewidth}|>{\centering\arraybackslash}m{0.25\linewidth} >{\centering\arraybackslash}m{0.25\linewidth}| }
+                \hline
+                \large \textbf{A}                                  &
+                \large \textbf{B}                                  &
+                \large \textbf{C}                                    \\
+
+                \scalebox{0.8}{\input{Tikz/src/OPV_Prinzip_Cir1}} &
+                \scalebox{0.8}{\input{Tikz/src/OPV_Prinzip_Cir2}} &
+                \scalebox{0.8}{\input{Tikz/src/OPV_Prinzip_Cir3}}   \\
+                \hline
+                \scalebox{1}{\input{Tikz/src/OPV_Prinzip_Fig1}}  &
+                Slew rate: $\frac{\Delta U_A}{\Delta t}$           &
+                \scalebox{1}{\input{Tikz/src/OPV_Prinzip_Fig2}}    \\
+                \hline
+            \end{tabular}
+        \end{center}
     }
-    \speech{Gegenkopplung_Bsp_Lsg_2}{1}{Wenn wir den Ausgang auf den invertierenden Eingang legen, erzeugen wir eine Rückführung. Das Resultat: Die Ausgangsspannung kann jetzt maximal den Betrag der eingangsseitigen Spannungsdifferenz erreichen. Aber natürlich nur wenn der OP V nicht schon vorher in den Sättigungsbereich kommt. Der OP V versucht nun ständig, die Differenzspannung zwischen plus und minus Eingang auf null zu regeln.} 
+    \speech{Gegenkopplung_Bsp_Lsg_2}{1}{Wenn wir den Ausgang auf den invertierenden Eingang legen, erzeugen wir eine Rückführung. Das Resultat: Die Ausgangsspannung kann jetzt maximal den Betrag der eingangsseitigen Spannungsdifferenz erreichen. Aber natürlich nur wenn der OP V nicht schon vorher in den Sättigungsbereich kommt. Der OP V versucht nun ständig, die Differenzspannung zwischen plus und minus Eingang auf null zu regeln.}
     %seed: 875683
-    \silence{3}        
+    \silence{3}
 \end{frame}
 
 \begin{frame}
@@ -93,7 +118,7 @@
         \pagebreak
         Wie aus vorherigen Kapiteln bekannt ist, besitzen Operationsverstärker einen invertierenden und einen nicht-invertierenden Eingang. Existiert zwischen diesen beiden Eingängen eine Spannungsdifferenz, so verstärkt der Operationsverstärker diese Differenz um ein Vielfaches, bis die Spannung die maximale Ausgangsspannung des Operationsverstärkers erreicht (siehe A in Abbildung \ref{fig: Verschaltung Verstaerker}).
         Die Slew-Rate (zu deutsch: Anstiegsrate) gibt an, wie schnell dieser Anstieg geschehen kann. Wird die Ausgangsspannung nicht auf den Eingang zurückgeführt, steigt die Ausgangspannung, bis das Niveau der Versorgungsspannung erreicht wird. Eine solche Beschaltung des Verstärkers wird als Komparatorschaltung bezeichnet.
-    
+
         Dieses Verhalten ist für die meisten Anwendungen bei denen der Eingangsspannungssignal mit geringer Amplitude verstärkt werden soll, nicht erwünscht.
         Stattdessen werden Operationsverstärker meistens in der sogenannten Gegenkopplung (B) betrieben, bei der der Ausgang auf den invertierenden Eingang zurückgeführt wird.
         Der in (B) eingezeichnete Schalter sei zunächst geöffnet und der Operationsverstärker werde nicht mit Spannung versorgt. Zum Zeitpunkt 0 s wird der Schalter geschlossen und die Versorgungsspannung des Verstärkers eingeschaltet, wodurch die Rückführung des Ausgangssignals $U_{\textnormal{A}}$ aktiv wird (C).
@@ -107,15 +132,37 @@
         \frametitle{Prinzip der Gegenkopplung - Lösung des Beispielproblems (2)}
     }
 
-    \fu{
-        \resizebox{\textwidth}{!}{\input{Tikz/src/Verschaltungdesverstaerkers.tex}}
-        }{Verschaltung eines Verstärkers als Komparator (A), Impedanzwandler (C) und nicht-invertierender Verstärker (D)
-        \label{fig: Verschaltung Verstaerker}}
+    \begin{center}
+        \begin{tabular}{ |>{\centering\arraybackslash}m{0.195\linewidth}|>{\centering\arraybackslash}m{0.195\linewidth} >{\centering\arraybackslash}m{0.195\linewidth}|>{\centering\arraybackslash}m{0.275\linewidth}| }
+            \hline
+            \large \textbf{A}                                  &
+            \large \textbf{B}                                  &
+            \large \textbf{C}                                  &
+            \large \textbf{D}                                    \\
 
-    \speech{Gegenkopplung_Bsp_Lsg_3}{1}{Wenn wir noch zwei Widerstände verbauen, führen wir nur einen Teil der Ausgangsspannung zurück an den invertierenden Eingang. Das Ergebnis: Wir können die Verstärkung der Schaltung mit den Widerständen einstellen. Die Formel lautet: V gleich eins plus  R zwei geteilt durch R eins. Das ist der klassische nichtinvertierende Verstärker. Damit lässt sich unser Lautsprecherproblem elegant lösen: Wir brauchen nur die passenden Widerstände.} 
-        %seed: 875701
-    \silence{3}      
+            \scalebox{0.65}{\input{Tikz/src/OPV_Prinzip_Cir1}} &
+            \scalebox{0.65}{\input{Tikz/src/OPV_Prinzip_Cir2}} &
+            \scalebox{0.65}{\input{Tikz/src/OPV_Prinzip_Cir3}} &
+            \scalebox{0.65}{\input{Tikz/src/OPV_Prinzip_Cir4}}   \\
+            \hline
+            \scalebox{0.8}{\input{Tikz/src/OPV_Prinzip_Fig1}}  &
+            Slew rate: $\frac{\Delta U_A}{\Delta t}$           &
+            \scalebox{0.8}{\input{Tikz/src/OPV_Prinzip_Fig2}}  &
+            \scalebox{0.8}{\input{Tikz/src/OPV_Prinzip_Fig3}}    \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    %\fu{
+    %    \resizebox{\textwidth}{!}{\input{Tikz/src/Verschaltungdesverstaerkers.tex}}
+    %    }{Verschaltung eines Verstärkers als Komparator (A), Impedanzwandler (C) und nicht-invertierender Verstärker (D)
+    %    \label{fig: Verschaltung Verstaerker}}
+
+    \speech{Gegenkopplung_Bsp_Lsg_3}{1}{Wenn wir noch zwei Widerstände verbauen, führen wir nur einen Teil der Ausgangsspannung zurück an den invertierenden Eingang. Das Ergebnis: Wir können die Verstärkung der Schaltung mit den Widerständen einstellen. Die Formel lautet: V gleich eins plus  R zwei geteilt durch R eins. Das ist der klassische nichtinvertierende Verstärker. Damit lässt sich unser Lautsprecherproblem elegant lösen: Wir brauchen nur die passenden Widerstände.}
+    %seed: 875701
+    \silence{3}
 \end{frame}
+
 
 \begin{frame}
     \s{
@@ -161,7 +208,7 @@
         \begin{columns}
             \column[c]{0.3\textwidth}
             \begin{center}
-                \input{Tikz/src/Verschaltungdesverstaerkers_letzterTeil.tex}
+                \scalebox{0.8}{\input{Tikz/src/OPV_Prinzip_Cir4.tex}}
                 Finale Verstärkerschaltung mit Rückführung
                 \label{fig:Verschaltung des Verstärkers2}
             \end{center}
@@ -190,28 +237,23 @@
     \b{
         \frametitle{Nichtinvertierender Verstärker}
         \begin{columns}
-            \column{0.48\textwidth}
+            \column{0.3\textwidth}
             \centering
             \begin{figure}
                 \centering
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/NichtinvertierenderVerstaerker.tex}}
+                    \scalebox{1}{\input{Tikz/src/NichtinvertierenderVerstaerker.tex}}
                     \caption{Schaltung eines nichtinvertierenden Verstärkers}
                 \end{subfigure}
-
-                \vspace{0.5cm}
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/FrequenzgangNiV.tex}}
+                    \scalebox{0.7}{\input{Tikz/src/FrequenzgangNiV.tex}}
                     \caption{Frequenzgang eines nichtinvertierenden Verstärkers}
                 \end{subfigure}
-
             \end{figure}
 
-            \column{0.48\textwidth}
+            \column{0.6\textwidth}
             \begin{itemize}
                 \item Gleichung:
                       \[
@@ -229,102 +271,27 @@
     \silence{3}
 \end{frame}
 
-\begin{comment} 
-\begin{frame}
-    \b{
-        \frametitle{Nichtinvertierender Verstärker}
-        \centering
-        \begin{table}[ht]
-            \label{tab:NichtinvertierenderVerstaerker}
-            \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.25\textwidth}|}
-                \hline
-                Schaltung                                           & Frequenzgang und Gleichung           & Erläuterung und Eigenschaften \\ % Neue Zeile mit Text
-                \hline
-                \vspace{0.5cm}
-                \centering
-                \input{Tikz/src/NichtinvertierenderVerstaerker.tex} & \input{Tikz/src/FrequenzgangNiV.tex}
-                \vspace{1ex}
-                \[
-                    U_{\textnormal{A}} = \left(1+\frac{R_2}{R_1}\right) U_{\textnormal{E}}
-                \]
-                                                                    &
-                \begin{itemize}
-                    \item Phasengleiches Ausgangs-\linebreak signal
-                    \item Sehr hochohmiger Eingangswiderstand
-                    \item Niederohmiger Ausgangs-\linebreak widerstand
-                    \item Anwendungen: z.B. Impedanzwandler
-                \end{itemize}                                                                          \\
-                \hline
-            \end{tabular}
-        \end{table}
-    }
-\end{frame}
-\end{comment} 
-
-%Folie Invertierender Verstärker
-\begin{comment} 
-\begin{frame}
-    \b{
-        \frametitle{Invertierender Verstärker}
-        \centering
-        \begin{table}[ht]
-            \label{tab:InvertierenderVerstaerker}
-            \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.25\textwidth}|}
-                \hline
-                Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften                                  \\ % Neue Zeile mit Text
-                \hline
-                \vspace{0.5cm}
-                \centering
-                \input{Tikz/src/InvertierenderVerstaerker.tex}
-                          &
-                \begin{center}
-                    \input{Tikz/src/FrequenzgangInvertierenderVerstaerker.tex}
-                \end{center}
-                \vspace{1ex}
-                \[
-                    U_{\textnormal{A}} = \frac{R_2}{R_1} U_{\textnormal{E}}
-                \]
-                          &
-                \begin{itemize}
-                    \item -180$^\circ$ Phasenverschiebung zwischen Ein- zu Ausgang
-                    \item $R_1$ bestimmt den Eingangswiderstand
-                    \item Niederohmiger Ausgangs-\linebreak widerstand
-                    \item Anwendungen: \linebreak z.B. Aktiver Spannungsteiler zum Messen hoher Spannungen, wenn $R_1 > R_2$
-                \end{itemize} \\
-                \hline
-            \end{tabular}
-        \end{table}
-    }
-\end{frame}
-\end{comment} 
-
-
 \begin{frame}
     \b{
         \frametitle{Invertierender Verstärker}
         \begin{columns}
-            \column{0.48\textwidth}
+            \column{0.3\textwidth}
             \centering
             \begin{figure}
                 \centering
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/InvertierenderVerstaerker.tex}}
+                    \scalebox{1}{\input{Tikz/src/InvertierenderVerstaerker.tex}}
                     \caption{Schaltung eines invertierenden Verstärkers}
                 \end{subfigure}
-
-                \vspace{0.5cm}
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/FrequenzgangInvertierenderVerstaerker.tex}}
+                    \scalebox{0.7}{\input{Tikz/src/FrequenzgangInvertierenderVerstaerker.tex}}
                     \caption{Frequenzgang eines invertierenden Verstärkers}
                 \end{subfigure}
-
             \end{figure}
 
-            \column{0.48\textwidth}
+            \column{0.6\textwidth}
             \begin{itemize}
                 \item Gleichung:
                       \[
@@ -337,70 +304,33 @@
             \end{itemize}
         \end{columns}
     }
-    \speech{Grundschaltungen_IV}{1}{Jetzt das Gegenstück: der invertierende Verstärker. Hier legen wir das Eingangssignal über einen Widerstand R1 direkt an den invertierenden Eingang. Am nichtinvertierenden Eingang liegt Masse. Eigenschaften dieser Schaltung: Die Ausgangsspannung ist um hundertachtzig Grad phasenverschoben - also invertiert. Der Verstärkungsfaktor ist V gleich minus R2  geteilt durch R1. Die Eingangsimpedanz entspricht R1. Das macht die Schaltung sehr gut geeignet als aktiver Spannungsteiler.} 
+    \speech{Grundschaltungen_IV}{1}{Jetzt das Gegenstück: der invertierende Verstärker. Hier legen wir das Eingangssignal über einen Widerstand R1 direkt an den invertierenden Eingang. Am nichtinvertierenden Eingang liegt Masse. Eigenschaften dieser Schaltung: Die Ausgangsspannung ist um hundertachtzig Grad phasenverschoben - also invertiert. Der Verstärkungsfaktor ist V gleich minus R2  geteilt durch R1. Die Eingangsimpedanz entspricht R1. Das macht die Schaltung sehr gut geeignet als aktiver Spannungsteiler.}
     %seed: 896223 
     \silence{3}
 \end{frame}
 
-%Folie Komparator
-\begin{comment} 
-\begin{frame}
-    \b{
-        \frametitle{Komparator}
-        \centering
-        \begin{table}[ht]
-            \label{tab:Komparator}
-            \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.25\textwidth}|}
-                \hline
-                Schaltung & Frequenzgang und Gleichung  & Erläuterung und Eigenschaften \\ % Neue Zeile mit Text
-                \hline
-                \vspace{0.5cm}
-                \centering
-                \input{Tikz/src/Komparator.tex}
-                          &
-                \begin{center}
-                    \input{Tikz/src/FrequenzgangKomparator.tex}
-                    \[
-                        V_1: U_{\textnormal{E+}} > U_{\textnormal{E-}} \Rightarrow U_{\textnormal{A}} \approx +U_{\textnormal{B}}
-                    \]
-                    \[
-                        V_2: U_{\textnormal{E+}} < U_{\textnormal{E-}} \Rightarrow U_{\textnormal{A}} \approx -U_{\textnormal{B}}
-                    \]
-                \end{center}
-                          & \textbf{Komparator}\newline
-                Einsatz in Zweipunktreglern und Analog-Digital-Wandlern                 \\
-                \hline
-            \end{tabular}
-        \end{table}
-    }
-\end{frame}
-\end{comment} 
 
 \begin{frame}
     \b{
         \frametitle{Komparator}
         \begin{columns}
-            \column{0.48\textwidth}
+            \column{0.3\textwidth}
             \centering
             \begin{figure}
                 \centering
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/Komparator.tex}}
+                    \scalebox{1}{\input{Tikz/src/Komparator.tex}}
                     \caption{Schaltung eines Komparators}
                 \end{subfigure}
-
-                \vspace{0.5cm}
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/FrequenzgangKomparator.tex}}
+                    \scalebox{0.7}{\input{Tikz/src/FrequenzgangKomparator.tex}}
                     \caption{Frequenzgang eines Komparators}
                 \end{subfigure}
             \end{figure}
 
-            \column{0.48\textwidth}
+            \column{0.6\textwidth}
             \begin{itemize}
                 \item Gleichung:
                       \[
@@ -419,67 +349,27 @@
 \end{frame}
 
 
-%Folie Summierer
-\begin{comment} 
-\begin{frame}
-    \b{
-        \frametitle{Summierer}
-        \centering
-        \begin{table}[ht]
-            \label{tab:Summierer}
-            \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.25\textwidth}|}
-                \hline
-                Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften                                                                 \\ % Neue Zeile mit Text
-                \hline
-                \vspace{0.5cm}
-                \centering
-                \input{Tikz/src/Summierer.tex}
-
-                          &
-                \begin{center}
-                    \input{Tikz/src/FrequenzgangSummierer.tex}
-                \end{center}
-                \vspace{1ex}
-                \[
-                    \begin{aligned}
-                        U_{\textnormal{A}} = \underbrace{\frac{R_3} {R_1}}_{V_1} \cdot U_{\textnormal{E1}} + \underbrace{\frac{R_3} {R_2}}_{V_2} \cdot U_{\textnormal{E2}}
-                    \end{aligned}
-                \]
-                          &
-                Der Summierer basiert auf dem invertierenden Verstärker und findet Verwendung in Analogrechnern und beim Mischen von Spannungssignalen \\
-                \hline
-            \end{tabular}
-        \end{table}
-    }
-\end{frame}
-\end{comment} 
-
 \begin{frame}
     \b{
         \frametitle{Summierer}
         \begin{columns}
-            \column{0.48\textwidth}
+            \column{0.3\textwidth}
             \centering
             \begin{figure}
                 \centering
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/Summierer.tex}}
+                    \scalebox{1}{\input{Tikz/src/Summierer.tex}}
                     \caption{Schaltung eines Summierers}
                 \end{subfigure}
-
-                \vspace{0.5cm}
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/FrequenzgangSummierer.tex}}
+                    \scalebox{0.7}{\input{Tikz/src/FrequenzgangSummierer.tex}}
                     \caption{Frequenzgang eines Summierers}
                 \end{subfigure}
-
             \end{figure}
 
-            \column{0.48\textwidth}
+            \column{0.6\textwidth}
             \begin{itemize}
                 \item Gleichung:
                       \[
@@ -494,68 +384,28 @@
     \silence{3}
 \end{frame}
 
-%Folie Subtrahierer
-
-\begin{comment}
-\begin{frame}
-    \b{
-        \frametitle{Subtrahierer}
-        \centering
-        \begin{table}[ht]
-            \label{tab:Subtrahierer}
-            \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.25\textwidth}|}
-                \hline
-                Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften                                                                                                  \\ % Neue Zeile mit Text
-                \hline
-                \vspace{0.5cm}
-                \centering
-                \input{Tikz/src/Subtrahierer.tex}
-                          &
-                \begin{center}
-                    \input{Tikz/src/FrequenzgangSubtrahierer.tex}
-                \end{center}
-                \vspace{1ex}
-                \[
-                    \begin{aligned}
-                        {U_A} = {U_{{\textnormal{E2}}}} \cdot \underbrace{ \frac{R_1 + R_2}{R_1} \cdot \frac{R_4}{R_3 + R_4}}_{V_2} - U_{\textnormal{E1}} \cdot \underbrace{\frac{R_2}{R_1}}_{V_1}
-                    \end{aligned}
-                \]
-                          &
-                Wenn alle Widerstände gleich groß sind, wird die Differenz der Signale $U_{E1}$ und $U_{E2}$ gebildet, weswegen diese Schaltung als Differenzverstärker bezeichnet wird \\
-                \hline
-            \end{tabular}
-        \end{table}
-    }
-\end{frame}
-\end{comment}
-
 
 \begin{frame}
     \b{
         \frametitle{Subtrahierer}
         \begin{columns}
-            \column{0.48\textwidth}
+            \column{0.3\textwidth}
             \centering
             \begin{figure}
                 \centering
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/Subtrahierer.tex}}
+                    \scalebox{1}{\input{Tikz/src/Subtrahierer.tex}}
                     \caption{Schaltung eines Subtrahierers}
                 \end{subfigure}
-
-                \vspace{0.5cm}
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/FrequenzgangSubtrahierer.tex}}
+                    \scalebox{0.7}{\input{Tikz/src/FrequenzgangSubtrahierer.tex}}
                     \caption{Frequenzgang eines Subtrahierers}
                 \end{subfigure}
-
             \end{figure}
 
-            \column{0.48\textwidth}
+            \column{0.6\textwidth}
             \raggedleft
             \begin{itemize}
                 \item Gleichung:
@@ -572,66 +422,28 @@
 \end{frame}
 
 
-%Folie Integrierer
-\begin{comment}
-\begin{frame}
-    \b{
-        \frametitle{Integrierer}
-        \centering
-        \begin{table}[ht]
-            \label{tab:Integrierer}
-            \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.25\textwidth}|}
-                \hline
-                Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften \\ % Neue Zeile mit Text
-                \hline
-                \vspace{0.5cm}
-                \centering
-                \input{Tikz/src/Integrierer.tex}
-                          &
-                \begin{center}
-                    \input{Tikz/src/FrequenzgangIntegrierer.tex}
-                    \[
-                        U_A(t) = - \frac{R_2}{R_1} U_{\textnormal{E}}(t) - \int_0^t \frac{U_{\textnormal{E}}(t)}{R_1 C_1} \, dt
-                    \]
-                \end{center}
-                          &
-                \begin{itemize}
-                    \item Nimmt eine Integration des Eingangssignals vor
-                    \item Wird als aktives Tiefpassfilter verwendet
-                \end{itemize}                    \\
-                \hline
-            \end{tabular}
-        \end{table}
-    }
-\end{frame}
-\end{comment}
 
 \begin{frame}
     \b{
         \frametitle{Integrierer}
         \begin{columns}
-            \column{0.48\textwidth}
+            \column{0.3\textwidth}
             \centering
             \begin{figure}
                 \centering
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/Integrierer.tex}}
+                    \scalebox{1}{\input{Tikz/src/Integrierer.tex}}
                     \caption{Schaltung eines Integrierers}
                 \end{subfigure}
-
-                \vspace{0.5cm}
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/FrequenzgangIntegrierer.tex}}
+                    \scalebox{0.55}{\input{Tikz/src/FrequenzgangIntegrierer.tex}}
                     \caption{Frequenzgang eines Integrierers}
                 \end{subfigure}
-
             \end{figure}
 
-            \column{0.48\textwidth}
+            \column{0.6\textwidth}
             \raggedleft
             \begin{itemize}
                 \item Gleichung:
@@ -648,80 +460,38 @@
     \silence{3}
 \end{frame}
 
-%Folie Differenzierer
-\begin{comment} 
-\begin{frame}
-    \b{
-        \frametitle{Differenzierer}
-        \centering
-        \begin{table}[ht]
-            \label{tab:Differenzierer}
-            \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.25\textwidth}|}
-                \hline
-                Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften                                               \\ % Neue Zeile mit Text
-                \hline
-                \vspace{0.5cm}
-                \centering
-                \input{Tikz/src/Differenzierer.tex}
-                          &
-                \begin{center}
-                    \input{Tikz/src/FrequenzgangDifferenzierer.tex}
-                    \begin{multline*}
-                        U_A = - \frac{R_2}{R_1} U_{\textnormal{E}}(t) \\
-                        - \int_0^t \frac{1}{R_1 C_1} U_{\textnormal{E}}(t) \, dt
-                        - R_2 C_2\frac{dU_{\textnormal{E}}(t)}{dt}
-                    \end{multline*}
-                \end{center}
-                          &
-                \textbf{Differenzierer}\newline
-                \begin{itemize}
-                    \item Nimmt eine Integration des Eingangssignals vor
-                    \item Wird als aktives Hochpassfilter verwendet (zeigt in der Realität meist Bandpassverhalten, wie hier dargestellt)
-                \end{itemize} \\
-                \hline
-            \end{tabular}
-        \end{table}
-    }
-\end{frame}
-\end{comment} 
 
 \begin{frame}
     \b{
         \frametitle{Differenzierer}
         \begin{columns}
-            \column{0.48\textwidth}
+            \column{0.3\textwidth}
             \centering
             \begin{figure}
                 \centering
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/Differenzierer.tex}}
+                    \scalebox{1}{\input{Tikz/src/Differenzierer.tex}}
                     \caption{Schaltung eines Differenzierers}
                 \end{subfigure}
-
-                \vspace{0.5cm}
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/FrequenzgangDifferenzierer.tex}}
+                    \scalebox{0.7}{\input{Tikz/src/FrequenzgangDifferenzierer.tex}}
                     \caption{Frequenzgang eines Differenzierers}
                 \end{subfigure}
-
             \end{figure}
 
-            \column{0.48\textwidth}
+            \column{0.6\textwidth}
             \raggedleft
             \begin{itemize}
                 \item Gleichung:
-                      \[
+                      \begin{align*}
                           U_{\textnormal{A}}(t) =
-                          - \frac{R_2}{R_1} \, U_{\textnormal{E}}(t)
-                          - \int_0^t \frac{1}{R_1 C_1} \, U_{\textnormal{E}}(\tau) \, d\tau
-                          - R_2 C_2 \, \frac{dU_{\textnormal{E}}}{dt}(t)
-                      \]
-
-                \item Nimmt eine Differenziation des Eingangssignals vor
+                          &- \frac{R_2}{R_1} \, U_{\textnormal{E}}(t)
+                          - \int_0^t \frac{1}{R_1 C_1} \, U_{\textnormal{E}}(\tau) \, d\tau\\
+                          &- R_2 C_2 \, \frac{dU_{\textnormal{E}}}{dt}(t)
+                      \end{align*}
+                \item Nimmt eine Differentiation des Eingangssignals vor
                 \item Wird als aktives Hochpassfilter verwendet (zeigt in der Realität meist Bandpassverhalten, wie hier dargestellt)
             \end{itemize}
         \end{columns}
@@ -731,60 +501,20 @@
     \silence{3}
 \end{frame}
 
-%Folie Logarithmierer
-\begin{comment}
-\begin{frame}
-    \b{
-        \frametitle{Logarithmierer}
-        \centering
-        \begin{table}[ht]
-            \label{tab:Logarithmierer}
-            \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.25\textwidth}|}
-                \hline
-                Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften \\ % Neue Zeile mit Text
-                \hline
-                \vspace{0.5cm}
-                \centering
-                \input{Tikz/src/Logarithmierer.tex}
-                          &
-                \begin{center}
-                    \[
-                        U_{\textnormal{A}} =-U_{\textnormal{T}}\cdot \ln{\left(\frac{U_{\textnormal{E}}}{R_1\cdot I_S}\right)}
-                    \]
-                    \[
-                        U_{\textnormal{T}} = \frac{k_{\textnormal{B}} \cdot T}{e}
-                    \]
-
-                    \(e = \text{Elementarladung}\)
-
-                    \(k_{\textnormal{B}} = \text{Boltzmannkonstante}\)
-
-                    \(I_{\textnormal{s}} = \text{Sperrstrom der Diode}\)
-                \end{center}
-                          &
-                Bildet den natürlichen Logarithmus des Eingangssignals                 \\
-                \hline
-            \end{tabular}
-        \end{table}
-    }
-\end{frame}
-\end{comment}
-
 
 \begin{frame}
     \b{
         \frametitle{Logarithmierer}
         \begin{columns}
-            \column{0.48\textwidth}
+            \column{0.3\textwidth}
             \centering
             \begin{figure}
                 \centering
                 \input{Tikz/src/Logarithmierer.tex}
                 \caption{Schaltung eines Logarithmierers}
-
             \end{figure}
 
-            \column{0.48\textwidth}
+            \column{0.6\textwidth}
             \raggedleft
             \begin{itemize}
                 \item Gleichung:
@@ -792,7 +522,7 @@
                           U_{\textnormal{A}} =-U_{\textnormal{T}}\cdot \ln{\left(\frac{U_{\textnormal{E}}}{R_1\cdot I_S}\right)}
                       \]
                       \[
-                          U_{\textnormal{T}} = \frac{k_{\textnormal{B}} \cdot T}{\textnormal{e}}
+                          U_{\textnormal{T}} = \frac{\textnormal{k}_{\textnormal{B}} \cdot T}{\textnormal{e}}
                       \]
 
                       \(\textnormal{e} = \text{Elementarladung}\)
@@ -809,50 +539,19 @@
     \silence{3}
 \end{frame}
 
-%Folie Potenzierer
-\begin{comment}
-\begin{frame}
-    \b{
-        \frametitle{Potenzierer}
-        \centering
-        \begin{table}[ht]
-            \label{tab:Potenzierer}
-            \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.25\textwidth}|}
-                \hline
-                Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften       \\ % Neue Zeile mit Text
-                \hline
-                \vspace{0.5cm}
-                \centering
-                \input{Tikz/src/Potenzierer.tex}
-                          &
-                \begin{center}
-                    \[
-                        U_{\textnormal{A}} =-R_1\cdot I_{\textnormal{S}} \cdot e^{\frac{U_{\textnormal{E}}}{U_{\textnormal{T}}}}
-                    \]
-                \end{center}
-                          &
-                Besitzt einen e-funktionalen Zusammenhang zwischen Ein- und Ausgangsspannung \\
-                \hline
-            \end{tabular}
-        \end{table}
-    }
-\end{frame}
-\end{comment}
-
 \begin{frame}
     \b{
         \frametitle{Potenzierer}
         \begin{columns}
-            \column{0.48\textwidth}
+            \column{0.3\textwidth}
             \centering
             \begin{figure}
                 \centering
                 {\input{Tikz/src/Potenzierer.tex}}
                 \caption{Schaltung eines Potenzierers}
-
             \end{figure}
 
-            \column{0.48\textwidth}
+            \column{0.6\textwidth}
             \raggedleft
             \begin{itemize}
                 \item Gleichung:
@@ -868,80 +567,27 @@
     \silence{3}
 \end{frame}
 
-%Folie Insutrmentenverstärker 
-\begin{comment}
-\begin{frame}
-    \b{
-        \frametitle{Instrumentenverstärker}
-        \centering
-        \begin{table}[ht]
-            \label{tab:Instrumentenverstaerker}
-            \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.25\textwidth}|}
-                \hline
-                Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften \\ % Neue Zeile mit Text
-                \hline
-                \vspace{0.5cm}
-                \centering
-                \input{Tikz/src/Instrumentenverstaerker.tex}
-                          &
-                \begin{center}
-                    \input{Tikz/src/FrequenzgangInstrumenten.tex}
-                \end{center}
-
-                \vspace{1ex}
-                \[
-                    \mathit{a_i} : \text{Amplitude Eingangsspannung i}
-                \]
-                \[
-                    \mathit{\varphi_i} : \text{Phase Eingangsspannung i}
-                \]
-                \[
-                    \mathit{A}_{A} = \sqrt{a_1^2 + a_2^2 + 2a_1a_2 \cos(\varphi_1 - \varphi_2)}
-                \]
-                \[
-                    \mathit{\tan}(\varphi_A) = \frac{a_1 \mathit{\sin}(\varphi_1) + a_2 \mathit{\sin}(\varphi_2)}{a_1 \mathit{\cos}(\varphi_1) + a_2 \mathit{\cos}(\varphi_2)}
-                \]
-                \[
-                    \text{Wenn} : R_2 = R_4 = R
-                \]
-                \[
-                    U_{\textnormal{A}} = (1+ \frac{2R} {R_{\textnormal{g}}}) \cdot \frac{R_3} {R_2} (U_{\textnormal{E2}}-U_{\textnormal{E1}})
-                \]
-                          &
-                Differenzverstärker mit hoher Eingangsimpedanz und hoher Gleichtaktunterdrückung
-                \\
-                \hline
-            \end{tabular}
-        \end{table}
-    }
-\end{frame}
-\end{comment}
-
 \begin{frame}
     \b{
         \frametitle{Instrumentenverstärker}
         \begin{columns}
-            \column{0.48\textwidth}
+            \column{0.3\textwidth}
             \centering
             \begin{figure}
                 \centering
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/Instrumentenverstaerker.tex}}
+                    \scalebox{1}{\input{Tikz/src/Instrumentenverstaerker.tex}}
                     \caption{Schaltung eines Instrumentenverstärkers}
                 \end{subfigure}
-
-                \vspace{0.5cm}
-
                 \begin{subfigure}{\linewidth}
                     \centering
-                    \resizebox{0.6\linewidth}{!}{\input{Tikz/src/FrequenzgangInstrumenten.tex}}
+                    \scalebox{0.7}{\input{Tikz/src/FrequenzgangInstrumenten.tex}}
                     \caption{Frequenzgang eines Instrumentenverstärkers}
                 \end{subfigure}
             \end{figure}
 
-            \column{0.48\textwidth}
+            \column{0.6\textwidth}
             \raggedleft
             \begin{itemize}
                 \item Gleichung:
@@ -973,54 +619,19 @@
 \end{frame}
 
 
-%Folie Insutrmentenverstärker 
-\begin{comment}
-\begin{frame}
-    \b{
-        \frametitle{Impedanzwandler}
-        \centering
-        \begin{table}[ht]
-            \label{tab:Impedanzwandler}
-            \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.25\textwidth}|}
-                \hline
-                Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften \\ % Neue Zeile mit Text
-                \hline
-                \vspace{0.5cm}
-                \centering
-                \scalebox{0.45}{\input{Tikz/src/Impedanzwandler.tex}}
-                          &
-
-                \vspace{1ex}
-                Ausgangsspannung $U_\mathrm{A}$ folgt der Eingangsspannung $U_\mathrm{E}$ \newline
-                Verstärkung $V = \frac{U_\mathrm{A}}{U_\mathrm{E}} = 1$
-
-                          &
-
-                Auch Spannungsfolger genannt \newline
-                Hoher Eingangswiderstand durch Operationsverstärker \newline
-                Typische Anwendung: Sensoren
-
-                \\
-                \hline
-            \end{tabular}
-        \end{table}
-    }
-\end{frame}
-\end{comment}
-
 \begin{frame}
     \b{
         \frametitle{Impedanzwandler}
         \begin{columns}
-            \column{0.48\textwidth}
+            \column{0.3\textwidth}
             \centering
             \begin{figure}
                 \centering
-                \input{Tikz/src/Impedanzwandler.tex}
+                \scalebox{.6}{\input{Tikz/src/Impedanzwandler.tex}}
                 \caption{Schaltung eines Impedanzwandlers}
             \end{figure}
 
-            \column{0.48\textwidth}
+            \column{0.6\textwidth}
             \centering
             \begin{itemize}
                 \item Ausgangsspannung $U_\mathrm{A}$ folgt der Eingangsspannung $U_\mathrm{E}$

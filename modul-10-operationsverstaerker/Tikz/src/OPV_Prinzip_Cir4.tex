@@ -1,0 +1,19 @@
+    \begin{circuitikz}
+        \ctikzset{tripoles/en amp/input height=-0.45}
+        \draw (0,0) node[en amp](E){};
+        \draw (E.+) to[open, o-, v, name=Ud] (E.-);
+        \draw (E.-) to [short, o-*] ++(0, -1.25) coordinate(ref);
+        \draw (E.out) to[short, *-] ++(ref -| 0,0) 
+            to[R, l_=$R_2$, i>_, v^, name=R2] (ref)
+            to[R, l=$R_1$, i, v, name=R1] ++(0, -1.75)
+            node[ground]{} coordinate(ref1);
+        \draw (E.out) to[short, -o] ++(0.25,0) node[right]{$U_\mathrm{A}$}
+            to[open, -o, v^, name=Ua] ++(ref1 -| 0,0) node[ground]{};
+ 
+        \varrmore{R1}{$U_\mathrm{R1}$};
+        \varrmore{R2}{$U_\mathrm{R2}$};
+        \iarrmore{R1}{$I_\mathrm{R1}$};
+        \iarrmore{R2}{$I_\mathrm{R2}$};
+        \varrmore{Ud}{$U_\mathrm{Diff}=0\,\mathrm{V}$};
+        \varrmore{Ua}{$U_\mathrm{A}$};
+    \end{circuitikz} 

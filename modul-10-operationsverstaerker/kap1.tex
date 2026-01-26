@@ -70,7 +70,7 @@
         Operationsverstärker (auch kurz als OPV oder OpAmp bezeichnet) zeichnen sich dadurch aus,
         dass sie als Universalverstärker aufgebaut sind und ihre Funktion maßgeblich durch äußere Beschaltung bestimmt
         wird. So lassen sich mit dem gleichen Baustein Spannungen  verstärken, Rechenoperationen wie Additionen, Subtraktionen
-        oder Integrationen durchführen und Signale schalten. Solche Operationalverstärker sind beispielsweise in der Mess- und
+        oder Integrationen durchführen und Signale schalten. Solche Operationsverstärker sind beispielsweise in der Mess- und
         Regelungstechnik, der Signalverarbeitung und der Signalformung unerlässlich. Im Folgenden ist ein aus diskreten
         Transistoren aufgebauter Operationsverstärker und ein integrierter Schaltkreis dargestellt.
         Durch die direkte Kopplung der Verstärkerstufen können Operationsverstärker
@@ -115,19 +115,20 @@
 \begin{frame}
     \b{
         \frametitle{Komparator}
+
         \begin{figure}[H]
             \centering
-            % Linkes Bild
-            \begin{subfigure}[b]{\textwidth}
+            \begin{minipage}[c]{0.54\textwidth}
                 \centering
-                \input{Tikz/src/FigKomparatorschaltung.tex}
-            \end{subfigure}
-
-            \begin{subfigure}[b]{\textwidth}
+                \resizebox{0.95\textwidth}{!}{\input{Tikz/src/FigKomparatorschaltung.tex}}
+            \end{minipage}
+            \begin{minipage}[c]{0.44\textwidth}
                 \centering
-                \includesvg[width=0.6\textwidth]{Bilder/Aufgaben/FigAkkuUeberwachung}
-            \end{subfigure}
+                \includesvg[width=0.95\textwidth]{Bilder/Aufgaben/FigAkkuUeberwachung}
+            \end{minipage}
+            \caption{\textbf{Operarationsverstärker als Komparator.} Links: Grundlegender Schaltkreis eines Komparators. Rechts: Resultierende Ausgangsspannung in Abhängigkeit zu der Eingangsspannung und Referenzspannung.}
         \end{figure}
+
     }
     \speech{OPV_Komperator}{1}{Hier sehen wir das Normsymbol eines Operationsverstärkers. Er hat zwei Eingänge: den invertierenden Eingang mit dem Minuszeichen und den nicht-invertierenden Eingang mit dem Pluszeichen. Was macht der OP V? Er verstärkt die Differenzspannung zwischen diesen beiden Eingängen - und das mit einer sehr großen Verstärkung. Das bedeutet: Schon kleinste Unterschiede zwischen plus und minus Eingang entscheiden darüber, ob die Ausgangsspannung an die obere oder an die untere Maximal-Grenze gezogen wird. Diese Grenze wird maßgeblich durch die Versorgungsspannung U B festgelegt. Diese Spannung wird dem OP V über zwei extra Anschlüsse bereit gestellt die im Normsymbol nicht dargestellt sind.}
     %seed: 988461
@@ -178,11 +179,10 @@
     
     \b{
         \frametitle{Funktionsweise von Operationsverstärkern}
-        \begin{figure}[ht]
+        \begin{figure}[!h]
             \centering
-            \fu{
-                \resizebox{0.7\textwidth}{!}{\input{Tikz/src/Funktionsweise_OPV_1_Teil1.tex}}
-            }{Verhalten eines vereinfachten Operationsverstärkers bei Anlegen einer positiven Differenzspannung am Eingang.}
+            \fu{\resizebox{!}{0.7\textheight}{\input{Tikz/src/Funktionsweise_OPV_1_Teil1.tex}}}
+            {Verhalten eines vereinfachten Operationsverstärkers bei Anlegen einer positiven Differenzspannung am Eingang.}
         \end{figure}
         Eine positive Differenzspannung (A) führt zu einer Reduktion des Widerstands von $T_2$, was zu einer Spannungsreduktion an dessen Kollektor und einem Anstieg am Emitter führt (B). $T_3$ fungiert als Stromquelle.}
 \end{frame}
@@ -190,9 +190,9 @@
 \begin{frame}
     \b{
         \frametitle{Funktionsweise von Operationsverstärkern}
-        \begin{figure}[ht]
+        \begin{figure}[!h]
             \centering
-            \fu{\resizebox{0.7\textwidth}{!}{\input{Tikz/src/Funktionsweise_OPV_1_Teil2.tex}}}
+            \fu{\resizebox{!}{0.7\textheight}{\input{Tikz/src/Funktionsweise_OPV_1_Teil2.tex}}}
             {Verhalten eines vereinfachten Operationsverstärkers bei Anlegen einer positiven Differenzspannung am Eingang. Die blauen Pfeile geben an, wie sich das Potential am Schaltungsknoten ggü. eines ausgeglichenen Eingangs $U_{\textnormal{Diff}}$~=~0 verschiebt.}
         \end{figure}
         Durch die Spannungserhöhung an der Basis von $T_4$ (C) führt der Kollektor-\linebreak Emitter-Pfad von $T_4$ mehr Strom (D), was zu einem erhöhten Spannungsabfall am Lastwiderstand $R_{\textnormal{L}}$ und somit zu einer höheren Ausgangsspannung $U_{\textnormal{A}}$ führt.}
@@ -213,9 +213,8 @@
 
     \begin{figure}[ht]
             \centering
-            \fu{
-            \resizebox{0.6\textwidth}{!}{\input{Tikz/src/Funktionsweise_OPV_2.tex}}
-            }{Verhalten eines vereinfachten Operationsverstärkers bei Anlegen einer negativen Differenzspannung am Eingang. Die blauen Pfeile geben an, wie sich das Potential am Schaltungsknoten ggü. eines ausgeglichenen Eingangs $U_{\textnormal{Diff}}$~=~0 verschiebt.
+            \fu{\resizebox{0.6\textwidth}{!}{\input{Tikz/src/Funktionsweise_OPV_2.tex}}}
+            {Verhalten eines vereinfachten Operationsverstärkers bei Anlegen einer negativen Differenzspannung am Eingang. Die blauen Pfeile geben an, wie sich das Potential am Schaltungsknoten ggü. eines ausgeglichenen Eingangs $U_{\textnormal{Diff}}$~=~0 verschiebt.
             \label{fig:Funktionsweise OPV 2}}
     \end{figure}   
     }
@@ -224,7 +223,7 @@
         \frametitle{Funktionsweise von Operationsverstärkern}
         \begin{figure}[ht]
             \centering
-            \fu{\resizebox{0.7\textwidth}{!}{\input{Tikz/src/Funktionsweise_OPV_2.tex}}}
+            \fu{\resizebox{!}{0.7\textheight}{\input{Tikz/src/Funktionsweise_OPV_2.tex}}}
             {Verhalten eines vereinfachten Operationsverstärkers bei Anlegen einer negativen Differenzspannung am Eingang. Die blauen Pfeile geben an, wie sich das Potential am Schaltungsknoten ggü. eines ausgeglichenen Eingangs $U_{\textnormal{Diff}}$~=~0 verschiebt.}
         \end{figure}
         Eine höhere invertierte Eingangsspannung  hingegen verringert den Widerstand im Kollektor-Emitter-Pfad von $T_1$. Der dadurch erhöhte Widerstand von $T_4$ verringert den Stromfluss durch $R_{\textnormal{L}}$, wodurch die Spannung $U_{\textnormal{A}}$ ebenfalls sinkt.
