@@ -10,7 +10,7 @@
     }
     \speech{Gegenkopplung}{1}{In den vorherigen Videos haben wir uns auf den inneren Aufbau des Verstärkers seine charakteristischen Größen konzentriert. Nun schauen wir uns die Beschaltungsmöglichkeiten an.
         Starten wir mit einer kleinen Motivation: Angenommen, wir wollen ein Musiksignal von unserem Handy über einen Lautsprecher wiedergeben. Das Handy liefert vielleicht eine Spannung von rund einem Volt.
-        Der Lautsprecher braucht aber 25 Watt an 4 Ohm - das entspricht einer Ausgangsspannung von ungefähr zehn Volt.
+        Der Lautsprecher braucht aber 25\,Watt an 4\,Ohm - das entspricht einer Ausgangsspannung von ungefähr zehn Volt.
         Wir brauchen also eine Schaltung, die diese Verstärkung übernimmt - einen Verstärker.}
     %seed: 875677
     \silence{3}
@@ -39,14 +39,14 @@
             Bei der Entwicklung von Hi-Fi-Geräten müssen Verstärker an die Last (also den Lautsprecher) angepasst werden.
             Dazu wird ein Leistungsverstärker (d.h. eine Endstufe) benötigt. Eine solche Endstufe, die geeignet ist, das Signal eines Handys so zu verstärken, dass ein Lautsprecher damit betrieben werden kann soll hier aufgebaut werden.
             Ein vereinfachtes Ersatzschaltbild des Lautsprechers ist durch eine Induktivität mit einem in Reihe geschalteten Widerstand gegeben (siehe Abbildung \ref{fig:Beispielproblem 1}).
-            Das Eingangsspannungsniveau ist 1~V und es soll ein 4~$\mathrm{\Omega}$ Lautsprecher betrieben werden (4~$\mathrm{\Omega}$ bedeutet, dass der Lautsprecher bei 1~kHz eine Impedanz von 4~$\Omega$ aufweist).
-            Wie groß muss die Spannung am Ausgang des Verstärkers sein, damit der Lautsprecher bei 1~kHz 25~W aufnimmt.
+            Das Eingangsspannungsniveau ist $1\,\mathrm{V}$ und es soll ein $4\,\Omega$ Lautsprecher betrieben werden ($4\,\Omega$ bedeutet, dass der Lautsprecher bei $1\,\mathrm{kHz}$ eine Impedanz von $4\,\Omega$ aufweist).
+            Wie groß muss die Spannung am Ausgang des Verstärkers sein, damit der Lautsprecher bei $1\,\mathrm{kHz}$ $25\,\mathrm{W}$ aufnimmt.
             Wie kann hier vorgegangen werden, wenn eine Operationsverstärkerschaltung für die Lösung genutzt werden soll? \par
     
             \textbf{Lösung}\\
             Zunächst muss dazu die Spannung berechnet werden, die der Verstärker ausgeben soll.
             \begin{equation}
-                U_{\textnormal{A}} = \sqrt{P \cdot R} = \sqrt{25~\mathrm{W} \cdot 4~\mathrm{\Omega}} = 10~\textnormal{V}
+                U_{\textnormal{A}} = \sqrt{P \cdot R} = \sqrt{25\,\mathrm{W} \cdot 4\,\mathrm{\Omega}} = 10\,\textnormal{V}
             \end{equation}
             Wie kann nun mithilfe eines Operationsverstärkers der mit einem \glqq ?\grqq{} gekennzeichneten Teil der Schaltung ersetzt werden, um eine notwendige Verstärkung von 10 zu erreichen (siehe Abbildung \ref{fig:Beispielproblem 1}).
             \fu{\resizebox{0.6\textwidth}{!}{\input{Tikz/src/OPVBeispielproblem.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite. Es wird für den mit einem Fragezeichen gekennzeichneten Teil der Schaltung zunächst der Verstärkungsfaktor $V=\frac{U_{\textnormal{A}}}{U_{\textnormal{E}}}$ gesucht. \label{fig:Beispielproblem 1}}
@@ -58,12 +58,12 @@
         \textbf{Lösung}\\
         Zunächst muss dazu die Spannung berechnet werden, die am Ausgang des Verstärkers anliegen soll.
         \begin{equation}
-            U_{\textnormal{A}} = \sqrt{P \cdot R} = \sqrt{25~\mathrm{W} \cdot 4~\mathrm{\Omega}} = 10~\textnormal{V}
+            U_{\textnormal{A}} = \sqrt{P \cdot R} = \sqrt{25\,\mathrm{W} \cdot 4\,\mathrm{\Omega}} = 10\,\textnormal{V}
         \end{equation}
         Wie kann nun mithilfe eines Operationsverstärkers der mit einem \glqq ?\grqq{} gekennzeichneten Teil der Schaltung ersetzt werden, um eine notwendige Verstärkung von 5 zu erreichen.
         \fu{\resizebox{0.8\textwidth}{!}{\input{Tikz/src/OPVBeispielproblem.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite \label{fig:Beispielproblem 1 Folien 2}}
     }
-    \speech{Gegenkopplung_Bsp}{1}{Hier sehen wir die einfache Rechnung: Mit 25 Watt an 4 Ohm brauchen wir eine Spannung von zehn Volt. Das heißt, wir benötigen eine Spannungsverstärkung von zehn zu eins, also den Faktor zehn. Wie können wir das mit einem Operationsverstärker umsetzen?} 
+    \speech{Gegenkopplung_Bsp}{1}{Hier sehen wir die einfache Rechnung: Mit 25\,Watt an 4\,Ohm brauchen wir eine Spannung von zehn Volt. Das heißt, wir benötigen eine Spannungsverstärkung von zehn zu eins, also den Faktor zehn. Wie können wir das mit einem Operationsverstärker umsetzen?} 
     %seed: 875681 
     \silence{3}
 \end{frame}
@@ -121,7 +121,7 @@
 
         Dieses Verhalten ist für die meisten Anwendungen bei denen der Eingangsspannungssignal mit geringer Amplitude verstärkt werden soll, nicht erwünscht.
         Stattdessen werden Operationsverstärker meistens in der sogenannten Gegenkopplung (B) betrieben, bei der der Ausgang auf den invertierenden Eingang zurückgeführt wird.
-        Der in (B) eingezeichnete Schalter sei zunächst geöffnet und der Operationsverstärker werde nicht mit Spannung versorgt. Zum Zeitpunkt 0 s wird der Schalter geschlossen und die Versorgungsspannung des Verstärkers eingeschaltet, wodurch die Rückführung des Ausgangssignals $U_{\textnormal{A}}$ aktiv wird (C).
+        Der in (B) eingezeichnete Schalter sei zunächst geöffnet und der Operationsverstärker werde nicht mit Spannung versorgt. Zum Zeitpunkt 0\,s wird der Schalter geschlossen und die Versorgungsspannung des Verstärkers eingeschaltet, wodurch die Rückführung des Ausgangssignals $U_{\textnormal{A}}$ aktiv wird (C).
         Durch die Rückkopplung des Ausgangssignal wird so erreicht, dass die Spannung am invertierenden Eingang auf das Spannungsniveau der Ausgangsspannung angeglichen wird.
         Die in (C) dargestellte Verstärkerschaltung hat die Verstärkung 1 und wird als Impedanzwandler bezeichnet, da der Verstärker in dieser Schaltungsart aufgrund seiner hohen Eingangsimpedanz verwendet werden kann, um eine Schaltung mit hochohmigem Eingang zu realisieren (dies ist beispielsweise bei Messschaltungen für Spannungsmessungen notwendig).
         Für die Lösung des Anwendungsproblems ist diese Schaltung allerdings noch nicht geeignet, da eine Verstärkung von 5 gefordert ist.
@@ -132,14 +132,15 @@
         \frametitle{Prinzip der Gegenkopplung - Lösung des Beispielproblems (2)}
     }
 
-    \begin{center}
+    \begin{figure}[H]
+        \centering
         \begin{tabular}{ |>{\centering\arraybackslash}m{0.195\linewidth}|>{\centering\arraybackslash}m{0.195\linewidth} >{\centering\arraybackslash}m{0.195\linewidth}|>{\centering\arraybackslash}m{0.275\linewidth}| }
             \hline
-            \large \textbf{A}                                  &
-            \large \textbf{B}                                  &
-            \large \textbf{C}                                  &
-            \large \textbf{D}                                    \\
-
+            \vspace{0.1cm} \large \textbf{A}                   &
+            \vspace{0.1cm} \large \textbf{B}                   &
+            \vspace{0.1cm} \large \textbf{C}                   &
+            \vspace{0.1cm} \large \textbf{D}                     \\
+        
             \scalebox{0.65}{\input{Tikz/src/OPV_Prinzip_Cir1}} &
             \scalebox{0.65}{\input{Tikz/src/OPV_Prinzip_Cir2}} &
             \scalebox{0.65}{\input{Tikz/src/OPV_Prinzip_Cir3}} &
@@ -151,7 +152,9 @@
             \scalebox{0.8}{\input{Tikz/src/OPV_Prinzip_Fig3}}    \\
             \hline
         \end{tabular}
-    \end{center}
+        \caption{Verschaltung eines Verstärkers als Komparator (A), Impedanzwandler (C) und nicht-invertierender Verstärker (D)}
+        \label{fig: Verschaltung Verstaerker}
+    \end{figure}
 
     %\fu{
     %    \resizebox{\textwidth}{!}{\input{Tikz/src/Verschaltungdesverstaerkers.tex}}
@@ -167,7 +170,7 @@
 \begin{frame}
     \s{
         \begin{bsp}{Teil 2: Entwicklung einer Verstärkerschaltung für Musiksignale}{Beispiel Verstaerkung 2}
-            Im letzten Schritt muss ermittelt werden, wie die Widerstände in (D) gewählt werden müssen, damit sich eine Verstärkung von 5 ergibt. Dazu müssen zunächst die Maschengleichungen aufgestellt werden.
+            Im letzten Schritt muss ermittelt werden, wie die Widerstände in (D) gewählt werden müssen, damit sich eine Verstärkung von 10 ergibt. Dazu müssen zunächst die Maschengleichungen aufgestellt werden.
             Eine wichtige Annahme zur Aufstellung dieser Maschengleichung ist, dass davon ausgegangen wird, dass der Verstärker durch die Rückkopplung des Ausgangsignal die beiden Eingangssignale angleicht.
             Hier darf also geschrieben werden \glqq Annahme: $U_{\textnormal{dif}}~=~0$~V\grqq{}.
             Somit ergibt sich für den invertierenden Eingang $U_{\textnormal{E-}}~=~1$~V.
@@ -491,7 +494,7 @@
                           - \int_0^t \frac{1}{R_1 C_1} \, U_{\textnormal{E}}(\tau) \, d\tau\\
                           &- R_2 C_2 \, \frac{dU_{\textnormal{E}}}{dt}(t)
                       \end{align*}
-                \item Nimmt eine Differentiation des Eingangssignals vor
+                \item Nimmt eine Differenziation des Eingangssignals vor
                 \item Wird als aktives Hochpassfilter verwendet (zeigt in der Realität meist Bandpassverhalten, wie hier dargestellt)
             \end{itemize}
         \end{columns}

@@ -5,29 +5,28 @@
     $R_1 = \mathrm{10\,k\Omega}$, $R_2 = \mathrm{20\,k\Omega}$, $R_3 = \mathrm{30\,k\Omega}$, $R_4 = \mathrm{10\,k\Omega}$, $R_5 = \mathrm{20\,k\Omega}$
 
     \begin {figure} [H]
-   \centering
-   \input{Tikz/src/FigOPVzweistufig.tex}
-   \label{fig:FigOPVzweistufig}
+    \centering
+    \resizebox{0.95\textwidth}{!}{\input{Tikz/src/FigOPVzweistufig.tex}}
+    \label{fig:FigOPVzweistufig}
     \end {figure}
- %   \speech{
- %       Aufgabe 6: Operationsverstärkerschaltung mit zwei Stufen  
- %       
- %       Gegeben ist eine Schaltung mit zwei Operationsverstärkern N1 und N2.  
- %       Die Widerstände haben folgende Werte:  
- %       R1 = 10 Kiloohm, R2 = 20 Kiloohm, R3 = 30 Kiloohm,  
- %       R4 = 10 Kiloohm, R5 = 20 Kiloohm.  
- %       
- %       Die Eingangsspannungen U E1, U E2 und U E3 werden über die Widerstände R1, R2 und R3 an den invertierenden Eingang des ersten Operationsverstärkers N1 geführt.  
- %       Der nichtinvertierende Eingang von N1 ist mit Masse verbunden.  
- %       Der Verstärker N1 hat eine Rückkopplung über den Widerstand R4.  
- %       Der Ausgang von N1 ist mit einem weiteren Widerstand R5 verbunden,  
- %       der das Signal an den zweiten Operationsverstärker N2 weiterleitet.  
- %       Auch N2 arbeitet mit einer Rückkopplung über einen Widerstand R6.  
- %       
- %       Gesucht ist die Ausgangsspannung U A in Abhängigkeit der Eingangsspannungen U E1, U E2 und U E3.  
- %       }
-        
 
+    %   \speech{
+    %       Aufgabe 6: Operationsverstärkerschaltung mit zwei Stufen  
+    %       
+    %       Gegeben ist eine Schaltung mit zwei Operationsverstärkern N1 und N2.  
+    %       Die Widerstände haben folgende Werte:  
+    %       R1 = 10 Kiloohm, R2 = 20 Kiloohm, R3 = 30 Kiloohm,  
+    %       R4 = 10 Kiloohm, R5 = 20 Kiloohm.  
+    %       
+    %       Die Eingangsspannungen U E1, U E2 und U E3 werden über die Widerstände R1, R2 und R3 an den invertierenden Eingang des ersten Operationsverstärkers N1 geführt.  
+    %       Der nichtinvertierende Eingang von N1 ist mit Masse verbunden.  
+    %       Der Verstärker N1 hat eine Rückkopplung über den Widerstand R4.  
+    %       Der Ausgang von N1 ist mit einem weiteren Widerstand R5 verbunden,  
+    %       der das Signal an den zweiten Operationsverstärker N2 weiterleitet.  
+    %       Auch N2 arbeitet mit einer Rückkopplung über einen Widerstand R6.  
+    %       
+    %       Gesucht ist die Ausgangsspannung U A in Abhängigkeit der Eingangsspannungen U E1, U E2 und U E3.  
+    %       }
 }
 
 \Loesung{
@@ -54,7 +53,7 @@ Berechnung von $U_\mathrm{A}$
         &= 2 \left( U_\mathrm{E1} + 0,5 U_\mathrm{E2} + \frac{1}{3} U_\mathrm{E3} \right)
     \end{align*}
 
-Die Ausgangsspannung $U_\mathrm{A}$ beträgt also:
+Die Ausgangsspannung $U_\mathrm{A}$ beträgt:
     \begin{align*}
         U_\mathrm{A} &= 2 U_\mathrm{E1} + U_\mathrm{E2} + \frac{2}{3} U_\mathrm{E3}
     \end{align*}

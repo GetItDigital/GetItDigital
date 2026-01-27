@@ -103,46 +103,31 @@
         Die LED bleibt aus.
     \end{itemize}
 
-    \begin{figure}[H]
-        \centering
-        \input{Tikz/src/LsgAkkuUeberwachung1.tex}
-        \label{fig:LsgAkkuUeberwachung1}
-    \end{figure}
-
     \item[c)] Dimensionierung des Vorwiderstands $R_\mathrm{V}$
 
     Gegeben:
     \begin{itemize}
         \item Flussspannung der LED: $U_\mathrm{F} = 2,2\,\mathrm{V}$
         \item Strom durch die LED: $I_\mathrm{F} = 20\,\mathrm{mA}$
-        \item Ausgangsspannung des Komparators: $U_\mathrm{A} = 15\,\mathrm{V}$
+        \item Ausgangsspannung des Komparators: $U_\mathrm{A} = -15\,\mathrm{V}$
     \end{itemize}
-
-    Der Vorwiderstand $R_\mathrm{V}$ berechnet sich aus:
-    \[
-    R_\mathrm{V} = \frac{U_\mathrm{A} - U_\mathrm{F}}{I_\mathrm{F}}
-    \]
-    Einsetzen der Werte:
-    \[
-    R_\mathrm{V} = \frac{15\,\mathrm{V} - 2,2\,\mathrm{V}}{20\,\mathrm{mA}} = \frac{13,8\,\mathrm{V}}{0,02\,\mathrm{A}} = 690\,\Omega
-    \]
 
     \begin{figure}[H]
         \centering
-        \begin{subfigure}[b]{0.45\textwidth}
-            \centering
-            \input{Tikz/src/LsgAkkuUeberwachung2.tex}
-            \label{fig:LsgAkkuUeberwachung2}
-        \end{subfigure}
-        \hfill
-        \begin{subfigure}[b]{0.45\textwidth}
-            \centering
-            \input{Tikz/src/LsgAkkuUeberwachung3.tex}
-            \label{fig:LsgAkkuUeberwachung3}
-        \end{subfigure}
-        \label{fig:BeideLoesungen}
+        \input{Tikz/src/LsgAkkuUeberwachung1.tex}
+        \label{fig:LsgAkkuUeberwachung1}
     \end{figure}
 
+    Der Vorwiderstand $R_\mathrm{V}$ berechnet sich aus:
+    \[
+    R_\mathrm{V} = \frac{-U_\mathrm{A} - U_\mathrm{F}}{I_\mathrm{F}}
+    \]
+    Einsetzen der Werte:
+    \[
+    R_\mathrm{V} = \frac{-(-15\,\mathrm{V}) - 2,2\,\mathrm{V}}{20\,\mathrm{mA}} = \frac{12,8\,\mathrm{V}}{0,02\,\mathrm{A}} = 640\,\Omega
+    \]
+
+    Für einen sicheren Betrieb der LED wird Widerstandswert von mindestens $R_\mathrm{V} = 640\,\Omega$ benötigt.
     \item[d)] Alternative Spannungsreferenz:
 
     Da die Spannung des Spannungsteilers abhängig von der Betriebsspannung ist, könnte eine Zener-Diode als Referenzelement verwendet werden. Eine Zener-Diode stellt eine konstante Referenzspannung unabhängig von Schwankungen der Versorgungsspannung bereit.

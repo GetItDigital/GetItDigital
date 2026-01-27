@@ -1,158 +1,148 @@
 \begin{table}[ht]
     \caption{Ausgewählte Operationsverstärker-Grundschaltungen}
     \label{tab:Grundschaltungen}
-    \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.33\textwidth}|}
-    \hline
-    Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften\\ % Neue Zeile mit Text
-    \hline
-    \vspace{0.5cm}
-    \centering
-    \input{Tikz/src/NichtinvertierenderVerstaerker.tex} & \input{Tikz/src/FrequenzgangNiV.tex}
-\vspace{1ex}
-\[
-U_{\textnormal{A}} = \left(1+\frac{R_2}{R_1}\right) U_{\textnormal{E}}
-\]
-    &
-    \textbf{Nicht-invertierender Verstärker}
-\begin{itemize}
-    \item Phasengleiches Ausgangs-\linebreak signal
-    \item Sehr hochohmiger Eingangswiderstand
-    \item Niederohmiger Ausgangs-\linebreak widerstand
-    \item Anwendungen: z.B. Impedanzwandler
-\end{itemize} \\
-    \hline
-    \centering
-    \input{Tikz/src/InvertierenderVerstaerker.tex}
-     & 
-    \begin{center}
-        \input{Tikz/src/FrequenzgangInvertierenderVerstaerker.tex}
-\end{center}
-\vspace{1ex}
-\[
-    U_{\textnormal{A}} = \frac{R_2}{R_1} U_{\textnormal{E}}
-\]
-    &
-    \textbf{Invertierender Verstärker}
-\begin{itemize}
-    \item -180$^\circ$ Phasenverschiebung zwischen Ein- zu Ausgang
-    \item $R_1$ bestimmt den Eingangswiderstand
-    \item Niederohmiger Ausgangs-\linebreak widerstand
-    \item Anwendungen: \linebreak z.B. Aktiver Spannungsteiler zum Messen hoher Spannungen, wenn $R_1 > R_2$
-\end{itemize}
-\\ % Zweite Zeile
-    \hline
-    \centering
-    \input{Tikz/src/Komparator.tex}
-    & 
-    \begin{center}
-               \input{Tikz/src/FrequenzgangKomparator.tex}
-\[
-V_1: U_{\textnormal{E+}} > U_{\textnormal{E-}} \Rightarrow U_{\textnormal{A}} \approx +U_{\textnormal{B}}
-\]
-\[
-V_2: U_{\textnormal{E+}} < U_{\textnormal{E-}} \Rightarrow U_{\textnormal{A}} \approx -U_{\textnormal{B}}
-\]
-\end{center}
-    &\textbf{Komparator}\newline
-    Einsatz in Zweipunktreglern und Analog-Digital-Wandlern
-\\ % Dritte Zeile
-    \hline
+    \begin{tabular}{|m{0.24\textwidth}|m{0.405\textwidth}|m{0.31\textwidth}|}
+        \hline
+        Schaltung                                           & Frequenzgang und Gleichung           & Erläuterung und Eigenschaften \\ % Neue Zeile mit Text
+        \hline
+        \vspace{0.5cm}
+        \centering
+        \input{Tikz/src/NichtinvertierenderVerstaerker.tex} & \input{Tikz/src/FrequenzgangNiV.tex}
+        \vspace{1ex}
+        \[
+            U_{\textnormal{A}} = \left(1+\frac{R_2}{R_1}\right) U_{\textnormal{E}}
+        \]
+                                                            &
+        \textbf{Nicht-invertierender Verstär\-ker}
+        \begin{itemize}[leftmargin=0.4cm, parsep=0.0cm, itemsep=2pt, topsep=2pt]
+            \item Phasengleiches Ausgangs\-signal
+            \item Sehr hochohmiger Eingangs\-wider\-stand
+            \item Niederohmiger Ausgangs\-wider\-stand
+            \item Anwendungen: z.B. Impedanzwandler
+        \end{itemize}                                                                          \\
+        \hline
+        \centering
+        \input{Tikz/src/InvertierenderVerstaerker.tex}
+                                                            &
+        \begin{center}
+            \input{Tikz/src/FrequenzgangInvertierenderVerstaerker.tex}
+        \end{center}
+        \vspace{1ex}
+        \[
+            U_{\textnormal{A}} = \frac{R_2}{R_1} U_{\textnormal{E}}
+        \]
+                                                            &
+        \textbf{Invertierender Verstärker}
+        \begin{itemize}[leftmargin=0.4cm, parsep=0.0cm, itemsep=2pt, topsep=2pt]
+            \item -180$^\circ$ Phasenverschiebung zwischen Ein- zu Ausgang
+            \item $R_1$ bestimmt den Eingangswiderstand
+            \item Niederohmiger Ausgangs-\linebreak widerstand
+            \item Anwendungen: \linebreak z.B. Aktiver Spannungsteiler zum Messen hoher Spannungen, wenn $R_1 > R_2$
+        \end{itemize}
+        \\ % Zweite Zeile
+        \hline
+        \centering
+        \input{Tikz/src/Komparator.tex}
+                                                            &
+        \begin{center}
+            \input{Tikz/src/FrequenzgangKomparator.tex}
+            \[
+                V_1: U_{\textnormal{E+}} > U_{\textnormal{E-}} \Rightarrow U_{\textnormal{A}} \approx +U_{\textnormal{B}}
+            \]
+            \[
+                V_2: U_{\textnormal{E+}} < U_{\textnormal{E-}} \Rightarrow U_{\textnormal{A}} \approx -U_{\textnormal{B}}
+            \]
+        \end{center}
+                                                            & \textbf{Komparator}\newline
+        Einsatz in Zweipunktreglern und Analog-Digital-Wandlern
+        \\ % Dritte Zeile
+        \hline
 
-    
 
-\centering
-\input{Tikz/src/Summierer.tex}
 
-    &
-    \begin{center}
-    \input{Tikz/src/FrequenzgangSummierer.tex}
-\end{center}
-\vspace{1ex}
-\[
-\begin{aligned}
-    U_{\textnormal{A}} = \underbrace{\frac{R_3} {R_1}}_{V_1} \cdot U_{\textnormal{E1}} + \underbrace{\frac{R_3} {R_2}}_{V_2} \cdot U_{\textnormal{E2}}
-\end{aligned}
-\]
-    & 
-    \textbf{Summierer}\newline
-    Der Summierer basiert auf dem invertierenden Verstärker und findet Verwendung in Analogrechnern und beim Mischen von Spannungssignalen
-    \\ % Vierte Zeile
-    \hline
-    
+        \centering
+        \input{Tikz/src/Summierer.tex}
+
+                                                            &
+        \begin{center}
+            \input{Tikz/src/FrequenzgangSummierer.tex}
+        \end{center}
+        \vspace{1ex}
+        \[
+            \begin{aligned}
+                U_{\textnormal{A}} = \underbrace{\frac{R_3} {R_1}}_{V_1} \cdot U_{\textnormal{E1}} + \underbrace{\frac{R_3} {R_2}}_{V_2} \cdot U_{\textnormal{E2}}
+            \end{aligned}
+        \]
+                                                            &
+        \textbf{Summierer}\newline
+        Der Summierer basiert auf dem invertierenden Verstärker und findet Verwendung in Analogrechnern und beim Mischen von Spannungssignalen
+        \\ % Vierte Zeile
+        \hline
     \end{tabular}
 \end{table}
 
 
 \newpage
-
-
-
-
-
-
-
-
-
 
 
 
 \begin{table}[ht]
     \begin{tabular}{|m{0.23\textwidth}|m{0.44\textwidth}|m{0.33\textwidth}|}
-     \hline 
-    Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften \\ % Neue Zeile mit Text
-    \hline
-    \input{Tikz/src/Subtrahierer.tex}
-      &
-      \begin{center}
-      \input{Tikz/src/FrequenzgangSubtrahierer.tex}
- \end{center}
- \vspace{1ex}
- \[
- \begin{aligned}
-    {U_A} = {U_{{\textnormal{E2}}}} \cdot \underbrace{ \frac{R_1 + R_2}{R_1} \cdot \frac{R_4}{R_3 + R_4}}_{V_2} - U_{\textnormal{E1}} \cdot \underbrace{\frac{R_2}{R_1}}_{V_1}
-\end{aligned}
- \]
-     &
-     \textbf{Subtrahierer}\newline
-     Wenn alle Widerstände gleich groß sind, wird die Differenz der Signale $U_{E1}$ und $U_{E2}$ gebildet, weswegen diese Schaltung als Differenzverstärker bezeichnet wird
- \\ % Fünfte Zeile
-     \hline
+        \hline
+        Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften \\ % Neue Zeile mit Text
+        \hline
+        \input{Tikz/src/Subtrahierer.tex}
+                  &
+        \begin{center}
+            \input{Tikz/src/FrequenzgangSubtrahierer.tex}
+        \end{center}
+        \vspace{1ex}
+        \[
+            \begin{aligned}
+                {U_A} = {U_{{\textnormal{E2}}}} \cdot \underbrace{ \frac{R_1 + R_2}{R_1} \cdot \frac{R_4}{R_3 + R_4}}_{V_2} - U_{\textnormal{E1}} \cdot \underbrace{\frac{R_2}{R_1}}_{V_1}
+            \end{aligned}
+        \]
+                  &
+        \textbf{Subtrahierer}\newline
+        Wenn alle Widerstände gleich groß sind, wird die Differenz der Signale $U_{E1}$ und $U_{E2}$ gebildet, weswegen diese Schaltung als Differenzverstärker bezeichnet wird
+        \\ % Fünfte Zeile
+        \hline
 
-    \input{Tikz/src/Integrierer.tex}
-     & 
-     \begin{center}
-    \input{Tikz/src/FrequenzgangIntegrierer.tex}
-     \[
-     U_A(t) = - \frac{R_2}{R_1} U_{\textnormal{E}}(t) - \int_0^t \frac{U_{\textnormal{E}}(t)}{R_1 C_1} \, dt
-     \]
-     \end{center} 
-     &
-    \textbf{Integrierer/Integrator}\newline
-    \begin{itemize}
-        \item Nimmt eine Integration des Eingangssignals vor
-        \item Wird als aktives Tiefpassfilter verwendet
-    \end{itemize}
-      \\ 
-      \hline
-    \input{Tikz/src/Differenzierer.tex}
-    &
-    \begin{center}
-    \input{Tikz/src/FrequenzgangDifferenzierer.tex}
-    \begin{multline*}
-        U_A = - \frac{R_2}{R_1} U_{\textnormal{E}}(t) \\
-        - \int_0^t \frac{1}{R_1 C_1} U_{\textnormal{E}}(t) \, dt 
-        - R_2 C_2\frac{dU_{\textnormal{E}}(t)}{dt}
-    \end{multline*}
-    \end{center} 
-    & 
-    \textbf{Differenzierer}\newline
-    \begin{itemize}
-        \item Nimmt eine Differenziation des Eingangssignals vor
-        \item Wird als aktives Hochpassfilter verwendet (zeigt in der Realität meist Bandpassverhalten, wie hier dargestellt)
-    \end{itemize}
-    \\
-    \hline
-\end{tabular}
+        \input{Tikz/src/Integrierer.tex}
+                  &
+        \begin{center}
+            \input{Tikz/src/FrequenzgangIntegrierer.tex}
+            \[
+                U_A(t) = - \frac{R_2}{R_1} U_{\textnormal{E}}(t) - \int_0^t \frac{U_{\textnormal{E}}(t)}{R_1 C_1} \, dt
+            \]
+        \end{center}
+                  &
+        \textbf{Integrierer/Integrator}
+        \begin{itemize}[leftmargin=0.4cm, parsep=0.0cm, itemsep=2pt, topsep=2pt]
+            \item Nimmt eine Integration des Eingangssignals vor
+            \item Wird als aktives Tiefpassfilter verwendet
+        \end{itemize}
+        \\
+        \hline
+        \input{Tikz/src/Differenzierer.tex}
+                  &
+        \begin{center}
+            \input{Tikz/src/FrequenzgangDifferenzierer.tex}
+            \begin{multline*}
+                U_A = - \frac{R_2}{R_1} U_{\textnormal{E}}(t) \\
+                - \int_0^t \frac{1}{R_1 C_1} U_{\textnormal{E}}(t) \, dt
+                - R_2 C_2\frac{dU_{\textnormal{E}}(t)}{dt}
+            \end{multline*}
+        \end{center}
+                  &
+        \textbf{Differenzierer}
+        \begin{itemize}[leftmargin=0.4cm, parsep=0.0cm, itemsep=2pt, topsep=2pt]
+            \item Nimmt eine Differenziation des Eingangssignals vor
+            \item Wird als aktives Hochpassfilter verwendet (zeigt in der Realität meist Bandpassverhalten, wie hier dargestellt)
+        \end{itemize}
+        \\
+        \hline
+    \end{tabular}
 \end{table}
 
 
@@ -161,75 +151,74 @@ V_2: U_{\textnormal{E+}} < U_{\textnormal{E-}} \Rightarrow U_{\textnormal{A}} \a
 
 
 \newpage
-    \begin{table}[ht]
-        \begin{tabular}{|m{0.285\textwidth}|m{0.395\textwidth}|m{0.33\textwidth}|}
-            \hline 
-    Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften \\ % Neue Zeile mit Text
-    \hline
-    \input{Tikz/src/Logarithmierer.tex}
-    &
-    \begin{center}
-    \[
-    U_{\textnormal{A}} =-U_{\textnormal{T}}\cdot \ln{\left(\frac{U_{\textnormal{E}}}{R_1\cdot I_S}\right)}
-    \]
-        \[
-            U_{\textnormal{T}} = \frac{\textnormal{k}_{\textnormal{B}} \cdot T}{\textnormal{e}}
+\begin{table}[ht]
+    \begin{tabular}{|m{0.285\textwidth}|m{0.395\textwidth}|m{0.33\textwidth}|}
+        \hline
+        Schaltung & Frequenzgang und Gleichung & Erläuterung und Eigenschaften \\ % Neue Zeile mit Text
+        \hline
+        \input{Tikz/src/Logarithmierer.tex}
+                  &
+        \begin{center}
+            \[
+                U_{\textnormal{A}} =-U_{\textnormal{T}}\cdot \ln{\left(\frac{U_{\textnormal{E}}}{R_1\cdot I_S}\right)}
             \]
-            
+            \[
+                U_{\textnormal{T}} = \frac{\textnormal{k}_{\textnormal{B}} \cdot T}{\textnormal{e}}
+            \]
+
             \(\textnormal{e} = \text{Elementarladung}\)
-            
+
             \(\textnormal{k}_{\textnormal{B}} = \text{Boltzmannkonstante}\)
-            
+
             \(I_{\textnormal{s}} = \text{Sperrstrom der Diode}\)
-    \end{center} 
-    & 
-    \textbf{Logarithmierer}\newline
-    Bildet den natürlichen Logarithmus des Eingangssignals
-    \\
-    \hline
-    \input{Tikz/src/Potenzierer.tex}
-    &
-    \begin{center}
-    \[
-    U_{\textnormal{A}} =-R_1\cdot I_{\textnormal{S}} \cdot e^{\frac{U_{\textnormal{E}}}{U_{\textnormal{T}}}}
-    \]
-    \end{center} 
-    & 
-    \textbf{Potenzierer}\newline
-    Besitzt einen e-funktionalen Zusammenhang zwischen Ein- und Ausgangsspannung
-    \\
-    \hline
-    \input{Tikz/src/Instrumentenverstaerker.tex}
-     &
-         \begin{center}
-   \input{Tikz/src/FrequenzgangInstrumenten.tex}
-\end{center}
+        \end{center}
+                  &
+        \textbf{Logarithmierer}\newline
+        Bildet den natürlichen Logarithmus des Eingangssignals
+        \\
+        \hline
+        \input{Tikz/src/Potenzierer.tex}
+                  &
+        \begin{center}
+            \[
+                U_{\textnormal{A}} =-R_1\cdot I_{\textnormal{S}} \cdot e^{\frac{U_{\textnormal{E}}}{U_{\textnormal{T}}}}
+            \]
+        \end{center}
+                  &
+        \textbf{Potenzierer}\newline
+        Besitzt einen e-funktionalen Zusammenhang zwischen Ein- und Ausgangsspannung
+        \\
+        \hline
+        \input{Tikz/src/Instrumentenverstaerker.tex}
+                  &
+        \begin{center}
+            \input{Tikz/src/FrequenzgangInstrumenten.tex}
+        \end{center}
 
-\vspace{1ex}
-\[
-\mathit{a_i} : \text{Amplitude Eingangsspannung i}
-\]
-\[
-\mathit{\varphi_i} : \text{Phase Eingangsspannung i}
-\]
-\[
-\mathit{A}_{A} = \sqrt{a_1^2 + a_2^2 + 2a_1a_2 \cos(\varphi_1 - \varphi_2)}
-\]
-\[
-\mathit{\tan}(\varphi_A) = \frac{a_1 \mathit{\sin}(\varphi_1) + a_2 \mathit{\sin}(\varphi_2)}{a_1 \mathit{\cos}(\varphi_1) + a_2 \mathit{\cos}(\varphi_2)}
-\]
-\[
-    \text{Wenn} : R_2 = R_4 = R
-\]
-\[
-    U_{\textnormal{A}} = (1+ \frac{2R} {R_{\textnormal{g}}}) \cdot \frac{R_3} {R_2} (U_{\textnormal{E2}}-U_{\textnormal{E1}})
-\]
-     & 
-     \textbf{Instrumentenverstärker}\newline
-    Differenzverstärker mit hoher Eingangsimpedanz und hoher Gleichtaktunterdrückung  
+        \vspace{1ex}
+        \[
+            \mathit{a_i} : \text{Amplitude Eingangsspannung i}
+        \]
+        \[
+            \mathit{\varphi_i} : \text{Phase Eingangsspannung i}
+        \]
+        \[
+            \mathit{A}_{A} = \sqrt{a_1^2 + a_2^2 + 2a_1a_2 \cos(\varphi_1 - \varphi_2)}
+        \]
+        \[
+            \mathit{\tan}(\varphi_A) = \frac{a_1 \mathit{\sin}(\varphi_1) + a_2 \mathit{\sin}(\varphi_2)}{a_1 \mathit{\cos}(\varphi_1) + a_2 \mathit{\cos}(\varphi_2)}
+        \]
+        \[
+            \text{Wenn} : R_2 = R_4 = R
+        \]
+        \[
+            U_{\textnormal{A}} = (1+ \frac{2R} {R_{\textnormal{g}}}) \cdot \frac{R_3} {R_2} (U_{\textnormal{E2}}-U_{\textnormal{E1}})
+        \]
+                  &
+        \textbf{Instrumentenverstärker}\newline
+        Differenzverstärker mit hoher Eingangsimpedanz und hoher Gleichtaktunterdrückung
 
-    \\
-    \hline
+        \\
+        \hline
     \end{tabular}
 \end{table}
-

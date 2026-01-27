@@ -1,22 +1,23 @@
 \begin{tikzpicture}
-\ctikzset{tripoles/en amp/input height=-0.45}
-            \draw (0,0)node[en amp](E){};
- (E.+)
- (E.-)
- (E.out);
-    \draw (E.out) to[short, -o] (2,0)to[o-, R,l=$R_\mathrm{V}$] (4,0) -- (5,0);
-    \draw (4,-2)node[ground]{} to[led, i>, name=i1] (4,0);
+    \ctikzset{tripoles/en amp/input height=-0.45}
+    \draw (0,0)node[en amp](E){};
+    \draw (E.out) to[short, -o] (2,0)to[o-, R, l=$R_\mathrm{V}$, v<, name=RV] (6,0);
+    \draw (6,-2)node[ground]{} to[led, i>, v, name=D] (6,0);
     \draw (E.+) to[short, -*] ( -4,0.5);
 
     \draw (E.-) -- (-2,-0.5) to[battery2, name=Ub, -*] (-2,-2)node[ground]{};
-    \draw (2,-2) to[short, o-] (-4,-2) to[R,l=$R_\mathrm{2}$] (-4,0.5) to[R, l=$R_\mathrm{1}$, -o] (-4,3) node[above]{$+15 \, \mathrm{V}$};
+    \draw (2,-2) 
+        to[short, o-] (-4,-2) 
+        to[R,l=$R_\mathrm{2}$] (-4,0.5) 
+        to[R, l=$R_\mathrm{1}$, -o] (-4,3) node[above]{$+15 \, \mathrm{V}$};
     
     \draw (2,0) to[open, v, name=ue] (2,-2);
-    \draw (-3,0.5)to[open, v, name=ux] (-3,-2);
+    \draw (-3,0.5) to[open, v, name=ux] (-3,-2);
     \draw (-5,2) to[open, v, name=ua] (-5,-2);
 
     \varrmore{ue}{$U_\mathrm{A}$};
     \varrmore{Ub}{$U_\mathrm{bat}$};
-
-    \iarrmore{i1}{$I$};
+    \iarrmore{D}{$I_\mathrm{F}$};
+    \varrmore{D}{$U_\mathrm{F}$};
+    \varrmore{RV}{$U_\mathrm{RV}$};
 \end{tikzpicture}

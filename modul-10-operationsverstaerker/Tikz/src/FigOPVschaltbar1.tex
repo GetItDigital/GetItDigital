@@ -1,20 +1,20 @@
 \begin{tikzpicture}
-\ctikzset{tripoles/en amp/input height=-0.45}
-\draw
-(0,0) node[en amp, anchor=center] (opamp) {};
-\draw (opamp.out) to[short, -*] (3,0) 
-    to[short, -o] (5,0)node[above]{$U_\mathrm{a}$};
-\draw (3,0) 
-    to[R,l=$R_\mathrm{f}$, -*] (3,-4) 
-    to[R,l=$R_\mathrm{n1}$](3,-6.5) 
-    to[R,l=$R_\mathrm{n2}$](3,-9)node[ground]{};
-\draw (opamp.+) 
-    to[short, -o] (-3,0.5)node[above] {$U_\mathrm{e}$};
-\draw (opamp.-) -- (-1.2,-3) 
-    to[short, -*] (-1.2,-4) -- (-1.2,-6.5) 
-    to[normal open switch,l=$S2$, -*] (3,-6.5);
-\draw (-1.2,-4) 
-   to[normal open switch, l=$S1$] (3,-4);
+    \ctikzset{tripoles/en amp/input height=-0.45}
 
-
+    \draw (0,0) 
+        node[en amp, anchor=center] (opamp) {};
+    \draw (opamp.out) 
+        to[short, -*] (2,0)
+        to[short, -o] (3,0)node[above]{$U_\mathrm{a}$};
+    \draw (2,0)
+        to[R,l=$R_\mathrm{f}$, -*] (2,-2)
+        to[R,l=$R_\mathrm{n1}$](2,-4)
+        to[R,l=$R_\mathrm{n2}$](2,-6)node[ground]{};
+    \draw (opamp.+)
+        to[short, -o] (-3,0.5) node[above] {$U_\mathrm{e}$};
+    \draw (opamp.-)  -- (opamp.- -| -2, 0)
+        to[short, -*] (-2,-2) -- (-2,-4)
+        to[normal open switch,l=$S2$, -*] (2,-4);
+    \draw (-2,-2)
+        to[normal open switch, l=$S1$] (2,-2);
 \end{tikzpicture}
