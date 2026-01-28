@@ -93,11 +93,11 @@
         \frametitle{Lösungsschritt 2: Rechnung}
 
         \begin{equation}
-            U_{\textnormal{A}} = \underbrace{\left[ -\frac{1}{R_1 \cdot C} \int_{0}^{t} U_{\textnormal{E1}}~dt -\frac{R_2}{R_1} \cdot U_{\textnormal{E1}} \right]}_{Formel~des~Integrators} \underbrace{\cdot\left(-\frac{R_5}{R_3}\right)-\frac{R_5}{R_4}\cdot U_{\textnormal{E2}}}_{Formel~des~Summierers}
+            U_{\textnormal{A}} = \underbrace{\left[ -\frac{1}{R_1 C} \int_{0}^{t} U_{\textnormal{E1}}~dt -\frac{R_2}{R_1} \cdot U_{\textnormal{E1}} \right]}_{Formel~des~Integrators} \underbrace{\cdot\left(-\frac{R_5}{R_3}\right)-\frac{R_5}{R_4}\cdot U_{\textnormal{E2}}}_{Formel~des~Summierers}
         \end{equation}
         Dies kann nun wie folgt umgeformt werden
         \begin{equation}
-            U_{\textnormal{A}} = \underbrace{\frac{R_5}{R_1 \cdot R_3 \cdot C}}_{\stackrel{!}{=}1} \int_{0}^{t} U_{\textnormal{E1}}~dt + \underbrace{\frac{R_2 R_5}{R_1 R_3}}_{\stackrel{!}{=}x} U_{\textnormal{E1}} -\underbrace{\frac{R_5}{R_4}}_{\stackrel{!}{=}2} \cdot U_{\textnormal{E2}}
+            U_{\textnormal{A}} = \underbrace{\frac{R_5}{R_1 R_3 C}}_{\stackrel{!}{=}1} \int_{0}^{t} U_{\textnormal{E1}}~dt + \underbrace{\frac{R_2 R_5}{R_1 R_3}}_{\stackrel{!}{=}x} \cdot U_{\textnormal{E1}} -\underbrace{\frac{R_5}{R_4}}_{\stackrel{!}{=}2} \cdot U_{\textnormal{E2}}
         \end{equation}
 
         Wie der Formel zu entnehmen ist, müssen nun die Bauteilwerte nur noch so gewählt werden, dass sich die richtigen Vorfaktoren ergeben.

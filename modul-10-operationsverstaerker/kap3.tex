@@ -3,8 +3,8 @@
     \b{
         \fta{Prinzip der Gegenkopplung}
         Es soll ein Leistungsverstärker aufgebaut werden, der geeignet ist, das Signal eines Handys so zu verstärken, dass ein Lautsprecher damit betrieben werden kann.
-        Das Eingangsspannungsniveau ist 1~V und es soll ein 4~$\mathrm{\Omega}$ Lautsprecher betrieben werden.
-        Wie groß muss die Spannung am Ausgang des Verstärkers sein, damit der Lautsprecher bei 1 kHz 25~W aufnimmt.
+        Das Eingangsspannungsniveau ist 1\,V und es soll ein 4\,$\mathrm{\Omega}$ Lautsprecher betrieben werden.
+        Wie groß muss die Spannung am Ausgang des Verstärkers sein, damit der Lautsprecher bei 1\,kHz 25\,W aufnimmt.
         Wie kann hier vorgegangen werden, wenn eine Operationsverstärkerschaltung für die Lösung genutzt werden soll? \par
         \fu{\resizebox{0.8\textwidth}{!}{\input{Tikz/src/OPVBeispielproblem.tex}}}{Schaltung des Beispielproblems mit einer Signalquelle auf der Eingangsseite und einer komplexen Last auf der Ausgangsseite \label{fig:Beispielproblem 1 Folien}}.
     }
@@ -93,17 +93,17 @@
         \begin{center}
             \begin{tabular}{ |>{\centering\arraybackslash}m{0.25\linewidth}|>{\centering\arraybackslash}m{0.25\linewidth} >{\centering\arraybackslash}m{0.25\linewidth}| }
                 \hline
-                \large \textbf{A}                                  &
-                \large \textbf{B}                                  &
-                \large \textbf{C}                                    \\
-
+                \large \textbf{A}                                 &
+                \large \textbf{B}                                 &
+                \large \textbf{C}                                   \\
+    
                 \scalebox{0.8}{\input{Tikz/src/OPV_Prinzip_Cir1}} &
                 \scalebox{0.8}{\input{Tikz/src/OPV_Prinzip_Cir2}} &
                 \scalebox{0.8}{\input{Tikz/src/OPV_Prinzip_Cir3}}   \\
                 \hline
-                \scalebox{1}{\input{Tikz/src/OPV_Prinzip_Fig1}}  &
-                Slew rate: $\frac{\Delta U_A}{\Delta t}$           &
-                \scalebox{1}{\input{Tikz/src/OPV_Prinzip_Fig2}}    \\
+                \scalebox{1}{\input{Tikz/src/OPV_Prinzip_Fig1}}   &
+                Slew rate: $\frac{\Delta U_A}{\Delta t}$          &
+                \scalebox{1}{\input{Tikz/src/OPV_Prinzip_Fig2}}     \\
                 \hline
             \end{tabular}
         \end{center}
@@ -172,8 +172,8 @@
         \begin{bsp}{Teil 2: Entwicklung einer Verstärkerschaltung für Musiksignale}{Beispiel Verstaerkung 2}
             Im letzten Schritt muss ermittelt werden, wie die Widerstände in (D) gewählt werden müssen, damit sich eine Verstärkung von 10 ergibt. Dazu müssen zunächst die Maschengleichungen aufgestellt werden.
             Eine wichtige Annahme zur Aufstellung dieser Maschengleichung ist, dass davon ausgegangen wird, dass der Verstärker durch die Rückkopplung des Ausgangsignal die beiden Eingangssignale angleicht.
-            Hier darf also geschrieben werden \glqq Annahme: $U_{\textnormal{dif}}~=~0$~V\grqq{}.
-            Somit ergibt sich für den invertierenden Eingang $U_{\textnormal{E-}}~=~1$~V.
+            Hier darf also geschrieben werden \glqq Annahme: $U_{\textnormal{dif}}=0$~V\grqq{}.
+            Somit ergibt sich für den invertierenden Eingang $U_{\textnormal{E-}}=1\,\mathrm{V}$.
             Da weiterhin davon ausgegangen wird, dass kein Strom in die Eingänge hineinfließt gilt $I_{\textnormal{R1}}~=~I_{\textnormal{R2}}$.
             Die Maschengleichung lautet auf Grundlage dieser Annahmen
             \begin{equation}
@@ -219,15 +219,15 @@
             Annahme: $U_{\textnormal{Diff}}$~=~0
             \onslide<1->{
                 \begin{equation}
-                    U_{A} = U_{R1} + U_{R2} = U_{E} + I_{R2} \cdot R_2
+                    U_\mathrm{A} = U_\mathrm{R1} + U_\mathrm{R2} = U_\mathrm{E} + I_\mathrm{R2} \cdot R_2
                 \end{equation}}
             \onslide<2->{
                 \begin{equation}
-                    U_{A} = U_{E} + \frac{U_{E}}{R_1} \cdot R_2
+                    U_\mathrm{A} = U_\mathrm{E} + \frac{U_\mathrm{E}}{R_1} \cdot R_2
                 \end{equation}}
             \onslide<3->{
                 \begin{equation}
-                    \frac{U_{A}}{U_{E}} = \underbrace{(1+\frac{R_2}{R_1})}_{V_{Gain}}
+                    \frac{U_\mathrm{A}}{U_\mathrm{E}} = \underbrace{(1+\frac{R_2}{R_1})}_{V_{Gain}}
                 \end{equation}}
             \onslide<3->{
                 Weitere OPV-Grundschaltungen sind Skript zu finden.}

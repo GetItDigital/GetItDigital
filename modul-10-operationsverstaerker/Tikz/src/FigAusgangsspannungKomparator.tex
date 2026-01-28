@@ -1,30 +1,23 @@
 \begin{tikzpicture}
-\ctikzset{tripoles/en amp/input height=-0.45}
-            \draw (0,0)node[en amp](E){};
- (E.+)
- (E.-)
- (E.out) 
- (E.down)
- (E.up)
- -- (E.up);
-
-\draw (E.up) to[short, -o] (0,2)node[above] {$15 \, \mathrm{V}$};
-\draw (E.down) to[short, -o] (0,-2)node[below] {$-15 \, \mathrm{V}$};
-
-\draw (E.+) to[short, -o] (-4,0.5);
-\draw (E.-) to[short, -o] (-2.5,-0.5);
-\draw (E.out) to[short, -o] (2.5,0);
-\draw (0.65,-1.117) -- (0.65,-1.617) -- (1.5,-1.617) to[short, -*] (1.5,-3) node[ground]{};
-\draw (-4,-3) to[short, o-o] (2.5,-3);
-
-\draw (-4,0.5) to[open, v, name=u1] (-4,-3);
-\draw (-2.5,0.5) to[open,v,name=ud] (-2.5,-0.5);
-\draw (-2.5,-0.5) to[open,v,name=u2] (-2.5,-3);
-\draw (2.5,0) to[open,v,name=ua] (2.5,-3);
-
-
-\varrmore{u1}{$U_\mathrm{1}$};
-\varrmore{u2}{$U_\mathrm{2}$};
-\varrmore{ud}{$U_\mathrm{D}$};
-\varrmore{ua}{$U_\mathrm{A}$};
+    \ctikzset{tripoles/en amp/input height=-0.45}
+    \draw (0,0)node[en amp](E){};
+    
+    \draw (E.up) to[short, -o] (0,2)node[above] {$15 \, \mathrm{V}$};
+    \draw (E.down) to[short, -o] (0,-2)node[below] {$-15 \, \mathrm{V}$};
+    
+    \draw (E.+) to[short, -o] (-4,0.5);
+    \draw (E.-) to[short, -o] (-2.5,-0.5);
+    \draw (E.out) to[short, -o] (2.5,0);
+    \draw (0.65,-1.117) -- (0.65,-1.617) -- (1.5,-1.617) to[short, -*] (1.5,-3) node[ground]{};
+    \draw (-4,-3) to[short, o-o] (2.5,-3);
+    
+    \draw (-4,0.5) to[open, v, name=u1] (-4,-3);
+    \draw (-2.5,0.5) to[open,v,name=ud] (-2.5,-0.5);
+    \draw (-2.5,-0.5) to[open,v,name=u2] (-2.5,-3);
+    \draw (2.5,0) to[open,v,name=ua] (2.5,-3);
+    
+    \varrmore{u1}{$U_\mathrm{1}$};
+    \varrmore{u2}{$U_\mathrm{2}$};
+    \varrmore{ud}{$U_\mathrm{D}$};
+    \varrmore{ua}{$U_\mathrm{A}$};
 \end{tikzpicture}

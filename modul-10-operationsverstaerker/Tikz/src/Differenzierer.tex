@@ -8,8 +8,8 @@
      }
      \draw (2,0) node[en amp] (opamp) {}
      (opamp.+) --++ (-0.5,0) node[ground] {} 
-     (opamp.out) --++ (0.2,0) node[ocirc, label=right:$U_A$] {}
-     (opamp.-) -- ++(0, 0) to[C, l_=$C_2$] ++(-0.5, 0) to[R, l_=$R_1$] ++(-1.2,0) node[ocirc, label=left:$U_E$] {}
+     (opamp.out) --++ (0.2,0) node[ocirc, label=right:$U_\mathrm{A}$] {}
+     (opamp.-) -- ++(0, 0) to[C, l_=$C_2$] ++(-0.5, 0) to[R, l_=$R_1$] ++(-1.2,0) node[ocirc, label=left:$U_\mathrm{E}$] {}
      (opamp.out) node[circ] {} -- ++(0,1.5) to[C, l_=$C_1$, *-] ++(-1.9,0) node[circ]{}
      (opamp.out) node[circ] {} -- ++(0,2.8) to[R, l_=$R_2$] ++(-1.9,0) -- ++(0, -2.35) node[circ] {};
   

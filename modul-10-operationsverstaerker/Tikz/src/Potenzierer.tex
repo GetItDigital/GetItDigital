@@ -8,8 +8,8 @@
      }
      \draw
      (0,0) node[en amp] (opamp) {}
-     (opamp.-) to[D, l_=$D_1$, invert, *-] ++(-1.2,0) to[short, o-] ++(0,0) node[left] {$U_E$}
+     (opamp.-) to[D, l_=$D_1$, invert, *-] ++(-1.2,0) to[short, o-] ++(0,0) node[left] {$U_\mathrm{E}$}
      (opamp.+) -- ++(0,0) node[ground] {}
      (opamp.-) |- ++(0,1.5) to[R, l^=$R_1$] ++(2,0) -| (opamp.out)
-     (opamp.out) to[short, *-o] ++(0.2,0) node[right] {$U_{A}$};
+     (opamp.out) to[short, *-o] ++(0.2,0) node[right] {$U_\mathrm{A}$};
  \end{circuitikz}

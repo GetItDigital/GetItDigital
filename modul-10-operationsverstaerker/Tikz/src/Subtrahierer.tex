@@ -7,9 +7,9 @@
      }
      \draw
      (0,0) node[en amp] (opamp) {}
-     (opamp.-) to[R, l_=$R_1$, o-] ++(-1.2,0) to[short, o-] ++(0,0) node[left] {$U_{E1}$}
+     (opamp.-) to[R, l_=$R_1$, o-] ++(-1.2,0) to[short, o-] ++(0,0) node[left] {$U_\mathrm{E1}$}
      (opamp.+) node[circ] {} to[R,  l_=$R_4$] ++(0,-1.5) node[ground] {}
      (opamp.-) node[circ] {} -- ++(0,1) to[R, l=$R_2$] ++(1.9,0) -| (opamp.out)
-     (opamp.out) to[short, *-o] ++(0.2,0) node[right] {$U_{A}$}
-     (opamp.+) to[R, l_=$R_3$, *-] ++(-1.2,0) to[short, o-] ++(0,0) node[left] {$U_{E2}$};
+     (opamp.out) to[short, *-o] ++(0.2,0) node[right] {$U_\mathrm{A}$}
+     (opamp.+) to[R, l_=$R_3$, *-] ++(-1.2,0) to[short, o-] ++(0,0) node[left] {$U_\mathrm{E2}$};
  \end{circuitikz}

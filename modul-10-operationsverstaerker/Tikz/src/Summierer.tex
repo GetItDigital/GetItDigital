@@ -14,10 +14,10 @@
     % Erdung
     (opamp.+) -- ++(0,0) node[ground] {}
     % Ausgang
-    (opamp.out) to[short, *-o] ++(0,0) node[right] {$U_{A}$}
+    (opamp.out) to[short, *-o] ++(0,0) node[right] {$U_\mathrm{A}$}
     % R3 mit Strompfeil
     (opamp.out) -- ++(0,1.5) to[R, l_=$R_3$] ++(-2,0) -- ++(0,-1.05) node[circ] {}
     % Spannungen U_E1 und U_E2 an den Knoten links von R1 und R2
-    (R1left) node[left] {$U_{E1}$}
-    (R2left) node[left] {$U_{E2}$};
+    (R1left) node[left] {$U_\mathrm{E1}$}
+    (R2left) node[left] {$U_\mathrm{E2}$};
 \end{circuitikz}

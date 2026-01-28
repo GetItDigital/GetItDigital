@@ -7,10 +7,10 @@
     \draw 
     % Erster OPV mit input height=-0.45
     (2,-4.5) node[en amp, noinv input down] (opamp1) {}
-    (opamp1.+) --++ (-0.5,0) node[ocirc, label=left:$U_{E2}$] (eingang1) {};
+    (opamp1.+) --++ (-0.5,0) node[ocirc, label=left:$U_\mathrm{E2}$] (eingang1) {};
     
    \draw (2,0) node[en amp, noinv input up] (opamp2) {}
-    (opamp2.+) --++ (-0.5,0) node[ocirc, label=left:$U_{E1}$] (eingang2) {}
+    (opamp2.+) --++ (-0.5,0) node[ocirc, label=left:$U_\mathrm{E1}$] (eingang2) {}
     (opamp1.-)  to[R=$R_g$] (opamp2.-);
 
    % Dritter OPV mit angepasstem Eingangsabstand
@@ -20,6 +20,6 @@
     (opamp3.+) -- ++(-0.5,0) to[R=$R_3$] ++(-1.5,0) to[R=$R_4$] ++(-2,0) node[circ]{}
     (opamp2.out) -- ++(0,-1.72) node[circ]{}
     (opamp1.out) -- ++(0,1.72) node[circ]{}
-    (opamp3.out) node[circ, label=below:{$U_A$}]{} -- ++(0, 2) to[R=$R_5$] ++(-2,0) -- ++(0, -1.45)node[circ]{};
+    (opamp3.out) node[circ, label=below:{$U_\mathrm{A}$}]{} -- ++(0, 2) to[R=$R_5$] ++(-2,0) -- ++(0, -1.45)node[circ]{};
 
 \end{circuitikz}
