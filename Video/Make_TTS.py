@@ -5,8 +5,8 @@ import random
 
 from gradio_client import Client, handle_file
 
-# client = Client("http://172.16.111.10:7860")
-client = Client("http://10.15.10.1:7860")
+client = Client("http://172.16.111.10:7860")
+# client = Client("http://10.15.10.1:7860")
 
 def main():
     if len(sys.argv) != 3:
