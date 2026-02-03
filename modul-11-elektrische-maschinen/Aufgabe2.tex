@@ -1,0 +1,62 @@
+\subsection{Asynchronmaschine}
+\Aufgabe{
+    Eine Asynchronmaschine hat die folgenden Angaben auf ihrem Typenschild
+    \begin{columns}
+        \column[c]{0.5\textwidth}
+        \begin{itemize}
+            \item Nennleistung: $50\,$kW
+            \item Nenndrehzahl: $960\,\frac{\text{U}}{\text{min}}$
+            \item Frequenz: $50\,$Hz
+            \item Kippschlupf: 30\%
+        \end{itemize}
+    \end{columns}\b{\vspace{0.3cm}}
+
+    Hinweis: Die Nennleistung auf einem Motortypenschild bezeichnet immer die abgegebene mechanische Leistung im Nennpunkt.
+
+    \begin{itemize}
+        \item[a)] Berechnen Sie die Polpaarzahl $p$
+
+        \item[b)] Berechnen Sie den Nennschlupf $s_{n}$
+
+        \item[c)] Berechnen Sie das Nennmoment $M_{n}$
+
+        \item[d)] Berechnen Sie das Kippmoment $M_{K}$ und das Anlaufmoment $M_{A}$
+
+    \end{itemize}
+}
+
+\Loesung{
+	\begin{itemize}
+		\item[a)]
+		    \begin{align*}
+				p' &= \frac{f \cdot 60 \frac{\text{s}}{\text{min}}}{n_{n}}
+				= \frac{50 \,\text{Hz} \cdot 60 \frac{\text{s}}{\text{min}}}{960\,\frac{\text{U}}{\text{min}}}
+				= \frac{3000\,\frac{\text{U}}{\text{min}}}{960\,\frac{\text{U}}{\text{min}}}
+				= 3,125\\
+				p &= 3
+			\end{align*}
+			Da im motorischen Betrieb die mechanische Drehzahl $n$ kleiner ist als die äquivalente elektrische Frequenz $f$, muss die Polpaarzahl $p'$ abgerundet werden, weil $p$ eine Ganzzahl ist.
+
+        \item[b)]
+            \begin{align*}
+				s_n &= \frac{\omega_s - \omega_r}{\omega_s} = \frac{\frac{\omega_0}{p} - \omega_r}{\frac{\omega_0}{p}} =  \frac{2\pi f - 2\pi n_n \cdot \frac{p}{60 \frac{\text{s}}{\text{min}}}}{2\pi f} = 1 - \frac{n_n \cdot p}{f \cdot 60 \frac{\text{s}}{\text{min}}}\\
+				&= 1 - \frac{960\,\frac{\text{U}}{\text{min}} \cdot 3}{50 \, \text{Hz} \cdot 60 \frac{\text{s}}{\text{min}}} = 0,04 = 4 \,\%
+		    \end{align*}
+
+        \item[c)]
+            \begin{align*}
+				P_n &= M_n\cdot \omega_n = M_n\cdot 2\pi n_n\\
+				M_n &= \frac{P_n}{2\pi n_n} = \frac{50\cdot 10^3\,\text{W}}{2\pi\cdot 960 \frac{U}{min}}\cdot 60 \frac{\text{s}}{\text{min}} =497,36\,\text{Nm}\\
+			\end{align*}
+
+        \item[d)]
+            \begin{align*}
+				M &= \frac{2\cdot M_K}{\frac{s_K}{s} + \frac{s}{s_K}} \\
+				M_n &= M(s = s_n) =  \frac{2\cdot M_K}{\frac{s_K}{s_n} + \frac{s_n}{s_K}} \\
+				M_K &= \frac{M_n}{2}\cdot\left(\frac{s_K}{s_n} + \frac{s_n}{s_K}\right)\\
+				&= \frac{497,36\,\text{Nm}}{2}\cdot\left(\!\frac{0,3}{0,04} + \frac{0,04}{0,3}\right) = 1898,25\,\text{Nm}\\
+				M_A &=  M(s = 1) = \frac{2\cdot M_K}{\frac{s_K}{1} + \frac{1}{s_K}} \\
+				&= \frac{2\cdot 1898,25\,\text{Nm}}{\frac{0,3}{1} + \frac{1}{0,3}} = 1044,91\,\text{Nm}
+			\end{align*}
+	\end{itemize}
+}

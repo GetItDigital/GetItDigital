@@ -1,6 +1,9 @@
 ## GETitDigital
 
-Mit dem Vorhaben "GET it digital" soll ein vollumfängliches, didaktisch aufbereitetes, digitales Lehr-/Lernangebot für die Grundlagen der ElektroTechnik  (GET) in der Form von OER entstehen. Ein Verbund von 6 Hochschulen mit der Fachkompetenz aus teilweise jahrzehntelanger Lehrerfahrung in diesem Grundlagenfach hat sich mit der Förderung durch das Land Nordrhein-Westfalen im Projekt GET it Digital zusammengefunden, um dieses Ziel zu verfolgen. 
+Mit dem Vorhaben "GET it digital" soll ein vollumfängliches, didaktisch aufbereitetes, digitales Lehr-/Lernangebot für die Grundlagen der ElektroTechnik  (GET) in der Form von OER entstehen. Ein Verbund von 6 Hochschulen mit der Fachkompetenz aus teilweise jahrzehntelanger Lehrerfahrung in diesem Grundlagenfach hat sich mit der Förderung durch das Land Nordrhein-Westfalen im Projekt GET it Digital zusammengefunden, um dieses Ziel zu verfolgen.
+
+nähere Informationen befinden sich auf der Projekthomepage:
+[https://getitdigital.uni-wuppertal.de/](https://getitdigital.uni-wuppertal.de/)
 
 Das Projekt besteht aus 12 Teilmodulen
 
@@ -11,7 +14,7 @@ Das Projekt besteht aus 12 Teilmodulen
 - Potential
 - Spannung
 
-Voraussetzungen: keine		
+Voraussetzungen: keine
 
 Modulverantwortlich: Universität Paderborn
 
@@ -21,7 +24,7 @@ Modulverantwortlich: Universität Paderborn
 - Leistung (Gleichstrom)
 - Wirkungsgrad
 
-Voraussetzungen: Modul 1 			
+Voraussetzungen: Modul 1
 
 Modulverantwortlich: Fachhochschule Aachen
 
@@ -42,7 +45,7 @@ Modulverantwortlich: Fachhochschule Aachen
 - Zweipoltheorie
 - Spannungsteiler
 
-Voraussetzungen: Module 1, 3 			
+Voraussetzungen: Module 1, 3
 
 Modulverantwortlich: Universität Paderborn
 
@@ -52,7 +55,7 @@ Modulverantwortlich: Universität Paderborn
 - Maschenstromanalyse
 - Knotenpotentialanalyse
 
-Voraussetzungen: Module 1,3,4 		
+Voraussetzungen: Module 1,3,4
 
 Modulverantwortlich: Fachhochschule Dortmund
 
@@ -68,7 +71,7 @@ Modulverantwortlich: Fachhochschule Dortmund
 - Skin-Effekt
 - Hall-Effekt
 
-Voraussetzungen: Module 1, 2 			
+Voraussetzungen: Module 1, 2
 
 Modulverantwortlich: Bergische Universität Wuppertal
 
@@ -88,7 +91,7 @@ Modulverantwortlich: Fachhochschule Dortmund
 - Frequenz- und Phasengang
 - Tief- und Hochpass
 - Schwingkreise
-  
+
 Voraussetzungen: Module 1, 2, 3, 4, 7
 
 Modulverantwortlich: Fachhochschule Südwestfalen
@@ -100,7 +103,7 @@ Modulverantwortlich: Fachhochschule Südwestfalen
 - Diode
 - Bipolartransistor
 - Feldeffekttransistor
-  
+
 Voraussetzungen: Modul 1
 
 Modulverantwortlich: Hochschule Ruhr West
@@ -109,7 +112,7 @@ Modulverantwortlich: Hochschule Ruhr West
 - nichtinvertierender Verstärker
 - invertierender Verstärker
 - Komparator
-  
+
 Voraussetzungen: Module 1, 9
 
 Modulverantwortlich: Hochschule Ruhr West
@@ -119,7 +122,7 @@ Modulverantwortlich: Hochschule Ruhr West
 - Synchronmaschine
 - Asynchronmaschine
 
-Voraussetzungen: Module 1, 2, 3, 6, 7 		
+Voraussetzungen: Module 1, 2, 3, 6, 7
 
 Modulverantwortlich: Bergische Universität Wuppertal
 
@@ -127,6 +130,6 @@ Modulverantwortlich: Bergische Universität Wuppertal
 - Zeitverhalten an C und L
 - Berechnung von Schaltvorgängen mit einem Energiespeicher
 
-Voraussetzungen: Module 1, 2, 3, 4, 7 		
+Voraussetzungen: Module 1, 2, 3, 4, 7
 
 Modulverantwortlich: Fachhochschule Südwestfalen

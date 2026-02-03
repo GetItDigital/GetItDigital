@@ -1,0 +1,126 @@
+\subsection{Transformator}
+\Aufgabe{
+	Um die Eigenschaften eines Transformators messtechnisch zu bestimmen, werden in der Praxis zwei Versuche durchgeführt. Beim ersten, dem Leerlaufversuch, wird der Transformator ohne Last betrieben. Primärseitig wird die Nennspannung angelegt und der Stromm $\underline{I}_1$ gemessen. Sekundärseitig wird die Spannung gemessen.\\
+	Der zweite Versuch heißt Kurzschlussversuch. Wie der Name verrät, wird der Transformator dabei sekundärseitig kurzgeschlossen. Die Spannung auf der Primärseite wird so lange erhöht, bis der Nennstrom in den Transformator fließt. Die dazu notwendige Spannung wird $U_\mathrm{k}$ genannt.\\
+	Die beiden Versuche wurden für einen Mittelspannungstrafo durchgeführt. Es wurden folgende Werte ermittelt:
+	\begin{itemize}
+		\item Leistung: $S_\mathrm{N} = 150\,\mathrm{kVA}$
+		\item Oberspannung: $\underline{U}_1=20\,\mathrm{kV}$
+		\item Übersetzungsverhältnis: $\textit{ü}=50$
+		\item Leerlaufspannung: $|\underline{U}_2| = 399,86\,\mathrm{V}$
+		\item Leerlaufstrom: $|\underline{I}_{1,\mathrm{L}}| = 95\,\mathrm{mA}$
+		\item Kurzschlussspannung: $|\underline{U}_\mathrm{k}| = 662\,\mathrm{V}$
+		\item Phasenwinkel beim Kurzschlussversuch: $\varphi = 70,92\degree$
+	\end{itemize}
+
+	\begin{itemize}
+		\item[a)] Zeichen Sie das einphasige Ersatzschaltbild des Transformators und beschriften Sie dieses.
+		\item[b)] Berechnen Sie den Nennstrom $|\underline{I}_1|$ des Transformators und die Leerlaufspannung $|\underline{U}_2^\prime|$.
+		\item[c)] Brechnen sie die Hauptinduktivität $L_\mathrm{H}$.
+		\item[d)] Berechnen Sie die Streuinduktivitäten und die Wicklungswiderstände, unter der Annahme dass $R_1 = R_2^\prime$, $L_{\sigma,1} = L_{\sigma,2}^\prime$ und $\underline{Z}_\mathrm{H} >> \underline{Z}_{\sigma,2}^\prime + R_2^\prime$
+	\end{itemize}
+}
+
+\Loesung{
+	\begin{itemize}
+		\item[a)]\ \\
+
+			\fu{
+				\begin{circuitikz}
+					\draw (0,0) to[open, v<=$\underline{U}_1$] ++(0,3)
+						to[short, i=$\underline{I}_1$, o-] ++(1,0)
+						to[R=$R_1$] ++(2,0)
+						to[L=$L_{\sigma 1}$] ++(2,0) coordinate (x1)
+						to[L=$L_{\sigma 2}^\prime$] ++(2,0)
+						to[R=$R_2^\prime$] ++(2,0)
+						to[short, i=$\underline{I}_2^\prime$, -o] ++(1,0)
+						to[open, v=$\underline{U}_2^\prime$] ++(0,-3)
+						to[short, o-o] (0,0)
+						(x1) to[L=$L_\mathrm{h}$, *-*, i=$\underline{I}_\mu$] ++(0,-3);
+				\end{circuitikz}
+			}{T-Ersatzschaltbild eines Transformators}
+
+		\item[b)]
+			\begin{minipage}[t]{0.49\textwidth}
+				\begin{align*}
+					\underline{S} &= \sqrt{3} \cdot |\underline{U}| \cdot |\underline{I}|\\
+					|\underline{I}| &= \frac{\underline{S}}{\sqrt{3}\cdot|\underline{U}|}\\
+					|\underline{I}| &= \frac{150\,\mathrm{kVA}}{\sqrt{3}\cdot 20\,\mathrm{kV}}\\
+					|\underline{I}| &= 4,33\,\mathrm{A}
+				\end{align*}
+			\end{minipage}
+			\hfil
+			\begin{minipage}[t]{0.49\textwidth}
+				\begin{align*}
+					U_2^\prime &= U_2 \cdot \textit{ü}\\
+					U_2^\prime &= 399,86\,\mathrm{V} \cdot 50\\
+					U_2^\prime &= 19,99\,\mathrm{kV}
+				\end{align*}
+			\end{minipage}
+
+		\item[c)]
+			Im Leerlauf ist der Strom, der in den Transformator fließt $\underline{I}_{1,\mathrm{L}}$ gleich dem Magnetisierungsstrom $\underline{I}_\mu$\\
+			\begin{align*}
+				|\underline{Z}_\mathrm{H}| &= \frac{|\underline{U}_2^\prime|}{|\underline{I}_\mu|}\\
+				|\underline{Z}_\mathrm{H}| &= \frac{19,99\,\mathrm{kV}}{95\,\mathrm{mA}}\\
+				|\underline{Z}_\mathrm{H}| &= 210,45\,\mathrm{k}\Omega\\
+				|\underline{Z}_\mathrm{H}| &= 2\pi \cdot f \cdot L\\
+				L &= \frac{|\underline{Z}_\mathrm{H}|}{2\pi \cdot f}\\
+				L &= \frac{210,45\,\mathrm{k}\Omega}{2\pi \cdot 50\,\mathrm{Hz}}\\
+				L &= 669,89\,\mathrm{H}\\
+			\end{align*}
+
+		\item[d)]
+			Unter den gegebenen Annahmen vereinfacht sich das Ersatzschaltbild zu:
+			\fu{
+				\begin{circuitikz}
+					\draw (0,0) to[open, v<=$\underline{U}_1$] ++(0,3)
+						to[short, i=$\underline{I}_1$, o-] ++(1,0)
+						to[R=$R_1$] ++(2,0)
+						to[L=$L_{\sigma 1}$] ++(2,0) coordinate (x1)
+						to[L=$L_{\sigma 2}^\prime$] ++(2,0)
+						to[R=$R_2^\prime$] ++(2,0)
+						to[short, i=$\underline{I}_2^\prime$, -o] ++(1,0)
+						to[open, v=$\underline{U}_2^\prime$] ++(0,-3)
+						to[short, o-o] (0,0);
+				\end{circuitikz}
+			}{Vereinfachtes Ersatzschaltbild \label{AbbTrafoESBReal2}}
+			\begin{align*}
+				|\underline{Z}_\mathrm{g}| &= \frac{|\underline{U}_{1,\mathrm{k}}|}{|\underline{I}_1|}\\
+				|\underline{Z}_\mathrm{g}| &= \frac{662\,\mathrm{V}}{4,33\,\mathrm{A}}\\
+				|\underline{Z}_\mathrm{g}| &= 152,88\,\Omega
+			\end{align*}
+			Das System verhält sich insgesamt induktiv. Daher ergibt sich für die Gesamtimpedaz $\underline{Z}_\mathrm{g} = 152,88\,\Omega \cdot e^{j70,92^\circ}$.\\
+			Der Realteil der Gesamtimpedanz stellt die Summe der beiden Drahtwiderstände dar, während der Imaginärteil die Streuinduktivitäten repräsentiert.\\
+			\noindent
+			\begin{minipage}[t]{0.49\linewidth}
+				\begin{align*}
+					R_1 + R_2^\prime &= Re\{ \underline{Z}_\mathrm{g} \}\\
+					R_1 + R_2^\prime &= Re\{ 152,88\,\Omega \cdot e^{j70,92^\circ} \}\\
+					R_1 + R_2^\prime &= 49,98\,\Omega\\
+					\Rightarrow R_1 = R_2^\prime &= 24,99\,\Omega\\
+					R_2^\prime &= R_2 \cdot \textit{ü}^2\\
+					\Rightarrow R_2 &= \frac{R_2^\prime}{\textit{ü}^2}\\
+					R_2 &= \frac{24,99\,\Omega}{50^2}\\
+					R_2 &= 10\,\mathrm{m}\Omega
+				\end{align*}
+			\end{minipage}
+			\hfil
+			\begin{minipage}[t]{0.49\linewidth}
+				\begin{align*}
+					|\underline{Z}_{\sigma,1}| + |\underline{Z}_{\sigma,2}^\prime| &= Im \{ \underline{Z}_\mathrm{g} \}\\
+					|\underline{Z}_{\sigma,1}| + |\underline{Z}_{\sigma,2}^\prime| &=Im\{ 152,88\,\Omega \cdot e^{j70,92^\circ} \}\\
+					|\underline{Z}_{\sigma,1}| + |\underline{Z}_{\sigma,2}^\prime| &= 144,48\,\Omega\\
+					\Rightarrow |\underline{Z}_{\sigma,1}| = |\underline{Z}_{\sigma,2}^\prime| &= 72,24\,\Omega\\
+					|\underline{Z}_{\sigma,1}| &= 2\pi \cdot f \cdot L_{\sigma,1}\\
+					\Rightarrow L_{\sigma,1} &= \frac{|\underline{Z}_{\sigma,1}|}{2\pi \cdot f}\\
+					L_{\sigma,1} &= \frac{72,24\,\Omega}{2\pi \cdot 50\,\mathrm{Hz}}\\
+					L_{\sigma,1} &= 229,95\,\mathrm{mH}\\
+					|\underline{Z}_{\sigma,2}^\prime| &= |\underline{Z}_{\sigma,2}| \cdot \textit{ü}^2\\
+					\Rightarrow |\underline{Z}_{\sigma,2}| &= \frac{|\underline{Z}_{\sigma,2}^\prime|}{\textit{ü}^2}\\
+					\Rightarrow L_{\sigma,2} &= \frac{L_{\sigma,2}}{\textit{ü}^2} = \frac{L_{\sigma,1}}{\textit{ü}^2}\\
+					L_{\sigma,2} &= 91,98\,\mu\mathrm{H}
+				\end{align*}
+			\end{minipage}
+	\end{itemize}
+}
