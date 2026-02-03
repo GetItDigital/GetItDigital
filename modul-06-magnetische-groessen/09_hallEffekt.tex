@@ -1,87 +1,70 @@
-\newvideofile{Hall-Effekt}{Hall-Effekt}
-
 \section{Hall-Effekt}
-
-\v{
-    %Videoframe 
-    \begin{frame}{Lernziele}
-        \begin{Lernziele}{Hall-Effekt}
-            Du kannst ...
-            \begin{itemize}
-                \item ... das Phänomen des Hall-Effekt erklären.
-                \item ... die Hall-Spannung in einem stromdurchflossenen Leiter berechnen.
-            \end{itemize}
-        \end{Lernziele}
-        \speech{LernzieleHall-Effekt}{1}{In diesem Video behandeln wir ein weiteres interessantes Phänomen: den sogenannten Hall-Effekt. Du lernst dabei, worum es beim Hall-Effekt geht und wie dieser entsteht. Außerdem lernst du, wie du die Hall-Spannung, die aus dem Effekt resultiert, einfach berechnet werden kann.}
-    \end{frame}
-}
-
-\begin{frame} \ftx{Hall-Effekt}
+\begin{frame} \ftx{Hall-Effekt}\index{Hall-Effekt}
     \s{
         Der Hall-Effekt beschreibt das Auftreten einer elektrischen Spannung innerhalb eines stromdurchflossenen Leiters aufgrund der Ladungsverschiebung durch ein magnetisches Feld. \par
-        In der Abbildung \ref{Hall-Effekt} wird der Leiter, ähnlich wie im Versuchsaufbau zur Lorentzkraft, von einem magnetischen Feld durchdrungen. Der Leiter ist hier allerdings plattenförmig dargestellt, so dass sich Ladungsträger über die gesamte Leiterfläche bewegen können.        
+        In der Abbildung \ref{Hall-Effekt} wird der Leiter, ähnlich wie im Versuchsaufbau zur Lorentzkraft, von einem magnetischen Feld durchdrungen. Der Leiter ist hier allerdings plattenförmig dargestellt, so dass sich die Ladungsträger über die gesamte Leiterfläche bewegen können.
         Wird nun der Leiter mit Strom durchflossen, wirkt auf die bewegten Ladungen die Lorentzkraft. Diese verursacht gemäß der Rechten-Hand-Regel eine senkrechte Ablenkung der Ladungsträger im Leiter zum Rand. Durch die Ladungsverschiebung entsteht im Leiter ein elektrisches Feld, welches der Lorentzkraft entgegengerichtet ist. An den Rändern des Leiters kann die aus der Ladungsverschiebung resultierende Spannungsdifferenz gemessen werden. Sie wird als Hall-Spannung $U_{\mathrm{H}}$ bezeichnet.
     }
-    
+
     \begin{columns}
         \column[c]{0.5\textwidth}
-        
-        \b{
-            \only<1-2>{
-                \foo{}{width=\textwidth}{Hall-EffektA}{
+
+            \b{
+                \only<1>{
+                    \foo{}{width=\textwidth}{Hall-EffektA}{
                     \put(7, 53.5){\color{current}$I$}
                     \put(81, 11){\color{current}$I$}
-                }{}
-            }
-            \only<3>{
-                \foo{}{width=\textwidth}{Hall-EffektB}{
+                    }{}
+                }
+                \only<2>{
+                    \foo{}{width=\textwidth}{Hall-EffektB}{
                     \put(7, 53.5){\color{current}$I$}
                     \put(81, 11){\color{current}$I$}
-                    \put(37, 69){\color{magnetfeld}$B$}
-                }{}
-            }
-            \only<4-5>{
+                    \put(37, 69){\color{magnetfeld}$\vec{B}$}
+                    }{}
+                }
+                \only<3>{
                 \foo{}{width=\textwidth}{Hall-EffektC}{
                     \put(7, 53.5){\color{current}$I$}
                     \put(81, 11){\color{current}$I$}
-                    \put(37, 69){\color{magnetfeld}$B$}
+                    \put(91, 30.5){\color{gray}$d$}
+                    \put(37, 69){\color{magnetfeld}$\vec{B}$}
                     \put(53, 52){\color{voltage}$U_H$}
-                }{}
+                    }{}
+                }
             }
-        }
-        
-        \only<6->{
-            \fo{width=0.55\textwidth, alt={Diagramm zur Veranschaulichung des Hall-Effekts. In der Mitte befindet sich ein längliches, flaches elektische leitfähiges Metallstück, das von Stom (I) durchflossen wird. Ein vertikales Magnetfeld (B) wird durch Pfeile dargestellt, die durch das Metallstück von oben nach unten hindurchweisen. Ebenso ist die Materialdicke (d) des Metallstücks eingezeichnet. Auf der Oberfläche des Materials sind positive (rot) und negative (blau) Ladungsträger abgebildet. Die negativen Ladungsträger werden zunehmend an den linken Rand des Metallstücks gedrängt. Dies stellt die zu messene Hall-Spannung (U_H) dar.}}{width=\textwidth}{Hall-EffektD}{
-                \put(7, 53.5){\color{current}$I$}
-                \put(81, 11){\color{current}$I$}
-                \put(91, 30.5){\color{gray}$d$}
-                \put(37, 69){\color{magnetfeld}$\vec{B}$}
-                \put(53, 52){\color{voltage}$U_H$}
-            }{{\bf Versuchsaufbau zum Hall-Effekt.} Die durch das Magnetfeld entstehende Lorentzkraft lenkt die bewegten Ladungsträger senkrecht an den Rand ab. Diese Ladungsverschiebung erzeugt eine elektrisch messbare Spannung – die Hall-Spannung. \label{Hall-Effekt}}
-        }
-        
+
+            \only<4->{
+                \fo{width=0.55\textwidth, alt={Diagramm zur Veranschaulichung des Hall-Effekts. In der Mitte befindet sich ein längliches, flaches elektische leitfähiges Metallstück, das von Stom (I) durchflossen wird. Ein vertikales Magnetfeld (B) wird durch Pfeile dargestellt, die durch das Metallstück von oben nach unten hindurchweisen. Ebenso ist die Materialdicke (d) des Metallstücks eingezeichnet. Auf der Oberfläche des Materials sind positive (rot) und negative (blau) Ladungsträger abgebildet. Die negativen Ladungsträger werden zunehmend an den linken Rand des Metallstücks gedrängt. Dies stellt die zu messene Hall-Spannung (U_H) dar.}}{width=\textwidth}{Hall-EffektD}{
+                    \put(7, 53.5){\color{current}$I$}
+                    \put(81, 11){\color{current}$I$}
+                    \put(91, 30.5){\color{gray}$d$}
+                    \put(37, 69){\color{magnetfeld}$\vec{B}$}
+                    \put(53, 52){\color{voltage}$U_H$}
+                }{{\bf Versuchsaufbau zum Hall-Effekt.} Die durch das Magnetfeld entstehende Lorentzkraft lenkt die bewegten Ladungsträger senkrecht an den Rand ab. Diese Ladungsverschiebung erzeugt eine elektrisch messbare Spannung – die Hall-Spannung. \label{Hall-Effekt}}
+            }
+
         \column[c]{0.5\textwidth}
-        \pause
-        \b{
-            \begin{itemize}
-                \item<2-> Ein Leiterplättchen wird mit Strom  $I$ durchflossen.
-                \item<3-> Die Lorentzkraft lenkt die bewegten Ladungsträger an den Rand ab.
-                \item<4-> Durch die Ladungsverschiebung wird ein elektrisches Feld erzeugt.
-                \item<5-> Dieses wird als Hall-Spannung $U_{\mathrm{H}}$ gemessen.
-            \end{itemize}
-            
-            \onslide<6->{
-                \begin{eq}
-                    U_{\mathrm{H}}  = A_{\mathrm{H}} \cdot \frac{I \cdot B}{d}
-                \end{eq}
+            \b{
+                \begin{itemize}
+                    \item<1-> Ein Leiterplättchen wird mit Strom  $I$ durchflossen.
+                    \item<2-> Die Lorentzkraft lenkt die bewegten Ladungsträger an den Rand ab.
+                    \item<3-> Durch die Ladungsverschiebung wird ein elektrisches Feld erzeugt.
+                    \item<4-> Dieses wird als Hall-Spannung $U_{\mathrm{H}}$ gemessen.
+                \end{itemize}
+
+                \onslide<4->{
+                    \begin{eq}
+                        U_{\mathrm{H}}  = A_{\mathrm{H}} \cdot \frac{I \cdot B}{d}
+                    \end{eq}
+                }
             }
-        }
     \end{columns}
     \s{
-        Zur Ermittlung der Hall-Spannung $U_\mathrm{H}$ wird die Hall-Konstante $A_\mathrm{H}$ benötigt. Die Hall-Konstante  $A_\mathrm{H}$ ist eine Materialgröße, die Aufschluss über die Ladungsträgerdichte und damit über die Leitfähigkeit des Materials gibt. 
-        
+        Zur Ermittlung der Hall-Spannung $U_\mathrm{H}$ wird die Hall-Konstante $A_\mathrm{H}$ benötigt. Die Hall-Konstante  $A_\mathrm{H}$ ist eine Materialgröße, die Aufschluss über die Ladungsträgerdichte und damit über die Leitfähigkeit des Materials gibt.
+
         Die Hall-Spannung kann (wie in Gleichung \ref{GlHallSpannung} dargestellt) durch die Multiplikation der Hall-Konstante $A_{\mathrm{H}}$ mit dem Produkt der Stromstärke $I$ und der magnetischen Flussdichte $B$ dividiert durch die Dicke des stromdurchflossenen Plättchens $d$ errechnet werden.
-        
+
         \begin{equation}
             U_{\mathrm{H}} = A_{\mathrm{H}} \cdot \frac{I \cdot B}{d} \label{GlHallSpannung}
         \end{equation}\\
@@ -89,46 +72,27 @@
             Die Hall-Spannung $U_{\mathrm{H}}$ beschreibt das Auftreten einer elektrischen Spannung innerhalb des stromdurchflossenen Leiters senkrecht zum Stromfluss aufgrund eines einwirkenden Magnetfeldes.
         \end{Merksatz}
     }
-    \speech{Hall-Effekt}{1}{Der Hall-Effekt beschreibt das Auftreten einer elektrischen Spannung innerhalb eines stromdurchflossenen Leiters aufgrund der Ladungsverschiebung durch ein magnetisches Feld. In der Abbildung wird der Leiter, ähnlich wie im Versuchsaufbau zur Lorentzkraft, von einem magnetischen Feld durchdrungen. Der Leiter ist hier allerdings plattenförmig dargestellt, so dass sich Ladungsträger über die gesamte Leiterfläche bewegen können.}
-    \speech{Hall-Effekt}{2}{Wird nun der Leiter mit Strom durchflossen, wirkt auf die bewegten Ladungen die Lorentzkraft.}
-    \silence{2}
-    \speech{Hall-Effekt}{3}{Diese verursacht gemäß der Rechten-Hand-Regel eine senkrechte Ablenkung der Ladungsträger im Leiter zum Rand. Durch die Ladungsverschiebung entsteht im Leiter ein elektrisches Feld, welches der Lorentzkraft entgegengerichtet ist.}
-    \speech{Hall-Effekt}{4}{An den Rändern des Leiters kann die aus der Ladungsverschiebung resultierende Spannungsdifferenz gemessen werden. Sie wird als Hall-Spannung U H bezeichnet.}
-    \silence{2}
-    \speech{Hall-Effekt}{5}{Zur Ermittlung der Hall-Spannung U H wird die Hall-Konstante A H benötigt. Die Hall-Konstante A H ist eine Materialgröße, die Aufschluss über die Ladungsträgerdichte und damit über die Leitfähigkeit des Materials gibt.}
-    \speech{Hall-Effekt}{6}{Die Hall-Spannung kann durch die Multiplikation der Hall-Konstante A H mit dem Produkt der Stromstärke I und der magnetischen Flussdichte B, dividiert durch die Dicke D des stromdurchflossenen Plättchens, errechnet werden.}
-    \silence{2}
 \end{frame}
-
-
-
 
 
 \begin{frame} \ftx{Beispiel: Hall-Spannung}
     \begin{bsp}{Hall-Spannung}{}
-        Ein mit der Stromstärke $I = 2\,\mathrm{A}$ stromdurchflossenes Metallplättchen mit der Dicke $d = 1\,\mathrm{cm}$ befindet sich in einem Magnetfeld mit der Flussdichte $B = 0,5\,\mathrm{T}$. Die Hall-Konstante des Materials beträgt $A_{\mathrm{H}} = 3,2 \cdot 10^{-3} \, \frac{\mathrm{m}^3}{\mathrm{C}}$. 
+        Ein mit der Stromstärke $I = 2\,\mathrm{A}$ stromdurchflossenes Metallplättchen mit der Dicke $d = 1\,\mathrm{cm}$ befindet sich in einem Magnetfeld mit der Flussdichte $B = 0,5\,\mathrm{T}$. Die Hall-Konstante des Materials beträgt $A_{\mathrm{H}} = 3,2 \cdot 10^{-3} \, \frac{\mathrm{m}^3}{\mathrm{C}}$.
         Berechnen Sie die Hall-Spannung.
         \s{
             \begin{align*}
-                U_{\mathrm{H}} & = A_{\mathrm{H}} \cdot \frac{I \cdot B}{d}                                                                                       \\
-                U_{\mathrm{H}} & = 3,2 \cdot 10^{-3} \, \tfrac{\mathrm{m}^3}{\mathrm{C}} \cdot \frac{2 \, \mathrm{A} \cdot 0,5 \, \mathrm{T}}{0,01 \, \mathrm{m}} \\
+                U_{\mathrm{H}} & = A_{\mathrm{H}} \cdot \frac{I \cdot B}{d}\\
+                U_{\mathrm{H}} & = 3,2 \cdot 10^{-3} \, \tfrac{\mathrm{m}^3}{\mathrm{C}} \cdot \frac{2 \, \mathrm{A} \cdot 0,5 \, \mathrm{T}}{0,01 \, \mathrm{m}}\\
                 U_{\mathrm{H}} & = 0,32 \, \mathrm{V}
             \end{align*}
         }
         \b{
             \begin{align*}
-                \onslide<2->{U_{\mathrm{H}} & = A_{\mathrm{H}} \cdot \frac{I \cdot B}{d}}                                                                                       \\
-                \onslide<3->{U_{\mathrm{H}} & = 3,2 \cdot 10^{-3} \, \tfrac{\mathrm{m}^3}{\mathrm{C}} \cdot \frac{2 \, \mathrm{A} \cdot 0,5 \, \mathrm{T}}{0,01 \, \mathrm{m}}} \\
+                \onslide<2->{U_{\mathrm{H}} & = A_{\mathrm{H}} \cdot \frac{I \cdot B}{d}}\\
+                \onslide<3->{U_{\mathrm{H}} & = 3,2 \cdot 10^{-3} \, \tfrac{\mathrm{m}^3}{\mathrm{C}} \cdot \frac{2 \, \mathrm{A} \cdot 0,5 \, \mathrm{T}}{0,01 \, \mathrm{m}}}\\
                 \onslide<4->{U_{\mathrm{H}} & = 0,32 \, \mathrm{V}}
             \end{align*}
         }
-        
+
     \end{bsp}
-    \speech{BeispielHall-Effekt}{1}{Sehen wir uns die Berechnung der Hall-Spannung in einem einfachen Beispiel an. Gegeben ist ein Metallplättchen mit einer Dicke von einem Zentimeter, das mit einer Stromstärke von 2 Ampere durchflossen wird. Das Metallplättchen befindet sich innerhalb eienes Magnetfeldes mit einer Flussdichte von 0,5 Tesla. Die Hall-Konstante des Materials, aus dem das Metallplättchen gefertigt ist, ist ebenfalls bekannt.}
-    \silence{2}
-    \speech{BeispielHall-Effekt}{2}{Die Gleichung zur Berechnung der Hall-Spannung U H haben wir zurvor kennengelernt.}
-    \speech{BeispielHall-Effekt}{3}{Nun müssen die Werte in die Gleichung eingesetzt und die Gleichung aufgelöst werden.}
-    \silence{2}
-    \speech{BeispielHall-Effekt}{4}{Es ergibt sich damit in diesem Beispiel eine Hall-Spannung von 0,32 Volt, die die messbare Ladungsverschiebung innerhalb des Leierplättchens darstellt.}
-    \silence{2}
 \end{frame}

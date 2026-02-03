@@ -1,0 +1,72 @@
+\subsection{Spule mit Eisenkern und Luftspalt}
+\Aufgabe{
+	Eine Spule (siehe Abbildung \ref{AbbAufgMagnKreis2}) mit Eisenkern und Luftspalt erzeugt bei einem Strom $I=0,1$\,A im Luftspalt eine Flussdichte $B_L=0,8$\,T (der Streufluss soll vernachlässigt werden). Daten:
+	\begin{itemize}
+		\item $l_{Fe}=5$\,cm
+		\item $A_{Fe}=4$\,cm$^2$
+	\end{itemize}
+
+	\f{width=\textwidth}{width=0.5\textwidth}{Übung_Spule_mit_Luftspalt.png}{Ringspule\label{AbbAufgMagnKreis2}}
+
+	\begin{enumerate}
+		\item[\bf a)] Wie groß ist die Induktivität $L$ der Spule bei $N=500$ Windungen?
+		\item[\bf b)] Berechnen Sie $\mu_{r,Fe}$ für die vorgegebene Flussdichte $B_{Fe} = B_L = 0,8\,\text{T}$ mit Hilfe von Abbildung \ref{AbbAufgMagnKreis2}.
+		\item[\bf c)]Berechnen Sie die Luftspaltlänge $s$ mit Hilfe des magnetischen Widerstands $R_m$.
+
+	\end{enumerate}
+
+}
+
+\Loesung{
+	\begin{itemize}
+
+		\item[a)]
+		Aus Definitionsgleichung
+			\begin{align*}
+			L &= \frac{N \cdot \Phi}{I} \qquad \text{mit\,} \Phi = B \cdot A\\
+			&= \frac{500 \cdot 0.8 \,\frac{\text{Vs}}{\text{m$^2$}} \cdot 4 \cdot 10^{-4} \,\text{m}^2}{0.1\,\text{A}} = 1,6 \,\text{H}
+			\end{align*}
+
+		\item[b)]
+		$\mu_{r,\text{Fe}}$ bestimmen \\
+			$H_{Fe}$ aus Magnetisierungskennlinie ermitteln bei $B_{Fe} = 0.8$\,T\\
+			$H_{Fe} \approx 2,4 \,\frac{\text{A}}{\text{cm}} = 240\,\frac{\text{A}}{\text{m}}$
+
+			\begin{align*}
+			\mu_{r,Fe} &= \frac{B_{Fe}}{\mu_0 \cdot H_{Fe}} = \frac{0.8 \,\frac{\text{Vs}}{\text{m$^2$}}}{4\pi \cdot 10^{-7} \,\frac{\text{Vs}}{\text{Am}} \cdot 240 \,\frac{\text{A}}{\text{m}} } \\
+			&= 2652,58 \quad\text{(arbeitspunktabhängig)}
+			\end{align*}
+
+		\item[c)]
+			Berechnung der Luftspaltlänge $s$ (siehe Formel \ref{InduktivitaetFormel2})
+				\begin{equation*}
+				L = \frac{N^2}{R_m}
+				\end{equation*}
+
+				Magnetischer Widerstand (siehe Formel \ref{GlmagnWiderstand}):
+				\begin{equation*}
+				R_m = \frac{\ell_m}{\mu_0 \cdot \mu_r \cdot A}
+				\end{equation*}
+
+				einsetzen
+				\begin{equation*}
+				L = N^2 \cdot \frac{\mu_0 \cdot \mu_r \cdot A}{\ell_m}
+				\end{equation*}
+
+				Mittlere Weglänge:
+				\begin{equation*}
+				\ell_m = \ell_{Fe} + s
+				\end{equation*}
+
+				mit $\mu_{r,Luft}=1 $:
+				\begin{equation*}
+				L = N^2 \cdot \frac{\mu_0 \cdot A}{\frac{\ell_{Fe}}{\mu_{r,Fe}} + s}
+				\end{equation*}
+
+				\begin{align*}
+				s &= N^2 \cdot \frac{\mu_0 \cdot A}{L} - \frac{\ell_{Fe}}{\mu_{r,Fe}}\\
+				&= 500^2 \cdot \frac{4\pi \cdot 10^{-7} \,\frac{\text{Vs}}{\text{Am}} \cdot 4 \cdot 10^{-4} \,\text{m$^2$}}{1.6\,\frac{\text{Vs}}{\text{A}}} - \frac{5\,\text{cm}}{2652,58}\\
+				&= 59,69 \,\text{$\mu$m}
+				\end{align*}
+	\end{itemize}
+}

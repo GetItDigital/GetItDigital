@@ -1,0 +1,47 @@
+\subsection{Elektromagnet}
+\Aufgabe{
+	Ein Elektromagnet bestehend aus einem Eisenkern und einer Spule (siehe Abbildung \ref{AbbAufgMag3}) hat die folgenden Daten:
+	\begin{align*}
+		\text{Eisenmaterial M350-50A: } A_{Fe}&=4\,\text{cm}^2\\
+		\text{Eisenmaterial M350-50A: } \ell_{Fe}&=12\,\text{cm}\\
+		\text{Luftspalt: } A_L&=4\,\text{cm}^2\\
+		\text{Luftspalt: } \ell_L&=0,5\,\text{mm}\\
+		N&=1000\\
+		\mu_0 &= 4\pi\cdot 10^{-7}\,\frac{\mathrm{Vs}}{\mathrm{Am}}
+	\end{align*}
+
+	\f{width=\textwidth}{width=0.5\textwidth}{Übung_Elektromagnet.png}{Elektromagnet \label{AbbAufgMag3}}
+
+	Wie groß ist die erforderliche Stromstärke für eine Haltekraft von $F_{H}=318$\,N?\\
+	Hinweis: der Luftspalt der Breite $\ell_l$ existiert auf beiden Seiten!
+
+
+}
+
+\Loesung{
+	Die für die Haltekraft erforderliche Flussdichte im Luftspalt pro Fläche:
+	\begin{align*}
+	F_{m} &= \frac{1}{2} \cdot \frac{B_{L}^2}{\mu_0} \cdot A_L \\
+	B_L &= \sqrt{\frac{2\cdot F_m \cdot \mu_0}{A_L}} \\
+	B_L &= \sqrt{\frac{2 \cdot 159 \,\frac{\text{VAs}}{\text{m}} \cdot 4\pi \cdot 10^{-7} \frac{\text{Vs}}{\text{Am}}}{4 \cdot 10^{-4} \,\text{m}^2}} \\
+	B_L &= 1,00\,\text{T}
+	\end{align*}
+
+	Durchflutungssatz:
+	\begin{equation*}
+	N \cdot I = H_{Fe} \cdot \ell_{fe} + H_L \cdot \ell_L
+	\end{equation*}
+
+	Bestimmung der magnetischen Feldstärken:
+	\begin{align*}
+	H_L &= \frac{B_L}{\mu_0} = \frac{1,00\text{T}}{4\pi \cdot 10^{-7} \frac{\text{Vs}}{\text{Am}}} \\
+	H_L &= 795,77 \frac{\,\text{kA}}{\text{m}} \\
+	H_{Fe} &= 140 \frac{\,\text{A}}{\text{m}}\qquad (\text{aus Magnetisierungskurve})
+	\end{align*}
+
+	\begin{align*}
+	N \cdot I &= 140 \frac{\,\text{A}}{\text{m}} \cdot 0,12 \text{\,m} + 795,77 \frac{\,\text{kA}}{\text{m}} \cdot 1 \cdot 10^{-3} \text{\,m} \\
+	I &= \frac{812,57 \text{\,A}}{1000} = 812,57 \text{\,mA}
+	\end{align*}
+
+}

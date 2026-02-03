@@ -2,7 +2,7 @@
 
 \section{Induktivität \label{Spule}}
 \b{\begin{frame} \ftx{Induktivität}
-	\f{trim=0 0.7cm 0 0.5cm,clip,width=0.35\textwidth}{width=0.4\textwidth}{Spule4}{{\bf Luftspule aus Lackdraht.} Luftspulen besitzen keinen magnetischen Kern und haben dadurch eine vergleichsweise geringere Induktivität als Spulen mit weichmagnetischem Kern. }	
+	\f{trim=0 0.7cm 0 0.5cm,clip,width=0.35\textwidth}{width=0.4\textwidth}{Spule4}{{\bf Luftspule aus Lackdraht.} Luftspulen besitzen keinen magnetischen Kern und haben dadurch eine vergleichsweise geringere Induktivität als Spulen mit weichmagnetischem Kern. }
 	\end{frame}
 }
 \begin{frame} \ftx{Induktivität} \index{Induktivität}
@@ -19,14 +19,15 @@
 		\put(65, 4){\color{current}$I$}
 	}{{\bf Elektromagnetisches einer Induktivität.} Die Induktivität beschreibt, in welchem Maße sich ein Magnetfeldum eine stromdurchflossene Leiterschleife aufbaut. \label{InduktivitaetB}}
 	\s{
-		Die Funktionsweise einer Induktivität beruht auf dem elektromagnetischen Feld, das durch den Stromfluss erzeugt wird. Dieses elektromagnetische Feld induziert einen Strom in benachbarten Leiterspulen des Bauelemnts. Durch diesen Effekt kann elektrische Energie vorübergehend in einem magnetischen Feld gespeichert werden. Zum besseren Verständnis wird im Folgenden die Funktion der Induktivität schrittweise erklärt. 
+		Die Funktionsweise einer Induktivität beruht auf dem elektromagnetischen Feld, das durch den Stromfluss erzeugt wird. Dieses elektromagnetische Feld induziert einen Strom in benachbarten Leiterspulen des Bauelements. Durch diesen Effekt kann elektrische Energie vorübergehend in einem magnetischen Feld gespeichert werden. Zum besseren Verständnis wird im Folgenden die Funktion der Induktivität schrittweise erklärt.
+
 		Eine Leiterschleife wird von Strom durchflossen. Dieser Strom erzeugt ein Magnetfeld, dessen Stärke proportional zur Stromstärke ist -- je stärker der Strom, desto stärker das Magnetfeld. Wird die Stromstärke kontinuierlich geändert, erzeugt dies ebenso eine Änderung des Magnetfeldes, welche wiederum (wie in Kapitel \ref{KapInduktion} beschrieben) eine Spannung in benachbarten Leiterschleifen induziert. Diese induzierte Spannung wirkt gemäß der Lenzschen Regel der Änderung des Stroms entgegen. Folglich wirkt beim Einschalten der Stromquelle an der Spule die induzierte Spannung dem Stromfluss entgegen, sodass der Strom erst allmählich ansteigt. Beim Ausschalten der Spule bewirkt die induzierte Spannung, dass der Strom noch eine Zeit lang nachfließt. Diese Gegebenheit, auch Selbstinduktion genannt, ermöglicht eine magnetische Speicherung.
-		Die Induktivität gibt folglich an, wie stark sich ein elektrisches Bauteil selbstinduziert. Die Höhe der Induktität $L$ hängt ab von der Anzahl der Windung $N$, der Permeabilität des Spulenkerns $\mu_r$, der Querschnittsfläche des Kerns und der geometrischen Form des Bauteils. Für Induktivitäten gilt im Allgemeinen, dass das magnetische Feld sich proportional zum Wert des Stroms verhält. 
-		
-		Rechnerisch lässt si./ch die Induktivität $L$ mit der Einheit Henry (H) auf zwei unterschiedliche Weisen ermitteln. Zum einen kann sie mittels der Relation des entstehenden Magnetfelds $N \cdot \varPhi$ zu dem verursachenden Strom $I$ (wie in Gleichung \ref{InduktivitaetFormel}) berechnet werden.
+		Die Induktivität gibt folglich an, wie stark sich ein elektrisches Bauteil selbstinduziert. Die Höhe der Induktität $L$ hängt ab von der Anzahl der Windung $N$, der Permeabilität des Spulenkerns $\mu_r$, der Querschnittsfläche des Kerns und der geometrischen Form des Bauteils. Für Induktivitäten gilt im Allgemeinen, dass das magnetische Feld sich proportional zum Wert des Stroms verhält.
+
+		Rechnerisch lässt sich die Induktivität $L$ mit der Einheit Henry (H) auf zwei unterschiedliche Weisen ermitteln. Zum einen kann sie mittels der Relation des entstehenden Magnetfelds $N \cdot \varPhi$ zu dem verursachenden Strom $I$ (wie in Gleichung \ref{InduktivitaetFormel}) berechnet werden.
 	}
 	\pause
-	
+
 	\b{\column[c]{0.5\textwidth}}
 
 	\begin{eq}
@@ -40,7 +41,7 @@
 		\begin{eq}
 			L=\frac{N^2}{R_{\mathrm{m}}} \label{InduktivitaetFormel2} \qquad [\mathrm{H}]
 		\end{eq}
-		\f{width=0.5\textwidth, alt={Fotografie einer Ringkernspule. Der ringförmige Eisenkern ist von Kuperdraht umwickelt. Am unteren Ende befinden sich die Anschlüsse des Kupferdrahts.}}{height=0.7\textheight}{Spule_Ringkern1b}{{\bf Foto einer Ringkernspule.} Die ringförmige Bauweise bringt die Besonderheit mit sich, dass sich der magnetische Fluss vor allem innerhalb des Kerns bewegt, wodurch magnetische Störfelder reduziert werden.}
+		\f{width=0.5\textwidth, alt={Fotografie einer Ringkernspule. Der ringförmige Eisenkern ist von Kuperdraht umwickelt. Am unteren Ende befinden sich die Anschlüsse des Kupferdrahts.}}{height=0.7\textheight}{Spule_Ringkern1b}{{\bf Foto einer Ringkernspule.} \index{Ringkernspule}Die ringförmige Bauweise bringt die Besonderheit mit sich, dass sich der magnetische Fluss vor allem innerhalb des Kerns bewegt, wodurch magnetische Störfelder reduziert werden.}
 	}
 	\s{
 		\begin{Merksatz}{Induktivität}
@@ -49,21 +50,21 @@
 	}
 
 	\s{
-		Die Berechnung der Spannung einer Induktivität lässt von der Berechnung der Spannung einer Induktion ableiten (Gleichung \ref{GlInduktionsgesetz}). 
+		Die Berechnung der Spannung einer Induktivität lässt sich von der Berechnung der Spannung einer Induktion ableiten (Gleichung \ref{GlInduktionsgesetz}).
 
 		\begin{eq}
 			u_{\mathrm{i}} = -N\cdot \frac{\d \varPhi}{\d t} \tag{\ref{GlInduktionsgesetz}}
-		\end{eq} 
+		\end{eq}
 
 		Die Spannung einer Induktivität $u$ ist eine zeitliche Änderung des Stromes ${\d i}/{\d t}$ multipliziert mit der Induktivität $L$. Auch hier findet die Lenzsche Regel Anwendung, welche ein negatives Vorzeichen zur Folge hat.
 	}
-	
+
 	\begin{eq}
 		u =-L\cdot\frac{\d i}{\d t}\label{GLInduktivitaet2}
 	\end{eq}
 
 	\s{
-		In Schaltplänen werden Induktivitäten mittels schwarz gefüllter Rechtecke, wie in der oberen der beiden Abbildungen \ref{AbbSchaltzeichenInduktivitaet} dargestellt. Seltener wird ein gewindeter Leiter, wie in der unteren Abbildung \ref{AbbSchaltzeichenInduktivitaet} für die Darstellungen einer Induktivität genutzt.
+		In Schaltplänen werden Induktivitäten mittels schwarz gefüllter Rechtecke, wie in der oberen der beiden Abbildungen \ref{AbbSchaltzeichenInduktivitaet} dargestellt. Seltener wird ein gewundener Leiter, wie in der unteren Abbildung \ref{AbbSchaltzeichenInduktivitaet} für die Darstellungen einer Induktivität genutzt.
 	}
 	\pause
 	\fu{
@@ -84,7 +85,7 @@
 	\b{\begin{columns}
 		\column[c]{0.5\textwidth}
 		\f{width=0.5\textwidth}{height=0.7\textheight}{Spule_Ringkern1b}{{\bf Foto einer Ringkernspule.} Die ringförmige Bauweise bringt die Besonderheit mit sich, dass sich der magnetische Fluss vor allem innerhalb des Kerns bewegt, wodurch magnetische Störfelder reduziert werden.}
-	
+
 	\column[c]{0.5\textwidth}
 	{\vspace{0pt}}%
 	Bei einfachen geometrischen Strukturen kann die Induktivität über den magnetischen Widerstand bestimmt werden:
@@ -144,7 +145,7 @@
 			\end{enumerate}
 		\end{minipage}
 }
-	\speech{InduktivitaetRechenweg}{1}{Um die Induktivität einer unbekannten Struktur zu bestimmen, gibt es grundsätzlich zwei Wege. Ein Weg führt über die magnetischen Feldgrößen, wie die Durchflutung, Feldstärke, Flussdichte und magnetischen Fluss, die wir im Laufe dieses Kapitels kennengelernt haben. Der zweite Weg führt über den magnetischen Widerstand. Wir schauen uns jetzt beide Möglichkeiten näher an. Beginnen wir doch mit den Bestimmung über die magnetischen Feldgrößen. 
+	\speech{InduktivitaetRechenweg}{1}{Um die Induktivität einer unbekannten Struktur zu bestimmen, gibt es grundsätzlich zwei Wege. Ein Weg führt über die magnetischen Feldgrößen, wie die Durchflutung, Feldstärke, Flussdichte und magnetischen Fluss, die wir im Laufe dieses Kapitels kennengelernt haben. Der zweite Weg führt über den magnetischen Widerstand. Wir schauen uns jetzt beide Möglichkeiten näher an. Beginnen wir doch mit den Bestimmung über die magnetischen Feldgrößen.
 	Lasst uns hierfür Schritt für Schritt vorgehen. Nehmen wir an das die Stromstärke in einer Spule bekannt ist. Wie wir zuvor erfahren haben, erzeugt dieser Strom eine magnetische Spannung, die wir als Durchflutung kennengelernt haben. Die Durchflutung ergibt sich aus der Anzahl der Windungen N mal der Stromstärke I, heißt in einer Formel niedergeschrieben, das die Durchflutung Theta sich aus dem Produkt der Leiterschleifenanzahl N mal den Strom I ergibt. Im zweiten Schritt können wir aus der Durchflutung die magnetische Feldstärke H berechnen. Hierzu teilen wir die Durchflutung Theta durch die mittlere Länge des magnetischen Kreises L M. Wie ihr euch sicher erinnert ist die mittlere Feldlinienlänge der angenäherte Weg, den die magnetischen Feldlinien im Inneren der Spule zurücklegen. Ist die magnetische Feldstärke H ermittelt können wir die magnetische Flussdichte berechnen. Hierfür benötigen wir aber noch die Materialkonstante mü-R. Ist diese bekannt, können wir die Flussdichte B über das Produkt von der materialspezifischen magnetische Leitfähigkeit Mü R, der magnetische Feldkonstante mü 0 und der magnetischen Feldstärke H berechnen. Aus der ermittelnden magnetischen Flussdichte kann man dann wiederum den magnetischen Fluss Phi bestimmen, indem wir uns die Fläche anschauen, über die Flussdichte wirkt. Hier müssen wir nun die magnetische Flussdichte B über die Fläche A integrieren. Das Flächenintegral wirkt sicher abschreckend. Verläuft jedoch die magnetische Flussdichte konstant über die Fläche A, lässt sich die magnetische Flussdichte vor das Integral ziehen und wir können den magnetischen Fluss phi aus dem Produkt der Flussdichte und der Fläche A bestimmen. Im letzten Schritt berechnen wir dann die Induktivität L über den therm der Spulenwindungen N multipliziert mit den magnetischen Fluss phi durch den Strom I. Wie ihr sieht geht in dieser Ermittlung der Induktivität der Strom gleich zweimal ein. Einmal bei der Durchflutung und einmal bei der Berechnung der Induktivität. Somit taucht er bei der Durchflutung als Ursache des Magnetfelds auf und als Bezugsgröße der Induktivität selbst.}
 	\speech{InduktivitaetRechenweg}{2}{Der zweite Weg eine Induktivität zu bestimmen, führt über den magnetischen Widerstand. Diesen Weg nutzen wir immer dann, wenn uns bestimmte Feldgrößen nicht bekannt sind – zum Beispiel, wenn wir die genaue Stromstärke nicht kennen. Welcher Weg besser passt, hängt also von der jeweiligen Aufgabe ab. Allerdings ist die Berechnung über den magnetischen Widerstand ungenauer, weil hier eine Näherungsformel verwendet wird. Des Weiteren können wir diese Formel nicht anwenden, wenn in der Anordung ein großer Luftspalt vorhanden ist. Kommen wir nun zu der Herangehensweise. Wir zerlegen zuerst den Magnetkreis in einzelne Teilabschnitte, die jeweils einen konstanten magnetischen Widerstand haben. In einem Magnetkreis gibt es nämlich häufig verschiedene Bereiche – manche mit anderem Querschnitt, also einer anderen Fläche A, oder mit einem anderen Material, also einer unterschiedlichen relativen Permeabilität mü R. Für jeden dieser Abschnitte berechnen wir den magnetischen Widerstand mit: R m ist gleich L m geteilt durch mü null mal mü R mal A. Dabei steht das L m für die Länge des betrachteten Abschnitts, mü null für die Feldkonstante des Vakuums, mü R für die relative Permeabilität des Materials, und A für den Querschnitt, durch den der magnetische Fluss im betrachteten Abschnitt läuft. Haben wir die Widerstände der einzelnen Teilabschnitte berechnet, addieren wir sie anschließend zu einem Gesamtwiderstand R m. Mit diesem Gesamtwiderstand können wir schließlich die Induktivität mit der Nährungsformel, L ist gleich N Quadrat durch R m gesamt, bestimmen. So lässt sich also auch ohne genaue Kenntnis der Feldgrößen die Induktivität abschätzen. Im nächsten Schritt schauen wir uns dazu ein einfaches Rechenbeispiel an.}
 \end{frame}
@@ -204,7 +205,7 @@
 			\onslide<3->{L & = \frac{100^2\cdot 2000\cdot 1,256\cdot10^{-6}\,\frac{\mathrm{Vs}}{\mathrm{Am}}\cdot 1\cdot 10^{-4}\,\mathrm{m}^2}{0,05\,\mathrm{m}}} \\
 			\onslide<4->{L & = 0,05\,\tfrac{\mathrm{Vs}}{\mathrm{A}} = 50\,\mathrm{mH}}
 		  \end{align*}
-		
+
 
 		\end{itemize}
 	\end{frame}

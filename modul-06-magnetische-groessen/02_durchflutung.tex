@@ -1,8 +1,8 @@
 \newvideofile{Durchflutung1}{Durchflutung Teil 1}
 \section{Elektromagnetismus\label{SectionElektromagentismus}}
 
-\s{Ein magnetisches Feld kann, außer durch einen Permanentmagneten, auch durch einen elektrischen Strom erzeugt werden. Dabei ergibt sich ein kreisförmiges magnetisches Feld um den stromdurchflossenen Leiter.
-	Die Richtung des Feldes kann mit der \glqq rechten Hand Regel\grqq \index{Rechte Hand Regel} ermittelt werden: Bei einer zur Faust geformten Hand mit gestrecktem Daumen zeigt der Daumen in Richtung des (technischen) elektrischen Stromflusses (der \glqq technische Stromfluss\grqq \,verläuft vom Plus- zum Minuspol) und die Finger in Richtung des magnetischen Feldlinienverlaufs.
+\s{Ein magnetisches Feld kann außer durch einen Permanentmagneten, auch durch einen elektrischen Strom erzeugt werden. Dabei ergibt sich ein kreisförmiges magnetisches Feld um den stromdurchflossenen Leiter.
+	Die Richtung des Feldes lässt sich mit der \glqq rechten Hand Regel\grqq \index{Rechte Hand Regel} ermittelt werden: Bei einer zur Faust geformten rechten Hand mit gestrecktem Daumen zeigt der Daumen in Richtung des (technischen) elektrischen Stromflusses (der \glqq technische Stromfluss\grqq \,verläuft vom Plus- zum Minuspol) und die Finger in Richtung des magnetischen Feldlinienverlaufs.
 	\
 	\begin{Merksatz}{Rechte Hand Regel}
 		Zeigt der Daumen der rechten Hand in Richtung des (technischen) elektrischen Stromflusses, so zeigen die restlichen gebeugten Finger die Verlaufsrichtung der magnetischen Feldlinien an.
@@ -60,10 +60,10 @@
 \s{\subsection{Durchflutung\label{durchflutung}}}
 \begin{frame} \ftx{Magnetische Durchflutung}
 	\index{Magnetische Durchflutung}\index{Durchflutung}
-	\s{Die durch elektrische Ströme hervorgerufenen Magnetfelder werden mit der Kenngröße der magnetischen Durchflutung $\varTheta$ (Theta) gemessen.
+	\s{Die durch elektrische Ströme hervorgerufenen Magnetfelder werden mit der Kenngröße der magnetischen Durchflutung $\varTheta$ (Theta) beschrieben.
 		Analog zur elektrischen Spannung wird die Durchflutung auch als magnetische Spannung bezeichnet.
-		Da die Durchflutung aus dem Strom resultiert, hat sie wie der Strom die Einheit Ampere.}
-	
+		Da die Durchflutung proportional zum Strom ist, hat sie wie der Strom die Einheit Ampere.}
+
 	\b{
 		\begin{minipage}{0.54\textwidth}
 			\foo{}{width=\textwidth}{Magnetisches_Feld_Spule}{
@@ -85,26 +85,26 @@
 			\onslide<1->
 		\end{minipage}
 	}
-	
+
 	\s{
-		Der Name ist auf das Durchflutungsgesetz zurückzuführen. Dieses besagt, dass die magnetische Durchflutung $\varTheta$ gleich dem Gesamtstrom $I$ einer von ihm durchfluteten Fläche ist (siehe Abbildung \ref{Magnet5}).
-		Die Gleichnung \ref{Durchflutung} gibt das Durchflutungsgesetz in der allgemeinen Form wieder. Die rechte Seite bezeichnet das Flächenintegral der Stromdichte $\vec{J}$. Dieses Integral drückt die Summe des Stromes aus, der durch die Fläche $A$ fließt.
+		Der Name ist auf das Durchflutungsgesetz zurückzuführen. Dieses besagt, dass die magnetische Durchflutung $\varTheta$ gleich dem Gesamtstrom $I$ ist, der durch die von der betrachteten geschlossenen Linie umschlossene Fläche fließt (siehe Abbildung \ref{Magnet5}).
+		Die Gleichung \ref{Durchflutung} gibt das Durchflutungsgesetz in der allgemeinen Form wieder. Die rechte Seite bezeichnet das Flächenintegral der Stromdichte $\vec{J}$. Dieses Integral drückt die Summe des Stromes aus, der durch die Fläche $A$ fließt.
 		Die linke Seite der Gleichung stellt das geschlossene Linienintegral über die magnetische Feldstärke $\vec{H}$ dar. Diese geschlossene Linie $\d\vec{s}$ entspricht dabei dem Rand der Fläche $A$.
-		
+
 		\begin{equation}
 			\varTheta = \oint_s \vec{H}\cdot \d\vec{s} = \iint_A \vec{J}\,\d\vec{A}\label{Durchflutung}
 		\end{equation}
-		
+
 		Da in den allermeisten Fällen der Strom durch einen Leiter transportiert wird und folglich die Richtung des Stromes als auch die Stromstärke eindeutig bekannt sind, genügt es in diesem Fall, das Integral (wie in der Gleichung \ref{Durchflutungsgesetz} dargestellt) durch die Anzahl der stromführenden Leiter $N$ multipliziert mit der Stromstärke $I$ zu ersetzen.
-		
+
 		\begin{eq}
 			\varTheta = \oint_s \vec{H}\cdot \d\vec{s} = N\cdot I\label{Durchflutungsgesetz} \qquad [\mathrm{A}]
 		\end{eq}
-		
+
 		\begin{Merksatz}{Magnetische Durchflutung}
 			Die magnetische Durchflutung $\varTheta$ entspricht dem Gesamtstrom einer von ihm durchfluteten Fläche.
 		\end{Merksatz}
-		
+
 		\fo{width=0.5\textwidth, alt={Ein Diagramm zur elektrischen Durchflutung einer Spule. Oben wird eine Drahtspule dargestellt, durch die ein elektrischer Strom fließt, gekennzeichnet durch die Pfeile "I" für den Stromfluss. Darunter ist der Querschnitt einer Drahtspule zu sehen, zusammen mit den Magnetfeldlinien, die durch den Stromfluss an der Spule erzeugt werden. Innerhalb der magnetfeldlinien sind die durchfluteten Flächen farbig hinterlegt.}}{}{Magnetisches_Feld_Spule}{
 			\put(5, 66){\color{current}$I$}
 			\put(26, 73){\color{current}$I$}
@@ -142,21 +142,21 @@
 \newvideofile{Durchflutung2}{Durchflutung Teil 2}
 \begin{frame} \ftx{Magnetische Feldstärke}
 	\index{Magnetische Feldstärke}
-	
+
 	\s{
 		Ist die magnetische Feldstärke über dem Integrationsweg $\d\vec{s}$ konstant, kann der Vektor $\vec{H}$ vor das Integral gezogen werden. Diese Bedingung ist in der Regel erfüllt, wenn sich die Feldlinie über dem ganzen Integrationsweg im gleichen Material befindet.
 		Ein Beispiel wäre ein kreisförmiges Feld um einen Leiter im Kreismittelpunkt oder eine Ringkernspule, wie in Abbildung \ref{Magnet6} gezeigt.
 		In dem Fall wird das Integral $\oint \vec{H}\cdot\,\d\vec{s}$ zur Länge des Integrationsweges (Gleichung \ref{GlmagnFeldstaerke}). Diese Länge wird mittlere Feldlinienlänge genannt und mit $\ell_{\mathrm{m}}$ bezeichnet. Sie steht für den Mittelwert der Summe aller Feldlinien, die sich innerhalb des kreisförmigen Feldes befinden. Die magnetische Feldstärke kann in solchen Anordnungen einfach mit der Gleichung \ref{GlmagnFeldstaerke1} ermittelt werden.
-		
+
 		\begin{eqa}
 			\varTheta &= \oint_s \vec{H}\cdot \d\vec{s} = |\vec{H}| \cdot \ell_{\mathrm{m}}\label{GlmagnFeldstaerke}\\
 			|\vec{H}| &=\frac{\varTheta}{\ell_{\mathrm{m}}}\qquad\left[\frac{\mathrm{A}}{\mathrm{m}}\right]\label{GlmagnFeldstaerke1}
 		\end{eqa}
-		
+
 		\begin{Merksatz}{Berechnungshilfe magnetische Feldstärke}
 			Ist die magnetische Feldstärke über den ganzen Weg konstant, kann sie durch den Quotienten von Durchflutung $\varTheta$ und Weglänge $\ell_{\mathrm{m}}$ berechnet werden. Ihre Einheit ist Ampere pro Meter.
 		\end{Merksatz}
-		
+
 		\fo{width=0.45\textwidth, alt={Grafik eines ringförmigen Spulenkerns, der mit Drahr umwickelt ist. Zwei Pfeile an den Enden der Drähte weisen in entgegengesetzte Richtungen und symbolisieren die Flussrichtung des elektrischen Strom (I). Innderhalb des Rings ist die mittlere Feldlinienlänge (lm) mit deren Flussrichtung eingezeichnet. Die mittlere Feldlinie befindet sich in der Mitte des ringfärmigen Spulenkerns.}}{width=0.5\textwidth}{Magnetfeldline_Ringspule}{
 			\put(32, 6){\color{current}$I$}
 			\put(65, 10){\color{current}$I$}
@@ -181,7 +181,7 @@
 					|\vec{H}| =\frac{\varTheta}{\ell_{\mathrm{m}}}\qquad \left[\frac{\mathrm{A}}{\mathrm{m}}\right]
 				\end{eqa}
 			\end{flushleft}
-			
+
 		\end{minipage}
 	}
 	\speech{VereinfachteDurchflutung}{1}{Nun gibt es noch eine Möglichkeit die Berechnung über das Linienintegral zu vereinfachen. Wenn die magnetische Feldstärke H über die zu integrierende Linie konstant ist, kann sie vor das Integral gezogen werden. Denn die magnetische Feldstärke ist konstant, wenn sich diese gesamte Feldlinie im gleichen Material befindet. Das ist in den meisten Fällen gegeben. Folglich können wir in unserem Beispiel die magnetische Feldstärke H vor das Integral ziehen. Sie bleibt aber weiterhin eine wektorielle Größe. Die Formel lautet somit nun H mal das Integral über d s. Aber auch das Integral d s lässt sich vereinfachen. Das Integral beschreibt die Summe aller kleinen Wegstücke entlang der Feldlinie. Wenn wir nur den Betrag betrachten, entspricht das der gesamten Länge dieser Linie. Deshalb wird aus dem Integral ganz einfach: H mal L m, wobei L m die mittlere Länge der Feldlinie ist. Die mittlere Feldlinie beschreibt den mittleren Umfang dieses Körpers, der durch die Spule durchflutet wird. In unserem Beispiel betrachten wir eine Ringspule. Dabei wird ein Draht spiralförmig um einen ringförmigen Spulenkörper gewickelt. Dieser Spulenkörper besteht meistens aus einem speziellen magnetischen Material, zum Beispiel Ferrit. Die mittlere Feldlinienlänge beschreibt die Strecke, die eine typische Magnetfeldlinie genau durch die Mitte des Spulenkerns zurücklegt. Bei einem ringförmigen Spulenkörper lässt sich die mittlere Feldlinienlänge durch die Berechnung des mittleren Durchmessers der Spule ermitteln, also dem äußeren Durchmesser der Spule plus dem inneren Durchmesser, geteilt durch 2, multipliziert mit Pi. Da wir entlang eines Weges integrieren, also über eine Strecke in Metern, wird die magnetische Feldstärke in Ampere pro Meter angegeben. Denn laut dem Durchflutungsgesetz ergibt das Integral der magnetischen Feldstärke entlang eines geschlossenen Weges genau die Summe aller Ströme, die durch die umschlossene Fläche fließen. Diese Stromsumme hat die Einheit Ampere. Wenn also die Länge in Metern eingesetzt wird, dann muss die Feldstärke entsprechend in Ampere pro Meter heraus kommen.}
@@ -198,7 +198,7 @@
 			\onslide<1->
 		\end{eqa}
 	\end{bsp}\onslide<5->
-	
+
 	\begin{bsp}{Magnetische Feldstärke über den Kreisumfang}{}
 		Ein gerader Leiter wird mit einem Strom von $I=50\,\mathrm{A}$ durchflossen. Wie groß ist die magnetische Feldstärke in einem Abstand von $r=20\,\mathrm{cm}$?
 		\begin{equation*}

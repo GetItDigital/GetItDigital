@@ -1,66 +1,103 @@
-\subsection{Gleichstrommaschine 1\label{AufgGM1}}
+\subsection{Magnetischer Kreis 1}
 \Aufgabe{
-    Eine fremderregte Gleichstrommaschine hat die folgenden Angaben auf ihrem Typenschild:
-    \begin{itemize}
-        \item Nennleistung: $41,8\,\text{kW}$
-        \item Nenndrehzahl: $1900\,\frac{1}{\text{min}}$
-        \item Ankernennspannung: $440\,\text{V}$
-        \item Ankernennstrom: $100\,\text{A}$
-        \item Erregung: $240\,\text{V}$
-        \item Erregerstrom: $10\,\text{A}$
-        \item Leerlaufdrehzahl: $2000\,\frac{1}{\text{min}}$
-    \end{itemize}
+    Berechnen Sie die die Induktivität $L$ der Ringkernspule in Abbildung \ref{AbbAufgMagnKreis1} mit rechteckförmigen Kernquerschnitt
 
-    Hinweis: Die Nennleistung auf einem Motortypenschild bezeichnet immer die abgegebene mechanische Leistung im Nennpunkt.
+	\f{width=\textwidth}{width=0.5\textwidth}{Übung_Ringspule_MagFeld.png}{Ringspule zu Aufgabe \label{AbbAufgMagnKreis1}}
 
-    \begin{itemize}
-        \item[a)]
-        Wie groß ist das Drehmoment der Maschine im Nennpunkt?
-        \item[b)]
-        Berechnen Sie den Wirkungsgrad der Maschine im Nennpunkt.
-        \item[c)]
-        Berechnen Sie das Produkt aus Erregerfluss und der Ankerkonstanten $K\cdot \Phi$
-        \item[d)]
-        Wie groß ist der Ankerwiderstand $R_A$?
-    \end{itemize}
+	Die Spule hat die folgenden Daten:
+	\begin{align*}
+		N &= 250\\
+		h &= 2\,\mathrm{cm}\\
+		r_1 &= 3\,\mathrm{cm}\\
+		r_2 &= 5\,\mathrm{cm}\\
+		\mu_r &= 500\\
+		\mu_0 &= 4\pi\cdot 10^{-7}\,\frac{\mathrm{Vs}}{\mathrm{Am}}
+	\end{align*}
+
+	\begin{enumerate}
+		\item[\bf a)]
+		mit Hilfe des magnetischen Widerstands $R_m$.
+		\item[\bf b)]
+		mit Hilfe der magnetischen Flussdichte $B$ und Feldstärke $H$.
+		\item[\bf c)]
+		Wie erklären Sie sich die abweichenden Ergebnisse aus Aufgabenteil a) und b)?
+	\end{enumerate}
 }
 
 \Loesung{
 	\begin{itemize}
 
 		\item[a)]
-		Aus der Nennleistung und der Nenndrehzahl ergibt sich direkt das Nenndrehmoment:
+		Magnetischer Widerstand:
 		\begin{align*}
-		    P_\text{mech} &= M\cdot \omega\\
-		    M &= \frac{P_\text{mech}}{\omega} = \frac{41,8\,\text{kW}}{2\pi\cdot 1900\,\frac{1}{\text{min}} \cdot \frac{1\,\text{min}}{60\,\text{s}}} = 210,08\,\text{Nm}
+		R_{m} &= \frac{l_{Fe}}{\mu_r \cdot \mu_0 \cdot A_{Fe}} \\\pause
+		R_{m} &= \frac{2\pi \cdot (\frac{r_2 + r_1}{2})}{\mu_r \cdot \mu_0 \cdot h \cdot (r_2 - r_1)}
 		\end{align*}
+
+		Annahme: Im Kernquerschnitt $A$ verlaufe der magnetische Fluss $\Phi$ und das Magnetfeld habe überall die gleiche Flussdichte $B$.\\
+		Mittlere Feldlinienlänge:
+		\begin{equation*}
+		\ell_{Fe} = 2\pi \cdot \frac{r_2 + r_1}{2}
+		\end{equation*}
+
+		Kernquerschnitt:
+		\begin{equation*}
+		A_{Fe} = h \cdot (r_2 - r_1)
+		\end{equation*}
+
+		Induktivität:
+		\begin{align*}
+		L_1 &= \frac{N^2}{R_{m}} = N^2 \cdot \frac{\mu_r \cdot \mu_0 \cdot h \cdot (r_2 - r_1)}{\pi \cdot (r_2 + r_1)}\\
+		&= 250^2 \cdot \frac{500 \cdot 4\pi \cdot 10^{-7} \frac{\text{Vs}}{\text{Am}} \cdot 2 \cdot 10^{-2}\,\text{m} \cdot (5-3) \cdot 10^{-2}\,\text{m}}{\pi(5+3) \cdot 10^{-2}\,\text{m}}\\
+		&= 62,5\,\text{mH}
+		\end{align*}
+
 		\item[b)]
-		Im Motorbetrieb ist der Wirkungsgrad der Quotient aus mechanischer bezogen auf die elektrische Leistung (siehe Gleichung \ref{GlLeistung}). Hierbei muss sowohl die Ankerleistung, als auch die Erregerleistung berücksichtigt werden.
-		\begin{eqa}
-			\eta &= \frac{P_\text{mech}}{P_\text{elektr}} = \frac{41,8\,\text{kW}}{440\,\text{V}\cdot 100\,\text{A} + 240\,\text{V}\cdot 10\,\text{A}} = 90,08\,\%\nonumber
-		\end{eqa}
+		exakte Berechnung. Es wird berücksichtigt, dass die Flussdichte $B$ Radiusabhängig ist.\\
+		1. Schritt: Feldstärke $H$
+		\begin{align*}
+		\oint\limits_s \vec{H}\cdot \d\vec{s} &= N \cdot I = H \cdot \ell \\
+		H &= I \cdot \frac{N}{\ell} = I \cdot \frac{N}{2 \pi r}
+		\end{align*}
+
+		2. Schritt: Flussdichte $B$
+		\begin{equation*}
+		B = \mu_r \cdot \mu_0 \cdot H = \mu_r \cdot\mu_0 \cdot I \cdot \frac{N}{2 \pi r} \qquad\text{für } r_1 \ll r_2
+		\end{equation*}
+
+		3. Schritt: magnetischer Fluss $\Phi$
+		\begin{align*}
+		\Phi &= \int \vec{B} \cdot d\vec{A} \qquad\text{mit\,} d\vec{A} = h \cdot d\vec{r}\\
+		&= \int\limits_{r_1}^{r_2} \vec{B} \cdot h \cdot d\vec{r} = \frac{\mu_r \cdot \mu_0 \cdot h \cdot N \cdot I}{2\pi} \cdot\int\limits_{r_1}^{r_2} \frac{1}{r} \cdot dr
+		\end{align*}
+
+		aus Grundintegral:
+		\begin{equation*}
+		\int\limits_{r_1}^{r_2} \frac{1}{r} \cdot dr =\ln(r_2)-\ln(r_1)= \ln \left(\frac{r_2}{r_1}\right)
+		\end{equation*}
+
+		folgt
+		\begin{equation*}
+		\Phi = \frac{\mu_r\cdot \mu_0 \cdot h \cdot N \cdot I}{2\pi} \cdot \ln \left(\frac{r_2}{r_1}\right)
+		\end{equation*}
+
+		4. Schritt: Induktivität $L$
+		\begin{equation*}
+		\text{Definition:\,}	L = \frac{N \cdot \Phi}{I}
+		\end{equation*}
+
+		Nach Einsetzen von $\Phi$ kürzt sich der Strom $I$ heraus.
+		\begin{equation*}
+		L_2 = N^2 \cdot \frac{\mu_r \cdot\mu_0 \cdot h}{2\pi} \cdot \ln \left(\frac{r_2}{r_1}\right)
+		\end{equation*}
+
+		Werte einsetzen:
+		\begin{align*}
+		L_2 &= 250^2 \cdot \frac{500 \cdot 4\pi \cdot 10^{-7} \frac{\text{Vs}}{\text{Am}} \cdot 2 \cdot 10^{-2} \,\text{m}}{2\pi} \cdot \ln \left(\frac{5\cdot 10^{-2}\,\text{m}}{3\cdot 10^{-2}\,\text{m}}\right)\\
+		&= 63,85 \,\text{mH}
+		\end{align*}
 
 		\item[c)]
-		Nach Gleichung \ref{GlInduzierteSpannungGM} wird die induzierte Spannung berechnet. Im Leerlauf muss die induzierte Spannung der Ankerspannung entsprechen. Gleiches geht aus Gleichung \ref{GlfremderregteGM1} hervor, da im Leerlauf auch das Drehmoment Null sein muss.
-		\begin{eqa}
-			U_q &= K \cdot \Phi \cdot \omega\tag{\ref{GlInduzierteSpannungGM}}\\
-			K\cdot \Phi &= \frac{U_q}{\omega} = \frac{440\,\text{V}}{2\pi\cdot 2000\,\frac{1}{\text{min}} \cdot \frac{1\,\text{min}}{60\,\text{s}}} = 2,1\,\text{Vs}\nonumber
-		\end{eqa}
-		\item[d)]
-		Hier sind zwei Ansätze möglich. Es kann Gleichung \ref{GlfremderregteGM1} auf den Ankerwiderstand umgeformt werden:
-		\begin{eqa}
-			n &= \frac{U_A}{2\pi K\cdot \Phi} - \frac{R_A\cdot M_i}{2\pi(K\cdot \Phi)^2}\tag{\ref{GlfremderregteGM1}}\\
-			R_A &= \left(\frac{U_A}{2\pi K\cdot \Phi} - n\right) \cdot \frac{2\pi(K\cdot \Phi)^2}{M_i}\nonumber\\
-			&= \left(\frac{440\,\text{V}}{2\pi\cdot 2,1\,\text{Vs}} - \frac{1900}{60\,\text{s}}\right)\cdot \frac{2\pi\cdot (2,1\,\text{Vs})^2}{210,08\,\text{Nm}} = 220\,\text{m}\Omega\nonumber
-		\end{eqa}
-		Die andere Berechnungsvariante führt über das Ersatzschaltbild in Abbildung \ref{AbbGMFremderregt}. Im Nennbetrieb können wir die Quellenspannung $U_q$ berechnen. Diese muss kleiner als die Quellenspannung im Leerlauf sein.
-		\begin{eqa}
-			U_q &= K \cdot \Phi \cdot \omega \tag{\ref{GlInduzierteSpannungGM}}\\
-			U_{q,n}&=  2,1\,\text{Vs} \cdot 2\pi\cdot 1900\,\frac{1}{\text{min}} \cdot \frac{1\,\text{min}}{60\,\text{s}} = 418\,\text{V}\nonumber
-		\end{eqa}
-		Der Spannungsabfall am Widerstand $R_A$ muss durch dem Maschenumlauf die Differenzspannung zwischen Ankerspannung und induzierter Spannung betragen. Da der Ankerstrom im Nennbetrieb bekannt ist, kann der Widerstand über das Ohmsche Gesetz berechnet werden.
-		\begin{equation*}
-		    R_A = \frac{U_A - U_q}{I_A} = \frac{440\,\text{V} - 418\,\text{V}}{100\,\text{A}} = 220\,\text{m}\Omega
-		\end{equation*}
+		Die Annahme eines homogenen Magnetfeldes im Kernquerschnitt trifft nur näherungsweise zu. Die Formel für $L_1$ ist deshalb nur eine gute Näherungsformel.
 	\end{itemize}
 }
