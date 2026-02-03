@@ -1,5 +1,5 @@
 \section{Synchronmaschine}
-\s{Die Synchronmaschine ist eine Drehfeldmaschine, die folglich mit einem dreiphasigen Drehstrom (siehe Modul 7) im Statorkreis betrieben wird. Der Rotor kann entweder permanent (mit Dauermagneten) oder durch einen Gleichstromkreis erregt werden. Dieser Maschinentyp wird in Kraftwerken zur Stromgewinnung eingesetzt, da er aber über einen sehr hohen Wirkungsgrad verfügt, wird er auch in der modernen Antriebstechnik in kleineren Leistungsklassen immer häufiger eingesetzt. Ein wesentlicher Nachteil besteht jedoch darin, dass die Synchronmaschine immer durch eine Leistungselektronik geregelt werden muss, da sie an einem einfachen Drehstromnetz nicht anläuft.}
+\s{Die Synchronmaschine ist eine Drehfeldmaschine, die folglich mit einem dreiphasigen Drehstrom (siehe Modul 7) im Statorkreis betrieben wird. Der Rotor kann entweder permanent (mit Permanentmagneten) oder durch einen Gleichstromkreis erregt werden. Dieser Maschinentyp wird in Kraftwerken zur Stromgewinnung eingesetzt, da er aber über einen sehr hohen Wirkungsgrad verfügt, wird er auch in der modernen Antriebstechnik in kleineren Leistungsklassen immer häufiger eingesetzt. Ein wesentlicher Nachteil besteht jedoch darin, dass die Synchronmaschine nur mithilfe einer Leistungselektronik betrieben werden kann, da sie an einem einfachen Drehstromnetz nicht anläuft.}
 \vspace{0.5cm}
 
 \begin{frame}
@@ -64,7 +64,7 @@
 			\put(91,10.4){\line(-1,1){12.4}}\put(91.3,10.4){Statorwicklung 3}
 		}{}
 	}
-	
+
 \end{frame}
 
 
@@ -92,7 +92,7 @@
 					\draw[color=statorw3] (9.8,0.55) node[above] {$I_3$};
 				\end{tikzpicture}
 			}
-			
+
 			\put(12.5, 21.5){\color{statorw1}$I_1$} \put(38, 21.5){\color{statorw1}$I_1$} \put(63.6, 21.5){\color{statorw1}$I_1$} \put(89.3, 21.5){\color{statorw1}$I_1$}
 			\put(21, 1.5){\color{statorw2}$I_2$} \put(47, 1.5){\color{statorw2}$I_2$} \put(73, 1.5){\color{statorw2}$I_2$} \put(98, 1.5){\color{statorw2}$I_2$}
 			\put(0, 1.5){\color{statorw3}$I_3$} \put(25.5, 1.5){\color{statorw3}$I_3$} \put(51, 1.5){\color{statorw3}$I_3$} \put(77, 1.5){\color{statorw3}$I_3$}
@@ -216,9 +216,9 @@
 	\s{Bei der Synchronmaschine bewirkt die magnetische Kopplung zwischen Stator und Rotor das Drehmoment. Im Motorbetrieb folgt das Rotorfeld dem Statorfeld. Die mechanische Drehzahl muss daher immer gleich der elektrischen Drehfrequenz sein. Zwischen dem Stator und dem Rotor befindet sich der lastabhängige sogenannte Polradwinkel\index{Polradwinkel} $\vartheta$. \nomenclature[F]{$\vartheta$}{Polradwinkel der Synchronmaschine \nomunit{$\degree$}} Bei $\vartheta=90\degree$ ist das Drehmoment am größten. Wird im Motorbetrieb der Polradwinkel durch eine zu hohe Belastung größer als $90\degree$, sinkt das erzeugte Drehmoment und die Maschine \glqq kippt\grqq -- das heißt, sie bleibt schlagartig stehen.}
 	\begin{itemize}
 		\item Der Statorfluss entsteht durch die Überlagerung der Flüsse der drei Wicklungen.
-		      \uncover<2>{\item Der Läuferfluss entsteht durch die Erregerwicklung.}
+		      \uncover<2>{\item Der Läuferfluss wird durch die Erregerwicklung erzeugt.}
 	\end{itemize}
-	
+
 \end{frame}
 
 \begin{frame}\ftx{Drehmoment}
@@ -231,14 +231,9 @@
 \s{\subsection{Ersatzschaltbild \index{Synchronmaschine>Ersatzschaltbild}}}
 \begin{frame}
 	\ftx{Einphasiges ESB}
-	\s{Im Netzbetrieb ist die Klemmenspannung $U_1$ und die Frequenz $\omega$ fest vorgegeben. Das ist ein häufiger Betriebsfall für die Synchronmaschine.}
-	\b{Komplexes einphasiges ESB des Vollpolgenerators (z.B. im Netzbetrieb):}
+	\s{Im Netzbetrieb sind die Klemmenspannung $U_1$ und die Frequenz $\omega$ fest vorgegeben. Das ist ein häufiger Betriebsfall für die Synchronmaschine.}
+	\b{Komplexes einphasiges ESB (Ersatzschaltbild) des Vollpolgenerators (z.B. im Netzbetrieb):}
 	\fu{
 		\input{Tikz/src/ESB_vollpolgenerator}\alttext{Schaltbild eines einphasigen Vollpolgenerators. Auf der linken Seite bedindet sich eine Reihenschaltung bestehend aus einem Widerstand R1, einer Induktivität X1 Sigma, einer Induktivität XH und einer Spannungsquelle Up, welche über die Spannungsquelle U1 geschlossen ist. Parallel zu U1 und Up ist zwischen X1 Sigma und Xh die Spannung Uq eingezeichntet. An der Anordnung liegt der Strom I1 an. Auf der rechten Seite bedindet sich eine Induktivität mit dem Strom IE.}
 	}{{\bf Komplexes einphasiges ESB eines Vollpolgenerators.} Beispielsweise im Netzbetrieb.}
 \end{frame}
-
-
-
-
-
