@@ -5,7 +5,8 @@ import random
 
 from gradio_client import Client, handle_file
 
-client = Client("http://172.16.111.10:7860")
+# client = Client("http://172.16.111.10:7860")
+client = Client("http://10.15.10.1:7860")
 
 def main():
     if len(sys.argv) != 3:
@@ -40,12 +41,12 @@ def main():
       reference_id="",
       # reference_audio=None,
       reference_audio=handle_file('../../Video/Sprachsample.wav'),
-      reference_text="Hier ist ein gesprochener Text zum Testen. Zwei Komma Fünf Vier Sechs Kilovoltampere mal, E hoch J, Einhundertneunundachzig Komma Neun Acht Neun Grad",
+      reference_text="Hier ist ein gesprochener Text zum Testen. Zwei Komma Fünf Vier Sechs Kilovoltampere mal E hoch J Einhundertneunundachzig Komma Neun Acht Neun Grad.",
       max_new_tokens=0,
-      chunk_length=1796,
-      top_p=0.88,
-      repetition_penalty=1.2,
-      temperature=0.84,
+      chunk_length=400,
+      top_p=0.8,
+      repetition_penalty=1.18,
+      temperature=0.94,
       seed=f"{seed}",
       use_memory_cache="on",
       api_name="/partial"
