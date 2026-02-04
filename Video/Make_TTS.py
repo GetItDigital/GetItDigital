@@ -5,8 +5,8 @@ import random
 
 from gradio_client import Client, handle_file
 
-# client = Client("http://172.16.111.10:7860")
-client = Client("http://10.15.10.1:7860")
+client = Client("http://172.16.111.10:7860")
+# client = Client("http://10.15.10.1:7860")
 
 def main():
     if len(sys.argv) != 3:
@@ -46,7 +46,7 @@ def main():
       chunk_length=400,
       top_p=0.8,
       repetition_penalty=1.18,
-      temperature=0.92,
+      temperature=0.94,
       seed=f"{seed}",
       use_memory_cache="on",
       api_name="/partial"

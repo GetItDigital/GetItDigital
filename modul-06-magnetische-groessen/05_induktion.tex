@@ -8,36 +8,36 @@
 			\begin{itemize}
 				\item die wesentlichen Aspekte der Induktion erklären.
 				\item die physikalischen Zusammenhänge des Induktionsgesetzes erläutern.
-			\end{itemize}
+		\end{itemize}
 		\end{Lernziele}
-		\speech{InduktionLernziele}{1}{Nachdem wir im vorangegangenen Video mit der Induktion die Grundlagen für die Induktivität kennengelernt haben, wollen wir uns nun das auf diesem Prinzip basierende Bauteil der Indutivität näher ansehen, das in der Lage ist, magnetische Energie zu speichern. Im Anschluss betrachten wir die beiden Wege zur Berechnung einer Induktivität, die wir dann an einem einfachen Beispiel erproben.}
+
 		\silence{2}
-	\end{frame}
-}
+\end{frame}
+	}
 \begin{frame} \ftx{Induktion}
 	\index{Induktion}
 	\s{
-	Die Induktion beschreibt das Entstehen einer elektrischen Spannung in einem Leiter durch die zeitliche Änderung des magnetischen Flusses. Die Änderung des magnetischen Flusses lässt sich auf verschiedene Weisen hervorrufen.
+		Die Induktion beschreibt das Entstehen einer elektrischen Spannung in einem Leiter durch die zeitliche Änderung des magnetischen Flusses. Die Änderung des magnetischen Flusses lässt sich auf verschiedene Weisen hervorrufen.
 	In Abbildung \ref{Induktion1} wird die Induktion anhand eines sich bewegenden Leiters in einem magnetischen Feld dargestellt. Wie im vorangegangenen Beispiel (Abbildung \ref{Lorentz1}) wird auch hier ein Leiter vom Magnetfeld eines Permanentmagneten durchsetzt, jedoch mit dem Unterschied, dass diesmal kein Strom durch den Leiter fließt. 
-	Stattdessen sind die Enden des Leiters an ein Spannungsmessgerät angeschlossen. Wird nun der Leiter mit einer äußeren Kraft bewegt, wirkt die Lorentzkraft auf die Elektronen im Leiter. Durch die Bewegung entsteht eine Ladungstrennung im Leiter. Diese Ladungstrennung wird Induktionsspannung genannt. Solange der Leiter oder das induzierende Magnetfeld in Bewegung ist, kann eine Spannung am Messgerät abgelesen werden.
-	\fo{width=0.45\textwidth, alt={Versuchsaufbau mit einem C-förmigen Permanentmagneten, der in rot (oberer Teil) und grün (unterer Teil) eingefärbt ist. In der Mitte befindet ein Draht innerhalb des Magnetfeldes des Magneten. Der Draht ist freischwingend an zwei Zuleitungen aufgehängt. Die Zuleitungen sind schematisch an ein Voltmeter angeschlossen. Ein Pfeil deutet die Bewegung V des freischwingenden Leiters mit der Länge l innerhalb des Magnetfeldes mit der Flussdichte B des Permanentmagneten an.}}{}{Induktion_neu}{
-		\put(15, 35){\color{gray}$v$}
-		\put(78, 72){\color{magnetfeld}$N$}
-		\put(78, 33){\color{magnetfeld}$S$}
-		\put(15, 23){\color{magnetfeld}$\vec{B},\,\varPhi $}
-		\put(49, 39){\color{gray}$\ell$}
-		\put(17, 73){\input{Tikz/src/messung_induzierte_spannung}}
-	}{{\bf Versuchsaufbau zur Messung einer induzierten Spannung.} Wird durch Bewegung des Leiters ein zeitlich veränderliches Magnetfeld erzeugt, bewirkt die Lorentzkraft im Leiter eine Ladungstrennung, wodurch eine messbare Spannung induziert wird. \label{Induktion1}}
-	
-	Vereinfacht lässt sich die induzierte Spannung mittels der Gleichung \ref{GlvereinfachtInduktionsgesetz} berechnen. Die Höhe der induzierten Spannung $u_{\mathrm{i}}$ hängt von der magnetischen Flussdichte $B$, der Länge des Leiters im Magnetfeld $\ell$, der Geschwindigkeit der Bewegung oder Flussänderung $v$ und der Anzahl der Leiter im Magnetfeld $N$ ab. Da diese Spannung zeitveränderlich ist, wird das Formelzeichen $u_{\mathrm{i}}$ klein geschrieben.
-	\begin{eq}
-		u_{\mathrm{i}} = B\cdot \ell\cdot v\cdot N \label{GlvereinfachtInduktionsgesetz}
-	\end{eq}\\
-	
+		Stattdessen sind die Enden des Leiters an ein Spannungsmessgerät angeschlossen. Wird nun der Leiter mit einer äußeren Kraft bewegt, wirkt die Lorentzkraft auf die Elektronen im Leiter. Durch die Bewegung entsteht eine Ladungstrennung im Leiter. Diese Ladungstrennung wird Induktionsspannung genannt. Solange der Leiter oder das induzierende Magnetfeld in Bewegung ist, kann eine Spannung am Messgerät abgelesen werden.
+		\fo{width=0.45\textwidth, alt={Versuchsaufbau mit einem C-förmigen Permanentmagneten, der in rot (oberer Teil) und grün (unterer Teil) eingefärbt ist. In der Mitte befindet ein Draht innerhalb des Magnetfeldes des Magneten. Der Draht ist freischwingend an zwei Zuleitungen aufgehängt. Die Zuleitungen sind schematisch an ein Voltmeter angeschlossen. Ein Pfeil deutet die Bewegung V des freischwingenden Leiters mit der Länge l innerhalb des Magnetfeldes mit der Flussdichte B des Permanentmagneten an.}}{}{Induktion_neu}{
+			\put(15, 35){\color{gray}$v$}
+			\put(78, 72){\color{magnetfeld}$N$}
+			\put(78, 33){\color{magnetfeld}$S$}
+			\put(15, 23){\color{magnetfeld}$\vec{B},\,\varPhi $}
+			\put(49, 39){\color{gray}$\ell$}
+			\put(17, 73){\input{Tikz/src/messung_induzierte_spannung}}
+		}{{\bf Versuchsaufbau zur Messung einer induzierten Spannung.} Wird durch Bewegung des Leiters ein zeitlich veränderliches Magnetfeld erzeugt, bewirkt die Lorentzkraft im Leiter eine Ladungstrennung, wodurch eine messbare Spannung induziert wird. \label{Induktion1}}
+
+		Vereinfacht lässt sich die induzierte Spannung mittels der Gleichung \ref{GlvereinfachtInduktionsgesetz} berechnen. Die Höhe der induzierten Spannung $u_{\mathrm{i}}$ hängt von der magnetischen Flussdichte $B$, der Länge des Leiters im Magnetfeld $\ell$, der Geschwindigkeit der Bewegung oder Flussänderung $v$ und der Anzahl der Leiter im Magnetfeld $N$ ab. Da diese Spannung zeitveränderlich ist, wird das Formelzeichen $u_{\mathrm{i}}$ klein geschrieben.
+			\begin{eq}
+				u_{\mathrm{i}} = B\cdot \ell\cdot v\cdot N \label{GlvereinfachtInduktionsgesetz}
+			\end{eq}\\
+
 	Allgemein gilt, dass die induzierte Spannung $u_{\mathrm{i}}$ die zeitliche Änderung des magnetischen Flusses ${\d \varPhi}/{\d t}$ multipliziert mit der Anzahl der Leiter N ist. Dies spiegelt sich im allgemeinen Induktionsgesetz (Gleichung \ref{GlInduktionsgesetz}) wider. 
-	Das negative Vorzeichen ist auf die Lenzsche Regel zurückzuführen. Diese besagt, dass Ursache und Wirkung sich immer entgegengesetzt verhalten.
+		Das negative Vorzeichen ist auf die Lenzsche Regel zurückzuführen. Diese besagt, dass Ursache und Wirkung sich immer entgegengesetzt verhalten.
 	}
-	
+
 	\b{
 		\begin{minipage}{0.4\textwidth}
 			\foo{width=0.45\textwidth, alt={XX}}{width=\textwidth}{Induktion_neu}{
@@ -47,12 +47,12 @@
 				\put(11, 23){\color{magnetfeld}$\vec{B},\,\varPhi $}
 				\put(49, 39){\color{gray}$\ell$}
 				\put(17, 73){\begin{tikzpicture}[scale=0.73]
-						\draw (0,0) -- ++ (1.3,-0.65) -- ++(0,0.7) coordinate (u1);
-						\draw (3.6,-1.8) -- ++ (-1.3,0.65) -- ++(0,0.7) coordinate (u2);
-						\draw (u2) to[open, o-o] (u1);
-						\draw[->, color=voltage, thick] (2.15, -0.38) -- (1.45, 0);
-						\draw [color=voltage] (2, -0.2) node[above] {$u_{\mathrm{i}}$};
-					\end{tikzpicture}}
+					\draw (0,0) -- ++ (1.3,-0.65) -- ++(0,0.7) coordinate (u1);
+					\draw (3.6,-1.8) -- ++ (-1.3,0.65) -- ++(0,0.7) coordinate (u2);
+					\draw (u2) to[open, o-o] (u1);
+					\draw[->, color=voltage, thick] (2.15, -0.38) -- (1.45, 0);
+					\draw [color=voltage] (2, -0.2) node[above] {$u_{\mathrm{i}}$};
+				\end{tikzpicture}}
 			}{}
 		\end{minipage}%
 		\pause%
@@ -71,26 +71,26 @@
 		\end{minipage}
 	}
 	% \f{trim=0 0cm 0 0,clip,width=0.5\textwidth}{trim=0 0cm 0 0,clip,width=0.45\textwidth}{Induktion1}{Messung der induzierten Spannung \label{Induktion1}{\tiny(Quelle: \cite[Kapitel 5.6.1]{Tkotz})}}
-	\speech{InduktionEinfuehrung}{1}{In diesem Versuch seht ihr, wie eine elektrische Spannung entsteht, wenn sich ein Leiter in einem Magnetfeld bewegt. Der Aufbau erinnert an den Aufbau der Lorentzkraft aus dem letzten Video. Wir haben hier wieder einen nichtmagnetischen Leiter, zum Beispiel einen Kupferstab, der sich in einem konstanten Magnetfeld befindet das durch einen Permanentmagneten erzeugt wird. Im Unterschied zur Lorentzkraft fließt durch den Leiter diesmal kein Strom. Stattdessen ist der Stab mit einem Messgerät verbunden, das die Spannung zwischen seinen beiden Enden misst. Wird der Leiter nun durch eine äußere Kraft im Magnetfeld bewegt, zeigt das Messgerät eine Spannung an. Diese Spannung entsteht, weil die freien Elektronen durch die Bewegung des Leiters im Magnetfeld ebenfalls in Bewegung gebracht werden. Auf diese bewegten Ladungen wirkt, ähnlich wie bei der Lorentzkraft, eine Kraft senkrecht zur Bewegungsrichtung und zum Magnetfeld. Dadurch werden die Elektronen im Leiter seitlich verschoben, so das sie sich an einem der Enden im Leiter sammeln. Hier bildet sich also ein Elektronenüberschuss, und am anderen Ende des Leiters ein Elektronenmangel. Folglich herrscht hier eine elektrische Spannung, die man induzierte Spannung nennt.}
-	\silence{2}
-	\speech{InduktionEinfuehrung}{2}{Das Ergebnis unseres Versuchs lässt sich auch in einer einfachen Formel zusammenfassen. Die induzierte Spannung, als Variable U I bezeichnet, berechnet sich aus der magnetischen Flussdichte B, der Länge des Leiters im Magnetfeld L, der Geschwindigkeit der Bewegung V und der Anzahl der Leiter im Magnetfeld N. Mathematisch geschrieben: U Induktiv ist gleich B mal L mal v mal N. Ihr seht, die induzierte Spannung ist hier klein geschrieben. Das liegt daran, dass sie zeitlich nicht konstant ist. Außerdem ist zu beachten, dass es sich hierbei um eine idealisierte, also vereinfachte Formel handelt. Sie geht davon aus, dass die magnetische Flussdichte B und die Bewegungsrichtung v exakt im rechten Winkel zueinander stehen. In der Realität ist das jedoch selten der Fall. Würden wir den Winkel zwischen diesen Größen berücksichtigen, müssten sowohl die Geschwindigkeit v als auch die magnetische Flussdichte B als vektorielle Größen betrachtet werden. Für die Berechnungen in dieser Lerneinheit bleiben wir jedoch bei der vereinfachten Darstellung. Die Gleichung erinnert an die Berechnung der Lorentzkraft. Auch hier haben wir die Leiterlänge L, als auch die Anzahl der Leiter N im Magnetfeld als Variablen. Es ist ja einleuchtend, dass wenn mehr Leiterlänge sich im Magnetfeld befindet, dass dann auch eine höhere Spannung entsteht, da mehr freie Elektroden in Bewegung gesetzt werden. Auch die Geschwindigkeit v findet sich schon in der Formel für die Lorentzkraft wieder. Blicken wir kurz auf unser Beispiel. Bewegen wir in die Leiterschleife im Magnetfeld doppelt so schnell, so induzieren wir eine doppelt so große Spannung. Die Spannung wächst oder sinkt in unseren idealisierten Modell proportional zu der Geschwindigkeit. Bleibt noch die magnetische Flussdichte. Auch sie spielt eine zentrale Rolle bei der Entstehung der Induktionsspannung. Wenn sich die magnetische Flussdichte verändert, entsteht ebenfalls eine Spannung – selbst dann, wenn sich der Leiter gar nicht bewegt. Das liegt daran, dass sich der magnetische Fluss durch den Leiter im Laufe der Zeit ändert. Man kann sich das so vorstellen: Wird das Magnetfeld stärker oder schwächer, dann verändern sich die Feldlinien, die den Leiter durchsetzen. Dadurch verschiebt sich wieder die Verteilung der Elektronen, und es entsteht eine elektrische Spannung – ganz ohne Bewegung des Leiters. In der Praxis ist das sehr häufig der Fall. Ein typisches Beispiel ist die Synchronmaschine in Generatorbetrieb in einem Kraftwerk. Hier bewegen sich nicht die Leiter, sondern ein rotierender Magnet. Dadurch ändert sich das Magnetfeld an den feststehenden Leitern fortlaufend, und genau diese zeitliche Änderung der magnetischen Flussdichte erzeugt die Induktionsspannung. Die Wirkweise schauen wir uns im Kapitel elektrische Maschinen genauer an. Wir merken uns aber, dass eine Spannung entweder durch Bewegung im Magnetfeld oder durch eine zeitliche Änderung des Magnetfeldes selbst entsteht.}
+\speech{InduktionEinfuehrung}{1}{In diesem Versuch seht ihr, wie eine elektrische Spannung entsteht, wenn sich ein Leiter in einem Magnetfeld bewegt. Der Aufbau erinnert an den Aufbau der Lorentzkraft aus dem letzten Video. Wir haben hier wieder einen nichtmagnetischen Leiter, zum Beispiel einen Kupferstab, der sich in einem konstanten Magnetfeld befindet das durch einen Permanentmagneten erzeugt wird. Im Unterschied zur Lorentzkraft fließt durch den Leiter diesmal kein Strom. Stattdessen ist der Stab mit einem Messgerät verbunden, das die Spannung zwischen seinen beiden Enden misst. Wird der Leiter nun durch eine äußere Kraft im Magnetfeld bewegt, zeigt das Messgerät eine Spannung an. Diese Spannung entsteht, weil die freien Elektronen durch die Bewegung des Leiters im Magnetfeld ebenfalls in Bewegung gebracht werden. Auf diese bewegten Ladungen wirkt, ähnlich wie bei der Lorentzkraft, eine Kraft senkrecht zur Bewegungsrichtung und zum Magnetfeld. Dadurch werden die Elektronen im Leiter seitlich verschoben, so das sie sich an einem der Enden im Leiter sammeln. Hier bildet sich also ein Elektronenüberschuss, und am anderen Ende des Leiters ein Elektronenmangel. Folglich herrscht hier eine elektrische Spannung, die man induzierte Spannung nennt.}
+\silence{2}
+\speech{InduktionEinfuehrung}{2}{Das Ergebnis unseres Versuchs lässt sich auch in einer einfachen Formel zusammenfassen. Die induzierte Spannung, als Variable U I bezeichnet, berechnet sich aus der magnetischen Flussdichte B, der Länge des Leiters im Magnetfeld L, der Geschwindigkeit der Bewegung V und der Anzahl der Leiter im Magnetfeld N. Mathematisch geschrieben: U Induktiv ist gleich B mal L mal v mal N. Ihr seht, die induzierte Spannung ist hier klein geschrieben. Das liegt daran, dass sie zeitlich nicht konstant ist. Außerdem ist zu beachten, dass es sich hierbei um eine idealisierte, also vereinfachte Formel handelt. Sie geht davon aus, dass die magnetische Flussdichte B und die Bewegungsrichtung v exakt im rechten Winkel zueinander stehen. In der Realität ist das jedoch selten der Fall. Würden wir den Winkel zwischen diesen Größen berücksichtigen, müssten sowohl die Geschwindigkeit v als auch die magnetische Flussdichte B als vektorielle Größen betrachtet werden. Für die Berechnungen in dieser Lerneinheit bleiben wir jedoch bei der vereinfachten Darstellung. Die Gleichung erinnert an die Berechnung der Lorentzkraft. Auch hier haben wir die Leiterlänge L, als auch die Anzahl der Leiter N im Magnetfeld als Variablen. Es ist ja einleuchtend, dass wenn mehr Leiterlänge sich im Magnetfeld befindet, dass dann auch eine höhere Spannung entsteht, da mehr freie Elektroden in Bewegung gesetzt werden. Auch die Geschwindigkeit v findet sich schon in der Formel für die Lorentzkraft wieder. Blicken wir kurz auf unser Beispiel. Bewegen wir in die Leiterschleife im Magnetfeld doppelt so schnell, so induzieren wir eine doppelt so große Spannung. Die Spannung wächst oder sinkt in unseren idealisierten Modell proportional zu der Geschwindigkeit. Bleibt noch die magnetische Flussdichte. Auch sie spielt eine zentrale Rolle bei der Entstehung der Induktionsspannung. Wenn sich die magnetische Flussdichte verändert, entsteht ebenfalls eine Spannung – selbst dann, wenn sich der Leiter gar nicht bewegt. Das liegt daran, dass sich der magnetische Fluss durch den Leiter im Laufe der Zeit ändert. Man kann sich das so vorstellen: Wird das Magnetfeld stärker oder schwächer, dann verändern sich die Feldlinien, die den Leiter durchsetzen. Dadurch verschiebt sich wieder die Verteilung der Elektronen, und es entsteht eine elektrische Spannung – ganz ohne Bewegung des Leiters. In der Praxis ist das sehr häufig der Fall. Ein typisches Beispiel ist die Synchronmaschine in Generatorbetrieb in einem Kraftwerk. Hier bewegen sich nicht die Leiter, sondern ein rotierender Magnet. Dadurch ändert sich das Magnetfeld an den feststehenden Leitern fortlaufend, und genau diese zeitliche Änderung der magnetischen Flussdichte erzeugt die Induktionsspannung. Die Wirkweise schauen wir uns im Kapitel elektrische Maschinen genauer an. Wir merken uns aber, dass eine Spannung entweder durch Bewegung im Magnetfeld oder durch eine zeitliche Änderung des Magnetfeldes selbst entsteht.}
 \end{frame}
 
 \begin{frame} \ftx{Induktion}
-	
+
 	\b{Allgemeines Induktionsgesetz:}
 	\begin{eq}
 		u_{\mathrm{i}} = -N\cdot \frac{\d \varPhi}{\d t}\label{GlInduktionsgesetz}
 	\end{eq}
 	\pause
-	\s{\begin{Merksatz}{Induktion}
-			Die Induktion ist die elektrische Spannung $u_{\mathrm{i}}$, die durch eine Änderung des magnetischen Flusses ${\d \varPhi}/{\d t}$ entsteht.
-		\end{Merksatz}}
+\s{\begin{Merksatz}{Induktion}
+	Die Induktion ist die elektrische Spannung $u_{\mathrm{i}}$, die durch eine Änderung des magnetischen Flusses ${\d \varPhi}/{\d t}$ entsteht.
+\end{Merksatz}}
 	\b{Lenzsche Regel\index{Lenzsche Regel}:
 		\par	
-		\center{Ursache und Wirkung sind stets entgegengesetzt.}
+	\center{Ursache und Wirkung sind stets entgegengesetzt.}
 	}
-	\speech{InduktionFormel}{1}{Die zeitliche Änderung spielt eine wesentliche Rolle im allgemeinen Induktionsgesetz. Das sieht man auch in der mathematischen Herleitung. Dieses besagt, das die induzierte Spannung  u i gleich minus der Windungsanzahl N mal der zeitlichen Änderung des magnetischen Flusses d fie durch d t ist. Wie wir sehen ist die induzierte Spannung direkt mit der zeitlichen Änderung des magnetischen Flusses Fie verknüpft, welche wiederum im engen Zusammenhang mit der magnetischen Flussdichte B steht. Moderiert wird die Relation von der Anzahl der Windungen. Die Variable N wird in anderen Lektüren häufig nicht erwähnt, da es klar ist, dass wenn man durch ein Magnetfeld mehrere Leiter führt, dass sich diese Wirkung der verschiedenen Leitern sich additiv oder subtraktiv, je nachdem in welche Richtung die Leiter gehen, überlagern.}
-	\silence{2}
-	\speech{InduktionFormel}{2}{Widmen wir uns mal den Minuszeichen in der Formel. Dieses Minus lässt sich mit der Lenz’schen Regel erklären. Die Lenz’sche Regel besagt, dass der durch eine Induktionsspannung hervorgerufene Strom immer so gerichtet ist, dass er der Ursache der Induktion entgegenwirkt. Ursache und Wirkung verlaufen also in entgegengesetzte Richtung. Dies ist auf den Energieerhaltungssatz zurückzuführen, ein wichtiges Grundgesetz der Physik. Wäre das nicht so, dann würden sich die Ursache und Wirkung gegenseitig verstärken und man könnte ein Perpetuum mobielee bauen. Merkt euch am besten für zukünftige Induktionsberechnung, das die durch Induktion entstehende Spannung immer der Änderung des Magnetfeldes entgegen wirkt. Und genau das drückt das Minuszeichen im Induktionsgesetz aus.}
+\speech{InduktionFormel}{1}{Die zeitliche Änderung spielt eine wesentliche Rolle im allgemeinen Induktionsgesetz. Das sieht man auch in der mathematischen Herleitung. Dieses besagt, das die induzierte Spannung  u i gleich minus der Windungsanzahl N mal der zeitlichen Änderung des magnetischen Flusses d fie durch d t ist. Wie wir sehen ist die induzierte Spannung direkt mit der zeitlichen Änderung des magnetischen Flusses Fie verknüpft, welche wiederum im engen Zusammenhang mit der magnetischen Flussdichte B steht. Moderiert wird die Relation von der Anzahl der Windungen. Die Variable N wird in anderen Lektüren häufig nicht erwähnt, da es klar ist, dass wenn man durch ein Magnetfeld mehrere Leiter führt, dass sich diese Wirkung der verschiedenen Leitern sich additiv oder subtraktiv, je nachdem in welche Richtung die Leiter gehen, überlagern.}
+\silence{2}
+\speech{InduktionFormel}{2}{Widmen wir uns mal den Minuszeichen in der Formel. Dieses Minus lässt sich mit der Lenz’schen Regel erklären. Die Lenz’sche Regel besagt, dass der durch eine Induktionsspannung hervorgerufene Strom immer so gerichtet ist, dass er der Ursache der Induktion entgegenwirkt. Ursache und Wirkung verlaufen also in entgegengesetzte Richtung. Dies ist auf den Energieerhaltungssatz zurückzuführen, ein wichtiges Grundgesetz der Physik. Wäre das nicht so, dann würden sich die Ursache und Wirkung gegenseitig verstärken und man könnte ein Perpetuum mobielee bauen. Merkt euch am besten für zukünftige Induktionsberechnung, das die durch Induktion entstehende Spannung immer der Änderung des Magnetfeldes entgegen wirkt. Und genau das drückt das Minuszeichen im Induktionsgesetz aus.}
 \end{frame}
