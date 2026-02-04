@@ -3,11 +3,28 @@ import os
 import shutil
 import random
 
+import requests
+
 from gradio_client import Client, handle_file
 
-client = Client("http://172.16.111.10:7860")
-# client = Client("http://10.15.10.1:7860")
+def is_reachable(url):
+    try:
+        response = requests.get(url, timeout=5)
+        return response.status_code == 200
+    except (requests.ConnectionError, requests.Timeout):
+        return False
 
+# IP-Adressen definieren
+local_ip = "http://172.16.111.10:7860"
+tts_server_ip = "http://10.15.10.1:7860"
+
+# Überprüfen, ob die primäre IP erreichbar ist
+if is_reachable(local_ip):
+    client = Client(local_ip)
+else:
+    client = Client(tts_server_ip)
+    
+    
 def main():
     if len(sys.argv) != 3:
         print("Fehler: Zwei Argumente 'Dateiname' und 'Text' benötigt.")
@@ -46,7 +63,7 @@ def main():
       chunk_length=400,
       top_p=0.8,
       repetition_penalty=1.18,
-      temperature=0.94,
+      temperature=0.92,
       seed=f"{seed}",
       use_memory_cache="on",
       api_name="/partial"
