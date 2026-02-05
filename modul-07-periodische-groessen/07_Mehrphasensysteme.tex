@@ -1,3 +1,7 @@
+%Mehrphasensysteme
+
+\newvideofile{Mehrphasensysteme}{Mehrphasensysteme}
+
 \begin{frame}
     \fta{Mehrphasensysteme - Mitsystem, Gegensystem und Nullsystem}
 
@@ -21,6 +25,12 @@
         \end{itemize}
     \end{Lernziele}
    
+    \speech{SystemLrnz}{1}{Mit dem Anstieg von Unsymmetrien in den Mehrphasensystemen, wird die Analyse zunehmend Komplex.
+    Um diese Aufwändigen Berechnungen zu vereinfachen werden die unsymmetrischen Systeme in Symmetrische Systeme überführt,
+    und sollen so in leichter zu Berechnende Komponenten aufgeteilt werden.
+    In diesem Kapitel sollen die Funktionen der verschiedenen Systeme erläutert werden,
+    sodass beispielsweise die Drehstromleistung in den verschiedenen Systemen berechnet werden kann,
+    und Ersatzschaltbilder für symmetrische Quellen, Lasten und Leitungen erstellt werden können.}
 \end{frame}
 
 
@@ -29,15 +39,22 @@
 \begin{frame}
     \ftx{Methode der symmetrischen Komponenten}
     \b{
-        Um eine solche Transformation sinnvoll einzusetzen, sollten gewisse Forderungen erfüllt werden:
+        Um eine solche Transformation sinnvoll einzusetzen, sollten gewisse Anforderungen erfüllt werden:
         
     \begin{itemize}
-        \item [1.]Die Berechnung im transformierten System müssen einfacher sein als im Originalsystem
-        \item [2.]Die Symmetrien der realen Netze und Betriebsmittel müssen vorteilhaft genutzt werden
-        \item [3.]Es müssen sowohl Ströme als auch Spannungen mit den gleichen Transformationsvorschriften behandelt werden
-        \item [4.]Die Leistungen sollen in beiden Systemen identisch sein, falls das nicht möglich ist sollen die Leistungen über einen konstanten Faktor umzurechnen sein
+        \item<1-> [1.]Die Symmetrien der realen Netze und Betriebsmittel müssen vorteilhaft genutzt werden, 
+        sodass die Berechnung im transformierten System einfacher sind als im Originalsystem
+        \item<2-> [2.]Es müssen sowohl Ströme als auch Spannungen mit den gleichen Transformationsvorschriften behandelt werden
+        \item<3-> [3.]Die Leistungen sollen in beiden Systemen identisch sein, falls das nicht möglich ist sollen die Leistungen über einen konstanten Faktor umzurechnen sein
     \end{itemize}
     }
+
+    \speech{SystemMethode}{1}{Damit eine solche Transformation sinnvoll genutzt werden kann,
+    sollten die Symmetrieen vorteilhaft angewendet werden, sodass die Berechnung einfacher und der Nutzen sichtbar wird.}
+    \speech{SystemMethode}{2}{Die Transformationsvorschriften müssen sowohl für Ströme 
+    als auch für die betrachteten Spannungen einheitlich eingehalten werden.}
+    \speech{SystemMethode}{3}{Auch die hieraus bestimmten Leistungen der beiden Systeme sollten identisch sein. 
+    Ist das nicht der Fall, muss die Leistung über einen Konstanten Faktor umzurechnen sein.}
 \end{frame}
 
 
@@ -69,23 +86,33 @@
     \b{
         \begin{itemize}
             \item Ziel der Transformation ist, ein unsymmetrisches System von n Zeigern in n Systeme mit symmetrischer Zeigeranordnung zu überführen
-            \item Im Drehstrom bekommt jeder Leiter ($L_1, L_2, L_3$) ein System mit symmetrischer Zeigeranordnung
-            \item Mit Hilfe des Drehoperators lassen sich Symmetriebedingungen für jeden Leiter aufstellen, die sogenannten Zerlegungsgleichungen:
+            \item<2-> Im Drehstrom bekommt jeder Leiter ($L_1, L_2, L_3$) ein System mit symmetrischer Zeigeranordnung
+            \item<3-> Mit Hilfe des Drehoperators lassen sich Symmetriebedingungen für jeden Leiter aufstellen, die sogenannten Zerlegungsgleichungen:
         \end{itemize}
+
+    \onslide<3->{
         \begin{eqa}
             \underline{I}_{\mathrm{L1}}&=\underline{I}_{0}+\underline{I}_{1}+\underline{I}_{2} \\
             \underline{I}_{\mathrm{L2}}&=\underline{I}_{0}+\underline{a}^2\cdot \underline{I}_{1}+\underline{a}\cdot\underline{I}_{2} \\
             \underline{I}_{\mathrm{L3}}&=\underline{I}_{0}+\underline{a}\cdot\underline{I}_{1}+\underline{a}^2\cdot\underline{I}_{2} 
         \end{eqa}
-        Hier ist anzumerken, dass alles was für den Strom gilt an Zusammenhängen auch für die Spannung gilt!
+
+        Hier ist anzumerken, dass alles was für den Strom gilt an Zusammenhängen auch für die Spannung gilt!}
     }
+
+    \speech{SystemSysteme}{1}{Über die Transformation in die anderen Systeme soll ein unsymmetrisches System mit N Zeigern in N symmetrische Systeme überführt werden.}
+    \speech{SystemSysteme}{2}{Auf diese Weise wird jedem Leiter ein System mit einer Symmetrischen Zeigeranordnung zugewiesen.}
+    \speech{SystemSysteme}{3}{Hier werden dann Mithilfe des Drehoperators die Zerlegungsgleichungen aufgestellt. 
+    Für den ersten Phasenstrom ergibt sich die einfache Summe aus den drei Systemen: Null, Mit und Gegensystem.
+    Beim Zweiten und Dritten Phasenstrom kommen beim Mitsystem und Gegensystem die Drehoperatoren Ah beziehungsweise Ah hoch zwei hinzu.
+    Diese Zusammenhänge gelten ebenso für die zugehörigen Spannungen.}
 \end{frame}
 
 
 
 
 \begin{frame}
-    \ftx{Grundlagen - Zerlegungsgleichungen}
+    \ftx{Grundlagen - Zerlegungsgleichung Nullsystem}
     \s{
     Im nächsten Schritt werden die sogenannten Zerlegungsgleichungen (Gleichungen \ref{ZerlegungL2}) so umgestellt, dass das Verhältnisse vom Strom des Mit- Gegen- Nullsystemes zu den Leiterströmen des Ursprungssytem aufzeigt wird.
 
@@ -146,58 +173,102 @@
     So kann jedoch die anfänglich festgelegte Vorderung erfüllt werden: Die Symmetrien der realen Netze und Betriebsmittel müssen vorteilhaft genutzt werden!
     }
 
+
     \b{
         \begin{itemize}
             \item Die Zerlegungsgleichungen sollen im nächsten Schritt gleichgesetzt werden und zum Strom des jeweiligen Systems umgesetellt werden
-            \item Für das Nullsystem ergibt dies folgende Gleichung:
+            \item<2-> Für das Nullsystem ergibt dies folgende Gleichung:
         \end{itemize}
+
+    \onslide<2->{
         \begin{eqa}
             \underline{I}_{\mathrm{L1}}+\underline{I}_{\mathrm{L2}}+\underline{I}_{\mathrm{L3}}&=3\cdot\underline{I}_0+\underline{I}_1\cdot(1+\underline{a}^2+\underline{a})+\underline{I}_2\cdot(1+\underline{a}+\underline{a}^2) \notag \\
-            &=3\cdot\underline{I}_0 \\
-            \Leftrightarrow      \underline{I}_0&=\frac{1}{3}\cdot(\underline{I}_{\mathrm{L1}}+\underline{I}_{\mathrm{L2}}+\underline{I}_{\mathrm{L3}})
-        \end{eqa}
+            &=3\cdot\underline{I}_0 
+            \onslide<3>{	\\
+            \Leftrightarrow      \underline{I}_0&=\frac{1}{3}\cdot(\underline{I}_{\mathrm{L1}}+\underline{I}_{\mathrm{L2}}+\underline{I}_{\mathrm{L3}})}
+        \end{eqa}}
     }
 
+    \speech{SystemNull}{1}{Nun werden für alle Systeme nacheinander die Zerlegungsgleichungen 
+    nach Phasenströmen und Systemströmen gleichgesetz 
+    und folgend zum Strom des jeweilig gesuchten Systems umgestellt}
+    \speech{SystemNull}{2}{Beginnend mit dem Nullsystem werden hier die Phasenströme auf der linken Seite aufgelistet.
+    Auf der rechten Seite sind die Ströme der Systeme angegeben für alle Phasenströme aufsummiert. ,}
+    \speech{SystemNull}{3}{Hieraus ergibt sich die Lösung für den Strom des Mitsystems Ih Null.
+    Hier ist die Ermittlung des Stromes vergleichsweise einfach, 
+    da die jeweiligen Phasenströme lediglich durch Drei geteilt werden.}
 \end{frame}
 
-    \begin{frame}
-        \ftx{Grundlagen - Zerlegungsgleichungen}
+
+
+\begin{frame}
+    \ftx{Grundlagen - Zerlegungsgleichung Mitsystem}
 
 \b{
     \begin{itemize}
-                \item Um die addierten Ströme für den Strom des Mitsystems umzustellen, muss ein Zwischenschritt gemacht werden
-                \item Es soll zuerst der Drehoperator aus dem Vorfaktor gerechnet werden, indem mit dem passend Drehoperatoren multipliziert wird:
-    \end{itemize}            
+        \item<1-> Um die addierten Ströme für den Strom des Mitsystems umzustellen, muss ein Zwischenschritt durchgeführt werden
+        \item<2-> Es soll zuerst der Drehoperator aus dem Vorfaktor gerechnet werden, indem mit dem passend Drehoperatoren multipliziert wird:
+    \end{itemize}   
+	
     \begin{eqa}
+        \onslide<2->{
         \underline{I}_{\mathrm{L1}}&=\underline{I}_{0}+\underline{I}_{1}+\underline{I}_{2} \\
         \underline{a}\cdot\underline{I}_{\mathrm{L2}}&=\underline{a}\cdot\underline{I}_{0}+\underline{a}^3\cdot \underline{I}_{1}+\underline{a}^2\cdot\underline{I}_{2} \\
-        \underline{a}^2\cdot\underline{I}_{\mathrm{L3}}&=\underline{a}^2\cdot\underline{I}_{0}+\underline{a}^3\cdot\underline{I}_{1}+\underline{a}\cdot\underline{I}_{2}   
+        \underline{a}^2\cdot\underline{I}_{\mathrm{L3}}&=\underline{a}^2\cdot\underline{I}_{0}+\underline{a}^3\cdot\underline{I}_{1}+\underline{a}\cdot\underline{I}_{2}}   
     \end{eqa}
+
     \begin{eqa}
+        \onslide<3->{
         \underline{I}_{\mathrm{L1}}+\underline{a}\cdot\underline{I}_{\mathrm{L2}}+\underline{a}^2\cdot\underline{I}_{\mathrm{L3}}&=\underline{I}_{0}\cdot(1+\underline{a}+\underline{a}^2)+3\cdot\underline{I}_{1}+\underline{I}_{2}\cdot(1+\underline{a}^2+\underline{a})  \\
-        &=3\cdot\underline{I}_{1}  \notag\\
-        \Leftrightarrow \underline{I}_{1}&=\frac{1}{3}\cdot(\underline{I}_{L1}+\underline{a}\cdot\underline{I}_{L2}+\underline{a}^2\cdot\underline{I}_{L3}) \notag
-    \end{eqa} 
+        &=3\cdot\underline{I}_{1}  \notag \\ 
+        \Leftrightarrow \underline{I}_{1}&=\frac{1}{3}\cdot(\underline{I}_{L1}+\underline{a}\cdot\underline{I}_{L2}+\underline{a}^2\cdot\underline{I}_{L3}) \notag}
+    \end{eqa}
     }
-    \end{frame}
+
+    \speech{SystemMit}{1}{Für die Ermittlung der Ströme des Mitsystems und des Gegensystems 
+    muss ein wenig mehr Aufwand betrieben werden.}
+    \speech{SystemMit}{2}{Am beispiel des Mitsystems wird der Drehoperator aus dem Vorfaktor 
+    des gesuchten Stromes des Mitsystems entfernt.
+    Das wird durch die jeweilige multiplikation mit dem Drehoperator erreicht, 
+    bis dieser sich zu Eins ergibt
+    Zur Erinnerung: Der Drehoperator ergibt sich beispielsweise bei Ah hoch Drei zu Eins:.}
+    \speech{SystemMit}{3}{So gelangt man wieder zur Aufsummierten Zerlegungsgleichung,
+    welche nach dem Strom des Mitsystems Ih Eins umgestellt wird.
+    Das Ergebnis zeigt ebenfalls die Drittelung der Phasenströme,
+    wie beim Nullsystem.
+    Jedoch sind hier noch die Drehoperatoren enthalten. :}
+\end{frame}
+
+
 
 \begin{frame}
-    \ftx{Grundlagen - Zerlegungsgleichungen}
+    \ftx{Grundlagen - Zerlegungsgleichung Gegensystem}
     \b{
         \begin{itemize}
             \item Der Strom für das Gegensystem errechnet sich äquivalent zum Mitsystem:
         \end{itemize}
+
         \begin{eqa}
             \underline{I}_{\mathrm{\mathrm{L1}}}&=\underline{I}_{0}+\underline{I}_{1}+\underline{I}_{2} \\
             \underline{a}^2\cdot\underline{I}_{\mathrm{\mathrm{L2}}}&=\underline{a}^2\cdot\underline{I}_{0}+\underline{a}^4\cdot \underline{I}_{1}+\underline{a}^3\cdot\underline{I}_{2} \\
             \underline{a}\cdot\underline{I}_{\mathrm{\mathrm{L3}}}&=\underline{a}\cdot\underline{I}_{0}+\underline{a}^2\cdot\underline{I}_{1}+\underline{a}^3\cdot\underline{I}_{2}   
         \end{eqa}
+
+        \onslide<2>{
         \begin{eqa}
             \underline{I}_{\mathrm{L1}}+\underline{a}^2\cdot\underline{I}_{\mathrm{L2}}+\underline{a}\cdot\underline{I}_{\mathrm{L3}}&=(1+\underline{a}^2+\underline{a})\underline{I}_{0}+(1+\underline{a}+\underline{a}^2)\cdot\underline{I}_{1}+3\cdot\underline{I}_{2}  \\
             &=3\cdot\underline{I}_{2} \notag\\
             \Leftrightarrow \underline{I}_{2}&=\frac{1}{3}\cdot(\underline{I}_{\mathrm{L1}}+\underline{a}^2\cdot\underline{I}_{\mathrm{L2}}+\underline{a}\cdot\underline{I}_{\mathrm{L3}}) \notag
-        \end{eqa}
+        \end{eqa}}
     }
+    
+    \speech{SystemGegen}{1}{Die Bestimmung des Stromes des Gegensystems wird äquivalent zu der Berechnung des Mitsystems durchgeführt.
+    Auch hier werden wieder die Drehoperatoren aus dem Vorfaktor entfernt.
+    Hier natürlich für den Strom Ih Zwei des Gegensystems.}
+    \speech{SystemGegen}{2}{Die sich hieraus ergebenen Gleichungen werden wieder Aufsummiert 
+    und nach dem Strom des Gegensystems umgestellt.
+    Auch das Ergebnis sieht hier ähnlich zu dem des Mitsystems aus,
+    nur sind hier die Drehoperatoren vor den Phasenströmen vertauscht:}
 \end{frame}
     
 \begin{frame}
@@ -213,10 +284,29 @@
     }{{\bf Zeigerdiagramme eines unsymmetrischen Systems.} Transformationen aus einem Originalsystem in Mit-, Gegen- und 
     Nullsystem. \label{ZeigerUnsym}}
 
+    \speech{SystemZeiger}{1}{Nachdem die verschiedenen Systeme vorgestellt wurden, soll ein Beispiel eines Zeigerdiagrammes besprochen werden.
+    Gezeigt wird ein System im Originalzustand mit den Drei Phasen Ell Eins, Ell Zwei und Ell Drei.
+    Jede Phase hat ihren eigenen Betrag und ihre eigene Ausrichtung,
+    welche auf Ell Eins hin ausformuliert ist.}
+    \speech{SystemZeiger}{2}{Für das Nullsystem werden nacheinander jeweils ein Drittel der Phasen 
+    bei identischer Phasenlage aneinander Summiert.}
+    \speech{SystemZeiger}{3}{Von Anfang bis zum Ende des Nullsystems verläuft der Zeiger Ih Null des Nullsystems.
+    Dieser wird in das Originalsystem übernommen.}
+    \speech{SystemZeiger}{4}{Jeweils wieder ein Drittel der Phasen mit ihren Ausrichtungen durch den jeweiligen Drehoperator 
+    wird für das Mitsystem eingetragen.}
+    \speech{SystemZeiger}{5}{Der Zeiger des Mitsystems reicht vom Anfang, bis zum Ende der Summe der Drei Zeiger. 
+    Der Zeiger Ih Eins des Mitsystem wird in das Originalsystem eingetragen.}
+    \speech{SystemZeiger}{6}{Dieselben Schritte werden auch für das Gegensystem durchgeführt.}
+    \speech{SystemZeiger}{7}{Hieraus ergibt sich wieder der Zeiger des Gegensystems Ih Zwei:
+    welcher auch in das Originalsystem eingezeichnet wird.
+    Auf diese Weise kann der Strom Ih Ell Eins durch die Ströme des Nullsystems, des Mitsystems und des Gegensystems beschrieben werden.
+    Die Aneinanderreihungen mit verschiedenen Drehoperatoren nach den bereits vorgestellten Gleichungen 
+    beschreiben dann auf gleiche Weise die beiden weiteren Phasenströme.}
 \end{frame}
 
-    \begin{frame}
-        \ftx{Grundlagen - Matrixschreibweise}
+\begin{frame}
+    \ftx{Grundlagen - Matrixschreibweise}
+
     \s{
         Abb. \ref{ZeigerUnsym} zeigt das Zeigerdiagramm einer unsymmetrischen Belastung.
         Im Originalsystem ist an den Zeigern zu erkennen, dass sowohl die Winkel, wie auch die Amplituden vom symmetrischen Zustand abweichen.
@@ -311,7 +401,6 @@
             \underline{I}_{012}    
         \end{bmatrix}
     \end{eqa}
-
     }
 
     \b{
@@ -337,6 +426,8 @@
                 \underline{I}_{\mathrm{L3}}
             \end{bmatrix}       %\label{TraFoMatrix}
         \end{eqa}
+
+        \onslide<2>{
         \begin{itemize}
             \item Die Schreibweise kann noch weiter vereinfacht werden, wenn der Term mit den Drehoperatoren und der Term mit Vorfaktor in einer Matrix zusammengfasst wird:
         \end{itemize}
@@ -350,8 +441,15 @@
                 1 & \underline{a} & \underline{a}^2 \\
                 1 & \underline{a}^2 & \underline{a} 
             \end{bmatrix}
-            \end{eqa}
+        \end{eqa}}
     }
+    
+    \speech{SystemMatrix1}{1}{Die Ausformulierung über die drei Gleichungen kann schnell unübersichtlich werden.
+    Hier findet die Matrixschreibweise eine Anwendung,
+    um etwas Ordnung zu schaffen.
+    Die Transformationsgleichungen werden hierbei in der Matrix mit den Drehoperatoren zusammengefasst. :}
+    \speech{SystemMatrix1}{2}{Des Weiteren kann die Matrix mit den Drehoperatoren und der Vorfaktor von Einem Drittel 
+    noch zur komplexen Matrix Tee überführt werden.}
 \end{frame}
 
 \begin{frame}
@@ -373,6 +471,8 @@
             \underline{I}_{\mathrm{L1L2L3}}    
         \end{bmatrix}
     \end{eqa}
+
+    \onslide<2->{
     \begin{itemize}
         \item Gemäß den Rechenregeln für Matrizen kann mit der Inversen von $\begin{bmatrix}\underline{T}\end{bmatrix}$ die Rücktransformation erfolgen:
     \end{itemize}
@@ -391,10 +491,12 @@
         \cdot
         \begin{bmatrix}
             \underline{I}_0 \\
-            \underline{I}_1\\
+            \underline{I}_1 \\
             \underline{I}_2
         \end{bmatrix}
-    \end{eqa}
+    \end{eqa}}
+    
+    \onslide<3->{
     \begin{eqa}
         \begin{bmatrix}
             \underline{I}_{\mathrm{L1L2L3}}    
@@ -407,8 +509,15 @@
         \begin{bmatrix}
             \underline{I}_{012}    
         \end{bmatrix}
-    \end{eqa}
+    \end{eqa}}
     }
+
+    \speech{SystemMatrix2}{1}{In der Kompaktschreibweise wird dann die folgende Gleichung ausformuliert:
+    Die Ströme von Null-, Mit- und Gegensystem ergeben sich aus der komplexen Matrix Tee und dem Vektor der Phasenströme. :}
+    \speech{SystemMatrix2}{2}{Über die Inverse der Matrix Tee kann die Rücktransformation zwischen den Systemströmen und den Phasenströmen vorgenommen werden.
+    Bei der Inversen Matrix von Tee sind die einfachen Drehoperatoren mit den Quadraten vertauscht. m.}
+    \speech{SystemMatrix2}{3}{Hier die Bezeichnung in der Kompaktschreibweise.
+    Die Inverse der komplexen Matrix Tee wird durch ein Hoch Minus Eins verdeutlicht.}
 \end{frame}
 
 
@@ -421,6 +530,8 @@
         Das {\bf Gegensystemsystem} wird mit dem Index 2 versehen: \qquad $\underline{I}_2$ \\
         Das {\bf Nullsystem} wird mit dem Index 0 versehen: \qquad $\underline{I}_0$ 
     \end{Merksatz}
+    
+    \speech{SystemMrk}{1}{Ein System wird zur Analyse in die drei Systeme: Mitsystem, Index Eins, Gegensystem, Index Zwei und Nullsystem, Index Null, transformiert.}
 \end{frame}
 
 
@@ -432,13 +543,16 @@
     Wie die Leistung berechnet wird, wurde bereits im Kapitel Drehstrom erläutert.
     Auch hier kann die Gleichung zur Leistungsberechnung zur Vereinfachung in Matrizenschreibweise ausgedrückt werden:
 }
+
 \b{
     \begin{itemize}
         \item Die Gleichung zur Leistungsberechnung kann zur Vereinfachung auch in Matrizenschreibweise ausgedrückt werden
     \end{itemize}
 }
+
     \begin{eqa}
-        \underline{S}_{\mathrm{L1L2L3}}&=\underline{U}_{\mathrm{L1}}\cdot\underline{I}_{\mathrm{L1}}^*+\underline{U}_{\mathrm{L2}}\cdot\underline{I}_{\mathrm{L2}}^*+\underline{U}_{\mathrm{L3}}\cdot\underline{I}_{\mathrm{L3}}^* \\
+        \underline{S}_{\mathrm{L1L2L3}}&=\underline{U}_{\mathrm{L1}}\cdot\underline{I}_{\mathrm{L1}}^*+\underline{U}_{\mathrm{L2}}\cdot\underline{I}_{\mathrm{L2}}^*+\underline{U}_{\mathrm{L3}}\cdot\underline{I}_{\mathrm{L3}}^*   \\
+        \onslide<2->{ 
         &=
         \begin{bmatrix}
             \underline{U}_{\mathrm{L1}} & \underline{U}_{\mathrm{L2}} & \underline{U}_{\mathrm{L3}}
@@ -448,7 +562,8 @@
             \underline{I}_{\mathrm{L1}}^* \\
             \underline{I}_{\mathrm{L2}}^* \\
             \underline{I}_{\mathrm{L3}}^*
-        \end{bmatrix}
+        \end{bmatrix}}
+        \onslide<3->{ 
         =
         \begin{bmatrix}
             \underline{U}_{\mathrm{L1L2L3}}
@@ -457,43 +572,57 @@
         \begin{bmatrix}
             \underline{I}_{\mathrm{L1L2L3}}
         \end{bmatrix}_t
-        ^*      \notag
+        ^*  }  \notag
     \end{eqa}
 
+    \speech{SystemLeistung}{1}{Die Leistung muss wie bereits erwähnt für alle Phasen bestimmt werden.
+    Die Berechnung der Leistung kann dabei ebenfalls in der Matrixschreibweise erfolgen. m.}
+    \speech{SystemLeistung}{2}{Hierfür werden die Spannungen als Zeilenvektor und die Konjugierten Ströme als Spaltenvektor aufgestellt.}
+    \speech{SystemLeistung}{3}{Der Stromvektor kann auch als Zeilenvektor dargestellt werden.
+    Dabei wird der Vektor Transponiert. m.}
 \end{frame}
+
+
+
 \begin{frame}
     \ftx{Drehstromleistung und Komponentenleistung}
-    
 
-\s{
-    Mit den gegebenen Drehoperatoren können die Ströme und Spannungen in einem symmetrische System auf jeweils eine Phase bezogen werden 
-    ($\underline{U}_{\mathrm{L2}}=\underline{a}^2\cdot\underline{U}_{\mathrm{L1}}, \underline{U}_{\mathrm{L3}}=\underline{a}\cdot\underline{U}_{\mathrm{L1}}$)
+    \s{
+        Mit den gegebenen Drehoperatoren können die Ströme und Spannungen in einem symmetrische System auf jeweils eine Phase bezogen werden 
+        ($\underline{U}_{\mathrm{L2}}=\underline{a}^2\cdot\underline{U}_{\mathrm{L1}}, \underline{U}_{\mathrm{L3}}=\underline{a}\cdot\underline{U}_{\mathrm{L1}}$)
 
-    Daraus ergibt sich für die Leistung die bekannte Vereinfachung:
-}
-\b{
-    \begin{itemize}
-        \item Mit den Drehoperatoren können die Spannungen und Ströme auf eine Phase bezogen werden
-        \item Draus ergibt sich die bekannte Vereinfachung:
-    \end{itemize}
-}
+        Daraus ergibt sich für die Leistung die bekannte Vereinfachung:
+    }
+
+    \b{
+        \begin{itemize}
+            \item Mit den Drehoperatoren können die Spannungen und Ströme auf eine Phase bezogen werden
+            \item<2-> Daraus ergibt sich die bekannte Vereinfachung:
+        \end{itemize}
+    }
+
+    \onslide<2->{ 
     \begin{eqa}
         \underline{S}_{\mathrm{L1L2L3}}&=\underline{U}_{\mathrm{L1}}\cdot\underline{I}_{\mathrm{L1}}^*+\underline{U}_{\mathrm{L1}}\cdot\underline{I}_{\mathrm{L1}}^*+\underline{U}_{\mathrm{L1}}\cdot\underline{I}_{\mathrm{L1}}^* \\
         &=3\cdot\underline{U}_{\mathrm{L1}}\cdot\underline{I}_{\mathrm{L1}}^*
-    \end{eqa}
+    \end{eqa}}
+    
+    \speech{SystemLeistKomp1}{1}{Die Spannungen und Ströme können durch die Drehoperatoren auf eine Phase bezogen werden.}
+    \speech{SystemLeistKomp1}{2}{Deswegen lässt sich wie gezeigt die Leistungsberechnung auf das Dreifache beispielsweise der Phase Ell Eins reduzieren.}
 \end{frame}
 
 \begin{frame}
     \ftx{Drehstromleistung und Komponentenleistung}
 
-\s{
-    Nun kann mit der Matrixschreibweise die Transformation in die neuen Systeme berechnet werden:
-}
-\b{
-    \begin{itemize}
-        \item Nun kann mit der Matrixschreibweise die Transformation in die neuen Systeme berechnet werden:
-    \end{itemize}
-}
+    \s{
+        Nun kann mit der Matrixschreibweise die Transformation in die neuen Systeme berechnet werden:
+    }
+
+    \b{
+        \begin{itemize}
+            \item Nun kann mit der Matrixschreibweise die Transformation in die neuen Systeme berechnet werden:
+        \end{itemize}
+    }
     \begin{eqa}
         \begin{bmatrix}
             \underline{U}_{\mathrm{L1L2L3}}
@@ -516,6 +645,7 @@
         \begin{bmatrix}
             \underline{T}
         \end{bmatrix}^{-1} \\
+        \onslide<2->{ 
         \begin{bmatrix}
             \underline{I}_{\mathrm{L1L2L3}}
         \end{bmatrix}^*
@@ -536,7 +666,8 @@
         \cdot
         \begin{bmatrix}
             \underline{I}_{012}
-        \end{bmatrix}^*   \\         
+        \end{bmatrix}^*}   \\ 
+        \onslide<3->{         
         \underline{S}_{\mathrm{L1L2L3}}
         &=
         \begin{bmatrix}
@@ -553,7 +684,8 @@
         \cdot
         \begin{bmatrix}
             \underline{I}_{012}
-        \end{bmatrix}^* \\
+        \end{bmatrix}^*} \\
+        \onslide<4->{ 
         &=
         \begin{bmatrix}
             \underline{U}_{012}
@@ -593,7 +725,8 @@
         \cdot
         \begin{bmatrix}
             \underline{I}_{012}
-        \end{bmatrix}^* \notag\\
+        \end{bmatrix}^*} \notag\\
+        \onslide<5->{ 
         &=
         \begin{bmatrix}
             \underline{U}_{012}
@@ -607,25 +740,46 @@
         \cdot
         \begin{bmatrix}
             \underline{I}_{012}
-        \end{bmatrix}^* \notag\\
-        &=3\cdot(\underline{U}_0\cdot\underline{I}_o^*+\underline{U}_1\cdot\underline{I}_1^*+\underline{U}_2\cdot\underline{I}_2^*)=3\cdot\underline{S}_{012} \notag
+        \end{bmatrix}^*} \notag\\
+        \onslide<6->{ 
+        &=3\cdot(\underline{U}_0\cdot\underline{I}_0^*+\underline{U}_1\cdot\underline{I}_1^*+\underline{U}_2\cdot\underline{I}_2^*)=3\cdot\underline{S}_{012}} \notag
     \end{eqa}
 
+    \speech{SystemLeistKomp2}{1}{Folgend wird in der Matrixschreibweise die Transformation der Leistung vorgenommen.
+    Hierfür wird die Transformation der Spannung }
+    \speech{SystemLeistKomp2}{2}{und des Stromes genutzt.}
+    \speech{SystemLeistKomp2}{3}{Die Leistung setzt sich aus diesen beiden Komponenten zusammen.}
+    \speech{SystemLeistKomp2}{4}{Hier werden die Matrizen mit den Drehoperatoren ausformuliert.
+    Die Inverse und Konjugierte einer Matrix führt wieder zur Grundform der Transformationsmatrix des Stromes.
+    So verfügt die Gleichung über eine Inverse Form und eine Normale Form der Transformationsmatrix. m.}
+    \speech{SystemLeistKomp2}{5}{Das führt zusammengefasst zu einer Matrix mit Dreien in der Hauptdiagonalen.}
+    \speech{SystemLeistKomp2}{6}{Schlussendlich kann so die Phasenleistung als Leistungssumme aus den Transformationssystemen bestimmt werden. m.}
 \end{frame}
+
+
+
+
+
 
 \begin{frame}
     \ftb{Ersatzschaltbilder}
 \s{
-    ESB dienen grundlegend immmer der einfacheren Betrachtung und einem erleichterten Verständniss der Komponenten.
+    ESB dienen grundlegend immmer der einfacheren Betrachtung und einem erleichterten Verständnis der Komponenten.
     Es sollen sich nun verschiedene Betriebsmittel angeschaut werden und wie sich die Transformationen in verschiedenen Netzsituationen verhalten.
 }
 \b{
     \begin{itemize}
-        \item ESB dienen grundlegend immmer der einfacheren Betrachtung und einem erleichterten Verständniss der Komponenten
-        \item Es sollen sich nun verschiedene Betriebsmittel angeschaut werden und wie sich die Transformationen in verschiedenen Netzsituationen verhalten
+        \item ESB dienen grundlegend immmer der einfacheren Betrachtung und einem erleichterten Verständnis der Komponenten
+        \item<2-> Es werden sich nun verschiedene Betriebsmittel angeschaut und die Transformationen in verschiedenen Netzsituationen beschrieben
     \end{itemize}
 }
+
+    \speech{SystemESB}{1}{Nachdem die Leistungstransformation erläutert wurde,
+    werden folgend die Ersatzschaltbilder beteiligter Komponenten besprochen. m.}
+    \speech{SystemESB}{2}{Hierfür werden symmetrische Quellen, Lasten und Leitungen analysiert.}
 \end{frame}
+
+
 
 \begin{frame}
         \ftc{Symmetrische Spannungsquelle}
@@ -640,11 +794,12 @@
 \b{
     \begin{itemize}
         \item Als erste Komponente werden die Spannungsquellen betrachtet
-        \item Die Zusammenhänge zwischen der Sternspannung und den einzelnen Phasen sind bereits bekannt
-        \item Es wird die Formel für die Transformation herangezogen und in die Matrixschreibweise überführt
+        \item<2-> Es wird die Formel für die Transformation herangezogen und in die Matrixschreibweise überführt
+        \item<3-> Die Zusammenhänge zwischen der Sternspannung und den einzelnen Phasen sind bereits bekannt
     \end{itemize}
 }
     \begin{eqa}
+        \onslide<2->{ 
         \begin{bmatrix}
             \underline{U}_0 \\
             \underline{U}_1 \\
@@ -662,7 +817,8 @@
             \underline{U}_{\mathrm{L1}} \\
             \underline{U}_{\mathrm{L2}} \\
             \underline{U}_{\mathrm{L3}}
-        \end{bmatrix} \\
+        \end{bmatrix}} \\
+        \onslide<3->{ 
         \begin{bmatrix}
             \underline{U}_{012}
         \end{bmatrix}
@@ -675,40 +831,59 @@
             \underline{U}_{\Stern} \\
             \underline{a}^2\cdot\underline{U}_{\Stern} \\
             \underline{a}\cdot\underline{U}_{\Stern}
-        \end{bmatrix}
+        \end{bmatrix}}
     \end{eqa}
 
+    \speech{SystemESBQuelle1}{1}{Als erstes folgt die Erstellung des Ersatzschaltbildes für symmetrische Spannungsquellen.}
+    \speech{SystemESBQuelle1}{2}{Hierfür wird die Matrixschreibweise für die Transformation zwischen den Systemspannungen 
+    und den Phasenspannungen herangezogen.}
+    \speech{SystemESBQuelle1}{3}{Die Phasenspannungen von Uh Ell Eins, Uh Ell Zwei und Uh Ell Drei 
+    werden ihrer Abhängigkeit von der Sternspannung entsprechend umformuliert.}
 \end{frame}
-    \begin{frame}
-        \ftx{Symmetrische Spannungsquelle}
+
+
+
+\begin{frame}
+    \ftx{Symmetrische Spannungsquelle}
         
-  \s{
-    Löst man die Gleichungen für die transformierten Systeme auf erhält man die Spannungsergebnisse:
-  }
-  \b{
-    \begin{itemize}
-        \item Wird die Gleichung für die transformierten Systeme aufgelöst, erhält man die Spannungsergebnisse
-    \end{itemize}
-  }
+    \s{
+        Löst man die Gleichungen für die transformierten Systeme auf erhält man die Spannungsergebnisse:
+    }
+
+    \b{
+        \begin{itemize}
+            \item Wird die Gleichung für die transformierten Systeme aufgelöst, erhält man die Spannungsergebnisse
+        \end{itemize}
+    }
+
     \begin{eqa}
         \underline{U}_0&=\frac{1}{3}\cdot{U}_{\Stern}\cdot(1+\underline{a}^2+\underline{a})=0 \\
         \underline{U}_1&=\frac{1}{3}\cdot{U}_{\Stern}\cdot(1+\underline{a}\cdot\underline{a}^2+\underline{a}^2\cdot\underline{a})=U_{\Stern} \\
         \underline{U}_2&=\frac{1}{3}\cdot{U}_{\Stern}\cdot(1+\underline{a}^2\cdot\underline{a}^2+\underline{a}\cdot\underline{a})=0 
     \end{eqa}
 
+    \speech{SystemESBQuelle2}{1}{Wird die Matrixschreibweise aufgelöst und die Spannungsergebnisse den Systemen zugeordnet,
+    wird erkennbar, dass durch die Drehoperatoren die Spannungsquellen im Nullsystem und im Gegensystem entfallen.
+    Lediglich das Mitsystem verfügt über eine Spannungsquelle.}
 \end{frame}
-    \begin{frame}
-        \ftx{Symmetrische Spannungsquelle}
-  \s{
-    Mit den Ergebnissen des Gegen- und Nullsystems kann bildlich gesagt werden, dass diese kurzgeschlossen sind.
-    So können für die drei transformierten Systeme die jeweiligen ESB erstellt werden:
-  }
-  \b{
-    \begin{itemize}
-        \item Den Spannung entsprechend können die ESB der einzelnen Systeme aufgestellt werden
-        \item Mit den Ergebnissen des Gegen- und Nullsystems kann bildlich gesagt werden, dass diese kurzgeschlossen sind
-    \end{itemize}
-  }
+
+
+
+\begin{frame}
+    \ftx{Symmetrische Spannungsquelle}
+
+    \s{
+        Mit den Ergebnissen des Gegen- und Nullsystems kann bildlich gesagt werden, dass diese kurzgeschlossen sind.
+        So können für die drei transformierten Systeme die jeweiligen ESB erstellt werden:
+    }
+
+    \b{
+        \begin{itemize}
+            \item Den Spannungen entsprechend können die ESB der einzelnen Systeme aufgestellt werden
+            \item<2-> Mit den Ergebnissen des Gegen- und Nullsystems kann bildlich gesagt werden, dass diese kurzgeschlossen sind
+        \end{itemize}
+    }
+
     \fu{
         \input{Tikz/src/Mehrphasensysteme/Transformierte_Spannungsquelle_ESB}
     }{{\bf Ersatzschaltbilder der transformierten Spannungsquelle.} Bei der symmetrischen Spannungsquelle verfügt nur das ESB 
@@ -720,37 +895,60 @@
         auftaucht.
     }
     
+    \speech{SystemESBQuelle3}{1}{Entsprechend der Sternspannung, welche den Systemen zugeordnet wurde,
+    können die Ersatzschaltbilder einzeln aufgestellt werden.
+    Das Mitsystem mit dem Index Eins verfügt über eine Quellspannung,
+    welche Uh Stern entspricht.}
+    \speech{SystemESBQuelle3}{2}{Auf Basis der Ausformulierten Spannungsergebnisse für die Quellen der Systeme,
+    verfügen das Gegensystem und das Nullsystem über keine eigene Spannungsquellen.}
 \end{frame}
+
+
 
 \begin{frame}
     \ftc{Symmetrische Last}
-\s{
-    Für die Betrachtung der Lasten soll eine Sternschaltung mit Rückleiter gewählt werden. 
-    Es wird in jedem Leiter, auch im Rückleiter, eine Impedanz Z angenommen.
-    Für den symmetrischen Fall werden die Impedanzen als gleich groß angenommen, lediglich die Impedanz im Rückleiter kann von den anderen abweichen und bekommt einen eigenen Index.
 
-    Für das Originalsystem werden die Gleichung für die Spannung folgendermaßen aufgestellt:
-}
-\b{
-    \begin{itemize}
-        \item Für die Betrachtung der Lasten soll eine Sternschaltung mit Rückleiter gewählt werden
-        \item Es wird in jedem Leiter, auch im Rückleiter, eine Impedanz Z angenommen
-        \item Für den symmetrischen Fall werden die Impedanzen als gleich groß angenommen, lediglich die Impedanz im Rückleiter kann von den anderen abweichen und bekommt einen eigenen Index.
-    \end{itemize}
-}
+    \s{
+        Für die Betrachtung der Lasten soll eine Sternschaltung mit Rückleiter gewählt werden. 
+        Es wird in jedem Leiter, auch im Rückleiter, eine Impedanz Z angenommen.
+        Für den symmetrischen Fall werden die Impedanzen als gleich groß angenommen, lediglich die Impedanz im Rückleiter kann von den anderen abweichen und bekommt einen eigenen Index.
 
+        Für das Originalsystem werden die Gleichung für die Spannung folgendermaßen aufgestellt:
+    }
+
+    \b{
+        \begin{itemize}
+            \item Für die Betrachtung der Lasten soll eine Sternschaltung mit Rückleiter gewählt werden
+            \item Es wird in jedem Leiter, auch im Rückleiter, eine Impedanz angenommen
+            \item<2-> Für den symmetrischen Fall werden die Impedanzen $\underline{Z}$ als gleich groß angenommen, lediglich die Impedanz im Rückleiter kann von den anderen abweichen und bekommt einen eigenen Index $\underline{Z}_\mathrm{E}$.
+        \end{itemize}
+    }
+
+    \onslide<2->{
     \begin{eqa}
         \underline{U}_{\mathrm{L1}}=\underline{Z}\cdot\underline{I}_{\mathrm{L1}}+\underline{Z}_\mathrm{E}\cdot(\underline{I}_{\mathrm{L1}}+\underline{I}_{\mathrm{L2}}+\underline{I}_{\mathrm{L3}}) \\
         \underline{U}_{\mathrm{L2}}=\underline{Z}\cdot\underline{I}_{\mathrm{L2}}+\underline{Z}_\mathrm{E}\cdot(\underline{I}_{\mathrm{L1}}+\underline{I}_{\mathrm{L2}}+\underline{I}_{\mathrm{L3}}) \\
         \underline{U}_{\mathrm{L3}}=\underline{Z}\cdot\underline{I}_{\mathrm{L3}}+\underline{Z}_\mathrm{E}\cdot(\underline{I}_{\mathrm{L1}}+\underline{I}_{\mathrm{L2}}+\underline{I}_{\mathrm{L3}})
-    \end{eqa}
+    \end{eqa}}
 
+    \speech{SystemESBLast1}{1}{Nach der Betrachtung der Quellen folgt die Analyse der symmetrischen Lasten.
+    Es wird für die LAst eine Sternschaltung mit Rückleiter angenommen.
+    Hierbei verfügt Jeder Leiter, sowie der Rückleiter, über eine eigene Impedanz.}
+    \speech{SystemESBLast1}{2}{Die angegebenen Gleichungen zeigen Elektrotechnisch diesen Zusammenhang.
+    Die Impedanzen der Phasen Zett werden als identisch angenommen.
+    Die Impedanz des Rückleiters Zett Eh kann von den Impedanzen der Phasen abweichen. m.}
 \end{frame}
-    \begin{frame}
-        \ftx{Symmetrische Last}
+
+
+
+
+\begin{frame}
+    \ftx{Symmetrische Last}
+
     \s{
-    Auch hier kann mittels Matrixschreibweise vereinfacht werden:
+        Auch hier kann mittels Matrixschreibweise vereinfacht werden:
     }
+
     \b{
         \begin{itemize}
             \item Auch hier kann mittels Matrixschreibweise vereinfacht werden
@@ -776,6 +974,7 @@
         \end{bmatrix}
     \end{eqa}
 
+    \onslide<2->{
     Mit...
     
     \begin{eqa}
@@ -788,8 +987,9 @@
             \underline{Z}_\mathrm{E} & \underline{Z}+\underline{Z}_\mathrm{E} & \underline{Z}_\mathrm{E} \\
             \underline{Z}_\mathrm{E} & \underline{Z}_\mathrm{E} & \underline{Z}+\underline{Z}_\mathrm{E}
         \end{bmatrix}
-      \end{eqa}
+      \end{eqa}}
 
+    \onslide<3->{
       ...ergibt sich
 
       \begin{eqa}
@@ -804,19 +1004,29 @@
         \begin{bmatrix}
             \underline{I}_{\mathrm{L1L2L3}}
         \end{bmatrix}
-      \end{eqa}
+      \end{eqa}}
 
-    \end{frame}
-      \begin{frame}
-        \ftx{Symmetrische Last}
-      \s{
-      Wird mit den Transformationsgleichungen umgeformt folgt:
-      }
-      \b{
+    \speech{SystemESBLast2}{1}{Nun wird der angesprochene Zusammenhang der Lasten wieder in die Matrixschreibweise überführt. m.}
+    \speech{SystemESBLast2}{2}{Die Matrix der Impedanzen verfügt in jedem Element über die Impedanz Zett Eh des Rückleiters.
+    über der Hauptdiagonalen kommt hier für jede Phase noch die Impedanz der Phase hinzu. m.}
+    \speech{SystemESBLast2}{3}{Komprimiert notiert ergeben sich hieraus die Phasenspannungen 
+    als Produkt aus der Matrix der Impedanzen und dem Vektor der Phasenströme. .}
+\end{frame}
+
+
+
+\begin{frame}
+    \ftx{Symmetrische Last}
+
+    \s{
+        Wird mit den Transformationsgleichungen umgeformt folgt:
+    }
+
+    \b{
         \begin{itemize}
             \item Wird mit den Transformationsgleichungen umgeformt folgt:
         \end{itemize}
-      }
+    }
     \begin{eqa}
     \begin{bmatrix}
         \underline{T}
@@ -844,12 +1054,14 @@
     Dafür müssen die aufgestellten Gleichunge noch so umgeformt werden, dass sich ein Verhältnis von transformierten Impedanzen und Impedanzen des Originalsystem ergibt.
     Um das zu erreichen werden beide Seiten erst mit $\begin{bmatrix}\underline{T}\end{bmatrix}$ erweitert und dann auf Grundlage des Ohmschen-Gesetzes umgestellt.
     }
+
     \b{
         \begin{itemize}
-            \item Wie bei den Spannungsquellen soll aus der Transformation die Spannung abhängig vom Originalsystem errechnet werden
-            \item Durch Umstellung wird ein Verhältnis zwischen transformierten Impedanzen und Impedanzen des Originalsystems geschaffen
+            \item<2-> Wie bei den Spannungsquellen sollen aus der Transformation die Impedanzen abhängig vom Originalsystem errechnet werden
+            \item<3-> Durch Umstellung wird ein Verhältnis zwischen transformierten Impedanzen und Impedanzen des Originalsystems geschaffen
         \end{itemize}
     }
+    \onslide<2->{
     \begin{eqa}
         \begin{bmatrix}
             \underline{T}
@@ -895,6 +1107,7 @@
         \begin{bmatrix}
             \underline{I}_{012}
         \end{bmatrix}   \\
+        \onslide<3->{
         \begin{bmatrix}
             \underline{Z}_{012}
         \end{bmatrix}
@@ -908,17 +1121,26 @@
         \end{bmatrix}
         \begin{bmatrix}
             \underline{T}
-        \end{bmatrix}^{-1}
-      \end{eqa}
+        \end{bmatrix}^{-1}}
+      \end{eqa}}
 
-    \end{frame}
+    \speech{SystemESBLast3}{1}{Mithilfe der Transformationsgleichungen werden aus den Phasenspannungen und Phasenströmungen
+    die zugehörigen Vektoren der Systemspannungen und Ströme. .}
+    \speech{SystemESBLast3}{2}{Durch das Umstellen wird eine Verbindung zwischen den Impedanzen und den symmetrischen Komponenten erstellt.}
+    \speech{SystemESBLast3}{3}{Im letzten Schritt kann so eine Korellation zwischen den Impedanzen der Phasen und des Rückleiters
+    mit den Impedanzen des Mit, Gegen und Nullsystems hergestellt werden.}
+\end{frame}
 
-      \begin{frame}
-        \ftx{Symmetrische Last}
+
+
+
+\begin{frame}
+    \ftx{Symmetrische Last}
    
     \s{
-    Wird die Matrixoperation der letzten Gleichung durchgeführt, dann ergibt sich der gewünschte Zusammenhanhg von Original- und Transformationssystem.
+        Wird die Matrixoperation der letzten Gleichung durchgeführt, dann ergibt sich der gewünschte Zusammenhanhg von Original- und Transformationssystem.
     }
+
     \b{
         \begin{itemize}
             \item Mit der Druchführung der Matrixoperation ergibt sich der gewünschte Zusammenhang von Original- und Transformationssystem
@@ -936,18 +1158,25 @@
         \end{bmatrix}
     \end{eqa}
 
+    \speech{SystemESBLastZ}{1}{Durch das Auflösen der Matrix mit den Transformationsgleichungen
+    wird die folgende Matrix für das Transformationssystem erstellt.
+    Die Impedanzen befinden sich hier lediglich noch auf der Hauptdiagonalen,
+    wobei die Impedanz des Rückleiters Zett Eh lediglich noch im ersten Element anzutreffen ist.}
 \end{frame}
-    \begin{frame}
-        \ftx{Symmetrische Last}
+
+
+\begin{frame}
+    \ftx{Symmetrische Last}
    
     \s{
-    Nun können auch für die symmetrischen Lasten die jeweiligen ESB der transformierten Systeme aufgestellt werden:
+        Nun können auch für die symmetrischen Lasten die jeweiligen ESB der transformierten Systeme aufgestellt werden:
     }
+
     \b{
         \begin{itemize}
-            \item Mit dem errechneten Zusammenhängen können die ESB der einzelnen Systeme aufgestellt werden
-            \item Im Mit- und Gegensystem treten die gleichen Impedanzen auf
-            \item Im Nullsystem tritt zudem eine Impedanz mit dreifachem Wert auf
+            \item Mit den errechneten Zusammenhängen können die ESB der einzelnen Systeme aufgestellt werden
+            \item<2-> Im Mit- und Gegensystem treten die gleichen Impedanzen auf
+            \item<3-> Im Nullsystem tritt zudem eine Impedanz mit dreifachem Wert auf
         \end{itemize}
     }
     \fu{
@@ -957,14 +1186,23 @@
     Rückleiter. \label{ESBSymLasten}}
 
     \s{
-    In Abb. \ref{ESBSymLasten} treten im Mit- und Gegensystem die gleichen Impedanzen auf.
-    Sollten die Verbraucher im Dreieck verschaltet sein, müssten die Impedanzen mit den bekannten Verhältnissen in Sterngrößen umgerechnet werden.
-    Für die Nullimpedanzen gilt, dass Ströme nur fließen, wenn auch in der Realität eine Verbindung zu einem Stern besteht.
-    Dann treten die Impedanzen im Rückleiter mit dreifachem Wert auf.
+        In Abb. \ref{ESBSymLasten} treten im Mit- und Gegensystem die gleichen Impedanzen auf.
+        Sollten die Verbraucher im Dreieck verschaltet sein, müssten die Impedanzen mit den bekannten Verhältnissen in Sterngrößen umgerechnet werden.
+        Für die Nullimpedanzen gilt, dass Ströme nur fließen, wenn auch in der Realität eine Verbindung zu einem Stern besteht.
+        Dann treten die Impedanzen im Rückleiter mit dreifachem Wert auf.
     }
   
-  
+    \speech{SystemESBLastESB}{1}{Anhand der Matrix der Impedanzen für das Transformationssystem
+    lässt sich das Ersatzschaltbild für die symmetrischen Lasten aufstellen.}
+    \speech{SystemESBLastESB}{2}{Hierbei sind das Mitsystem und das Gegensystem identisch aufgebaut
+    und verfügen jeweils über die Impedanz der Phase Zett.}
+    \speech{SystemESBLastESB}{3}{Der aus der Matrix ersichtliche Zusammenhang,
+    dass die Impedanz des Rückleiters Zett Eh lediglich noch im ersten Element anzutreffen ist,
+    ordnet die Impedanz dem Nullsystem zu.}
 \end{frame}
+
+
+
 
 \begin{frame}
     \ftc{Symmetrische Leitungen}
@@ -981,12 +1219,14 @@
 
     \b{
         \begin{itemize}
-            \item Die Leitung ist die Komponente, die die Spannungsquelle und die Verbraucher verbindet
-            \item Es treten grundsätzlich Eigenimpedanzen und Koppelimpedanzen auf (Leiter-Erde-Impedanzen werden vernachlässigt)
-            \item Dementsprechend treten in jedem Strang eine Eigenimpedanzen und zwei Koppelimpedanzen (zu den anderen Strängen) auf
-            \item Die Spannung über einen Strang wird definiert als Spannungsdifferenz der Spannung am Anfang und am Ende der Leitung
+            \item Die Leitung ist die Komponente, welche die Spannungsquelle und die Verbraucher verbindet
+            \item<2-> Es treten grundsätzlich Eigenimpedanzen und Koppelimpedanzen auf (Leiter-Erde-Impedanzen werden vernachlässigt)
+            \item<3-> Dementsprechend treten in jedem Strang Eigenimpedanzen und zwei Koppelimpedanzen (zu den anderen Strängen) auf
+            \item<4-> Die Spannung über einen Strang wird definiert als Spannungsdifferenz der Spannung am Anfang und am Ende der Leitung
         \end{itemize}
     }
+
+    \onslide<4->
     \begin{eqa}
         \begin{bmatrix}
             \underline{U}_{\mathrm{L1A}}-\underline{U}_{\mathrm{L1B}} \\
@@ -1007,18 +1247,31 @@
         \end{bmatrix}
     \end{eqa}
 
+    %Eigenimpoedanzen Zs und Zk die Koppelimpedanzen
+    
+    \speech{SystemESBLeitung}{1}{Nach der Quelle und der Last wird folgend die Leitung als Komponente dazwischen besprochen.}
+    \speech{SystemESBLeitung}{2}{In den Leitungen treten Eigenimpedanzen Zett Es und Koppelimpedanzen Zett Kah auf.}
+    \speech{SystemESBLeitung}{3}{So verfügt jeder Strang über eine Eigenimpedanz 
+    und zwei Koppelimpedanzen zu den jeweilig anderen Strängen.}
+    \speech{SystemESBLeitung}{4}{Die Spannung über der Leitung wird als Differenz zwischen dem Anfang der Leitung und dem Ende definiert.
+    Die Matrix mit den Impedanzen zeigt auf der Hauptdiagonalen die Eigenimpedanzen 
+    und auf den übrigen Elementen die Koppelimpedanzen zwischen den Phasen.}
 \end{frame}
-    \begin{frame}
-        \ftx{Symmetrische Leitungen}
+
+
+
+\begin{frame}
+    \ftx{Symmetrische Leitungen}
   
-\s{
-    Daraus kann wieder eine Kompaktschreibweise abgeleitet werden (Mit $U_{\mathrm{L1A}}-U_{\mathrm{L1B}}=U_{\mathrm{L1}}$, ...):
-}
-\b{
-    \begin{itemize}
-        \item Mit $U_{\mathrm{L1A}}-U_{\mathrm{L1B}}=U_{\mathrm{L1}}$, ... kann wieder eine Kompaktschreibweise abgeleitet werden
-    \end{itemize}
-}
+    \s{
+        Daraus kann wieder eine Kompaktschreibweise abgeleitet werden (Mit $U_{\mathrm{L1A}}-U_{\mathrm{L1B}}=U_{\mathrm{L1}}$, ...):
+    }
+
+    \b{
+        \begin{itemize}
+            \item Mit $U_{\mathrm{L1A}}-U_{\mathrm{L1B}}=U_{\mathrm{L1}}$, ... kann wieder eine Kompaktschreibweise abgeleitet werden
+        \end{itemize}
+    }
     \begin{eqa}
         \begin{bmatrix}
             \underline{U}_{\mathrm{L1L2L3}}
@@ -1038,12 +1291,15 @@
     Auch hier soll die Gleichung so umgeformt werden, dass eine direkte Abhängigkeit von Originalsystem und Transformationssystem vorliegt.
     Da die Gleichung grundlegend gleich aufgebaut ist, können die gleichen Erweiterungen und Umformungen durchgeführt werden, wie bereits bei den symmetrischen Verbrauchern:
     }
+
     \b{
         \begin{itemize}
-            \item Die Gleichung ist nun sehr ähnlich wie bei den symmetrischen Verbrauchern
-            \item Somit können die gleichen Umformungen durchgeführt werden, sodass auch hier ine direkte Abhängigkeit von Originalsystem und Transformationssystem vorliegt
+            \item<2-> Die Gleichung ist nun sehr ähnlich wie bei den symmetrischen Verbrauchern
+            \item<3-> Somit können die gleichen Umformungen durchgeführt werden, sodass auch hier eine direkte Abhängigkeit von Originalsystem und Transformationssystem vorliegt
         \end{itemize}
     }
+
+    \onslide<3->
     \begin{eqa}
         \begin{bmatrix}
             \underline{Z}_{012}
@@ -1055,14 +1311,29 @@
             0 & 0 & \underline{Z}_\mathrm{S}-\underline{Z}_\mathrm{K}
         \end{bmatrix}
       \end{eqa}
-\s{
-    Wichtig ist bei der Umformung immer, dass die umgeformte Impedanzmatrix nur aus Werten auf der Hauptdiagonale besteht, damit es nur direkte Zusammenhänge zwischen den einzenlen Leitern und den Transformationssytemen gibt.
-}
 
+    \s{
+        Wichtig ist bei der Umformung immer, dass die umgeformte Impedanzmatrix nur aus Werten auf der Hauptdiagonale besteht, damit es nur direkte Zusammenhänge zwischen den einzenlen Leitern und den Transformationssytemen gibt.
+    }
+        
+    \speech{SystemESBLeitungMatrix}{1}{Angenommen für die Spannungsdifferenz werden eben die jeweiligen Phasenspannungen gewählt,
+    wird die Gleichung in die angegebene Kompaktschreibweise überführt.}
+    \speech{SystemESBLeitungMatrix}{2}{Diese Form erinnert an die Gleichung der symmetrischen Lasten.
+    Hier wird eine Äquivalente Umformung zu den Impedanzen der symmetrischen Lasten durchgeführt.}
+    \speech{SystemESBLeitungMatrix}{3}{Da in den übrigen Elementen der Matrix neben der Hauptdiagonalen 
+    Keine Koppelimpedanzen existieren, sind die System entkoppelt.
+    Dies gilt für den Normalbetrieb und alle symmetrischen Fehlermöglichkeiten.}
 \end{frame}
+
+
 \begin{frame}
     \ftx{Symmetrische Leitungen}
     
+    \b{
+        \begin{itemize}
+            \item ESB der drei Systeme für symmetrische Leitungen:
+        \end{itemize}
+    }
 
     \fu{
         \input{Tikz/src/Mehrphasensysteme/Transformierte_Leitung_ESB}
@@ -1073,12 +1344,35 @@
     Abb. \ref{ESBSymLeitung} zeigt das ESB der drei Systeme für symmetrische Leitungen.
     Die gestrichelte Leitung soll die Sternpunktbehandlung auf Erzeugungs- und Verbraucherseite widerspiegeln zur Referenz der Sternspannungen.
     }
-    \b{
-    \begin{itemize}
-        \item ESB der drei Systeme für symmetrische Leitungen
-        \item Die gestrichelte Leitung soll die Sternpunktbehandlung auf Erzeugungs- und Verbraucherseite widerspiegeln zur Referenz der Sternspannungen
-    \end{itemize}
-}
 
+    \b{
+        \begin{itemize}
+            \item<4-> Die gestrichelte Leitung soll die Sternpunktbehandlung auf Erzeugungs- und Verbraucherseite widerspiegeln zur Referenz der Sternspannungen
+        \end{itemize}
+    }
+
+    \speech{SystemESBLeitungESB}{1}{Für das Ersatzschaltbild der symmetrischen Leitungen werden hier die drei Phasen mit den zugehörigen Strömen und den Eigenimpedanzen gezeigt.}
+    \speech{SystemESBLeitungESB}{2}{Die Spannungen am Anfang der Leitung}
+    \speech{SystemESBLeitungESB}{3}{sowie am Ende der Leitungen.}
+    \speech{SystemESBLeitungESB}{4}{Die gestrichelten Leitungen deuten die Sternpunktbehandlung 
+    zur Referenz der Sternspannungen 
+    auf der Erzeugerseite und der Verbraucherseite an.}
 \end{frame}
 
+
+
+\begin{frame}
+    \ftx{Ersatzschaltbilder}
+
+    \begin{Merksatz}{Ersatzschaltbilder}
+        Für die Ersatzschaltbilder lassen sich die folgenden Zusammenhänge feststellen:
+        \begin{itemize}
+            \item Die Quellspannung wird im Mitsystem verortet
+            \item Für die Lasten wird die Impedanz des Rückleiters im Nullsystem eingetragen
+        \end{itemize}
+    \end{Merksatz}
+    
+    \speech{SystemMrk3}{1}{Zusammengefasst:
+    Die Quellspannungen werden im Mitsystem verortet,
+    die Impedanz eines Rückleiters wird im Nullsystem eingetragen.}
+\end{frame}

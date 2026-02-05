@@ -1,6 +1,6 @@
 \begin{tikzpicture}[scale=1.5]
     % Achsen
-    \draw[->] (-0.5, 0) -- (4.2, 0) node[right] {Zeit $t$};
+    \draw[->] (-0.5, 0) -- (4.2, 0) node[right] {$\omega t$};
     \draw[->] (0, -1) -- (0, 1.2) node[right] {Amplitude};
     \draw (0.5,0.1) -- (0.5,-0.1);
     \draw (1,0.1) -- (1,-0.1) node[below] {$\pi$};
@@ -9,12 +9,12 @@
 
     % Spannung (u)
     \draw[color=blue, very thick, smooth, domain=0:4] plot[id=Sinus35] function{sin(pi * x)} node[right] {};
-    \node[blue] at (-0.5, 0.8) {$u_\mathrm{L}(t)$};
+    \node[blue] at (-0.5, 0.8) {$u_\mathrm{L}(\omega t)$};
     \node[blue] at (5, -0.5) {$\underline{U}=\hat{U} \cdot e^{j \varphi_\mathrm{U}}$};
     \pause
     % Strom (i) - in Phase mit Spannung
     \draw[color=red, very thick, smooth, dashed, domain=0:4] plot[id=Sinus36] function{0.8 * sin((pi * x)-(pi/2))} node[right] {};
-    \node[red] at (-0.5, 0.5) {$i_\mathrm{L}(t)$};
+    \node[red] at (-0.5, 0.5) {$i_\mathrm{L}(\omega t)$};
     \node[red] at (5, 0.5) {$\underline{I}=\hat{I} \cdot e^{j \varphi_\mathrm{I}}$};
     \pause
     \draw[<->] (0.5, -0.2) -- (0, -0.2) node[below right] {$\pi/2$};

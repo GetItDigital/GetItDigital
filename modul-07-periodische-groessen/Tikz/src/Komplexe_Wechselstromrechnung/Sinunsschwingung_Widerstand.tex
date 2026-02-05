@@ -1,15 +1,15 @@
 \begin{tikzpicture}[scale=1.5]
     % Achsen
-    \draw[->] (-0.5, 0) -- (4.2, 0) node[right] {Zeit $t$};
+    \draw[->] (-0.5, 0) -- (4.2, 0) node[right] {$\omega t$};
     \draw[->] (0, -1) -- (0, 1.2) node[right] {Amplitude};
 
     % Spannung (u)
     \draw[color=blue, very thick, smooth, domain=0:4] plot[id=Sinus31] function{sin(pi * x)} node[right] {};
-    \node[blue] at (-0.5, 0.8) {$u_\mathrm{R}(t)$};
+    \node[blue] at (-0.5, 0.8) {$u_\mathrm{R}(\omega t)$};
     \pause
     % Strom (i) - in Phase mit Spannung
     \draw[color=red, very thick, smooth, dashed, domain=0:4] plot[id=Sinus32] function{0.8 * sin(pi * x)} node[right] {};
-    \node[red] at (-0.5, 0.5) {$i_\mathrm{R}(t)$};
+    \node[red] at (-0.5, 0.5) {$i_\mathrm{R}(\omega t)$};
     \pause
     \node at (0.5, -1.2) {$\Delta\varphi_\mathrm{R} = \varphi_\mathrm{U} - \varphi_\mathrm{I} = 0$};
 

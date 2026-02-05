@@ -1,8 +1,6 @@
 \begin{circuitikz}
-    \draw (0, 0) to[R, l_=$3\cdot\underline{Z}_{\mathrm{E}}$, o-] (4, 0)
-    to [short] (4, 1.2)
-    to[R=$\underline{Z}$, -o] (0, 1.2);
 
+    \pause
     \draw (0, 1.6) to[short, o-] (4, 1.6)
     to [short] (4, 2.8)
     to[R=$\underline{Z}$, -o] (0, 2.8);
@@ -11,13 +9,18 @@
     to [short] (4, 4.4)
     to[R=$\underline{Z}$, -o] (0, 4.4);
 
-    \draw [->](0, 1) -- (0, 0.2);
-    \draw (-0.4, 0.6) node {$\underline{U}_0$};
-
     \draw [->](0, 2.6) -- (0, 1.8);
     \draw (-0.4, 2.2) node {$\underline{U}_2$};
 
     \draw [->](0, 4.2) -- (0, 3.4);
     \draw (-0.4, 3.8) node {$\underline{U}_1$};
+    \pause
+
+    \draw [->](0, 1) -- (0, 0.2);
+    \draw (-0.4, 0.6) node {$\underline{U}_0$};
+
+    \draw (0, 0) to[R, l_=$3\cdot\underline{Z}_{\mathrm{E}}$, o-] (4, 0)
+    to [short] (4, 1.2)
+    to[R=$\underline{Z}$, -o] (0, 1.2);
 
 \end{circuitikz}
