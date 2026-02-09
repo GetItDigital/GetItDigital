@@ -6,14 +6,12 @@
 		\begin{Lernziele}{Energie im magnetischen Feld}
 			Du kannst
 			\begin{itemize}
-				\item erklären, wie in einer Induktivität magnetische Energie gespeichert wird.
 				\item den Zusammenhang zwischen Spannung, Strom und Energie in einer Induktivität herleiten.
-				\item die gespeicherte magnetische Energie mithilfe einer Formel berechnen.
-				\item den Energiegehalt eines Magnetfelds über Feldgrößen wie Flussdichte und Feldstärke bestimmen.
-				\item erläutern, wie aus der Energiedichte im Luftspalt die Kraft eines Elektromagneten entsteht.
+				\item die magnetische Energie sowohl über den Strom in einer Induktivität als auch über die elektromagnetischen Feldgrößen berechnen.
+				\item die Energie im Magnetfeld in Kraftdichte umwandeln und deren Bedeutung für die Berechnung der Anziehungskraft eines Elektromagneten erklären.
 			\end{itemize}
 		\end{Lernziele}
-\speech{MagnetischeEnergieLernziele}{1}{Im letzten Video habt ihr gelernt, dass eine Induktivität Energie in einem Magnetfeld speichern kann. In dieser Lerneinheit schauen wir uns genauer an, wie sich diese Energie berechnen lässt. Schritt für Schritt seht ihr, wie man die magnetische Energie in einer Spule bestimmt – einmal über den Strom und einmal über die magnetischen Feldgrößen. Zum Schluss erfahrt ihr, wie sich aus dieser gespeicherten Energie die Kraftwirkung eines Magnetfelds ableiten lässt.}
+\speech{MagnetischeEnergieLernziele}{1}{Im letzten Video haben wir gesehen, dass eine Induktivität Energie in einem Magnetfeld speichern kann. In dieser Lerneinheit schauen wir uns genauer an, wie sich diese Energie berechnen lässt, sowohl über den Strom in einer Induktivität als auch über die elektromagnetischen Feldgrößen. Anschließend betrachten wir die Energie im Magnetfeld und deren Bedeutung für die Berechnung der Anziehungskraft eines Elektromagneten.}
 \end{frame}
 }
 \begin{frame} \ftx{Energie im magnetischen Feld}
@@ -21,9 +19,6 @@
 	Der durch die Spule geleitete Strom wird nach Gleichung \ref{GLInduktivitaet2} linear ansteigen. Die dadurch zugeführte Energie erzeugt eine Flussdichte im Spulenkern.
 	Um die Energie zu berechnen, die der Spule zugeführt wird, kann die bekannte Gleichung der elektrischen Leistung \ref{GlArbeit} umgeformt werden und anschließend die Spannung durch Gleichung \ref{GLInduktivitaet2} ersetzt werden.
 	Als Ergebnis dieser Umformung erhält die Änderung der magnetischen Energie $\mathrm{d}W_{\mathrm{L}}$, welche aus der Multiplikation von Induktivität $L$, dem Strom durch die Induktität $i_{\mathrm{L}}$ und der Änderungsrate des Stroms durch die Induktität $\mathrm{d}i_{\mathrm{L}}$ errechnet (siehe Gleichung \ref{GlÄnderungmagnetischeEnergie}).
-
-
-	% \f{width=0.5\textwidth}{width=0.5\textwidth}{Spule}{Ringkernspule mit einer angelegten Spannung \label{AbbSpule1}{\tiny(Quelle: \cite[Abbildung 6.26]{Albach})}}
 
 		\fo{width=0.35\textwidth, alt={Das Bild zeigt einen ringförmigen Eisenkern, der von Drähten umwickelt ist. Rote Pfeile an den Drahtenden markieren die Richtung des elektrischen Stroms (I), der durch die Spule fließt. Der Eisenkern der Spule ist geschlossen und verfügt über keinen Luftspalt. Er hat eine mittlere Feldlinienlänge (lm), die sich innerhalb des ringförmigen Eisenkerns befindet.}}{width=0.35\textwidth}{Ringspule_MagFeld}{
 			\put(6, 53){\color{current}$I$}
@@ -45,14 +40,16 @@
 			\hfill
 			\begin{minipage}{0.54\textwidth}
 				\begin{eqa}
-					\onslide<1->{p &= \frac{\d W}{\d t} = u\cdot i \qquad u = L\cdot\frac{\d i}{\d t}}\\
-					\onslide<2->{\d W_{\mathrm{m}} &= u_{\mathrm{L}}\cdot i_{\mathrm{L}} \cdot \d t = L\cdot \frac{\d i}{\d t}\cdot i_{\mathrm{L}}\cdot \d t = L\cdot i_{\mathrm{L}} \cdot \d i_{\mathrm{L}}}
+					\onslide<1->{ u &= L\cdot\frac{\mathrm{d} i}{\mathrm{d} t}}\\
+      				\onslide<2->{ p &= u\cdot i \onslide<3->{= \frac{\mathrm{d} W}{\mathrm{d} t}}}\\
+      				\onslide<4->{ \d W_{\mathrm{m}}&=u_{\mathrm{L}}\cdot i_{\mathrm{L}} \cdot \d t \onslide<5->{= L\cdot \frac{\d i}{\d t}\cdot i_{\mathrm{L}}\cdot \d t} \onslide<6->{= L\cdot i_{\mathrm{L}} \cdot \d i_{\mathrm{L}}} }
 				\end{eqa}
 
 				\begin{eqa}
 				\begin{aligned}
-					\onslide<3->{W_{\mathrm{m}} &= L\cdot \int\limits_0^I i_{\mathrm{L}}\cdot \mathrm{d}i_{\mathrm{L}} = \frac{1}{2}\cdot L\cdot I^2 \\
-					&= \frac{1}{2}\cdot N \cdot \varPhi \cdot I}
+					\onslide<7->{W_{\mathrm{m}} &= L\cdot \int\limits_0^I i_{\mathrm{L}}\cdot \mathrm{d}i_{\mathrm{L}} \\}
+        			\onslide<8->{&= \tfrac{1}{2}\cdot L\cdot I^2 \\[0.3em]}
+       				\onslide<9->{&= \tfrac{1}{2}\,N\,\Phi\,I}
 				\end{aligned}
 				\end{eqa}
 			\end{minipage}
@@ -74,46 +71,25 @@
 	\nomenclature[FF]{$F$}{Kraft \nomunit{N}}
 	\nomenclature[FP]{$P$}{Wirkleistung \nomunit{W}}
 	\nomenclature[FW]{$W$}{Energie \nomunit{J}}
+
+	\speech{MagnetischeEnergieStrom}{1}{Wie wir zuvor gelernt haben, ergibt sich die Spannung an einer Induktivität aus dem Induktivitätswert L, multipliziert mit der zeitlichen Änderung des Stroms D-I durch D-T. Wenn wir an diese Induktivität eine konstante Spannung U anlegen, steigt der Strom in der Induktivität linear an. Durch diesen Anstieg führen wir der Induktivität eine Energie zu, die wir jetzt berechnen wollen. Dazu schauen wir uns als erstes einmal die elektrische Energie an, die wir der Spule zuführen, und das machen wir über die Leistung.}
+	\silence{2}
+	\speech{MagnetischeEnergieStrom}{2}{Die elektrische Leistung P ist bekanntlich das Produkt aus Spannung und Strom. Da wir die zeitlich abhängigen Momentan-Größen betrachten, schreiben wir in diesem Fall die beiden Variabeln auch klein.} 
+	\speech{MagnetischeEnergieStrom}{3}{Die Leistung kann aber auch als die zeitliche Ableitung der Energie definiert werden. Hier haben wir jetzt nicht die Energie, sondern die Arbeit. Arbeit ist ja nichts anderes als eine Energieänderung innerhalb einer gewissen Zeit. Wenn wir also die Arbeit bestimmen, die wir in diese Spule einfließen lassen, dann haben wir zwangsläufig am Ende den Energiegehalt dieser Spule. Folglich können wir die Energie formal auch als den Quotienten definieren aus der differenziellen Arbeit D-W (also der Menge an Arbeit, die in einem infinite-simalen Zeitintervall verrichtet wird) und der differenziellen Zeit D-T (also dem infinite-simalen Zeitintervall, über das die Arbeit verrichtet wird).}
+	\silence{2}
+	\speech{MagnetischeEnergieStrom}{4}{Im nächsten Schritt stellen wir die Formel nach der Arbeit um. Die Spannung und den Strom an der Induktivität benennen wir als U-L und I-L, weil sie direkt aus der Induktivität stammen. Das Zeitintervall D-T bleibt wie gehabt erhalten. Die differenzielle magnetische Arbeit bezeichnen wir als D-w-M, wobei das M für magnetisch steht.}
+	\silence{2}
+	\speech{MagnetischeEnergieStrom}{5}{Jetzt können wir in diese Gleichung für U-L die Formel für die Spannung der Induktivität von oben einsetzen. Dadurch erhalten wir für die Arbeit das Produkt aus Induktivität L, dem Quotienten aus D-I und D-T, dem Strom Ih-L sowie dem Zeitinterval D-T. Nun lassen sich die beiden Zeitintervalle D-T aus der Gleichung kürzen.}
+	\speech{MagnetischeEnergieStrom}{6}{Und wir erhalten für die Berechnung der magnetischen Arbeit die Formel: Induktivität L, mal Strom Ih-L, mal der zeitlichen Änderung des Stroms D-I-L. Das bedeutet, die Änderung der magnetischen Energie hängt direkt vom differenziellen Strom ab. Die zeitliche Änderung D-T spielt dabei keine Rolle mehr.}
+	\silence{2}
+	\speech{MagnetischeEnergieStrom}{7}{Nun haben wir die beiden Differential-Elemente D-W-M und D-I-L, die wir auflösen möchten, um die magnetische Arbeit W_M zu bestimmen. Das machen wir, indem wir das Differenzial auflösen. Ein Differenzial lösen wir bekanntlich über seine Umkehrform auf, nämlich über das Integral. Wenn wir nun beide Seiten der Gleichung integrieren, summieren wir alle zeitlich abhängigen Energieänderungen D-W-M auf und erhalten dadurch die gesamte magnetische Energie W-M. Auf der linken Seite ergibt das Integral über D-W-M also einfach W-M. Auf der rechten Seite haben wir L multipliziert mit dem Integral über I-L mal D-I-L. Die Induktivität L können wir dabei vor das Integral ziehen, denn sie bleibt während unserer Betrachtung konstant. Sie hängt nur von der Geometrie der Spule ab und ändert sich nicht, solange der Aufbau gleich bleibt. Es bleibt also das Integral über I-L mal D-I-L. Dieses Integral kennt ihr vermutlich aus der Schul-Mathematik. Es ist die Stammfunktion von I zum Quadrat durch zwei.} 
+	\silence{2}
+	\speech{MagnetischeEnergieStrom}{8}{Setzen wir das nun ein, ergibt sich für die magnetische Energie W-M die Gleichung ein halb mal dem Produkt aus der Induktivität L und dem Strom Ih-L zum Quadrat. Die magnetische Energie können wir auch anders ausdrücken. Im vorherigen Video haben wir uns schon die Gleichung zur Induktivität aus dem Produkt der Wicklungszahl N und dem magnetischen Fluss Phi geteilt durch den Strom Ih hergeleitet.}
+	\silence{2}
+	\speech{MagnetischeEnergieStrom}{9}{Wir können nun die Induktivität L in unserer Gleichung durch diese Formel ersetzen. Der Strom kürzt sich dabei teilweise heraus, sodass zur Bestimmung der magnetischen Energie das Produkt aus ein halb mal der Wicklungszahl N, dem magnetischen Fluss Fie sowie dem Strom Ih übrig bleibt. Das ist nun eine griffige Formel, die wir für die Berechnung der Energie, die in einem magnetischen Feld gespeichert ist, recht einfach verwenden können.}
+	\silence{2}
 \end{frame}
-\begin{frame}
-\v{
-	\begin{minipage}[t]{0.42\textwidth}
-    	\centering
-    	\fo{width=0.9\textwidth, alt={XX}}{width=0.9\textwidth}{Ringspule_MagFeld}{
-     		 \put(6, 53){\color{current}$I$}
-     		 \put(11, 1){\color{current}$I$}
-     		 \put(76, 15){\color{magnetfeld}$\ell_{\mathrm{m}}$}
-   		}{\bf Geschlossene Ringkernspule.}
-  	\end{minipage}%
- 		 \hfill
-  	\begin{minipage}[t]{0.55\textwidth}
-   		\begin{eqa}
-		\begin{aligned}
-     		\onslide<1->{ u &= L\cdot\frac{\mathrm{d} i}{\mathrm{d} t}}\\
-      		\onslide<2->{ p &= u\cdot i = \frac{\mathrm{d} W}{\mathrm{d} t}}\\
-      		\onslide<3->{ \mathrm{d} W_{\mathrm{m}} &= L\cdot i_{\mathrm{L}} \cdot \mathrm{d} i_{\mathrm{L}} }
-		\end{aligned}
-		\end{eqa}
-    \vspace{0.5em}
-		\begin{eqa}
-    	\begin{aligned}
-       	 	\onslide<4->{W_{\mathrm{m}} &= L\cdot \int\limits_0^I i_{\mathrm{L}}\cdot \mathrm{d}i_{\mathrm{L}}
-        	= \tfrac{1}{2}\,L\,I^2 \\[0.3em]
-       		\onslide<5->&= \tfrac{1}{2}\,N\,\Phi\,I}
-      	\end{aligned}
-		\end{eqa}
-  	\end{minipage}
-	\speech{MagnetischeEnergieStrom}{1}{Wie wir zuvor gelernt haben ergibt sich die Spannung an einer Induktivität aus dem Induktivitätswert L, multipliziert mit der zeitlichen Änderung des Stroms di nach dt. Wenn wir an diese Induktivität eine konstante Spannung U anlegen, steigt der Strom in der Induktivität linear an.}
-	\silence{2}
-	\speech{MagnetischeEnergieStrom}{2}{Durch diesen Anstieg führen wir der Induktivität eine Energie zu, die wir jetzt berechnen wollen. Dazu schauen wir uns als erstes einmal die elektrische Energie an, die der Spule zuführen, und das machen wir über die Leistung. Die elektrische Leistung p ist bekanntlich das Produkt aus Spannung u und Strom i. Da wir die Momentangrößen betrachten, schreiben wir die beiden Variabeln auch klein. Die Leistung kann aber auch als die zeitliche Ableitung der Energie definiert werden. Hier haben wir jetzt nicht die Energie geschrieben, sondern die Arbeit, aber Arbeit ist ja nichts anderes als eine Energieänderung. Wenn wir also die Arbeit bestimmen, die wir in diese Spule hineinstecken, dann haben wir zwangsläufig am Ende, den Energieinhalt in dieser Spule. Folglich können wir die Energie formal als d W nach dt definieren.}
-	\silence{2}
-	\speech{MagnetischeEnergieStrom}{3}{Im nächsten Schritt stellen wir die Formel nach d W um, und bringen das d t auf die andere Seite der Gleichung. So erhalten wir, d W ist gleich u mal i mal d t. In dieser Gleichung ergänzen wir nun ein paar Indizes. Wir betrachten hier speziell die magnetische Arbeit, die wir in die Induktivität hineinstecken. Wir bezeichnen die magnetische Arbeit mit W m, wobei das m für magnetisch steht. Die Spannung und der Strom an der Induktivität schreiben wir als U L und I L, weil sie direkt aus der Induktivität stammen. Das kleine Zeitintervall dt bleibt dabei erhalten – es ist einfach nur auf die andere Seite der Gleichung gewandert. Jetzt können wir in diese Gleichung die Formel für die Spannung der Induktivität, U L ist gleich L mal d I durch d t, einsetzen. Machen wir das, dann steht in der Gleichung jetzt: L mal d I nach d t, mal I L, mal d t. Wie wir sehen, lassen sich die beiden d t aus der Gleichung kürzen, und wir erhalten für die Berechnung der magnetischen Arbeit: d W m ist gleich die Induktivität L, mal i L, mal d i L. Das bedeutet, die kleine Änderung der magnetischen Energie hängt direkt von der kleinen Änderung des Stroms ab – die zeitliche Änderung d t spielt in dieser Beziehung keine Rolle mehr.}
-	\silence{2}
-	\speech{MagnetischeEnergieStrom}{4}{Nun haben wir die beiden differential Elemente d W m und d i l die wir auflösen möchten, um die magnetische Arbeit W m zu bestimmen. Das machen wir, indem wir das Differenzial auflösen. Und ein Differenzial lösen wir bekanntlich über seine Umkehrform auf – nämlich über das Integral. Wenn wir nun beide Seiten der Gleichung integrieren, summieren wir alle kleinen Energieänderungen d W m auf und erhalten dadurch die gesamte magnetische Energie W m. Auf der linken Seite ergibt das Integral über d W m also einfach W m. Auf der rechten Seite haben wir L mal das Integral über i L mal d i L. Die Induktivität L können wir dabei vor das Integral ziehen, denn sie bleibt während unserer Betrachtung konstant. Sie hängt nur von der Geometrie der Spule ab und ändert sich nicht, solange der Aufbau gleich bleibt. Es bleibt also das Integral über i L mal d i L. Dieses Integral kennen Sie sicher aus der Schulmathematik – es ist die Stammfunktion von i Quadrat durch zwei. Setzen wir das ein, ergibt sich W m ist gleich ein halb mal L mal i L zum Quadrat.}
-	\silence{2}
-	\speech{MagnetischeEnergieStrom}{5}{Das können wir auch auf eine andere Weise ausdrücken. Wir können nämlich das L in der Formel für die Energie durch die Gleichung für die Induktivität ersetzen. Diese haben wir uns im letzten Video schon hergeleitet. Sie lautet L ist gleich N mal Phi durch I. Das ist die Formel für einfache Anordnungen einer Induktivität – also N mal dem magnetischen Fluss, geteilt durch den Strom. Wenn wir diesen Ausdruck nun einsetzen, erhalten wir für die magnetische Energie W m ist gleich ein halb mal N mal Phi mal I. Das ist nun schlussendlich eine griffige Formel, die wir für die Berechnung der Energie, die in einem magnetischen Feld gespeichert ist, einfach verwenden können.}
-	}
-\end{frame}
+
 \begin{frame} \ftx{Energie im magnetischen Feld}
 	\s{Die magnetische Energie kann auch aus den Feldgrößen durch Integration mit der magnetischen Flussdichte errechnet werden:
 	\begin{equation}
