@@ -215,7 +215,7 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 
 \speech{02_Arbeit3}{2}{ %seed imer noch nicht perfekt, aber schon ok
  W-EL ist gleich U mal I mal T. Auch hier ist die Einheit wieder Joule. Ein Joule ist gleich eine Wattsekunde.}
-\speech{02_Arbeit3}{3}{Mekre also das natürlich genauso gilt, dass für das Verrichten der Arbeit immer eine Zeitdauer benötigt wird. Energie können wir speichern, die ist immer da. Wenn wir aber wissen wollen, wie viel Arbeit verrichtet wird, brauchen wir eine gewisse Zeit. Der Momentanzustand ist immer der Zustand der Energieverteilung – wo also wie viel Energie im System gespeichert ist. Wenn wir elektrische Arbeit verrichten wollen, dann brauchen wir immer einen Stromfluss. Wenn wir keinen Stromfluss haben, wird keine Arbeit verrichtet. Genauso übrigens, wenn keine Spannung anliegt.%Es nur dann wird Arbeit verrichtet. %auskommentiert, da klingt nicht sinnvoll
+\speech{02_Arbeit3}{3}{Mekre also das natürlich genauso gilt, dass für das Verrichten der Arbeit immer eine Zeitdauer benötigt wird. Energie können wir speichern, die ist immer da. Wenn wir aber wissen wollen, wie viel Arbeit verrichtet wird, brauchen wir eine gewisse Zeit. Der Momentanzustand ist immer der Zustand der Energieverteilung, wo also wie viel Energie im System gespeichert ist. Wenn wir elektrische Arbeit verrichten wollen, dann brauchen wir immer einen Stromfluss. Wenn wir keinen Stromfluss haben, wird keine Arbeit verrichtet. Genauso übrigens, wenn keine Spannung anliegt.
 }
 \end{frame}
 
@@ -265,7 +265,6 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 	Die Beträge zweier äquidistanter Positionsänderungen in entgegengesetzen Richtungen entlang der elektrischen Feldlinien sind identisch.
 	Diese Eigenschaften führen dazu, dass die Positionsänderung einer Ladung $Q$ von einem Punkt $P_\mathrm{1}$ zu einem Punkt $P_\mathrm{2}$ betragsmäßig gleich einer beliebig anderen Strecke von $P_\mathrm{2}$ zu $P_\mathrm{1}$ entspricht.
 
-	
 
 	\begin{equation}
 		\left| W_\mathrm{el} \right| = \left| -Q \cdot \int_{s_\mathrm{1}} \vec{E} \cdot \mathrm{d}\vec{s}\; \right| = \left| -Q \cdot \int_{s_\mathrm{2}}\vec{E} \cdot \mathrm{d}\vec{s}\; \right| %= 
@@ -292,7 +291,7 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 Das Ergebnis des Ringintegrals verdeutlicht ein fundamentales Prinzip der Physik: In einem statischen Feld ist die über einen geschlossenen Weg verrichtete Arbeit immer Null. Dies bestätigt die Wegunabhängigkeit der Arbeit in diesen Feldern und zeigt, dass die verrichtete Arbeit ausschließlich von den Anfangs- und Endpunkten abhängt und nicht vom spezifischen Weg zwischen diesen Punkten. 
 
 \begin{Merksatz}{Ringintegral}  
-Das Ringintegral einer Ladung in einem statischen elektrischen Feld ist unabhängig von der Ladungsmenge immer gleich Null.
+Das geschlossene Ringintegral $ \displaystyle \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} $ ist gleich Null.
 \end{Merksatz}
 		  
 	% Wie im Abschnitt über elektrische Felder erklärt wird, beeinflussen sich zwei Ladungen Q gegenseitig, 
@@ -318,15 +317,18 @@ Das Ringintegral einer Ladung in einem statischen elektrischen Feld ist unabhän
 		\end{tikzpicture}
 		\vspace{-8.5cm} 
 	\begin{Merksatz}{Ringintegral}  
-	Das Ringintegral einer Ladung in einem statischen elektrischen Feld ist unabhängig von der Ladungsmenge immer gleich Null.
+	
+	Das geschlossene Ringintegral $ \displaystyle \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} $ ist gleich Null.
 	\end{Merksatz}}
 
 }
 \end{overlayarea}
 	\speech{02_Arbeit4}{1}{
-	Betrachten wir doch das Wegintegral der elektrischen Arbeit einmal genauer. Wir bewegen eine Ladung Q auf zwei unterschiedlichen Kurven. Und die Kurven seien einmal die Kurve S1, die von Punkt P1 zum Punkt P2 geht. Anschließend betrachten wir das Wegintegral vom Punkt P2 zum Punkt P1. Das ist die Kurve S2. [...] Genau dasselbe können wir uns wieder am Beispiel der potenziellen Energie begreiflich machen. Wenn wir in der Achterbahn sitzen und wir starten, dann kommen wir genau auf derselben Höhe wieder an. Abzüglich der Reibungsverluste. Genauso ist es im elektrischen Feld.}
-	\speech{02Arbeit4}{2}{Merke also dass das Ringintegral einer Ladung welche sich in einem statischen elektrischen Feld befindet ist
-unabhängig von der Ladungsmenge immer gleich Null.}
+	Schauen wir uns nun an, was passiert, wenn wir eine Ladung im elektrischen Feld auf einer beliebigen Kurve bewegen und welche Arbeit wird dann verrichtet? Dass Arbeit verrichtet werden muss, wissen wir aus der Tatsache, dass hier eine Kraft auf die Ladung wirkt. Stellen wir uns vor, wir bewegen uns vom Punkt P1 über den Punkt P2 wieder zurück zum Punkt P1. Was passiert dann? Vergleichen wir das mit Höhenlinien und der potenziellen Energie: Solange die Höhe gleich bleibt, bleibt auch die potenzielle Energie gleich - völlig unabhängig vom Weg. Genauso ist es im elektrischen Feld.
+	Wir können die elektrische Arbeit aufteilen in die Strecke S1 von P1 nach P2 und in die Strecke S2 von P2 zurück nach P1. Mathematisch ergibt sich daraus ein sogenanntes geschlossenes Ringintegral, gekennzeichnet durch den Kreis im Integralzeichen. Die insgesamt verrichtete elektrische Arbeit ist dann null.
+	Formeltechnisch gilt: Die elektrische Arbeit ist gleich der Ladungsmenge Q multipliziert mit dem Wegintegral E mal ds. Daraus folgt unmittelbar, dass das geschlossene Wegintegral E mal ds immer gleich null sein muss. Zumindest für das elektrostatische Feld gilt diese Regel. Sie ist eine ganz elementare Grundlage der Elektrodynamik und später auch für die Netzwerktheorie in der Elektrotechnik.
+}
+	\speech{02Arbeit4}{2}{Wir sehen also: Das geschlossene Ringintegral E mal ds ist immer gleich null. Das steht in direktem Zusammenhang mit der verrichteten Arbeit im elektrostatischen Feld.}
 \end{frame}
 
 	%%%%%%%%%%%%%%%% ENDE des Abschnittes ARBEIT %%%%%%%%%%%%%%%%%%%%%%%

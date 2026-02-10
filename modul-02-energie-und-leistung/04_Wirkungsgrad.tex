@@ -23,7 +23,7 @@ mit der ein System Energie umwandelt. Am Beispiel eines Elektromotors zeigt Abbi
 	\end{figure}}
 \b{
 	\begin{itemize}
-		\item Der Wirkungsgrad beschreibt das Verhältnis von abgegebener zu zugeführter Leistung in einem System und ist ein Maß für die Effizienz
+		\item Der Wirkungsgrad $ \eta $ beschreibt das Verhältnis von abgegebener zu zugeführter Leistung in einem System und ist ein Maß für die Effizienz
 	\end{itemize}\vspace*{-0.5cm}
     \begin{figure}[H]
 		\centering
@@ -44,19 +44,19 @@ mit der ein System Energie umwandelt. Am Beispiel eines Elektromotors zeigt Abbi
 \subsection{Berechnung des Wirkungsgrades}
 
 \s{
-Der Wirkungsgrad wird typischerweise als Prozentsatz ausgedrückt. Ein Wirkungsgrad von 100 \%
+Der Wirkungsgrad wird typischerweise als Prozentsatz ausgedrückt. Ein Wirkungsgrad von 100\,\%
 bedeutet, dass die gesamte zugeführte Energie effektiv in Nutzenergie umgewandelt wird. 
 Dies ist jedoch in der Praxis aufgrund von Verlusten, meist in Form von Wärme, Reibung oder Schall, nicht erreichbar.
 Mathematisch wird der Wirkungsgrad $\eta$ (eta) wie folgt definiert:
 
 \begin{equation}
-	\eta = \frac{P_\mathrm{{ab}}}{P_\mathrm{{zu}}} \cdot 100 \%
+	\eta = \frac{P_\mathrm{{ab}}}{P_\mathrm{{zu}}} \cdot 100\,\%
 \end{equation}}
 
 \b{
 	% \only<2->{\vspace*{-1cm}\begin{Merksatz}{Wirkungsgrad}
 	% 	\begin{itemize}
-	% 		\item \( \eta = \frac{P_\mathrm{{ab}}}{P_\mathrm{{zu}}} \cdot 100 \% \)
+	% 			\item \( \eta = \frac{P_\mathrm{ab}}{P_\mathrm{zu}} \cdot 100\,\%.\)
 	% 	\end{itemize}
 	% \end{Merksatz}}	
 	\uncover<2->{\vspace*{-1cm}
@@ -66,24 +66,25 @@ Mathematisch wird der Wirkungsgrad $\eta$ (eta) wie folgt definiert:
 			\end{itemize}
 		\end{Merksatz}
 }}
+\speech{04_Wirkungsgrad1}{1}{Betrachten wir nun ein elektrisches System und fragen uns, wie viel der zugeführten Leistung tatsächlich als Nutzleistung abgegeben wird. Damit kommen wir zum Wirkungsgrad Eta, der das Verhältnis von abgegebener zu zugeführter Leistung beschreibt und für die Effizienz von zentraler Bedeutung ist. Je höher der Wirkungsgrad, desto effizienter ist das System. Auf der Folie sehen wir als Beispiel einen Elektromotor, also eine Umwandlung von elektrischer in mechanische Leistung. Der Motor wandelt die zugeführte Leistung nicht vollständig in mechanische Leistung um, sondern ein Teil wird zu Wärme. Diese Wärme bezeichnen wir als Verluste.}
+\speech{04_Wirkungsgrad1}{2}{Merke: Eta ist abgegebene Leistung geteilt durch zugeführte Leistung, mal einhundert Prozent.}
+
 \end{frame}
 
 %\begin{frame}	
 \ftx{Der Wirkungsgrad}
 \s{
-	Im realen Fall wird der Wirkungsgrad nie 100 \% betragen, da eine Energiewandlung grundsätzlich mit Verlusten behaftet ist.
+	Im realen Fall wird der Wirkungsgrad nie 100\,\% betragen, da eine Energiewandlung grundsätzlich mit Verlusten behaftet ist.
 	Um die Verluste möglichst gering zu halten ist es wichtig sich der Verlustmechanismen bewusst zu werden und diese nach Möglichkeit zu reduzieren.
 	Der nachfolgende Abschnitt erläutert das Prinzip der Verlustmechanismen anhand eines Leuchtmittels.
 }
 
 \s{
-
-
 \subsection{Verlustmechanismen eines Leuchtmittels}
 
 Ein Paradebeispiel für die Relevanz des Wirkungsgrades ist die klassische Glühlampe. Sie erzeugt Licht, indem
 Strom durch einen Draht fließt, der sich dabei so stark erhitzt, dass er zu leuchten beginnt.
-Dabei werden weniger als 5 \% der eingesetzten Energie in Licht umgewandelt. Mehr als 95 \% der Energie werden in
+Dabei werden weniger als 5\,\% der eingesetzten Energie in Licht umgewandelt. Mehr als 95\,\% der Energie werden in
 Wärme umgewandelt. Aufgrund der schlechten Effizienz wurden Glühlampen seit 2009 in der EU schrittweise verboten. 
 % Abbildung \ref{fig:Energieumwandlung Glühlampe und Energiesparlampe} zeigt links eine klassische Glühlampe und rechts eine Energiesparlampe.
 
@@ -183,6 +184,36 @@ P_\mathrm{v} &= P_\mathrm{zu} - P_\mathrm{ab}
 \end{aligned}
 \]
 }}
+
+\speech{04_Wirkungsgrad2}{1}{
+Ein anderes Beispiel aus der Elektrotechnik, wo der Wirkungsgrad immer auch eine Rolle spielt, sind Leuchtmittel und das Leuchtmittel, was viele von uns wahrscheinlich auch noch als Standardleuchtmittel in immer geringerem Maße kennen, ist die Glühbirne.
+
+Und der Hintergrund dafür ist relativ einfach. In so einer Glühbirne werden je nach Technologie zwischen 99 und im besten Fall 95 Prozent der zugeführten Leistung tatsächlich in Wärme umgewandelt. Und diese Wärme wird dann von der Lampe in die Umgebung abgegeben, was bei vielen Leuchtmitteln tatsächlich eher unproblematisch ist.
+
+Nichtsdestotrotz, wenn man sich überlegt, so eine 100-Watt-Glühbirne, die setzt dann 95 Watt in Wärme um und nur 5 Watt in das, was wir eigentlich haben wollten, nämlich Licht. Und das ist auch der Grund, warum man die Nutzung von Glühbirnen als Leuchtmittel immer weiter einschränkt bzw. sogar verbietet.
+
+Also das neue Inverkehrbringen dieser Leuchtmittel ist nur noch mit wenigen Ausnahmen zulässig. Warum? Weil eigentlich müsste das Ding nicht Leuchtmittel heißen, sondern elektrische Heizung mit Leuchtfunktion.}
+
+\speech{04_Wirkungsgrad2}{2}{Das ist hier auch einmal in der Leistungsbilanz dargestellt. Wir haben hier eine Glühlampe mit 5 Prozent Wirkungsgrad angenommen. Das wäre schon eine sehr optimale Betrachtung, die maximal für gute Halogenbirnen gilt.
+
+Und dann kann man die Verlustleistung zum Beispiel ausrechnen, indem man P_zu minus P_ab berechnet, wobei P_ab nichts anderes als P_zu mal dem Wirkungsgrad ist.
+
+Und das wären jetzt hier im Fall von 100 Watt halt:
+P_ab = 100 Watt mal 5 Prozent = 5 Watt.
+
+Das heißt, wir hätten eine Verlustleistung von:
+P_V = 100 Watt minus 5 Watt = 95 Watt.
+
+Die Verlustleistung von elektrischen Geräten spielt ganz häufig eine ja doch sehr wesentliche Rolle, denn in der Regel tritt diese Verlustleistung immer als Wärme auf und das Abführen der Wärme kann mitunter problematisch sein. Also klar, wir wollen auf der einen Seite sowieso immer einen möglichst hohen Wirkungsgrad haben, damit wir effizient mit unseren Ressourcen umgehen.
+
+Nehmen wir mal das Beispiel Elektromobilität. Da haben wir einen gewissen Energiegehalt im Akku gespeichert und wollen möglichst viele Kilometer fahren. Also wäre es sinnvoll, möglichst viel der elektrischen Energie tatsächlich in translatorische Energie zu wandeln. Das ist ersichtlich, aber im Umkehrschluss führt es auch tatsächlich zu technischen Problemen, wenn der Wirkungsgrad der Inverter, wo die elektrische Energie umgewandelt wird von einem Gleichstrom in einen Drehstrom, wenn da die Wirkungsgrade nicht im Bereich 98 bis 99 Prozent liegen würden, hätten wir tatsächlich ein schwerwiegendes thermisches Problem.
+
+Denn die Leistung elektrischer Art, die abgerufen werden, die liegen häufig dann auch im Bereich 100 Kilowatt oder höher. Das heißt, bei 2 Prozent Verlusten würden wir immer noch 2 Kilowatt Wärme produzieren. Das ist schon sportlich. Wenn wir jetzt Wirkungsgrade hätten nur von 90 Prozent, dann wären es schon 10 Kilowatt Wärme.
+
+Und nur damit man das vernünftig einordnen kann: 10 Kilowatt Wärme, das entspricht der Heizleistung einer Heizung für ein gut gedämmtes Einfamilienhaus oder für eine relativ großzügige Etagenwohnung mit 100 Quadratmetern im tiefsten Winter. Dass die Wärmeabfuhr im Auto zu realisieren schwierig sein könnte, wird, glaube ich, ersichtlich.
+
+Damit sind wir am Ende des Kapitels Energie und Leistung angekommen und im Folgenden beschäftigen wir uns dann näher mit den Elektrischen Bauelementen.}
+
 \end{frame}
 
 % Beschriftung der Komponenten.
