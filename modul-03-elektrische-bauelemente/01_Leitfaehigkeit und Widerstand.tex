@@ -212,14 +212,18 @@
 		Durch Einsetzen der aus Modul 1 bekannten Formeln der Driftgeschwindigkeit $v_{\mathrm{el}}$ und der Raumladungsdichte $\rho$ in die Formel 4,
 		ergibt sich die Formel 5 für die Stromdichte.
 
-		\begin{equation}
-			v_{\mathrm{el}}=\frac{\Delta x}{\Delta t}
-		\end{equation}
+		\begin{align}
+			v_{\mathrm{el}} & = \frac{\Delta x}{\Delta t}                               \\
+			\\
+			\rho            & = \frac{\Delta Q}{\Delta V}                               \\
+			\\
+			J               & = \frac{\Delta Q \cdot \Delta x}{\Delta t \cdot \Delta V}\\
+			\only<2->{                                                         
+			
+			               J & = v_{\mathrm{el}} \cdot \rho }
+		\end{align}
 
-		\begin{equation}
-			\rho = \frac{\Delta Q}{\Delta V}
-		\end{equation}
-		\only<2->{
+		\only<3->{
 			\begin{enumerate}
 				\setcounter{enumi}{4} % startet bei 5
 				\centering
