@@ -25,35 +25,35 @@
 		\end{Lernziele}
 	}
 	\speech{01_Leitfaehigkeit_und_Widerstand1}{1}{
-		In dem nun folgenden Abschnitt des Moduls werden wir uns mit der Leitfähigkeit und dem Widerstand beschäftigen. 
-		Du solltest am Ende dieses Abschnittes den elektrischen Widerstand als Bauelement kennen und auch seine Eigenschaften. 
-		Du kennst unterschiedliche Bauteilausführungen von Widerstand und können diese auch erläutern. 
-		Ferner ist es Ihnen möglich, anhand des spezifischen Widerstandes oder des spezifischen Leitwertes Berechnungen durchführen zu können, z.B. den Widerstand einer Anordnung berechnen. 
+		In dem nun folgenden Abschnitt des Moduls werden wir uns mit der Leitfähigkeit und dem Widerstand beschäftigen.
+		Du solltest am Ende dieses Abschnittes den elektrischen Widerstand als Bauelement kennen und auch seine Eigenschaften.
+		Du kennst unterschiedliche Bauteilausführungen von Widerständen und kannst diese auch erläutern.
+		Ferner ist es Ihnen möglich, anhand des spezifischen Widerstandes oder des spezifischen Leitwertes Berechnungen durchführen zu können, z.B. den Widerstand einer Anordnung berechnen.
 		Und du kannst die Unterschiede der Leitfähigkeit in verschiedenen Materialien basierend auf der atomaren Struktur und der Temperatur analysieren.
 	}
-	
+
 \end{frame}
 \begin{frame}
 	\ftx{Leitfähigkeit und Widerstand}
 	\s{% nur im Skript
-		Die Leitfähigkeit oder auch der Leitwert $G$ beschreibt, wie der Name schon impliziert, die Fähigkeit eines Materials elektrischen Strom zu leiten. 
-		Je größer der Wert, desto besser leitet ein Material, sprich, umso einfacher können sich die Ladungsträger im Material bewegen. 
-		Diese Eigenschaft basiert auf den Experimenten eines deutschen Experimentalphysikers Georg Simon Ohm anfang des 19. Jahrhunderts, 
-		in welchen er herausfand, dass sich der Strom proportional zur angelegten Spannung verhält. 
-		Der Kehrwert des Leitwertes ist der heute gebräuchlichere ohm'sche Widerstand $R$. 
+		Die Leitfähigkeit oder auch der Leitwert $G$ beschreibt, wie der Name schon impliziert, die Fähigkeit eines Materials elektrischen Strom zu leiten.
+		Je größer der Wert, desto besser leitet ein Material, sprich, umso einfacher können sich die Ladungsträger im Material bewegen.
+		Diese Eigenschaft basiert auf den Experimenten eines deutschen Experimentalphysikers Georg Simon Ohm anfang des 19. Jahrhunderts,
+		in welchen er herausfand, dass sich der Strom proportional zur angelegten Spannung verhält.
+		Der Kehrwert des Leitwertes ist der heute gebräuchlichere ohm'sche Widerstand $R$.
 		Der Leitwert $G$ hat die Einheit Siemens (S), der ohmsche Widerstand die Einheit Ohm ($\Omega$).
 	}% nur im Skript
-	
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Formeln - Ohm´sches Gesetz %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
+
 	% \begin{equation}
 	% 	I = G \cdot U 
 	% \end{equation}
-	
+
 	% \begin{equation}
 	% 	U = R \cdot I 
 	% \end{equation}
-	
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende: Formeln - Ohm´sches Gesetz %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Abbildung Widerstände %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\b{
@@ -61,7 +61,7 @@
 			\item Unterschiedliche Bauteilausführungen von Widerständen
 		\end{itemize}
 	}
-	
+
 	\begin{figure}[H]
 		\centering
 		\b{\includegraphics[width=0.45\textwidth]{wi}}
@@ -70,42 +70,41 @@
 				wie Widerstandswert, Belastbarkeit und Temperaturkoeffizient.}
 			\label{fig:Widerstands Arten}}
 	\end{figure}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand2}{1}{
-		Auf dem hier dargestellten Foto, das ist eigentlich noch ein Ausschnitt aus dem anfänglichen Foto, siehst du unterschiedliche Bauteilausführungen von Widerständen. 
-		Fangen wir erstmal mit dem Widerständen in der rechten Hälfte des Bildes an. Dort siehst du unterschiedliche Ausführungen eines sogenannten Feed-Through-Elements. 
-		Diese Bauelemente, da werden die Beinchen, die Drähte, die Anschlüsse geknickt und dann durch Bohrungen in der Platine durchgesteckt. 
-		Deshalb Feed-Through-Bauelement und dann an der Unterseite der Platine verlötet. 
-		Das heißt, der elektrische Kontakt dieses Bauelementes ist eigentlich genau auf der anderen Platinenseite wie das Bauelement selber. 
-		Das ist zum einen relativ aufwendig in der automatischen Bestickung und zum anderen hat das auch viele Nachteile, 
-		was parasitäre Effekte angeht für das Bauelement. Denn wir werden im späteren Verlauf sehen, dass die Zuleitung durch die Eigenschaften des Bauelementes deutlich beeinflusst. 
-		Deshalb werden heute sehr häufig die SMD-Widerstände eingesetzt. Das sind die ganz kleinen Chips, die du im linken unteren Teil siehst. 
-		Die gibt es in sehr unterschiedlichen Ausführungen, unterschiedlich groß, je nachdem für welches Raster du die Platine entwickelt hast. 
-		SMD steht für Surface Mounted Device. Das heißt, diese Teile werden auf der Seite der Platine montiert und kontaktiert, wo auch die Leiterbahn ist. 
-		Das heißt, sie werden direkt auf die Leiterbahn gelötet und haben dadurch den Vorteil, dass sie weniger parasitäre Effekte zeigen. 
-		Nachteilig ist, dass sie meistens nicht die großen Leistungen aufnehmen können. 
-		Wenn man sich überlegt, das werden wir im späteren Verlauf sehen, dass die Leistung, die ein Widerstand aufnimmt, in Wärme gewandelt wird, 
-		ist irgendwie ersichtlich, dass zum Beispiel der zweite Widerstand von links, der rote, deutlich mehr Leistung aufnehmen kann als der kleine Chip ganz unten, 
-		schon alleine vom Volumen und der Masse. Oben links, das Bauteil, wo auch Mechanik-Elemente drin sind, das nennt man Potentiometer. 
-		Und das ist im Prinzip ein Widerstand mit einem festen Wert, aber sie haben einen sogenannten Mittelabgriff. 
-		Wenn wir an der rechten Seite des Bauelementes sehen oder schauen, dann sieht man dort drei Abgriffe. 
-		Um den vollen Widerstandswert, zum Beispiel 10 Kiloohm, den würdest du erhalten, wenn du am oberen Kontakt und am unteren Kontakt kontaktierst. 
-		Und abhängig davon, wie du den Drehregler regelst, kannst du dann am Mittelabgriff den geteilten Widerstand abgreifen. 
-		Also zum Beispiel zwischen der mittleren Klemme und der oberen Klemme 7 Kiloohm und der mittleren Klemme und der unteren Klemme dann 3 Kiloohm, 
+		Auf dem hier dargestellten Foto, das ist eigentlich noch ein Ausschnitt aus dem anfänglichen Foto, siehst du unterschiedliche Bauteilausführungen von Widerständen.
+		Fangen wir erstmal mit den Widerständen in der rechten Hälfte des Bildes an. Dort siehst du unterschiedliche Ausführungen eines sogenannten Through-Hole Element, kurz T-H-T Bauteil.
+		Diese Bauelemente, da werden die Beinchen, deren Anschlüsse geknickt und dann durch Bohrungen in der Platine durchgesteckt und dann an der Unterseite der Platine verlötet.
+		Das heißt, der elektrische Kontakt dieses Bauelementes ist eigentlich genau auf der anderen Platinenseite wie das Bauelement selber.
+		Das ist zum einen relativ aufwendig in der automatischen Bestückung und zum anderen hat das auch viele Nachteile,
+		was parasitäre Effekte angeht für das Bauelement. Denn wir werden im späteren Verlauf sehen, dass die Zuleitung durch die Eigenschaften des Bauelementes deutlich beeinflusst.
+		Deshalb werden heute sehr häufig die SMD-Widerstände eingesetzt. Das sind die ganz kleinen Chips, die du im linken unteren Teil siehst.
+		Die gibt es in sehr unterschiedlichen Ausführungen, unterschiedlich groß, je nachdem für welches Raster du die Platine entwickelt hast.
+		SMD steht für Surface Mounted Device. Das heißt, diese Teile werden auf der Seite der Platine montiert und kontaktiert, wo auch die Leiterbahn ist.
+		Das heißt, sie werden direkt auf die Leiterbahn gelötet und haben dadurch den Vorteil, dass sie weniger parasitäre Effekte zeigen.
+		Nachteilig ist, dass sie meistens nicht die großen Leistungen aufnehmen können.
+		Wenn man sich überlegt, das werden wir im späteren Verlauf sehen, dass die Leistung, die ein Widerstand aufnimmt, in Wärme gewandelt wird,
+		ist irgendwie ersichtlich, dass zum Beispiel der zweite Widerstand von links, der rote, deutlich mehr Leistung aufnehmen kann als der kleine Chip ganz unten,
+		schon alleine vom Volumen und der Masse. Oben links, das Bauteil, wo auch Mechanik-Elemente drin ist, das nennt man Potentiometer.
+		Und das ist im Prinzip ein Widerstand mit einem festen Wert, aber sie haben einen sogenannten Mittelabgriff.
+		Wenn wir an der rechten Seite des Bauelementes sehen oder schauen, dann sieht man dort drei Abgriffe.
+		Um den vollen Widerstandswert, zum Beispiel 10 Kiloohm, den würdest du erhalten, wenn du am oberen Kontakt und am unteren Kontakt kontaktierst.
+		Und abhängig davon, wie du den Drehregler regelst, kannst du dann am Mittelabgriff den geteilten Widerstand abgreifen.
+		Also zum Beispiel zwischen der mittleren Klemme und der oberen Klemme 7 Kiloohm und der mittleren Klemme und der unteren Klemme dann 3 Kiloohm,
 		sodass in Summe wieder 10 Kiloohm vorhanden sind.
 	}
-	
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Abbildung Widerstände %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	
+
+
 	\s{
-		In der Schaltungsentwicklung wird die physikalische Eigenschaft des ohm'schen Widerstandes genutzt, um die gewünschten Funktionen zu realisieren. 
-		Die Abbildung \ref{fig:Widerstands Arten} zeigt verschiedene Ausführungen des Bauelements elektrischer Widerstand. Unabhängig von der Ausführung, 
+		In der Schaltungsentwicklung wird die physikalische Eigenschaft des ohm'schen Widerstandes genutzt, um die gewünschten Funktionen zu realisieren.
+		Die Abbildung \ref{fig:Widerstands Arten} zeigt verschiedene Ausführungen des Bauelements elektrischer Widerstand. Unabhängig von der Ausführung,
 		basieren alle ohm'schen Widerstände auf den grundlegenden Prinzipien der Physik, auf welche im Folgenden näher eingegangen wird.
-		
-		
+
+
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Lernziele %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		
+
 		\begin{Lernziele}{Leitfähigkeit und Widerstand}
 			Die Studierenden
 			\begin{itemize}
@@ -116,8 +115,8 @@
 			\end{itemize}
 		\end{Lernziele}
 	}
-	
-	
+
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Lernziele %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -128,126 +127,126 @@
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
 	\b{
-	Aus Modul 1 ist die Definition der Stromdichte $J$ und des Stromes $I$ bekannt.
-	Durch Einsetzen der Formeln 2 und 3 in Formel 1 ergibt sich die Formel 4:
-	\vspace*{0.5cm}
-	% 	\begin{equation}
-	% 		J=\frac{\Delta I}{\Delta A}
-	% 	\end{equation}
-	
-	% 	\begin{equation}
-	% 		I = \frac{\Delta Q}{\Delta t}
-	% 	\end{equation}
-	
-	% 	\begin{equation}
-	% 		\Delta V=\Delta A \cdot \Delta x \Leftrightarrow \Delta A = \frac{\Delta V}{\Delta x}
-	% 	\end{equation}
-	% \only<2->{
-	% 	\begin{equation}
-	% 		J=\frac{\Delta Q \cdot \Delta x }{\Delta t \cdot \Delta V}
-	% 	\end{equation}}
+		Aus Modul 1 ist die Definition der Stromdichte $J$ und des Stromes $I$ bekannt.
+		Durch Einsetzen der Formeln 2 und 3 in Formel 1 ergibt sich die Formel 4:
+		\vspace*{0.5cm}
+		% 	\begin{equation}
+		% 		J=\frac{\Delta I}{\Delta A}
+		% 	\end{equation}
 
-	\begin{enumerate}
-	\centering
-    \item \( J = \dfrac{\Delta I}{\Delta A} \)
-    \vspace*{0.5cm}
-    \only<2->{\item \( I = \dfrac{\Delta Q}{\Delta t} \)
-    \item \( \Delta V = \Delta A \cdot \Delta x \quad \Leftrightarrow \quad \Delta A = \dfrac{\Delta V}{\Delta x} \)}
-    \vspace*{0.5cm}
-    \only<3->{ \item \( J = \dfrac{\Delta Q \cdot \Delta x}{\Delta t \cdot \Delta V} \)}
-	
-	\end{enumerate}
-	
-		
+		% 	\begin{equation}
+		% 		I = \frac{\Delta Q}{\Delta t}
+		% 	\end{equation}
+
+		% 	\begin{equation}
+		% 		\Delta V=\Delta A \cdot \Delta x \Leftrightarrow \Delta A = \frac{\Delta V}{\Delta x}
+		% 	\end{equation}
+		% \only<2->{
+		% 	\begin{equation}
+		% 		J=\frac{\Delta Q \cdot \Delta x }{\Delta t \cdot \Delta V}
+		% 	\end{equation}}
+
+		\begin{enumerate}
+			\centering
+			\item \( J = \dfrac{\Delta I}{\Delta A} \)
+			      \vspace*{0.5cm}
+			      \only<2->{\item \( I = \dfrac{\Delta Q}{\Delta t} \)
+			\item \( \Delta V = \Delta A \cdot \Delta x \quad \Leftrightarrow \quad \Delta A = \dfrac{\Delta V}{\Delta x} \)}
+			      \vspace*{0.5cm}
+			      \only<3->{ \item \( J = \dfrac{\Delta Q \cdot \Delta x}{\Delta t \cdot \Delta V} \)}
+
+		\end{enumerate}
+
+
 	}
 	\s{
-	Aus Modul 1 ist die Definition der Stromdichte $J$ und des Stromes $I$ bekannt.
-	Durch Einsetzen der Formeln \ref{eq:dQ/dt} und \ref{eq:dV/dx} in Formel \ref{eq:dI/dA} ergibt sich die Formel \ref{eq:J=.}:
-	
+		Aus Modul 1 ist die Definition der Stromdichte $J$ und des Stromes $I$ bekannt.
+		Durch Einsetzen der Formeln \ref{eq:dQ/dt} und \ref{eq:dV/dx} in Formel \ref{eq:dI/dA} ergibt sich die Formel \ref{eq:J=.}:
+
 		\begin{equation}\label{eq:dI/dA}
 			J=\frac{\Delta I}{\Delta A}
 		\end{equation}
-	
+
 		\begin{equation}\label{eq:dQ/dt}
 			I = \frac{\Delta Q}{\Delta t}
 		\end{equation}
-	
+
 		\begin{equation}\label{eq:dV/dx}
 			\Delta V=\Delta A \cdot \Delta x \Leftrightarrow \Delta A = \frac{\Delta V}{\Delta x}
 		\end{equation}
-	
+
 		\begin{equation}\label{eq:J=.}
 			J=\frac{\Delta Q \cdot \Delta x }{\Delta t \cdot \Delta V}
 		\end{equation}
 
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand3}{1}{
-		Wir blicken noch einmal zurück auf das Modul 1. Dort haben wir die Stromdichte J definiert und auch den Strom I. Wir hatten den Strom I ja beschrieben als die zeitliche Varianz der Ladungsgänge Q und die Stromdichte J ergibt sich dann eigentlich aus der Fläche, die durchströmt wird.
+		Wir blicken noch einmal zurück auf das Modul 1. Dort haben wir die Stromdichte J definiert und auch den Strom I. Wir hatten den Strom I ja beschrieben als die zeitliche Varianz der Ladungsmenge Q und die Stromdichte J ergibt sich dann eigentlich aus der Fläche, die durchströmt wird.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand3}{2}{
 		Wenn wir das jetzt formelmäßig zusammenfassen, dann kommen wir auf J ist gleich Delta I durch Delta A. Das geht so in der Form immer nur für konstante Querschnitte und für konstante Ströme.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand3}{3}{
 		Wir kennen aus dem Modul noch, I ist gleich Delta Q durch Delta T, also die zeitliche Varianz der Ladungsmenge.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand3}{4}{
 		Wir können auch ausrechnen, dass eine Veränderung im Volumen Delta V nichts anderes ist als die Veränderung der Fläche Delta A mal der Veränderung der Länge Delta X. Das kann umgestellt werden zu Delta A ist gleich Delta V durch Delta X.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand3}{5}{
 		Daraus ergibt sich dann die Stromdichte J als Delta Q mal Delta X durch Delta T mal Delta V. Das klingt jetzt erstmal relativ kompliziert. Wir haben eine einfache Formel viel komplizierter gemacht. Wir werden aber auf der nächsten Folie sehen, dass das durchaus Sinn macht.
 	}
-	
-	
-	
+
+
+
 \end{frame}
 
 
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
 	\b{
-	Durch Einsetzen der aus Modul 1 bekannten Formeln der Driftgeschwindigkeit $v_{\mathrm{el}}$ und der Raumladungsdichte $\rho$ in die Formel 4,
-	ergibt sich die Formel 5 für die Stromdichte.
-	
+		Durch Einsetzen der aus Modul 1 bekannten Formeln der Driftgeschwindigkeit $v_{\mathrm{el}}$ und der Raumladungsdichte $\rho$ in die Formel 4,
+		ergibt sich die Formel 5 für die Stromdichte.
+
 		\begin{equation}
 			v_{\mathrm{el}}=\frac{\Delta x}{\Delta t}
 		\end{equation}
-	
+
 		\begin{equation}
 			\rho = \frac{\Delta Q}{\Delta V}
 		\end{equation}
-	\only<2->{
-		\begin{enumerate}
-			 \setcounter{enumi}{4} % startet bei 5
-			\centering
-			\item \( \vec{J}=\rho \cdot \vec{v_{\mathrm{el}}} \)	
-		\end{enumerate}
-	Da die Geschwindigkeit immer einen Betrag und eine Richtung hat, ist die Stromdichte ebenfalls ein Vektor.}
+		\only<2->{
+			\begin{enumerate}
+				\setcounter{enumi}{4} % startet bei 5
+				\centering
+				\item \( \vec{J}=\rho \cdot \vec{v_{\mathrm{el}}} \)
+			\end{enumerate}
+			Da die Geschwindigkeit immer einen Betrag und eine Richtung hat, ist die Stromdichte ebenfalls ein Vektor.}
 	}
 	\s{
-	Durch Einsetzen der aus Modul 1 bekannten Driftgeschwindigkeit $v_{\mathrm{el}}$ und der Raumladungsdichte $\rho$ in die Formel \ref{eq:J=.},
-	ergibt sich die Formel \ref{eq:J=rho*v} für die Stromdichte.
-	
+		Durch Einsetzen der aus Modul 1 bekannten Driftgeschwindigkeit $v_{\mathrm{el}}$ und der Raumladungsdichte $\rho$ in die Formel \ref{eq:J=.},
+		ergibt sich die Formel \ref{eq:J=rho*v} für die Stromdichte.
+
 		\begin{equation}
 			v_{\mathrm{el}}=\frac{\Delta x}{\Delta t}
 		\end{equation}
-	
+
 		\begin{equation}
 			\rho = \frac{\Delta Q}{\Delta V}
 		\end{equation}
-	
+
 		\begin{equation}\label{eq:J=rho*v}
 			\vec{J}=\rho \cdot \vec{v_{\mathrm{el}}}
 		\end{equation}
-	
-	Da die Geschwindigkeit immer einen Betrag und eine Richtung hat, ist die Stromdichte ebenfalls ein Vektor.
 
-	Die Driftgeschwindigkeit $\vec{v_{\mathrm{el}}}$ der freien Ladungsträger verhält sich proportional zum elektrischen Feld $\vec{E}$,
-	jedoch in entgegengesetzter Richtung. Der Proportionalitätsfaktor wird auch als Elektronenbeweglichkeit $\mu_e$ bezeichnet.
+		Da die Geschwindigkeit immer einen Betrag und eine Richtung hat, ist die Stromdichte ebenfalls ein Vektor.
+
+		Die Driftgeschwindigkeit $\vec{v_{\mathrm{el}}}$ der freien Ladungsträger verhält sich proportional zum elektrischen Feld $\vec{E}$,
+		jedoch in entgegengesetzter Richtung. Der Proportionalitätsfaktor wird auch als Elektronenbeweglichkeit $\mu_e$ bezeichnet.
 
 		\begin{equation}
 			\vec{v_{\mathrm{el}}}=- \mu_e \cdot \vec{E}
@@ -255,34 +254,34 @@
 
 		Die Raumladungsdichte $\rho$ setzt sich aus der Elementarladung $e^-$ und der Ladungsträgerdichte $n_e$, zusammen.
 		Aufgrund der negativen Ladung von Elektronen, ergibt sich ein negatives Vorzeichen.
-	
+
 		\begin{equation}
 			\rho = - n_e \cdot e^-
 		\end{equation}
-	
+
 		Das Einsetzen von $\vec{v_{\mathrm{el}}}$ und $\rho$ in die Formel \ref{eq:J=rho*v} ergibt den folgenden Ausdruck:
-	
+
 		\begin{equation}
 			\vec{J} = (-n_e \cdot e^-) \cdot (-\mu_e \cdot \vec{E})  = n_e \cdot \mu_e \cdot e^- \vec{E}
 		\end{equation}
-		}
-	
+	}
+
 	\speech{01_Leitfaehigkeit_und_Widerstand4}{1}{
-		Denn wir hatten ja im Modul 1 ebenfalls die Driftgeschwindigkeit der Elektronen VEL und die Raumladungsdichte Rho kennengelernt. Und das setzen wir jetzt in die gerade hergeleitete Folie J ist gleich Delta Q mal Delta X geteilt durch Delta T mal Delta V ein.
+		Denn wir hatten ja im Modul 1 ebenfalls die Driftgeschwindigkeit der Elektronen V_E_L und die Raumladungsdichte Rho kennengelernt. Und das setzen wir jetzt in die gerade hergeleitete Formel J ist gleich Delta Q mal Delta X geteilt durch Delta T mal Delta V ein.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand4}{2}{
-		Also wir können VEL ersetzen durch Delta X durch Delta T. Nichts anderes ist ja letztlich die Geschwindigkeit. Das ist ja nichts anderes als die zeitliche Veränderung der Orientierung in Bewegungsrichtung.
+		Also wir können V_E_L ersetzen durch Delta X durch Delta T. Nichts anderes ist ja letztlich die Geschwindigkeit. Das ist ja nichts anderes als die zeitliche Veränderung des Ortes in Bewegungsrichtung.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand4}{3}{
 		Für das Rho, das ist die Raumladungsdichte, ergibt sich das Delta Q durch Delta V.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand4}{4}{
-		Sodass wir alles zusammen eingesetzt in die vorherige Formel J ist gleich Delta Q mal Delta X durch Delta T mal Delta V auch schreiben können. J ist gleich Rho mal VEL. Jetzt sind hier noch Vektoren hinzugekommen. Das hat auch einen Grund. Denn die Geschwindigkeit VEL, mit der sich die Elektronen bewegen, hat ja nicht nur einen Betrag, sondern auch eine Richtung. Und demzufolge ist die Stromdichte eigentlich auch ein Vektor. Denn wir müssen ja nicht nur beschreiben, wie der Strom sich in der Fläche verteilt, sondern auch in welche Richtung der Strom fließt.
+		Sodass wir alles zusammen eingesetzt in die vorherige Formel J ist gleich Delta Q mal Delta X durch Delta T mal Delta V auch schreiben können. J ist gleich Rho mal V_E_L. Jetzt sind hier noch Vektoren hinzugekommen. Das hat auch einen Grund. Denn die Geschwindigkeit V_E_L, mit der sich die Elektronen bewegen, hat ja nicht nur einen Betrag, sondern auch eine Richtung. Und demzufolge ist die Stromdichte eigentlich auch ein Vektor. Denn wir müssen ja nicht nur beschreiben, wie der Strom sich in der Fläche verteilt, sondern auch in welche Richtung der Strom fließt.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand4}{5}{
 		Das ist hier nochmal in dem Satz zusammengefasst. Da die Geschwindigkeit immer einen Betrag und eine Richtung hat, ist die Stromdichte ebenfalls ein Vektor.
 	}
@@ -294,43 +293,51 @@
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
 	\b{
-	Die Driftgeschwindigkeit $\vec{v_{\mathrm{el}}}$ der freien Ladungsträger verhält sich proportional zum elektrischen Feld $\vec{E}$,
-	jedoch in entgegengesetzter Richtung. Der Proportionalitätsfaktor wird auch als Elektronenbeweglichkeit $\mu_e$ bezeichnet.
-	
-		\begin{equation}
-			\vec{v_{\mathrm{el}}}=- \mu_e \cdot \vec{E}
-		\end{equation}
-	\only<2->{Die Raumladungsdichte $\rho$ setzt sich aus der Elementarladung $e^-$ und der Ladungsträgerdichte $n_e$, zusammen.
-	Aufgrund der negativen Ladung von Elektronen, ergibt sich ein negatives Vorzeichen.
-	
-		\begin{equation}
-			\rho = - n_e \cdot e^-
-		\end{equation}}
-	\only<3->{Das Einsetzen von $\vec{v_{\mathrm{el}}}$ und $\rho$ in die Formel 5 ergibt den folgenden Ausdruck:
-		\begin{equation}
-			\vec{J} = (-n_e \cdot e^-) \cdot (-\mu_e \cdot \vec{E}) =n_e \cdot \mu_e \cdot e^- \vec{E}
-		\end{equation}
+		Die Driftgeschwindigkeit $\vec{v_{\mathrm{el}}}$ der freien Ladungsträger verhält sich proportional zum elektrischen Feld $\vec{E}$,
+		jedoch in entgegengesetzter Richtung. Der Proportionalitätsfaktor wird auch als Elektronenbeweglichkeit $\mu_e$ bezeichnet.
+
+		\only<2->{
+			\begin{equation}
+				\vec{v_{\mathrm{el}}}=- \mu_e \cdot \vec{E}
+			\end{equation}
+		}
+
+		\only<3->{Die Raumladungsdichte $\rho$ setzt sich aus der Elementarladung $e^-$ und der Ladungsträgerdichte $n_e$, zusammen.
+			Aufgrund der negativen Ladung von Elektronen, ergibt sich ein negatives Vorzeichen.
+
+		}
+		\only<4->{
+
+			\begin{equation}
+				\rho = - n_e \cdot e^-
+			\end{equation}
+		}
+
+		\only<5->{Das Einsetzen von $\vec{v_{\mathrm{el}}}$ und $\rho$ in die Formel 5 ergibt den folgenden Ausdruck:
+			\begin{equation}
+				\vec{J} = (-n_e \cdot e^-) \cdot (-\mu_e \cdot \vec{E}) =n_e \cdot \mu_e \cdot e^- \vec{E}
+			\end{equation}
+		}
 	}
-	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{1}{
-		Wenn wir nun noch mal auf die Driftgeschwindigkeit schauen, dann haben wir ja vorher kennengelernt in Methode 1, dass die Driftgeschwindigkeit VEL als Vektor sich proportional zum elektrischen Feld verhält, jedoch in entgegengesetzter Richtung. Diese entgegengesetzte Richtung kommt daher, dass unsere Ladungsträger in der Regel negativ beladen sind, weil es Elektronen sind, und wir eben genau das negative Vorzeichen dieser Ladung mit berücksichtigen müssen. Und daher bewegt sich das Elektron immer entgegengesetzt dem elektrischen Feld. Der Proportionalitätsfaktor zu dieser Beweglichkeit oder zu diesem Verhältnis wird Elektronenbeweglichkeit µe genannt.
+		Wenn wir nun noch mal auf die Driftgeschwindigkeit schauen, dann haben wir ja vorher kennengelernt in Methode 1, dass die Driftgeschwindigkeit V_E_L als Vektor sich proportional zum elektrischen Feld verhält, jedoch in entgegengesetzter Richtung. Diese entgegengesetzte Richtung kommt daher, dass unsere Ladungsträger in der Regel negativ beladen sind, weil es Elektronen sind, und wir eben genau das negative Vorzeichen dieser Ladung mit berücksichtigen müssen. Und daher bewegt sich das Elektron immer entgegengesetzt dem elektrischen Feld. Der Proportionalitätsfaktor zu dieser Beweglichkeit oder zu diesem Verhältnis wird Elektronenbeweglichkeit µ_e genannt.
 	}
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{2}{
-		Das heißt, wir erhalten VEL ist gleich minus µe mal E.
+		Das heißt, wir erhalten V_E_L ist gleich minus µ_e mal E.
 	}
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{3}{
-		Die Raumladungsdichte Rho, dort drin steckt ja letztlich die Elementarladung e eines Elektrons und die Ladungsträgerdichte NE, also wie viele Ladungsträger sich frei beweglich im Leiter befinden. Die wird mit NE bezeichnet. Auch hier wieder, wir haben negative Ladung von Elektronen, daraus ergibt sich ein negatives Vorzeichen.
+		Die Raumladungsdichte Rho, dort drin steckt ja letztlich die Elementarladung e eines Elektrons und die Ladungsträgerdichte N_E, also wie viele Ladungsträger sich frei beweglich im Leiter befinden. Die wird mit N_E bezeichnet. Auch hier wieder, wir haben negative Ladung von Elektronen, daraus ergibt sich ein negatives Vorzeichen.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{4}{
-		Wir erhalten Rho ist gleich minus NE mal e. Das heißt, die Anzahl an freien Ladungsträgern mal die Elementarladung e.
+		Wir erhalten Rho ist gleich minus N_E mal e. Das heißt, die Anzahl an freien Ladungsträgern mal die Elementarladung e.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{5}{
-		Wenn wir jetzt die hier hergeleiteten Formeln für die Driftgeschwindigkeit VEL und die Raumladungsdichte Rho in die Formel einsetzen, die wir gerade hergeleitet haben, also J ist gleich Rho mal VEL, dann erhalten wir:
+		Wenn wir jetzt die hier hergeleiteten Formeln für die Driftgeschwindigkeit V_E_L und die Raumladungsdichte Rho in die Formel einsetzen, die wir gerade hergeleitet haben, also J ist gleich Rho mal V_E_L, dann erhalten wir:
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{6}{
 		J als Vektor ist gleich minus NE mal e multipliziert mit minus µe mal E. Wir erhalten also letztlich einen Zusammenhang zwischen der Stromdichte J und dem elektrischen Feld E. Diesen gilt es jetzt näher zu betrachten.
 	}
@@ -341,185 +348,185 @@
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
 	\b{Die materialabhängigen Komponenten $n_e$ und $\mu_e$ sowie die Naturkonstante $e^-$ ergeben multipliziert die spezifische Leitfähigkeit $\kappa$:
-	
-		\begin{equation}
-			\kappa = n_e \cdot \mu_e \cdot e^-
-		\end{equation}
-	
-	\only<2->{\vspace*{0.3cm}Zusammengefasst ergibt diese Darstellung die Beschreibung des ohmschen Gesetzes:
-	\vspace*{0.5cm}
-	\begin{enumerate}
-		\centering
-		\setcounter{enumi}{5}
-		\item \( \vec{J}=\kappa \cdot \vec{E} \, \Leftrightarrow \, \vec{E}=\frac{\vec{J}}{\kappa} \)
-	\end{enumerate}
-		
-	}}
-	\s{Die materialabhängigen Komponenten $n_e$ und $\mu_e$ sowie die Naturkonstante $e^-$ ergeben multipliziert die spezifische Leitfähigkeit $\kappa$:
-	
+
 		\begin{equation}
 			\kappa = n_e \cdot \mu_e \cdot e^-
 		\end{equation}
 
-	Zusammengefasst ergibt diese Darstellung die Beschreibung des ohmschen Gesetzes:
+		\only<2->{\vspace*{0.3cm}Zusammengefasst ergibt diese Darstellung die Beschreibung des ohmschen Gesetzes:
+			\vspace*{0.5cm}
+			\begin{enumerate}
+				\centering
+				\setcounter{enumi}{5}
+				\item \( \vec{J}=\kappa \cdot \vec{E} \, \Leftrightarrow \, \vec{E}=\frac{\vec{J}}{\kappa} \)
+			\end{enumerate}
+
+		}}
+	\s{Die materialabhängigen Komponenten $n_e$ und $\mu_e$ sowie die Naturkonstante $e^-$ ergeben multipliziert die spezifische Leitfähigkeit $\kappa$:
+
+		\begin{equation}
+			\kappa = n_e \cdot \mu_e \cdot e^-
+		\end{equation}
+
+		Zusammengefasst ergibt diese Darstellung die Beschreibung des ohmschen Gesetzes:
 
 		\begin{equation}\label{eq:E=J/k}
 			\vec{J}=\kappa \cdot \vec{E} \, \Leftrightarrow \, \vec{E}=\frac{\vec{J}}{\kappa}
 		\end{equation}
 	}
-		
-	
+
+
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{1}{
 		Wenn wir auf die vorhergehende Folie schauen, sehen wir, dass wir zwei Minuszeichen in multiplikativer Folge haben, sodass sich die Minuszeichen aufheben.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{2}{
 		Wir erhalten für die Stromdichte J: J ist gleich NE mal µe mal e mal E. Das heißt, wir haben einen Zusammenhang zwischen der Stromdichte J und der elektrischen Feldstärke E. Beides sind Vektoren, und dazwischen steht ein Proportionalitätsfaktor, der im Wesentlichen vom Material abhängig ist. Denn darin ist bezeichnet, wie viele freie Ladungsträger wir pro Volumen haben (NE), die Beweglichkeit dieser freien Ladungsträger im Material (µe) und die Naturkonstante, die Elementarladung e.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{3}{
 		Genau das können wir jetzt zusammenfassen, also NE, µe und e, und nennen diese spezifische Leitfähigkeit Kappa.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{4}{
 		Es ergibt sich also für Kappa: Kappa ist gleich NE mal µe mal e.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{5}{
 		Dabei ist noch mal klarzustellen, dass NE und µe vom Material abhängig sind und e eine Naturkonstante ist. Wenn wir das jetzt zusammenfassen, dann können wir für J schreiben: J ist gleich Kappa mal E, beziehungsweise E ist gleich J durch Kappa. Wir haben also einen formelmäßigen Zusammenhang zwischen Stromdichte J und elektrischer Feldstärke E. Und genau dieser Zusammenhang wird Ohmsches Gesetz genannt. Das Ohmsche Gesetz kennst du aber eigentlich immer in Skalaren Größen. Hier steht es jetzt in Feldgrößen in der viel allgemeineren Form. Generell neigen wir dazu, sehr gerne auf die Skalarengrößen für Strom und Spannung zurückzugreifen und wollen eher ungerne in diesen vektoriellen Größen rechnen. Das ist total verständlich, sorgt aber in ganz wenigen Anwendungsfällen tatsächlich für Probleme, weil wir die Feldeigenschaften für gewisse Erläuterungen von Phänomenen tatsächlich benötigen. Insofern hier die etwas komplexere Herleitung für das Ohmsche Gesetz in Feldgrößen. Wir werden das jetzt im Folgenden aber unterbrechen auf die Ihnen vielleicht schon bekannten Formeln für das Ohmsche Gesetz mit Strom und Spannung.
 	}
-	
+
 \end{frame}
 
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
 	\b{
-	\begin{equation}
-		U_{12}=\int_{P_1}^{P_2} \vec{E} \cdot \mathrm{d}\vec{s}
-	\end{equation}
-	\only<2->{Da das elektrische Feld parallel zur Leitungslänge verläuft, ergibt sich das Skalarprodukt:
-	}\only<3->{
 		\begin{equation}
-			U_{12}=\int_{s=0}^{s=l} \vec{E} \cdot \mathrm{d}\vec{s}
-		\end{equation}}
-	\only<4->{Durch Einsetzen der umgestellten Formel 6 nach $\vec{E}$, folgt:
-	}\only<5->{
-		\begin{equation}
-			U_{12}=\int_{0}^{l} \frac{J}{\kappa} \cdot \mathrm{d}s
+			U_{12}=\int_{P_1}^{P_2} \vec{E} \cdot \mathrm{d}\vec{s}
 		\end{equation}
-	}}
+		\only<2->{Da das elektrische Feld parallel zur Leitungslänge verläuft, ergibt sich das Skalarprodukt:
+		}\only<3->{
+			\begin{equation}
+				U_{12}=\int_{s=0}^{s=l} \vec{E} \cdot \mathrm{d}\vec{s}
+			\end{equation}}
+		\only<4->{Durch Einsetzen der umgestellten Formel 6 nach $\vec{E}$, folgt:
+		}\only<5->{
+			\begin{equation}
+				U_{12}=\int_{0}^{l} \frac{J}{\kappa} \cdot \mathrm{d}s
+			\end{equation}
+		}}
 	\s{ % TODO: Inhalt
 		\begin{equation}\label{eq:u=Eds}
-		U_{12}=\int_{P_1}^{P_2} \vec{E} \cdot \mathrm{d}\vec{s}
-	\end{equation}
-	Da das elektrische Feld parallel zur Leitungslänge verläuft, ergibt sich das Skalarprodukt:
-	
+			U_{12}=\int_{P_1}^{P_2} \vec{E} \cdot \mathrm{d}\vec{s}
+		\end{equation}
+		Da das elektrische Feld parallel zur Leitungslänge verläuft, ergibt sich das Skalarprodukt:
+
 		\begin{equation}
 			U_{12}=\int_{s=0}^{s=l} \vec{E} \cdot \mathrm{d}\vec{s}
 		\end{equation}
-	    Durch Einsetzen der umgestellten Formel \ref{eq:E=J/k} nach $\vec{E}$, folgt:
+		Durch Einsetzen der umgestellten Formel \ref{eq:E=J/k} nach $\vec{E}$, folgt:
 
 		\begin{equation}
 			U_{12}=\int_{0}^{l} \frac{J}{\kappa} \cdot \mathrm{d}s
 		\end{equation}
-		}
-	
+	}
+
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{1}{
 		Um jetzt, wie gesagt, auf die bekannte Form des Ohm’schen Gesetzes in Strom und Spannung, also skalaren Größen zu kommen, schauen wir uns als erstes nochmal die Definition der Spannung an. Die Spannung U12 war definiert als das Linienintegral von P1 nach P2 E·ds. Das können wir weiter umformulieren.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{2}{
 		Da nämlich das elektrische Feld parallel zur Leitungslänge verläuft, in unserer Anordnung, kann das Skalarprodukt vereinfacht werden.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{3}{
 		Zu U12 ist gleich ∫ von x = 0 bis x = L E dx. Also wir haben die Wegstrecke aufgelöst, haben gesagt, nur auf der x-Achse und wir wandern da entlang. Das ist die erste Vereinfachung.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{4}{
 		Und das können wir jetzt in die zuvor hergeleitete Folie J = Kappa · E einsetzen, beziehungsweise in E = J / Kappa.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{5}{
 		Und es ergibt sich: U12 = ∫ von 0 bis L J / Kappa dx.
 	}
-	
+
 \end{frame}
 
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
 	\b{
-	Da es sich um ein homogenes Material handelt ist das $\kappa$ konstant.
-	\only<2->{
-		\begin{equation}
-			U_{12}=\frac{1}{\kappa} \cdot \int_{0}^{l} J \cdot \mathrm{d}s
-		\end{equation}}
-	\only<3->{Die folgende Formel für die Stromdichte $J$ ist aus Modul 1 bekannt:
-	}\only<4->{
-		\begin{equation}
-			J=\frac{I}{A}
-		\end{equation}
-	}\only<5->{Duch Einsetzen der Formel ergibt sich folgender Ausdruck:
-	}\only<6->{
-		\begin{equation}
-			U_{12}=\frac{1}{\kappa}\cdot\int_{0}^{l} \frac{I}{A} \cdot \mathrm{d}s
-		\end{equation}
-	}}
+		Da es sich um ein homogenes Material handelt ist das $\kappa$ konstant.
+		\only<2->{
+			\begin{equation}
+				U_{12}=\frac{1}{\kappa} \cdot \int_{0}^{l} J \cdot \mathrm{d}s
+			\end{equation}}
+		\only<3->{Die folgende Formel für die Stromdichte $J$ ist aus Modul 1 bekannt:
+		}\only<4->{
+			\begin{equation}
+				J=\frac{I}{A}
+			\end{equation}
+		}\only<5->{Duch Einsetzen der Formel ergibt sich folgender Ausdruck:
+		}\only<6->{
+			\begin{equation}
+				U_{12}=\frac{1}{\kappa}\cdot\int_{0}^{l} \frac{I}{A} \cdot \mathrm{d}s
+			\end{equation}
+		}}
 	\s{
 		Da es sich um ein homogenes Material handelt ist das $\kappa$ konstant.
-	
+
 		\begin{equation}
 			U_{12}=\frac{1}{\kappa} \cdot \int_{0}^{l} J \cdot \mathrm{d}s
 		\end{equation}
-	Die folgende Formel für die Stromdichte $J$ ist aus Modul 1 bekannt:
+		Die folgende Formel für die Stromdichte $J$ ist aus Modul 1 bekannt:
 
 		\begin{equation}
 			J=\frac{I}{A}
 		\end{equation}
-	Duch Einsetzen der Formel ergibt sich folgender Ausdruck:
-	
+		Duch Einsetzen der Formel ergibt sich folgender Ausdruck:
+
 		\begin{equation}
 			U_{12}=\frac{1}{\kappa}\cdot\int_{0}^{l} \frac{I}{A} \cdot \mathrm{d}s
 		\end{equation}
-	
+
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand8}{1}{
 		Da wir davon ausgegangen sind, ein homogenes Material zu haben, ist Kappa konstant.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand8}{2}{
 		Sodass sich das Integral vereinfachen lässt zu U-1-2 ist gleich 1 durch Kappa mal integral von 0 bis L J d-x.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand8}{3}{
 		Die folgende Formel für die Stromdichte J ist in Modul 1 hergeleitet worden.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand8}{4}{
 		J, hatten wir dort gesagt, ist gleich I durch A, also Strom geteilt durch Querschnittsfläche.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand8}{5}{
 		Das können wir jetzt in die oben stehende Formel einsetzen.
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand8}{6}{
 		Sodass wir erhalten: U-1-2 ist gleich 1 durch Kappa mal dem integral von 0 bis L I durch A d-x.
 	}
-	
+
 \end{frame}
 
-	\b{
+\b{
 	\begin{frame}[t]
 		\ftx{Die elektrische Leitfähigkeit}
 		Da die Querschnittsfläche $A$ ebenfalls konstant ist, kann das Integral aufgelöst werden:
-		
-			\begin{equation}
-				U_{12}=\frac{1}{\kappa}\cdot \frac{I}{A} \cdot l
-			\end{equation}
+
+		\begin{equation}
+			U_{12}=\frac{1}{\kappa}\cdot \frac{I}{A} \cdot l
+		\end{equation}
 		\only<2->{Durch Umstellung ergibt sich:
-		
+
 			\begin{equation}
 				U_{12}=\frac{l}{A\cdot\kappa}\cdot I
 			\end{equation}}
@@ -527,86 +534,86 @@
 			\begin{equation}
 				U=R \cdot I
 			\end{equation}}
-		
+
 		\speech{01_Leitfaehigkeit_und_Widerstand9}{1}{
 			Wir nehmen jetzt einfach mal an, dass die Querschnittsfläche A ebenfalls konstant ist, und wir können somit das Integral auflösen.
 		}
-		
+
 		\speech{01_Leitfaehigkeit_und_Widerstand9}{2}{
 			Zu: U-1-2 ist gleich 1 durch Kappa mal I durch A mal L.
 		}
-		
+
 		\speech{01_Leitfaehigkeit_und_Widerstand9}{3}{
 			Wir stellen also weiter um:
 		}
-		
+
 		\speech{01_Leitfaehigkeit_und_Widerstand9}{4}{
 			Sodass wir erhalten: U-1-2 ist gleich L durch A mal Kappa mal I.
 			Wir erhalten also einen linearen Zusammenhang zwischen der Spannung und dem Strom, und der Proportionalitätsfaktor ist hier gegeben durch L geteilt durch A mal Kappa. Das heißt, die Spannung wird umso größer, je länger das Element ist oder je kleiner seine Querschnittsfläche ist oder je geringer die Leitfähigkeit ist.
 		}
-		
+
 		\speech{01_Leitfaehigkeit_und_Widerstand9}{5}{
 			Wir fassen diesen Proportionalitätsfaktor zusammen zum elektrischen Widerstand R.
 		}
 		% ; TODO: Hillgärtner: Das würde ich tatsächlich unformulieren, nicht "da der elektrische Widerstand ist". Das macht keinen Sinn, sondern so wie ich es gerade gesprochen habe, würde ich es auch auf die Folie mehr oder weniger schreiben. Und wir müssen eben auch den elektrischen Widerstand in seinem Formelzeichen R einführen. Hinweis Ende.
 		%jw: bezieht sich vremutlich auf den folgenden skript teil weiter unten
-		
+
 		\speech{01_Leitfaehigkeit_und_Widerstand9}{6}{%; TODO: only 6 
 			Mit diesem zusammengefassten Proportionalitätsfaktor R für den ohmschen Widerstand erhalten wir: U = R · I – das Ohm’sche Gesetz in skalaren Größen.
 		}
-		
+
 		% ; TODO: Hillgärtner: Hinweis Anfang: Es müssen ein paar Folien umstrukturiert werden.
 		% Und zwar:
 		% - Die Folie 49 soll vor Folie 6 gestellt werden.
 		%- Die Folien 48 bis 56 sollen vorgezogen werden.
 		%- Die Folien 44 bis 47 sollen hinter Folie 56 einsortiert werden.
 		%- Die Folien 57 bis 60 sollen hinter Folie 47 einsortiert werden.
-		
+
 		%Zusammenfassung:
 		%- Nach Folie 43: Folien 48 bis 56
 		%- Danach: Folien 44 bis 47
 		%- Danach: Folien 57 bis 60
 		%Hinweis Ende.
-		
-	\end{frame}}
-	\s{
-		Da die Querschnittsfläche $A$ ebenfalls konstant ist, kann das Integral aufgelöst werden:
-		
-			\begin{equation}
-				U_{12}=\frac{1}{\kappa}\cdot \frac{I}{A} \cdot l
-			\end{equation}
-	
-			Durch Umstellung ergibt sich:
-	
-			\begin{equation}
-				U_{12}=\frac{l}{A\cdot\kappa}\cdot I
-			\end{equation}
 
-			Da $\frac{l}{A\cdot\kappa}$ der elektrische Widerstand ist, ergibt sich folgende Vereinfachung:
-		
-			\begin{equation}
-				U=R \cdot I
-			\end{equation}
-	
+	\end{frame}}
+\s{
+	Da die Querschnittsfläche $A$ ebenfalls konstant ist, kann das Integral aufgelöst werden:
+
+	\begin{equation}
+		U_{12}=\frac{1}{\kappa}\cdot \frac{I}{A} \cdot l
+	\end{equation}
+
+	Durch Umstellung ergibt sich:
+
+	\begin{equation}
+		U_{12}=\frac{l}{A\cdot\kappa}\cdot I
+	\end{equation}
+
+	Da $\frac{l}{A\cdot\kappa}$ der elektrische Widerstand ist, ergibt sich folgende Vereinfachung:
+
+	\begin{equation}
+		U=R \cdot I
+	\end{equation}
+
 	Die elektrische Leitfähigkeit sagt aus, wie gut ein Material Ladungsträger transportieren kann, also wie gut elektrischer Strom durch sie fließt.
 	Sehr gut leitfähige Materialien werden Leiter (im Extremfall auch Supraleiter) genannt, während sehr schlecht leitende Materialien als Isolatoren bezeichnet werden.
 	Zu den leitfähigen Medien zählen Metalle wie Kupfer, Silber, Aluminium und Gold, welche in der Elektrotechnik am häufigsten verwendet werden.
-	Als Isolatoren werden zum Beispiel Kunststoffe (Polyethylen (PE), Polytetrafluorethylen (PTFE oder Teflon), Polyvinylchlorid (PVC) etc.), 
+	Als Isolatoren werden zum Beispiel Kunststoffe (Polyethylen (PE), Polytetrafluorethylen (PTFE oder Teflon), Polyvinylchlorid (PVC) etc.),
 	speziell für die Anwendung als Isolator hergestellte Mineralöle, Silikone und Epoxidharz (z.B. als Vergussmasse) oder auch Papier verwendet.
 	Des Weiteren gibt es Halbleiter wie Silizium und Germanium, deren Leitfähigkeit zwischen denen von Leitern und Isolatoren einzuordnen sind.
 	Ihre Leitfähigkeit kann durch Dotierung und äußere Einflüsse wie Temperatur und Licht verändert werden.
-	Diese Eigenschaften werden bei Bauteilen wie Dioden oder Transistoren genutzt, um bestimmte Funktionen zu realisieren. 
+	Diese Eigenschaften werden bei Bauteilen wie Dioden oder Transistoren genutzt, um bestimmte Funktionen zu realisieren.
 	Die verschiedenen Arten und Eigenschaften von Halbleiter sind sehr umfangreich und werden in späteren Modulen behandelt.
 	Vollständigkeitshalber sei noch erwähnt, dass flüssige Medien wie Säuren oder Salzlösungen leitfähig sind und als Elektrolyt bezeichnet werden.
-	Außerdem gibt es auch ionisierte Gase, die frei bewegliche Ladungsträger enthalten und elektrische Ströme leiten können. 
+	Außerdem gibt es auch ionisierte Gase, die frei bewegliche Ladungsträger enthalten und elektrische Ströme leiten können.
 	Diese leitfähigen Gase werden Plasmen genannt, welche in diesem Modul ebenfalls nicht behandelt werden.
 }
 
 \subsection{Driftverhalten von Elektronen in Leitern}
 \begin{frame}[t]
 	\ftx{Driftverhalten von Elektronen in Leitern}
-	
-	
+
+
 	% Wieso kommt es zu unterschiedlichen Widerstandswerten? Was ist die Driftgeschwindigkeit? Anstoßen gegen Atomrümpfe
 	\s{
 		In Modul 1 wurde bereits vermittelt, dass der elektrische Stromfluss die gerichtete Bewegung von freien Ladungsträgern ist.
@@ -614,13 +621,13 @@
 		Die Struktur eines solchen Materials besteht aus einem festen Gitter von Atomrümpfen und frei beweglichen Elektronen.
 		Sowohl die Beweglichkeit der Elektronen $\mu_{\mathrm{e}}$, als deren Anzahl, ist materialabhängig.
 		Im feldfreien Raum bewegen sich diese Elektronen zufällig in alle Richtungen, was zu einem neutralen Zustand führt.
-		Da es sich hierbei um keine gerichtete sondern um eine in alle Richtungen gleichverteilte Bewegung handelt, ist kein Stromfluss feststellbar. 
-		Dennoch führt diese ungerichtet, von der Temperatur abhängige, Bewegung der Ladungsträger zu elektrotechnischen Effekten: 
-		In empfindlichen Schaltungen wird sie als Rauschen wahrgenommen. Die freien Ladungsträger sind sehr viel leichter als die im Gitter verankerten Atomrümpfe, 
+		Da es sich hierbei um keine gerichtete sondern um eine in alle Richtungen gleichverteilte Bewegung handelt, ist kein Stromfluss feststellbar.
+		Dennoch führt diese ungerichtet, von der Temperatur abhängige, Bewegung der Ladungsträger zu elektrotechnischen Effekten:
+		In empfindlichen Schaltungen wird sie als Rauschen wahrgenommen. Die freien Ladungsträger sind sehr viel leichter als die im Gitter verankerten Atomrümpfe,
 		so dass es bei einem Aufprall eines in Bewegung befindlichen Elektrons auf einen Atomrumpf zu einem unelastischen Stoss kommt und sich die Bewegungsrichtung des Elektrons ändert.
 		Dieses Verhalten ist in Abbildung \ref{fig:Elektronenbewegung} zu sehen.
 	}
-	
+
 	% % Nachdem das grundlegende Verständnis von Widerständen erklärt wurde, kann das Thema auch auf atomarer Ebene behandelt werden. Diese Betrachtungsweise ist wichtig, um die mathematischen Zusammenhänge besser nachvollziehen zu können 
 	% % und das sonst schwer greifbare Thema der Elektrizität etwas zu veranschaulichen.
 	% % Der atomare Aufbau eines Materials erlaubt es den Elektronen sich in der Struktur frei zu bewegen. Im neutralen zustand ohne anlegen einer Spannung bewegen sich die Elektronen in alle Richtungen. 
@@ -631,15 +638,15 @@
 	% % sodass sie sich nur dem elektrischen Feld ausrichten können. Dabei wird der kleinste materialspezifische Widerstandswert erreicht. Bei bestimmten Materialien ist so auch die realisierung eines Supraleiters möglich, welche ihren elektrischen Widerstand verlieren.
 	% % Die Beweglichkeit und die Anzahl freier Elektronen können in der spezifischen Leitfähigkeit Kappa zusammengefasst. Die folgende Formel beschreibt das Ohmsche gesetz in vektorieller Art.
 	% % Die bisherige Definition des Begriffs Widerstand beschreibt den (Rho) materialspezifischen Widerstandswert eines Bauteils. 
-	
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Grafik Elektronenbewegung ungerichtet %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\b{
 		\begin{itemize}
 			\item Ungerichte Bewegung freier Elektronen (blau) zwischen positiv geladenen Atomrümpfen (rot)
 		\end{itemize}
 	}
-	
-	
+
+
 	\begin{figure}[H]
 		\centering
 		\includesvg[width=0.8\textwidth]{Elektronenbewegung}
@@ -647,19 +654,19 @@
 				wo die Elektronen sich zufällig bewegen, ohne eine bevorzugte Richtung, solange kein äußeres elektrisches Feld anliegt.}}
 		\label{fig:Elektronenbewegung}
 	\end{figure}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand10}{1}{
 		Wir schauen jetzt einmal in die Struktureien eines Leiters. Atome bestehen im Wesentlichen aus Neutronen, Protonen und Elektronen. Neutronen und Protonen bestimmen vor allem die Masse eines Atoms, Elektronen sind für die Bindung der Atome verantwortlich. In Leitern gibt es Materialien mit frei beweglichen Ladungsträgern – meist Elektronen. Diese bewegen sich, da sie sich von den Atomrümpfen gelöst haben. Die Bewegung dieser Elektronen ist zufällig, sodass in Summe kein Stromfluss stattfindet – da sich alle Richtungen gegenseitig aufheben. Die Atomrümpfe bleiben ortsfest. Es kann zu Stößen kommen. Dies beschreibt den Zustand ohne angelegte Spannung.
 	}
-	
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Grafik Elektronenbewegung ungerichtet %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Driftverhalten %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \s{
-	Sobald sich ein Leiter in einem elektrischen Feld befindet, wirkt auf die Elektronen die Coulomb-Kraft, 
-	so dass sich ihre zufällige Bewegungsrichtung in eine gerichtete Bewegung ändert, welche entgegengesetzt zur Feldrichtung zeigt (Abb.\,\ref{fig:Elektronenbewegung gerichtet}). 
+	Sobald sich ein Leiter in einem elektrischen Feld befindet, wirkt auf die Elektronen die Coulomb-Kraft,
+	so dass sich ihre zufällige Bewegungsrichtung in eine gerichtete Bewegung ändert, welche entgegengesetzt zur Feldrichtung zeigt (Abb.\,\ref{fig:Elektronenbewegung gerichtet}).
 	Diese gerichtete Bewegung der Ladungsträger wird als Stromfluss bezeichnet (vgl. Modul 1).
-	Allerdings kommt es auch weiterhin zu Stößen mit den Atomrümpfen. Diese führen letztlich zu einer Abschwächung der gerichteten Bewegung und somit des Stroms (vgl. Abb.\,\ref{fig:Elektronenbewegung gerichtet}). 
+	Allerdings kommt es auch weiterhin zu Stößen mit den Atomrümpfen. Diese führen letztlich zu einer Abschwächung der gerichteten Bewegung und somit des Stroms (vgl. Abb.\,\ref{fig:Elektronenbewegung gerichtet}).
 	Da sich die Atomrümpfe mit steigender Temperatur stärker bewegen, nimmt die Stoßwahrscheinlichkeit der Elektronen bei steigender Temperatur zu.
 }
 
@@ -668,24 +675,24 @@
 \begin{frame}[t]
 
 	\ftx{Driftverhalten von Elektronen in Leitern}
-	
+
 	\b{
 		\begin{itemize}
 			\item Gerichtete Bewegung von Elektronen entgegen der Richtung des elektischen Feldes $\vec{E}$
 		\end{itemize}
-		
+
 		\begin{figure}[H]
 			\centering
 			\hspace*{-0.35cm}
 			\includesvg[width=0.8\textwidth]{Elektronenbewegung_gerichtet}
 		\end{figure}
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand11}{1}{
 		Wird ein elektrisches Feld (eine Spannung) angelegt, ändert sich das Bewegungsverhalten der Elektronen: Sie bewegen sich entgegengesetzt der Feldlinien – also entlang des E-Feldes. Dabei kommt es verstärkt zu Stößen mit Atomrümpfen. Auch diese schwingen, besonders bei höheren Temperaturen. Die Folge: Je höher die Temperatur, desto mehr Stöße, desto geringer ist die Beweglichkeit der Elektronen. Das bedeutet, die Leitfähigkeit Kappa wird temperaturabhängig.
-		
+
 	}
-	
+
 \end{frame}
 \s{
 	\begin{figure}[H]
@@ -704,7 +711,7 @@
 \s{
 	Dieses Verhalten der Elektronen wird auch Driftverhalten genannt, welches stark vom Material anhängt.
 	Da die atomare Zusammensetzung materialabhängig ist, unterscheidet sich auch die Anzahl der freien Elektronen, sowie deren Beweglichkeit $\mu_{\mathrm{e}}$.
-	Diese beiden Eigenschaften werden unter dem Begriff der spezifischen Leitfähigkeit $\kappa$ zusammengefasst. 
+	Diese beiden Eigenschaften werden unter dem Begriff der spezifischen Leitfähigkeit $\kappa$ zusammengefasst.
 	Mit der spezifischen Leitfähigkeit kann somit die Driftgeschwindigkeit der Elektronen in der Gitterstruktur des Leiters ermittelt werden.
 	Der folgende Abschnitt befasst sich mit eben diesen Eigenschaften.
 }
@@ -716,7 +723,7 @@
 	\ftx{Mathematische Zusammenhänge der Leitfähigkeit}
 	\subsection{Mathematische Zusammenhänge der Leitfähigkeit}
 	\b{
-	
+
 		\begin{equation*}
 			[\kappa] = 1\,\, \frac{\text{Siemens}}{\text{meter}} = 1\,\, \frac{\text{S}}{\text{m}} = 1\,\,\frac{\text{1}}{\Omega \cdot \text{m}}
 		\end{equation*}
@@ -724,22 +731,22 @@
 		\begin{equation*}
 			\kappa = \frac{1}{\rho_\mathrm{R}}
 		\end{equation*}
-		
+
 		\begin{equation*}
 			\rho_\mathrm{R} = \rho_\mathrm{{20^\circ C}} \cdot (1 + \alpha (\vartheta - 20\mathrm{^\circ C}))
 		\end{equation*}
 	}% nur Folien
-	
+
 	% ; TODO: Hillgärtner: Diese Folie ist sehr zusammenhangslos und außerdem ist mir aufgefallen, dass wir für den ohmschen Widerstand R noch gar nicht die Einheit definiert haben. Wenn wir auf Folie 43 schauen, da ist der elektrische Widerstand dargestellt – mit den Kommentaren, die ich da schon hatte – da fehlt das Rollenzeichen. Vielleicht könnte man Folie 48 quasi hier drin integrieren und sagen: Der ohmsche Widerstand R hat die Einheit Ohm, was gleichbedeutend ist mit Volt pro Ampere (V/A). Und der Kehrwert des Widerstands, also 1 durch R ist gleich I durch U, nennt sich Leitwert. Dieser hat die Einheit Siemens (S). Das würde ich tatsächlich auf Folie 43 mit aufnehmen. Somit kann Folie 48, die relativ zusammenhangslos ist, entfallen. Hinweis Ende.
 
-	
+
 	\s{
 		Die unterschiedlichen atomaren Zusammensetzungen der Materialien führen zu einer materialabhängigen, elektrischen Leitfähigkeit.
-		Die materialspezifische Eigenschaft bestehen aus der spezifischen Leitfähigkeit $\kappa$ (Kappa), bzw. dem spezifischen Widerstand $\rho_\mathrm{R}$ (rho) 
+		Die materialspezifische Eigenschaft bestehen aus der spezifischen Leitfähigkeit $\kappa$ (Kappa), bzw. dem spezifischen Widerstand $\rho_\mathrm{R}$ (rho)
 		welche antiproportional zueinander stehen, sowie dem jeweiligen Temperaturkoeffizient $\alpha$, welcher sich je nach Material unterscheidet.
-		
-		
-		
+
+
+
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Formeln %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		\begin{equation*}
 			[\kappa] = 1\,\, \frac{\text{Siemens}}{\text{m}} = 1\,\, \frac{\text{S}}{\text{m}} =  1\,\, \frac{\text{1}}{\Omega \cdot \text{m}}
@@ -748,14 +755,14 @@
 		\begin{equation}
 			\kappa = \frac{1}{\rho_\mathrm{R}}
 		\end{equation}
-		
+
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Formeln %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		% \s{
 		% Zur Berechnung des Widerstandwertes bei einer konkreten Temperatur, wird die Temperaturdifferenz zu $20^\circ C$ gebildet und dieser Wert mit dem Temperaturkoeffizienten multipliziert.
 		% Dieser Wert wird mit dem bekannten Referenzwert bei $20^\circ C$ multipliziert und mit diesem addiert.
 		% }
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - 	Formeln Kappa, Roh	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		
+
 		\begin{equation}
 			\rho_\mathrm{R} = \rho_\mathrm{{20^\circ C}} \cdot (1 + \alpha (\vartheta - 20\mathrm{^\circ C}))
 		\end{equation}
@@ -763,14 +770,14 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende 	- 	Formeln Kappa, Roh	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\s{
 		Für $\vartheta$ (Theta) wird die Temperatur des Leiters eingetragen. Daraus ergibt sich durch ($\vartheta - 20\mathrm{^\circ C}$) die Temperaturdifferenz des Leiters zwischen der vorhandenen Temperatur des Leiters und den $\mathrm{20^\circ C}$, bei welchen der Referenzwert ermittelt wurde.
-		Werden $20\mathrm{^\circ C}$ für $\vartheta$ (Theta) eingesetzt, fällt auch das $\alpha$ weg und es bleibt der Referenzwert $\rho_\mathrm{20\mathrm{^\circ C}}$ übrig. 
+		Werden $20\mathrm{^\circ C}$ für $\vartheta$ (Theta) eingesetzt, fällt auch das $\alpha$ weg und es bleibt der Referenzwert $\rho_\mathrm{20\mathrm{^\circ C}}$ übrig.
 		In der folgenden Tabelle sind beispielhaft einige Materialien mit deren spezifischen Eigenschaften dargestellt:
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand12}{1}{
 	Kappa ist definiert als 1 Siemens pro Meter (S/m). Der spezifische Widerstand ρR ist der Kehrwert davon: Kappa = 1 / ρR. Für den spezifischen Widerstand gilt im linearen Temperaturbereich: ρR(θ) = ρR(20°C) × [1 + α × (θ – 20°C)], wobei θ die aktuelle Temperatur ist und α der Temperaturkoeffizient. Der Widerstand steigt mit steigender Temperatur linear an.
 	}
-	
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Tabelle Eigenschaften %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%
@@ -784,7 +791,7 @@
 		\resizebox{0.8\textwidth}{!}{%
 			\begin{tabular}{@{}l c c@{}}
 				\toprule
-				\textbf{Material}  & {\textbf{Spezifische Leitfähigkeit} [$\kappa$] = S/m} & 
+				\textbf{Material}  & {\textbf{Spezifische Leitfähigkeit} [$\kappa$] = S/m} &
 				{\textbf{Temperaturkoeffizient} [$\alpha$] = 1/K}                                    \\
 				\midrule
 				Silber             & $6.1\cdot 10^{7}$                                     & 0.0038  \\
@@ -803,17 +810,17 @@
 				während isolierende Materialien wie Luft eine sehr geringe Leitfähigkeit besitzen.}}
 		\label{tab:specific_resistance}
 	\end{table}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand13}{1}{
 		In der Tabelle sind spezifische Leitfähigkeiten und Temperaturkoeffizienten für unterschiedliche Materialien gelistet. Auffällig: Grafit und Silizium zeigen negative Temperaturkoeffizienten. Grund: Beide sind Halbleiter. Dort sind bei 20 °C nicht alle Ladungsträger frei. Mit steigender Temperatur werden zusätzliche Elektronen freigesetzt – die Leitfähigkeit steigt, obwohl die Stoßwahrscheinlichkeit zunimmt. Der Effekt der zusätzlich beweglichen Elektronen überkompensiert die Stoßeffekte. Bei klassischen Leitern wie Kupfer, Silber, Gold oder Aluminium steigt der Widerstand mit Temperatur, da die gerichtet Bewegung der Ladungsträger durch vermehrte Stöße reduziert wird.
 	}
-	
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Tabelle Eigenschaften %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 	\ftx{Der Leitwert}
-	
+
 	\b{
 		\begin{equation*}
 			[G] = 1\, \text{Siemens} = 1\, \text{S} = 1\,\, \frac{\text{1}}{\Omega}
@@ -823,12 +830,12 @@
 			G = \frac{1}{R}
 		\end{equation*}
 	}
-	
+
 \end{frame}
 \s{
 	Äquivalent zur spezifischen Leitfähigkeit $\kappa$ und zum spezifischen Widerstand $\rho_\mathrm{R}$,
 	kann der entsprechende Widerstand $R$, bzw. Leitwert $G$ eines Körpers bestimmt werden.
-	
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - G = 1/R %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{equation*}
 		[G] = 1\, \text{Siemens} = 1\, \text{S} = 1\,\, \frac{\text{1}}{\Omega}
@@ -838,7 +845,7 @@
 		G = \frac{1}{R}
 	\end{equation}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - G = 1/R %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
+
 	Der Wert der elektrischen Leitfähigkeit bzw. des Widerstandes eines Leiters, ergibt sich darüber hinaus aus den geometrischen Eigenschaften.
 	Sowohl die Länge $l$ als auch die Querschnittsfläche $A$ tragen zum Leitwert bzw. Widerstandswert bei.
 	Abbildung \ref{fig:Widerstand} zeigt einen solchen Leiter mit seinen Eigenschaften.
@@ -847,9 +854,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Abbildung Leiter %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame} %; TODO: Hillgärtner: Diese Folie habe ich die ganze Zeit eigentlich gesucht. Ich hätte mir das alles noch mal genauer vorher anschauen sollen – wie das immer so ist, merkt man das beim Sprechen. Diese Folie wäre total clever vor der ganzen Herleitung, die ab Folie 6 folgt. Das heißt, diese Folie bitte vorziehen – vor die Folie 6 – also noch hinter das Bild, wo die Widerstände dargestellt worden sind. Hinweis Ende.
-	
+
 	\ftx{Geometrische Eigenschaften}
-	
+
 	\begin{figure}[H]
 		\centering
 		\b{
@@ -863,31 +870,31 @@
 			\caption{\textbf{Geometrische Darstellung eines Widerstands.} Das elektrische Feld \(\vec{E}\) erzeugt eine Stromdichte
 				\(\vec{J}\) durch den Widerstand. Die Beziehung zwischen der Stromdichte und dem elektrischen Feld wird durch das Ohmsche Gesetz
 				\( \vec{J} = \kappa \cdot \vec{E} \) beschrieben.}}
-		
+
 		\label{fig:Widerstand}
 	\end{figure}
-	
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Abbildung Leiter %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\s{
 		Die Stromdichte $\vec{J}$ ergibt sich dabei aus dem elektrischen Feld $\vec{E}$ und der spezifischen Leitfähigkeit $\kappa$.
 		Die Stromdichte ist dabei geometrieunabhängig. Erst zur Berechnung des Stromes $I$ müssen die Länge und die Querschnittsfläche mit einbezogen werden.
 		Mit der folgenden Formel lässt sich der Widerstandswert berechnen:
 	}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand14}{1}{
-		Wir wollen nun im Folgenden ein Leiterstück näher betrachten. Dieses Leiterstück sei entlang der X-Achse – so wie es hier dargestellt ist – gelegen, und hat einen komplett homogenen Querschnitt mit einer Querschnittsfläche A, die also – das meint „homogen“ – über das gesamte Leiterstück konstant bleibt. 
-		Dieses Leiterstück wird von einem elektrischen Feld E durchsetzt, welches ebenfalls parallel zur X-Achse anliegt. Dieses elektrische Feld verursacht eine Stromdichte J, die ebenfalls entlang der X-Achse verläuft. 
-		Warum ist das so? Weil wir ein leitfähiges Material mit einer spezifischen Leitfähigkeit Kappa betrachten. Ein leitfähiges Material ergibt sich ja durch den atomaren Aufbau: Wir haben freie Ladungsträger innerhalb des Materials. Das bedeutet: Diese Ladungsträger – meist Elektronen – können sich im Leiter frei bewegen. 
+		Wir wollen nun im Folgenden ein Leiterstück näher betrachten. Dieses Leiterstück sei entlang der X-Achse – so wie es hier dargestellt ist – gelegen, und hat einen komplett homogenen Querschnitt mit einer Querschnittsfläche A, die also – das meint „homogen“ – über das gesamte Leiterstück konstant bleibt.
+		Dieses Leiterstück wird von einem elektrischen Feld E durchsetzt, welches ebenfalls parallel zur X-Achse anliegt. Dieses elektrische Feld verursacht eine Stromdichte J, die ebenfalls entlang der X-Achse verläuft.
+		Warum ist das so? Weil wir ein leitfähiges Material mit einer spezifischen Leitfähigkeit Kappa betrachten. Ein leitfähiges Material ergibt sich ja durch den atomaren Aufbau: Wir haben freie Ladungsträger innerhalb des Materials. Das bedeutet: Diese Ladungsträger – meist Elektronen – können sich im Leiter frei bewegen.
 		Das Material ist nach außen hin trotzdem elektrisch neutral, weil der Atomaufbau ungestört bleibt. Also: Wir haben nach wie vor genauso viele Elektronen in der Hülle wie Protonen im Kern. Nichtsdestotrotz sind einige dieser Elektronen frei beweglich – und das bezeichnet ein leitfähiges Material.
 		Wir werden im Folgenden nun genauer betrachten, wie wir die bisher bekannten Zusammenhänge aus Modul 1 auf dieses Leiterstück anwenden können.
 	}
-	
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - 	Formeln R		  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 	\ftx{Geometrische Eigenschaften}
 	\b{
-	
+
 		\begin{itemize}
 			\item Allgemeine Formel für den Widerstand in Bezug auf die Materialeigenschaften
 		\end{itemize}
@@ -904,13 +911,13 @@
 			l               & : \text{Länge des Materials (m)}                                  \\
 			A               & : \text{Querschnittsfläche des Materials } (\text{m}^2)           \\
 		\end{align*}
-		
+
 	}
 	\speech{01_Leitfaehigkeit_und_Widerstand15}{1}{
 		Wenn wir uns an das erinnern, was ich als Hinweis zu den Vorträgen in beiden Folien genannt habe, dann sehen wir hier tatsächlich die Einheit von R und so. Wie gesagt, das würde ich eher verpacken dort, wo ich es gerade gesagt habe. Hinweisende. Hinweisanfang. Demzufolge lasse ich das mal hier weg. Wir müssen dann ja die Folien, die neu gemacht worden sind, eh nochmal anfangen. Hinweisende. Hinweisanfang, Folie 51, Hinweisende. Wir haben also jetzt das erste elektrische Bauelement kennengelernt, nämlich den Ohmschwellenwiderstand. Und den Ohmschwellenwiderstand R, den finden wir jetzt hier unten in dem Schaltkreis, dargestellt als rechnerischer Kasten. So stellen wir in der Elektrotechnik Schaltkreise dar. Die Spannungsquelle werden wir ziemlich bald im nächsten Abschnitt kennen. Eine Glühlampe kennt jeder vom täglichen Leben. Und der Schalter ist hier, wie immer in Schaltkreisen, idealer Schalter dargestellt. Das heißt, der kennt nur zwei Zustände. Entweder ist er geöffnet, so wie jetzt im Moment. Dann hat er einen unendlich hohen Widerstand, kann keinen Strom fließen. Oder aber er ist geschlossen. Er wird zu einem schlechtsten Zeitpunkt T geschlossen. Dann hat er einen Widerstand von null. Solche Schalter gibt es in der Realität nicht. Aber wir werden uns im Folgenden auch daran gewöhnen müssen, dass wir in Schaltkreisen immer nur die Realität nachbilden können, unter Vernachlässigung einiger Effekte. Und diese Effekte müssen dann gegebenenfalls anderwertig dargestellt werden. Ganz wichtig bei den Schaltkreisen, so wie sie hier auch dargestellt sind, sind die Verbindungslinien zwischen den einzelnen Elementen. Diese Verbindungslinien haben auch keine elektrischen Eigenschaften, sind ein unendlich guter Leiter, haben keinen Widerstand, keine Induktivität, keine Kapazität, nichts. Ein Kabel, wenn du das in der Realität betrachtest, hat das hingegen schon. Und da muss man dann gegebenenfalls etwas Gehirnschmalz reinstecken, seine Schaltung richtig zu modulieren, damit es dann auch den Tatsachen entspricht. Dazu aber später auch noch mehr. Mir ging es jetzt erstmal darum, hier prinzipiell mal einen Schaltkreis darzustellen, weil wir uns jetzt weiter mit den Eigenschaften des Bauelementes Widerstand beschäftigen wollen. Hinweis Anfang, Folie 52 Hinweis Ende. Wenn wir uns die unterschiedlichen Schaltbilder für Widerstände anschauen, dann unterscheiden die sich tatsächlich in Amerika und in Europa. Grundsätzlich in Europa haben wir, wie links dargestellt, ein rechterkirches Kästchen, schreiben eher drüber, die Amerikaner haben diese Zickzack-Linie. Das heißt, wir werden im Rahmen der Vorlesungen oder im Rahmen dieses Moduls immer das europäische Symbol nutzen. Aber in internationalen Büchern, Literatur, Veröffentlichung oder aber auch in vielen Programmen wie T-Spice oder Ähnliches könnte es sein, dass du das amerikanische Symbol siehst. So dass sich eben das unten dargestellte Schaltungssymbol in Europa ergibt, der Widerstand R. Und dieser Widerstand R wird in der Regel durch einen Strom oder von einem Strom durchflossen, den Strom IR. Und dafür ist eine Spannung notwendig, die Spannung UR, weil anders der Strom nicht fließen kann. Wir werden im späteren Verlauf auch noch kennenlernen, dass diese Spannung UR tatsächlich an dem Widerstand abfällt. Das heißt, das ist kein Abfallprodukt, aber wir können genau diese Spannung tatsächlich messen, wenn wir ein Spannungsmessgerät links und rechts vom Widerstand anlegen. Warum ist das so? Wenn wir uns einmal anschauen, was in diesem Widerstand passiert, da fließt ein Strom durch und da fällt eine Spannung ab. Demzufolge wird in diesem Widerstand eine Leistung umgesetzt. P ist ja gleich U mal I. Und diese Leistung, die in diesem Widerstand umgesetzt wird, wird in Wärme umgesetzt. Das heißt, irgendwie wird dem elektrischen System Energie entnommen und gewandelt in thermische Energie. Diese Energieaufnahme, Wandlung im Widerstand wird beschrieben mit dem sogenannten Spannungsabfall. Wir sehen hier auch, dass beide Pfeile in derselben Richtung zeigen. Wir nennen das dann Verbraucher-Zähl-Pfeil-System. Das hat den Hintergrund, dass das einmal physikalisch tatsächlich auch so ist. Zum Zweiten aber damit eine Leistung positiv gezählt wird, wenn in diesem Verbraucher eben Leistung aufgenommen wird. Das ist dann für die weitere Berechnung durchaus sehr praktisch, das so zu definieren. Hinweisanfang, Folie 53, Hinweisende. Wenn wir uns jetzt mal genauer den Widerstand als Bauteil anschauen, dann haben wir natürlich das Bauremont ohmscher Widerstand. Das wäre ja auch schlimm, wenn nicht. Auf der anderen Seite kommt es aber auch zu parasitären Effekten. Denn wir haben ja ein elektrisches Feld innerhalb des Widerstands. Da liegt eine Spannung an. Das heißt, wir haben ein elektrisches Feld. Innerhalb dieses elektrischen Feldes kann eben auch Energie gespeichert werden. Und das werden wir im späteren Verlauf des Tests noch sehen. Diese Fähigkeit, Energie im elektrischen Feld zu speichern, beschreiben wir mit der Kapazität C. Das heißt, in diesem ohmschen Widerstand, der eigentlich nur ein Widerstand sein sollte, in diesem Bauelement Widerstand, befindet sich immer auch eine Kapazität. Ferner haben wir Anschlussleitungen und Ähnliches. Ein stromdurchflossener Leiter ist immer von einem Magnetfeld umgeben. Und dieses können wir schaltungstechnisch auch noch repräsentieren durch eine Induktivität, hier die Induktivität LS. Das heißt, wir sehen hier zum einen die Schaltungsymbole R, L und C als neues. Aber wir sehen eben auch, dass ein reales Bauteil Widerstand eben nicht nur den gewünschten Anteil Ohmscher Widerstand hat, sondern eben auch noch eine Lenzinduktivität und eine parallel dazu liegende Kapazität oder auch in einem. Das sorgt tatsächlich im realen Leben dann für Probleme, insbesondere wenn wir nicht mehr nur über Gleichstrom reden, sondern über Strom, der sich zeitlich schnell ändert. Denn dann spielen diese beiden Elemente L und C eine sehr entscheidende Rolle, was wir im weiteren Verlauf dieses Moduls und auch der folgenden Module dann noch sehen werden. Wichtig festzuhalten ist, wenn du einen Schaltkreis siehst, zumindest im Rahmen dieses Moduls und im Rahmen dieses Projektes Get It Digital, dann ist er bereits vollständig beschrieben. Das heißt, wir haben das Bauteil, was wir real einbauen, mit den dargestellten Schaltungssymbolen bereits dargestellt. Du musst jetzt nicht jeden Widerstand in einer Schaltung ersetzen, durch dieses Ersatzschaltbild, sondern du rechnest erstmal so, wie es dargestellt ist. Aber man darf sich oder muss sich von dem Gedanken lösen, dass ein reales Bau-Element-Widerstand wirklich nur aus diesem Schaltungssymbol Umschaltwiderstand besteht. Da steckt meistens noch deutlich mehr dahinter. In vielen Fällen können wir das vernachlässigen und heilen nicht. Und wie kriegen wir jetzt diese Daten? Eigentlich sollte der Bauteilhersteller uns diese Daten liefern. Jetzt finden wir in den allerwenigsten Datenblättern von Umschaltwiderständen die parasitären Induktivität und Kapazitäten. Das ist ein Ärgernis. Wenn man aber merkt, dass man die braucht, dann kann man die letztlich durch Ausmessung oder Ähnliches herausfinden. Halten wir kurz fest. Als Zusammenfassung. Wir haben das ideale Schaltungssymbol Umschallwiderstand. Wir haben das reale Bauteil Widerstand. Und das reale Bauteil Widerstand hat überwiegend einen Umschallwiderstand, aber auch parasitäre ungewünschte Eigenschaften.
-		
+
 	}
-	
+
 \end{frame}
 \s{
 	\begin{equation*}
@@ -920,7 +927,7 @@
 	\begin{equation}
 		R = \rho_\mathrm{R} \cdot \frac{l}{A}
 	\end{equation}
-	
+
 	\begin{align*}
 		\rho_\mathrm{R} & : \text{spezifischer Widerstand des Materials } (\Omega \text{m}) \\
 		l               & : \text{Länge des Materials (m)}                                  \\
@@ -931,8 +938,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende 	- 	Formeln R			  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \s{
 	\textbf{Einführung in die Darstellung von Schaltkreisen}
-	
-	
+
+
 	In der Elektrotechnik werden zur Darstellung von elektrischen Netzwerken sogenannte Schaltbilder verwendet.
 	Inhalt dieser Schaltbilder sind Schaltsymbole, welche für die elektrischen Eigenschaften bzw. ganze Bauelemente, verwendet werden.
 	Abbildung \ref{fig:erstes_schaltbild} zeigt beispielhaft ein solches Schaltbild.
@@ -943,7 +950,7 @@
 		\centering
 		\hspace{1cm} % Um es in der Mitte zu haben
 		\input{Tikz/src/01_Leitfaehigkeit/Schaltplan_Reihenschaltung}
-		
+
 		\s{\caption{\textbf{Schaltplan einer Reihenschaltung.} Die aus einer Gleichspannungsquelle einem Schalter, einem Verbraucher und einem Widerstand besteht.}}
 		\label{fig:erstes_schaltbild}
 	\end{figure}
@@ -952,7 +959,7 @@
 	Das Schaltbild besteht aus vier Elementen, welche mit Linien verbunden sind. Es stellt eine Reihenschaltung bestehend aus
 	einer Spannungsquelle, einem Schalter, einer Glühlampe und einem Widerstand, dar. Der Widerstand stellt den Leitungswiderstand der gesamten Leitung dar,
 	während die Verbindungslinien per Definition ideale Verbindungen ohne weitere Eigenschaften darstellen.
-	
+
 	Des Weiteren ist eine Spannung $U_{\mathrm{q}}$, sowie der Strom $I$ eingezeichnet, welcher jedoch erst fließen kann, wenn der Schalter geschlossen wird.
 	Im Folgenden werden die drei grundlegenden elektrischen Eigenschaften, sowie deren Schaltsymbole tiefer behandelt.
 }
@@ -960,15 +967,15 @@
 \begin{frame}
 	\ftx{Widerstand als Bauelement}
 	\subsection{Widerstand als Bauelement}
-	
+
 	\s{
-		Mit Hilfe der im vorherigen Abschnitt kennengelernten Methode zu Berechnung des Widerstandes, 
+		Mit Hilfe der im vorherigen Abschnitt kennengelernten Methode zu Berechnung des Widerstandes,
 		kann der Widerstandswert elektrischer Leitungen, oder auch anderer leitender Objekte, ermittelt werden.
 		Sobald ein Widerstandswert bekannt ist, wird dieser in elektrischen Schaltbildern einem Schaltsymbol zugeordnet.
 		So können verschiedene Komponenten und deren Eigenschaften miteinander verbunden werden, um deren Verhalten zu ermitteln.
 		Abbildung \ref{fig:resistor-symbols_} zeigt zwei gängige Schaltzeichen für den Widerstand.
 	}% nur im Skript
-	
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Widerstand EU und US %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Europäisches und amerikanisches Symbol
 	\b{
@@ -979,26 +986,26 @@
 			\centering
 			\input{Tikz/src/01_Leitfaehigkeit/Schaltungselement_Widerstand}
 		\end{figure}
-		
+
 	}% nur Folie
 	\s{
 		\begin{figure}[H]
 			\centering
 			\input{Tikz/src/01_Leitfaehigkeit/Schaltungselement_Widerstand}
-			
+
 			\caption{\textbf{Schaltungselement für Widerstand.} Europäisches (links) und amerikanisches (rechts).}
 			\label{fig:resistor-symbols_}
 		\end{figure}
 	}
-	
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Widerstand EU und US 	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
+
 	\s{
 		Sobald eine Gleichspannungsquelle an einen Widerstand $R$ angeschlossen wird, verhalten sich Strome und Spannungen linear.
-		Abbildung \ref{fig:idealer Widerstand} zeigt den durch den Widerstand fließenden Strom $I_\mathrm{R}$, 
+		Abbildung \ref{fig:idealer Widerstand} zeigt den durch den Widerstand fließenden Strom $I_\mathrm{R}$,
 		sowie die abfallende Spannung $U_\mathrm{R}$.
 	}
-	
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Widerstand Schaltbild %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%% Ideal und reeller Widerstand
 	\b{
@@ -1017,7 +1024,7 @@
 	\begin{figure}[H]
 		\centering
 		\input{Tikz/src/01_Leitfaehigkeit/Idealer_Widerstand}
-		
+
 		\caption{\textbf{Idealer Widerstand.} Zeigt den Spannungsabfall über den Widerstand und den Stromfluss durch ihn.}
 		\label{fig:idealer Widerstand}
 	\end{figure}
@@ -1027,7 +1034,7 @@
 \begin{frame}
 	\ftx{Widerstand als Bauelement}
 	\s{
-		Das Schaltsymbol des Widerstandes wird in Schaltungen immer als idealer Widerstand berücksichtigt. 
+		Das Schaltsymbol des Widerstandes wird in Schaltungen immer als idealer Widerstand berücksichtigt.
 		Unter Vernachlässigung der Temperaturabhängigkeit trifft dies im Gleichspannungsfall auch weitestgehend zu (Schaltvorgänge ausgenommen).
 		In der Realität gibt es viele Situationen, in denen ein realer Widerstand kein lineares Verhalten aufweisen kann.
 		Verschiedene Quellenarten werden im Abschnitte 1.2 zu Spannungs- und Stromquellen behandelt.
@@ -1052,13 +1059,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - realer Widerstand Schaltbild %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \s{
-	Ausgehend von der Ausführung eines Widerstandes und der Frequenz, bei welcher er betrieben wird, 
+	Ausgehend von der Ausführung eines Widerstandes und der Frequenz, bei welcher er betrieben wird,
 	machen sich sogenante parasitäre Effekte bemerkbar. In Abbildung \ref{fig:ESB realen Widerstand}
 	ist das Ersatzschaltbild eines realen Widerstanders dargestellt. Wird dieser bei höheren Frequenzen betrieben,
 	können die parasitären Eigenschaften (parasitics) überwiegen und zu einem völlig anderen Verhalten führen.
 	Mehr dazu in späteren Modulen.
-	
-	Im Folgenden werden aber immer vollständige Ersatzschaltbilder angenommen. Wird ein Widerstand nur mit seinem Schaltungssymbol dargestellt, 
+
+	Im Folgenden werden aber immer vollständige Ersatzschaltbilder angenommen. Wird ein Widerstand nur mit seinem Schaltungssymbol dargestellt,
 	soll dieser als damit vollständig beschrieben angenommen werden. Dies gilt auch für alle im Weiteren hergeleiteten Bauelemente.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Für Folie %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1096,7 +1103,7 @@
 % \end{table}
 
 \s{
-	In der Elektrotechnik werden werden Widerstände, auch Festwiderstände genannt, in der Schaltungsentwicklung verwendet. 
+	In der Elektrotechnik werden werden Widerstände, auch Festwiderstände genannt, in der Schaltungsentwicklung verwendet.
 	Eine der bekanntesten Ausführungen sind die THT-Widerstände (Through-Hole Technology). Obwohl diese Art in vielen Anwendungen von SMD-Bauteilen (Surface-Mount Device) abgelöst worden sind,
 	gibt es immer noch Anwendungsfälle in denen sie Sinn machen. Beispiele sind Prototyping, DIY-Projekte, Leistungsanwendungen oder Leiterplatten mit hohen mechanischen Anforderungen.
 	Die THT-Widerstände sind durch farbige Ringe gekennzeichnet, welche Aufschluss über den Widerstandswert und die Toleranz liefern.
@@ -1120,15 +1127,15 @@
 			\centering
 			\begin{minipage}[b]{0.5\textwidth}
 				\centering
-					\foo{width=\textwidth, alt={XX}}{width=\textwidth}{Farbcode_von_Widerstaenden}{
-						\put(45, 40){Band}
-						\put(40, 23){\line(1,1){6}}\put(46, 30){1.}
-						\put(44, 23){\line(1,1){6}}\put(50, 30){2.}
-						\put(48, 23){\line(1,1){6}}\put(54, 30){3.}
-						\put(53, 23){\line(1,1){16}}\put(69, 40){Multiplikator}
-						\put(60, 23){\line(1,1){6}}\put(66, 30){Toleranz}
-						\put(0, 5){$1 - 5 - 0 - 2 = 150 \cdot 100\,\Omega = 15\,\text{k}\Omega \pm 5\%$}
-					}{}
+				\foo{width=\textwidth, alt={XX}}{width=\textwidth}{Farbcode_von_Widerstaenden}{
+					\put(45, 40){Band}
+					\put(40, 23){\line(1,1){6}}\put(46, 30){1.}
+					\put(44, 23){\line(1,1){6}}\put(50, 30){2.}
+					\put(48, 23){\line(1,1){6}}\put(54, 30){3.}
+					\put(53, 23){\line(1,1){16}}\put(69, 40){Multiplikator}
+					\put(60, 23){\line(1,1){6}}\put(66, 30){Toleranz}
+					\put(0, 5){$1 - 5 - 0 - 2 = 150 \cdot 100\,\Omega = 15\,\text{k}\Omega \pm 5\%$}
+				}{}
 			\end{minipage}
 			%\vspace{0.5cm}
 			\begin{minipage}[b]{1\textwidth}
@@ -1166,8 +1173,8 @@
 				}
 			\end{minipage}
 		\end{figure}
-		
-		
+
+
 	}% nur Folie
 	\speech{01_Leitfaehigkeit_und_Widerstand16}{1}{
 		Wenn wir uns jetzt so ein normales Durchsteckbauelement, Feed-Through-Bauelement, anschauen, die hier dargestellt, dann haben wir ja schon vorher auf den Fotos diese bunten Ringe gesehen. Und mithilfe dieser bunten Ringe kann man die wichtigsten Bauteileigenschaften, nämlich den Wert des ohmschen Widerstandes und auch die Qualität, also die Toleranz, die das Bauteil haben kann, darstellen. Du wirst diese Listen, diese Farbcodierung überall in Laboren oder Ähnliches finden, wo häufig solche Bauteile verwendet werden, damit man eben dann sich immer vergewissern kann, ob man wirklich den richtigen Widerstand ausgesucht hat.
@@ -1226,14 +1233,14 @@
 		\caption{\textbf{Widerstandsfarbcodierung.} Zeigt die Farbcodes zur Bestimmung des Widerstandswerts und der Toleranz eines Widerstands.}
 		\label{fig:Farbkodierung vom Widerstand}
 	\end{figure}
-	
+
 }%nur Skript
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - farbige Widerstandstabelle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - farbige Widerstandstabelle mit Text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \s{
-	Die THT-Widerstände gibt es in verschiedenen Ausführungen, welche alle ihre Vor- und Nachteile mit sich bringen. 
+	Die THT-Widerstände gibt es in verschiedenen Ausführungen, welche alle ihre Vor- und Nachteile mit sich bringen.
 	Die Abbildung \ref{fig:Bauarten von Widerständen} zeigt vier Arten, wie diese Umgesetzt werden können.
 }
 
@@ -1252,11 +1259,11 @@
 		\s{\caption{\textbf{Verschiedene Ausführungen von bedrahteten (THT) Widerständen.}}}
 		\label{fig:Bauarten von Widerständen}
 	\end{figure}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand17}{1}{
 		Es gibt jetzt unterschiedliche Widerstände. Es gibt, wie auf der linken Seite dargestellt, Schichtwiderstände. Das heißt, da hat man eine Widerstandsschicht, die gewendet oder als Vollmaterial ausgeführt werden kann. Und es gibt Widerstände, die gewickelt werden. Das sind insbesondere die etwas höheren Widerstandswerte, die so aufgebaut sind. Die gibt es dann in einer bifilaren Wicklung oder in einer induktivitätsarmen Wicklung. Wir haben ja vorher bereits gesehen, dass es Induktivitäten auch in Widerständen als Bauteil gibt. Und die wollen wir so gering wie möglich halten. Und dann kommen wir eben auf diese beiden Wicklungsarten als Beispiel. Es gibt noch alle möglichen anderen Formen, aber so sind die Bauteile in der Regel ausgeführt.
 	}
-	
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - graue Widerstände %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1267,13 +1274,13 @@
 	% In Ingenieurwissenschaftlichen Disziplinen wird für Temperaturen sehr oft Kelvin verwendet.
 	% Null Kelvin entsprechen -273 Grad Celsius, was dem absoluten Nullpunkt entspricht.
 	Der Widerstandswert eines Materials ist abhängig von dessen geometrischen und spezifischen Eigenschaften.
-	
+
 	\end {Merksatz}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand18}{1}{
 		Also wir haben gesehen, dass der Widerstand einer Anordnung oder eines Materials abhängig ist von der Geometrie und von spezifischen Materialeigenschaften, nämlich von der Leitfähigkeit Kappa. Auf diese Leitfähigkeit Kappa wollen wir nun im Folgenden nochmal etwas detaillierter eingehen.
 	}
-	
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Merksatz Widerstand %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1285,9 +1292,9 @@
 
 \s{
 	%Die vorherigen Abschnitte beschäftigten sich mit den Grundlagen von Widerständen und ihrer Berechnung. 
-	In diesem Abschnitt geht es um eine spezielle Kategorie von Widerständen, die besonders in temperaturabhängigen Anwendungen Gebrauch finden: 
-	die PTC- und NTC-Widerständen. Die Namen bezieht sich auf deren positiven bzw. negativen Temperaturkoeffizienten $\alpha$, welcher bereits in Abschnitt 1.1.3 eingeführt wurde. 
-	Diese speziellen Widerstände, auch als Thermistoren bekannt, unterscheiden sich von herkömmlichen Widerständen dadurch, 
+	In diesem Abschnitt geht es um eine spezielle Kategorie von Widerständen, die besonders in temperaturabhängigen Anwendungen Gebrauch finden:
+	die PTC- und NTC-Widerständen. Die Namen bezieht sich auf deren positiven bzw. negativen Temperaturkoeffizienten $\alpha$, welcher bereits in Abschnitt 1.1.3 eingeführt wurde.
+	Diese speziellen Widerstände, auch als Thermistoren bekannt, unterscheiden sich von herkömmlichen Widerständen dadurch,
 	dass ihr Widerstandswert stark von der Temperatur abhängt. %Während normale Widerstände so konstruiert sind, dass ihr Widerstand bei unterschiedlichen Temperaturen weitgehend konstant bleibt, nutzen PTC- und NTC-Widerstände diese Eigenschaft gezielt, 
 	% um als Temperatursensoren, Schutzvorrichtungen oder zur Temperaturkompensation in elektrischen Schaltungen eingesetzt zu werden.
 	Abbildung \ref{fig:ntc_ptc_widerstandsdiagramm} zeigt das entgegengesetzte Verhalten beider Widerstandsarten.
@@ -1304,19 +1311,19 @@
 				während bei einem PTC  der Widerstandswert mit steigender Temperatur ansteigt.}}
 		\label{fig:ntc_ptc_widerstandsdiagramm}
 	\end{figure}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand19}{1}{
 		Die gerade dargestellte Temperaturabhängigkeit von Leitern und Halbleitern kann man eben auch in Bauteilen nutzen, nämlich in sogenannten temperaturabhängigen Widerständen. Ein normaler Leiter wie Kupfer würde das klassische PTC-Verhalten zeigen, d.h. der Widerstand der Anordnung nimmt mit wachsender Temperatur in beiden Bereichen auch linear zu. Das wäre jetzt hier die rote Kurve. Ob das so stark ist, wie hier dargestellt? Also wir haben eine Verdrückung der Temperatur von 20 auf 40 Kelvin und der Widerstand wird dreimal so hoch. Wenn ich das erreichen will, muss ich andere Materialien verwenden als z.B. Kupfer. Aber prinzipiell zeigt auch erstmal jeder normale Widerstand, den Sie als Bauteil kaufen können, leichtes PTC-Verhalten.
 		Die NPC-Widerstände baut man in der Regel aus Halbleitern, die fallen auf einmal mit wachsender Temperatur in ihren Widerstand. Und wofür kann man beides benutzen? Beide Widerstandsformen kann man als Temperaturfühler verwenden, wenn man z.B. so wie hier dargestellt zwei Widerstände kombiniert, ein PTC und ein NTC, die dieselbe Steigung haben, nur mit unterschiedlichen Vorzeichen, kann ich sehr präzise die Temperatur messen. Ich kann das auch immer plausibilisieren, ob das stimmt, weil der eine Widerstand muss größer werden, der andere Widerstand muss kleiner werden. Das sind so Tricks, die man gerne anwendet.
 		Wofür kann man das aber auch noch verwenden? Z.B. als Anlaufbegrenzung, Anlaufstrombegrenzung kann man so NTC-Widerstände verwenden, die sorgen eben dafür, dass man am Anfang, wenn die Schaltung noch kalt ist, relativ große Widerstände inline hat. Und dann erwärmt sich auch der NTC-Widerstand mit längerem Betrieb und fällt dadurch, sodass dann der volle Strom in die Schaltung fließen kann. Auch das ist durchaus eine übliche Anwendung.
 	}
-	
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Diagramm PTC und NTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \s{
-	Die PTC-Widerstände haben einen positiven Temperaturkoeffizienten $\alpha$, welcher in Tabelle 1 im Abschnitt 1.1.3 abgelesen werden kann. 
-	Gut leitfähige Materialien haben ein positives $\alpha$, was bedeutet, dass deren Widerstand bei höheren Temperaturen zunimmt. 
-	Somit sind sie im kalten Betrieb leitfähiger, wodurch sie auch "Kaltleiter" genannt werden. 
+	Die PTC-Widerstände haben einen positiven Temperaturkoeffizienten $\alpha$, welcher in Tabelle 1 im Abschnitt 1.1.3 abgelesen werden kann.
+	Gut leitfähige Materialien haben ein positives $\alpha$, was bedeutet, dass deren Widerstand bei höheren Temperaturen zunimmt.
+	Somit sind sie im kalten Betrieb leitfähiger, wodurch sie auch "Kaltleiter" genannt werden.
 	In Abbildung \ref{fig:widerstandsdiagramm_ptc} ist der gleiche PTC-Widerstand bei jeweils unterschiedlichen Temperaturen dargestellt.
 }
 
@@ -1330,11 +1337,11 @@
 		\s{\caption{Diagramm eines PTC Widerstandes bei 20°C und bei 80°C}
 			\label{fig:widerstandsdiagramm_ptc}}
 	\end{figure}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand20}{1}{
 		Das sind jetzt Stromspannungsbogen von einem PTC-Widerstand bei zwei unterschiedlichen Temperaturen. Bei 20 Grad ist der Widerstand kleiner als bei 80 Grad, sodass die Stromspannungsgurve eben flacher wird mit max. Temperatur, weil Sie müssen ja immer das romsche Gesetz erfüllen, R ist gleich U durch I und wenn R größer wird, dann muss derselben U das I kleiner werden.
 	}
-	
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Diagramm PTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \s{
@@ -1352,11 +1359,11 @@
 				mit zunehmender Stromstärke ansteigt. Der Widerstandswert kann sich dabei ebenfalls ändern, abhängig von der Temperatur des Widerstands.}}
 		\label{fig:strom-temperatur}
 	\end{figure}
-	
+
 	\speech{01_Leitfaehigkeit_und_Widerstand21}{1}{
 		Häufig ist das Ganze aber durchaus auch nicht linear oder anders. Dadurch ergeben sich durch das PTC-Verhalten von Widerständen ergeben sich häufig hier sehr extrem dargestellt ein nicht linearer Widerstand. Warum ist das so? Wenn ein Widerstand Strom durchschlossen wird, dann wird da drin ja Leistung umgesetzt und diese Leistung wird in Wärme umgewandelt. Das heißt, ein Widerstand, der bestromt wird, erwärmt sich automatisch und das ist hier dargestellt. Der Widerstand, der durch eine 2 Ampere durchschlossen wird, erwärmt sich auf 32 Grad mit 4 Ampere auf 68 Grad und 6 Ampere auf 128 Grad. Und dadurch verändert sich dann auch das Widerstandsverhalten. Das heißt, wir haben nicht Linearitäten, die man eben auch in solchen Kurven sieht.
 	}
-	
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Diagramm Strom - Temperatur Kurve %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1380,13 +1387,13 @@
 	\speech{01_Leitfaehigkeit_und_Widerstand22}{1}{
 		Die Strom-Spannungskennline eines NTC Widerstandes wird bei zunehmender Temperatur immer steiler, da sich ja der Widerstand mit steigender Temperatur immer verringert. Daher kann bei derselben Spannung mehr Strom durch den Widerstand fließen, wenn die Temperatur erhöht wird.
 	}
-	
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Diagramm NTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - PTC und NTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newpage	
+\newpage
 
 
 
