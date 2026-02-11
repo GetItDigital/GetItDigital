@@ -74,7 +74,7 @@
 	\speech{01_Leitfaehigkeit_und_Widerstand2}{1}{
 		Auf dem hier dargestellten Foto, das ist eigentlich noch ein Ausschnitt aus dem anfänglichen Foto, siehst du unterschiedliche Bauteilausführungen von Widerständen.
 		Fangen wir erstmal mit den Widerständen in der rechten Hälfte des Bildes an. Dort siehst du unterschiedliche Ausführungen eines sogenannten Through-Hole Element, kurz T-H-T Bauteil.
-		Diese Bauelemente, da werden die Beinchen, deren Anschlüsse geknickt und dann durch Bohrungen in der Platine durchgesteckt und dann an der Unterseite der Platine verlötet.
+		Diese Bauelemente, da werden die Beinche geknickt und dann durch Bohrungen in der Platine durchgesteckt und dann an der Unterseite der Platine verlötet.
 		Das heißt, der elektrische Kontakt dieses Bauelementes ist eigentlich genau auf der anderen Platinenseite wie das Bauelement selber.
 		Das ist zum einen relativ aufwendig in der automatischen Bestückung und zum anderen hat das auch viele Nachteile,
 		was parasitäre Effekte angeht für das Bauelement. Denn wir werden im späteren Verlauf sehen, dass die Zuleitung durch die Eigenschaften des Bauelementes deutlich beeinflusst.
@@ -85,7 +85,7 @@
 		Nachteilig ist, dass sie meistens nicht die großen Leistungen aufnehmen können.
 		Wenn man sich überlegt, das werden wir im späteren Verlauf sehen, dass die Leistung, die ein Widerstand aufnimmt, in Wärme gewandelt wird,
 		ist irgendwie ersichtlich, dass zum Beispiel der zweite Widerstand von links, der rote, deutlich mehr Leistung aufnehmen kann als der kleine Chip ganz unten,
-		schon alleine vom Volumen und der Masse. Oben links, das Bauteil, wo auch Mechanik-Elemente drin ist, das nennt man Potentiometer.
+		schon alleine vom Volumen und der Masse. Oben links, das Bauteil, wo auch Mechanik-Elemente drin sind, das nennt man Potentiometer.
 		Und das ist im Prinzip ein Widerstand mit einem festen Wert, aber sie haben einen sogenannten Mittelabgriff.
 		Wenn wir an der rechten Seite des Bauelementes sehen oder schauen, dann sieht man dort drei Abgriffe.
 		Um den vollen Widerstandswert, zum Beispiel 10 Kiloohm, den würdest du erhalten, wenn du am oberen Kontakt und am unteren Kontakt kontaktierst.
@@ -211,22 +211,22 @@
 	\b{
 		Durch Einsetzen der aus Modul 1 bekannten Formeln der Driftgeschwindigkeit $v_{\mathrm{el}}$ und der Raumladungsdichte $\rho$ in die Formel 4,
 		ergibt sich die Formel 5 für die Stromdichte.
+		\begin{spreadlines}{2ex}
+			\begin{align}
+				v_{\mathrm{el}} & = \frac{\Delta x}{\Delta t}                                                                                                                                          \\
+				\rho            & = \frac{\Delta Q}{\Delta V}                                                                                                                                          \\
+				J               & = \frac{\Delta Q \cdot \Delta x}{\Delta t \cdot \Delta V} \uncover<2->{= v_{\mathrm{el}} \cdot \frac{\Delta Q}{\Delta V}                                              } \\
+				\uncover<3->{
+				J               & = v_{\mathrm{el}} \cdot \rho
+				}
+			\end{align}
+		\end{spreadlines}
 
-		\begin{align}
-			v_{\mathrm{el}} & = \frac{\Delta x}{\Delta t}                               \\
-			\\
-			\rho            & = \frac{\Delta Q}{\Delta V}                               \\
-			\\
-			J               & = \frac{\Delta Q \cdot \Delta x}{\Delta t \cdot \Delta V}\\
-			\only<2->{                                                         
-			
-			               J & = v_{\mathrm{el}} \cdot \rho }
-		\end{align}
 
-		\only<3->{
+		\uncover<4->{
+			\setlength{\leftmargini}{4.99cm}
 			\begin{enumerate}
 				\setcounter{enumi}{4} % startet bei 5
-				\centering
 				\item \( \vec{J}=\rho \cdot \vec{v_{\mathrm{el}}} \)
 			\end{enumerate}
 			Da die Geschwindigkeit immer einen Betrag und eine Richtung hat, ist die Stromdichte ebenfalls ein Vektor.}
@@ -275,7 +275,7 @@
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand4}{2}{
-		Also wir können V_E_L ersetzen durch Delta X durch Delta T. Nichts anderes ist ja letztlich die Geschwindigkeit. Das ist ja nichts anderes als die zeitliche Veränderung des Ortes in Bewegungsrichtung.
+		Also wir können Delta X durch Delta T durch V_E_L ersetzen. Das ist ja  die zeitliche Veränderung des Ortes in Bewegungsrichtung, was nichts anderes als die Geeschwindigkeit ist.
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand4}{3}{
