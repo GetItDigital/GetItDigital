@@ -4,7 +4,7 @@
 
 
 	\section{Die Arbeit}
-\newvideofile{arbeit}{Arbeit}
+\newvideofile{Arbeit}{Arbeit}
 	%%%%%%% erste Version %%%%%%%%
 	%%%%%%% Einleitung ARBEIT %%%%
 	\s{
@@ -34,20 +34,16 @@
 		W = \Delta E \quad \quad [W] = \text{1 Joule = 1 J = 1 Nm}
 	\end{equation*}	
 	\vspace*{1cm}
-	\only<2->{\begin{equation*}
-			W = - \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s}
-	\end{equation*}}
-	
+	\only<2->{
+			\begin{itemize}
+				\centering \item $ \displaystyle W = - \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s} $	
+			\end{itemize}}
 }% nur Folien
 
 \speech{02_Arbeit1}{1}{
-	Wir haben jetzt verschiedene Arten der Energie kennengelernt. Wir haben gesehen, wie wir Energie berechnen können, nämlich über das Linienintegral. Und letztlich hatten wir bei der Einführung am Beispiel des Pumpspeicherkraftwerks auch den Begriff der Arbeit definiert. Arbeit ist nichts anderes als die Änderung einer Energieform. Das heißt, die Arbeit, die wir verrichten, ist das Delta, also die Differenz der Energie vorher und nachher. Die Einheit für die Arbeit ist Joule, beziehungsweise Newtonmeter, das kann man ineinander umrechnen. Wohingegen die Energie in Wattstunden zum Beispiel angegeben wird.
+	Wir haben jetzt verschiedene Arten der Energie kennengelernt. Wir haben gesehen, wie wir Energie berechnen können, nämlich über das Linienintegral. Und letztlich hatten wir bei der Einführung am Beispiel des Pumpspeicherkraftwerks auch den Begriff der Arbeit definiert. Arbeit ist nichts anderes als die Änderung einer Energieform. Das heißt, die Arbeit, die wir verrichten, ist das Delta, also die Differenz der Energie vorher und nachher. Die Einheit für die Arbeit ist wie bei der Energie auch Joule, beziehungsweise Newtonmeter. Das heißt, wenn wir jetzt nochmal an das Pumpspeicherkraftwerk von gerade denken, dann haben wir eine gewisse potenzielle Energie im Oberbecken gespeichert. Diese ist abhängig von der Höhe zwischen Ober- und Unterbecken, und der Menge an Wasser, dem Volumen, beziehungsweise damit verknüpft, dem Gewicht. Das ist die Energie. Und wenn wir dieses Wasser durch die Turbine laufen lassen, dann wird Arbeit verrichtet. Und zwar genau so viel Arbeit, wie wir Energie aus dem Oberbecken in das Unterbecken verlagern. Das ist die Arbeit, die wir verrichten.
 }
-% ToDo: Video: An dieser Stelle bricht das Video ab. Es fehlt auch der Abspann.
 
-	%%% Es folgt die Formel für die Arbeit (W).
-	%%% Die Änderung der Energie dE (also der Wechsel der Energie von einer Form in eine Andere), entspricht einer Änderung, also einem Prozess, also einer Arbeit, während Energie auch ruhend gelagert werden kann, passiwert bei der umsetzung von Arbeit immer etwas.
-	%%% Der folgende Text an der Stelle könnte etwas unpassend sein.
 \s{
 	Diese Änderung der Energiemenge kann durch verschiedene physikalische Aktionen hervorgerufen werden, einschließlich der Verschiebung eines Objekts in einem Kraftfeld. 
 	Um diese Konzepte weiter zu veranschaulichen, ist im Folgenden die allgemeine Formel \ref{eq:WFds} für die Arbeit dargestellt: 
@@ -70,15 +66,17 @@ Wird Energie entnommen, gilt die Arbeit als negativ, da sie von der gespeicherte
 was eine Verringerung der Systemenergie signalisiert.
 }
 \b{\vspace*{-0.5cm}}
-\only<2->{
+\only<3->{
 	\begin{Merksatz}{Arbeit}  
 	 Das Vorzeichen der Arbeit ist kontextabhängig: % und beschreibt, ob die Arbeit ein Energieniveau anhebt oder absenkt.
 	Die Arbeit ist positiv, wenn Energie einem System hinzugefügt wird
 	und negativ, wenn Energie einem System entnommen wird.
 
 	\end{Merksatz}}
-\speech{02_Arbeit2}{2}{
-Das heißt, wenn wir jetzt nochmal an das Pumpspeicherkraftwerk von gerade denken, dann haben wir eine gewisse potenzielle Energie im Oberbecken gespeichert. Diese ist abhängig von der Höhe zwischen Ober- und Unterbecken, und der Menge an Wasser, dem Volumen, beziehungsweise damit verknüpft, dem Gewicht. Das ist die Energie. Und wenn wir dieses Wasser durch die Turbine laufen lassen, dann wird Arbeit verrichtet. Und zwar genau so viel Arbeit, wie wir Energie aus dem Oberbecken in das Unterbecken verlagern. Das ist die Arbeit, die wir verrichten. Demzufolge können wir das formelmäßig genauso beschreiben. Die Arbeit W ist gleich dem Linienintegral von P1 nach P2 über F-d-s, wobei hier jetzt noch das negative Vorzeichen dazukommt. Das Vorzeichen der Arbeit ist abhängig ob einem System Energie hinzugefügt wird das ist es Positiv oder ob Sie entnommen wird dann ist es Negativ.
+\speech{02_Arbeit2}{2}{Demzufolge können wir das formelmäßig genauso beschreiben. Die Arbeit W ist gleich dem Linienintegral von P1 nach P2 über F-d-s. 
+Merke dir also dass das Vorzeichen der Arbeit abhängig ist ob einem System Energie hinzugefügt wird dann ist es Positiv, oder ob Sie entnommen wird dann ist es Negativ.
+}
+\speech{02_Arbeit2}{3}{Merke dir also dass das Vorzeichen der Arbeit abhängig ist ob einem System Energie hinzugefügt wird dann ist es Positiv, oder ob Sie entnommen wird dann ist es Negativ.
 }
 \end{frame}
 
@@ -132,8 +130,8 @@ Das heißt, wenn wir jetzt nochmal an das Pumpspeicherkraftwerk von gerade denke
 
 \speech{02_Arbeit3}{1}{% klingt seh gut mit seed 933424
 Jetzt betrachten wir die elektrische Arbeit. Wie groß ist die Arbeit, die wir mit elektrischen Systemen verrichten? Wir fangen genauso an wie vorher auch. Wir betrachten die elektrische Energie: E ist gleich F-EL durch Q, wodurch folgt F-EL ist gleich Q mal E. Daraus abgeleitet haben wir dann die elektrische Arbeit, die letztlich minus Q mal dem Integral von P1 nach P2 über E mal D-S entspricht.
-Wenn wir jetzt die elektrische Arbeit, die wir verrichten, mit F-EL gleich Q mal E gleichsetzen, dann erhalten wir durch Einsetzen oder durch Vergleichen mit Formeln, die wir bereits vorher hergeleitet haben, dass das Integral von P1 nach P2 über E mal D-S nichts anderes ist als unsere definierte Spannung U. Das heißt, die elektrische Arbeit, die wir verrichten, ist Q mal U – die Ladung mal die Spannung.
-Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja gesagt, dass der Strom I die zeitliche Veränderung der Ladungsmenge Q ist: I ist gleich d-Q durch d-t. Es folgt also letztlich, dass wir die Ladung Q beschreiben können als den Strom I mal die Zeit T, die der Strom fließt. Das setzen wir nun ein in die gerade hergeleitete Formel und erhalten: W-EL ist gleich Q mal U. Wir ersetzen also das Q durch I mal T und erhalten:
+Wenn wir jetzt die elektrische Arbeit, die wir verrichten, mit F-EL gleich Q mal E gleichsetzen, dann erhalten wir durch Einsetzen oder durch Vergleichen mit Formeln, die wir bereits vorher hergeleitet haben, dass das Integral von P1 nach P2 über E mal D-S nichts anderes ist als unsere definierte Spannung U. Das heißt, die elektrische Arbeit W-EL, die wir verrichten, ist Q mal U, die Ladung mal die Spannung.
+Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja gesagt, dass der Strom I die zeitliche Veränderung der Ladungsmenge Q ist. I ist also gleich d-Q durch d-t. Es folgt also letztlich, dass wir die Ladung Q beschreiben können als den Strom I mal die Zeit T, die der Strom fließt. 
 }
 
 
@@ -194,7 +192,9 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 		\vspace{-8.6cm} 
 		\begin{Merksatz}{Arbeit}
 
-			\begin{itemize} 
+			\begin{itemize}
+				\item Energie beschreibt das Potential Arbeit zu verrichten.
+				\item Energie kann gespeichert werden, Arbeit nicht. 
 				\item Für das Verrichten einer Arbeit wird immer eine Zeitdauer benötigt.
 				\item Ein Momentanzustand ist immer der Ist-Zustand der Energieverteilung.
 				\item Das Verrichten elektrischer Arbeit bedarf immer eines Stromflusses.
@@ -205,21 +205,24 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 		\s{\begin{Merksatz}{Arbeit}
 
 			\begin{itemize}
-				\item Für das Verrichten einer Arbeit wird immer eine Zeitdauer benötigt
-				\item Ein Momentanzustand ist immer der Ist-Zustand der Energieverteilung
-				\item Das Verrichten elektrischer Arbeit bedarf immer eines Stromflusses
+				\item Energie beschreibt das Potential Arbeit zu verrichten.
+				\item Energie kann gespeichert werden, Arbeit nicht.
+				\item Für das Verrichten einer Arbeit wird immer eine Zeitdauer benötigt.
+				\item Ein Momentanzustand ist immer der Ist-Zustand der Energieverteilung.
+				\item Das Verrichten elektrischer Arbeit bedarf immer eines Stromflusses.
 			\end{itemize}
 
 		\end{Merksatz}}
 	
 
 \speech{02_Arbeit3}{2}{ %seed imer noch nicht perfekt, aber schon ok
- W-EL ist gleich U mal I mal T. Auch hier ist die Einheit wieder Joule. Ein Joule ist gleich eine Wattsekunde.}
-\speech{02_Arbeit3}{3}{Mekre also das natürlich genauso gilt, dass für das Verrichten der Arbeit immer eine Zeitdauer benötigt wird. Energie können wir speichern, die ist immer da. Wenn wir aber wissen wollen, wie viel Arbeit verrichtet wird, brauchen wir eine gewisse Zeit. Der Momentanzustand ist immer der Zustand der Energieverteilung, wo also wie viel Energie im System gespeichert ist. Wenn wir elektrische Arbeit verrichten wollen, dann brauchen wir immer einen Stromfluss. Wenn wir keinen Stromfluss haben, wird keine Arbeit verrichtet. Genauso übrigens, wenn keine Spannung anliegt.
+Wir ersetzen also das Q in der Hergeleiteten Formel W-EL durch I mal T und erhalten: W-EL ist gleich U mal I mal T. Auch hier ist die Einheit wieder Joule oder auch Wattsekunde.}
+
+\speech{02_Arbeit3}{3}{Merke also das Energie das Potential Arbeit zu verrichten beschreibt. Energie kann gespeichert werden Arbeit nicht. Für das Verrichten von Arbeit wird immer eine Zeitdauer benötigt. Der Momentanzustand ist immer der Ist-Zustand der Energieverteilung, wo also, wie viel Energie im System gespeichert ist. Und wenn wir elektrische Arbeit verrichten wollen, dann brauchen wir immer einen Stromfluss. Wenn wir keinen Stromfluss haben, wird keine Arbeit verrichtet. Genauso übrigens, wenn keine Spannung anliegt.
 }
 \end{frame}
 
-%%%% Ringintegral %%%%%%
+%%%% Wegintegral %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 		\subsection{Wegintegral der elektrischen Arbeit}
@@ -280,7 +283,7 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 		
 		Dieses Verhalten spiegelt wieder, dass die Arbeit gleich groß ist, jedoch in einem Fall Arbeit aufgewendet und im anderen Fall Arbeit verrichtet wird.
 		Dies führt zu entgegengesetzten Vorzeichen, was dazu führt, dass sich die Summe beider Arbeiten aufhebt.
-		Mathematisch kann dies auch so ausgedrückt werden, dass das Ringintegral entlang einer beliebigen Kontur zurück zum Ausgangspunkt Null ergibt.
+		Mathematisch kann dies auch so ausgedrückt werden, dass das Wegintegral entlang einer beliebigen Kontur zurück zum Ausgangspunkt Null ergibt.
 		Da sich die Ladung $Q$ außerhalb des Umlaufintegral befindet, ist das Ergebnis somit unabhängig von der Ladungsmenge.
 		
 	\begin{equation}
@@ -288,10 +291,10 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 	\rightarrow \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} = 0
 	\end{equation}
 
-Das Ergebnis des Ringintegrals verdeutlicht ein fundamentales Prinzip der Physik: In einem statischen Feld ist die über einen geschlossenen Weg verrichtete Arbeit immer Null. Dies bestätigt die Wegunabhängigkeit der Arbeit in diesen Feldern und zeigt, dass die verrichtete Arbeit ausschließlich von den Anfangs- und Endpunkten abhängt und nicht vom spezifischen Weg zwischen diesen Punkten. 
+Das Ergebnis des Wegintegrals verdeutlicht ein fundamentales Prinzip der Physik: In einem statischen Feld ist die über einen geschlossenen Weg verrichtete Arbeit immer Null. Dies bestätigt die Wegunabhängigkeit der Arbeit in diesen Feldern und zeigt, dass die verrichtete Arbeit ausschließlich von den Anfangs- und Endpunkten abhängt und nicht vom spezifischen Weg zwischen diesen Punkten. 
 
-\begin{Merksatz}{Ringintegral}  
-Das geschlossene Ringintegral $ \displaystyle \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} $ ist gleich Null.
+\begin{Merksatz}{Wegintegral}  
+Das geschlossene Wegintegral $ \displaystyle \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} $ ist gleich Null.
 \end{Merksatz}
 		  
 	% Wie im Abschnitt über elektrische Felder erklärt wird, beeinflussen sich zwei Ladungen Q gegenseitig, 
@@ -303,32 +306,43 @@ Das geschlossene Ringintegral $ \displaystyle \oint_{s}\vec{E} \cdot \mathrm{d}\
 	% in einem elektrischen System übertragen wird. Sie wird üblicherweise in der Einheit Joule gemessen. \\
 	% Elektrische Arbeit wird durch die Spannung (U) und die Ladung (Q) bestimmt, die durch ein elektrisches System fließen. \\
 }% nur skript	
-\b{                               
+\b{   
+	\only<2->{                            
 	\begin{itemize} \centering
 		\item $\displaystyle \left| W_\mathrm{el} \right| = \left| -Q \cdot \int_{s_\mathrm{1}} \vec{E} \cdot \mathrm{d}\vec{s}\; \right| = \left| -Q \cdot \int_{s_\mathrm{2}}\vec{E} \cdot \mathrm{d}\vec{s}\; \right| $
 		\item  $\displaystyle W_\mathrm{el} = - Q \cdot \int_{s_\mathrm{1}} \vec{E} \cdot \mathrm{d}\vec{s} -Q \cdot \int_{s_\mathrm{2}}\vec{E} \cdot \mathrm{d}\vec{s} = - Q \cdot \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} = 0
 	\rightarrow \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} = 0 $
-	\end{itemize}
+	\end{itemize}}
     
-	\only<2->{
+	\only<3->{
 	\vspace{-7.9cm} 
 		\begin{tikzpicture}{remember picture,overlay}
 		\fill[white,opacity=0.7](current page.south west) rectangle(current page.north east);
 		\end{tikzpicture}
 		\vspace{-8.5cm} 
-	\begin{Merksatz}{Ringintegral}  
+	\begin{Merksatz}{Wegintegral}  
 	
-	Das geschlossene Ringintegral $ \displaystyle \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} $ ist gleich Null.
+	Das geschlossene Wegintegral $ \displaystyle \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} $ ist gleich Null.
 	\end{Merksatz}}
 
 }
 \end{overlayarea}
 	\speech{02_Arbeit4}{1}{
-	Schauen wir uns nun an, was passiert, wenn wir eine Ladung im elektrischen Feld auf einer beliebigen Kurve bewegen und welche Arbeit wird dann verrichtet? Dass Arbeit verrichtet werden muss, wissen wir aus der Tatsache, dass hier eine Kraft auf die Ladung wirkt. Stellen wir uns vor, wir bewegen uns vom Punkt P1 über den Punkt P2 wieder zurück zum Punkt P1. Was passiert dann? Vergleichen wir das mit Höhenlinien und der potenziellen Energie: Solange die Höhe gleich bleibt, bleibt auch die potenzielle Energie gleich - völlig unabhängig vom Weg. Genauso ist es im elektrischen Feld.
-	Wir können die elektrische Arbeit aufteilen in die Strecke S1 von P1 nach P2 und in die Strecke S2 von P2 zurück nach P1. Mathematisch ergibt sich daraus ein sogenanntes geschlossenes Ringintegral, gekennzeichnet durch den Kreis im Integralzeichen. Die insgesamt verrichtete elektrische Arbeit ist dann null.
-	Formeltechnisch gilt: Die elektrische Arbeit ist gleich der Ladungsmenge Q multipliziert mit dem Wegintegral E mal ds. Daraus folgt unmittelbar, dass das geschlossene Wegintegral E mal ds immer gleich null sein muss. Zumindest für das elektrostatische Feld gilt diese Regel. Sie ist eine ganz elementare Grundlage der Elektrodynamik und später auch für die Netzwerktheorie in der Elektrotechnik.
-}
-	\speech{02_Arbeit4}{2}{Wir sehen also: Das geschlossene Ringintegral E mal ds ist immer gleich null. Das steht in direktem Zusammenhang mit der verrichteten Arbeit im elektrostatischen Feld.}
+	% Schauen wir uns nun an, was passiert, wenn wir eine Ladung im elektrischen Feld auf einer beliebigen Kurve bewegen und welche Arbeit wird dann verrichtet? Dass Arbeit verrichtet werden muss, wissen wir aus der Tatsache, dass hier eine Kraft auf die Ladung wirkt. Stellen wir uns vor, wir bewegen uns vom Punkt P1 über den Punkt P2 wieder zurück zum Punkt P1. Was passiert dann? Vergleichen wir das mit Höhenlinien und der potenziellen Energie: Solange die Höhe gleich bleibt, bleibt auch die potenzielle Energie gleich, völlig unabhängig vom Weg. Genauso ist es im elektrischen Feld.
+	% Wir können die elektrische Arbeit aufteilen in die Strecke S1 von P1 nach P2 und in die Strecke S2 von P2 zurück nach P1. Mathematisch ergibt sich daraus ein sogenanntes geschlossenes Wegintegral, gekennzeichnet durch den Kreis im Integralzeichen. Die insgesamt verrichtete elektrische Arbeit ist dann null.
+	% Formeltechnisch gilt: Die elektrische Arbeit ist gleich der Ladungsmenge Q multipliziert mit dem Wegintegral E mal ds. Daraus folgt unmittelbar, dass das geschlossene Wegintegral E mal ds immer gleich null sein muss. Zumindest für das elektrostatische Feld gilt diese Regel. Sie ist eine ganz elementare Grundlage der Elektrodynamik und später auch für die Netzwerktheorie in der Elektrotechnik.
+	Schauen wir uns jetzt an, wie elektrische Arbeit im elektrischen Feld beschrieben wird.
+	Auf eine Ladung wirkt im Feld eine Kraft. Bewegen wir die Ladung ein kleines Stück weiter, also um das Wegstück ds, dann ist die Arbeit Q mal das Integral über das Skalarprodukt von E mal ds. Weil Kraft und Weg Richtungen haben, also Vektoren sind, zählt für die Arbeit nur der Anteil der Kraft in Bewegungsrichtung, deshalb verwendet man das Skalarprodukt.
+	Man zerlegt den Weg in viele kleine Stücke ds und summiert über den ganzen Weg auf. Das ist das Linien- oder Wegintegral.
+	Jetzt zur Kernaussage der Folie.}
+	\speech{02_Arbeit4}{2}{
+	Wir können von P1 nach P2 über den Weg S1 oder über einen anderen Weg S2 gehen.
+	Im elektrostatischen Feld ist die verrichtete Arbeit gleich, sie hängt nur von Start- und Endpunkt ab, nicht vom Weg S1 oder S2. Das zeigt die obere Gleichung.
+	Wenn wir den Weg schließen, also von P1 nach P2 über S1 und von P2 zurück nach P1 über S2, entsteht ein geschlossenes Wegintegral. Das erkennt man am Integralzeichen mit dem Kreis.
+	Für ein elektrostatisches Feld gilt dann: Die Gesamtarbeit über den geschlossenen Weg ist null. Deshalb ist das Wegintegral von E mal ds gleich null.
+	Das Minuszeichen vor Q hängt mit der Vorzeichenkonvention zusammen: Je nachdem, ob wir die Arbeit des Feldes betrachten oder die Arbeit, die wir von außen aufbringen, ändert sich das Vorzeichen. Und wichtig als Einschränkung: Diese Wegeunabhängigkeit gilt nur für elektrostatische, zeitlich konstante Felder.
+	}
+	\speech{02_Arbeit4}{3}{Wir sehen also: Im elektrostatischen Feld ist das geschlossene Wegintegral E mal ds gleich null.}
 \end{frame}
 
 	%%%%%%%%%%%%%%%% ENDE des Abschnittes ARBEIT %%%%%%%%%%%%%%%%%%%%%%%

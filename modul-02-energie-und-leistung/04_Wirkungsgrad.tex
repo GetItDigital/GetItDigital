@@ -2,7 +2,7 @@
 
 %Hier den Inhalt mit \input einfügen und die folgenden Zeilen entfernen
 
-\newvideofile{wirkungsgrad}{Wirkungsgrad}
+\newvideofile{Wirkungsgrad}{Wirkungsgrad}
 \section{Der Wirkungsgrad}
 	
 \s{
@@ -67,8 +67,12 @@ Mathematisch wird der Wirkungsgrad $\eta$ (eta) wie folgt definiert:
 			\end{itemize}
 		\end{Merksatz}
 }}
-\speech{04_Wirkungsgrad1}{1}{Betrachten wir nun ein elektrisches System und fragen uns, wie viel der zugeführten Leistung tatsächlich als Nutzleistung abgegeben wird. Damit kommen wir zum Wirkungsgrad Eta, der das Verhältnis von abgegebener zu zugeführter Leistung beschreibt und für die Effizienz von zentraler Bedeutung ist. Je höher der Wirkungsgrad, desto effizienter ist das System. Auf der Folie sehen wir als Beispiel einen Elektromotor, also eine Umwandlung von elektrischer in mechanische Leistung. Der Motor wandelt die zugeführte Leistung nicht vollständig in mechanische Leistung um, sondern ein Teil wird zu Wärme. Diese Wärme bezeichnen wir als Verluste.}
-\speech{04_Wirkungsgrad1}{2}{Merke: Eta ist abgegebene Leistung geteilt durch zugeführte Leistung, mal einhundert Prozent.}
+\speech{04_Wirkungsgrad1}{1}{Betrachten wir nun ein elektrisches System und fragen uns, wie viel der zugeführten Leistung tatsächlich als Nutzleistung abgegeben wird. Damit kommen wir zum Wirkungsgrad Eta, der das Verhältnis von abgegebener zu zugeführter Leistung beschreibt und für die Effizienz von zentraler Bedeutung ist. Je höher der Wirkungsgrad, desto effizienter ist das System. Auf der Folie sehen wir als Beispiel einen Elektromotor, also eine Umwandlung von elektrischer in mechanische Leistung. Der Motor wandelt die zugeführte Leistung nicht vollständig in mechanische Leistung um, sondern ein Teil wird in Wärme umgewandelt. Diese Wärme bezeichnen wir als Verluste.}
+
+\speech{04_Wirkungsgrad1}{2}{Formelmäßig ist der Wirkungsgrad Eta gleich abgegebene Leistung geteilt durch zugeführte Leistung, mal hundert Prozent.
+
+}
+\silence{2}
 
 \end{frame}
 
@@ -174,14 +178,13 @@ können dazu beitragen, den Energiebedarf zu reduzieren und Treibhausgasemission
 % \end{itemize}
 	\uncover<2->{
 \begin{itemize}
-	\item Leistungsbilanz:
+	\item Leistungsbilanz: mit $ \eta = 5\,\% $
 	\end{itemize}
 \[
 \begin{aligned}
+P_\mathrm{v} &= P_\mathrm{zu} - P_\mathrm{ab}\\
 P_\mathrm{zu} &= U_q \cdot I \\
-\eta &= 5\,\% \\
-P_\mathrm{ab} &= P_\mathrm{zu} \cdot \eta \\
-P_\mathrm{v} &= P_\mathrm{zu} - P_\mathrm{ab}
+P_\mathrm{ab} &= P_\mathrm{zu} \cdot \eta
 \end{aligned}
 \]
 }}
@@ -193,18 +196,14 @@ Und der Hintergrund dafür ist relativ einfach. In so einer Glühbirne werden je
 
 Nichtsdestotrotz, wenn man sich überlegt, so eine 100-Watt-Glühbirne, die setzt dann 95 Watt in Wärme um und nur 5 Watt in das, was wir eigentlich haben wollten, nämlich Licht. Und das ist auch der Grund, warum man die Nutzung von Glühbirnen als Leuchtmittel immer weiter einschränkt bzw. sogar verbietet.
 
-Also das neue Inverkehrbringen dieser Leuchtmittel ist nur noch mit wenigen Ausnahmen zulässig. Warum? Weil eigentlich müsste das Ding nicht Leuchtmittel heißen, sondern elektrische Heizung mit Leuchtfunktion.}
+Also das neue Inverkehrbringen dieser Leuchtmittel ist nur noch mit wenigen Ausnahmen zulässig. Warum? Weil eigentlich müsste das Ding nicht Leuchtmittel heißen, sondern elektrische Heizung mit Leuchtfunktion. Bei der Beispielschaltung hier sehen wir eine Spannungsquelle die eine feste Spannung U-q bereitstellt und einen Strom I der durch den Vebraucher hier die Glühlampe fließt.}
 
-\speech{04_Wirkungsgrad2}{2}{Das ist hier auch einmal in der Leistungsbilanz dargestellt. Wir haben hier eine Glühlampe mit 5 Prozent Wirkungsgrad angenommen. Das wäre schon eine sehr optimale Betrachtung, die maximal für gute Halogenbirnen gilt.
-
-Und dann kann man die Verlustleistung zum Beispiel ausrechnen, indem man P_zu minus P_ab berechnet, wobei P_ab nichts anderes als P_zu mal dem Wirkungsgrad ist.
-
+\speech{04_Wirkungsgrad2}{2}{Wenn wir jetzt die Leistungsbilanz aufstellen, und wir von einer Glühlampe mit 5 Prozent Wirkungsgrad ausgehen, das wäre schon eine sehr optimale Betrachtung können wir wie folgt die Leistungen berechnen. 
+Die Verlustleistung wäre dann P-zu minus P-ab. P-zu ist gleich die Spannung U-q mal den Strom I und P-ab nichts anderes als P-zu mal dem Wirkungsgrad ist.
 Und das wären jetzt hier im Fall von 100 Watt halt:
-P_ab = 100 Watt mal 5 Prozent = 5 Watt.
-
+P-ab gleich 100 Watt mal 5 Prozent gleich 5 Watt.
 Das heißt, wir hätten eine Verlustleistung von:
-P_V = 100 Watt minus 5 Watt = 95 Watt.
-
+P-V gleich 100 Watt minus 5 Watt also 95 Watt.
 Die Verlustleistung von elektrischen Geräten spielt ganz häufig eine ja doch sehr wesentliche Rolle, denn in der Regel tritt diese Verlustleistung immer als Wärme auf und das Abführen der Wärme kann mitunter problematisch sein. Also klar, wir wollen auf der einen Seite sowieso immer einen möglichst hohen Wirkungsgrad haben, damit wir effizient mit unseren Ressourcen umgehen.
 
 Nehmen wir mal das Beispiel Elektromobilität. Da haben wir einen gewissen Energiegehalt im Akku gespeichert und wollen möglichst viele Kilometer fahren. Also wäre es sinnvoll, möglichst viel der elektrischen Energie tatsächlich in translatorische Energie zu wandeln. Das ist ersichtlich, aber im Umkehrschluss führt es auch tatsächlich zu technischen Problemen, wenn der Wirkungsgrad der Inverter, wo die elektrische Energie umgewandelt wird von einem Gleichstrom in einen Drehstrom, wenn da die Wirkungsgrade nicht im Bereich 98 bis 99 Prozent liegen würden, hätten wir tatsächlich ein schwerwiegendes thermisches Problem.
