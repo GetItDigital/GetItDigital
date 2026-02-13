@@ -161,13 +161,13 @@
 	}
 	\b{
 		\fo{}{height=0.85\textheight}{Aufbau1}{
-		\put(27,20){\line(1,1){16}}\put(-7,20){Wendepole mit Wicklung}
-		\put(30.5,15){\line(1,1){22}}\put(-7,15){Rotorzylinder mit Wicklung}
-		\put(40,5){\line(1,1){17}}\put(5.5,5){Kompensations\-wicklung}
-		\put(40.5,0){\line(1,1){14}}\put(5.5,0){Pol mit Erregerwicklung}
-		\put(85,5){\line(-1,1){14}}\put(85.3, 5){Polschuh}
-		\put(85,0){\line(-1,1){8}}\put(85.3,0){Ständerjoch}
-	}{}
+			\put(27,20){\line(1,1){16}}\put(-9,20){Wendepole mit Wicklung}
+			\put(30.5,15){\line(1,1){22}}\put(-9,15){Rotorzylinder mit Wicklung}
+			\put(40,5){\line(1,1){17}}\put(5.5,5){Kompensations\-wicklung}
+			\put(40.5,0){\line(1,1){14}}\put(5.5,0){Pol mit Erregerwicklung}
+			\put(85,5){\line(-1,1){14}}\put(85.3, 5){Polschuh}
+			\put(85,0){\line(-1,1){8}}\put(85.3,0){Ständerjoch}
+		}{}
 	}
 	
 	\speech{GleichstrommaschineAufbau2}{1}{Die Komponenten des Statohrs, der auch Ständer genannt wird, sind im frontalen Querschnitt gut zu sehen. Eine der grundlegenden Komponenten ist die Erregerwicklung. Sie ist um einen Pohlschuh gewunden. Erregerwicklung und Pohlschuh stellen zusammen einen Pohl dar. Die Pole haben die Aufgabe, ein Magnetfeld, auch Erregerfeld genannt, zu erzeugen. Da ein magnetisches Feld immer einen Nord- und einen Südpol beinhaltet, werden die Pole paarweise gegenüberliegend eingebaut. Die sich daraus ergebende Kenngröße ist die Polpaarzahl. Sie gibt Aufschluss über die Betriebseigenschaften der Gleichstrommaschine. Eine höhere Pohlpaarzahl verringert die Drehzahl, erhöht jedoch das Drehmoment. Bei Kleinstmaschinen können die Erregerwicklungen durch Permanentmagnete ersetzt werden. Bei größeren Maschinen, ab ungefähr ein Kilowatt Leistung, sind zusätzlich Wendepolwicklungen vorhanden.}
@@ -190,7 +190,7 @@
 		\put(35,5){\line(-1,1){10}}\put(35.3,5){Kommutator}
 		\put(23,0){\line(-1,1){10}}\put(23.3,0){Lager}
 	}{{\bf Foto eines Rotors.} Zu erkennen sind hier die charakteristischen Bauelemente. \index{Gleichstrommaschine>Rotor}\label{FotoRotor}}
-
+	
 	\speech{GleichstrommaschineAufbau3}{1}{Hier sehen wir einen Rotor einer Gleichstrommaschine. Der Rotor wird auch als Anker oder Läufer bezeichnet. Die Funktion des Rotors besteht darin, die elektromagnetische Energie durch Rotationen um die eigene Achse in mechanische Energie und umgekehrt zu wandeln. Hierzu ist der Rotor an einer Motorwelle befestigt, die die mechanische Energie überträgt. Das Kugellager am Ende der Motorwelle verringert dabei die Reibungsverluste bei der Energieübertragung. Um den Rotor in Bewegung zu bringen, ist das Zusammenwirken von Kommutator und Rotorwicklung wichtig. Die Rotorwicklung, die auch Ankerwicklung genannt wird, hat die Aufgabe ein magnetisches Feld, das Ankerfeld, zu erzeugen. Erst durch die Interaktion des Ankerfelds mit dem Erregerfeld wird ein Drehmoment auf den Rotor ausgeübt und setzt diesen in Bewegung. Die Blechwände, um die die Spulen gewickelt sind, bestehen aus isolierenden Blechen, um Wirbelströme in den Wicklungen zu reduzieren. Der Kommutator, der auch Stromwender genannt wird, hat die Funktion, die Rotorwicklung getaktet mit Strom zu versorgen. Er besteht aus mehreren voneinander getrennten Lamellen, die jeweils mit einem Strang der Rotorwicklung verbunden sind. Der Strom wird nun über am Stator angebrachten Kohlebürsten an die Kommutatorlamellen geleitet. Durch die Drehung der Lamellen unter den Bürsten wirkt der Kommutator als mechanischer Schalter und sorgt dafür, dass die Stromrichtung in den Rotorwicklungen gleich bleibt.}
 	\silence{2}
 \end{frame}
@@ -203,6 +203,9 @@
 		\put(50,97){\color{magnetfeld}\makebox[0pt]{N}}
 		\put(50,0){\color{magnetfeld}\makebox[0pt]{S}}
 	}{{\bf Erregerfeld einer Gleichstrommaschine.} Schematische Darstellung in der Vorderansicht.}
+	
+	\speech{GleichstrommaschineErregerfeld}{1}{In dieser schematischen Darstellung des Querschnitts durch eine Gleichstrommaschine werden orange die Feldlinienverläufe des Erregerfeldes dargestellt. Für die Lorentz-Kraft ist das magnetische Feld, in dem sich der Leiter bewegt, entscheidend. Dieses Feld wird durch den Stator mit den Erregerwicklungen erzeugt und ist im Bereich des Rotors näherungsweise parallel und homogen. Das Drehmoment einer Gleichstrommaschine ist direkt proportional zur Lorentz-Kraft, die durch das Erregerfeld erzeugt wird. Je stärker und homogener das magnetische Feld im Rotor ist, desto größer ist das erzeugte Drehmoment.}
+	\silence{2}
 \end{frame}
 
 
@@ -210,37 +213,52 @@
 	\s{\subsection{Berechnung des Drehmoments}}
 	\s{
 		In Modul 6 und Kapitel \ref{KapExkursLorentz} ist bereits die Kraftwirkung auf einen stromdurchflossenen Leiter im Magnetfeld erklärt worden. Um das Drehmoment der Gleichstrommaschine zu berechnen, wird zuerst die induzierte Spannung ermittelt (siehe Modul 6). Dreht sich der Rotor einer erregten Gleichstrommaschine, wird in jeder Leiterschleife des Ankers eine Spannung induziert. Nach dem Induktionsgesetz (Gleichung \ref{GlInduktionsgesetz}) ist die Höhe der induzierten Spannung (Quellenspannung) $U_\mathrm{q}$ vom magnetischen Fluss $\varPhi$ und der zeitlichen Änderung, in diesem Fall der Drehzahl $n$ bzw. der damit verknüpften Kreisfrequenz $\omega = 2\pi\cdot n$ abhängig.
-		Werden hierzu noch die spezifischen geometrischen Gegebenheiten des Rotors in Form der Ankerkonstanten $K$ multipliziert, so ergibt das Produkt aus diesen Kenngrößen die induzierte Spannung $U_\mathrm{q}$ der Gleichstrommaschine (siehe Gleichung \ref{GlInduzierteSpannungGM})
+		Werden hierzu noch die spezifischen geometrischen Gegebenheiten des Rotors in Form der Ankerkonstanten $K$ multipliziert, so ergibt das Produkt aus diesen Kenngrößen die induzierte Spannung $U_\mathrm{q}$ der Gleichstrommaschine (siehe Gleichung \ref{GlInduzierteSpannungGM}).
 	}
 	
 	\begin{eq}
-		U_\mathrm{q} = K \cdot \varPhi \cdot \omega \label{GlInduzierteSpannungGM}
+		\onslide<7->{U_\mathrm{q} = K \cdot \varPhi \cdot \omega \label{GlInduzierteSpannungGM}}
 	\end{eq}
 	\b{
 		\begin{itemize}
-			\item Induzierte Spannung (Quellenspannung): $U_\mathrm{q}$ [V]
-			\item Ankerkonstante: $K$ [1]\index{Ankerkonstante} \nomenclature[F]{$K$}{Ankerkonstante der Gleichstrommaschine}
-			\item Fluss: $\varPhi$ [Vs]
-			\item Winkelgeschwindigkeit: $\omega_\mathrm{mech}$ [rad/s]
+			\onslide<2->{\item Induzierte Spannung (Quellenspannung): $U_\mathrm{q}$ [V]}
+			      \onslide<6->{\item Ankerkonstante: $K$ [1]\index{Ankerkonstante} \nomenclature[F]{$K$}{Ankerkonstante der Gleichstrommaschine}}
+			      \onslide<3->{\item Fluss: $\varPhi$ [Vs]}
+			      \onslide<4->{\item Drehzahl $n$} \onslide<5->{$\Rightarrow$ Winkelgeschwindigkeit: $\omega_\mathrm{mech}$ ($= 2\pi\cdot$) [rad/s]}
 		\end{itemize}
 	}	\pause
 	
 	\s{
-		Wenn sowohl die elektrischen als auch mechanischen Verluste vernachlässigt wird, kann die induzierte Spannung kann auch direkt über die sogenannte innere Leistung $P_\mathrm{i}$ angegeben werden. Diese entspricht dann sowohl der elektrischen Leistung $U_\mathrm{q}\cdot I_\mathrm{A}$, als auch der mechanischen Leistung $P_\mathrm{mech}$, welche sich aus dem Produkt des inneren Drehmoments $M_\mathrm{i}$ und der Winkelgeschwindigkeit $\omega$ errechnet.
+		Wenn sowohl die elektrischen als auch mechanischen Verluste vernachlässigt werden, kann die induzierte Spannung kann auch direkt über die sogenannte innere Leistung $P_\mathrm{i}$ angegeben werden. Diese entspricht dann sowohl der elektrischen Leistung $U_\mathrm{q}\cdot I_\mathrm{A}$, als auch der mechanischen Leistung $P_\mathrm{mech}$, welche sich aus dem Produkt des inneren Drehmoments $M_\mathrm{i}$ und der Winkelgeschwindigkeit $\omega$ errechnet.
 	}
 	\begin{eq}
-		P_\mathrm{i} = U_\mathrm{q}\cdot I_\mathrm{A} =  P_\mathrm{mech} = M_\mathrm{i}\cdot \omega \label{GlGMWirkungsgrad}
+		\onslide<9->{P_\mathrm{i} = U_\mathrm{q}\cdot I_\mathrm{A} =  P_\mathrm{mech} = M_\mathrm{i}\cdot \omega \label{GlGMWirkungsgrad}}
 	\end{eq}
 	
 	\b{
 		\begin{itemize}
-			\item innere elektrische Leistung: $P_\mathrm{i}$ [W]
+			\onslide<8->{\item innere elektrische Leistung: $P_\mathrm{i}$ [W]}
 		\end{itemize}
 	}
+	\speech{GleichstomDrehmomentberechnung}{1}{Schauen wir uns nun an, wie das Drehmoment berechnet wird. In Modul 6 wurde bereits die Kraftwirkung auf einen stromdurchflossenen Leiter im Magnetfeld thematisiert. Um das Drehmoment der Gleichstrommaschine zu berechnen, wird zuerst die induzierte Spannung ermittelt.}
+	\silence{2}
+	\speech{GleichstomDrehmomentberechnung}{2}{Dreht sich der Rotor einer erregten Gleichstrommaschine, wird in jeder Leiterschleife des Ankers eine Spannung induziert.}
+	\silence{2}
+	\speech{GleichstomDrehmomentberechnung}{3}{Nach dem Induktionsgesetz ist die Höhe der induzierten Spannung U-Q, auch Quellenspannung genannt, vom magnetischen Fluss Phi abhängig.}
+	\speech{GleichstomDrehmomentberechnung}{4}{Aber ebenso von der zeitlichen Änderung. In diesem Fall ist das die Drehzahl klein N.}
+	\speech{GleichstomDrehmomentberechnung}{5}{Beziehungsweise die damit verknüpfte Kreisfrequenz Omega. Diese Kreisfrequenz entspricht 2 Pi mal der Drehzahl klein N.}
+	\silence{2}
+	\speech{GleichstomDrehmomentberechnung}{6}{Nun werden hierzu noch die spezifischen geometrischen Gegebenheiten des Rotors in Form der Ankerkonstanten K multipliziert.}
+	\speech{GleichstomDrehmomentberechnung}{7}{So ergibt das Produkt aus diesen Kenngrößen die induzierte Spannung U-q der Gleichstrommaschine.}
+	\silence{2}
+	\speech{GleichstomDrehmomentberechnung}{8}{Wenn sowohl die elektrischen als auch mechanischen Verluste vernachlässigt werden, kann die induzierte Spannung kann auch direkt über die sogenannte innere Leistung P-I angegeben werden.}
+	\silence{2}
+	\speech{GleichstomDrehmomentberechnung}{9}{Diese entspricht dann sowohl der elektrischen Leistung U-Q mal I-A, als auch der mechanischen Leistung P-Mech, welche sich aus dem Produkt des inneren Drehmoments M-I und der Winkelgeschwindigkeit Omega errechnet.}
+	\silence{2}
 \end{frame}
 
 \begin{frame}\ftx{Inneres Moment}
-	\s{Wird diese Erkenntnis nun in Gleichung \ref{GlInduzierteSpannungGM} eingesetzt, errechnet sich das inner Drehmoment $M_\mathrm{i}$ aus dem Produkt der Ankerkonstante $K$, den magnetischen Fluss $\varPhi$ und dem Ankerstrom $I_\mathrm{A}$}
+	\s{Wird diese Erkenntnis nun in Gleichung \ref{GlInduzierteSpannungGM} eingesetzt, errechnet sich das innere Drehmoment $M_\mathrm{i}$ aus dem Produkt der Ankerkonstante $K$, dem magnetischen Fluss $\varPhi$ und dem Ankerstrom $I_\mathrm{A}$}
 	\begin{eq}
 		M_\mathrm{i} = K \cdot \varPhi \cdot I_\mathrm{A} \label{GlMomentGM}
 	\end{eq}
@@ -263,6 +281,10 @@
 		\item Wirkungsgrad:  $\eta$ [1]
 	\end{itemize}
 	
+	\speech{GleichstomInneresDrehmoment}{1}{Wird diese Erkenntnis nun in die vorangegangene Gleichung eingesetzt, errechnet sich das innere Drehmoment M-I aus dem Produkt der Ankerkonstante K, dem magnetischen Fluss Phi und dem Ankerstrom I-A.}
+	\silence{2}
+	\speech{GleichstomInneresDrehmoment}{2}{Im Motorbetrieb ist das Drehmoment an der Welle der Maschine das innere Drehmoment M-I abzüglich der Verluste M-V. Das Maschinenmoment kann auch mit dem Wirkungsgrad Eta Eins ausgedrückt werden. Dieser Wirkungsgrad vernachlässigt allerdings die elektrischen Verluste durch den Ankerwiderstand und der Erregung.}
+	\silence{2}
 \end{frame}
 
 
@@ -293,6 +315,13 @@
 			\qquad \qquad I_\mathrm{A} = \frac{M_\mathrm{i}}{K\cdot \varPhi}
 		\end{eq}
 	}
+	
+	\speech{FremderregteGleichstommaschine}{1}{Bei der fremderregten Gleichstrommaschine sind der Erregerkreis im Stator und der Rotorkreis, der über den Kommutator mit Strom versorgt wird, prinzipiell unabhängig voneinander. Wenn beide Stromkreise von unterschiedlichen Spannungsquellen versorgt werden, wird die Maschine fremderregt genannt. Das Ersatzschaltbild einer solchen fremderregten Gleichstrommaschine ist hier gezeigt. Der Erregerkreis besteht aus der Induktivität der Erregerwicklung L-E und dem Kupferwiderstand R-E der Spule. Im Ankerkreis wird die Wicklung als Kreis mit angedeuteten Schleifringen dargestellt, da sie einerseits eine Induktivität, als auch eine Spannungsquelle darstellt. Auch der Anker hat einen ohmschen Widerstand R-A.}
+	\silence{2}
+	\speech{FremderregteGleichstommaschine}{2}{Der Maschenumlauf im Rotorkreis ergibt: Die Anker-Spannung U-A ist gleich der Summee aus Spannung U-Q und dem Produkt aus dem Anker-Strom I-A und dem Anker-Widerstand R-A.}
+	\silence{2}
+	\speech{FremderregteGleichstommaschine}{2}{Durch Einsetzen von Gleichung zur Berechnung der Anker-Spannung U-A und der Gleichung zur Berechnung des Drehmoment M-I, die wir beide zuvor kennengelernt haben, ergibt sich nach Umstellung der neuen Gleichung die Drehzahl-Drehmoment- und Ankerstromkennlinie für die fremderregte Gleichstrommaschine.}
+	\silence{2}
 \end{frame}
 
 
@@ -328,27 +357,45 @@
 			\item [a)] Wie groß ist der Erregerfluss $\varPhi$? \pause
 			      
 			      Im Leerlauf ist das innere Drehmoment $M_\mathrm{i}$ gleich Null. Der lastabhängige Drehzahlabfall entfällt daher:
-			      \begin{align*}
-				      n       & =\frac{U_\mathrm{A}}{2\pi K\cdot \varPhi}                                                                                                                                      \\
-				      \varPhi & =\frac{U_\mathrm{A}}{2\pi K\cdot n} = \frac{400\,\text{V}}{\frac{2\pi}{2\pi}\cdot 1200 \,\frac{1}{\text{min}}\cdot \frac{1}{60\,\frac{\text{s}}{\text{min}}}}  = 20\,\text{Vs}
-			      \end{align*}
+			        \begin{align*} 
+				      n       & =\frac{U_\mathrm{A}}{2\pi K\cdot \varPhi} \\
+				      \onslide<3->{\varPhi & =\frac{U_\mathrm{A}}{2\pi K\cdot n} = \frac{400\,\text{V}}{\frac{2\pi}{2\pi}\cdot 1200 \,\frac{1}{\text{min}}\cdot \frac{1}{60\,\frac{\text{s}}{\text{min}}}}  = 20\,\text{Vs}}
+			       \end{align*}
 		\end{itemize}
 	}
+	\speech{FremderregteGleichstomRechenbeispiel1}{1}{Sehen wir uns dzu ein Rechenbeispiel an. Eine fremderregte Gleichstrommaschine mit einer gegebenen Ankerkonstante K von einhalb Pi hat bei einer Anker-Spannung von 400 Volt eine Leerlaufdrehzahl von 1200 Umdrehungen pro Minute. Der Ankerwiderstand beträgt 2,3 Ohm. Berechnen wir dazu zunächst den Erregerfluss Phi.}
+	\silence{2}
+	\speech{FremderregteGleichstomRechenbeispiel1}{2}{Da der Drehmoment im Leerlauf gleich Null ist, entfällt in diesem Beispiel der lastabhängige Drehzahlabfall. Daher benötigen wir nur den linken Teil der eben kennengelernten Gleichung zur Berechnung der Drehzahl-Drehmoment- und Ankerstromkennlinie.}
+	\silence{2}
+	\speech{FremderregteGleichstomRechenbeispiel1}{3}{Stellen wir nun die Gleichung nach Phi um und setzen die gegebenen Werte ein. Dann ergiebt sich ein Erregerfluss von Phi gleich 20 Volt-Sekunden.}
+	\silence{2}
 \end{frame}
 \b{
 	\begin{frame}\ftx{Beispiel}
 		\begin{itemize}
 			\item[b)] Wie schnell dreht die Maschine bei einem inneren Drehmoment von $M_\mathrm{i}=10\,\text{Nm}$?\pause
 			      \begin{align*}
-				      n & = \frac{U_\mathrm{A}}{2\pi K\cdot \varPhi} - \frac{R_\mathrm{A}\cdot M_\mathrm{i}}{2\pi(K\cdot \varPhi)^2}                                       \\
-				        & = \frac{400\,\text{V}}{\frac{2\pi}{2\pi}\cdot 20\,\text{Vs}} - \frac{2,3\,\Omega \cdot 10\,\text{Nm}}{2\pi(\frac{1}{2\pi}\cdot 20\,\text{Vs})^2} \\
-				        & = 20\,\frac{1}{\text{s}} - 0,362 \,\frac{1}{\text{s}} = 19,638\,\frac{1}{\text{s}} =  1178,3\,\frac{1}{\text{min}}
+				      \onslide<2->{n & = \frac{U_\mathrm{A}}{2\pi K\cdot \varPhi} - \frac{R_\mathrm{A}\cdot M_\mathrm{i}}{2\pi(K\cdot \varPhi)^2} \\}
+				        \onslide<3->{& = \frac{400\,\text{V}}{\frac{2\pi}{2\pi}\cdot 20\,\text{Vs}} - \frac{2,3\,\Omega \cdot 10\,\text{Nm}}{2\pi(\frac{1}{2\pi}\cdot 20\,\text{Vs})^2} \\}
+				        \onslide<4->{& = 20\,\frac{1}{\text{s}} - 0,362 \,\frac{1}{\text{s}} = 19,638\,\frac{1}{\text{s}} =  1178,3\,\frac{1}{\text{min}}}
 			      \end{align*}\pause
-			\item[c)] Wie groß ist der Ankerstrom?
+			\onslide<5->{\item[c)] Wie groß ist der Ankerstrom?}
 			      \begin{align*}
-				      I_\mathrm{A} & = \frac{M_\mathrm{i}}{K\cdot \varPhi} = \frac{10\,\text{Nm}}{\,\frac{1}{2\pi}\cdot 20\,\text{Vs}\,} = 3,61\,\text{A}
+				      \onslide<6->{I_\mathrm{A} & = \frac{M_\mathrm{i}}{K\cdot \varPhi} = \frac{10\,\text{Nm}}{\,\frac{1}{2\pi}\cdot 20\,\text{Vs}\,} = 3,61\,\text{A}}
 			      \end{align*}
 		\end{itemize}
+		
+		\speech{FremderregteGleichstomRechenbeispiel2}{1}{Schauen wir nun mit welcher Drehzahl die Maschiene bei einer Belastung dreht. Gegeben ist dazu ein inneres Drehmoment von 10 Newton-Meter.}
+		\silence{2}
+		\speech{FremderregteGleichstomRechenbeispiel2}{2}{Dazu brachen wir wieder die Formel zur Berechnung der Drehzahl-Drehmoment- und Ankerstromkennlinie, diesmal aber mit der rechten Seite der Gleichung, die ja die Drehzahlverluste ausdrückt.}
+		\silence{2}
+		\speech{FremderregteGleichstomRechenbeispiel2}{3}{Auch hier können wir einfach die gegebenen Größen einsetzen, da alle dafür notwendigen Werte bekannt sind. Den Wert von Phi haben wir eben berechnet.}
+		\speech{FremderregteGleichstomRechenbeispiel2}{4}{Kürzen wir die Formel schrittweise und skalieren das Ergebnis auf die gängige Größe, in der gewühnlich eine Drehzahl definiert wird, nämilch in Umdrehungen pro Minute. Wir erhalten damit eine Drehzahl von Eintausend Einhundert Achtundsiebzig Komma 3 Umdrehungen pro Minute. Die Leerlaufdrehzahl betrug laut Aufgabe 1200 Umdrehungen pro Minute. Die Last von 10 Newton-Meter bremst die Maschine also etwas ab.}
+		\silence{2}
+		\speech{FremderregteGleichstomRechenbeispiel2}{5}{Wie groß ist nun dabei der Ankerstrom? Die Formel dazu kennen wir bereits. Wir müssen nur die Formel zur Berechnung des inneren Drehmoments M-I nach dem Strom I-A umstellen.}
+		\silence{2}
+		\speech{FremderregteGleichstomRechenbeispiel2}{6}{Setzen wir hier die gegebenen Werte von Drehmoment und Ankerkonstante sowie das errechnte Phi ein, erhalten wir einen Ankerstrom I-A von Drei komma Sech Eins Ampere.}
+		\silence{2}
 	\end{frame}
 }
 
@@ -390,4 +437,6 @@
 			}{Kennlinien von Gleichstrommaschinen}
 		}
 	\end{columns}
+	
+	
 \end{frame}
