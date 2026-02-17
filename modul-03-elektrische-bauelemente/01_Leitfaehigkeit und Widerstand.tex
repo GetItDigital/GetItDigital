@@ -92,10 +92,10 @@
 	\speech{01_Leitfaehigkeit_und_Widerstand2}{1}{
 		Auf dem hier dargestellten Foto, das ist eigentlich noch ein Ausschnitt aus dem anfänglichen Foto, siehst du unterschiedliche Bauteilausführungen von Widerständen.
 		Fangen wir erstmal mit den Widerständen in der rechten Hälfte des Bildes an. Dort siehst du unterschiedliche Ausführungen eines sogenannten Through-Hole Element, kurz T-H-T Bauteil.
-		Diese Bauelemente, da werden die Beinche geknickt und dann durch Bohrungen in der Platine durchgesteckt und dann an der Unterseite der Platine verlötet.
+		Diese Bauelemente, da werden die Beinchen geknickt und dann durch Bohrungen in der Platine durchgesteckt und dann an der Unterseite der Platine verlötet.
 		Das heißt, der elektrische Kontakt dieses Bauelementes ist eigentlich genau auf der anderen Platinenseite wie das Bauelement selber.
 		Das ist zum einen relativ aufwendig in der automatischen Bestückung und zum anderen hat das auch viele Nachteile,
-		was parasitäre Effekte angeht für das Bauelement. Denn wir werden im späteren Verlauf sehen, dass die Zuleitung durch die Eigenschaften des Bauelementes deutlich beeinflusst.
+		was parasitäre Effekte angeht für das Bauelement. Denn wir werden im späteren Verlauf sehen, dass die Zuleitung durch die Eigenschaften des Bauelementes deutlich beeinflusst werden.
 		Deshalb werden heute sehr häufig die SMD-Widerstände eingesetzt. Das sind die ganz kleinen Chips, die du im linken unteren Teil siehst.
 		Die gibt es in sehr unterschiedlichen Ausführungen, unterschiedlich groß, je nachdem für welches Raster du die Platine entwickelt hast.
 		SMD steht für Surface Mounted Device. Das heißt, diese Teile werden auf der Seite der Platine montiert und kontaktiert, wo auch die Leiterbahn ist.
@@ -106,7 +106,7 @@
 		schon alleine vom Volumen und der Masse. Oben links, das Bauteil, wo auch Mechanik-Elemente drin sind, das nennt man Potentiometer.
 		Und das ist im Prinzip ein Widerstand mit einem festen Wert, aber sie haben einen sogenannten Mittelabgriff.
 		Wenn wir an der rechten Seite des Bauelementes sehen oder schauen, dann sieht man dort drei Abgriffe.
-		Um den vollen Widerstandswert, zum Beispiel 10 Kiloohm, den würdest du erhalten, wenn du am oberen Kontakt und am unteren Kontakt kontaktierst.
+		Um den vollen Widerstandswert abzugreifen, zum Beispiel 10 Kiloohm, würdest du am oberen Kontakt und am unteren Kontakt abgreifen.
 		Und abhängig davon, wie du den Drehregler regelst, kannst du dann am Mittelabgriff den geteilten Widerstand abgreifen.
 		Also zum Beispiel zwischen der mittleren Klemme und der oberen Klemme 7 Kiloohm und der mittleren Klemme und der unteren Klemme dann 3 Kiloohm,
 		sodass in Summe wieder 10 Kiloohm vorhanden sind.
@@ -199,16 +199,23 @@
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand3}{1}{
+		Wir blicken noch einmal zurück auf das Modul 1. Dort haben wir die Stromdichte J definiert und auch den Strom I. Die Stromdichte J ergibt sich aus dem Strom delta I der durch die Fläche delta A strömt.
+		Das geht so in der Form immer nur für konstante Querschnitte und für konstante Ströme.
+	}
+	\iffalse
+	
+	\speech{01_Leitfaehigkeit_und_Widerstand3}{1}{
 		Wir blicken noch einmal zurück auf das Modul 1. Dort haben wir die Stromdichte J definiert und auch den Strom I. Wir hatten den Strom I ja beschrieben als die zeitliche Varianz der Ladungsmenge Q und die Stromdichte J ergibt sich dann eigentlich aus der Fläche delta A, die von delta I durchströmt wird.
 		Das geht so in der Form immer nur für konstante Querschnitte und für konstante Ströme.
 	}
+	\fi
 
 	% \speech{01_Leitfaehigkeit_und_Widerstand3}{2}{
 	% 	Wenn wir das jetzt formelmäßig zusammenfassen, dann kommen wir auf J ist gleich Delta I durch Delta A. Das geht so in der Form immer nur für konstante Querschnitte und für konstante Ströme.
 	% }
 
 	\speech{01_Leitfaehigkeit_und_Widerstand3}{2}{
-		Wir kennen aus dem Modul noch, I ist gleich Delta Q durch Delta T, also die zeitliche Varianz der Ladungsmenge.
+		Außerdem kennen wir aus dem Modul noch, I ist gleich Delta Q durch Delta T, also die zeitliche Varianz der Ladungsmenge.
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand3}{3}{
@@ -319,25 +326,25 @@
 		Die Driftgeschwindigkeit $\vec{v_{\mathrm{el}}}$ der freien Ladungsträger verhält sich proportional zum elektrischen Feld $\vec{E}$,
 		jedoch in entgegengesetzter Richtung. Der Proportionalitätsfaktor wird auch als Elektronenbeweglichkeit $\mu_e$ bezeichnet.
 
-		\only<2->{
+		%\only<2->{
 			\begin{equation}
 				\vec{v_{\mathrm{el}}}=- \mu_e \cdot \vec{E}
 			\end{equation}
-		}
+		%}
 
-		\only<3->{Die Raumladungsdichte $\rho$ setzt sich aus der Elementarladung $e^-$ und der Ladungsträgerdichte $n_e$, zusammen.
+		\only<2->{Die Raumladungsdichte $\rho$ setzt sich aus der Elementarladung $e^-$ und der Ladungsträgerdichte $n_e$, zusammen.
 			Aufgrund der negativen Ladung von Elektronen, ergibt sich ein negatives Vorzeichen.
 
 		}
-		\only<4->{
+		\only<2->{
 			\begin{equation}
 				\rho = - n_e \cdot e^-
 			\end{equation}
 		}
 
-		\only<5->{Das Einsetzen von $\vec{v_{\mathrm{el}}}$ und $\rho$ in die Formel 5 ergibt den folgenden Ausdruck:}
+		\only<4->{Das Einsetzen von $\vec{v_{\mathrm{el}}}$ und $\rho$ in die Formel 5 ergibt den folgenden Ausdruck:}
 
-		\only<6->{
+		\only<5->{
 			\begin{equation}
 				\vec{J} = (-n_e \cdot e^-) \cdot (-\mu_e \cdot \vec{E}) =n_e \cdot \mu_e \cdot e^- \vec{E}
 			\end{equation}
@@ -347,25 +354,29 @@
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{1}{
-		Wenn wir nun noch mal auf die Driftgeschwindigkeit schauen, dann haben wir ja vorher kennengelernt in Modul 1, dass die Driftgeschwindigkeit V-E-L als Vektor sich proportional zum elektrischen Feld verhält, jedoch in entgegengesetzter Richtung. Diese entgegengesetzte Richtung kommt daher, dass unsere Ladungsträger in der Regel negativ beladen sind, weil es Elektronen sind, und wir eben genau das negative Vorzeichen dieser Ladung mit berücksichtigen müssen. Und daher bewegt sich das Elektron immer entgegengesetzt dem elektrischen Feld. Der Proportionalitätsfaktor zu dieser Beweglichkeit oder zu diesem Verhältnis wird Elektronenbeweglichkeit µ_e genannt.
+		Wenn wir nun noch mal auf die Driftgeschwindigkeit schauen, dann haben wir ja vorher kennengelernt in Modul 1, dass die Driftgeschwindigkeit V-E-L als Vektor sich proportional zum elektrischen Feld verhält, jedoch in entgegengesetzter Richtung. Diese entgegengesetzte Richtung kommt daher, dass unsere Ladungsträger in der Regel negativ beladen sind, weil es Elektronen sind, und wir eben genau das negative Vorzeichen dieser Ladung mit berücksichtigen müssen. Und daher bewegt sich das Elektron immer entgegengesetzt dem elektrischen Feld. Der Proportionalitätsfaktor zu dieser Beweglichkeit oder zu diesem Verhältnis wird Elektronenbeweglichkeit müh-e genannt.
+		Das heißt, wir erhalten V-E-L ist gleich minus müh-e mal E.
 	}
+	\iffalse
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{2}{
-		Das heißt, wir erhalten V-E-L ist gleich minus µ-e mal E.
+		Das heißt, wir erhalten V-E-L ist gleich minus müh-e mal E.
 	}
+	\fi
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{3}{
-		Die Raumladungsdichte Rho, dort drin steckt ja letztlich die Elementarladung e eines Elektrons und die Ladungsträgerdichte N_E, also wie viele Ladungsträger sich frei beweglich im Leiter befinden. Die wird mit N_E bezeichnet. Auch hier wieder, wir haben negative Ladung von Elektronen, daraus ergibt sich ein negatives Vorzeichen.
+		Die Raumladungsdichte Rho, dort drin steckt ja letztlich die Elementarladung e eines Elektrons und die Ladungsträgerdichte N-E, also wie viele Ladungsträger sich frei beweglich im Leiter befinden. Die wird mit N-E bezeichnet. Auch hier wieder, wir haben negative Ladung von Elektronen, daraus ergibt sich ein negatives Vorzeichen.
+		Wir erhalten Rho ist gleich minus N-E mal e. Das heißt, die Anzahl an freien Ladungsträgern mal die Elementarladung e.
 	}
 
-	\speech{01_Leitfaehigkeit_und_Widerstand5}{4}{
-		Wir erhalten Rho ist gleich minus N_E mal e. Das heißt, die Anzahl an freien Ladungsträgern mal die Elementarladung e.
+	\iffalse\speech{01_Leitfaehigkeit_und_Widerstand5}{4}{
+		Wir erhalten Rho ist gleich minus N-E mal e. Das heißt, die Anzahl an freien Ladungsträgern mal die Elementarladung e.
 	}
-
+\fi
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{5}{
 		Wenn wir jetzt die hier hergeleiteten Formeln für die Driftgeschwindigkeit V-E-L und die Raumladungsdichte Rho in die Formel einsetzen, die wir gerade hergeleitet haben, also J ist gleich Rho mal V-E-L, dann erhalten wir:
 	}
-
+\silence{2}
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{6}{
-		J als Vektor ist gleich minus  N-E mal e multipliziert mit minus µe mal E. Wir erhalten also letztlich einen Zusammenhang zwischen der Stromdichte J und dem elektrischen Feld E. Diesen gilt es jetzt näher zu betrachten.
+		J als Vektor ist gleich minus N-E mal e multipliziert mit minus müh-e mal E. Wir erhalten also letztlich einen Zusammenhang zwischen der Stromdichte J und dem elektrischen Feld E. Diesen gilt es jetzt näher zu betrachten.
 	}
 
 \end{frame}
@@ -374,10 +385,10 @@
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
 	\b{Die materialabhängigen Komponenten $n_e$ und $\mu_e$ sowie die Naturkonstante $e^-$ ergeben multipliziert die spezifische Leitfähigkeit $\kappa$:
-
-		\begin{equation}
-			\kappa = n_e \cdot \mu_e \cdot e^-
-		\end{equation}
+\begin{align*}
+	\vec{J} =& n_e \cdot \mu_e \cdot e^- \vec{E}\\
+	\kappa =& n_e \cdot \mu_e \cdot e^-
+\end{align*}
 
 		\only<2->{\vspace*{0.3cm}Zusammengefasst ergibt diese Darstellung die Beschreibung des ohmschen Gesetzes:
 			\vspace*{0.5cm}
@@ -401,27 +412,37 @@
 		\end{equation}
 	}
 
+%#TODO onlys mit Speech überlagern
+\iffalse
 
-	\speech{01_Leitfaehigkeit_und_Widerstand6}{1}{
-		Wenn wir auf die vorhergehende Folie schauen, sehen wir, dass wir zwei Minuszeichen in multiplikativer Folge haben, sodass sich die Minuszeichen aufheben.
+\speech{01_Leitfaehigkeit_und_Widerstand6}{1}{
+	Wenn wir auf die vorhergehende Folie schauen, sehen wir, dass wir zwei Minuszeichen in multiplikativer Folge haben, sodass sich die Minuszeichen aufheben.
 	}
-
+	\fi
+\speech{01_Leitfaehigkeit_und_Widerstand6}{1}{
+	Da die Elementarladung E eine konstante ist, und n-e und müh-r Materialkonstanten sind, können diese als spezifischen Leitfähigkeit Kappa zusammengeführt werden. 
+}
 	\speech{01_Leitfaehigkeit_und_Widerstand6}{2}{
-		Wir erhalten für die Stromdichte J: J ist gleich N-E mal µ-e mal e mal E. Das heißt, wir haben einen Zusammenhang zwischen der Stromdichte J und der elektrischen Feldstärke E. Beides sind Vektoren, und dazwischen steht ein Proportionalitätsfaktor, der im Wesentlichen vom Material abhängig ist. Denn darin ist bezeichnet, wie viele freie Ladungsträger wir pro Volumen haben N-E, die Beweglichkeit dieser freien Ladungsträger im Material µ-e und die Naturkonstante, die Elementarladung e.
+		Wir erhalten für die Stromdichte J: J ist gleich N-E mal müh-e mal e mal E. Das heißt, wir haben einen Zusammenhang zwischen der Stromdichte J und der elektrischen Feldstärke E. Beides sind Vektoren, und dazwischen steht ein Proportionalitätsfaktor, der im Wesentlichen vom Material abhängig ist. Denn darin ist bezeichnet, wie viele freie Ladungsträger wir pro Volumen haben N-E, die Beweglichkeit dieser freien Ladungsträger im Material müh-e und die Naturkonstante, die Elementarladung e.
+		Wir haben also einen formelmäßigen Zusammenhang zwischen Stromdichte J und elektrischer Feldstärke E. Und genau dieser Zusammenhang wird Ohmsches Gesetz genannt. Das Ohmsche Gesetz kennst du aber eigentlich immer in Skalaren Größen. Hier steht es jetzt in Feldgrößen in der viel allgemeineren Form. Generell neigen wir dazu, sehr gerne auf die Skalarengrößen für Strom und Spannung zurückzugreifen und wollen eher ungerne in diesen vektoriellen Größen rechnen. Das ist total verständlich, sorgt aber in ganz wenigen Anwendungsfällen tatsächlich für Probleme, weil wir die Feldeigenschaften für gewisse Erläuterungen von Phänomenen tatsächlich benötigen. Insofern hier die etwas komplexere Herleitung für das Ohmsche Gesetz in Feldgrößen. Wir werden das jetzt im Folgenden aber unterbrechen auf die Ihnen vielleicht schon bekannten Formeln für das Ohmsche Gesetz mit Strom und Spannung.
 	}
+\iffalse
 
-	\speech{01_Leitfaehigkeit_und_Widerstand6}{3}{
-		Genau das können wir jetzt zusammenfassen, also N-E, µe und e, und nennen diese spezifische Leitfähigkeit Kappa.
+\speech{01_Leitfaehigkeit_und_Widerstand6}{3}{
+	Genau das können wir jetzt zusammenfassen, also N-E, müh-e und e, und nennen diese spezifische Leitfähigkeit Kappa.
 	}
-
 	\speech{01_Leitfaehigkeit_und_Widerstand6}{4}{
-		Es ergibt sich also für Kappa: Kappa ist gleich  N-E mal µe mal e.
+		Es ergibt sich also für Kappa: Kappa ist gleich  N-E mal mühe mal e.
 	}
+	\fi
+
+\iffalse
+
 
 	\speech{01_Leitfaehigkeit_und_Widerstand6}{5}{
-		Dabei ist noch mal klarzustellen, dass N-E und µ-e vom Material abhängig sind und e eine Naturkonstante ist. Wenn wir das jetzt zusammenfassen, dann können wir für J schreiben: J ist gleich Kappa mal E, beziehungsweise E ist gleich J durch Kappa. Wir haben also einen formelmäßigen Zusammenhang zwischen Stromdichte J und elektrischer Feldstärke E. Und genau dieser Zusammenhang wird Ohmsches Gesetz genannt. Das Ohmsche Gesetz kennst du aber eigentlich immer in Skalaren Größen. Hier steht es jetzt in Feldgrößen in der viel allgemeineren Form. Generell neigen wir dazu, sehr gerne auf die Skalarengrößen für Strom und Spannung zurückzugreifen und wollen eher ungerne in diesen vektoriellen Größen rechnen. Das ist total verständlich, sorgt aber in ganz wenigen Anwendungsfällen tatsächlich für Probleme, weil wir die Feldeigenschaften für gewisse Erläuterungen von Phänomenen tatsächlich benötigen. Insofern hier die etwas komplexere Herleitung für das Ohmsche Gesetz in Feldgrößen. Wir werden das jetzt im Folgenden aber unterbrechen auf die Ihnen vielleicht schon bekannten Formeln für das Ohmsche Gesetz mit Strom und Spannung.
+		Dabei ist noch mal klarzustellen, dass N-E und müh-e vom Material abhängig sind und e eine Naturkonstante ist. Wenn wir das jetzt zusammenfassen, dann können wir für J schreiben: J ist gleich Kappa mal E, beziehungsweise E ist gleich J durch Kappa. Wir haben also einen formelmäßigen Zusammenhang zwischen Stromdichte J und elektrischer Feldstärke E. Und genau dieser Zusammenhang wird Ohmsches Gesetz genannt. Das Ohmsche Gesetz kennst du aber eigentlich immer in Skalaren Größen. Hier steht es jetzt in Feldgrößen in der viel allgemeineren Form. Generell neigen wir dazu, sehr gerne auf die Skalarengrößen für Strom und Spannung zurückzugreifen und wollen eher ungerne in diesen vektoriellen Größen rechnen. Das ist total verständlich, sorgt aber in ganz wenigen Anwendungsfällen tatsächlich für Probleme, weil wir die Feldeigenschaften für gewisse Erläuterungen von Phänomenen tatsächlich benötigen. Insofern hier die etwas komplexere Herleitung für das Ohmsche Gesetz in Feldgrößen. Wir werden das jetzt im Folgenden aber unterbrechen auf die Ihnen vielleicht schon bekannten Formeln für das Ohmsche Gesetz mit Strom und Spannung.
 	}
-
+\fi
 \end{frame}
 
 \begin{frame}[t]
