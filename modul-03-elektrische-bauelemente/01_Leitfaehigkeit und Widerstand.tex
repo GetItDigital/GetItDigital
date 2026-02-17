@@ -252,7 +252,7 @@
 			\setlength{\leftmargini}{4.99cm}
 			\begin{enumerate}
 				\setcounter{enumi}{4} % startet bei 5
-				\item \( \vec{J}=\rho \cdot \vec{v_{\mathrm{el}}} \)
+				\item \( \vec{J}=\vec{v_{\mathrm{el}}} \cdot \rho \)
 			\end{enumerate}
 		}
 		\uncover<5->{Da die Geschwindigkeit immer einen Betrag und eine Richtung hat, ist die Stromdichte ebenfalls ein Vektor.}
@@ -309,7 +309,7 @@
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand4}{4}{
-		Sodass wir alles zusammen eingesetzt in die vorherige Formel J ist gleich Delta Q mal Delta X durch Delta T mal Delta V auch schreiben können. J ist gleich Rho mal V-E-L. Jetzt sind hier noch Vektoren hinzugekommen. Das hat auch einen Grund. Denn die Geschwindigkeit V-E-L, mit der sich die Elektronen bewegen, hat ja nicht nur einen Betrag, sondern auch eine Richtung. Und demzufolge ist die Stromdichte eigentlich auch ein Vektor. Denn wir müssen ja nicht nur beschreiben, wie der Strom sich in der Fläche verteilt, sondern auch in welche Richtung der Strom fließt.
+		Sodass wir alles zusammen eingesetzt in die vorherige Formel J ist gleich Delta Q mal Delta X durch Delta T mal Delta V auch schreiben können. J ist gleich V-E-L mal Rho . Jetzt sind hier noch Vektoren hinzugekommen. Das hat auch einen Grund. Denn die Geschwindigkeit V-E-L, mit der sich die Elektronen bewegen, hat ja nicht nur einen Betrag, sondern auch eine Richtung. Und demzufolge ist die Stromdichte eigentlich auch ein Vektor. Denn wir müssen ja nicht nur beschreiben, wie der Strom sich in der Fläche verteilt, sondern auch in welche Richtung der Strom fließt.
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand4}{5}{
@@ -372,7 +372,7 @@
 	}
 \fi
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{5}{
-		Wenn wir jetzt die hier hergeleiteten Formeln für die Driftgeschwindigkeit V-E-L und die Raumladungsdichte Rho in die Formel einsetzen, die wir gerade hergeleitet haben, also J ist gleich Rho mal V-E-L, dann erhalten wir:
+		Wenn wir jetzt die hier hergeleiteten Formeln für die Driftgeschwindigkeit V-E-L und die Raumladungsdichte Rho in die Formel einsetzen, die wir gerade hergeleitet haben, also J ist gleich V-E-L mal Rho, dann erhalten wir:
 	}
 \silence{2}
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{6}{
@@ -420,7 +420,7 @@
 	}
 	\fi
 \speech{01_Leitfaehigkeit_und_Widerstand6}{1}{
-	Da die Elementarladung E eine konstante ist, und n-e und müh-r Materialkonstanten sind, können diese als spezifischen Leitfähigkeit Kappa zusammengeführt werden. 
+	Da die Elementarladung E eine konstante ist, und n-e und müh-r Materialkonstanten sind, können diese als spezifische Leitfähigkeit Kappa zusammengeführt werden. 
 }
 	\speech{01_Leitfaehigkeit_und_Widerstand6}{2}{
 		Wir erhalten für die Stromdichte J: J ist gleich N-E mal müh-e mal e mal E. Das heißt, wir haben einen Zusammenhang zwischen der Stromdichte J und der elektrischen Feldstärke E. Beides sind Vektoren, und dazwischen steht ein Proportionalitätsfaktor, der im Wesentlichen vom Material abhängig ist. Denn darin ist bezeichnet, wie viele freie Ladungsträger wir pro Volumen haben N-E, die Beweglichkeit dieser freien Ladungsträger im Material müh-e und die Naturkonstante, die Elementarladung e.
@@ -454,12 +454,12 @@
 		\only<2->{Da das elektrische Feld parallel zur Leitungslänge verläuft, ergibt sich das Skalarprodukt:
 		}\only<3->{
 			\begin{equation}
-				U_{12}=\int_{s=0}^{s=l} \vec{E} \cdot \mathrm{d}\vec{s}
+				U_{12}=\int_{s=0}^{s=l} \vec{E} \cdot \mathrm{d}x
 			\end{equation}}
 		\only<4->{Durch Einsetzen der umgestellten Formel 6 nach $\vec{E}$, folgt:
 		}\only<5->{
 			\begin{equation}
-				U_{12}=\int_{0}^{l} \frac{J}{\kappa} \cdot \mathrm{d}s
+				U_{12}=\int_{0}^{l} \frac{J}{\kappa} \cdot \mathrm{d}x
 			\end{equation}
 		}}
 	\s{ % TODO: Inhalt
@@ -469,17 +469,17 @@
 		Da das elektrische Feld parallel zur Leitungslänge verläuft, ergibt sich das Skalarprodukt:
 
 		\begin{equation}
-			U_{12}=\int_{s=0}^{s=l} \vec{E} \cdot \mathrm{d}\vec{s}
+			U_{12}=\int_{s=0}^{s=l} \vec{E} \cdot \mathrm{d}x
 		\end{equation}
 		Durch Einsetzen der umgestellten Formel \ref{eq:E=J/k} nach $\vec{E}$, folgt:
 
 		\begin{equation}
-			U_{12}=\int_{0}^{l} \frac{J}{\kappa} \cdot \mathrm{d}s
+			U_{12}=\int_{0}^{l} \frac{J}{\kappa} \cdot \mathrm{d}x
 		\end{equation}
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{1}{
-		Um jetzt, wie gesagt, auf die bekannte Form des Ohm’schen Gesetzes in Strom und Spannung, also skalaren Größen zu kommen, schauen wir uns als erstes nochmal die Definition der Spannung an. Die Spannung U12 war definiert als das Linienintegral von P1 nach P2 E·ds. Das können wir weiter umformulieren.
+		Um jetzt, wie gesagt, auf die bekannte Form des Ohm’schen Gesetzes in Strom und Spannung, also skalaren Größen zu kommen, schauen wir uns als erstes nochmal die Definition der Spannung an. Die Spannung U 1-2 war definiert als das Linienintegral von P1 nach P2 E mal d-s. Das können wir weiter umformulieren.
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{2}{
@@ -487,15 +487,15 @@
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{3}{
-		Zu U12 ist gleich ∫ von x = 0 bis x = L E dx. Also wir haben die Wegstrecke aufgelöst, haben gesagt, nur auf der x-Achse und wir wandern da entlang. Das ist die erste Vereinfachung.
+		Zu U 1-2 ist gleich das Integral von 0 bis L von E d-s, als entlang des Weges der durch den Vektor S beschrieben wird. Also wir haben die Wegstrecke aufgelöst, haben gesagt, nur auf der x-Achse und wir wandern da entlang. Das ist die erste Vereinfachung.
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{4}{
-		Und das können wir jetzt in die zuvor hergeleitete Folie J = Kappa · E einsetzen, beziehungsweise in E = J / Kappa.
+		Und das können wir jetzt in die zuvor hergeleitete Formel J ist gleich Kappa mal E einsetzen, beziehungsweise in E ist gleich J durch Kappa.
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{5}{
-		Und es ergibt sich: U12 = ∫ von 0 bis L J / Kappa dx.
+		Und es ergibt sich: U 1-2 ist gleich dem Integral von 0 bis L von  J geteilt durch Kappa d-x.
 	}
 
 \end{frame}
@@ -543,7 +543,7 @@
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand8}{2}{
-		Sodass sich das Integral vereinfachen lässt zu U-1-2 ist gleich 1 durch Kappa mal integral von 0 bis L J d-x.
+		Sodass sich das Integral vereinfachen lässt zu U-1-2 ist gleich 1 durch Kappa mal integral von 0 bis L von J d-x.
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand8}{3}{
@@ -559,7 +559,7 @@
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand8}{6}{
-		Sodass wir erhalten: U-1-2 ist gleich 1 durch Kappa mal dem integral von 0 bis L I durch A d-x.
+		Sodass wir erhalten: U-1-2 ist gleich 1 durch Kappa mal dem integral von 0 bis L von I durch A d-x.
 	}
 
 \end{frame}
