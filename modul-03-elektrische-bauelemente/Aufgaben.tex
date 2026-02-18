@@ -1,190 +1,426 @@
-%hier jede Aufgabe als eigene Datei mit dem Input-Befehl einfügen
-%\input{Aufgabe1}
-%\input{Aufgabe2}
-%....
-%Das ist nur Beispielsinhalt, bitte auskommentieren!
-%\input{Beispiel1}
 
 \subsection{Materialabhängigkeit des Widerstandes R\label{Materialabhängigkeit des Widerstandes}}
 \Aufgabe{
-	 Ein Draht aus Kupfer hat folgende Eigenschaften:
-\begin{itemize}
-  \item Länge: \( l = 5\,mathrm{m} \)
-  \item Querschnittsfläche: \( A = \SI{1}{\milli\meter\squared} \)
-  \item spezifischer Widerstand von Kupfer: \( \rho = \SI{1.68e-8}{\ohm\meter} \)
-\end{itemize}
-Berechne \( R \) des Drahtes.
+    Ein Draht aus Kupfer hat folgende Eigenschaften:
+    \begin{itemize}
+        \item Länge: $ \ell = 5\,\mathrm{m} $
+        \item Querschnittsfläche: $ A = 1\,\mathrm{mm}^2$
+        \item spezifischer Widerstand von Kupfer: $\rho = 1,68\cdot 10^{-8}\,\Omega\mathrm{m}$
+    \end{itemize}
+    Berechne $ R $ des Drahtes.
 }
+\Loesung{
+    \begin{equation*}
+        R = \rho \cdot \frac{\ell}{A} = 1,68 \cdot 10^{-8} \cdot \frac{5}{1 \cdot 10^{-6}} \,\Omega= 0,084\,\Omega
+    \end{equation*}
+}
+
+
 
 \subsection{Elektrischer Widerstand \label{Elektrischer Widerstand}}
-
 \Aufgabe{
+    Eine kugelförmige Hohlstruktur besteht aus zwei ideal leitfähigen Schalen – einer inneren mit Radius $ a $ und einer äußeren mit Radius $ b $.
+    Der Zwischenraum ist vollständig mit einem homogenen, leitfähigen Material gefüllt, das die elektrische Leitfähigkeit $ \kappa $ (in $\frac{\mathrm{S}}{\mathrm{m}}$) besitzt.
+    Zwischen den leitenden Schalen wird durch eine Spannungsquelle eine Spannung
+    \begin{equation*}
+        U = \varphi_1 - \varphi_2
+    \end{equation*}
+    angelegt.
+    Der Strom kann sich aufgrund der vollständigen Füllung und der idealen Kontakte ungehindert ausbreiten.
 
-Eine kugelförmige Hohlstruktur besteht aus zwei ideal leitfähigen Schalen – einer inneren mit Radius \( a \) und einer äußeren mit Radius \( b \). 
-
-Der Zwischenraum ist vollständig mit einem homogenen, leitfähigen Material gefüllt, das die elektrische Leitfähigkeit \( \kappa \) (in \si{\siemens\per\meter}) besitzt.
-
-Zwischen den leitenden Schalen wird durch eine Spannungsquelle eine Spannung
-\[
-U = \varphi_1 - \varphi_2
-\]
-angelegt. 
-
-Der Strom kann sich aufgrund der vollständigen Füllung und der idealen Kontakte ungehindert ausbreiten.
-
-\medskip
-
-Berechnen Sie den elektrischen Widerstand \( R \) zwischen den beiden kugelförmigen Schalen in Abhängigkeit von \( a \), \( b \) und \( \kappa \).
-
+    Berechnen Sie den elektrischen Widerstand $ R $ zwischen den beiden kugelförmigen Schalen in Abhängigkeit von $ a $, $ b $ und $ \kappa $.
 }
+\Loesung{
+    Da das System radial-symmetrisch ist, fließt der Strom radial von innen nach außen (oder umgekehrt), und das elektrische Feld hängt nur vom Radius $ r $ ab.
+    Die Stromdichte ergibt sich über das Ohmsche Gesetz in Differentialform:
+    \begin{equation*}
+        \vec{j}(r) = \kappa \cdot \vec{E}(r)
+    \end{equation*}
+
+    Die Fläche, durch die der Strom bei Radius $ r $ fließt, ist die Oberfläche einer Kugel:
+    \begin{equation*}
+        A(r) = 4 \pi r^2
+    \end{equation*}
+
+    Der Gesamtstrom ist konstant durch alle Kugelflächen:
+    \begin{equation*}
+        I = j(r) \cdot A(r) = \kappa \cdot E(r) \cdot 4 \pi r^2 \quad \Rightarrow \quad E(r) = \frac{I}{4 \pi \kappa r^2}
+    \end{equation*}
+
+    \textbf{Spannung berechnen:}
+
+    Die Spannung ergibt sich durch das Integral über das elektrische Feld:
+    \begin{equation*}
+        U = \int_a^b E(r) \, dr = \int_a^b \frac{I}{4 \pi \kappa r^2} \, dr = \frac{I}{4 \pi \kappa} \int_a^b \frac{1}{r^2} \, dr = \frac{I}{4 \pi \kappa} \left[-\frac{1}{r}\right]_a^b
+    \end{equation*}
+    \begin{equation*}
+        U = \frac{I}{4 \pi \kappa} \left(\frac{1}{a} - \frac{1}{b}\right)
+    \end{equation*}
+
+    \textbf{Widerstand berechnen:}
+
+    Da $ U = R \cdot I $ gilt, folgt
+    \begin{equation*}
+        R = \frac{U}{I} = \frac{1}{4 \pi \kappa} \left(\frac{1}{a} - \frac{1}{b}\right)
+    \end{equation*}
+
+    Der elektrische Widerstand zwischen den beiden Schalen beträgt somit:
+    \begin{equation*}
+        \boxed{ R = \frac{1}{4 \pi \kappa} \left(\frac{1}{a} - \frac{1}{b}\right) }
+    \end{equation*}
+}
+
+
+
 
 \subsection{Elektrischer Widerstand eines beschichteten Drahts\label{Elektrischer Widerstand eines beschichteten Drahts}}
-
 \Aufgabe{
-%;TODO auf Website https://getitdigital.uni-wuppertal.de/index.php?site=module&modul=3/Aufgaben.html  auch bei den lösungen ist es kaput-> Mathjax muss nach MathJax erstellt sein \( a = 0,5\,\mathrm{mm} \)
-Ein runder Aluminiumdraht besitzt einen Radius von \( a = \SI{0.5}{\milli\meter} \).  
-Er ist mit einer dünnen Goldschicht von \( b = \SI{0.1}{\milli\meter} \) Dicke überzogen.  
+    Ein runder Aluminiumdraht besitzt einen Radius von $ a = 0,5\,\mathrm{mm}$. Er ist mit einer dünnen Goldschicht von $ b = 0,1\,\mathrm{mm}$ Dicke überzogen.
+    Für die spezifische elektrische Leitfähigkeit und den Temperaturkoeffizienten der beiden Metalle gelten folgende Werte:
 
-Für die spezifische elektrische Leitfähigkeit und den Temperaturkoeffizienten der beiden Metalle gelten folgende Werte:
+    \begin{itemize}
+        \item \textbf{Aluminium:}
+            \begin{equation*}
+                \kappa_\text{Alu} = 35\,\frac{\mathrm{m}}{\Omega\mathrm{mm}^2}, \quad \alpha_\text{Alu} = 3,5 \cdot 10^{-3}\,\frac{1}{\mathrm{K}}
+            \end{equation*}
+        \item \textbf{Gold:}
+            \begin{equation*}
+                \kappa_\text{Gold} = 44\,\frac{\mathrm{m}}{\Omega\mathrm{mm}^2}, \quad \alpha_\text{Gold} = 3{,}6 \cdot 10^{-3}\,\frac{1}{\mathrm{K}}
+            \end{equation*}
+    \end{itemize}
 
-\begin{itemize}
-  \item \textbf{Aluminium:} 
-  \[
-  \kappa_\text{Alu} = \SI{35}{\meter \per (\ohm \milli\meter\squared)}, \quad \alpha_\text{Alu} = 3{,}5 \cdot 10^{-3}\,\si{\per\kelvin}
-  \]
-  
-  \item \textbf{Gold:} 
-  \[
-  \kappa_\text{Gold} = \SI{44}{\meter \per (\ohm \milli\meter\squared)}, \quad \alpha_\text{Gold} = 3{,}6 \cdot 10^{-3}\,\si{\per\kelvin}
-  \]
-\end{itemize}
+    \textbf{Gegeben:}
+    Drahtlänge: $ l = 1,5\,\mathrm{m} $
+    Temperatur: $ T = 25\,\degree\mathrm{C} $ (Ausgangstemperatur)
 
-\textbf{Gegeben:}  
-Drahtlänge: \( l = \SI{1.5}{\meter} \)  
-Temperatur: \( T = \SI{25}{\celsius} \) (Ausgangstemperatur)
+    \begin{itemize}
+      \item[a)] Berechnen Sie den elektrischen Gleichstromwiderstand des Aluminiumkerns und der Goldummantelung bei $ T = 25\,\degree\mathrm{C} $.
+      \item[b)] Wie verändert sich der jeweilige Gleichstromwiderstand, wenn die Temperatur auf $ T = 90\,\degree\mathrm{C} $ ansteigt?
+    \end{itemize}
+}
+\Loesung{
+    \begin{align*}
+        \text{Radius Aluminiumkern:} &\quad a = 0,5\,\mathrm{mm} \\
+        \text{Dicke der Goldschicht:} &\quad b = 0,1\,\mathrm{mm} \\
+        \Rightarrow \text{Gesamtradius:} &\quad r = a + b = 0,6\,\mathrm{mm} \\
+        \text{Länge des Leiters:} &\quad l = 1,5\mathrm{m} = 1500\,\mathrm{mm} \\
+        \text{Aluminium:} \quad \kappa_\text{Alu} = 35\,\frac{\mathrm{m}}{\Omega\mathrm{mm}^2}, &\quad \alpha_\text{Alu} = 3,5 \cdot 10^{-3}\, \frac{1}{\mathrm{K}} \\
+        \text{Gold:} \quad \kappa_\text{Gold} = 44\,\frac{\mathrm{m}}{\Omega\mathrm{mm}^2}, &\quad \alpha_\text{Gold} = 3{,}6 \cdot 10^{-3}\, \frac{1}{\mathrm{K}} \\
+        \text{Temperaturänderung:} &\\
+        &T_1 = 25\,\degree\mathrm{C} = 298\,\mathrm{K} \\
+        &T_2 = 90\,\degree\mathrm{C} = 363\,\mathrm{K} \\
+        &\Delta T = T_2 - T_1 = 65\,\mathrm{K}
+    \end{align*}
 
-\begin{itemize}
-  \item[a)] Berechnen Sie den elektrischen Gleichstromwiderstand des Aluminiumkerns und der Goldummantelung bei \( T = \SI{25}{\celsius} \).
-  \item[b)] Wie verändert sich der jeweilige Gleichstromwiderstand, wenn die Temperatur auf \( T = \SI{90}{\celsius} \) ansteigt?
-\end{itemize}
+    Querschnittsflächen berechnen
+
+    \begin{align*}
+        &\text{Aluminiumkern:} \quad A_\text{Alu} = \pi a^2 = \pi \cdot 0,5^2 = \pi \cdot 0,25 = 0,7854\,\mathrm{mm}^2 \\
+        &\text{Goldmantel (Ringfläche zwischen } r = 0,6\,\mathrm{mm} \text{ und } a = 0,5\,\mathrm{mm):} \\
+        &A_\text{Gold} = \pi (r^2 - a^2) = \pi ((0,6\,\mathrm{mm})^2 - (0,5\,\mathrm{mm})^2) = \pi (0,36\,\mathrm{mm}^2 - 0,25\,\mathrm{mm}^2) = \pi \cdot 0,11\,\mathrm{mm}^2 \approx 0,3456\,\mathrm{mm}^2
+    \end{align*}
+
+    Widerstände bei $25\,\degree\mathrm{C}$
+
+    Formel:
+    \begin{equation*}
+        R = \frac{l}{\kappa \cdot A}
+    \end{equation*}
+
+    \begin{align*}
+        R_\text{Alu} &= \frac{1500}{35 \cdot 0,7854} \,\Omega= \frac{1500}{27,489} \,\Omega\approx 54,58\,\mathrm{m}\Omega \\
+        R_\text{Gold} &= \frac{1500}{44 \cdot 0,3456} \,\Omega= \frac{1500}{15,206} \,\Omega\approx 98,61\,\mathrm{m}\Omega
+    \end{align*}
+
+    Widerstände bei $90\,\degree\mathrm{C}$
+
+    Temperaturabhängiger Widerstand:
+    \begin{equation*}
+        R(T) = R_0 \cdot \left( 1 + \alpha \cdot \Delta T \right)
+    \end{equation*}
+
+    \begin{align*}
+        R_{\text{Alu},90^\circ \mathrm{C}} &= 54,58 \cdot (1 + 3,5 \cdot 10^{-3} \cdot 65) \,\Omega= 54,58 \cdot 1,2275 \,\Omega\approx 66,97\,\mathrm{m}\Omega \\
+        R_{\text{Gold},90^\circ \mathrm{C}} &= 98,61 \cdot (1 + 3,6 \cdot 10^{-3} \cdot 65)\,\Omega = 98,61 \cdot 1,234 \,\Omega\approx 121,64\,\mathrm{m}\Omega
+    \end{align*}
 
 
+    \begin{tabular}{lcc}
+        \toprule
+            Material & Widerstand bei $25\,\degree\mathrm{C}$ & Widerstand bei $90\,\degree\mathrm{C}$ \\
+        \midrule
+            Aluminium & $54,58\,\mathrm{m}\Omega$ & $66,97\,\mathrm{m}\Omega$ \\
+            Gold & $98,61\,\mathrm{m}\Omega$ & $121,64\,\mathrm{m}\Omega$ \\
+        \bottomrule
+    \end{tabular}
 }
 
 
 
-\subsection{Reale Stromquellen\label{Reale Stromquelle}}
+
+
+\subsection{Reale Stromquellen}
 \Aufgabe{
+    Eine reale Stromquelle hat eine Leerlaufspannung $ U_0 = 9\,\mathrm{V} $ und einen Innenwiderstand $ R_\text{i} = 1\,\Omega $.
 
-Eine reale Stromquelle hat eine Leerlaufspannung \( U_0 = 9\,\si{\volt} \) und einen Innenwiderstand \( R_\text{i} = 1\,\si{\ohm} \).
+    a) wie groß ist die Klemmenspanung, wenn ein Lastwiderstand von  $ R_l = 4\,\Omega $ angeschlossen wird ?
+    b) wie groß ist der Strom durch die Last?
+}
+\Loesung{
+    \textbf{a) Klemmenspannung $ U_\text{k} $:}
+    Die Klemmenspannung berechnet sich mit dem Spannungsteiler:
+    \begin{equation*}
+        U_\text{k} = U_0 \cdot \frac{R_\text{l}}{R_\text{i} + R_\text{l}} = 9\,\mathrm{V} \cdot \frac{4\,\Omega}{1\,\Omega + 4\,\Omega} = 9 \cdot \frac{4}{5} = 7,2\,\mathrm{V}
+    \end{equation*}
 
-a) wie groß ist die Klemmenspanung, wenn ein Lastwiderstand von  \( R_l = 4\, \si{\ohm} \) angeschlossen wird ?.
-b) wie groß ist der Strom durch die Last?
+    \textbf{b) Strom durch die Last $ I $:}
 
+    \begin{equation*}
+        I = \frac{U_0}{R_\text{i} + R_\text{l}} = \frac{9\,\mathrm{V}}{1\,\Omega + 4\,\Omega} = \frac{9\,\mathrm{V}}{5\,\Omega} = 1,8\,\mathrm{A}
+    \end{equation*}
 }
 
-\subsection{Spannungsquelle\label{Spannungsquelle}}
+
+
+
+
+\subsection{Spannungsquelle}
 \Aufgabe{
+    Gegeben ist ein Netzwerk aus einer Spannungsquelle mit $ U = 10\,\mathrm{V} $,
+    einem Reihenwiderstand $ R_1 = 2\,\Omega $
+    und einem parallelen Widerstand $ R_2 = 4\,\Omega $.
 
-Gegeben ist ein Netzwerk aus einer Spannungsquelle mit \( U = \SI{10}{\volt} \),  
-einem Reihenwiderstand \( R_1 = \SI{2}{\ohm} \)  
-und einem parallelen Widerstand \( R_2 = \SI{4}{\ohm} \).  
-
-Berechne Ströme und Spannungen im Netzwerk.
-
+    Berechne Ströme und Spannungen im Netzwerk.
 }
+\Loesung{
+    \begin{equation*}
+        R_\text{ges} = R_1 + R_2 = 2\,\Omega + 4\,\Omega = 6\,\Omega, \quad
+        I = \frac{U}{R_\text{ges}} = \frac{10\,\mathrm{V}}{6\,\Omega} = 1,67\,\mathrm{A}
+    \end{equation*}
+
+    \begin{equation*}
+        U_{R_1} = I \cdot R_1 = 1,67\,\mathrm{A} \cdot 2\,\Omega = 3,33\,\mathrm{V}, \quad
+        U_{R_2} = U - U_{R_1} = 10\,\mathrm{V} - 3,33\,\mathrm{V} = 6,67\,\mathrm{V}
+    \end{equation*}
+
+    \begin{equation*}
+        I_{R_2} = \frac{U_{R_2}}{R_2} = \frac{6,67\,\mathrm{V}}{4\,\Omega} = 1,67\,\mathrm{A}
+    \end{equation*}
+}
+
+
+
+
 
 
 \subsection{Kapazität und Kondensator\label{Kapazität und Kondensator}}
-
 \Aufgabe{
-
 \textbf{Teil 1: Einzelner Kondensator}
+    Gegeben:
+    \begin{equation*}
+        C = 10\,\mathrm{pF}, \quad U = 5\,\mathrm{V}
+    \end{equation*}
 
-Gegeben:
-\[
-C = \SI{10}{\pico\farad}, \quad U = \SI{5}{\volt}
-\]
+    \begin{itemize}
+        \item[a)] Berechne die Ladung $ Q $
+        \item[b)] Berechne die im Kondensator gespeicherte Energie
+    \end{itemize}
 
-\begin{itemize}
-    \item[a)] Berechne die Ladung \( Q \)
-    \item[b)] Berechne die im Kondensator gespeicherte Energie
-\end{itemize}
+    \vspace{1em}
 
-\vspace{1em}
+    \textbf{Teil 2: Zwei Kondensatoren in Reihe}
 
-\textbf{Teil 2: Zwei Kondensatoren in Reihe}
+    Zwei Kondensatoren $ C_1 $ und $ C_2 $ sind in Reihe geschaltet.
 
-Zwei Kondensatoren \( C_1 \) und \( C_2 \) sind in Reihe geschaltet.
+    \begin{equation*}
+        C_1 = 4\,\mathrm{\mu F}, \quad C_2 = 6\,\mathrm{\mu F}, \quad U_\text{ges} = 12\,\mathrm{V}
+    \end{equation*}
 
-\[
-C_1 = \SI{4}{\micro\farad}, \quad C_2 = \SI{6}{\micro\farad}, \quad U_\text{ges} = \SI{12}{\volt}
-\]
+    \begin{itemize}
+        \item[c)] Berechne die Gesamtkapazität $ C_\text{ges} $
+        \item[d)] Wie groß ist die Spannung über $ C_1 $?
+    \end{itemize}
+}
+\Loesung{
+    \begin{enumerate}
+        \item[a)] \textbf{Ladung:}
+            \begin{equation*}
+                Q = C \cdot U = 10 \cdot 10^{-12} \cdot 5 \,\mathrm{C}= 50\,\mathrm{pC}
+            \end{equation*}
 
-\begin{itemize}
-    \item[c)] Berechne die Gesamtkapazität \( C_\text{ges} \)
-    \item[d)] Wie groß ist die Spannung über \( C_1 \)?
-\end{itemize}
+        \item[b)] \textbf{Gespeicherte Energie:}
+            \begin{equation*}
+                E = \frac{1}{2} C U^2 = \frac{1}{2} \cdot 10 \cdot 10^{-12} \cdot 25\,\mathrm{J} = 125\,\mathrm{pJ}
+            \end{equation*}
+
+        \item[c)] \textbf{Gesamtkapazität der Reihenschaltung:}
+            \begin{equation*}
+                \frac{1}{C_\text{ges}} = \frac{1}{C_1} + \frac{1}{C_2} = \frac{1}{4\,\mathrm{\mu F}} + \frac{1}{6\,\mathrm{\mu F}} = \frac{5}{12\,\mathrm{\mu F}}
+                \Rightarrow C_\text{ges} = 2,4\,\mathrm{\mu F}
+            \end{equation*}
+
+        \item[d)] \textbf{Spannung über $ C_1 $:}
+
+        \begin{equation*}
+            Q = C_\text{ges} \cdot U_\text{ges} = 2,4 \cdot 10^{-6} \cdot 12 \,\mathrm{C}= 28,8\,\mathrm{\mu C}
+        \end{equation*}
+        \begin{equation*}
+            U_1 = \frac{Q}{C_1} = \frac{28,8 \cdot 10^{-6}}{4 \cdot 10^{-6}} \,\mathrm{V}= 7,2\,\mathrm{V}
+        \end{equation*}
+    \end{enumerate}
 }
 
-\subsection{Induktivität und Spule\label{Induktivität und Spüle}}
 
+
+
+
+\subsection{Induktivität und Spule\label{Induktivität und Spule}}
 \Aufgabe{
+    \textbf{Teil 1: Energie in der Spule}
+    Gegeben ist eine Spule mit der Induktivität
+    \begin{equation*}
+        L = 2\,\mathrm{H}
+    \end{equation*}
+    und einem Strom
+    \begin{equation*}
+        I = 3\,\mathrm{A}.
+    \end{equation*}
 
-\textbf{Teil 1: Energie in der Spule}
+    \begin{itemize}
+        \item[a)] Berechne die im Magnetfeld der Spule gespeicherte Energie.
+        \item[b)] Wie ändert sich die Energie, wenn der Strom auf $ I = 0,5\,\mathrm{A} $ reduziert wird?
+    \end{itemize}
 
-Gegeben ist eine Spule mit der Induktivität
-\[
-L = \SI{2}{\henry}
-\]
-und einem Strom
-\[
-I = \SI{3}{\ampere}.
-\]
+    \textbf{Teil 2: Induktivität einer zylindrischen Spule}
 
-\begin{itemize}
-    \item[a)] Berechne die im Magnetfeld der Spule gespeicherte Energie.
-    \item[b)] Wie ändert sich die Energie, wenn der Strom auf \( I = \SI{0.5}{\ampere} \) reduziert wird?
-\end{itemize}
+    Eine zylindrische Spule hat
+    \begin{equation*}
+        N = 500, \quad l = 20\,\mathrm{cm}, \quad A = 5\,\mathrm{cm}^2
+    \end{equation*}
+    Das Innere der Spule ist luftgefüllt.
 
-\vspace{1em}
-
-\textbf{Teil 2: Induktivität einer zylindrischen Spule}
-
-Eine zylindrische Spule hat
-\[
-N = 500 \text{ Wicklungen}, \quad l = \SI{20}{\centi\meter}, \quad A = \SI{5}{\centi\meter\squared}
-\]
-Das Innere der Spule ist luftgefüllt.
-
-Berechne die Induktivität \( L \) der Spule.
-
+    Berechne die Induktivität $ L $ der Spule.
 }
+\Loesung{
+    \begin{enumerate}
+    \item[a)] \textbf{Energie bei $ I = 3\,\mathrm{A} $:}
+        \begin{equation*}
+            E = \frac{1}{2} L I^2 = \frac{1}{2} \cdot 2 \cdot 3^2 \,\mathrm{J}= 9\,\mathrm{J}
+        \end{equation*}
+
+    \item[b)] \textbf{Energie bei $ I = 0,5\,\mathrm{A} $:}
+
+    \begin{equation*}
+        E = \frac{1}{2} \cdot 2 \cdot 0,5^2\,\mathrm{J} = 0,25\,\mathrm{J}
+    \end{equation*}
+
+    \item[c)] \textbf{Berechnung der Induktivität $ L $ der zylindrischen Spule:}
+
+    Zunächst die Umrechnung der Einheiten:
+    \begin{equation*}
+        \ell = 20\,\mathrm{cm} = 0,2\,\mathrm{m}, \quad A = 5\,\mathrm{cm}^2 = 5 \cdot 10^{-4}\,\mathrm{m}^2
+    \end{equation*}
+
+    Die Induktivität einer luftgefüllten zylindrischen Spule berechnet sich durch:
+    \begin{equation*}
+        L = \mu_0 \frac{N^2 A}{\ell}
+    \end{equation*}
+    mit der magnetischen Feldkonstanten
+    \begin{equation*}
+        \mu_0 = 4\pi \cdot 10^{-7}\,\frac{\mathrm{H}}{\mathrm{m}}
+    \end{equation*}
+
+    Einsetzen:
+    \begin{equation*}
+        L = 4\pi \cdot 10^{-7} \cdot \frac{500^2 \cdot 5 \cdot 10^{-4}}{0,2} \,\mathrm{H}= 7,85 \cdot 10^{-2} \,\mathrm{H} = 78,5\,\mathrm{mH}
+    \end{equation*}
+    \end{enumerate}
+}
+
+
+
+
+
+
+
+
+
 
 \subsection{Induktivität, Magnetische Flussdichte und Magnetfeldenergie\label{Induktivität, Magnetische Flussdichte und Magnetfeldenergie}}
-
 \Aufgabe{
+    Ein luftgefüllter, langer zylindrischer Spulenleiter besitzt folgende Eigenschaften:
 
-Ein luftgefüllter, langer zylindrischer Spulenleiter besitzt folgende Eigenschaften:
+    \begin{itemize}
+      \item Anzahl der Windungen: $ N = 500 $
+      \item Länge der Spule: $ l = 0,5\,\mathrm{m} $
+      \item Querschnittsfläche: $ A = 4 \cdot 10^{-4}\,\mathrm{m}^2 $
+      \item Stromstärke: $ I = 2,5\,\mathrm{A} $
+    \end{itemize}
 
-\begin{itemize}
-  \item Anzahl der Windungen: \( N = 500 \)
-  \item Länge der Spule: \( l = \SI{0.5}{\meter} \)
-  \item Querschnittsfläche: \( A = 4 \cdot 10^{-4} \, \si{\meter\squared} \)
-  \item Stromstärke: \( I = \SI{2.5}{\ampere} \)
-\end{itemize}
+    \textbf{Gegeben:}
+    Magnetische Feldkonstante: $ \mu_0 = 4\pi \cdot 10^{-7}\,\frac{\mathrm{H}}{\mathrm{m}} $
 
-\textbf{Gegeben:}  
-Magnetische Feldkonstante: \( \mu_0 = 4\pi \cdot 10^{-7} \, \si{\henry\per\meter} \)
-
-\begin{itemize}
-  \item[a)] Berechnen Sie die magnetische Flussdichte \( \vec{B} \) im Inneren der Spule.
-  \item[b)] Bestimmen Sie die Induktivität \( L \) der Spule.
-  \item[c)] Berechnen Sie die im Magnetfeld gespeicherte Energie \( E_m \).
-\end{itemize}
+    \begin{itemize}
+      \item[a)] Berechnen Sie die magnetische Flussdichte $ \vec{B} $ im inneren der Spule.
+      \item[b)] Bestimmen Sie die Induktivität $ L $ der Spule.
+      \item[c)] Berechnen Sie die im Magnetfeld gespeicherte Energie $ E_m $.
+    \end{itemize}
 
 }
+\Loesung{
+    \textbf{a) Magnetische Flussdichte $ \vec{B} $:}
 
+    Für eine lange, luftgefüllte Zylinderspule gilt:
+    \begin{equation*}
+        B = \mu_0 \cdot \frac{N}{l} \cdot I
+    \end{equation*}
 
+    Einsetzen der Werte:
+    \begin{equation*}
+        B = 4\pi \cdot 10^{-7} \cdot \frac{500}{0,5} \cdot 2,5 \,\mathrm{T}= 4\pi \cdot 10^{-7} \cdot 1000 \cdot 2,5\,\mathrm{T}
+    \end{equation*}
+    \begin{equation*}
+        B = 4\pi \cdot 10^{-7} \cdot 2500 \,\mathrm{T}= \pi \cdot 10^{-3}\,\mathrm{T}
+    \end{equation*}
+    \begin{equation*}
+        \Rightarrow B \approx 3,14 \cdot 10^{-3}\,\mathrm{T} = 3,14\,\mathrm{mT}
+    \end{equation*}
 
+    \textbf{b) Induktivität $ L $:}
 
+    Die Induktivität einer langen luftgefüllten Spule ergibt sich aus:
+    \begin{equation*}
+        L = \mu_0 \cdot \frac{N^2 \cdot A}{l}
+    \end{equation*}
+
+    Einsetzen der Werte:
+    \begin{equation*}
+        L = 4\pi \cdot 10^{-7} \cdot \frac{500^2 \cdot 4 \cdot 10^{-4}}{0,5} \,\mathrm{H}
+    \end{equation*}
+    \begin{equation*}
+        L = 4\pi \cdot 10^{-7} \cdot \frac{250000 \cdot 4 \cdot 10^{-4}}{0,5}\,\mathrm{H}
+        = 4\pi \cdot 10^{-7} \cdot \frac{100}{0,5}\,\mathrm{H}
+        = 4\pi \cdot 10^{-7} \cdot 200 \,\mathrm{H}
+    \end{equation*}
+    \begin{equation*}
+        L = 8\pi \cdot 10^{-5} \,\mathrm{H}
+        \Rightarrow L \approx 2,51\cdot 10^{-4}\,\mathrm{H} = 251\,\mathrm{\mu H}
+    \end{equation*}
+
+    \textbf{c) Gespeicherte Energie im Magnetfeld $ E_m $:}
+
+    Die Energie im Magnetfeld einer Spule berechnet sich mit:
+    \begin{equation*}
+        E_m = \frac{1}{2} L I^2
+    \end{equation*}
+
+    Einsetzen:
+    \begin{equation*}
+        E_m = \frac{1}{2} \cdot 2,51 \cdot 10^{-4} \cdot (2,5)^2\,\mathrm{J}
+        = 0,5 \cdot 2,51 \cdot 10^{-4} \cdot 6,25\,\mathrm{J}
+    \end{equation*}
+    \begin{equation*}
+        E_m = 7,84 \cdot 10^{-4}\,\mathrm{J}
+        = 0,784\,\mathrm{mJ}
+    \end{equation*}
+}

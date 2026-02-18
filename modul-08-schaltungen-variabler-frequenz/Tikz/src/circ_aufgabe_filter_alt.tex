@@ -1,0 +1,14 @@
+% passiver Filter aus R und C, 1. Ordnung
+\begin{tikzpicture}
+    \draw (0,2) 				% u1+
+        to [R, l=$R_1$, o-] (2.5,2)
+        to [R, l=$R_2$, -] (2.5,0)
+        to [short, *-o] (0,0); 			% u1-
+    \draw (2.5,2) to [short, *-o] (5.5,2); 	% u2+
+    \draw (2.5,0) to [short, *-o] (5.5,0); 	% u2-
+    \draw (4,2) to [C, l=$C$, *-*] (4,0);
+    \draw (0,2) to [open, name=u1, v, !v] (0,0); 
+    \draw (5.5,2) to [open, name=u2, v^, !v] (5.5,0);
+    \varrmore{u1}{$\underline{U}_1$};
+    \varrmore{u2}{$\underline{U}_2$};
+\end{tikzpicture}%

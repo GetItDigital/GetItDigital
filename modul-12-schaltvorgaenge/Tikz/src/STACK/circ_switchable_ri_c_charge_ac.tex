@@ -1,0 +1,48 @@
+% RC Ladeschaltung mit Wechselschalter erweitertes Labeling
+\begin{tikzpicture}
+    \ctikzset{bipoles/cuteswitch/thickness=0.3}
+    % RC Netzwerk mit Schalter und Wechselspannungsquelle uq. 
+    % vor t0: Kurzschluss R2, parallel dazu Reihe aus R3 und C.
+    % nach t0: lineare Spannungsquelle (uq mit R1) an R2, parallel dazu Reihe aus R3 und C.
+
+    %  *---R1---o..........
+    %  |..>t0.->..............
+    %  |..........S1---*--R3--*
+    % uq..<t0.->./.....|......|
+    %  |........o......R2.....C
+    %  |........|......|......|
+    %  *--------*------*------*
+
+    %  *---R1---o
+    %  | t>t0 ->
+    %  |          S1---*--R3--*
+    % uq t<t0 -> /     |      |
+    %  |        o      R2     C
+    %  |        |      |      |
+    %  *--------*------*------*
+
+    %Switch Circuit [Position der nodes von Schalter] 
+    % [s1: (2, 1.69); unten s1.cout 1: (1.70,?); oben s1.out 2: (?, 2.11); rechts s1.in: (?, 1.685)]  
+    \draw(2,1.69)
+        node[cute spdt up arrow, rotate = 180](s1){}% Cute Switch, Position des Schalters mit up/down veränderbar
+        (s1.center) node[left, xshift= -5]{$t_0$};%Label 
+        
+    \draw(s1.out 2) to[R, l=$R_1$, name=R1, v_>, !vi] (0,2.11);% nach Uq+
+    \draw([yshift=-0.5mm] s1.cout 1) to[short,-*] (1.70,0);%nach Uq-
+    %RC Circuit
+    \draw(0,2.11) 
+    to[V, name=Uq, v_>, !v](0,0)
+    to[short, -*](2.75,0)
+    to[short, *-](5,0) 
+    to[C, l=$C$, name=C, v<, !v](5,1.685)
+    to[R, l=$R_3$, name=R3, v<, i^<, -*, !vi](2.75,1.685)
+    to[R, l_=$R_2$, name=R2, v^, !vi](2.75,0);
+
+    \draw(2.75,1.685) to[short](s1.in); % R2+ bis Schalter rechts
+
+    % Strom- und Spannungspfeile mit Label
+    \varrmore{Uq}{$u_q$};
+    \varrmore{C}{$u_C$};
+    \varrmore{R2}{$u_2$};
+
+\end{tikzpicture} 
