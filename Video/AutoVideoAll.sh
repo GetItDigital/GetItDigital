@@ -30,6 +30,7 @@ for module in $modules; do
 
     # Befehl ausführen
     pdflatex --shell-escape -output-directory="TeXAux" "Video.tex" >/dev/null 2>&1
+    pdflatex --shell-escape -output-directory="TeXAux" "Video.tex" >/dev/null 2>&1
     
     # Überprüfen, ob pdflatex erfolgreich war
     if [ $? -eq 0 ]; then

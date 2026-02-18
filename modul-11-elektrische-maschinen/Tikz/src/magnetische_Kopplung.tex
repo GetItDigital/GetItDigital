@@ -3,10 +3,10 @@
 \def\shiftx{20.0}%Verschiebung Sekundärspule
 \begin{circuitikz}[thick]
     % Magnetfeld unten
-    \onslide<2->{
+    \onslide<4->{
         \draw [yshift = -14, line width = 1.5, red, ->] (7,3) arc (190:360:3) node[above]{$\varPhi$};
     }
-    \onslide<4>{
+    \onslide<7>{
         \draw [yshift = -14, xscale = 0.55, line width = 1.5, red, dashed, opacity = 0.4] (12.75,3) arc (-170:180:3);
         \draw [yshift = -14, xscale = 0.45, line width = 1.5, red, dashed, opacity = 0.2] (15.6,3) arc (-170:180:3);
     }
@@ -18,7 +18,7 @@
     .. controls ++(1.5,-.5) and ++(0,0) .. ++(1.5,-1.5)
     .. controls ++(0,-2) and ++(\vx,\vy) .. (\vx*2,0);
     % Sekundärspule
-    \onslide<3->
+    \onslide<5->
     {
         \draw [->] (\shiftx,0) to[short, -] node[above]{$\underline{I}_2$} ++(-\vx,\vy);
         \draw (\shiftx,0) to[sV=$\underline{U}_2$] ++(-\vx,-\vy);
@@ -28,7 +28,7 @@
         .. controls ++(0,-2) and ++(-\vx,\vy) .. (\shiftx-\vx*2,0);
     }
     % Magnetfeld oben
-    \onslide<2->{
+    \onslide<4->{
         \draw [yshift = 2, line width = 1.5, red, opacity = 1, <-] (7,3) node[below]{$\varPhi$} arc (180:10:3) ;
     }
 \end{circuitikz}
