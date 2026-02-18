@@ -1,6 +1,5 @@
 %\newsection{Kapitel1}
-\newvideofile{Modul03LeitfaehigkeitundWiderstand}{Leitfähigkeit und Widerstand} %; TODO LeitfähigkeitudnWQidertsand.txt tauch in Video.pdf auf unsicher ob es ein problem ist
-%Hier den Inhalt mit \input einfügen und die folgenden Zeilen entfernen
+\newvideofile{Modul03LeitfaehigkeitundWiderstand1}{Leitfähigkeit und Widerstand 1}
 
 %%%%% Fuer Widerstandstabelle
 \definecolor{gold}{RGB}{255, 210, 0}
@@ -366,10 +365,10 @@
 		Wir erhalten Rho ist gleich minus N-E mal e. Das heißt, die Anzahl an freien Ladungsträgern mal die Elementarladung e.
 	}
 
-	\iffalse\speech{01_Leitfaehigkeit_und_Widerstand5}{4}{
-		Wir erhalten Rho ist gleich minus N-E mal e. Das heißt, die Anzahl an freien Ladungsträgern mal die Elementarladung e.
-	}
-	\fi
+	% \speech{01_Leitfaehigkeit_und_Widerstand5}{4}{
+	% 	Wir erhalten Rho ist gleich minus N-E mal e. Das heißt, die Anzahl an freien Ladungsträgern mal die Elementarladung e.
+	% }
+	
 	\speech{01_Leitfaehigkeit_und_Widerstand5}{3}{
 		Wenn wir jetzt die hier hergeleiteten Formeln für die Driftgeschwindigkeit V-E-L und die Raumladungsdichte Rho in die Formel einsetzen, die wir gerade hergeleitet haben, also J ist gleich V-E-L mal Rho, dann erhalten wir:
 	}
@@ -440,7 +439,7 @@
 		}
 	\fi
 \end{frame}
-
+\newvideofile{Modul03LeitfaehigkeitundWiderstand2}{Leitfähigkeit und Widerstand 2}
 \begin{frame}[t]
 	\ftx{Die elektrische Leitfähigkeit}
 	\b{
@@ -475,7 +474,7 @@
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{1}{
-		Um jetzt, wie gesagt, auf die bekannte Form des Ohm’schen Gesetzes in Strom und Spannung, also skalaren Größen zu kommen, schauen wir uns als erstes nochmal die Definition der Spannung an. Die Spannung U 1-2 war definiert als das Linienintegral von P1 nach P2 E mal d-s. Das können wir weiter umformulieren.
+		Um jetzt, wie gesagt, auf die bekannte Form des Ohm’schen Gesetzes in Strom und Spannung, also skalaren Größen zu kommen, schauen wir uns als erstes nochmal die Definition der Spannung an. Die Spannung U 1-2 war definiert als das Linienintegral von P1 nach P2 von E mal d-s. Das können wir weiter umformulieren.
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{2}{
@@ -483,11 +482,12 @@
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{3}{
-		Zu U 1-2 ist gleich das Integral von 0 bis L von E d-s, als entlang des Weges der durch den Vektor S beschrieben wird. Also wir haben die Wegstrecke aufgelöst, haben gesagt, nur auf der x-Achse und wir wandern da entlang. Das ist die erste Vereinfachung.
+		Zu U 1-2 ist gleich das Integral von 0 bis L von E d-s, also entlang des Weges der durch den Vektor S beschrieben wird. Als vereinfachung haben wir die Wegstrecke aufgelöst, und nehmen an, sie geht nur entlang der x-Achse. Das ist die erste Vereinfachung.
+		Das heißt wir können d-s durch d-x ersetzen.
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{4}{
-		Und das können wir jetzt in die zuvor hergeleitete Formel J ist gleich Kappa mal E einsetzen, beziehungsweise in E ist gleich J durch Kappa.
+		Und jetzt können wir die zuvor hergeleitete Formel J ist gleich Kappa mal E umstellen, und E ist gleich J durch Kappa einsetzen.
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand7}{5}{
@@ -502,7 +502,7 @@
 		Da es sich um ein homogenes Material handelt ist das $\kappa$ konstant.
 		\only<2->{
 			\begin{equation}
-				U_{12}=\frac{1}{\kappa} \cdot \int_{0}^{l} J \cdot \mathrm{d}s
+				U_{12}=\frac{1}{\kappa} \cdot \int_{0}^{l} J \cdot \mathrm{d}x
 			\end{equation}}
 		\only<3->{Die folgende Formel für die Stromdichte $J$ ist aus Modul 1 bekannt:
 		}\only<4->{
@@ -512,14 +512,14 @@
 		}\only<5->{Duch Einsetzen der Formel ergibt sich folgender Ausdruck:
 		}\only<6->{
 			\begin{equation}
-				U_{12}=\frac{1}{\kappa}\cdot\int_{0}^{l} \frac{I}{A} \cdot \mathrm{d}s
+				U_{12}=\frac{1}{\kappa}\cdot\int_{0}^{l} \frac{I}{A} \cdot \mathrm{d}x
 			\end{equation}
 		}}
 	\s{
 		Da es sich um ein homogenes Material handelt ist das $\kappa$ konstant.
 
 		\begin{equation}
-			U_{12}=\frac{1}{\kappa} \cdot \int_{0}^{l} J \cdot \mathrm{d}s
+			U_{12}=\frac{1}{\kappa} \cdot \int_{0}^{l} J \cdot \mathrm{d}x
 		\end{equation}
 		Die folgende Formel für die Stromdichte $J$ ist aus Modul 1 bekannt:
 
@@ -529,7 +529,7 @@
 		Duch Einsetzen der Formel ergibt sich folgender Ausdruck:
 
 		\begin{equation}
-			U_{12}=\frac{1}{\kappa}\cdot\int_{0}^{l} \frac{I}{A} \cdot \mathrm{d}s
+			U_{12}=\frac{1}{\kappa}\cdot\int_{0}^{l} \frac{I}{A} \cdot \mathrm{d}x
 		\end{equation}
 
 	}
