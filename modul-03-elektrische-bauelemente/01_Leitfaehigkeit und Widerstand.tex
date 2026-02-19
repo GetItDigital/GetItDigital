@@ -1020,7 +1020,7 @@
 		\label{fig:erstes_schaltbild}
 	\end{figure}
 \speech{01_Leitfaehigkeit_und_Widerstand15}{1}
-{ Wir haben also jetzt das erste elektrische Bauelement kennengelernt, nämlich den Ohmschwellenwiderstand. Und den Ohmschwellenwiderstand R, den finden wir jetzt hier unten in dem Schaltkreis, dargestellt als rechnerischer Kasten. So stellen wir in der Elektrotechnik Schaltkreise dar. Die Spannungsquelle werden wir ziemlich bald im nächsten Abschnitt kennen. Eine Glühlampe kennt jeder vom täglichen Leben. Und der Schalter ist hier, wie immer in Schaltkreisen, idealer Schalter dargestellt. Das heißt, der kennt nur zwei Zustände. Entweder ist er geöffnet, so wie jetzt im Moment. Dann hat er einen unendlich hohen Widerstand, kann keinen Strom fließen. Oder aber er ist geschlossen. Er wird zu einem schlechtsten Zeitpunkt T geschlossen. Dann hat er einen Widerstand von null. Solche Schalter gibt es in der Realität nicht. Aber wir werden uns im Folgenden auch daran gewöhnen müssen, dass wir in Schaltkreisen immer nur die Realität nachbilden können, unter Vernachlässigung einiger Effekte. Und diese Effekte müssen dann gegebenenfalls anderwertig dargestellt werden. Ganz wichtig bei den Schaltkreisen, so wie sie hier auch dargestellt sind, sind die Verbindungslinien zwischen den einzelnen Elementen. Diese Verbindungslinien haben auch keine elektrischen Eigenschaften, sind ein unendlich guter Leiter, haben keinen Widerstand, keine Induktivität, keine Kapazität, nichts. Ein Kabel, wenn du das in der Realität betrachtest, hat das hingegen schon. Und da muss man dann gegebenenfalls etwas Gehirnschmalz reinstecken, seine Schaltung richtig zu modulieren, damit es dann auch den Tatsachen entspricht. Dazu aber später auch noch mehr}
+{ Wir haben also jetzt das erste elektrische Bauelement kennengelernt, nämlich den Ohmschen Widerstand. Und den ohmscher widerstand R, den finden wir jetzt hier unten in dem Schaltkreis, dargestellt als rechteckiger Kasten. So stellen wir in der Elektrotechnik Schaltkreise dar. Die Spannungsquelle werden wir ziemlich bald im nächsten Abschnitt kennenlernen. Eine Glühlampe kennt jeder vom täglichen Leben. Und der Schalter ist hier, wie immer in Schaltkreisen, als idealer Schalter dargestellt. Das heißt, der kennt nur zwei Zustände. Entweder ist er geöffnet, so wie jetzt im Moment. Dann hat er einen unendlich hohen Widerstand, dann kann kein Strom fließen. Oder aber er ist geschlossen. Er wird zu einem schlechtsten Zeitpunkt T geschlossen. Dann hat er einen Widerstand von null. Solche Schalter gibt es in der Realität nicht. Aber wir werden uns im Folgenden auch daran gewöhnen müssen, dass wir in Schaltkreisen immer nur die Realität nachbilden können, unter Vernachlässigung einiger Effekte. Und diese Effekte müssen dann gegebenenfalls anderwertig dargestellt werden. Ganz wichtig bei den Schaltkreisen, so wie sie hier auch dargestellt sind, sind die Verbindungslinien zwischen den einzelnen Elementen. Diese Verbindungslinien haben auch keine elektrischen Eigenschaften, sind ein unendlich guter Leiter, haben keinen Widerstand, keine Induktivität, keine Kapazität, nichts. Ein Kabel, wenn du das in der Realität betrachtest, hat das hingegen schon. Und da muss man dann gegebenenfalls etwas Gehirnschmalz reinstecken, seine Schaltung richtig zu modulieren, damit es dann auch den Tatsachen entspricht. Dazu aber später auch noch mehr}
 \end{frame}
 \s{
 	Das Schaltbild besteht aus vier Elementen, welche mit Linien verbunden sind. Es stellt eine Reihenschaltung bestehend aus
@@ -1085,6 +1085,9 @@
 			\input{Tikz/src/01_Leitfaehigkeit/Idealer_Widerstand}
 		\end{figure}
 	}
+
+	\speech{01_Leitfaehigkeit_und_Widerstand16}{1}
+	{Wenn wir uns die unterschiedlichen Schaltbilder für Widerstände anschauen, dann unterscheiden die sich tatsächlich in Amerika und in Europa. Grundsätzlich in Europa haben wir, wie links dargestellt, ein rechterkirches Kästchen, schreiben eher drüber, die Amerikaner haben diese Zickzack-Linie. Das heißt, wir werden im Rahmen der Vorlesungen oder im Rahmen dieses Moduls immer das europäische Symbol nutzen. Aber in internationalen Büchern, Literatur, Veröffentlichung oder aber auch in vielen Programmen wie T-Spice oder Ähnliches könnte es sein, dass du das amerikanische Symbol siehst. So dass sich eben das unten dargestellte Schaltungssymbol in Europa ergibt, der Widerstand R. Und dieser Widerstand R wird in der Regel durch einen Strom oder von einem Strom durchflossen, den Strom IR. Und dafür ist eine Spannung notwendig, die Spannung UR, weil anders der Strom nicht fließen kann. Wir werden im späteren Verlauf auch noch kennenlernen, dass diese Spannung UR tatsächlich an dem Widerstand abfällt. Das heißt, das ist kein Abfallprodukt, aber wir können genau diese Spannung tatsächlich messen, wenn wir ein Spannungsmessgerät links und rechts vom Widerstand anlegen. Warum ist das so? Wenn wir uns einmal anschauen, was in diesem Widerstand passiert, da fließt ein Strom durch und da fällt eine Spannung ab. Demzufolge wird in diesem Widerstand eine Leistung umgesetzt. P ist ja gleich U mal I. Und diese Leistung, die in diesem Widerstand umgesetzt wird, wird in Wärme umgesetzt. Das heißt, irgendwie wird dem elektrischen System Energie entnommen und gewandelt in thermische Energie. Diese Energieaufnahme, Wandlung im Widerstand wird beschrieben mit dem sogenannten Spannungsabfall. Wir sehen hier auch, dass beide Pfeile in derselben Richtung zeigen. Wir nennen das dann Verbraucher-Zähl-Pfeil-System. Das hat den Hintergrund, dass das einmal physikalisch tatsächlich auch so ist. Zum Zweiten aber damit eine Leistung positiv gezählt wird, wenn in diesem Verbraucher eben Leistung aufgenommen wird. Das ist dann für die weitere Berechnung durchaus sehr praktisch, das so zu definieren. }
 \end{frame}
 \s{
 	% Idealer Widerstand
@@ -1121,6 +1124,9 @@
 				und einen parallelen Kondensator $C_\mathrm{p}$ ergänzt, um parasitäre Effekte zu berücksichtigen.}}
 		\label{fig:ESB realen Widerstand}
 	\end{figure}
+	\speech{01_Leitfaehigkeit_und_Widerstand17}{1}{
+		Wenn wir uns jetzt mal genauer den Widerstand als Bauteil anschauen, dann haben wir natürlich das Bauelement ohmscher Widerstand. Das wäre ja auch schlimm, wenn nicht. Auf der anderen Seite kommt es aber auch zu parasitären Effekten. Denn wir haben ja ein elektrisches Feld innerhalb des Widerstands. Da liegt eine Spannung an. Das heißt, wir haben ein elektrisches Feld. Innerhalb dieses elektrischen Feldes kann eben auch Energie gespeichert werden. Und das werden wir im späteren Verlauf des Tests noch sehen. Diese Fähigkeit, Energie im elektrischen Feld zu speichern, beschreiben wir mit der Kapazität C. Das heißt, in diesem ohmschen Widerstand, der eigentlich nur ein Widerstand sein sollte, in diesem Bauelement Widerstand, befindet sich immer auch eine Kapazität. Ferner haben wir Anschlussleitungen und Ähnliches. Ein stromdurchflossener Leiter ist immer von einem Magnetfeld umgeben. Und dieses können wir schaltungstechnisch auch noch repräsentieren durch eine Induktivität, hier die Induktivität LS. Das heißt, wir sehen hier zum einen die Schaltungsymbole R, L und C als neues. Aber wir sehen eben auch, dass ein reales Bauteil Widerstand eben nicht nur den gewünschten Anteil Ohmscher Widerstand hat, sondern eben auch noch eine Lenzinduktivität und eine parallel dazu liegende Kapazität oder auch in einem. Das sorgt tatsächlich im realen Leben dann für Probleme, insbesondere wenn wir nicht mehr nur über Gleichstrom reden, sondern über Strom, der sich zeitlich schnell ändert. Denn dann spielen diese beiden Elemente L und C eine sehr entscheidende Rolle, was wir im weiteren Verlauf dieses Moduls und auch der folgenden Module dann noch sehen werden. Wichtig festzuhalten ist, wenn du einen Schaltkreis siehst, zumindest im Rahmen dieses Moduls und im Rahmen dieses Projektes Get It Digital, dann ist er bereits vollständig beschrieben. Das heißt, wir haben das Bauteil, was wir real einbauen, mit den dargestellten Schaltungssymbolen bereits dargestellt. Du musst jetzt nicht jeden Widerstand in einer Schaltung ersetzen, durch dieses Ersatzschaltbild, sondern du rechnest erstmal so, wie es dargestellt ist. Aber man darf sich oder muss sich von dem Gedanken lösen, dass ein reales Bau-Element wie einWiderstand wirklich nur aus diesem Schaltungssymbol Umschaltwiderstand besteht. Da steckt meistens noch deutlich mehr dahinter. In vielen Fällen können wir das vernachlässigen. Und wie kriegen wir jetzt diese Daten? Eigentlich sollte der Bauteilhersteller uns diese Daten liefern. Jetzt finden wir in den allerwenigsten Datenblättern von Umschaltwiderständen die parasitären Induktivität und Kapazitäten. Das ist ein Ärgernis. Wenn man aber merkt, dass man die braucht, dann kann man die letztlich durch Ausmessung oder Ähnliches herausfinden. Halten wir kurz fest. Als Zusammenfassung. Wir haben das ideale Schaltungssymbol Umschallwiderstand. Wir haben das reale Bauteil Widerstand. Und das reale Bauteil Widerstand hat überwiegend einen Umschallwiderstand, aber auch parasitäre ungewünschte Eigenschaften.
+	}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - realer Widerstand Schaltbild %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1147,7 +1153,7 @@
 % 		{\textbf{Temperaturkoeffizient} ($\alpha$) [1/K]} \\
 % 		\hline
 % 		Silber & 6.1e7 & 0.0038 \\
-% 		\hline
+% 		l\hline
 % 		Kupfer & 5.8e7 & 0.0038 \\
 % 		\hline
 % 		Gold & 4.5e7 & 0.0034 \\
@@ -1175,7 +1181,7 @@
 	gibt es immer noch Anwendungsfälle in denen sie Sinn machen. Beispiele sind Prototyping, DIY-Projekte, Leistungsanwendungen oder Leiterplatten mit hohen mechanischen Anforderungen.
 	Die THT-Widerstände sind durch farbige Ringe gekennzeichnet, welche Aufschluss über den Widerstandswert und die Toleranz liefern.
 	Abbildung \ref{fig:Farbkodierung vom Widerstand} zeigt einen THT-Widerstand mit dem dazugehörigen Ableseschema und einer Tabelle zum Ablesen der Werte:
-}% nur im Skript
+} % nur im Skript
 
 
 
@@ -1243,7 +1249,7 @@
 
 
 	}% nur Folie
-	\speech{01_Leitfaehigkeit_und_Widerstand16}{1}{
+	\speech{01_Leitfaehigkeit_und_Widerstand18}{1}{
 		Wenn wir uns jetzt so ein normales Durchsteckbauelement, Feed-Through-Bauelement, anschauen, die hier dargestellt, dann haben wir ja schon vorher auf den Fotos diese bunten Ringe gesehen. Und mithilfe dieser bunten Ringe kann man die wichtigsten Bauteileigenschaften, nämlich den Wert des ohmschen Widerstandes und auch die Qualität, also die Toleranz, die das Bauteil haben kann, darstellen. Du wirst diese Listen, diese Farbcodierung überall in Laboren oder Ähnliches finden, wo häufig solche Bauteile verwendet werden, damit man eben dann sich immer vergewissern kann, ob man wirklich den richtigen Widerstand ausgesucht hat.
 		Was bedeutet jetzt Toleranz? Wenn wir solche Bauteile fertigen, wir haben ja gesehen, dass letztlich der Widerstand eines Drahtes von seinem Durchmesser und seiner Länge abhängig ist. Und da kann es ja gewisse Schwankungen geben, sodass auch die Widerstandswerte sich leicht verändern. Und es gibt unterschiedliche Toleranzen, 5 \%, 10 \%, 20 \% Ähnliches. Und letztlich sind das eigentlich immer dieselben Widerstände und es ist eine reine Statistik, die dahinter steckt. Wenn du jetzt Widerstände mit 10 \% Toleranz kaufst, dann wird aus einer Charge vielleicht ein oder zwei Widerstände vermessen. Wenn du einen Widerstand haben willst mit einer Toleranz von 0,05 \%, das wäre dann ein grauer Toleranzstreifen, dann müsstest du einfach deutlich mehr Widerstände aus einer Charge vermessen. Und das ist auch der Hauptgrund, warum Bauteile mit geringeren Toleranzwerten so viel teurer sind, weil eben viel mehr nachgemessen werden muss. Bis hin zu einer 100 \%-Prüfung – dann wirst du aber nahezu an unbezahlbare Bauteilkosten herankommen.
 	}
@@ -1327,7 +1333,7 @@
 		\label{fig:Bauarten von Widerständen}
 	\end{figure}
 
-	\speech{01_Leitfaehigkeit_und_Widerstand17}{1}{
+	\speech{01_Leitfaehigkeit_und_Widerstand19}{1}{
 		Es gibt jetzt unterschiedliche Widerstände. Es gibt, wie auf der linken Seite dargestellt, Schichtwiderstände. Das heißt, da hat man eine Widerstandsschicht, die gewendet oder als Vollmaterial ausgeführt werden kann. Und es gibt Widerstände, die gewickelt werden. Das sind insbesondere die etwas höheren Widerstandswerte, die so aufgebaut sind. Die gibt es dann in einer bifilaren Wicklung oder in einer induktivitätsarmen Wicklung. Wir haben ja vorher bereits gesehen, dass es Induktivitäten auch in Widerständen als Bauteil gibt. Und die wollen wir so gering wie möglich halten. Und dann kommen wir eben auf diese beiden Wicklungsarten als Beispiel. Es gibt noch alle möglichen anderen Formen, aber so sind die Bauteile in der Regel ausgeführt.
 	}
 
@@ -1344,7 +1350,7 @@
 
 	\end {Merksatz}
 
-	\speech{01_Leitfaehigkeit_und_Widerstand18}{1}{
+	\speech{01_Leitfaehigkeit_und_Widerstand20}{1}{
 		Also wir haben gesehen, dass der Widerstand einer Anordnung oder eines Materials abhängig ist von der Geometrie und von spezifischen Materialeigenschaften, nämlich von der Leitfähigkeit Kappa. Auf diese Leitfähigkeit Kappa wollen wir nun im Folgenden nochmal etwas detaillierter eingehen.
 	}
 
@@ -1379,7 +1385,7 @@
 		\label{fig:ntc_ptc_widerstandsdiagramm}
 	\end{figure}
 
-	\speech{01_Leitfaehigkeit_und_Widerstand19}{1}{
+	\speech{01_Leitfaehigkeit_und_Widerstand21}{1}{
 		Die gerade dargestellte Temperaturabhängigkeit von Leitern und Halbleitern kann man eben auch in Bauteilen nutzen, nämlich in sogenannten temperaturabhängigen Widerständen. Ein normaler Leiter wie Kupfer würde das klassische PTC-Verhalten zeigen, d.h. der Widerstand der Anordnung nimmt mit wachsender Temperatur in beiden Bereichen auch linear zu. Das wäre jetzt hier die rote Kurve. Ob das so stark ist, wie hier dargestellt? Also wir haben eine Verdrückung der Temperatur von 20 auf 40 Kelvin und der Widerstand wird dreimal so hoch. Wenn ich das erreichen will, muss ich andere Materialien verwenden als z.B. Kupfer. Aber prinzipiell zeigt auch erstmal jeder normale Widerstand, den Sie als Bauteil kaufen können, leichtes PTC-Verhalten.
 		Die NPC-Widerstände baut man in der Regel aus Halbleitern, die fallen auf einmal mit wachsender Temperatur in ihren Widerstand. Und wofür kann man beides benutzen? Beide Widerstandsformen kann man als Temperaturfühler verwenden, wenn man z.B. so wie hier dargestellt zwei Widerstände kombiniert, ein PTC und ein NTC, die dieselbe Steigung haben, nur mit unterschiedlichen Vorzeichen, kann ich sehr präzise die Temperatur messen. Ich kann das auch immer plausibilisieren, ob das stimmt, weil der eine Widerstand muss größer werden, der andere Widerstand muss kleiner werden. Das sind so Tricks, die man gerne anwendet.
 		Wofür kann man das aber auch noch verwenden? Z.B. als Anlaufbegrenzung, Anlaufstrombegrenzung kann man so NTC-Widerstände verwenden, die sorgen eben dafür, dass man am Anfang, wenn die Schaltung noch kalt ist, relativ große Widerstände inline hat. Und dann erwärmt sich auch der NTC-Widerstand mit längerem Betrieb und fällt dadurch, sodass dann der volle Strom in die Schaltung fließen kann. Auch das ist durchaus eine übliche Anwendung.
@@ -1405,7 +1411,7 @@
 			\label{fig:widerstandsdiagramm_ptc}}
 	\end{figure}
 
-	\speech{01_Leitfaehigkeit_und_Widerstand20}{1}{
+	\speech{01_Leitfaehigkeit_und_Widerstand22}{1}{
 		Das sind jetzt Stromspannungsbogen von einem PTC-Widerstand bei zwei unterschiedlichen Temperaturen. Bei 20 Grad ist der Widerstand kleiner als bei 80 Grad, sodass die Stromspannungsgurve eben flacher wird mit max. Temperatur, weil Sie müssen ja immer das romsche Gesetz erfüllen, R ist gleich U durch I und wenn R größer wird, dann muss derselben U das I kleiner werden.
 	}
 
@@ -1427,7 +1433,7 @@
 		\label{fig:strom-temperatur}
 	\end{figure}
 
-	\speech{01_Leitfaehigkeit_und_Widerstand21}{1}{
+	\speech{01_Leitfaehigkeit_und_Widerstand23}{1}{
 		Häufig ist das Ganze aber durchaus auch nicht linear oder anders. Dadurch ergeben sich durch das PTC-Verhalten von Widerständen ergeben sich häufig hier sehr extrem dargestellt ein nicht linearer Widerstand. Warum ist das so? Wenn ein Widerstand Strom durchschlossen wird, dann wird da drin ja Leistung umgesetzt und diese Leistung wird in Wärme umgewandelt. Das heißt, ein Widerstand, der bestromt wird, erwärmt sich automatisch und das ist hier dargestellt. Der Widerstand, der durch eine 2 Ampere durchschlossen wird, erwärmt sich auf 32 Grad mit 4 Ampere auf 68 Grad und 6 Ampere auf 128 Grad. Und dadurch verändert sich dann auch das Widerstandsverhalten. Das heißt, wir haben nicht Linearitäten, die man eben auch in solchen Kurven sieht.
 	}
 
@@ -1451,7 +1457,7 @@
 		\s{\caption{Diagramm eines NTC Widerstandes bei 20 °C und bei 80 °C}
 			\label{fig:widerstandsdiagramm_ntc}}
 	\end{figure}
-	\speech{01_Leitfaehigkeit_und_Widerstand22}{1}{
+	\speech{01_Leitfaehigkeit_und_Widerstand24}{1}{
 		Die Strom-Spannungskennline eines NTC Widerstandes wird bei zunehmender Temperatur immer steiler, da sich ja der Widerstand mit steigender Temperatur immer verringert. Daher kann bei derselben Spannung mehr Strom durch den Widerstand fließen, wenn die Temperatur erhöht wird.
 	}
 
