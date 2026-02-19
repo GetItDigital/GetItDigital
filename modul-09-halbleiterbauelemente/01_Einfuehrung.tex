@@ -1,0 +1,649 @@
+\s{
+    \newvideofile{Halbleiter}{Einführung}
+    \fta{Einführung}
+    Halbleiterbauelemente bilden das Rückgrat der modernen Elektronik und sind entscheidend für die Funktionsweise zahlreicher
+    elektronischer Geräte wie Computer, Mobiltelefone und Solarzellen. Diese Bauelemente nutzen die besonderen
+    Eigenschaften von Materialien, die weder gute Leiter noch gute Isolatoren sind, sondern dazwischen liegen -- den sogenannten
+    Halbleiter. Im Folgenden wird auf ihre Funktionsweise eingegangen, beginnend mit dem Bändermodell, welches die Energiezustände
+    in Festkörpern beschreibt. Auf Grundlage verschiedener Eigenschaften werden weitere Halbleitermaterialien sowie deren Anwendungen erläutert.
+    Ein grundlegendes Konzept, das eine Schlüsselrolle spielt, ist der pn-Übergang, der die Basis für
+    eine Vielzahl von Bauelementen bildet. In diesem Kontext werden im zweiten Teil verschiedene Halbleiterbauelemente wie Dioden
+    und Transistoren thematisiert sowie ihre Funktionen erläutert.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=.8\textwidth, alt={Die Abbildung zeigt vier verschiedene Halbleiterbauelemente in einer Reihe von links nach rechts.
+                    1. Ganz links befindet sich ein Feldeffekttransistor (FET). Es handelt sich um ein schwarzes, rechteckiges Bauteil mit einer metallischen Rückseite und drei langen, dünnen Anschlussbeinen, die nach unten zeigen.
+                    2. Daneben ist ein Bipolartransistor mit einem runden, goldfarbenen Metallgehäuse. Auch dieses Bauteil besitzt drei Anschlussbeine, die aus der Unterseite herausragen.
+                    3. Das dritte Bauteil ist eine Leuchtdiode (LED). Sie ist durch ihr transparentes, leicht abgedunkeltes Gehäuse erkennbar. Zwei Anschlussdrähte ragen aus der Unterseite.
+                    4. Ganz rechts befindet sich eine Diode. Sie ist zylindrisch geformt, schwarz und besitzt zwei Anschlussdrähte, die in entgegengesetzte Richtungen zeigen.
+                    Diese Bauelemente werden in der Elektronik für verschiedene Anwendungen genutzt, wie Schalten, Verstärken oder Gleichrichten von elektrischen Signalen.}]{Bilder/kap1/AufnahmenHalbleiterWiki.png}
+        \caption{\textbf{Beispielfotos typischer Halbleiterbauelemente.} V.l.n.r.: Feldeffekttransistor, Bipolartransistor, Leuchtdiode, Diode.}
+        \label{fig:BeispielfotosVerbreiteterHalbleiterbauelemente}
+    \end{figure}
+
+    \begin{Lernziele}{Halbleiter}
+        \title{Lernziele: Halbleiter}
+        Die Studierenden können
+        \begin{itemize}
+            \item Zusammenhänge zwischen Festkörpern und dem Bändermodell erklären.
+            \item Vorgänge innerhalb von Halbleitern beschreiben.
+            \item verschiedene Halbleitermaterialen und deren Eigenschaften bennen.
+        \end{itemize}
+    \end{Lernziele}
+}
+
+\s{
+    \newvideofile{Baendermodell}{Bändermodell}
+    \ftb{Bändermodell}
+    \label{sec:Bändermodell}
+    Das Bändermodell ist ein grundlegendes Konzept in der Festkörperphysik, das die physikalischen Eigenschaften von Festkörpern
+    beschreibt. Es bietet eine theoretische Grundlage für das Verständnis der elektrischen, optischen und magnetischen Eigenschaften
+    von Materialien. Das Modell organisiert die Energiezustände von Elektronen in sogenannten Energiebändern. Diese Bänder beeinflussen
+    maßgeblich das elektronische Verhalten des Materials. Das Bändermodell ermöglicht es, komplexe Phänomene wie Leitung, Isolation,
+    Halbleiterverhalten und die Bildung von Oberflächen- und Grenzflächenzuständen zu verstehen und zu erklären. Im Folgenden Abschnitt
+    werden die Grundprinzipien erläutert und ein Blick auf den Ladungsträgertransport geworfen.\par
+
+    Um das Bändermodell zu verstehen, soll zunächst der Bezug zum aus der Schulphysik bekannten Bohrschen Atommodell hergestellt werden.
+    Im Bohrschen Atommodell werden die Energieniveaus von Elektronen in einem Atom als diskrete Werte angenommen. Nach diesem Modell befinden
+    sich Elektronen auf definierten Bahnen um den Atomkern, die als Schalen bezeichnet werden. Jede Schale hat ein charakteristisches
+    Energieniveau. Diese Energieniveaus sind quantisiert und hängen vom Abstand zum Atomkern ab. Dabei weisen Elektronen in den inneren
+    Schalen niedrigere Energieniveaus auf als Elektronen in den äußeren Schalen. Der Zusammenhang zwischen dem Bohrschen Atommodell
+    und dem Bändermodell ist in Abbildung~\ref{fig:ZusammenhangBohrschesAtommodellUndBaendermodell} dargestellt.
+}
+
+\s{
+    \begin{figure}[H]
+        \begin{minipage}[c]{0.48\textwidth}
+            \begin{figure}[H]
+                \centering
+                \includesvg[width=0.4\textwidth]{Bilder/kap1/ZusammenhangBohrscheAtommodellundBaendermodell/ZusammenhangBohrscheAtommodellundBaendermodell_1}\alttext{Die Abbildung zeigt zwei Darstellungen zum Vergleich des Bohrschen Atommodells mit dem Bändermodell eines Siliziumatoms. Links ist das Bohrsche Atommodell eines Siliziumatoms dargestellt. In der Mitte befindet sich der Atomkern, bestehend aus Protonen und Neutronen. Um den Kern herum sind mehrere konzentrische Bahnen zu sehen, auf denen sich Elektronen bewegen. Diese Bahnen repräsentieren diskrete Energieniveaus, die Elektronen besetzen können.  Rechts ist das Bändermodell eines Siliziumatoms dargestellt. Auf der vertikalen Achse ist die Energie \(E\) aufgetragen. Unterschiedliche horizontale Linien repräsentieren die möglichen Energieniveaus für Elektronen. Der unterste Bereich symbolisiert das Valenzband, während die darüber liegenden Linien mögliche Energieniveaus für Elektronen im Leitungsband kennzeichnen. Die Abbildung verdeutlicht den Zusammenhang zwischen den diskreten Energieniveaus einzelner Elektronenbahnen im Bohrschen Modell und den Energiebandstrukturen im Bändermodell, die für Festkörper wie Silizium relevant sind.}
+            \end{figure}
+        \end{minipage}
+        \begin{minipage}[c]{0.48\textwidth}
+            \begin{figure}[H]
+                \centering
+                \includesvg[width=0.5\textwidth]{Bilder/kap1/ZusammenhangBohrscheAtommodellundBaendermodell/ZusammenhangBohrscheAtommodellundBaendermodell_2}\alttext{Die Abbildung zeigt zwei Darstellungen zum Vergleich des Bohrschen Atommodells mit dem Bändermodell eines Siliziumatoms. Links ist das Bohrsche Atommodell eines Siliziumatoms dargestellt. In der Mitte befindet sich der Atomkern, bestehend aus Protonen und Neutronen. Um den Kern herum sind mehrere konzentrische Bahnen zu sehen, auf denen sich Elektronen bewegen. Diese Bahnen repräsentieren diskrete Energieniveaus, die Elektronen besetzen können.  Rechts ist das Bändermodell eines Siliziumatoms dargestellt. Auf der vertikalen Achse ist die Energie \(E\) aufgetragen. Unterschiedliche horizontale Linien repräsentieren die möglichen Energieniveaus für Elektronen. Der unterste Bereich symbolisiert das Valenzband, während die darüber liegenden Linien mögliche Energieniveaus für Elektronen im Leitungsband kennzeichnen. Die Abbildung verdeutlicht den Zusammenhang zwischen den diskreten Energieniveaus einzelner Elektronenbahnen im Bohrschen Modell und den Energiebandstrukturen im Bändermodell, die für Festkörper wie Silizium relevant sind.}
+            \end{figure}
+        \end{minipage}
+        \caption{\textbf{Zusammenhang zwischen dem Bohrschen Atommodell und Bändermodell.} Darstellung des Zusammenhangs
+            zwischen dem Abstand von Elektronen zum Kern und der Höhe des zugehörigen diskreten Energieniveaus. Links: Bohrsches
+            Atommodell eines Si-Atoms. Rechts: Bändermodell eines Si-Atoms mit den möglichen Energieniveaus.}
+        \label{fig:ZusammenhangBohrschesAtommodellUndBaendermodell}
+    \end{figure}
+}
+
+\s{
+    Bei einem einzelnen Atom sind die möglichen Energiezustände eindeutig definiert. Werden mindestens zwei Atome zusammengeführt, sodass sie elektrisch
+    miteinander wechselwirken, überlappen sich deren Energiezustände. Aufgrund des Pauli-Prinzips, welches auch Ausschlussprinzip genannt wird, können zwei
+    Elektronen allerdings nicht genau denselben Zustand annehmen, weshalb sich die Zustände minimal zueinander verschieben. Mit steigender Anzahl an Atomen
+    steigt auch die Anzahl der verschiedenen Energiezustände in einem Festkörper. Da diese Niveaus sehr nahe beieinander liegen, werden sie zu den Energiebändern
+    zusammengefasst. Dieser Zusammenhang ist in Abbildung~\ref{fig:UebergangVonEnergieniveausZuBaendern} dargestellt.
+}
+
+\s{
+    \begin{figure}[H]
+        \centering
+        \includesvg[scale=1]{Bilder/kap1/UebergangVonEnergieniveausZuBaendern}\alttext{Die Abbildung zeigt den Übergang von diskreten Energieniveaus zu Energiebändern in Abhängigkeit von der Anzahl der Atome. Sie besteht aus drei Diagrammen, die von links nach rechts den Energiezustand eines einzelnen Atoms, eines Moleküls aus zwei Atomen und eines Festkörpers veranschaulichen.
+            Links befindet sich das Energieniveaudiagramm für ein einzelnes Atom. Auf der vertikalen Achse ist die Energie \(E\) aufgetragen. Es gibt drei waagerechte Linien in verschiedenen Farben:
+            - Eine durchgehende magentafarbene Linie am unteren Ende, die das tiefste Energieniveau markiert.
+            - Eine grün gepunktete Linie etwas weiter oben, die ein weiteres mögliches Energieniveau kennzeichnet.
+            - Eine orange gestrichelte Linie am höchsten Punkt der Darstellung, die ein weiteres erlaubtes Energieniveau symbolisiert.
+            Die Linien sind klar voneinander getrennt, was zeigt, dass die Energiezustände eines einzelnen Atoms diskret sind.
+            In der Mitte ist das Energieniveaudiagramm für ein Molekül aus zwei Atomen dargestellt. Die ursprünglichen Energieniveaus des einzelnen Atoms spalten sich aufgrund der Wechselwirkung zwischen den beiden Atomen leicht auf.
+            - Die magentafarbene Linie teilt sich in zwei nahe beieinander liegende Linien auf.
+            - Die grüne gepunktete Linie spaltet sich ebenfalls in zwei separate Linien.
+            - Die orange gestrichelte Linie zeigt eine leichte Aufspaltung in zwei Energieniveaus.
+            Diese Aufspaltung zeigt, dass die Wechselwirkung zwischen den Atomen neue, leicht unterschiedliche Energieniveaus erzeugt.
+            Rechts ist das Energieniveaudiagramm für einen Festkörper zu sehen. Aufgrund der großen Anzahl von Atomen überlappen sich die aufgespaltenen Energieniveaus und bilden kontinuierliche Energiebänder.
+            - Die magentafarbene Energiebereiche unten und die orange gestrichelten Bereiche oben sind nun zu breiten Bändern verdichtet.
+            - Das grüne Energieniveau in der Mitte ist nun ein breites, grünliches Band.
+            Die einzelnen Energieniveaus sind nicht mehr klar voneinander getrennt, sondern bilden breite, fast durchgängige Zonen.
+            Die Abbildung verdeutlicht, wie sich mit zunehmender Anzahl von Atomen die individuellen diskreten Energieniveaus in breitere Energiezonen aufteilen, was zur Bildung von Valenz- und Leitungsbändern in Festkörpern führt. Dies ist ein fundamentales Konzept in der Halbleiterphysik.}
+        \caption{\textbf{Übergang von Energieniveaus zu Bändern.} Zusammenhang zwischen den möglichen
+            Energiezuständen in Abhängigkeit zur Anzahl der Atome. V.l.n.r.: Energiezustände von Elektronen
+            bei einem Einzelatom, zwei Atomen (Molekül) und einem Festkörper.}
+        \label{fig:UebergangVonEnergieniveausZuBaendern}
+    \end{figure}
+}
+
+\s{
+    Elektronen können nur feste Werte innerhalb der Energiebänder annehmen. In den Lücken zwischen den Bändern können sich keine Ladungsträger frei bewegen.
+    Diese Lücken werden als „verbotener Bereich“ oder Bandlücke bezeichnet. Die Größe dieser Lücken bestimmt die elektrischen Eigenschaften des Materials.
+    Die Energiedifferenz zwischen den Bändern entspricht der Energie, die bei Absorption oder Emission von Photonen aufgenommen oder abgegeben wird.
+}
+
+\s{
+    \ftc{Einteilung von Materialien}
+    Zwei Bänder sind besonders relevant für den Ladungstransport und somit für die elektrischen Eigenschaften: das Valenzband (VB) und das Leitungsband (LB).
+    Das Valenzband ist das Band, das die höchsten Energieniveaus enthält, die von Elektronen besetzt sind, wenn das Material bei einer Temperatur von ${0}\,\mathrm{K}$ vorliegt.
+    Diese Elektronen sind eng an die Atomkerne gebunden und tragen nicht zum elektrischen Strom bei. Das Leitungsband liegt oberhalb des Valenzbands und enthält
+    leere Zustände, in denen Elektronen leicht angeregt werden können, beispielsweise durch eine Erhöhung der Temperatur. Elektronen im Leitungsband können sich
+    relativ frei durch das Material bewegen und ermöglichen somit den elektrischen Stromfluss. Die drei grundlegenden Klassen Leiter, Halbleiter und Isolatoren lassen
+    sich durch den Abstand (Bandlücke) dieser beiden relevanten Bänder definieren. In der folgenden Abbildung ist das Bändermodell eines Materials bei ${0}\,\mathrm{K}$ dargestellt,
+    mit den relevanten Größen und Bezeichnungen.
+
+    \begin{figure}[H]
+        \centering
+        \includesvg[width=0.6\textwidth]{Bilder/kap1/BaendermodelleinesMaterialsbei0K}\alttext{Die Abbildung zeigt das Bändermodell eines Materials bei null Kelvin. Sie stellt die relevanten Energiebänder grafisch dar und enthält Beschriftungen für die verschiedenen Energieniveaus.
+            Auf der vertikalen Achse ist die Energie mit dem Symbol \( E \) markiert.
+            Unten befindet sich das Valenzband, abgekürzt als VB. Es ist blau dargestellt und enthält Elektronen, die als kleine blaue Kreise symbolisiert sind. Die zugehörige Energie ist als \( E_V \) bezeichnet.
+            Darüber befindet sich die sogenannte Bandlücke, gekennzeichnet als \( E_G \). Diese Region ist frei von Elektronen.
+            Noch weiter oben liegt das Leitungsband, abgekürzt als LB. Es ist orange dargestellt und durch die Energie \( E_L \) beschrieben.
+            Pfeile und Beschriftungen markieren die verschiedenen Energieniveaus und deren alternative Bezeichnungen.}
+        \caption{\textbf{Bändermodell eines Materials bei $0\,\mathrm{K}$.} Darstellung der Energiebänder mit zugehöriger
+            Beschriftung sowie deren alternativen Bezeichnungen.}
+        \label{fig:BandermodellEinesMaterialsBei0K}
+    \end{figure}
+
+    Die Besetzung der Bänder mit Elektronen hängt neben der Temperatur von weiteren Faktoren ab. Vor allem durch gezielte Verunreinigung mit Fremdatomen, sogenannter Dotierung,
+    kann die Leitfähigkeit beeinflusst werden. Die Fremdatome bringen freie Ladungsträger ein und führen zu zusätzlichen Energieniveaus innerhalb der Bandlücke, von denen aus
+    zum Beispiel leichter Ladungsträger das Band wechseln können (siehe Abschnitt~\ref{sec:Ladungsträgertransport}). Neben den bisher gezeigten Energieniveaus ist das Ferminiveau eine weitere wichtige Größe.
+    Dieses gibt den Energiewert an, bei dem Elektronen eine Aufenthaltswahrscheinlichkeit von $\sfrac{1}{2}$ aufweisen. Bei einem undotierten Halbleiter liegt das Niveau mittig zwischen
+    Valenz- und Leitungsband, bei dotierten Halbleitern verschiebt sich das Niveau in Richtung des jeweiligen Dotierbands.
+}
+
+\s{
+    \textbf{Leiter} sind Materialien, deren Valenz- und Leitungsbänder aneinandergrenzen oder überlappen, was bedeutet, dass Elektronen leicht zwischen den Bändern wechseln können.
+    Diese Nähe ermöglicht eine hohe Leitfähigkeit, da Elektronen sich frei durch das Material bewegen können. Metalle wie Kupfer und Aluminium sind typische Beispiele für Leiter.\par
+
+    \textbf{Halbleiter} haben eine kleine Bandlücke, die zwischen der des Leiters und der des Isolators liegt. Diese Bandlücke ist so groß, dass in dem Material bei niedrigen Temperaturen
+    kein elektrischer Strom fließt, da Elektronen nicht genügend Energie haben, um ins Leitungsband angeregt zu werden. Mit steigender Temperatur oder durch das Einbringen von Fremdatomen
+    kann die Leitfähigkeit jedoch deutlich erhöht werden. Halbleiter wie Silizium und Germanium sind häufig eingesetzte Materialien in der Elektronikindustrie.\par
+
+    \textbf{Isolatoren} haben eine große Bandlücke, die dazu führt, dass das Valenzband vollständig besetzt ist und das Leitungsband leer ist. Dadurch können Elektronen nur schwer ins
+    Leitungsband angeregt werden, selbst bei hohem Energieeintrag. Isolatoren wie Glas und Keramik zeigen daher eine sehr geringe Leitfähigkeit.
+}
+
+\s{
+    Im Folgenden sind beispielhaft die Bändermodelle mit den Valenz- und Leitungsbändern der drei genannten Klassen dargestellt.
+
+    \begin{figure}[H]
+        \centering
+        \includesvg[scale=1]{Bilder/kap1/BaendermodellverschiedenerMaterialien}\alttext{Die Abbildung zeigt das Bändermodell für verschiedene Arten von Halbleitermaterialien. Sie besteht aus vier Diagrammen, die von links nach rechts die Energiebandstrukturen eines Leiters ohne Bandlücke, eines Leiters mit Bandüberlappung, eines Halbleiters und eines Isolators darstellen.
+            In jedem Diagramm sind die Energie \(E\) auf der vertikalen Achse und zwei Energiebänder dargestellt:
+            - Das Valenzband (VB), das in blau-grünen Schraffierungen eingezeichnet ist, befindet sich unten.
+            - Das Leitungsband (LB), das in orange-gelben Schraffierungen dargestellt ist, befindet sich oben.
+            Links: Leiter ohne Bandlücke.
+            Im ersten Diagramm sind das Valenzband und das Leitungsband direkt miteinander verbunden. Es gibt keine Bandlücke zwischen ihnen, sodass Elektronen ohne zusätzlichen Energieeintrag in das Leitungsband übergehen können. Dies bedeutet, dass das Material als elektrischer Leiter fungiert, da freie Ladungsträger stets vorhanden sind.
+            Zweites Diagramm: Leiter mit Bandüberlappung.
+            Hier zeigt das Bändermodell erneut einen elektrischen Leiter, allerdings mit einer anderen Bandstruktur. Das Valenzband und das Leitungsband überlappen sich teilweise, sodass Elektronen direkt in das Leitungsband übergehen können. Diese Eigenschaft ist typisch für Metalle, bei denen kein zusätzlicher Energieeintrag erforderlich ist, um eine elektrische Leitfähigkeit zu ermöglichen.
+            Drittes Diagramm: Halbleiter.
+            In diesem Modell ist das Valenzband vom Leitungsband durch eine Bandlücke \(E_G\) getrennt, die mit einem Doppelpfeil markiert ist und etwa 1 eV beträgt. Elektronen können nur dann in das Leitungsband übergehen, wenn ihnen eine ausreichend große Energiemenge zugeführt wird, beispielsweise durch thermische Anregung oder Lichteinstrahlung. Halbleiter wie Silizium oder Germanium besitzen genau diese Eigenschaft.
+            Rechts: Isolator.
+            Das letzte Diagramm stellt einen Isolator dar. Hier ist das Valenzband ebenfalls durch eine Bandlücke \(E_G\) vom Leitungsband getrennt, jedoch beträgt diese mehr als 3 eV. Aufgrund dieser großen Energiedifferenz zwischen Valenz- und Leitungsband ist es für Elektronen nahezu unmöglich, in das Leitungsband überzugehen, wodurch das Material elektrisch nicht leitfähig ist.
+            Diese Abbildung verdeutlicht die fundamentalen Unterschiede zwischen Leitern, Halbleitern und Isolatoren auf Basis ihrer Energiebandstruktur.}
+        \caption{\textbf{Bändermodell verschiedener Halbleitermaterialien.} V.l.n.r.: Leiter ohne und mit Überlappung, Halbleiter und Isolator.}
+        \label{fig:BaendermodellVerschiedenerMaterialien}
+    \end{figure}
+}
+
+\s{
+    \begin{Merksatz}{}
+        \begin{itemize}
+            \item Ladungsträger können nur definierte Energieniveaus im Festkörper besetzen.
+            \item Bei $T=\mathrm{0\,K}$ ist das Valenzband das höchste besetzte Energieniveau, das darüberliegende Leitungsband beinhaltet keine freien Ladungsträger.
+            \item Materialien können über die Bandlücke, in Leiter, Halbleiter und Isolatoren kategorisiert werden.
+        \end{itemize}
+    \end{Merksatz}
+}
+
+\s{
+    \ftb{Halbleitermaterialien}
+    Die Gitterstrukturen von Halbleitermaterialien spielen eine entscheidende Rolle in Bezug auf deren elektronischen und mechanischen Eigenschaften.
+    Im Folgenden werden die Gitterstrukturen von Silizium und Galliumarsenid (GaAs) betrachtet. Silizium ist aufgrund seiner hohen Verfügbarkeit und
+    dem damit verbundenen geringen Preis das am weitesten verbreitete Halbleitermaterial. Darüber hinaus lässt es sich sehr gut verarbeiten
+    und seine elektrischen Eigenschaften lassen sich gut beeinflussen. Galliumarsenid hingegen dient als Beispiel für einen Verbindungshalbleiter
+    aus Elementen der III. und V. Hauptgruppe des Periodensystems, entsprechend wird ein solcher Halbleiter auch als III/V-Verbindungshalbleiter
+    bezeichnet. Die einzelnen Elemente weisen kein Halbleiterverhalten auf, erst bei besonderer Anordnung und besonderem Atomverhältnis bildet sich das
+    Halbleiterverhalten aus.\par
+    Silizium hat eine Diamantgitterstruktur, bei der jedes Siliziumatom von vier benachbarten Atomen in einer tetraedrischen Anordnung umgeben ist.
+    Diese Struktur führt zu einer stabilen und robusten Kristallstruktur, die eine hohe mechanische Stabilität aufweist. Darüber hinaus ermöglicht die
+    Anordnung eine hohe Beweglichkeit der freien Elektronen in alle Raumrichtungen.
+}
+
+\s{
+    \begin{figure}[H]
+        \centering
+        \includesvg[scale=.25]{Bilder/kap1/Gitterstrukturen/GitterSi}\alttext{Die Abbildung zeigt die Diamantgitterstruktur von Silizium.
+            Das Gitter ist als dreidimensionaler Würfel dargestellt, der durch schwarze Linien definiert wird. Innerhalb dieses Würfels befinden sich mehrere rote Kugeln, die die Siliziumatome repräsentieren. Diese Atome sind durch schwarze Linien miteinander verbunden, um die chemischen Bindungen zwischen den Atomen darzustellen.
+            Die Siliziumatome sind so angeordnet, dass jedes Atom vier direkte Nachbarn hat, die sich in tetraedrischer Konfiguration befinden. Dies ist charakteristisch für die Diamantstruktur, die auch in anderen Elementen wie Kohlenstoff vorkommt.
+            Zusätzlich sind einige der Gitterlinien gestrichelt, um räumliche Tiefe darzustellen und die Perspektive der dreidimensionalen Anordnung zu verdeutlichen.
+            Diese Gitterstruktur ist die Grundlage für die einzigartigen elektrischen und mechanischen Eigenschaften von Silizium, insbesondere für seine Anwendung in der Halbleitertechnologie.}
+        \caption{\textbf{Diamantgitterstruktur von Silizium.} Resultierende Gitterstruktur von Silizium.}
+        \label{fig:DiamanttgitterstrukturVonSilizium}
+    \end{figure}
+}
+
+\s{
+    Im Gegensatz dazu sind bei Galliumarsenid die Gallium- und Arsenatome so angeordnet, dass sie zwei ineinander verschobene kubisch
+    flächenzentrierte Gitter darstellen, die sogenannte Zinkblende-Gitterstruktur. Die resultierende Anordnung ist identisch mit der
+    Diamantgitterstruktur, jedoch mit dem regelmäßigen Wechsel zwischen zwei Ionenarten. Diese Struktur ermöglicht eine geringe Bandlücke,
+    was zu einer geringen Anregungsenergie führt, die notwendig ist, um Elektronen zwischen Valenz- und Leitungsband zu verschieben.
+
+    \begin{figure}[H]
+        \begin{minipage}[c]{0.49\textwidth}
+            \centering
+            \includesvg[scale=.25]{Bilder/kap1/Gitterstrukturen/GitterGaAs_1}\alttext{Der Würfel zeigt zwei ineinander verschobene kubisch flächenzentrierte Gitter aus zwei verschiedenen Materialien.
+                - Die grünen Kugeln repräsentieren die Atome des ersten Elements (Gallium oder Arsen).
+                - Die blauen Kugeln stellen die Atome des zweiten Elements dar.
+                - Die Gitterstruktur wird durch gestrichelte Linien dargestellt, die die räumliche Anordnung verdeutlichen.}
+        \end{minipage}
+        \begin{minipage}[c]{0.49\textwidth}
+            \centering
+            \includesvg[scale=.25]{Bilder/kap1/Gitterstrukturen/GitterGaAs_2}\alttext{Der rechte Würfel zeigt die resultierende Zinkblende-Gitterstruktur.
+                - Hier sind die grünen und blauen Atome so angeordnet, dass jedes Atom vier direkte Nachbarn hat.
+                - Die schwarze Gitterstruktur hebt die regelmäßige tetraedrische Anordnung der Atome hervor.}
+        \end{minipage}
+        \caption{\textbf{Zinkblende-Gitterstruktur von GaAs.} Links: Zwei ineinander verschobene kubisch flächenzentrierte Gitter
+            von verschiedenen Materialien. Rechts: Resultiernde Zinkblende-Gitterstruktur.}
+        \label{fig:Zinkblende-GitterstrukturVonGaAs}
+    \end{figure}
+}
+
+\s{
+    \begin{Merksatz}{}
+        \begin{itemize}
+            \item Silizium ist das am weitesten verbreitete Halbleitermaterial.
+            \item Verbindungshalbleiter bestehen aus zwei Materialen, die in bestimmter Kombination Halbleiterverhalten aufweisen.
+            \item Silizium ist aus der IV. Hauptguppe des Periodensystem, Verbindungshalbleiter typischerweise aus der III. und V. Hauptgruppe. 
+        \end{itemize}
+    \end{Merksatz}
+}
+
+\s{
+    Die folgende Tabelle bietet einen Überblick über einige der wichtigsten Halbleitermaterialien und Verbindungshalbleiter sowie ihre wesentlichen
+    Eigenschaften und Anwendungen. Diese Materialien spielen eine entscheidende Rolle in der modernen Elektrotechnik und werden in einer
+    Vielzahl von Anwendungen eingesetzt, von Mikrochips und Solarzellen bis hin zu Hochfrequenzschaltungen und LED-Beleuchtung. Die Tabelle enthält
+    Informationen über die Bandlücke, Ladungsträgerdichte (Eigenleitungsdichte), Elektronen- und Löcherbeweglichkeit sowie charakteristische Eigenschaften und Anwendungen
+    jedes Materials. Die Beweglichkeit beschreibt die Geschwindigkeit, mit der sich Ladungsträger unter Einfluss eines elektrischen Feldes durch das Material bewegen. Bei Löchern handelt es sich um quasi-partielle Zustände, die als positive Ladungsträger betrachtet werden. Es handelt
+    sich hierbei nicht um tatsächliche positive Ladungsträger, sondern um lokale Bereiche, die aufgrund eines fehlenden Elektrons als positiv geladen
+    betrachtet werden können.
+}
+
+\s{
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ |p{1.7cm}|p{1.1cm}|p{1.2cm}|p{1.1cm}|p{1.1cm}|p{3.5cm}|p{2.4cm}| }
+            \hline
+            \textbf{Material}                                                                    &
+            $\boldsymbol{E_\mathrm{G}}$ \newline $\left(\mathrm{eV}\right)$                      &
+            $\boldsymbol{n}$ \newline $\left(\mathrm{\frac{1}{cm^3}}\right)$                     &
+            $\boldsymbol{\mu_\mathrm{e}}$ \newline $\left(\mathrm{\frac{cm^2}{V\cdot s}}\right)$ &
+            $\boldsymbol{\mu_\mathrm{p}}$ \newline $\left(\mathrm{\frac{cm^2}{V\cdot s}}\right)$ &
+            \textbf{Eigenschaften}                                                               & \textbf{Anwendungen}                                                                                                                                                                                                                                                 \\
+            \hline
+            Silizium (Si)                                                                        & \centering $1,1$     & \centering  $1\cdot10^{10}$  & \centering  $1500$ & \centering  $450$  & Häufigste Halbleitermaterial                                                                               & Mikrochips,\newline Solarzellen,\newline Sensoren       \\
+            \hline
+            Germanium (Ge)                                                                       & \centering $0,7$     & \centering  $2\cdot10^{13}$  & \centering  $3900$ & \centering  $1900$ & Früher häufig in elektronischen Geräten verwendet                                                          & Transistoren, Infarot-Detektoren                        \\
+            \hline
+            Gallium- arsenid (GaAs)                                                              & \centering $1,43$    & \centering  $2\cdot10^6$     & \centering  $8500$ & \centering  $400$  & Direkter Band\-über\-gang, Einsatz bei hohen Frequenzen                                                    & Hoch\-frequenz\-schaltungen, LEDs, \newline Laserdioden \\
+            \hline
+            Indium- phosphid (InP)                                                               & \centering $1,35$    & \centering  $1\cdot10^{16}$  & \centering  $5000$ & \centering  $200$  & Direkter Band\-über\-gang, Hohe Lichtabsorption bei Wellenlängen im Bereich von $\mathrm{1,3-1,55\,\mu m}$ & Optoelektronik, Solarzellen                             \\
+            \hline
+            Gallium- nitrid (GaN)                                                                & \centering $3,4$     & \centering  $1\cdot10^{-10}$ & \centering  $380$  & \centering  $-$    & Hohe thermische und chemische Stabilität, Hohe  elektronische Durchbruchsfeldstärke                        & Leistungs\-elektro\-nik, LED-Beleuchtung, Displays      \\
+            \hline
+            Silizium- karbid (SiC)                                                               & \centering $3,0$     & \centering  $1\cdot10^{-7}$  & \centering  $500$  & \centering  $-$    & Extrem hohe thermische Stabilität,  Hohe elektronische Durchbruchsfeldstärke                               & Leistungs- elektronik, Hochtemperaturanwendung          \\
+            \hline
+        \end{tabular}
+        \caption{\textbf{Eigenschaften verschiedener Halbleitermaterialien.} Auflistung von physikalischen Größen wie der Bandlücke ($E_\mathrm{G}$),
+            Eigenleitungsdichte ($n$) bei $T=\mathrm{300\,K}$, Elektronenbeweglichkeit ($\mu_\mathrm{e}$) und Löcherbeweglichkeit ($\mu_\mathrm{p}$).}
+        \label{tab:EigenschaftenVerschiedenerHalbleitermaterialien}
+    \end{table}
+}
+
+\s{
+    \newvideofile{Ladungstraegertransport}{Ladungsträgertransport}
+    \ftb{Ladungsträgertransport
+        \label{sec:Ladungsträgertransport}}
+    Bei einer Temperatur von $\mathrm{0\,K}$ (absoluter Nullpunkt) weisen Halbleiter wie Silizium ein vollständig besetztes Valenzband mit
+    dem Energieniveau $E_\mathrm{V}$ und ein leeres Leitungsband mit dem Energieniveau $E_\mathrm{L}$ auf.
+    Dies bedeutet, dass alle Elektronen im Valenzband gebunden und keine freien Ladungsträger vorhanden sind. Das Bändermodell zeigt eine deutliche
+    Bandlücke zwischen dem Valenz- und dem Leitungsband. Wenn die Temperatur über $\mathrm{0\,K}$ erhöht wird, steigt die
+    Beweglichkeit der Elektronen im Kristallgitter. Einige Elektronen im Valenzband können durch thermische Anregung Energie erhalten und in das Leitungsband
+    übergehen, wodurch freie Elektronen und Löcher erzeugt werden. Diese freien Ladungsträger tragen zur Leitfähigkeit des Halbleiters bei.
+}
+
+\s{
+    \begin{figure}[H]
+        \begin{minipage}[c]{0.48\textwidth}
+            \begin{figure}[H]
+                \raggedright
+                \includesvg[width=0.9\textwidth]{Bilder/kap1/GitterstrukturUndBaendermodellVonSi/GitterstrukturUndBaendermodellVonSi_1}\alttext{Die Abbildung zeigt die Gitterstruktur und das Bändermodell von Silizium in einer vereinfachten 2D-Betrachtung.
+                    Es wird die Gitterstruktur von reinem Silizium bei \( T = 0K \) dargestellt.
+                    - Die großen roten Kreise mit der Beschriftung „Si“ repräsentieren die Siliziumatome.
+                    - Die kleinen blauen Kreise symbolisieren die Elektronen, die sich zwischen den Atomen befinden und kovalente Bindungen bilden.
+                    - Die Struktur zeigt ein regelmäßiges Kristallgitter, in dem alle Elektronen gebunden sind.
+                    - Daneben befindet sich das zugehörige Bändermodell:
+                    - Das Valenzband (\( EV \)) ist vollständig mit Elektronen besetzt und in Blau dargestellt.
+                    - Das Leitungsband (\( EL \)) ist darüber, in einem hellen Orange, und leer.
+                    - Die Bandlücke (\( E_G \approx 1.1 eV \)) zwischen Valenz- und Leitungsband ist markiert, um zu zeigen, dass keine Elektronen ins Leitungsband übertreten.}
+            \end{figure}
+        \end{minipage}
+        \begin{minipage}[c]{0.48\textwidth}
+            \begin{figure}[H]
+                \raggedleft
+                \includesvg[width=0.9\textwidth]{Bilder/kap1/GitterstrukturUndBaendermodellVonSi/GitterstrukturUndBaendermodellVonSi_2}\alttext{Die Abbildung zeigt die Gitterstruktur und das Bändermodell von Silizium in einer vereinfachten 2D-Betrachtung.
+                    Es wird das Gittermodell für Silizium bei \( T > 0K \) dargestellt, also bei einer Temperatur über dem absoluten Nullpunkt.
+                    - Die Struktur ähnelt dem linken Modell, jedoch ist hier ein „freies Elektron“ zu sehen, das sich aus einer kovalenten Bindung gelöst hat.
+                    - Die Lücke, die das Elektron hinterlässt, stellt ein sogenanntes Loch dar.
+                    - Das zugehörige Bändermodell zeigt nun ein freies Elektron im Leitungsband (\( EL \)), was auf thermische Anregung zurückzuführen ist.
+                    - Die Bandlücke ist weiterhin vorhanden, aber einige Elektronen haben genug Energie erhalten, um ins Leitungsband überzugehen, wodurch das Material leitfähig wird.}
+            \end{figure}
+        \end{minipage}
+        \caption{\textbf{Gitterstruktur und Bändermodell von Si.} Vereinfachte 2D-Betrachtung des Si-Gitters. Links: Reines Silizium bei $T={0}\,\mathrm{K}$. Rechts: Reines Silizium bei $T>{0}\,\mathrm{K}$.}
+        \label{fig:GitterstrukturUndBaendermodellVonSi}
+    \end{figure}
+}
+
+\s{
+    Bei der Zugabe von Phosphor zu Silizium führt dies dazu, dass das Phosphoratom fünf Valenzelektronen einbringt (n-dotiert), eins mehr als Silizium. Das in
+    diesem Fall überschüssige Elektron wird locker an das Kristallgitter gebunden und kann leicht von äußeren Energiequellen entfernt werden, wodurch es zu einem
+    Donator von freien Elektronen wird. Diese Elektronen befinden sich im Donatorband ($E_\mathrm{D}$), unmittelbar unterhalb des Leitungsbands. Bei einer Temperatur über $\mathrm{0\,K}$
+    verfügen die Elektronen aufgrund der thermischen Anregung über ausreichend Energie, um die Bandlücke zu überwinden und ins Leitungsband zu gelangen. Die
+    durch den Phosphor bereitgestellten Elektronen erleichtern diesen Prozess. Daher erhöht sich die Leitfähigkeit des Materials.
+}
+
+\s{
+    \begin{figure}[H]
+        \begin{minipage}[c]{0.48\textwidth}
+            \begin{figure}[H]
+                \raggedright
+                \includesvg[width=0.9\textwidth]{Bilder/kap1/GitterstrukturUndBaendermodellVonN-dotiertesSi/GitterstrukturUndBaendermodellVonN-dotiertesSi_1}\alttext{Die Abbildung zeigt die Gitterstruktur und das Bändermodell von n-dotiertem Silizium in einer vereinfachten 2D-Betrachtung.
+                    N-dotiertes Silizium bei \( T = 0K \)
+                    - Die großen roten Kreise mit der Beschriftung „Si“ stehen für Siliziumatome, während das Atom mit der Bezeichnung „P“ ein Phosphoratom repräsentiert.
+                    - Das Phosphoratom hat fünf Valenzelektronen, von denen vier zur Bindung mit den benachbarten Siliziumatomen genutzt werden, während das fünfte als überschüssiges Elektron locker gebunden ist.
+                    - Die kleinen blauen Kreise stellen Elektronen dar, die sich innerhalb der Bindungen befinden.
+                    - Das dazugehörige Bändermodell rechts zeigt:
+                    - Das Valenzband (\( EV \)) ist vollständig mit Elektronen gefüllt und in Blau dargestellt.
+                    - Das Leitungsband (\( EL \)) liegt darüber in einem hellen Orange.
+                    - Eine zusätzliche Energieniveau-Linie (\( E_D \)) knapp unterhalb des Leitungsbands repräsentiert das Donatorniveau, das durch die Dotierung mit Phosphor entsteht. Dieses Niveau ist fast vollständig mit Elektronen besetzt, aber noch bei niedrigen Temperaturen gebunden.}
+            \end{figure}
+        \end{minipage}
+        \begin{minipage}[c]{0.48\textwidth}
+            \begin{figure}[H]
+                \raggedleft
+                \includesvg[width=0.9\textwidth]{Bilder/kap1/GitterstrukturUndBaendermodellVonN-dotiertesSi/GitterstrukturUndBaendermodellVonN-dotiertesSi_2}\alttext{Die Abbildung zeigt die Gitterstruktur und das Bändermodell von n-dotiertem Silizium in einer vereinfachten 2D-Betrachtung.
+                    N-dotiertes Silizium bei \( T > 0K \)
+                    - Die Gitterstruktur bleibt ähnlich, allerdings hat das Phosphoratom nun sein überschüssiges Elektron abgegeben.
+                    - Ein freies Elektron ist sichtbar, das sich aus einer kovalenten Bindung gelöst hat und durch das Gitter bewegen kann.
+                    - Das Bändermodell zeigt nun ein Elektron im Leitungsband (\( EL \)), das durch thermische Anregung vom Donatorniveau (\( E_D \)) ins Leitungsband übergegangen ist.
+                    - Das Donatorniveau ist nun teilweise entleert, während das Leitungsband besetzte Zustände aufweist.}
+            \end{figure}
+        \end{minipage}
+        \caption{\textbf{Gitterstruktur und Bändermodell von n-dotiertem Si.} Links: N-dotiertes Silizium bei $T={0}\,\mathrm{K}$. Rechts: N-dotiertes Silizium bei $T>{0}\,\mathrm{K}$.}
+        \label{fig:GitterstrukturUndBaendermodellVonN-DotiertesSi}
+    \end{figure}
+}
+
+\s{
+    Bei der Zugabe von Bor zu Silizium (p-Dotierung) hat das Boratom nur drei Valenzelektronen, eins weniger als Silizium. Dadurch entsteht im Kristallgitter ein
+    Loch im Valenzband, das als Akzeptor von Elektronen wirkt. Bei ${0}\,\mathrm{K}$ sind jedoch keine thermisch erzeugten Löcher vorhanden. Bei einer Temperatur über ${0}\,\mathrm{K}$ führt
+    die thermische Energie dazu, dass Elektronen aus dem Valenzband ins Akzeptorband ($E_\mathrm{A}$) gelangen, wodurch Löcher im Valenzband zurückbleiben. Diese Löcher wirken wie
+    positive Ladungsträger und erhöhen die Leitfähigkeit des Materials.
+}
+
+\s{
+    \begin{figure}[H]
+        \begin{minipage}[c]{0.48\textwidth}
+            \begin{figure}[H]
+                \raggedright
+                \includesvg[width=0.9\textwidth]{Bilder/kap1/GitterstrukturUndBaendermodellVonP-dotiertesSi/GitterstrukturUndBaendermodellVonP-dotiertesSi_1}\alttext{Die Abbildung zeigt die Gitterstruktur und das Bändermodell von p-dotiertem Silizium in einer vereinfachten 2D-Betrachtung.
+                    P-dotiertes Silizium bei \( T = 0K \)
+                    - Die großen roten Kreise mit der Beschriftung „Si“ repräsentieren Siliziumatome, während das Atom mit der Bezeichnung „B“ ein Boratom darstellt.
+                    - Das Boratom besitzt nur drei Valenzelektronen und kann daher keine vollständige kovalente Bindung mit seinen vier benachbarten Siliziumatomen eingehen.
+                    - Dies führt zu einer fehlenden Elektronenbindung, die als Loch dargestellt wird.
+                    - Die kleinen blauen Kreise symbolisieren Elektronen, die sich innerhalb der Bindungen befinden.
+                    - Das dazugehörige Bändermodell auf der rechten Seite zeigt:
+                    - Das Valenzband (\( EV \)) ist vollständig mit Elektronen gefüllt und in Blau dargestellt.
+                    - Das Leitungsband (\( EL \)) liegt darüber in einem hellen Orange und ist leer.
+                    - Eine zusätzliche Energieniveau-Linie (\( E_A \)) knapp oberhalb des Valenzbands repräsentiert das Akzeptorniveau, das durch die Dotierung mit Bor entsteht.}
+            \end{figure}
+        \end{minipage}
+        \begin{minipage}[c]{0.48\textwidth}
+            \begin{figure}[H]
+                \raggedleft
+                \includesvg[width=0.9\textwidth]{Bilder/kap1/GitterstrukturUndBaendermodellVonP-dotiertesSi/GitterstrukturUndBaendermodellVonP-dotiertesSi_2}\alttext{Die Abbildung zeigt die Gitterstruktur und das Bändermodell von p-dotiertem Silizium in einer vereinfachten 2D-Betrachtung.
+                    P-dotiertes Silizium bei \( T > 0K \)
+                    - Das Gitter bleibt weitgehend gleich, jedoch wird die zuvor fehlende Elektronenbindung (das Loch) nun mit einem Elektron aus der Umgebung gefüllt.
+                    - Dies bedeutet, dass das Loch sich durch das Gitter bewegt, was zu einer effektiven positiven Ladungsträgerbewegung führt.
+                    - Im Bändermodell ist nun ein Elektron vom Valenzband (\( EV \)) auf das Akzeptorniveau (\( E_A \)) übergegangen.
+                    - Dadurch entstehen im Valenzband freie Plätze (Löcher), die für den Ladungstransport genutzt werden können.}
+            \end{figure}
+        \end{minipage}
+        \caption{\textbf{Gitterstruktur und Bändermodell von p-dotiertem Si.} Links: P-dotiertes Silizium bei $T={0}\,\mathrm{K}$. Rechts: P-dotiertes Silizium bei $T>{0}\,\mathrm{K}$.}
+        \label{fig:GitterstrukturUndBaendermodellVonP-DotiertesSi}
+    \end{figure}
+}
+
+\s{
+    \begin{Merksatz}{}
+        \begin{itemize}
+            \item Durch thermische Anregung können freie Elektronen entstehen, die zum Ladungsträgertransport beitragen. 
+            \item Dotierung ist das gezielte Einbringen von Fremdatomen mit mehr oder weniger Valenzelektronen als das Ausgangsmaterial.
+            \item Für n-Dotierung kann Phosphor und für p-Dotierung Bor genutzt werden.
+            \end{itemize}
+    \end{Merksatz}
+}
+
+\s{
+    %\newpage 
+    Neben den zuvor genannten Vorgängen innerhalb des Kristallgitters, die den Ladungsträgertransport durch zusätzliche Ladungsträger ermöglichen,
+    sind zwei weitere wichtige Größen der Driftstrom und der Diffusionsstrom. Driftstrom in einem Halbleiter tritt aufgrund der Bewegung geladener
+    Teilchen unter dem Einfluss eines äußeren elektrischen Feldes auf. Wenn ein elektrisches Feld an einem Halbleiter angelegt wird, wirkt eine Kraft
+    auf die freien Ladungsträger (Elektronen und Löcher), die sie, je nach Vorzeichen oder Ladung, in Feldrichtung beschleunigt oder deren Bewegung verlangsamt.
+    Für Elektronen im Leitungsband bedeutet dies, dass sie unter dem Einfluss des elektrischen Feldes in Richtung der positiven Elektrode (Anode)
+    driften. Für Löcher im Valenzband bedeutet dies eine Drift in Richtung der negativen Elektrode (Kathode).
+    Für eine bessere Vergleichbarkeit wird in der folgenden Abbildung das Loch als positiver Ladungsträger dargestellt. Die Driftgeschwindigkeit der Ladungsträger
+    hängt von der Stärke des angelegten elektrischen Feldes und von der Beweglichkeit der Ladungsträger im Halbleitermaterial ab. Es ist wichtig zu
+    beachten, dass der Driftstrom nur einen Teil des Gesamtstroms in einem Halbleiter ausmacht.
+}
+
+\s{
+    \begin{figure}[H]
+        \centering
+        \includesvg[width=0.4\textwidth]{Bilder/kap1/DriftstromInnerhalbEinesHalbleiters}\alttext{Die Abbildung zeigt das Prinzip des Driftstroms innerhalb eines Halbleiters.
+            Dargestellt ist ein rechteckiger Halbleiterblock, der von einem elektrischen Feld \( E \) durchsetzt wird.
+            - Das elektrische Feld ist als roter Pfeil gezeichnet und zeigt nach rechts. Die Beschriftung \( \vec{E} \) in Rot kennzeichnet die Feldrichtung.
+            - Innerhalb des Halbleiters befinden sich zwei verschiedene Ladungsträger:
+            - Ein negativ geladenes Elektron, dargestellt als blauer Kreis mit einem Minuszeichen. Es bewegt sich mit der Geschwindigkeit \( v_n \) nach links, entgegengesetzt zur Feldrichtung.
+            - Ein positiv geladenes Loch, dargestellt als roter Kreis mit einem Pluszeichen. Es bewegt sich mit der Geschwindigkeit \( v_p \) nach rechts, in Richtung des elektrischen Feldes.
+            Diese Abbildung verdeutlicht das Prinzip des Driftstroms:
+            - Elektronen werden durch das elektrische Feld entgegen dessen Richtung beschleunigt.
+            - Löcher bewegen sich mit dem Feld in dessen Richtung.
+            - Der Driftstrom ist eine fundamentale Transportart von Ladungsträgern in Halbleitern und spielt eine zentrale Rolle in der Funktion von Halbleiterbauelementen wie Dioden und Transistoren.}
+        \caption{\textbf{Driftstrom innerhalb eines Halbleiters.} Darstellung mit der Geschwindigkeit $v$ der Ladungsträger aufgrund der elektrischen Feldstärke $E$.}
+        \label{fig:DriftstromInnerhalbEinesHalbleiters}
+    \end{figure}
+}
+
+\s{
+    Der andere Teil des Stroms entsteht durch Diffusion, was die Bewegung von Ladungsträgern aufgrund von Konzentrationsunterschieden darstellt.
+    In vielen Halbleiterbauelementen wie Dioden und Transistoren wirken Drift- und Diffusionsströme zusammen, um das Verhalten des Bauelements
+    zu bestimmen. Beim Diffusionsstrom bewegen sich freie Elektronen oder Löcher von Bereichen hoher Konzentration zu Bereichen niedriger Konzentration,
+    ähnlich wie bei der Diffusion von Teilchen in einem Konzentrationsgradienten. Elektronen im n-dotierten Halbleiter diffundieren von Regionen hoher zu Regionen niedriger Elektronenkonzentration. Umgekehrt bewegen sich bei einem
+    p-dotierten Halbleiter Löcher von Regionen hoher Lochkonzentration zu Regionen niedriger Konzentration.
+}
+
+\s{
+    \begin{figure}[H]
+        \centering
+        \includesvg[width=0.8\textwidth]{Bilder/kap1/DiffusionsstromInnerhalbEinesHalbleiters}\alttext{Die Abbildung zeigt den Diffusionsstrom innerhalb eines Halbleiters, insbesondere die Diffusion von Elektronen in einem n-dotierten Halbleiter in Richtung einer geringeren Konzentration.
+            Die Darstellung besteht aus drei schematischen Skizzen mit dazugehörigen Diagrammen:
+            Linke Skizze: Ausgangszustand mit hoher Ladungsträgerkonzentration
+            - Ein rechteckiger Bereich mit einem blauen Hintergrund stellt einen n-dotierten Halbleiter dar.
+            - Viele blaue Kreise mit negativem Vorzeichen symbolisieren überschüssige Elektronen, die sich im linken Teil konzentrieren.
+            - Die Elektronen zeigen keine gerichtete Bewegung, befinden sich jedoch in einer Region mit hoher Konzentration.
+            - Darunter befindet sich ein Diagramm, in dem die Ladungsträgerkonzentration \( n \) über die Position \( x \) aufgetragen ist.
+            - Die Konzentration ist für \( x = 0 \) hoch und bleibt konstant bis zur Position \( L \), wo sie abrupt abfällt.
+            Mittlere Skizze: Diffusionsprozess der Elektronen
+            - Elektronen beginnen sich aufgrund der Konzentrationsdifferenz in Richtung geringerer Konzentration (nach rechts) zu bewegen.
+            - Pfeile zeigen die zufällige Bewegung der Elektronen an, wodurch sie sich langsam ausbreiten.
+            - Im dazugehörigen Diagramm nimmt die Ladungsträgerkonzentration \( n \) entlang der x-Achse kontinuierlich ab, was auf den Diffusionsprozess hinweist.
+            Rechte Skizze: Gleichmäßige Verteilung der Ladungsträger
+            - Die Ladungsträger sind nun gleichmäßig über den gesamten Bereich verteilt, und es gibt keine Konzentrationsdifferenz mehr.
+            - Im zugehörigen Diagramm ist \( n \) nun eine konstante Funktion entlang der x-Achse.
+            Diese Abbildung verdeutlicht den Diffusionsstrom, der in Halbleitern aufgrund von Konzentrationsunterschieden auftritt. Der Ladungsträgerfluss erfolgt immer in Richtung der niedrigeren Konzentration, bis ein Gleichgewichtszustand erreicht ist. Dieser Mechanismus ist entscheidend für viele Halbleiterbauelemente, insbesondere für Dioden und pn-Übergänge.}
+        \caption{\textbf{Diffusionsstrom innerhalb eines Halbleiters.} Diffusion von Elektronen in einem
+            n-dotierten Halbleiter in Richtung einer geringeren Konzentration. Mit der Länge $\mathrm{L}$ des Halbleiters, der Ladungsträgerkonzentration $n$ und der Position $x$.}
+        \label{fig:DiffusionsstromInnerhalbEinesHalbleiters}
+    \end{figure}
+}
+
+\s{
+    Abschließend wird in diesem Abschnitt der Ladungstransport im Bänderdiagramm bei einer angelegten Spannung betrachtet. Bislang wurde das
+    Bänderdiagramm ausschließlich im Zustand des thermodynamischen Gleichgewichts analysiert. Es wird der allgemeine Fall betrachtet, in dem
+    ein Strom durch den Halbleiter fließt. Als Beispiel dient ein homogener, n-dotierter Halbleiter. Anfänglich liegt keine Spannung am Halbleiter
+    an, wodurch auch kein elektrischer Strom fließt. Das Bänderdiagramm über den Ort x zeigt daher einen Verlauf ähnlich dem in Abbildung \ref{fig:EinflussVonSpannungenAufHalbleiter} links,
+    wobei mögliche Randeffekte an den Kontakten nicht berücksichtigt sind. Die Bänder eines Halbleiters ohne angelegte Spannung sind horizontal
+    ausgerichtet. Sobald jedoch eine Spannung angelegt wird, verschiebt sich das Bänderdiagramm, was dazu führt, dass die Elektronen in Richtung
+    niedrigerer Energie wandern.
+}
+
+\s{
+    \begin{figure}[H]
+        \begin{minipage}[c]{0.48\textwidth}
+            \begin{figure}[H]
+                \centering
+                \includesvg[width=0.7\textwidth]{Bilder/kap1/EinflussvonSpannungenaufHalbleiter/EinflussvonSpannungenaufHalbleiter_1}\alttext{Die Abbildung zeigt den Einfluss von Spannungen auf einen Halbleiter.
+                    Halbleiter ohne angelegte Spannung
+                    - Im oberen Teil befindet sich ein rechteckiger Bereich mit blauem Hintergrund, der den Halbleiter darstellt.
+                    - Mehrere blaue Kreise mit negativem Vorzeichen symbolisieren freie Elektronen.
+                    - Der Halbleiter ist über ein externes elektrisches System mit einem geschlossenen Stromkreis verbunden.
+                    - Die angelegte Spannung \( U_{HL} \) beträgt null, sodass kein Strom fließt, was durch \( I = 0 \) in Rot markiert ist.
+                    - Darunter ist das Bändermodell abgebildet:
+                    - Das Valenzband (\( E_V \)) ist in Blaugrün dargestellt und horizontal ausgerichtet.
+                    - Das Leitungsband (\( E_L \)) ist in Orange und ebenfalls horizontal, da kein elektrisches Feld im Material vorhanden ist.}
+            \end{figure}
+        \end{minipage}
+        \begin{minipage}[c]{0.48\textwidth}
+            \begin{figure}[H]
+                \centering
+                \includesvg[width=0.7\textwidth]{Bilder/kap1/EinflussvonSpannungenaufHalbleiter/EinflussvonSpannungenaufHalbleiter_2}\alttext{Die Abbildung zeigt den Einfluss von Spannungen auf einen Halbleiter.
+                    Halbleiter mit angelegter Spannung
+                    - Nun wird eine Spannung \( U_{HL} > 0 \) angelegt, was eine Neigung der Energiebänder verursacht.
+                    - Der Halbleiterblock bleibt blau, jedoch bewegen sich nun die Elektronen entlang der Spannung, was durch Pfeile innerhalb des Materials dargestellt wird.
+                    - Der Stromfluss ist nicht mehr null, sondern \( I > 0 \), was in Rot markiert ist.
+                    - Im Bändermodell darunter sind die Energiebänder geneigt:
+                    - Das Valenzband (\( E_V \)) fällt nach rechts ab.
+                    - Das Leitungsband (\( E_L \)) ist ebenfalls geneigt, wobei der rechte Bereich höher liegt als der linke.
+                    - Diese Neigung entspricht einem internen elektrischen Feld, das durch die angelegte Spannung verursacht wird.}
+            \end{figure}
+        \end{minipage}
+
+        \caption{\textbf{Einfluss von Spannungen auf Halbleiter.} Links: Festkörper und Bändermodell ohne angelegte Spannung. Rechts: Verschiebung des Bändermodells aufgrund einer angelegten Spannung.}
+        \label{fig:EinflussVonSpannungenAufHalbleiter}
+    \end{figure}
+}
+
+\s{
+    \begin{Merksatz}{}
+        \begin{itemize}
+            \item Driftstrom ist der Ladungsträgertransport aufgrund eines elektrischen Feldes.
+            \item Diffusionsstrom ist die Bewegung von Ladungsträgern aufgrund eines Konzentrationsunterschiedes.
+            \item Drift- und Diffusionsstrom ergeben zusammen den Gesamtstrom.
+            \item Eine externe Spannung führt zu einer Verschiebung des Bändermodells. 
+            \end{itemize}
+    \end{Merksatz}
+}
+
+\s{
+    \newvideofile{pn-Uebergang}{pn-Übergang}
+    \ftb{pn-Übergang}
+    \label{sec:pn-Übergang}
+    Der pn-Übergang ist das zentrale Element von Halbleiterbauelementen wie Dioden und Transistoren. Er entsteht durch die Verbindung von zwei
+    unterschiedlich dotierten Halbleiterschichten, einer p-dotierten und einer n-dotierten Schicht. Der Übergang zwischen diesen Schichten wird
+    als pn-Übergang bezeichnet. Im pn-Übergang kommt es zur Diffusion von freien Ladungsträgern: Elektronen aus der n-dotierten Schicht diffundieren
+    zur p-dotierten Schicht und Löcher aus der p-dotierten Schicht diffundieren zur n-dotierten Schicht. Dieser Diffusionsprozess führt dazu, dass
+    sich im Über\-gangs\-be\-reich eine sogenannte Raumladungszone (RLZ) bildet. In Abbildung \ref{fig:VorgaengeInnerhalbDesPn-Uebergangs} ist dieser Vorgang dargestellt. Die RLZ ist eine schmale
+    Region um den pn-Übergang herum, in der positive Ionen aus der n-Schicht und negative Ionen aus der p-Schicht verbleiben,
+    nachdem die Diffusion abgeschlossen ist. In dieser Zone gibt es keine freien Ladungsträger, da die positiven und negativen Ladungen sich
+    gegenseitig neutralisieren. Dadurch entsteht ein elektrisches Feld ($\vec{E}$), das sowohl einen Driftstrom erzeugt als auch die Diffusion von weiteren
+    Ladungsträgern unterdrückt. Die Raumladungszone wirkt wie eine Sperrschicht und verhindert den Stromfluss in Sperrrichtung.
+}
+
+\s{
+    \begin{figure}[H]
+        \centering
+        \includesvg[width=0.7\textwidth]{Bilder/kap1/VorgaengeInnerhalbDesPN-Uebergangs}\alttext{Die Abbildung zeigt die Vorgänge innerhalb eines pn-Übergangs, insbesondere die Drift- und Diffusionsprozesse der Ladungsträger sowie die Bildung der Raumladungszone.
+            Die Darstellung besteht aus drei Bereichen:
+            - Links das p-Gebiet mit rotem Hintergrund,
+            - In der Mitte die Raumladungszone mit grauem Hintergrund,
+            - Rechts das n-Gebiet mit blauem Hintergrund.
+            p-Gebiet (links, rot)
+            - Enthält eine hohe Konzentration an positiven Ladungsträgern (Löcher), die als rote Kreise mit Pluszeichen dargestellt sind.
+            - Freie negative Elektronen (blaue Kreise mit Minuszeichen) sind nur in geringer Anzahl vorhanden.
+            n-Gebiet (rechts, blau)
+            - Enthält eine hohe Konzentration an freien Elektronen (blaue Kreise mit Minuszeichen),
+            - Positive Ionen (rote Pluszeichen) sind fest an ihren Gitterplätzen gebunden.
+            Raumladungszone (Mitte, grau)
+            - Durch Diffusion bewegen sich freie Elektronen aus dem n-Gebiet ins p-Gebiet (Diffusionsstrom, schwarze Pfeile nach links).
+            - Gleichzeitig diffundieren Löcher aus dem p-Gebiet ins n-Gebiet (Diffusionsstrom, schwarze Pfeile nach rechts).
+            - Zurück bleiben ionisierte, ortsfeste Atome, die eine Raumladungszone (RLZ) bilden.
+            - Diese Zone erzeugt ein internes elektrisches Feld \( \vec{E} \), das von rechts (n-Seite) nach links (p-Seite) zeigt (roter Pfeil).
+            - Dieses Feld bewirkt einen **Driftstrom**, der die Diffusionsbewegung teilweise kompensiert:
+            - Elektronen werden nach rechts gezogen (blaue Drift-Pfeile),
+            - Löcher bewegen sich nach links (rote Drift-Pfeile).
+            Die Abbildung zeigt, dass sich ein Gleichgewicht zwischen Drift- und Diffusionsstrom einstellt. Die Raumladungszone verhindert weitere Ladungsträgerbewegung, wodurch eine Sperrschicht entsteht.
+            Diese Prozesse sind die Grundlage für die Funktion von Dioden und anderen pn-Übergangs-basierten Halbleiterbauelementen.}
+        \caption{\textbf{Vorgänge innerhalb des pn-Übergangs.} Drift und Diffusion von Ladungsträgern im Halbleiter, zurückbleibende Ionen in der RLZ. }
+        \label{fig:VorgaengeInnerhalbDesPn-Uebergangs}
+    \end{figure}
+}
+
+\s{
+    Wenn eine Spannung in Durchlassrichtung angelegt wird (siehe Abbildung \ref{fig:EinflussVonSpannungenAufPn-Uebergang} links), wird die RLZ verkleinert und der Übergang wird leitend.
+    Elektronen aus der n-dotierten Seite wandern zur p-dotierten Seite, während Löcher von der p-dotierten Seite zur n-dotierten Seite diffundieren.
+    Dadurch entsteht ein Stromfluss durch den pn-Übergang. Andersherum vergrößert eine Spannung entgegen der Durchlassrichtung die RLZ
+    (siehe Abbildung \ref{fig:EinflussVonSpannungenAufPn-Uebergang} rechts). Die freien Ladungsträger werden durch die Spannungsquelle ausgeglichen. Der pn-Übergang ist daher ein Schlüsselelement
+    in Halbleiterbauelementen, das die Richtung und Stärke des Stromflusses steuert. Seine Eigenschaften werden durch die Dotierungskonzentration, die Größe
+    der Raumladungszone und die angelegte Spannung beeinflusst.
+}
+
+\s{
+    \begin{figure}[H]
+        \begin{minipage}[c]{0.48\textwidth}
+            \begin{figure}[H]
+                \centering
+                \includesvg[width=0.7\textwidth]{Bilder/kap1/EinflussvonSpannungenaufpn-Uebergang/EinflussvonSpannungenaufpn-Uebergang_1}\alttext{Die Abbildung zeigt den Einfluss von Spannungen auf einen pn-Übergang.
+                    Spannung in Durchlassrichtung (\( U_{HL} > 0 \))
+                    - Der Halbleiter ist an eine externe Spannungsquelle angeschlossen, die das p-Gebiet positiv und das n-Gebiet negativ auflädt.
+                    - Das elektrische Feld der Raumladungszone wird durch die äußere Spannung abgeschwächt, wodurch die Sperrschicht kleiner wird.
+                    - Die Ladungsträger (Löcher im p-Gebiet und Elektronen im n-Gebiet) können leichter über die Grenzschicht wandern, was zu einem Stromfluss führt.
+                    - Im zugehörigen Bändermodell:
+                    - Die Energiebänder sind gekippt, das Valenzband (\( E_V \)) und das Leitungsband (\( E_L \)) verlaufen nahezu durchgängig.
+                    - Die Energiebarriere ist gesenkt, sodass Elektronen von der n-Seite zur p-Seite übertreten können.
+                    Diese Abbildung verdeutlicht die fundamentalen Auswirkungen von externen Spannungen auf einen pn-Übergang:
+                    - Eine positive Spannung (Durchlassrichtung) verringert die Sperrschicht und ermöglicht Stromfluss.}
+            \end{figure}
+        \end{minipage}
+        \begin{minipage}[c]{0.48\textwidth}
+            \begin{figure}[H]
+                \centering
+                \includesvg[width=0.7\textwidth]{Bilder/kap1/EinflussvonSpannungenaufpn-Uebergang/EinflussvonSpannungenaufpn-Uebergang_2}\alttext{Die Abbildung zeigt den Einfluss von Spannungen auf einen pn-Übergang.
+                    Spannung in Sperrrichtung (\( U_{HL} < 0 \))
+                    - Die externe Spannungsquelle legt eine negative Spannung am p-Gebiet und eine positive Spannung am n-Gebiet an.
+                    - Dadurch wird die Raumladungszone vergrößert, da die Ladungsträger von der Grenzschicht weggezogen werden.
+                    - Die Sperrschicht wird breiter, was die Bewegung von Elektronen und Löchern weiter erschwert.
+                    - Im Bändermodell:
+                    - Die Energiebänder sind stärker geneigt, und die Barriere für Elektronenübertritt ist erhöht.
+                    - Der Übergang wird blockiert, sodass kein nennenswerter Strom fließt.
+                    Diese Abbildung verdeutlicht die fundamentalen Auswirkungen von externen Spannungen auf einen pn-Übergang:
+                    - Eine negative Spannung (Sperrrichtung) vergrößert die Sperrschicht und verhindert den Ladungstransport.  }
+            \end{figure}
+        \end{minipage}
+        \caption{\textbf{Einfluss von Spannungen auf pn-Übergang.} Raumladungszone bei verschiedenen angelegten
+            Spannungen. Links: Spannung in Durchlassrichtung. Rechts: Spannung in Sperrrichtung.}
+        \label{fig:EinflussVonSpannungenAufPn-Uebergang}
+    \end{figure}
+}
+
+\s{
+    \begin{Merksatz}{}
+        \begin{itemize}
+            \item Der pn-Übergang kombiniert eine p- und n-dotierte Halbleiterschicht.
+            \item Im Übergangsbereich, Raumladungszone genannt, sind keine freien Ladungsträger.
+            \item In Durchlassrichtung wird die RLZ verkleinert, in Sperrrichtung wird diese vergrößert. 
+            \end{itemize}
+    \end{Merksatz}
+}
