@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[1] Config.pm:310> INFO - Logfile is 'TeXPDF/Skript.blg'
+[97] biber:340> INFO - === Fri Feb 20, 2026, 09:16:19
+[126] Biber.pm:419> INFO - Reading 'TeXPDF/Skript.bcf'
+[182] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[194] bbl.pm:660> INFO - Writing 'TeXPDF/Skript.bbl' with encoding 'UTF-8'
+[194] bbl.pm:763> INFO - Output to TeXPDF/Skript.bbl
+[195] Biber.pm:131> WARN - The file 'TeXPDF/Skript.bcf' does not contain any citations!
+[195] Biber.pm:133> INFO - WARNINGS: 1

@@ -1,0 +1,1 @@
+ Demzufolge können wir das formelmäßig genauso beschreiben. Die Arbeit W ist gleich dem Linienintegral von P1 nach P2 über F d s. 

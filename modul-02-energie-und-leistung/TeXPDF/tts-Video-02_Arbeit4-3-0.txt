@@ -1,0 +1,1 @@
+Wir sehen also: Im elektrostatischen Feld ist das geschlossene Wegintegral E mal ds gleich null.

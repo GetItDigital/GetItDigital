@@ -1,0 +1,15 @@
+\babel@toc {ngerman}{}\relax 
+\beamer@sectionintoc {1}{Einleitung}{3}{0}{1}
+\beamer@sectionintoc {2}{Die Energie}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Die verschiedenen Energieformen}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Die elektrische Energie}{13}{0}{2}
+\beamer@subsectionintoc {2}{3}{Elektrische Energiespeicher}{16}{0}{2}
+\beamer@sectionintoc {3}{Die Arbeit}{19}{0}{3}
+\beamer@subsectionintoc {3}{1}{Die elektrische Arbeit}{22}{0}{3}
+\beamer@subsectionintoc {3}{2}{Wegintegral der elektrischen Arbeit}{25}{0}{3}
+\beamer@sectionintoc {4}{Die Leistung}{28}{0}{4}
+\beamer@subsectionintoc {4}{1}{Die elektrische Leistung}{30}{0}{4}
+\beamer@subsectionintoc {4}{2}{Die verschiedenen Leistungsarten}{30}{0}{4}
+\beamer@sectionintoc {5}{Der Wirkungsgrad}{32}{0}{5}
+\beamer@subsectionintoc {5}{1}{Berechnung des Wirkungsgrades}{32}{0}{5}
+\beamer@subsectionintoc {5}{2}{Berechnung des Wirkungsgrades}{33}{0}{5}

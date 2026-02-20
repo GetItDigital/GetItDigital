@@ -1,0 +1,30 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.2.1}%
+\contentsline {section}{\numberline {2}Die Energie}{3}{section.2.2}%
+\contentsline {subsection}{\numberline {2.1}Der Energieerhaltungssatz}{3}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2}Die verschiedenen Energieformen}{3}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Die elektrische Energie}{4}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.4}Elektrische Energiespeicher}{5}{subsection.2.2.4}%
+\contentsline {section}{\numberline {3}Die Arbeit}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {3.1}Die elektrische Arbeit}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {3.2}Wegintegral der elektrischen Arbeit}{8}{subsection.2.3.2}%
+\contentsline {section}{\numberline {4}Die Leistung}{9}{section.2.4}%
+\contentsline {subsection}{\numberline {4.1}Die elektrische Leistung}{10}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {4.2}Die verschiedenen Leistungsarten}{10}{subsection.2.4.2}%
+\contentsline {section}{\numberline {5}Der Wirkungsgrad}{11}{section.2.5}%
+\contentsline {subsection}{\numberline {5.1}Berechnung des Wirkungsgrades}{11}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {5.2}Verlustmechanismen eines Leuchtmittels}{12}{subsection.2.5.2}%
+\contentsline {section}{\numberline {A}Übungsaufgaben}{13}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Arbeit und Energie}{13}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Höhenenergie im Stausee}{13}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Bewegungsenergie eines Autos}{13}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Elektrische Energie eines Geräts}{13}{subsection.A.4}%
+\contentsline {subsection}{\numberline {A.5}Energie und Leistung}{13}{subsection.A.5}%
+\contentsline {subsection}{\numberline {A.6}Wirkungsgrad}{13}{subsection.A.6}%
+\contentsline {section}{\numberline {B}Lösungen zu den Übungsaufgaben}{14}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Arbeit und Energie}{14}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Höhenenergie im Stausee}{14}{subsection.B.2}%
+\contentsline {subsection}{\numberline {B.3}Bewegungsenergie eines Autos}{14}{subsection.B.3}%
+\contentsline {subsection}{\numberline {B.4}Elektrische Energie eines Geräts}{14}{subsection.B.4}%
+\contentsline {subsection}{\numberline {B.5}Energie und Leistung}{15}{subsection.B.5}%
+\contentsline {subsection}{\numberline {B.6}Wirkungsgrad}{15}{subsection.B.6}%

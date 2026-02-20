@@ -1,0 +1,1 @@
+Betrachten wir den Gleichstromfall. Wenn wir davon ausgehen, dass die verrichtete Arbeit zeitlich konstant ist, ergibt sich die elektrische Arbeit als U mal I mal T. Teilen wir diese Arbeit durch die Zeit T, erhalten wir für die elektrische Leistung im Gleichstromfall: P ist gleich U mal I. Die Einheit der Leistung ist das Watt was einem Joule pro Sekunde entspricht.

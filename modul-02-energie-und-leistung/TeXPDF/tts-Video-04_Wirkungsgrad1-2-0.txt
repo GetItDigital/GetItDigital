@@ -1,0 +1,1 @@
+Formelmäßig ist der Wirkungsgrad Eta gleich abgegebene Leistung geteilt durch zugeführte Leistung, mal hundert Prozent. 

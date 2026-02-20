@@ -1,0 +1,1 @@
+ Wir ersetzen also das Q in der Hergeleiteten Formel durch I mal T und erhalten: W-EL ist gleich U mal I mal T. Auch hier ist die Einheit wieder Joule oder auch Wattsekunde.
