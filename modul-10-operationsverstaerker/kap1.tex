@@ -79,10 +79,10 @@
     
         %Abbildungen DIP Package OPV und Diskret Skript
         \begin{minipage}[t]{0.5\textwidth}
-            \f{width=0.6\textwidth}{width=0.8\textwidth}{kap1/OpAmpDiskret.png}{Diskret aufgebauter Operationsverstärker {\tiny(Quelle: Analog Devices, Wikipedia, Lizenz CC-BY-SA)}} % https://de.wikipedia.org/wiki/Operationsverst%C3%A4rker#/media/Datei:Discrete_opamp.png
+            \f{width=0.6\textwidth, alt={Die Abbildung zeigt zwei Darstellungen eines Operationsverstärkers. Links ist ein diskret aufgebauter Operationsverstärker zu sehen. Man erkennt eine Leiterplatte mit einzelnen elektronischen Bauteilen wie Transistoren, Widerständen und Kondensatoren. Die Bauteile sind frei verdrahtet beziehungsweise auf einer Platine montiert und bilden zusammen die Verstärkerschaltung. Diese Darstellung verdeutlicht den klassischen Aufbau aus einzelnen diskreten Komponenten.}}{width=0.8\textwidth}{kap1/OpAmpDiskret.png}{Diskret aufgebauter Operationsverstärker {\tiny(Quelle: Analog Devices, Wikipedia, Lizenz CC-BY-SA)}} % https://de.wikipedia.org/wiki/Operationsverst%C3%A4rker#/media/Datei:Discrete_opamp.png
         \end{minipage}
         \begin{minipage}[t]{0.5\textwidth}
-            \f{width=0.67\textwidth}{width=0.8\textwidth}{kap1/OpAmpPackage.png}{Operationsverstärker monolithisch in Dual in-line package (DIP) {\tiny(Quelle: Wollschaf, Wikipedia, (GNU-Lizenz für freie Dokumentation – mit Namensnennung))}} % https://de.wikipedia.org/wiki/Datei:Integrated_Circuit.jpg
+            \f{width=0.67\textwidth, alt={Rechts ist ein integrierter Operationsverstärker im Dual-In-Line-Package (DIP) dargestellt. Das Bauteil ist in einem rechteckigen schwarzen Kunststoffgehäuse untergebracht. Seitlich ragen zwei parallele Reihen von Anschlussbeinen heraus, die zum Einlöten in eine Leiterplatte dienen. Hier sind alle internen Bauteile in einem einzigen integrierten Schaltkreis zusammengefasst.}}{width=0.8\textwidth}{kap1/OpAmpPackage.png}{Operationsverstärker monolithisch in Dual in-line package (DIP) {\tiny(Quelle: Wollschaf, Wikipedia, (GNU-Lizenz für freie Dokumentation – mit Namensnennung))}} % https://de.wikipedia.org/wiki/Datei:Integrated_Circuit.jpg
         \end{minipage}
     }
 
@@ -170,7 +170,12 @@
     \begin{minipage}{\textwidth}        
         \centering
         \fu{
-            \resizebox{0.6\textwidth}{!}{\input{Tikz/src/Funktionsweise_OPV_1.tex}}
+            \resizebox{0.6\textwidth}{!}{\input{Tikz/src/Funktionsweise_OPV_1.tex}
+            \alttext{Die Abbildung zeigt den inneren Aufbau eines Operationsverstärkers in Transistorschaltung. Die Schaltung ist in drei farblich markierte Bereiche unterteilt, die unterschiedliche Funktionsstufen darstellen.
+            Links (rot markierter Bereich) befindet sich die Differenzverstärker-Eingangsstufe. Hier sind zwei Transistoren angeordnet, deren Basen mit den Eingängen „−“ und „+“ verbunden sind. Zwischen diesen beiden Eingängen ist die Differenzspannung \(U_{\mathrm{Diff}}\) Diese Stufe verarbeitet die Spannungsdifferenz der beiden Eingangssignale. Ein Widerstand führt von der Kollektorseite zur positiven Betriebsspannung \(+U_B\).
+            Rechts oben (gelb markierter Bereich) ist die Verstärker- und Ausgangsstufe dargestellt. Ein Transistor steuert hier den Lastwiderstand \(R_\mathrm{L}\),der nach unten geführt ist. Am rechten Rand ist der Ausgang \(U_\mathrm{A}\) eingezeichnet. Diese Stufe sorgt für die Spannungsverstärkung und die Bereitstellung des Ausgangssignals.
+            Unten (violett markierter Bereich) befindet sich die Stromquellen- bzw. Bias-Schaltung. Hier sind ein weiterer Transistor, mehrere Widerstände sowie zwei in Serie geschaltete Dioden \(D_1\) und \(D_2\) eingezeichnet.Diese Bauteile erzeugen die notwendigen Arbeitspunkte und Referenzspannungen für die Transistoren der Eingangsstufe. Die Schaltung ist an die negative Betriebsspannung \(-U_B\) angeschlossen. 
+            Die eingezeichneten Pfeile kennzeichnen Spannungsrichtungen innerhalb der Schaltung. Insgesamt zeigt die Abbildung den prinzipiellen diskreten Aufbau eines Operationsverstärkers mit Differenzeingang, Verstärkerstufe und Ausgangsstufe.}}
             } 
             {Verhalten eines vereinfachten Operationsverstärkers bei Anlegen einer positiven Differenzspannung am Eingang. Die blauen Pfeile geben an, wie sich das Potential am Schaltungsknoten ggü. eines ausgeglichenen Eingangs $U_{\textnormal{Diff}}$~=~0 verschiebt.
             \label{fig:Funktionsweise OPV 1}}
@@ -213,7 +218,11 @@
 
     \begin{figure}[ht]
             \centering
-            \fu{\resizebox{0.6\textwidth}{!}{\input{Tikz/src/Funktionsweise_OPV_2.tex}}}
+            \fu{\resizebox{0.6\textwidth}{!}{\input{Tikz/src/Funktionsweise_OPV_2.tex}
+            \alttext{Die Abbildung zeigt den inneren Aufbau eines Operationsverstärkers in diskreter Transistorschaltung.
+            Links befinden sich die beiden Eingänge „−“ und „+“. Zwischen ihnen ist die Differenzspannung \(U_{\mathrm{Diff}}\) eingezeichnet. Der Transistor \(T_1\) bildet zusammen mit weiteren Bauteilen die Eingangsstufe. Sein Kollektor ist über einen Widerstand mit der positiven Betriebsspannung \(+U_B\) verbunden.
+            Im unteren Bereich ist der Transistor \(T_3\) angeordnet. Er ist mit der negativen Betriebsspannung \(-U_B\) verbunden und arbeitet zusammen mit zwei Dioden \(D_1\) und \(D_2\) sowie Widerständen zur Einstellung des Arbeitspunktes. Diese Bauteile sorgen für eine stabile Strom- und Spannungsversorgung der Eingangsstufe.
+            Rechts befindet sich die Verstärker- und Ausgangsstufe mit den Transistoren \(T_2\) und \(T_4\). Der Transistor \(T_2\) stuert den Lastwiderstand \(R_\mathrm{L}\). Am rechten Rand ist die Ausgangsspannung \(U_\mathrm{A}\) eingezeichnet.}}}
             {Verhalten eines vereinfachten Operationsverstärkers bei Anlegen einer negativen Differenzspannung am Eingang. Die blauen Pfeile geben an, wie sich das Potential am Schaltungsknoten ggü. eines ausgeglichenen Eingangs $U_{\textnormal{Diff}}$~=~0 verschiebt.
             \label{fig:Funktionsweise OPV 2}}
     \end{figure}   

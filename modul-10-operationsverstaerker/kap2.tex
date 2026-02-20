@@ -34,7 +34,10 @@
         \begin{figure}[ht]
             \centering
             \fu{
-                \resizebox{0.9\textwidth}{!}{\input{Tikz/src/AltesVsNeuesSchaltzeichen.tex}}
+                \resizebox{0.9\textwidth}{!}{\input{Tikz/src/AltesVsNeuesSchaltzeichen.tex}
+                \alttext{Die Abbildung zeigt zwei Darstellungen eines Operationsverstärkers: links das alte Schaltzeichen und rechts das neue Schaltzeichen.
+                Im linken Teil ist ein Operationsverstärker mit dem klassischen Dreieckssymbol dargestellt. Am oberen Anschluss liegt die positive Versorgungsspannung \(+U_B\), am unteren Anschluss die negative Versorgungsspannung \(- U_B\). Der Ausgang befindet sich rechts und ist mit der Ausgangsspannung \(U_A\) beschriftet, die gegen Masse gemessen wird. Auf der linken Seite sind der nichtinvertierende Eingang (+) und der invertierende Eingang (-) eingezeichnet. Zwischen diesen beiden Eingängen ist die Differenzspannung \(U_{\mathrm{Diff}}\) dargestellt.
+                Im unteren Teil ist derselbe Operationsverstärker mit dem neueren, genormten Schaltzeichen dargestellt. Auch hier sind oben und unten die Versorgungsspannungen \(+U_B\) und \(-U_B\) angeschlossen. Der Ausgang auf der rechten Seite führt zur Ausgangsspannung \(U_\mathrm{A}\), die gegen Masse gemessen wird. Links befinden sich erneut der nichtinvertierende und der invertierende Eingang, zwischen denen die Differenzspannung \(U_{\mathrm{Diff}}\) eingezeichnet ist.}}
             }{Schaltungselement OPV im alt (links) und neu nach DIN EN 60617 Teil 13 (rechts)
                 \label{fig:opv englisch}}
         \end{figure}
@@ -162,7 +165,10 @@
         Diese ist in der folgenden Abbildung dargestellt:
         
         \begin{center}
-            \f{width=0.5\textwidth}{width=0.8\textwidth}{kap2/Output_Voltage_Swing.pdf}{Kennlinie eines Operationsverstärkers {
+            \f{width=0.5\textwidth, alt={Die Abbildung zeigt die Kennlinie eines Operationsverstärkers.
+            Auf der horizontalen Achse ist die Differenzspannung \(U_{{mathrm{Diff}}}\) aufgetragen, auf der vertikalen Achse die Ausgangsspannung \(U_\mathrm{A}\).Im oberen Bereich ist die positive Sättigung bei \(+U_B\) eingezeichnet, im unteren Bereich die negative Sättigung bei \(-U_B\).
+            Die Kennlinie verläuft S-förmig. Im mittleren Bereich zeigt sie einen annähernd linearen Verlauf. Dieser Abschnitt ist als linearer Bereich gekennzeichnet. Hier führt eine kleine Änderung der Differenzspannung \( \Delta U_{\mathrm{Diff}}\) zu einer proportionalen Änderung der Ausgangsspannung \( \Delta U_\mathrm{A}\).
+            Außerhalb dieses Bereichs geht die Kennlinie in die Sättigung über. In diesen nichtlinearen Bereichen nähert sich die Ausgangsspannung den Versorgungsspannungen \(+U_B\) beziehungsweise \(-U_B\) an. Für große positive oder negative Differenzspannungen bleibt die Ausgangsspannung nahezu konstant auf dem jeweiligen Sättigungswert.}}{width=0.8\textwidth}{kap2/Output_Voltage_Swing.pdf}{Kennlinie eines Operationsverstärkers {
             \label{fig:Kennlinie OPV}}}
         \end{center}
         

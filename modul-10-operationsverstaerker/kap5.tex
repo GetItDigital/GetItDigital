@@ -35,7 +35,11 @@
             Durch eine Kombination von einer Integratorschaltung und einem Summierer ist also das gewünschte Verhalten zu erreichen. Ist es mit dieser Schaltung möglich x=0 zu wählen?
     
             \fu{
-                \resizebox{0.6\textwidth}{!}{\input{Tikz/src/Analogrechner.tex}}
+                \resizebox{0.6\textwidth}{!}{\input{Tikz/src/Analogrechner.tex}
+                \alttext{Die Abbildung zeigt eine zweistufige Operationsverstärker-Schaltung, die in zwei farblich markierte Bereiche unterteilt ist.
+                Im linken, gelb markierten Bereich befindet sich die erste Verstärkerstufe. Der nichtinvertierende Eingang des Operationsverstärkers ist mit Masse verbunden. Das Eingangssignal \(U_{\mathrm{E1}}\) über den Widerstand \(R_1\) dem invertierenden Eingang zugeführt. Vom Ausgang führt eine Rückkopplung sowohl über einen Widerstand \(R_2\) als auch über einen Kondensator \(C\) zurück zum invertierenden Eingang. Dadurch entsteht eine frequenzabhängige Rückkopplung, sodass diese Stufe als aktives Filter arbeitet.
+                Im rechten, violett markierten Bereich befindet sich die zweite Verstärkerstufe. Das Signal der ersten Stufe wird über den Widerstand \(R_3\) an den invertierenden Eingang des zweiten Operationsverstärkers geführt. Der nichtinvertierende Eingang liegt ebenfalls auf Masse. Zusätzlich wird ein zweites Eingangssignal \(U_{\mathrm{E2}\)} über den Widerstand \(R_4\) eingespeist. Über den Widerstand \(R_5\) erfolgt die Rückkopplung vom Ausgang zum invertierenden Eingang.
+                Am Ausgang der zweiten Stufe ist die Ausgangsspannung \(U_\mathrm{A}\) eingezeichnet.}}
             }{Schaltung zur Lösung der Analogrechneraufgabe
                 \label{fig:Analogrechner}}
     
