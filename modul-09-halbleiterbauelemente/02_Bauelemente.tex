@@ -102,7 +102,7 @@
             - Sie sperrt den Stromfluss für negative Spannungen (außer im Durchbruchfall).
             - Sie leitet erst bei einer bestimmten positiven Spannung \( U_S \), wobei der Strom dann stark anwächst.
             - Die Kenntnis dieser Kennlinie ist essenziell für das Verständnis und die Anwendung von Dioden in Gleichrichterschaltungen, Spannungsstabilisierungen und Schutzschaltungen.}
-        \caption{\textbf{Diodenkennlinie.} Relevante Bereiche v.l.n.r.: Durchbruchbereich, Sperrbereich und Durchlassbereich.}
+        \caption{\textbf{Diodenkennlinie.} Relevante Bereiche v.l.n.r.: Durchbruchbereich, Sperrbereich und Durchlassbereich.{\tiny(Angelehnt an Diode-IV-Curve.svg von H1voltage, CC BY-SA 3.0, \url{https://commons.wikimedia.org/wiki/File:Diode-IV-Curve.svg})}}
         \label{fig:Diodenkennlinie}
     \end{figure}
 }
@@ -110,9 +110,8 @@
 
 \s{
     Das Ersatzschaltbild einer Siliziumdiode hilft, das Verhalten der Diode in verschiedenen Betriebszuständen besser
-    zu verstehen. Es vereinfacht die reale Diode, indem es ihre wesentlichen Eigenschaften modelliert.\par
+    zu verstehen. Es vereinfacht die reale Diode, indem es ihre wesentlichen Eigenschaften modelliert.\\
     Komponenten des Ersatzschaltbilds:
-
     \begin{itemize}
         \item \textbf{Ideale Diode (D):}
               Leitet in Vorwärtsrichtung ohne Spannungsverlust und sperrt in
@@ -1600,9 +1599,10 @@
             - Sättigungsbereich: Verwendung als Verstärker oder Stromquelle.
 
             Diese Abbildung zeigt die charakteristischen Betriebsmodi eines n-Kanal MOSFETs und veranschaulicht, wie der Drainstrom von der Gate- und Drain-Spannung abhängt.}
-        \caption{\textbf{Ausgangskennlinienfeld n-Kanal MOSFET.} Ausgangskennlinienfeld eines n-Kanal MOSFETs (selbstsperrend) mit dem linearen Bereich und Sättigungsbereich. Drainstrom als Folge der Drain-Source-Spannung bei verschiedenen Gate-Source-Spannungen.}
+        \caption{\textbf{Ausgangskennlinienfeld n-Kanal MOSFET (selbstsperrend).} Drainstrom als Folge der Drain-Source-Spannung bei verschiedenen Gate-Source-Spannungen. {\tiny(Angelehnt an MOSFET-Kennlinie.svg von Biezl, CC BY-SA 2.5, \url{https://commons.wikimedia.org/wiki/File:MOSFET-Kennlinie.svg})}}
         \label{fig:AusgangskennlinienfeldN-KanalMOSFET}
     \end{figure}
+
 
     Die Sättigung wird dadurch hervorgerufen, dass bei hoher Spannung die freien Ladungsträger aus dem
     Kanal verdrängt werden und der Kanal abgeschnürt wird. Die Ladungsträger können diesen Bereich
@@ -1646,7 +1646,7 @@
 \s{
     \begin{Merksatz}{}
         \begin{itemize}
-            \item MOSFETs besitzen drei Anschlüsse: Gate(G), Source(S) und Drain (D).
+            \item MOSFETs besitzen drei Anschlüsse: Gate(G), Source(S) und Drain(D).
             \item Das elektrische Verhalten wird leistungslos gesteuert.
             \item Durch $U_\mathrm{GS}$ erfolgt eine Inversion der Ladungsträger unterhalb des Gates.
          \end{itemize}
