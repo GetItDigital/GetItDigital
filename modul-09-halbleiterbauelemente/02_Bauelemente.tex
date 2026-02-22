@@ -66,7 +66,7 @@
     \begin{itemize}
         \item \textbf{Durchlassbereich:} Vom Betrieb im Durchlassbereich wird gesprochen, wenn eine positive Spannung in Richtung der Diode angelegt wird,
               also wenn das elektrische Potential an der Anode größer ist als das an der Kathode (Bereich rechts von der y-Achse,
-              siehe Abbildung \ref{fig:Diodenkennlinie}). Bei einer Spannung oberhalb der Schleusenspannung ($U_\mathrm{S}$) steigt der Diodenstrom
+              siehe Abbildung \ref{fig:Diodenkennlinie}). Bei einer Spannung oberhalb der Schleusenspannung ($U_\mathrm{S}$) \index{Schleusenspannung} steigt der Diodenstrom
               näherungsweise exponentiell an. Die Schleusenspannung ist eine materialspezifische Spannung, die mindestens
               benötigt wird, um die Raumladungszone so stark zu verringern, dass ein Stromfluss ermöglicht wird. Bei
               Siliziumdioden liegt diese typischerweise bei ${0,6}$ bis ${0,7}\,\mathrm{V}$.
@@ -835,7 +835,7 @@
     Unterhalb des aktiven Bereichs, bei geringen Werten von $U_\mathrm{CE}$, sind beide Dioden in Durchlassrichtung
     geschaltet und der Transistor geht in Sättigung mit einem sinkenden Kollektorstrom. Werden die
     Kennlinien bis in den negativen Bereich links von der y-Achse verlängert, schneiden sich diese an einem
-    Punkt auf der x-Achse. Die zugrunde liegende Abhängigkeit wird als Early-Effekt bezeichnet und die
+    Punkt auf der x-Achse. Die zugrunde liegende Abhängigkeit wird als Early-Effekt \index{Early-Effekt} bezeichnet und die
     Spannung entsprechend Early-Spannung ($U_\mathrm{Early}$).
 
     \begin{figure}[H]
@@ -1368,8 +1368,8 @@
 
 
 \s{
-    \textbf{Darlington Transistor} \\
     \label{sec:DarlingtonTransistor}
+    \textbf{Darlington Transistor} \\
     Ist  die  notwendige  Stromverstärkung  eines  einzelnen  Transistors  zu  gering,  besteht  die  Möglichkeit,
     einen  Darlington-Transistor  bzw.  eine  Darlington-Schaltung  einzusetzen.  Diese  basiert  auf  zwei
     Transistoren,  wobei  der  Emitter  des  ersten  Transistors  die  Basis  des  zweiten  Transistors  speist.
@@ -1815,7 +1815,7 @@
     Im vorherigen Abschnitt wurde bereits schematisch der Querschnitt eines n-Kanal MOSFETs gezeigt.
     Für viele Anwendungen und Logikschaltungen sind zusätzlich auch p-Kanal MOSFETs notwendig.
     Beide komplementären Varianten lassen sich mit dem gleichen Ausgangsmaterial realisieren, es wird dann
-    von CMOS-Technik (engl.: Complementary Metal-Oxide-Semiconductor) gesprochen. Im ersten
+    von CMOS-Technik (engl.: Complementary Metal-Oxide-Semiconductor) \index{CMOS} gesprochen. Im ersten
     Schritt der Herstellung muss für den p-Kanal MOSFET (PMOS) lokal eine n-Dotierung erfolgen, der restliche Aufbau
     entspricht dem eines n-Kanal MOSFET (NMOS) mit komplementärer Dotierung. Obwohl das M in MOSFET ursprünglich
     für Metall steht, ist das Gate-Material heutzutage aus fertigungstechnischen Gründen in der Regel aus leitfähigem Polysilizium. Die Elektroden und die Verschaltung der Gebiete und des Gates erfolgen
@@ -2011,14 +2011,14 @@
 }
 
 \s{
-    \textbf{Inverter}\\
+    \textbf{Inverter} \newline
     Wie bereits im Abschnitt Aufbau beschrieben, beinhalten CMOS-Strukturen sowohl p-Kanal als auch
     n-Kanal MOS-Transistoren. Ein typisches darauf basierendes Grundelement ist ein Inverter, auch
     bekannt als NOT-Gatter. Das Eingangssignal $E$ wird auf die parallel geschalteten Gates geführt. Als
     Ausgangssignal dient das Potential zwischen den in Reihe geschalteten Drain-Source-Strecken. Die
-    Schaltung ergibt sich gemäß Abbildung~\ref{fig:MOSFETAlsInverter} links. Es ergeben sich die beiden folgenden Zustände:
-    \textbf{1. Eingangssignal ${0}\,\mathrm{V}$ (low):}
+    Schaltung ergibt sich gemäß Abbildung~\ref{fig:MOSFETAlsInverter} links. Es ergeben sich die beiden folgenden Zustände:\par
 
+    \textbf{1. Eingangssignal ${0}\,\mathrm{V}$ (low):}
     \begin{itemize}
         \item $Transistor_\mathrm{2}$ ($T_\mathrm{2}$) ist leitend, da $U_\mathrm{GS2}$ negativ ist.
         \item $Transistor_\mathrm{1}$ ($T_\mathrm{1}$) ist sperrend, da $U_\mathrm{GS1}$ null ist.

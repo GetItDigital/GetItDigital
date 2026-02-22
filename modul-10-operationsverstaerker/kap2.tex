@@ -2,7 +2,7 @@
     \begin{frame}
         \fta{Modellierung und charakteristische Größen}
         Der vereinfachte Schaltplan des vorherigen Kapitels eignet sich zwar gut um die interne Funktionsweise zu illustrieren, ist für die Darstellung in größeren Schaltkreisen allerdings ungeeignet.
-        Um Schaltpläne übersichtlicher zu gestalten werden Operationsverstärker in der Regel durch ein Normsymbol dargestellt.
+        Um Schaltpläne übersichtlicher zu gestalten werden Operationsverstärker in der Regel durch ein Normsymbol \index{Normsymbol} dargestellt.
         Der interne Aufbau des Verstärkers wird vernachlässigt und diesem allgemeinen Verstärker charakteristische Eigenschaften zugeordnet.
         Ähnlich wie bei dem Transistorsymbol kann so der Operationsverstärker in einer Schaltung
         vereinfacht dargestellt werden kann. \par
@@ -48,7 +48,7 @@
 \begin{frame}
     \s{
         Zwei der vier Anschlüsse\footnote{Die Anschlüsse für die Versorgungspannung werden hier nicht mitgezählt. Die Ausgangsseite hingegen wird als Anschluss verstanden.} des Verstärkers, auch Pole, können unter idealisierten Bedingungen jeweils zu einem sogenannten \glqq Tor\grqq{} zusammengefasst werden.
-        Der Operationsverstärker lässt sich so durch ein sogenanntes Zweitor modellieren.
+        Der Operationsverstärker lässt sich so durch ein sogenanntes Zweitor \index{Zweitor} modellieren.
         Dieses zeichnet sich dadurch aus, dass vereinfacht davon ausgegangen werden darf, dass das Übertragungsverhalten vollständig durch die Größen Strom- und Spannung beschrieben werden kann.
         Durch die Vereinfachung über das Zweitor kann also der interne Aufbau des Operationsverstärkers vernachlässigt und als „Blackbox“ betrachtet werden.
         Die zuvor recht komplizierte, innere Verschaltung der Transistoren kann durch das in Abbildung \ref{fig:opv englisch} dargestelle Bauteil modelliert werden.
@@ -93,29 +93,29 @@
         \label{tab:Ideale und typische Operationsverstärkereigenschaften}
         \begin{tabular}{|L{3cm}|L{3cm}|L{3cm}|L{5cm}|}
             \hline
-            \textbf{Bezeichnung}                                               & \textbf{Ideale OPV-Eigenschaften}        & \textbf{Typische Werte (z.B. OPA 121)}        & \textbf{Erläuterung}                                                                                \\
+            \textbf{Bezeichnung}                                                                                           & \textbf{Ideale OPV-Eigenschaften}        & \textbf{Typische Werte (z.B. OPA 121)}        & \textbf{Erläuterung}                                                                                \\
             \hline
-            Leerlaufverstärkung                                                & $V_{\textnormal{Leer}} = \infty$         & $V_{\textnormal{Leer}} = 10^6$                & Verstärkung der zwischen dem Eingängen anliegenden Spannung bei unbeschalteten OPV.                 \\
+            Leerlaufverstärkung  \index{Leerlaufverstärkung}                                                               & $V_{\textnormal{Leer}} = \infty$         & $V_{\textnormal{Leer}} = 10^6$                & Verstärkung der zwischen dem Eingängen anliegenden Spannung bei unbeschalteten OPV.                 \\
             \hline
-            Eingangsimpedanz                                                   & $Z_{\textnormal{i}} = \infty\,\Omega$    & $Z_i$ = $10^{13}\,\Omega$                     & Der von der Quelle aus betrachtet Lastwiderstand des OPVs.                                          \\
+            Eingangsimpedanz  \index{Eingangsimpedanz}                                                                     & $Z_{\textnormal{i}} = \infty\,\Omega$    & $Z_i$ = $10^{13}\,\Omega$                     & Der von der Quelle aus betrachtet Lastwiderstand des OPVs.                                          \\
             \hline
-            Ausgangsimpedanz                                                   & $Z_{\textnormal{a}} = 0\,\Omega$         & $Z_{\textnormal{a}} = 50$ bis $100\,\Omega$   & Der von einer Last aus betrachtete Widerstand am Ausgang des OPVs.                                  \\
+            Ausgangsimpedanz     \index{Ausgangsimpedanz}                                                                  & $Z_{\textnormal{a}} = 0\,\Omega$         & $Z_{\textnormal{a}} = 50$ bis $100\,\Omega$   & Der von einer Last aus betrachtete Widerstand am Ausgang des OPVs.                                  \\
             \hline
-            Bandbreite                                                         & $B = \infty\,\mathrm{MHz}$               & $B > 2\,\mathrm{MHz}$                         & Frequenzbereich in dem das Verstärkerverhalten den im Datenblatt angegebenen Verhalten entspricht.  \\
+            Bandbreite        \index{Bandbreite}                                                                           & $B = \infty\,\mathrm{MHz}$               & $B > 2\,\mathrm{MHz}$                         & Frequenzbereich in dem das Verstärkerverhalten den im Datenblatt angegebenen Verhalten entspricht.  \\
             \hline
-            Phasenverschiebung                                                 & $\varphi=0^{\circ}$                      & $\varphi >0^{\circ}$                          & Verzögerung des Ausgangs- gegenüber des Eingangssignals.                                            \\
+            Phasenverschiebung      \index{Phasenverschiebung}                                                             & $\varphi=0^{\circ}$                      & $\varphi >0^{\circ}$                          & Verzögerung des Ausgangs- gegenüber des Eingangssignals.                                            \\
             \hline
-            Slew Rate                                                          & $\infty$                                 & $2\,\mathrm{mV}$ bis $1000\,\mathrm{V}/\mu s$ & Maximaler Spannungsanstieg pro Zeiteinheit.                                                         \\
+            Slew Rate  \index{Slew-Rate}                                                                                   & $\infty$                                 & $2\,\mathrm{mV}$ bis $1000\,\mathrm{V}/\mu s$ & Maximaler Spannungsanstieg pro Zeiteinheit.                                                         \\
             \hline
-            Ausgangs-Aussteuerbarkeit                                          & $\infty$                                 & auf max. $U_{\textnormal{B}}$ begrenzt        & Maximaler Ausgangsspannungswert.                                                                    \\
+            Ausgangs-Aussteuerbarkeit    \index{Ausgangs-Aussteuerbarkeit}                                                 & $\infty$                                 & auf max. $U_{\textnormal{B}}$ begrenzt        & Maximaler Ausgangsspannungswert.                                                                    \\
             \hline
-            Eingangsruhestrom                                                  & $I_{\textnormal{Ruhe}} = 0\,\mathrm{pA}$ & $I_{\textnormal{Ruhe}} < 5\,\mathrm{pA} $     & Eingangsseitige Stromaufnahme bei Differenzspannnung $\Delta U_{\textnormal{Diff}}$~=~0.            \\
+            Eingangsruhestrom   \index{Eingangsruhestrom}                                                                  & $I_{\textnormal{Ruhe}} = 0\,\mathrm{pA}$ & $I_{\textnormal{Ruhe}} < 5\,\mathrm{pA} $     & Eingangsseitige Stromaufnahme bei Differenzspannnung $\Delta U_{\textnormal{Diff}}$~=~0.            \\
             \hline
-            Eingangsoffsetstrom                                                & $I_{\textnormal{Off}} = 0\,\mathrm{pA}$  & $I_{\textnormal{Off}} < I_+-I_-$              & Differenz der beiden Eingangsruheströme                                                             \\
+            Eingangsoffsetstrom          \index{Eingangsoffsetstrom}                                                       & $I_{\textnormal{Off}} = 0\,\mathrm{pA}$  & $I_{\textnormal{Off}} < I_+-I_-$              & Differenz der beiden Eingangsruheströme                                                             \\
             \hline
-            Eingangs-Offsetspannung                                            & $U_{\textnormal{Off}} = 0\,\mathrm{mV}$  & $U_{\textnormal{Off}} < 2\,\mathrm{mV}$       & Ausgegebene Gleichspannung bei $\Delta U_{\textnormal{Diff}}$~=~0                                   \\
+            Eingangs-Offsetspannung      \index{Eingangs-Offsetspannung}                                                   & $U_{\textnormal{Off}} = 0\,\mathrm{mV}$  & $U_{\textnormal{Off}} < 2\,\mathrm{mV}$       & Ausgegebene Gleichspannung bei $\Delta U_{\textnormal{Diff}}$~=~0                                   \\
             \hline
-            Gleichtakt-\linebreak unterdrückung (engl.: Common Mode Rejection) & $CMR = \infty\,\mathrm{dB}$              & $CMR=86\,\mathrm{dB}$                         & Gibt an, wie gut der Verstärker Signale unterdrückt, die an beiden Eingängen gleichermaßen anliegen \\
+            Gleichtakt-\linebreak unterdrückung (engl.: Common Mode Rejection) \index{CMR} \index{Gleichtaktunterdrückung} & $CMR = \infty\,\mathrm{dB}$              & $CMR=86\,\mathrm{dB}$                         & Gibt an, wie gut der Verstärker Signale unterdrückt, die an beiden Eingängen gleichermaßen anliegen \\
             \hline
         \end{tabular}
     }
@@ -175,7 +175,7 @@
         In Abbildung \ref{fig:Kennlinie OPV} ist die horizontale Verschiebung der Verstärkerkennlinie zu sehen, die sich durch die Offsetspannung $U_{\textnormal{Off}}$ ergibt.
         Darüber hinaus ist zu erkennen, dass der Verstärker in seinem spezifizierten Arbeitsbereich (in grün eingezeichnet) ein lineares Verstärkungsverhalten ggü. der angelegten Eingangsspannung aufweist.
         Die Steigung im linearen Bereich ist von der maximalen Verstärkung des genutzten Operationsverstärkers abhängig.
-        Wird dieser spezifizierte Arbeitsbereich verlassen, weist die Ausgangspannung zunächst einen nichtlinearen Bezug zur Eingangsspannung auf (in gelb eingezeichnet). Die Ausgangsspannung steigt allerdings weiterhin, bis die Sättigung erreicht wird.
+        Wird dieser spezifizierte Arbeitsbereich verlassen, weist die Ausgangspannung zunächst einen nichtlinearen Bezug zur Eingangsspannung auf (in gelb eingezeichnet). Die Ausgangsspannung steigt allerdings weiterhin, bis die Sättigung \index{Sättigung} erreicht wird.
         Im rot markierten Bereich bleibt selbst bei weiterer Erhöhung der Eingangsdifferenzspannung die Ausgangsspannung konstant.
         Solange also die Ausgangsspannung im Arbeitsbereich des Operationsverstärkers liegt, wird eine konstant verstärkte und mit einem Offset belegte Ausgangsspannung ausgegeben.
         Die tatsächlich erreichbare Ausgangsspannung wird über die Größe \glqq Output Voltage Swing\grqq{} angegeben.
