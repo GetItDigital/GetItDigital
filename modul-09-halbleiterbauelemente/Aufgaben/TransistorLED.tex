@@ -1,49 +1,47 @@
-\subsection{Transistorschaltung mit LED\label{Aufg15}}
+\subsection{Transistorschaltung mit LED}
 % Alt: Aufgabe 15
 \Aufgabe{
+    \label{Aufg15}
     Mithilfe eines Bipolartransistor soll eine LED betrieben werden. Dabei muss durch die LED ein Strom von $I_\mathrm{D}=30\,\mathrm{mA}$ fließen, damit sie ihre optimale Leuchtkraft erreicht. \\
-    Der verwendete Transistor besitzt einen Stromverstärkungsfaktor von $\beta = 50$ und im durchgeschalteten Zustand eine Kollektor-Emitter-Spannung von $U_\mathrm{CE} = 0,3\,\mathrm{V}$. 
+    Der verwendete Transistor besitzt einen Stromverstärkungsfaktor von $\beta = 50$ und im durchgeschalteten Zustand eine Kollektor-Emitter-Spannung von $U_\mathrm{CE} = 0,3\,\mathrm{V}$.
     Zusätzlich sind die folgenden Parameter gegeben: $R_1=3,3\,\mathrm{k\Omega}$,  $R_2=270\,\mathrm{\Omega}$ und $U_\mathrm{L}=9\,\mathrm{V}$.
-    
+
     \begin{figure}[H]
         \centering
-        \input{Tikz/src/FigTransistorLED}
-        \alttext{Die Abbildung zeigt eine Transistorschaltung mit einer Leuchtdiode.
-        Links befindet sich eine Spannungsquelle, die eine Spannung \(U\) liefert. Von dieser Quelle aus fließt der Strom durch einen Vorwiderstand, der als \(R_\mathrm{V}\) gekennzeichnet ist weiter zur Basis eines Transistors. Der Basisstrom ist in rot als Pfeil in Stromrichtung mit \(I_\mathrm{B}\) gekennzeichnet.  
-        Die Spannung zwischen Basis und Ermitter wird mit \(U_{\mathrm{BE}}\) gekennzeichnet und zwischen Kollektror und Ermitter mit \(U_{\mathrm{CE}}\)
-        Auf der rechten Seite des Transistors ist ein Widerstand \(R_2\) angeschlossen, hinter dem sich eine Leuchtdiode \(D\) befindet, die in Richtung des Stromflusses betrieben wird. Der Strom ist mit \(I_\matrhm{D}\) gekennzeichnet. Die Spannung zwischen dem Eingang der Diode und dem Massepotential wird mit \(U_\mathrm{L}\) gekennzeichnet.}
+        \input{Tikz/src/FigTransistorLED}\alttext{Die Abbildung zeigt eine Transistorschaltung mit einer Leuchtdiode. Links befindet sich eine Spannungsquelle, die eine Spannung \(U\) liefert. Von dieser Quelle aus fließt der Strom durch einen Vorwiderstand, der als \(R_\mathrm{V}\) gekennzeichnet ist weiter zur Basis eines Transistors. Der Basisstrom ist in rot als Pfeil in Stromrichtung mit \(I_\mathrm{B}\) gekennzeichnet.
+            Die Spannung zwischen Basis und Ermitter wird mit \(U_{\mathrm{BE}}\) gekennzeichnet und zwischen Kollektror und Ermitter mit \(U_{\mathrm{CE}}\). Auf der rechten Seite des Transistors ist ein Widerstand \(R_2\) angeschlossen, hinter dem sich eine Leuchtdiode \(D\) befindet, die in Richtung des Stromflusses betrieben wird. Der Strom ist mit \(I_\matrhm{D}\) gekennzeichnet. Die Spannung zwischen dem Eingang der Diode und dem Massepotential wird mit \(U_\mathrm{L}\) gekennzeichnet.}
         \label{fig:FigTransistorLED}
     \end{figure}
-    
-    Welche Spannung $U$ muss an der Basis anliegen, damit der Transistor durchschaltet? 
+
+    Welche Spannung $U$ muss an der Basis anliegen, damit der Transistor durchschaltet?
 }
 
 
 \Loesung{
     Berechnung des Kollektorstroms bei bekannter Spannung und Lastwiderstand:
     \begin{align*}
-        I_\mathrm{C} & = \frac{U}{R}\\        
+        I_\mathrm{C} & = \frac{U}{R}                                                             \\
         I_\mathrm{C} & = \frac{9\,\mathrm{V} - 0,3\,\mathrm{V}}{270\,\Omega} = 32,2\,\mathrm{mA}
     \end{align*}
-    
+
     Berechnung des benötigten Basisstroms mit dem Stromverstärkungsfaktor $\beta = 50$:
     \begin{align*}
-        I_\mathrm{B} & = \frac{I_\mathrm{C}}{\beta}\\        
+        I_\mathrm{B} & = \frac{I_\mathrm{C}}{\beta}                        \\
         I_\mathrm{B} & = \frac{32,2\,\mathrm{mA}}{50} = 0,644\,\mathrm{mA}
     \end{align*}
-    
+
     Spannungsabfall am Vorwiderstand:
     \begin{align*}
         U_\mathrm{V} = 0,644\,\mathrm{mA} \cdot 3,3\,\mathrm{k\Omega} = 2,12\,\mathrm{V}
     \end{align*}
-    
+
     Gesamte Basisspannung (inkl. \( U_\mathrm{BE} \)):
     \begin{align*}
         U = U_\mathrm{V} + U_\mathrm{BE} = 2,12\,\mathrm{V} + 0,6\,\mathrm{V} = 2,72\,\mathrm{V}
     \end{align*}
-    
+
     \textbf{Antwort:}
     Die Basisspannung muss \( 2{,}72\,\mathrm{V} \) betragen, damit der Transistor durchschaltet.
-    
+
     Siehe: Abschnitt \ref{sec:Bipolartransistor} und \ref{fig:StroemeUndSpannungenBeimBipolartransistor}
 }

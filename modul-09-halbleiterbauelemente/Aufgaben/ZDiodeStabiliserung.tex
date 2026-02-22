@@ -1,143 +1,44 @@
-\subsection{Einsatz einer Zenerdiode zur Spannungsstabilisierung\label{Aufg6}}
+\subsection{Einsatz einer Zenerdiode zur Spannungsstabilisierung}
 % Alt: Aufgabe 6
 \Aufgabe{
+  \label{Aufg6}
   Mit Hilfe einer Zenerdiode soll ein Lastwiderstand \( R_\mathrm{L} = \mathrm{160\,\Omega} \) mit einer stabilisierten Spannung von \( U_\mathrm{A} = \mathrm{8\,V} \) versorgt werden. \\
   Dem Datenblatt der Zenderdiode ist zu entnehmen, dass bei einer Zenerspannung von \( \mathrm{-8\,V} \) ein Zenerstrom von \( \mathrm{-0{,}45\,A} \) fließt.
-  
-  \begin {figure} [H]
-     \centering
-     \input{Tikz/src/FigZDiodeStabilisierung}
-     \alttext{Zu sehen ist eine elektrische Schaltung mit vier Bauteilen zur Bestimmung Ermittlung der Spannungsstabilisierung einer Zenerdiode. Auf der linken Seite befindet sich die Spannungsquelle \(U_\mathrm{E}\), deren Spannungspfeil nach unten zeigt. In Reihe zur Spannungsquelle sind ein Widerstand \(R\) und eine Zenerdiode \(D_\mathrm{z}\) geschaltet.  Parallel zu der Zenerdiode befindet sich ein Lastwiderstand gekennzeichnet mit \(R_\mathrm{L}\). Ein Spannungspfeil in Stromrichtung kennzeichnet die Spannung der Parralelschaltung mit Der Beschriftung \(U_\mathrm{A}\).}
-     \label{fig:FigZDiodeStabilisierung}
-  \end {figure}
+
+  \begin{figure}[H]
+    \centering
+    \input{Tikz/src/FigZDiodeStabilisierung}\alttext{Zu sehen ist eine elektrische Schaltung mit vier Bauteilen zur Bestimmung Ermittlung der Spannungsstabilisierung einer Zenerdiode. Auf der linken Seite befindet sich die Spannungsquelle \(U_\mathrm{E}\), deren Spannungspfeil nach unten zeigt. In Reihe zur Spannungsquelle sind ein Widerstand \(R\) und eine Zenerdiode \(D_\mathrm{z}\) geschaltet.  Parallel zu der Zenerdiode befindet sich ein Lastwiderstand gekennzeichnet mit \(R_\mathrm{L}\). Ein Spannungspfeil in Stromrichtung kennzeichnet die Spannung der Parralelschaltung mit Der Beschriftung \(U_\mathrm{A}\).}
+    \label{fig:FigZDiodeStabilisierung}
+  \end{figure}
 
   \begin{itemize}
-      \item[a)] Berechnen Sie den Vorwiderstand \( R_\mathrm{V} \), sodass sich bei einer Eingangsspannung von \( U_\mathrm{E} = \mathrm{10\,V} \) eine Ausgangsspannung von \( U_\mathrm{A} = \mathrm{8\,V} \) einstellt.
-      \item[b)] Wie groß sind die Leistungen, die an \( R_\mathrm{V} \), \( R_\mathrm{L} \) und an der Diode \( D_\mathrm{Z} \) umgesetzt werden?
+    \item[a)] Berechnen Sie den Vorwiderstand \( R_\mathrm{V} \), sodass sich bei einer Eingangsspannung von \( U_\mathrm{E} = \mathrm{10\,V} \) eine Ausgangsspannung von \( U_\mathrm{A} = \mathrm{8\,V} \) einstellt.
+    \item[b)] Wie groß sind die Leistungen, die an \( R_\mathrm{V} \), \( R_\mathrm{L} \) und an der Diode \( D_\mathrm{Z} \) umgesetzt werden?
   \end{itemize}
-
-
-%   \speech{ **Aufgabe 6**  
-% Mit Hilfe einer **Zenerdiode** soll ein **Lastwiderstand \( R_L = 160Ω \)** mit einer **stabilisierten Spannung \( U_A = 8V \)** versorgt werden.  
-% Dem **Datenblatt der Z-Diode** ist zu entnehmen, dass für eine **Zenerspannung von \(-8V\)** ein **Zenerstrom von \(-0,45A\)** fließt.  
-
-% **Fragestellungen:**  
-% a) **Berechnen Sie den Vorwiderstand \( R_V \)** so, dass sich bei einer **Eingangsspannung von \( U_E = 10V \)** eine **Ausgangsspannung von \( U_A = 8V \)** einstellt.  
-% b) **Wie groß sind die Leistungen, die an \( R_V \), \( R_L \) und \( D_Z \) umgesetzt werden?**  
-
-
-
-%  **Beschreibung der Abbildung**  
-% Die gezeigte Schaltung ist eine **Spannungsstabilisierungsschaltung mit einer Zenerdiode** und besteht aus folgenden Komponenten:
-
-% 1. **Eingangsspannungsquelle \( U_E \)**  
-%    - Symbolisiert durch eine **Gleichspannungsquelle mit \( U_E = 10V \)**.  
-%    - Diese **versorgt die gesamte Schaltung** mit Energie.  
-
-% 2. **Vorwiderstand \( R_V \)**  
-%    - Platziert **in Serie mit der Zenerdiode**.  
-%    - Seine Aufgabe ist die **Begrenzung des Stroms**, um die Zenerdiode nicht zu überlasten.  
-
-% 3. **Zenerdiode \( D_Z \)**  
-%    - Schaltet sich bei **Erreichen der Zenerspannung von \(-8V\)** in den **Leitungsmodus**.  
-%    - Hält die **Spannung an \( R_L \) konstant auf \( U_A = 8V \)**.  
-
-% 4. **Lastwiderstand \( R_L \) mit \( 160Ω \)**  
-%    - Parallel zur **Zenerdiode geschaltet**.  
-%    - Die **Ausgangsspannung \( U_A = 8V \)** fällt über \( R_L \) ab.  
-%    - Es fließt ein **Laststrom**, der sich aus **\( I_L = \frac{U_A}{R_L} \)** berechnet.  
-
-
-
-%  **Funktionsweise der Schaltung**  
-% - Wenn die **Eingangsspannung \( U_E = 10V \)** beträgt, sorgt die **Zenerdiode dafür**, dass die **Spannung an \( R_L \) stabil bei 8V bleibt**.  
-% - Der **Vorwiderstand \( R_V \)** muss so gewählt werden, dass der **Gesamtstrom aufgeteilt** wird zwischen der **Zenerdiode** und dem **Lastwiderstand**.  
-% - Zur **Berechnung der Leistungen** müssen die **verlorene Leistung am Vorwiderstand**, die **Verlustleistung der Zenerdiode** und die **nutzbare Leistung am Lastwiderstand** bestimmt werden.  
-
-
-
-%  **Zusammenfassung der Aufgabe**  
-% - Die Aufgabe erfordert die **Berechnung des Vorwiderstandes \( R_V \)** zur **Spannungsstabilisierung mit einer Zenerdiode**.  
-% - Weiterhin soll bestimmt werden, wie sich die **elektrische Leistung** auf die **verschiedenen Schaltungselemente** verteilt.  
-% - Die **Zenerdiode fungiert als Spannungsregler**, indem sie bei überschüssiger Spannung einen **Teil des Stroms aufnimmt**.  
-% }
-
 }
 
 
 \Loesung{
-  \begin {figure} [H]
-  \centering
-  \input{Tikz/src/LsgZDiodeStabilisierung}
-  \label{fig:LsgZDiodeStabilisierung}
-\end {figure}
-\begin{itemize}
-\item[a)]
-\begin{gather*}
-  I_\mathrm{RL} = \frac{\mathrm{8\,V}}{\mathrm{160\,\Omega}} = \mathrm{0{,}05\,A} \\
-  I = \mathrm{0{,}05\,A} + \mathrm{0{,}45\,A} = \mathrm{0{,}5\,A} \\
-  U_\mathrm{RV} = \mathrm{10\,V} - \mathrm{8\,V} = \mathrm{2\,V} \\
-  R_\mathrm{V} = \frac{\mathrm{2\,V}}{\mathrm{0,5\,A}} = \mathrm{4\,\Omega}
-\end{gather*}
+  \begin{figure}[H]
+    \centering
+    \input{Tikz/src/LsgZDiodeStabilisierung}
+    \label{fig:LsgZDiodeStabilisierung}
+  \end{figure}
+  \begin{itemize}
+    \item[a)]
+          \begin{gather*}
+            I_\mathrm{RL} = \frac{\mathrm{8\,V}}{\mathrm{160\,\Omega}} = \mathrm{0{,}05\,A} \\
+            I = \mathrm{0{,}05\,A} + \mathrm{0{,}45\,A} = \mathrm{0{,}5\,A} \\
+            U_\mathrm{RV} = \mathrm{10\,V} - \mathrm{8\,V} = \mathrm{2\,V} \\
+            R_\mathrm{V} = \frac{\mathrm{2\,V}}{\mathrm{0,5\,A}} = \mathrm{4\,\Omega}
+          \end{gather*}
 
-\item[b)]
-\begin{gather*}
-  P_\mathrm{RV} = \mathrm{2\,V} \cdot \mathrm{0{,}5\,A} = \mathrm{1\,W} \\
-  P_\mathrm{RL} = \mathrm{8\,V} \cdot \mathrm{0{,}05\,A} = \mathrm{0{,}4\,W} \\
-  P_\mathrm{DZ} = \mathrm{8\,V} \cdot \mathrm{0{,}45\,A} = \mathrm{3{,}6\,W}
-\end{gather*}
-\end{itemize}
-Siehe: Abschnitt \ref{sec:SpezielleDioden}
-
-% \speech{
-% Lösung zu Aufgabe 6:
-
-% Die Aufgabe behandelt eine Schaltung mit einer Zenerdiode, einem Lastwiderstand von 160 Ohm und einer stabilisierten Ausgangsspannung von 8 Volt. Es soll der Vorwiderstand \( R_V \) berechnet werden, sodass sich eine stabile Spannung von 8 Volt einstellt, sowie die Leistungen, die an den Widerständen und der Diode umgesetzt werden.
-
-% ### Teil a: Berechnung des Vorwiderstands \( R_V \)
-
-% Die gegebene Eingangsspannung beträgt 10 Volt, die Zenerspannung der Diode beträgt -8 Volt, und der Strom durch die Zenerdiode ist mit -0,45 Ampere gegeben.
-
-% Zunächst wird der Strom durch den Lastwiderstand \( R_L \) berechnet:
-% \[
-% I_{R_L} = \frac{U_A}{R_L} = \frac{8V}{160\Omega} = 0,05A
-% \]
-% Der Gesamtstrom in der Schaltung setzt sich zusammen aus dem Strom durch den Lastwiderstand und dem Strom durch die Zenerdiode:
-% \[
-% I = I_{R_L} + I_D = 0,05A + 0,45A = 0,5A
-% \]
-% Die Spannung am Vorwiderstand \( R_V \) ergibt sich als Differenz zwischen Eingangsspannung und Ausgangsspannung:
-% \[
-% U_{R_V} = U_E - U_A = 10V - 8V = 2V
-% \]
-% Damit kann der Vorwiderstand berechnet werden:
-% \[
-% R_V = \frac{U_{R_V}}{I} = \frac{2V}{0,5A} = 4\Omega
-% \]
-
-% ### Teil b: Berechnung der Leistungen
-
-% Die Leistung, die am Vorwiderstand umgesetzt wird, ergibt sich aus:
-% \[
-% P_{R_V} = U_{R_V} \cdot I = 2V \cdot 0,5A = 1W
-% \]
-% Die Leistung, die am Lastwiderstand \( R_L \) umgesetzt wird:
-% \[
-% P_{R_L} = U_A \cdot I_{R_L} = 8V \cdot 0,05A = 0,4W
-% \]
-% Die Verlustleistung der Zenerdiode berechnet sich aus:
-% \[
-% P_{D_Z} = U_A \cdot I_D = 8V \cdot 0,45A = 3,6W
-% \]
-
-% ### Beschreibung der Abbildung:
-
-% Die Schaltung in der Abbildung zeigt eine Spannungsquelle mit 10 Volt, die über den Vorwiderstand \( R_V \) mit einer Zenerdiode in Parallelschaltung mit dem Lastwiderstand \( R_L \) verbunden ist. Der Strom durch den Vorwiderstand wird als Pfeil in die Zenerdiode eingezeichnet, wo sich der Strom in zwei Teilströme aufteilt: ein Teil fließt durch den Lastwiderstand, ein anderer durch die Zenerdiode. Die Spannungen sind ebenfalls eingezeichnet: Die Versorgungsspannung mit 10 Volt, die stabilisierte Spannung von 8 Volt über der Zenerdiode und dem Lastwiderstand sowie die Spannung über dem Vorwiderstand mit 2 Volt.
-
-% Die Berechnungen in der Abbildung sind klar strukturiert und zeigen Schritt für Schritt, wie die Widerstandswerte und Leistungen bestimmt werden. Die Ergebnisse bestätigen die geforderte Ausgangsspannung von 8 Volt und zeigen die Leistungsverteilung in der Schaltung.
-% }
-
+    \item[b)]
+          \begin{gather*}
+            P_\mathrm{RV} = \mathrm{2\,V} \cdot \mathrm{0{,}5\,A} = \mathrm{1\,W} \\
+            P_\mathrm{RL} = \mathrm{8\,V} \cdot \mathrm{0{,}05\,A} = \mathrm{0{,}4\,W} \\
+            P_\mathrm{DZ} = \mathrm{8\,V} \cdot \mathrm{0{,}45\,A} = \mathrm{3{,}6\,W}
+          \end{gather*}
+  \end{itemize}
+  Siehe: Abschnitt \ref{sec:SpezielleDioden}
 }
-
-
-

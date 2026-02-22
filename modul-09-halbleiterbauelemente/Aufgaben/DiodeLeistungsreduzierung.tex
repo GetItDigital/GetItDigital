@@ -1,114 +1,43 @@
-\subsection{Einsatz einer Diode zur Leistungsreduzierung\label{Aufg8}}
+\subsection{Einsatz einer Diode zur Leistungsreduzierung}
 % Alt: Aufgabe 8
+
 \Aufgabe{
-    In einer einfachen Schaltung wird eine Diode zur Leistungsreduktion eingesetzt. Der Widerstand $R_\mathrm{L} = 1\,\mathrm{k\Omega}$ stellt eine Heizlast dar. 
+    \label{Aufg8}
+    In einer einfachen Schaltung wird eine Diode zur Leistungsreduktion eingesetzt. Der Widerstand $R_\mathrm{L} = 1\,\mathrm{k\Omega}$ stellt eine Heizlast dar.
     Die Netzspannung beträgt $230\,\mathrm{V}$ Effektivwert bei einer Frequenz von $50\,\mathrm{Hz}$.
-    
+
     \begin{figure}[H]
         \centering
-        \input{Tikz/src/FigDiodeLeistungsreduzierung}
-        \alttext{Damit die Leistungsreduzierung veranschaulicht werden kann wurde eine elektrische Schaltung mit drei Bauteilen erstellt. Auf der linken Seite befindet sich deine  Wechselspannungsquelle \(u_\mathrm{E}\), deren Spannungspfeil nach unten zeigt. In Reihe zur Spannungsquelle sind ein Widerstand \(R_\mathrm{L}\) und eine Diode \(D\) geschaltet. Neben der Diode befindet sich zusätzlich ein Spannungspfeil in Stromrichtung mit der Beschriftung \(U_\mathrm{D}\).}
+        \input{Tikz/src/FigDiodeLeistungsreduzierung}\alttext{Damit die Leistungsreduzierung veranschaulicht werden kann wurde eine elektrische Schaltung mit drei Bauteilen erstellt. Auf der linken Seite befindet sich deine  Wechselspannungsquelle \(u_\mathrm{E}\), deren Spannungspfeil nach unten zeigt. In Reihe zur Spannungsquelle sind ein Widerstand \(R_\mathrm{L}\) und eine Diode \(D\) geschaltet. Neben der Diode befindet sich zusätzlich ein Spannungspfeil in Stromrichtung mit der Beschriftung \(U_\mathrm{D}\).}
         \label{fig:FigDiodeLeistungsreduzierung}
     \end{figure}
-    
+
     \begin{itemize}
         \item[a)] Welche mittlere Leistung wird in $R_\mathrm{L}$ und in der Diode umgesetzt, wenn die Diode als idealer Gleichtrichter wirkt (d.h. nur eine Halbwelle durchlässt)?
         \item[b)] Wie groß wäre die mittlere Leistung bei überbrückter Diode (volle Netzspannung an $R_\mathrm{L}$)?
     \end{itemize}
-    
-    %   \speech{ **Aufgabe 8**  
-    % In einer **einfachen Schaltung** wird eine **Diode zur Leistungsreduktion** eingesetzt.  
-    % - Der **Lastwiderstand \( R_L \)** ist ein **Heizwiderstand** mit einem **Widerstand von 1kΩ**.  
-    % - Die **Eingangsspannung** hat einen **Effektivwert von 230V bei 50Hz**.  
-    
-    % **Fragestellungen:**  
-    % a) **Welche mittlere Leistung würde in \( R_L \) und in der Diode umgesetzt**, wenn die **Diode ideal als Ventil** funktionieren würde?  
-    % b) **Wie groß wäre die mittlere Leistung bei überbrückter Diode?**  
-    
-    
-    
-    %  **Beschreibung der Abbildung**  
-    % Die gezeigte Schaltung stellt eine **einphasige Halbwellenschaltung mit einer Diode** dar. Die Hauptkomponenten sind:
-    
-    % 1. **Wechselspannungsquelle \( u_e \)**  
-    %    - Symbolisiert durch einen **Sinusgenerator**.  
-    %    - Spannung: **230V Effektivwert bei 50Hz**.  
-    
-    % 2. **Diode \( D \) (Leistungsreduktionselement)**  
-    %    - In **Reihe mit dem Lastwiderstand** geschaltet.  
-    %    - Funktioniert als **Ventil**, indem sie **eine Halbwelle der Wechselspannung sperrt**.  
-    
-    % 3. **Lastwiderstand \( R_L = 1kΩ \)**  
-    %    - Platziert **nach der Diode**.  
-    %    - Ersetzt eine **reale Last, z.B. einen Heizwiderstand**.  
-    %    - Umwandlung der elektrischen Leistung in **Wärme**.  
-    
-    
-    
-    %  **Funktionsweise der Schaltung**  
-    % - Die **Diode sperrt die negative Halbwelle**, sodass nur **eine Halbwelle der Wechselspannung** am **Widerstand \( R_L \)** anliegt.  
-    % - Dies führt zu einer **Reduktion der mittleren Leistung im Widerstand**.  
-    % - Bei **überbrückter Diode** würde der **volle sinusförmige Wechselstrom** durch den Widerstand fließen, was zu **einer anderen mittleren Leistung führt**.  
-    
-    
-    
-    %  **Zusammenfassung der Aufgabe**  
-    % - Die Aufgabe erfordert die **Berechnung der mittleren Leistung** in \( R_L \) und der **Diode**, wenn sie **ideal als Ventil** funktioniert.  
-    % - Zudem muss untersucht werden, wie sich die Leistung **bei überbrückter Diode** verhält.  
-    % - Es wird erwartet, dass sich die **mittlere Leistung um den Faktor 2 unterscheidet**, je nachdem ob die **Diode aktiv ist oder nicht**.  
-    % }
-    
 }
 
 
 \Loesung{
     \begin{itemize}
         \item[a)]
-        Bei einem idealen Ventil: Nach dem Erreichen der Flussspannung verhält sich die Diode wie ein perfekter Leiter ohne Widerstand. \\
-        Da nur eine Halbwelle der Wechselspannung durchgelassen wird, halbiert sich die Leistung im Lastwiderstand. Die Diode selbst setzt keine Leistung um:
-        \begin{align*}
-            P_\mathrm{D} &= 0\,\mathrm{W}
-        \end{align*}
-        Die mittlere Leistung im Lastwiderstand beträgt:
-        \begin{align*}
-            P_\mathrm{RL} &= \frac{1}{2} \cdot \frac{(U_\mathrm{eff})^2}{R_\mathrm{L}} = \frac{1}{2} \cdot \frac{(230\,\mathrm{V})^2}{1\,\mathrm{k\Omega}} = 26,45\,\mathrm{W}
-        \end{align*}
-    
+              Bei einem idealen Ventil: Nach dem Erreichen der Flussspannung verhält sich die Diode wie ein perfekter Leiter ohne Widerstand. \\
+              Da nur eine Halbwelle der Wechselspannung durchgelassen wird, halbiert sich die Leistung im Lastwiderstand. Die Diode selbst setzt keine Leistung um:
+              \begin{align*}
+                  P_\mathrm{D} & = 0\,\mathrm{W}
+              \end{align*}
+              Die mittlere Leistung im Lastwiderstand beträgt:
+              \begin{align*}
+                  P_\mathrm{RL} & = \frac{1}{2} \cdot \frac{(U_\mathrm{eff})^2}{R_\mathrm{L}} = \frac{1}{2} \cdot \frac{(230\,\mathrm{V})^2}{1\,\mathrm{k\Omega}} = 26,45\,\mathrm{W}
+              \end{align*}
+
         \item[b)]
-        Bei überbrückter Diode liegt die volle Wechselspannung am Lastwiderstand an:
-        \begin{align*}
-            P_\mathrm{RL} &= \frac{U_\mathrm{eff}^2}{R_\mathrm{L}} = \frac{230\,\mathrm{V}^2}{1\,\mathrm{k\Omega}} = 52,9\,\mathrm{W}
-        \end{align*}
-    \end{itemize} 
-% \speech{
-% Lösung zu Aufgabe 8:
+              Bei überbrückter Diode liegt die volle Wechselspannung am Lastwiderstand an:
+              \begin{align*}
+                  P_\mathrm{RL} & = \frac{U_\mathrm{eff}^2}{R_\mathrm{L}} = \frac{230\,\mathrm{V}^2}{1\,\mathrm{k\Omega}} = 52,9\,\mathrm{W}
+              \end{align*}
+    \end{itemize}
 
-% Die gegebene Schaltung enthält eine Diode in Reihe mit einem Lastwiderstand von 1 Kiloohm. Die Eingangsspannung ist eine Wechselspannung mit einer Effektivspannung von 230 Volt und einer Frequenz von 50 Hertz.
-
-% **Teilaufgabe a:**  
-% Es wird davon ausgegangen, dass die Diode ein ideales Ventil ist. Das bedeutet, dass sie nach dem Erreichen der Flussspannung wie ein perfekter Leiter ohne Widerstand funktioniert. In diesem Fall beträgt die Verlustleistung der Diode \( P_D = 0 \) Watt.
-
-% Die Leistung am Lastwiderstand kann mit der Formel berechnet werden:
-
-% \[
-% P_{RL} = \frac{U^2}{R} = \frac{U_{eff}^2}{R_L}
-% \]
-
-% Durch Einsetzen der gegebenen Werte:
-
-% \[
-% P_{RL} = \frac{(230V)^2}{1k\Omega} = 52,9 W
-% \]
-
-% Das bedeutet, dass die gesamte Leistung am Lastwiderstand umgesetzt wird.
-
-% **Teilaufgabe b:**  
-% Wird die Diode überbrückt, dann liegt die gesamte Wechselspannung ungehindert am Lastwiderstand an. Da sich die Schaltung in diesem Fall wie ein reiner Widerstand verhält, bleibt die berechnete Leistung im Lastwiderstand gleich groß.
-
-% Das bedeutet, dass die mittlere Leistung in beiden Fällen \( 52,9 \) Watt beträgt, unabhängig davon, ob die Diode vorhanden ist oder überbrückt wurde.
-% }
-Siehe: Abschnitt \ref{sec:Einweggleichrichter}
+    Siehe: Abschnitt \ref{sec:Einweggleichrichter}
 }
-
-
-

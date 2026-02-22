@@ -1,130 +1,37 @@
-\subsection{Dimensionierung des Vorwiderstands einer Zenerdiode\label{Aufg5}}
+\subsection{Dimensionierung des Vorwiderstands einer Zenerdiode}
 % Alt: Aufgabe 5
 \Aufgabe{
-  Die Zenerspannung der Diode beträgt $U_\mathrm{D}=6\,\mathrm{V}$ und die Diode darf eine maximale Verlustleistung von \(P_\mathrm{tot}=\mathrm{400\,mW} \) nicht überschreiten. 
-  Die maximale Eingangsspannung beträgt \( U_0 = \mathrm{12\,V} \). \\
-  Wie groß muss der Widerstand \( R \) mindestens sein, damit die Diode nicht zerstört wird?
+    \label{Aufg5}
+    Die Zenerspannung der Diode beträgt $U_\mathrm{D}=6\,\mathrm{V}$ und die Diode darf eine maximale Verlustleistung von \(P_\mathrm{tot}=\mathrm{400\,mW} \) nicht überschreiten.
+    Die maximale Eingangsspannung beträgt \( U_0 = \mathrm{12\,V} \). \\
+    Wie groß muss der Widerstand \( R \) mindestens sein, damit die Diode nicht zerstört wird?
 
-\begin {figure} [H]
-   \centering
-   \input{Tikz/src/FigZDiodeVorwiderstand.tex}
-   \alttext{Zu sehen ist eine elektrische Schaltung mit drei Bauteilen zur Bestimmung des Vorwiderstands einer Zenerdiode. Auf der linken Seite befindet sich die Spannungsquelle gekennzeichnet mit \(U_0\), deren Spannungspfeil nach unten zeigt. In Reihe zur Spannungsquelle sind ein Widerstand \(R\) und eine Zenerdiode \(D_\mathrm{z}\) geschaltet. Die Zenerdiode wird dabei entgegen der Stromrichtung geschaltet. Neben der Diode befindet sich zusätzlich ein Spannungspfeil in Stromrichtung mit der Beschriftung \(U_\mathrm{D}\).}
-   \label{fig:ZDiodeVorwiderstand}
-\end {figure}
-
-% \speech{ **Aufgabe 5**  
-% Eine **Zenerdiode** mit einer **Zenerspannung von 6V** wird in einer Schaltung verwendet, um **Überspannung zu begrenzen**.  
-% Die **maximale Verlustleistung** der Diode beträgt **400 mW**, und die **maximale Eingangsspannung \( U_0 \)** ist **12V**.  
-
-% **Fragestellung:**  
-% - Wie groß muss der **Widerstand \( R \)** mindestens sein, damit die **Diode niemals zerstört** wird?  
-
-%  **Beschreibung der Abbildung**  
-% Die Schaltung besteht aus den folgenden Komponenten:
-
-% 1. **Gleichspannungsquelle \( U_0 \)**  
-%    - Symbolisiert durch einen Kreis mit einem Pfeil.  
-%    - Die **maximale Spannung beträgt 12V**.  
-
-% 2. **Serienwiderstand \( R \)**  
-%    - Platziert im oberen Zweig der Schaltung.  
-%    - Begrenzung des **Stroms durch die Zenerdiode**.  
-
-% 3. **Zenerdiode**  
-%    - In **Sperrrichtung** geschaltet.  
-%    - Sobald die **Spannung \( U_0 > 6V \)** erreicht, beginnt die Diode zu **leiten** und hält die Spannung auf **6V konstant**.  
-
-%  **Funktionsweise der Schaltung**  
-% - Wenn **\( U_0 < 6V \)**, ist die **Diode nicht leitend**, und es fließt kein Strom durch sie.  
-% - Wenn **\( U_0 > 6V \)**, hält die **Zenerdiode die Spannung bei 6V**, indem sie den überschüssigen Strom ableitet.  
-% - Der Widerstand \( R \) muss so **gewählt werden**, dass der **Strom durch die Diode die maximale Verlustleistung von 400 mW nicht überschreitet**.  
-
-
-%  **Zusammenfassung der Aufgabe**  
-% - Die Aufgabe erfordert die **Berechnung des minimalen Widerstandswerts \( R \)**, um die **maximale Verlustleistung der Zenerdiode nicht zu überschreiten**.  
-% - Die Schaltung dient als **Spannungsregler**, der eine **konstante Spannung von 6V gewährleistet**, wenn die Eingangsspannung zu hoch ist.  
-% - Die Berechnung erfolgt mit **Leistungsgesetzen und dem Ohm’schen Gesetz**, um den maximal zulässigen Strom durch die Diode zu bestimmen.  
-% }
-
+    \begin{figure}[H]
+        \centering
+        \input{Tikz/src/FigZDiodeVorwiderstand.tex}\alttext{Zu sehen ist eine elektrische Schaltung mit drei Bauteilen zur Bestimmung des Vorwiderstands einer Zenerdiode. Auf der linken Seite befindet sich die Spannungsquelle gekennzeichnet mit \(U_0\), deren Spannungspfeil nach unten zeigt. In Reihe zur Spannungsquelle sind ein Widerstand \(R\) und eine Zenerdiode \(D_\mathrm{z}\) geschaltet. Die Zenerdiode wird dabei entgegen der Stromrichtung geschaltet. Neben der Diode befindet sich zusätzlich ein Spannungspfeil in Stromrichtung mit der Beschriftung \(U_\mathrm{D}\).}
+        \label{fig:ZDiodeVorwiderstand}
+    \end{figure}
 }
 
 
 \Loesung{
     Die Spannung am Widerstand ergibt sich zu:
     \begin{align*}
-        U_\mathrm{R} &= U_0 - U_\mathrm{D} = \mathrm{12\,V} - \mathrm{6\,V} = \mathrm{6\,V}
+        U_\mathrm{R} & = U_0 - U_\mathrm{D} = \mathrm{12\,V} - \mathrm{6\,V} = \mathrm{6\,V}
     \end{align*}
     Die maximale Verlustleistung der Diode ist:
     \begin{align*}
-        P_\mathrm{tot} &= U_\mathrm{D} \cdot I = \mathrm{400\,mW}
+        P_\mathrm{tot} & = U_\mathrm{D} \cdot I = \mathrm{400\,mW}
     \end{align*}
     Daraus folgt der maximale Strom durch die Diode:
     \begin{align*}
-        I &= \frac{\mathrm{400\,mW}}{\mathrm{6\,V}} = \mathrm{66{,}7\,mA}
+        I & = \frac{\mathrm{400\,mW}}{\mathrm{6\,V}} = \mathrm{66{,}7\,mA}
     \end{align*}
     Um diesen Strom nicht zu überschreiten, ergibt sich der Mindestwert für den Widerstand:
     \begin{align*}
-        R &= \frac{U_\mathrm{R}}{I} = \frac{\mathrm{6\,V}}{\mathrm{66{,}7\,mA}} \approx \mathrm{90\,\Omega}
+        R & = \frac{U_\mathrm{R}}{I} = \frac{\mathrm{6\,V}}{\mathrm{66{,}7\,mA}} \approx \mathrm{90\,\Omega}
     \end{align*}
-  Siehe: Abschnitt \ref{sec:SpezielleDioden}
+    Siehe: Abschnitt \ref{sec:SpezielleDioden}
 
-%   \speech{
-% **Lösung zu Aufgabe 5**  
-
-% Die gegebene Schaltung besteht aus einer Spannungsquelle mit **12 Volt**, einem Widerstand **R**, und einer **Zenerdiode**.  
-% Die **Zenerdiode** begrenzt die Spannung an ihren Anschlüssen auf **6 Volt**.  
-% Das bedeutet, dass die restlichen **6 Volt** über den Widerstand **R** abfallen müssen.  
-
-% ### Berechnungen  
-
-% **Berechnung des Spannungsabfalls über den Widerstand**  
-% Da die **Gesamtspannung** der Quelle **12 Volt** beträgt und die Zenerdiode **6 Volt** benötigt, ergibt sich die Spannung über **R** als:  
-
-% \[
-% U_R = 12V - 6V = 6V
-% \]  
-
-% **Berechnung der Leistung**  
-% Die gegebene **maximale Verlustleistung** der Zenerdiode beträgt **0,4 Milliwatt**.  
-% Die elektrische Leistung wird nach der Formel berechnet:  
-
-% \[
-% P = U \cdot I
-% \]  
-
-% Einsetzen der bekannten Werte:  
-
-% \[
-% 0,4 mW = 6V \cdot I
-% \]  
-
-% Nach **Umstellen nach I** ergibt sich:  
-
-% \[
-% I = \frac{0,4 mW}{6V} = 66,7mA
-% \]  
-
-% **Berechnung des Widerstands \( R \)**  
-% Nach dem **Ohmschen Gesetz** gilt:  
-
-% \[
-% U = R \cdot I
-% \]  
-
-% Umstellen nach **R**:  
-
-% \[
-% R = \frac{U}{I} = \frac{6V}{66,7mA} = 90 \Omega
-% \]  
-
-% ### Interpretation  
-
-% Damit die **Zenerdiode** nicht beschädigt wird, muss der Widerstand **R** mindestens **90 Ohm** betragen.  
-% Dieser Widerstand begrenzt den Strom auf **66,7 Milliamper**, sodass die **maximale Verlustleistung der Diode** nicht überschritten wird.  
-
-% }
 
 }
-
-
-

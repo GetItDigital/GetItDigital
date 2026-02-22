@@ -1,63 +1,22 @@
-\subsection{Berechnung des Spannungsabfalls einer Diode\label{Aufg3}}
+\subsection{Berechnung des Spannungsabfalls einer Diode}
 % Alt: Aufgabe 3
+
 \Aufgabe{
-  Gegeben ist eine Reihenschaltung aus einer Gleichspannungsquelle, einem Widerstand und einer Siliziumdiode mit einer Schleusenspannung von $U_\mathrm{S}=0,7\,\mathrm{V}$. 
+  \label{Aufg3}
+  Gegeben ist eine Reihenschaltung aus einer Gleichspannungsquelle, einem Widerstand und einer Siliziumdiode mit einer Schleusenspannung von $U_\mathrm{S}=0,7\,\mathrm{V}$.
   Welche Spannung fällt näherungsweise über dem Widerstand $R$ ab, wenn die Versorgungsspannung $U_0=5\,\mathrm{V}$ beträgt?
-  \begin {figure} [H]
-   \centering
-   \input{Tikz/src/FigDiodeSpannungsabfall}
-   \alttext{Zu sehen ist eine elektrische Schaltung mit drei Bauteilen zur Bestimmung des Spannungsabfalls über einer Diode. Auf der linken Seite befindet sich die Spannungsquelle \(U_0\), deren Spannungspfeil nach unten zeigt. In Reihe zur Spannungsquelle sind ein Widerstand \(R\) und eine Diode \(D\) geschaltet. Neben der Diode befindet sich zusätzlich ein Spannungspfeil in Stromrichtung mit der Beschriftung \(U_\mathrm{D}\).}
-   \label{fig:FigDiodeSpannungsabfall}
-\end {figure}
-
-% \speech{ **Aufgabe 3**  
-% Gegeben ist eine **Reihenschaltung** aus einer **Gleichspannungsquelle**, einem **Widerstand** und einer **Siliziumdiode**.  
-% Beantworten Sie die folgende Frage:  
-% - Welche Spannung fällt **näherungsweise** über dem Widerstand \( R \) ab, wenn die **Versorgungsspannung \( U_0 = 5V \)** beträgt?  
-
-%  **Beschreibung der Abbildung**  
-% Die Schaltung besteht aus drei Hauptkomponenten:  
-
-% 1. **Gleichspannungsquelle (\( U_0 \))**  
-%    - Symbolisiert durch einen Kreis mit einem Richtungspfeil.  
-%    - Die Spannung \( U_0 \) beträgt **5V** und versorgt die Schaltung.  
-
-% 2. **Serienwiderstand (\( R \))**  
-%    - Der Widerstand ist im oberen Schaltzweig platziert.  
-%    - Seine Funktion ist die **Strombegrenzung** in der Schaltung.  
-
-% 3. **Siliziumdiode (Si)**  
-%    - In **Durchlassrichtung** geschaltet, mit der **Kathode nach Masse**.  
-%    - Sie hat eine typische **Schwellenspannung von ca. 0,7V**, die bei Leitung überschritten werden muss.  
-
-%  **Erwartetes Verhalten der Schaltung**  
-% - Die Diode **leitet**, sobald \( U_0 > 0,7V \) beträgt.  
-% - Die Spannung über dem Widerstand kann **näherungsweise berechnet werden** als:
-%   \[
-%   U_R = U_0 - U_D
-%   \]
-%   wobei \( U_D \approx 0,7V \) die **Durchlassspannung der Siliziumdiode** ist.  
-% - Für \( U_0 = 5V \) ergibt sich:
-%   \[
-%   U_R \approx 5V - 0,7V = 4,3V
-%   \]
-%   - Diese Spannung fällt über den Widerstand \( R \) ab.  
-%   - Der Strom durch die Schaltung kann mit dem **Ohm’schen Gesetz** bestimmt werden:
-%     \[
-%     I = \frac{U_R}{R}
-%     \]
-%   - Der Widerstand begrenzt den Strom durch die Diode, um eine Überlastung zu verhindern.  
-
-%  **Zusammenfassung**  
-% Die Abbildung zeigt eine **einfache Reihenschaltung** mit einer **Spannungsquelle, einem Widerstand und einer Diode**. Die Aufgabe erfordert die **Berechnung der Spannung über dem Widerstand**, wenn die **Diode in Durchlassrichtung betrieben wird**.}
-
- }
+  \begin{figure}[H]
+    \centering
+    \input{Tikz/src/FigDiodeSpannungsabfall}\alttext{Zu sehen ist eine elektrische Schaltung mit drei Bauteilen zur Bestimmung des Spannungsabfalls über einer Diode. Auf der linken Seite befindet sich die Spannungsquelle \(U_0\), deren Spannungspfeil nach unten zeigt. In Reihe zur Spannungsquelle sind ein Widerstand \(R\) und eine Diode \(D\) geschaltet. Neben der Diode befindet sich zusätzlich ein Spannungspfeil in Stromrichtung mit der Beschriftung \(U_\mathrm{D}\).}
+    \label{fig:FigDiodeSpannungsabfall}
+  \end{figure}
+}
 
 
 \Loesung{
   Da es sich um eine Siliziumdiode handelt, beträgt die Schleusenspannung und der daraus resultierende Spannungsabfall
   am Bauteil ungefähr $0,6 \text{ bis } 0,7\,\mathrm{V}$.
-  
+
   In der Reihenschaltung ergibt sich der folgende Zusammenhang:
   \begin{equation*}
     U_0 = U_\mathrm{R} + U_\mathrm{D}
@@ -66,20 +25,4 @@
     U_\mathrm{R} = U_0 - U_\mathrm{D}= 5\,\mathrm{V} - 0,7\,\mathrm{V} = 4,3\,\mathrm{V}
   \end{equation*}
   Siehe: Abschnitt \ref{sec:ElektrischesVerhalten}
-  %   \speech{Es handelt sich um eine Siliziumdiode. Die Schleusenspannung der Diode beträgt ungefähr 0,6 bis 0,7 Volt. Dadurch ergibt sich ein entsprechender Spannungsabfall am Bauteil.  
-  
-  % Da die Diode in einer Reihenschaltung mit einem Widerstand verbunden ist, gilt die Spannungsregel:  
-  
-  % Die Gesamtspannung U null ist gleich der Summe aus der Spannung am Widerstand U R und der Spannung an der Diode U D.  
-  
-  % Das bedeutet:  
-  
-  % U R ist gleich U null minus U D.  
-  
-  % Setzt man die Werte ein, ergibt sich:  
-  
-  % 5 Volt minus 0,7 Volt ergibt 4,3 Volt.  
-  
-  % Die Spannung am Widerstand beträgt also 4,3 Volt.}
-  
 }

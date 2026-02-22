@@ -1,19 +1,18 @@
-\subsection{Analyse einer Spannungsverdoppler-Schaltung\label{Aufg33}}
+\subsection{Analyse einer Spannungsverdoppler-Schaltung}
 % Alt: Praktikumsaufgabe 5
 \Aufgabe{
-
+    \label{Aufg33}
     Analysieren Sie die Funktion der dargestellten Delon-Schaltung zur Spannungsverdopplung und berechnen Sie die Ausgangsspannung für verschiedene Eingangsspannungen.
     Zusätzlich sind die folgenden Parameter gegeben:
-    
+
     $U_\mathrm{E1,eff}=110\,\mathrm{V}$,  $U_\mathrm{E2,eff}=230\,\mathrm{V}$ und der Durchlassspannung von $U_\mathrm{f} = 0,7\,\mathrm{V}$.
-    
+
     \begin{figure}[H]
-    \centering
-    \input{Tikz/src/FigPraktikumSpannungsverdoppler}
-    \alttext{Das Bild zeigt einen elektrischen Schaltplan mit einer Wechselspannungsquelle auf der linken Seite, gekennzeichnet als \(u_{\mathrm{E}_i}(t)\). Von der Quelle führen zwei Leitungen nach rechts. Auf der oberen Leitung befindet sich eine Diode \(D_1\), die in Richtung der rechten Seite zeigt. Nach \(D_1\) sind zwei Kondensatoren \(C_1\) und \(C_2\) parallel zueinander geschaltet, wobei \(C_1\) oben und \(C_2\) unten angeordnet ist. Unterhalb von \(C_2\) befindet sich eine zweite Diode \(D_2\), die nach links zeigt und mit der unteren Leitung verbunden ist. Rechts neben den Kondensatoren ist ein Widerstand \(R_\mathrm{L}\) parallel zu den Kondensatoren geschaltet. Ganz rechts sind zwei Anschlusspunkte ohne weitere Bauteile. Die Spannung über dem Widerstand ist mit \(U_\mathrm{A}\) bezeichnet und durch einen Pfeil von oben nach unten dargestellt.}
-    \label{fig:FigPraktikumSpannungsverdoppler}
+        \centering
+        \input{Tikz/src/FigPraktikumSpannungsverdoppler}\alttext{Das Bild zeigt einen elektrischen Schaltplan mit einer Wechselspannungsquelle auf der linken Seite, gekennzeichnet als \(u_{\mathrm{E}_i}(t)\). Von der Quelle führen zwei Leitungen nach rechts. Auf der oberen Leitung befindet sich eine Diode \(D_1\), die in Richtung der rechten Seite zeigt. Nach \(D_1\) sind zwei Kondensatoren \(C_1\) und \(C_2\) parallel zueinander geschaltet, wobei \(C_1\) oben und \(C_2\) unten angeordnet ist. Unterhalb von \(C_2\) befindet sich eine zweite Diode \(D_2\), die nach links zeigt und mit der unteren Leitung verbunden ist. Rechts neben den Kondensatoren ist ein Widerstand \(R_\mathrm{L}\) parallel zu den Kondensatoren geschaltet. Ganz rechts sind zwei Anschlusspunkte ohne weitere Bauteile. Die Spannung über dem Widerstand ist mit \(U_\mathrm{A}\) bezeichnet und durch einen Pfeil von oben nach unten dargestellt.}
+        \label{fig:FigPraktikumSpannungsverdoppler}
     \end{figure}
-    
+
     \begin{itemize}
         \item[a)] Erklären Sie das Funktionsprinzip der Delon-Schaltung und wie diese die Eingangsspannung verdoppelt.
         \item[b)] Berechnen Sie die theoretische Leerlauf-Ausgangsspannung $U_\mathrm{A}$ für die gegebenen Eingangsspannungen.
@@ -26,7 +25,7 @@
     \begin{itemize}
         \item[a)] Funktionsprinzip der Delon-Schaltung  \\
               Die Schaltung arbeitet als Kaskaden-Gleichrichter. Während der positiven Halbwelle der Wechselspannung lädt sich $C_1$ über $D_1$ auf die Eingangsspitzen-Spannung $\hat{U}_\mathrm{E}$ auf. Während der negativen Halbwelle lädt sich $C_2$ über $D_2$ auf. Dadurch addieren sich die Spannungen von $C_1$ und $C_2$, wodurch am Ausgang eine theoretische Gleichspannung von ca. $2 \cdot \hat{U}_\mathrm{E}$ entsteht.
-              
+
         \item[b)] Berechnung der Leerlauf-Ausgangsspannung $U_\mathrm{A}$
               Die Eingangsspannung ist als Effektivwert $U_\mathrm{E}$ gegeben. Die Spitzenwertspannung beträgt:
               $$ \hat{U}_\mathrm{E} = \sqrt{2} \cdot U_\mathrm{E} $$
@@ -36,10 +35,10 @@
               $$ U_\mathrm{A} = 2 \cdot (\sqrt{2} \cdot 110\, \mathrm{V} - 0{,}7\, \mathrm{V}) \approx 308\, \mathrm{V} $$
               Für $ U_\mathrm{E} = 230\,V $:
               $$ U_\mathrm{A} = 2 \cdot (\sqrt{2} \cdot 230\,\mathrm{V} - 0{,}7\, \mathrm{V}) \approx 644\, \mathrm{V} $$
-              
+
         \item[c)] Verhalten unter Lastbedingungen
               Im Leerlauf bleibt die Ausgangsspannung hoch. Unter Last fällt die Spannung ab, abhängig vom Innenwiderstand der Kondensatoren, der Belastung $R_\text{Last}$ und den Diodenverlusten. Der Spannungsabfall hängt von der Restwelligkeit ab, die durch die Lade- und Entladezeiten der Kondensatoren beeinflusst wird. Ein großer Laststrom reduziert die Spannung, da die Kondensatoren sich schneller entladen.
-              
+
               Faktoren, die die Spannung beeinflussen:
               \begin{itemize}
                   \item Innenwiderstand der Dioden

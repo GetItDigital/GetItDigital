@@ -1,60 +1,14 @@
-\subsection{Spannungsverlauf in einer Brückengleichrichterschaltung\label{Aufg9}}
+\subsection{Spannungsverlauf in einer Brückengleichrichterschaltung}
 % Alt: Aufgabe 9
 \Aufgabe{
+  \label{Aufg9}
   Skizzieren Sie die Spannung $U_1$ der gegebenen Schaltung.
-  Beachten Sie, dass es sich bei $u_\mathrm{E}$ um eine Wechselspannung handelt. 
-  \begin {figure} [H]
-     \centering
-     \input{Tikz/src/FigDiodeSpannugsverlauf.tex}
-     \alttext{Die Abbildung zeigt eine elektrische Schaltung mit vier Dioden, die in Form einer Brücke angeordnet sind. Die Dioden sind als Dreiecke mit einem Strich an der Spitze dargestellt, die jeweils in unterschiedliche Richtungen zeigen. Die vier Dioden bilden ein Rechteck.
-     An zwei gegenüberliegenden Ecken des Rechtecks sind zwei Anschlüsse für eine Spannungsquelle angebracht. An den beiden anderen gegenüberliegenden Ecken befinden sich zwei Ausgangsanschlüsse. Die Spannungsquelle ist gezeichnet mit \(u_E\) und der Ausgang der Schaltung mit \(U_1\)}
-     \label{fig:FigDiodeSpannugsverlauf}
-  \end {figure}
-%   \speech{ **Aufgabe 9**  
-% Skizzieren Sie die **Spannung \( U_1 \)** der gegebenen Schaltung.  
-% Beachten Sie, dass es sich bei \( u_E \) um eine **Wechselspannung** handelt.  
-
-
-%  **Beschreibung der Abbildung**  
-% Die Abbildung zeigt eine **Brückengleichrichterschaltung** mit folgenden Komponenten:
-
-% 1. **Eingangsspannung \( u_E \)**  
-%    - Eine **Wechselspannung**, symbolisiert durch eine **Spannungsquelle mit sinusförmigem Symbol**.  
-%    - Der **Eingangsstrom fließt in beide Richtungen** abhängig von der Wechselspannung.  
-
-% 2. **Gleichrichterbrücke mit vier Dioden** (\( D_1, D_2, D_3, D_4 \))  
-%    - **Dioden sind in Brückenanordnung** geschaltet.  
-%    - Sie sorgen dafür, dass **sowohl die positive als auch die negative Halbwelle der Eingangsspannung gleichgerichtet wird**.  
-%    - In jeder Halbwelle **leiten zwei Dioden und sperren zwei Dioden**.  
-
-% 3. **Gleichgerichtete Ausgangsspannung \( U_1 \)**  
-%    - Liegt **hinter der Gleichrichterbrücke** an.  
-%    - Ist eine **pulsierende Gleichspannung**, da **nur positive Halbwellen durchgelassen werden**.  
-%    - **Negative Halbwellen der Wechselspannung werden umgekehrt** und erscheinen ebenfalls **positiv am Ausgang**.  
-
-
-%  **Funktionsweise der Schaltung**  
-% - Während der **positiven Halbwelle** von \( u_E \):  
-%   - \( D_1 \) und \( D_2 \) leiten, **\( D_3 \) und \( D_4 \) sperren**.  
-%   - Der Strom fließt durch die **Last in eine Richtung**.  
-
-% - Während der **negativen Halbwelle** von \( u_E \):  
-%   - \( D_3 \) und \( D_4 \) leiten, **\( D_1 \) und \( D_2 \) sperren**.  
-%   - Der Strom fließt erneut durch die **Last in die gleiche Richtung**, da die **negative Spannung umgekehrt wird**.  
-
-% - **Ergebnis:**  
-%   - Die **Ausgangsspannung \( U_1 \) hat nur positive Werte** und ist eine **pulsierende Gleichspannung**.  
-%   - Die Aufgabe besteht darin, diese **Spannung \( U_1 \) als Skizze** darzustellen.  
-
-
-
-%  **Zusammenfassung der Aufgabe**  
-% - Die Aufgabe erfordert eine **Skizze der Ausgangsspannung \( U_1 \)**.  
-% - Aufgrund der **Brückengleichrichtung** besteht \( U_1 \) aus **positiven Halbwellen** der ursprünglichen Wechselspannung.  
-% - Die **negative Halbwelle wird gespiegelt**, sodass **kein negatives Signal am Ausgang erscheint**.  
-% - Der Skizze soll der typische Verlauf einer **pulsierenden Gleichspannung** entsprechen.  
-% }
-
+  Beachten Sie, dass es sich bei $u_\mathrm{E}$ um eine Wechselspannung handelt.
+  \begin{figure}[H]
+    \centering
+    \input{Tikz/src/FigDiodeSpannugsverlauf.tex}\alttext{Die Abbildung zeigt eine elektrische Schaltung mit vier Dioden, die in Form einer Brücke angeordnet sind. Die Dioden sind als Dreiecke mit einem Strich an der Spitze dargestellt, die jeweils in unterschiedliche Richtungen zeigen. Die vier Dioden bilden ein Rechteck. An zwei gegenüberliegenden Ecken des Rechtecks sind zwei Anschlüsse für eine Spannungsquelle angebracht. An den beiden anderen gegenüberliegenden Ecken befinden sich zwei Ausgangsanschlüsse. Die Spannungsquelle ist gezeichnet mit \(u_E\) und der Ausgang der Schaltung mit \(U_1\)}
+    \label{fig:FigDiodeSpannugsverlauf}
+  \end{figure}
 }
 
 
@@ -76,32 +30,6 @@
     \input{Tikz/src/LsgDiodeSpannungsverlauf2}
     \label{fig:LsgDiodeSpannungsverlauf2}
   \end{figure}
-%   \speech{
-% Lösung zu Aufgabe 9:
 
-% Die gegebene Schaltung stellt eine Gleichrichterschaltung mit vier Dioden in Brückenschaltung dar. Die Eingangsspannung \( u_E \) ist eine Wechselspannung, die gleichgerichtet wird, sodass am Ausgang \( U_1 \) eine pulsierende Gleichspannung entsteht.
-
-% Die Aufgabe analysiert den Stromfluss während der positiven und negativen Halbwelle der Eingangsspannung.
-
-% **Erster Fall: Negative Halbwelle der Eingangsspannung**  
-% Wenn die Eingangsspannung negativ ist, dann ist die untere Seite der Spannungsquelle positiver als die obere. Dadurch werden die Dioden \( D_2 \) und \( D_3 \) leitend, während \( D_1 \) und \( D_4 \) sperren.  
-
-% - Der Strom fließt von der positiven Klemme der Spannungsquelle nach oben in die Anode von \( D_2 \).
-% - Er passiert \( D_2 \) in Durchlassrichtung, gelangt zur Last und fließt dann weiter über \( D_3 \) in Richtung der negativen Klemme der Spannungsquelle.
-% - Dadurch wird die Ausgangsspannung \( U_1 \) in der gleichen Polarität gehalten.
-
-% **Zweiter Fall: Positive Halbwelle der Eingangsspannung**  
-% Wenn die Eingangsspannung positiv ist, dann ist die obere Seite der Spannungsquelle positiver als die untere. Dadurch werden die Dioden \( D_1 \) und \( D_4 \) leitend, während \( D_2 \) und \( D_3 \) sperren.  
-
-% - Der Strom fließt nun von der positiven Klemme der Spannungsquelle in die Anode von \( D_1 \).
-% - Er passiert \( D_1 \) in Durchlassrichtung, gelangt zur Last und fließt dann über \( D_4 \) zurück zur negativen Klemme der Spannungsquelle.
-% - Auch in diesem Fall bleibt die Polarität von \( U_1 \) erhalten, sodass eine gleichgerichtete Spannung entsteht.
-
-% **Fazit:**  
-% Diese Brückengleichrichterschaltung sorgt dafür, dass unabhängig von der Polarität der Eingangsspannung immer eine positive Spannung am Ausgang entsteht. Die Strompfade wechseln mit jeder Halbwelle der Wechselspannung, wobei immer zwei Dioden leitend sind, während die anderen beiden sperren.
-% }
-Siehe: Abschnitt \ref{sec:Brückengleichrichter}
+  Siehe: Abschnitt \ref{sec:Brückengleichrichter}
 }
-
-
-

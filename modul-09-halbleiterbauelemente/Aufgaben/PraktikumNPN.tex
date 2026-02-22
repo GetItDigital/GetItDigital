@@ -1,18 +1,18 @@
-\subsection{Grundverhalten eines npn-Bipolartransistors\label{Aufg35}}
+\subsection{Grundverhalten eines npn-Bipolartransistors}
 % Alt: Praktikumsaufgabe 8
 \Aufgabe{
+    \label{Aufg35}
     Analysieren Sie das Grundverhalten eines Bipolartransistors in einer Basisschaltung.
-    Der npn-Transistor weist einen Stromverstärkungsfaktor von $\beta = 100$ auf, 
-    es wird ein Basisstrom von $I_\mathrm{B} = 20\,\mathrm{\mu A}$ angenommen. 
-    
+    Der npn-Transistor weist einen Stromverstärkungsfaktor von $\beta = 100$ auf,
+    es wird ein Basisstrom von $I_\mathrm{B} = 20\,\mathrm{\mu A}$ angenommen.
+
     \begin{figure}[H]
         \centering
-        \input{Tikz/src/FigPraktikumNPN}
-    \alttext{Das Bild zeigt ein elektrisches Schaltbild mit einem Transistor. Links befindet sich eine Spannungsquelle \(U_1\), die mit zwei Widerständen \(R_1\) und \(R_2\) in Reihe geschaltet ist. Der Verbindungspunkt zwischen \(R_1\) und \(R_2\) führt über einen Widerstand \(R_3\) zum Basisanschluss des Transistors. Vom Kollektor des Transistors geht ein Widerstand \(R_4\) ab, der zu einer zweiten Spannungsquelle \(U_2\) führt. Der Emitter des Transistors ist mit Masse verbunden. Am Widerstand \(R_3\) ist der Basisstrom \(I_\mathrm{B}\) mit einem roten Pfeil markiert. Die Stromrichtungen der Spannungsquellen \(U_1\) und \(U_2\) sind jeweils durch blaue Pfeile nach unten gekennzeichnet.}
+        \input{Tikz/src/FigPraktikumNPN}\alttext{Das Bild zeigt ein elektrisches Schaltbild mit einem Transistor. Links befindet sich eine Spannungsquelle \(U_1\), die mit zwei Widerständen \(R_1\) und \(R_2\) in Reihe geschaltet ist. Der Verbindungspunkt zwischen \(R_1\) und \(R_2\) führt über einen Widerstand \(R_3\) zum Basisanschluss des Transistors. Vom Kollektor des Transistors geht ein Widerstand \(R_4\) ab, der zu einer zweiten Spannungsquelle \(U_2\) führt. Der Emitter des Transistors ist mit Masse verbunden. Am Widerstand \(R_3\) ist der Basisstrom \(I_\mathrm{B}\) mit einem roten Pfeil markiert. Die Stromrichtungen der Spannungsquellen \(U_1\) und \(U_2\) sind jeweils durch blaue Pfeile nach unten gekennzeichnet.}
         \label{fig:FigPraktikumNPN}
     \end{figure}
-    
-    
+
+
     \begin{itemize}
         \item[a)] Berechnen Sie den Kollektorstrom $I_\mathrm{C}$.
         \item[b)] Bestimmen Sie die Kollektor-Emitter-Spannung $U_\mathrm{CE}$, wenn der Kollektorwiderstand $R_\mathrm{4} = 1\,\mathrm{k\Omega}$ und die Versorgungsspannung $U_\mathrm{2} = 12\,\mathrm{V}$ beträgt.
@@ -29,8 +29,8 @@
               \begin{equation*}
                   I_\mathrm{C} = 100 \cdot 20\,\mathrm{\mu A} = 2\,\mathrm{mA}
               \end{equation*}
-              
-              
+
+
         \item[b)] Bestimmung der Kollektor-Emitter-Spannung $U_\mathrm{CE}$
               Die Kollektor-Emitter-Spannung ergibt sich aus der Gleichung:
               $$ U_\mathrm{CE} = U_\mathrm{CC} - I_\mathrm{C} \cdot R_\mathrm{4} $$
@@ -38,7 +38,7 @@
               \begin{equation*}
                   U_\mathrm{CE} = 12\,\mathrm{V} - (2\,\mathrm{mA} \cdot 1\,\mathrm{k\Omega}) = 12\,\mathrm{V} - 2\,\mathrm{V}  = 10\,\mathrm{V}
               \end{equation*}
-              
+
     \end{itemize}
     Siehe: Abschnitt \ref{fig:UebersichtBipolartransistoren}
 }

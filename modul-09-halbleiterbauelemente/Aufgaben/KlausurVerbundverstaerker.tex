@@ -1,56 +1,55 @@
-\subsection{Transistor-Verbundverstärker\label{Aufg27}}
+\subsection{Transistor-Verbundverstärker}
 % Alt: Klausuraufgabe 2
 \Aufgabe{
-  Zwei npn-Bipolartransistoren bilden zusammen einen rauscharmen Verstärker für Signale im Bereich unter $1\, \mathrm{\mu V}$.
-  Die Versorgungsspannung beträgt $U_1=10\,\mathrm{V}$. Am Kollektor des Transistors $\mathrm{T_2}$ liegt eine Spannung von $4\,\mathrm{V}$ gegenüber Masse an.
-  Im Arbeitspunkt von $T_1$ und $T_2$ kann für die Basis-Emitter-Spannungen jeweils $U_\mathrm{BE}=600\,\mathrm{mV}$ angenommen werden.
-  Die Kollektorströme $\mathrm{I_{C}}$ sind sehr groß gegenüber den Basisströmen $I_\mathrm{B}$ anzunehmen, daher gilt näherungsweise $I_\mathrm{C} = I_\mathrm{E}$.
-  Zusätzlich sind die folgenden Parameter gegeben:
+      \label{Aufg27}
+      Zwei npn-Bipolartransistoren bilden zusammen einen rauscharmen Verstärker für Signale im Bereich unter $1\, \mathrm{\mu V}$.
+      Die Versorgungsspannung beträgt $U_1=10\,\mathrm{V}$. Am Kollektor des Transistors $\mathrm{T_2}$ liegt eine Spannung von $4\,\mathrm{V}$ gegenüber Masse an.
+      Im Arbeitspunkt von $T_1$ und $T_2$ kann für die Basis-Emitter-Spannungen jeweils $U_\mathrm{BE}=600\,\mathrm{mV}$ angenommen werden.
+      Die Kollektorströme $\mathrm{I_{C}}$ sind sehr groß gegenüber den Basisströmen $I_\mathrm{B}$ anzunehmen, daher gilt näherungsweise $I_\mathrm{C} = I_\mathrm{E}$.
+      Zusätzlich sind die folgenden Parameter gegeben:
 
-  $R_1 = 10\, \mathrm{k\Omega}$,
-  $R_2 = 10\, \mathrm{k\Omega}$,
-  $R_3 = 2\, \mathrm{k\Omega}$,
-  $R_4 = 300\, \mathrm{k\Omega}$,
-  $R_5 = 10\, \mathrm{M\Omega}$ \\
-  $C_1 = 1\, \mathrm{\mu F}$,
-  $C_2 = 1\, \mathrm{\mu F}$ \\
-  $U_1 = 10\, \mathrm{V}$,
-  $\hat{u}_\mathrm{E} = 0,1\, \mathrm{mV}$ \\
+      $R_1 = 10\, \mathrm{k\Omega}$,
+      $R_2 = 10\, \mathrm{k\Omega}$,
+      $R_3 = 2\, \mathrm{k\Omega}$,
+      $R_4 = 300\, \mathrm{k\Omega}$,
+      $R_5 = 10\, \mathrm{M\Omega}$ \\
+      $C_1 = 1\, \mathrm{\mu F}$,
+      $C_2 = 1\, \mathrm{\mu F}$ \\
+      $U_1 = 10\, \mathrm{V}$,
+      $\hat{u}_\mathrm{E} = 0,1\, \mathrm{mV}$ \\
 
-  \begin {figure} [H]
-  \centering
-  \input{Tikz/src/FigKlausurVerbundverstaerker}
-  \alttext{Das Bild zeigt ein elektrisches Schaltbild mit zwei Bipolartransistoren (\(T_1\) und \(T_2\)), fünf Widerständen (\(R_1\) bis \(R_5\)), zwei Kondensatoren (\(C_1\) und \(C_2\)) sowie einer Wechselspannungsquelle \(u_\mathrm{E}(t)\) links und einer Gleichspannungsquelle \(U_1\) oben rechts. Die Bauteile sind durch Leitungen verbunden: Der Wechselspannungseingang führt über \(C_1\) zum Basisanschluss von \(T_1\), dessen Emitter mit Masse verbunden ist. Der Kollektor von \(T_1\) ist über \(R_1\) an die positive Versorgungsspannung angeschlossen und gleichzeitig mit der Basis von \(T_2\) verbunden. Der Emitter von \(T_2\) ist über \(R_3\) mit Masse verbunden, sein Kollektor über \(R_2\) zur Versorgungsspannung. Zwischen Basis von \(T_1\) und Emitter von \(T_2\) liegt \(R_4\). Vom Kollektor von \(T_2\) führt ein Anschluss über \(C_2\) zu \(R_5\), der gegen Masse geschaltet ist. Unten links ist Masse als Bezugspunkt dargestellt.}
-  \label{fig:FigKlausurVerbundverstaerker}
-  \end {figure}
+      \begin{figure}[H]
+            \centering
+            \input{Tikz/src/FigKlausurVerbundverstaerker}\alttext{Das Bild zeigt ein elektrisches Schaltbild mit zwei Bipolartransistoren (\(T_1\) und \(T_2\)), fünf Widerständen (\(R_1\) bis \(R_5\)), zwei Kondensatoren (\(C_1\) und \(C_2\)) sowie einer Wechselspannungsquelle \(u_\mathrm{E}(t)\) links und einer Gleichspannungsquelle \(U_1\) oben rechts. Die Bauteile sind durch Leitungen verbunden: Der Wechselspannungseingang führt über \(C_1\) zum Basisanschluss von \(T_1\), dessen Emitter mit Masse verbunden ist. Der Kollektor von \(T_1\) ist über \(R_1\) an die positive Versorgungsspannung angeschlossen und gleichzeitig mit der Basis von \(T_2\) verbunden. Der Emitter von \(T_2\) ist über \(R_3\) mit Masse verbunden, sein Kollektor über \(R_2\) zur Versorgungsspannung. Zwischen Basis von \(T_1\) und Emitter von \(T_2\) liegt \(R_4\). Vom Kollektor von \(T_2\) führt ein Anschluss über \(C_2\) zu \(R_5\), der gegen Masse geschaltet ist. Unten links ist Masse als Bezugspunkt dargestellt.}
+            \label{fig:FigKlausurVerbundverstaerker}
+      \end{figure}
 
-  \begin{itemize}
-    \item[a)]
-          Wie groß ist der maximale Strom durch $R_2$ im Arbeitspunkt ($I_\mathrm{R2}=I_\mathrm{C,\,T2}$)?
-    \item[b)]
-          Wie groß ist der Strom durch $R_3$ näherungsweise, wenn $R_4 >> R_3$?
-    \item[c)]
-          Wie groß ist die Spannung, die über $R_3$ abfällt?
-    \item[d)]
-          Wie groß ist die Gleichspannung an der Basis von $T_2$ ($U_\mathrm{B,\,T2}=U_\mathrm{CE,\,T1}$)?
-    \item[e)]
-          Wie groß ist der Strom durch $R_1$ ($I_\mathrm{R1}=I_\mathrm{C,\,T1}$)?
-    \item[f)]
-          Erläutern Sie die Arbeitspunktstabiliserung der gesamten Schaltung auf Grund der Gegenkopplung über $R_4$.
-    \item[g)]
-          Wie groß ist die Steilheit $S$ von $T_\mathrm{1}$, wenn zusätzlich $U_\mathrm{T} = 26\, \mathrm{mV}$ gegeben ist?
-    \item[h)]
-          Wie groß ist die Spannungsverstärkung $A_\mathrm{V} = \frac{\Delta U_\mathrm{CE}}{\Delta U_\mathrm{BE}}$, der ersten Transistorstufe?
-    \item[i)]
-          Wie groß ist die Spannungsverstärkung $A_\mathrm{V}$ der zweiten Transistorstufe, unter Verwendung der Definition $A_\mathrm{V,T2}=\frac{\Delta U_\mathrm{C}}{\Delta U_\mathrm{B}}$?
-          Zur Lösung müssen zusätzlich die Widerstände $R_2$ und $R_3$ berücksichtigt werden.
-    \item[j)]
-          Wie groß ist die Spannungsverstärkung der beiden Stufen $T_\mathrm{1}$ und $T_\mathrm{2}$ zusammen?
-    \item[k)]
-          Zeichnen Sie das Kleinsignal-Ersatzschaltbild der gesamten Schaltung. Ersetzen Sie darin die beiden Transistoren im Arbeitspunkt jeweils durch eine steuerbare Stromquelle $S=\beta\cdot i_\mathrm{B}$ und einen differentiellen Eingangswiderstand $r_\mathrm{BE}$.
-  \end{itemize}
+      \begin{itemize}
+            \item[a)]
+                  Wie groß ist der maximale Strom durch $R_2$ im Arbeitspunkt ($I_\mathrm{R2}=I_\mathrm{C,\,T2}$)?
+            \item[b)]
+                  Wie groß ist der Strom durch $R_3$ näherungsweise, wenn $R_4 >> R_3$?
+            \item[c)]
+                  Wie groß ist die Spannung, die über $R_3$ abfällt?
+            \item[d)]
+                  Wie groß ist die Gleichspannung an der Basis von $T_2$ ($U_\mathrm{B,\,T2}=U_\mathrm{CE,\,T1}$)?
+            \item[e)]
+                  Wie groß ist der Strom durch $R_1$ ($I_\mathrm{R1}=I_\mathrm{C,\,T1}$)?
+            \item[f)]
+                  Erläutern Sie die Arbeitspunktstabiliserung der gesamten Schaltung auf Grund der Gegenkopplung über $R_4$.
+            \item[g)]
+                  Wie groß ist die Steilheit $S$ von $T_\mathrm{1}$, wenn zusätzlich $U_\mathrm{T} = 26\, \mathrm{mV}$ gegeben ist?
+            \item[h)]
+                  Wie groß ist die Spannungsverstärkung $A_\mathrm{V} = \frac{\Delta U_\mathrm{CE}}{\Delta U_\mathrm{BE}}$, der ersten Transistorstufe?
+            \item[i)]
+                  Wie groß ist die Spannungsverstärkung $A_\mathrm{V}$ der zweiten Transistorstufe, unter Verwendung der Definition $A_\mathrm{V,T2}=\frac{\Delta U_\mathrm{C}}{\Delta U_\mathrm{B}}$?
+                  Zur Lösung müssen zusätzlich die Widerstände $R_2$ und $R_3$ berücksichtigt werden.
+            \item[j)]
+                  Wie groß ist die Spannungsverstärkung der beiden Stufen $T_\mathrm{1}$ und $T_\mathrm{2}$ zusammen?
+            \item[k)]
+                  Zeichnen Sie das Kleinsignal-Ersatzschaltbild der gesamten Schaltung. Ersetzen Sie darin die beiden Transistoren im Arbeitspunkt jeweils durch eine steuerbare Stromquelle $S=\beta\cdot i_\mathrm{B}$ und einen differentiellen Eingangswiderstand $r_\mathrm{BE}$.
+      \end{itemize}
 }
-
 
 
 \Loesung{
@@ -59,51 +58,51 @@
                   \begin{align*}
                         I_\mathrm{C} & = \frac{6\,\mathrm{V}}{10\,\mathrm{k\Omega}} = 0,6\,\mathrm{mA}
                   \end{align*}
-                  
+
             \item[b)]
                   \begin{align*}
                         I_\mathrm{C,T2} & = 0,6\,\mathrm{mA}
                   \end{align*}
-                  
+
             \item[c)]
                   \begin{align*}
                         U_{\mathrm{R3}} & = 0,6\,\mathrm{mA} \cdot 2\,\mathrm{k\Omega} = 1,2\, \mathrm{V}
                   \end{align*}
-                  
+
             \item[d)]
                   \begin{align*}
                         1,2\, \mathrm{V} + 0,6\,\mathrm{V} = 1,8\,\mathrm{V}
                   \end{align*}
-                  
+
             \item[e)]
                   \begin{align*}
                         I_\mathrm{C,T1} & = \frac{8,2\,\mathrm{V}}{10\,\mathrm{k\Omega}} = 0,82\,\mathrm{mA}
                   \end{align*}
-                  
+
             \item[f)]
                   Eine Erhöhung von $I_\mathrm{C}$ führt zu einem Spannungsanstieg über $R_4$, dadurch sinkt die Basisspannung von $T_\mathrm{1}$, was $I_\mathrm{C}$ wieder reduziert.
                   Die negative Rückkopplung stabilisiert den Arbeitspunkt.
-                        
+
             \item[g)]
                   \begin{align*}
                         S & = \frac{I_\mathrm{C,T1}}{U_\mathrm{T}} = \frac{0,82\,\mathrm{mA}}{26\,\mathrm{mA}} = 31,54\, \frac{\mathrm{mA}}{\mathrm{V}}
                   \end{align*}
-                  
+
             \item[h)]
                   \begin{align*}
                         A_\mathrm{V} & = S \cdot (-R_\mathrm{C}) = -315
                   \end{align*}
-                  
+
             \item[i)]
                   \begin{align*}
                         A_\mathrm{V} & = -\frac{R_\mathrm{C}}{R_\mathrm{E}} = \frac{10\,\mathrm{k\Omega}}{2\,\mathrm{k\Omega}} = -5
                   \end{align*}
-                  
+
             \item[j)]
                   \begin{align*}
                         -5 \cdot -315 = 1575 \approx 1600
                   \end{align*}
-                  
+
             \item[k)] Ersatzschaltbild\\
                   \begin{minipage}{\linewidth}
                         \begin{figure}[H]
@@ -112,6 +111,6 @@
                         \end{figure}
                   \end{minipage}
       \end{itemize}
-      
+
       Siehe: Abschnitt \ref{sec:DarlingtonTransistor}
 }

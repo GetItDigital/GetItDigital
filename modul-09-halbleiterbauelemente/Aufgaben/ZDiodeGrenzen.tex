@@ -1,21 +1,20 @@
-\subsection{Ermittlung der Betriebsgrenzen einer Zenerdiode\label{Aufg7}}
+\subsection{Ermittlung der Betriebsgrenzen einer Zenerdiode}
 % Alt: Aufgabe 7
 \Aufgabe{
-  Gegeben ist die folgende Schaltung mit einer Zenerdiode und zwei Widerständen. 
-  Die eingesetzte Zenerdiode besitzt eine Zenerspannung von \( U_\mathrm{Z} = \mathrm{8\,V} \). 
-  Die maximale Verlustleistung der Diode beträgt \( P_\mathrm{tot}=\mathrm{8\,W} \). 
-  Die Diode arbeitet im stabilisierenden Bereich, wenn der Strom durch sie mindestens \( \mathrm{5\,mA} \) beträgt. 
+  \label{Aufg7}
+  Gegeben ist die folgende Schaltung mit einer Zenerdiode und zwei Widerständen.
+  Die eingesetzte Zenerdiode besitzt eine Zenerspannung von \( U_\mathrm{Z} = \mathrm{8\,V} \).
+  Die maximale Verlustleistung der Diode beträgt \( P_\mathrm{tot}=\mathrm{8\,W} \).
+  Die Diode arbeitet im stabilisierenden Bereich, wenn der Strom durch sie mindestens \( \mathrm{5\,mA} \) beträgt.
   Zusätzlich sind die folgenden Werte gegeben:
   $U_\mathrm{E}=20\,\mathrm{V}\pm 10\%$ und $R_\mathrm{V} = 10\,\Omega$.\\
   Welchen minimalen und maximalen Widerstandswert darf der Lastwiderstand \( R_\mathrm{L} \) nicht unter- bzw. überschreiten, damit die Diode einerseits im stabilisierenden Bereich arbeitet und andererseits nicht überlastet wird?
-  
-  \begin {figure} [H]
-     \centering
-     \input{Tikz/src/FigZDiodeGrenzen.tex}
-          \alttext{Zu sehen ist eine elektrische Schaltung mit vier Bauteilen zur Bestimmung Ermittlung der Betriebsgrenzen einer Zenerdiode. Auf der linken Seite befindet sich die Spannungsquelle \(U_\mathrm{E}\), deren Spannungspfeil nach unten zeigt. In Reihe zur Spannungsquelle sind ein Widerstand \(R\) und eine Zenerdiode \(D_\mathrm{z}\) geschaltet.  Parallel zu der Zenerdiode befindet sich ein Lastwiderstand gekennzeichnet mit \(R_\mathrm{L}\). Ein Spannungspfeil in Stromrichtung kennzeichnet die Spannung der Parralelschaltung mit Der Beschriftung \(U_\mathrm{A}\).}
-     \label{fig:FigZDiodeGrenzen}
-  \end {figure}
 
+  \begin{figure}[H]
+    \centering
+    \input{Tikz/src/FigZDiodeGrenzen.tex}\alttext{Zu sehen ist eine elektrische Schaltung mit vier Bauteilen zur Bestimmung Ermittlung der Betriebsgrenzen einer Zenerdiode. Auf der linken Seite befindet sich die Spannungsquelle \(U_\mathrm{E}\), deren Spannungspfeil nach unten zeigt. In Reihe zur Spannungsquelle sind ein Widerstand \(R\) und eine Zenerdiode \(D_\mathrm{z}\) geschaltet.  Parallel zu der Zenerdiode befindet sich ein Lastwiderstand gekennzeichnet mit \(R_\mathrm{L}\). Ein Spannungspfeil in Stromrichtung kennzeichnet die Spannung der Parralelschaltung mit Der Beschriftung \(U_\mathrm{A}\).}
+    \label{fig:FigZDiodeGrenzen}
+  \end{figure}
 }
 
 
@@ -27,75 +26,28 @@
   \end{figure}
 
   Gegeben sind:
-\begin{equation*}
+  \begin{equation*}
     U_\mathrm{max} = \mathrm{22\,V} \text{ und } U_\mathrm{min} = \mathrm{18\,V}
-\end{equation*}
+  \end{equation*}
 
-\textbf{Fall 1:} Bei \( U_\mathrm{max} = \mathrm{22\,V} \)
-\begin{gather*}
+  \textbf{Fall 1:} Bei \( U_\mathrm{max} = \mathrm{22\,V} \)
+  \begin{gather*}
     U_\mathrm{RV} = \mathrm{22\,V} - \mathrm{8\,V} = \mathrm{14\,V} \\
     I = \frac{\mathrm{14\,V}}{\mathrm{10\,\Omega}} = \mathrm{1{,}4\,A} \\
     I = I_\mathrm{D} + I_\mathrm{L} \\
     I_\mathrm{D,\ max} = \frac{\mathrm{8\,W}}{\mathrm{8\,V}} = \mathrm{1\,A} \\
     I_\mathrm{L} = \mathrm{1{,}4\,A} - \mathrm{1\,A} = \mathrm{0{,}4\,A} \\
     R_\mathrm{L} = \frac{\mathrm{8\,V}}{\mathrm{0{,}4\,A}} = \mathrm{20\,\Omega} \Rightarrow R_\mathrm{L,\ max} = \mathrm{20\,\Omega}
-\end{gather*}
+  \end{gather*}
 
-\textbf{Fall 2:} Bei \( U_\mathrm{min} = \mathrm{18\,V} \)
-\begin{gather*}
+  \textbf{Fall 2:} Bei \( U_\mathrm{min} = \mathrm{18\,V} \)
+  \begin{gather*}
     U_\mathrm{RV} = \mathrm{18\,V} - \mathrm{8\,V} = \mathrm{10\,V} \\
     I = \frac{\mathrm{10\,V}}{\mathrm{10\,\Omega}} = \mathrm{1\,A} \\
     I_\mathrm{D,\ min} = \mathrm{5\,mA} \\
     I_\mathrm{L} = \mathrm{1\,A} - \mathrm{5\,mA} = \mathrm{0{,}995\,A} \\
     R_\mathrm{L} = \frac{\mathrm{8\,V}}{\mathrm{0{,}995\,A}} \approx \mathrm{8\,\Omega} \Rightarrow R_\mathrm{L,\ min} \approx \mathrm{8\,\Omega}
-\end{gather*}
-%   \speech{
-% Lösung zu Aufgabe 7:
+  \end{gather*}
 
-% Gegeben ist eine Schaltung mit einer Spannungsquelle von 20 Volt plus-minus 10 Prozent, einem Vorwiderstand von 10 Ohm, einer Zenerdiode mit einer Zenerspannung von 8 Volt und einem variablen Lastwiderstand R L. Ziel ist es, die minimalen und maximalen Werte für R L zu bestimmen, sodass die Zenerdiode im stabilisierenden Bereich arbeitet, aber nicht überlastet wird.
-
-% Betrachtung für die maximale Eingangsspannung U max gleich 22 Volt:
-% - Die Spannung über dem Vorwiderstand beträgt:
-%   U R V gleich 22 Volt minus 8 Volt gleich 14 Volt.
-% - Der Gesamtstrom durch den Vorwiderstand ist:
-%   I gleich U R V geteilt durch R V.
-%   I gleich 14 Volt geteilt durch 10 Ohm gleich 1,4 Ampere.
-% - Der Gesamtstrom teilt sich auf in den Strom durch die Zenerdiode I D und den Laststrom I L:
-%   I gleich I D plus I L.
-% - Die maximale Verlustleistung der Zenerdiode ist gegeben mit 8 Watt. Der maximale Strom durch die Zenerdiode ergibt sich durch:
-%   I D max gleich P max geteilt durch U Z.
-%   I D max gleich 8 Watt geteilt durch 8 Volt gleich 1 Ampere.
-% - Daraus ergibt sich der Laststrom:
-%   I L gleich I minus I D max.
-%   I L gleich 1,4 Ampere minus 1 Ampere gleich 0,4 Ampere.
-% - Die Spannung über dem Lastwiderstand beträgt:
-%   U L gleich U Z gleich 8 Volt.
-% - Der maximale Lastwiderstand ist dann:
-%   R L max gleich U L geteilt durch I L.
-%   R L max gleich 8 Volt geteilt durch 0,4 Ampere gleich 20 Ohm.
-
-% Betrachtung für die minimale Eingangsspannung U min gleich 18 Volt:
-% - Die Spannung über dem Vorwiderstand beträgt:
-%   U R V gleich 18 Volt minus 8 Volt gleich 10 Volt.
-% - Der Gesamtstrom durch den Vorwiderstand ist:
-%   I gleich U R V geteilt durch R V.
-%   I gleich 10 Volt geteilt durch 10 Ohm gleich 1 Ampere.
-% - Der Gesamtstrom teilt sich wieder auf in den Strom durch die Zenerdiode I D und den Laststrom I L.
-% - Die minimale Stromaufnahme der Zenerdiode, damit sie im stabilisierenden Bereich arbeitet, beträgt 5 Milliampere.
-% - Daraus ergibt sich der Laststrom:
-%   I L gleich I minus I D min.
-%   I L gleich 1 Ampere minus 5 Milliampere gleich 995 Milliampere.
-% - Die Spannung über dem Lastwiderstand beträgt:
-%   U L gleich 8 Volt.
-% - Der minimale Lastwiderstand ist dann:
-%   R L min gleich U L geteilt durch I L.
-%   R L min gleich 8 Volt geteilt durch 0,995 Ampere gleich 8 Ohm.
-
-% Zusammenfassung:
-% - Der Lastwiderstand R L muss zwischen 8 Ohm und 20 Ohm liegen, damit die Zenerdiode im stabilisierenden Bereich bleibt und nicht überlastet wird.
-% }
-Siehe: Abschnitt \ref{sec:SpezielleDioden}
+  Siehe: Abschnitt \ref{sec:SpezielleDioden}
 }
-
-
-

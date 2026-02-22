@@ -1,49 +1,28 @@
-\subsection{Berechnung der Widerstände einer Transistorschaltung\label{Aufg13}}
+\subsection{Berechnung der Widerstände einer Transistorschaltung}
 % Alt: Aufgabe 13
 \Aufgabe{
-  Gegeben ist die abgebildete Transistorschaltung mit den folgenden Parametern: $U_0=\mathrm{5\,V}$ , 
+  \label{Aufg13}
+  Gegeben ist die abgebildete Transistorschaltung mit den folgenden Parametern: $U_0=\mathrm{5\,V}$ ,
   $U_\mathrm{R1}=\mathrm{0,6\,V}$, $U_\mathrm{L}=\mathrm{15\,V}$, $R_\mathrm{1}=\mathrm{300\,\Omega}$, $R_\mathrm{2}=\mathrm{2\,k\Omega}$ und $R_\mathrm{V}=\mathrm{500\,\Omega}$.
-  Damit der gezeichnete Siliziumtransistor schaltet, braucht er einen Basisstrom von $50 \, \mathrm{\mu A}$ um 
-  durchzuschalten. 
-  
+  Damit der gezeichnete Siliziumtransistor schaltet, braucht er einen Basisstrom von $50 \, \mathrm{\mu A}$ um
+  durchzuschalten.
+
   \begin{figure}[H]
     \centering
-    \input{Tikz/src/FigTransistorWiderstaende.tex}
-    \alttext{Die Abbildung zeigt eine Transistorschaltung.
-    Links befindet sich eine Spannungsquelle, die eine Spannung \(U_0\) liefert. Von dieser Quelle aus fließt der Strom durch zwei Widerstände, die hintereinander geschaltet sind. Der obere Widerstand ist mit \(R_1\) beschriftet, der untere mit \(R_2\). Die Spannung über dem oberen Widerstand wird als \(U_{\mathrm{R1}}\) angegeben.
-    Vom Verbindungspunkt zwischen den beiden Widerständen führt ein weiterer Widerstand \(R_\mathrm{V}\) zu der Basis eines Transistors (ein Halbleiterbauelement mit drei Anschlüssen: Basis, Kollektor und Emitter). An diesem Punkt fließt der Basisstrom \(I_\mathrm{B}\), dargestellt in rot  als Pfeil in Richtung des Transistors.
-    Der Transistor hat seinen Emitteranschluss nach unten zum Massepunkt verbunden, durch den der Emitterstrom \(I_\mathrm{E}\) fließt, ebenfalls als Pfeil nach unten dargestellt.
-    Auf der rechten Seite des Transistors ist ein Lastwiderstand \(R_\mathrm{L}\) angeschlossen, hinter dem sich eine weitere Spannungsquelle befindet die mit \(U_\mathrm{L}\) gekennzeichnet ist.
-    Zusammengefasst handelt es sich um eine typische Verstärkerschaltung mit einem Spannungsteiler am Eingang zur Steuerung des Basisstroms eines Transistors und einem Lastwiderstand auf der Ausgangsseite. Die Ströme im Schaltkreis werden durch rote Pfeile gekennzeichnet, die Spannungen durch blaue Pfeile.}
+    \input{Tikz/src/FigTransistorWiderstaende.tex}\alttext{Die Abbildung zeigt eine Transistorschaltung. Links befindet sich eine Spannungsquelle, die eine Spannung \(U_0\) liefert. Von dieser Quelle aus fließt der Strom durch zwei Widerstände, die hintereinander geschaltet sind. Der obere Widerstand ist mit \(R_1\) beschriftet, der untere mit \(R_2\). Die Spannung über dem oberen Widerstand wird als \(U_{\mathrm{R1}}\) angegeben.
+      Vom Verbindungspunkt zwischen den beiden Widerständen führt ein weiterer Widerstand \(R_\mathrm{V}\) zu der Basis eines Transistors (ein Halbleiterbauelement mit drei Anschlüssen: Basis, Kollektor und Emitter). An diesem Punkt fließt der Basisstrom \(I_\mathrm{B}\), dargestellt in rot  als Pfeil in Richtung des Transistors.
+      Der Transistor hat seinen Emitteranschluss nach unten zum Massepunkt verbunden, durch den der Emitterstrom \(I_\mathrm{E}\) fließt, ebenfalls als Pfeil nach unten dargestellt.
+      Auf der rechten Seite des Transistors ist ein Lastwiderstand \(R_\mathrm{L}\) angeschlossen, hinter dem sich eine weitere Spannungsquelle befindet die mit \(U_\mathrm{L}\) gekennzeichnet ist.
+      Zusammengefasst handelt es sich um eine typische Verstärkerschaltung mit einem Spannungsteiler am Eingang zur Steuerung des Basisstroms eines Transistors und einem Lastwiderstand auf der Ausgangsseite. Die Ströme im Schaltkreis werden durch rote Pfeile gekennzeichnet, die Spannungen durch blaue Pfeile.}
     \label{fig:FigTransistorWiderstaende}
   \end{figure}
-  
+
   \begin{itemize}
     \item[a)] Wie groß muss der Widerstand $R_\mathrm{V}$ gewählt werden, damit der Transistor durchschaltet?
     \item[b)] Angenommen der Spannungsabfall des Transistors $U_\mathrm{CE}$ beträgt $7,5 \, \mathrm{V}$, wie groß ist der Strom
           durch $I_\mathrm{E}$?
   \end{itemize}
-  
-  
-  % \speech{Aufgabe 13  
-  
-  % Damit der gezeichnete Siliziumtransistor schaltet, braucht er einen Basisstrom von \( 50 \mu A \) um durchzuschalten.  
-  
-  % a) Wie groß muss der Widerstand \( R_V \) gewählt werden, damit der Transistor durchschaltet?  
-  
-  % b) Angenommen der Spannungsabfall des Transistors \( U_{CE} \) beträgt \( 7,5V \), wie groß ist der Strom durch \( I_E \)?  
-  
-  % Beschreibung der Abbildung  
-  
-  % Die Abbildung zeigt eine **Transistorschaltung** mit einer **Spannungsquelle von 5V** auf der linken Seite, die über einen **300Ω-Widerstand** mit einem **weiteren 300Ω-Widerstand (\( R_V \))** verbunden ist. Parallel zu \( R_V \) ist ein **2kΩ-Widerstand** geschaltet. Diese Schaltung speist den **Basisstrom \( I_B \)** in die Basis eines **npn-Transistors**.  
-  
-  % Die Basis-Emitter-Spannung \( U_{BE} \) ist mit einem blauen Pfeil markiert. Der **Basisstrom \( I_B \)** ist mit einem roten Pfeil gekennzeichnet.  
-  
-  % Auf der rechten Seite befindet sich eine **zweite Spannungsquelle mit 15V**, die über einen **500Ω-Kollektorwiderstand** mit dem **Kollektor des Transistors** verbunden ist. Der **Emitterstrom \( I_E \)** ist mit einem roten Pfeil dargestellt.  
-  
-  % Die Aufgabe besteht darin, \( R_V \) zu berechnen, um den erforderlichen Basisstrom \( I_B \) sicherzustellen, sowie den Emitterstrom \( I_E \) zu bestimmen, wenn der Transistor eine Kollektor-Emitter-Spannung \( U_{CE} = 7,5V \) aufweist.  
-  % }  
-  
+
 }
 
 
@@ -63,8 +42,8 @@
           \[
             R_\text{V} = \frac{3,75\,\text{V}}{50\,\mu \text{A}} = 75\,\text{k}\Omega
           \]
-          
-          
+
+
     \item[b)]
           \[
             I_\text{C} = \frac{15\,\text{V} - 7,5\,\text{V}}{500\,\Omega} = 15\,\text{mA}

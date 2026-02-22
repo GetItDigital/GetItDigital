@@ -1,161 +1,53 @@
-\subsection{Schaltverhalten eines Transistors\label{Aufg14}}
+\subsection{Schaltverhalten eines Transistors}
 % Alt: Aufgabe 14
 \Aufgabe{
-    Gegeben ist die abgebildete Transistorschaltung mit den folgenden Parametern: 
+    \label{Aufg14}
+    Gegeben ist die abgebildete Transistorschaltung mit den folgenden Parametern:
     $U_0=\mathrm{5\,V}$ und $U_L=\mathrm{15\,V}$.
     Damit der gezeigte Siliziumtransistor schaltet, benötigt er einen Basisstrom von \( I_\mathrm{B}=\mathrm{50\,\mu A} \), um in den leitenden Zustand zu gelangen.
-    
+
     \begin{figure}[H]
         \centering
-        \input{Tikz/src/FigTransistorSchaltverhalten.tex}
-        \alttext{Die Abbildung zeigt eine Transistorschaltung.
-        Links befindet sich eine Spannungsquelle, die eine Spannung \(U_0\) liefert. Von dieser Quelle aus fließt der Strom durch einen Vorwiderstand, der als \(R_\mathrm{V}\) gekennzeichnet ist weiter zur Basis eines Transistors. Der Basisstrom ist in rot als Pfeil in Stromrichtung mit \(I_\mathrm{B}\) gekennzeichnet.
-        Auf der rechten Seite des Transistors ist ein Lastwiderstand \(R_\mathrm{C}\) angeschlossen, hinter dem sich eine weitere Spannungsquelle befindet die mit \(U_\mathrm{L}\) gekennzeichnet ist.}
+        \input{Tikz/src/FigTransistorSchaltverhalten.tex} \alttext{Die Abbildung zeigt eine Transistorschaltung. Links befindet sich eine Spannungsquelle, die eine Spannung \(U_0\) liefert. Von dieser Quelle aus fließt der Strom durch einen Vorwiderstand, der als \(R_\mathrm{V}\) gekennzeichnet ist weiter zur Basis eines Transistors. Der Basisstrom ist in rot als Pfeil in Stromrichtung mit \(I_\mathrm{B}\) gekennzeichnet.
+            Auf der rechten Seite des Transistors ist ein Lastwiderstand \(R_\mathrm{C}\) angeschlossen, hinter dem sich eine weitere Spannungsquelle befindet die mit \(U_\mathrm{L}\) gekennzeichnet ist.}
         \label{fig:FigTransistorSchaltverhalten}
     \end{figure}
-    
+
     \begin{itemize}
         \item[a)] Wie groß muss der Vorwiderstand \( R_\mathrm{V} \) gewählt werden, damit der Transistor durchschaltet?
         \item[b)] Der Transistor hat einen Stromverstärkungsfaktor \( \beta = 180 \) und einen Kollektorwiderstand \( R_\mathrm{C} = \mathrm{200\,\Omega} \).
               Wie groß sind der Kollektorstrom \( I_\mathrm{C} \) und der Spannungsabfall zwischen Kollektor und Emitter \( U_\mathrm{CE} \)?
     \end{itemize}
-    
-    % \speech{Aufgabe 14  
-    
-    % Damit der gezeichnete Siliziumtransistor schaltet, braucht er einen Basisstrom von \( 50 \mu A \) um durchzuschalten.  
-    
-    % a) Wie groß muss der Widerstand \( R_V \) gewählt werden, damit der Transistor durchschaltet?  
-    
-    % b) Der Transistor hat eine Stromverstärkungsfaktor \( \beta = 180 \) und einen Kollektorwiderstand \( R_C \) von \( 200 \Omega \).  
-    %    Wie groß ist der Kollektorstrom \( I_C \) und der Spannungsabfall zwischen Kollektor-Emitter \( U_{CE} \)?  
-    
-    % Beschreibung der Abbildung  
-    
-    % Die Abbildung zeigt eine Transistorschaltung mit einer **Spannungsquelle von \( 5V \)** auf der linken Seite, die über einen **Widerstand \( R_V \)** mit der Basis eines **npn-Transistors** verbunden ist.  
-    
-    % Die Basis-Emitter-Spannung \( U_{BE} \) ist mit einem blauen Pfeil gekennzeichnet, und der **Basisstrom \( I_B \)** ist mit einem roten Pfeil dargestellt.  
-    
-    % Auf der rechten Seite der Schaltung befindet sich eine **weitere Spannungsquelle mit \( 15V \)**, die über einen **Kollektorwiderstand \( R_C \)** mit dem **Kollektor des Transistors** verbunden ist. Der **Kollektorstrom \( I_C \)** fließt durch den Widerstand \( R_C \) und ist mit einem roten Pfeil markiert.  
-    
-    % Die Aufgabe besteht darin, den notwendigen Basiswiderstand \( R_V \) zu berechnen und aus der gegebenen Stromverstärkung \( \beta \) den **Kollektorstrom \( I_C \)** sowie den Spannungsabfall \( U_{CE} \) zu bestimmen.  
-    % }      
+
 }
 
 
 \Loesung{
-\begin{itemize}
-    \item[a)]
-          Berechnung des Vorwiderstands für den Basisstrom:
-          \begin{equation*}
-              R_\mathrm{V}  = \frac{U}{I} = \frac{\mathrm{5\,V} - \mathrm{0{,}6\,V}}{\mathrm{50\,\mu A}} = \frac{\mathrm{4{,}4\,V}}{\mathrm{50\,\mu A}} = \mathrm{88\,k\Omega}
-          \end{equation*}
-          
-    \item[b)]
-          Berechnung des Kollektorstroms mit Stromverstärkungsfaktor:
-          \begin{gather*}
-              \beta = \frac{I_\mathrm{C}}{I_\mathrm{B}} \\
-              I_\mathrm{C} = \beta \cdot I_\mathrm{B} = 180 \cdot \mathrm{50\,\mu A} = \mathrm{9\,mA}
-          \end{gather*}
-          
-          Berechnung des Spannungsabfalls am Kollektorwiderstand:
-          \begin{equation*}
-              U_\mathrm{RC} = I_\mathrm{C} \cdot R_\mathrm{C} = \mathrm{9\,mA} \cdot \mathrm{200\,\Omega} = \mathrm{1{,}8\,V}
-          \end{equation*}
-          
-          Berechnung der Spannung zwischen Kollektor und Emitter:
-          \begin{equation*}
-              U_\mathrm{CE} = \mathrm{15\,V} - \mathrm{1{,}8\,V} = \mathrm{13{,}2\,V}
-          \end{equation*}
-\end{itemize}
+    \begin{itemize}
+        \item[a)]
+              Berechnung des Vorwiderstands für den Basisstrom:
+              \begin{equation*}
+                  R_\mathrm{V}  = \frac{U}{I} = \frac{\mathrm{5\,V} - \mathrm{0{,}6\,V}}{\mathrm{50\,\mu A}} = \frac{\mathrm{4{,}4\,V}}{\mathrm{50\,\mu A}} = \mathrm{88\,k\Omega}
+              \end{equation*}
+
+        \item[b)]
+              Berechnung des Kollektorstroms mit Stromverstärkungsfaktor:
+              \begin{gather*}
+                  \beta = \frac{I_\mathrm{C}}{I_\mathrm{B}} \\
+                  I_\mathrm{C} = \beta \cdot I_\mathrm{B} = 180 \cdot \mathrm{50\,\mu A} = \mathrm{9\,mA}
+              \end{gather*}
+
+              Berechnung des Spannungsabfalls am Kollektorwiderstand:
+              \begin{equation*}
+                  U_\mathrm{RC} = I_\mathrm{C} \cdot R_\mathrm{C} = \mathrm{9\,mA} \cdot \mathrm{200\,\Omega} = \mathrm{1{,}8\,V}
+              \end{equation*}
+
+              Berechnung der Spannung zwischen Kollektor und Emitter:
+              \begin{equation*}
+                  U_\mathrm{CE} = \mathrm{15\,V} - \mathrm{1{,}8\,V} = \mathrm{13{,}2\,V}
+              \end{equation*}
+    \end{itemize}
 
     Siehe: Abschnitt \ref{sec:Bipolartransistor} und \ref{fig:StroemeUndSpannungenBeimBipolartransistor}
-%     \speech{
-% **Aufgabe 14 – Berechnung des Basiswiderstands und der Verstärkung eines npn-Transistors**
-
-% Gegeben ist eine Schaltung mit einem **npn-Transistor**, der durch einen **Basiswiderstand** gesteuert wird. Die Aufgabe besteht darin, den **Basiswiderstand \( R_V \)** sowie die **Stromverstärkung \( \beta \)** und die zugehörigen Spannungen zu berechnen.
-
-% ---
-
-% ### Teil a) Berechnung des Widerstands \( R_V \)
-% Die Formel für den Widerstand lautet:
-
-% \[
-% R_V = \frac{U}{I}
-% \]
-
-% Gegeben sind:
-% - Eingangsspannung \( U = 5V \)
-% - Basis-Emitter-Spannung \( U_{BE} = 0,6V \)
-% - Basisstrom \( I_B = 50 \mu A \)
-
-% Einsetzen der Werte:
-
-% \[
-% R_V = \frac{5V - 0,6V}{0,05 mA}
-% \]
-
-% \[
-% R_V = \frac{4,4V}{0,05 mA} = 88 kΩ
-% \]
-
-% **Ergebnis**: Der Basiswiderstand \( R_V \) beträgt **88 kΩ**.
-
-% ---
-
-% ### Teil b) Berechnung der Stromverstärkung \( \beta \) und der zugehörigen Spannungen
-% Die Formel für den Verstärkungsfaktor \( \beta \) lautet:
-
-% \[
-% \beta = \frac{I_C}{I_B}
-% \]
-
-% Gegeben:
-% - Basisstrom \( I_B = 50 \mu A \)
-% - Stromverstärkungsfaktor \( \beta = 180 \)
-
-% Berechnung des Kollektorstroms \( I_C \):
-
-% \[
-% I_C = \beta \cdot I_B
-% \]
-
-% \[
-% I_C = 180 \cdot 50 \mu A = 9 mA
-% \]
-
-% Nun wird die Spannung am **Kollektorwiderstand \( R_C \)** berechnet:
-
-% \[
-% U_{RC} = I_C \cdot R_C
-% \]
-
-% Gegeben:
-% - \( R_C = 200Ω \)
-% - \( I_C = 9 mA \)
-
-% \[
-% U_{RC} = 9 mA \cdot 200Ω = 1,8V
-% \]
-
-% Die **Kollektor-Emitter-Spannung \( U_{CE} \)** ergibt sich aus:
-
-% \[
-% U_{CE} = 15V - U_{RC}
-% \]
-
-% \[
-% U_{CE} = 15V - 1,8V = 13,2V
-% \]
-
-% ---
-
-% **Ergebnisse**:
-% - Der Kollektorstrom \( I_C \) beträgt **9 mA**.
-% - Die Spannung über dem Kollektorwiderstand \( U_{RC} \) beträgt **1,8V**.
-% - Die Kollektor-Emitter-Spannung \( U_{CE} \) beträgt **13,2V**.
-% }
 
 }
-
-
-

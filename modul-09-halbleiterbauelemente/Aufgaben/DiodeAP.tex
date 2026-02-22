@@ -1,166 +1,87 @@
-\subsection{Bestimmung des Arbeitspunkts und der Leistung einer Diode\label{Aufg4}}
+\subsection{Bestimmung des Arbeitspunkts und der Leistung einer Diode}
 % Alt: Aufgabe 4
+
 \Aufgabe{
-  Eine Diode hat die folgende Kennlinie im 
-  Durchlassbereich. Sie wird in Reihe mit einer 
-  idealen Spannungsquelle $U_0=1\,\mathrm{V}$ und einem 
-  Widerstand mit dem Wert von $R=200\,\Omega$ geschaltet.
+    \label{Aufg4}
+    Eine Diode hat die folgende Kennlinie im
+    Durchlassbereich. Sie wird in Reihe mit einer
+    idealen Spannungsquelle $U_0=1\,\mathrm{V}$ und einem
+    Widerstand mit dem Wert von $R=200\,\Omega$ geschaltet.
 
     \begin{figure}[H]
         \centering
         \begin{subfigure}[h]{0.45\textwidth}
             \centering
-            \input{Tikz/src/FigDiodeAP}
-            \alttext{Zu sehen sind zwei Abbildungen. Links ist eine Reihenschaltung mit drei Bauteilen dargestellt:
-            Eine Spannungsquelle, bezeichnet mit \(U_0\), deren Pfeil nach unten zeigt, ein Widerstand, gekennzeichnet mit dem Buchstaben \(R\) und eine Diode, symbolisiert durch das typische Dreieck mit einem Strich an der Spitze und beschriftet mit \(D\).
-            Der Stromfluss in der Schaltung wird durch einen roten Pfeil markiert, der im Uhrzeigersinn vom Widerstand zur Diode verläuft und mit \(I\) bezeichnet ist. Neben der Diode befindet sich ein weiterer Spannungspfeil in Richtung des Stromflusses, beschriftet mit \(U_\mathrm{D}\).}
+            \input{Tikz/src/FigDiodeAP}\alttext{Zu sehen sind zwei Abbildungen. Links ist eine Reihenschaltung mit drei Bauteilen dargestellt:
+                Eine Spannungsquelle, bezeichnet mit \(U_0\), deren Pfeil nach unten zeigt, ein Widerstand, gekennzeichnet mit dem Buchstaben \(R\) und eine Diode, symbolisiert durch das typische Dreieck mit einem Strich an der Spitze und beschriftet mit \(D\).
+                Der Stromfluss in der Schaltung wird durch einen roten Pfeil markiert, der im Uhrzeigersinn vom Widerstand zur Diode verläuft und mit \(I\) bezeichnet ist. Neben der Diode befindet sich ein weiterer Spannungspfeil in Richtung des Stromflusses, beschriftet mit \(U_\mathrm{D}\).}
         \end{subfigure}
         \begin{subfigure}[h]{0.45\textwidth}
             \centering
-            \includesvg[width=0.9\textwidth]{Bilder/Aufgaben/FigDiodeAP}
-            \alttext{Rechts daneben befindet sich ein Diagramm, das den Zusammenhang zwischen Stromstärke \(I\) und Spannung U über der Diode darstellt. Die horizontale Achse zeigt die Spannung in Volt (V), von 0 bis etwas über 1 Volt. Die vertikale Achse zeigt den Strom in Milliampere (mA), von \(0\) bis \(7 \ mA\).
-            Die Kurve im Diagramm beginnt nahe null bei niedrigen Spannungen und steigt ab etwa 0,6 Volt steil an - dies verdeutlicht das typische Verhalten einer Siliziumdiode: bei einer bestimmten Schwellenspannung fließt plötzlich deutlich mehr Strom.}
+            \includesvg[width=0.9\textwidth]{Bilder/Aufgaben/FigDiodeAP}\alttext{Rechts daneben befindet sich ein Diagramm, das den Zusammenhang zwischen Stromstärke \(I\) und Spannung U über der Diode darstellt. Die horizontale Achse zeigt die Spannung in Volt (V), von 0 bis etwas über 1 Volt. Die vertikale Achse zeigt den Strom in Milliampere (mA), von \(0\) bis \(7 \ mA\).
+                Die Kurve im Diagramm beginnt nahe null bei niedrigen Spannungen und steigt ab etwa 0,6 Volt steil an - dies verdeutlicht das typische Verhalten einer Siliziumdiode: bei einer bestimmten Schwellenspannung fließt plötzlich deutlich mehr Strom.}
         \end{subfigure}
         \label{fig:FigDiodeAP}
     \end{figure}
-    
+
 
     \begin{itemize}
         \item[a)]
-        Welcher Strom $I$ und welche Spannung $U_\mathrm{D}$ 
-        stellen sich ein? Lösen Sie das Problem graphisch.
+              Welcher Strom $I$ und welche Spannung $U_\mathrm{D}$
+              stellen sich ein? Lösen Sie das Problem graphisch.
         \item[b)]
-        Welche elektrische Leistung wird an der Diode umgesetzt?
+              Welche elektrische Leistung wird an der Diode umgesetzt?
         \item[c)]
-        Wie muss $R$ gewählt werden, damit sich ein Strom von $3\,\mathrm{mA}$ einstellt? 
+              Wie muss $R$ gewählt werden, damit sich ein Strom von $3\,\mathrm{mA}$ einstellt?
     \end{itemize}
-%     \speech{ **Aufgabe 4**  
-% Eine **Diode mit gegebener Kennlinie im Durchlassbereich** wird in **Reihe mit einer idealen Spannungsquelle** \( U_0 = 1V \) und einem **Widerstand \( R = 200\Omega \)** geschaltet.
-
-% Beantworten Sie die folgenden Fragen:  
-% a) **Welcher Strom \( I \) und welche Spannung \( U_D \) stellen sich ein?**  
-%    - Lösen Sie das Problem **graphisch** mit Hilfe der gegebenen **Kennlinie**.  
-% b) **Welche elektrische Leistung wird an der Diode umgesetzt?**  
-% c) **Wie muss \( R \) gewählt werden, damit sich ein Strom von 3 mA einstellt?**  
-
-
-
-%  **Beschreibung der Abbildung**
-% Die Abbildung besteht aus zwei Teilen:
-
-% 1. **Schaltungsskizze (links):**  
-%    - Eine **ideale Gleichspannungsquelle** mit einer Spannung von \( U_0 = 1V \) ist dargestellt.  
-%    - Ein **Serienwiderstand \( R \)** von **200Ω** begrenzt den Stromfluss.  
-%    - Eine **Siliziumdiode** ist in **Durchlassrichtung** geschaltet.  
-%    - Der Strom \( I \) fließt durch den Widerstand und die Diode.  
-%    - Die Spannung **\( U_D \)** fällt über der **Diode** ab.  
-
-% 2. **Diodenkennlinie (rechts):**  
-%    - **Auf der x-Achse** ist die **Diodenspannung \( U_D \)** in **Volt (V)** dargestellt.  
-%    - **Auf der y-Achse** ist der **Diodenstrom \( I \)** in **Milliampere (mA)** aufgetragen.  
-%    - Die **exponentielle Kennlinie** zeigt den **typischen Durchlassbereich einer Diode**.  
-%    - Um die Lösung zu bestimmen, muss der **Arbeitspunkt** durch die **Schnittstelle zwischen der Diodenkennlinie und der Lastgeraden** ermittelt werden.  
-
-%  **Zusammenfassung der Aufgabe**
-% - Die Aufgabe erfordert die **Bestimmung des Stroms und der Spannung an der Diode**, wobei die **Kennlinie** als Grundlage für die Berechnung dient.  
-% - Es soll die **umgesetzte elektrische Leistung** berechnet werden.  
-% - Schließlich muss der **Widerstandswert \( R \) angepasst werden**, um einen bestimmten **gewünschten Strom von 3 mA** zu erreichen.  
-% }
-
 }
-    
+
 \Loesung{
     \begin{itemize}
         \item[a)]
-        Im ersten Schritt wird die Wirkung der Spannungsquelle auf den Widerstand $R$ betrachtet. 
-        Bei $U_0=1\,\mathrm{V}$ fließen durch den Widerstand $R$ ein Strom von $I_\mathrm{R}=\frac{U_0}{R}=\frac{1\,\mathrm{V}}{200\,\Omega}=5\,\mathrm{mA}$. 
-        Es kann die Widerstandgerade vom Ursprung aus zu dem Punkt ($1\,\mathrm{V}$, $5\,\mathrm{mA}$) eingezeichnet werden (linke Abbildung).\\
-        Gemäß des Aufbaus der Schaltung muss die Widerstandsgerade im nächsten Schritt gespiegelt werden, es entsteht die rechte Darstellung.
-        Der Schnittpunkt beider Linien entspricht dem Arbeitspunkt ($U_\text{AP}$, $I_\text{AP}$), dieser lautet: ($0,75\,\mathrm{V}$, $1,2\,\mathrm{mA}$). 
-                
-        \begin{minipage}{\linewidth}
-            \begin{figure}[H]
-                \centering
-                \begin{subfigure}[b]{0.49\linewidth}
-                    \centering
-                    \includesvg[width=0.9\textwidth]{Bilder/Aufgaben/LsgDiodeAP1}
-                \end{subfigure}
-                \begin{subfigure}[b]{0.49\linewidth}
-                    \centering
-                    \includesvg[width=0.9\textwidth]{Bilder/Aufgaben/LsgDiodeAP2}
-                \end{subfigure}
-            \end{figure}
-        \end{minipage}
-                    
+              Im ersten Schritt wird die Wirkung der Spannungsquelle auf den Widerstand $R$ betrachtet.
+              Bei $U_0=1\,\mathrm{V}$ fließen durch den Widerstand $R$ ein Strom von $I_\mathrm{R}=\frac{U_0}{R}=\frac{1\,\mathrm{V}}{200\,\Omega}=5\,\mathrm{mA}$.
+              Es kann die Widerstandgerade vom Ursprung aus zu dem Punkt ($1\,\mathrm{V}$, $5\,\mathrm{mA}$) eingezeichnet werden (linke Abbildung).\\
+              Gemäß des Aufbaus der Schaltung muss die Widerstandsgerade im nächsten Schritt gespiegelt werden, es entsteht die rechte Darstellung.
+              Der Schnittpunkt beider Linien entspricht dem Arbeitspunkt ($U_\text{AP}$, $I_\text{AP}$), dieser lautet: ($0,75\,\mathrm{V}$, $1,2\,\mathrm{mA}$).
+
+              \begin{minipage}{\linewidth}
+                  \begin{figure}[H]
+                      \centering
+                      \begin{subfigure}[b]{0.49\linewidth}
+                          \centering
+                          \includesvg[width=0.9\textwidth]{Bilder/Aufgaben/LsgDiodeAP1}
+                      \end{subfigure}
+                      \begin{subfigure}[b]{0.49\linewidth}
+                          \centering
+                          \includesvg[width=0.9\textwidth]{Bilder/Aufgaben/LsgDiodeAP2}
+                      \end{subfigure}
+                  \end{figure}
+              \end{minipage}
+
         \item[b)]
-        Die Leistung ergibt sich aus dem zuvor ermittelten Arbeitspunkt.
-        \begin{equation*}
-            P = U_\text{AP} \cdot I_\text{AP} = 0,75 \, \text{V} \cdot 1,2 \, \text{mA} = 0,9 \, \text{mW}
-        \end{equation*}
-        
+              Die Leistung ergibt sich aus dem zuvor ermittelten Arbeitspunkt.
+              \begin{equation*}
+                  P = U_\text{AP} \cdot I_\text{AP} = 0,75 \, \text{V} \cdot 1,2 \, \text{mA} = 0,9 \, \text{mW}
+              \end{equation*}
+
         \item[c)]
-        Ausgehend vom Punkt ($1\,\mathrm{V}, 0\,\mathrm{mA}$) zum Schnittpunkt mit der Diodenkennlinie bei $I=3\,\mathrm{mA}$ ergibt sich die gesuchte Widerstandsgerade.
-        
-        \begin{minipage}{\linewidth}
-            \begin{figure}[H]
-                \centering
-                \includesvg[width=0.45\linewidth]{Bilder/Aufgaben/LsgDiodeAP3}
-            \end{figure}
-        \end{minipage}
-        
-        Es kann der Schnittpunkt ($0,86\,\mathrm{V}, 3\,\mathrm{mA}$) abegelesen werden.
-    
-        \begin{gather*}
-            U_\mathrm{R} = U_0 - U_\mathrm{D} = 1 \, \mathrm{V} - 0,86 \, \mathrm{V} = 0,14 \, \mathrm{V} \\
-            I = 3 \, \mathrm{mA} \\
-            R = \frac{U_{\text{R}}}{I} = \frac{0,14 \, \text{V}}{3 \, \text{mA}} = 46,67 \, \Omega
-        \end{gather*}
+              Ausgehend vom Punkt ($1\,\mathrm{V}, 0\,\mathrm{mA}$) zum Schnittpunkt mit der Diodenkennlinie bei $I=3\,\mathrm{mA}$ ergibt sich die gesuchte Widerstandsgerade.
+
+              \begin{minipage}{\linewidth}
+                  \begin{figure}[H]
+                      \centering
+                      \includesvg[width=0.45\linewidth]{Bilder/Aufgaben/LsgDiodeAP3}
+                  \end{figure}
+              \end{minipage}
+
+              Es kann der Schnittpunkt ($0,86\,\mathrm{V}, 3\,\mathrm{mA}$) abegelesen werden.
+
+              \begin{gather*}
+                  U_\mathrm{R} = U_0 - U_\mathrm{D} = 1 \, \mathrm{V} - 0,86 \, \mathrm{V} = 0,14 \, \mathrm{V} \\
+                  I = 3 \, \mathrm{mA} \\
+                  R = \frac{U_{\text{R}}}{I} = \frac{0,14 \, \text{V}}{3 \, \text{mA}} = 46,67 \, \Omega
+              \end{gather*}
     \end{itemize}
-Siehe: Abschnitt \ref{fig:Diodenkennlinie}
-
-
-% \speech{
-% **Lösung zu Aufgabe 4**  
-
-% **Teilaufgabe a:**  
-% Im ersten Schritt wird die Wirkung der Spannungsquelle auf den Widerstand \( R \) betrachtet.  
-% Die gegebene Spannung beträgt \( U_0 = 1V \).  
-% Da der Widerstand \( R = 200 \Omega \) beträgt, ergibt sich der Strom durch den Widerstand als:  
-% \( I_R = \frac{U_0}{R} = \frac{1V}{200 \Omega} = 5mA \).  
-
-% Die dazugehörige Widerstandsgerade kann im Diagramm als eine Linie von der Ursprungskoordinate \((0V, 0mA)\) bis zum Punkt \((1V, 5mA)\) eingezeichnet werden.  
-% Diese Gerade gibt an, wie sich der Strom \( I_R \) in Abhängigkeit der Spannung \( U \) verhält.  
-
-% In der linken Abbildung ist die Diodenkennlinie als eine exponentiell ansteigende blaue Kurve dargestellt.  
-% Zusätzlich ist die Widerstandsgerade als schwarze Linie eingezeichnet.  
-% Diese verläuft von \((0V, 0mA)\) bis zu \((1V, 5mA)\).  
-
-% Da das Bauteil eine Diode enthält, muss die Widerstandsgerade gespiegelt werden.  
-% Dies ist in der zweiten Abbildung auf der rechten Seite ersichtlich.  
-% Die Widerstandsgerade wird so verschoben, dass sie nun von einem neuen Ursprungspunkt ausgeht.  
-% Der Schnittpunkt dieser Linie mit der Diodenkennlinie entspricht dem Arbeitspunkt der Schaltung.  
-% Dort gelten die Werte:  
-% \( U_{AP} = 0,75V \) und \( I_{AP} = 1,2mA \).  
-
-% **Teilaufgabe b:**  
-% Die elektrische Leistung an der Diode wird aus dem zuvor bestimmten Arbeitspunkt berechnet.  
-% Die allgemeine Formel für die Leistung lautet:  
-% \( P = U \cdot I \).  
-% Hier setzen wir die Werte des Arbeitspunktes ein:  
-% \( P = 0,75V \cdot 1,2mA = 0,9mW \).  
-
-% **Teilaufgabe c:**  
-% Nun soll der Widerstand \( R \) so bestimmt werden, dass sich ein Strom von \( I = 3mA \) einstellt.  
-% In der dritten Abbildung ist erneut eine Diodenkennlinie zu sehen.  
-% Zusätzlich wurde eine neue Widerstandsgerade eingezeichnet, die nun durch den Punkt \((1V, 0mA)\) zum Schnittpunkt mit der Diodenkennlinie bei \( I = 3mA \) verläuft.  
-% Dieser Schnittpunkt liegt bei der Spannung \( 0,86V \).  
-
-% Der Spannungsabfall am Widerstand ergibt sich aus:  
-% \( U_{ges} = U - U_D = 1V - 0,86V = 0,14V \).  
-% Da der gewünschte Strom \( I = 3mA \) beträgt, berechnet sich der benötigte Widerstand durch das Ohmsche Gesetz:  
-% \( R = \frac{U_{ges}}{I} = \frac{0,14V}{3mA} = 46,67 \Omega \).  
-
-% Das bedeutet, dass für einen Strom von 3mA der Widerstand \( R \) auf 46,67 Ohm angepasst werden muss.  
-% }
-
+    Siehe: Abschnitt \ref{fig:Diodenkennlinie}
 }

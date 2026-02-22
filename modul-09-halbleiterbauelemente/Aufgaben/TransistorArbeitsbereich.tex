@@ -1,15 +1,15 @@
-\subsection{Analyse des Arbeitsbereichs eines Transistors\label{Aufg16}}
+\subsection{Analyse des Arbeitsbereichs eines Transistors}
 % Alt: Aufgabe 16
 \Aufgabe{
+    \label{Aufg16}
     Der Stromverstärkungsfaktor des verwendeten Siliziumtransistors beträgt $ \beta = 150$ und die Versorgungsspannung liegt bei $U_\mathrm{V} = 15\,\mathrm{V}$. Die Schaltung soll so dimensioniert werden, dass der Kollektorstrom $I_\mathrm{C} = 2\,\mathrm{mA}$ beträgt.
-    
+
     \begin{figure}[H]
         \centering
-        \input{Tikz/src/FigTransistorArbeitsbereich.tex}
-        \alttext{Die Abbildung zeigt einen elektrischen Schaltkreis mit einem Transistor in der Mitte. Oben links befindet sich eine Leitung, an der zwei Widerstände hintereinander an die Versorgungsspannung geschaltet sind, zuerst \(R_1\) und darunter \(R_2\).  Zwischen diesen beiden Widerständen ist ein Abgriff zur Basis des Transistors geführt. Vom oberen Anschluss des Transistors (Kollektor) führt eine Leitung nach oben mit einem Pfeil, der den Strom mit \(I_\mathrm{C}\) gekennzeichnet nach unten anzeigt. Vom unteren Anschluss des Transistors (Emitter) gehen zwei parallele Leitungen ab, die jeweils über einen Widerstand führen: links durch \(R_3\) und rechts durch \(R_\mathrm{L}\). Beide Widerstände sind mit Masse verbunden, also dem Bezugspunkt für die elektrische Spannung. Rechts der Widerstände ist eine Spannung eingezeichnet die als \(U_\mathrm{A}\) gekennzeichnet wird. Der Spannungspfeil verläuft dabei von oben nach unten. Links neben den ersten beiden Widerständen verläuft eine Spannung \(U_\mathrm{B}\) ebenfalls von oben nach unten entlang der Leiterbahn bis zur Masse.}
+        \input{Tikz/src/FigTransistorArbeitsbereich.tex}\alttext{Die Abbildung zeigt einen elektrischen Schaltkreis mit einem Transistor in der Mitte. Oben links befindet sich eine Leitung, an der zwei Widerstände hintereinander an die Versorgungsspannung geschaltet sind, zuerst \(R_1\) und darunter \(R_2\).  Zwischen diesen beiden Widerständen ist ein Abgriff zur Basis des Transistors geführt. Vom oberen Anschluss des Transistors (Kollektor) führt eine Leitung nach oben mit einem Pfeil, der den Strom mit \(I_\mathrm{C}\) gekennzeichnet nach unten anzeigt. Vom unteren Anschluss des Transistors (Emitter) gehen zwei parallele Leitungen ab, die jeweils über einen Widerstand führen: links durch \(R_3\) und rechts durch \(R_\mathrm{L}\). Beide Widerstände sind mit Masse verbunden, also dem Bezugspunkt für die elektrische Spannung. Rechts der Widerstände ist eine Spannung eingezeichnet die als \(U_\mathrm{A}\) gekennzeichnet wird. Der Spannungspfeil verläuft dabei von oben nach unten. Links neben den ersten beiden Widerständen verläuft eine Spannung \(U_\mathrm{B}\) ebenfalls von oben nach unten entlang der Leiterbahn bis zur Masse.}
         \label{fig:FigTransistorArbeitsbereich}
     \end{figure}
-    
+
     \begin{itemize}
         \item[a)] Dimensionieren Sie den Widerstand $R_3$ so, dass bei einer Spannung am Ausgang von $U_\mathrm{A}=3\,\mathrm{V}$ der Strom durch $R_3$ genau $75\%$ des Emitterstroms beträgt.
         \item[b)] Bestimmen Sie die Widerstände $R_1$ und $R_2$, unter der Annahme, dass die Kollektor-Basis-Spannung $U_\mathrm{BE} = 0,6\,\mathrm{V}$ beträgt und durch $R_2$ etwa das 9-fache des Basisstroms $I_\mathrm{B}$ fließt.
@@ -31,12 +31,12 @@
                   I_{R_2}  = 9 \cdot I_\mathrm{B} = 9 \cdot \mathrm{13,3\,\mu A} = \mathrm{0,12\,mA}                                                              \\
                   R_2 = \frac{U_\mathrm{a} + U_\mathrm{BE}}{I_\mathrm{R_2}} = \frac{\mathrm{3\,V} + \mathrm{0,6\,V}}{\mathrm{0,12\,mA}} = \mathrm{30\,k\Omega}
               \end{gather*}
-              
+
               Berechnung des Stroms durch $R_1$, welcher gleich $I_\mathrm{R_2}$ ist:
               \begin{gather*}
                   R_1  = \frac{U_\mathrm{BE}}{I_\mathrm{R_1}} = \frac{0,6\,\mathrm{V}}{0,12\,\mathrm{mA}} = 5,6\,\mathrm{k\Omega}
               \end{gather*}
     \end{itemize}
-    
+
     Siehe: Abschnitt \ref{sec:ElektrischesVerhaltenBipolartransistor}
 }

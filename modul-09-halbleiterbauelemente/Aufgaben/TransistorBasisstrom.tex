@@ -1,16 +1,13 @@
-\subsection{Ermittlung von Basis-Emitter-Spannung und Basisstrom\label{Aufg12}}
+\subsection{Ermittlung von Basis-Emitter-Spannung und Basisstrom}
 % Alt: Aufgabe 12
 \Aufgabe{
+  \label{Aufg12}
   Gegeben ist die abgebildete Transistorschaltung mit den folgenden Parametern: $U_0=\mathrm{5\,V}$ ,
   $U_L=\mathrm{15\,V}$, $R_\mathrm{V}=\mathrm{100\,k\Omega}$ und $R_\mathrm{V}=\mathrm{500\,\Omega}$.
-  
+
   \begin{figure}[H]
     \centering
-    \input{Tikz/src/FigTransistorBasisstrom.tex}
-    \alttext{Die Abbildung zeigt eine Transistorschaltung.
-    Links befindet sich eine Spannungsquelle, die eine Spannung \(U_0\) liefert. Von dieser Quelle aus fließt der Strom durch einen Vorwiderstand, der als \(R_\mathrm{V}\) gekennzeichnet ist weiter zur Basis eines Transistors. Der Basisstrom ist in rot als Pfeil in Stromrichtung mit \(I_\mathrm{B}\) gekennzeichnet.  
-    Die Spannung zwischen Basis und Ermitter wird mit \(U_{\mathrm{BE}}\) gekennzeichnet.
-    Auf der rechten Seite des Transistors ist ein Lastwiderstand \(R_\mathrm{L}\) angeschlossen, hinter dem sich eine weitere Spannungsquelle befindet die mit \(U_\mathrm{L}\) gekennzeichnet ist.}
+    \input{Tikz/src/FigTransistorBasisstrom.tex}\alttext{Die Abbildung zeigt eine Transistorschaltung. Links befindet sich eine Spannungsquelle, die eine Spannung \(U_0\) liefert. Von dieser Quelle aus fließt der Strom durch einen Vorwiderstand, der als \(R_\mathrm{V}\) gekennzeichnet ist weiter zur Basis eines Transistors. Der Basisstrom ist in rot als Pfeil in Stromrichtung mit \(I_\mathrm{B}\) gekennzeichnet. Die Spannung zwischen Basis und Ermitter wird mit \(U_{\mathrm{BE}}\) gekennzeichnet. Auf der rechten Seite des Transistors ist ein Lastwiderstand \(R_\mathrm{L}\) angeschlossen, hinter dem sich eine weitere Spannungsquelle befindet die mit \(U_\mathrm{L}\) gekennzeichnet ist.}
     \label{fig:FigTransistorBasisstrom}
   \end{figure}
 
@@ -28,10 +25,10 @@
           \begin{equation*}
             U_\text{BE} \approx 0,6\,\text{V} \text{ bis } 0,7\,\text{V}
           \end{equation*}
-          
-          Obwohl \( U_\text{0} = 5\,\text{V} \) ist, begrenzt der Transistor die Spannung \( U_{BE} \) auf ca. \( 0,6\,\text{V} \), sobald der Transistor leitend ist.  
+
+          Obwohl \( U_\text{0} = 5\,\text{V} \) ist, begrenzt der Transistor die Spannung \( U_{BE} \) auf ca. \( 0,6\,\text{V} \), sobald der Transistor leitend ist.
           Der überschüssige Spannungsabfall wird durch andere Ströme und Bauteile der Schaltung ausgeglichen.
-          
+
     \item[b)]
           \begin{align*}
             I_\text{B} = \frac{5\,\text{V} - 0,6\,\text{V}}{100\,\text{k}\Omega} = 44\,\mu\text{A}

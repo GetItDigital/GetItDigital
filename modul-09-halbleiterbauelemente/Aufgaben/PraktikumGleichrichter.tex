@@ -1,20 +1,19 @@
-\subsection{Untersuchung eines einfachen Gleichrichters\label{Aufg31}}
+\subsection{Untersuchung eines einfachen Gleichrichters}
 % Alt: Praktikumsaufgabe 3
 \Aufgabe{
-
+    \label{Aufg31}
     Analysieren Sie den folgenden Gleichrichter. Zusätzlich sind die folgenden Parameter gegeben:
-    
+
     $\hat{u}_\mathrm{E} = 5\,\mathrm{V}$,
     $R_\mathrm{L} = 1\,\mathrm{k\Omega}$
     und eine Durchlassspannung von $U_\mathrm{f} = 0,7\,\mathrm{V}$.
-    
+
     \begin{figure}[H]
         \centering
-        \input{Tikz/src/FigPraktikumGleichrichter}
-        \alttext{Die Abbildung zeigt eine elektrische Schaltung mit zwei elektrischen Bauteilen und einer Spannungsquelle mit Wechselspannung \(u_\mathrm{E}(t)\). In Reihe an die Spannungsquelle angeschlossen befindet sich eine Diode \(D_1\) in Richtung des Stromflusses sowie ein Wiederstand, welcher mit \(R_\mkathrm{L}\) beschriftet ist. Die Spannung über den Widerstand ist mit \(U_A\) gekennzeichnet.}
+        \input{Tikz/src/FigPraktikumGleichrichter}\alttext{Die Abbildung zeigt eine elektrische Schaltung mit zwei elektrischen Bauteilen und einer Spannungsquelle mit Wechselspannung \(u_\mathrm{E}(t)\). In Reihe an die Spannungsquelle angeschlossen befindet sich eine Diode \(D_1\) in Richtung des Stromflusses sowie ein Wiederstand, welcher mit \(R_\mkathrm{L}\) beschriftet ist. Die Spannung über den Widerstand ist mit \(U_A\) gekennzeichnet.}
         \label{fig:FigPraktikumGleichrichter}
     \end{figure}
-    
+
     \begin{itemize}
         \item[a)] Berechnen Sie die Ausgangsspannung $U_\mathrm{A}$.
         \item[b)] Bestimmen Sie den durch den Lastwiderstand $R_\mathrm{L}$ fließenden Strom $I_\mathrm{L}$.
@@ -25,7 +24,7 @@
 \Loesung{
     \begin{itemize}
         \item[a)] Berechnung der Ausgangsspannung $U_\mathrm{A}$ \\[0.2cm]
-              Die gegebene Schaltung besteht aus einer Diode in Vorwärtsrichtung und einem Lastwiderstand.  
+              Die gegebene Schaltung besteht aus einer Diode in Vorwärtsrichtung und einem Lastwiderstand.
               Die Ausgangsspannung $U_\mathrm{A}$ entspricht der Eingangsspannung abzüglich der Durchlassspannung:
               \[
                   U_\mathrm{A} = U_\mathrm{E} - U_\mathrm{f}
@@ -34,7 +33,7 @@
               \[
                   U_\mathrm{A} = 5\,\mathrm{V} - 0{,}7\,\mathrm{V} = 4{,}3\,\mathrm{V}
               \]
-              
+
         \item[b)] Bestimmung des Laststroms $I_\mathrm{L}$ \\[0.2cm]
               Der durch den Lastwiderstand $R_\mathrm{L}$ fließende Strom berechnet sich nach dem Ohmschen Gesetz:
               \[

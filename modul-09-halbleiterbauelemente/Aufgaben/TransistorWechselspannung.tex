@@ -1,22 +1,21 @@
-\subsection{Verhalten eines Transistors bei Wechselspannung\label{Aufg19}}
+\subsection{Verhalten eines Transistors bei Wechselspannung}
 % Alt: Aufgabe 19
 \Aufgabe{
-    Was passiert wenn an einen Transistor eine reine Wechselspannung 
+    \label{Aufg19}
+    Was passiert wenn an einen Transistor eine reine Wechselspannung
     angelegt wird?
-    \begin {figure} [H]
-    \centering
-    \input{Tikz/src/FigTransistorWechselspannung.tex}
-    \alttext{Die Abbildung zeigt eine Transistorschaltung.
-    Links befindet sich eine Wechselspannungsquelle, die eine Spannung \(u_\mathrm{E}\) liefert. Von dieser Quelle aus fließt der Strom durch einen Widerstand, der als \(R_1\) gekennzeichnet ist weiter zur Basis eines Transistors. Der Basisstrom ist in rot als Pfeil in Stromrichtung mit \(I_\mathrm{B}\) gekennzeichnet.
-    Auf der rechten Seite des Transistors ist ein Lastwiderstand \(R_2\) angeschlossen, hinter dem sich eine weitere Spannungsquelle befindet die mit \(U_\mathrm{L}\) gekennzeichnet ist.  Die Spannung zwischen Ermitter und der Masseleitung wird mit \(u_\mathrm{A}\) gekennzeichnet.}
-    \label{fig:FigTransistorWechselspannung}
-    \end {figure}
+    \begin{figure}[H]
+        \centering
+        \input{Tikz/src/FigTransistorWechselspannung.tex} \alttext{Die Abbildung zeigt eine Transistorschaltung. Links befindet sich eine Wechselspannungsquelle, die eine Spannung \(u_\mathrm{E}\) liefert. Von dieser Quelle aus fließt der Strom durch einen Widerstand, der als \(R_1\) gekennzeichnet ist weiter zur Basis eines Transistors. Der Basisstrom ist in rot als Pfeil in Stromrichtung mit \(I_\mathrm{B}\) gekennzeichnet.
+            Auf der rechten Seite des Transistors ist ein Lastwiderstand \(R_2\) angeschlossen, hinter dem sich eine weitere Spannungsquelle befindet die mit \(U_\mathrm{L}\) gekennzeichnet ist.  Die Spannung zwischen Ermitter und der Masseleitung wird mit \(u_\mathrm{A}\) gekennzeichnet.}
+        \label{fig:FigTransistorWechselspannung}
+    \end{figure}
 }
 
 
 \Loesung{
-    Wenn an einen Transistor eine reine Wechselspannung angelegt wird, tritt kein kontinuierlicher Verstärkungsbetrieb auf.  
-    
+    Wenn an einen Transistor eine reine Wechselspannung angelegt wird, tritt kein kontinuierlicher Verstärkungsbetrieb auf.
+
     Das führt zu folgenden Effekten:
     \begin{itemize}
         \item Verzerrungen im Ausgangssignal, da nur die positiven Halbwellen verstärkt werden.
@@ -24,25 +23,4 @@
         \item Es erfolgt keine lineare Verstärkung, da der Transistor zwischen Sperr- und Sättigungszustand wechselt.
     \end{itemize}
     Siehe: Abschnitt \ref{merk:MerksatzWechselspannung}
-    
-    % **Folgende Effekte treten auf:**  
-    
-    % - **Verzerrungen im Ausgangssignal:**  
-    %   Da nur die positiven Halbwellen verstärkt werden, während die negativen nicht beeinflusst oder unterdrückt werden,  
-    %   entsteht eine ungleichmäßige Signalform.  
-    
-    % - **Die negative Halbwelle wird abgeschnitten:**  
-    %   Dies ähnelt einer Gleichrichtung des Signals, da der Transistor während der negativen Halbwelle nicht leitet  
-    %   und kein Verstärkungseffekt auftritt.  
-    
-    % - **Keine lineare Verstärkung:**  
-    %   Da der Transistor zwischen Sperr- und Sättigungszustand wechselt, erfolgt keine gleichmäßige Verstärkung über  
-    %   den gesamten Signalverlauf.  
-    %   Der Verstärkungsprozess ist also nicht linear, was bedeutet, dass das Ausgangssignal nicht proportional  
-    %   zum Eingangssignal verstärkt wird.  
-    
-    % Daraus lässt sich schließen, dass für einen kontinuierlichen Verstärkungsbetrieb eine Gleichspannungskomponente  
-    % als Arbeitspunkt erforderlich ist, sodass der Transistor nicht in den Sperrbereich wechselt.
-    %
-    
 }
