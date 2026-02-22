@@ -703,8 +703,8 @@
 	\begin{figure}[H]
 		\centering
 		\includesvg[width=0.8\textwidth]{Elektronenbewegung}
-		\s{\caption{\textbf{Ungerichtete Bewegung freier Elektronen.} Zeigt die freien Elektronen (blau) zwischen positiv geladenen Atomrümpfen (rot). Solche Bewegungen sind charakteristisch für Metalle im Ruhezustand,
-				wo die Elektronen sich zufällig bewegen, ohne eine bevorzugte Richtung, solange kein äußeres elektrisches Feld anliegt.}}
+		\s{\caption{\textbf{Ungerichtete Bewegung freier Elektronen.} Zeigt die freien Elektronen (blau) zwischen positiv geladenen Atomrümpfen (rot). Solche Bewegungen sind charakteristisch für Metalle im Ruhezustand, wo die Elektronen sich zufällig bewegen, ohne eine bevorzugte Richtung, solange kein äußeres elektrisches Feld anliegt.}}
+		\alttext{Das Bild zeigt die ungerichtete Bewegung freier Elektronen, also die freien Elektronen zwischen positiv geladenen Atomrümpfen. Solche Bewegungen sind charakteristisch für Metalle im Ruhezustand, wo die Elektronen sich zufällig bewegen, ohne eine bevorzugte Richtung, solange kein äußeres elektrisches Feld anliegt.}
 		\label{fig:Elektronenbewegung}
 	\end{figure}
 
@@ -738,6 +738,8 @@
 			\centering
 			\hspace*{-0.35cm}
 			\includesvg[width=0.8\textwidth]{Elektronenbewegung_gerichtet}
+			\alttext{Diese Abbildung zeigt die gerichtete Bewegung von Elektronen. Unter Einfluss eines elektrischen Feldes E, bewegen sich die freien Elektronen in einem
+			Leiter entgegen der Feldrichtung, was den elektrischen Stromfluss I erklärt.}
 		\end{figure}
 	}
 
@@ -753,6 +755,8 @@
 		\includesvg[width=0.8\textwidth]{Elektronenbewegung_gerichtet}
 		\caption{\textbf{Gerichtete Bewegung von Elektronen.} Unter Einfluss eines elektrischen Feldes $\vec{E}$ bewegen sich die freien Elektronen in einem
 			Leiter entgegen der Feldrichtung, was den elektrischen Stromfluss $I$ erklärt.}
+		\alttext{Diese Abbildung zeigt die gerichtete Bewegung von Elektronen. Unter Einfluss eines elektrischen Feldes E, bewegen sich die freien Elektronen in einem
+			Leiter entgegen der Feldrichtung, was den elektrischen Stromfluss I erklärt.}
 		\label{fig:Elektronenbewegung gerichtet}
 	\end{figure}
 }
@@ -776,18 +780,13 @@
 	\ftx{Mathematische Zusammenhänge der Leitfähigkeit}
 	\subsection{Mathematische Zusammenhänge der Leitfähigkeit}
 	\b{
-
-		\begin{equation*}
-			[\kappa] = 1\,\, \frac{\text{Siemens}}{\text{meter}} = 1\,\, \frac{\text{S}}{\text{m}} = 1\,\,\frac{\text{1}}{\Omega \cdot \text{m}}
-		\end{equation*}
-		\vspace{0.1cm}
-		\begin{equation*}
-			\kappa = \frac{1}{\rho_\mathrm{R}}
-		\end{equation*}
-
-		\begin{equation*}
-			\rho_\mathrm{R} = \rho_\mathrm{{20^\circ C}} \cdot (1 + \alpha (\vartheta - 20\mathrm{^\circ C}))
-		\end{equation*}
+	\begin{itemize}\centering
+  	\item $ \displaystyle \kappa=\frac{1}{\rho_\mathrm{R}} \qquad [\kappa]=\frac{\mathrm{S}}{\mathrm{m}}=\frac{1}{\Omega\cdot \mathrm{m}}$
+	\end{itemize}
+	\vspace{2cm}
+	\begin{itemize}\centering
+		\item $ \displaystyle \rho_\mathrm{R} = \rho_\mathrm{{20^\circ C}} \cdot (1 + \alpha (\vartheta - 20\mathrm{^\circ C}))$
+	\end{itemize}
 	}% nur Folien
 
 	% ; TODO: Hillgärtner: Diese Folie ist sehr zusammenhangslos und außerdem ist mir aufgefallen, dass wir für den ohmschen Widerstand R noch gar nicht die Einheit definiert haben. Wenn wir auf Folie 43 schauen, da ist der elektrische Widerstand dargestellt – mit den Kommentaren, die ich da schon hatte – da fehlt das Rollenzeichen. Vielleicht könnte man Folie 48 quasi hier drin integrieren und sagen: Der ohmsche Widerstand R hat die Einheit Ohm, was gleichbedeutend ist mit Volt pro Ampere (V/A). Und der Kehrwert des Widerstands, also 1 durch R ist gleich I durch U, nennt sich Leitwert. Dieser hat die Einheit Siemens (S). Das würde ich tatsächlich auf Folie 43 mit aufnehmen. Somit kann Folie 48, die relativ zusammenhangslos ist, entfallen. Hinweis Ende.
@@ -795,21 +794,17 @@
 
 	\s{
 		Die unterschiedlichen atomaren Zusammensetzungen der Materialien führen zu einer materialabhängigen, elektrischen Leitfähigkeit.
-		Die materialspezifische Eigenschaft bestehen aus der spezifischen Leitfähigkeit $\kappa$ (Kappa), bzw. dem spezifischen Widerstand $\rho_\mathrm{R}$ (rho)
+		Die materialspezifische Eigenschaft bestehen aus der spezifischen Leitfähigkeit $\kappa$ (Kappa), bzw. dem spezifischen Widerstand $\rho_\mathrm{R}$ (Rho)
 		welche antiproportional zueinander stehen, sowie dem jeweiligen Temperaturkoeffizient $\alpha$, welcher sich je nach Material unterscheidet.
 
-
-
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Formeln %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{equation*}
-			[\kappa] = 1\,\, \frac{\text{Siemens}}{\text{m}} = 1\,\, \frac{\text{S}}{\text{m}} =  1\,\, \frac{\text{1}}{\Omega \cdot \text{m}}
-		\end{equation*}
-		\vspace{0.1cm}
 		\begin{equation}
-			\kappa = \frac{1}{\rho_\mathrm{R}}
+		\begin{aligned}
+		\kappa &= \frac{1}{\rho_\mathrm{R}} \quad
+		&[\kappa] &= 1\,\frac{\mathrm{S}}{\mathrm{m}} = 1\,\frac{1}{\Omega\cdot \mathrm{m}}
+		\end{aligned}
 		\end{equation}
 
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Formeln %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 		% \s{
 		% Zur Berechnung des Widerstandwertes bei einer konkreten Temperatur, wird die Temperaturdifferenz zu $20^\circ C$ gebildet und dieser Wert mit dem Temperaturkoeffizienten multipliziert.
 		% Dieser Wert wird mit dem bekannten Referenzwert bei $20^\circ C$ multipliziert und mit diesem addiert.
@@ -841,7 +836,7 @@
 	\ftx{Spezifische Leitfähigkeiten und Temperaturkoeffizienten}
 	\begin{table}[H]
 		\centering
-		\resizebox{0.8\textwidth}{!}{%
+		\resizebox{0.9\textwidth}{!}{%
 			\begin{tabular}{@{}l c c@{}}
 				\toprule
 				\textbf{Material}  & {\textbf{Spezifische Leitfähigkeit} [$\kappa$] = S/m} &
@@ -861,6 +856,7 @@
 		}
 		\s{\caption{\textbf{Spezifische Leitfähigkeiten und Temperaturkoeffizienten verschiedener Materialien.} Metalle wie Silber und Kupfer haben hohe Leitfähigkeiten,
 				während isolierende Materialien wie Luft eine sehr geringe Leitfähigkeit besitzen.}}
+		\alttext{Die Tabelle zeigt beispielhafte Werte der spezifischen Leitfähigkeit Kappa sowie die zugehörigen Temperaturkoeffizienten Alpha für verschiedene Materialien. Metalle wie Silber und Kupfer besitzen hohe Leitfähigkeiten, während Isolierstoffe wie Luft nur sehr geringe Leitfähigkeiten aufweisen.}
 		\label{tab:specific_resistance}
 	\end{table}
 
@@ -875,13 +871,9 @@
 	\ftx{Der Leitwert}
 
 	\b{
-		\begin{equation*}
-			[G] = 1\, \text{Siemens} = 1\, \text{S} = 1\,\, \frac{\text{1}}{\Omega}
-		\end{equation*}
-		\vspace{0.1cm}
-		\begin{equation*}
-			G = \frac{1}{R}
-		\end{equation*}
+		\begin{itemize}\centering
+			\item $ \displaystyle G = \frac{1}{R} \quad [G] = 1\, \text{Siemens} = 1\, \text{S} = 1\,\, \frac{\text{1}}{\Omega}$ 
+		\end{itemize}
 	}
 
 \end{frame}
@@ -890,12 +882,8 @@
 	kann der entsprechende Widerstand $R$, bzw. Leitwert $G$ eines Körpers bestimmt werden.
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - G = 1/R %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{equation*}
-		[G] = 1\, \text{Siemens} = 1\, \text{S} = 1\,\, \frac{\text{1}}{\Omega}
-	\end{equation*}
-	\vspace{0.1cm}
 	\begin{equation}
-		G = \frac{1}{R}
+		G = \frac{1}{R} \qquad [G] = 1\, \text{Siemens} = 1\, \text{S} = 1\,\, \frac{\text{1}}{\Omega}
 	\end{equation}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - G = 1/R %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
