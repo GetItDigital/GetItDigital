@@ -75,7 +75,11 @@
         Bei diesem Ansatz sowie bei der Frequenzanalyse (sofern das Bodediagramm nicht experimentell ermittelt wurde) muss beachtet werden, dass die Übertragungsfunktion meist nur für einen bestimmten Frequenzbereich gültig ist, da z.B. die Dynamik des Operationsverstärkers bei diesen Methoden in der Regel nicht berücksichtigt wird.
         \begin{center}
             %\input{Bilder/kap4/Filter.png}
-            \f{width=0.8\textwidth}{width=0.8\textwidth}{Bilder/kap4/Polstellenneu.pdf}{Systemantworten bei verschiedenen Polstellen-Lagen }
+            \f{width=0.8\textwidth, alt={Die Abbildung zeigt Systemantworten in Abhängigkeit von der Lage der Polstellen in der komplexen Ebene.
+            In der Mitte ist ein Koordinatensystem mit der reellen Achse (Re) horizontal und der imaginären Achse (Im) vertikal dargestellt. Verschiedene Polstellen sind durch farbige Kreuze markiert. Zu jeder Pollage ist jeweils eine typische Zeitantwort des Systems eingezeichnet.
+            Liegt ein Pol auf der linken reellen Achse, zeigt das System ein exponentiell abklingendes Verhalten. Befindet sich der Pol weiter links, klingt die Antwort schneller ab. Liegt ein Pol auf der rechten reellen Achse, wächst die Antwort exponentiell an, was ein instabiles Verhalten bedeutet.
+            Komplex konjugierte Pole mit negativem Realteil führen zu gedämpften Schwingungen. Je näher die Pole an der imaginären Achse liegen, desto geringer ist die Dämpfung und desto stärker schwingt das System. Liegen die Pole genau auf der imaginären Achse, entsteht eine ungedämpfte Dauerschwingung. Befinden sich komplexe Pole mit positivem Realteil, wächst die Schwingung mit der Zeit an, was ebenfalls instabil ist.
+            Die Abbildung verdeutlicht somit den Zusammenhang zwischen der Polstellenlage in der komplexen Ebene und dem zeitlichen Verhalten eines linearen Systems.}}{width=0.8\textwidth}{Bilder/kap4/Polstellenneu.pdf}{Systemantworten bei verschiedenen Polstellen-Lagen }
             \label{fig:Analyse des Schwingungsverhaltens}
         \end{center}
     }
@@ -103,7 +107,9 @@
     \b{Bei dieser Methode wird die Schaltung mit einem Eingangssignal angeregt und das Ausgangsverhalten beobachtet.}
     \begin{center}
         %\input{Bilder/kap4/Filter.png}
-        \f{width=0.8\textwidth}{width=0.8\textwidth}{Bilder/kap4/ubertragunsverhalten-Einschwingverhalten.pdf}{Stabiles und instabiles Einschwingverhalten} %https://link.springer.com/chapter/10.1007/978-3-662-64375-4_52  
+        \f{width=0.8\textwidth, alt={Die Abbildung zeigt das stabile und das instabile Einschwingverhalten eines Systems.
+        Im linken Diagramm ist das stabile Verhalten dargestellt. Auf der horizontalen Achse ist die Zeit, auf der vertikalen Achse die Ausgangsspannung \(U_\mathrm{A}\).Nach einer Anregung steigt die Kurve zunächst an, überschwingt leicht und nähert sich anschließend einer konstanten Endlage an. Die Schwingungen klingen mit der Zeit ab, bis ein stabiler Gleichgewichtszustand erreicht ist.
+        Im rechten Diagramm ist das instabile Verhalten dargestellt. Auch hier ist \(U_\mathrm{A}\) über der Zeit aufgetragen. Die Kurve zeigt Schwingungen, deren Amplitude mit der Zeit zunimmt. Statt sich einer festen Endlage anzunähern, wächst das Signal weiter an. Das System ist daher instabil.}}{width=0.8\textwidth}{Bilder/kap4/ubertragunsverhalten-Einschwingverhalten.pdf}{Stabiles und instabiles Einschwingverhalten} %https://link.springer.com/chapter/10.1007/978-3-662-64375-4_52  
         \label{fig:Einschwingverhalten}
     \end{center}
     \s{
