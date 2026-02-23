@@ -777,7 +777,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Mathematik / Berechnung Widerstand %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 	\ftx{Mathematische Zusammenhänge der Leitfähigkeit}
-	\subsection{Mathematische Zusammenhänge der Leitfähigkeit}
+	\subsection{Mathematische Zusammenhänge der Leitfähigkeit}\label{subsec:Mathematische Zusammenhänge der Leitfähigkeit}
 	\b{
 		\begin{itemize}\centering
 			\item $ \displaystyle \kappa=\frac{1}{\rho_\mathrm{R}} \qquad [\kappa]=\frac{\mathrm{S}}{\mathrm{m}}=\frac{1}{\Omega\cdot \mathrm{m}}$
@@ -1337,15 +1337,8 @@
 \subsection{PTC und NTC}
 
 \s{
-	%Die vorherigen Abschnitte beschäftigten sich mit den Grundlagen von Widerständen und ihrer Berechnung. 
-	In diesem Abschnitt geht es um eine spezielle Kategorie von Widerständen, die besonders in temperaturabhängigen Anwendungen Gebrauch finden:
-	die PTC- und NTC-Widerständen. Die Namen bezieht sich auf deren positiven bzw. negativen Temperaturkoeffizienten $\alpha$, welcher bereits in Abschnitt 1.1.3 eingeführt wurde.
-	Diese speziellen Widerstände, auch als Thermistoren bekannt, unterscheiden sich von herkömmlichen Widerständen dadurch,
-	dass ihr Widerstandswert stark von der Temperatur abhängt. %Während normale Widerstände so konstruiert sind, dass ihr Widerstand bei unterschiedlichen Temperaturen weitgehend konstant bleibt, nutzen PTC- und NTC-Widerstände diese Eigenschaft gezielt, 
-	% um als Temperatursensoren, Schutzvorrichtungen oder zur Temperaturkompensation in elektrischen Schaltungen eingesetzt zu werden.
-	Abbildung \ref{fig:ntc_ptc_widerstandsdiagramm} zeigt das entgegengesetzte Verhalten beider Widerstandsarten.
+	In diesem Abschnitt geht es um eine spezielle Kategorie von Widerständen, die besonders in temperaturabhängigen Anwendungen verwendet wird: PTC- und NTC-Widerstände. Die Bezeichnungen beziehen sich auf ihren positiven bzw. negativen Temperaturkoeffizienten $\alpha$, welcher bereits im Abschnitt \ref{subsec:Mathematische Zusammenhänge der Leitfähigkeit} eingeführt wurde. Diese speziellen Widerstände, auch als Thermistoren bekannt, unterscheiden sich von herkömmlichen Widerständen dadurch, dass ihr Widerstandswert stark von der Temperatur abhängt. Während normale Widerstände so konstruiert sind, dass ihr Widerstand bei unterschiedlichen Temperaturen weitgehend konstant bleibt, nutzen PTC- und NTC-Widerstände diese Eigenschaft gezielt, um als Temperatursensoren, Schutzvorrichtungen oder zur Temperaturkompensation in elektrischen Schaltungen eingesetzt zu werden. Abbildung \ref{fig:ntc_ptc_widerstandsdiagramm} zeigt das entgegengesetzte Verhalten beider Widerstandsarten.
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Diagramm PTC und NTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 	\ftx{Temperaturabhängige Widerstände}
@@ -1353,8 +1346,8 @@
 	\begin{figure}[H]
 		\centering
 		\input{Tikz/src/01_Leitfaehigkeit/Diagramm_linearer_NTC_PTC}
-		\s{\caption{\textbf{Diagramm eines linearen NTC- und eines PTC-Widerstands über die Temperatur.} Bei einem NTC sinkt der Widerstand mit steigender Temperatur,
-				während bei einem PTC  der Widerstandswert mit steigender Temperatur ansteigt.}}
+		\s{\caption{\textbf{Diagramm eines linearen NTC- und PTC-Widerstands über die Temperatur.} Bei einem NTC sinkt der Widerstand mit steigender Temperatur, während bei einem PTC der Widerstandswert mit steigender Temperatur ansteigt.}}
+		\alttext{Das Diagramm zeigt die Temperaturabhängige Widerstände PTC und NTC. Auf der x-Achse ist die Temperatur in Grad Celsius von 0 bis etwa 120 dargestellt, auf der y-Achse der Widerstand in Ohm im Kiloohm-Bereich. Zwei Kennlinien sind eingezeichnet: Ein NTC-Widerstand fällt mit steigender Temperatur ungefähr linear von etwa 10 kOhm bei 20 Grad auf etwa 1 kOhm bei 100 Grad. Ein PTC-Widerstand steigt mit steigender Temperatur ungefähr linear von etwa 1 kOhm bei 20 Grad auf etwa 10 kOhm bei 100 Grad. Bei 80 Grad sind beide Kurven jeweils mit einem Punkt markiert und als R bei 80 Grad Celsius beschriftet: beim PTC liegt der Widerstand dort bei etwa 7,8 kOhm, beim NTC bei etwa 3,3 kOhm.}
 		\label{fig:ntc_ptc_widerstandsdiagramm}
 	\end{figure}
 
@@ -1367,10 +1360,10 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Diagramm PTC und NTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \s{
-	Die PTC-Widerstände haben einen positiven Temperaturkoeffizienten $\alpha$, welcher in Tabelle 1 im Abschnitt 1.1.3 abgelesen werden kann.
+	Die PTC-Widerstände haben einen positiven Temperaturkoeffizienten $\alpha$, welcher in Tabelle \ref{tab:specific_resistance} werden kann.
 	Gut leitfähige Materialien haben ein positives $\alpha$, was bedeutet, dass deren Widerstand bei höheren Temperaturen zunimmt.
 	Somit sind sie im kalten Betrieb leitfähiger, wodurch sie auch "Kaltleiter" genannt werden.
-	In Abbildung \ref{fig:widerstandsdiagramm_ptc} ist der gleiche PTC-Widerstand bei jeweils unterschiedlichen Temperaturen dargestellt.
+	In Abbildung \ref{fig:widerstandsdiagramm_ptc} ist derselbe PTC-Widerstand bei zwei unterschiedlichen Temperaturen dargestellt. Man erkennt, dass bei gleicher Spannung der Strom kleiner wird, weil der Widerstandswert mit der Temperatur zunimmt. Da das Ohmsche Gesetz gelten muss.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Diagramm PTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1380,7 +1373,8 @@
 	\begin{figure}[H]
 		\centering
 		\input{Tikz/src/01_Leitfaehigkeit/Diagramm_PTC}
-		\s{\caption{Diagramm eines PTC Widerstandes bei 20°C und bei 80°C}
+		\s{\caption{\textbf{Strom-Spannungs-Kennlinie eines PTC-Widerstands.} Vergleich bei $20\,^\circ\mathrm{C}$ und $80\,^\circ\mathrm{C}$.}
+\alttext{Diagramm der Strom-Spannungs-Kennlinie eines PTC-Widerstands. Auf der x-Achse ist die Spannung in Volt von 0 bis 3 dargestellt, auf der y-Achse die Stromstärke in Ampere von 0 bis 3. Es sind zwei lineare Kennlinien eingezeichnet: bei 20 Grad Celsius verläuft die Gerade steiler und erreicht bei 3 Volt etwa 3 Ampere. Bei 80 Grad Celsius ist die Steigung kleiner und bei 3 Volt fließen nur etwa 2,1 Ampere.}
 			\label{fig:widerstandsdiagramm_ptc}}
 	\end{figure}
 
@@ -1390,27 +1384,28 @@
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Diagramm PTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\s{
-	Das folgende Diagramm zeigt die Erwärmung eines PTC-Widerstandes bei Erhöhung des Stromflusses.
-	Je mehr Strom also durch einen PTC-Widerstand fließt, desto stärker erwärmt er sich.
-}
+
+% \s{
+% 	Das folgende Diagramm zeigt die Erwärmung eines PTC-Widerstandes bei Erhöhung des Stromflusses. Je mehr Strom also durch einen PTC-Widerstand fließt, desto stärker erwärmt er sich.
+% }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Diagramm Strom - Temperatur Kurve %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame} %; TODO "Temperaturabhängigkeit" oder "Temperatur" verwenden
-	\ftx{Temperaturabhängige Widerstände}
-	%%%%% Strom Temperatur verhältnis
-	\begin{figure}[H]
-		\centering
-		\input{Tikz/src/01_Leitfaehigkeit/Diagramm_Temp_Strom_Widerstand}
-		\s{\caption{\textbf{Diagramm der Temperatur eines Widerstands in Abhängigkeit von der Stromstärke.} Zeigt wie die Temperatur eines Widerstands
-				mit zunehmender Stromstärke ansteigt. Der Widerstandswert kann sich dabei ebenfalls ändern, abhängig von der Temperatur des Widerstands.}}
-		\label{fig:strom-temperatur}
-	\end{figure}
+% \begin{frame} %; TODO "Temperaturabhängigkeit" oder "Temperatur" verwenden
+% 	\ftx{Temperaturabhängige Widerstände}
+% 	%%%%% Strom Temperatur verhältnis
+% 	\begin{figure}[H]
+% 		\centering
+% 		\input{Tikz/src/01_Leitfaehigkeit/Diagramm_Temp_Strom_Widerstand}
+% 		\s{\caption{\textbf{Diagramm der Temperatur eines Widerstands in Abhängigkeit von der Stromstärke.} Zeigt wie die Temperatur eines Widerstands
+% 				mit zunehmender Stromstärke ansteigt. Der Widerstandswert kann sich dabei ebenfalls ändern, abhängig von der Temperatur des Widerstands.}}
+% 			\alttext{Dieses Diagramm zeigt die Strom-Temperatur-Kurve zur Eigenerwärmung eines PTC-Widerstands. Auf der x-Achse ist die Stromstärke in Ampere von 0 bis 10 dargestellt, auf der y-Achse die Temperatur in Grad Celsius von 20 bis 200. Eine nach oben gekrümmte Kurve steigt mit zunehmendem Strom stark an. Markierte Punkte sind beschriftet mit 2 Ampere, 32 Grad Celsius, 4 Ampere bei 68 Grad Celsius und 6 Ampere bei 128 Grad Celsius.}
+% 		\label{fig:strom-temperatur}
+% 	\end{figure}
 
-	\speech{01_Leitfaehigkeit_und_Widerstand23}{1}{
-		Häufig ist das Ganze aber durchaus auch nicht linear. Dadurch ergeben sich durch das PTC-Verhalten von Widerständen häufig hier sehr extrem dargestellt ein nicht linearer Widerstand. Warum ist das so? Wenn ein Widerstand vom Strom durchflossen wird, dann wird da drin ja Leistung umgesetzt und diese Leistung wird in Wärme umgewandelt. Das heißt, ein Widerstand, der bestromt wird, erwärmt sich automatisch selber und das ist hier dargestellt. Der Widerstand der von 2 Ampere durchflossen wird, erwärmt sich auf 32 Grad mit 4 Ampere auf 68 Grad und 6 Ampere auf 128 Grad. Und dadurch verändert sich dann auch das Widerstandsverhalten. Das heißt, wir haben nicht-linearitäten, die man eben auch in solchen Kurven sieht.
-	}
+% 	\speech{01_Leitfaehigkeit_und_Widerstand23}{1}{
+% 		Häufig ist das Ganze aber durchaus auch nicht linear. Dadurch ergeben sich durch das PTC-Verhalten von Widerständen häufig hier sehr extrem dargestellt ein nicht linearer Widerstand. Warum ist das so? Wenn ein Widerstand vom Strom durchflossen wird, dann wird da drin ja Leistung umgesetzt und diese Leistung wird in Wärme umgewandelt. Das heißt, ein Widerstand, der bestromt wird, erwärmt sich automatisch selber und das ist hier dargestellt. Der Widerstand der von 2 Ampere durchflossen wird, erwärmt sich auf 32 Grad mit 4 Ampere auf 68 Grad und 6 Ampere auf 128 Grad. Und dadurch verändert sich dann auch das Widerstandsverhalten. Das heißt, wir haben nicht-linearitäten, die man eben auch in solchen Kurven sieht.
+% 	}
 
-\end{frame}
+% \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Diagramm Strom - Temperatur Kurve %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \s{
