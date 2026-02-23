@@ -1,6 +1,6 @@
 \nomenclature[F]{$n$}{Drehzahl \nomunit{$\frac{1}{\text{min}}$}}
 
-\newvideofile{gleichstrommaschine}{Gleichstrommaschine}
+\newvideofile{gleichstrommaschine1}{Gleichstrommaschine Teil 1}
 \v{
 	\begin{frame}{Lernziele}
 		\begin{Lernziele}{Gleichstrommaschine}
@@ -12,7 +12,7 @@
 				\item verschiedene Arten von Gleichstrommaschinen unterscheiden und ihre Anwendungsbereiche begründen.
 			\end{itemize}
 		\end{Lernziele}
-		\speech{LernzieleGleichstrommaschine}{1}{In diesem Video Behandeln wir die Gleichstrommaschine. Dabei betrachten wir das Prinzip des Elektromotors und welche Rolle die Lorentzkraft dabei spielt. Anschließend werfen wir eine Blick auf den Aufbau einer Gleichstrommaschine und werden Berechnungen dazu duchführen. Wir werden uns außerdem Drehmomentkennlienien betrachten und in diesem Zusammenhang die Anwendungsbereiche verschiedener Gleichstrommaschiene kennenlernen.}
+		\speech{LernzieleGleichstrommaschine}{1}{In diesem Video Behandeln wir die Gleichstrommaschine. Dabei betrachten wir das Prinzip des Elektromotors und welche Rolle die Lorentz-kraft dabei spielt. Anschließend werfen wir einen Blick auf den Aufbau einer Gleichstrommaschine und werden Berechnungen dazu durchführen. Wir werden außerdem Drehmomentkennlienien betrachten und in diesem Zusammenhang die Anwendungsbereiche verschiedener Gleichstrommaschienen kennenlernen.}
 		\silence{2}
 	\end{frame}
 }
@@ -48,21 +48,21 @@
 			\end{itemize}
 		\end{minipage}
 	}
-	\speech{GleichstrommaschineVorNachteil}{1}{Gleichstrommaschinen sind Elektromaschinen, die mit Gleichstrom betrieben werden und sowohl als Motoren als auch als Generatoren verwendet werden können. Sie zeichnen sich durch eine präzise Steuerbarkeit der Drehzahl und des Drehmoments aus, was sie ideal für Anwendungen mit variabler Geschwindigkeit und Last macht.}
-	\speech{GleichstrommaschineVorNachteil}{2}{Ein Vorteil der Gleichstrommaschine ist der einfache Aufbau der Stromrichter, um die Drehzahl der Maschine einstellen zu können. Die Regeldynamik kann dabei sehr hoch sein, sodass sie gut unter variierenden Lastbedingungen eingesetzt werden können. Auch ist ein direkter Betrieb ohne jegliche Elektronik an Batterien möglich, was bei sehr einfachen Geräten wie zum Beispiel Spielzeugen ein großer Vorteil ist. Außerdem hat die Gleichstrommaschine eine hohe Überlastfähigkeit, was bedeutet, dass sie für eine bestimmte Zeit über ihre Nennlast hinaus belastet zu werden kann, ohne dass es zu Schäden oder einer nennenswerten Verringerung der Funktion kommt.}
+	\speech{GleichstrommaschineVorNachteil}{1}{Gleichstrommaschinen sind elektrische Maschinen, die mit Gleichstrom betrieben werden und sowohl als Motoren als auch als Generatoren verwendet werden können. Sie zeichnen sich durch eine präzise Steuerbarkeit der Drehzahl und des Drehmoments aus, was sie ideal für Anwendungen mit variabler Geschwindigkeit und Last macht.}
+	\speech{GleichstrommaschineVorNachteil}{2}{Ein Vorteil der Gleichstrommaschine ist der einfache Aufbau der Stromrichter, um die Drehzahl der Maschine einstellen zu können. Die Regeldynamik kann dabei sehr hoch sein, sodass sie gut unter variierenden Last-bedingungen eingesetzt werden können. Auch ist ein direkter Betrieb ohne jegliche Elektronik an Batterien möglich, was bei sehr einfachen Geräten wie zum Beispiel Spielzeugen ein großer Vorteil ist. Außerdem hat die Gleichstrommaschine eine hohe Überlastfähigkeit, was bedeutet, dass sie für eine bestimmte Zeit über ihre Nennlast hinaus belastet werden kann, ohne dass es zu Schäden oder einer nennenswerten Verringerung der Funktion kommt.}
 	\silence{2}
-	\speech{GleichstrommaschineVorNachteil}{3}{Ein wesentlicher Nachteil der Gleichstrommaschine ist der hohe Konstruktionsaufwand und die damit verbundenen höheren Kosten. Die notwendige Konstruktion mit Bürsten – auf die wir noch später in diesem Video eingehen werden – macht die Gleichstrommaschine wegen Abnutzung der Bürsten vergleichsweise wartungsintensiv. Außerdem ist die Leistungsdichte durch den Aufbau deutlich geringer als bei den anderen Maschinentypen, was bedeutet, dass Gleichstrommaschinen im Verältnis zu ihrer Leistung relativ groß ausfallen.}
+	\speech{GleichstrommaschineVorNachteil}{3}{Ein wesentlicher Nachteil der Gleichstrommaschine ist der hohe Konstruktionsaufwand und die damit verbundenen höheren Kosten. Die notwendige Konstruktion mit Bürsten – auf die wir noch später in diesem Video eingehen werden – macht die Gleichstrommaschine wegen Abnutzung vergleichsweise wartungsintensiv. Außerdem ist die Leistungsdichte durch den Aufbau deutlich geringer als bei den anderen Maschinen-typen, was bedeutet, dass Gleichstrommaschinen im Verhältnis zu ihrer Leistung relativ groß ausfallen.}
 	\silence{2}
 \end{frame}
 
 \begin{frame} \ftx{Elektrische Maschinen}
 	\subsection{Exkurs Prinzip des Elektromotors\label{KapExkursLorentz}}
 	\s{
-		Zu Beginn werden die im Modul 6 vorgestellten Prinzipien aufgefrischt. Die Abbildung \ref{AbbLorentzSchleife} zeigt in drei Schaubildern kurzgefasst die Wirkweise eines Elektromotors. Zum grundlegenden Aufbau eines Elektromotors gehören ein feststehender Teil, Ständer\index{Ständer} oder Stator\index{Stator} genannt, und ein sich drehender Teil, auch Läufer\index{Läufer} oder Rotor\index{Rotor} genannt.
-		In den drei Abbildungen ist eine Leiterspule in einem Hufeisenmagnet zu sehen. Der Hufeisenmagnet bildet hier den Stator und eine um die eigene Achse bewegliche Leiterspule stellt den Rotor dar.
-		Das erste Schaubild illustriert den isolierten Verlauf der magnetischen Feldinien des Hufeisenmagnets. Sie verlaufen innerhalb des Hufeisenmagneten vertikal von Nord- zum Südpol.
-		Das zweite Schaubild zeigt den isolierten Verlauf der magnetischen Feldlinien der stromdurchflossen Leiterschleife. Durch den Stromfluss entstehen an der Leiterschleife zwei entgegenwirkende Wirbelfelder.
-		Im dritten Schaubild wird die Wechselwirkung des Hufeisenmagneten (Statorfeld) und der stromdurchflossenen Leiterschleife (Rotorfeld) aufgezeigt. Die beiden Felder überlageren sich. Die aus der Überlagerung resultierende Lorentzkraft bringt gemäß der Rechte-Hand-Regel die Leiterschleife zum rotieren. Aus der elektromagnetischen Energie entsteht mechanische Energie.
+		Zu Beginn werden die im Modul 6 vorgestellten Prinzipien aufgefrischt. Die Abbildung \ref{AbbLorentzSchleife} zeigt in drei Schaubildern kurzgefasst die Wirkungsweise eines Elektromotors. Zum grundlegenden Aufbau eines Elektromotors gehören ein feststehender Teil, Ständer\index{Ständer} oder Stator\index{Stator} genannt, und ein sich drehender Teil, auch Läufer\index{Läufer} oder Rotor\index{Rotor} genannt.
+		In den drei Abbildungen ist eine Leiterspule in einem Hufeisenmagneten zu sehen. Der Hufeisenmagnet bildet hier den Stator, und eine um die eigene Achse bewegliche Leiterspule stellt den Rotor dar.
+		Das erste Schaubild illustriert den isolierten Verlauf der magnetischen Feldlinien des Hufeisenmagneten. Sie verlaufen innerhalb des Hufeisenmagneten vertikal vom Nord- zum Südpol.
+		Das zweite Schaubild zeigt den isolierten Verlauf der magnetischen Feldlinien der stromdurchflossenen Leiterschleife. Durch den Stromfluss entstehen an der Leiterschleife zwei entgegenwirkende Wirbelfelder.
+		Im dritten Schaubild wird die Wechselwirkung des Hufeisenmagneten (Statorfeld) und der stromdurchflossenen Leiterschleife (Rotorfeld) aufgezeigt. Die beiden Felder überlagern sich. Die aus der Überlagerung resultierende Lorentzkraft bringt gemäß der Rechten‑Hand‑Regel die Leiterschleife zum Rotieren. Aus der elektromagnetischen Energie entsteht mechanische Energie.
 	}
 	\fu{
 		\begin{minipage}{0.25\textwidth}
@@ -95,19 +95,20 @@
 	\begin{eq}
 		F =B\cdot I\cdot \ell\cdot N
 	\end{eq}
+	\speech{GleichstromPrinzipLorentzkraft}{1}{Um das im Modul 6 kennengelernte Prinzip des Elektromotors aufzufrischen, werfen wir nochmal einen Blick auf die Schaubilder zur Lorentz-kraft. In den drei Abbildungen ist eine Leiterspule innerhalb eines Hufeisenmagneten dargestellt. Das erste Schaubild illustriert den isolierten Verlauf der magnetischen Feldlinien des Hufeisenmagnets. Sie verlaufen innerhalb des Magneten wertikal von Nord- zum Südpol. Das zweite Schaubild zeigt den isolierten Verlauf der magnetischen Feldlinien der stromdurchflossenen Leiterschleife. Durch den Stromfluss entstehen an der Leiterschleife zwei entgegenwirkende Wirbelfelder. Im dritten Schaubild wird die Wechselwirkung des Hufeisenmagneten – dem Statorfeld – und der stromdurchflossenen Leiterschleife – dem Rotorfeld – aufgezeigt. Die beiden Felder überlagern sich. Die aus der Überlagerung resultierende Lorentzkraft bringt gemäß der Rechten-Hand-Regel die mittig drehbar gelagerte Leiterschleife zum rotieren. Aus der elektromagnetischen Energie entsteht also mechanische Energie.}
 \end{frame}
 
 \begin{frame} \ftx{Beispiel: Kraft einer Gleichstrommaschine}
 	\begin{bsp}{Kraft einer Gleichstrommaschine}{}
 		\onslide<2->{Ein Gleichstrommotor hat im Luftspalt eine magnetische Flussdichte von $B=0,8\,\mathrm{T}$. Unter den Polen befinden sich insgesamt $N=400$ Ankerdrähte, die mit einem Strom von $I=10\,\mathrm{A}$ durchflossen werden. Die wirksame Leiterlänge ist $\ell=150\,\mathrm{mm}$.}\\
-		
+
 		Berechnen Sie die Kraft $F$ am Umfang des Ankers.\pause
 		\begin{align*}
 			\onslide<3->{F & =B\cdot I\cdot \ell\cdot N }                                                                                                                            \\
 			\onslide<4->{  & =0,8\,\frac{\mathrm{Vs}}{\mathrm{m}^2}\cdot 10\,\mathrm{A}\cdot0,15\,\mathrm{m}\cdot 400}                                                               \\
 			\onslide<5->{  & =480\,\frac{\mathrm{kg}\cdot\mathrm{m}^2\cdot\mathrm{s}\cdot\mathrm{A}\cdot\mathrm{m}}{\mathrm{s}^3\cdot\mathrm{A}\cdot\mathrm{m}^2} = 480\,\mathrm{N}}
 		\end{align*}
-		
+
 	\end{bsp}
 	\speech{GleichstrommaschinePrinzip}{1}{Kommen wir als kurze Wiederholung zu einem Beispiel zur Berechnung der Kraft einer Gleichstrommaschine. Die grundlegenden Prinzipien, die hinter der Funktion einer Gleichstrommaschine stecken, wurden im Modul sechs bereits vorgestellt. Sie basiert auf der Lorentz-Kraft. Ebenso kennen wir bereits die Formel zur Berechnung der Lorentz-Kraft.}
 	\silence{2}
@@ -125,7 +126,7 @@
 \begin{frame}\ftx{Aufbau}
 	\s{
 		Der Aufbau der Gleichstrommaschine wird anhand dreier Abbildungen dargestellt. Abbildung \ref{GrafikGleichstrommaschine} zeigt ein diagonales Schnittmodell der Gleichstrommaschine, das eine allgemeine Übersicht über die Komponenten von Stator und Rotor gibt. Zur detaillierteren Veranschaulichung des Aufbaus werden die Abbildung \ref{QuerschnittGleichstrommaschine} mit Fokus auf dem Stator und Abbildung \ref{FotoRotor} zur Veranschaulichung des Rotors einer Gleichstrommaschine herangezogen.
-		
+
 		\nomenclature[F]{$p$}{Polpaarzahl}
 	}
 	\fo{width=0.6\textwidth, alt={Das Bild zeigt einen Einblick in eine Gleichstrommaschine. Im Zentrum des Bildes befindet sich der Rotorzylinder, der auf einer Welle befestigt ist, welche durch Kugellager frei drehbar am Motorgehäuse gelagert ist. Um den Rotorzylinder sind die Wicklungen des Rotors angeordnet, die in ihrer charakteristischen Spulenform dargestellt sind. Am linken Ende der Welle sind die Kommutatorlamellen erkennbar, die ringförmig um die Welle angeordnet sind. Elektrische Leiter führen von den Kommutatorlamellen zu den Spulenwicklungen des Rotors. Die Spulen verlaufen innerhalb des Rotorzylinders. Am Gehäuse befestigt befinden sich um den Rotorzylinder herum Erregerpole mit Wicklungen.}}{height=0.85\textheight}{gleichstrommaschine1}{
@@ -135,14 +136,14 @@
 		\put(95,24){\line(-1,1){28}}\put(95.3,24){Rotorzylinder}
 		\put(105,32){\line(-1,1){28}}\put(105.3,32){Lager}
 	}{{\bf Grafik einer aufgeschnittenen Gleichstrommaschine.}  \label{GrafikGleichstrommaschine}}
-	
+
 	\speech{GleichstrommaschineAufbau1}{1}{Eine Gleichstrommaschine besteht aus mehreren Komponenten, die gemeinsam für die Umwandlung von elektrischer Energie in mechanische Energie und umgekehrt verantwortlich sind. Im Zentrum steht der Rotorzylinder, der drehbar gelagert und mit Wicklungen ausgestattet ist. Diese Wicklungen sind Drahtwindungen, die ein Magnetfeld erzeugen, wenn elektrischer Strom hindurchfließt. Um den Rotor herum befinden sich die Erregerpole, die ein externes Magnetfeld bereitstellen. Die Lager sind entscheidend für die Stabilität, da sie den Rotor in Position halten und eine reibungslose Drehung ermöglichen. Ein weiteres zentrales Element einer Gleichstrommaschine ist der Kommutator, der aus einzelnen Lamellen besteht. Der Kommutator ist ein mechanischer Schalter und sorgt dafür, dass der Strom während der Drehung des Rotors regelmäßig in den Wicklungen umgekehrt wird. Das ist notwendig, um eine gleichbleibende Drehbewegung des Rotors zu gewährleisten.}
 	\silence{2}
 \end{frame}
 
 
 \begin{frame}\ftx{Aufbau}
-	
+
 	\s{
 		\fo{width=0.8\textwidth, alt={Das Bild zeigt den Querschnitt einer Gleichstrommaschine mit zwei Polen, die detailliert die inneren Komponenten zeigt. In der Mitte der kreisförmigen Anordnung befindet sich an einer Achse der Rotorzylinder, an dessen äußeren Rand die Wicklungen verlaufen. Um den Rotorzylinder bedinden sich halbkreisförmig oben und unten die beiden Pole mit den Kompensationswicklungen. Zwischen Rotorzylinder und den Polen befindet sich ein schmaler Luftspalt. Die Pole sind jeweils über einen Polschuh mit dem ringförmigen Ständerjoch verbunden, das die gesamte Anordnung umgibt. Innerhalb des Ständerjochs befinden sich jeweils auf der linken und rechten Seite Wendepole mit Wicklungen.}}{}{Aufbau1}{
 			\put(27,20){\line(1,1){16}}\put(-5,20){Wendepole mit Wicklung}
@@ -153,7 +154,7 @@
 			\put(85,0){\line(-1,1){8}}\put(85.3,0){Ständerjoch}
 		}{{\bf Grundlegender Aufbau einer Gleichstrommaschine.} Hier mit nur einem Polpaar (Polpaarzahl $p=1$). \label{QuerschnittGleichstrommaschine}}
 		Die Komponenten des Stators, auch Ständer genannt, werden im frontalen Querschnitt einer Gleichstrommaschine (Abbildung \ref{QuerschnittGleichstrommaschine}) gut veranschaulicht. Eine der grundlegenden Komponenten ist die Erregerwicklung\index{Erregerwicklung}, die um einen Polschuh gewunden, einen Pol darstellt. Die Pole haben die Aufgabe, ein Magnetfeld, Erregerfeld genannt, zu erzeugen.
-		
+
 		Da ein magnetisches Feld immer einen Nord- und einen Südpol beinhaltet, werden die Pole paarweise gegenüber eingebaut. Die daraus resultierende Kenngröße, die Polpaarzahl, gibt Aufschluss über die Betriebseigenschaften der Gleichstrommaschine.
 		Eine höhere Polpaarzahl verringert die Drehzahl, erhöht jedoch das Drehmoment. Bei Kleinstmaschinen können die Erregerwicklungen durch Permanentmagnete ersetzt werden.
 		Bei größeren Maschinen (ca. über 1 kW) sind zusätzlich Wendepolwicklungen vorhanden.
@@ -168,8 +169,8 @@
 			\put(85,0){\line(-1,1){8}}\put(85.3,0){Ständerjoch}
 		}{}
 	}
-	
-	\speech{GleichstrommaschineAufbau2}{1}{Die Komponenten des Statohrs, der auch Ständer genannt wird, sind im frontalen Querschnitt gut zu sehen. Eine der grundlegenden Komponenten ist die Erregerwicklung. Sie ist um einen Pohlschuh gewunden. Erregerwicklung und Pohlschuh stellen zusammen einen Pohl dar. Die Pole haben die Aufgabe, ein Magnetfeld, auch Erregerfeld genannt, zu erzeugen. Da ein magnetisches Feld immer einen Nord- und einen Südpol beinhaltet, werden die Pole paarweise gegenüberliegend eingebaut. Die sich daraus ergebende Kenngröße ist die Polpaarzahl. Sie gibt Aufschluss über die Betriebseigenschaften der Gleichstrommaschine. Eine höhere Pohlpaarzahl verringert die Drehzahl, erhöht jedoch das Drehmoment. Bei Kleinstmaschinen können die Erregerwicklungen durch Permanentmagnete ersetzt werden. Bei größeren Maschinen, ab ungefähr ein Kilowatt Leistung, sind zusätzlich Wendepolwicklungen vorhanden.}
+
+	\speech{GleichstrommaschineAufbau2}{1}{Die Komponenten des Sta-tors, der auch Ständer genannt wird, sind im frontalen Querschnitt gut zu sehen. Eine der grundlegenden Komponenten ist die Erregerwicklung. Sie ist um einen Pohlschuh gewunden. Erregerwicklung und Pohlschuh stellen zusammen einen Pohl dar. Die Pole haben die Aufgabe, ein Magnetfeld, auch Erregerfeld genannt, zu erzeugen. Da ein magnetisches Feld immer einen Nord- und einen Südpol beinhaltet, werden die Pole paarweise gegenüberliegend eingebaut. Die sich daraus ergebende Kenngröße ist die Polpaarzahl. Sie gibt Aufschluss über die Betriebseigenschaften der Gleichstrommaschine. Eine höhere Pohlpaarzahl verringert die Drehzahl, erhöht jedoch das Drehmoment. Bei Kleinstmaschinen können die Erregerwicklungen durch Permanentmagnete ersetzt werden. Bei größeren Maschinen, ab ungefähr ein Kilowatt Leistung, sind zusätzlich Wendepolwicklungen vorhanden.}
 	\silence{2}
 \end{frame}
 
@@ -189,7 +190,7 @@
 		\put(35,5){\line(-1,1){10}}\put(35.3,5){Kommutator}
 		\put(23,0){\line(-1,1){10}}\put(23.3,0){Lager}
 	}{{\bf Foto eines Rotors.} Zu erkennen sind hier die charakteristischen Bauelemente. \index{Gleichstrommaschine>Rotor}\label{FotoRotor}}
-	
+
 	\speech{GleichstrommaschineAufbau3}{1}{Hier sehen wir einen Rotor einer Gleichstrommaschine. Der Rotor wird auch als Anker oder Läufer bezeichnet. Die Funktion des Rotors besteht darin, die elektromagnetische Energie durch Rotationen um die eigene Achse in mechanische Energie und umgekehrt zu wandeln. Hierzu ist der Rotor an einer Motorwelle befestigt, die die mechanische Energie überträgt. Das Kugellager am Ende der Motorwelle verringert dabei die Reibungsverluste bei der Energieübertragung. Um den Rotor in Bewegung zu bringen, ist das Zusammenwirken von Kommutator und Rotorwicklung wichtig. Die Rotorwicklung, die auch Ankerwicklung genannt wird, hat die Aufgabe ein magnetisches Feld, das Ankerfeld, zu erzeugen. Erst durch die Interaktion des Ankerfelds mit dem Erregerfeld wird ein Drehmoment auf den Rotor ausgeübt und setzt diesen in Bewegung. Die Blechwände, um die die Spulen gewickelt sind, bestehen aus isolierenden Blechen, um Wirbelströme in den Wicklungen zu reduzieren. Der Kommutator, der auch Stromwender genannt wird, hat die Funktion, die Rotorwicklung getaktet mit Strom zu versorgen. Er besteht aus mehreren voneinander getrennten Lamellen, die jeweils mit einem Strang der Rotorwicklung verbunden sind. Der Strom wird nun über am Stator angebrachten Kohlebürsten an die Kommutatorlamellen geleitet. Durch die Drehung der Lamellen unter den Bürsten wirkt der Kommutator als mechanischer Schalter und sorgt dafür, dass die Stromrichtung in den Rotorwicklungen gleich bleibt.}
 	\silence{2}
 \end{frame}
@@ -202,19 +203,19 @@
 		\put(50,97){\color{magnetfeld}\makebox[0pt]{N}}
 		\put(50,0){\color{magnetfeld}\makebox[0pt]{S}}
 	}{{\bf Erregerfeld einer Gleichstrommaschine.} Schematische Darstellung in der Vorderansicht.}
-	
-	\speech{GleichstrommaschineErregerfeld}{1}{In dieser schematischen Darstellung des Querschnitts durch eine Gleichstrommaschine werden orange die Feldlinienverläufe des Erregerfeldes dargestellt. Für die Lorentz-Kraft ist das magnetische Feld, in dem sich der Leiter bewegt, entscheidend. Dieses Feld wird durch den Stator mit den Erregerwicklungen erzeugt und ist im Bereich des Rotors näherungsweise parallel und homogen. Das Drehmoment einer Gleichstrommaschine ist direkt proportional zur Lorentz-Kraft, die durch das Erregerfeld erzeugt wird. Je stärker und homogener das magnetische Feld im Rotor ist, desto größer ist das erzeugte Drehmoment.}
+
+	\speech{GleichstrommaschineErregerfeld}{1}{In dieser schematischen Darstellung des Querschnitts durch eine Gleichstrommaschine werden in orange die Feldlinienverläufe des Erregerfeldes dargestellt. Für die Lorentz-Kraft ist das magnetische Feld, in dem sich der Leiter bewegt, entscheidend. Dieses Feld wird durch den Stat-or mit den Erregerwicklungen erzeugt und ist im Bereich des Rotors näherungsweise parallel und homogen. Das Drehmoment einer Gleichstrommaschine ist direkt proportional zur Lorentz-Kraft, die durch das Erregerfeld erzeugt wird. Je stärker und homogener das magnetische Feld im Rotor ist, desto größer ist das erzeugte Drehmoment.}
 	\silence{2}
 \end{frame}
 
-
+\newvideofile{gleichstrommaschine1}{Gleichstrommaschine Teil 2}
 \begin{frame}\ftx{Induzierte Spannung}
 	\s{\subsection{Berechnung des Drehmoments}}
 	\s{
 		In Modul 6 und Kapitel \ref{KapExkursLorentz} ist bereits die Kraftwirkung auf einen stromdurchflossenen Leiter im Magnetfeld erklärt worden. Um das Drehmoment der Gleichstrommaschine zu berechnen, wird zuerst die induzierte Spannung ermittelt (siehe Modul 6). Dreht sich der Rotor einer erregten Gleichstrommaschine, wird in jeder Leiterschleife des Ankers eine Spannung induziert. Nach dem Induktionsgesetz (Gleichung \ref{GlInduktionsgesetz}) ist die Höhe der induzierten Spannung (Quellenspannung) $U_\mathrm{q}$ vom magnetischen Fluss $\varPhi$ und der zeitlichen Änderung, in diesem Fall der Drehzahl $n$ bzw. der damit verknüpften Kreisfrequenz $\omega = 2\pi\cdot n$ abhängig.
 		Werden hierzu noch die spezifischen geometrischen Gegebenheiten des Rotors in Form der Ankerkonstanten $K$ multipliziert, so ergibt das Produkt aus diesen Kenngrößen die induzierte Spannung $U_\mathrm{q}$ der Gleichstrommaschine (siehe Gleichung \ref{GlInduzierteSpannungGM}).
 	}
-	
+
 	\begin{eq}
 		\onslide<7->{U_\mathrm{q} = K \cdot \varPhi \cdot \omega \label{GlInduzierteSpannungGM}}
 	\end{eq}
@@ -223,23 +224,23 @@
 			\onslide<2->{\item Induzierte Spannung (Quellenspannung): $U_\mathrm{q}$ [V]}
 			      \onslide<6->{\item Ankerkonstante: $K$ [1]\index{Ankerkonstante} \nomenclature[F]{$K$}{Ankerkonstante der Gleichstrommaschine}}
 			      \onslide<3->{\item Fluss: $\varPhi$ [Vs]}
-			      \onslide<4->{\item Drehzahl $n$} \onslide<5->{$\Rightarrow$ Winkelgeschwindigkeit: $\omega_\mathrm{mech}$ ($= 2\pi\cdot$) [rad/s]}
+			      \onslide<4->{\item Drehzahl $n$} \onslide<5->{$\Rightarrow$ Winkelgeschwindigkeit: $\omega_\mathrm{mech}$ ($= 2\pi\cdot n$) [rad/s]}
 		\end{itemize}
 	}	\pause
-	
+
 	\s{
 		Wenn sowohl die elektrischen als auch mechanischen Verluste vernachlässigt werden, kann die induzierte Spannung kann auch direkt über die sogenannte innere Leistung $P_\mathrm{i}$ angegeben werden. Diese entspricht dann sowohl der elektrischen Leistung $U_\mathrm{q}\cdot I_\mathrm{A}$, als auch der mechanischen Leistung $P_\mathrm{mech}$, welche sich aus dem Produkt des inneren Drehmoments $M_\mathrm{i}$ und der Winkelgeschwindigkeit $\omega$ errechnet.
 	}
 	\begin{eq}
 		\onslide<9->{P_\mathrm{i} = U_\mathrm{q}\cdot I_\mathrm{A} =  P_\mathrm{mech} = M_\mathrm{i}\cdot \omega \label{GlGMWirkungsgrad}}
 	\end{eq}
-	
+
 	\b{
 		\begin{itemize}
 			\onslide<8->{\item innere elektrische Leistung: $P_\mathrm{i}$ [W]}
 		\end{itemize}
 	}
-	\speech{GleichstomDrehmomentberechnung}{1}{Schauen wir uns nun an, wie das Drehmoment berechnet wird. In Modul 6 wurde bereits die Kraftwirkung auf einen stromdurchflossenen Leiter im Magnetfeld thematisiert. Um das Drehmoment der Gleichstrommaschine zu berechnen, wird zuerst die induzierte Spannung ermittelt.}
+	\speech{GleichstomDrehmomentberechnung}{1}{Nachdem wir im vorangegangenen Video den Aufbau einer Gleichstrommaschine kennengelernt haben, schauen wir uns nun an, wie das Drehmoment einer Gleichstrommaschine berechnet wird. In Modul 6 wurde bereits die Kraftwirkung auf einen stromdurchflossenen Leiter im Magnetfeld thematisiert. Um das Drehmoment der Gleichstrommaschine zu berechnen, wird zuerst die induzierte Spannung ermittelt.}
 	\silence{2}
 	\speech{GleichstomDrehmomentberechnung}{2}{Dreht sich der Rotor einer erregten Gleichstrommaschine, wird in jeder Leiterschleife des Ankers eine Spannung induziert.}
 	\silence{2}
@@ -250,7 +251,7 @@
 	\speech{GleichstomDrehmomentberechnung}{6}{Nun werden hierzu noch die spezifischen geometrischen Gegebenheiten des Rotors in Form der Ankerkonstanten K multipliziert.}
 	\speech{GleichstomDrehmomentberechnung}{7}{So ergibt das Produkt aus diesen Kenngrößen die induzierte Spannung U-q der Gleichstrommaschine.}
 	\silence{2}
-	\speech{GleichstomDrehmomentberechnung}{8}{Wenn sowohl die elektrischen als auch mechanischen Verluste vernachlässigt werden, kann die induzierte Spannung kann auch direkt über die sogenannte innere Leistung P-I angegeben werden.}
+	\speech{GleichstomDrehmomentberechnung}{8}{Wenn sowohl die elektrischen als auch mechanischen Verluste vernachlässigt werden, kann die induzierte Spannung auch direkt über die sogenannte innere Leistung P-I angegeben werden.}
 	\silence{2}
 	\speech{GleichstomDrehmomentberechnung}{9}{Diese entspricht dann sowohl der elektrischen Leistung U-Q mal I-A, als auch der mechanischen Leistung P-Mech, welche sich aus dem Produkt des inneren Drehmoments M-I und der Winkelgeschwindigkeit Omega errechnet.}
 	\silence{2}
@@ -279,15 +280,12 @@
 		\item Verlustmoment: $M_\mathrm{V}$ [Nm]
 		\item Wirkungsgrad:  $\eta$ [1]
 	\end{itemize}
-	
-	\speech{GleichstomInneresDrehmoment}{1}{Wird diese Erkenntnis nun in die vorangegangene Gleichung eingesetzt, errechnet sich das innere Drehmoment M-I aus dem Produkt der Ankerkonstante K, dem magnetischen Fluss Phi und dem Ankerstrom I-A.}
+
+	\speech{GleichstomInneresDrehmoment}{1}{Wird diese Erkenntnis nun in die vorangegangene Gleichung eingesetzt, errechnet sich das innere Drehmoment M-I aus dem Produkt der Ankerkonstanten K, dem magnetischen Fluss Fie und dem Ankerstrom Ih-A.}
 	\silence{2}
 	\speech{GleichstomInneresDrehmoment}{2}{Im Motorbetrieb ist das Drehmoment an der Welle der Maschine das innere Drehmoment M-I abzüglich der Verluste M-V. Das Maschinenmoment kann auch mit dem Wirkungsgrad Eta Eins ausgedrückt werden. Dieser Wirkungsgrad vernachlässigt allerdings die elektrischen Verluste durch den Ankerwiderstand und der Erregung.}
 	\silence{2}
 \end{frame}
-
-
-
 
 \s{\subsection{Fremderregte Gleichstrommaschine}}
 \begin{frame}\ftx{Fremderregte Gleichstrommaschine}
@@ -296,12 +294,12 @@
 		\input{Tikz/src/ersatzschaltbild_fremderegte_Gleichstromm}\alttext{Schaltbild einer fremderregten Gleichstrommaschine, bestehend aus zwei Teilen: Im Erregerkreis, links, befindet sich ein Widerstand (RE) und eine Induktivität (LE), die über eine Spannungsquelle (UE) verbunden sind. Im Ankerkreis, rechts, befindet sich ein Widerstand (RA) und ein mit "GM" bezeichnetet Bauteil, das für eine Induktivität, als auch Spannungsquelle steht. Der Widerstand (RA) und das Bauteil "GM" sind über eine Spanungsquelle (UA) verbunden.}
 	}{{\bf Ersatzschaltbild einer fremderregten Gleichstrommaschine.} \label{AbbGMFremderregt}}
 	\s{Der Erregerkreis besteht aus der Induktivität der Erregerwicklung $L_\mathrm{E}$ und dem Kupferwiderstand $R_\mathrm{E}$ der Spule. Im Ankerkreis wird die Wicklung als Kreis mit angedeuteten Schleifringen dargestellt, da sie einerseits eine Induktivität, als auch eine Spannungsquelle darstellt. Auch der Anker hat einen ohmschen Widerstand $R_\mathrm{A}$.
-		
+
 		Der Maschenumlauf im Rotorkreis ergibt:}
 	\begin{eq}
 		U_\mathrm{A} = U_\mathrm{q} + I_\mathrm{A}\cdot R_\mathrm{A}
 	\end{eq}
-	
+
 	\s{Durch Einsetzen von Gleichung \ref{GlInduzierteSpannungGM} und \ref{GlMomentGM} ergibt sich die Drehzahl/Drehmoment- und Ankerstromkennlinie für die fremderregte Gleichstrommaschine:}
 	\s{
 		\begin{eq}
@@ -314,12 +312,12 @@
 			\qquad \qquad I_\mathrm{A} = \frac{M_\mathrm{i}}{K\cdot \varPhi}
 		\end{eq}
 	}
-	
+
 	\speech{FremderregteGleichstommaschine}{1}{Bei der fremderregten Gleichstrommaschine sind der Erregerkreis im Stator und der Rotorkreis, der über den Kommutator mit Strom versorgt wird, prinzipiell unabhängig voneinander. Wenn beide Stromkreise von unterschiedlichen Spannungsquellen versorgt werden, wird die Maschine fremderregt genannt. Das Ersatzschaltbild einer solchen fremderregten Gleichstrommaschine ist hier gezeigt. Der Erregerkreis besteht aus der Induktivität der Erregerwicklung L-E und dem Kupferwiderstand R-E der Spule. Im Ankerkreis wird die Wicklung als Kreis mit angedeuteten Schleifringen dargestellt, da sie einerseits eine Induktivität, als auch eine Spannungsquelle darstellt. Auch der Anker hat einen ohmschen Widerstand R-A.}
 	\silence{2}
-	\speech{FremderregteGleichstommaschine}{2}{Der Maschenumlauf im Rotorkreis ergibt: Die Anker-Spannung U-A ist gleich der Summee aus Spannung U-Q und dem Produkt aus dem Anker-Strom I-A und dem Anker-Widerstand R-A.}
+	\speech{FremderregteGleichstommaschine}{2}{Der Maschenumlauf im Rotorkreis ergibt: Die Anker-Spannung U-A ist gleich der Summe aus Spannung U-Q und dem Produkt aus dem Anker-Strom Ih-A und dem Anker-Widerstand R-A.}
 	\silence{2}
-	\speech{FremderregteGleichstommaschine}{2}{Durch Einsetzen von Gleichung zur Berechnung der Anker-Spannung U-A und der Gleichung zur Berechnung des Drehmoment M-I, die wir beide zuvor kennengelernt haben, ergibt sich nach Umstellung der neuen Gleichung die Drehzahl-Drehmoment- und Ankerstromkennlinie für die fremderregte Gleichstrommaschine.}
+	\speech{FremderregteGleichstommaschine}{3}{Durch Einsetzen von der Gleichung zur Berechnung der Anker-Spannung U-A und der Gleichung zur Berechnung des Drehmoment M-I, die wir beide zuvor schon kennengelernt haben, ergibt sich nach Umstellung der neuen Gleichung die Drehzahl-Drehmoment- und Ankerstromkennlinie für die fremderregte Gleichstrommaschine.}
 	\silence{2}
 \end{frame}
 
@@ -330,13 +328,13 @@
 			Eine fremderregte Gleichstrommaschine mit der Ankerkonstante $K=\frac{1}{2\pi}$ hat bei der Spannung $U_\mathrm{A}=400\,\text{V}$ eine Leerlaufdrehzahl von $n=1200\,\frac{1}{\text{min}}$. Der Ankerwiderstand beträgt $R_\mathrm{A}=2,3\,\Omega$.
 			\begin{itemize}
 				\item [a)] Wie groß ist der Erregerfluss $\varPhi$?
-				      
+
 				      Im Leerlauf ist das innere Drehmoment $M_\mathrm{i}$ gleich Null. Gleichung \ref{GlfremderregteGM1} vereinfacht sich daher zu:
 				      \begin{align*}
 					      n       & =\frac{U_\mathrm{A}}{2\pi K\cdot \varPhi}                                                                                                                                      \\
 					      \varPhi & =\frac{U_\mathrm{A}}{2\pi K\cdot n} = \frac{400\,\text{V}}{\frac{2\pi}{2\pi}\cdot 1200 \,\frac{1}{\text{min}}\cdot \frac{1}{60\,\frac{\text{s}}{\text{min}}}}  = 20\,\text{Vs}
 				      \end{align*}
-				      
+
 				\item[b)] Wie schnell dreht die Maschine bei einem inneren Drehmoment von $M_\mathrm{i}=10\,\text{Nm}$?
 				      \begin{align*}
 					      n & = \frac{U_\mathrm{A}}{2\pi K\cdot \varPhi} - \frac{R_\mathrm{A}\cdot M_\mathrm{i}}{2\pi(K\cdot \varPhi)^2}                                       \\
@@ -354,15 +352,15 @@
 		Eine fremderregte Gleichstrommaschine mit der Ankerkonstante $K=\frac{1}{2\pi}$ hat bei der Spannung $U_\mathrm{A}=400\,\text{V}$ eine Leerlaufdrehzahl von $n=1200\,\frac{1}{\text{min}}$. Der Ankerwiderstand beträgt $R_\mathrm{A}=2,3\,\Omega$.
 		\begin{itemize}
 			\item [a)] Wie groß ist der Erregerfluss $\varPhi$? \pause
-			      
+
 			      Im Leerlauf ist das innere Drehmoment $M_\mathrm{i}$ gleich Null. Der lastabhängige Drehzahlabfall entfällt daher:
-			        \begin{align*} 
-				      n       & =\frac{U_\mathrm{A}}{2\pi K\cdot \varPhi} \\
+			      \begin{align*} 
+				      n                    & =\frac{U_\mathrm{A}}{2\pi K\cdot \varPhi}                                                                                                                                       \\
 				      \onslide<3->{\varPhi & =\frac{U_\mathrm{A}}{2\pi K\cdot n} = \frac{400\,\text{V}}{\frac{2\pi}{2\pi}\cdot 1200 \,\frac{1}{\text{min}}\cdot \frac{1}{60\,\frac{\text{s}}{\text{min}}}}  = 20\,\text{Vs}}
-			       \end{align*}
+			      \end{align*}
 		\end{itemize}
 	}
-	\speech{FremderregteGleichstomRechenbeispiel1}{1}{Sehen wir uns dzu ein Rechenbeispiel an. Eine fremderregte Gleichstrommaschine mit einer gegebenen Ankerkonstante K von einhalb Pi hat bei einer Anker-Spannung von 400 Volt eine Leerlaufdrehzahl von 1200 Umdrehungen pro Minute. Der Ankerwiderstand beträgt 2,3 Ohm. Berechnen wir dazu zunächst den Erregerfluss Phi.}
+	\speech{FremderregteGleichstomRechenbeispiel1}{1}{Sehen wir uns dazu ein Rechenbeispiel an. Eine fremderregte Gleichstrommaschine mit einer gegebenen Ankerkonstante K von einhalb Pi hat bei einer Anker-Spannung von 400 Volt eine Leerlaufdrehzahl von Tausendzweihundert Umdrehungen pro Minute. Der Ankerwiderstand beträgt 2,3 Ohm. Berechnen wir dazu zunächst den Erregerfluss Phi.}
 	\silence{2}
 	\speech{FremderregteGleichstomRechenbeispiel1}{2}{Da der Drehmoment im Leerlauf gleich Null ist, entfällt in diesem Beispiel der lastabhängige Drehzahlabfall. Daher benötigen wir nur den linken Teil der eben kennengelernten Gleichung zur Berechnung der Drehzahl-Drehmoment- und Ankerstromkennlinie.}
 	\silence{2}
@@ -384,16 +382,16 @@
 			      \end{align*}
 		\end{itemize}
 		
-		\speech{FremderregteGleichstomRechenbeispiel2}{1}{Schauen wir nun mit welcher Drehzahl die Maschiene bei einer Belastung dreht. Gegeben ist dazu ein inneres Drehmoment von 10 Newton-Meter.}
+		\speech{FremderregteGleichstomRechenbeispiel2}{1}{Schauen wir nun mit welcher Drehzahl die Maschine bei einer Belastung dreht. Gegeben ist dazu ein inneres Drehmoment von 10 Newton-Meter.}
 		\silence{2}
-		\speech{FremderregteGleichstomRechenbeispiel2}{2}{Dazu brachen wir wieder die Formel zur Berechnung der Drehzahl-Drehmoment- und Ankerstromkennlinie, diesmal aber mit der rechten Seite der Gleichung, die ja die Drehzahlverluste ausdrückt.}
+		\speech{FremderregteGleichstomRechenbeispiel2}{2}{Dazu brauchen wir wieder die Formel zur Berechnung der Drehzahl-Drehmoment- und Ankerstromkennlinie. Diesmal aber zusammen mit der rechten Seite der Gleichung, die ja die Drehzahlverluste ausdrückt.}
 		\silence{2}
-		\speech{FremderregteGleichstomRechenbeispiel2}{3}{Auch hier können wir einfach die gegebenen Größen einsetzen, da alle dafür notwendigen Werte bekannt sind. Den Wert von Phi haben wir eben berechnet.}
-		\speech{FremderregteGleichstomRechenbeispiel2}{4}{Kürzen wir die Formel schrittweise und skalieren das Ergebnis auf die gängige Größe, in der gewühnlich eine Drehzahl definiert wird, nämilch in Umdrehungen pro Minute. Wir erhalten damit eine Drehzahl von Eintausend Einhundert Achtundsiebzig Komma 3 Umdrehungen pro Minute. Die Leerlaufdrehzahl betrug laut Aufgabe 1200 Umdrehungen pro Minute. Die Last von 10 Newton-Meter bremst die Maschine also etwas ab.}
+		\speech{FremderregteGleichstomRechenbeispiel2}{3}{Auch hier können wir einfach die gegebenen Größen einsetzen, da alle dafür notwendigen Werte bekannt sind. Den Wert für Phi haben wir eben berechnet.}
+		\speech{FremderregteGleichstomRechenbeispiel2}{4}{Kürzen wir die Formel schrittweise und skalieren das Ergebnis auf die gängige Größe, in der gewöhnlich eine Drehzahl definiert wird, nämilch in Umdrehungen pro Minute. Wir erhalten damit eine Drehzahl von Eintausend Einhundert Achtundsiebzig Komma 3 Umdrehungen pro Minute. Die Leerlaufdrehzahl betrug laut Aufgabe 1200 Umdrehungen pro Minute. Die Last von 10 Newton-Meter bremst die Maschine also etwas ab.}
 		\silence{2}
-		\speech{FremderregteGleichstomRechenbeispiel2}{5}{Wie groß ist nun dabei der Ankerstrom? Die Formel dazu kennen wir bereits. Wir müssen nur die Formel zur Berechnung des inneren Drehmoments M-I nach dem Strom I-A umstellen.}
+		\speech{FremderregteGleichstomRechenbeispiel2}{5}{Wie groß ist nun dabei der Ankerstrom? Die Formel dazu kennen wir bereits. Wir müssen nur die Formel zur Berechnung des inneren Drehmoments M-Ih nach dem Strom umstellen.}
 		\silence{2}
-		\speech{FremderregteGleichstomRechenbeispiel2}{6}{Setzen wir hier die gegebenen Werte von Drehmoment und Ankerkonstante sowie das errechnte Phi ein, erhalten wir einen Ankerstrom I-A von Drei komma Sech Eins Ampere.}
+		\speech{FremderregteGleichstomRechenbeispiel2}{6}{Setzen wir hier die gegebenen Werte von Drehmoment und Ankerkonstante sowie das errechnete Phi ein, erhalten wir einen Ankerstrom Ih-A von Drei Komma Sechs-Eins Ampere.}
 		\silence{2}
 	\end{frame}
 }
@@ -415,7 +413,7 @@
 		\s{
 			\fu{
 				\input{Tikz/src/drehmomentkennlinie_reihenschluss}\alttext{Grafik einer Funktion im Koordinatensystem. Die X-Achse zeigt das Drehmoment, die Y-Achse die Drehzahl. Die Kurve der fremderregten Gleichstrommaschine ist eine Gerade, die mit steigendem Drehmoment sinkt. Die Kurve der Reihenschlussmaschine hat eine abnehmende, konvex gekrümmte Form. Mit steigendem Drehmoment sinkt die Drehzahl stärker.}
-				
+
 			}{{\bf Drehzahl-Drehmomentenkennlinien.} Kennlinie einer fremderregten Gleichstrommaschine sowie einer Reihenschlussmaschine.}
 		}
 		\b{
@@ -436,8 +434,8 @@
 			}{Kennlinien von Gleichstrommaschinen}
 		}
 	\end{columns}
-	\speech{Reihenschlussmaschine}{1}{Bei der Reihenschlussmaschine sind Erreger- und Rotorkreis in Reihe miteinander verbunden. Der Erregerstrom ist daher gleich mit dem Ankerstrom. Diese Art von Motor wird häufig in einfachen Elektrogeräten an Wechselspannung eingesetzt und wird daher auch Universalmotor genannt. Als Gleichstrommaschine wurde sie früher vor allem in Traktionsantrieben zum Beispiel von Straßenbahnen eingesetzt. Heutzutage sind diese allerdings wegen des besseren Wirkungsgrades durch Drehstromantriebe mit Umrichter ersetzt.}
-	\silence{2}\speech{Reihenschlussmaschine}{2}{Im Gegensatz zur fremderregten Gleichstrommaschine, deren Drehzahl-Drehmomentenkennlinie nach Gleichung eine Gerade ist, verhält sich die Reihenschlussmaschine nichtlinear. Ohne Belastung ist die Drehzahl theoretisch unendlich, die Maschine wird also so stark beschleunigen, bis sie sich selbst durch die Fliehkraft zerstört. Man sagt dazu: Die Maschine geht durch. Bei den Anwendungen als Traktionsantrieb kommt ein Leerlauf aber nie vor, das große Anlaufmoment ist hingegen gewünscht.}
+	\speech{Reihenschlussmaschine}{1}{Bei der Reihenschlussmaschine sind Erreger- und Rotorkreis in Reihe miteinander verbunden. Der Erregerstrom ist daher gleich mit dem Ankerstrom. Diese Art von Motor wird häufig in einfachen Elektrogeräten an Wechselspannung eingesetzt und wird daher auch Universal Motor genannt. Als Gleichstrommaschine wurde sie früher vor allem in Traktionsantrieben zum Beispiel von Straßenbahnen eingesetzt. Heutzutage sind diese allerdings wegen des besseren Wirkungsgrades durch Drehstromantriebe mit Umrichter ersetzt.}
+	\silence{2}\speech{Reihenschlussmaschine}{2}{Im Gegensatz zur fremderregten Gleichstrommaschine, deren Drehzahl-Drehmoment-kennlinie entsprechend der Gleichung eine Gerade ist, verhält sich die Reihenschlussmaschine nichtlinear. Ohne Belastung ist die Drehzahl theoretisch unendlich, die Maschine würde also so stark beschleunigen, bis sie sich selbst durch die Fliehkraft zerstört. Man sagt dazu: Die Maschine geht durch. Bei den Anwendungen als Traktionsantrieb kommt ein Leerlauf aber nie vor, das große Anlaufmoment ist hingegen gewünscht.}
 	\silence{2}
-	
+
 \end{frame}
