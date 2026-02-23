@@ -1,48 +1,48 @@
-\subsection{Analyse eines belasteten Spannungsteilers\label{Aufg26}}
+\subsection{Analyse eines belasteten Spannungsteilers}
 % Alt: Praktikumsaufgabe 12
 \Aufgabe{
-        Zeichnen Sie einen Schaltplan bestehend aus einem belasteten Spannungsteiler.  
-        Die Bauteilwerte sind wie folgt gegeben:
-        
-        \begin{itemize}
-            \item Widerstände: $R_1 = R_2 = 10\,k\Omega$
-            \item Lastwiderstand: $R_\mathrm{L} = 2{,}2\,\mathrm{k\Omega}$
-            \item Versorgungsspannung: $U_\mathrm{CC} = +15\,\mathrm{V}$
-        \end{itemize}
-        
-        \begin{itemize}
-            \item[a)] Berechnen Sie die Ausgangsspannung $U_\mathrm{C}$ ohne Lastwiderstand.
-            \item[b)] Berechnen Sie die Ausgangsspannung $U_\mathrm{C}$ mit dem angeschlossenen Lastwiderstand $\mathrm{R_L}$.
-            \item[c)] Erklären Sie, warum die Spannung $U_\mathrm{C}$ durch den Lastwiderstand absinkt.
-        \end{itemize}
+    \label{Aufg26}
+    Zeichnen Sie einen Schaltplan bestehend aus einem belasteten Spannungsteiler.  
+    Die Bauteilwerte sind wie folgt gegeben:
     
+    \begin{itemize}
+        \item Widerstände: $R_1 = R_2 = 10\,k\Omega$
+        \item Lastwiderstand: $R_\mathrm{L} = 2{,}2\,\mathrm{k\Omega}$
+        \item Versorgungsspannung: $U_\mathrm{CC} = +15\,\mathrm{V}$
+    \end{itemize}
+    
+    \begin{itemize}
+        \item[a)] Berechnen Sie die Ausgangsspannung $U_\mathrm{C}$ ohne Lastwiderstand.
+        \item[b)] Berechnen Sie die Ausgangsspannung $U_\mathrm{C}$ mit dem angeschlossenen Lastwiderstand $\mathrm{R_L}$.
+        \item[c)] Erklären Sie, warum die Spannung $U_\mathrm{C}$ durch den Lastwiderstand absinkt.
+    \end{itemize} 
 }
 
 \Loesung{
     \begin{figure}[H]
         \centering
-            \input{Tikz/src/LsgPrakSpannungsteiler.tex}
-            \label{fig:LsgPrakSpannungsteiler}
+        \input{Tikz/src/LsgPrakSpannungsteiler.tex}
+        \label{fig:LsgPrakSpannungsteiler}
     \end{figure}
     \begin{itemize}
         \item[a)] Berechnung der Ausgangsspannung $U_\mathrm{C}$ ohne Lastwiderstand:
-        \begin{align*}
-            U_\mathrm{C} &= \frac{R_2}{R_1 + R_2} \cdot U_\mathrm{CC} \\
-            U_\mathrm{C} &= \frac{10\,k\Omega}{10\,k\Omega + 10\,\mathrm{k\Omega}} \cdot 15\,\mathrm{V} \\
-            U_\mathrm{C} &= \frac{1}{2} \cdot 15\,\mathrm{V} \\
-            U_\mathrm{C} &= 7{,}5\,\mathrm{V}
-        \end{align*}
+              \begin{align*}
+                  U_\mathrm{C} & = \frac{R_2}{R_1 + R_2} \cdot U_\mathrm{CC}                                   \\
+                  U_\mathrm{C} & = \frac{10\,k\Omega}{10\,k\Omega + 10\,\mathrm{k\Omega}} \cdot 15\,\mathrm{V} \\
+                  U_\mathrm{C} & = \frac{1}{2} \cdot 15\,\mathrm{V}                                            \\
+                  U_\mathrm{C} & = 7{,}5\,\mathrm{V}
+              \end{align*}
         \item[b)] Berechnung der Ausgangsspannung $\mathrm{U_C}$ mit dem angeschlossenen Lastwiderstand $\mathrm{R_L}$:
-        \begin{align*}
-            U_\mathrm{C} &= \frac{R_2}{R_1 + R_2 + R_\mathrm{L}} \cdot U_\mathrm{CC} \\
-            U_\mathrm{C} &= \frac{10\,\mathrm{k\Omega}}{10\,\mathrm{k\Omega} + 10\,\mathrm{k\Omega} + 2{,}2\,\mathrm{k\Omega}} \cdot 15\,\mathrm{V} \\
-            U_\mathrm{C} &= \frac{10\,\mathrm{k\Omega}}{22\,\mathrm{k\Omega}} \cdot 15\,\mathrm{V} \\
-            U_\mathrm{C} &= \frac{10}{22} \cdot 15\,\mathrm{V} \\
-            U_\mathrm{C} &= \frac{150}{22}\,\mathrm{V} \\
-            U_\mathrm{C} &\approx 6{,}82\,\mathrm{V}
-        \end{align*}
+              \begin{align*}
+                  U_\mathrm{C} & = \frac{R_2}{R_1 + R_2 + R_\mathrm{L}} \cdot U_\mathrm{CC}                                                                \\
+                  U_\mathrm{C} & = \frac{10\,\mathrm{k\Omega}}{10\,\mathrm{k\Omega} + 10\,\mathrm{k\Omega} + 2{,}2\,\mathrm{k\Omega}} \cdot 15\,\mathrm{V} \\
+                  U_\mathrm{C} & = \frac{10\,\mathrm{k\Omega}}{22\,\mathrm{k\Omega}} \cdot 15\,\mathrm{V}                                                  \\
+                  U_\mathrm{C} & = \frac{10}{22} \cdot 15\,\mathrm{V}                                                                                      \\
+                  U_\mathrm{C} & = \frac{150}{22}\,\mathrm{V}                                                                                              \\
+                  U_\mathrm{C} & \approx 6{,}82\,\mathrm{V}
+              \end{align*}
         \item[c)] Die Spannung $U_\mathrm{C}$ sinkt durch den Lastwiderstand $R_\mathrm{L}$ ab, da dieser einen Spannungsteiler mit den Widerständen $R_1$ und $R_2$ bildet. Der Lastwiderstand $R_\mathrm{L}$ entzieht der Schaltung einen Teil der
-        Spannung, wodurch die Ausgangsspannung $U_\mathrm{C}$ sinkt.
+              Spannung, wodurch die Ausgangsspannung $U_\mathrm{C}$ sinkt.
     \end{itemize}
     Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
 }

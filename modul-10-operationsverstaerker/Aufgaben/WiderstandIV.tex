@@ -1,39 +1,20 @@
-\subsection{Widerstandsberechnung für invertierenden Verstärker\label{Aufg3}}
+\subsection{Widerstandsberechnung für invertierenden Verstärker}
 % Alt: Aufgabe 3
 \Aufgabe{
-	Gegeben ist die abgebildete Schaltung mit einem invertierenden 
-    Verstärker. Dabei ist der Widerstand $R_\mathrm{2} = 1\,\mathrm{k \Omega}$. Was für Widerstandswerte 
+    \label{Aufg3}
+    Gegeben ist die abgebildete Schaltung mit einem invertierenden
+    Verstärker. Dabei ist der Widerstand $R_\mathrm{2} = 1\,\mathrm{k \Omega}$. Was für Widerstandswerte
     muss $R_\mathrm{1}$ aufweisen, damit die Verstärkung der gegebenen Schaltung -10, -50 und -100 beträgt?
 
-    \begin {figure} [H]
-   \centering
-   \input{Tikz/src/FigWiderstandIV.tex}
-   \alttext{Das Bild zeigt ein elektrisches Schaltbild mit einem Operationsverstärker.Links ist eine Eingangsspannung \(U_\mathrm{E}\) mit einem Pfeil nach unten eingezeichnet.Diese Eingangsspannung ist über den Widerstand \(R_1\) mit dem Minus-Eingang (invertierender Eingang) verbunden. Vom Knoten zwischen \(R_1\) und dem invertierenden Eingang führt ein weiterer Zweig nach oben zu einem zweiten Widerstand \(R_2\).Dieser Widerstand verbindet den Ausgang des Operationsverstärkers mit dem invertierenden Eingang. Dadurch entsteht eine Rückkopplung. Der Puls-Eingang (Nichtinvertierende Eingang) des OPV ist nach unten direkt mit Masse verbunden. Rechts befindet sich der Ausgang des Operationsverstärkers. Dort ist die Ausgangsspannung \(U_\mathrm{A}\) mit einem Pfeil nach unten eingezeichnet.}
-   \label{fig:FigWiderstandIV}
-    \end {figure}
-    %\speech{
-        %Aufgabe 3: Invertierender Verstärker  
-        %
-        %Gegeben ist eine Schaltung mit einem invertierenden Operationsverstärker.  
-        %Der Widerstand R2 hat einen Wert von 1 Kiloohm.  
-        %Gesucht sind die passenden Widerstandswerte für R1, sodass die Verstärkung jeweils -10, -50 und -100 beträgt.  
-        %
-        %Die Schaltung besteht aus einem Operationsverstärker mit einer Rückkopplung über die Widerstände R1 und R2.  
-        %Die Eingangsspannung U E wird über R1 an den invertierenden Eingang des Operationsverstärkers angelegt.  
-        %Der nichtinvertierende Eingang ist mit Masse verbunden.  
-       % Der Ausgang U A ist über den Widerstand R2 mit dem invertierenden Eingang verbunden.  
-      %  
-     %   Die Verstärkung V eines invertierenden Verstärkers wird mit folgender Formel berechnet:  
-    %    
-   %     V = - (R2 / R1)  
-  %      
- %       Um die gesuchten Widerstandswerte zu bestimmen, muss diese Gleichung nach R1 umgestellt werden.  
-%        }
-        
+    \begin{figure}[H]
+        \centering
+        \input{Tikz/src/FigWiderstandIV.tex}\alttext{Das Bild zeigt ein elektrisches Schaltbild mit einem Operationsverstärker.Links ist eine Eingangsspannung \(U_\mathrm{E}\) mit einem Pfeil nach unten eingezeichnet.Diese Eingangsspannung ist über den Widerstand \(R_1\) mit dem Minus-Eingang (invertierender Eingang) verbunden. Vom Knoten zwischen \(R_1\) und dem invertierenden Eingang führt ein weiterer Zweig nach oben zu einem zweiten Widerstand \(R_2\).Dieser Widerstand verbindet den Ausgang des Operationsverstärkers mit dem invertierenden Eingang. Dadurch entsteht eine Rückkopplung. Der Puls-Eingang (Nichtinvertierende Eingang) des OPV ist nach unten direkt mit Masse verbunden. Rechts befindet sich der Ausgang des Operationsverstärkers. Dort ist die Ausgangsspannung \(U_\mathrm{A}\) mit einem Pfeil nach unten eingezeichnet.}
+        \label{fig:FigWiderstandIV}
+    \end{figure}
 }
 
 \Loesung{
-	Gemäß Formel invertierender Verstärker:
+    Gemäß Formel invertierender Verstärker:
     \begin{align*}
         V = - \frac{R_2}{R_1}
     \end{align*}
@@ -43,43 +24,18 @@
     \end{align*}
     \begin{itemize}
         \item $V = - 10$
-        \begin{align*}
-            R_1 =\mathrm{- \frac{1\,k\Omega}{- 10} = 100\,\Omega}
-        \end{align*}
-        \item $V = - 50$ 
-        \begin{align*}
-            R_1 =\mathrm{- \frac{1\,k\Omega}{- 50} = 20\,\Omega}
-        \end{align*}
+              \begin{align*}
+                  R_1 =\mathrm{- \frac{1\,k\Omega}{- 10} = 100\,\Omega}
+              \end{align*}
+        \item $V = - 50$
+              \begin{align*}
+                  R_1 =\mathrm{- \frac{1\,k\Omega}{- 50} = 20\,\Omega}
+              \end{align*}
         \item $V = - 100$
-        \begin{align*}
-            R_1 =\mathrm{- \frac{1\,k\Omega}{- 100} = 10\,\Omega}
-        \end{align*}
+              \begin{align*}
+                  R_1 =\mathrm{- \frac{1\,k\Omega}{- 100} = 10\,\Omega}
+              \end{align*}
     \end{itemize}
-   % \speech{
-   %     Berechnung der Widerstände für einen invertierenden Verstärker  
-   %     
-   %     Die Verstärkung eines invertierenden Operationsverstärkers wird durch die Formel bestimmt:  
-   %     
-   %     V = - R2 durch R1  
-   %     
-   %     Umstellen der Formel nach R1 ergibt:  
-   %     
-   %     R1 = - R2 durch V  
-   %     
-   %     Die Aufgabe besteht darin, den Widerstand R1 für verschiedene Verstärkungswerte zu berechnen,  
-   %     wenn der Widerstand R2 gleich 1 Kiloohm ist.  
-   %     
-   %     Für eine Verstärkung von -10:  
-   %     R1 = - 1 Kiloohm durch -10 = 100 Ohm  
-   %     
-   %     Für eine Verstärkung von -50:  
-   %     R1 = - 1 Kiloohm durch -50 = 20 Ohm  
-   %     
-   %     Für eine Verstärkung von -100:  
-   %     R1 = - 1 Kiloohm durch -100 = 10 Ohm  
-   %     
-  %      Die berechneten Widerstandswerte zeigen, dass mit zunehmender Verstärkung  
- %       der Wert von R1 abnimmt.  
-%        }
-Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
+
+    Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
 }

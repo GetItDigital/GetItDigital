@@ -1,122 +1,99 @@
-\subsection{Entwurf einer Verstärkerschaltung mit unterschiedlichen Eingangsverstärkungen\label{Aufg12}}
+\subsection{Entwurf einer Verstärkerschaltung mit unterschiedlichen Eingangsverstärkungen}
 % Alt: Aufgabe 12
 \Aufgabe{
-    Zwischen der Ausgangsspannung $U_\mathrm{a}$ und dem Eingangsspannungen $U_\mathrm{1}$ und $U_\mathrm{2}$ besteht der folgende 
-    funktionale Zusammenhang:
-    $U_\mathrm{a} = 2 \ U_\mathrm{1} - 0,5 \ U_\mathrm{2}$
-    Geben Sie eine mit Operationsverstärker(n) und Widerständen aufgebaute Schaltung zur Realisierung 
-    dieses funktionalen Zusammenhangs an. Die Operationsverstärker dürfen als ideale Operationsverstärker 
-    angenommen werden. Geben Sie Werte der verwendeten Widerstände an! Typische Widerstände für OPV-Schaltungen liegen im 
-    Bereich von $\mathrm{1\,k\Omega \ bis\ 100\,k\Omega}$.
+  \label{Aufg12}
+  Zwischen der Ausgangsspannung $U_\mathrm{a}$ und dem Eingangsspannungen $U_\mathrm{1}$ und $U_\mathrm{2}$ besteht der folgende
+  funktionale Zusammenhang:
+  $U_\mathrm{a} = 2 \ U_\mathrm{1} - 0,5 \ U_\mathrm{2}$
+  Geben Sie eine mit Operationsverstärker(n) und Widerständen aufgebaute Schaltung zur Realisierung
+  dieses funktionalen Zusammenhangs an. Die Operationsverstärker dürfen als ideale Operationsverstärker
+  angenommen werden. Geben Sie Werte der verwendeten Widerstände an! Typische Widerstände für OPV-Schaltungen liegen im
+  Bereich von $\mathrm{1\,k\Omega \ bis\ 100\,k\Omega}$.
 
-  %  \speech{
-  %      Aufgabe 12: Funktionale Umsetzung mit Operationsverstärkern  
-  %      
-  %      Gegeben ist eine funktionale Beziehung zwischen der Ausgangsspannung U A  
-  %      und den Eingangsspannungen U1 und U2:  
-  %      
-  %      U A = 2 U1 - 0,5 U2  
-  %      
-  %      Es soll eine Schaltung mit Operationsverstärker(n) und Widerständen entworfen werden,  
-  %      die genau diese mathematische Beziehung realisiert.  
-  %      Dabei dürfen die Operationsverstärker als ideal angenommen werden.  
-  %      
-  %      Zusätzlich sollen die Werte der verwendeten Widerstände angegeben werden.  
-  %      Typische Widerstandswerte für Operationsverstärkerschaltungen liegen im Bereich von 1 bis 100 Kiloohm.  
-  %      
-  %      Die Aufgabe besteht darin, die geeignete Verschaltung der Bauelemente zu finden,  
- %       um die gewünschte Ausgangsspannung zu erzeugen.  
-%        }
-        
 }
 
 \Loesung{
-	\begin {figure} [H]
-\centering
-\input{Tikz/src/LsgOPV2Signale2.tex}
-\alttext{Die Abbildung zeigt eine Schaltung mit einem Operationsverstärker, der mit einem Widerstandsnetzwerk am invertierenden und am nichtinvertierenden Eingang beschaltet ist. Der Operationsverstärker besitzt einen invertierenden Eingang (−), einen nichtinvertierenden Eingang (+) sowie einen Ausgang.
-Der Ausgang des Operationsverstärkers befindet sich auf der rechten Seite. Die Ausgangsspannung \(U_\mathrm{a}\) wird gegen Masse gemessen.
-Am invertierenden Eingang liegt das Eingangssignal \(U_{\mathrm{e1}}\) an. Dieses wird über den Widerstand \(R_1\) dem invertierenden Eingang zugeführt. Zusätzlich ist der invertierende Eingang über den Widerstand \(R_3\) mit dem Ausgang verbunden. Dadurch entsteht eine Gegenkopplung vom Ausgang zum invertierenden Eingang.
-Der nichtinvertierende Eingang ist ebenfalls über ein Widerstandsnetzwerk beschaltet. Das Eingangssignal \(U_{\mathrm{e2}}\) wird über den Widerstand \(R_2\) zugeführt. Zudem ist der nichtinvertierende Eingang über den Widerstand \(R_4\) mit Masse verbunden.
-Die beiden Eingangsspannungen \(U_{\mathrm{e1}}\) und \(U_{\mathrm{e2}}\) werden jeweils gegen Masse gemessen. Der gemeinsame Massebezug ist unten dargestellt.}
-\label{LsgOPV2Signale2}
- \end {figure}
+  \begin{figure}[H]
+    \centering
+    \input{Tikz/src/LsgOPV2Signale2.tex}\alttext{Die Abbildung zeigt eine Schaltung mit einem Operationsverstärker, der mit einem Widerstandsnetzwerk am invertierenden und am nichtinvertierenden Eingang beschaltet ist. Der Operationsverstärker besitzt einen invertierenden Eingang (−), einen nichtinvertierenden Eingang (+) sowie einen Ausgang.
+      Der Ausgang des Operationsverstärkers befindet sich auf der rechten Seite. Die Ausgangsspannung \(U_\mathrm{a}\) wird gegen Masse gemessen. Am invertierenden Eingang liegt das Eingangssignal \(U_{\mathrm{e1}}\) an. Dieses wird über den Widerstand \(R_1\) dem invertierenden Eingang zugeführt. Zusätzlich ist der invertierende Eingang über den Widerstand \(R_3\) mit dem Ausgang verbunden. Dadurch entsteht eine Gegenkopplung vom Ausgang zum invertierenden Eingang.
+      Der nichtinvertierende Eingang ist ebenfalls über ein Widerstandsnetzwerk beschaltet. Das Eingangssignal \(U_{\mathrm{e2}}\) wird über den Widerstand \(R_2\) zugeführt. Zudem ist der nichtinvertierende Eingang über den Widerstand \(R_4\) mit Masse verbunden.
+      Die beiden Eingangsspannungen \(U_{\mathrm{e1}}\) und \(U_{\mathrm{e2}}\) werden jeweils gegen Masse gemessen. Der gemeinsame Massebezug ist unten dargestellt.}
+    \label{LsgOPV2Signale2}
+  \end{figure}
 
-Der funktionale Zusammenhang zwischen der Ausgangsspannung \( U_a \) und den Eingangsspannungen \( U_{e1} \) und \( U_{e2} \) lautet:
-\[
-U_\mathrm{a} = 2 U_\mathrm{e1} - 0{,}5 U_\mathrm{e2}
-\]
+  Der funktionale Zusammenhang zwischen der Ausgangsspannung \( U_a \) und den Eingangsspannungen \( U_{e1} \) und \( U_{e2} \) lautet:
+  \[
+    U_\mathrm{a} = 2 U_\mathrm{e1} - 0{,}5 U_\mathrm{e2}
+  \]
 
-\textbf{1. Allgemeine Formel für die Ausgangsspannung eines Subtrahierers:}
-\[
-U_\mathrm{a} = U_\mathrm{e2} \cdot \frac{R_1 + R_3}{R_2 + R_4} \cdot \frac{R_4}{R_1} - U_\mathrm{e1} \cdot \frac{R_3}{R_1}
-\]
-Vergleich mit der Vorgabe \( U_\mathrm{a} = 2 U_\mathrm{e1} - 0{,}5 U_\mathrm{e2} \) ergibt folgende Bedingungen: \\
-\\
-- Verstärkungsfaktor für \( U_\mathrm{e1} \): \( \frac{R_3}{R_1} = 0{,}5 \) \\
-\\
-- Verstärkungsfaktor für \( U_\mathrm{e2} \): \( \frac{R_1 + R_3}{R_2 + R_4} \cdot \frac{R_4}{R_1} = 2 \)
+  \textbf{1. Allgemeine Formel für die Ausgangsspannung eines Subtrahierers:}
+  \[
+    U_\mathrm{a} = U_\mathrm{e2} \cdot \frac{R_1 + R_3}{R_2 + R_4} \cdot \frac{R_4}{R_1} - U_\mathrm{e1} \cdot \frac{R_3}{R_1}
+  \]
+  Vergleich mit der Vorgabe \( U_\mathrm{a} = 2 U_\mathrm{e1} - 0{,}5 U_\mathrm{e2} \) ergibt folgende Bedingungen: \\
+  \\
+  - Verstärkungsfaktor für \( U_\mathrm{e1} \): \( \frac{R_3}{R_1} = 0{,}5 \) \\
+  \\
+  - Verstärkungsfaktor für \( U_\mathrm{e2} \): \( \frac{R_1 + R_3}{R_2 + R_4} \cdot \frac{R_4}{R_1} = 2 \)
 
 
-
-\textbf{2. Vorgehen:} \\
-- Setze \( R_3 = 1\,\mathrm{k}\Omega \) (typischer Wert). \\
-- Berechne die restlichen Widerstände.
-
+  \textbf{2. Vorgehen:} \\
+  - Setze \( R_3 = 1\,\mathrm{k}\Omega \) (typischer Wert). \\
+  - Berechne die restlichen Widerstände.
 
 
-\textbf{3. Berechnung der Widerstände:}
+  \textbf{3. Berechnung der Widerstände:}
 
-Berechnung von \( R_1 \) (aus \( \frac{R_3}{R_1} = 0{,}5 \)):
-\[
-\frac{R_3}{R_1} = 0{,}5 \quad \Rightarrow \quad R_1 = \frac{R_3}{0{,}5} = \frac{1\,\mathrm{k}\Omega}{0{,}5} = 2\,\mathrm{k}\Omega
-\]
+  Berechnung von \( R_1 \) (aus \( \frac{R_3}{R_1} = 0{,}5 \)):
+  \[
+    \frac{R_3}{R_1} = 0{,}5 \quad \Rightarrow \quad R_1 = \frac{R_3}{0{,}5} = \frac{1\,\mathrm{k}\Omega}{0{,}5} = 2\,\mathrm{k}\Omega
+  \]
 
-Berechnung von \( R_2 \) und \( R_4 \) (aus \( \frac{R_1 + R_3}{R_2 + R_4} \cdot \frac{R_4}{R_1} = 2 \)):
-Setze \( R_4 = 1\,\mathrm{k}\Omega \):
-\[
-\frac{R_1 + R_3}{R_2 + R_4} \cdot \frac{R_4}{R_1} = 2 \quad \Rightarrow \quad \frac{3\,\mathrm{k}\Omega}{R_2 + 1\,\mathrm{k}\Omega} \cdot \frac{1\,\mathrm{k}\Omega}{2\,\mathrm{k}\Omega} = 2
-\]
-Multipliziere beide Seiten:
-\[
-\frac{3}{2} = 2 \cdot (R_2 + 1\,\mathrm{k}\Omega)
-\]
-Umstellen nach \( R_2 \):
-\[
-R_2^2 + R_2 - \frac{3}{2} = 0
-\]
-
-
-
-\textbf{4. Lösung mit der PQ-Formel:}
-
-Die quadratische Gleichung hat die Form:
-\[
-R_2^2 + p \cdot R_2 + q = 0 \quad \text{mit} \quad p = 1, \, q = -\frac{3}{2}
-\]
-PQ-Formel:
-\[
-R_2 = -\frac{p}{2} \pm \sqrt{\left( \frac{p}{2} \right)^2 - q}
-\]
-Einsetzen der Werte:
-\[
-R_2 = -\frac{1}{2} \pm \sqrt{\left( \frac{1}{2} \right)^2 - \left( -\frac{3}{2} \right)} = -\frac{1}{2} \pm \sqrt{\frac{1}{4} + \frac{3}{2}}
-\]
-\[
-R_2 = -\frac{1}{2} \pm \sqrt{\frac{7}{4}} = -\frac{1}{2} \pm \frac{\sqrt{7}}{2}
-\]
-Da \( R_2 \) positiv sein muss:
-\[
-R_2 = -\frac{1}{2} + \frac{\sqrt{7}}{2} \approx 1{,}82\,\mathrm{k}\Omega
-\]
+  Berechnung von \( R_2 \) und \( R_4 \) (aus \( \frac{R_1 + R_3}{R_2 + R_4} \cdot \frac{R_4}{R_1} = 2 \)):
+  Setze \( R_4 = 1\,\mathrm{k}\Omega \):
+  \[
+    \frac{R_1 + R_3}{R_2 + R_4} \cdot \frac{R_4}{R_1} = 2 \quad \Rightarrow \quad \frac{3\,\mathrm{k}\Omega}{R_2 + 1\,\mathrm{k}\Omega} \cdot \frac{1\,\mathrm{k}\Omega}{2\,\mathrm{k}\Omega} = 2
+  \]
+  Multipliziere beide Seiten:
+  \[
+    \frac{3}{2} = 2 \cdot (R_2 + 1\,\mathrm{k}\Omega)
+  \]
+  Umstellen nach \( R_2 \):
+  \[
+    R_2^2 + R_2 - \frac{3}{2} = 0
+  \]
 
 
-\textbf{5. Ergebnis der Widerstände:}
-\begin{align*}
-R_1 &= 2\,\mathrm{k}\Omega \\
-R_2 &= 1{,}82\,\mathrm{k}\Omega \\
-R_3 &= 1\,\mathrm{k}\Omega \\
-R_4 &= 1\,\mathrm{k}\Omega
-\end{align*}
-Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
+  \textbf{4. Lösung mit der PQ-Formel:}
+
+  Die quadratische Gleichung hat die Form:
+  \[
+    R_2^2 + p \cdot R_2 + q = 0 \quad \text{mit} \quad p = 1, \, q = -\frac{3}{2}
+  \]
+  PQ-Formel:
+  \[
+    R_2 = -\frac{p}{2} \pm \sqrt{\left( \frac{p}{2} \right)^2 - q}
+  \]
+  Einsetzen der Werte:
+  \[
+    R_2 = -\frac{1}{2} \pm \sqrt{\left( \frac{1}{2} \right)^2 - \left( -\frac{3}{2} \right)} = -\frac{1}{2} \pm \sqrt{\frac{1}{4} + \frac{3}{2}}
+  \]
+  \[
+    R_2 = -\frac{1}{2} \pm \sqrt{\frac{7}{4}} = -\frac{1}{2} \pm \frac{\sqrt{7}}{2}
+  \]
+  Da \( R_2 \) positiv sein muss:
+  \[
+    R_2 = -\frac{1}{2} + \frac{\sqrt{7}}{2} \approx 1{,}82\,\mathrm{k}\Omega
+  \]
+
+
+  \textbf{5. Ergebnis der Widerstände:}
+  \begin{align*}
+    R_1 & = 2\,\mathrm{k}\Omega      \\
+    R_2 & = 1{,}82\,\mathrm{k}\Omega \\
+    R_3 & = 1\,\mathrm{k}\Omega      \\
+    R_4 & = 1\,\mathrm{k}\Omega
+  \end{align*}
+  Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
 }

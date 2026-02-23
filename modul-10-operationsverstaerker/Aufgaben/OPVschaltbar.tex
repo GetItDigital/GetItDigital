@@ -1,8 +1,9 @@
-\subsection{Verstärkungseinstellung mit schaltbaren Widerständen\label{Aufg13}}
+\subsection{Verstärkungseinstellung mit schaltbaren Widerständen}
 % Alt: Aufgabe 13
 \Aufgabe{
-    Um die Verstärkung eines OPVs einzustellen, können mithilfe von Schaltern verschiedene 
-    Widerstände am OPV zu- und abgeschaltet werden. Berechnen Sie die untenstehenden OP-Schaltungen 
+    \label{Aufg13}
+    Um die Verstärkung eines OPVs einzustellen, können mithilfe von Schaltern verschiedene
+    Widerstände am OPV zu- und abgeschaltet werden. Berechnen Sie die untenstehenden OP-Schaltungen
     in Abhängigkeit der Schalterstellungen S!
     \begin{itemize}
         \item[ \bf a)] Für die folgende Schaltung mit vier möglichen Schalterstellungen
@@ -10,8 +11,7 @@
 
     \begin{figure}[H]
         \centering
-        \input{Tikz/src/FigOPVschaltbar1.tex}
-        \alttext{Das Bild zeigt eine Schaltung mit einem Operationsverstärker. Der Eingang \(U_\mathrm{E}\) ist am positiven Eingang des Operationsverstärkers angeschlossen. Vom Ausgang \(U_\mathrm{A}\) des Operationsverstärkers führt ein Widerstand \(R_\mathrm{f}\) nach unten, an dessen Verbindung zwei Schalter \(S1\) und \(S2\) parallel geschaltet sind. Hinter dem Schalter \(S1\) befindet sich der Widerstand \(R_{\mathrm{n1}}\), hinter dem Schalter \(S2\) der Widerstand \(R_{\mathrm{n2}}\), der mit Masse verbunden ist. Die Verbindung zwischen den Schaltern und den Widerständen führt zurück zum negativen Eingang des Operationsverstärkers.}
+        \input{Tikz/src/FigOPVschaltbar1.tex}\alttext{Das Bild zeigt eine Schaltung mit einem Operationsverstärker. Der Eingang \(U_\mathrm{E}\) ist am positiven Eingang des Operationsverstärkers angeschlossen. Vom Ausgang \(U_\mathrm{A}\) des Operationsverstärkers führt ein Widerstand \(R_\mathrm{f}\) nach unten, an dessen Verbindung zwei Schalter \(S1\) und \(S2\) parallel geschaltet sind. Hinter dem Schalter \(S1\) befindet sich der Widerstand \(R_{\mathrm{n1}}\), hinter dem Schalter \(S2\) der Widerstand \(R_{\mathrm{n2}}\), der mit Masse verbunden ist. Die Verbindung zwischen den Schaltern und den Widerständen führt zurück zum negativen Eingang des Operationsverstärkers.}
         \label{fig:FigOPVschaltbar1}
     \end{figure}
 
@@ -21,145 +21,53 @@
 
     \begin{figure}[H]
         \centering
-        \input{Tikz/src/FigOPVschaltbar2.tex}
-        \alttext{Das Bild zeigt ein elektrisches Schaltbild mit einem Operationsverstärker. Links ist der Eingang \(U_\mathrm{E}\), der über einen Widerstand \(R_\mathrm{n}\) mit dem invertierenden Eingang des Operationsverstärkers verbunden ist. Der nicht-invertierende Eingang des Operationsverstärkers ist mit Masse verbunden. Vom Ausgang des Operationsverstärkers führt eine Verbindung zu zwei parallel geschalteten Widerständen \(R_{\mathrm{f1}}\) und \(R_{\mathrm{f2}}\), die durch einen Schalter \(S1\) verbunden sind. Der Ausgang wird als \(U_\mathrm{A}\) bezeichnet.}
+        \input{Tikz/src/FigOPVschaltbar2.tex}\alttext{Das Bild zeigt ein elektrisches Schaltbild mit einem Operationsverstärker. Links ist der Eingang \(U_\mathrm{E}\), der über einen Widerstand \(R_\mathrm{n}\) mit dem invertierenden Eingang des Operationsverstärkers verbunden ist. Der nicht-invertierende Eingang des Operationsverstärkers ist mit Masse verbunden. Vom Ausgang des Operationsverstärkers führt eine Verbindung zu zwei parallel geschalteten Widerständen \(R_{\mathrm{f1}}\) und \(R_{\mathrm{f2}}\), die durch einen Schalter \(S1\) verbunden sind. Der Ausgang wird als \(U_\mathrm{A}\) bezeichnet.}
         \label{fig:FigOPVschaltbar2}
     \end{figure}
-
-%    \speech{
-%        Aufgabe 13: Verstärkungseinstellung mit Schaltern  
-%        
-%        In dieser Aufgabe werden Operationsverstärkerschaltungen analysiert,  
-%        bei denen die Verstärkung durch das Zu- und Abschalten von Widerständen verändert werden kann.  
-%        
-%        Teilaufgabe a:
-%        Analyse der Schaltung in Abbildung 1 mit vier möglichen Schalterstellungen.  
-%        Die Schaltung enthält einen Operationsverstärker mit mehreren Widerständen.  
-%        Der Widerstand Rf ist fest in der Rückkopplung, während die Widerstände Rn1 und Rn2 über die Schalter S1 und S2  
-%        zugeschaltet oder abgeschaltet werden können.  
-%        Je nach Stellung der Schalter verändert sich das Widerstandsverhältnis und somit die Verstärkung.  
-%        Ziel ist es, die Verstärkungswerte für die vier möglichen Schalterstellungen zu berechnen.  
-%        
-%        Teilaufgabe b:
-%        Analyse der Schaltung in Abbildung 2 mit zwei möglichen Schalterstellungen.  
-%        Hier wird die Verstärkung durch den Schalter S1 umgeschaltet.  
-%        Dieser wählt zwischen zwei Rückkopplungswiderständen Rf1 und Rf2.  
-%        Die Aufgabe besteht darin, die Verstärkung für beide Schalterstellungen zu bestimmen.  
-%        
-%        Abbildung 13.1 zeigt eine nichtinvertierende Operationsverstärkerschaltung,  
-%bei der die Verstärkung durch das Ein- und Ausschalten von Widerständen variiert werden kann.  
-%
-%Die Schaltung besteht aus einem Operationsverstärker mit folgender Beschaltung:  
-%
-%- Der Eingang U E wird an den nichtinvertierenden Eingang des Operationsverstärkers angelegt.  
-%- Der Ausgang U A ist mit einer Rückkopplung über den Widerstand Rf verbunden.  
-%- Am invertierenden Eingang befinden sich zwei Schalter, S1 und S2,  
-%  die verschiedene Widerstände Rn1 und Rn2 parallel schalten können.  
-%- Diese Widerstände sind mit Masse verbunden,  
-%  sodass sich je nach Schalterstellung der Gesamtwiderstand und damit die Verstärkung ändert.  
-%
-%Die Schalterstellung beeinflusst die effektive Gegenkopplung des Operationsverstärkers.  
-%Wenn beide Schalter geöffnet sind, fließt kein zusätzlicher Strom über Rn1 und Rn2.  
-%Wenn einer oder beide Schalter geschlossen werden,  
-%ändert sich der Widerstand und somit auch die Verstärkung der Schaltung.  
-%
-%Diese Schaltung ermöglicht vier verschiedene Verstärkungswerte,  
-%abhängig von der Kombination der Schalterstellungen. 
-%
-%Abbildung 13.2 zeigt eine nichtinvertierende Operationsverstärkerschaltung,  
-%bei der die Verstärkung durch einen einzigen Schalter S1 umgeschaltet werden kann.  
-%
-%Die Schaltung besteht aus folgenden Komponenten:  
-%
-%- Der Eingang U E ist über einen Widerstand Rn mit Masse verbunden  
-%  und mit dem nichtinvertierenden Eingang des Operationsverstärkers verbunden.  
-%- Der invertierende Eingang ist über zwei Widerstände Rf1 und Rf2 mit dem Ausgang U A verbunden.  
-%- Der Schalter S1 ermöglicht es, zwischen zwei verschiedenen Rückkopplungswiderständen Rf1 und Rf2 umzuschalten.  
-%
-%Je nach Stellung des Schalters S1 wird entweder:  
-%
-%1. Nur der Widerstand Rf1 in die Rückkopplung einbezogen,  
- %  was zu einer bestimmten Verstärkung führt.  
-%2. Der Widerstand Rf2 parallel zu Rf1 geschaltet,  
-%   wodurch sich der Gesamtwiderstand verringert und die Verstärkung entsprechend ändert.  
-%
-%Diese Schaltung bietet zwei verschiedene Verstärkungswerte,  
-%die durch einfaches Umschalten des Schalters S1 angepasst werden können.  
-%        }
-        
 
 }
 
 \Loesung{
     \begin{itemize}
         \item[a)] Nicht-invertierender Verstärker
-        
-        \textbf{1. Fall (S1 geschlossen, S2 offen):}  
-        In diesem Zustand bilden die Widerstände $R_\mathrm{n1}$ und $R_\mathrm{n2}$ eine Serienschaltung. Die Gesamtverstärkung ergibt sich somit zu:
-        \[
-        V = 1 + \frac{R_\mathrm{f}}{R_\mathrm{n1} + R_\mathrm{n2}}
-        \]
 
-        \textbf{2. Fall (S1 offen, S2 geschlossen):}  
-        In diesem Fall sind der Widerstand $R_\mathrm{f}$ und $R_\mathrm{n1}$ seriell geschaltet. Diese Serienschaltung bildet zusammen mit dem Widerstand $R_\mathrm{n2}$ die Rückkopplungsschleife. Die Verstärkung ist daher:
-        \[
-        V = 1 + \frac{R_\mathrm{f} + R_\mathrm{n1}}{R_\mathrm{n2}}
-        \]
+              \textbf{1. Fall (S1 geschlossen, S2 offen):}
+              In diesem Zustand bilden die Widerstände $R_\mathrm{n1}$ und $R_\mathrm{n2}$ eine Serienschaltung. Die Gesamtverstärkung ergibt sich somit zu:
+              \[
+                  V = 1 + \frac{R_\mathrm{f}}{R_\mathrm{n1} + R_\mathrm{n2}}
+              \]
 
-        \textbf{3. Fall (S1 und S2 geschlossen):}  
-        Mit beiden Schaltern geschlossen wird der Widerstand $R_\mathrm{n1}$ überbrückt und somit nicht berücksichtigt. Die Verstärkung ergibt sich durch:
-        \[
-        V = 1 + \frac{R_\mathrm{f}}{R_\mathrm{n2}}
-        \]
+              \textbf{2. Fall (S1 offen, S2 geschlossen):}
+              In diesem Fall sind der Widerstand $R_\mathrm{f}$ und $R_\mathrm{n1}$ seriell geschaltet. Diese Serienschaltung bildet zusammen mit dem Widerstand $R_\mathrm{n2}$ die Rückkopplungsschleife. Die Verstärkung ist daher:
+              \[
+                  V = 1 + \frac{R_\mathrm{f} + R_\mathrm{n1}}{R_\mathrm{n2}}
+              \]
 
-        \textbf{4. Fall (S1 und S2 offen):}  
-        Wenn beide Schalter offen sind, fehlt der Rückkopplungspfad vollständig, womit die Verstärkung theoretisch unendlich groß ist:
-        \[
-        V = \infty
-        \]
+              \textbf{3. Fall (S1 und S2 geschlossen):}
+              Mit beiden Schaltern geschlossen wird der Widerstand $R_\mathrm{n1}$ überbrückt und somit nicht berücksichtigt. Die Verstärkung ergibt sich durch:
+              \[
+                  V = 1 + \frac{R_\mathrm{f}}{R_\mathrm{n2}}
+              \]
+
+              \textbf{4. Fall (S1 und S2 offen):}
+              Wenn beide Schalter offen sind, fehlt der Rückkopplungspfad vollständig, womit die Verstärkung theoretisch unendlich groß ist:
+              \[
+                  V = \infty
+              \]
 
         \item[b)] Invertierender Verstärker \\
-        \textbf{1. Zustand (S1 offen):}  
-        Sind $R_\mathrm{f1}$ und $R_\mathrm{f2}$ seriell geschaltet, ergibt sich eine größere Rückkopplung und somit eine höhere Verstärkung. Die Verstärkung errechnet sich wie folgt:
-        \[
-        V = -\frac{R_\mathrm{f1} + R_\mathrm{f2}}{R_\mathrm{n}}
-        \]
+              \textbf{1. Zustand (S1 offen):}
+              Sind $R_\mathrm{f1}$ und $R_\mathrm{f2}$ seriell geschaltet, ergibt sich eine größere Rückkopplung und somit eine höhere Verstärkung. Die Verstärkung errechnet sich wie folgt:
+              \[
+                  V = -\frac{R_\mathrm{f1} + R_\mathrm{f2}}{R_\mathrm{n}}
+              \]
 
-        \textbf{2. Zustand (S1 geschlossen, S2 offen):}  
-        In diesem Zustand wird der Widerstand $R_\mathrm{f2}$ durch den geschlossenen Schalter kurzgeschlossen und nicht berücksichtigt. Die Verstärkung reduziert sich damit auf:
-        \[
-        V = -\frac{R_\mathrm{f1}}{R_\mathrm{n}}
-        \]
+              \textbf{2. Zustand (S1 geschlossen, S2 offen):}
+              In diesem Zustand wird der Widerstand $R_\mathrm{f2}$ durch den geschlossenen Schalter kurzgeschlossen und nicht berücksichtigt. Die Verstärkung reduziert sich damit auf:
+              \[
+                  V = -\frac{R_\mathrm{f1}}{R_\mathrm{n}}
+              \]
     \end{itemize}
 
- %   \speech{
-%        Lösung für Aufgabe 13.
-%        
-%       Die Aufgabe beschreibt zwei verschiedene Operationsverstärkerschaltungen mit einstellbarer Verstärkung: einen nicht-invertierenden Verstärker und einen invertierenden Verstärker.
-%        
-%        Teil a: Nicht-invertierender Verstärker
-%        
-%        Die Schaltung enthält zwei Schalter S1 und S2, die in verschiedenen Kombinationen geschaltet werden können. Je nach Schalterstellung ergibt sich eine unterschiedliche Verstärkung.
-%        
-%        1. Wenn Schalter S1 geschlossen und Schalter S2 offen ist, ergibt sich die Verstärkung als V gleich 1 plus Klammer auf Rf geteilt durch Klammer auf Rn1 plus Rn2 Klammer zu Klammer zu.
-%        
-%        2. Wenn Schalter S1 offen und Schalter S2 geschlossen ist, ergibt sich die Verstärkung als V gleich 1 plus Klammer auf Rf geteilt durch Rn1 Klammer zu.
-%        
-%        3. Wenn Schalter S1 und Schalter S2 geschlossen sind, ergibt sich die Verstärkung als V gleich 1 plus Klammer auf Rf geteilt durch Rn2 Klammer zu.
-%        
-%        4. Wenn beide Schalter offen sind, ist die Verstärkung theoretisch unendlich, da der Widerstand nicht vorhanden ist.
-%        
-%        Teil b: Invertierender Verstärker
-%        
-%        Diese Schaltung besitzt zwei Zustände, die über einen einzelnen Schalter bestimmt werden.
-%        
-%        1. Wenn Schalter S1 offen ist, ergibt sich die Verstärkung als V gleich minus Klammer auf Rf plus Rf2 Klammer zu geteilt durch Rn.
-%        
-%        2. Wenn Schalter S2 offen ist, ergibt sich die Verstärkung als V gleich minus Klammer auf Rf geteilt durch Rn.
-%        
-%        Zusammenfassung:
-%        
-%        Durch das Ein- und Ausschalten der Schalter kann die Verstärkung der Schaltungen verändert werden, um verschiedene Verstärkungswerte zu erreichen. Die nicht-invertierende Schaltung bietet vier verschiedene Verstärkungen, während die invertierende Schaltung zwei mögliche Verstärkungswerte hat.
-%        }
-Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
+    Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
 }

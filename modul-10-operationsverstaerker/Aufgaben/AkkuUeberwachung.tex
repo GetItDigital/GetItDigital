@@ -1,196 +1,130 @@
-\subsection{Komparatorschaltung zur Akku-Überwachung berechnen\label{Aufg10}}
+\subsection{Komparatorschaltung zur Akku-Überwachung berechnen}
 % Alt: Aufgabe 10
 \Aufgabe{
+    \label{Aufg10}
     Zur Überwachung des Ladezustandes eines Akkus soll ein Komparator eingesetzt werden. Der Komparator soll umschalten, wenn eine Batteriespannung
     $U_\mathrm{bat}$ von $6\,\mathrm{V}$ unterschritten wird. Der Widerstand $R_1$ beträgt $10\,\mathrm{k\Omega}$. Die Betriebsspannung des Komparators beträgt $\pm 15\,\mathrm{V}$.
     \begin{itemize}
         \item [a)] Wie groß muss der Widerstand $R_2$ gewählt werden?
         \item [b)] Zur Anzeige des Ladezustands soll eine LED verwendet werden. Erweitern Sie die Schaltung um die Ladungsanzeige per LED.
-        \item [c)] Durch die LED mit der Flussspannung von 2,2 V darf maximal ein Strom von 20 mA fließen. Wie groß muss der Vorwiderstand gewählt werden? 
+        \item [c)] Durch die LED mit der Flussspannung von 2,2 V darf maximal ein Strom von 20 mA fließen. Wie groß muss der Vorwiderstand gewählt werden?
         \item [d)] Die Spannung am Spannungsteiler ist abhängig von der Betriebsspannung. Welche anderen geeigneten Bauelemente existieren für die Erzeugung der Referenzspannung? Nennen und zeichnen Sie ein Beispiel.
     \end{itemize}
     \begin{figure}[H]
-    \centering
-    % Linkes Bild
-    \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \input{Tikz/src/FigAkkuUeberwachung.tex}
-        \alttext{Das Bild zeigt zwei Teile: oben ein Schaltplan und unten eine zugehörige Grafik.
-        Im Schaltplan ist eine Spannungsquelle mit +15 Volt angeschlossen an einen Spannungsteiler bestehend aus zwei Widerständen \(R_1\) und \(R_2\), die in Serie geschaltet sind. Der Verbindungspunkt zwischen \(R_1\) und \(R_2\) ist mit dem nicht-invertierenden Eingang (+) eines Operationsverstärkers verbunden. Der invertierende Eingang (-) des Operationsverstärkers ist mit einer Batterie \(U_{\mathrm{bat}}\) verbunden, deren negativer Pol auf Masse liegt. Der Ausgang des Operationsverstärkers liefert die Ausgangsspannung \(U_\mathrm{A}\).}
-    \end{subfigure}
+        % Linkes Bild
+        \begin{subfigure}[b]{0.45\textwidth}
+            \centering
+            \input{Tikz/src/FigAkkuUeberwachung.tex}\alttext{Das Bild zeigt zwei Teile: oben ein Schaltplan und unten eine zugehörige Grafik.
+                Im Schaltplan ist eine Spannungsquelle mit +15 Volt angeschlossen an einen Spannungsteiler bestehend aus zwei Widerständen \(R_1\) und \(R_2\), die in Serie geschaltet sind. Der Verbindungspunkt zwischen \(R_1\) und \(R_2\) ist mit dem nicht-invertierenden Eingang (+) eines Operationsverstärkers verbunden. Der invertierende Eingang (-) des Operationsverstärkers ist mit einer Batterie \(U_{\mathrm{bat}}\) verbunden, deren negativer Pol auf Masse liegt. Der Ausgang des Operationsverstärkers liefert die Ausgangsspannung \(U_\mathrm{A}\).}
+        \end{subfigure}
 
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includesvg[width=\textwidth]{Bilder/Aufgaben/FigAkkuUeberwachung}
-        \alttext{ Die darunterliegende Grafik zeigt den Zusammenhang zwischen der Eingangsspannung \(U_\mathrm{E}\) (x-Achse) und der Ausgangsspannung \(U_\mathrm{A}\) (y-Achse). Die Kurve verläuft als Rechteckfunktion: Für positive Werte von \(U_\mathrm{E}\) größer als eine Referenzspannung \(U_{\mathrm{Ref}}\) ist \(U_\mathrm{A}\) konstant auf \(+U_\mathrm{B}\); für negative Werte von \(U_\mathrm{E}\) kleiner als \(-U_{\mathrm{Ref}}\) ist \(U_\mathrm{A}\) konstant auf \(-U_\mathrm{B}\). Zwischen diesen Bereichen liegt eine scharfe Umschaltung bei \(±U_{\mathrm{Ref}}\).}
-    \end{subfigure}
-    \label{fig:FigAkkuUeberwachung}
+        \begin{subfigure}[b]{0.45\textwidth}
+            \centering
+            \includesvg[width=\textwidth]{Bilder/Aufgaben/FigAkkuUeberwachung}\alttext{ Die darunterliegende Grafik zeigt den Zusammenhang zwischen der Eingangsspannung \(U_\mathrm{E}\) (x-Achse) und der Ausgangsspannung \(U_\mathrm{A}\) (y-Achse). Die Kurve verläuft als Rechteckfunktion: Für positive Werte von \(U_\mathrm{E}\) größer als eine Referenzspannung \(U_{\mathrm{Ref}}\) ist \(U_\mathrm{A}\) konstant auf \(+U_\mathrm{B}\); für negative Werte von \(U_\mathrm{E}\) kleiner als \(-U_{\mathrm{Ref}}\) ist \(U_\mathrm{A}\) konstant auf \(-U_\mathrm{B}\). Zwischen diesen Bereichen liegt eine scharfe Umschaltung bei \(±U_{\mathrm{Ref}}\).}
+        \end{subfigure}
+        \label{fig:FigAkkuUeberwachung}
     \end{figure}
-  %  \speech{
-  %      Aufgabe 10: Komparator zur Akku-Überwachung  
-  %      
-  %      Ein Komparator soll zur Überwachung des Ladezustandes eines Akkus eingesetzt werden.  
-  %      Der Komparator schaltet, wenn die Batteriespannung U Bat unter 6 Volt fällt.  
-  %      Der Widerstand R1 beträgt 10 Kiloohm, und die Betriebsspannung des Komparators beträgt plus minus 15 Volt.  
-  %      
-  %      Die Schaltung besteht aus einem Operationsverstärker, der als Komparator arbeitet.  
-  %      Der nichtinvertierende Eingang erhält eine Referenzspannung,  
-  %      die über einen Spannungsteiler aus R1 und R2 erzeugt wird.  
-  %      Die Batteriespannung U Bat wird an den invertierenden Eingang angelegt.  
-  %      Das Ausgangssignal U A schaltet zwischen den Versorgungsspannungen plus und minus UB um,  
-  %      wenn U Bat den festgelegten Schwellenwert von 6 Volt unterschreitet.  
-  %      
-  %      Es sind vier Teilaufgaben zu lösen:  
-  %      
-  %      a) Berechnung des Widerstands R2, sodass der Komparator bei U Bat = 6 Volt umschaltet.  
-  %      
-  %      b) Erweiterung der Schaltung um eine LED zur Anzeige des Ladezustands.  
-  %         Wenn die Batteriespannung zu niedrig ist, soll die LED leuchten.  
-  %      
-  %      c) Berechnung des Vorwiderstands für die LED.  
-  %         Die LED hat eine Durchlassspannung von 2,2 Volt und soll maximal 20 Milliampere Strom erhalten.  
-  %         Gesucht ist der passende Vorwiderstand.  
-  %      
-  %      d) Analyse der Spannungsabhängigkeit des Spannungsteilers.  
-  %         Welche alternativen Bauteile existieren zur Erzeugung einer stabilen Referenzspannung?  
- %          Nennung eines geeigneten Bauteils und Skizzierung einer alternativen Schaltung.  
-%        }
-        
 }
 
 \Loesung{
-\begin{itemize}
-    \item[a)] Berechnung des Widerstands $R_2$
-
-    Der Komparator soll umschalten, wenn die Batteriespannung $U_{\text{bat}}$ unter $6\,\mathrm{V}$ fällt. Das Verhältnis der Widerstände $R_1$ und $R_2$ im Spannungsteiler muss so gewählt werden, dass am nicht-invertierenden Eingang die Referenzspannung $U_{\text{ref}} = 6\,\mathrm{V}$ anliegt:
-    \[
-    U_{\text{ref}} = \frac{R_2}{R_1 + R_2} \cdot U_\mathrm{B}
-    \]
-    mit $U_\mathrm{B} = 15\,\mathrm{V}$ und $R_1 = 10\,\mathrm{k}\Omega$.
-    Einsetzen:
-    \[
-    6\,\mathrm{V} = \frac{R_2}{10\,\mathrm{k}\Omega + R_2} \cdot 15\,\mathrm{V}
-    \]
-    Umstellen nach $R_2$:
-    \[
-    R_2 = \frac{6\,\mathrm{V} \cdot 10\,\mathrm{k}\Omega}{15\,\mathrm{V} - 6\,\mathrm{V}} = 6,66\,\mathrm{k}\Omega
-    \]
-
-    \item[b)] Erweiterung der Schaltung um eine LED-Anzeige:
-
-    Die LED soll anzeigen, wenn die Batteriespannung unter $6\,\mathrm{V}$ fällt. Dazu wird die LED mit Vorwiderstand $R_V$ an den Ausgang des Komparators geschaltet.
-
-    \item Schaltverhalten der Schaltung:
-
     \begin{itemize}
-        \item Leere Batterie ($U_{\text{bat}} = 5\,\mathrm{V}$):
-        \begin{align*}
-            U_+ &= 6\,\mathrm{V} - U_{\text{bat}} \\
-            U_+ &= 6\,\mathrm{V} - 5\,\mathrm{V} = 1\,\mathrm{V}
-        \end{align*}
-        Da $U_+ < U_{\text{ref}}$, schaltet der Komparator um:
-        \[
-        U_\mathrm{A} = -15\,\mathrm{V}
-        \]
-        Die LED leuchtet.
+        \item[a)] Berechnung des Widerstands $R_2$
 
-        \item Volle Batterie ($U_{\text{bat}} = 7\,\mathrm{V}$):
-        \begin{align*}
-            U_+ &= 6\,\mathrm{V} - U_{\text{bat}} \\
-            U_+ &= 6\,\mathrm{V} - 7\,\mathrm{V} = -1\,\mathrm{V}
-        \end{align*}
-        Da $U_+ > U_{\text{ref}}$, schaltet der Komparator:
-        \[
-        U_\mathrm{A} = 15\,\mathrm{V}
-        \]
-        Die LED bleibt aus.
+              Der Komparator soll umschalten, wenn die Batteriespannung $U_{\text{bat}}$ unter $6\,\mathrm{V}$ fällt. Das Verhältnis der Widerstände $R_1$ und $R_2$ im Spannungsteiler muss so gewählt werden, dass am nicht-invertierenden Eingang die Referenzspannung $U_{\text{ref}} = 6\,\mathrm{V}$ anliegt:
+              \[
+                  U_{\text{ref}} = \frac{R_2}{R_1 + R_2} \cdot U_\mathrm{B}
+              \]
+              mit $U_\mathrm{B} = 15\,\mathrm{V}$ und $R_1 = 10\,\mathrm{k}\Omega$.
+              Einsetzen:
+              \[
+                  6\,\mathrm{V} = \frac{R_2}{10\,\mathrm{k}\Omega + R_2} \cdot 15\,\mathrm{V}
+              \]
+              Umstellen nach $R_2$:
+              \[
+                  R_2 = \frac{6\,\mathrm{V} \cdot 10\,\mathrm{k}\Omega}{15\,\mathrm{V} - 6\,\mathrm{V}} = 6,66\,\mathrm{k}\Omega
+              \]
+
+        \item[b)] Erweiterung der Schaltung um eine LED-Anzeige:
+
+              Die LED soll anzeigen, wenn die Batteriespannung unter $6\,\mathrm{V}$ fällt. Dazu wird die LED mit Vorwiderstand $R_V$ an den Ausgang des Komparators geschaltet.
+
+        \item Schaltverhalten der Schaltung:
+
+              \begin{itemize}
+                  \item Leere Batterie ($U_{\text{bat}} = 5\,\mathrm{V}$):
+                        \begin{align*}
+                            U_+ & = 6\,\mathrm{V} - U_{\text{bat}}                \\
+                            U_+ & = 6\,\mathrm{V} - 5\,\mathrm{V} = 1\,\mathrm{V}
+                        \end{align*}
+                        Da $U_+ < U_{\text{ref}}$, schaltet der Komparator um:
+                        \[
+                            U_\mathrm{A} = -15\,\mathrm{V}
+                        \]
+                        Die LED leuchtet.
+
+                  \item Volle Batterie ($U_{\text{bat}} = 7\,\mathrm{V}$):
+                        \begin{align*}
+                            U_+ & = 6\,\mathrm{V} - U_{\text{bat}}                 \\
+                            U_+ & = 6\,\mathrm{V} - 7\,\mathrm{V} = -1\,\mathrm{V}
+                        \end{align*}
+                        Da $U_+ > U_{\text{ref}}$, schaltet der Komparator:
+                        \[
+                            U_\mathrm{A} = 15\,\mathrm{V}
+                        \]
+                        Die LED bleibt aus.
+              \end{itemize}
+
+        \item[c)] Dimensionierung des Vorwiderstands $R_\mathrm{V}$
+
+              Gegeben:
+              \begin{itemize}
+                  \item Flussspannung der LED: $U_\mathrm{F} = 2,2\,\mathrm{V}$
+                  \item Strom durch die LED: $I_\mathrm{F} = 20\,\mathrm{mA}$
+                  \item Ausgangsspannung des Komparators: $U_\mathrm{A} = -15\,\mathrm{V}$
+              \end{itemize}
+
+              \begin{figure}[H]
+                  \centering
+                  \input{Tikz/src/LsgAkkuUeberwachung1.tex}
+                  \alttext{Die Abbildung zeigt eine Schaltung mit einem Operationsverstärker, der mit einer positiven Versorgungsspannung von \(+15 \ \mathrm{V}\) betrieben wird. Der Operationsverstärker ist als ideales Bauelement dargestellt und besitzt einen nichtinvertierenden Eingang (+), einen invertierenden Eingang (−) sowie einen Ausgang.
+                      Der nichtinvertierende Eingang des Operationsverstärkers ist mit einem Spannungsteiler verbunden. Dieser besteht aus den Widerständen \(R_1\) und \(R_2\), die zwischen \(+15 \ \mathrm{V}\) und Masse geschaltet sind.
+                      Der invertierende Eingang ist über eine Spannungsquelle \(U_{\mathrm{bat}}\) mit Masse verbunden.
+                      Am Ausgang des Operationsverstärkers befindet sich ein Vorwiderstand \(R_\mathrm{V}\) Hinter diesem Widerstand ist eine LED angeschlossen, die gegen Masse geschaltet ist. Für die LED sind der Durchlassstrom \(I_\mathrm{F}\) sowie die Durchlassspannung \(U_\mathrm{F}\) eingezeichnet. Über dem Widerstand \(R_\mathrm{V}\) ist die Spannung \(U_{\mathrm{RV}}\) eingezeichnet.
+                      Zusätzlich ist zwischen Ausgang und Masse die Ausgangsspannung \(U_\mathrm{A}\) eingezeichnet.}
+                  \label{fig:LsgAkkuUeberwachung1}
+              \end{figure}
+
+              Der Vorwiderstand $R_\mathrm{V}$ berechnet sich aus:
+              \[
+                  R_\mathrm{V} = \frac{-U_\mathrm{A} - U_\mathrm{F}}{I_\mathrm{F}}
+              \]
+              Einsetzen der Werte:
+              \[
+                  R_\mathrm{V} = \frac{-(-15\,\mathrm{V}) - 2,2\,\mathrm{V}}{20\,\mathrm{mA}} = \frac{12,8\,\mathrm{V}}{0,02\,\mathrm{A}} = 640\,\Omega
+              \]
+
+              Für einen sicheren Betrieb der LED wird Widerstandswert von mindestens $R_\mathrm{V} = 640\,\Omega$ benötigt.
+        \item[d)] Alternative Spannungsreferenz:
+
+              Da die Spannung des Spannungsteilers abhängig von der Betriebsspannung ist, könnte eine Zener-Diode als Referenzelement verwendet werden. Eine Zener-Diode stellt eine konstante Referenzspannung unabhängig von Schwankungen der Versorgungsspannung bereit.
+
+        \item Beispiel-Schaltung:
+              \begin{itemize}
+                  \item Die Zener-Diode wird mit einem Vorwiderstand an die Betriebsspannung $+15\,\mathrm{V}$ angeschlossen.
+                  \item Die Referenzspannung wird direkt von der Kathode der Zener-Diode abgegriffen.
+              \end{itemize}
     \end{itemize}
-
-    \item[c)] Dimensionierung des Vorwiderstands $R_\mathrm{V}$
-
-    Gegeben:
-    \begin{itemize}
-        \item Flussspannung der LED: $U_\mathrm{F} = 2,2\,\mathrm{V}$
-        \item Strom durch die LED: $I_\mathrm{F} = 20\,\mathrm{mA}$
-        \item Ausgangsspannung des Komparators: $U_\mathrm{A} = -15\,\mathrm{V}$
-    \end{itemize}
-
     \begin{figure}[H]
         \centering
-        \input{Tikz/src/LsgAkkuUeberwachung1.tex}
-        \alttext{Die Abbildung zeigt eine Schaltung mit einem Operationsverstärker, der mit einer positiven Versorgungsspannung von \(+15 \ \mathrm{V}\) betrieben wird. Der Operationsverstärker ist als ideales Bauelement dargestellt und besitzt einen nichtinvertierenden Eingang (+), einen invertierenden Eingang (−) sowie einen Ausgang.
-        Der nichtinvertierende Eingang des Operationsverstärkers ist mit einem Spannungsteiler verbunden. Dieser besteht aus den Widerständen \(R_1\) und \(R_2\), die zwischen \(+15 \ \mathrm{V}\) und Masse geschaltet sind.
-        Der invertierende Eingang ist über eine Spannungsquelle \(U_{\mathrm{bat}}\) mit Masse verbunden.
-        Am Ausgang des Operationsverstärkers befindet sich ein Vorwiderstand \(R_\mathrm{V}\) Hinter diesem Widerstand ist eine LED angeschlossen, die gegen Masse geschaltet ist. Für die LED sind der Durchlassstrom \(I_\mathrm{F}\) sowie die Durchlassspannung \(U_\mathrm{F}\) eingezeichnet. Über dem Widerstand \(R_\mathrm{V}\) ist die Spannung \(U_{\mathrm{RV}}\) eingezeichnet.
-        Zusätzlich ist zwischen Ausgang und Masse die Ausgangsspannung \(U_\mathrm{A}\) eingezeichnet.}
-        \label{fig:LsgAkkuUeberwachung1}
+        \input{Tikz/src/LsgAkkuUeberwachung4.tex}
+        \alttext{\alttext{Die Abbildung zeigt eine Schaltung mit einem Operationsverstärker, der mit einer positiven Versorgungsspannung von \(+15 \ \mathrm{V}\) betrieben wird. Der Operationsverstärker ist als ideales Bauelement dargestellt und besitzt einen nichtinvertierenden Eingang (+), einen invertierenden Eingang (-) sowie einen Ausgang.
+                Der nichtinvertierende Eingang ist mit einem Knoten verbunden, der über einen Widerstand von \(10 \ \mathrm{k \Ohm}\) an \(+15\,\mathrm{V}\) liegt. Zwischen diesem Knoten und Masse befindet sich eine Z-Diode mit einer angegebenen Zenerspannung von \(6 \ \mathrm{V}\) Dadurch entsteht am nichtinvertierenden Eingang eine stabilisierte Referenzspannung von etwa \(6 \ \mathrm{V}\). Der durch die Z-Diode fließende Strom ist mit \(I\) gekennzeichnet.
+                Der invertierende Eingang ist über eine Spannungsquelle \(U_{\mathrm{bat}}\) mit Masse verbunden. Diese Spannungsquelle stellt die zu vergleichende Eingangsspannung dar.
+                Am Ausgang des Operationsverstärkers ist ein Widerstand von \(640 \ \Omega\) angeschlossen. Zwischen diesem Widerstand und dem Bezugspunkt ist eine LED geschaltet. Die LED ist so eingebunden, dass sie abhängig vom Ausgangspotential des Operationsverstärkers Strom führt und damit den Schaltzustand optisch anzeigt.#
+                Zusätzlich ist die Spannung \(U_\mathrm{a}\) zwischen dem Referenzknoten und Masse eingezeichnet.}}
+        \label{fig:LsgAkkuUeberwachung4}
     \end{figure}
+    Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
 
-    Der Vorwiderstand $R_\mathrm{V}$ berechnet sich aus:
-    \[
-    R_\mathrm{V} = \frac{-U_\mathrm{A} - U_\mathrm{F}}{I_\mathrm{F}}
-    \]
-    Einsetzen der Werte:
-    \[
-    R_\mathrm{V} = \frac{-(-15\,\mathrm{V}) - 2,2\,\mathrm{V}}{20\,\mathrm{mA}} = \frac{12,8\,\mathrm{V}}{0,02\,\mathrm{A}} = 640\,\Omega
-    \]
-
-    Für einen sicheren Betrieb der LED wird Widerstandswert von mindestens $R_\mathrm{V} = 640\,\Omega$ benötigt.
-    \item[d)] Alternative Spannungsreferenz:
-
-    Da die Spannung des Spannungsteilers abhängig von der Betriebsspannung ist, könnte eine Zener-Diode als Referenzelement verwendet werden. Eine Zener-Diode stellt eine konstante Referenzspannung unabhängig von Schwankungen der Versorgungsspannung bereit.
-
-    \item Beispiel-Schaltung:
-    \begin{itemize}
-        \item Die Zener-Diode wird mit einem Vorwiderstand an die Betriebsspannung $+15\,\mathrm{V}$ angeschlossen.
-        \item Die Referenzspannung wird direkt von der Kathode der Zener-Diode abgegriffen.
-    \end{itemize}
-\end{itemize}
-\begin{figure}[H]
-    \centering
-    \input{Tikz/src/LsgAkkuUeberwachung4.tex}
-    \alttext{\alttext{Die Abbildung zeigt eine Schaltung mit einem Operationsverstärker, der mit einer positiven Versorgungsspannung von \(+15 \ \mathrm{V}\) betrieben wird. Der Operationsverstärker ist als ideales Bauelement dargestellt und besitzt einen nichtinvertierenden Eingang (+), einen invertierenden Eingang (-) sowie einen Ausgang.
-    Der nichtinvertierende Eingang ist mit einem Knoten verbunden, der über einen Widerstand von \(10 \ \mathrm{k \Ohm}\) an \(+15\,\mathrm{V}\) liegt. Zwischen diesem Knoten und Masse befindet sich eine Z-Diode mit einer angegebenen Zenerspannung von \(6 \ \mathrm{V}\) Dadurch entsteht am nichtinvertierenden Eingang eine stabilisierte Referenzspannung von etwa \(6 \ \mathrm{V}\). Der durch die Z-Diode fließende Strom ist mit \(I\) gekennzeichnet.
-    Der invertierende Eingang ist über eine Spannungsquelle \(U_{\mathrm{bat}}\) mit Masse verbunden. Diese Spannungsquelle stellt die zu vergleichende Eingangsspannung dar.
-    Am Ausgang des Operationsverstärkers ist ein Widerstand von \(640 \ \Omega\) angeschlossen. Zwischen diesem Widerstand und dem Bezugspunkt ist eine LED geschaltet. Die LED ist so eingebunden, dass sie abhängig vom Ausgangspotential des Operationsverstärkers Strom führt und damit den Schaltzustand optisch anzeigt.#
-    Zusätzlich ist die Spannung \(U_\mathrm{a}\) zwischen dem Referenzknoten und Masse eingezeichnet.}}
-    \label{fig:LsgAkkuUeberwachung4}
-\end{figure}
-Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
-%\speech{
-%    Lösung für Aufgabe 10
-%    
-%    Aufgabenteil a Berechnung des Widerstands R2
-%    
-%    Die gezeigte Schaltung besteht aus einem Spannungsteiler mit zwei Widerständen R1 und R2. Dieser Spannungsteiler erzeugt eine Referenzspannung Uref, die am nichtinvertierenden Eingang des Komparators anliegt. Die Betriebsspannung beträgt 15 Volt. Der Komparator soll umschalten, wenn die Batteriespannung Ubat unter 6 Volt fällt.
-%    
-%    Die Formel zur Berechnung von Uref lautet
-%    
-%    Uref gleich R2 geteilt durch die Summe von R1 und R2 mal die Betriebsspannung UB
-%    
-%    Die Werte für UB gleich 15 Volt und R1 gleich 10 Kiloohm werden in die Formel eingesetzt. Die Umstellung nach R2 ergibt 6 Komma 66 Kiloohm
-%    
-%    Aufgabenteil b Erweiterung der Schaltung um eine LED Anzeige
-%    
-%    Die Schaltung wird um eine LED erweitert, die anzeigt, wenn die Batteriespannung unter 6 Volt fällt. Eine LED mit einem Vorwiderstand RV wird an den Ausgang des Komparators geschaltet. Das Verhalten der Schaltung ist folgendermaßen
-%    
-%    Falls die Batterie leer ist, also Ubat gleich 5 Volt beträgt, ergibt sich für den positiven Eingang des Komparators Uplus gleich 6 Volt minus 5 Volt gleich 1 Volt. Da Uplus kleiner als Uref ist, schaltet der Komparator um. Die Ausgangsspannung UA wird minus 15 Volt. Die LED leuchtet.
-%    
-%    Falls die Batterie voll ist, also Ubat gleich 7 Volt beträgt, ergibt sich für den positiven Eingang des Komparators Uplus gleich 6 Volt minus 7 Volt gleich minus 1 Volt. Da Uplus größer als Uref ist, schaltet der Komparator um. Die Ausgangsspannung UA wird 15 Volt. Die LED bleibt aus.
-%    
-%    Aufgabenteil c Dimensionierung des Vorwiderstands RV
-%    
-%    Gegeben sind die Flussspannung der LED mit 2 Komma 2 Volt und ein maximaler Strom von 20 Milliampere. Um den Vorwiderstand zu berechnen, wird die Formel verwendet
-%    
-%    RV gleich UA minus UF geteilt durch IF
-%    
-%    Mit den Werten UA gleich 15 Volt, UF gleich 2 Komma 2 Volt und IF gleich 20 Milliampere ergibt sich RV gleich 690 Ohm
-%    
-%    Aufgabenteil d Alternative Spannungsreferenz mit einer Zener Diode
-%    
-%    Da die Spannung des Spannungsteilers von der Betriebsspannung abhängt, könnte eine Zener Diode als Referenzelement verwendet werden. Die Zener Diode stellt eine konstante Referenzspannung unabhängig von Schwankungen der Versorgungsspannung bereit.
-%    
-%    In der gezeigten Schaltung wird die Zener Diode mit einem Vorwiderstand an die Betriebsspannung von 15 Volt angeschlossen. Die Referenzspannung von 6 Volt wird direkt von der Kathode der Zener Diode abgegriffen.
-%    }
-    
 }

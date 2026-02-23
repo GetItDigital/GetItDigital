@@ -1,108 +1,44 @@
-\subsection{Berechnung der Ausgangsspannung bei mehreren Eingangsspannungen\label{Aufg5}}
+\subsection{Berechnung der Ausgangsspannung bei mehreren Eingangsspannungen}
 % Alt: Aufgabe 5
 \Aufgabe{
-    Gegeben ist die abgebildete Schaltung mit einem idealen Operationsverstärker. Die Betriebsspannung beträgt 
+    \label{Aufg5}
+    Gegeben ist die abgebildete Schaltung mit einem idealen Operationsverstärker. Die Betriebsspannung beträgt
     $\mathrm{\pm15\,V}$.
     \begin{itemize}
-    \item[a)] Die Widerstände sind alle gleich, es gilt $R_1 = R_2 = R_3 = R_\mathrm{F} = 10\,\mathrm{k\Omega}$. Die Spannungen sind $U_\mathrm{E1} = \mathrm{1\,V}$, $U_\mathrm{E2} = \mathrm{2\,V}$, 
-    $U_\mathrm{E3} = \mathrm{3\,V}$. Wie hoch ist die Spannung am Ausgang $U_\mathrm{A}$?
-    \item[b)] Die Eingangsspannungen bleiben gleich groß, nur die Widerstände betragen nun $R_\mathrm{F} = \mathrm{10\,k\Omega}$, $R_\mathrm{1} = \mathrm{2\,k\Omega}$,
-     $R_\mathrm{2} = \mathrm{5\,k\Omega}$, $R_\mathrm{3} = \mathrm{10\,k\Omega}$. Wie hoch ist die Spannung am Ausgang $U_\mathrm{A}$?
-    \item[c)] Die Eingangsspannungen bleiben gleich groß, nur die Widerstände betragen nun $R_\mathrm{F} = \mathrm{10\,k\Omega}$, $R_\mathrm{1} = \mathrm{10\,k\Omega}$, 
-    $R_\mathrm{2} = \mathrm{5\,k\Omega}$, $R_\mathrm{3} = \mathrm{2\,k\Omega}$. Wie hoch ist die Spannung am Ausgang $U_\mathrm{A}$?
+        \item[a)] Die Widerstände sind alle gleich, es gilt $R_1 = R_2 = R_3 = R_\mathrm{F} = 10\,\mathrm{k\Omega}$. Die Spannungen sind $U_\mathrm{E1} = \mathrm{1\,V}$, $U_\mathrm{E2} = \mathrm{2\,V}$,
+              $U_\mathrm{E3} = \mathrm{3\,V}$. Wie hoch ist die Spannung am Ausgang $U_\mathrm{A}$?
+        \item[b)] Die Eingangsspannungen bleiben gleich groß, nur die Widerstände betragen nun $R_\mathrm{F} = \mathrm{10\,k\Omega}$, $R_\mathrm{1} = \mathrm{2\,k\Omega}$,
+              $R_\mathrm{2} = \mathrm{5\,k\Omega}$, $R_\mathrm{3} = \mathrm{10\,k\Omega}$. Wie hoch ist die Spannung am Ausgang $U_\mathrm{A}$?
+        \item[c)] Die Eingangsspannungen bleiben gleich groß, nur die Widerstände betragen nun $R_\mathrm{F} = \mathrm{10\,k\Omega}$, $R_\mathrm{1} = \mathrm{10\,k\Omega}$,
+              $R_\mathrm{2} = \mathrm{5\,k\Omega}$, $R_\mathrm{3} = \mathrm{2\,k\Omega}$. Wie hoch ist die Spannung am Ausgang $U_\mathrm{A}$?
     \end{itemize}
-    \begin {figure} [H]
-   \centering
-   \input{Tikz/src/FigOPVmehrereEingaenge.tex}
-   \alttext{Das Bild zeigt ein elektronisches Schaltbild eines Operationsverstärkers mit drei Eingangsspannungen, die über jeweils einen Widerstand (\(R_1\), \(R_2\), \(R_3\)) an den invertierenden Eingang des Verstärkers angeschlossen sind. Der nicht-invertierende Eingang ist mit Masse verbunden. Ein weiterer Widerstand (\(R_\mathrm{F}\)) verbindet den Ausgang des Verstärkers mit dem invertierenden Eingang als Rückkopplung. Die Spannungen \(U_{\mathrm{E1}}\), \(U_{\mathrm{E2}}\) und \(U_{\mathrm{E3}}\) fallen jeweils von oben nach unten zu Masse ab, und die Ausgangsspannung \(U_\mathrm{A}\) fällt vom Ausgang des Operationsverstärkers ebenfalls nach unten ab.}
-   \label{fig:FigOPVmehrereEingaenge}
-    \end {figure}
+    \begin{figure}[H]
+        \centering
+        \input{Tikz/src/FigOPVmehrereEingaenge.tex}\alttext{Das Bild zeigt ein elektronisches Schaltbild eines Operationsverstärkers mit drei Eingangsspannungen, die über jeweils einen Widerstand (\(R_1\), \(R_2\), \(R_3\)) an den invertierenden Eingang des Verstärkers angeschlossen sind. Der nicht-invertierende Eingang ist mit Masse verbunden. Ein weiterer Widerstand (\(R_\mathrm{F}\)) verbindet den Ausgang des Verstärkers mit dem invertierenden Eingang als Rückkopplung. Die Spannungen \(U_{\mathrm{E1}}\), \(U_{\mathrm{E2}}\) und \(U_{\mathrm{E3}}\) fallen jeweils von oben nach unten zu Masse ab, und die Ausgangsspannung \(U_\mathrm{A}\) fällt vom Ausgang des Operationsverstärkers ebenfalls nach unten ab.}
+        \label{fig:FigOPVmehrereEingaenge}
+    \end{figure}
 
-%    \speech{
-%        Aufgabe 5: Operationsverstärkerschaltung mit mehreren Eingängen  
-%        
-%        Gegeben ist eine Schaltung mit einem idealen Operationsverstärker.  
-%        Die Betriebsspannung beträgt plus minus 15 Volt.  
-%        
-%        Die Schaltung besteht aus mehreren Eingangsspannungen U E1, U E2 und U E3,  
-%        die über die Widerstände R1, R2 und R3 an den invertierenden Eingang des Operationsverstärkers angeschlossen sind.  
-%        Ein Rückkopplungswiderstand R F verbindet den Ausgang mit dem invertierenden Eingang.  
-%        Der nichtinvertierende Eingang ist mit Masse verbunden.  
-%        
-%        Es sind drei Teilaufgaben zu lösen:  
-%        
-%        a) Berechnung der Ausgangsspannung U A, wenn alle Widerstände gleich sind:  
-%           R1 = R2 = R3 = R F = 10 Kiloohm,  
-%           und die Eingangsspannungen U E1 = 1 Volt, U E2 = 2 Volt, U E3 = 3 Volt.  
-%        
-%        b) Berechnung der Ausgangsspannung U A, wenn die Eingangsspannungen gleich bleiben,  
-%           aber die Widerstände unterschiedliche Werte haben:  
-%           R F = 10 Kiloohm, R1 = 2 Kiloohm, R2 = 5 Kiloohm, R3 = 10 Kiloohm.  
-%        
-%        c) Berechnung der Ausgangsspannung U A, wenn die Eingangsspannungen gleich bleiben,  
-%           aber die Widerstände folgende Werte haben:  
-%           R F = 10 Kiloohm, R1 = 10 Kiloohm, R2 = 5 Kiloohm, R3 = 2 Kiloohm.  
-%        }
-%        
 }
 
 \Loesung{
-	Formel:
+    Formel:
     \begin{align*}
         U_\mathrm{A} = - (U_\mathrm{E1} \cdot \frac{R_\mathrm{F}}{R_1} + U_\mathrm{{E2}} \cdot \frac{R_\mathrm{F}}{R_2} + U_\mathrm{E3} \cdot \frac{R_\mathrm{F}}{R_3})
     \end{align*}
     \begin{itemize}
-        \item [ \bf a)] 
-        \begin{align*}
-            U_\mathrm{A} =\mathrm{- (1\,V \cdot \frac{10\,k\Omega}{10\,k\Omega} + 2\,V \cdot \frac{10\,k\Omega}{10\,k\Omega} + 3\,V \cdot \frac{10\,k\Omega}{10\,k\Omega}) = -6\,V}
-        \end{align*}
-        \item [ \bf b)] 
-        \begin{align*}
-            U_\mathrm{A} =\mathrm{ - (1\,V \cdot \frac{10\,k\Omega}{2\,k\Omega} + 2\,V \cdot \frac{10\,k\Omega}{5\,k\Omega} + 3\,V \cdot \frac{10\,k\Omega}{10\,k\Omega}) = -12\,V}
-        \end{align*}
-        \item [ \bf c)] 
-        \begin{align*}
-            U_\mathrm{A} =\mathrm{ - (1\,V \cdot \frac{10\,k\Omega}{10\,k\Omega} + 2\,V \cdot \frac{10\,k\Omega}{5\,k\Omega} + 3\,V \cdot \frac{10\,k\Omega}{2\,k\Omega}) = -20\,V}
-        \end{align*}
-        Anmerkung: $-20\,\mathrm{V}$ nicht möglich, da die Betriebsspannung $\mathrm{\pm 15\,V}$ beträgt. Dies führt dazu, dass der niedrigste Wert $\mathrm{-15\,V}$ sein kann.
+        \item [ \bf a)]
+              \begin{align*}
+                  U_\mathrm{A} =\mathrm{- (1\,V \cdot \frac{10\,k\Omega}{10\,k\Omega} + 2\,V \cdot \frac{10\,k\Omega}{10\,k\Omega} + 3\,V \cdot \frac{10\,k\Omega}{10\,k\Omega}) = -6\,V}
+              \end{align*}
+        \item [ \bf b)]
+              \begin{align*}
+                  U_\mathrm{A} =\mathrm{ - (1\,V \cdot \frac{10\,k\Omega}{2\,k\Omega} + 2\,V \cdot \frac{10\,k\Omega}{5\,k\Omega} + 3\,V \cdot \frac{10\,k\Omega}{10\,k\Omega}) = -12\,V}
+              \end{align*}
+        \item [ \bf c)]
+              \begin{align*}
+                  U_\mathrm{A} =\mathrm{ - (1\,V \cdot \frac{10\,k\Omega}{10\,k\Omega} + 2\,V \cdot \frac{10\,k\Omega}{5\,k\Omega} + 3\,V \cdot \frac{10\,k\Omega}{2\,k\Omega}) = -20\,V}
+              \end{align*}
+              Anmerkung: $-20\,\mathrm{V}$ nicht möglich, da die Betriebsspannung $\mathrm{\pm 15\,V}$ beträgt. Dies führt dazu, dass der niedrigste Wert $\mathrm{-15\,V}$ sein kann.
     \end{itemize}
     Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
-
-%    \speech{
-%        Berechnung der Ausgangsspannung einer Operationsverstärkerschaltung mit mehreren Eingängen  
-%        
-%        Die gegebene Schaltung ist eine invertierende Verstärkerschaltung mit drei Eingangsspannungen  
-%        und einem Rückkopplungswiderstand.  
-%        
-%        Die allgemeine Formel zur Berechnung der Ausgangsspannung lautet:  
-%        
-%        U A = - ( U E1 mal R F durch R1 + U E2 mal R F durch R2 + U E3 mal R F durch R3 )  
-%        
-%        Drei verschiedene Fälle werden berechnet:  
-%        
-%        a) Alle Widerstände sind gleich, es gilt:  
-%        R1 = R2 = R3 = R F = 10 Kiloohm.  
-%        Die Eingangsspannungen sind:  
-%        U E1 = 1 Volt, U E2 = 2 Volt, U E3 = 3 Volt.  
-%        Einsetzen der Werte ergibt:  
-%        U A = - ( 1 Volt mal 10 Kiloohm durch 10 Kiloohm + 2 Volt mal 10 Kiloohm durch 10 Kiloohm + 3 Volt mal 10 Kiloohm durch 10 Kiloohm )  
-%        = - 6 Volt.  
-%        
-%        b) Unterschiedliche Widerstände:  
-%        R F = 10 Kiloohm, R1 = 2 Kiloohm, R2 = 5 Kiloohm, R3 = 10 Kiloohm.  
-%        Einsetzen der Werte ergibt:  
-%        U A = - ( 1 Volt mal 10 Kiloohm durch 2 Kiloohm + 2 Volt mal 10 Kiloohm durch 5 Kiloohm + 3 Volt mal 10 Kiloohm durch 10 Kiloohm )  
-%        = - 12 Volt.  
-%        
-%        c) Weitere Variation der Widerstände:  
-%        R F = 10 Kiloohm, R1 = 10 Kiloohm, R2 = 5 Kiloohm, R3 = 2 Kiloohm.  
-%        Einsetzen der Werte ergibt:  
-%        U A = - ( 1 Volt mal 10 Kiloohm durch 10 Kiloohm + 2 Volt mal 10 Kiloohm durch 5 Kiloohm + 3 Volt mal 10 Kiloohm durch 2 Kiloohm )  
-%        = - 20 Volt.  
-%        
-%        Anmerkung: Da die Betriebsspannung der Schaltung plus minus 15 Volt beträgt,  
-%        kann die tatsächliche Ausgangsspannung den Wert von -20 Volt nicht erreichen.  
-%        Sie wird stattdessen auf -15 Volt begrenzt.  
-%        }
-        
 }

@@ -1,147 +1,75 @@
-\subsection{Ausgangsspannung eines Komparators ermitteln\label{Aufg9}}
+\subsection{Ausgangsspannung eines Komparators ermitteln}
 % Alt: Aufgabe 9
+
 \Aufgabe{
-    Geben ist der dargestellte Komparator. Die Spannung $U_\mathrm{1}= \mathrm{8,25\,V}$ sei konstant. Wie groß ist die 
+    \label{Aufg9}
+    Geben ist der dargestellte Komparator. Die Spannung $U_\mathrm{1}= \mathrm{8,25\,V}$ sei konstant. Wie groß ist die
     Ausgangsspannung für $U_2 = \mathrm{0\,V; 4\,V; 8\,V; 8,2\,V; 8,249\,V; 8,251\,V; 8,3\,V; 10\,V}$?
-   \begin{figure}[H]
-    \centering
-    % Linkes Bild
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{figure}[H]
         \centering
-        \input{Tikz/src/FigAusgangsspannungKomparator.tex}
-        \alttext{Das Bild zeigt eine elektrische Schaltung mit einem Operationsverstärker, welcher an eine Versorgungsspannung von Plus und Minus 15 V angeschlossen ist.
-        Links vom Operationsverstärker sind zwei Eingangsleitungen: Oben links führt eine Leitung mit Pfeil nach unten, beschriftet mit \(U_1\), welche am positiven Eingang des Operationsverstärkers angeschlossen ist. Darunter eine zweite Leitung ist an den negativen Eingang angeschlossen, beschriftet mit \(U_2\). Zwischen diesen beiden Leitungen ist ein kleiner Pfeil von der oberen zur unteren Leitung mit der Beschriftung \(U_D\).}
-    \end{subfigure}
-    % Rechtes Bild
-    %\begin{subfigure}[b]{0.45\textwidth}
+        % Linkes Bild
+        \begin{subfigure}[b]{0.45\textwidth}
+            \centering
+            \input{Tikz/src/FigAusgangsspannungKomparator.tex}\alttext{Das Bild zeigt eine elektrische Schaltung mit einem Operationsverstärker, welcher an eine Versorgungsspannung von Plus und Minus 15 V angeschlossen ist.
+                Links vom Operationsverstärker sind zwei Eingangsleitungen: Oben links führt eine Leitung mit Pfeil nach unten, beschriftet mit \(U_1\), welche am positiven Eingang des Operationsverstärkers angeschlossen ist. Darunter eine zweite Leitung ist an den negativen Eingang angeschlossen, beschriftet mit \(U_2\). Zwischen diesen beiden Leitungen ist ein kleiner Pfeil von der oberen zur unteren Leitung mit der Beschriftung \(U_D\).}
+        \end{subfigure}
+        % Rechtes Bild
+        %\begin{subfigure}[b]{0.45\textwidth}
         %\centering
         %\includesvg[width=0.8\textwidth]{Bilder/Aufgaben/FigAusgangsspannungKomparator}
-    %\end{subfigure}
-    \label{fig:FigAusgangsspannungKomparator}
-\end{figure}
-%\speech{
-%    Aufgabe 9: Komparatorschaltung  
-%    
-%    Gegeben ist eine Komparatorschaltung mit einem idealen Operationsverstärker.  
-%    Die Versorgungsspannungen betragen plus 15 Volt und minus 15 Volt.  
-%    Der Komparator vergleicht zwei Eingangsspannungen, U1 und U2.  
-%    
-%    Die Spannung U1 ist konstant mit einem Wert von 8,25 Volt.  
-%    Die Spannung U2 variiert zwischen verschiedenen Werten.  
-%    Gesucht ist die Ausgangsspannung U A für verschiedene Werte von U2.  
-%    
-%    Die Schaltung besteht aus einem Operationsverstärker,  
-%    dessen nichtinvertierender Eingang mit der konstanten Spannung U1 verbunden ist.  
-%    Die variable Eingangsspannung U2 wird an den invertierenden Eingang angelegt.  
-%    Der Ausgang U A gibt entweder die obere Versorgungsspannung von plus 15 Volt  
-%    oder die untere Versorgungsspannung von minus 15 Volt aus, abhängig von der Vergleichsspannung.  
-%    
-%    Rechts neben der Schaltung ist ein Diagramm abgebildet.  
-%    Es zeigt die Ausgangsspannung U A in Abhängigkeit von der Differenzspannung U D.  
-%    Die Kennlinie weist einen abrupten Übergang in der Nähe von U D gleich null auf.  
-%    Dies bedeutet, dass der Komparator bei einem bestimmten Schwellenwert der Eingangsspannung schaltet.  
-%    
-%    Die Aufgabe besteht darin, zu bestimmen, wie sich U A verhält,  
-%    wenn U2 unterschiedliche Werte zwischen null und zehn Volt annimmt.  
-%    }
-    
-
+        %\end{subfigure}
+        \label{fig:FigAusgangsspannungKomparator}
+    \end{figure}
 }
 
+
 \Loesung{
-	Ausnutzung der Maschenregel besagt: 
+    Ausnutzung der Maschenregel besagt:
     \begin{align*}
-        -U_1 + U_2 + U_D &= 0 \\
-        U_\mathrm{D} &= U_1 - U_2
+        -U_1 + U_2 + U_D & = 0         \\
+        U_\mathrm{D}     & = U_1 - U_2
     \end{align*}
     \begin{itemize}
-		\item  $U_2 = 0\,V$  
-		\begin{align*}
-            U_\mathrm{D} &= \mathrm{ 8,25\,V - 0\,V = 8,25\,V}\\
-            U_\mathrm{A} &= \mathrm{13,5\,V} 
-		\end{align*}
-		\item  $U_2 = 4\,V$ 
-		\begin{align*}
-            U_\mathrm{D} &= \mathrm{ 8,25\,V - 4\,V = 4,25\,V}\\
-            U_\mathrm{A} &= \mathrm{13,5\,V} 
-		\end{align*}
-		\item $U_2 = 8\,V$  
-		\begin{align*}
-            U_\mathrm{D} &= \mathrm{ 8,25\,V - 8\,V = 0,25\,V}\\
-            U_\mathrm{A} &= \mathrm{13,5\,V} 
-		\end{align*} 
-        \item $U_2 = 8,2\,V$  
-		\begin{align*}
-            U_\mathrm{D} &= \mathrm{ 8,25\,V - 8,2\,V = 0,05\,V}\\
-            U_\mathrm{A} &= \mathrm{8\,V} 
-		\end{align*}
-        \item $U_2 = 8,249\,V$  
-		\begin{align*}
-            U_\mathrm{D} &= \mathrm{ 8,25\,V - 8,249\,V = 1\,mV}\\
-            U_\mathrm{A} &= \mathrm{4\,V} 
-		\end{align*}
-        \item $U_2 = 8,251\,V$ 
-		\begin{align*}
-            U_\mathrm{D} &= \mathrm{ 8,25\,V - 8,251\,V = -1\,mV}\\
-            U_\mathrm{A} &= \mathrm{-4\,V} 
-		\end{align*}
-        \item $U_2 = 8,3\,V$  
-		\begin{align*}
-            U_\mathrm{D} &= \mathrm{ 8,25\,V - 8,3\,V = -0,05\,V}\\
-            U_\mathrm{A} &= \mathrm{-8\,V} 
-		\end{align*}
-        \item $U_2 = 10\,V$  
-		\begin{align*}
-            U_\mathrm{D} &= \mathrm{ 8,25\,V - 10\,V = -1,75\,V}\\
-            U_\mathrm{A} &= \mathrm{-13,5\,V} 
-		\end{align*}
+        \item  $U_2 = 0\,V$
+              \begin{align*}
+                  U_\mathrm{D} & = \mathrm{ 8,25\,V - 0\,V = 8,25\,V} \\
+                  U_\mathrm{A} & = \mathrm{13,5\,V}
+              \end{align*}
+        \item  $U_2 = 4\,V$
+              \begin{align*}
+                  U_\mathrm{D} & = \mathrm{ 8,25\,V - 4\,V = 4,25\,V} \\
+                  U_\mathrm{A} & = \mathrm{13,5\,V}
+              \end{align*}
+        \item $U_2 = 8\,V$
+              \begin{align*}
+                  U_\mathrm{D} & = \mathrm{ 8,25\,V - 8\,V = 0,25\,V} \\
+                  U_\mathrm{A} & = \mathrm{13,5\,V}
+              \end{align*}
+        \item $U_2 = 8,2\,V$
+              \begin{align*}
+                  U_\mathrm{D} & = \mathrm{ 8,25\,V - 8,2\,V = 0,05\,V} \\
+                  U_\mathrm{A} & = \mathrm{8\,V}
+              \end{align*}
+        \item $U_2 = 8,249\,V$
+              \begin{align*}
+                  U_\mathrm{D} & = \mathrm{ 8,25\,V - 8,249\,V = 1\,mV} \\
+                  U_\mathrm{A} & = \mathrm{4\,V}
+              \end{align*}
+        \item $U_2 = 8,251\,V$
+              \begin{align*}
+                  U_\mathrm{D} & = \mathrm{ 8,25\,V - 8,251\,V = -1\,mV} \\
+                  U_\mathrm{A} & = \mathrm{-4\,V}
+              \end{align*}
+        \item $U_2 = 8,3\,V$
+              \begin{align*}
+                  U_\mathrm{D} & = \mathrm{ 8,25\,V - 8,3\,V = -0,05\,V} \\
+                  U_\mathrm{A} & = \mathrm{-8\,V}
+              \end{align*}
+        \item $U_2 = 10\,V$
+              \begin{align*}
+                  U_\mathrm{D} & = \mathrm{ 8,25\,V - 10\,V = -1,75\,V} \\
+                  U_\mathrm{A} & = \mathrm{-13,5\,V}
+              \end{align*}
     \end{itemize}
     Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
- %   \speech{
- %       Analyse eines Komparators anhand der Maschenregel  
- %       
- %       Ein Komparator vergleicht zwei Eingangsspannungen U1 und U2 und erzeugt eine Ausgangsspannung U A entsprechend der Differenzspannung U D.  
- %       
- %       Die Maschenregel ergibt die Gleichung:  
- %       U D = U1 - U2  
- %       
- %       Für verschiedene Werte von U2 werden die Differenzspannung U D und die Ausgangsspannung U A berechnet:  
- %       
- %       1. Falls U2 gleich 0 Volt:  
- %          U D = 8,25 Volt - 0 Volt = 8,25 Volt  
- %          U A = 13,5 Volt  
- %       
- %       2. Falls U2 gleich 4 Volt:  
- %          U D = 8,25 Volt - 4 Volt = 4,25 Volt  
- %          U A = 13,5 Volt  
- %       
- %       3. Falls U2 gleich 8 Volt:  
- %          U D = 8,25 Volt - 8 Volt = 0,25 Volt  
- %          U A = 13,5 Volt  
- %       
- %       4. Falls U2 gleich 8,2 Volt:  
- %          U D = 8,25 Volt - 8,2 Volt = 0,05 Volt  
- %          U A = 8 Volt  
- %       
- %       5. Falls U2 gleich 8,249 Volt:  
- %          U D = 8,25 Volt - 8,249 Volt = 1 Millivolt  
- %          U A = 4 Volt  
- %       
- %       6. Falls U2 gleich 8,251 Volt:  
- %          U D = 8,25 Volt - 8,251 Volt = -1 Millivolt  
- %          U A = -4 Volt  
- %       
- %       7. Falls U2 gleich 8,3 Volt:  
- %          U D = 8,25 Volt - 8,3 Volt = -0,05 Volt  
- %          U A = -8 Volt  
- %       
- %       8. Falls U2 gleich 10 Volt:  
- %          U D = 8,25 Volt - 10 Volt = -1,75 Volt  
- %          U A = -13,5 Volt  
- %       
- %       Der Komparator zeigt ein typisches Verhalten:  
- %       Solange U2 kleiner als 8,25 Volt ist, bleibt U A positiv.  
- %       Überschreitet U2 den Wert von 8,25 Volt, kippt die Ausgangsspannung auf negative Werte.  
-%        }
-        
 }

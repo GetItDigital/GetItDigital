@@ -1,55 +1,24 @@
-\subsection{Dimensionierung einer Komparatorschaltung mit Diode\label{Aufg7}}
+\subsection{Dimensionierung einer Komparatorschaltung mit Diode}
 % Alt: Aufgabe 7
 \Aufgabe{
+    \label{Aufg7}
     Dimensionieren Sie die Beschaltung des Komparators so, dass das unten skizzierte Übertragungsverhalten (grün: $U_\mathrm{E}$, blau: $U_\mathrm{A}$) entsteht.
-    Die Durchlassspannung der Diode wird mit $U_\mathrm{D} = \mathrm{0,7\,V}$ angenommen. 
+    Die Durchlassspannung der Diode wird mit $U_\mathrm{D} = \mathrm{0,7\,V}$ angenommen.
     Die maximale Verlustleistung des Widerstandes beträgt 1/4\,W.
-\begin{figure}[H]
-    \centering
-    % Linkes Bild
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{figure}[H]
         \centering
-        \input{Tikz/src/FigKomparatorDiode.tex}
-        \alttext{Das Bild zeigt ein elektrisches Schaltbild. 
-        Links ist eine Spannungsquelle mit der Bezeichnung \(U_\mathrm{e}\), die nach unten zur Masse zeigt. Von dieser Quelle geht eine Leitung zu einem Operationsverstärker mit der Bezeichnung N1, dessen Ausgang nach rechts führt. Vom Ausgang des Operationsverstärkers geht eine Leitung zu einem Widerstand mit der Beschriftung \(R\). Der andere Anschluss des Widerstands ist mit zwei in Reihe geschalteten Dioden verbunden, die nach unten zur Masse führen. Die erste Diode ist mit \(D_1\) beschriftet, die zweite Diode darunter mit \(D_2\). Rechts neben den Dioden ist die Ausgangsspannung \(U_\mathrm{a}\) angegeben, ebenfalls mit einem Pfeil nach unten zur Masse.}
-    \end{subfigure}
-    % Rechtes Bild
-    \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includesvg[width=0.95\textwidth]{Bilder/Aufgaben/FigKomparatorDiode}
-        \alttext{Rechts neben der Schaltung ist ein Diagramm dargestellt, das das gewünschte Ausgangsverhalten zeigt. Auf der x-Achse ist die Zeit \(t\) in Sekunden dargestellt, auf der y-Achse die Spannung \(U\) in Volt.   
-        Die grüne Linie stellt die Eingangsspannung \(U_\mathrm{E}\) dar,  
-        die sich als periodisches Signal mit ansteigenden und abfallenden Spannungswerten verhält.  
-        Die blaue Linie stellt die Ausgangsspannung \(U_\mathrm{A}\) dar, 
-        die sich wie ein periodisches Rechtecksignal mit konstanten Werten verhält.}
-    \end{subfigure}
-    \label{fig:FigKomparatorDiode}
-\end{figure}
-%\speech{
-%    Aufgabe 7: Dimensionierung eines Komparators  
-%    
-%    Gegeben ist eine Schaltung mit einem Komparator, der so dimensioniert werden soll,  
-%    dass das dargestellte Übertragungsverhalten erreicht wird.  
-%    
-%    Die Schaltung besteht aus einem Operationsverstärker, der als Komparator arbeitet.  
-%    Der nichtinvertierende Eingang ist mit Masse verbunden.  
-%    Der invertierende Eingang erhält die Eingangsspannung U E.  
-%    Am Ausgang befindet sich ein Widerstand R, der in Reihe mit zwei antiparallel geschalteten Dioden liegt.  
-%    Diese Dioden begrenzen die Ausgangsspannung U A.  
-%    
-%    Zusätzlich sind folgende Randbedingungen gegeben:  
-%    - Die Durchlassspannung der Dioden beträgt U D = 0,7 Volt.  
-%    - Die maximale Verlustleistung des Widerstands beträgt 1/4 Watt.  
-%    
-%    Rechts neben der Schaltung ist ein Diagramm dargestellt, das das gewünschte Ausgangsverhalten zeigt.  
-%    Die grüne Linie stellt die Eingangsspannung U E dar,  
-%    die sich als periodisches Signal mit ansteigenden und abfallenden Spannungswerten verhält.  
-%    Die blaue Linie stellt die Ausgangsspannung U A dar.  
-%    Diese nimmt nur feste Spannungswerte an, was auf eine Begrenzung durch die Dioden hinweist.  
-%    
-%    Die Aufgabe besteht darin, die Werte der Bauteile so zu wählen, dass das dargestellte Verhalten erreicht wird.  
-%    }
-    
+        % Linkes Bild
+        \begin{subfigure}[b]{0.45\textwidth}
+            \centering
+            \input{Tikz/src/FigKomparatorDiode.tex}\alttext{Das Bild zeigt ein elektrisches Schaltbild. Links ist eine Spannungsquelle mit der Bezeichnung \(U_\mathrm{e}\), die nach unten zur Masse zeigt. Von dieser Quelle geht eine Leitung zu einem Operationsverstärker mit der Bezeichnung N1, dessen Ausgang nach rechts führt. Vom Ausgang des Operationsverstärkers geht eine Leitung zu einem Widerstand mit der Beschriftung \(R\). Der andere Anschluss des Widerstands ist mit zwei in Reihe geschalteten Dioden verbunden, die nach unten zur Masse führen. Die erste Diode ist mit \(D_1\) beschriftet, die zweite Diode darunter mit \(D_2\). Rechts neben den Dioden ist die Ausgangsspannung \(U_\mathrm{a}\) angegeben, ebenfalls mit einem Pfeil nach unten zur Masse.}
+        \end{subfigure}
+        % Rechtes Bild
+        \begin{subfigure}[b]{0.5\textwidth}
+            \centering
+            \includesvg[width=0.95\textwidth]{Bilder/Aufgaben/FigKomparatorDiode}\alttext{Rechts neben der Schaltung ist ein Diagramm dargestellt, das das gewünschte Ausgangsverhalten zeigt. Auf der x-Achse ist die Zeit \(t\) in Sekunden dargestellt, auf der y-Achse die Spannung \(U\) in Volt. Die grüne Linie stellt die Eingangsspannung \(U_\mathrm{E}\) dar, die sich als periodisches Signal mit ansteigenden und abfallenden Spannungswerten verhält. Die blaue Linie stellt die Ausgangsspannung \(U_\mathrm{A}\) dar, die sich wie ein periodisches Rechtecksignal mit konstanten Werten verhält.}
+        \end{subfigure}
+        \label{fig:FigKomparatorDiode}
+    \end{figure}
 }
 
 
@@ -62,69 +31,36 @@
 
     Spannung am Widerstand $R$:
     \begin{align*}
-        U_\mathrm{R} &= U_\mathrm{a} - U_\mathrm{D} \\
-        &= 14\,\mathrm{V} - 0,7\,\mathrm{V} \\
-        &= 13,3\,\mathrm{V}
+        U_\mathrm{R} & = U_\mathrm{a} - U_\mathrm{D}      \\
+                     & = 14\,\mathrm{V} - 0,7\,\mathrm{V} \\
+                     & = 13,3\,\mathrm{V}
     \end{align*}
 
     Berechnung des Widerstands $R$:
     \begin{align*}
-        P_\mathrm{R} &= \frac{U_\mathrm{R}^2}{R} \leq \frac{1}{4}\,\mathrm{W} \\
-        R &= \frac{U_R^2}{P_{\text{max}}} 
-        = \frac{(13,3\,\mathrm{V})^2}{0,25\,\mathrm{W}} 
-        = \frac{176,89\,\mathrm{V}^2}{0,25\,\mathrm{W}} 
+        P_\mathrm{R} & = \frac{U_\mathrm{R}^2}{R} \leq \frac{1}{4}\,\mathrm{W} \\
+        R            & = \frac{U_R^2}{P_{\text{max}}}
+        = \frac{(13,3\,\mathrm{V})^2}{0,25\,\mathrm{W}}
+        = \frac{176,89\,\mathrm{V}^2}{0,25\,\mathrm{W}}
         = 707,56\,\Omega
     \end{align*}
 
     Normierter Widerstandswert:
     \begin{align*}
-        R &= 710\,\Omega
+        R & = 710\,\Omega
     \end{align*}
 
     Überprüfung der Verlustleistung:
     \begin{align*}
-        P_\mathrm{R} &= \frac{(13,3\,\mathrm{V})^2}{710\,\Omega} \approx 0,25\,\mathrm{W}
+        P_\mathrm{R} & = \frac{(13,3\,\mathrm{V})^2}{710\,\Omega} \approx 0,25\,\mathrm{W}
     \end{align*}
 
     Der Widerstand $R$ sollte den Wert:
     \begin{align*}
-        R &= 710\,\Omega
+        R & = 710\,\Omega
     \end{align*}
     haben, um die maximale Verlustleistung nicht zu überschreiten und das gewünschte Übertragungsverhalten zu gewährleisten.
-%    \speech{
-%        Berechnung des Widerstands zur Einhaltung der maximalen Verlustleistung  
-%        
-%        Gegeben ist eine Schaltung mit einem Widerstand R, der so dimensioniert werden soll,  
-%        dass die maximale Verlustleistung von einem Viertel Watt nicht überschritten wird.  
-%        
-%        Die Verlustleistung an einem Widerstand wird mit folgender Formel berechnet:  
-%        P R = U R Quadrat durch R  
-%        
-%        Berechnung der Spannung am Widerstand:  
-%        U R = U A - U D  
-%        U R = 14 Volt - 0,7 Volt = 13,3 Volt  
-%        
-%        Berechnung des Widerstandswerts unter Berücksichtigung der maximalen Verlustleistung:  
-%        P R = U R Quadrat durch R ist kleiner gleich 0,25 Watt  
-%        
-%        Umstellen nach R ergibt:  
-%        R = U R Quadrat durch P max  
-%        
-%        Einsetzen der Werte:  
-%        R = ( 13,3 Volt ) Quadrat durch 0,25 Watt  
-%        R = 176,89 Volt Quadrat durch 0,25 Watt  
-%        R = 707,56 Ohm  
-%        
-%        Der nächstgelegene normierte Widerstandswert ist:  
-%        R = 710 Ohm  
-%        
-%        Überprüfung der Verlustleistung mit diesem Widerstandswert:  
-%        P R = ( 13,3 Volt ) Quadrat durch 710 Ohm  
-%        P R ist ungefähr 0,25 Watt  
-%        
-%        Das Ergebnis zeigt, dass ein Widerstand von 710 Ohm verwendet werden sollte,  
-%        um die maximale Verlustleistung nicht zu überschreiten und das gewünschte Übertragungsverhalten zu gewährleisten.  
-%        }
-Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
 
-    }
+    Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
+
+}

@@ -1,44 +1,26 @@
-\subsection{Berechnung der Ausgangsspannung bei zwei Eingangsspannungen\label{Aufg4}}
+\subsection{Berechnung der Ausgangsspannung bei zwei Eingangsspannungen}
 % Alt: Aufgabe 4
 \Aufgabe{
-    Gegeben ist die abgebildete Schaltung mit einem idealen 
+    \label{Aufg4}
+    Gegeben ist die abgebildete Schaltung mit einem idealen
     Operationsverstärker. Dabei ist der Widerstand $R_\mathrm{1} = \mathrm{100\,k\Omega}$ und $R_2=\mathrm{10\,k\Omega}$. Die Betriebsspannung beträgt $\mathrm{\pm 15\,V}$.
     \begin{itemize}
         \item [ a)] Ermitteln Sie die Ausgangsspannung $U_\mathrm{A}$ bei $U_\mathrm{E}=2\,\mathrm{mV}$ und $U_\mathrm{bat} = \mathrm{0\,V}$
         \item [ b)] Ermitteln Sie die Ausgangsspannung $U_\mathrm{A}$ bei $U_\mathrm{E}=20\,\mathrm{mV}$ und $U_\mathrm{bat}=\mathrm{0\,V}$
     \end{itemize}
-    \begin {figure} [H]
-   \centering
-   \input{Tikz/src/FigOPV2Eingaenge.tex}
-   \alttext{Das Bild zeigt ein elektrisches Schaltbild mit zwei Widerständen, beschriftet als \(R_1\) und \(R_2\), die in Reihe geschaltet sind. Zwischen den Widerständen ist ein Operationsverstärker mit unendlicher Verstärkung dargestellt. Der Operationsverstärker hat einen Plus- und einen Minus-Eingang, wobei der Plus-Eingang mit einer Batterie verbunden ist, die mit \(U_{\mathrm{bat}}\) beschriftet ist. Die Spannungen an verschiedenen Punkten im Schaltkreis sind mit Pfeilen und den Bezeichnungen \(U_\mathrm{E}\), \(U_\mathrm{X} und \(U_\mathrm{A}\) markiert. Alle Spannungsquellen sind jeweils mit Masse verbunden, dargestellt durch das Erdungssymbol.}
-   \label{fig:FigOPV2Eingaenge}
-    \end {figure}
-   % \speech{
-      %  Aufgabe 4: Operationsverstärkerschaltung  
-      %  
-      %  Gegeben ist eine Schaltung mit einem idealen Operationsverstärker.  
-      %  Der Widerstand R1 beträgt 100 Kiloohm, der Widerstand R2 beträgt 10 Kiloohm.  
-      %  Die Betriebsspannung beträgt plus minus 15 Volt.  
-      %  
-      %  Die Schaltung besteht aus einem Operationsverstärker mit einer Rückkopplung über die Widerstände R1 und R2.  
-      %  Die Eingangsspannung U E wird über R2 an den invertierenden Eingang des Operationsverstärkers angelegt.  
-      %  Der nichtinvertierende Eingang ist mit Masse verbunden.  
-      %  Der Ausgang U A ist über den Widerstand R1 mit dem invertierenden Eingang verbunden.  
-      %  Zusätzlich gibt es eine Batteriespannung U Bat, die auf den invertierenden Eingang wirkt.  
-     %   
-    %    Es sind zwei Teilaufgaben zu lösen:  
-   %     
-  %      a) Berechnung der Ausgangsspannung U A für eine Eingangsspannung U E von 2 Millivolt und eine Batteriespannung U Bat von 0 Volt.  
- %       b) Berechnung der Ausgangsspannung U A für eine Eingangsspannung U E von 20 Millivolt und eine Batteriespannung U Bat von 0 Volt.  
-%        }
-        
+    \begin{figure}[H]
+        \centering
+        \input{Tikz/src/FigOPV2Eingaenge.tex}\alttext{Das Bild zeigt ein elektrisches Schaltbild mit zwei Widerständen, beschriftet als \(R_1\) und \(R_2\), die in Reihe geschaltet sind. Zwischen den Widerständen ist ein Operationsverstärker mit unendlicher Verstärkung dargestellt. Der Operationsverstärker hat einen Plus- und einen Minus-Eingang, wobei der Plus-Eingang mit einer Batterie verbunden ist, die mit \(U_{\mathrm{bat}}\) beschriftet ist. Die Spannungen an verschiedenen Punkten im Schaltkreis sind mit Pfeilen und den Bezeichnungen \(U_\mathrm{E}\), \(U_\mathrm{X}\) und \(U_\mathrm{A}\) markiert. Alle Spannungsquellen sind jeweils mit Masse verbunden, dargestellt durch das Erdungssymbol.}
+        \label{fig:FigOPV2Eingaenge}
+    \end{figure}
+
 }
 
 \Loesung{
-   %\begin {figure} [H]
-   %\centering
-   %\input{Tikz/src/LsgOPV2Eingaenge.tex}
-   %\label{fig:LsgOPV2Eingaenge}
+    %\begin {figure} [H]
+    %\centering
+    %\input{Tikz/src/LsgOPV2Eingaenge.tex}
+    %\label{fig:LsgOPV2Eingaenge}
     %\end {figure}
     Verstärkung berechnen:
     \begin{align*}
@@ -48,46 +30,19 @@
     \begin{align*}
         V = \frac{U_\mathrm{A}}{U_\mathrm{E}}
     \end{align*}
-	Formel umstellen nach $U_\mathrm{A}$:
+    Formel umstellen nach $U_\mathrm{A}$:
     \begin{align*}
         U_\mathrm{A} = V \cdot U_\mathrm{E}
     \end{align*}
     \begin{itemize}
-        \item [ \bf a)] 
-        \begin{align*}
-        U_\mathrm{A} = \mathrm{-10 \cdot 2\,mV = -20\,mV}
-        \end{align*}
+        \item [ \bf a)]
+              \begin{align*}
+                  U_\mathrm{A} = \mathrm{-10 \cdot 2\,mV = -20\,mV}
+              \end{align*}
         \item [ \bf b)]
-        \begin{align*}
-        U_\mathrm{A} = \mathrm{-10 \cdot 20\,mV = -200\,mV}
-        \end{align*}
+              \begin{align*}
+                  U_\mathrm{A} = \mathrm{-10 \cdot 20\,mV = -200\,mV}
+              \end{align*}
     \end{itemize}
     Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
-%    \speech{
-%        Berechnung der Ausgangsspannung eines invertierenden Verstärkers  
-%        
-%        Gegeben ist eine Operationsverstärkerschaltung mit einer Rückkopplung.  
-%        Die Widerstandswerte betragen:  
-%        R1 = 100 Kiloohm, R2 = 10 Kiloohm.  
-%        
-%        Die Verstärkung wird mit folgender Formel berechnet:  
-%        V = - R1 durch R2  
-%        Einsetzen der Werte ergibt:  
-%        V = - 100 Kiloohm durch 10 Kiloohm = -10  
-%        
-%        Die Ausgangsspannung U A wird mit der Formel berechnet:  
-%        U A = V mal U E  
-%        
-%        Es sind zwei Fälle gegeben:  
-%        
-%        a) Für eine Eingangsspannung U E = 2 Millivolt:  
-%        U A = -10 mal 2 Millivolt = -20 Millivolt  
-%        
-%        b) Für eine Eingangsspannung U E = 20 Millivolt:  
-%        U A = -10 mal 20 Millivolt = -200 Millivolt  
-%        
-%        Die Berechnung zeigt, dass die Ausgangsspannung U A die Eingangsspannung um den Faktor -10 verstärkt.  
-%        Das negative Vorzeichen zeigt die Phasenumkehr, die typisch für einen invertierenden Verstärker ist.  
-%        }
-        
 }

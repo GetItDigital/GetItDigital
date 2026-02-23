@@ -1,124 +1,71 @@
-\subsection{Überwachung einer Spannung mit LEDs\label{Aufg1}}
+\subsection{Überwachung einer Spannung mit LEDs}
 % Alt: Aufgabe 1
 \Aufgabe{
-    Gegeben ist die abgebildete Schaltung, mit dieser soll die Spannung $U_\mathrm{a}$ überwacht werden. $U_\mathrm{a}$ darf dabei nur im folgenden Bereich liegen $\mathrm{4,75\,V} < U_\mathrm{a} < \mathrm{5,25\,V}$. Wenn die Spannung über oder unterschritten ist, soll jeweils 
+    \label{Aufg1}
+    Gegeben ist die abgebildete Schaltung, mit dieser soll die Spannung $U_\mathrm{a}$ überwacht werden. $U_\mathrm{a}$ darf dabei nur im folgenden Bereich liegen $\mathrm{4,75\,V} < U_\mathrm{a} < \mathrm{5,25\,V}$. Wenn die Spannung über oder unterschritten ist, soll jeweils
     eine der LEDs aufleuchten. Erzgänzen Sie die Schaltung.
     \begin{figure}[H]
-    \centering
-    \input{Tikz/src/FigSpannungsueberwachungLED.tex}
-    \alttext{Das Bild zeigt ein elektrisches Schaltbild mit zwei Operationsverstärkern, die mit N1 (oben) und N2 (unten) bezeichnet sind. Beide Operationsverstärker werden mit einer symmetrischen Versorgung von +15 V und -15 V betrieben, die links im Schaltbild eingezeichnet ist und jeweils mit den Anschlüssen U+ und U- verbunden sind.
-    Von links unten ist eine Spannung \(U_\mathrm{a}\) mit einem Pfeil nach unten dargestellt. Diese Spannung wird zu beiden Operationsverstärkern geführt und liegt an deren Eingängen an.
-    Jeder Operationsverstärker besitzt rechts einen Ausgang. Am Ausgang von N1 ist eine LED mit der Bezeichnung V1 angeschlossen, am Ausgang von N2 eine LED mit der Bezeichnung V2. Die jeweils andere Seite der LEDs ist mit -15 V verbunden.
-    Unten links ist zusätzlich ein Masseanschluss eingezeichnet.
-    Das Schaltbild stellt somit zwei parallel betriebene Operationsverstärker mit gemeinsamer Eingangsspannung und jeweils einer LED am Ausgang dar, die das jeweilige Ausgangssignal anzeigen.}
-    \label{fig:FigSpannungsueberwachungLED}
+        \centering
+        \input{Tikz/src/FigSpannungsueberwachungLED.tex}\alttext{Das Bild zeigt ein elektrisches Schaltbild mit zwei Operationsverstärkern, die mit N1 (oben) und N2 (unten) bezeichnet sind. Beide Operationsverstärker werden mit einer symmetrischen Versorgung von +15 V und -15 V betrieben, die links im Schaltbild eingezeichnet ist und jeweils mit den Anschlüssen U+ und U- verbunden sind.
+            Von links unten ist eine Spannung \(U_\mathrm{a}\) mit einem Pfeil nach unten dargestellt. Diese Spannung wird zu beiden Operationsverstärkern geführt und liegt an deren Eingängen an. Jeder Operationsverstärker besitzt rechts einen Ausgang. Am Ausgang von N1 ist eine LED mit der Bezeichnung V1 angeschlossen, am Ausgang von N2 eine LED mit der Bezeichnung V2. Die jeweils andere Seite der LEDs ist mit -15 V verbunden.
+            Unten links ist zusätzlich ein Masseanschluss eingezeichnet. Das Schaltbild stellt somit zwei parallel betriebene Operationsverstärker mit gemeinsamer Eingangsspannung und jeweils einer LED am Ausgang dar, die das jeweilige Ausgangssignal anzeigen.}
+        \label{fig:FigSpannungsueberwachungLED}
     \end{figure}
-
-%    \speech{
-%Aufgabe 1: Spannungsüberwachung mit Komparatoren  
-%
-%Gegeben ist eine Schaltung zur Überwachung der Spannung U A.  
-%Diese Spannung darf nur im Bereich zwischen 4,75 und 5,25 Volt liegen.  
-%Wenn U A diesen Bereich überschreitet oder unterschreitet, soll eine entsprechende LED aufleuchten.  
-%
-%Die Schaltung enthält zwei Operationsverstärker, die als Komparatoren arbeiten, sowie zwei LEDs zur Spannungsanzeige.  
-%Die Operationsverstärker sind mit einer symmetrischen Versorgungsspannung von plus 15 Volt und minus 15 Volt betrieben.  
-%
-%Die Eingangsspannung U A wird an die Eingänge der Komparatoren angelegt.  
-%Komparator N1 überprüft, ob U A größer als 5,25 Volt ist.  
-%Komparator N2 überprüft, ob U A kleiner als 4,75 Volt ist.  
-%
-%Wenn die Spannung den erlaubten Bereich überschreitet, schaltet sich die LED V1 ein.  
-%Wenn die Spannung den erlaubten Bereich unterschreitet, schaltet sich die LED V2 ein.  
-%
-%Um die Schaltung funktionsfähig zu machen, müssen folgende Ergänzungen vorgenommen werden:  
-%Erstens, die Referenzspannungen 4,75 und 5,25 Volt müssen an die nichtinvertierenden Eingänge der Komparatoren angeschlossen werden.  
-%Zweitens, die LEDs benötigen einen Vorwiderstand, um den Strom zu begrenzen.  
-%Drittens, die Ausgangssignale der Komparatoren müssen so verschaltet werden, dass die LEDs bei Über- oder Unterschreitung leuchten.  
-%
-%Funktionsweise nach Ergänzung:  
-%Wenn die Spannung innerhalb des zulässigen Bereichs liegt, bleibt die Schaltung inaktiv und keine LED leuchtet.  
-%Wenn die Spannung über 5,25 Volt steigt, leuchtet LED V1.  
-%Wenn die Spannung unter 4,75 Volt fällt, leuchtet LED V2.  
-%
-%Diese Schaltung wird häufig zur Spannungsüberwachung in elektronischen Systemen eingesetzt.  
-%}
 
 }
 
 \Loesung{
-  
-             \begin{figure}[H]
-             \centering
-             \input{Tikz/src/LsgSpannungsueberwachungLED1.tex}
-             \alttext{Die Abbildung zeigt eine Schaltung mit zwei Operationsverstärkern, die übereinander angeordnet sind und jeweils mit einer symmetrischen Versorgung von \(+15 \ V\) und \(-15 \ V\) betrieben werden.
-             Oben ist der Operationsverstärker N1 dargestellt, darunter der Operationsverstärker N2. Beide besitzen einen invertierenden Eingang (−), einen nichtinvertierenden Eingang (+) sowie Anschlüsse für die positive und negative Versorgungsspannung \(U+\) und \(U-\).Die Versorgungsspannungen werden links eingespeist und zu beiden Verstärkern weitergeführt.
-             Die Ausgänge beider Operationsverstärker befinden sich jeweils auf der rechten Seite. An jedem Ausgang ist eine LED angeschlossen (V1 bei N1 und V2 bei N2), die jeweils gegen \(-15 \ V\). geschaltet ist. Dadurch leuchtet die entsprechende LED abhängig vom Ausgangspotential des jeweiligen Operationsverstärkers.
-             Links unten ist die Ausgangsspannung \(U_\mathrm{a}\) eingezeichnet, die gegen Masse gemessen wird.
-             Im unteren linken Bereich ist zusätzlich ein Spannungsteiler aus den Widerständen \(R_1\) und \(R_2\) eingezeichnet. Dieser liegt zwischen einer positiven Versorgungsspannung und Masse. Über dem Widerstand \(R_1\) fällt eine Spannung von \(5,25 \ \mathrm{V}\) ab, die in der Abbildung markiert ist. Dieser Spannungspunkt ist mit dem oberen Operationsverstärker verbunden.}
-             \label{fig:LsgSpannungsueberwachungLED1}
-             \end{figure}
-             \begin{equation*}
-                \begin{aligned}
-                     \frac{U_1}{U_0} &= \frac{R_1}{R_1 + R_2} \\
-                     \frac{U_1 \cdot (R_1 + R_2)}{U_0} &= R_1 \\
-                     U_1\cdot (R_1+R_2) &= R_1 \cdot U_0 \\
-                     U_1\cdot R_1 + U_1\cdot R_2 &= R_1 \cdot U_0 \\
-                     U_1\cdot R_1 &= R_1 \cdot U_0 - U_1\cdot R_2 \\
-                     U_1\cdot R_2 &= R_1 \cdot (U_0 - U_1) \\
-                     \frac{U_1 \cdot R_2}{U_0 - U_1} &= R_1
-                \end{aligned}
-                \end{equation*}
-                
-                \[
-                R_1 = 268.96 \, \Omega
-                \]
 
-        \begin{figure}[H]
+    \begin{figure}[H]
         \centering
-        \input{Tikz/src/LsgSpannungsueberwachungLED2.tex}
-        \alttext{Die Abbildung zeigt eine Schaltung mit zwei Operationsverstärkern, die übereinander angeordnet sind und jeweils mit einer symmetrischen Versorgung von \(+15 \ \mathrm{V}\) und \(-15 \ \mathrm{V}\) betrieben werden.
-        Oben ist der Operationsverstärker N1 dargestellt, darunter der Operationsverstärker N2. Beide besitzen einen invertierenden Eingang (-), einen nichtinvertierenden Eingang (+) sowie Anschlüsse für die positive und negative Versorgungsspannung \(U+\) und \(U-\).Die Versorgungsspannungen werden links eingespeist und zu beiden Verstärkern weitergeführt.
-        Die Ausgänge beider Operationsverstärker befinden sich jeweils auf der rechten Seite. Am Ausgang von N1 ist über den Widerstand \(R_1\) eine LED (V1) angeschlossen, die gegen \(-15 \ \mathrm{V}\) geschaltet ist. Am Ausgang von N2 ist über den Widerstand \(R_2\) ebenfalls eine LED (V2) angeschlossen, die ebenfalls gegen \(-15 \ \Mathrm{V}\) geschaltet ist. Dadurch zeigt jede LED abhängig vom Ausgangspotential des jeweiligen Operationsverstärkers den entsprechenden Schaltzustand an.
-        Links unten ist die Spannung \(U_\mathrm{a}\) eingezeichnet, die gegen Masse gemessen wird. Diese Spannung wird auf beide Operationsverstärker geführt.
-        Im linken unteren Bereich sind zwei ideale Spannungsquellen eingezeichnet, die als Referenzspannungen dienen. Eine Referenzspannung von \(5,25 \ \mathrm{V}\) ist mit dem oberen Operationsverstärker N1 verbunden. Eine zweite Referenzspannung von \(4,75 \ \mathrm{V}\) ist mit dem unteren Operationsverstärker N2 verbunden. Beide Referenzspannungen sind jeweils gegen Masse bezogen.}
+        \input{Tikz/src/LsgSpannungsueberwachungLED1.tex}\alttext{Die Abbildung zeigt eine Schaltung mit zwei Operationsverstärkern, die übereinander angeordnet sind und jeweils mit einer symmetrischen Versorgung von \(+15 \ V\) und \(-15 \ V\) betrieben werden.
+            Oben ist der Operationsverstärker N1 dargestellt, darunter der Operationsverstärker N2. Beide besitzen einen invertierenden Eingang (−), einen nichtinvertierenden Eingang (+) sowie Anschlüsse für die positive und negative Versorgungsspannung \(U+\) und \(U-\).Die Versorgungsspannungen werden links eingespeist und zu beiden Verstärkern weitergeführt.
+            Die Ausgänge beider Operationsverstärker befinden sich jeweils auf der rechten Seite. An jedem Ausgang ist eine LED angeschlossen (V1 bei N1 und V2 bei N2), die jeweils gegen \(-15 \ V\). geschaltet ist. Dadurch leuchtet die entsprechende LED abhängig vom Ausgangspotential des jeweiligen Operationsverstärkers.
+            Links unten ist die Ausgangsspannung \(U_\mathrm{a}\) eingezeichnet, die gegen Masse gemessen wird.
+            Im unteren linken Bereich ist zusätzlich ein Spannungsteiler aus den Widerständen \(R_1\) und \(R_2\) eingezeichnet. Dieser liegt zwischen einer positiven Versorgungsspannung und Masse. Über dem Widerstand \(R_1\) fällt eine Spannung von \(5,25 \ \mathrm{V}\) ab, die in der Abbildung markiert ist. Dieser Spannungspunkt ist mit dem oberen Operationsverstärker verbunden.}
+        \label{fig:LsgSpannungsueberwachungLED1}
+    \end{figure}
+    \begin{equation*}
+        \begin{aligned}
+            \frac{U_1}{U_0}                   & = \frac{R_1}{R_1 + R_2}        \\
+            \frac{U_1 \cdot (R_1 + R_2)}{U_0} & = R_1                          \\
+            U_1\cdot (R_1+R_2)                & = R_1 \cdot U_0                \\
+            U_1\cdot R_1 + U_1\cdot R_2       & = R_1 \cdot U_0                \\
+            U_1\cdot R_1                      & = R_1 \cdot U_0 - U_1\cdot R_2 \\
+            U_1\cdot R_2                      & = R_1 \cdot (U_0 - U_1)        \\
+            \frac{U_1 \cdot R_2}{U_0 - U_1}   & = R_1
+        \end{aligned}
+    \end{equation*}
+
+    \[
+        R_1 = 268.96 \, \Omega
+    \]
+
+    \begin{figure}[H]
+        \centering
+        \input{Tikz/src/LsgSpannungsueberwachungLED2.tex}\alttext{Die Abbildung zeigt eine Schaltung mit zwei Operationsverstärkern, die übereinander angeordnet sind und jeweils mit einer symmetrischen Versorgung von \(+15 \ \mathrm{V}\) und \(-15 \ \mathrm{V}\) betrieben werden.
+            Oben ist der Operationsverstärker N1 dargestellt, darunter der Operationsverstärker N2. Beide besitzen einen invertierenden Eingang (-), einen nichtinvertierenden Eingang (+) sowie Anschlüsse für die positive und negative Versorgungsspannung \(U+\) und \(U-\).Die Versorgungsspannungen werden links eingespeist und zu beiden Verstärkern weitergeführt.
+            Die Ausgänge beider Operationsverstärker befinden sich jeweils auf der rechten Seite. Am Ausgang von N1 ist über den Widerstand \(R_1\) eine LED (V1) angeschlossen, die gegen \(-15 \ \mathrm{V}\) geschaltet ist. Am Ausgang von N2 ist über den Widerstand \(R_2\) ebenfalls eine LED (V2) angeschlossen, die ebenfalls gegen \(-15 \ \Mathrm{V}\) geschaltet ist. Dadurch zeigt jede LED abhängig vom Ausgangspotential des jeweiligen Operationsverstärkers den entsprechenden Schaltzustand an.
+            Links unten ist die Spannung \(U_\mathrm{a}\) eingezeichnet, die gegen Masse gemessen wird. Diese Spannung wird auf beide Operationsverstärker geführt.
+            Im linken unteren Bereich sind zwei ideale Spannungsquellen eingezeichnet, die als Referenzspannungen dienen. Eine Referenzspannung von \(5,25 \ \mathrm{V}\) ist mit dem oberen Operationsverstärker N1 verbunden. Eine zweite Referenzspannung von \(4,75 \ \mathrm{V}\) ist mit dem unteren Operationsverstärker N2 verbunden. Beide Referenzspannungen sind jeweils gegen Masse bezogen.}
         \label{fig:LsgSpannungsueberwachungLED2}
-        \end{figure}
+    \end{figure}
 
-        \begin{figure}[H]
+    \begin{figure}[H]
         \centering
-        \input{Tikz/src/LsgSpannungsueberwachungLED3.tex}
-        \alttext{Die Abbildung zeigt eine Schaltung mit zwei Operationsverstärkern, die übereinander angeordnet sind und jeweils mit einer symmetrischen Versorgung von \(+15 \ \mathrm{V}\) und \(-15 \ \mathrm{V}\) betrieben werden.
-        Oben ist der Operationsverstärker N1 dargestellt, darunter der Operationsverstärker N2. Beide besitzen einen invertierenden Eingang (-), einen nichtinvertierenden Eingang (+) sowie Anschlüsse für die positive und negative Versorgungsspannung \(U+\) und \(U-\).Die Versorgungsspannungen werden links eingespeist und zu beiden Verstärkern weitergeführt.
-        Die Ausgänge beider Operationsverstärker befinden sich jeweils auf der rechten Seite. Am Ausgang von N1 ist über den Widerstand \(R_4\) eine LED (V1) angeschlossen, die gegen \(-15 \ V\) geschaltet ist. Für diese LED ist ein Strom von etwa \(2 \ \mathrm{mA}\) sowie eine Durchlassspannung von ungefähr \(2 \ \mathrm{V}\)angegeben. Am Ausgang von N2 ist über den Widerstand \(R_5\) ebenfalls eine LED (V2) angeschlossen, die ebenfalls gegen \(-15 \ \mathrm{V}\) geschaltet ist. Dadurch zeigt jede LED abhängig vom jeweiligen Ausgangspotential des Operationsverstärkers den Schaltzustand an.
-        Links unten ist die Spannung \(U_\mathrm{a}\) eingezeichnet, die gegen Masse gemessen wird. Diese Spannung wird auf beide Operationsverstärker geführt.
-        Im linken Bereich der Schaltung befindet sich ein dreistufiger Spannungsteiler aus den Widerständen \(R_1\), \(R_2\) und \(R_3\).Dieser liegt zwischen \(+15 \ V\) und Masse. Über \(R_1\) ällt eine Spannung von \(5,75 \ \mathrm{V}\)ab, über \(5,75 \ \mathrm{V}\) ab, über \(R_2\) ine Spannung von \(o,5 \ \mathrm{V}\) und über \(R_3\) eine Spannung von \(4,75 \ \mathrm{V}\).
-        Der Zwischenpunkt zwischen \(R_1\) und \(R_2\) ist mit dem oberen Operationsverstärker N1 verbunden und stellt die obere Referenzspannung dar. Der Zwischenpunkt zwischen \(R_2\) und \(R_3\) ist mit dem unteren Operationsverstärker N2 verbunden und bildet die untere Referenzspannung.}
+        \input{Tikz/src/LsgSpannungsueberwachungLED3.tex}\alttext{Die Abbildung zeigt eine Schaltung mit zwei Operationsverstärkern, die übereinander angeordnet sind und jeweils mit einer symmetrischen Versorgung von \(+15 \ \mathrm{V}\) und \(-15 \ \mathrm{V}\) betrieben werden.
+            Oben ist der Operationsverstärker N1 dargestellt, darunter der Operationsverstärker N2. Beide besitzen einen invertierenden Eingang (-), einen nichtinvertierenden Eingang (+) sowie Anschlüsse für die positive und negative Versorgungsspannung \(U+\) und \(U-\).Die Versorgungsspannungen werden links eingespeist und zu beiden Verstärkern weitergeführt.
+            Die Ausgänge beider Operationsverstärker befinden sich jeweils auf der rechten Seite. Am Ausgang von N1 ist über den Widerstand \(R_4\) eine LED (V1) angeschlossen, die gegen \(-15 \ V\) geschaltet ist. Für diese LED ist ein Strom von etwa \(2 \ \mathrm{mA}\) sowie eine Durchlassspannung von ungefähr \(2 \ \mathrm{V}\)angegeben. Am Ausgang von N2 ist über den Widerstand \(R_5\) ebenfalls eine LED (V2) angeschlossen, die ebenfalls gegen \(-15 \ \mathrm{V}\) geschaltet ist. Dadurch zeigt jede LED abhängig vom jeweiligen Ausgangspotential des Operationsverstärkers den Schaltzustand an.
+            Links unten ist die Spannung \(U_\mathrm{a}\) eingezeichnet, die gegen Masse gemessen wird. Diese Spannung wird auf beide Operationsverstärker geführt.
+            Im linken Bereich der Schaltung befindet sich ein dreistufiger Spannungsteiler aus den Widerständen \(R_1\), \(R_2\) und \(R_3\).Dieser liegt zwischen \(+15 \ V\) und Masse. Über \(R_1\) ällt eine Spannung von \(5,75 \ \mathrm{V}\)ab, über \(5,75 \ \mathrm{V}\) ab, über \(R_2\) ine Spannung von \(o,5 \ \mathrm{V}\) und über \(R_3\) eine Spannung von \(4,75 \ \mathrm{V}\).
+            Der Zwischenpunkt zwischen \(R_1\) und \(R_2\) ist mit dem oberen Operationsverstärker N1 verbunden und stellt die obere Referenzspannung dar. Der Zwischenpunkt zwischen \(R_2\) und \(R_3\) ist mit dem unteren Operationsverstärker N2 verbunden und bildet die untere Referenzspannung.}
         \label{fig:LsgSpannungsueberwachungLED3}
-        \end{figure}
-        \begin{align*}
-            R_1 &= 3.75 \,\text{k}\Omega \\
-            R_2 &= 500 \,\Omega \\
-            R_3 &= 4.75 \,\text{k}\Omega \\
-            R_4 &= \frac{28 \, \mathrm{V}}{20 \, \mathrm{mA}} \approx 1,4 \,\text{k}\Omega
-        \end{align*}
-        Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
-%        \speech{
-%            Lösung für Aufgabe 1.
-%            
-%            Die gegebene Schaltung dient zur Überwachung der Spannung U a. Die Spannung darf nur innerhalb eines bestimmten Bereichs liegen, genauer zwischen 4,75 Volt und 5,25 Volt. Wird dieser Bereich unter- oder überschritten, soll jeweils eine LED aufleuchten.
-%            
-%            Die Schaltung enthält zwei Operationsverstärker N1 und N2, die als Komparatoren arbeiten. Beide Operationsverstärker sind mit einer symmetrischen Spannungsversorgung von plus 15 Volt und minus 15 Volt verbunden. Die nicht-invertierenden Eingänge der Operationsverstärker erhalten eine Referenzspannung über einen Spannungsteiler aus zwei Widerständen R1 und R2.
-%            
-%            Die Referenzspannung für den oberen Komparator N1 liegt bei 5,25 Volt. Wenn die überwachte Spannung U a diesen Wert überschreitet, schaltet der Operationsverstärker N1 seinen Ausgang auf minus 15 Volt. Dadurch leuchtet die LED V1 auf, die mit dem Ausgang des Komparators verbunden ist.
-%            
-%            Für den unteren Komparator N2 liegt die Referenzspannung bei 4,75 Volt. Wenn die überwachte Spannung U a unter diesen Wert fällt, schaltet N2 seinen Ausgang auf minus 15 Volt, wodurch die LED V2 aufleuchtet.
-%            
-%            Die Berechnung des Widerstandes R1 erfolgt anhand der Spannungsteilergleichung. Da die Referenzspannung durch den Spannungsteiler aus R1 und R2 bestimmt wird, gilt die Gleichung U 1 geteilt durch U 0 ist gleich R1 geteilt durch die Summe aus R1 und R2. Diese Gleichung wird nach R1 umgestellt. Das Einsetzen der gegebenen Werte führt zu einem Widerstandswert von ungefähr 269 Ohm für R1.
-%            
-%            Die zweite Abbildung zeigt die gleiche Schaltung mit einer klaren Darstellung der Spannungen an den Eingängen. Die Werte von 5,25 Volt und 4,75 Volt sind markiert, um die Schwellenwerte der Komparatoren zu verdeutlichen.
-%            
-%            In der dritten Abbildung ist eine weiterentwickelte Version der Schaltung zu sehen. Hier wurde ein zusätzlicher Widerstand R3 eingefügt, um eine präzisere Referenzspannung zu erzeugen. Außerdem sind Vorwiderstände für die LEDs hinzugefügt, um die Ströme zu begrenzen. Der Widerstand R4 wurde so dimensioniert, dass die LED V1 einen Strom von circa 2 Milliampere erhält. Die endgültigen Widerstandswerte lauten: R1 ist 3,75 Kiloohm, R2 ist 500 Ohm, R3 ist 4,75 Kiloohm, R4 ist 1,4 Kiloohm.
-%            }
-            
+    \end{figure}
+    \begin{align*}
+        R_1 & = 3.75 \,\text{k}\Omega                                                   \\
+        R_2 & = 500 \,\Omega                                                            \\
+        R_3 & = 4.75 \,\text{k}\Omega                                                   \\
+        R_4 & = \frac{28 \, \mathrm{V}}{20 \, \mathrm{mA}} \approx 1,4 \,\text{k}\Omega
+    \end{align*}
+    Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
 }

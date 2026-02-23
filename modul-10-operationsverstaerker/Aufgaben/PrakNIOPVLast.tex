@@ -1,6 +1,7 @@
-\subsection{Analyse eines nicht-invertierenden Verstärkers mit Last\label{Aufg25}}
+\subsection{Analyse eines nicht-invertierenden Verstärkers mit Last}
 % Alt: Praktikumsaufgabe 11
 \Aufgabe{
+    \label{Aufg25}
     Analysieren Sie die Verstärkung eines nicht-invertierenden Operationsverstärkers und berechnen Sie die Ausgangsspannung $U_\mathrm{A}$.
     Gegeben:
     \begin{itemize}
@@ -10,52 +11,51 @@
         \item Eingangswiderstand: $R_\mathrm{E} = 10\,\mathrm{k\Omega}$
         \item Lastwiderstand: $R_\mathrm{Last} = 10\,\mathrm{k\Omega}$
     \end{itemize}
-    
+
     \begin{itemize}
         \item[a)] Berechnen Sie die Ausgangsspannung $U_\mathrm{A}$ mit den gegebenen Werten.
         \item[b)] Wie verändert sich $U_\mathrm{A}$, wenn $R_\mathrm{R}$ auf $30\,\mathrm{k\Omega}$ erhöht wird?
         \item[c)] Welchen Einfluss hat der Lastwiderstand $R_\mathrm{Last}$ auf das Ausgangssignal?
     \end{itemize}
-    \begin {figure} [H]
-    \centering
-    \input{Tikz/src/FigPrakNIOPVLast.tex}
-    \alttext{Das Bild zeigt ein elektrisches Schaltbild mit einem Operationsverstärker, der mittig angeordnet ist. Der Operationsverstärker wird von zwei Spannungsquellen \(U_1\) und \(U_2\), versorgt, die jeweils gegen Masse geschaltet sind. Am nichtinvertierenden Eingang (+) liegt die Eingangsspannung \(U_\mathrm{E}\) an.Diese wird über den Widerstand \(R_3\) zugeführt. Zusätzlich ist der Plus-Eingang über ein Widerstandsnetzwerk mit den beiden Versorgungsspannungen verbunden. Dieses Netzwerk besteht aus den Widerständen \(R_1\), \(R_2\) und einem verstellbaren Widerstand \(P_1\), die zwischen \(U_1\) und \(U_2\) angeordnet sind.    
-    Der invertierende Eingang (-) ist über den Widerstand\(R_\mathrm{R}\) mit dem Ausgang verbunden. Außerdem führt vom invertierenden Eingang ein weiterer Widerstand \(R_{E}\),zu einem Massepunkt. Dadurch entsteht die typische Rückkopplung eines nichtinvertierenden Verstärkers.
-    Der Ausgang des Operationsverstärkers führt über einen Lastwiderstand \(R_{\mathrm{Last}}\) nach Masse. An diesem Lastwiderstand wird die Ausgangsspannung \(U_{\mathrm{A}}\) gemessen.}
-    \label{fig:FigPrakNIOPVLast}
-    \end {figure}
+    \begin{figure}[H]
+        \centering
+        \input{Tikz/src/FigPrakNIOPVLast.tex}\alttext{Das Bild zeigt ein elektrisches Schaltbild mit einem Operationsverstärker, der mittig angeordnet ist. Der Operationsverstärker wird von zwei Spannungsquellen \(U_1\) und \(U_2\), versorgt, die jeweils gegen Masse geschaltet sind. Am nichtinvertierenden Eingang (+) liegt die Eingangsspannung \(U_\mathrm{E}\) an.Diese wird über den Widerstand \(R_3\) zugeführt. Zusätzlich ist der Plus-Eingang über ein Widerstandsnetzwerk mit den beiden Versorgungsspannungen verbunden. Dieses Netzwerk besteht aus den Widerständen \(R_1\), \(R_2\) und einem verstellbaren Widerstand \(P_1\), die zwischen \(U_1\) und \(U_2\) angeordnet sind.
+            Der invertierende Eingang (-) ist über den Widerstand\(R_\mathrm{R}\) mit dem Ausgang verbunden. Außerdem führt vom invertierenden Eingang ein weiterer Widerstand \(R_{E}\),zu einem Massepunkt. Dadurch entsteht die typische Rückkopplung eines nichtinvertierenden Verstärkers.
+            Der Ausgang des Operationsverstärkers führt über einen Lastwiderstand \(R_{\mathrm{Last}}\) nach Masse. An diesem Lastwiderstand wird die Ausgangsspannung \(U_{\mathrm{A}}\) gemessen.}
+        \label{fig:FigPrakNIOPVLast}
+    \end{figure}
 }
 
 \Loesung{
     \textbf{a) Berechnung der Ausgangsspannung $\mathrm{U_A}$} \\
     Gegeben sind:
     \[
-    U_\mathrm{E} = 1\,\mathrm{V}, \quad R_\mathrm{R} = 20\,\mathrm{k\Omega}, \quad R_\mathrm{E} = 10\,\mathrm{k\Omega}
+        U_\mathrm{E} = 1\,\mathrm{V}, \quad R_\mathrm{R} = 20\,\mathrm{k\Omega}, \quad R_\mathrm{E} = 10\,\mathrm{k\Omega}
     \]
     Einsetzen in die Verstärkungsformel:
     \[
-    V = 1 + \frac{R_\mathrm{R}}{R_\mathrm{E}}   
+        V = 1 + \frac{R_\mathrm{R}}{R_\mathrm{E}}
     \]
     \[
-    V = 1 + \frac{20\,\mathrm{k\Omega}}{10\,\mathrm{k\Omega}} = 1 + 2 = 3
+        V = 1 + \frac{20\,\mathrm{k\Omega}}{10\,\mathrm{k\Omega}} = 1 + 2 = 3
     \]
     Die Ausgangsspannung ergibt sich zu:
     \[
-    U_\mathrm{A} = V \cdot U_\mathrm{E} = 3 \cdot 1\,\mathrm{V} = 3\,\mathrm{V}
+        U_\mathrm{A} = V \cdot U_\mathrm{E} = 3 \cdot 1\,\mathrm{V} = 3\,\mathrm{V}
     \]
 
     \textbf{b) Veränderung von $\mathrm{R_R}$} \\[0.2cm]
     Wenn $R_\mathrm{R}$ auf $30\,\mathrm{k\Omega}$ erhöht wird:
     \[
-    V = 1 + \frac{30\,\mathrm{k\Omega}}{10\,\mathrm{k\Omega}} = 1 + 3 = 4
+        V = 1 + \frac{30\,\mathrm{k\Omega}}{10\,\mathrm{k\Omega}} = 1 + 3 = 4
     \]
     \[
-    U_\mathrm{A} = 4 \cdot 1\,\mathrm{V} = 4\,\mathrm{V}
+        U_\mathrm{A} = 4 \cdot 1\,\mathrm{V} = 4\,\mathrm{V}
     \]
 
     \textbf{c) Einfluss des Lastwiderstands} \\[0.2cm]
-    Der Lastwiderstand $R_\mathrm{Last}$ beeinflusst die Schaltung nur minimal, solange der Operationsverstärker im linearen Bereich arbeitet.  
+    Der Lastwiderstand $R_\mathrm{Last}$ beeinflusst die Schaltung nur minimal, solange der Operationsverstärker im linearen Bereich arbeitet.
     Falls der Lastwiderstand jedoch zu klein gewählt wird, kann der Operationsverstärker an seine Ausgangsstromgrenze kommen, was zu einer Spannungsbegrenzung führt. \\
-    
+
     Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
 }

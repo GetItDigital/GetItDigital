@@ -1,83 +1,42 @@
-\subsection{Berechnung einer OPV-Schaltung mit drei Eingängen\label{Aufg16}}
+\subsection{Berechnung einer OPV-Schaltung mit drei Eingängen}
 % Alt: Aufgabe 16
 \Aufgabe{
+    \label{Aufg16}
     Gegeben ist die unten abgebildete Schaltung. Bestimmen Sie die Ausgangsspannung \( U_\mathrm{A} \). \\
     Die Widerstandswerte lauten: \\
     $
-    R_\mathrm{1} = \mathrm{10\,k\Omega},\
-    R_\mathrm{2} = \mathrm{20\,k\Omega},\
-    R_\mathrm{3} = \mathrm{30\,k\Omega},\
-    R_\mathrm{4} = \mathrm{10\,k\Omega},\
-    R_\mathrm{5} = \mathrm{20\,k\Omega},\
-    R_\mathrm{6} = \mathrm{40\,k\Omega}
+        R_\mathrm{1} = \mathrm{10\,k\Omega},\
+        R_\mathrm{2} = \mathrm{20\,k\Omega},\
+        R_\mathrm{3} = \mathrm{30\,k\Omega},\
+        R_\mathrm{4} = \mathrm{10\,k\Omega},\
+        R_\mathrm{5} = \mathrm{20\,k\Omega},\
+        R_\mathrm{6} = \mathrm{40\,k\Omega}
     $
     \begin{figure}[H]
         \centering
-        \resizebox{0.95\textwidth}{!}{\input{Tikz/src/FigOPVzweistufig.tex}
-        \alttext{\alttext{Das Bild zeigt einen elektronischen Schaltkreis mit sechs Widerständen und zwei Operationsverstärkern. Links sind drei Spannungsquellen mit den Bezeichnungen \(U_{\mathrm{E1}}\), \(U_{\mathrm{E2}}\) und \(U_{\mathrm{E3}}\), die von oben nach unten angeordnet sind. Die Widerstände sind beschriftet als \(R_1\), \(R_2\), \(R_3\), \(R_4\), \(R_5\) und \(R_6\).
-        \(R_1\) ist oben links parallel zu \(R_2\) darunter geschaltet. Darunter befindet sich \(R_3\), der mit einem Knotenpunkt verbunden ist. Von diesem Knoten führt eine Leitung zu dem ersten Operationsverstärker N1. Zwischen dem Eingang des Operationsverstärkers N1 und seinem Ausgang liegt der Widerstand \(R_4\) in einer Rückkopplungsschleife. Der Ausgang von N1 ist über den Widerstand \(R_5\) mit dem Eingang des zweiten Operationsverstärkers N2 verbunden.
-        Zwischen dem Eingang und Ausgang von N2 befindet sich der Widerstand \(R_6\) in einer Rückkopplungsschleife. Der Ausgang des zweiten Operationsverstärkers ist als Spannung \(U_\mathrm{A}\) bezeichnet. Alle Verbindungen sind durch Leitungen dargestellt, die die Bauteile miteinander verbinden und auf Masse bezogen sind.}}
+        \resizebox{0.95\textwidth}{!}{\input{Tikz/src/FigOPVzweistufig.tex}\alttext{\alttext{Das Bild zeigt einen elektronischen Schaltkreis mit sechs Widerständen und zwei Operationsverstärkern. Links sind drei Spannungsquellen mit den Bezeichnungen \(U_{\mathrm{E1}}\), \(U_{\mathrm{E2}}\) und \(U_{\mathrm{E3}}\), die von oben nach unten angeordnet sind. Die Widerstände sind beschriftet als \(R_1\), \(R_2\), \(R_3\), \(R_4\), \(R_5\) und \(R_6\).
+                    \(R_1\) ist oben links parallel zu \(R_2\) darunter geschaltet. Darunter befindet sich \(R_3\), der mit einem Knotenpunkt verbunden ist. Von diesem Knoten führt eine Leitung zu dem ersten Operationsverstärker N1. Zwischen dem Eingang des Operationsverstärkers N1 und seinem Ausgang liegt der Widerstand \(R_4\) in einer Rückkopplungsschleife. Der Ausgang von N1 ist über den Widerstand \(R_5\) mit dem Eingang des zweiten Operationsverstärkers N2 verbunden.
+                    Zwischen dem Eingang und Ausgang von N2 befindet sich der Widerstand \(R_6\) in einer Rückkopplungsschleife. Der Ausgang des zweiten Operationsverstärkers ist als Spannung \(U_\mathrm{A}\) bezeichnet. Alle Verbindungen sind durch Leitungen dargestellt, die die Bauteile miteinander verbinden und auf Masse bezogen sind.}}
         }
 
         \label{fig:FigOPV3Eingaenge}
     \end{figure}
-%    \speech{
-%        Aufgabe 16: Zweistufige Operationsverstärkerschaltung mit drei Eingängen  
-%        
-%        Gegeben ist eine Schaltung mit zwei Operationsverstärkern N1 und N2.  
-%        Die Widerstände haben folgende Werte:  
-%        R1 = 10 Kiloohm, R2 = 20 Kiloohm, R3 = 30 Kiloohm,  
-%        R4 = 10 Kiloohm, R5 = 20 Kiloohm, R6 = 40 Kiloohm.  
-%        
-%        Die Eingangsspannungen U E1, U E2 und U E3 werden über die Widerstände R1, R2 und R3  
-%        an den invertierenden Eingang des ersten Operationsverstärkers N1 geführt.  
-%        Der nichtinvertierende Eingang von N1 ist mit Masse verbunden.  
-%        Die Rückkopplung erfolgt über den Widerstand R4.  
-%        
-%        Der Ausgang des ersten Operationsverstärkers ist über den Widerstand R5  
-%        mit dem invertierenden Eingang des zweiten Operationsverstärkers N2 verbunden.  
-%        Der nichtinvertierende Eingang von N2 ist ebenfalls mit Masse verbunden.  
-%        Die Rückkopplung erfolgt über den Widerstand R6.  
-%        
-%        Gesucht ist die Ausgangsspannung U A in Abhängigkeit der Eingangsspannungen U E1, U E2 und U E3.  
-%        }
-        
 }
 
 \Loesung{
-	Ausgangsspannung nach 1. OPV mit folgender Formel berechnen ($U_{\mathrm{A1}}$):
+    Ausgangsspannung nach 1. OPV mit folgender Formel berechnen ($U_{\mathrm{A1}}$):
     \begin{align*}
-        U_\mathrm{A1} &= - (U_\mathrm{E1} \cdot \frac{R_4}{R_1} + U_\mathrm{E2} \cdot \frac{R_4}{R_2} + U_\mathrm{E3} \cdot \frac{R_4}{R_3}) \\
-        U_\mathrm{A1}&= - (U_\mathrm{E1} \cdot \frac{10}{10} + U_\mathrm{E2} \cdot \frac{10}{20} + U_\mathrm{E3} \cdot \frac{10}{30}) \\
-        U_\mathrm{A1} &= - (U_\mathrm{E1} + \frac{1}{2} \cdot U_\mathrm{E2} + \frac{1}{3} \cdot U_\mathrm{E3}) \\
+        U_\mathrm{A1} & = - (U_\mathrm{E1} \cdot \frac{R_4}{R_1} + U_\mathrm{E2} \cdot \frac{R_4}{R_2} + U_\mathrm{E3} \cdot \frac{R_4}{R_3}) \\
+        U_\mathrm{A1} & = - (U_\mathrm{E1} \cdot \frac{10}{10} + U_\mathrm{E2} \cdot \frac{10}{20} + U_\mathrm{E3} \cdot \frac{10}{30})       \\
+        U_\mathrm{A1} & = - (U_\mathrm{E1} + \frac{1}{2} \cdot U_\mathrm{E2} + \frac{1}{3} \cdot U_\mathrm{E3})                               \\
     \end{align*}
     Daraus egibt sich für die gesamte Ausgangsspannung ($U_\mathrm{A}$):
     \begin{align*}
-        U_\mathrm{A} &= - \frac{R_6}{R_5} \cdot U_\mathrm{\mathrm{A1}} \\
-        U_\mathrm{A} &= - \frac{40}{20} \cdot (- (U_\mathrm{E1} + \frac{1}{2} \cdot U_\mathrm{E2} + \frac{1}{3} \cdot U_\mathrm{E3})) \\
-        U_\mathrm{A} &= 2 \cdot U_\mathrm{E1} + U_\mathrm{E2} + \frac{2}{3} \cdot U_\mathrm{E3} 
+        U_\mathrm{A} & = - \frac{R_6}{R_5} \cdot U_\mathrm{\mathrm{A1}}                                                                \\
+        U_\mathrm{A} & = - \frac{40}{20} \cdot (- (U_\mathrm{E1} + \frac{1}{2} \cdot U_\mathrm{E2} + \frac{1}{3} \cdot U_\mathrm{E3})) \\
+        U_\mathrm{A} & = 2 \cdot U_\mathrm{E1} + U_\mathrm{E2} + \frac{2}{3} \cdot U_\mathrm{E3}
     \end{align*}
 
-  %  \speech{
-  %      Lösung für Aufgabe 16.
-  %      
-  %      Gegeben ist eine zweistufige Operationsverstärkerschaltung. Die Ausgangsspannung des ersten Operationsverstärkers, U A1, wird mit folgender Formel berechnet:
-  %      
-  %      U A1 ist gleich minus Klammer auf U E1 mal R 4 durch R 1 plus U E2 mal R 4 durch R 2 plus U E3 mal R 4 durch R 3 Klammer zu.
-  %      
-  %      Einsetzen der Werte. U A1 ist gleich minus Klammer auf U E1 mal 10 durch 10 plus U E2 mal 10 durch 20 plus U E3 mal 10 durch 30 Klammer zu.
-  %      
-  %      Nach Kürzen bleibt. U A1 ist gleich minus Klammer auf U E1 plus ein halb mal U E2 plus ein Drittel mal U E3 Klammer zu.
-  %      
-  %      Daraus ergibt sich für die gesamte Ausgangsspannung U A:
-  %      
-  %      U A ist gleich minus R 6 durch R 5 mal U A1.
-  %      
-  %      Einsetzen der Werte. U A ist gleich 40 durch 20 mal Klammer auf minus Klammer auf U E1 plus ein halb mal U E2 plus ein Drittel mal U E3 Klammer zu Klammer zu.
-  %      
-  %      Nach Vereinfachung bleibt. U A ist gleich zwei mal U E1 plus U E2 plus zwei Drittel mal U E3.
-  %      
- %       Die Ausgangsspannung ist somit eine gewichtete Summe der Eingangsspannungen U E1, U E2 und U E3 mit den entsprechenden Verstärkungsfaktoren.
-%        }
-Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
+
+    Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
 }

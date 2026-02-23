@@ -1,52 +1,52 @@
-\subsection{Spannungsteiler mit Operationsverstärker als Spannungsfolger\label{Aufg27}}
+\subsection{Spannungsteiler mit Operationsverstärker als Spannungsfolger}
 % Alt: Praktikumsaufgabe 13
 \Aufgabe{
-        Zeichnen Sie einen neuen Schaltplan bestehend aus einem belasteten Spannungsteiler, der durch einen Operationsverstärker als Impedanzwandler ergänzt wird.  
-        Die Bauteilwerte sind wie folgt gegeben:
-        
-        \begin{itemize}
-            \item Widerstände: $R_1 = R_2 = 10\,\mathrm{k\Omega}$
-            \item Lastwiderstand: $R_\mathrm{L} = 2{,}2\,\mathrm{k\Omega}$
-            \item Versorgungsspannung: $\mathrm{U_{CC} = +15\,V}$
-        \end{itemize}
-        
-        Der Operationsverstärker wird als Impedanzwandler (Spannungsfolger) geschaltet.  
-        Sein Ausgang speist den Lastwiderstand $R_\mathrm{L}$.
-        
-        \begin{itemize}
-            \item[a)] Berechnen Sie die Ausgangsspannung $U_\mathrm{C}$ mit und ohne Lastwiderstand $\mathrm{R_L}$.
-            \item[b)] Vergleichen Sie die Ergebnisse mit denen aus Aufgabe 13.  
-            \item[c)] Erklären Sie, warum sich die Spannung $U_\mathrm{C}$ durch den Lastwiderstand in dieser Schaltung nicht ändert.
-        \end{itemize}   
+    \label{Aufg27}
+    Zeichnen Sie einen neuen Schaltplan bestehend aus einem belasteten Spannungsteiler, der durch einen Operationsverstärker als Impedanzwandler ergänzt wird.
+    Die Bauteilwerte sind wie folgt gegeben:
+
+    \begin{itemize}
+        \item Widerstände: $R_1 = R_2 = 10\,\mathrm{k\Omega}$
+        \item Lastwiderstand: $R_\mathrm{L} = 2{,}2\,\mathrm{k\Omega}$
+        \item Versorgungsspannung: $\mathrm{U_{CC} = +15\,V}$
+    \end{itemize}
+
+    Der Operationsverstärker wird als Impedanzwandler (Spannungsfolger) geschaltet.
+    Sein Ausgang speist den Lastwiderstand $R_\mathrm{L}$.
+
+    \begin{itemize}
+        \item[a)] Berechnen Sie die Ausgangsspannung $U_\mathrm{C}$ mit und ohne Lastwiderstand $\mathrm{R_L}$.
+        \item[b)] Vergleichen Sie die Ergebnisse mit denen aus Aufgabe 13.
+        \item[c)] Erklären Sie, warum sich die Spannung $U_\mathrm{C}$ durch den Lastwiderstand in dieser Schaltung nicht ändert.
+    \end{itemize}
 }
 
 \Loesung{
     \begin{figure}[H]
         \centering
-            \input{Tikz/src/LsgPrakSpannungsfolger.tex}
-            \alttext{Die Abbildung zeigt eine Schaltung mit einem Operationsverstärker, der über ein Widerstandsnetzwerk beschaltet ist. Der Operationsverstärker besitzt einen nichtinvertierenden Eingang (+), einen invertierenden Eingang (-) sowie einen Ausgang.
+        \input{Tikz/src/LsgPrakSpannungsfolger.tex}\alttext{Die Abbildung zeigt eine Schaltung mit einem Operationsverstärker, der über ein Widerstandsnetzwerk beschaltet ist. Der Operationsverstärker besitzt einen nichtinvertierenden Eingang (+), einen invertierenden Eingang (-) sowie einen Ausgang.
             Am linken oberen Knoten liegt eine Spannungsquelle \(U_0\), die zwischen dem oberen Knoten und Masse geschaltet ist. Von diesem oberen Knoten führt der Widerstand \(R_1\) zu einem Zwischenknoten. Von dort verläuft der Widerstand \(R_2\) weiter nach unten zu einem Masseknoten. Der Zwischenknoten zwischen \(R_1\) und \(R_2\) ist mit dem nichtinvertierenden Eingang des Operationsverstärkers verbunden. Damit bildet \(R_1\) und \(R_2\) einen Spannungsteiler zur Erzeugung einer Eingangsspannung für den Plus-Eingang.
             Der Ausgang des Operationsverstärkers ist auf der rechten Seite dargestellt. Von dort führt eine Leitung zurück zum invertierenden Eingang, wodurch eine direkte Gegenkopplung entsteht.
-            Zusätzlich ist am Ausgang ein Lastwiderstand \(R_mathrm{L}\) angeschlossen. Dieser ist zwischen dem Ausgangsknoten und dem unteren Masseknoten geschaltet.}
-            \label{fig:LsgPrakSpannungsfolger}
+            Zusätzlich ist am Ausgang ein Lastwiderstand \(R_\mathrm{L}\) angeschlossen. Dieser ist zwischen dem Ausgangsknoten und dem unteren Masseknoten geschaltet.}
+        \label{fig:LsgPrakSpannungsfolger}
     \end{figure}
     \begin{itemize}
         \item[a)] Berechnung der Ausgangsspannung $U_\mathrm{C}$ mit und ohne Lastwiderstand \\
-    Da der Operationsverstärker als Spannungsfolger (Impedanzwandler) geschaltet ist, entspricht die Ausgangsspannung $U_\mathrm{A}$ exakt der Spannung am Spannungsteiler:
-    \[
-    U_\mathrm{A} = U_\mathrm{C} = 7{,}5\,\mathrm{V}
-    \]
-    Da der Operationsverstärker einen sehr hohen Eingangswiderstand hat, wird die Spannung nicht durch den Lastwiderstand beeinflusst.  
-    Somit bleibt die Ausgangsspannung konstant bei 7,5 V, unabhängig davon, ob $R_\mathrm{L}$ angeschlossen ist oder nicht.
+              Da der Operationsverstärker als Spannungsfolger (Impedanzwandler) geschaltet ist, entspricht die Ausgangsspannung $U_\mathrm{A}$ exakt der Spannung am Spannungsteiler:
+              \[
+                  U_\mathrm{A} = U_\mathrm{C} = 7{,}5\,\mathrm{V}
+              \]
+              Da der Operationsverstärker einen sehr hohen Eingangswiderstand hat, wird die Spannung nicht durch den Lastwiderstand beeinflusst.
+              Somit bleibt die Ausgangsspannung konstant bei 7,5 V, unabhängig davon, ob $R_\mathrm{L}$ angeschlossen ist oder nicht.
 
-    \item[b)] Vergleich mit Aufgabe 13 \\
-    Im Gegensatz zur ersten Schaltung sinkt die Spannung hier nicht ab, wenn der Lastwiderstand $R_\mathrm{L}$ angeschlossen wird.  
-    Der Operationsverstärker entkoppelt den Spannungsteiler von der Last, sodass der Spannungsteiler immer seine ursprüngliche Spannung hält.
+        \item[b)] Vergleich mit Aufgabe 13 \\
+              Im Gegensatz zur ersten Schaltung sinkt die Spannung hier nicht ab, wenn der Lastwiderstand $R_\mathrm{L}$ angeschlossen wird.
+              Der Operationsverstärker entkoppelt den Spannungsteiler von der Last, sodass der Spannungsteiler immer seine ursprüngliche Spannung hält.
 
-    \item[c)] Erklärung der Spannungsstabilität durch den Operationsverstärker \\
-    Der Operationsverstärker als Impedanzwandler besitzt einen hohen Eingangswiderstand und einen geringen Ausgangswiderstand.  
-    Dadurch wird der Lastwiderstand nicht mehr direkt mit dem Spannungsteiler verbunden, sondern erhält seinen Strom aus dem OPV.  
-    Dies führt dazu, dass die Ausgangsspannung stabil bleibt, unabhängig von der Belastung.
+        \item[c)] Erklärung der Spannungsstabilität durch den Operationsverstärker \\
+              Der Operationsverstärker als Impedanzwandler besitzt einen hohen Eingangswiderstand und einen geringen Ausgangswiderstand.
+              Dadurch wird der Lastwiderstand nicht mehr direkt mit dem Spannungsteiler verbunden, sondern erhält seinen Strom aus dem OPV.
+              Dies führt dazu, dass die Ausgangsspannung stabil bleibt, unabhängig von der Belastung.
     \end{itemize}
     Siehe: Abschnitt \ref{fig: Verschaltung Verstaerker} und Tabelle \ref{tab:Grundschaltungen}
 }
