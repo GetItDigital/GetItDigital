@@ -871,7 +871,7 @@
 
 	\b{
 		\begin{itemize}\centering
-			\item $ \displaystyle G = \frac{1}{R} \quad [G] = 1\, \text{Siemens} = 1\, \text{S} = 1\,\, \frac{\text{1}}{\Omega}$
+			\item $ \displaystyle G = \frac{1}{R} \qquad [G] = 1\, \text{Siemens} = 1\, \text{S} = 1\,\, \frac{\text{1}}{\Omega}$ 
 		\end{itemize}
 	}
 
@@ -893,9 +893,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Abbildung Leiter %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame} %; TODO: Hillgärtner: Diese Folie habe ich die ganze Zeit eigentlich gesucht. Ich hätte mir das alles noch mal genauer vorher anschauen sollen – wie das immer so ist, merkt man das beim Sprechen. Diese Folie wäre total clever vor der ganzen Herleitung, die ab Folie 6 folgt. Das heißt, diese Folie bitte vorziehen – vor die Folie 6 – also noch hinter das Bild, wo die Widerstände dargestellt worden sind. Hinweis Ende.
+\begin{frame}[t] %; TODO: Hillgärtner: Diese Folie habe ich die ganze Zeit eigentlich gesucht. Ich hätte mir das alles noch mal genauer vorher anschauen sollen – wie das immer so ist, merkt man das beim Sprechen. Diese Folie wäre total clever vor der ganzen Herleitung, die ab Folie 6 folgt. Das heißt, diese Folie bitte vorziehen – vor die Folie 6 – also noch hinter das Bild, wo die Widerstände dargestellt worden sind. Hinweis Ende.
 
-	\ftx{Geometrische Eigenschaften}
+	\ftx{Geometrische Eigenschaften eines Widerstands}
 
 	\begin{figure}[H]
 		\centering
@@ -905,12 +905,13 @@
 				\item Querschnittsfläche $A$
 				\item Spezifische Leitfähigkeit $\kappa$
 			\end{itemize}
+			\vspace{1cm}
 			\includesvg[width=0.9\textwidth]{Widerstand}}
 		\s{\includesvg[width=0.8\textwidth]{Widerstand}
 			\caption{\textbf{Geometrische Darstellung eines Widerstands.} Das elektrische Feld \(\vec{E}\) erzeugt eine Stromdichte
 				\(\vec{J}\) durch den Widerstand. Die Beziehung zwischen der Stromdichte und dem elektrischen Feld wird durch das Ohmsche Gesetz
 				\( \vec{J} = \kappa \cdot \vec{E} \) beschrieben.}}
-
+			\alttext{Die Abbildung zeigt eine schematische Darstellung eines zylindrischen Widerstands. Entlang der Widerstandsachse zeigen zwei Pfeile nach rechts, das elektrische Feld E sowie die Stromdichte J. Der zylindrische Leiter hat eine Querschnittsfläche A und die Leiterlänge beträgt l. Das elektrische Feld E erzeugt eine Stromdichte J durch den Widerstand. Die Beziehung zwischen der Stromdichte und dem elektrischen Feld wird durch das Ohmsche Gesetz J ist gleich Kappa mal E beschrieben.}
 		\label{fig:Widerstand}
 	\end{figure}
 
@@ -932,25 +933,23 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - 	Formeln R		  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\ftx{Geometrische Eigenschaften}
+	\ftx{Der Widerstandswert}
 	\b{
-
 		\begin{itemize}
-			\item Allgemeine Formel für den Widerstand in Bezug auf die Materialeigenschaften
+			\item Allgemeine Formel in Bezug auf die Materialeigenschaften:
 		\end{itemize}
 		\vspace{1cm}
-		\begin{equation*}
-			[R] = 1\, \text{Ohm} = 1\, \text{$\Omega$}
+		% \begin{itemize}\centering
+		% 	\item $ \displaystyle R = \rho_\mathrm{R} \cdot \frac{l}{A} \qquad [R] = 1\, \text{Ohm} = 1\, \text{$\Omega$} $
+		% \end{itemize}
+		\begin{equation*}\centering
+		 R = \rho_\mathrm{R} \cdot \frac{l}{A} \qquad [R] = 1\, \text{Ohm} = 1\, \text{$\Omega$} 
 		\end{equation*}
-		\vspace{0.1cm}
-		\begin{equation*}
-			R = \rho_\mathrm{R} \cdot \frac{l}{A}
-		\end{equation*}
-		\begin{align*}
-			\rho_\mathrm{R} & : \text{spezifischer Widerstand des Materials } (\Omega \text{m}) \\
-			l               & : \text{Länge des Materials (m)}                                  \\
-			A               & : \text{Querschnittsfläche des Materials } (\text{m}^2)           \\
-		\end{align*}
+	\begin{flalign*}
+		\rho_\mathrm{R} &:\ \text{spezifischer Widerstand des Materials }[\Omega\,\mathrm{m}] &&\\
+		l               &:\ \text{Länge des Materials }[\mathrm{m}] &&\\
+		A               &:\ \text{Querschnittsfläche des Materials }[\mathrm{m}^2] &&\\
+	\end{flalign*}
 
 	}
 	%falscher Ort für diesen speech Befehl
@@ -972,29 +971,21 @@
 
 \end{frame}
 \s{
-	\begin{equation*}
-		[R] = 1\, \text{Ohm} = 1\, \text{$\Omega$}
-	\end{equation*}
-	\vspace{0.1cm}
 	\begin{equation}
-		R = \rho_\mathrm{R} \cdot \frac{l}{A}
+		R = \rho_\mathrm{R} \cdot \frac{l}{A} \qquad [R] = 1\, \text{Ohm} = 1\, \text{$\Omega$}
 	\end{equation}
-
-	\begin{align*}
-		\rho_\mathrm{R} & : \text{spezifischer Widerstand des Materials } (\Omega \text{m}) \\
-		l               & : \text{Länge des Materials (m)}                                  \\
-		A               & : \text{Querschnittsfläche des Materials } (\text{m}^2)           \\
-	\end{align*}
+	\begin{flalign*}
+	\rho_\mathrm{R} &:\ \text{spezifischer Widerstand des Materials }[\Omega\,\mathrm{m}] &&\\
+	l               &:\ \text{Länge des Materials }[\mathrm{m}] &&\\
+	A               &:\ \text{Querschnittsfläche des Materials }[\mathrm{m}^2] &&\\
+	\end{flalign*}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende 	- 	Formeln R			  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \s{
-	\textbf{Einführung in die Darstellung von Schaltkreisen}
-
-
-	In der Elektrotechnik werden zur Darstellung von elektrischen Netzwerken sogenannte Schaltbilder verwendet.
-	Inhalt dieser Schaltbilder sind Schaltsymbole, welche für die elektrischen Eigenschaften bzw. ganze Bauelemente, verwendet werden.
-	Abbildung \ref{fig:erstes_schaltbild} zeigt beispielhaft ein solches Schaltbild.
+	\subsubsection{Einführung in die Darstellung von Schaltkreisen}
+	%\textbf{Einführung in die Darstellung von Schaltkreisen}
+	In der Elektrotechnik werden zur Darstellung elektrischer Netzwerke sogenannte Schaltbilder verwendet. Diese bestehen aus Schaltsymbolen, die elektrische Eigenschaften oder ganze Bauelemente repräsentieren. Abbildung \ref{fig:erstes_schaltbild} zeigt beispielhaft ein solches Schaltbild.
 }
 \begin{frame}
 	\ftx{Einführung in die Darstellung von Schaltkreisen}
@@ -1003,7 +994,8 @@
 		\hspace{1cm} % Um es in der Mitte zu haben
 		\input{Tikz/src/01_Leitfaehigkeit/Schaltplan_Reihenschaltung}
 
-		\s{\caption{\textbf{Schaltplan einer Reihenschaltung.} Die aus einer Gleichspannungsquelle einem Schalter, einem Verbraucher und einem Widerstand besteht.}}
+		\s{\caption{\textbf{Schaltbild einer Reihenschaltung.} Die aus einer Gleichspannungsquelle einem Schalter, einem Verbraucher und einem Widerstand besteht.}}
+		\alttext{Die Abbildung zeigt ein Beispiel für ein Schaltbild einer Reihenschaltung. Sie besteht aus einer Gleichspannungsquelle, einem Schalter, einem Verbraucher hier eine Glühbirne und einem Widerstand. Diese vier Elemente sind durch Linien verbunden. Insgesamt liegt ein geschlossener Stromkreis vor, sodass der Strom I fließt.}
 		\label{fig:erstes_schaltbild}
 	\end{figure}
 	\speech{01_Leitfaehigkeit_und_Widerstand15}{1}
@@ -1012,14 +1004,12 @@
 \s{
 	Das Schaltbild besteht aus vier Elementen, welche mit Linien verbunden sind. Es stellt eine Reihenschaltung bestehend aus
 	einer Spannungsquelle, einem Schalter, einer Glühlampe und einem Widerstand, dar. Der Widerstand stellt den Leitungswiderstand der gesamten Leitung dar,
-	während die Verbindungslinien per Definition ideale Verbindungen ohne weitere Eigenschaften darstellen.
-
-	Des Weiteren ist eine Spannung $U_{\mathrm{q}}$, sowie der Strom $I$ eingezeichnet, welcher jedoch erst fließen kann, wenn der Schalter geschlossen wird.
+	während die Verbindungslinien per Definition ideale Verbindungen ohne weitere Eigenschaften darstellen. Des Weiteren ist eine Spannung $U_{\mathrm{q}}$, sowie der Strom $I$ eingezeichnet, welcher jedoch erst fließen kann, wenn der Schalter geschlossen wird.
 	Im Folgenden werden die drei grundlegenden elektrischen Eigenschaften, sowie deren Schaltsymbole tiefer behandelt.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Widerstand als Bauelement %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\ftx{Widerstand als Bauelement}
+	\ftx{Der ideale Widerstand}
 	\subsection{Widerstand als Bauelement}
 
 	\s{
@@ -1034,7 +1024,7 @@
 	% Europäisches und amerikanisches Symbol
 	\b{
 		\begin{itemize}
-			\item Europäisches (links) und amerikanisches (rechts) Schaltelement für Widerstand
+			\item Europäisches (links) und amerikanisches (rechts) Schaltelement
 		\end{itemize}
 		\begin{figure}[H]
 			\centering
@@ -1050,12 +1040,8 @@
 			\caption{\textbf{Schaltungselement für Widerstand.} Europäisches (links) und amerikanisches (rechts).}
 			\label{fig:resistor-symbols_}
 		\end{figure}
-	}
 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Widerstand EU und US 	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\s{
-		Sobald eine Gleichspannungsquelle an einen Widerstand $R$ angeschlossen wird, verhalten sich Strome und Spannungen linear.
+		Sobald eine Gleichspannungsquelle an einen idealen Widerstand $R$ angeschlossen wird, verhalten sich Strome und Spannungen linear.
 		Abbildung \ref{fig:idealer Widerstand} zeigt den durch den Widerstand fließenden Strom $I_\mathrm{R}$,
 		sowie die abfallende Spannung $U_\mathrm{R}$.
 	}
@@ -1066,7 +1052,7 @@
 		\only<2->{
 
 			\begin{itemize}
-				\item Der idealer Widerstand als Schaltsymbol
+				\item Der ideale Widerstand als Schaltsymbol
 			\end{itemize}
 			% Idealer Widerstand
 			\begin{figure}[H]
@@ -1093,8 +1079,7 @@
 	\begin{figure}[H]
 		\centering
 		\input{Tikz/src/01_Leitfaehigkeit/Idealer_Widerstand}
-
-		\caption{\textbf{Idealer Widerstand.} Zeigt den Spannungsabfall über den Widerstand und den Stromfluss durch ihn.}
+		\caption{\textbf{Idealer Widerstand.} Mit einem Spannungsabfall und einem Stromfluss.}
 		\label{fig:idealer Widerstand}
 	\end{figure}
 }
@@ -1102,7 +1087,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Widerstand Schaltbild %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-	\ftx{Widerstand als Bauelement}
+	\ftx{Der reale Widerstand}
 	\s{
 		Das Schaltsymbol des Widerstandes wird in Schaltungen immer als idealer Widerstand berücksichtigt.
 		Unter Vernachlässigung der Temperaturabhängigkeit trifft dies im Gleichspannungsfall auch weitestgehend zu (Schaltvorgänge ausgenommen).
@@ -1113,7 +1098,7 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - realer Widerstand Schaltbild %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\b{
 		\begin{itemize}
-			\item Ersatzschaltbild eines realen Widerstands mit $C_\mathrm{p}$ und $L_\mathrm{s}$
+			\item Ersatzschaltbild eines realen Widerstands
 		\end{itemize}
 	}
 	% Realer Widerstand
@@ -1122,8 +1107,13 @@
 		\input{Tikz/src/01_Leitfaehigkeit/Realer_Widerstand}
 		\s{\caption{\textbf{Ersatzschaltbild eines realen Widerstands.} Der ideale Widerstand \( R \) wird durch eine Serien-Induktivität $L_\mathrm{s}$
 				und einen parallelen Kondensator $C_\mathrm{p}$ ergänzt, um parasitäre Effekte zu berücksichtigen.}}
+			\alttext{Das Ersatzschaltbild eines realen Widerstands besteht aus einem idealen Widerstand R in Reihe mit einer Induktivität Ls sowie einem parallel geschalteten Kondensator C, die parasitäre Effekte modellieren.}
 		\label{fig:ESB realen Widerstand}
 	\end{figure}
+	\b{\begin{itemize}
+  \item $C_\mathrm{p}$ (Parallelkapazität) und $L_\mathrm{s}$ (Serieninduktivität) beschreiben die parasitären Effekte.
+	\end{itemize}}
+
 	\speech{01_Leitfaehigkeit_und_Widerstand17}{1}{
 		Wir haben eben den WIderstand als ideales Bauteil kennen gelernt. In der Realität gibt es aber leider keine idealen Bauteile, auch wenn das of wünschenswert ist.
 		Wenn wir uns jetzt mal genauer den Widerstand als Bauteil anschauen, dann haben wir natürlich das Bauelement den ohmschen Widerstand. Das wäre ja auch schlimm, wenn nicht. Auf der anderen Seite existieren aber auch parasitären Effekten in unserem realen Bauteil. Denn wir haben ja ein elektrisches Feld innerhalb des Widerstands. Das heißt da liegt eine Spannung an. Innerhalb dieses elektrischen Feldes kann eben auch Energie gespeichert werden. Und das werden wir im späteren Verlauf des Tests noch sehen. Diese Fähigkeit, Energie im elektrischen Feld zu speichern, beschreiben wir mit der Kapazität C. Das heißt, in diesem ohmschen Widerstand, der eigentlich nur ein Widerstand sein sollte, befindet sich immer auch eine parallele Kapazität. Ferner haben wir Anschlussleitungen und Ähnliches. Ein stromdurchflossener Leiter ist immer von einem Magnetfeld umgeben, in dem auch Energie gespeichert wird. Und diese Fähigkeit Energie im magnetischen Feld zu speichern beschreiben wir mit der Induktivität L. Und dies repräsentieren wird durch eine Induktivität, hier die Induktivität LS. Das heißt, wir sehen hier zum einen die Schaltungsymbole R aber auch L und C, als parasitäte größen. Wir sehen eben auch, dass ein reales Bauteil Widerstand nicht nur den gewünschten Anteil Ohmscher Widerstand hat, sondern eben auch noch eine serielle induktivität und eine parallel dazu liegende Kapazität. Das sorgt tatsächlich im realen Leben dann für Probleme, insbesondere wenn wir nicht mehr nur über Gleichstrom reden, sondern über Strom, der sich zeitlich schnell ändert. Denn dann spielen diese beiden Elemente L und C eine sehr entscheidende Rolle, was wir im weiteren Verlauf dieses Moduls und auch der folgenden Module dann noch sehen werden. Wichtig festzuhalten ist, wenn du einen Schaltkreis siehst, zumindest im Rahmen dieses Moduls und im Rahmen dieses Projektes Get It Digital, dann ist er bereits vollständig beschrieben. Das heißt, wir haben das Bauteil, was wir real einbauen, mit den dargestellten Schaltungssymbolen bereits dargestellt. Du musst jetzt nicht jeden Widerstand in einer Schaltung ersetzen, durch dieses Ersatzschaltbild, sondern du rechnest erstmal so, wie es dargestellt ist. Aber man darf sich oder muss sich von dem Gedanken lösen, dass ein reales Bauelement, wie ein Widerstand, wirklich nur aus diesem Schaltungssymbol besteht. Da steckt meistens noch deutlich mehr dahinter. In vielen Fällen können wir das aber vernachlässigen. Und wie kriegen wir jetzt diese Daten? Eigentlich sollte der Bauteilhersteller uns diese Daten liefern. Jetzt finden wir in den allerwenigsten Datenblättern von Widerständen die parasitären Induktivität und Kapazität. Das ist ein Ärgernis. Wenn man aber merkt, dass man die braucht, dann kann man die letztlich durch Ausmessung oder Ähnliches herauszufinden. Als Zusammenfassung. Wir haben das ideale Schaltungssymbol eines Widerstand. Wir haben das reale Bauteil Widerstand. Und das reale Bauteil hat überwiegend einen Widerstand, aber auch parasitäre ungewünschte Eigenschaften.
@@ -1177,14 +1167,8 @@
 % \end{table}
 
 \s{
-	In der Elektrotechnik werden werden Widerstände, auch Festwiderstände genannt, in der Schaltungsentwicklung verwendet.
-	Eine der bekanntesten Ausführungen sind die THT-Widerstände (Through-Hole Technology). Obwohl diese Art in vielen Anwendungen von SMD-Bauteilen (Surface-Mount Device) abgelöst worden sind,
-	gibt es immer noch Anwendungsfälle in denen sie Sinn machen. Beispiele sind Prototyping, DIY-Projekte, Leistungsanwendungen oder Leiterplatten mit hohen mechanischen Anforderungen.
-	Die THT-Widerstände sind durch farbige Ringe gekennzeichnet, welche Aufschluss über den Widerstandswert und die Toleranz liefern.
-	Abbildung \ref{fig:Farbkodierung vom Widerstand} zeigt einen THT-Widerstand mit dem dazugehörigen Ableseschema und einer Tabelle zum Ablesen der Werte:
+	In der Elektrotechnik werden Widerstände in der Schaltungsentwicklung eingesetzt. Eine weit verbreitete Bauform sind Festwiderstände, die sowohl als THT-Widerstände (Through-Hole Technology) als auch als SMD-Bauteile (Surface-Mount Device) ausgeführt werden. Obwohl THT-Widerstände in vielen Anwendungen durch SMD-Bauteile ersetzt wurden, gibt es weiterhin Einsatzfälle, in denen sie sinnvoll sind, zum Beispiel beim Prototyping, in DIY-Projekten, bei Leistungsanwendungen oder bei Leiterplatten mit hohen mechanischen Anforderungen. THT-Widerstände sind häufig durch farbige Ringe gekennzeichnet, aus denen sich Widerstandswert und Toleranz ablesen lassen. Abbildung \ref{fig:Farbkodierung vom Widerstand} zeigt einen THT-Widerstand mit dem dazugehörigen Ableseschema und einer Tabelle zum Ablesen der Werte:
 } % nur im Skript
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - farbige Widerstandstabelle mit Text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1192,17 +1176,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - farbige Widerstandstabelle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\ftx{Widerstand als Bauelement}
+	\ftx{Widerstandsfarbcodierung}
 	\b{
-		\begin{itemize}
-			\item Widerstandsfarbcodierung
-		\end{itemize}
 		\begin{figure}[H]
 			\centering
 			\begin{minipage}[b]{0.5\textwidth}
 				\centering
-				\foo{width=\textwidth, alt={XX}}{width=\textwidth}{Farbcode_von_Widerstaenden}{
-					\put(45, 40){Band}
+				\foo{width=\textwidth, alt={Oben ist ein THT-Widerstand mit fünf Farbringen dargestellt. Pfeile kennzeichnen die Bedeutung der Ringe: Band 1, Band 2 und Band 3 sind die Ziffern, der nächste Ring ist der Multiplikator, der letzte Ring ist die Toleranz. Darunter ist ein Rechenbeispiel gezeigt: 1-5-0 mit Multiplikator 100 Ohm ergibt 15 Kiloohm, Toleranz plus minus 5 Prozent. Unten steht eine Tabelle zur Farbcodierung mit den Spalten Farbe, 1./2./3. Band, Multiplikator und Toleranz. Zuordnung: Schwarz: 0, Multiplikator 1 Ohm. Braun: 1, Multiplikator 10 Ohm, Toleranz plus minus 1 Prozent. Rot: 2, Multiplikator 100 Ohm, Toleranz plus minus 2 Prozent. Orange: 3, Multiplikator 1 Kiloohm. Gelb: 4, Multiplikator 10 Kiloohm. Grün: 5, Multiplikator 100 Kiloohm, Toleranz plus minus 0,5 Prozent. Blau: 6, Multiplikator 1 Megaohm, Toleranz plus minus 0,25 Prozent. Violett: 7, Multiplikator 10 Megaohm, Toleranz plus minus 0,1 Prozent. Grau: 8, Toleranz plus minus 0,05 Prozent. Weiß: 9. Gold: Multiplikator 0,1 Ohm, Toleranz plus minus 5 Prozent. Silber: Multiplikator 0,01 Ohm, Toleranz plus minus 10 Prozent.}}{width=\textwidth}{Farbcode_von_Widerstaenden}{
+					\put(45.5, 38){Band}
 					\put(40, 23){\line(1,1){6}}\put(46, 30){1.}
 					\put(44, 23){\line(1,1){6}}\put(50, 30){2.}
 					\put(48, 23){\line(1,1){6}}\put(54, 30){3.}
@@ -1261,7 +1242,7 @@
 		\begin{minipage}[b]{0.6\textwidth}
 			\centering
 			\foo{width=\textwidth, alt={XX}}{width=\textwidth}{Farbcode_von_Widerstaenden}{
-				\put(47, 40){Band}
+				\put(46.5, 36){Band}
 				\put(40, 23){\line(1,1){6}}\put(46, 30){1.}
 				\put(44, 23){\line(1,1){6}}\put(50, 30){2.}
 				\put(48, 23){\line(1,1){6}}\put(54, 30){3.}
@@ -1304,52 +1285,41 @@
 				\end{tabular}%
 			}
 		\end{minipage}
-		\caption{\textbf{Widerstandsfarbcodierung.} Zeigt die Farbcodes zur Bestimmung des Widerstandswerts und der Toleranz eines Widerstands.}
+		\caption{\textbf{Widerstandsfarbcodierung.} Zeigt die Farbcodes zur Bestimmung von Widerstandswert und Toleranz.}
+		\alttext{Oben ist ein THT-Widerstand mit fünf Farbringen dargestellt. Pfeile kennzeichnen die Bedeutung der Ringe: Band 1, Band 2 und Band 3 sind die Ziffern, der nächste Ring ist der Multiplikator, der letzte Ring ist die Toleranz. Unten steht eine Tabelle zur Farbcodierung mit den Spalten Farbe, 1./2./3. Band, Multiplikator und Toleranz. Zuordnung: Schwarz: 0, Multiplikator 1 Ohm. Braun: 1, Multiplikator 10 Ohm, Toleranz plus minus 1 Prozent. Rot: 2, Multiplikator 100 Ohm, Toleranz plus minus 2 Prozent. Orange: 3, Multiplikator 1 Kiloohm. Gelb: 4, Multiplikator 10 Kiloohm. Grün: 5, Multiplikator 100 Kiloohm, Toleranz plus minus 0,5 Prozent. Blau: 6, Multiplikator 1 Megaohm, Toleranz plus minus 0,25 Prozent. Violett: 7, Multiplikator 10 Megaohm, Toleranz plus minus 0,1 Prozent. Grau: 8, Toleranz plus minus 0,05 Prozent. Weiß: 9. Gold: Multiplikator 0,1 Ohm, Toleranz plus minus 5 Prozent. Silber: Multiplikator 0,01 Ohm, Toleranz plus minus 10 Prozent. Ein Rechenbeispiel ist über der Tabelle welches den Widerstandswert des THT-Widerstands mit fünf Farbringen berechnet: Die Farben der Bänder sind Laut der Tabelle die Nummern 1, 5 und 0 für braun, grün und Schwarz. Der Multiplikator hat die Farbe Rot also 100 Ohm. Zusammen ergibt das, 150 mal 100 gleich 15 Kiloohm mit einer Toleranz die die Farbe gold hat also plus minus 5 Prozent.}
 		\label{fig:Farbkodierung vom Widerstand}
 	\end{figure}
 
+	Die THT-Widerstände gibt es in verschiedenen Ausführungen, welche alle ihre Vor- und Nachteile mit sich bringen. Die Abbildung \ref{fig:Bauarten von Widerständen} zeigt vier Arten, wie diese Umgesetzt werden können.
+
 }%nur Skript
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - farbige Widerstandstabelle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - farbige Widerstandstabelle mit Text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\s{
-	Die THT-Widerstände gibt es in verschiedenen Ausführungen, welche alle ihre Vor- und Nachteile mit sich bringen.
-	Die Abbildung \ref{fig:Bauarten von Widerständen} zeigt vier Arten, wie diese Umgesetzt werden können.
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - graue Widerstände %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Widerstände Bauarten
 \begin{frame}
-	\ftx{Widerstand als Bauelement}
-	\b{
-		\begin{itemize}
-			\item Verschiedene Ausführungen von bedrahteten/THT Widerständen
-		\end{itemize}
-	}
+	\ftx{Verschiedene Ausführungen von Widerständen}
+	
 	\begin{figure}[H]
 		\input{Tikz/src/01_Leitfaehigkeit/Bedrahtete_Widerstaende}
 		\s{\caption{\textbf{Verschiedene Ausführungen von bedrahteten (THT) Widerständen.}}}
+		\alttext{Die Abbildung zeigt vier schematische Darstellungen bedrahteter Widerstände in zwei Gruppen. Links sind Schichtwiderstände: oben ein Schichtwiderstand mit markierter Widerstandsschicht, unten eine gewendelte Ausführung mit spiralförmigem Schnittmuster. Rechts sind Drahtwiderstände: oben eine induktivitätsarme Wicklung mit gegensinnig geführten Drahtbahnen, unten eine bifilare Wicklung mit parallel geführten Drahtbahnen.}
 		\label{fig:Bauarten von Widerständen}
 	\end{figure}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand19}{1}{
 		Es gibt jetzt unterschiedliche Widerstände. Es gibt, wie auf der linken Seite dargestellt, Schichtwiderstände. Das heißt, da hat man eine Widerstandsschicht, die gewendelt oder als Vollmaterial ausgeführt werden kann. Und es gibt Widerstände, die gewickelt werden. Das sind insbesondere die etwas höheren Widerstandswerte, die so aufgebaut sind. Die gibt es dann in einer bifilaren Wicklung oder in einer induktivitätsarmen Wicklung. Wir haben ja vorher bereits gesehen, dass es Induktivitäten auch in Widerständen als Bauteil gibt. Und die wollen wir so gering wie möglich halten. Und dann kommen wir eben auf diese beiden Wicklungsarten als Beispiel. Es gibt noch alle möglichen anderen Formen, aber so sind die Bauteile in der Regel ausgeführt.
 	}
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - graue Widerstände %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Merksatz Widerstand %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\ftx{Merksatz: Widerstand als Bauelement}
-	\begin {Merksatz}{}
-	% In Ingenieurwissenschaftlichen Disziplinen wird für Temperaturen sehr oft Kelvin verwendet.
-	% Null Kelvin entsprechen -273 Grad Celsius, was dem absoluten Nullpunkt entspricht.
-	Der Widerstandswert eines Materials ist abhängig von dessen geometrischen und spezifischen Eigenschaften.
+	\ftx{Merksatz}
+	\begin{Merksatz}{Widerstand}
 
-	\end {Merksatz}
+	Der Widerstandswert eines Materials ist abhängig von dessen geometrischen und spezifischen Eigenschaften.
+	\end{Merksatz}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand20}{1}{
 		Also wir haben gesehen, dass der Widerstand einer Anordnung oder eines Materials abhängig von der Geometrie und von spezifischen Materialeigenschaften, nämlich von der Leitfähigkeit Kappa ist. Auf diese Leitfähigkeit Kappa wollen wir nun im Folgenden nochmal etwas detaillierter eingehen.
