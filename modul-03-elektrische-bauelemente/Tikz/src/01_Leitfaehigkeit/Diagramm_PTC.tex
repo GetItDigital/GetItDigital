@@ -35,6 +35,24 @@
                 (0,0)(3,3/1.4)
             };
         \addlegendentry{PTC Widerstand bei 80°C}
+         \addplot[
+            color=red,
+            only marks,
+            mark=*,
+            mark size=2pt
+        ] coordinates {
+                (2.1,1.5)
+            };
+             \addplot[
+            color=black,
+            only marks,
+            mark=*,
+            mark size=2pt
+        ] coordinates {
+                (1.5,1.5)
+            };
+        \node[anchor=south east, font=\footnotesize] at (axis cs:1.5,1.5) {$R = 1\,\Omega$};
+        \node[anchor=south east, font=\footnotesize] at (axis cs:2.7,1.2) {$R = 1,4\,\Omega$};
 
     \end{axis}
 \end{tikzpicture}

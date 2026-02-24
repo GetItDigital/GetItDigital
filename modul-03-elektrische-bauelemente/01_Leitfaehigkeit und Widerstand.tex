@@ -11,20 +11,9 @@
 
 \section{Leitfähigkeit und Widerstand}
 
-\b{
-	\begin{frame}
-		\ftx{Lernziele}
-		\begin{Lernziele}{Leitfähigkeit und Widerstand}%; TODO: Temperaturabhängigkeit ersetzen durch nur Temperatur (in den Items bereits passiert, weiter noch nicht geprüft) -> weiteres todo erstellt siehe " "Temperaturabhängigkeit" oder "Temperatur" verwenden"
-			Die Studierenden können
-			\begin{itemize}
-				\item das elektrischen Bauelement Widerstand beschreiben.
-				\item die unterschiedlichen Bauteilausführungen von Widerständen erklären.
-				\item anhand des spezifischen Widerstand $\rho$ oder des spezifischen Leitwertes $\kappa$ Berechnungen durchführen.
-				\item die Unterschiede in der Leitfähigkeit verschiedener Materialien basierend auf deren atomarer Struktur und Temperatur analysieren.
-			\end{itemize}
-		\end{Lernziele}
-	\end{frame}
-}
+% \v{
+% 
+% }
 \v{
 	\begin{frame}
 		\ftx{Lernziele}
@@ -48,8 +37,6 @@
 		}
 	\end{frame}
 }
-
-
 \s{% nur im Skript
 	Die Leitfähigkeit oder auch der Leitwert $G$ beschreibt, wie der Name schon impliziert, die Fähigkeit eines Materials elektrischen Strom zu leiten.
 	Je größer der Wert, desto besser leitet ein Material, sprich, umso einfacher können sich die Ladungsträger im Material bewegen.
@@ -71,7 +58,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende: Formeln - Ohm´sches Gesetz %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Abbildung Widerstände %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+\begin{frame}[t]
 	\ftx{Leitfähigkeit und Widerstand}
 	\b{
 		\begin{itemize}
@@ -81,7 +68,7 @@
 
 	\begin{figure}[H]
 		\centering
-		\b{\includegraphics[width=0.45\textwidth, alt={Unterschiedliche ausführungen von Widerständen. Darunter Drahtwiderstände, Potentiometer und SMD-Widerstände. Die Bauweise und das Material bestimmen die elektrischen Eigenschaften, wie Widerstandswert, Belastbarkeit und Temperaturkoeffizient.}]{wi}}
+		\b{\vspace{0.5cm}\includegraphics[width=0.45\textwidth, alt={Unterschiedliche ausführungen von Widerständen. Darunter Drahtwiderstände, Potentiometer und SMD-Widerstände. Die Bauweise und das Material bestimmen die elektrischen Eigenschaften, wie Widerstandswert, Belastbarkeit und Temperaturkoeffizient.}]{wi}}
 		\s{\includegraphics[width=0.5\textwidth]{wi}
 			\caption{\textbf{Unterschiedliche ausführungen von Widerständen.} Darunter Drahtwiderstände, Potentiometer und SMD-Widerstände.}
 			\label{fig:Widerstands Arten}}
@@ -118,27 +105,19 @@
 	In der Schaltungsentwicklung wird die physikalische Eigenschaft des ohm'schen Widerstandes genutzt, um die gewünschten Funktionen zu realisieren.
 	Die Abbildung \ref{fig:Widerstands Arten} zeigt verschiedene Ausführungen des Bauelements elektrischer Widerstand. Unabhängig von der Ausführung,
 	basieren alle ohm'schen Widerstände auf den grundlegenden Prinzipien der Physik, auf welche im Folgenden näher eingegangen wird.
-
-
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Lernziele %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\begin{Lernziele}{Leitfähigkeit und Widerstand}
-		Die Studierenden können
-		\begin{itemize}
-			\item das elektrischen Bauelement Widerstand beschreiben.
-			\item die unterschiedlichen Bauteilausführungen von Widerständen erklären.
-			\item anhand des spezifischen Widerstand $\rho$ oder des spezifischen Leitwertes $\kappa$ Berechnungen durchführen.
-			\item die Unterschiede in der Leitfähigkeit verschiedener Materialien basierend auf deren atomarer Struktur und Temperatur analysieren.
-		\end{itemize}
-	\end{Lernziele}
+	% \begin{Lernziele}{Leitfähigkeit und Widerstand}
+	% 	Die Studierenden können
+	% 	\begin{itemize}
+	% 		\item das elektrischen Bauelement Widerstand beschreiben.
+	% 		\item die unterschiedlichen Bauteilausführungen von Widerständen erklären.
+	% 		\item anhand des spezifischen Widerstand $\rho$ oder des spezifischen Leitwertes $\kappa$ Berechnungen durchführen.
+	% 		\item die Unterschiede in der Leitfähigkeit verschiedener Materialien basierend auf deren atomarer Struktur und Temperatur analysieren.
+	% 	\end{itemize}
+	% \end{Lernziele}
 }
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Lernziele %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Leitfähigkeit %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \subsection{Die elektrische Leitfähigkeit}
 
 \begin{frame}[t]
@@ -985,7 +964,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende 	- 	Formeln R			  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \s{
-	\subsubsection{Einführung in die Darstellung von Schaltkreisen}
+	%\subsubsection{Einführung in die Darstellung von Schaltkreisen}
+	\subsection{Einführung in die Darstellung von Schaltkreisen}
 	%\textbf{Einführung in die Darstellung von Schaltkreisen}
 	In der Elektrotechnik werden zur Darstellung elektrischer Netzwerke sogenannte Schaltbilder verwendet. Diese bestehen aus Schaltsymbolen, die elektrische Eigenschaften oder ganze Bauelemente repräsentieren. Abbildung \ref{fig:erstes_schaltbild} zeigt beispielhaft ein solches Schaltbild.
 }
@@ -1334,7 +1314,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Widerstand als reales Bauelement %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - PTC und NTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{PTC und NTC}
+\subsection{Temperaturabhängige Widerstände}
 
 \s{
 	In diesem Abschnitt geht es um eine spezielle Kategorie von Widerständen, die besonders in temperaturabhängigen Anwendungen verwendet wird: PTC- und NTC-Widerstände. Die Bezeichnungen beziehen sich auf ihren positiven bzw. negativen Temperaturkoeffizienten $\alpha$, welcher bereits im Abschnitt \ref{subsec:Mathematische Zusammenhänge der Leitfähigkeit} eingeführt wurde. Diese speziellen Widerstände, auch als Thermistoren bekannt, unterscheiden sich von herkömmlichen Widerständen dadurch, dass ihr Widerstandswert stark von der Temperatur abhängt. Während normale Widerstände so konstruiert sind, dass ihr Widerstand bei unterschiedlichen Temperaturen weitgehend konstant bleibt, nutzen PTC- und NTC-Widerstände diese Eigenschaft gezielt, um als Temperatursensoren, Schutzvorrichtungen oder zur Temperaturkompensation in elektrischen Schaltungen eingesetzt zu werden. Abbildung \ref{fig:ntc_ptc_widerstandsdiagramm} zeigt das entgegengesetzte Verhalten beider Widerstandsarten.
@@ -1368,13 +1348,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Diagramm PTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\ftx{Temperaturabhängige Widerstände}
+	\ftx{Der PTC}
 	%%% Spannung/ Strom Verhältnis über PTC
 	\begin{figure}[H]
 		\centering
 		\input{Tikz/src/01_Leitfaehigkeit/Diagramm_PTC}
 		\s{\caption{\textbf{Strom-Spannungs-Kennlinie eines PTC-Widerstands.} Vergleich bei $20\,^\circ\mathrm{C}$ und $80\,^\circ\mathrm{C}$.}
-\alttext{Diagramm der Strom-Spannungs-Kennlinie eines PTC-Widerstands. Auf der x-Achse ist die Spannung in Volt von 0 bis 3 dargestellt, auf der y-Achse die Stromstärke in Ampere von 0 bis 3. Es sind zwei lineare Kennlinien eingezeichnet: bei 20 Grad Celsius verläuft die Gerade steiler und erreicht bei 3 Volt etwa 3 Ampere. Bei 80 Grad Celsius ist die Steigung kleiner und bei 3 Volt fließen nur etwa 2,1 Ampere.}
+\alttext{Diagramm der Strom-Spannungs-Kennlinie eines PTC-Widerstands. Auf der x-Achse ist die Spannung in Volt von 0 bis 3 dargestellt, auf der y-Achse die Stromstärke in Ampere von 0 bis 3. Es sind zwei lineare Kennlinien eingezeichnet: bei 20 Grad Celsius verläuft die Gerade steiler und erreicht bei 3 Volt etwa 3 Ampere. Bei 80 Grad Celsius ist die Steigung kleiner und bei 3 Volt fließen nur etwa 2,1 Ampere. Markierte Punkte zeigen beispielhafte Widerstandswerte: bei 20 Grad Celsius ist R gleich 1 Ohm, bei 80 Grad Celsius ist R gleich 1.4 Ohm.}
 			\label{fig:widerstandsdiagramm_ptc}}
 	\end{figure}
 
@@ -1411,45 +1391,36 @@
 \s{
 	Das genau entgegengesetzte Verhalten weist ein NTC-Widerstand aufgrund seines negativen Temperaturkoeffizienten auf.
 	Typische Materialien mit einem solchen Verhalten sind Grafit oder Silizium. Da diese Widerstände bei zunehmender Temperatur besser leiten, nennt man sie auch Heißleiter.
-	In Abbildung \ref{fig:widerstandsdiagramm_ntc} ist zu erkennen, dass der Widerstand
-	bei einer höheren Temperatur einen geringeren Widerstandswert aufweist.
+	In Abbildung \ref{fig:widerstandsdiagramm_ntc} ist zu erkennen, dass der Widerstand bei einer höheren Temperatur einen geringeren Widerstandswert aufweist. Dadurch ist für die gleiche Stromstärke eine geringere Spannung erforderlich.
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Diagramm NTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\ftx{Temperaturabhängige Widerstände}
+	\ftx{Der NTC}
 	%%% Spannung/ Strom verhältnis über NTC
 	\begin{figure}[H]
 		\centering
 		\input{Tikz/src/01_Leitfaehigkeit/Diagramm_NTC}
-		\s{\caption{Diagramm eines NTC Widerstandes bei 20 °C und bei 80 °C}
+		\s{\caption{\textbf{Strom-Spannungs-Kennlinie eines NTC-Widerstands.} Vergleich bei $20\,^\circ\mathrm{C}$ und $80\,^\circ\mathrm{C}$.}
 			\label{fig:widerstandsdiagramm_ntc}}
+			\alttext{Diagramm der Strom-Spannungs-Kennlinie eines NTC-Widerstands. Auf der x-Achse ist die Spannung in Volt von 0 bis 3 dargestellt, auf der y-Achse die Stromstärke in Ampere von 0 bis 3. Zwei lineare Kennlinien sind eingezeichnet: bei 20 Grad Celsius ist die Steigung kleiner, bei 80 Grad Celsius ist die Gerade steiler. Dadurch ist zu erkennen das bei gleicher Stromstärke eine geringere Spannung nötig ist oder andersherum bei der gleichen Spannung fließt mehr Strom wenn der NTC bei 80 Grad Celsius ist. Markierte Punkte zeigen beispielhafte Widerstandswerte: bei 20 Grad Celsius ist R gleich 1 Ohm, bei 80 Grad Celsius ist R gleich 0,6 Ohm.}
 	\end{figure}
 	\speech{01_Leitfaehigkeit_und_Widerstand24}{1}{
 		Die Strom-Spannungskennline eines NTC Widerstandes wird bei zunehmender Temperatur immer steiler, da sich ja der Widerstand mit steigender Temperatur immer verringert. Daher kann bei derselben Spannung mehr Strom durch den Widerstand fließen, wenn die Temperatur erhöht wird.
 	}
-
 \end{frame}
-
 
 \begin{frame}
 	\ftx{Merksatz}
 
-\begin{Merksatz}{PTC \& NTC}
+\begin{Merksatz}{Temperaturabhängige Widerstände}
 
-PTC und NTC zeigen stark Temperaturabhängige Widerstanswerte, die in der Realität nicht linear sind.
+PTC und NTC zeigen stark Temperaturabhängige Widerstanswerte, die in der Realität nicht immer linear sind.
 \end{Merksatz}
+
 \speech{01_Leitfaehigkeit_und_Widerstand25}{1}{
-PTC und NTC zeigen stark Temperaturabhängige Widerstandswerte, die in der Realität nicht zwingend linear sind und als Sensoren, kompensation oder auch Strombegrenzung verwendet werden können.
-}
+Wir Merken uns also das Temperaturabhängigen Widerstände, wie PTC und NTC stark Temperaturabhängige Widerstandswerte aufweisen, die in der Realität nicht zwingend linear sind und zum Beispiel als Sensoren oder zur Temperaturkompensation in elektrischen Schaltungen oder auch zur Strombegrenzung verwendet werden können.}
 
 \end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Diagramm NTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - PTC und NTC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newpage
 
 
 

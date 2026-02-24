@@ -10,34 +10,33 @@
 	In der Elektrotechnik gibt es drei grundlegende Komponenten, mit denen das elektrische Verhalten von Bauteilen beschrieben werden kann.
 	Neben dem zuvor behandelten ohmschen Widerstand, gibt es noch die Kapazität und die Induktivität.
 	In diesem Abschnitt geht es um die Eigenschaft der Kapazität, sowie dem dazugehörigen Bauteil, dem Kondensator.
-	Der darauffolgende Abschnitt behandelt die Induktivität sowie das zugehörige Bauteil, die Spule.
+	Der darauffolgende Abschnitt behandelt die Induktivität sowie das zugehörige Bauteil, die Spule.}
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Lernziele Kapazität	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{Lernziele}{Kapazität und Kondensator}
+	% \begin{Lernziele}{Kapazität und Kondensator}
 
-		Die Studierenden können
-		\begin{itemize}
-			\item zwischen Kapazität und Kondensator differenzieren.
-			\item die wichtigsten Parameter rund um den Kondensator und die Kapazität benennen.
-			\item die Kapazität eines Kondensators berechnen.
-		\end{itemize}
+	% 	Die Studierenden können
+	% 	\begin{itemize}
+	% 		\item zwischen Kapazität und Kondensator differenzieren.
+	% 		\item die wichtigsten Parameter rund um den Kondensator und die Kapazität benennen.
+	% 		\item die Kapazität eines Kondensators berechnen.
+	% 	\end{itemize}
 
-	\end{Lernziele}
-}
-\b{
-	\begin{frame}
-		\ftx{Lernziele}
-		\begin{Lernziele}{Kapazität und Kondensator}
+	% \end{Lernziele}
+% \b{
+% 	\begin{frame}
+% 		\ftx{Lernziele}
+% 		\begin{Lernziele}{Kapazität und Kondensator}
 
-			Die Studierenden können
-			\begin{itemize}
-				\item zwischen Kapazität und Kondensator differenzieren.
-				\item die wichtigsten Parameter rund um den Kondensator und die Kapazität benennen.
-				\item die Kapazität eines Kondensators berechnen.
-			\end{itemize}
-		\end{Lernziele}
-	\end{frame}
-}
+% 			Die Studierenden können
+% 			\begin{itemize}
+% 				\item zwischen Kapazität und Kondensator differenzieren.
+% 				\item die wichtigsten Parameter rund um den Kondensator und die Kapazität benennen.
+% 				\item die Kapazität eines Kondensators berechnen.
+% 			\end{itemize}
+% 		\end{Lernziele}
+% 	\end{frame}
+% }
 \v{
 	\begin{frame}
 		\ftx{Lernziele}
@@ -48,34 +47,30 @@
 				\item zwischen Kapazität und Kondensator differenzieren.
 				\item die wichtigsten Parameter rund um den Kondensator und die Kapazität benennen.
 				\item die Kapazität eines Kondensators berechnen.
+				\item die Lade- und Entladeeigenschaften erläutern.
 			\end{itemize}
 		\end{Lernziele}
 
 		\speech{03_Kapazitaet_und_Kondensator1}{1}{% sehr langsame sprache -> neuer seed
 			Im nun folgenden Abschnitt beschäftigen wir uns mit dem Begriff der Kapazität und dem damit verbundenen Bauteil dem Kondensator.
 			Am Ende dieses Abschnittes solltest du zwischen Kapazität und Kondensator differenzieren können.
-			Du kennst die wichtigsten Parameter rund um den Kondensator und die Kapazität und
-			kannst die Kapazität eines einfachen Plattenkondensators berechnen.}
+			Du kennst die wichtigsten Parameter rund um den Kondensator und die Kapazität, du kannst die Kapazität eines einfachen Plattenkondensators berechnen und abschließend die Lade- und Entladeeigenschaften erläutern.}
 	\end{frame}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Lernziele Kapazität	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Die elektrische Kapazität $C$}
 \s{
-	Die elektrische Kapazität ist die Fähigkeit eines Objektes, elektrische Energie in Form eines elektrischen Feldes, zu speichern.
+	Die elektrische Kapazität ist die Fähigkeit eines Objektes, elektrische Energie in Form eines elektrischen Feldes zu speichern.
 	Diese Eigenschaft kommt zustande, sobald elektrische Ladungsträger ungleich verteilt sind und sich zwischen den Bereichen
-	ein elektrisches Feld ausbildet. Das Formelzeichen der Kapazität ist $C$ (capacity) während die Einheit in Farad ($F$) angegeben wird.
-
-}% nur im Skript
-
-\s{
-	Das einfachste und geläufigste Beispiel, an dem die Kapazität erklärt werden kann, ist der Plattenkondensator.
-	Bei dieser Art des Kondensators liegen sich zwei leitfähige Platten gegenüber, welche jeweils mit einem anderen Potential beaufschlagt werden.
-	In Abbildung \ref{fig:idealer Kondensator} ist ein Kondensator mit idealisiertem Feldverlauf dargestellt.
+	ein elektrisches Feld ausbildet. Das Formelzeichen der Kapazität ist $C$ (capacity) während die Einheit in Farad (F) angegeben wird.
+    Das einfachste und geläufigste Beispiel, an dem die Kapazität erklärt werden kann, ist der Plattenkondensator.
+	Bei dieser Art des Kondensators liegen sich zwei leitfähige Platten gegenüber, die jeweils mit einem anderen Potential beaufschlagt werden.
+	In Abbildung \ref{fig:idealer Kondensator} ist dieser mit einem idealisierten Feldverlauf dargestellt.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Grafik idealer Kondensator	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-	\ftx{Die elektrische Kapazität}
+\begin{frame}[t]
+	\ftx{Der Kondensator}
 	\b{
 		\begin{itemize}
 			\item Der ideale Plattenkondensator
@@ -84,13 +79,13 @@
 	\begin{figure}[H]
 		\centering
 		\includesvg[width=0.6\textwidth]{Idealer_Plattenkondensator}
-		\s{\caption{\textbf{Idealer Plattenkondensator mit idealisierten Feldverlauf.} Der Kondensator
-				speichert elektrische Energie in einem elektrischen Feld was idealisiert zwischen den Platten dargestellt ist und hat eine konstante Kapazität \( C \), die nur von der Fläche der Platten und dem Abstand zwischen ihnen abhängt.}}
+		\s{\caption{\textbf{Plattenkondensator mit idealisiertem Feldverlauf.} Der Kondensator speichert elektrische Energie im elektrischen Feld, das zwischen den Platten idealisiert als homogen dargestellt ist.}}
+		% und hat ein Kapazität \( C \),von der Plattenfläche, dem Plattenabstand und dem Dielektrikum zwischen den Platten abhängt.
 		\label{fig:idealer Kondensator}
+		\alttext{Schematische Darstellung eines Plattenkondensators. Links ist eine Platte mit positiven Ladungen markiert, rechts eine Platte mit negativen Ladungen. Zwischen den Platten zeigen mehrere parallele rote Pfeile von der positiven zur negativen Platte und stellen ein homogenes elektrisches Feld dar.}
 	\end{figure}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Grafik idealer Kondensator	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\s{
-		Aufgrund der unterschiedlichen Potentiale auf den Platten, bildet sich von der höheren zur geringer geladenen Platte ein elektrisches Feld aus.
 		Im idealen Fall wird angenommen, dass sich außerhalb der Kondensatorplatten kein Feld ausbildet.
 		In der Realität sammeln sich an den seitlichen Rändern der Platten ebenfalls Ladungsträger, welche zu komplizierteren Feldverteilungen führen.
 		In Abbildung \ref{fig:realer Kondensator} ist die Grafik eines solchen realen Plattenkondensators dargestellt.
@@ -108,8 +103,8 @@
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Grafik realer Kondensator	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-	\ftx{Die elektrische Kapazität}
+\begin{frame}[t]
+	\ftx{Der Kondensator}
 	\b{
 		\begin{itemize}
 			\item Der reale Plattenkondensator
@@ -118,9 +113,9 @@
 	\begin{figure}[H]
 		\centering
 		\includesvg[width=0.6\textwidth]{Realer_Plattenkondensator}
-		\s{\caption{\textbf{Realer Kondensator mit realem Feldverlauf.} Im Gegensatz zum idealen Kondensator treten
+		\s{\caption{\textbf{Plattenkondensator mit realem Feldverlauf.} Im Gegensatz zum idealen Kondensator treten
 				Randfelder und Verluste auf, die die tatsächliche Kapazität und das elektrische Verhalten beeinflussen.}}
-
+		\alttext{Schematische Darstellung eines Plattenkondensators mit realem Feldverlauf. Links ist eine positiv geladene Platte, rechts eine negativ geladene Platte dargestellt. Zwischen den Platten verlaufen mehrere gerade Feldlinien von der positiven zur negativen Platte. An den oberen und unteren Plattenrändern biegen die Feldlinien nach außen ab und bilden Randfelder, die als gekrümmte Pfeile außerhalb des Plattenbereichs dargestellt sind.}
 		\label{fig:realer Kondensator}
 	\end{figure}
 
@@ -135,36 +130,13 @@
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Grafik realer Kondensator	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t]
+\begin{frame}
 	\ftx{Die elektrische Kapazität}
 	\b{
-		\begin{minipage}[t]{1\textwidth}
-			\vspace{0.1cm}
-			\[
-				\begin{aligned}
-					[C] =  1\, \text{Farad} & = 1\, \text{F} =  1\,\, \frac{\text{C}}{\text{V}} = 1\, \frac{\text{A} \text{s}}{\text{V}} \\[10pt]
-					C                       & = \frac{Q}{U}                                                                              \\[10pt]
-					Q                       & = C \cdot U \quad
-				\end{aligned}\]
-			\iffalse
-				\begin{equation*}
-					C = \frac{Q}{U}% = \frac{\varepsilon \cdot \oiint \vec{E} \cdot \mathrm{d}\vec{A}}{\int \vec{E}\mathrm{d}\vec{s}}
-				\end{equation*}
-				\vspace{0.1cm}
-				\begin{equation*}
-					Q = C \cdot U \quad
-				\end{equation*}
-			\fi
-		\end{minipage}
-		%%% aus Einführung in zeitabhängige Vorgänge (MH)
-		\vspace{2cm}
-
-		%\only<2->{\begin{equation*}
-		%		Q = C \cdot U \quad \Rightarrow \quad C = \frac{Q}{U} = \frac{\varepsilon \cdot \iint \vec{E} \cdot \mathrm{d}\vec{A}}{\int \vec{E}\mathrm{d}\vec{s}}
-		%	\end{equation*}}
+		\begin{itemize}\centering
+			\item $ \displaystyle C = \frac{Q}{U} \qquad [C] =  1\,\text{Farad} = 1\, \text{F} = 1\,\frac{\text{C}}{\text{V}} = 1\,\frac{\text{A} \text{s}}{\text{V}} \label{eq:cqu_2} $
+		\end{itemize}
 	}
-
-
 	\speech{03_Kapazitaet_und_Kondensator4}{1}{
 		Ein solcher Plattenkondensator baut ein elektrisches Feld auf.
 		In diesem Feld kann elektrische Energie gespeichert werden.
@@ -172,36 +144,26 @@
 		Die Kapazität wird mit dem Buchstaben C abgekürzt.
 		Die Einheit der Kapazität ist das Farad.
 		Ein Farad bedeutet, dass ein Coulomb an Ladung gespeichert wird, wenn 1 Volt Spannung anliegt.
-		Formelmäßig also: C gleich Q durch U.
+		Formelmäßig also: C ist gleich Q durch U.
 		Alternativ in S-I-Einheiten: Farad ist gleich Ampere-sekunde pro Volt.
-		Wir können die Formel C ist gleich Q durch U auch umstellen zu Q ist gleich C mal U.
 	}
 	\silence{4}
-
-
 \end{frame}
 \s{
 	In vielen Fällen kann das reale Verhalten jedoch vernachlässigt werden, was die Berechnungen deutlich vereinfacht.
-	Aus dem Grund wird im Folgenden nurnoch von idealisierten Kondensatoren ausgegangen.
-
+	Aus dem Grund wird im Folgenden nur noch von idealisierten Kondensatoren ausgegangen.
 
 	Die Kapazität ist definiert als das Verhältnis der gespeicherten elektrischen Ladung $Q$ zur angelegten Spannung $U$.
 	Je höher die Kapazität eines Kondensators ist, desto mehr Ladung kann er bei einer gegebenen Spannung speichern.
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Formeln Kapazität	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{equation*}
-		[C] =  1\, \text{Farad} = 1\, \text{F} =  1\,\, \frac{\text{C}}{\text{V}} = 1\, \frac{\text{A} \text{s}}{\text{V}} \label{eq:cqu_2}
-	\end{equation*}
-	\vspace{0.1cm}
+	
 	\begin{equation}
-		C = \frac{Q}{U}
+		C = \frac{Q}{U} \qquad [C] =  1\,\text{Farad} = 1\,\text{F} =  1\,\frac{\text{C}}{\text{V}} = 1\,\frac{\text{A} \text{s}}{\text{V}} \label{eq:cqu_2}
 	\end{equation}
-	%%% aus Einführung in zeitabhängige Vorgänge (MH)
-	\begin{equation}
-		Q = C \cdot U \quad \Rightarrow \quad C = \frac{Q}{U} = \frac{\varepsilon \cdot \iint \vec{E} \cdot \mathrm{d}\vec{A}}{\int \vec{E}\mathrm{d}\vec{s}} \label{eq:qcu2}
-	\end{equation}
+	% %%% aus Einführung in zeitabhängige Vorgänge (MH)
+	% \begin{equation}
+	% 	Q = C \cdot U \quad \Rightarrow \quad C = \frac{Q}{U} = \frac{\varepsilon \cdot \iint \vec{E} \cdot \mathrm{d}\vec{A}}{\int \vec{E}\mathrm{d}\vec{s}} \label{eq:qcu2}
+	% \end{equation}
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Formeln Kapazität	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Der Kondensator als Bauelement}
 
@@ -212,10 +174,7 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Bild versch. Kondensatoren	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%% Quelle einfügen!
-
-\begin{frame}
+\begin{frame}[t]
 	\ftx{Der Kondensator als Bauelement}
 	\b{
 		\begin{itemize}
@@ -225,30 +184,26 @@
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{ko}
-		\s{\caption{\textbf{Verschiedene Arten und Bauformen von Kondensatoren.} Darunter Keramik- und Elektrolytkondensatoren.
-				Diese variieren in Größe, Kapazität und Spannung, um unterschiedlichen Anwendungen gerecht zu werden.}}
-
+		\s{\caption{\textbf{Verschiedene Arten und Bauformen von Kondensatoren.} Darunter Keramik- und Elektrolytkondensatoren. Diese variieren in Größe, Kapazität und Spannung, um unterschiedlichen Anwendungen gerecht zu werden.}}
+\alttext{Die Abbildung zeigt ein Foto verschiedener Kondensator-Bauformen. Oben sind mehrere bedrahtete Elektrolytkondensatoren in unterschiedlichen Größen und Farben nebeneinander angeordnet. Rechts oben sind sehr kleine SMD-Kondensatoren zu sehen. Unten links liegt ein axialer Kondensator im Metallgehäuse. In der unteren Reihe sind außerdem mehrere kleine Keramikkondensatoren als Scheiben- oder Tropfenform zu sehen.}
 		\label{fig:Verschiedene Kondensatoren}
 	\end{figure}
 
-	\speech{03_Kapazitaet_und_Kondensator5}{1}{%; TODO sehr viele Ähms und langsam -> neuer seed
+	\speech{03_Kapazitaet_und_Kondensator5}{1}{
 		Auf dem hier dargestellten Foto siehst du verschiedene Ausführungen von Bauteilen. Bis auf den ganz rechten Rand sind das alles Durchsteckelemente, also T-H-T-Bauteile, was gerade bei Kondensatoren relativ häufig vorkommt, da diese räumlich groß sein müssen, um hinreichende Kapazitäten zu haben. Wir werden später sehen, dass je größer die Fläche ist, die wir haben, und je kleiner der Abstand, desto größer wird die Kapazität, weil letztlich das elektrische Bild natürlich größer wird und die Ladungsmenge, die gespeichert werden kann, größer wird.
 		Weswegen du auch hier sehr schön sehen kannst, dass wir gewisse Zusammenhänge haben. Der rote Kondensator oben links ist ein 400 Volt, 68 mikro Farad Kondensator. Der ist räumlich sehr viel größer als der schwarze 63 Volt, 330 mikro Farad Kondensator rechts daneben. Dieser  hat eine Kapazität, die rund 4,5 bis 5 Mal größer ist als die des roten Kondensators und ist räumlich trotzdem kleiner. Wie kann das erreicht werden? Indem der Abstand zwischen den Platten deutlich kleiner ist, weswegen er auch nur eine kleine Spannung aushalten kann.
 		Denn die Platten müssen ja voneinander isoliert sein. Das heißt, man wickelt dort ein in Elektrolyt getränktes Material zwischen die Platten ein. Das sind sogenannte Elektrolytkondensatoren. Das hat nur eine gewisse Dicke und hinzufolge auch nur eine gewisse Spannungsfestigkeit.
 		Das heißt, wenn du Kondensatoren haben möchtest, die hohe Spannung aushalten und gleichzeitig aber hohe Kapazitätswerte haben, dann werden das räumlich extrem große Bauteile. Unten ist eine andere Technologie. Das sind Keramik- und Tantalkondensatoren, die meistens deutlich kleinere Kapazitätswerte haben, dafür aber elektrisch häufig sehr viel bessere Eigenschaften haben, sodass die abhängig von der Anwendung gewählt werden. Ganz oben rechts die kleinen Chips. Das sind klassische SMD-Bauteile. Wieder ohne Beinchen, das heißt deutlich weniger parasitäre Effekte, aber auch kleinere Kapazitätswerte. Und unten rechts siehst du Elektrolytkondensatoren als SMD-Kondensatoren, die eben auch direkt auf der Platine montiert werden.
-
 	}
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Bild versch. Kondensatoren	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \s{
 	Darüber hinaus gibt es sie aber auch in deutlich kleineren bzw. deutlich größeren Dimensionen.
 	In der Hochfrequenztechnik werden Kapazitäten beispielsweise lediglich durch das Design der Leiterplatten realisiert,
-	während Kondensatoren für industrielle oder enegietechnische Anwendungen mehrere Zentimeter bis Meter groß werden können.
+	während Kondensatoren für industrielle oder energietechnische Anwendungen mehrere Zentimeter bis Meter groß werden können.
 
 	Was alle Kondensatoren verbindet, ist ihre Fähigkeit, die Eigenschaft der Kapazität nutzbar zu machen,
-	wie es im folgenden Schaltbild \ref{fig:idealer Kondensator_ESB_1} dargestellt ist.
-	Dieses Schaltbild repräsentiert jedoch nur die idealisierte, nutzbare Kapazität.
+	wie es im folgenden Schaltbild \ref{fig:idealer Kondensator_ESB_1} dargestellt ist. Dieses Schaltbild repräsentiert jedoch nur die idealisierte, nutzbare Kapazität.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Schaltzeichen Kapazität U,I	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t]
@@ -261,8 +216,7 @@
 		\begin{figure}[h]
 			\begin{center}
 				\input{Tikz/src/03_Kapazitaet_Kondensator/Ersatzschaltbild_idealer_Kondensator}
-
-				\label{fig:idealer Kondensator_ESB_1}
+	
 			\end{center}
 		\end{figure}
 
@@ -274,7 +228,7 @@
 			\begin{figure}[H]
 				\begin{center}
 					\input{Tikz/src/03_Kapazitaet_Kondensator/Ersatzschaltbild_realer_Kondensator}
-					\label{fig:realer Kondensator_ESB_1}
+					
 				\end{center}
 			\end{figure}
 		}
@@ -293,20 +247,18 @@
 
 \end{frame}
 \s{
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\begin{center}
 			\input{Tikz/src/03_Kapazitaet_Kondensator/Ersatzschaltbild_idealer_Kondensator}
-			\caption{\textbf{Schaltelement eines idealen Kondensators.} Zeigt den Spannungsabfall über dem Kondensator und den Stromfluss durch ihn.}
+			\caption{\textbf{Schaltelement eines idealen Kondensators.} Mit einem Spannungsabfall und einem Stromfluss.}
 
-			\label{fig:idealer Kondensator_ESB_2}
+			\label{fig:idealer Kondensator_ESB_1}
 		\end{center}
 	\end{figure}
-
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Schaltzeichen Kapazität U,I	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 	Für eine realitätsgetreue Nachbildung der Schaltung ist es wichtig den Kondensator als Bauteil vollständig zu beschreiben.
 	Dies wird mit Hilfe eines Ersatzschaltbildes gemacht, welches auch die ungewollten, also parasitären Eigenschaften
-	des Bauteils, nachbildet. Abbildung \ref{fig:realer Kondensator_ESB_1} zeigt ein solches Ersatzschaltbild.
+	des Bauteils, nachbildet. Abbildung \ref{fig:realer Kondensator_ESB_2} zeigt ein solches Ersatzschaltbild.
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - ESB Kondensator	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% realer Kondensator
@@ -333,10 +285,11 @@
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang Merksatz - Kondensator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\ftx{Merksatz: Der Kondensator als Bauelement}
-	\begin {Merksatz}{}
+	\ftx{Merksatz}
+	\begin{Merksatz}{Kondensator}
+
 	Der Kondensator ist der verzweifelte Versuch eine Kapazität nachzubilden.
-	\end {Merksatz}
+	\end{Merksatz}
 
 	\speech{03_Kapazitaet_und_Kondensator7}{1}{
 		Wir können uns also merken, dass der Kondensator immer nur der verzweifelte Versuch ist, eine Kapazität nachzubilden. Wir hatten das ja schon beim Widerstand, dass das Bauteil der Widerstand eben noch andere Eigenschaften hat, als nur die gewünschte Eigenschaft des  Widerstandes. So ist das letztlich beim Kondensator auch. Und diese ungewünschten Eigenschaften fallen insbesondere dann ins Gewicht, wenn wir zu höheren Frequenzen hingehen.
@@ -694,7 +647,7 @@
 			\end{tikzpicture}
 			\centering
 			\vspace{-9cm}
-			\begin{Merksatz}
+			\begin{Merksatz}{Kondensator}
 
 				\begin{itemize}
 					\item Nur eine zeitveränderliche Spannung an einer Kapazität führt zu einem Stromfluss durch eine Kapazität
