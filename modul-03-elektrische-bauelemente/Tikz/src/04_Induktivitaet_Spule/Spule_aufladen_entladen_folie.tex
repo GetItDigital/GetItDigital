@@ -25,7 +25,7 @@
         % Stromkurve (Ladekurve)
         \only<2->{
             \addplot [current, domain=0:5, samples=100] {ifthenelse(x<0, 0, 1 - exp(-(x)))};
-
+        
         }
         \only<2->{
             \addplot [voltage, domain=0:5, samples=100] {ifthenelse(x<0, 0,     exp(-(x)))};
@@ -38,6 +38,7 @@
         }
         \only<4->{
             \addplot [voltage, domain=5:12, samples=100] {ifthenelse(x<5, 0,-exp(-(x-5)))};
+            \draw [dashed] (axis cs:0,-1) -- (axis cs:12,-1);
         }
 
         % Markierung der Zeitkonstanten
@@ -54,7 +55,7 @@
             \draw[dashed] (axis cs:0,0.63) -- (axis cs:1,0.63) node[right] {};
             \draw[dashed] (axis cs:0,-0.37) -- (axis cs:6,-0.37) node[right] {};
             \draw[dashed] (axis cs:0,0.37) -- (axis cs:6,0.37) node[right] {};
-            \draw [dashed] (axis cs:0,-1) -- (axis cs:12,-1);
+            
             
 
             % Punkte zur Hervorhebung
