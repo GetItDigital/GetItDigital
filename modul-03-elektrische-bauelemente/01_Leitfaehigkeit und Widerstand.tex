@@ -11,14 +11,11 @@
 
 \section{Leitfähigkeit und Widerstand}
 
-% \v{
-% 
-% }
 \v{
 	\begin{frame}
 		\ftx{Lernziele}
 
-		\begin{Lernziele}{Leitfähigkeit und Widerstand}%; TODO: Temperaturabhängigkeit ersetzen durch nur Temperatur (in den Items bereits passiert, weiter noch nicht geprüft) -> weiteres todo erstellt siehe " "Temperaturabhängigkeit" oder "Temperatur" verwenden"
+		\begin{Lernziele}{Leitfähigkeit und Widerstand}
 			Du kannst
 			\begin{itemize}
 				\item das elektrischen Bauelement Widerstand beschreiben.
@@ -673,10 +670,9 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Grafik Elektronenbewegung ungerichtet %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\b{
 		\begin{itemize}
-			\item Ungerichte Bewegung freier Elektronen (blau) zwischen positiv geladenen Atomrümpfen (rot)
+			\item Ungerichtete Bewegung freier Elektronen (blau) zwischen positiv geladenen Atomrümpfen (rot)
 		\end{itemize}
 	}
-
 
 	\begin{figure}[H]
 		\centering
@@ -722,9 +718,7 @@
 	}
 
 	\speech{01_Leitfaehigkeit_und_Widerstand11}{1}{
-		Wird ein elektrisches Feld (eine Spannung) angelegt, ändert sich das Bewegungsverhalten der Elektronen: Sie bewegen sich entgegengesetzt der Feldlinien – also entlang des E-Feldes. Dabei kommt es verstärkt zu Stößen mit Atomrümpfen. Auch diese schwingen, besonders bei höheren Temperaturen. Die Folge: Je höher die Temperatur, desto mehr Stöße, desto geringer ist die Beweglichkeit der Elektronen. Das bedeutet, die Leitfähigkeit Kappa wird temperaturabhängig.
-
-	}
+		Wird ein elektrisches Feld (eine Spannung) angelegt, ändert sich das Bewegungsverhalten der Elektronen: Sie bewegen sich entgegengesetzt der Feldlinien - also entlang des E-Feldes. Dabei kommt es verstärkt zu Stößen mit Atomrümpfen. Auch diese schwingen, besonders bei höheren Temperaturen. Die Folge: Je höher die Temperatur, desto mehr Stöße, desto geringer ist die Beweglichkeit der Elektronen. Das bedeutet, die Leitfähigkeit Kappa wird temperaturabhängig.}
 
 \end{frame}
 \s{
@@ -737,13 +731,8 @@
 			Leiter entgegen der Feldrichtung, was den elektrischen Stromfluss I erklärt.}
 		\label{fig:Elektronenbewegung gerichtet}
 	\end{figure}
-}
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Grafik Elektronenbewegung gerichtet %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\s{
 	Dieses Verhalten der Elektronen wird auch Driftverhalten genannt, welches stark vom Material anhängt.
 	Da die atomare Zusammensetzung materialabhängig ist, unterscheidet sich auch die Anzahl der freien Elektronen, sowie deren Beweglichkeit $\mu_{\mathrm{e}}$.
 	Diese beiden Eigenschaften werden unter dem Begriff der spezifischen Leitfähigkeit $\kappa$ zusammengefasst.
@@ -754,67 +743,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Driftverhalten %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Mathematik / Berechnung Widerstand %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-	\ftx{Mathematische Zusammenhänge der Leitfähigkeit}
-	\subsection{Mathematische Zusammenhänge der Leitfähigkeit}\label{subsec:Mathematische Zusammenhänge der Leitfähigkeit}
+\subsection{Mathematische Zusammenhänge der Leitfähigkeit}\label{subsec:Mathematische Zusammenhänge der Leitfähigkeit}
+
+\begin{frame}[t]
+	\ftx{Mathematische Zusammenhänge der Leitfähigkeiten}
 	\b{
 		\begin{itemize}\centering
-			\item $ \displaystyle \kappa=\frac{1}{\rho_\mathrm{R}} \qquad [\kappa]=\frac{\mathrm{S}}{\mathrm{m}}=\frac{1}{\Omega\cdot \mathrm{m}}$
+			\item Spezifische Leitfähigkeit:\,$ \displaystyle \kappa = \frac{1}{\rho_\mathrm{R}} \qquad [\kappa]=\frac{\mathrm{S}}{\mathrm{m}}=\frac{1}{\Omega\cdot \mathrm{m}}$
 		\end{itemize}
-		\vspace{2cm}
+		\vspace{0.3cm}
 		\begin{itemize}\centering
-			\item $ \displaystyle \rho_\mathrm{R} = \rho_\mathrm{{20^\circ C}} \cdot (1 + \alpha (\vartheta - 20\mathrm{^\circ C}))$
+			\item Spezifischer Widerstand:\,$ \displaystyle \rho_\mathrm{R} = \rho_\mathrm{{20^\circ C}} \cdot (1 + \alpha (\vartheta - 20\mathrm{^\circ C}))$
 		\end{itemize}
-	}% nur Folien
-
-	% ; TODO: Hillgärtner: Diese Folie ist sehr zusammenhangslos und außerdem ist mir aufgefallen, dass wir für den ohmschen Widerstand R noch gar nicht die Einheit definiert haben. Wenn wir auf Folie 43 schauen, da ist der elektrische Widerstand dargestellt – mit den Kommentaren, die ich da schon hatte – da fehlt das Rollenzeichen. Vielleicht könnte man Folie 48 quasi hier drin integrieren und sagen: Der ohmsche Widerstand R hat die Einheit Ohm, was gleichbedeutend ist mit Volt pro Ampere (V/A). Und der Kehrwert des Widerstands, also 1 durch R ist gleich I durch U, nennt sich Leitwert. Dieser hat die Einheit Siemens (S). Das würde ich tatsächlich auf Folie 43 mit aufnehmen. Somit kann Folie 48, die relativ zusammenhangslos ist, entfallen. Hinweis Ende.
-
-
-	\s{
-		Die unterschiedlichen atomaren Zusammensetzungen der Materialien führen zu einer materialabhängigen, elektrischen Leitfähigkeit.
-		Die materialspezifische Eigenschaft bestehen aus der spezifischen Leitfähigkeit $\kappa$ (Kappa), bzw. dem spezifischen Widerstand $\rho_\mathrm{R}$ (Rho)
-		welche antiproportional zueinander stehen, sowie dem jeweiligen Temperaturkoeffizient $\alpha$, welcher sich je nach Material unterscheidet.
-
-		\begin{equation}
-			\begin{aligned}
-				\kappa & = \frac{1}{\rho_\mathrm{R}} \quad
-				       & [\kappa]                          & = 1\,\frac{\mathrm{S}}{\mathrm{m}} = 1\,\frac{1}{\Omega\cdot \mathrm{m}}
-			\end{aligned}
-		\end{equation}
-
-
-		% \s{
-		% Zur Berechnung des Widerstandwertes bei einer konkreten Temperatur, wird die Temperaturdifferenz zu $20^\circ C$ gebildet und dieser Wert mit dem Temperaturkoeffizienten multipliziert.
-		% Dieser Wert wird mit dem bekannten Referenzwert bei $20^\circ C$ multipliziert und mit diesem addiert.
-		% }
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - 	Formeln Kappa, Roh	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-		\begin{equation}
-			\rho_\mathrm{R} = \rho_\mathrm{{20^\circ C}} \cdot (1 + \alpha (\vartheta - 20\mathrm{^\circ C}))
-		\end{equation}
-	}% nur im Skript
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende 	- 	Formeln Kappa, Roh	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\s{
-		Für $\vartheta$ (Theta) wird die Temperatur des Leiters eingetragen. Daraus ergibt sich durch ($\vartheta - 20\mathrm{^\circ C}$) die Temperaturdifferenz des Leiters zwischen der vorhandenen Temperatur des Leiters und den $\mathrm{20^\circ C}$, bei welchen der Referenzwert ermittelt wurde.
-		Werden $20\mathrm{^\circ C}$ für $\vartheta$ (Theta) eingesetzt, fällt auch das $\alpha$ weg und es bleibt der Referenzwert $\rho_\mathrm{20\mathrm{^\circ C}}$ übrig.
-		In der folgenden Tabelle sind beispielhaft einige Materialien mit deren spezifischen Eigenschaften dargestellt:
-	}
-
-	\speech{01_Leitfaehigkeit_und_Widerstand12}{1}{
-		Der Spezifische Widerstand Roh-R ist der Kehrwert von Kappa, was wir eben als Spezifischen Leitwert kennen gelernt haben.
-		Kappa ist gleich eins durch roh-R. Kappa ist definiert als Siemens pro Meter. Für den spezifischen Widerstand Roh-R gilt im linearen Temperaturbereich: roh-R ist gleich roh-R von 20 Grad Celsius mal in Klammern eins plus alpha mal in klammern theta minus 20grad Celsius. Wobei theta die aktuelle Temperatur ist und alpha der Temperaturkoeffizient des Materials und Roh von 20 Grad Celsius der Spezifische Widerstand des Materials bei Raumtepmeratur, also 20 Grad Celsius ist.
-		Kurz gesagt: der Widerstand wird also mit steigender Temperatur linear größer.
-	}
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Tabelle Eigenschaften %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%
-%%%	In der Tabelle fehlen die Referenzwerte bei 20°C, sonst kann Formel 1.2 nicht angewendet werden.
-%%%
-%%%%%% Einfache Tabelle
-\begin{frame}
-	\ftx{Spezifische Leitfähigkeiten und Temperaturkoeffizienten}
-	\begin{table}[H]
+		\vspace{0.3cm}
+		\uncover<2->{
+		\begin{table}
 		\centering
 		\resizebox{0.9\textwidth}{!}{%
 			\begin{tabular}{@{}l c c@{}}
@@ -834,29 +777,109 @@
 				\bottomrule
 			\end{tabular}%
 		}
-		\s{\caption{\textbf{Spezifische Leitfähigkeiten und Temperaturkoeffizienten verschiedener Materialien.} Metalle wie Silber und Kupfer haben hohe Leitfähigkeiten,
-				während isolierende Materialien wie Luft eine sehr geringe Leitfähigkeit besitzen.}}
+		\alttext{Die Tabelle zeigt beispielhafte Werte der spezifischen Leitfähigkeit Kappa sowie die zugehörigen Temperaturkoeffizienten Alpha für verschiedene Materialien. Metalle wie Silber und Kupfer besitzen hohe Leitfähigkeiten, während Isolierstoffe wie Luft nur sehr geringe Leitfähigkeiten aufweisen.}
+	\end{table}}	
+}% nur Folien
+\speech{01_Leitfaehigkeit_und_Widerstand12}{1}{
+		Der Spezifische Widerstand Roh-R ist der Kehrwert von Kappa, was wir eben als Spezifischen Leitwert kennen gelernt haben.
+		Kappa ist gleich eins durch roh-R. Kappa ist definiert als Siemens pro Meter. Für den spezifischen Widerstand Roh-R gilt im linearen Temperaturbereich: roh-R ist gleich roh-R von 20 Grad Celsius mal in Klammern eins plus alpha mal in klammern theta minus 20grad Celsius. Wobei theta die aktuelle Temperatur ist und alpha der Temperaturkoeffizient des Materials und Roh von 20 Grad Celsius der Spezifische Widerstand des Materials bei Raumtepmeratur, also 20 Grad Celsius ist.
+		Kurz gesagt: der Widerstand wird also mit steigender Temperatur linear größer.
+	}
+\speech{01_Leitfaehigkeit_und_Widerstand12}{2}{
+		In der Tabelle sind spezifische Leitfähigkeiten und Temperaturkoeffizienten für unterschiedliche Materialien gelistet. Auffällig: Grafit und Silizium zeigen negative Temperaturkoeffizienten. Grund: Beide sind Halbleiter. Dort sind bei 20 °C nicht alle Ladungsträger frei. Mit steigender Temperatur werden zusätzliche Elektronen freigesetzt - die Leitfähigkeit steigt, obwohl die Stoßwahrscheinlichkeit zunimmt. Der Effekt der zusätzlich beweglichen Elektronen überkompensiert die Stoßeffekte. Bei klassischen Leitern wie Kupfer, Silber, Gold oder Aluminium steigt der Widerstand mit Temperatur, da die gerichtet Bewegung der Ladungsträger durch vermehrte Stöße reduziert wird.
+	}
+\end{frame}
+	% ; TODO: Hillgärtner: Diese Folie ist sehr zusammenhangslos und außerdem ist mir aufgefallen, dass wir für den ohmschen Widerstand R noch gar nicht die Einheit definiert haben. Wenn wir auf Folie 43 schauen, da ist der elektrische Widerstand dargestellt – mit den Kommentaren, die ich da schon hatte – da fehlt das Rollenzeichen. Vielleicht könnte man Folie 48 quasi hier drin integrieren und sagen: Der ohmsche Widerstand R hat die Einheit Ohm, was gleichbedeutend ist mit Volt pro Ampere (V/A). Und der Kehrwert des Widerstands, also 1 durch R ist gleich I durch U, nennt sich Leitwert. Dieser hat die Einheit Siemens (S). Das würde ich tatsächlich auf Folie 43 mit aufnehmen. Somit kann Folie 48, die relativ zusammenhangslos ist, entfallen. Hinweis Ende.
+	\s{
+		Die unterschiedlichen atomaren Zusammensetzungen der Materialien führen zu einer materialabhängigen, elektrischen Leitfähigkeit.
+		Die materialspezifische Eigenschaft bestehen aus der spezifischen Leitfähigkeit $\kappa$ (Kappa), bzw. dem spezifischen Widerstand $\rho_\mathrm{R}$ (Rho)
+		welche antiproportional zueinander stehen, sowie dem jeweiligen Temperaturkoeffizient $\alpha$, welcher sich je nach Material unterscheidet.
+
+		\begin{equation}
+			\kappa = \frac{1}{\rho_\mathrm{R}} \qquad [\kappa] = 1\,\frac{\mathrm{S}}{\mathrm{m}} = 1\,\frac{1}{\Omega\cdot \mathrm{m}}
+		\end{equation}
+		% \s{
+		% Zur Berechnung des Widerstandwertes bei einer konkreten Temperatur, wird die Temperaturdifferenz zu $20^\circ C$ gebildet und dieser Wert mit dem Temperaturkoeffizienten multipliziert.
+		% Dieser Wert wird mit dem bekannten Referenzwert bei $20^\circ C$ multipliziert und mit diesem addiert.
+		% }
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - 	Formeln Kappa, Roh	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+		\begin{equation}
+			\rho_\mathrm{R} = \rho_\mathrm{{20^\circ C}} \cdot (1 + \alpha (\vartheta - 20\mathrm{^\circ C}))
+		\end{equation}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende 	- 	Formeln Kappa, Roh	  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	Für $\vartheta$ (Theta) wird die Temperatur des Leiters eingetragen. Daraus ergibt sich durch ($\vartheta - 20\mathrm{^\circ C}$) die Temperaturdifferenz des Leiters zwischen der vorhandenen Temperatur des Leiters und den $\mathrm{20^\circ C}$, bei welchen der Referenzwert ermittelt wurde.
+	Werden $20\mathrm{^\circ C}$ für $\vartheta$ (Theta) eingesetzt, fällt auch das $\alpha$ weg und es bleibt der Referenzwert $\rho_\mathrm{20\mathrm{^\circ C}}$ übrig.
+	In der folgenden Tabelle sind beispielhaft einige Materialien mit deren spezifischen Eigenschaften dargestellt:
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Tabelle Eigenschaften %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	In der Tabelle fehlen die Referenzwerte bei 20°C, sonst kann Formel 1.2 nicht angewendet werden.
+%%%
+%%%%%% Einfache Tabelle
+% \begin{frame}
+% 	\ftx{Spezifische Leitfähigkeiten und Temperaturkoeffizienten}
+% 	\begin{table}[H]
+% 		\centering
+% 		\resizebox{0.9\textwidth}{!}{%
+% 			\begin{tabular}{@{}l c c@{}}
+% 				\toprule
+% 				\textbf{Material}  & {\textbf{Spezifische Leitfähigkeit} [$\kappa$] = S/m} &
+% 				{\textbf{Temperaturkoeffizient} [$\alpha$] = 1/K}                                    \\
+% 				\midrule
+% 				Silber             & $6.1\cdot 10^{7}$                                     & 0.0038  \\
+% 				Kupfer             & $5.8 \cdot 10^{7}$                                    & 0.0038  \\
+% 				Gold               & $4.5 \cdot 10^{7}$                                    & 0.0034  \\
+% 				Aluminium          & $3.7 \cdot 10^{7}$                                    & 0.004   \\
+% 				Eisen              & $1.0 \cdot 10^{7}$                                    & 0.0065  \\
+% 				Graphit            & $3 \cdot 10^{6}$                                      & -0.0002 \\
+% 				Silizium (dotiert) & {$1 - 10^6$}                                          & -0.075  \\
+% 				Leitungswasser     & $5.0 \cdot 10^{-3}$                                   & {-}     \\
+% 				Luft               & $4.0 \cdot 10^{-15}$                                  & {-}     \\
+% 				\bottomrule
+% 			\end{tabular}%
+% 		}
+% 		\s{\caption{\textbf{Spezifische Leitfähigkeiten und Temperaturkoeffizienten verschiedener Materialien.} Metalle wie Silber und Kupfer haben hohe Leitfähigkeiten,
+% 				während isolierende Materialien wie Luft eine sehr geringe Leitfähigkeit besitzen.}}
+% 		\alttext{Die Tabelle zeigt beispielhafte Werte der spezifischen Leitfähigkeit Kappa sowie die zugehörigen Temperaturkoeffizienten Alpha für verschiedene Materialien. Metalle wie Silber und Kupfer besitzen hohe Leitfähigkeiten, während Isolierstoffe wie Luft nur sehr geringe Leitfähigkeiten aufweisen.}
+% 		\label{tab:specific_resistance}
+% 	\end{table}
+
+% 	\speech{01_Leitfaehigkeit_und_Widerstand13}{1}{
+% 		In der Tabelle sind spezifische Leitfähigkeiten und Temperaturkoeffizienten für unterschiedliche Materialien gelistet. Auffällig: Grafit und Silizium zeigen negative Temperaturkoeffizienten. Grund: Beide sind Halbleiter. Dort sind bei 20 °C nicht alle Ladungsträger frei. Mit steigender Temperatur werden zusätzliche Elektronen freigesetzt – die Leitfähigkeit steigt, obwohl die Stoßwahrscheinlichkeit zunimmt. Der Effekt der zusätzlich beweglichen Elektronen überkompensiert die Stoßeffekte. Bei klassischen Leitern wie Kupfer, Silber, Gold oder Aluminium steigt der Widerstand mit Temperatur, da die gerichtet Bewegung der Ladungsträger durch vermehrte Stöße reduziert wird.
+% 	}
+
+% \end{frame}
+
+\begin{table}[H]
+		\centering
+		\resizebox{0.9\textwidth}{!}{%
+			\begin{tabular}{@{}l c c@{}}
+				\toprule
+				\textbf{Material}  & {\textbf{Spezifische Leitfähigkeit} [$\kappa$] = S/m} &
+				{\textbf{Temperaturkoeffizient} [$\alpha$] = 1/K}                                    \\
+				\midrule
+				Silber             & $6.1\cdot 10^{7}$                                     & 0.0038  \\
+				Kupfer             & $5.8 \cdot 10^{7}$                                    & 0.0038  \\
+				Gold               & $4.5 \cdot 10^{7}$                                    & 0.0034  \\
+				Aluminium          & $3.7 \cdot 10^{7}$                                    & 0.004   \\
+				Eisen              & $1.0 \cdot 10^{7}$                                    & 0.0065  \\
+				Graphit            & $3 \cdot 10^{6}$                                      & -0.0002 \\
+				Silizium (dotiert) & {$1 - 10^6$}                                          & -0.075  \\
+				Leitungswasser     & $5.0 \cdot 10^{-3}$                                   & {-}     \\
+				Luft               & $4.0 \cdot 10^{-15}$                                  & {-}     \\
+				\bottomrule
+			\end{tabular}%
+		}
+		\caption{\textbf{Spezifische Leitfähigkeiten und Temperaturkoeffizienten verschiedener Materialien.} Metalle wie Silber und Kupfer haben hohe Leitfähigkeiten,
+				während isolierende Materialien wie Luft eine sehr geringe Leitfähigkeit besitzen.}
 		\alttext{Die Tabelle zeigt beispielhafte Werte der spezifischen Leitfähigkeit Kappa sowie die zugehörigen Temperaturkoeffizienten Alpha für verschiedene Materialien. Metalle wie Silber und Kupfer besitzen hohe Leitfähigkeiten, während Isolierstoffe wie Luft nur sehr geringe Leitfähigkeiten aufweisen.}
 		\label{tab:specific_resistance}
-	\end{table}
-
-	\speech{01_Leitfaehigkeit_und_Widerstand13}{1}{
-		In der Tabelle sind spezifische Leitfähigkeiten und Temperaturkoeffizienten für unterschiedliche Materialien gelistet. Auffällig: Grafit und Silizium zeigen negative Temperaturkoeffizienten. Grund: Beide sind Halbleiter. Dort sind bei 20 °C nicht alle Ladungsträger frei. Mit steigender Temperatur werden zusätzliche Elektronen freigesetzt – die Leitfähigkeit steigt, obwohl die Stoßwahrscheinlichkeit zunimmt. Der Effekt der zusätzlich beweglichen Elektronen überkompensiert die Stoßeffekte. Bei klassischen Leitern wie Kupfer, Silber, Gold oder Aluminium steigt der Widerstand mit Temperatur, da die gerichtet Bewegung der Ladungsträger durch vermehrte Stöße reduziert wird.
-	}
-
-\end{frame}
-
+\end{table}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Tabelle Eigenschaften %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-	\ftx{Der Leitwert}
 
-	\b{
-		\begin{itemize}\centering
-			\item $ \displaystyle G = \frac{1}{R} \qquad [G] = 1\, \text{Siemens} = 1\, \text{S} = 1\,\, \frac{\text{1}}{\Omega}$ 
-		\end{itemize}
-	}
-
-\end{frame}
 \s{
 	Äquivalent zur spezifischen Leitfähigkeit $\kappa$ und zum spezifischen Widerstand $\rho_\mathrm{R}$,
 	kann der entsprechende Widerstand $R$, bzw. Leitwert $G$ eines Körpers bestimmt werden.
@@ -914,8 +937,12 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - 	Formeln R		  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\ftx{Der Widerstandswert}
+	\ftx{Leitwert und Widerstand}
 	\b{
+		\begin{itemize}\centering
+			\item $ \displaystyle G = \frac{1}{R} \qquad [G] = 1\, \text{Siemens} = 1\, \text{S} = 1\,\, \frac{\text{1}}{\Omega}$ 
+		\end{itemize}
+	
 		\begin{itemize}
 			\item Allgemeine Formel in Bezug auf die Materialeigenschaften:
 		\end{itemize}
@@ -931,7 +958,6 @@
 		l               &:\ \text{Länge des Materials }[\mathrm{m}] &&\\
 		A               &:\ \text{Querschnittsfläche des Materials }[\mathrm{m}^2] &&\\
 	\end{flalign*}
-
 	}
 	%falscher Ort für diesen speech Befehl
 	%\speech{01_Leitfaehigkeit_und_Widerstand15}{1}{
@@ -949,7 +975,6 @@
 	%Wenn wir uns jetzt mal genauer den Widerstand als Bauteil anschauen, dann haben wir natürlich das Bauelement ohmscher Widerstand. Das wäre ja auch schlimm, wenn nicht. Auf der anderen Seite kommt es aber auch zu parasitären Effekten. Denn wir haben ja ein elektrisches Feld innerhalb des Widerstands. Da liegt eine Spannung an. Das heißt, wir haben ein elektrisches Feld. Innerhalb dieses elektrischen Feldes kann eben auch Energie gespeichert werden. Und das werden wir im späteren Verlauf des Tests noch sehen. Diese Fähigkeit, Energie im elektrischen Feld zu speichern, beschreiben wir mit der Kapazität C. Das heißt, in diesem ohmschen Widerstand, der eigentlich nur ein Widerstand sein sollte, in diesem Bauelement Widerstand, befindet sich immer auch eine Kapazität. Ferner haben wir Anschlussleitungen und Ähnliches. Ein stromdurchflossener Leiter ist immer von einem Magnetfeld umgeben. Und dieses können wir schaltungstechnisch auch noch repräsentieren durch eine Induktivität, hier die Induktivität LS. Das heißt, wir sehen hier zum einen die Schaltungsymbole R, L und C als neues. Aber wir sehen eben auch, dass ein reales Bauteil Widerstand eben nicht nur den gewünschten Anteil Ohmscher Widerstand hat, sondern eben auch noch eine Lenzinduktivität und eine parallel dazu liegende Kapazität oder auch in einem. Das sorgt tatsächlich im realen Leben dann für Probleme, insbesondere wenn wir nicht mehr nur über Gleichstrom reden, sondern über Strom, der sich zeitlich schnell ändert. Denn dann spielen diese beiden Elemente L und C eine sehr entscheidende Rolle, was wir im weiteren Verlauf dieses Moduls und auch der folgenden Module dann noch sehen werden. Wichtig festzuhalten ist, wenn du einen Schaltkreis siehst, zumindest im Rahmen dieses Moduls und im Rahmen dieses Projektes Get It Digital, dann ist er bereits vollständig beschrieben. Das heißt, wir haben das Bauteil, was wir real einbauen, mit den dargestellten Schaltungssymbolen bereits dargestellt. Du musst jetzt nicht jeden Widerstand in einer Schaltung ersetzen, durch dieses Ersatzschaltbild, sondern du rechnest erstmal so, wie es dargestellt ist. Aber man darf sich oder muss sich von dem Gedanken lösen, dass ein reales Bau-Element wie einWiderstand wirklich nur aus diesem Schaltungssymbol Umschaltwiderstand besteht. Da steckt meistens noch deutlich mehr dahinter. In vielen Fällen können wir das vernachlässigen. Und wie kriegen wir jetzt diese Daten? Eigentlich sollte der Bauteilhersteller uns diese Daten liefern. Jetzt finden wir in den allerwenigsten Datenblättern von Umschaltwiderständen die parasitären Induktivität und Kapazitäten. Das ist ein Ärgernis. Wenn man aber merkt, dass man die braucht, dann kann man die letztlich durch Ausmessung oder Ähnliches herausfinden. Halten wir kurz fest. Als Zusammenfassung. Wir haben das ideale Schaltungssymbol Umschallwiderstand. Wir haben das reale Bauteil Widerstand. Und das reale Bauteil Widerstand hat überwiegend einen Umschallwiderstand, aber auch parasitäre ungewünschte Eigenschaften.
 
 	%}
-
 \end{frame}
 \s{
 	\begin{equation}
@@ -981,7 +1006,7 @@
 		\label{fig:erstes_schaltbild}
 	\end{figure}
 	\speech{01_Leitfaehigkeit_und_Widerstand15}{1}
-	{ Wir haben also jetzt das erste elektrische Bauelement kennengelernt, nämlich den Ohmschen Widerstand. Und den ohmscher widerstand R, den finden wir jetzt hier unten in dem Schaltkreis, dargestellt als rechteckiger Kasten. So stellen wir in der Elektrotechnik Schaltkreise dar. Die Spannungsquelle werden wir ziemlich bald im nächsten Abschnitt kennenlernen. Eine Glühlampe kennt jeder vom täglichen Leben. Und der Schalter ist hier, wie immer in Schaltkreisen, als idealer Schalter dargestellt. Das heißt, der kennt nur zwei Zustände. Entweder ist er geöffnet, so wie jetzt im Moment. Dann hat er einen unendlich hohen Widerstand, dann kann kein Strom fließen. Oder aber er ist geschlossen. Er wird zu einem bestimmten Zeitpunkt T geschlossen. Dann hat er einen Widerstand von null. Solche Schalter gibt es in der Realität nicht. Aber wir werden uns im Folgenden auch daran gewöhnen müssen, dass wir in Schaltkreisen immer nur die Realität nachbilden können, unter Vernachlässigung einiger Effekte. Und diese Effekte müssen dann gegebenenfalls anderwertig dargestellt werden. Ganz wichtig bei den Schaltkreisen, so wie sie hier auch dargestellt sind, sind die Verbindungslinien zwischen den einzelnen Elementen. Diese Verbindungslinien haben auch keine elektrischen Eigenschaften, sind ein unendlich guter Leiter, haben keinen Widerstand, keine Induktivität, keine Kapazität, nichts. Ein Kabel, wenn du das in der Realität betrachtest, hat das hingegen schon. Und da muss man dann gegebenenfalls etwas Gehirnschmalz reinstecken, seine Schaltung richtig zu modulieren, damit es dann auch den Tatsachen entspricht. Dazu aber später auch noch mehr}
+	{Wir haben also jetzt das erste elektrische Bauelement kennengelernt, nämlich den Ohmschen Widerstand. Und den ohmscher widerstand R, den finden wir jetzt hier unten in dem Schaltkreis, dargestellt als rechteckiger Kasten. So stellen wir in der Elektrotechnik Schaltkreise dar. Die Spannungsquelle werden wir ziemlich bald im nächsten Abschnitt kennenlernen. Eine Glühlampe kennt jeder vom täglichen Leben. Und der Schalter ist hier, wie immer in Schaltkreisen, als idealer Schalter dargestellt. Das heißt, der kennt nur zwei Zustände. Entweder ist er geöffnet, so wie jetzt im Moment. Dann hat er einen unendlich hohen Widerstand, dann kann kein Strom fließen. Oder aber er ist geschlossen. Er wird zu einem bestimmten Zeitpunkt T geschlossen. Dann hat er einen Widerstand von null. Solche Schalter gibt es in der Realität nicht. Aber wir werden uns im Folgenden auch daran gewöhnen müssen, dass wir in Schaltkreisen immer nur die Realität nachbilden können, unter Vernachlässigung einiger Effekte. Und diese Effekte müssen dann gegebenenfalls anderwertig dargestellt werden. Ganz wichtig bei den Schaltkreisen, so wie sie hier auch dargestellt sind, sind die Verbindungslinien zwischen den einzelnen Elementen. Diese Verbindungslinien haben auch keine elektrischen Eigenschaften, sind ein unendlich guter Leiter, haben keinen Widerstand, keine Induktivität, keine Kapazität, nichts. Ein Kabel, wenn du das in der Realität betrachtest, hat das hingegen schon. Und da muss man dann gegebenenfalls etwas Gehirnschmalz reinstecken, seine Schaltung richtig zu modulieren, damit es dann auch den Tatsachen entspricht. Dazu aber später auch noch mehr}
 \end{frame}
 \s{
 	Das Schaltbild besteht aus vier Elementen, welche mit Linien verbunden sind. Es stellt eine Reihenschaltung bestehend aus
