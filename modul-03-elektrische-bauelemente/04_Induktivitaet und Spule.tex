@@ -644,69 +644,70 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Schaltverhalten Spule	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\s{
 \begin{frame}
-	\ftx{Schaltverhalten einer Spule: Aufladen}
+	%\ftx{Schaltverhalten einer Spule: Aufladen}
 	\subsection{Schaltverhalten einer Spule}
 
-	\s{
 		Zum besseren Verständnis der Funktion einer Spule wird nun ein zeitlich veränderliches Signal, hier der Einschalt- und Ausschaltvorgang, betrachtet.
 		Das grundlegende Prinzip der Induktivität basiert darauf, dass ein zeitlich veränderlicher Strom ein zeitlich veränderliches Magnetfeld erzeugt. Dieses zeitlich veränderliche Magnetfeld
 		induziert wiederum einen Induktionsstrom in die Spule selbst. Aufgrund der Lenz'schen Regel wirkt der Induktionsstrom jedoch entgegen seiner Ursache, was einen sprunghaften Anstieg des Stromes verhindert.
 		% Das grundlegende Prinzip der Induktivität basiert darauf, dass ein zeitlich veränderlicher Strom ein zeitlich veränderliches Magnetfeld erzeugt.
 		% Dieses Magnetfeld induziert wiederum eine Spannung in der Spule, die der Änderung des Stromes entgegenwirkt. Dieser Vorgang wird als Selbstinduktion bezeichnet.
-	}% nur im Skript
+	
 
 	%%%%% Laden der Spule
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Schaltbild zum Schaltverhalten SCHALTER	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\b{
-		\begin{figure}[H]
-			\centering
-			\begin{subfigure}[h]{0.5\textwidth}
-				\centering
-				\input{Tikz/src/04_Induktivitaet_Spule/Reihenschaltung_Spule_Aufladen}
-				\label{fig:Schaltbild_Spule_Schalter}
-			\end{subfigure}
+	%\b{
+		 %\begin{figure}[H]
+		% 	\centering
+		% 	\begin{subfigure}[h]{0.5\textwidth}
+		% 		\centering
+		% 		\input{Tikz/src/04_Induktivitaet_Spule/Reihenschaltung_Spule_Aufladen}
+		% 		\label{fig:Schaltbild_Spule_Schalter}
+		% 	\end{subfigure}
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Schaltbild zum Schaltverhalten SCHALTER	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Diagramm zum Schaltverhalten SCHALTER	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-			\begin{subfigure}[b]{0.9\textwidth}
-				\centering
-				\input{Tikz/src/04_Induktivitaet_Spule/Spule_Aufladen_Verlauf}
-				\label{fig:Spannungsverlauf}
-			\end{subfigure}
-			\label{fig:Gesamtdarstellung}
-		\end{figure}
-	}% nur Folien
-\end{frame}
+		% 	\begin{subfigure}[b]{0.9\textwidth}
+		% 		\centering
+		% 		\input{Tikz/src/04_Induktivitaet_Spule/Spule_Aufladen_Verlauf}
+		% 		\label{fig:Spannungsverlauf}
+		% 	\end{subfigure}
+		% 	\label{fig:Gesamtdarstellung}
+		% \end{figure}
+% 	}% nur Folien
+ \end{frame}
+}
 
-\s{
-	\begin{figure}[H]
-		\centering
-		\begin{subfigure}[h]{0.9\textwidth}
-			\centering
-			\input{Tikz/src/04_Induktivitaet_Spule/Reihenschaltung_Spule_Aufladen}
-			\caption{Darstellung der Reihenschaltung bestehend aus einer Induktivität \(L\), einem Widerstand \(R\) und einem Schalter.}
-			\label{fig:Schaltbild_Spule_Schalter}
-		\end{subfigure}
+%\s{
+	%\begin{figure}[H]
+		% \centering
+		% \begin{subfigure}[h]{0.9\textwidth}
+		% 	\centering
+		% 	\input{Tikz/src/04_Induktivitaet_Spule/Reihenschaltung_Spule_Aufladen}
+		% 	\caption{Darstellung der Reihenschaltung bestehend aus einer Induktivität \(L\), einem Widerstand \(R\) und einem Schalter.}
+		% 	\label{fig:Schaltbild_Spule_Schalter}
+		% \end{subfigure}
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Schaltbild zum Schaltverhalten SCHALTER	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Diagramm zum Schaltverhalten SCHALTER	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{subfigure}[b]{0.9\textwidth}
-			\centering
-			\input{Tikz/src/04_Induktivitaet_Spule/Spule_Aufladen_Verlauf}
-			\caption{Spannungs- und Strom verlauf über der Induktivität bei einer Gleichspannung die zum Zeitpunkt $t = 0$ eingeschaltet
-				wird und zum Zeitpunkt $t_\mathrm{0}$ abgeschaltet wird.}
-			\label{fig:Spannungsverlauf}
-		\end{subfigure}
-		\caption{\textbf{Der Spannungs- und Strom verlauf über der Induktivität.} Das Diagramm zeigt die Reaktion der Induktivität
-			auf die plötzliche Änderung der Spannung und
-			veranschaulicht das typische Lade verhalten.}
-		\label{fig:Gesamtdarstellung}
-	\end{figure}
-}% Nur Skript
+	% 	\begin{subfigure}[b]{0.9\textwidth}
+	% 		\centering
+	% 		\input{Tikz/src/04_Induktivitaet_Spule/Spule_Aufladen_Verlauf}
+	% 		\caption{Spannungs- und Strom verlauf über der Induktivität bei einer Gleichspannung die zum Zeitpunkt $t = 0$ eingeschaltet
+	% 			wird und zum Zeitpunkt $t_\mathrm{0}$ abgeschaltet wird.}
+	% 		\label{fig:Spannungsverlauf}
+	% 	\end{subfigure}
+	% 	\caption{\textbf{Der Spannungs- und Strom verlauf über der Induktivität.} Das Diagramm zeigt die Reaktion der Induktivität
+	% 		auf die plötzliche Änderung der Spannung und
+	% 		veranschaulicht das typische Lade verhalten.}
+	% 	\label{fig:Gesamtdarstellung}
+	% \end{figure}
+%}% Nur Skript
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Diagramm zum Schaltverhalten SCHALTER	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Schaltbild zum Schaltverhalten RECHTECK	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\ftx{Schaltverhalten einer Spule: Entladen}
+	\ftx{Schaltverhalten einer Spule: Aufladen und Entladen}
 	%%%%%% Laden- entladen der Spule
 	\b{
 		\begin{figure}[H]
@@ -718,14 +719,41 @@
 			\end{subfigure}
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Schaltbild zum Schaltverhalten RECHTECK	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Diagramm zum Schaltverhalten RECHTECK	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			\uncover<1->{
 			\begin{subfigure}[b]{0.9\textwidth}
 				\centering
-				\input{Tikz/src/04_Induktivitaet_Spule/Spule_Entladen_Verlauf}
+				\input{Tikz/src/04_Induktivitaet_Spule/Spule_aufladen_entladen_folie}
 				\label{fig:Spannungsverlauf}
 			\end{subfigure}
 			\label{fig:Gesamtdarstellung}
+			}
 		\end{figure}
 	}
+	\speech{04_Induktitaet_und_Spule14}{1}
+	{Schauen wir uns nun zuerst das auflade und dann das entladeverhalten einer induktivität an. Hierbei treten besonders beim entladen effekte auf, die nicht direkt intuitiv sind.
+	Wir haben als Grundlage eine Spannungsquelle welche zum Zeitpunkt Null eingeschaltet wird, und nach 6 Tau, was genau Tau ist, kommt am ende, wieder auf null Volt geschaltet wird. 
+	Wichtig: Eine Spannungquelle die Null Volt hat ist ein Kurzschluss. Das ist vorerst verwirrend, aber wenn man drüber nachdenkt, die Quelle erzwingt, unabhängig vom Strom eine Spannung von  null Volt, was gleichzusetzen mit einem idealen Leiter, also einem kurzschluss ist. Denn es fällt keine Spannung bei einem beliebigen Strom ab.
+	}
+	\silence{3}
+	\speech{04_Induktitaet_und_Spule14}{2}
+	{Schalten wir nun die Spannung an, und fokussieren uns auch nur auf den bereich bis 6 Tau.
+	Wir einnern uns, durch eine induktivität kann sich der Strom nicht Sprunghaft ändern, was bedeutet, die induktivität zeigt lässt zu beginn keinen Strom fließen. Demzufolge fällt keine Spannung am Widerstand R ab, da kein Strom fließt. Die gesamte Spannung fällt also über die induktivität ab.
+	Der Strom durch eine induktivität ist ja das integral der Spannung über die Zeit, heißt, die induktivität leitet mit der zeit immer mehr Strom, was auch an der roten kurve im Graphen zu sehen ist.
+	Durch den Stromfluss fällt auch über den Widerstand R eine Spannung ab, die Spannung an der induktivität verringert sich um exakt diesen Wert. Das geht so lange, bis die gesamte Quellspannung U über den Widerstand abfällt. Über die Induktivität fällt dann keine Spannung mehr ab, die integriert werden kann, der Strom verändert sich nicht weiter.
+	}
+	\silence{3}
+	\speech{04_Induktitaet_und_Spule14}{3}
+	{Nun wird die Quelle auf Null gesetzt.
+	Das bedeutet, der Strom wird nun nicht mehr durch die Quelle getrieben. Man könnte meinen der Strom fließt dann auch nicht mehr weiter, aber das ist bei der induktivität ja nicht möglich. Die Energie im Feld der induktivität treibt den Strom weiter durch die Schaltung, bis die Energie vom Widerstand in thermische Energie umgewandelt ist.
+	}
+	\silence{3}
+	\speech{04_Induktitaet_und_Spule14}{4}
+	{Mit der Spannung an der induktivität passiert aber etwas eigenartiges. Sie dreht sich um. Was zuerst unintuitiv wirkt, aber sinn macht, wenn wir die Quelle als kurzschluss sehen. denn damit der Strom in gleicher Richtung fließt muss die urpsrüngliche Quellspannung am Widerstand R anliegen. Und damit ist die Spannung anderherum als am Anfang.
+	Hierbei ist ganz wichtig, das die Spannung durch die Induktivität induziert wird. Wenn wir statt eines konstanten Widerstandes nun einen Schalter hätten, der plötzlich einen unendlich hohen Widerstand hat, würde die Induzierte Spannung so hoch werden, bis der urpsrüngliche Strom wieder fließt. Dabei können auch lichtbögen im Schalter entstehen.
+	}
+	\silence{3}
+	\speech{04_Induktitaet_und_Spule14}{5}
+	{Die Anfangs erwähnte Zeitkonstante Tau ist ähnlich bei bei der Kapazität die zeit, dies es braucht bis sich der Strom oder auch die Spannung um 63 Prozent zum anfangswert verändert hat. Dabei ist es egal, ob die Spannung Zu oder abnimmt.}
 \end{frame}
 \s{
 	\begin{figure}[H]
@@ -757,17 +785,17 @@
 	hin zur Steuerung elektromagnetischer Interferenzen ist die Induktivität ein Schlüsselelement in der modernen Elektrotechnik.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Beispiel Rechnung Induktivität %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-	\ftx{Beispielrechnung Induktivität}
+% \begin{frame}
+% 	\ftx{Beispielrechnung Induktivität}
 
-	\begin{bsp}{Berechnungs der Induktivität}{}
-		\begin{itemize}
-			\item Berechnung der Induktivität $L$
-			\item Berechnung der magnetischen Flussdichte $\vec{B}$
-			\item Gespeicherte Energie im Magnetfeld $E_\mathrm{m}$ ?
-		\end{itemize}
-	\end{bsp}
+% 	\begin{bsp}{Berechnungs der Induktivität}{}
+% 		\begin{itemize}
+% 			\item Berechnung der Induktivität $L$
+% 			\item Berechnung der magnetischen Flussdichte $\vec{B}$
+% 			\item Gespeicherte Energie im Magnetfeld $E_\mathrm{m}$ ?
+% 		\end{itemize}
+% 	\end{bsp}
 
-\end{frame}
+% \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Beispiel Rechnung Induktivität %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Induktivität %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
