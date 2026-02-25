@@ -366,7 +366,7 @@
 	\ftx{Merkesatz}
 	\begin{Merksatz}{Spule}
 	Die Spule ist der verzweifelte Versuch, eine Induktivität nachzubilden.
-	\end {Merksatz}
+	\end{Merksatz}
 	\speech{04_Induktitaet_und_Spule8}{1}
 	{Wir merken also, die Spule ist nur der verzweifelte Versuch eine Induktivität nachzubilden.}
 \end{frame}
@@ -528,8 +528,15 @@
 		\begin{equation*}
 			B = \frac{\mu \cdot I \cdot N} {l}
 		\end{equation*}
-\uncover<2->{
 
+		% Erklärung der Symbole und Herleitung der Einheiten
+		\begin{align*}
+			\mu & : \text{Permeabilitätskonstante} \\
+			I   & : \text{Elektrische Stromstärke} \\
+			N   & : \text{Anzahl der Windungen}    \\
+			l   & : \text{Länge des Magnetkreises}
+		\end{align*}
+	\uncover<2->{
 
 		% Herleitung der Einheiten
 		\begin{align*}
@@ -540,20 +547,13 @@
 			= \text{T (Tesla)}
 		\end{align*}
 }
-		% Erklärung der Symbole und Herleitung der Einheiten
-		\begin{align*}
-			\mu & : \text{Permeabilitätskonstante} \\
-			I   & : \text{Elektrische Stromstärke} \\
-			N   & : \text{Anzahl der Windungen}    \\
-			l   & : \text{Länge des Magnetkreises}
-		\end{align*}
-		\uncover<3->{
+\uncover<3->{
 
 			\begin{equation*}
 				\vec{B} = \mu \cdot \vec{H}
 			\end{equation*}
-		}
-	}
+}
+}
 	\speech{04_Induktitaet_und_Spule12}{1}
 	{Die magnetische Flussdichte B, die bis jetzt betrachtet wurde für ideal leitende Leiter-spule, berechnet sich über B ist gleich müh mal I mal N geteilt durch die Länge der Spule.
 	Was bedeutet, je mehr windungen wir auf die länge l bekommen und je höher der Strom durch diese  ist, umso stärker ist die magnetische Flussdichte in der Spule.}
