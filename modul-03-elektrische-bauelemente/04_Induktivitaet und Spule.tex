@@ -47,7 +47,7 @@
 		\end{Lernziele}
 		\speech{04_Induktitaet_und_Spule1}{1}
 		{In diesem Abschließenden Kapitel behandeln wir die Induktivität als Eigenschaft und die Spule als reales Bauteil.
-			Am Ende dieses Kapitels kannst du zwischen Induktivität und Spule unterscheiden, kennst die wichtigsten Parameter einer Spule und der Induktivität sowie ihr Verhalten, und kannst die Induktivität einer Spule berechnen. }
+		Am Ende dieses Kapitels kannst du zwischen Induktivität und Spule unterscheiden, kennst die wichtigsten Parameter einer Spule und der Induktivität sowie ihr Verhalten, und kannst die Induktivität einer Spule berechnen. }
 	\end{frame}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Lernziele Induktivität %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -496,7 +496,7 @@
 		\end{align*}
 	}
 	\speech{04_Induktitaet_und_Spule11}{1}
-	{Die Permeabilitäts-konstante eines Materials besteht aus der einheitenlosen relativen Permeabilität müh-r und der magnetischen Feldkonstanten müh-null und besitzt die Einheit Henry pro meter. Diese brauchen wir um die Magnetfeldstärke zu berechnen.}
+	{Sie setzt sich zusammen aus der einheitenlosen relativen Permeabilität müh-r und der magnetischen Feldkonstanten müh-null und besitzt die Einheit Henry pro meter. Diese brauchen wir um die Magnetische FLussdichte in einer Spule zu berechnen.}
 \end{frame}
 \s{
 
@@ -530,6 +530,8 @@
 		\begin{equation*}
 			B = \frac{\mu \cdot I \cdot N} {l}
 		\end{equation*}
+\uncover<2->{
+
 
 		% Herleitung der Einheiten
 		\begin{align*}
@@ -539,7 +541,7 @@
 			= \frac{\text{V} \cdot \text{s}}{\text{m}^2}
 			= \text{T (Tesla)}
 		\end{align*}
-
+}
 		% Erklärung der Symbole und Herleitung der Einheiten
 		\begin{align*}
 			\mu & : \text{Permeabilitätskonstante} \\
@@ -547,7 +549,7 @@
 			N   & : \text{Anzahl der Windungen}    \\
 			l   & : \text{Länge des Magnetkreises}
 		\end{align*}
-		\only<2->{
+		\uncover<3->{
 
 			\begin{equation*}
 				\vec{B} = \mu \cdot \vec{H}
@@ -555,9 +557,17 @@
 		}
 	}
 	\speech{04_Induktitaet_und_Spule12}{1}
-	{Die magnetische Flussdichte B, die bis jetzt betrachtet wurde für ideal leitende Leiter-spule, berechnet sich über B ist gleich müh mal I mal N geteilt durch die Länge der Spule. Also je mehr windungen wir auf die länge l bekommen und je höher der Strom durch die induktivität ist, umso stärker ist die magnetische Flussdichte.}
+	{Die magnetische Flussdichte B, die bis jetzt betrachtet wurde für ideal leitende Leiter-spule, berechnet sich über B ist gleich müh mal I mal N geteilt durch die Länge der Spule.
+	Was bedeutet, je mehr windungen wir auf die länge l bekommen und je höher der Strom durch diese  ist, umso stärker ist die magnetische Flussdichte in der Spule.}
+	\silence{2}
 	\speech{04_Induktitaet_und_Spule12}{2}
-	{Die Magnetische Feldstärke H ist vorerst unabhängig vom Material. Erst die magnetische Flussdichte bezieht auch das verwendete Material im inneren der Spule.}
+	{Ihre Einheit lässt sich einfach herleiten durch die permeabilitätskonstante mit Henry pro meter, mal dem Strom in Ampere, die Windungszahl N ist einheitenlos, geteilt durch die länge der Spule in Metern.
+	Wir können einiges kürzen, so das am Ende Volt mal Sekunde pro quadratmeter herauskommt, was zusammengefasst wird zu der Einheit Tesla.
+	Ein Tesla ist also eine Volstsekunde pro quadratmeter.
+	}
+	\silence{3}
+	\speech{04_Induktitaet_und_Spule13}{3}
+	{Während die Magnetische Flussdichte B von dem durchdringten material abhängig ist, ist die Magnetische Feldstärke H unabhängig vom Material. Erst die magnetische Flussdichte bezieht auch das verwendete Material im inneren der Spule.}
 \end{frame}
 \s{
 
@@ -598,10 +608,14 @@
 			[L] = 1\, \text{Henry} = 1\,\text{H} = 1\, \frac{\text{Vs}} {\text{A}}
 		\end{equation*}
 		\vspace{0.5cm}
-		\begin{equation*}
+		\begin{align*}
 			L = \frac{\mu \cdot N^2 \cdot A}{l}
-		\end{equation*}
+		\end{align*}
 	}
+	\speech{04_Induktitaet_und_Spule14}{1}
+	{Die Induktivität einer Spule hängt neben dem verwendeten magnetisch permeablen Material, der Querschnittsfläche und der Länge, quadratisch von der Wicklungsanzahl. Eine nähere Herleitung ist in Modul 6 zu finden. 
+	}
+	\silence{4}
 \end{frame}
 \s{
 	Die Induktivität selbst hängt ebenfalls von der Bauform und den verwendeten Materialien ab.
