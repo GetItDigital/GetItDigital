@@ -113,8 +113,7 @@
 	\begin{figure}[H]
 		\centering
 		\includesvg[width=0.6\textwidth]{Realer_Plattenkondensator}
-		\s{\caption{\textbf{Plattenkondensator mit realem Feldverlauf.} Im Gegensatz zum idealen Kondensator treten
-				Randfelder und Verluste auf, die die tatsächliche Kapazität und das elektrische Verhalten beeinflussen.}}
+		\s{\caption{\textbf{Plattenkondensator mit realem Feldverlauf.} Im Gegensatz zum idealen Kondensator treten Randfelder und Verluste auf, die die tatsächliche Kapazität und das elektrische Verhalten beeinflussen.}}
 		\alttext{Schematische Darstellung eines Plattenkondensators mit realem Feldverlauf. Links ist eine positiv geladene Platte, rechts eine negativ geladene Platte dargestellt. Zwischen den Platten verlaufen mehrere gerade Feldlinien von der positiven zur negativen Platte. An den oberen und unteren Plattenrändern biegen die Feldlinien nach außen ab und bilden Randfelder, die als gekrümmte Pfeile außerhalb des Plattenbereichs dargestellt sind.}
 		\label{fig:realer Kondensator}
 	\end{figure}
@@ -216,7 +215,7 @@
 		\begin{figure}[h]
 			\begin{center}
 				\input{Tikz/src/03_Kapazitaet_Kondensator/Ersatzschaltbild_idealer_Kondensator}
-	
+	\alttext{Schaltsymbol eines idealen Kondensators C sind zwei linien senkrecht zur Leitungslinie. Ein Pfeil kennzeichnet die Kondensatorspannung uC von t, und ein Pfeil kennzeichnet den Strom iC von t durch den Kondensator.}
 			\end{center}
 		\end{figure}
 
@@ -228,7 +227,7 @@
 			\begin{figure}[H]
 				\begin{center}
 					\input{Tikz/src/03_Kapazitaet_Kondensator/Ersatzschaltbild_realer_Kondensator}
-					
+				\alttext{Ersatzschaltbild eines realen Kondensators als Reihenschaltung. Von links nach rechts sind ein idealer Kondensator C, ein Serienwiderstand Rs und eine Serieninduktivität Ls dargestellt. Der Strom iC von t fließt nach rechts. Die Spannungsabfälle sind als Pfeile markiert: uC von t am Kondensator, uR von t am Widerstand und uL von t an der Induktivität.}	
 				\end{center}
 			\end{figure}
 		}
@@ -238,7 +237,7 @@
 		In einer idealen Welt hat ein Kondensator tatsächlich nur die gewünschte Kapazität. An dieser gewünschten Kapazität liegt eine Spannung an, die jetzt hier als zeitlich variable Spannung anliegt. Und dann fließt auch tatsächlich ein zeitlich variabler Strom durch eben genau diese Kapazität. Ein Strom IC von T.
 	}
 
-	\speech{03_Kapazitaet_und_Kondensator6}{2}{% ; TODO feintuning nötig
+	\speech{03_Kapazitaet_und_Kondensator6}{2}{
 		Leider Gottes schlagen aber die parasitären Elemente bei einem realen Kondensator sehr stark ins Gewicht. Das einfachste Ersatzschaltbild eines realen Kondensators ist die gewünschte Kapazität in Reihe zu einem Serienwiderstand und einer Serieninduktivität. Der Serienwiderstand, den können wir uns relativ leicht erklären, denn auf dem Bild haben wir ja schon gesehen das wir irgendwo immer Anschlussleitungen haben müssen. Diese Anschlussleitungen haben immer einen ohmschen Widerstand der verändert natürlich das Verhalten des Kondensators. Das wäre meistens noch sehr gut zu verschmerzen.
 		Viel problematischer ist aber die in Serie liegende Induktivität. Im späteren Verlauf, in anderen Modulen, wirst du das Frequenzverhalten von Kapazität und Induktivität näher kennenlernen. Vereinfacht gesprochen leitet ein Kondensator den Strom immer besser, je höher die Frequenz ist. Wohingegen die Induktivität den Strom immer schlechter leitet mit höher werdender Frequenz.
 		Sodass wir hier im Prinzip gegensätzliche Bauteileigenschaften haben. In der Realität ist es tatsächlich so, dass ein Kondensator abhängig von seinem Aufbau irgendwann nicht mehr die gewünschte Kapazität schaltungstechnisch darstellt, sondern sich eher wie eine Induktivität verhält. Da die serielle parasitäre Induktivität dominant wird. Und je größer das Bauelement geometrisch ist, desto schlechter ist dieses Verhältnis zwischen Nennkapazität und parasitärer Induktivität.
@@ -251,7 +250,7 @@
 		\begin{center}
 			\input{Tikz/src/03_Kapazitaet_Kondensator/Ersatzschaltbild_idealer_Kondensator}
 			\caption{\textbf{Schaltelement eines idealen Kondensators.} Mit einem Spannungsabfall und einem Stromfluss.}
-
+\alttext{Schaltsymbol eines idealen Kondensators C sind zwei linien senkrecht zur Leitungslinie. Ein Pfeil kennzeichnet die Kondensatorspannung uC von t, und ein Pfeil kennzeichnet den Strom iC von t durch den Kondensator.}
 			\label{fig:idealer Kondensator_ESB_1}
 		\end{center}
 	\end{figure}
@@ -269,7 +268,7 @@
 			\input{Tikz/src/03_Kapazitaet_Kondensator/Ersatzschaltbild_realer_Kondensator}
 			\caption{\textbf{Ersatzschaltbild eines realen Kondensators.} Der ideale Kondensator $C$ wird durch eine Serien-Induktivität
 				$L_\mathrm{s}$ und einen Serien-Widerstand $R_\mathrm{s}$ ergänzt, um parasitäre Effekte zu berücksichtigen.}
-
+\alttext{Ersatzschaltbild eines realen Kondensators als Reihenschaltung. Von links nach rechts sind ein idealer Kondensator C, ein Serienwiderstand Rs und eine Serieninduktivität Ls dargestellt. Der Strom iC von t fließt nach rechts. Die Spannungsabfälle sind als Pfeile markiert: uC von t am Kondensator, uR von t am Widerstand und uL von t an der Induktivität.}
 			\label{fig:realer Kondensator_ESB_2}
 		\end{center}
 	\end{figure}
@@ -309,15 +308,22 @@
 	auf welche in Abschnitt 1.3.4 noch eingegangen wird.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Grafik Dielektrikum	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+\begin{frame}[t]
 	\ftx{Das Dielektrikum}
 	\begin{figure}[H]
 		\centering
 		\includesvg[width=0.6\textwidth]{Idealer_Plattenkondensator_Dielektrikum}
 		\s{\caption{\textbf{Idealer Kondensator mit Dielektrikum.} Der Kondensator besteht aus zwei Platten, zwischen denen sich ein Dielektrikum befindet. Das Dielektrikum
 				ist ein nicht leitendes Material, das die elektrische Feldstärke reduziert und die Kapazität des Kondensators erhöht, indem es die Relative Dielektrizitätskonstante erhört.}}
+		\alttext{Schematische Darstellung eines Plattenkondensators mit Dielektrikum. Links ist die positiv geladene Platte mit Pluszeichen dargestellt, rechts die negativ geladene Platte mit Minuszeichen. Zwischen den Platten befindet sich ein graues, mittig eingezeichnetes Dielektrikum. Mehrere horizontale Pfeile zeigen die Feldlinien von der positiven zur negativen Platte. In der Mitte sind das elektrische Feld E und die elektrische Flussdichte D eingezeichnet. Über der Anordnung steht die Beschriftung Dielektrikum.}
 		\label{fig:idealer Kondensator mit Dielektrikum}
 	\end{figure}
+	\b{\begin{itemize}
+  \item Nicht leitendes Material zwischen den Kondensatorplatten
+  \item Wird im elektrischen Feld polarisiert
+  \item Erhöht die Kapazität
+  \item Reduziert die elektrische Feldstärke bei gleicher Ladung
+\end{itemize}}
 	%;Volatisationseffekt -> Polarisationseffekte
 	\speech{03_Kapazitaet_und_Kondensator8}{1}{
 		Ich hatte ja bereits gesagt, dass die beiden Platten voneinander isoliert werden müssen. Und dies kann im einfachsten Fall mit Luft als Dielektrikum passieren. Es kann aber auch ein dielektrischer Stoff eingeführt werden, das sogenannte Dielektrikum, hier in dunkelgrau dargestellt. Wir haben dann durchgehend gleich, sowohl im Dielektrikum als auch in der Luft, die elektrische Flussdichte D. Daraus ergibt sich als nicht-kontinuierlichen Teil die elektrische Feldstärke E, die im Dielektrikum deutlich größer werden wird als außerhalb. Was erreichen wir damit? Wir erreichen damit letztlich, dass die Kapazität unseres Kondensators sich erhöht, nämlich durch Polarisationseffekte und ähnliches.
@@ -360,9 +366,8 @@
 				\bottomrule
 			\end{tabular}%
 		}
-		\s{\caption{\textbf{Relative Dielektrizitätszahl verschiedener Materialien.} Diese dimensionslose Zahl gibt an,
-				wie stark das elektrische Feld in einem Material im Vergleich zum Vakuum beeinflusst wird. Sie ist ein Maß für die Fähigkeit des Materials, elektrische Ladung zu speichern.
-				Materialien mit einer höheren Dielektrizitätszahl erhöhen die Kapazität eines Kondensators, da sie die elektrische Feldstärke im Inneren verringern.}}
+		\s{\caption{\textbf{Relative Dielektrizitätszahl verschiedener Materialien.} Werte von $\varepsilon_r$ im Vergleich zum Vakuum.}}
+		\alttext{Tabelle mit der relativen Dielektrizitätszahl eps r für verschiedene Materialien. Aufgelistet sind: Vakuum 1, Luft bei STP 1,0006, Kunststoff PE 2,25 bis 2,3, Glas hat 3 bis 10, Keramik 5 bis 300, Silizium 11,7, Tantaloxid 25 bis 30 und Wasser 81.}
 		\label{tab:dielektrizität}
 	\end{table}
 
@@ -454,7 +459,7 @@
 	kann die Kapazität des Kondensators wie folgt berechnet werden:
 }
 \begin{frame}
-	\ftx{Der Kondensator als Bauelement}
+	\ftx{Die Kapazität $C$}
 	\b{
 		\begin{equation*}
 			[C] = 1\,\text{F}
@@ -557,8 +562,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Mathematik Kondensator	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Übergang zu den zeitabhängigen Vorgängen %%%%%%%%%%%%%%%%%%%%%%%%%
 \s{
-	\textbf{Einführung in die zeitabhängige Vorgänge}
-
+\subsection{Einführung in die zeitabhängigen Vorgänge}
 
 	Bisher ist bekannt, dass elektrische Felder in leitfähigen Materialien einen Strom $I$ und eine Spannung $U$ verursachen.
 	Der Strom $I$ und die Spannung $U$ beschreiben die Felder jedoch nur integral, sie werden also als zeitlich konstant angesehen.
@@ -607,38 +611,30 @@
 }
 % Folie Einführung in die zeitabhängige Vorgänge
 \begin{frame}[t]
-	\ftx{Einführung in die zeitabhängige Vorgänge}
+	\ftx{Einführung in die zeitabhängigen Vorgänge}
 
-	\b{
-
-		\begin{itemize}
-			\item\begin{equation*} Q = C \cdot U \end{equation*}
+\b{
+		\begin{itemize}\centering
+			\item  $ \displaystyle Q = C \cdot U $\vspace{0.5cm}
 			%%% NEU DAZU %%%
-			\only<2->{
-				\item\begin{equation*}
-					\frac{\mathrm{d}Q}{\mathrm{d}t} = C \cdot \frac{\mathrm{d}U}{\mathrm{d}t}
-				\end{equation*}
+			\uncover<2->{
+				\item $ \displaystyle \frac{\mathrm{d}Q}{\mathrm{d}t} = C \cdot \frac{\mathrm{d}U}{\mathrm{d}t} $\vspace{0.5cm}
 			}
-			%%%%%%%%%%%%%%%%
-			% In Modul 2 wurde vermittelt, dass der Stromfluss auch als Änderung der Ladung pro Zeit angesehen werden kann:
-			\only<3->{
-				\item\begin{equation*}
-					\frac{\mathrm{d}Q}{\mathrm{d}t} = i(t)
-				\end{equation*}
+			\uncover<3->{
+				\item
+				 $ \displaystyle	\frac{\mathrm{d}Q}{\mathrm{d}t} = i(t) $\vspace{0.5cm}	
 			}
-			\only<4->{
-				\item\begin{equation*}
-					i_\mathrm{c}(t) = C \cdot \frac{\mathrm{d}u_\mathrm{c}(t)}{\mathrm{d}t}
-				\end{equation*}
+			\uncover<4->{
+				\item
+					 $ \displaystyle i_\mathrm{c}(t) = C \cdot \frac{\mathrm{d}u_\mathrm{c}(t)}{\mathrm{d}t} $\vspace{0.5cm}
 			}
-			\only<5->{
-				\item\begin{equation*}
-					u_\mathrm{c}(t) = \frac{1}{C} \cdot \int i_\mathrm{c}(t) \mathrm{d}t
-				\end{equation*}
+			\uncover<5->{
+				\item
+				 $ \displaystyle u_\mathrm{c}(t) = \frac{1}{C} \cdot \int i_\mathrm{c}(t) \mathrm{d}t$\vspace{0.5cm}
 			}
 
 		\end{itemize}
-
+		
 		\only<6->{
 
 			\vspace{-7cm}
@@ -662,21 +658,15 @@
 	\speech{03_Kapazitaet_und_Kondensator13}{1}{%guter seed hackt am ende ab
 		Wir gehen jetzt einmal kurz in die Zeitabhängigen Vorgänge, um das Verhalten einer Kapazität im Stromkreis besser erklären zu können.
 		Als erstes fangen wir mit der Basisformel an, die wir bei der Einführung der Kapazität bereits gesehen haben. Q ist gleich C mal U.
-		.
-		.
 	}
 	\silence{3}
 	\speech{03_Kapazitaet_und_Kondensator13}{2}{%; TODO feintuning nötiug ende abgehackt, und englische aussprache der buchstaben
 		Wenn wir jetzt beide Seiten nach der Zeit T ableiten erhalten wir d-Q nach d-T ist gleich C mal d-U nach d-T.
-		.
-		.
 	}
 	\silence{3}
 	\speech{03_Kapazitaet_und_Kondensator13}{3}{ %;TODO feintuning nötig
 		Die Zeitliche ableitung der Ladung mit der Einheit Ampersekunde ergibt Ampere, also den Strom i von t.
 		So erhalten wir d-Q nach d-T ist gleich I von T.
-		.
-		.
 	}
 	\silence{3}
 	\speech{03_Kapazitaet_und_Kondensator13}{4}{%guter seed
@@ -684,10 +674,7 @@
 		Was können wir aus dieser Formel sehen bzw. herleiten?
 		Zum einen: Nur eine zeitveränderliche Spannung an einer Kapazität führt zu einem Stromfluss durch eine Kapazität.
 		Denn wenn wir jetzt eine Gleichspannung hätten, dann wäre U-C nach d-T ja gleich 0.
-		.
 		Und demzufolge ist der Strom I-C von T gleich 0.
-		.
-		.
 	}
 
 	\silence{3}
@@ -866,6 +853,7 @@
 		\end{subfigure}
 		\caption{\textbf{Der Spannungs- und Stromverlauf über der Kapazität.} Das Diagramm zeigt die Reaktion der Kapazität auf die plötzliche Änderung der Spannung und
 			veranschaulicht das typische Lade verhalten.}
+		\alttext{Zweiteilige Abbildung zum Laden eines Kondensators in einer Reihenschaltung. Oben ist eine Schaltung mit Gleichspannungsquelle Uq, einem Schalter, einem Kondensator C und einem Widerstand R in Reihe dargestellt. Der Schalter wird bei t0 gleich 5 Tau geöffnet. Pfeile markieren die Spannungen uC von t am Kondensator und uR von t am Widerstand sowie den Strom i von t durch den Zweig. Unten ist ein Zeitdiagramm gezeigt: die Quellspannung Uq springt bei t gleich 0 auf 100 Prozent und bleibt bis t0 konstant, danach fällt sie auf null. Die Kondensatorspannung uC von t steigt exponentiell von 0 auf nahezu 100 Prozent an. Der Strom i von t startet bei 100 Prozent und fällt exponentiell gegen 0. Bei t gleich Tau sind 63 Prozent für uC und 37 Prozent für i markiert.}
 		\label{fig:Gesamtdarstellung_1}
 	\end{figure}
 }
@@ -955,6 +943,7 @@
 		\end{subfigure}
 		\caption{\textbf{Spannungs- und Stromverlauf über der Kapazität.} Das Diagramm zeigt die Reaktion der Kapazität auf eine plötzliche Änderung
 			der Spannung und veranschaulicht das typische Lade- und Entladeverhalten des Kondensators.}
+			\alttext{Zweiteilige Abbildung zum Lade- und Entladeverhalten eines RC-Glieds bei rechteckförmiger Anregung. Oben ist eine Reihenschaltung aus Kondensator C und Widerstand R an einer rechteckförmigen Spannungsquelle u von t dargestellt; Pfeile markieren die Kondensatorspannung uC von t, die Widerstandsspannung uR von t und den Strom i von t. Unten zeigt ein Zeitdiagramm drei Verläufe: die Eingangsspannung u von t springt auf 100 Prozent und fällt bei 5 Tau auf 0. Die Kondensatorspannung uC von t steigt bis 5 Tau exponentiell gegen 100 Prozent und fällt danach exponentiell wieder gegen 0. Der Strom i von t startet positiv und fällt gegen 0; beim Abschalten wird er negativ und nähert sich wieder 0. Markierungen zeigen bei Tau etwa 63 Prozent für uC und 37 Prozent für i; nach dem Abschalten ist bei 6 Tau ein Punkt auf uC sowie ein negativer Stromwert markiert.}
 		\label{fig:Gesamtdarstellung_2}
 	\end{figure}
 }% Nur Skript
@@ -969,21 +958,20 @@
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Schaltverhalten Kondensator	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Beispiel Rechnung Kondensator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-	\ftx{Beispielrechnung Kapazität}
 
-	% ; TODO: Hillgärtner: Da steht noch, glaube ich, drin, was wir alles noch machen wollten. Dazu finde ich aber nichts. Insofern kann ich auch nichts zu einsprechen.
+% \begin{frame}
+% 	\ftx{Beispielrechnung Kapazität}
 
-	\begin{bsp}{Berechnung der Kapazität}{}
-		\begin{itemize}
+% 	\begin{bsp}{Berechnung der Kapazität}{}
+% 		\begin{itemize}
 
-			\item Ladung auf Platten $Q = \sigma \cdot A = \varepsilon \cdot E \cdot A$
-			\item Kapazität mit $C = \frac{\varepsilon \cdot A}{d}$ berechnen
-			\item Gespeicherte Energie $W = \frac{1}{2} \cdot C \cdot U^2 $
-			\item Kapazität zweier Kondensatoren mit verschiedenen $\varepsilon_{\mathrm{r}}$ über $\vec{D}$ berechnen
+% 			\item Ladung auf Platten $Q = \sigma \cdot A = \varepsilon \cdot E \cdot A$
+% 			\item Kapazität mit $C = \frac{\varepsilon \cdot A}{d}$ berechnen
+% 			\item Gespeicherte Energie $W = \frac{1}{2} \cdot C \cdot U^2 $
+% 			\item Kapazität zweier Kondensatoren mit verschiedenen $\varepsilon_{\mathrm{r}}$ über $\vec{D}$ berechnen
 
-		\end{itemize}
-	\end{bsp}
+% 		\end{itemize}
+% 	\end{bsp}
 
-\end{frame}
+% \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Beispiel Rechnung Kondensator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
