@@ -304,8 +304,8 @@
 	wirkt sich entsprechend auch ein elektrisch nicht leitfähiges Material auf das Verhalten des elektrischen Feldes aus.
 	Sobald ein solches Material zwischen die Platten eines Kondensators eingefügt wird, ändern sich demnach auch die Eigenschaften des Kondensators.
 	In Abbildung \ref{fig:idealer Kondensator mit Dielektrikum} ist anhand der unterbrochenen Pfeilung des elektrischen Feldes
-	das unterschiedliche Verhalten zu erkennen. Die elektrische Flussdichte D ist eine Hilfsgröße, welche materialunabhängig ist,
-	auf welche in Abschnitt 1.3.4 noch eingegangen wird.
+	das unterschiedliche Verhalten zu erkennen. Die elektrische Flussdichte $D$ ist eine Hilfsgröße, welche materialunabhängig ist,
+	auf welche in Abschnitt \ref{subsec:D} noch eingegangen wird.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Grafik Dielektrikum	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t]
@@ -414,47 +414,36 @@
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang Formel epsylon und Legende %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\ftx{Das Dielektrikum}
+	\ftx{Die Dielektrizitätskonstante $\varepsilon$}
 	\b{
 		\begin{equation*}
-			[\boldsymbol\varepsilon] = 1\,\frac{\text{Farad}}{\text{m}} = 1\, \frac{\text{F}}{\text{m}} = 1\, \frac{\text{As}}{\text{Vm}}
+			\boldsymbol\varepsilon = \boldsymbol\varepsilon_\mathrm{0} \cdot \boldsymbol\varepsilon_\mathrm{r} \qquad [\boldsymbol\varepsilon] = 1\,\frac{\text{Farad}}{\text{m}} = 1\,\frac{\text{F}}{\text{m}} = 1\,\frac{\text{As}}{\text{Vm}}
 		\end{equation*}
 		\vspace{0.1cm}
-		\begin{equation*}
-			\boldsymbol\varepsilon = \boldsymbol\varepsilon_\mathrm{0} \cdot \boldsymbol\varepsilon_\mathrm{r}
-		\end{equation*}
-		\begin{align*}
-			\boldsymbol\varepsilon            & : 			 \text{Dielektrizitätskonstante}                                        \\
-			\boldsymbol\varepsilon_\mathrm{0} & : \text{Elektrische Feldkonstante (8.85421878 $\cdot10^{-12}\frac{As}{Vm}$)} \\
-			\boldsymbol\varepsilon_\mathrm{r} & : \text{Relative Dielektrizitätszahl}                                        \\
-		\end{align*}
+		\begin{flalign*}
+	\boldsymbol{\varepsilon}        &:\ \text{Dielektrizitätskonstante } [\text{As}/\text{Vm}] &\\
+	\boldsymbol{\varepsilon}_0      &:\ \text{Elektrische Feldkonstante } [8.85421878\cdot 10^{-12}\,\text{As}/\text{Vm}] &\\
+	\boldsymbol{\varepsilon}_r      &:\ \text{Relative Dielektrizitätszahl} &\\
+	\end{flalign*}
 	}
 
-	\speech{03_Kapazitaet_und_Kondensator10}{1}{% ; TODO  sprachfehler vorhanden
+	\speech{03_Kapazitaet_und_Kondensator10}{1}{
 		Wofür brauchen wir jetzt die relative Dielektrizitätszahl? Die brauchen wir zum Berechnen von der Dielektrizitätskonstante Epsilon. Diese hat die Einheit Farad pro Meter, denn sie gibt letztlich an, wie stark das Dielektrikum das elektrische Feld verstärkt. Und sie setzt sich zusammen aus Epsilon null und Epsilon r. Epsilon null ist die elektrische Feldkonstante mit einem Wert von acht komma acht fünf fünf mal 10 hoch minus 12 Farad pro Meter oder Ampere-Sekunden pro Volt-Meter. Und Epsilon r ist die einheitenlose elektrische Dielektrizitätszahl.
 	}
 
 \end{frame}
 \s{
-
-	\begin{equation*}
-		[\boldsymbol\varepsilon] = 1\,\frac{\text{Farad}}{\text{m}} = 1\, \frac{\text{F}}{\text{m}} = 1\, \frac{\text{As}}{\text{Vm}}
-	\end{equation*}
-	\vspace{0.1cm}
 	\begin{equation}
-		\boldsymbol\varepsilon = \boldsymbol\varepsilon_\mathrm{0} \cdot \boldsymbol\varepsilon_\mathrm{r}
+			\boldsymbol\varepsilon = \boldsymbol\varepsilon_\mathrm{0} \cdot \boldsymbol\varepsilon_\mathrm{r} \qquad [\boldsymbol\varepsilon] = 1\,\frac{\text{Farad}}{\text{m}} = 1\,\frac{\text{F}}{\text{m}} = 1\,\frac{\text{As}}{\text{Vm}}
 	\end{equation}
-	\begin{align*}
-		\boldsymbol\varepsilon            & : 			 \text{Dielektrizitätskonstante}                            \\
-		\boldsymbol\varepsilon_\mathrm{0} & : \text{Elektrische Feldkonstante (8.85421878 $\cdot$ 10}^{-12}) \\
-		\boldsymbol\varepsilon_\mathrm{r} & : \text{Relative Dielektrizitätszahl}                            \\
-	\end{align*}
-
-
-
+	\vspace{0.1cm}
+		\begin{flalign*}
+	\boldsymbol{\varepsilon}        &:\ \text{Dielektrizitätskonstante } [\text{As}/\text{Vm}] &\\
+	\boldsymbol{\varepsilon}_0      &:\ \text{Elektrische Feldkonstante } [8.85421878\cdot 10^{-12}\,\text{As}/\text{Vm}] &\\
+	\boldsymbol{\varepsilon}_r      &:\ \text{Relative Dielektrizitätszahl} &\\
+	\end{flalign*}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende Formel epsylon und Legende %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	% \begin{flushleft} und end{fl..} hilft, falls nicht links zentriert
 	Mit Hilfe dieser Materialeigenschaften des Dielektrikums und den Dimensionen sowie der Entfernung der Kondensatorplatten,
 	kann die Kapazität des Kondensators wie folgt berechnet werden:
 }
@@ -462,31 +451,25 @@
 	\ftx{Die Kapazität $C$}
 	\b{
 		\begin{equation*}
-			[C] = 1\,\text{F}
+				C = \frac{\boldsymbol\varepsilon \cdot A}{d} \qquad [C] = 1\,\text{F}
 		\end{equation*}
 		\vspace{0.1cm}
-		\begin{equation*}
-			C = \frac{\boldsymbol\varepsilon \cdot A}{d}
-		\end{equation*}
-		\begin{align*}
-			A & : \text{Querschnittsfläche des Materials } (\text{m}{^2}) \\
-			d & : \text{Abstand der Elektroden (\text{m})}
-		\end{align*}
+		\begin{flalign*}
+			A &:\ \text{Querschnittsfläche des Materials } [\text{m}{^2}] &\\
+			d &:\ \text{Abstand der Elektroden } [\text{m}]               &\\
+		\end{flalign*}
 
 	}
 	\s{
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang Formel C (epsilon) und Legende %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\begin{equation*}
-			[C] = 1\,\text{F}
-		\end{equation*}
-		\vspace{0.1cm}
 		\begin{equation}
-			C = \frac{\boldsymbol\varepsilon \cdot A}{d}
+			C = \frac{\boldsymbol\varepsilon \cdot A}{d} \qquad [C] = 1\,\text{F}
 		\end{equation}
-		\begin{align*}
-			A & : \text{Querschnittsfläche des Materials } (\text{m}{^2}) \\
-			d & : \text{Abstand der Elektroden (\text{m})}
-		\end{align*}}
+		\vspace{0.1cm}
+		\begin{flalign*}
+			A &:\ \text{Querschnittsfläche des Materials } [\text{m}{^2}] &\\
+			d &:\ \text{Abstand der Elektroden } [\text{m}]                &\\
+		\end{flalign*}}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende Formel C (epsilon) und Legende %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - el. Flussdichte	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\speech{03_Kapazitaet_und_Kondensator11}{1}{
@@ -496,7 +479,7 @@
 \end{frame}
 
 
-\subsection{Die elektrische Flussdichte} %$\vec{D}$}
+\subsection{Die elektrische Flussdichte}\label{subsec:D}
 
 \begin{frame}[t]
 	\ftx{Die elektrische Flussdichte $\vec{D}$}
