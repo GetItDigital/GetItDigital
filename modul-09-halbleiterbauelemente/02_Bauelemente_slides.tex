@@ -178,7 +178,7 @@
         Darin stecken drei Komponenten:
         Eine ideale Diode,eine Spannungsquelle, die die sogenannte Schleusenspannung darstellt, und ein differenzieller Widerstand, der den realen Übergang in den Stromfluss modelliert.
         So lassen sich reale Dioden näherungsweise sehr gut abbilden. Jetzt stellt sich die Frage: Wie finde ich heraus, wo genau die Diode in einer Schaltung arbeitet?
-        Dafür bestimmen wir den Arbeitspunkt - den Punkt, an dem sich die Diodenkennlinie mit der Widerstandsgeraden schneidet.
+        Dafür bestimmen wir den Arbeitspunkt, den Punkt, an dem sich die Diodenkennlinie mit der Widerstandsgeraden schneidet.
         Dabei ist wichtig: Der Betriebspunkt sollte unterhalb der maximalen Verlustleistung liegen - sonst wird die Diode zu heiß und kann beschädigt werden.}
     \silence{3}
 \end{frame}
@@ -470,7 +470,7 @@
         Schottky-Dioden: Besonders schnell und mit kleiner Durchlassspannung.
         Tunneldioden: Zeigen einen negativen Widerstand - nützlich in Oszillatoren.
         Photodioden: Wandeln Licht in Strom - etwa in Sensoren.
-        L E Ds und Laserdioden: Erzeugen bei Stromfluss sichtbares oder infrarotes Licht - für Anzeigen, Beleuchtung, Kommunikation.}
+        LEDs und Laserdioden: Erzeugen bei Stromfluss sichtbares oder infrarotes Licht - für Anzeigen, Beleuchtung, Kommunikation.}
     \silence{3}
 \end{frame}
 
@@ -548,7 +548,7 @@
             \item Strom durch die Last wird geglättet.
         \end{itemize}
     }
-    \speech{Einweggleichrichter_Strom}{1}{Und hier sehen wir den Stromverlauf - ebenfalls nur bei der positiven Halbwelle.}
+    \speech{Einweggleichrichter_Strom}{1}{Und hier sehen wir den Stromverlauf. Ebenfalls nur bei der positiven Halbwelle.}
     \silence{3}
 \end{frame}
 
@@ -677,7 +677,6 @@
         Es zeigt, dass ein Transistor im Prinzip aus zwei hintereinandergeschalteten pn-Übergängen besteht.
         Die Basis liegt dabei zwischen Kollektor und Emitter - sie ist also das zentrale Verbindungselement.
         Weil diese beiden Übergänge in entgegengesetzter Richtung geschaltet sind, spricht man auch von einer antiseriellen Anordnung.
-
         Dadurch entstehen zwei Sperrschichten, die im Ruhezustand den Stromfluss blockieren - das schauen wir uns gleich genauer im Bändermodell an.}
     \silence{3}
 \end{frame}
@@ -692,16 +691,12 @@
             \caption{\textbf{Verhalten unbeschalteter Bipolartransistor.} Querschnitt eines unbeschalteten npn-Transistors und zugehörige Bändermodell}
         \end{figure}
     }
-    \speech{Bipolartransistor_unbeschalt}{1}{Was passiert im N P N Transistor, wenn keine äußeren Spannungen anliegen?
-
-        In der Mitte liegt die Basis - sie ist nur schwach dotiert, im Vergleich zu Emitter und Kollektor.
+    \speech{Bipolartransistor_unbeschalt}{1}{Was passiert im N P N Transistor, wenn keine äußeren Spannungen anliegen ? In der Mitte liegt die Basis - sie ist nur schwach dotiert, im Vergleich zu Emitter und Kollektor.
         Links der N dotierte Emitter, rechts der N dotierte Kollektor - in beiden Fällen sind dort viele freie Elektronen vorhanden.
         Im Gegensatz dazu enthält die P dotierte Basis viele Löcher.
-
         Im unbeschalteten Zustand gibt es an beiden P N Übergängen Raumladungszonen, die eine elektrische Sperrschicht bilden.
         Das sieht man auch im Bändermodell:
         Die Energiebänder sind gestuft, weil das Fermi-Niveau über die Zonen hinweg nicht konstant ist.
-
         Die Elektronen in den äußeren N Zonen können diese Barrieren nicht überwinden, solange keine äußeren Spannungen anliegen.
         Das bedeutet: Der Transistor ist in diesem Zustand nicht leitend - es fließt kein Strom.}
     \silence{3}
@@ -734,7 +729,7 @@
     \speech{Bipolartransistor_Beschaltet}{1}{Jetzt legen wir zusätzlich eine positive Spannung zwischen Basis und Emitter an. Durch diese Spannung zwischen Basis und Emitter wird die Raumladungszone
         in Richtung Emitter vollständig abgebaut. Die angelegte Spannung entspricht der sogenannten Schleusenspannung des pn-Übergangs. Nun können Elektronen vom Emitter an die Basis fließen.
         Aber: Die Basis ist sehr dünn und nur schwach dotiert - das heißt, die meisten Elektronen diffundieren direkt weiter bis zum Kollektor.
-        Denn dort liegt ja eine positive Spannung an - also ein elektrisches Feld, das die Elektronen beschleunigt.
+        Denn dort liegt ja eine positive Spannung an, also ein elektrisches Feld, das die Elektronen beschleunigt.
         Das sieht man auch im Bändermodell: Es entsteht ein durchgehender Energiegradient, der den Stromfluss von Emitter über Basis zum Kollektor möglich macht.}
 \end{frame}
 
@@ -786,7 +781,7 @@
         Beim p n p-Transistor ist es genau umgekehrt: Ströme und Spannungen kehren ihre Richtung.
         Der Emitterstrom fließt in das Bauteil hinein, der Kollektorstrom und der Basisstrom heraus.
         Auch die Basis-Emitter-Spannung und die Kollektor-Emitterspannung sind hier negativ, damit der Transistor leitend wird.
-        Wichtig ist: In beiden Fällen gilt das gleiche Funktionsprinzip - nur mit vertauschten Polaritäten.}
+        Wichtig ist: In beiden Fällen gilt das gleiche Funktionsprinzip, nur mit vertauschten Polaritäten.}
     \silence{3}
 \end{frame}
 
@@ -868,10 +863,9 @@
         Und du siehst: Die Kurve sieht fast identisch aus wie bei einer Diode.
         Kein Wunder - die Basis-Emitter-Strecke ist ja auch ein pn-Übergang, der in Durchlassrichtung betrieben wird.
         Für kleine Spannungen bleibt der Basisstrom sehr gering.
-        Erst ab etwa 0, Komma 6 bis 0 Komma 7 Volt steigt der Strom exponentiell an - typisch für einen Silizium-Transistor.
-
+        Erst ab etwa 0, Komma 6 bis 0 Komma 7 Volt steigt der Strom exponentiell an, typisch für einen Silizium-Transistor.
         Was hat es mit der Tangente auf sich, die hier eingezeichnet ist?
-        Die zeigt den differenziellen Widerstand an - also wie stark der Strom bei einer kleinen Spannungsänderung zunimmt.
+        Die zeigt den differenziellen Widerstand an, also wie stark der Strom bei einer kleinen Spannungsänderung zunimmt.
         Je steiler die Tangente, desto empfindlicher reagiert der Transistor auf Spannungsschwankungen - das ist später zum Beispiel für die Kleinsignalverstärkung wichtig.}
     \silence{3}
 \end{frame}
@@ -974,9 +968,8 @@
                   \onslide<2->{\item Keine Gerade: Zuerst linearer Anstieg, dann nimmt die Steigung mit wachsendem Basisstrom zu.}
         \end{itemize}
     }
-    \speech{Bipolartransistor_StromKennlinie}{2}{Diese Kennlinie zeigt einen der wichtigsten Effekte beim Bipolartransistor: Stromsteuerung.
+    \speech{Bipolartransistor_StromKennlinie}{2}{Diese Kennlinie zeigt einen der wichtigsten Effekte beim Bipolartransistor: die Stromsteuerung.
         Hier sehen wir den Kollektorstrom in Abhängigkeit vom Basisstrom - bei konstanter Kollektor-Emitter-Spannung.
-
         Und was fällt auf?
         Der Zusammenhang ist nahezu linear: Verdoppelt man den Basisstrom, verdoppelt sich auch der Kollektorstrom.
         Die Steigung dieser Geraden ist der sogenannte Stromverstärkungsfaktor - meist mit beta oder B bezeichnet.
@@ -1014,7 +1007,7 @@
             \includesvg[width= .6\textwidth]{Bilder/kap2/FolienRueckwirkungskennlinie}
         \end{figure}
     }
-    \speech{Bipolartransistor_Rueck}{1}{Hier siehst du die sogenannte Rückwirkungskennlinie: Sie zeigt die Basis-Emitter-Spannung in Abhängigkeit von der Kollektor-Emitter-Spannung. Man erkennt: Die Basis-Emitter-Spannung verändert sich nur sehr geringfügig, wenn sich die Kollektor-Emitter-Spannung ändert. Es gibt also eine geringe Rückwirkung, aber im praktischen Betrieb ist sie meist vernachlässigbar. Diese Kurve ist eher für Spezialfälle oder sehr präzise Anwendungen relevant - in den meisten Standardanwendungen kann man die Basis-Emitter-Spannung als konstant annehmen.}
+    \speech{Bipolartransistor_Rueck}{1}{Hier siehst du die sogenannte Rückwirkungskennlinie: Sie zeigt die Basis-Emitter-Spannung in Abhängigkeit von der Kollektor-Emitter-Spannung. Man erkennt: Die Basis-Emitter-Spannung verändert sich nur sehr geringfügig, wenn sich die Kollektor-Emitter-Spannung ändert. Es gibt also eine geringe Rückwirkung, aber im praktischen Betrieb ist sie meist vernachlässigbar. Diese Kurve ist eher für Spezialfälle oder sehr präzise Anwendungen relevant, in den meisten Standardanwendungen kann man die Basis-Emitter-Spannung als konstant annehmen.}
     \silence{3}
 \end{frame}
 
@@ -1091,7 +1084,7 @@
             \end{minipage}
         \end{figure}
     }
-    \speech{Bipolar_Beispiel1}{1}{Schauen wir uns jetzt ein konkretes Beispiel an - hier geht es um die Arbeitspunktbestimmung eines Bipolartransistors. Die Versorgungsspannung U V beträgt 20 Volt. Über den Widerstand R C soll die halbe Versorgungsspannung, also 10 Volt anliegen und ein Strom von 10 milli Ampere fließen.}
+    \speech{Bipolar_Beispiel1}{1}{Schauen wir uns jetzt ein konkretes Beispiel an - hier geht es um die Arbeitspunktbestimmung eines Bipolartransistors. Die Versorgungsspannung U Vau beträgt 20 Volt. Über den Widerstand R C soll die halbe Versorgungsspannung, also 10 Volt anliegen und ein Strom von 10 milli Ampere fließen.}
     \silence{3}
 \end{frame}
 
@@ -1303,7 +1296,7 @@
         \caption{Elektrische Eigenschaften von Grundschaltungen}
     \end{table}
     }
-    \speech{Bipolar_Grundschaltungen_Tabelle}{1}{Hier sehen wir einen Vergleich der Eigenschaften der Grundschaltungen.  Benötigt man beispielsweise eine hohe Stromverstärkung eignen sich die Emitter- und die Kollektorschaltung besser also die Basisschaltung.}
+    \speech{Bipolar_Grundschaltungen_Tabelle}{1}{Hier sehen wir einen Vergleich der Eigenschaften der Grundschaltungen.  Benötigt man beispielsweise eine hohe Stromverstärkung eignen sich die Emitter- und die Kollektorschaltung besser als die Basisschaltung.}
     \silence{3}
 \end{frame}
 
@@ -1328,7 +1321,7 @@
                 Spannungsverläufe mit $U_\mathrm{CE}$ als Folge von $U_\mathrm{BE}$.}
         \end{figure}
     }
-    \speech{Transistor_als_Schalter}{2}{Neben seiner Rolle als Verstärker kann der Bipolartransistor auch ganz als elektronischer Schalter eingesetzt werden.  Dabei nutzt man die beiden Zustände: Ist Basis-Emitter-Spannung zu klein, sperrt der Transistor.  Ist die Basis-Emitter-Spannung ausreichend groß, zum Beispiel größer als 0 Komma 7 Volt, wird die Basis-Emitter-Strecke leitend - der Transistor sättigt, und es fließt ein großer Kollektorstrom.   In der Sättigung ist die Kollektor-Emitter-Spannung nur noch etwa 0 Komma 2 Volt - der Transistor verhält sich dann fast wie ein geschlossener Schalter.  Sperrt der Transistor, liegt die Kollektorspannung fast auf dem Versorgungspotenzial - der Strom ist nahezu null, wie bei einem offenen Schalter. Das Schöne daran: Der Steuerstrom ist sehr klein und die Steuerzeit sehr kurz. Ideal für einen Schalter.}
+    \speech{Transistor_als_Schalter}{2}{Neben seiner Rolle als Verstärker kann der Bipolartransistor auch ganz als elektronischer Schalter eingesetzt werden.  Dabei nutzt man die beiden Zustände: Ist die Basis-Emitter-Spannung zu klein, sperrt der Transistor.  Ist die Basis-Emitter-Spannung ausreichend groß, zum Beispiel größer als 0 Komma 7 Volt, wird die Basis-Emitter-Strecke leitend - der Transistor sättigt, und es fließt ein großer Kollektorstrom.   In der Sättigung ist die Kollektor-Emitter-Spannung nur noch etwa 0 Komma 2 Volt - der Transistor verhält sich dann fast wie ein geschlossener Schalter.  Sperrt der Transistor, liegt die Kollektorspannung fast auf dem Versorgungspotenzial - der Strom ist nahezu null, wie bei einem offenen Schalter. Das Schöne daran: Der Steuerstrom ist sehr klein und die Steuerzeit sehr kurz. Ideal für einen Schalter.}
     \silence{3}
 \end{frame}
 
@@ -1370,7 +1363,7 @@
             \scalebox{0.9}{\input{Tikz/src/Transistortypen.tex}}
         \end{figure}
     }
-    \speech{Feldeffekttransistor_Uerbersicht}{1}{Bislang haben wir uns mit Bipolartransistoren beschäftigt. Jetzt lernen wir den Feldeffekttransistor kennen.  Die Steuerung erfolgt hier nicht durch einen Basisstrom, sondern rein durch eine Spannung am Gate, also über ein elektrisches Feld. Man unterscheidet hauptsächlich zwei Typen: den Metall-Oxid-Halbleiter-FET, kurz: MOSFET und den Junction-FET, kurz: JayFET. Der MOSFET ist in der modernen Elektronik besonders wichtig - zum Beispiel in Logikschaltungen, Mikroprozessoren oder Speicherzellen.} %986529
+    \speech{Feldeffekttransistor_Uerbersicht}{1}{Bislang haben wir uns mit Bipolartransistoren beschäftigt. Jetzt lernen wir den Feldeffekttransistor kennen.  Die Steuerung erfolgt hier nicht durch einen Basisstrom, sondern rein durch eine Spannung am Gate, also über ein elektrisches Feld. Man unterscheidet hauptsächlich zwei Typen: den Metall-Oxid-Halbleiter-FET, kurz: MOS FET und den Junction-FET, kurz: JayFET. Der MOS FET ist in der modernen Elektronik besonders wichtig - zum Beispiel in Logikschaltungen, Mikroprozessoren oder Speicherzellen.} %986529
     \silence{3}
 \end{frame}
 
@@ -1384,7 +1377,7 @@
             \caption{Querschnitt eines n-Kanal MOSFETs (selbstsperrend) ohne angelegte Spannungen.}
         \end{figure}
     }
-    \speech{FET_elektr_nMOS}{1}{Hier sehen wir den Querschnitt eines n-Kanal-MOSFETs. Schauen wir uns zunächst einmal nur die Elemente an - ohne schon Spannungen anzulegen: Unten liegt das sogenannte Substrat oder auch Bulk - hier p-dotiert. Links und rechts davon liegen zwei n-dotierte Zonen: das sind Source und Drain. Zwischen Source und Drain liegt die Gate-Elektrode - allerdings isoliert vom Halbleitermaterial durch eine dünne Oxidschicht. An den pn-Übergängen bilden sich Raumladungszonen, die man Verarmungszonen nennt. Was du dir merken solltest: Zwischen Gate und Halbleiter fließt kein Strom, da sie durch das Oxid getrennt sind. In den meisten Anwendungen ist Bulk direkt mit Source verbunden, also auf gleichem Potenzial.} 
+    \speech{FET_elektr_nMOS}{1}{Hier sehen wir den Querschnitt eines n-Kanal MOS FETs. Schauen wir uns zunächst einmal nur die Elemente an, ohne schon Spannungen anzulegen: Unten liegt das sogenannte Substrat oder auch Bulk - hier p-dotiert. Links und rechts davon liegen zwei n-dotierte Zonen: das sind Source und Drain. Zwischen Source und Drain liegt die Gate-Elektrode - allerdings isoliert vom Halbleitermaterial durch eine dünne Oxidschicht. An den pn-Übergängen bilden sich Raumladungszonen, die man Verarmungszonen nennt. Was du dir merken solltest: Zwischen Gate und Halbleiter fließt kein Strom, da sie durch das Oxid getrennt sind. In den meisten Anwendungen ist Bulk direkt mit Source verbunden, also auf gleichem Potenzial.} 
     %seed: 986542
     \silence{3}
 \end{frame}
@@ -1457,7 +1450,7 @@
             \end{itemize}
         \end{Merksatz}
     }
-    \speech{FET_elektr_nMOS_Merke}{1}{Und hier ein paar Merksätze zum n-Kanal-MOSFET: Er hat drei Anschlüsse: Gate, Source und Drain. Der vierte Anschluss Bulk liegt auf dem Potential von Source Die Steuerung erfolgt spannungsbasiert - über das elektrische Feld. Im Gegensatz zum Bipolartransistor fließt am Gate kein Strom - dadurch ist der FET leistungsverlustfrei steuerbar}
+    \speech{FET_elektr_nMOS_Merke}{1}{Und hier ein paar Merksätze zum n-Kanal-MOSFET: Er hat drei Anschlüsse: Gate, Source und Drain. Der vierte Anschluss Bulk liegt auf dem Potential von Source Die Steuerung erfolgt spannungsbasiert - über das elektrische Feld. Im Gegensatz zum Bi-polartransistor fließt am Gate kein Strom - dadurch ist der FET leistungsverlustfrei steuerbar}
     %seed: 998582
     \silence{3}
 \end{frame}
@@ -1759,7 +1752,7 @@
             \caption{MOSFET als Inverter mit zugehörigen Spannungsverläufen.}
         \end{figure}
     }
-    \speech{FET_Anwendungen_Grundschaltung}{1}{Eine der bekanntesten Anwendungen ist der C MOS-Inverter. Im Schaltbild siehst du: Oben ein p-Kanal-MOSFET, unten ein n-Kanal-MOSFET. Beide sind am gleichen Eingangssignal angeschlossen. Das Funktionsprinzip ist einfach: Liegt der Eingang auf Low, leitet der p-Kanal-FET - und der Ausgang liegt auf High. Liegt der Eingang auf High, leitet der n-Kanal-FET - und der Ausgang liegt auf Low. Die Spannungsverläufe rechts zeigen diesen Zusammenhang deutlich: Aus einem hohen Eingangssignal wird ein niedriges Ausgangssignal, und umgekehrt. Genau dieses Prinzip bildet die Grundlage aller digitalen Logikgatter - vom einfachen Inverter bis hin zu komplexen Mikroprozessoren.}
+    \speech{FET_Anwendungen_Grundschaltung}{1}{Eine der bekanntesten Anwendungen ist der C MOS Inverter. Im Schaltbild siehst du: Oben ein p-Kanal MOSFET, unten ein n-Kanal MOSFET. Beide sind am gleichen Eingangssignal angeschlossen. Das Funktionsprinzip ist einfach: Liegt der Eingang auf Low, leitet der p-Kanal-FET, und der Ausgang liegt auf High. Liegt der Eingang auf High, leitet der n-Kanal-FET, und der Ausgang liegt auf Low. Die Spannungsverläufe rechts zeigen diesen Zusammenhang deutlich: Aus einem hohen Eingangssignal wird ein niedriges Ausgangssignal, und umgekehrt. Genau dieses Prinzip bildet die Grundlage aller digitalen Logikgatter - vom einfachen Inverter bis hin zu komplexen Mikroprozessoren.}
     %seed: 835115
     \silence{3}
 \end{frame}
