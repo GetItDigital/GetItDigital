@@ -4,17 +4,16 @@
 		\begin{Lernziele}{Asynchronmaschine}
 			Du kannst
 			\begin{itemize}
-				\item XXXXXX
-				\item XXX
-				\item XXXX
+				\item den grundlegenden Aufbau und die Hauptbauteile einer Asynchronmaschine beschreiben.
+				\item den Schlupf definieren und seine Auswirkung auf Drehzahl und Betrieb erklären.
+				\item Drehmoment‑Schlupf‑Verhalten qualitativ beschreiben und wichtige Kennwerte wie Anlauf-, Nenn- und Kippmoment zuordnen.
 			\end{itemize}
 		\end{Lernziele}
-		\speech{LernzieleAsynchronmaschine}{1}{XXXXXX}
+		\speech{LernzieleAsynchronmaschine}{1}{Nachdem wir die Synchronmaschine betrachtet haben, wollen wir nun einen Blick auf die Asynchronmaschine werfen, welche in Gegenüberstellung zur Synchronmaschine eine wesentlich einfache Technik zur Regelung benötigt.}
 		\silence{2}
 	\end{frame}
 }
 \section{Asynchronmaschine}
-\newvideofile{asynchronmaschine}{Asynchronmaschine}
 \s{Die Asynchronmaschine ist ebenfalls eine Drehfeldmaschine. Der Stator ist identisch zum Stator der Synchronmaschine, der Rotor ist hingegen in der häufigsten Version dieses Maschinentyps, beim sogenannten Käfigläufer, passiv.}
 \begin{frame}\ftx{Asynchronmaschine Aufbau}\index{Asynchronmaschine>Aufbau}\s{\subsection{Aufbau}}
 	\fo{width=0.65\textwidth, alt={Schematische Schnittansicht einer Käfigläufer-Asynchronmaschine. Das Bild zeigt die verschiedenen Komponenten des Motors, einschließlich des Gehäuses mit Blechpaket und den darin befindlichen Drehstromwicklungen. Außerdem ist der Läuferkäfig zu sehen, der mit Blechpaketen bestückt ist, sowie am hinteren Ende die Lüfterflügel, die von einer Flügelhaube abgedeckt werden.}}{height=0.9\textheight}{Aufbau_Asynchron_Kaefig1}{
@@ -27,7 +26,7 @@
 
 	}{{\bf Aufbau einer Käfigläufer-Asynchronmaschine.} Die Bleche des Rotorzylinders wurden der Anschaulichkeit halber zur Hälfte beschnitten, um den Käfig freizulegen.}
 	
-	\speech{AufbauASM}{1}{Die Asynchronmaschine ist wie die Synchronmaschine eine sogenannte Drehfeldmaschine. Der Stator ist identisch zum Stator der Synchronmaschine, der Rotor ist hingegen in der häufigsten Version dieses Maschinentyps, dem sogenannten Käfigläufer, passiv.}
+	\speech{AufbauASM}{1}{Die Asynchronmaschine ist wie die Synchronmaschine eine sogenannte Drehfeld-maschine. Der Stator ist identisch zum Stator der Synchronmaschine, der Rotor ist hingegen in der häufigsten Version dieses Maschinen-typs – dem sogenannten Käfigläufer – passiv.}
 	\silence{2}
 	\speech{AufbauASM}{2}{Der Rotor besteht aus einem zylindrischen Blechpaket, das mit Kurzschlussstäben, dem sogenannten Läuferkäfig, versehen ist. Der Stator verfügt über die selbe Drehstromwicklung wie die Synchronmaschine. Diese ist hier in orange dargestellt. Das Gehäuse hat in den meisten Fällen ein angebautes Lüfterrad, das mit der gleichen Drehzahl der Maschine dreht und dafür sorgt, dass die Maschine während des Betriebs gekühlt wird.}
 	\silence{2}
@@ -60,13 +59,13 @@
 			\item Der Läufer beginnt sich zu drehen.
 		\end{itemize}
 	}
-	\speech{ASMAnlauf}{1}{Beim Anlauf einer Asynchronmaschine treffen mehrere Effekte zusammentreffen, die nur im dynamischen Übergang, also vom Stillstand zum Drehzahlgleichgewicht, relevant sind. Sehen wir uns nun einam an, wie der Anlauf einer Asynchronmaschine schrittweise aussieht.}
+	\speech{ASMAnlauf}{1}{Beim Anlauf einer Asynchronmaschine treffen mehrere Effekte zusammen, die nur im dynamischen Übergang – also vom Stillstand zum Drehzahl-gleichgewicht – relevant sind. Sehen wir uns nun einmal schrittweise an, wie der Anlauf einer Asynchronmaschine aussieht.}
 	\silence{2}
-	\speech{ASMAnlauf}{2}{Der Stator erzeugt im Ständer eine umlaufende magnetische Wanderwelle mit der Winkelgeschwindigkeit Omega S. Diese Winkelgeschwindigkeit ist der Quotient aus der Netzwinkelgeschwindigkeit Omega Null und der Polpaarzahl P.}
+	\speech{ASMAnlauf}{2}{Der Stator erzeugt im Ständer eine umlaufende magnetische Wanderwelle mit der Winkelgeschwindigkeit Omega S. Diese Winkelgeschwindigkeit ist der Quotient aus der Netzwinkelgeschwindigkeit Omega Null und der Pohlpaarzahl P.}
 	\speech{ASMAnlauf}{3}{Auf den noch ruhenden Läufer wirkt ein zeitlich veränderliches Feld mit der Frequenz der Winkelgeschwindigkeit.}
 	\speech{ASMAnlauf}{4}{Das magnetische Drehfeld durchsetzt den Läufer und induziert eine Spannung mit der Frequenz der Winkelgeschwindigkeit.}
 	\speech{ASMAnlauf}{5}{Aus der Spannungsinduktion resultiert ein Stromfluss, da die Läuferwicklungen kurzgeschlossen sind.}
-	\speech{ASMAnlauf}{6}{Der induzierte Rotorstrom wirkt entsprechend der Lenzschen Regel der auf ihn einwirkenden Änderung des Statorfeldes entgegen.}
+	\speech{ASMAnlauf}{6}{Der induzierte Rotorstrom wirkt entsprechend der Lenzschen Regel entgegen der auf ihn einwirkenden Änderung des Statorfeldes.}
 	\speech{ASMAnlauf}{7}{Statorfeld und Rotorstrom wechselwirken durch die Lorentz-Kraft aufeinander, wodurch ein Drehmoment entsteht.}
 	\speech{ASMAnlauf}{8}{Das Drehmoment wirkt dabei in Richtung des Ständerdrehfelds.}
 	\speech{ASMAnlauf}{9}{Und der Läufer beginnt schließlich sich zu drehen.}
@@ -89,14 +88,14 @@
 	}
 	\speech{ASMBetrieb}{1}{Schauen wir uns ergänzend dazu den Betrieb einer Asynchronmaschine schrittweise an.}
 	\silence{2}
-	\speech{ASMBetrieb}{2}{Die Relativdrehzahl, auch Schlupffrequenz genannt, Omega R gegenüber der des Statorfeldes Omega S entspricht der Drehzahl des Statorfeldes abzüglich der mechanischen Drehzahl des Läufers. Mit steigender Drehzahl des Läufers nimmt also Wirkung des Statorfeldes ab.}
-	\speech{ASMBetrieb}{3}{Mit steigender Drehzahl sinken sowohl der Betrag als auch die Frequenz der induzierten Spannung im Rotor.}
+	\speech{ASMBetrieb}{2}{Die Relativdrehzahl Omega R, auch Schlupffrequenz genannt, gegenüber der des Statorfeldes Omega S entspricht der Drehzahl des Statorfeldes abzüglich der mechanischen Drehzahl des Läufers. Mit steigender Drehzahl des Läufers nimmt also die Wirkung des Statorfeldes ab.}
+	\speech{ASMBetrieb}{3}{Mit steigender Drehzahl sinken außerdem sowohl der Betrag als auch die Frequenz der induzierten Spannung im Rotor.}
 	\speech{ASMBetrieb}{4}{Die Synchrone Drehzahl ist dann erreicht, wenn sich der Läufer und das Statorfeld mit der selben Frequenz drehen.}
 	\speech{ASMBetrieb}{5}{Die Läuferwicklungen werden dann nicht mehr vom Statorfeld beeinflusst.}
-	\speech{ASMBetrieb}{6}{Der Iinduzierte Strom und der Drehmoment der Maschine gehen an dieser Stelle zu Null.}
-	\speech{ASMBetrieb}{7}{Allerdings bremsen Reibungseffekte den Rotor kontinuiertlich, sodass es dadurch erneut zu einer Drehmomentwirkung auf den Rotor kommt.}
+	\speech{ASMBetrieb}{6}{Der induzierte Strom und der Drehmoment der Maschine gehen an dieser Stelle zu Null.}
+	\speech{ASMBetrieb}{7}{Allerdings bremsen Reibungseffekte den Rotor kontinuierlich, sodass es dadurch erneut zu einer Drehmomentwirkung auf den Rotor kommt.}
 	\silence{2}
-	\speech{ASMBetrieb}{8}{Schließlich stell sich ein Gleichgewichtszustand bei einer Drehzahl ein, die knapp unter der synchronen Zehzahl liegt.}
+	\speech{ASMBetrieb}{8}{Schließlich stellt sich ein Gleichgewichts-zustand ein. Dieser liegt knapp unter der synchronen Drehzahl.}
 	\silence{2}
 \end{frame}
 
@@ -161,11 +160,11 @@
 		}
 
 	\end{columns}
-	\speech{ASMDrehzahlDrehmomentkennlinie}{1}{Die Drehzahl-Drehmomenten-Kennlinie ist bei der Asynchronmaschine nichtlinear und kann in mehrere Abschnitte unterteilt werden. Häufig wird die Kennlinie wie sie hier dargestellt ist, über den Schlupf S aufgetragen. Der Schlupf bezeichnet die prozentuale Abweichung der mechanischen Drehgeschwindigkeit des Rotors N-R von der elektrischen Drehgeschwindigkeit N-S des speisenden Netzes im Stator.}
+	\speech{ASMDrehzahlDrehmomentkennlinie}{1}{Die Drehzahl-Drehmoment-Kennlinie ist bei der Asynchronmaschine nichtlinear und kann in mehrere Abschnitte unterteilt werden. Häufig wird die Kennlinie wie sie hier dargestellt ist, über den Schlupf S aufgetragen. Der Schlupf bezeichnet die prozentuale Abweichung der mechanischen Drehgeschwindigkeit des Rotors N-R von der elektrischen Drehgeschwindigkeit N-S des speisenden Netzes im Stator.}
 	\silence{2}
-	\speech{ASMDrehzahlDrehmomentkennlinie}{2}{Ein Schlupf von S gleich Eins, also von Einhunddert Prozent, entspricht daher dem Stillstand der Maschine oder auch der Drehzahl von Null umdrehungen. Ein Schlupf von S gleich Null entspricht dem absolut netzsynchronen Betrieb, der jedoch bei der Asynchronmaschine in der Praxis niemals auftreten kann, da das Drehmoment in dem Fall Null wird.}
+	\speech{ASMDrehzahlDrehmomentkennlinie}{2}{Ein Schlupf von S gleich Eins, also von Einhunddert Prozent, entspricht daher dem Stillstand der Maschine oder auch der Drehzahl von Null umdrehungen. Ein Schlupf von S gleich Null entspricht dem absolut netzsynchronen Betrieb, der jedoch bei der Asynchronmaschine in der Praxis niemals auftreten kann, da das Drehmoment in dem Fall Null wäre.}
 	\silence{2}
-	\speech{ASMDrehzahlDrehmomentkennlinie}{3}{Der Schlupf entspricht bei großen Maschinen in sehr guter Näherung den prozentualen Verlusten der Maschine. Der Wirkungsgrad ist also Eins abzüglich des Schlupfes.}
+	\speech{ASMDrehzahlDrehmomentkennlinie}{3}{Der Schlupf entspricht bei großen Maschinen in sehr guter Näherung den prozentualen Verlusten der Maschine. Der Wirkungsgrad einer Asynchronmaschine ist also Eins abzüglich des Schlupfes.}
 	\silence{2}
 \end{frame}
 
@@ -226,7 +225,7 @@
 		}
 		}
 	\end{bsp}
-	\speech{ASMDrehzahlBeispielrechnung}{1}{Sehen wir uns dazu nun noch ein Rechenbeispiel an. Gegeben ist hierbei ein Drehstrom-Asynchronmotor von dem Nennleistung, Nenndrehzahl, Betriebs-Frequen und der Kippschlupf bekannt sind. Berechnen wir dazu das Nennmoment M, das Kippmoment M-K und abschließend das Anlaufmoment M-A.}
+	\speech{ASMDrehzahlBeispielrechnung}{1}{Sehen wir uns dazu nun noch ein Rechenbeispiel an. Gegeben ist hier ein Drehstrom-Asynchronmotor von dem die Nennleistung, die Nenndrehzahl, die Betriebs-Frequenz und der Kippschlupf bekannt sind. Berechnen wir dazu das Nennmoment M, das Kippmoment M-K und abschließend das Anlaufmoment M-A.}
 	\silence{2}
 	\speech{ASMDrehzahlBeispielrechnung}{2}{Die Formel zur Berechnung der Nennleistung P-N ist gleich dem Nennmoment multipliziert mit der Winkelgeschwindigkeit der Nennleistung.}
 	\speech{ASMDrehzahlBeispielrechnung}{3}{Die Winkelgeschwindigkeit, die hier benötigt wird, ist nicht bekannt. Wie aber bereits im Video zur Gleichstrommaschine besprochen, ist die Winkelgeschwindikeit das Produkt aus der Drehzahl N und 2 Pi. Die Nenndrehzahl der Asynchronmaschine ist bekannt. Dass es sich hier um die Nenndrehzahl handelt, also die Drehzahl am Nennmoment, zeigt der Index N an. Wir können also diese Formel an der Stelle der Nenndrehzahl einsetzten.}
@@ -234,17 +233,17 @@
 	\speech{ASMDrehzahlBeispielrechnung}{4}{Stellen wir nun die Formel nach der gesuchten Größe um, also dem Nennmoment M-N.}
 	\speech{ASMDrehzahlBeispielrechnung}{5}{Wenn wir dann die Werte einsetzten und den Term kürzen, errechnet sich für die gegebenen Größen ein Nennmoment von 66 Komma Drei Eins Newton-Meter. Damit hätten wir den ersten gesuchten Wert der gegebenen Asynchronmaschine ermittelt.}
 	\silence{2}
-	\speech{ASMDrehzahlBeispielrechnung}{6}{Um im nächsten Schritt den Kippmoment zu berechnen, wenden wir die Klosssche Gleichung an, die wir zuvor im Zusammenhalng mit der Drehzahl-Drehmoment-Kennlinie betrachtet haben. Da wir das Kippmonent M-K errechnen wollen, müssen wir die Kleichung nach M-K umstellen. Der Kippschlupf S-K ist bekannt. Doch um das Kippmoment berechnen zu können, fehlt uns noch eine Größe: Und zwar der Schlupf S am Nennmoment. }
+	\speech{ASMDrehzahlBeispielrechnung}{6}{Um im nächsten Schritt den Kippmoment zu berechnen, wenden wir die Klosssche Gleichung an, die wir zuvor im Zusammenhang mit der Drehzahl-Drehmoment-Kennlinie betrachtet haben. Da wir das Kippmonent M-K errechnen wollen, müssen wir die Gleichung nach M-K umstellen. Der Kippschlupf S-K ist bekannt. Doch um das Kippmoment berechnen zu können, fehlt uns noch eine Größe: Und zwar der Schlupf S am Nennmoment. }
 	\silence{2}
-	\speech{ASMDrehzahlBeispielrechnung}{7}{Berechen wir also zunächst den Schlupf. Weil sich dieser auf das Nennmoment bezieht, bezeichnen wir ihn als Schlupf S-N. Die Formel zur Berechung des Schlupfes haben wir vorhin an der Stelle der Drehzahl-Drehmoment-Kennlinie schon kurz angeschaut. Er ist die relative Differenz zwischen synchroner Winkelgeschwindigkeit Omega S und Rotorwinkelgeschwindigkeit Omega R.}
+	\speech{ASMDrehzahlBeispielrechnung}{7}{Berechnen wir also zunächst den Schlupf. Weil sich dieser auf das Nennmoment bezieht, bezeichnen wir ihn als Schlupf S-N. Die Formel zur Berechnung des Schlupfes haben wir vorhin an der Stelle der Drehzahl-Drehmoment-Kennlinie schon kurz angeschaut. Er ist die relative Differenz zwischen synchroner Winkelgeschwindigkeit Omega S und Rotorwinkelgeschwindigkeit Omega R.}
 	\silence{2}
 	\speech{ASMDrehzahlBeispielrechnung}{8}{Setzten wir nun die Werte in die Gleichung ein und kürzen, erhalten wir einen Schlupf S-N von Null Komma Null Vier.}
 	\silence{2}
 	\speech{ASMDrehzahlBeispielrechnung}{9}{Nun haben wir alle Größen, um das Kippmoment berechnen zu können. Stellen wir also die Klossche Gleichung nach M-K um.}
-	\speech{ASMDrehzahlBeispielrechnung}{10}{Das Nenmoment M-N und den Schlupf am Nennmoment haben wir eben berechnet. Der gegebene Kippschlupf von 25 Prozent entsricht nachtürlich 0,25. Setzten wir nund die Werte in die Gleichung ein. Es ergibt sich ein Kippmoment von 212 Komma 54 Newton-Meter.}
+	\speech{ASMDrehzahlBeispielrechnung}{10}{Das Nenmoment M-N und den Schlupf am Nennmoment haben wir eben berechnet. Der gegebene Kippschlupf von Fünfundzwanzig Prozent entspricht natürlich 0,25. Setzten wir nund die Werte in die Gleichung ein. Es ergibt sich ein Kippmoment von Zweihundertzwölf Komma Vierundfünfzig Newton-Meter.}
 	\silence{2}
-	\speech{ASMDrehzahlBeispielrechnung}{11}{Bleibt nun nur noch das Anlaufmoment M-A zu berechnen. Dazu nutzen wir wieder die Klosssche Gleichung. Da sdafür notwendige Kippmoment haben wir eben berechnet.}
+	\speech{ASMDrehzahlBeispielrechnung}{11}{Bleibt nun nur noch das Anlaufmoment M-A zu berechnen. Dazu nutzen wir wieder die Klosssche Gleichung. Das dafür notwendige Kippmoment haben wir eben berechnet.}
 	\silence{2}
-	\speech{ASMDrehzahlBeispielrechnung}{12}{Setzten wir also die Werte in die Gleichung ein. Da im Moment des Anlaufs der Rotor still steht, also mit Null Umdrehungen por Minute Dreht, ergibt sich ein Schlupf von Eins, weil Rotor und Drehfeld im Stillstand exakt synchron sind. Es ergibt sich ein Anlaufmoment von 100 Komma Null Zwei Newton-Meter.}
-	\silence{2}
+	\speech{ASMDrehzahlBeispielrechnung}{12}{Setzen wir also die Werte in die Gleichung ein. Da im Moment des Anlaufs der Rotor still steht, also mit Null Umdrehungen pro Minute dreht, ist der Schlupf Eins. Es ergibt sich daraus ein Anlaufmoment von 100 Komma Null Zwei Newton-Meter.}
+	\silence{4}
 \end{frame}
