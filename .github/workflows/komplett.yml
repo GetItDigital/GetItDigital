@@ -34,7 +34,7 @@ jobs:
       with:
         name: Komplett-Skript
         path: TeXAux/Skript.pdf
-    - name: upload to server
+    - name: upload Skript to server
       shell: bash
       run: |
         echo "Uploading Skript.pdf to server"
@@ -45,3 +45,25 @@ jobs:
         chmod 400 ~/.ssh/config
         ssh-add <(echo "${{secrets.SFTP_KEY}}")
         sftp -o StrictHostKeyChecking=no ${{secrets.SFTP_USERNAME}}@${{secrets.SFTP_SERVER}}:komplett <<< $'put TeXAux/Skript.pdf'
+    - name: upload Index to server
+      shell: bash
+      run: |
+        echo "Uploading Index to server"
+        which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )
+        mkdir -p ~/.ssh
+        eval $(ssh-agent -s)
+        [[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+        chmod 400 ~/.ssh/config
+        ssh-add <(echo "${{secrets.SFTP_KEY}}")
+        sftp -o StrictHostKeyChecking=no ${{secrets.SFTP_USERNAME}}@${{secrets.SFTP_SERVER}}:komplett <<< $'put TeXAux/Skript.idx'
+    - name: upload Nomenclature to server
+      shell: bash
+      run: |
+        echo "Uploading Nomenclature to server"
+        which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )
+        mkdir -p ~/.ssh
+        eval $(ssh-agent -s)
+        [[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+        chmod 400 ~/.ssh/config
+        ssh-add <(echo "${{secrets.SFTP_KEY}}")
+        sftp -o StrictHostKeyChecking=no ${{secrets.SFTP_USERNAME}}@${{secrets.SFTP_SERVER}}:komplett <<< $'put TeXAux/Skript.nlo'
