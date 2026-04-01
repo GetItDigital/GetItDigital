@@ -174,7 +174,7 @@
 	\silence{2}
 	\speech{InduktivitaetRechenweg}{6}{Im letzten Schritt berechnen wir dann die Induktivität L über den therm der Spulenwindungen N multipliziert mit den magnetischen Fluss phi durch den Strom Ih. Wie ihr seht geht in dieser Ermittlung der Induktivität der Strom gleich zweimal ein. Einmal bei der Durchflutung und einmal bei der Berechnung der Induktivität. Somit taucht er bei der Durchflutung als Ursache des Magnetfelds auf und als Bezugsgröße der Induktivität selbst.}
 	\silence{2}
-	\speech{InduktivitaetRechenweg}{7}{Der zweite Weg eine Induktivität zu bestimmen, führt über den magnetischen Widerstand. Diesen Weg nutzen wir immer dann, wenn uns bestimmte Feldgrößen nicht bekannt sind – zum Beispiel, wenn wir die genaue Stromstärke nicht kennen. Welcher Weg besser passt, hängt also von der jeweiligen Aufgabe ab. Allerdings ist die Berechnung über den magnetischen Widerstand ungenauer, weil hier eine Näherungsformel verwendet wird. Des Weiteren können wir diese Formel nicht anwenden, wenn in der Anordung ein großer Luftspalt vorhanden ist. Kommen wir nun zu der Herangehensweise.} 
+	\speech{InduktivitaetRechenweg}{7}{Der zweite Weg eine Induktivität zu bestimmen, führt über den magnetischen Widerstand. Diesen Weg nutzen wir immer dann, wenn uns bestimmte Feldgrößen nicht bekannt sind – zum Beispiel, wenn wir die genaue Stromstärke nicht kennen. Welcher Weg besser passt, hängt also von der jeweiligen Aufgabe ab. Allerdings ist die Berechnung über den magnetischen Widerstand ungenauer, weil hier eine Näherungsformel verwendet wird. Des Weiteren können wir diese Formel nicht anwenden, wenn in der Anordnung ein großer Luftspalt vorhanden ist. Kommen wir nun zu der Herangehensweise.} 
 	\silence{2}
 	\speech{InduktivitaetRechenweg}{8}{Wir zerlegen zuerst den Magnetkreis in einzelne Teilabschnitte, die jeweils einen konstanten magnetischen Widerstand haben. In einem Magnetkreis gibt es nämlich häufig verschiedene Bereiche – manche mit anderem Querschnitt, also einer anderen Fläche A, oder mit einem anderen Material, also einer unterschiedlichen relativen Permeabilität mü-R. Für jeden dieser Abschnitte berechnen wir den magnetischen Widerstand mit: R-M ist gleich L-M geteilt durch mü null mal mü R mal A. Dabei steht das L-M für die Länge des betrachteten Abschnitts, mü null für die Feldkonstante des Vakuums, mü-R für die relative Permeabilität des Materials, und A für den Querschnitt, durch den der magnetische Fluss im betrachteten Abschnitt läuft.} 
 	\silence{2}
@@ -184,7 +184,6 @@
 \end{frame}
 
 \newvideofile{Induktivitaet2}{Induktivität Teil 2}
-
 \s{
 	\begin{bsp}{Induktivität}{}
 		Bei einer Ringkernspule mit Luftspalt soll der Einfluss des Luftspaltes $d$ auf die Induktivität $L$ untersucht werden. Die Spule hat $N=100$ Windungen. Die relative Permeabilität beträgt $\mu_{\mathrm{r}}=2000$. Die mittlere Eisenkernlänge beträgt $\ell_{\mathrm{m}}=5\,\mathrm{cm}$. Die Querschnittsfläche beträgt $A=1\,\mathrm{cm}^2$.
@@ -228,6 +227,8 @@
 			\put(68, 15){\color{magnetfeld}$\ell_{\mathrm{m}}$}
 			\put(95, 55){\color{gray}$d$}
 		}{}
+		\speech{InduktivitaetBeispiel1}{1}{Nachdem wir die Grundlagen zur Berechnung einer Induktivität im vorherigen Video kennengelernt haben, wollen wir nun einen Blick auf ein einfaches Rechenbeispiel werfen. Um die Auswirkungen eines Luftspalts innerhalb einer Rinkern-Spule aufzuzeigen, betrachten wir hier eine Spule mit einem Eisenkern: einmal ohne und anschließend mit einem Luftspalt. In unseren Beispiel ist als Induktivität eine Spule mit Eisenkern mit 100 Windungen gegeben. Die relative Permeabilität Mü-R beträgt Zweitausend. Die mittlere Feldlinienlänge L-M innerhalb des Eisenkerns beträgt fünf Zentimeter und die Querschnittsfläche A entspricht einem Quadratzentimeter.}
+		\silence{2}
 	\end{frame}
 	\begin{frame}\ftx{Beispiel: Induktivität}
 		\begin{itemize}
@@ -239,9 +240,16 @@
 			\onslide<4->{L & = \frac{100^2\cdot 2000\cdot 1,256\cdot10^{-6}\,\frac{\mathrm{Vs}}{\mathrm{Am}}\cdot 1\cdot 10^{-4}\,\mathrm{m}^2}{0,05\,\mathrm{m}}} \\
 			\onslide<5->{L & = 0,05\,\tfrac{\mathrm{Vs}}{\mathrm{A}} = 50\,\mathrm{mH}}
 		  \end{align*}
-
-
 		\end{itemize}
+		\speech{InduktivitaetBeispiel2}{1}{Untersucht werden soll nun der Einfluss des Luftspalts mit der Dicke D auf die Induktivität. Hierfür betrachten wir zunächst den Aufbau ohne Luftspalt im Eisenkern.}
+		\silence{2}
+		\speech{InduktivitaetBeispiel2}{2}{Es bietet sich an, die Induktivität über den magnetischen Widerstand zu berechnen, weil dafür alle Werte bereits vorliegen. Der magnetische Widerstand R-M ergibt sich aus: L-M geteilt durch Mü-Null mal Mü-R mal A. Das A steht für die Querschnittsfläche. Diese Fläche ist bekannt und ebenso die mittlere Feldlinienlänge L-M sowie die relative Permeabilität Mü-R ist gegeben. Somit könnte nun der magnetische Widerstand berechnet werden. Mit dem Widerstand allein sind wir aber noch nicht am Ziel angelangt, denn gesucht ist nich der magnetische Widerstand R-M, sondern die Induktivität L.}
+		\speech{InduktivitaetBeispiel2}{3}{Dafür nutzen wir die Gleichung: L gleich dem Quotienten aus N zum Quadrat und R-M. Die Windungszahl N ist bekannt. Wir können nun die Gleichung zum magnetischen Widerstand an der Stelle von R-M in diese Formel einsetzen.}
+		\silence{2}
+		\speech{InduktivitaetBeispiel2}{4}{Setzen wir nun alle Werte in die Formel ein. Bei der Umformung rutscht L-M in den Nenner unter den Bruchstrich. Weil: Wenn ein Wert im Nenner eines Bruchs steht, wird er im Ergebnis als Divisor angezeigt.}
+		\silence{2}
+		\speech{InduktivitaetBeispiel2}{5}{Kürzen wir den Term weiter, erhalten wir ein Ergebnis von Null Komma Null Fünf Volt-Sekunden pro Ampere. Das entspricht 50 Milli-Henry.}
+		\silence{2}
 	\end{frame}
 	\begin{frame}\ftx{Beispiel: Induktivität}
 		\begin{itemize}
@@ -250,34 +258,23 @@
 				\onslide<2->{R_{\mathrm{m}} & = R_{m,\mathrm{Fe}} + R_{m,\mathrm{L}}} \\
 				\onslide<3->{& = \frac{\ell_{\mathrm{m}} - d}{\mu_{\mathrm{r}}\cdot\mu_0\cdot A} + \frac{d}{\mu_0\cdot A}} \\
 				\onslide<4->{& = \frac{0,05\,\mathrm{m} - 0,001\,\mathrm{m}}{2000\cdot 1,256\cdot10^{-6}\,\frac{\mathrm{Vs}}{\mathrm{Am}}\cdot 1\cdot 10^{-4}\,\mathrm{m}^2} + \frac{0,001\,\mathrm{m}}{1,256\cdot10^{-6}\,\frac{\mathrm{Vs}}{\mathrm{Am}} \cdot 1\cdot 10^{-4}\,\mathrm{m}^2}} \\
-				\onslide<5->{L & = \frac{N^2}{R_{\mathrm{m}}}} \\
-				\onslide<6->{& = 1,226\,\mathrm{mH}}
-				\v{\onslide<7->{}}
+				\onslide<5->{L & = \frac{N^2}{R_{\mathrm{m}}} \\
+				& = 1,226\,\mathrm{mH}}
+				\v{\onslide<6->{}}
 			\end{align*}
 		\end{itemize}
+		\speech{InduktivitaetBeispiel3}{1}{Schauen wir uns jetzt in einer zweiten Berechnung an was passiert, wenn der Eisenkern einen kleinen Luftspalt von nur einen Millimeter hat. Wie verändert sich also durch diesen kleinen Luftspalt die Induktivität?}
+		\silence{2}
+		\speech{InduktivitaetBeispiel3}{2}{Das funktioniert wieder mit der selben Formel zur Berechnung des magnetischen Widerstands: R-M ist gleich L-M geteilt durch Mü-Null mal Mü R mal A. Allerdings müssen wir aber den Luftspalt berücksichtigen. Dadurch besteht der magnetische Widerstand aus zwei Teilwiderständen: Zum Einen aus dem magnetischen Widerstand des Eisenkerns, der hier R-M F-E genant wird, und zum Anderen aus dem magnetischen Widerstand des Luftspalts, der hier R-M-L genannt wird.} 
+		\speech{InduktivitaetBeispiel3}{3}{In der Berechnung für den Widerstand des Eisenkerns hat sich die Länge etwas verändert. Die wirksame Länge L-M ist jetzt um den Luftspalt mit der Dicke D verkürzt. Bei der Berechnung des magnetischen Widerstands innerhalb des Luftspalts entfällt die relative Permeabilität, da diese im Luftspalt gleich Eins ist.} 
+		\speech{InduktivitaetBeispiel3}{4}{Setzen wir nun die Werte in die Gleichung ein und berechnen die beiden Teilwiderstände. Zum Schluss werden die beiden Werte der Teilwiderstände addiert.}
+		\silence{2}
+		\speech{InduktivitaetBeispiel3}{5}{Setzen wir den errechneten magnetischen Wiederstand R-M, der hier aus dem Teilwiderstand des Eisenkerns und dem Teilwiderstand des Luftspalts besteht, in die bekannte Formel zur Berechnung von L ein, erhalten wir eine Induktivität von ungefähr eins Komma zwei zwei sechs Milli-Henry. Zum Vergleich: Ohne Luftspalt hatten wir eine Induktivität von etwa fünfzig Milli-Henry. Mit einem nur einen Millimeter breiten Luftspalt, also etwa einem Fünfzigstel der Gesamtlänge, fällt die Induktivität auf nur noch eins Komma zwei Milli-Henry ab. Das zeigt deutlich, wie stark bereits ein kleiner Luftspalt die magnetische Kopplung und damit die Induktivität reduziert.}
+		\silence{2}
+		\speech{InduktivitaetBeispiel3}{6}{Wir haben also nun die Grundlagen der Induktion und der Induktivität kennengelernt. Dabei haben wir erste praktische Berechnungen zur Induktivität selbst erprobt. Im nächsten Video schauen wir uns an, wie die magnetische Energie berechnet werden kann, die in einer Induktivität gespeichert ist.}
+		\silence{2}
 	\end{frame}
 }
-\speech{InduktivitaetBeispiel}{1}{Nachdem wir die Grundlagen zur Berechnung einer Induktivität im vorherigen Video kennengelernt haben, wollen wir nun einen Blick auf ein einfaches Rechenbeispiel werfen. Um die Auswirkungen eines Luftspalts innerhalb einer Rinkern-Spule aufzuzeigen, betrachten wir hier eine Spule mit einem Eisenkern: einmal ohne und anschließend mit einem Luftspalt. In unseren Beispiel ist als Induktivität eine Spule mit Eisenkern mit 100 Windungen gegeben. Die relative Permeabilität Mü-R beträgt Zweitausend. Die mittlere Feldlinienlänge L-M innerhalb des Eisenkerns beträgt fünf Zentimeter und die Querschnittsfläche A entspricht einem Quadratzentimeter.}
-\silence{2}
-\speech{InduktivitaetBeispiel}{2}{Untersucht werden soll nun der Einfluss des Luftspalts mit der Dicke D auf die Induktivität. Hierfür betrachten wir zunächst den Aufbau ohne Luftspalt im Eisenkern.}
-\silence{2}
-\speech{InduktivitaetBeispiel}{3}{Es bietet sich an, die Induktivität über den magnetischen Widerstand zu berechnen, weil dafür alle Werte bereits vorliegen. Der magnetische Widerstand R-M ergibt sich aus: L-M geteilt durch Mü-Null mal Mü-R mal A. Das A steht für die Querschnittsfläche. Diese Fläche ist bekannt und ebenso die mittlere Feldlinienlänge L-M sowie die relative Permeabilität Mü-R ist gegeben. Somit könnte nun der magnetische Widerstand berechnet werden. Mit dem Widerstand allein sind wir aber noch nicht am Ziel angelangt, denn gesucht ist nich der magnetische Widerstand R-M, sondern die Induktivität L.}
-\speech{InduktivitaetBeispiel}{4}{Dafür nutzen wir die Gleichung: L gleich dem Quotienten aus N zum Quadrat und R-M. Die Windungszahl N ist bekannt. Wir können nun die Gleichung zum magnetischen Widerstand an der Stelle von R-M in diese Formel einsetzen.}
-\silence{2}
-\speech{InduktivitaetBeispiel}{5}{Setzen wir nun alle Werte in die Formel ein. Bei der Umformung rutscht L-M in den Nenner unter den Bruchstrich, da: Wenn ein Wert im Nenner eines Bruchs steht, wird er im Ergebnis als Divisor angezeigt.}
-\silence{2}
-\speech{InduktivitaetBeispiel}{6}{Kürzen wir den Term weiter, erhalten wir ein Ergebnis von Null Komma Null Fünf Volt-Sekunden pro Ampere, was 50 Milli-Henry entspricht.}
-\silence{2}
-\speech{InduktivitaetBeispiel}{7}{Schauen wir uns jetzt in einer zweiten Berechnung an was passiert, wenn der Eisenkern einen kleinen Luftspalt von nur einen Millimeter hat. Wie verändert sich also durch diesen kleinen Luftspalt die Induktivität?}
-\silence{2}
-\speech{InduktivitaetBeispiel}{8}{Das funktioniert wieder mit der selben Formel zur Berechnung des magnetischen Widerstands: R-M ist gleich L-M geteilt durch Mü-Null mal Mü R mal A. Allerdings müssen wir aber den Luftspalt berücksichtigen. Dadurch besteht der magnetische Widerstand aus zwei Teilwiderständen: Zum Einen aus dem magnetischen Widerstand des Eisenkerns, der hier R-M F-E genant wird, und zum Anderen aus dem magnetischen Widerstand des Luftspalts, der hier R-M-L genannt wird.} 
-\speech{InduktivitaetBeispiel}{9}{In der Berechnung für den Widerstand des Eisenkerns hat sich die Länge etwas verändert. Die wirksame Länge L-M ist jetzt um den Luftspalt mit der Dicke D verkürzt. Bei der Berechnung des magnetischen Widerstands innerhalb des Luftspalts entfällt die relative Permeabilität, da diese im Luftspalt gleich Eins ist.} 
-\speech{InduktivitaetBeispiel}{10}{Setzen wir nun die Werte in die Gleichung ein und berechnen die beiden Teilwiderstände. Zum Schluss werden die beiden Werte der Teilwiderstände addiert.}
-\silence{2}
-\speech{InduktivitaetBeispiel}{11}{Setzen wir den errechneten magnetischen Wiederstand R-M, der hier aus dem Teilwiderstand des Eisenkerns und dem Teilwiderstand des Luftspalts besteht, in die bekannte Formel zur Berechnung von L ein, erhalten wir eine Induktivität von ungefähr eins Komma zwei zwei sechs Milli-Henry. Zum Vergleich: Ohne Luftspalt hatten wir eine Induktivität von etwa fünfzig Milli-Henry. Mit einem nur einen Millimeter breiten Luftspalt, also etwa einem Fünfzigstel der Gesamtlänge, fällt die Induktivität auf nur noch eins Komma zwei Milli-Henry ab. Das zeigt deutlich, wie stark bereits ein kleiner Luftspalt die magnetische Kopplung und damit die Induktivität reduziert.}
-\silence{2}
-\speech{InduktivitaetBeispiel}{12}{Wir haben also nun die Grundlagen der Induktion und der Induktivität kennengelernt. Dabei haben wir erste praktische Berechnungen zur Induktivität selbst erprobt. Im nächsten Video schauen wir uns an, wie die magnetische Energie berechnet werden kann, die in einer Induktivität gespeichert ist.}
-\silence{2}
 
 \nomenclature[EH]{H}{Henry - Induktivität \nomunit{$\mathrm{H}=\frac{\mathrm{V}\cdot\mathrm{s}}{\mathrm{A}}=\frac{\mathrm{kg}\cdot\mathrm{m}^2}{\mathrm{s}^2\cdot\mathrm{A}^2}$}}
 	\nomenclature[FL]{$L$}{Induktivität \nomunit{H}}
