@@ -1,19 +1,19 @@
 \newpage
 
-\newvideofile{Mastrom}{Maschenstromverfahren}
+\newvideofile{Mastrom}{Maschenstromverfahren}\index{Maschenstromanalyse}
 \begin{frame}
 	\ftx{Lernziele Maschenstromverfahren}
 	\begin{Lernziele}{Maschenstromverfahren}
-        Die Studierenden 
+        Die Studierenden
         \begin{itemize}
 			\item kennen die Schritte des Maschenstromverfahrens.
-            \item können mit Hilfe des Maschenstromverfahrens elektrische Netzwerke analysieren. 
-        \end{itemize}                   
+            \item können mit Hilfe des Maschenstromverfahrens elektrische Netzwerke analysieren.
+        \end{itemize}
     \end{Lernziele}
 
-	\speech{MastromLernz}{1}{Neben dem Knotenpotentialverfahren bietet das Maschenstromverfahren eine weitere Möglichkeit, 
-    um elektrische Netzwerke zu analysieren. 
-    Die für die Durchführung des Maschenstromverfahrens erforderlichen Schritte werden folgend vorgestellt.} 
+	\speech{MastromLernz}{1}{Neben dem Knotenpotentialverfahren bietet das Maschenstromverfahren eine weitere Möglichkeit,
+    um elektrische Netzwerke zu analysieren.
+    Die für die Durchführung des Maschenstromverfahrens erforderlichen Schritte werden folgend vorgestellt.}
 \end{frame}
 
 \begin{frame}
@@ -21,10 +21,10 @@
 
     \s{
         Neben der Knotenpotentialanalyse zur Untersuchung von elektrischen Netzwerken kann auch das Maschenstromverfahren
-        zur Berechnung herangezogen werden. Beim Maschenstromverfahren wird ein Gleichungssystem 
-        aufgestellt, mit welchem die Maschenströme ermittelt werden können. Um das Gleichungssystem des Maschenstromverfahrens 
-        aufstellen zu können, müssen einige Vorbereitungen getroffen werden. In den folgenden Schritten soll das elektrische 
-        Netzwerk aus der Abbildung \ref{BildMaschenstromverfahren} mittels des Maschenstromverfahrens berechnet werden. 
+        zur Berechnung herangezogen werden. Beim Maschenstromverfahren wird ein Gleichungssystem
+        aufgestellt, mit welchem die Maschenströme ermittelt werden können. Um das Gleichungssystem des Maschenstromverfahrens
+        aufstellen zu können, müssen einige Vorbereitungen getroffen werden. In den folgenden Schritten soll das elektrische
+        Netzwerk aus der Abbildung \ref{BildMaschenstromverfahren} mittels des Maschenstromverfahrens berechnet werden.
     }
 
     \b{
@@ -37,17 +37,17 @@
 		\end{itemize}
 	}
 
-	\fu{   
-        \resizebox{0.7\textwidth}{!}{%                                         
+	\fu{
+        \resizebox{0.7\textwidth}{!}{%
         \input{Tikz/src/Netzwerk_Maschenstrom}\alttext{Die Schaltung hat eine obere und eine untere Sammelschiene, zwischen denen drei Zweige liegen. Links befindet sich eine Spannungsquelle U_0 mit dem Serienwiderstand R_0; über R_0 ist die Spannung U_R0 und der Strom I_0 nach unten eingezeichnet. In der Mitte verbindet der Widerstand R_1 mit Spannung U_R1 und Strom I_1 nach unten die beiden Schienen, rechts liegt ein Zweig: ein Widerstand R_2 mit Spannung U_R2 und Strom I_2 nach oben parallel zu einer Stromquelle mit Strom I_q nach unten.}
-        }                                                  
-    }{{\bf Netzwerk für das Maschenstromverfahren.} Elektrisches Netzwerk mit einer Spannungsquelle, einer Stromquelle und drei Widerständen. Anhand des Netzwerkes wird 
-    das Maschenstromverfahren erläutert. \label{BildMaschenstromverfahren}}   
-    
+        }
+    }{{\bf Netzwerk für das Maschenstromverfahren.} Elektrisches Netzwerk mit einer Spannungsquelle, einer Stromquelle und drei Widerständen. Anhand des Netzwerkes wird
+    das Maschenstromverfahren erläutert. \label{BildMaschenstromverfahren}}
+
     \speech{MastromSchritte}{1}{Zu beginn sollte wie auch beim Knotenpotentialverfahren das elektrische Netzwerk vorbereitet werden.
-    Das beinhaltet unter anderem das Zusammenfassen von Reihen und Parallelschaltungen wie auch das eventuelle Umwandeln der Quellen. 
-    Folgend werden die Maschen und die zugehörigen Maschenströme festgelegt, die Widerstandsmatrix erstellt, die Quellspannungen zugeordnet 
-    und daraus ein Gleichungssystem aufgestellt.} 
+    Das beinhaltet unter anderem das Zusammenfassen von Reihen und Parallelschaltungen wie auch das eventuelle Umwandeln der Quellen.
+    Folgend werden die Maschen und die zugehörigen Maschenströme festgelegt, die Widerstandsmatrix erstellt, die Quellspannungen zugeordnet
+    und daraus ein Gleichungssystem aufgestellt.}
 \end{frame}
 
 
@@ -59,23 +59,23 @@
     \s{
         Das Maschenstromverfahren arbeitet mit Spannungsquellen und Widerstandswerten. Hierfür müssen eventuelle Stromquellen
         in Spannungsquellen transformiert werden. Diese Art der Umwandlung einer Stromquelle in eine Spannungsquelle wird noch
-        einmal in der Abbildung \ref{BildMasch1} dargestellt. Hier wird aus der Stromquelle und dem parallel liegenden 
-        Innenwiderstand eine Spannungsquelle mit einem in reihe liegenden Innenwiderstand. 
+        einmal in der Abbildung \ref{BildMasch1} dargestellt. Hier wird aus der Stromquelle und dem parallel liegenden
+        Innenwiderstand eine Spannungsquelle mit einem in reihe liegenden Innenwiderstand.
     }
 
 	\b{
 		\begin{itemize}
 			\item Umwandlung der Stromquellen in Spannungsquellen:
 		\end{itemize}
-	}    
+	}
 
-    \fu{                                     
-        \input{Tikz/src/Umwandlung_Stromquelle}\alttext{Die Grafik zeigt links ein Zweipolnetzwerk: eine Stromquelle mit Strom I_q nach oben liegt parallel zu einem Widerstand R_i zwischen zwei Anschlussklemmen. Ein Pfeil zeigt auf die äquivalente Darstellung rechts: dort befindet sich eine Spannungsquelle U_q nach unten in Serie mit demselben Widerstand R_i im oberen Zweig. Beide Darstellungen beschreiben dasselbe äußere Verhalten des Zweipols.}                                                  
-    }{{\bf Umwandlung einer Stromquelle.} Umwandlung einer Stromquelle mit Parallelwiderstand zur Spannungsquelle mit Serienwiderstand. \label{BildMasch1}}   
+    \fu{
+        \input{Tikz/src/Umwandlung_Stromquelle}\alttext{Die Grafik zeigt links ein Zweipolnetzwerk: eine Stromquelle mit Strom I_q nach oben liegt parallel zu einem Widerstand R_i zwischen zwei Anschlussklemmen. Ein Pfeil zeigt auf die äquivalente Darstellung rechts: dort befindet sich eine Spannungsquelle U_q nach unten in Serie mit demselben Widerstand R_i im oberen Zweig. Beide Darstellungen beschreiben dasselbe äußere Verhalten des Zweipols.}
+    }{{\bf Umwandlung einer Stromquelle.} Umwandlung einer Stromquelle mit Parallelwiderstand zur Spannungsquelle mit Serienwiderstand. \label{BildMasch1}}
 
     \s{
-        Die Gleichung \ref{GleichungUmrechnungStromquelle} zeigt die Berechnung des Spannungswertes der Spannungsquelle 
-        aus dem angegebenen Stromwert der Stromquelle und dem Widerstandswert des Innenwiderstands. 
+        Die Gleichung \ref{GleichungUmrechnungStromquelle} zeigt die Berechnung des Spannungswertes der Spannungsquelle
+        aus dem angegebenen Stromwert der Stromquelle und dem Widerstandswert des Innenwiderstands.
     }
 
     \onslide<2->{
@@ -90,8 +90,8 @@
     \end{eq}}
 
     \s{
-        Außerdem müssen mögliche Leitwerte von elektrischen Widerständen in Widerstandswerte geändert werden. In der Gleichung 
-        \ref{GleichungUmrechnungLeitwert} wird gezeigt, wie der Widerstandswert aus dem Kehrwert des Leitwerts ermittelt wird. 
+        Außerdem müssen mögliche Leitwerte von elektrischen Widerständen in Widerstandswerte geändert werden. In der Gleichung
+        \ref{GleichungUmrechnungLeitwert} wird gezeigt, wie der Widerstandswert aus dem Kehrwert des Leitwerts ermittelt wird.
     }
 
     \onslide<3->{
@@ -101,15 +101,15 @@
 		\end{itemize}
 	}
 
-    \begin{eq}               
+    \begin{eq}
          R_\mathrm{i} = \frac{1}{G_\mathrm{i}} \label{GleichungUmrechnungLeitwert}
     \end{eq}}
 
     \speech{MastromVorb}{1}{Eventuelle Stromquellen müssen für das Maschenstromverfahren in Spannungsquellen umgewandelt werden.
-    Wie hier dargestellt werden die Stromquellen mit Parallelwiderstand in Spannungsquellen mit Reihenwiderstand umgewandelt.} 
-    \speech{MastromVorb}{2}{Die Stromwerte der Stromquellen werden über das ohmsche Gesetz in Spannungswerte überführt.} 
+    Wie hier dargestellt werden die Stromquellen mit Parallelwiderstand in Spannungsquellen mit Reihenwiderstand umgewandelt.}
+    \speech{MastromVorb}{2}{Die Stromwerte der Stromquellen werden über das ohmsche Gesetz in Spannungswerte überführt.}
     \speech{MastromVorb}{3}{Falls Leitwerte anstatt von Widerstandswerten angegeben werden, können diese über den Kehrwert ermittelt werden,
-    da beim Maschenstromverfahren mit den Widerstandswerten gearbeitet wird.} 
+    da beim Maschenstromverfahren mit den Widerstandswerten gearbeitet wird.}
 \end{frame}
 
 \begin{frame}
@@ -134,25 +134,25 @@
         \input{Tikz/src/Umwandlung_Stromquelle_Netzwerk}\alttext{Die Abbildung zeigt links einen Stromkreis mit drei Zweigen zwischen oberer und unterer Sammelschiene; der rechte Zweig ist rot eingekreist und enthält eine Stromquelle I_q nach unten und parallel dazu den Widerstand R_2 mit Spannung U_R2 und Strom I_2 nach oben.
 Rechts ist derselbe Gesamtstromkreis dargestellt, oben liegt der Widerstand R_2(Strom I_2nach unten, Spannung U_R2), darunter eine Spannungsquelle U_2 nach unten.
 }
-        }                                           
-    }{{\bf Umwandlung einer Stromquelle in einem elektrischen Netzwerk.} Umwandlung der Stromquelle mit Parallelwiderstand 
-    des zu berechnenden Netzwerkes in eine Spannungsquelle mit Reihenwiderstand. Die Transformation der Quelle findet im roten 
-    Kreis statt. \label{BildMasch2}}  
-    
+        }
+    }{{\bf Umwandlung einer Stromquelle in einem elektrischen Netzwerk.} Umwandlung der Stromquelle mit Parallelwiderstand
+    des zu berechnenden Netzwerkes in eine Spannungsquelle mit Reihenwiderstand. Die Transformation der Quelle findet im roten
+    Kreis statt. \label{BildMasch2}}
+
     \speech{MastromUmw}{1}{Die Umwandlung der Stromquelle in eine Spannungsquelle wird für das angegebene Netzwerk dargestellt.
-    Aus dem Parallelwiderstand der Stromquelle wird der Reihenwiderstand für die Spannungsquelle.} 
+    Aus dem Parallelwiderstand der Stromquelle wird der Reihenwiderstand für die Spannungsquelle.}
 \end{frame}
 
 \begin{frame}
     \ftx{Maschenstromverfahren}
 
     \begin{Merksatz}{Maschenstromverfahren}
-        Für das Maschenstromverfahren werden zur Analyse eines elektrischen Netzwerkes Spannungsquellen und Widerstandswerte 
+        Für das Maschenstromverfahren werden zur Analyse eines elektrischen Netzwerkes Spannungsquellen und Widerstandswerte
         benötigt.
     \end{Merksatz}
 
-    \speech{MastromMrk}{1}{Für das Maschenstromverfahren werden zur Analyse eines elektrischen Netzwerkes 
-    Spannungsquellen und Widerstandswerte benötigt.} 
+    \speech{MastromMrk}{1}{Für das Maschenstromverfahren werden zur Analyse eines elektrischen Netzwerkes
+    Spannungsquellen und Widerstandswerte benötigt.}
 \end{frame}
 
 
@@ -161,41 +161,41 @@ Rechts ist derselbe Gesamtstromkreis dargestellt, oben liegt der Widerstand R_2(
 
     \s{
         Für die Maschenstromanalyse müssen die Maschen festgelegt werden. Über den Maschen werden die Maschenströme
-        festgelegt. Außerdem werden den Maschen die Widerstände zugeordnet. In der Abbildung \ref{BildMasch3} wird 
-        das vorgestellte Netzwerk mit den eingezeichneten Maschen $M_1$ und $M_2$ dargestellt. 
-    } 
-    
+        festgelegt. Außerdem werden den Maschen die Widerstände zugeordnet. In der Abbildung \ref{BildMasch3} wird
+        das vorgestellte Netzwerk mit den eingezeichneten Maschen $M_1$ und $M_2$ dargestellt.
+    }
+
     \b{
 		\begin{itemize}
 			\item Festlegung der Maschen und Maschenströme
 		\end{itemize}
 	}
 
-    \fu{    
-        \resizebox{0.7\textwidth}{!}{%                                                 
+    \fu{
+        \resizebox{0.7\textwidth}{!}{%
         \input{Tikz/src/Maschen_im_Netzwerk}\alttext{Die Schaltung besteht aus einem rechteckigen Rahmen mit drei senkrechten Zweigen zwischen einer oberen und unteren Sammelschiene. Links liegt eine Spannungsquelle U_0 in Serie mit dem Widerstand R_0; rechts unten eine Spannungsquelle U_1, über ihr im selben Zweig der Widerstand R_2 mit Spannungsabfall U_R2. In der Mitte verbindet der Widerstand R_1(Spannung U_R1, Strom I_1 nach unten) die beiden Sammelschienen. Die beiden rechteckigen Teilbereiche links und rechts des Mittelschenkels bilden die Maschen M_1 und M_2, in denen die Ströme I_0(links) und I_2(rechts) festgelegt sind.}
-        }                                                            
-    }{{\bf Maschen im elektrischen Netzwerk.} Festlegung der Maschen $M_1$ und $M_2$ sowie der zugehörigen Maschenströme. 
-    \label{BildMasch3}}                                                
+        }
+    }{{\bf Maschen im elektrischen Netzwerk.} Festlegung der Maschen $M_1$ und $M_2$ sowie der zugehörigen Maschenströme.
+    \label{BildMasch3}}
 
     \s{
-        
-        Durch alle Komponenten welche sich an der Masche $M_1$ befinden, fließt der Maschenstrom $I_\mathrm{M1}$. So wie auch 
+
+        Durch alle Komponenten welche sich an der Masche $M_1$ befinden, fließt der Maschenstrom $I_\mathrm{M1}$. So wie auch
         alle Komponenten an der Masche $M_2$ von dem Maschenstrom $I_\mathrm{M2}$ durchflossen werden. Die beiden Maschenströme
-        $I_\mathrm{M1}$ und $I_\mathrm{M2}$ werden vektoriell in der Gleichung \ref{GleichungMaschenströme} notiert. 
+        $I_\mathrm{M1}$ und $I_\mathrm{M2}$ werden vektoriell in der Gleichung \ref{GleichungMaschenströme} notiert.
     }
 
     \begin{eq}
-        I_\mathrm{M} = 
+        I_\mathrm{M} =
         \begin{bmatrix}
             I_\mathrm{M1} \\
             \\
             I_\mathrm{M2} \\
         \end{bmatrix} \label{GleichungMaschenströme}
-    \end{eq}      
+    \end{eq}
 
-    \speech{MastromMasch}{1}{Die Maschen M 1 und M 2 werden entsprechend definiert. 
-    Ihnen zugehörig werden die Maschenströme IM eins und IM zwei der beiden Maschen im Vektor der Maschenströme IM festgehalten.}     
+    \speech{MastromMasch}{1}{Die Maschen M 1 und M 2 werden entsprechend definiert.
+    Ihnen zugehörig werden die Maschenströme IM eins und IM zwei der beiden Maschen im Vektor der Maschenströme IM festgehalten.}
 \end{frame}
 
 
@@ -203,20 +203,20 @@ Rechts ist derselbe Gesamtstromkreis dargestellt, oben liegt der Widerstand R_2(
     \ftb{Widerstandsmatrix bestimmen}
 
     \s{
-        In der Masche $M_1$ trifft der Maschenstrom $I_{M1}$ auf die beiden Widerstände $R_0$ und $R_1$. Die Masche $M_1$ wird in 
-        der Abbildung \ref{BildWiderstandsmatrix} in blau dargestellt. Der Maschenstrom $I_{M2}$ der Masche $M_2$ durchfließt die 
-        Widerstände $R_1$ und $R_2$. Der Widerstand $R_1$ ist somit teil der beiden Maschen $M_1$ und $M_2$ und wird von beiden 
-        Maschenströmen durchflossen. Wird ein Widerstand von mehreren Maschenströmen durchflossen gilt dieser als Kopplungswiderstand 
-        zwischen den Maschen. 
+        In der Masche $M_1$ trifft der Maschenstrom $I_{M1}$ auf die beiden Widerstände $R_0$ und $R_1$. Die Masche $M_1$ wird in
+        der Abbildung \ref{BildWiderstandsmatrix} in blau dargestellt. Der Maschenstrom $I_{M2}$ der Masche $M_2$ durchfließt die
+        Widerstände $R_1$ und $R_2$. Der Widerstand $R_1$ ist somit teil der beiden Maschen $M_1$ und $M_2$ und wird von beiden
+        Maschenströmen durchflossen. Wird ein Widerstand von mehreren Maschenströmen durchflossen gilt dieser als Kopplungswiderstand
+        zwischen den Maschen.
 
         In der Widerstandsmatrix nach Gleichung
         \ref{GleichungWiderstandsmatrix} werden die Widerstände der Maschen und die Kopplungswiderstände zugeordnet. Hier werden
-        die Umlaufwiderstände aus den Maschen in die Hauptdiagonale eingetragen. Das heißt, dass die Reihenschaltung $R_0 + R_1$ 
-        das Element der ersten Spalte und Zeile für die erste Masche wird. Die Reihenschaltung $R_1 + R_2$ wird in das Element 
-        der zweiten Spalte und Zeile für die zweite Masche eingetragen. In die übrigen Elemente der Widerstandsmatrix werden 
-        die Kopplungswiderstände zwischen den jeweiligen Maschen eingetragen. Der Kopplungswiderstand bekommt ein positives 
-        Vorzeichen, wenn beide Maschenströme in die selbe Richtung fließen und ein negatives, wenn diese entgegengesetzt fließen. 
-        Die Widerstandsmatrix wird in der Wechselstromtechnik auch als Maschenimpedanzmatrix bezeichnet. 
+        die Umlaufwiderstände aus den Maschen in die Hauptdiagonale eingetragen. Das heißt, dass die Reihenschaltung $R_0 + R_1$
+        das Element der ersten Spalte und Zeile für die erste Masche wird. Die Reihenschaltung $R_1 + R_2$ wird in das Element
+        der zweiten Spalte und Zeile für die zweite Masche eingetragen. In die übrigen Elemente der Widerstandsmatrix werden
+        die Kopplungswiderstände zwischen den jeweiligen Maschen eingetragen. Der Kopplungswiderstand bekommt ein positives
+        Vorzeichen, wenn beide Maschenströme in die selbe Richtung fließen und ein negatives, wenn diese entgegengesetzt fließen.
+        Die Widerstandsmatrix wird in der Wechselstromtechnik auch als Maschenimpedanzmatrix bezeichnet.
     }
 
     \b{
@@ -226,10 +226,10 @@ Rechts ist derselbe Gesamtstromkreis dargestellt, oben liegt der Widerstand R_2(
 		\end{itemize}
 	}
 
-    \fu{    
-        \resizebox{0.7\textwidth}{!}{%                                                 
+    \fu{
+        \resizebox{0.7\textwidth}{!}{%
         \input{Tikz/src/Festlegung_der_Zweige}\alttext{Die Schaltung ist dieselbe wie zuvor: ein Rechteck mit drei senkrechten Zweigen R_0 links, R_1 in der Mitte und R_2 rechts, links unten eine Spannungsquelle U_0, rechts unten U_1. Neu ist die farbliche Markierung: Der komplette linke Maschenweg über U_0, R_0, die obere und die untere Sammelschiene ist in Blau hervorgehoben. Der mittlere Zweig mit dem Widerstand R_1 ist zusätzlich als gestrichelte, grüne Linie betont, um den Spannungsabfall U_R1 bzw. den Bezug zwischen oberem und unterem Knoten in dieser Masche hervorzuheben.}
-        }                                                            
+        }
     }{{\bf Festlegung der Zweige.} Elektrisches Netzwerk mit hervorgehobenen Zweigen zur Erstellung der Widerstandsmatrix für das Maschenstromverfahren
     \label{BildWiderstandsmatrix}}
 
@@ -237,31 +237,31 @@ Rechts ist derselbe Gesamtstromkreis dargestellt, oben liegt der Widerstand R_2(
 		\only<1>{
 		\begin{eq}
 			R_\mathrm{M} =
-			\begin{bmatrix} 
+			\begin{bmatrix}
 				0 & 0 \\
 				\\
 				0 & 0 \\
-			\end{bmatrix} 
+			\end{bmatrix}
 		\end{eq}
 		}
 		\only<2>{
 		\begin{eq}
 			R_\mathrm{M} =
-			\begin{bmatrix} 
+			\begin{bmatrix}
 				\color{blue}{R_0 + R_1} & 0 \\
 				\\
 				0 & R_1 + R_2 \\
-			\end{bmatrix} 
+			\end{bmatrix}
 		\end{eq}
 		}
 		\only<3>{
 		\begin{eq}
 			R_\mathrm{M} =
-			\begin{bmatrix} 
+			\begin{bmatrix}
 				\color{blue}{R_0 + R_1} & \color{green}{-R_1} \\
 				\\
 				\color{green}{-R_1} & R_1 + R_2 \\
-			\end{bmatrix} 
+			\end{bmatrix}
 		\end{eq}
 		}
 	}
@@ -269,7 +269,7 @@ Rechts ist derselbe Gesamtstromkreis dargestellt, oben liegt der Widerstand R_2(
     \s{
     \begin{eq}
         R_\mathrm{M} =
-        \begin{bmatrix} 
+        \begin{bmatrix}
             \color{blue}{R_0 + R_1} & \color{green}{-R_1} \\
 			\\
 			\color{green}{-R_1} & R_1 + R_2 \\
@@ -280,11 +280,11 @@ Rechts ist derselbe Gesamtstromkreis dargestellt, oben liegt der Widerstand R_2(
     \speech{MastromWiderstands}{1}{Als nächstes wird die Widerstandsmatrix für das angegebene elektrische Netzwerk bestimmt.}
     \speech{MastromWiderstands}{2}{Die an den Maschen beteiligten Widerstände werden auf der Hauptdiagonalen der Matrix eingetragen.
     Für die Masche M 1 sind das die in blau gekennzeichneten Widerstände R null und R eins.
-    An der Masche M 2 sind die Widerstände R eins und R 2 beteiligt. } 
-    \speech{MastromWiderstands}{3}{Die Widerstände welche an zwei oder mehr Maschen beteiligt sind, 
-    werden zwischen den Maschen eingetragen. 
-    In diesem Fall handelt es sich hier um den Widerstand R eins. 
-    Die Widerstände zwischen den Maschen werden mit einem negativen Vorzeichen versehen.}  
+    An der Masche M 2 sind die Widerstände R eins und R 2 beteiligt. }
+    \speech{MastromWiderstands}{3}{Die Widerstände welche an zwei oder mehr Maschen beteiligt sind,
+    werden zwischen den Maschen eingetragen.
+    In diesem Fall handelt es sich hier um den Widerstand R eins.
+    Die Widerstände zwischen den Maschen werden mit einem negativen Vorzeichen versehen.}
 \end{frame}
 
 
@@ -292,23 +292,23 @@ Rechts ist derselbe Gesamtstromkreis dargestellt, oben liegt der Widerstand R_2(
     \ftb{Quellenspannungen zuordnen}
 
     \s{
-        Den Maschen müssen die Spannungsquellen, die sogennanten Quellspannungen zugeordnet werden. In der Masche $M_1$ liegt die 
-        Quellenspannung $U_0$. Die Masche $M_2$ weist die Quellenspannung $U_1$ auf. Bei übereinstimmender Richtung von Spannungspfeil 
+        Den Maschen müssen die Spannungsquellen, die sogennanten Quellspannungen zugeordnet werden. In der Masche $M_1$ liegt die
+        Quellenspannung $U_0$. Die Masche $M_2$ weist die Quellenspannung $U_1$ auf. Bei übereinstimmender Richtung von Spannungspfeil
         und Maschenrichtung ergibt sich ein negatives Vorzeichen für die Quellspannungen. Sind die Richtungen von Spannungspfeil und
-        dem Maschenumlauf entgegengesetzt wird das Vorzeichen der Quellspannung positiv. Für den Fall, dass in einer Masche keine Quelle 
+        dem Maschenumlauf entgegengesetzt wird das Vorzeichen der Quellspannung positiv. Für den Fall, dass in einer Masche keine Quelle
         vohanden ist, wird eine $0$ eingetragen.
     }
 
     \b{
-        \fu{    
-        \resizebox{0.7\textwidth}{!}{%                                                 
+        \fu{
+        \resizebox{0.7\textwidth}{!}{%
         \input{Tikz/src/Maschen_im_Netzwerk}
-        }                                                            
-    }    
+        }
     }
-   
+    }
+
     \begin{eq}
-        U_\mathrm{M} = 
+        U_\mathrm{M} =
         \begin{bmatrix}
             U_0 \\
             \\
@@ -316,12 +316,12 @@ Rechts ist derselbe Gesamtstromkreis dargestellt, oben liegt der Widerstand R_2(
         \end{bmatrix} \label{GleichungQuellspannungen}
     \end{eq}
 
-    \speech{MastromQuell}{1}{In dem Vektor U M werden die Quellströme festgehalten. 
-    An der Masche M 1 befindet sich die Spannungsquelle U null. 
+    \speech{MastromQuell}{1}{In dem Vektor U M werden die Quellströme festgehalten.
+    An der Masche M 1 befindet sich die Spannungsquelle U null.
     An der Masche M 2 befindet sich die Spannungsquelle U eins.
     Verläuft der Spannungspfeil der Spanungsquelle mit dem Maschenumlauf,
-    wird ein negatives Vorzeichen, 
-    bei einem entgegengesetzten Spannungspfeil ein positives Vorzeichen gewählt.}  
+    wird ein negatives Vorzeichen,
+    bei einem entgegengesetzten Spannungspfeil ein positives Vorzeichen gewählt.}
 \end{frame}
 
 
@@ -329,17 +329,17 @@ Rechts ist derselbe Gesamtstromkreis dargestellt, oben liegt der Widerstand R_2(
 \ftb{Gleichungssystem aufstellen}
 
 \s{
-    Nach dem ohmschen Gesetz wird die elektrische Spannung als Produkt aus dem elektrischen Widerstand und Strom berechnet. 
-    Bei der Maschenstromanalyse werden zur Berechnung des Vektors der Maschenströme $I_\mathrm{M}$ die Widerstandsmatrix $R_\mathrm{M}$ und der 
-    Vektor der Quellspannungen $U_\mathrm{M}$ verwendet. Das Gleichungssystem wird in der Gleichung \ref{GleichungMasche1} abgebildet.  
+    Nach dem ohmschen Gesetz wird die elektrische Spannung als Produkt aus dem elektrischen Widerstand und Strom berechnet.
+    Bei der Maschenstromanalyse werden zur Berechnung des Vektors der Maschenströme $I_\mathrm{M}$ die Widerstandsmatrix $R_\mathrm{M}$ und der
+    Vektor der Quellspannungen $U_\mathrm{M}$ verwendet. Das Gleichungssystem wird in der Gleichung \ref{GleichungMasche1} abgebildet.
     }
 
 \begin{eq}
-\begin{bmatrix} 
+\begin{bmatrix}
     R_0 + R_1 & -R_1 \\
     \\
     -R_1 & R_1 + R_2 \\
-\end{bmatrix}   
+\end{bmatrix}
 \cdot
 \begin{bmatrix}
     I_\mathrm{M1} \\
@@ -356,18 +356,18 @@ Rechts ist derselbe Gesamtstromkreis dargestellt, oben liegt der Widerstand R_2(
 
 \s{
     Die gesuchte Größen werden aus den Maschenströmen berechnet. Beispielsweise werden die Ströme $I_0$, $I_1$ und $I_2$ gesucht.
-    Die Ergebnisse der Maschenströme sind mit den Strömen gleichzusetzen, welche lediglich von einem Maschenstrom durchflossen werden. 
+    Die Ergebnisse der Maschenströme sind mit den Strömen gleichzusetzen, welche lediglich von einem Maschenstrom durchflossen werden.
     In dem vorgestellten elektrischen Netzwerk beträgt der Strom der Masche $M_1: I_\mathrm{M1} = I_0$ und der Masche $M_2: I_\mathrm{M2} = -I_2$. Der
     Strom durch den Widerstand $R_1$ lässt sich beispielsweise über die Knotengleichung berechnen: $I_1 = I_0 + I_2$.
 }
 
-\speech{MastromGleich}{1}{Nun kann aus der Widerstandsmatrix, 
-dem Vektor der Maschenströme 
-und dem Vektor der Quellspannungen 
+\speech{MastromGleich}{1}{Nun kann aus der Widerstandsmatrix,
+dem Vektor der Maschenströme
+und dem Vektor der Quellspannungen
 das notwendige Gleichungssystem aufgestellt und gelöst werden.
 Aus den so zu bestimmenden Maschenströmen können anschließend die gesuchten Ströme bestimmt werden.
 Hier ist beispielsweise der Strom I 0 gleich dem Maschenstrom I emm eins.
-Der Maschenstrom I emm 2 ist gleich dem negativen Wert von I zwei, 
+Der Maschenstrom I emm 2 ist gleich dem negativen Wert von I zwei,
 da die Verläufe der beiden Ströme entgegengesetzt sind.
 Zum Schluss kann der Strom I eins über die Knotenregel aus den Strömen I 0 und I 2 berechnet werden.
 Somit sind dann alle Größen des Netzwerkes identifiziert worden.}
@@ -384,11 +384,11 @@ Somit sind dann alle Größen des Netzwerkes identifiziert worden.}
     \begin{bsp}{Maschenstromverfahren}{}
 
     \s{
-        Analyse des elektrischen Netzwerk aus der Abbildung \ref{BildMasch4} mittels der Maschenstromanalyse. 
+        Analyse des elektrischen Netzwerk aus der Abbildung \ref{BildMasch4} mittels der Maschenstromanalyse.
     }
 
     \begin{enumerate}
-        \only<1>{	
+        \only<1>{
             \item[]
 
     Für die Maschenstromanalyse sollen die folgenden Schritte bearbeitet werden:
@@ -401,41 +401,41 @@ Somit sind dann alle Größen des Netzwerkes identifiziert worden.}
 		\item[e)] Gleichungssystem aufstellen
     \end{itemize}
 
-    \fu{  
-        \resizebox{0.4\textwidth}{!}{%                                     
+    \fu{
+        \resizebox{0.4\textwidth}{!}{%
         \input{Tikz/src/Beispiel_Maschenanalyse}\alttext{Die Schaltung besitzt eine obere und eine untere Sammelschiene. Links liegt eine Spannungsquelle U_0 in Serie mit dem Widerstand R_0; in der Mitte verbindet ein senkrechter Zweig aus zwei in Reihe geschalteten Widerständen R_3 und R_4 die beiden Schienen. Vom oberen Knoten dieses Mittelzweigs geht nach rechts eine Reihenschaltung aus Spannungsquelle U_1 und Widerstand R_1, vom mittleren Knoten eine horizontale Leitung mit dem Widerstand R_5. Rechts unten befindet sich in der Hauptleitung eine Stromquelle, parallel dazu ein Nebenzweig mit dem Widerstand R_2; an allen Bauelementen sind Ströme und Spannungsabfälle mit Pfeilen gekennzeichnet.}
-        }                  
-    }{{\bf Beispiel.} Maschenstromanalyse an einem elektrischen Netzwerk. \label{BildMasch4}}                                            
-    
+        }
+    }{{\bf Beispiel.} Maschenstromanalyse an einem elektrischen Netzwerk. \label{BildMasch4}}
+
         }
 
 
-        \only<2>{			
+        \only<2>{
             \item[a)] Vorbereitung des Netzwerkes:
 			\begin{figure}[H]
                 \resizebox{0.7\textwidth}{!}{%
-                    \input{Tikz/src/Vorbereitung_Netzwerk}\alttext{Die Schaltung hat eine obere und eine untere Sammelschiene; links speist eine Spannungsquelle U_0 mit dem Serienwiderstand R_0, in der Mitte verbinden die senkrechten Widerstände R_3(oben) und R_4(unten) die beiden Schienen. Vom oberen Mittelknoten führt nach rechts eine Serienschaltung aus Spannungsquelle U_1 und Widerstand R_1, vom mittleren Knoten eine waagerechte Leitung mit dem Widerstand R_5 zu einem rechten Knoten. Unten rechts ist in einem roten Kreis ein Teilnetz hervorgehoben, das aus einer Spannungsquelle U_2 und dem in Reihe liegenden Widerstand R_2 besteht, über den der Strom I_2 nach rechts fließt.}	
-                    }\centering                                                           
+                    \input{Tikz/src/Vorbereitung_Netzwerk}\alttext{Die Schaltung hat eine obere und eine untere Sammelschiene; links speist eine Spannungsquelle U_0 mit dem Serienwiderstand R_0, in der Mitte verbinden die senkrechten Widerstände R_3(oben) und R_4(unten) die beiden Schienen. Vom oberen Mittelknoten führt nach rechts eine Serienschaltung aus Spannungsquelle U_1 und Widerstand R_1, vom mittleren Knoten eine waagerechte Leitung mit dem Widerstand R_5 zu einem rechten Knoten. Unten rechts ist in einem roten Kreis ein Teilnetz hervorgehoben, das aus einer Spannungsquelle U_2 und dem in Reihe liegenden Widerstand R_2 besteht, über den der Strom I_2 nach rechts fließt.}
+                    }\centering
                 \end{figure}
             }
         \only<3>{
             \item[b)] Maschen und Maschenströme definieren:
             \onslide<3>{
                 \begin{figure}[H]
-                \resizebox{0.4\textwidth}{!}{%                                                        
+                \resizebox{0.4\textwidth}{!}{%
                     \input{Tikz/src/Maschen_definieren}\alttext{Die Schaltung besitzt einen rechteckigen Rahmen mit drei senkrechten Zweigen: links eine Spannungsquelle U_0 mit Serienwiderstand R_0, in der Mitte zwei übereinander angeordnete Widerstände R_3(oben) und R_4(unten), rechts ein reiner Leitungszweig ohne Bauteil. Vom oberen mittleren Knoten führt nach rechts eine Serienschaltung aus Spannungsquelle U_1 und Widerstand R_1, vom mittleren Knoten eine waagerechte Leitung mit Widerstand R_5, vom unteren mittleren Knoten nach rechts eine Serienschaltung aus Spannungsquelle U_2 und Widerstand R_2. Ströme und Spannungsabfälle sind an allen Widerständen und Quellen eingezeichnet, und die drei geschlossenen Umläufe links, rechts oben und rechts unten sind als Maschen M_1, M_2 und M_3 markiert.}
-                    }\centering                                                           
+                    }\centering
                 \end{figure}
             \pause
-            
+
             \begin{eq}
-                I_\mathrm{M} = 
-                \begin{bmatrix}  
+                I_\mathrm{M} =
+                \begin{bmatrix}
                     I_\mathrm{M1} \\
                     \\
                     I_\mathrm{M2} \\
                     \\
-                    I_\mathrm{M3} \\ 
+                    I_\mathrm{M3} \\
                 \end{bmatrix}\nonumber
             \end{eq}
 
@@ -446,42 +446,42 @@ Somit sind dann alle Größen des Netzwerkes identifiziert worden.}
             \onslide<4>{
                 \begin{eq}
                     R_\mathrm{M} =
-                    \begin{bmatrix}                    
+                    \begin{bmatrix}
                         R_0 + R_3 + R_4 & -R_3 & -R_4 \\
                         \\
                         -R_3 & R_1 + R_3 + R_5 & -R_5\\
                         \\
                         -R_4 & -R_5 & R_2 + R_4 + R_5 \\
                     \end{bmatrix} \nonumber
-                \end{eq} 
+                \end{eq}
             }
         }
         \only<5>{
             \item[d)] Quellspannungen zuordnen:
             \onslide<5>{
                 \begin{eq}
-                    U_\mathrm{M} = 
-                    \begin{bmatrix} 
+                    U_\mathrm{M} =
+                    \begin{bmatrix}
                         U_0 \\
                         \\
                         U_1 \\
                         \\
                         -U_2\\
                     \end{bmatrix} \nonumber
-                \end{eq} 
+                \end{eq}
             }
         }
         \only<6>{
             \item[e)] Gleichungssystem aufstellen:
             \onslide<6>{
                 \begin{eq}
-                    \begin{bmatrix} 
+                    \begin{bmatrix}
                         R_0 + R_3 + R_4 & -R_3 & -R_4 \\
                         \\
                         -R_3 & R_1 + R_3 + R_5 & -R_5\\
                         \\
                         -R_4 & -R_5 & R_2 + R_4 + R_5 \\
-                    \end{bmatrix}   
+                    \end{bmatrix}
                     \cdot
                     \begin{bmatrix}
                         I_\mathrm{M1} \\
@@ -498,35 +498,35 @@ Somit sind dann alle Größen des Netzwerkes identifiziert worden.}
                         \\
                         -U_2\\
                     \end{bmatrix}\nonumber
-                \end{eq} 
+                \end{eq}
                 \pause
-                Ströme Berechnen: 
-                \begin{eqa}   
+                Ströme Berechnen:
+                \begin{eqa}
                     I_3 = I_0 - I_1\nonumber\\
                     I_4 = I_3 - I_5\nonumber\\
                     I_0 = I_4 - I_2\nonumber\\
                     -I_5 = I_2 + I_1\nonumber
-                \end{eqa}  
+                \end{eqa}
             }
         }
     \end{enumerate}
 \end{bsp}{}{}
 
-\speech{MastromBsp}{1}{Die Schritte zur Anwendung des Maschenstromverfahrens wurden nun erläutert. 
+\speech{MastromBsp}{1}{Die Schritte zur Anwendung des Maschenstromverfahrens wurden nun erläutert.
 Folgend wird anhand des abgebildeten Beispielnetzwerkes noch einmal die grundsätzliche Arbeitsweise wiederholt.
 Hierzu wird das Netzwerk enstprechend für das Maschenstromverfahren vorbereitet, die Maschen und Maschenströme definiert,
 die Widerstandsmatrix bestimmt, die Quellspannungen zugeordnet und anschließend das Gleichungssystem aufgestellt.}
 \speech{MastromBsp}{2}{Bei dem Beispielnetzwerk müssen keine Widerstände zusammengefasst werden.
 Jedoch wird die Stromquelle mit Parallelwiderstand in eine Spannungsquelle mit Serienwiderstand umgewandelt.}
-\speech{MastromBsp}{3}{Für das Beispielnetzwerk werden drei Maschen M 1, M 2 und M 3 mit ihren zugehörigen 
+\speech{MastromBsp}{3}{Für das Beispielnetzwerk werden drei Maschen M 1, M 2 und M 3 mit ihren zugehörigen
 Maschenströmen I emm eins, I emm zwei und I emm drei definiert.}
-\speech{MastromBsp}{4}{An der Masche M 1 sind die Widerstände R null, R drei und R 4 beteiligt. Die Widerstände R eins, R drei und R fünf liegen an der Masche M 2. Die Masche M 3 verfügt über die Widerstände R zwei, R vier und R fünf. 
+\speech{MastromBsp}{4}{An der Masche M 1 sind die Widerstände R null, R drei und R 4 beteiligt. Die Widerstände R eins, R drei und R fünf liegen an der Masche M 2. Die Masche M 3 verfügt über die Widerstände R zwei, R vier und R fünf.
 Zwischen den Maschen M eins und M zwei liegt der Widerstand R drei. Zwischen den Maschen M eins und M 3 liegt der Widerstand R vier und zwischen den Maschen M 2 und M 3 liegt der Widerstand R fünf. Die Widerstände werden in die Widerstandsmatrix R emm eingetragen.}
 \speech{MastromBsp}{5}{Der Vektor der Quellspannungen ergibt sich nach U emm.
 Für die Masche M 1 wird die Spannungsquelle U null aufgeschrieben.
-Die Spannungsquelle U eins ist an der Masche M 2 beteiligt 
+Die Spannungsquelle U eins ist an der Masche M 2 beteiligt
 und für die Masche M 3 wird die Spannungsquelle minus U zwei notiert.}
-\speech{MastromBsp}{6}{Mit der Widerstandsmatrix, dem Vektor der Maschenströme 
+\speech{MastromBsp}{6}{Mit der Widerstandsmatrix, dem Vektor der Maschenströme
 und dem Vektor der Quellspannungen kann das Gleichungssystem aufgestellt werden.
 Nach dem Lösen der Gleichung sind die Maschenströme bekannt und können den Strömen zugeordnet werden.
 Hier entspricht der Maschenstrom I emm 1 dem Strom I null.

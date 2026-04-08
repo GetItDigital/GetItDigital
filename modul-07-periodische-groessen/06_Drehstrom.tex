@@ -4,16 +4,16 @@
 
 \begin{frame}
     \fta{Drehstrom}
-    
-    \s{
-        Um einen möglichst effizienten Energietransport zu gewährleisten wird in vielen Netzsystemen Drehstrom eingesetzt. 
+
+    \s{\index{Drehstrom}
+        Um einen möglichst effizienten Energietransport zu gewährleisten wird in vielen Netzsystemen Drehstrom eingesetzt.
         Grundlage des Drehstrom ist der Wechselstrom, welcher nicht als einzelne Phase, sondern als Zusammenschluss von mehreren Phasen genommen wird.
         Erzeugt wird Wechselstrom mit Generatoren, die nicht nur eine einzelne Wicklung im Rotor verbaut haben, sondern mehrere.
         Werden diese Wicklungen mit einem symmetrischen Abstand zu einander verbaut, werden je nach Anzahl der Wicklungen Phasen erzeugt.
         Es wird dann von einem Mehrphasensysteme gesprochen. Wenn genau drei Phasen vorliegen, wird das System Drehstrom genannt.
         Für das Verständniss von Drehstrom sind besonders die Grundlagen zum Wechselstrom und dem komplexen Rechnen relevant.
     }
-    
+
     \begin{Lernziele}{Drehstrom}
         Die Studierenden
         \begin{itemize}
@@ -22,8 +22,8 @@
             \item kennen die Gegebenheiten von Drehstromsystemen mit unterschiedlicher Phasenbelastung.
         \end{itemize}
     \end{Lernziele}
-    
-    \speech{DrehLrnz}{1}{Mehrphasenwechselstrom, besser bekannt als Drehstrom, 
+
+    \speech{DrehLrnz}{1}{Mehrphasenwechselstrom, besser bekannt als Drehstrom,
     verwendet mehrere Phasen als eine Wechselstromphase.
     Dies begünstigt beispielsweise eine Effektive Stromübertragung in den Übertragungs und Verteilnetzen.
     Hier sollen nun die grundsätzlichen Gegebenheiten des Drehstroms vermittelt werden.
@@ -32,9 +32,9 @@
 
 \begin{frame}
     \ftb{Symmetrische Komponenten}
-    
-    
-    \s{
+
+
+    \s{\index{Symmetrische Komponenten}
         Im Bereich der Energieerzeugung, -übertragung und -verteilung wird hautpsächlich mit Drehstrom gearbeitet.
         Der Begriff \glqq Drehstrom \grqq  kommt aus der technischen Gegebenheit, dass die Systeme mit dem räumlich rotierenden Magnetfeld des Generators verbunden sind: Dem Drehfeld.
         Alle Phasen in einem Mehrphasensystem werden mit der gleichen Frequenz erzeugt, die bekanntermaßen in Europa bei 50 Hz liegt.
@@ -43,40 +43,40 @@
         Im symmetrischen Fall erzeugt der Generator so viele Phasen, wie Wicklungen im Rotor verbaut sind.
         Die Wicklungen sind dabei mit immer im gleichen Winkel verbaut. Dieser Winkel bekommt den griechischen Buchstaben $\alpha$ zugeordnet:
     }
-    
+
     \b{
         \begin{itemize}
             \item Je nach Anzahl der Wicklungen werden Phasen erzeugt
             \item Im symmetrischen Fall werden die Wicklungen im Generator mit gleichen Winkel $\alpha$ verbaut
         \end{itemize}
     }
-    
-    
+
+
     \begin{eqa}
         \alpha = \frac{2\pi}{m}
     \end{eqa}
-    
-    
+
+
     \b{
         \begin{itemize}
             \item<2-> mit $m$ = Anzahl der Phasen
             \item<3-> Für ein Drehstromsystem: $m=3$
         \end{itemize}
-        
+
         \onslide<3->{
         \begin{eqa}
             \alpha=\frac{2\pi}{3}=120°
         \end{eqa}
         }
     }
-    
+
     \s{
-        Das m steht in der Formel für die Anzahl an Phasen, die in dem System erzeugt werden. 
-        Bei einem Drehstromsystem sind drei Phasen vorhanden. 
+        Das m steht in der Formel für die Anzahl an Phasen, die in dem System erzeugt werden.
+        Bei einem Drehstromsystem sind drei Phasen vorhanden.
         Daraus ergibt sich ein $\alpha$ von 120\degree.
     }
-    
-    \speech{DrehPhasen}{1}{Je nach Anzahl der Wicklungen, 
+
+    \speech{DrehPhasen}{1}{Je nach Anzahl der Wicklungen,
     Beispielsweise an einem Generator, werden Phasen erzeugt.
     Die Wicklungen werden im Generator mit gleichem Winkel Alpha verbaut.}
     \speech{DrehPhasen}{2}{Das kleine M steht hier für die Anzahl der Phasen.}
@@ -86,7 +86,7 @@
 
 \begin{frame}
     \ftx{Symmetrische Komponenten}
-    
+
     \s{
         \fu{
             %vergrößern auf Folienbreite
@@ -95,28 +95,28 @@
             }
         }{{\bf Drei Phasen des Drehstroms.} Die drei Phasen des Drehstromsystems sind alle zueinander um 120\degree phasenverschoben.
             Hieraus ergibt sich der Winkel $\alpha$ von 120\degree.}
-        
-        
+
+
         Im nächsten Schritt soll ein Drehoperator aus dem Winkel $\alpha$ abgeleitet werden.
         Dieser Drehoperator dient der Umrechnung der Spannungen und Ströme zur Bezugsspannung beziehungsweise zum Bezugsstrom.
     }
-    
+
     \b{
         Der Drehoperator $\underline{a}$ in Abhängigkeit von $\alpha$:
     }
-    
-    
+
+
     \begin{eqa}
         \underline{a}=e^{j\alpha}=e^{j\frac{2\pi}{m}} \label{Drehoperator}
     \end{eqa}
-    
-    
+
+
     \onslide<2->{
     Für $m=3$:
 
     \begin{eqa}
-        \underline{a}&=e^{j\frac{2\pi}{3}}=-\frac{1}{2}+j\frac{\sqrt{3}}{2}                         \notag \\      
-        \underline{a}^2&=e^{j\frac{4\pi}{3}}=-\frac{1}{2}-j\frac{\sqrt{3}}{2}=\underline{a}^{*}     \notag \\  
+        \underline{a}&=e^{j\frac{2\pi}{3}}=-\frac{1}{2}+j\frac{\sqrt{3}}{2}                         \notag \\
+        \underline{a}^2&=e^{j\frac{4\pi}{3}}=-\frac{1}{2}-j\frac{\sqrt{3}}{2}=\underline{a}^{*}     \notag \\
         \underline{a}^3&=e^{j2\pi}=1                                                                \notag \\
         \underline{a}^4&=e^{j\frac{8\pi}{3}}=-\frac{1}{2}+j\frac{\sqrt{3}}{2}=\underline{a}         \notag \\
         \underline{a}^5&=e^{j\frac{10\pi}{3}}=-\frac{1}{2}-j\frac{\sqrt{3}}{2}=\underline{a}^2      \notag \\
@@ -129,22 +129,22 @@
     Für jede Phase gilt ein eigener Operator.
     Sie unterscheiden sich dabei in ihrer Ausrichtung.
     So verortet sich der einfache Drehoperator bei Zwei Drittel Pi.
-    Der Drehoperator hoch Zwei bei vier Drittel Pi 
+    Der Drehoperator hoch Zwei bei vier Drittel Pi
     und stellt damit das Konjugierte Gegenstück zum einfachen Drehoperator dar.
-    Der Operator hoch Drei verortet sich bei Zwei Pi, 
+    Der Operator hoch Drei verortet sich bei Zwei Pi,
     damit bei einem vollen Umlauf und ergibt sich zu Eins. .
     .}
 \end{frame}
 
 \begin{frame}
-    \ftx{Drehoperator}
-    
+    \ftx{Drehoperator}\index{Drehoperator}
+
     \begin{Merksatz}{Drehoperator}
         Der Winkel $\alpha$ gibt die Phasenverschiebung zwischen den Phasen an. Mithilfe des Drehoperators $\underline{a}$
-        können Spannungen und Ströme umgerechnet werden. 
+        können Spannungen und Ströme umgerechnet werden.
     \end{Merksatz}
-    
-    \speech{DrehMrk1}{1}{Der Winkel Alpha gibt die Phasenverschiebung zwischen den Phasen an. 
+
+    \speech{DrehMrk1}{1}{Der Winkel Alpha gibt die Phasenverschiebung zwischen den Phasen an.
     Mithilfe des DrehOperators können Spannungen und Ströme umgerechnet werden.
     .}
 \end{frame}
@@ -154,35 +154,35 @@
     \s{
         Die komplexen Spannungen der jeweiligen Außenleiter gegenüber einem Neutralleiter können mit der folgenden Gleichung formuliert werden:
     }
-    
+
     \b{
         Für die Spannung der jeweiligen Außenleiter gegenüber einem Neutralleiter gilt:
     }
-    
+
     \begin{eqa}
         \underline{U}_{\mathrm{Lm}}=U_\mathrm{L1}\cdot e^{-j(m-1)\alpha}
     \end{eqa}
-    
+
     \s{
         Die Spannung $U_1$ ist dabei eine reele Bezugsgröße für das Mehrphasensystem.
-        
+
         Nun werden die Gleichungen für den Drehoperator mit der für die Spannung zusammengebracht und ergeben folgenden Zusammenhang:
     }
-    
-    
+
+
     \onslide<2->{
     \b{
         Spannung $U_m$ in Abhängigkeit vom Drehoperator $\underline{a}$:
     }
-    
+
     \begin{eqa}
-        \underline{U}_\mathrm{L1}&=\underline{a}^m\cdot U_\mathrm{L1}=1\cdot U_\mathrm{L1}         \notag \\       
+        \underline{U}_\mathrm{L1}&=\underline{a}^m\cdot U_\mathrm{L1}=1\cdot U_\mathrm{L1}         \notag \\
         \underline{U}_\mathrm{L2}&=\underline{a}^{m-1}\cdot U_\mathrm{L1}                \notag \\
         \vdots                                                       \notag \\
         \underline{U}_{\mathrm{Lm-1}}&=\underline{a}^2\cdot U_\mathrm{L1}       \notag \\
         \underline{U}_{\mathrm{Lm}}&=\underline{a}\cdot U_\mathrm{L1}           \notag
     \end{eqa}}
-    
+
     \speech{DrehAusenleiter}{1}{Je nach Phasenanzahl M gilt allgemein gegenüber dem Neutralleiter für eine komplexe Spannung der angegebene Zusammenhang.
     Hier wirkt sich die Phasenzahl auf den Operator der jeweiligen Phasenspannung aus.}
     \speech{DrehAusenleiter}{2}{Es wird der Zusammenhang noch einmal mit dem Drehoperator angegeben.
@@ -194,23 +194,23 @@
 
 \begin{frame}
     \ftx{Symmetrische Komponenten}
-    
+
     Mit einer Anzahl von drei Phasen, also $m=3$, ergibt sich folgender Zusammenhang der drei Spannungen und dem Drehoperator:
-    
+
     \begin{eqa}
         \underline{U}_\mathrm{L1}+\underline{U}_\mathrm{L2}+\underline{U}_\mathrm{L3}=U_\mathrm{L1}(1+\underline{a}^2+\underline{a})
     \end{eqa}
-    
+
     \s{
         \textit{Anmerkung:}
-        
+
         In der Literatur sind die Indizes für die Spannungen nicht immer einheitlich gewählt. Die häufigste Alternative sind die Buchshtaben $u, v ,w$ für die Phasen $1, 2, 3$.
         Es werden noch weitere Indizes verwendet, die hier jedoch nicht weiter erwähnt werden sollen.
-        
+
     }
-    
+
     \speech{DrehDreiPhasenOperator}{1}{Am häufigsten begegnet man einem Drehstromsystem mit Drei Phasen.
-    Beispielsweise sind für die Drei Phasen Uh El Eins, Uh El Zwei und Uh El drei die komplexen Spannungen im Bezug zum Neutralleiter angegeben. 
+    Beispielsweise sind für die Drei Phasen Uh El Eins, Uh El Zwei und Uh El drei die komplexen Spannungen im Bezug zum Neutralleiter angegeben.
     .}
     \speech{DrehDreiPhasenOperator}{2}{Neben den kennengelernten Operatoren für die Phasen Uh El Eins und Uh El Zwei,
     ergibt sich für die Phase Uh El Drei der Drehoperator Ah! .}
@@ -218,18 +218,18 @@
 
 \begin{frame}
     \ftx{Symmetrische Komponenten}
-    
+
     \s{
         In Abb. \ref{ZeigerDrehoperator} soll nochmals deutlich gemacht werden, wie sich die Drehoperatoren im Komplexen zusammensetzen.
     }
-    
+
     \fu{
         \resizebox{0.8\textwidth}{!}{%
             \input{Tikz/src/Drehstrom/Zeigerdiagramm_Drehstromoperator}\alttext{Das Bild zeigt links drei komplexe Zeiger im Einheitskreis, die um 120 Grad gegeneinander versetzt sind. Die Zeiger sind mit a, a² und a³ = 1 beschriftet, wobei der Winkel α = 2π/3 beträgt. Rechts sind diese drei Zeiger zu einem gleichseitigen Dreieck verbunden dargestellt.}
         }
     }{{\bf Zeigerdiagramm des Drehoperators im Drehstromsystem.} Werden die Drehoperatoren aufsummiert, ergibt sich
         als Ergebniss Null. \label{ZeigerDrehoperator}}
-    
+
     \b{
         Zeigerdiagramm zum Drehoperator \onslide<2->{$\rightarrow$ Die Summe ergibt Null}
         \begin{eqa}
@@ -240,18 +240,18 @@
             \underline{U}_\mathrm{L1}+\underline{U}_\mathrm{L2}+\underline{U}_\mathrm{L3}=0       \notag
             }
         \end{eqa}
-        
+
     }
-    
+
     \s{
         Wird dem Weg über die drei Drehoperatoren gefolgt, gelangt man zurück zum Ursprung und erhält Null.
-        
+
         \begin{eqa}
             1+\underline{a}+\underline{a}^2=0                       \notag \\
             \underline{U}_\mathrm{L1}+\underline{U}_\mathrm{L2}+\underline{U}_\mathrm{L3}=0       \notag
         \end{eqa}
     }
-    
+
     \speech{DrehOperatorZeigerdiagramm}{1}{Hier werden die DrehOperatoren im Zeigerdiagramm dargestellt.
     Der DrehOperator Ah hoch Drei ist wie bereits kennengelernt Eins.
     Der DrehOperator Ah verortet sich bei Plus Wurzel Drei Halbe Jott
@@ -264,10 +264,10 @@
 
 \begin{frame}
     \ftc{Verkettete Systeme im Stern}
-    
+
     \s{
         In den folgenden Kapiteln soll darauf eingegangen werden, welche Formen der Verschaltung in einem Drehstromsystem vorkommen können.
-        Zuerst soll auf die sogenannte Sternschaltung eingegangen werden. 
+        Zuerst soll auf die sogenannte Sternschaltung eingegangen werden.
         Sternschaltung bedeutet, dass die Stränge so zusammengeführt werden, dass sich ein sogenannter Sternpunkt bildet.
         Ein System kann sowohl auf Generator-, als auch auf Verbraucherseite verschaltet werden.
         In Abb. \ref{ESBStern} sind die die typischen Komponenten einer Sternschaltung in einem dreiphasigen Ersatzschaltbild eingetragen.
@@ -280,10 +280,10 @@
         Die Impedanzen der Stränge werden in der Sternschaltung wie auch die Spannungsquellen zu dem Knotenpunkt $N_V$ zusammengeführt.
         In einem System, in dem sowohl die Generator- als auch die Verbraucherseite im Stern verschaltet sind, kann es zu den Strängen der Phasen noch einen Neutralleiter oder Rückleiter geben, welcher die beiden Knotenpunkte miteinander verbindet.
     }
-    
+
     \b{
         Die Komponenten können entweder im Stern oder im Dreieck verschaltet werden
-            
+
         \begin{itemize}
             \item<2-> In der Sternschaltung werden die Phasen auf einen Sternpunkt verschaltet
             \item<3-> Es liegen dann auf Erzeuger- und Verbraucherseite Knotepunkte vor, die über einen Neutralleiter verbunden werden können
@@ -291,12 +291,12 @@
             \item<5-> Die Verbraucher, die an jeder Phase angeschlossen sind, werden zu einer Impedanz zusammengefasst
         \end{itemize}
     }
-    
+
     \speech{DrehSternAllg}{1}{Bei der Sternschaltung und der Dreieckschaltung handelt es sich um Arten der Verschaltung,
     von Beispielsweise Motoren.}
-    \speech{DrehSternAllg}{2}{Werden die Phasen alle auf einen sogenannten Sternpunkt verschaltet, 
+    \speech{DrehSternAllg}{2}{Werden die Phasen alle auf einen sogenannten Sternpunkt verschaltet,
     handelt es sich um die Sternschaltung.}
-    \speech{DrehSternAllg}{3}{Hier liegen dann Knotenpunkte sowohl auf der Erzeugerseite, 
+    \speech{DrehSternAllg}{3}{Hier liegen dann Knotenpunkte sowohl auf der Erzeugerseite,
     als auch auf der Verbraucherseite vor,
     welche über einen Neutralleiter miteinander verbunden sind.}
     \speech{DrehSternAllg}{4}{Quellenseitig wird für jede Phase eine Spannungsquelle eingetragen.}
@@ -306,10 +306,10 @@
 
 \begin{frame}
     \ftx{Verkettete Systeme im Stern}
-    
+
     \b{
         Das Ersatzschaltbild (ESB) für ein Drehstromsystem mit Erzeugern und Verbrauchern im Stern und Rückleiter
-    }    
+    }
 
     \fu{
         \resizebox{0.8\textwidth}{!}{%
@@ -328,19 +328,19 @@
 
 \begin{frame}
     \ftx{Verkettete Systeme im Stern}
-    
-    
+
+
     \textbf{Spannungen}
-    
+
     Grundsätzlich gibt es in einem Drehstromsystem drei Spannungen, welche spezifisch genannt werden sollten:
-    
+
     \begin{itemize}
         \item<2-> Außenleiter-Neutralleiter-Spannung (Sternspannung) $U_\Stern$: Spannung des Leiters gegenüber dem Neutralleiter ($U_{\mathrm{L1}}$, $U_{\mathrm{L2}}$, $U_{\mathrm{L3}}$)
         \item<3-> Außenleiter-Spannung (verkettete Spannung) U: Spannung zwischen zwei Leitern ($U_{\mathrm{L1L2}}$, $U_{\mathrm{L2L3}}$, $U_{\mathrm{L3L1}}$) -- diese Spannung wird auch als Dreieckspannung bezeichnet
         \item<4-> Strangspannung $U_{\mathrm{str}}$: Spannung über die Impedanz des Leiters gegenüber dem Neutralleiter. Je nach Verschaltung ist die Strangspannung entweder gleich der Sternspannung oder der Dreieckspannung
     \end{itemize}
-    
-    \speech{DrehSternSpannung}{1}{Grundsätzlich sollte in einem Drehstromsystem 
+
+    \speech{DrehSternSpannung}{1}{Grundsätzlich sollte in einem Drehstromsystem
     eine Einheitliche Nomenklatur verwendet werden.
     Es wird zwischen Drei Spannungsbegiffen unterschieden.}
     \speech{DrehSternSpannung}{2}{Die Außenleiter Neutralleiterspannung,
@@ -356,63 +356,63 @@
 
 \begin{frame}
     \ftx{Verkettete Systeme im Stern}
-    
+
     \b{
     \textbf{Ströme}
-    
-    Der Strom im Neutralleiter ergibt sich aus dem 1. Kirchhoff´schen Gesetzt:
+
+    Der Strom im Neutralleiter ergibt sich aus dem 1. Kirchhoffschen Gesetzt:
     \begin{eqa}
         \underline{I}_{\mathrm{N}}=\underline{I}_{\mathrm{L1}}+\underline{I}_{\mathrm{L2}}+\underline{I}_{\mathrm{L3}}
     \end{eqa}
-    
+
     \onslide<2->{
-    Umgestellt nach dem Ohm´schen Gesetz:
+    Umgestellt nach dem Ohmschen Gesetz:
     \begin{eqa}
         \underline{I}_{\mathrm{N}}=\frac{\underline{U}_{\mathrm{L1}}}{\underline{Z}_1}+\frac{\underline{U}_{\mathrm{L2}}}{\underline{Z}_2}+\frac{\underline{U}_{\mathrm{L3}}}{\underline{Z}_3}=\underline{U}_{\mathrm{1m}}\underline{Y}_{1}+\underline{U}_{\mathrm{2m}}\underline{Y}_{2}+\underline{U}_{\mathrm{3m}}\underline{Y}_{3}
     \end{eqa}}
-    
+
     \onslide<3->{
     Im symmetrischen Fall sind alle Impedanzen gleich groß ($\underline{Z}_{\mathrm{L1}}=\underline{Z}_{\mathrm{L2}}=\underline{Z}_{\mathrm{L3}}=\underline{Z}$), daraus folgt:
     \begin{eqa}
         \underline{I}_{\mathrm{N}}=\frac{1}{\underline{Z}}(\underline{U}_{\mathrm{L1}}+\underline{U}_{\mathrm{L2}}+\underline{U}_{\mathrm{L3}})=0
     \end{eqa}}
-    
+
     }
-    
+
     \s{
         \textbf{Ströme}
-        
+        \index{Sternstrom}\index{Außenleiterstrom}
         Für Ströme in einem Sternsystem ist es hilfreich das 1. Kirchhoffsche Gesetz anzuwenden.
         Die Summe der Ströme der Stränge muss gleich dem Strom im Neutralleiter sein:
-        
+
         \begin{eqa}
             \underline{I}_{\mathrm{N}}=\underline{I}_{\mathrm{L1}}+\underline{I}_{\mathrm{L2}}+\underline{I}_{\mathrm{L3}}
         \end{eqa}
-        
+
         Im Bezug zu den Spannungen und Impedanz ergibt sich nach dem Ohmschen Gesetz:
-        
+
         \begin{eqa}
             \underline{I}_{\mathrm{N}}=\frac{\underline{U}_{\mathrm{L1}}}{\underline{Z}_1}+\frac{\underline{U}_{\mathrm{L2}}}{\underline{Z}_2}+\frac{\underline{U}_{\mathrm{L3}}}{\underline{Z}_3}=\underline{U}_{\mathrm{1m}}\underline{Y}_{1}+\underline{U}_{\mathrm{2m}}\underline{Y}_{2}+\underline{U}_{\mathrm{3m}}\underline{Y}_{3}
         \end{eqa}
-        
+
         Wenn von einem symmetrischen System gesprochen wird, gilt das nicht nur für den Generator, sondern auch für die Impedanzen.
         Demnach sind die Impedanzen der drei Stränge alle gleich groß:
-        
+
         \begin{eqa}
             \underline{Z}_{\mathrm{L1}}=\underline{Z}_{\mathrm{L2}}=\underline{Z}_{\mathrm{L3}}=\underline{Z} \label{SymImpedanzen}
         \end{eqa}
-        
+
         Wird dieser Zusammenhang für ein symmetrisches System für die Gleichung \ref{SymImpedanzen} berücksichtigt, kann die Impedanz herausgezogen werden.
         Nun ist bereits bekannt, dass die Summe der Spannungen in einem symmetrischen System null ergibt.
         Somit lässt sich beweisen, dass die Summe der Ströme auch null ergeben muss.
-        
+
         \begin{eqa}
             \underline{I}_{\mathrm{N}}=\frac{1}{\underline{Z}}(\underline{U}_{\mathrm{L1}}+\underline{U}_{\mathrm{L2}}+\underline{U}_{\mathrm{L3}})=0
         \end{eqa}
     }
-    
+
     \speech{DrehSternStrom}{1}{Der Strom Ih N durch den Neutralleiter ergibt sich aus der Summe der Leiterströme.}
-    \speech{DrehSternStrom}{2}{Diser Sachverhalt lässt sich auch durch die Spannungen und die Impedanzen, 
+    \speech{DrehSternStrom}{2}{Diser Sachverhalt lässt sich auch durch die Spannungen und die Impedanzen,
     beziehungsweise den Admitanzen beschreiben.}
     \speech{DrehSternStrom}{3}{Für den Fall, dass alle Impedanzen gleich groß sind,
     also symmetrisch sind.
@@ -422,19 +422,19 @@
 
 \begin{frame}
     \ftx{Verkettete Systeme im Stern}
-    
+
     \b{
         Dreiphasiges ESB mit symmetrischen Verbrauchern im Stern
     }
-    
+
     \fu{
         \resizebox{0.9\textwidth}{!}{%
             \input{Tikz/src/Drehstrom/Dreisphasiges_ESB}\alttext{Das Bild zeigt eine symmetrische Drehstromschaltung mit drei identischen Lastimpedanzen Z. Links sind drei um 120 Grad phasenverschobene Spannungsquellen dargestellt. In allen drei Leitern fließt derselbe Strom I. Eingezeichnet sind die Leiter- und Außenleiterspannungen zwischen den Phasen sowie die Neutralpunkte N_Q und N_V.}
         }
     }{{\bf Dreiphasiges Ersatzschaltbild Stern-Stern.} ESB mit symmetrischen Verbrauchern im Stern \label{ESBSymStern}}
-    
+
     \speech{DrehSternESBSymetrisch}{1}{Die Spannungen weisen alle einen anderen Phasenwinkel auf.
-    Die Impedanzen sind symmetrisch. Das hat zur Folge, 
+    Die Impedanzen sind symmetrisch. Das hat zur Folge,
     dass die Ströme sich gegenseitig aufheben.
     Wird der Strom durch den Neutraleiter zu Null,
     wird kein Rückleiter mehr benötigt.
@@ -444,17 +444,17 @@
 
 \begin{frame}
     \ftx{Verkettete Systeme im Stern}
-    
+
     \s{
         Um nicht immer das vollständige dreiphasige ESB zeichnen zu müssen, wie in Abb \ref{ESBSymStern}, gibt es die Möglichkeit, ein vereinfachtest einphasiges ESB zu zeichnen.
         Wichtig bei der Aufstellung des einphasigen ESB (natürlich auch bei jedem anderen ESB) ist, dass die korrekten Bezeichnungen für die Ströme, Spannungen und Impedanzen über die Indizes gewählt wird.
         Für die Sternschaltung ist das einphasige ESB in Abb. \ref{EinphasigESBStern} abgebildet.
     }
-    
+
     \fu{
         \input{Tikz/src/Drehstrom/Einphasiges_ESB}\alttext{Das Bild zeigt einen einfachen einphasigen Wechselstromkreis. Eine Spannungsquelle mit der Spannung Uᵧ speist eine Lastimpedanz Zᵧ. Durch den geschlossenen Stromkreis fließt ein Strom I in Pfeilrichtung. Die Darstellung veranschaulicht das Ersatzschaltbild eines einzelnen Strangs.}
     }{{\bf Einphasiges Ersatzschaltbild Stern-Stern.} ESB mit symmetrischen Verbrauchern im Stern \label{EinphasigESBStern}}
-    
+
     \b{
         \begin{itemize}
             \item Alternativ kann das ESB auch einphasig aufgestellt werden
@@ -464,70 +464,70 @@
 
     \speech{DrehSternESBEinphasig}{1}{Durch die Symmetrieen ist es für symmetrische Verbraucher möglich,
     ein Einphasiges Ersatzschaltbild aufzustellen.
-    Hierbei ist es wichtig, wie bei allen Ersatzschaltbildern, 
+    Hierbei ist es wichtig, wie bei allen Ersatzschaltbildern,
     auf die korrekten Bezeichnungen zu achten. .}
 \end{frame}
 
 \begin{frame}
     \ftx{Symmetrische Komponenten}
-    
+
     \begin{Merksatz}{Symmetrische Komponenten}
-        {\bf Symmetrische Komponenten} beschreiben eine {\bf gleiche Belastung der Phasen}, beispielsweise in einem 
-        Dreiphasensystem. Hier werden alle drei Phasen durch identische Verbraucher belastet.  
+        {\bf Symmetrische Komponenten} beschreiben eine {\bf gleiche Belastung der Phasen}, beispielsweise in einem
+        Dreiphasensystem. Hier werden alle drei Phasen durch identische Verbraucher belastet.
     \end{Merksatz}
 
-    \speech{DrehMrk2}{1}{Symmetrische Komponenten beschreiben eine gleiche Belastung der Phasen, 
-    beispielsweise in einem Dreiphasensystem. 
+    \speech{DrehMrk2}{1}{Symmetrische Komponenten beschreiben eine gleiche Belastung der Phasen,
+    beispielsweise in einem Dreiphasensystem.
     Hier werden alle drei Phasen durch identische Verbraucher belastet.}
 \end{frame}
 
 
 \begin{frame}
     \ftc{Verkettete Systeme im Dreieck}
-    
-    \s{
-        Alternativ zu der Verschaltung im Stern können die Quellen und Verbraucher im Dreieck verschaltet werden. 
+
+    \s{\index{Dreieckschaltung}
+        Alternativ zu der Verschaltung im Stern können die Quellen und Verbraucher im Dreieck verschaltet werden.
         Für die Generatorseite gilt jedoch, dass diese in den meisten Fällen im Stern verschaltet ist.
         Hintergrund ist, dass bei kleinsten unsymmetrien Ausgleichströme fließen, die den Betrieb des Generators beienflussen würden.
         Das soll möglichst vermieden werden, wodurch eine Sternschaltung eine bessere Betriebsweise darstellt.
         Deswegen wird angenommen, dass die Generatorseite grundlegend im Stern verschaltet ist.
         Wenn also von einer Dreieckschaltung die Rede ist, wird, außer es wird explizit erwähnt, nur die Verbraucherseite gemeint.
-        
+
         Es wurde bereits definiert, dass die Außenleiter-Spannung auch Dreiecksspannung genannt wird.
         Nach dem Maschen-Gesetz ergibt sich die Dreieckspannung zweier Leiter aus der Differenz der jeweiligen Sternspannung:
-        
+
         \begin{eqa}
             \underline{U}_{\mathrm{L1L2}}=\underline{U}_{\mathrm{L1}}-\underline{U}_{\mathrm{L2}} \label{AußenleiterKomplex}
         \end{eqa}
-        
+
         Wenn nun der Wert der jeweiligen Außenleiterspannung errechnet werden soll, müsste nach der Gleichung \ref{AußenleiterKomplex} komplex gerechnet werden.
         Es kann jedoch mit Hilfe einer trigonometrischen Herleitung ein Verhältnis zwischen Sternspannung und Dreiecksspannung beschrieben werden.
     }
-    
-    
+
+
     \b{
         \begin{itemize}
             \item<1-> Bei einer Dreieckschaltung werden die Phasen direkt miteinander verschaltet
             \item<2-> Meistens bleibt die Generatorseite jedoch im Stern verschaltet, um besser Ausgleichströme abzuleiten
             \item<3-> Die Außenleiterspannung (auch Dreieckspannung genannt) ergibt sich aus der Differenz der jeweiligen Sternspannungen:
         \end{itemize}
-        
+
         \onslide<3->{
         \begin{eqa}
-            \underline{U}_{\mathrm{L1L2}}=\underline{U}_{\mathrm{L1}}-\underline{U}_{\mathrm{L2}} 
+            \underline{U}_{\mathrm{L1L2}}=\underline{U}_{\mathrm{L1}}-\underline{U}_{\mathrm{L2}}
         \end{eqa}}
     }
-    
+
     \speech{DrehVerkettDreieck}{1}{Bei der Dreieckschaltung werden die Phasen nicht über einen Neutralleiter verbunden,
     sondern werden direkt miteinander verschaltet.}
     \speech{DrehVerkettDreieck}{2}{Generatorseitig bleibt in der Regel der Stern erhalten.}
-    \speech{DrehVerkettDreieck}{3}{Die Außenleiterspannung kann beispielsweise durch die 
+    \speech{DrehVerkettDreieck}{3}{Die Außenleiterspannung kann beispielsweise durch die
     Differenz zwischen den jeweiligen Sternspannungen bestimmt werden.}
 \end{frame}
 
 \begin{frame}
     \ftx{Verkettete Systeme im Dreieck}
-    
+
     \b{
         \begin{itemize}
             \item Das Verhältnis zwischen Dreieck- und Sternspannung kann mit Hilfe einer trigonometrischen Herleitung beschrieben werden:
@@ -569,15 +569,15 @@
                 \begin{eq}
                     \sin\left(\frac{\alpha}{2}\right)=\sin\left(\frac{\frac{2\pi}{m}}{2}\right)=\sin\left(\frac{\pi}{m}\right)=\frac{G}{H} \notag
                 \end{eq}
-                
+
                 \onslide<2->{
                 \begin{eqa}
-                    \sin\left(\frac{\pi}{3}\right)=\frac{\frac{U_{\mathrm{L1L2}}}{2}}{U_{\mathrm{L1}}} \notag 
+                    \sin\left(\frac{\pi}{3}\right)=\frac{\frac{U_{\mathrm{L1L2}}}{2}}{U_{\mathrm{L1}}} \notag
                 \end{eqa}
                 \begin{eq}
                     2\cdot\frac{\sqrt{3}}{2}=\frac{U_{\mathrm{L1L2}}}{U_{\mathrm{L1}}} \notag
                 \end{eq}}
-                
+
                 \onslide<3->{
                 \begin{eqa}
                     U_{\mathrm{L1}}=\frac{U_{\mathrm{L1L2}}}{\sqrt{3}}     \notag
@@ -585,14 +585,14 @@
             \end{subfigure}
         \end{figure}
     }
-    
+
     \s{
         \begin{eq}
             \sin\left(\frac{\alpha}{2}\right)=\sin\left(\frac{\frac{2\pi}{m}}{2}\right)=\sin\left(\frac{\pi}{m}\right)=\frac{G}{H} \label{GleichungW3}
         \end{eq}
-        
+
         \begin{eqa}
-            \sin\left(\frac{\pi}{3}\right)=\frac{\frac{\underline{U}_{\mathrm{L1L2}}}{2}}{\underline{U}_{\mathrm{L1}}} \notag 
+            \sin\left(\frac{\pi}{3}\right)=\frac{\frac{\underline{U}_{\mathrm{L1L2}}}{2}}{\underline{U}_{\mathrm{L1}}} \notag
         \end{eqa}
         \begin{eq}
             2\cdot\frac{\sqrt{3}}{2}=\frac{\underline{U}_{\mathrm{L1L2}}}{\underline{U}_{\mathrm{L1}}} \label{GleichungW32}
@@ -604,18 +604,18 @@
 
     \speech{DrehHerl}{1}{Über die trigonometrische Gegebenheit der Sinusfunktion,
     lässt sich das Verhältnis zwischen der Dreieckspannung und der Sternspannung herleiten.}
-    \speech{DrehHerl}{2}{Der Sinus setzt sich bei einem Winkel von Pi Drittel 
+    \speech{DrehHerl}{2}{Der Sinus setzt sich bei einem Winkel von Pi Drittel
     aus dem Verhältnis aus der halben Dreieckspannung und der Sternspannung zusammen.}
-    \speech{DrehHerl}{3}{So lässt sich der Faktor Wurzel Drei zwischen der Sternspannung 
+    \speech{DrehHerl}{3}{So lässt sich der Faktor Wurzel Drei zwischen der Sternspannung
     und der Dreieckspannung bestimmen. Dieser Faktor wird auch als Verkettungsfaktor bezeichnet.}
 \end{frame}
 
 
 \begin{frame}
     \ftx{Stern-Dreieck-Umrechnungsfaktor}
-    
+
     \begin{Merksatz}{Stern-Dreieck-Umrechnungsfaktor}
-        Die Sternspannung und die Dreieckspannung können über den Umrechnungsfaktor $\sqrt{3}$ ineinander umgewandelt werden: 
+        Die Sternspannung und die Dreieckspannung können über den Umrechnungsfaktor $\sqrt{3}$ ineinander umgewandelt werden:
         \begin{eq}
             U_{\Stern}=\frac{U_{\Dreieck}}{\sqrt{3}}    \nonumber
         \end{eq}
@@ -628,50 +628,50 @@
 
 \begin{frame}
     \ftx{Verkettete Systeme im Dreieck}
-    
+
     \s{
-        In Abb. \ref{HerrleitungW3} soll mit Hilfe des Zeigerdiagramm der komplexen Drehspannungen das Verhältinis 
-        zwischen Stern- und Dreieckspannung aufgezeigt werden. Dafür werden die trigonometrischen Grundlagen genommen, 
+        In Abb. \ref{HerrleitungW3} soll mit Hilfe des Zeigerdiagramm der komplexen Drehspannungen das Verhältinis
+        zwischen Stern- und Dreieckspannung aufgezeigt werden. Dafür werden die trigonometrischen Grundlagen genommen,
         um die Länge der Außenleiterspannung (also der Dreieckspannung) anders darzustellen. In Gleichung \ref{GleichungW3}
-        ist zuerst allgemein beschrieben, wie in einem Mehrphasensystem der Sinus verwendet werden kann. Diese Gleichung 
-        gilt allgemein, unabhängig wie viele Phasen das System aufweist. In Gleichung \ref{GleichungW32} wird für $m$ 3 
+        ist zuerst allgemein beschrieben, wie in einem Mehrphasensystem der Sinus verwendet werden kann. Diese Gleichung
+        gilt allgemein, unabhängig wie viele Phasen das System aufweist. In Gleichung \ref{GleichungW32} wird für $m$ 3
         eingesetzt. Der Winkel wird dadurch immer halb so groß, wie der eigentliche Winkel zwischen den Phasen wäre.
-        Dadurch ist die Gegenkathete des Sinus die halbe Dreieckspannung. Mit Umstellung und Umwandlung des Wertes 
-        $sin(\frac{\pi}{3})$ in $\frac{\sqrt{3}}{2}$ erhält man schließlich den Faktor, um Stern- und Dreieckspannung 
+        Dadurch ist die Gegenkathete des Sinus die halbe Dreieckspannung. Mit Umstellung und Umwandlung des Wertes
+        $sin(\frac{\pi}{3})$ in $\frac{\sqrt{3}}{2}$ erhält man schließlich den Faktor, um Stern- und Dreieckspannung
         umrechnen zu können.
     }
-    
+
     \b{
         \begin{itemize}
             \item Die Herleitung kann auf Grundlage des Zeigerdiagramms noch besser veranschaulicht werden:
         \end{itemize}
     }
-    
+
     \s{
-        In der Praxis wird die Sternspannung immer gekennzeichnet mit einem Sternsymbol als Index, bei der Dreieckspannung 
+        In der Praxis wird die Sternspannung immer gekennzeichnet mit einem Sternsymbol als Index, bei der Dreieckspannung
         wird meistens auf ein Index verzichtet.
-        
+
         \begin{eqa}
             U_{\Stern}=\frac{U_{\Dreieck}}{\sqrt{3}}=\frac{U}{\sqrt{3}}
         \end{eqa}
     }
-    
+
     \fu{
     \resizebox{0.35\textwidth}{!}{%
         \input{Tikz/src/Drehstrom/Zeigerdiagramm_Herleitung_Stern_Dreieck}\alttext{Das Bild zeigt ein Zeigerdiagramm eines Drehstromsystems. Drei Spannungszeiger der Leiter U_L1, U_L2 und U_L3 sind um den Winkel α gegeneinander versetzt dargestellt. Zusätzlich ist die Außenleiterspannung U_L1L2 als Differenz zweier Leiterzeiger eingezeichnet. Die Grafik veranschaulicht die geometrische Beziehung zwischen Leiter- und Außenleiterspannungen.}
     }
     }{{\bf Zeigerdiagramm zur Darstellung der Herleitung des Faktors zwischen Stern- und Dreieckschaltung.}
-    Die verkettete Spannung zwischen zwei Außenleitern $\underline{U}_{\mathrm{L1L2}}$ lässt sich über den 
+    Die verkettete Spannung zwischen zwei Außenleitern $\underline{U}_{\mathrm{L1L2}}$ lässt sich über den
     Umrechnungsfaktor $\sqrt{3}$ in die Außenleiterspannung $\underline{U}_{\mathrm{L1}}$ umwandeln.
     \label{HerrleitungW3}}
-    
+
     \b{
         \onslide<3->{
         \begin{itemize}
             \item In der Praxis wird meist auf das Dreieck-Symbol im Index verzichtet:
                   %$U_{\Stern}=\frac{U_{\Dreieck}}{\sqrt{3}}=\frac{U}{\sqrt{3}}$
         \end{itemize}
-        
+
         \begin{eqa}
             U_{\Stern}=\frac{U_{\Dreieck}}{\sqrt{3}}=\frac{U}{\sqrt{3}}
         \end{eqa}}
@@ -686,17 +686,17 @@
 
 \begin{frame}
     \ftx{Verkettete Systeme im Dreieck}
-    
+
     \s{
-        Wie in der Abbildung \ref{ESBDreieck} zu sehen, sind die Impedanzen der Verbraucher nun so geschaltet, 
-        dass es keinen Sternpunkt mehr gibt. In dieser Schaltung entsprechen die Strangspannungen nun den 
-        Außenleiter- oder Dreieckspannung.  
+        Wie in der Abbildung \ref{ESBDreieck} zu sehen, sind die Impedanzen der Verbraucher nun so geschaltet,
+        dass es keinen Sternpunkt mehr gibt. In dieser Schaltung entsprechen die Strangspannungen nun den
+        Außenleiter- oder Dreieckspannung.
     }
-    
+
     \b{
         Dreiphasiges ESB mit Erzeugern im Stern und Verbrauchern im Dreieck
     }
-    
+
     \fu{\resizebox{\textwidth}{!}{%
             \input{Tikz/src/Drehstrom/Stern-Dreieck_dreiphasiges_ESB}\alttext{Das Bild zeigt eine Drehstromschaltung mit Stern-Dreieck-Zusammenhang. Links sind drei gleich große Strangspannungen U_Y mit zugehörigen Strömen I_Y dargestellt. Rechts ist eine dreieckförmig verschaltete Last mit den Impedanzen Z_L1L2, Z_L2L3 und Z_L3L1 eingezeichnet. Die Außenleiterspannungen U_Δ und die zugehörigen Ströme in den Dreieckszweigen sind markiert.}
         }
@@ -712,37 +712,37 @@
 
 \begin{frame}
     \ftx{Verkettete Systeme im Dreieck}
-    
-    
+
+
     \s{
         Die Ströme zwischen den Strängen können aus der Knotenregel folgendermaßen ermittelt werden:
-        
+
         \begin{eqa}
             \underline{I}_{\mathrm{L1}}=\underline{I}_{\mathrm{L1L2}}-\underline{I}_{\mathrm{L3L1}}  \\
             \underline{I}_{\mathrm{L2}}=\underline{I}_{\mathrm{L2L3}}-\underline{I}_{\mathrm{L1L2}}  \\
-            \underline{I}_{\mathrm{L3}}=\underline{I}_{\mathrm{L3L1}}-\underline{I}_{\mathrm{L2L3}} 
+            \underline{I}_{\mathrm{L3}}=\underline{I}_{\mathrm{L3L1}}-\underline{I}_{\mathrm{L2L3}}
         \end{eqa}
-        
+
         Wie auch bei der Sternschaltung kann im symmetrischen Fall gesagt werden, dass alle Impedanzen den gleichen Wert haben.
         Daraus ergibt sich für die Ströme im Strang:
-        
+
         \begin{eqa}
-            \underline{I}_{\mathrm{L1}}&=\underline{I}_{\mathrm{L1L2}}-\underline{I}_{\mathrm{L3L1}}=\frac{\underline{U}_{\mathrm{L1L2}}-\underline{U}_{\mathrm{L3L1}}}{\underline{Z}}=\frac{U_{\Stern}}{\underline{Z}}\cdot (1-\underline{a}^2-\underline{a}+1)=3\cdot \frac{U_{\Stern}}{\underline{Z}} \\ 
+            \underline{I}_{\mathrm{L1}}&=\underline{I}_{\mathrm{L1L2}}-\underline{I}_{\mathrm{L3L1}}=\frac{\underline{U}_{\mathrm{L1L2}}-\underline{U}_{\mathrm{L3L1}}}{\underline{Z}}=\frac{U_{\Stern}}{\underline{Z}}\cdot (1-\underline{a}^2-\underline{a}+1)=3\cdot \frac{U_{\Stern}}{\underline{Z}} \\
             \underline{I}_{\mathrm{L2}}&=\underline{I}_{\mathrm{L2L3}}-\underline{I}_{\mathrm{L1L2}}=\frac{\underline{U}_{\mathrm{L2L3}}-\underline{U}_{\mathrm{L1L2}}}{\underline{Z}}=\frac{U_{\Stern}}{\underline{Z}}\cdot (\underline{a}^2-\underline{a}-1+\underline{a}^2)=3\cdot \underline{a}^2 \cdot \frac{U_{\Stern}}{\underline{Z}} \\
             \underline{I}_{\mathrm{L3}}&=\underline{I}_{\mathrm{L3L1}}-\underline{I}_{\mathrm{L2L3}}=\frac{\underline{U}_{\mathrm{L3L1}}-\underline{U}_{\mathrm{L2L3}}}{\underline{Z}}=\frac{U_{\Stern}}{\underline{Z}}\cdot (\underline{a}-1-\underline{a}^2+\underline{a})=3\cdot \underline{a} \cdot \frac{U_{\Stern}}{\underline{Z}}
         \end{eqa}
-        
-        Aus diesen Umformungen geht hervor, dass die Ströme sich nur durch den Drehoperator $a$ unterscheiden. 
+
+        Aus diesen Umformungen geht hervor, dass die Ströme sich nur durch den Drehoperator $a$ unterscheiden.
         Äquivalent zu der Umrechnung von der Stern- zur Dreiecksspannung kann auch ein Verhältniss zwischen Strang- und Dreiecksstrom aufgestellt werden.
         Nach gleicher Herleitung, wie in Abb. \ref{HerrleitungW3} zu sehen, nur die Spannung durch die passenden Stromwerte ersetzt, ergibt sich folgendes Verhältnis:
-        
+
         \begin{eqa}
             I_{\mathrm{str}}=\sqrt{3}\cdot I_{\Dreieck}
         \end{eqa}
-        
+
         Mit den vorhandenen Angaben kann nun auch ein einphasiges ESB für die Dreieckschaltung aufgestellt werden (siehe Abb. \ref{EinphasigESBDreieck}).
     }
-    
+
     \b{
         \begin{itemize}
             \item In der Dreieckschaltung entspricht die Strangspannung der Außenleiter- (Dreieck-) Spannung
@@ -754,12 +754,12 @@
         \begin{eqa}
             \underline{I}_{\mathrm{L1}}=\underline{I}_{\mathrm{L1L2}}-\underline{I}_{\mathrm{L3L1}}  \\
             \underline{I}_{\mathrm{L2}}=\underline{I}_{\mathrm{L2L3}}-\underline{I}_{\mathrm{L1L2}}  \\
-            \underline{I}_{\mathrm{L3}}=\underline{I}_{\mathrm{L3L1}}-\underline{I}_{\mathrm{L2L3}} 
+            \underline{I}_{\mathrm{L3}}=\underline{I}_{\mathrm{L3L1}}-\underline{I}_{\mathrm{L2L3}}
         \end{eqa}}
 
         \onslide<3->{
         \begin{eqa}
-            \underline{I}_{\mathrm{L1}}&=\underline{I}_{\mathrm{L1L2}}-\underline{I}_{\mathrm{L3L1}}=\frac{\underline{U}_{\mathrm{L1L2}}-\underline{U}_{\mathrm{L3L1}}}{\underline{Z}}=\frac{U_{\Stern}}{\underline{Z}}\cdot (1-\underline{a}^2-\underline{a}+1)=3\cdot \frac{U_{\Stern}}{\underline{Z}} \\ 
+            \underline{I}_{\mathrm{L1}}&=\underline{I}_{\mathrm{L1L2}}-\underline{I}_{\mathrm{L3L1}}=\frac{\underline{U}_{\mathrm{L1L2}}-\underline{U}_{\mathrm{L3L1}}}{\underline{Z}}=\frac{U_{\Stern}}{\underline{Z}}\cdot (1-\underline{a}^2-\underline{a}+1)=3\cdot \frac{U_{\Stern}}{\underline{Z}} \\
             \underline{I}_{\mathrm{L2}}&=\underline{I}_{\mathrm{L2L3}}-\underline{I}_{\mathrm{L1L2}}=\frac{\underline{U}_{\mathrm{L2L3}}-\underline{U}_{\mathrm{L1L2}}}{\underline{Z}}=\frac{U_{\Stern}}{\underline{Z}}\cdot (\underline{a}^2-\underline{a}-1+\underline{a}^2)=3\cdot \underline{a}^2 \cdot \frac{U_{\Stern}}{\underline{Z}} \\
             \underline{I}_{\mathrm{L3}}&=\underline{I}_{\mathrm{L3L1}}-\underline{I}_{\mathrm{L2L3}}=\frac{\underline{U}_{\mathrm{L3L1}}-\underline{U}_{\mathrm{L2L3}}}{\underline{Z}}=\frac{U_{\Stern}}{\underline{Z}}\cdot (\underline{a}-1-\underline{a}^2+\underline{a})=3\cdot \underline{a} \cdot \frac{U_{\Stern}}{\underline{Z}}
         \end{eqa}}
@@ -768,14 +768,14 @@
     \speech{DrehVerkettetStrom}{1}{Die Strangspannung entspricht in der Dreieckschaltung der Außenleiterspannung, beziehungsweise der Dreieckspannung.
     Außerdem sind die Impedanzen im symmetrischen Fall allesamt gleich groß.}
     \speech{DrehVerkettetStrom}{2}{Die Leiterströme lassen sich wie folgt durch die Dreieckströme definieren.}
-    \speech{DrehVerkettetStrom}{3}{Durch die symmetrischen Impedanzen lassen sich die Ströme folgend 
+    \speech{DrehVerkettetStrom}{3}{Durch die symmetrischen Impedanzen lassen sich die Ströme folgend
     auch durch die Impedanzen und die Drehoperatoren erklären.}
 \end{frame}
 
 
 \begin{frame}
     \ftx{Verkettete Systeme im Dreieck}
-    
+
     \b{
         \begin{itemize}
             \item Das Verhältnis vom Phasenstrom und Dreieckstrom lässt sich äquivalent zum Verhältnis von Stern- und Dreieckspannung berechnen:
@@ -783,7 +783,7 @@
         \begin{eqa}
             I_{\mathrm{Str}}=\sqrt{3}\cdot I_{\Dreieck}
         \end{eqa}
-        
+
         \onslide<2->{
         \begin{itemize}
             \item Auch für die Dreieckschaltung lässt sich ein einphasiges ESB aufstellen:
@@ -794,10 +794,10 @@
     \fu{
         \input{Tikz/src/Drehstrom/Stern-Dreieck_einphasiges_ESB}\alttext{Das Bild zeigt einen einfachen Wechselstromkreis mit einer Spannungsquelle Uᵧ und einer angeschlossenen Lastimpedanz Z_Δ ⁄ 3. Der Strom I fließt im geschlossenen Kreis von der Quelle zur Last. Die Darstellung veranschaulicht ein Ersatzschaltbild für eine Stern-Dreieckschaltung.}
     }{{\bf Einphasiges Ersatzschaltbild Stern-Dreieck.} ESB einer Dreieckschaltung mit symmetrischen Verbrauchern \label{EinphasigESBDreieck}}}
-    
+
     \speech{DrehStromESB}{1}{Über den Faktor Wurzel Drei lässt sich bei der Dreieckschaltung auch die Verbindung zwischen dem Phasenstrom und dem Dreieckstrom herstellen.
     Der Phasenstrom entspricht dem Dreieckstrom multipliziert mit Wurzel Drei.}
-    \speech{DrehStromESB}{2}{Für die Dreieckschaltung lässt sich äquivalent zur Sternschaltung ein Ersatzschaltbild aufstellen. 
+    \speech{DrehStromESB}{2}{Für die Dreieckschaltung lässt sich äquivalent zur Sternschaltung ein Ersatzschaltbild aufstellen.
     Einziger Unterschied ist hier die Impedanz, welche Aufgrund der Verschaltung durch Drei geteilt wird.}
 \end{frame}
 
@@ -807,26 +807,26 @@
 \begin{frame}
     \ftc{Leistung im symmetrischen Drehstromnetz}
     \s{
-        Die Berechnung von Leistung basiert, wie in allen elektrischen System, auf der Gleichung $P=U\cdot I$. 
+        Die Berechnung von Leistung basiert, wie in allen elektrischen System, auf der Gleichung $P=U\cdot I$.
         Für das Drehstromsystem gilt die Besonderheit, dass die Leistung pro Phase berechnet werden muss.
         Liegt ein symmetrisches System vor, sind die Ströme und Spannungen pro Phase gleich und dementsprechend muss kann das Ergebnis aus einer Phase mit 3 multipliziert werden.
-        
+
         \begin{eqa}
             S&=3\cdot I_{\mathrm{str}}\cdot U_{\Stern}=3\cdot I_{\mathrm{str}}\cdot \frac{U_{\Dreieck}}{\sqrt{3}} \notag \\
             &=3\cdot I_{\Dreieck}\cdot U_{\Dreieck}=3\cdot \frac{I_{\mathrm{str}}}{\sqrt{3}}\cdot U_{\Dreieck} \notag \\
             &=\sqrt{3}\cdot U_{\Dreieck}\cdot I_{\mathrm{str}} \label{LeistungDrehstrom}
         \end{eqa}
-        
+
         Aus der Formel \ref{LeistungDrehstrom} geht hervor, dass es für die Leistungsberechnung keinen Unterschied macht, in welcher Schaltung gerechnet wird.
         Es muss nur darauf geachtet werden, mit welchen Spannungen und Strömen gerechnet wird (Dreieck oder Stern).
-        
+
         \textit{Anmerkung:}
-        
+
         Die Notation der Indizes zu Dreiecks- oder Stern-Werten ist in der Literatur nicht eindeutig.
         Meistens wird für die Dreieckspannung (Außenleiterspannung) und dem Strangstrom kein Index angegeben $U_{\Dreieck}=U$ und $I_{str}=I$, sondern nur für die Sternspannung und dem Dreieckstrom.
-        
+
         Vergleicht man direkt die Leistung einer Dreieckschaltung und einer Sternschaltung, erhält man unterschiedliche Ergebnisse.
-        
+
         Für die Sternschaltung erhält man folgenden Wert:
         \begin{eqa}
             S=\sqrt{3}\cdot U\cdot I=\sqrt{3}\cdot U \cdot \frac{U_{\Stern}}{Z}=\frac{U^2}{Z}
@@ -835,10 +835,10 @@
         \begin{eqa}
             S=\sqrt{3}\cdot U\cdot I=\sqrt{3}\cdot U \cdot \sqrt{3}\cdot \frac{U}{Z}=3\cdot \frac{U^2}{Z}
         \end{eqa}
-        
-        Demnach ist der Leistungsumsatz bei gleichen Impedanzen in einer Dreieckschaltung um den Faktor 3 größer als in einer Sternschaltung.  
+
+        Demnach ist der Leistungsumsatz bei gleichen Impedanzen in einer Dreieckschaltung um den Faktor 3 größer als in einer Sternschaltung.
     }
-    
+
     \b{
         \begin{itemize}
             \item Berechnung der Leistung basiert auf der Gleichung $P=U\cdot I$
@@ -863,7 +863,7 @@
     \speech{DrehLeistung}{2}{Für den Fall, dass es sich um symmetrische Quellen und Lasten handelt,
     sind die Ströme und Spannungen in den Phasen identisch.
     Hierfür gelten die folgenden Zusammenhänge.
-    Dabei kann die Berechnung der Leistung sowohl mit Dreieckgrößten, 
+    Dabei kann die Berechnung der Leistung sowohl mit Dreieckgrößten,
     als auch mit Sterngrößen erfolgen.}
     \speech{DrehLeistung}{3}{Welche Größen schlussendlich verwendet werden, ist nicht entscheident.
     Entscheident ist aber, dass zu den verwendeten Größen die korrekten Werte genutzt werden.}
@@ -872,12 +872,12 @@
 \begin{frame}
     \b{
         \ftx{Leistung im symmetrischen Drehstromnetz}
-        
+
         \begin{itemize}
             \item Bei gleicher Impedanz ist die Leistung in der Dreieckschaltung um den Faktor 3 größer als bei der Sternschaltung:
         \end{itemize}
-        
-        
+
+
     \onslide<2->{
         Sternschaltung:
         \begin{eqa}
@@ -891,7 +891,7 @@
         \end{eqa}}
     }
 
-    \speech{DrehLeistungFaktor}{1}{Bei einer identischen Impedanz beträgt die Leistung in der Dreieckschaltung 
+    \speech{DrehLeistungFaktor}{1}{Bei einer identischen Impedanz beträgt die Leistung in der Dreieckschaltung
     das Dreifache von der Leistung der Sternschaltung.}
     \speech{DrehLeistungFaktor}{2}{Bei der Sternschaltung ergibt sich die Leistung zu U Quadtrat durch Zett.}
     \speech{DrehLeistungFaktor}{3}{Bei der Dreieckschaltung kommt hier noch der Faktor Drei hinzu.}
@@ -906,7 +906,7 @@
 	\ftx{Drehstrom 2}
 
     \begin{Lernziele}{Drehstrom 2}
-        Die Studierenden 
+        Die Studierenden
         \begin{enumerate}
             \item kennen die Gegebenheiten von Drehstromsystemen mit unterschiedlicher Phasenbelastung.
         \end{enumerate}
@@ -919,31 +919,31 @@
 
 \begin{frame}
     \ftb{Unsymmetrische Belastung}
-    
+
     \s{
         Die Grundlagen eines Drehstromsystems wurden im vorangegangenen Kapitel erläutert.
         Es wurde jedoch stets vorausgesetzt, dass sowohl die Erzeugung als auch die Verbraucher symmetrisch sind.
         Nun soll betrachtet werden, wie sich das System verhält, wenn Unsymmetrien vorliegen.
         Es bleibt jedoch erstmal dabei, dass die Generatorseite symmetrisch und im Stern verschaltet ist.
         Bleibt die Erzeugung star, können drei unterschiedliche Schaltungsarten vorliegen:
-        
+
         \begin{itemize}
             \item Vierleiternetz in Sternschaltung
             \item Dreileiternetz in Sternschaltung
             \item Dreileiternetz in Dreieckschaltung
         \end{itemize}
     }
-    
+
     \b{
         \begin{itemize}
-            \item Bisher wurde angenommen, dass die Erzeuger und Verbraucher symmetrisch sind. 
+            \item Bisher wurde angenommen, dass die Erzeuger und Verbraucher symmetrisch sind.
             Nun soll betrachtet werden, wie sich das System verhält, wenn Unsymmetrien vorliegen
             \item<2-> Die Generatorseite wird jedoch weiterhin symmetrisch und im Stern verschaltet angenommen
             \item<3-> Für die Verbraucher wird unterschieden in Vierleiternetz in Sternschaltung, Dreileiternetz in Sternschaltung und Dreileiternetz in Dreieckschaltung
         \end{itemize}
     }
 
-    
+
     \speech{DrehUnsy}{1}{Die bisherigen Betrachtungen erfolgten unter der Prämisse,
     dass die Erzeuger und Verbraucher symmetrisch sind.
     Nun werden auch Unsymmetrien, wie unterschiedliche Impedanzen auf der Verbraucherseite betrachtet.}
@@ -955,10 +955,10 @@
 
 \begin{frame}
     \ftx{Unsymmetrische Komponenten}
-    
+
     \begin{Merksatz}{Unsymmetrische Komponenten}
         {\bf Unsymmetrische Komponenten} beschreiben im Gegensatz zu symmetrischen Komponenten die {\bf ungleiche Belastung der
-                Phasen} durch unterschiedliche Verbraucher. 
+                Phasen} durch unterschiedliche Verbraucher.
     \end{Merksatz}
 
     \speech{DrehMrk4}{1}{Unsymmetrische Komponenten beschreiben im Gegensatz zu symmetrischen
@@ -974,14 +974,14 @@
         Dadurch, dass die Sternspannung symmetrisch sind (aus der Vorgabe, dass die Generatorseite symmetrisch ist), sind auch die Verbraucherspannungen spannungssymmetrisch.
         Die Ströme hingegen weichen durch die unterschiedlichen Impedanzen von einander ab.
         So ist der Strom im Rückleiter in der Regel ungleich Null.
-        
+
         \begin{eqa}
             \underline{I}_\mathrm{N}=\underline{I}_{\mathrm{L1}}+\underline{I}_{\mathrm{L2}}+\underline{I}_{\mathrm{L3}}
         \end{eqa}
-        
+
         Logischerweise kann dann auch nicht mehr die Leistung so berechnet werden, wie in Formel \ref{LeistungDrehstrom} dargestellt.
         Es muss nun jeder Leiter einzeln berechnet und schließlich addiert werden.
-        
+
         \begin{eqa}
             \underline{S}=\underline{I}^*_{\mathrm{L1}}\cdot \underline{U}_{\mathrm{L1}}+\underline{I}^*_{\mathrm{L2}}\cdot \underline{U}_{\mathrm{L2}}+\underline{I}^*_{\mathrm{L3}}\cdot \underline{U}_{\mathrm{L3}}
         \end{eqa}
@@ -1000,19 +1000,19 @@
         \begin{eqa}
             \underline{I}_\mathrm{N}=\underline{I}_{\mathrm{L1}}+\underline{I}_{\mathrm{L2}}+\underline{I}_{\mathrm{L3}}
         \end{eqa}}
-        
+
         \begin{itemize}
             \item<4-> Die Leistung berechnet sich nach der angegebenen Gleichung. \\
             Es muss im unsymmetrischen Fall für jeden Leiter einzeln errechnet werden
         \end{itemize}
-  
+
     \onslide<4->{
         \begin{eqa}
             \underline{S}=\underline{I}^*_{\mathrm{L1}}\cdot \underline{U}_{\mathrm{L1}}+\underline{I}^*_{\mathrm{L2}}\cdot \underline{U}_{\mathrm{L2}}+\underline{I}^*_{\mathrm{L3}}\cdot \underline{U}_{\mathrm{L3}}
         \end{eqa}}
     }
 
-    
+
     \speech{DrehVierlStern}{1}{Das Ersatzschaltbild ist fast identisch zu dem verketteten System im Stern.
     Die Sternpunkte zwischen der Generatorseite und der Verbraucherseite sind hier über den Rückleiter verbunden.}
     \speech{DrehVierlStern}{2}{Da die Generatorseite weiterhin als symmetrisch angenommen wird, sind die Sternspannungen der Phasen ebenfalls weiterhin symmetrisch.}
@@ -1023,7 +1023,7 @@
 
 \begin{frame}
     \ftc{Dreileiternetz in Sternschaltung}
-    
+
     \s{
         Prinzipiell gelten die gleichen Voraussetzungen im Dreileiternetz in Sternschaltung wie im Vierleiternetz.
         Der Unterschied liegt darin, dass der Strom nicht im Rückleiter abfließen kann und somit Auswirkung auf die anderen Leiter hat (s. Abb. \ref{ESBDreileiterDreieck}).
@@ -1032,64 +1032,64 @@
         Es entstehet eine Spannungsdifferenz zwischen den beiden Sternpunkten, die mit den Spannungen über den Verbrauchern erst berechnet werden muss.
         Bei der Ermittlung der gesuchten Werte, können zwei Methoden angewendet werden.
         Für die erste Methode werden die Impedanzen rechnerisch in eine Dreieckschaltung umgewandelt, damit einfach und mit bekannten Methoden gerechnet werden kann.
-        Denn in der Dreieckschaltung sind die Spannungen über die Impedanzen gleich den Leiterspannungen. 
+        Denn in der Dreieckschaltung sind die Spannungen über die Impedanzen gleich den Leiterspannungen.
         Auch die Außenleiterströme lassen sich relativ einfach bestimmen.
     }
-    
+
     \b{
         Vereinfachtes ESB: Dreileiternetz in Sternschaltung mit unsymmetrischen Verbrauchern
     }
-    
+
     \fu{
         \input{Tikz/src/Drehstrom/Stern_Dreieck_vereinfachtes_ESB}\alttext{Das Bild zeigt eine unsymmetrische Drehstrom-Sternschaltung mit drei Leitern L1, L2 und L3. Jeder Leiter ist mit einer eigenen Lastimpedanz Z1, Z2 und Z3 verbunden. Die Leiterströme IL1, IL2 und IL3 sowie die zugehörigen Strangspannungen UL1, UL2 und UL3 sind eingezeichnet.}
     }{{\bf Vereinfachtes ESB.} Dreileiternetz in Sternschaltung mit unsymmetrischen Verbrauchern \label{ESBDreileiterDreieck}}
-    
+
     \speech{DrehDreilESB}{1}{. Gezeigt wird das Dreileiternetz in Sternschaltung.
     Der Verbraucherseitige Sternpunkt und der Netzseitige Sternpunkt der Quellenseite sind nicht miteinander verbunden.
     Zwischen den beiden Sternpunkten stell sich eine Spannungsdifferenz Uh Vau Kuh ein.
-    Über die unterschiedlichen Impedanzen Zett Eins bis Zett Drei stellen sich 
+    Über die unterschiedlichen Impedanzen Zett Eins bis Zett Drei stellen sich
     bei symmetrischen Phasenspannungen verschiedene Phasenströme ein.}
 \end{frame}
 
 \begin{frame}
     \ftx{Dreileiternetz in Sternschaltung}
-    
+
     \s{
         Bei dem alternativen Lösungsweg können mit den bekannten Gesetzen nach Ohm und Kirchhoff Gleichungen aufgestellt werden mit den bekannten Werten des Systems.
         Für die Differenzspannung zwischen den beiden Sternpunkten kann folgende Gleichung aufgestellt werden:
-        
+
         \begin{eqa}
             \underline{U}_{VQ}=\frac{\frac{\underline{U}_{\mathrm{L1}}}{\underline{Z}_1}+\frac{\underline{U}_{\mathrm{L2}}}{\underline{Z}_2}+\frac{\underline{U}_{\mathrm{L3}}}{\underline{Z}_3}}{\frac{1}{\underline{Z}_1}+\frac{1}{\underline{Z}_2}+\frac{1}{\underline{Z}_3}}=\frac{\underline{U}_{\mathrm{L1}}\cdot \underline{Z}_2\cdot \underline{Z}_3+\underline{U}_{\mathrm{L2}}\cdot \underline{Z}_3\cdot \underline{Z}_1+\underline{U}_{\mathrm{L3}}\cdot \underline{Z}_1\cdot \underline{Z}_2}{\underline{Z}_1\cdot \underline{Z}_2+\underline{Z}_2\cdot \underline{Z}_3+\underline{Z}_3\cdot \underline{Z}_1}
         \end{eqa}
-        
+
         Die Leistung berechnet sich wie bekannt aus der Summer der Leistungen der einzelnen Phasen.
         Wichtig ist jedoch, dass nicht mit den Außenleiterspannung gerechnet wird, sondern mit den Spannungen über die Impedanzen:
-        
+
         \begin{eqa}
             \underline{S}=\underline{I}^*_{\mathrm{L1}}\cdot \underline{U}_{\mathrm{Z1}}+\underline{I}^*_{\mathrm{L2}}\cdot \underline{U}_{\mathrm{Z2}}+\underline{I}^*_{\mathrm{L3}}\cdot \underline{U}_{\mathrm{Z3}}
         \end{eqa}
-        
+
         Theoretisch könnte mit dieser Formel die Berechnung erfolgen.
         Jedoch werden mit Messungen nicht die Werte gemessen, die für diese Formel benötigt werden.
         (Wie Messungen in einem Drehstromsystem durchgeführt werden, wird noch in einem folgenden Kapitel erklärt.)
         Wird die Formel für die Leistung wie folgt umgestellt, erkannt man, dass die Summe der Leiterströme Null ergeben müssen und somit der letzte Term wegfällt.
-        
+
         \begin{eqa}
             \underline{S}&=\underline{I}^*_{\mathrm{L1}}\cdot \underline{U}_{\mathrm{L1}}+\underline{I}^*_{\mathrm{L2}}\cdot \underline{U}_{\mathrm{L2}}+\underline{I}^*_{\mathrm{L3}}\cdot \underline{U}_{\mathrm{L3}}-\underline{U}_{\mathrm{VQ}}\cdot (\underline{I}^*_{\mathrm{L1}}+\underline{I}^*_{\mathrm{L2}}+\underline{I}^*_{\mathrm{L3}}) \notag \\
             &=\underline{I}^*_{\mathrm{L1}}\cdot \underline{U}_{\mathrm{L1}}+\underline{I}^*_{\mathrm{L2}}\cdot \underline{U}_{\mathrm{L2}}+\underline{I}^*_{\mathrm{L3}}\cdot \underline{U}_{\mathrm{L3}}
         \end{eqa}
-        
+
         Hier sieht man, dass diese Formel für die Leistung die gleiche ist, wie im Vierleiternetz in Sternschaltung.
         Es kann jedoch hier eine Vereinfachung vorgenommen werden, da mit der Knotenregel ein Strom durch die beiden anderen Ströme ausgedrückt werden kann:
-        
-        
+
+
         \begin{eqa}
             \underline{S}&=\underline{I}^*_{\mathrm{\mathrm{L1}}}\cdot \underline{U}_{\mathrm{L1}}+\underline{I}^*_{\mathrm{L2}}\cdot \underline{U}_{\mathrm{L2}}+(-\underline{I}^*_{\mathrm{L1}}-\underline{I}^*_{\mathrm{L2}})\cdot \underline{U}_{\mathrm{L3}} \notag \\
             &=(\underline{U}_{\mathrm{L1}}-\underline{U}_{\mathrm{L2}})\cdot \underline{I}^*_{\mathrm{L1}}+(\underline{U}_{\mathrm{L2}}-\underline{U}_{\mathrm{L3}})\cdot \underline{I}^*_{\mathrm{L2}} \notag \\
             &=\underline{U}_{\mathrm{L3L1}}\cdot \underline{I}^*_{\mathrm{L1}}+ \underline{U}_{\mathrm{L2L3}}\cdot \underline{I}^*_{\mathrm{L2}}
         \end{eqa}
     }
-    
+
     \b{
         \begin{itemize}
             \item Ähnliche Voraussetzungen wie beim Vierleiternetz in Sternschaltung, jedoch ohne Rückleiter.
@@ -1102,7 +1102,7 @@
             \end{itemize}
         \end{itemize}
     }
-    
+
     \speech{DrehDreilStern1}{1}{Wie beim Ersatzschaltbild erwähnt, kann ohne Rückleiter kein Rückleiterstrom fließen.}
     \speech{DrehDreilStern1}{2}{Hier müssen nun die Spannungen über den Impedanzen und zwischen den Sternpunkten bestimmt werden.}
     \speech{DrehDreilStern1}{3}{Hierfür eignen sich die zwei folgenden Methoden.}
@@ -1112,7 +1112,7 @@
 
 \begin{frame}
     \ftx{Dreileiternetz in Sternschaltung}
-    
+
     \b{
         \begin{itemize}
             \item Die Werte können über zwei Methoden ermittelt werden:
@@ -1144,7 +1144,7 @@
 
 \begin{frame}
     \ftx{Dreileiternetz in Sternschaltung}
-    
+
     \b{
         \begin{itemize}
             \item Die Gleichung für die Leistungsberechnung kann auch netzseitig betrachtet werden:
@@ -1158,7 +1158,7 @@
         \begin{itemize}
             \item<2-> Über die Knotenregel kann einer der Ströme wiederum durch die beiden anderen ausgedrückt werden:
         \end{itemize}
-        
+
     \onslide<2->{
         \begin{eqa}
             \underline{S}&=\underline{I}^*_{\mathrm{\mathrm{L1}}}\cdot \underline{U}_{\mathrm{L1}}+\underline{I}^*_{\mathrm{L2}}\cdot \underline{U}_{\mathrm{L2}}+(-\underline{I}^*_{\mathrm{L1}}-\underline{I}^*_{\mathrm{L2}})\cdot \underline{U}_{\mathrm{L3}} \notag \\
@@ -1172,36 +1172,36 @@
     So werden dann weiterhin die Konjugiert Komplexen Phasenströme und hier die Leiterspannungen betrachtet.}
     \speech{DrehDreilStern3}{2}{Die Knotenregel ermöglicht es die Ströme so umzuformulieren,
     dass Ih El Drei durch Ih El Eins und Ih El Zwei Ausgedrückt werden kann.
-    Auf diese Weise reicht es aus, 
+    Auf diese Weise reicht es aus,
     mit lediglich zwei bekannten Strömen die Leistung der Schaltung zu ermitteln. .}
 \end{frame}
 
 \begin{frame}
     \ftc{Dreileiternetz in Dreieckschaltung}
-    
+
     \s{
         Bei einer Dreieckschaltung steht kein Sternpunkt zur Verfügung, weshalb die Dreickschaltung nur in einem Dreileiternetz ausgeführt werden kann.
         In der Dreieckschaltung sind auf Grund der symmetrischen Einspeisung die Außenleiterspannungen ebenfalls symmetrisch.
         Die Ströme stellen sich je nach den Impedanzen ein und lassen sich wie bereits bekannt errechnen:
-        
+
         \begin{eqa}
             \underline{I}_{\mathrm{L1}}=\underline{I}_{\mathrm{L1L2}}-\underline{I}_{\mathrm{L3L1}} \\
             \underline{I}_{\mathrm{L2}}=\underline{I}_{\mathrm{L2L3}}-\underline{I}_{\mathrm{L1L2}} \\
             \underline{I}_{\mathrm{L3}}=\underline{I}_{\mathrm{L3L1}}-\underline{I}_{\mathrm{L2L3}}
         \end{eqa}
-        
+
         Die Summe der Außenleiterströme muss natürlich auch bei unsymmetrischen Strömen stets Null sein.
         Somit ergibt sich für die Leistungsberechnung die gleiche Rechnung wie bei der Sternschaltung im Dreileiternetz und somit auch die gleichen Umformungen.
-        
+
         \begin{eqa}
-            \underline{S}&=\underline{I}^*_{\mathrm{L1L2}}\cdot \underline{U}_{\mathrm{L1L2}}+\underline{I}^*_{\mathrm{L2L3}}\cdot \underline{U}_{\mathrm{L2L3}}+\underline{I}^*_{\mathrm{L3L1}}\cdot \underline{U}_{\mathrm{L3L1}} \notag \\ 
+            \underline{S}&=\underline{I}^*_{\mathrm{L1L2}}\cdot \underline{U}_{\mathrm{L1L2}}+\underline{I}^*_{\mathrm{L2L3}}\cdot \underline{U}_{\mathrm{L2L3}}+\underline{I}^*_{\mathrm{L3L1}}\cdot \underline{U}_{\mathrm{L3L1}} \notag \\
             &=\underline{I}^*_{\mathrm{L1}}\cdot \underline{U}_{\mathrm{L1}}+\underline{I}^*_{\mathrm{L2}}\cdot \underline{U}_{\mathrm{L2}}+\underline{I}^*_{\mathrm{L3}}\cdot \underline{U}_{\mathrm{L3}} \\ \notag \\
             \underline{S}&=\underline{I}^*_{\mathrm{L1}}\cdot \underline{U}_{\mathrm{L1}}+\underline{I}^*_{\mathrm{L2}}\cdot \underline{U}_{\mathrm{L2}}+(-\underline{I}^*_{\mathrm{L1}}-\underline{I}^*_{\mathrm{L2}})\cdot \underline{U}_{L3} \notag \\
             &=(\underline{U}_{\mathrm{L1}}-\underline{U}_{\mathrm{L2}})\cdot \underline{I}^*_{\mathrm{L1}}+(\underline{U}_{\mathrm{L2}}-\underline{U}_{\mathrm{L3}})\cdot \underline{I}^*_{\mathrm{L2}} \notag \\
             &=\underline{U}_{\mathrm{L3L1}}\cdot \underline{I}^*_{\mathrm{L1}}+ \underline{U}_{\mathrm{L2L3}}\cdot \underline{I}^*_{\mathrm{L2}}
         \end{eqa}
     }
-    
+
     \b{
         \begin{itemize}
             \item In der Dreieckschaltung steht kein Sternpunkt zur Verfügung, demnach kann diese nur im Dreileiternetz ausgeführt werden. \\
@@ -1217,7 +1217,7 @@
         \end{eqa}}
     }
 
-    \speech{DrehDreilDreieck1}{1}{Die Dreieckschaltung verfügt über keinen möglichen Sternpunkt 
+    \speech{DrehDreilDreieck1}{1}{Die Dreieckschaltung verfügt über keinen möglichen Sternpunkt
     und kann auf diese Weise ausschließlich als Dreileiternetz ausgeführt werden.
     Die Spannungen der Phasen entspricht den Strangspannungen an den Impedanzen.}
     \speech{DrehDreilDreieck1}{2}{Die Phasenströme stellen sich je nach den Impedanzabhängigen Strangströmen ein.}
@@ -1231,10 +1231,10 @@
             \item Die Summe der Außenleiterströme muss auch bei unsymmetrischen Strömen stets Null sein
             \item<2-> Somit ergibt sich für die Leistungsberechnung die gleiche wie bei der Sternschaltung im Dreileiternetz und somit auch die gleichen Umformungen
         \end{itemize}
-        
+
     \onslide<2->{
         \begin{eqa}
-            \underline{S}&=\underline{I}^*_{\mathrm{L1L2}}\cdot \underline{U}_{\mathrm{L1L2}}+\underline{I}^*_{\mathrm{L2L3}}\cdot \underline{U}_{\mathrm{L2L3}}+\underline{I}^*_{\mathrm{L3L1}}\cdot \underline{U}_{\mathrm{L3L1}} \notag \\ 
+            \underline{S}&=\underline{I}^*_{\mathrm{L1L2}}\cdot \underline{U}_{\mathrm{L1L2}}+\underline{I}^*_{\mathrm{L2L3}}\cdot \underline{U}_{\mathrm{L2L3}}+\underline{I}^*_{\mathrm{L3L1}}\cdot \underline{U}_{\mathrm{L3L1}} \notag \\
             &=\underline{I}^*_{\mathrm{L1}}\cdot \underline{U}_{\mathrm{L1}}+\underline{I}^*_{\mathrm{L2}}\cdot \underline{U}_{\mathrm{L2}}+\underline{I}^*_{\mathrm{L3}}\cdot \underline{U}_{\mathrm{L3}} \\ \notag \\
             \underline{S}&=\underline{I}^*_{\mathrm{L1}}\cdot \underline{U}_{\mathrm{L1}}+\underline{I}^*_{\mathrm{L2}}\cdot \underline{U}_{\mathrm{L2}}+(-\underline{I}^*_{\mathrm{L1}}-\underline{I}^*_{\mathrm{L2}})\cdot \underline{U}_{L3} \notag \\
             &=(\underline{U}_{\mathrm{L1}}-\underline{U}_{\mathrm{L2}})\cdot \underline{I}^*_{\mathrm{L1}}+(\underline{U}_{\mathrm{L2}}-\underline{U}_{\mathrm{L3}})\cdot \underline{I}^*_{\mathrm{L2}} \notag \\

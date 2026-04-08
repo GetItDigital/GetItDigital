@@ -1,14 +1,14 @@
 \newpage
 \begin{frame}
-	\fta{Knotenpotentialverfahren}
+	\fta{Knotenpotentialverfahren}\index{Knotenpotentialanalyse}
 
 	\s{
-		Die Analyse eines elektrischen Netzwerkes kann mitunter aufwendig werden. Mit größer werdendem Netzwerk steigt 
-		auch der Aufwand zur Analyse. Auch reichen unter Umständen die bisher vorgestellten Analysemethoden zu Knoten- 
-		und Maschenanalyse nicht aus, um alle Größen eines elektrischen Netzwerkes zu bestimmen. Hier bietet das 
-		Knotenpotentialverfahren eine Möglichkeit zur Analyse. Beim Knotenpotentialverfahren werden ausgehend von einem 
+		Die Analyse eines elektrischen Netzwerkes kann mitunter aufwendig werden. Mit größer werdendem Netzwerk steigt
+		auch der Aufwand zur Analyse. Auch reichen unter Umständen die bisher vorgestellten Analysemethoden zu Knoten-
+		und Maschenanalyse nicht aus, um alle Größen eines elektrischen Netzwerkes zu bestimmen. Hier bietet das
+		Knotenpotentialverfahren eine Möglichkeit zur Analyse. Beim Knotenpotentialverfahren werden ausgehend von einem
 		Bezugspotential, mit der Zuordnung 0V, alle übrigen Potentiale bestimmt. Mithilfe des Knotenpotentialverfahrens
-		wird folgend das elektrische Netzwerk aus der Abbildung \ref{BildKnotenpotentialverfahren} analysiert.  
+		wird folgend das elektrische Netzwerk aus der Abbildung \ref{BildKnotenpotentialverfahren} analysiert.
     }
 
 	\b{
@@ -21,13 +21,13 @@
 		\end{itemize}
 	}
 
-	\fu{   
-        \resizebox{0.7\textwidth}{!}{%                                         
+	\fu{
+        \resizebox{0.7\textwidth}{!}{%
         \input{Tikz/src/knotenpotentialverfahren.tex}\alttext{Die Schaltung besitzt eine obere und eine untere Sammelschiene. Links speist eine Spannungsquelle U_0 mit dem Serienwiderstand R_0 den Rahmen, der Strom I_0 fließt dabei nach oben, über R_0 liegt die Spannung U_R0. In der Mitte verbindet der Widerstand R_1(mit U_R1, Strom I_1 nach unten) die beiden Schienen, rechts oben liegt der Widerstand R_3 zwischen dem mittleren oberen Knoten und einem rechten oberen Knoten, mit Spannung U_R3 und Strom I_3 nach rechts. Von diesem rechten oberen Knoten führen zwei parallele Zweige zur unteren Schiene: ein Widerstand R_2 mit Spannung U_R2 und Strom I_2 nach oben sowie eine Stromquelle mit Quellenstrom I_q2 nach unten.}
-        }                                                  
-    }{{\bf Netzwerk für das Knotenpotentialverfahren.} Elektrisches Netzwerk mit einer Spannungsquelle, einer Stromquelle und vier Widerständen. Anhand des Netzwerkes wird 
-    das Knotenpotentialverfahren erläutert. \label{BildKnotenpotentialverfahren}}  
-	
+        }
+    }{{\bf Netzwerk für das Knotenpotentialverfahren.} Elektrisches Netzwerk mit einer Spannungsquelle, einer Stromquelle und vier Widerständen. Anhand des Netzwerkes wird
+    das Knotenpotentialverfahren erläutert. \label{BildKnotenpotentialverfahren}}
+
 \end{frame}
 
 
@@ -35,25 +35,25 @@
 \begin{frame}
 	\ftx{Lernziele Knotenpotentialverfahren}
 	\begin{Lernziele}{Knotenpotentialverfahren}
-        Die Studierenden 
+        Die Studierenden
         \begin{itemize}
 			\item kennen die Schritte des Knotenpotentialverfahrens.
-            \item können mit Hilfe des Knotenpotentialverfahrens elektrische Netzwerke analysieren. 
-        \end{itemize}                   
+            \item können mit Hilfe des Knotenpotentialverfahrens elektrische Netzwerke analysieren.
+        \end{itemize}
     \end{Lernziele}
 
 	\speech{KnotpotLernz}{1}{Das Knotenpotentialverfahren ist neben dem Maschenstromverfahren eine Möglichkeit, um elektrische Netzwerke zu analysieren.
-	Hier sollen die notwengien Schritte zur Anwendung des Knotenpotentialverfahrens vorgestellt werden.} 
+	Hier sollen die notwengien Schritte zur Anwendung des Knotenpotentialverfahrens vorgestellt werden.}
 \end{frame}
 
 \begin{frame}
 	\ftb{Vorbereitung des Netzwerkes}
 
 	\s{
-		Das Knotenpotentialverfahren arbeitet mit Stromquellen und Leitwerten. Das vorgestellte Netzwerk weist neben der 
-		Stromquelle eine Spannungsquelle und Widerstandswerte auf. Diese gilt es umzuwandeln. Die Spannungsquelle wird 
-		wie in der Abbildung \ref{BildKnot1} zu einer Stromquelle transformiert. Dabei wird aus dem Reihenwiderstand der 
-		Spannungsquelle ein Parallelwiderstand für die Stromquelle. 
+		Das Knotenpotentialverfahren arbeitet mit Stromquellen und Leitwerten. Das vorgestellte Netzwerk weist neben der
+		Stromquelle eine Spannungsquelle und Widerstandswerte auf. Diese gilt es umzuwandeln. Die Spannungsquelle wird
+		wie in der Abbildung \ref{BildKnot1} zu einer Stromquelle transformiert. Dabei wird aus dem Reihenwiderstand der
+		Spannungsquelle ein Parallelwiderstand für die Stromquelle.
 	}
 
 	\onslide<1->{
@@ -63,16 +63,16 @@
 		\end{itemize}
 	}
 
-	\fu{  
-        \resizebox{0.7\textwidth}{!}{%                                     
+	\fu{
+        \resizebox{0.7\textwidth}{!}{%
          \input{Tikz/src/knot1.tex}\alttext{Die Abbildung zeigt links eine ideale Spannungsquelle U_q mit einem Serienwiderstand R_i; die Quellspannung fällt über R_i als U_Ri ab. Ein Pfeil weist auf eine rechts dargestellte Ersatzschaltung, in der eine ideale Stromquelle mit Strom I_q parallel zu demselben Widerstand R_i liegt; durch R_i fließt der Strom I_Ri nach unten. Es wird damit die Umwandlung der Spannungsquelle mit Innenwiderstand in die äquivalente Stromquellenschaltung illustriert.}
-		}                                               
-    }{{\bf Umwandlung einer Spannungsquelle.} Umwandlung einer Spannungsquelle mit Reihenwiderstand zur Stromquelle mit 
-	Parallelwiderstand. \label{BildKnot1}}}   
+		}
+    }{{\bf Umwandlung einer Spannungsquelle.} Umwandlung einer Spannungsquelle mit Reihenwiderstand zur Stromquelle mit
+	Parallelwiderstand. \label{BildKnot1}}}
 
 	\s{
-		Bei der Umwandlung der Spannungsquellen in Stromquellen müssen auch die Spannungswerte der Spannungsquellen in 
-		Stromwerte überführt werden. Dies erfolgt nach Gleichung \ref{GleichungUmrechnungSpannungsquelle}. 
+		Bei der Umwandlung der Spannungsquellen in Stromquellen müssen auch die Spannungswerte der Spannungsquellen in
+		Stromwerte überführt werden. Dies erfolgt nach Gleichung \ref{GleichungUmrechnungSpannungsquelle}.
 	}
 
 	\onslide<2->{
@@ -88,8 +88,8 @@
 
 	\s{
 		Da bei dem Knotenpotentialverfahren nicht die Widerstandswerte der Komponenten verwendet werden, sondern die Leitwerte,
-		werden alle Widerstandswerte nach Gleichung \ref{GleichungUmrechnungWiderstand} in Leitwerte umgerechnet. 
-	}	
+		werden alle Widerstandswerte nach Gleichung \ref{GleichungUmrechnungWiderstand} in Leitwerte umgerechnet.
+	}
 
 	\onslide<3->{
 	\b{
@@ -98,30 +98,30 @@
 		\end{itemize}
 	}
 
-    \begin{eq}               
+    \begin{eq}
          G_\mathrm{i} = \frac{1}{R_\mathrm{i}} \label{GleichungUmrechnungWiderstand}
     \end{eq}}
 
 	\s{
-		In der Abbildung \ref{BildKnot2} wird die Umwandlung der Spannungsquellen aus dem angegeben Netzwerk in eine äquivalente 
-		Stromquellen dargestellt. Aus der Spannungsquelle $U_0$ und dem Widerstand $R_0$ wird die Stromquelle $I_\mathrm{q0}$ und dazu 
-		der parallel liegende Leitwert $G_0$. Die restlichen Widerstände werden ebenfalls in Leitwerte überführt.  
-	
-		\fu{   
-        \resizebox{\textwidth}{!}{%                                         
+		In der Abbildung \ref{BildKnot2} wird die Umwandlung der Spannungsquellen aus dem angegeben Netzwerk in eine äquivalente
+		Stromquellen dargestellt. Aus der Spannungsquelle $U_0$ und dem Widerstand $R_0$ wird die Stromquelle $I_\mathrm{q0}$ und dazu
+		der parallel liegende Leitwert $G_0$. Die restlichen Widerstände werden ebenfalls in Leitwerte überführt.
+
+		\fu{
+        \resizebox{\textwidth}{!}{%
 			\input{Tikz/src/knot2.tex}\alttext{Die Abbildung zeigt zwei nahezu identische Schaltungen, links und rechts nebeneinander, verbunden durch einen Pfeil. In der linken Schaltung ist der linke Zweig rot eingekreist: eine Spannungsquelle U_q0 mit einem Serienwiderstand R_i0. In der rechten Schaltung ist derselbe Zweig wieder rot eingekreist, jetzt jedoch als äquivalente Stromquelle I_q0 mit einem parallel dazu liegenden Leitwert bzw. Widerstand G_i0 dargestellt. Alle übrigen Zweige der Schaltung bleiben unverändert.}
-        }                                                  
-    }{{\bf Umwandlung des Netzwerkes für das Knotenpotentialverfahren.} Die Spannungsquelle $U_0$ wird zu der Stromquelle $I_\mathrm{q0}$, außerdem werden die 
-	Widerstandsangaben R zu Leitwerten G. \label{BildKnot2}}  
+        }
+    }{{\bf Umwandlung des Netzwerkes für das Knotenpotentialverfahren.} Die Spannungsquelle $U_0$ wird zu der Stromquelle $I_\mathrm{q0}$, außerdem werden die
+	Widerstandsangaben R zu Leitwerten G. \label{BildKnot2}}
 	}
 
-	\speech{KnotpotVorb}{1}{Beim Knotenpotentialverfahren wird mit Stromquellen gearbeitet. 
-	Deshalb wird nun gezeigt wie Spannungsquellen in die benötigten Stromquellen umgewandelt werden können. 
+	\speech{KnotpotVorb}{1}{Beim Knotenpotentialverfahren wird mit Stromquellen gearbeitet.
+	Deshalb wird nun gezeigt wie Spannungsquellen in die benötigten Stromquellen umgewandelt werden können.
 	Es bietet sich an, zuvor noch das elektrische Netzwerk zu vereinfachen, beispielsweise durch die Zusammenfassung von Parallelschaltungen.
-	Eine Spannungsquelle mit Innenwiderstand in Serie wird wie gezeigt in eine Stromquelle mit parallelem Innenwiderstand umgewandelt.} 
+	Eine Spannungsquelle mit Innenwiderstand in Serie wird wie gezeigt in eine Stromquelle mit parallelem Innenwiderstand umgewandelt.}
 	\speech{KnotpotVorb}{2}{Für die Umwandlung muss der Spannungswert der Spannungsquelle noch in den Stromwert für die Stromquelle überführt werden.
 	Dies erfolgt über das Ohmsche Gesetz.}
-	\speech{KnotpotVorb}{3}{Die Leitwerte für das Knotenpotentialverfahren ergeben sich aus dem Kehrwert der Widerstandswerte.} 
+	\speech{KnotpotVorb}{3}{Die Leitwerte für das Knotenpotentialverfahren ergeben sich aus dem Kehrwert der Widerstandswerte.}
 \end{frame}
 
 
@@ -129,10 +129,10 @@
     \ftx{Knotenpotentialverfahren}
 
     \begin{Merksatz}{Knotenpotentialverfahren}
-        Beim Knotenpotentialverfahren wird ein elektrisches Netzwerk mit Stromquellen und Leitwerten analysiert. 
+        Beim Knotenpotentialverfahren wird ein elektrisches Netzwerk mit Stromquellen und Leitwerten analysiert.
     \end{Merksatz}
 
-	\speech{KnotpotMrk}{1}{Beim Knotenpotentialverfahren wird ein elektrisches Netzwerk mit Stromquellen und Leitwerten analysiert.} 
+	\speech{KnotpotMrk}{1}{Beim Knotenpotentialverfahren wird ein elektrisches Netzwerk mit Stromquellen und Leitwerten analysiert.}
 \end{frame}
 
 
@@ -142,10 +142,10 @@
 	\ftb{Bestimmung der Knoten und der Knotenpotentiale}
 
 	\s{
-		Nun müssen die Knoten bestimmt werden. Hierzu legen wir einen Bezugsknoten mit dem Index 0, also $K_0$, fest. 
+		Nun müssen die Knoten bestimmt werden. Hierzu legen wir einen Bezugsknoten mit dem Index 0, also $K_0$, fest.
 		Weiter werden alle Knoten fortlaufend nummeriert. Das elektrische Netzwerk mit den nummerierten Knoten wird in der
 		Abbildung \ref{BildKnot3} abgebildet. Die eingezeichneten Knoten ohne Komponenten zwischen den nummerierten Knoten
-		weisen das identische Potential auf und bilden somit einen Knoten.  
+		weisen das identische Potential auf und bilden somit einen Knoten.
 	}
 
 	\onslide<1->{
@@ -154,20 +154,20 @@
 			\item Festlegung des Bezugsknoten $K_0$ und der fortlaufenden Knoten $K_1$ und $K_2$:
 		\end{itemize}
 	}
-		
-	\fu{   
-		\resizebox{0.7\textwidth}{!}{%                                         
+
+	\fu{
+		\resizebox{0.7\textwidth}{!}{%
 		\input{Tikz/src/knot3.tex}\alttext{Die Schaltung besitzt eine obere und eine untere Sammelschiene; dazwischen liegen drei senkrechte Leitwerte G_0(links), G_1(Mitte) und G_2(rechts). Über G_0 und G_2 fließen die Ströme I_0 bzw. I_2 von unten nach oben bei den Spannungen U_G0 und U_G2, parallel dazu sind jeweils Stromquellen I_q0 und I_q2 von oben nach unten zwischen denselben Knoten geschaltet. Die oberen Knoten K_1 und K_2 sind über den waagerechten Leitwert G_3 mit Strom I_3 nach rechts und Spannung U_G3 verbunden, während G_1 den oberen Leiter mit dem unteren Knoten K_0 verbindet (Strom I_1 nach unten, Spannung U_G1).}
-		}                                                  
-	}{{\bf Umgewandeltes Netzwerk.} Festlegung des Bezugsknotens $K_0$ und der fortlaufenden Knoten $K_1$ und $K_2$. \label{BildKnot3}}} 
+		}
+	}{{\bf Umgewandeltes Netzwerk.} Festlegung des Bezugsknotens $K_0$ und der fortlaufenden Knoten $K_1$ und $K_2$. \label{BildKnot3}}}
 
 	\s{
-		Um die Knotenpotentiale festzulegen, werden alle Potentiale der Knoten $K_1$ und $K_2$ auf den Bezugsknoten bezogen. 
-		Zur Durchführung des Knotenpotentialverfahrens werden $k-1$ Gleichungen benötigt. Auf das angegebene Netzwerk bezogen, 
-		ergeben sich somit zwei Gleichungen, welche in vektorieller Schreibweise nach Gleichung \ref{GleichungKnotenpotentiale} 
+		Um die Knotenpotentiale festzulegen, werden alle Potentiale der Knoten $K_1$ und $K_2$ auf den Bezugsknoten bezogen.
+		Zur Durchführung des Knotenpotentialverfahrens werden $k-1$ Gleichungen benötigt. Auf das angegebene Netzwerk bezogen,
+		ergeben sich somit zwei Gleichungen, welche in vektorieller Schreibweise nach Gleichung \ref{GleichungKnotenpotentiale}
 		notiert werden. Hier wird das Potential für den Knoten $K_1$ über die Spannung vom Knoten $K_1$ zum Bezugknoten definiert.
-		Daraus ergibt sich die Notation $U_\mathrm{K1-K0}$. Selbiges wird für den Knoten $K_2$ durchgeführt. Hier wird die Spannung 
-		$U_\mathrm{K2-K0}$ definiert. 
+		Daraus ergibt sich die Notation $U_\mathrm{K1-K0}$. Selbiges wird für den Knoten $K_2$ durchgeführt. Hier wird die Spannung
+		$U_\mathrm{K2-K0}$ definiert.
 	}
 
 	\onslide<2->{
@@ -176,9 +176,9 @@
 			\item Es werden $k-1$ Gleichungen benötigt. Es ergibt sich der nachfolgende Spannungsvektor:
 		\end{itemize}
 	}
-		
+
 	\begin{eq}
-        U_\mathrm{K} = 
+        U_\mathrm{K} =
         \begin{bmatrix}
             U_\mathrm{K1-K0} \\
             \\
@@ -188,22 +188,22 @@
 
 	\speech{KnotpotKnot}{1}{Als weiteren Schritt müssen die Knoten gekennzeichnet werden und ein Bezugsknoten festgelegt werden.
 	Der Bezugsknoten wird normalerweise mit null gekennzeichnet und die folgenden Knoten fortlaufend durchnummeriert.
-	Hier können somit drei Knoten definiert werden.} 
-	\speech{KnotpotKnot}{2}{Für das Knotenpotentialverfahren müssen k minus eins Gleichungen aufgestellt werden. 
+	Hier können somit drei Knoten definiert werden.}
+	\speech{KnotpotKnot}{2}{Für das Knotenpotentialverfahren müssen k minus eins Gleichungen aufgestellt werden.
 	So werden hier zwei Spannungsgleichungen definiert, welche in vektorieller schreibweise notiert werden.
-	Die Spannungen geben den potentialunterschied vom jeweiligen Knoten zum Bezugsknoten an.} 
+	Die Spannungen geben den potentialunterschied vom jeweiligen Knoten zum Bezugsknoten an.}
 \end{frame}
 
 \begin{frame}
 	\ftb{Zuordnung der Quellströme}
 
 	\s{
-		Für die festgelegten Knoten, abgesehen vom Bezugsknoten, müssen die abfließenden und zufließende Ströme festgehalten werden. 
-		Jede Stromquelle an den Knoten wird notiert. Hier werden zufließende Stromquellen mit einem positiven Vorzeichen und abfließende 
-		Stromquellen mit einem negativen Vorzeichen versehen. Aus dem Knoten $K_1$ fließt der Strom der Stromquelle $-I_\mathrm{q0}$, dieser 
-		Strom wird mit einem negativen Vorzeichen versehen. Aus dem Knoten $K_2$ fließt der Strom der Stromquelle $-I_\mathrm{q2}$ heraus, 
-		dieser wird ebenfalls mit einem negativen Vorzeichen versehen. Nach Gleichung \ref{GleichungQuellströme} ergibt sich der 
-		Vektor für die Quellströme. 
+		Für die festgelegten Knoten, abgesehen vom Bezugsknoten, müssen die abfließenden und zufließende Ströme festgehalten werden.
+		Jede Stromquelle an den Knoten wird notiert. Hier werden zufließende Stromquellen mit einem positiven Vorzeichen und abfließende
+		Stromquellen mit einem negativen Vorzeichen versehen. Aus dem Knoten $K_1$ fließt der Strom der Stromquelle $-I_\mathrm{q0}$, dieser
+		Strom wird mit einem negativen Vorzeichen versehen. Aus dem Knoten $K_2$ fließt der Strom der Stromquelle $-I_\mathrm{q2}$ heraus,
+		dieser wird ebenfalls mit einem negativen Vorzeichen versehen. Nach Gleichung \ref{GleichungQuellströme} ergibt sich der
+		Vektor für die Quellströme.
 	}
 
 	\b{
@@ -215,7 +215,7 @@
 	}
 
 	\begin{eq}
-        I_\mathrm{K} = 
+        I_\mathrm{K} =
         \begin{bmatrix}
             -I_\mathrm{q0} \\
             \\
@@ -224,25 +224,25 @@
     \end{eq}
 
 	\speech{KnotpotQuell}{1}{Folgend werden die Quellströme notiert. Dabei werden abgesehen vom Bezugsknoten für jeden Knoten
-	die Stromquellen festgehalten, die in den Knoten einfließen oder ausfließen. Beim Knoten Ka eins fließt der Strom der Quelle 
+	die Stromquellen festgehalten, die in den Knoten einfließen oder ausfließen. Beim Knoten Ka eins fließt der Strom der Quelle
 	I Q null raus. Aus dem Knoten Ka zwei fließt der Strom der Quelle I Q zwei raus. Da es sich bei beiden Knoten und beiden Strömen
-	um abfließende Ströme handelt, werden sie mit einem negativen Vorzeichen versehen.} 
+	um abfließende Ströme handelt, werden sie mit einem negativen Vorzeichen versehen.}
 \end{frame}
 
 \begin{frame}
 	\ftb{Leitwertmatrix}
 
 	\s{
-		Nach der Umwandlung der Widerstandswerte in Leitwerte, wird mit den Leitwerten die Leitwertmatrix erstellt. Hierzu werden 
-		wieder die Knoten abgesehen vom Bezugsknoten untersucht. Hierfür wird das vorgestellte elektrische Netzwerk noch einmal in 
-		der Abbildung \ref{BildLeitwertmatrix} mit farbig hervorgehobenen Zweigen gezeigt. Über die Hauptdiagonale werden die 
-		Leitwerte der Knoten notiert. Für jeden Knoten werden die Leitwerte der direkt angrenzenden Komponenten aufgeschrieben. 
-		Für den Knoten $K_1$ wären das die an dem blau hervorgehobenen Zweig angrenzenden Leitwerte $G_0$, $G_1$ und $G_3$ und 
-		für den Knoten $K_2$ die Leitwerte $G_2$ und $G_3$. Abseits der Hauptdiagonalen auf den anderen Elementen der Leitwertmatrix 
-		werden die Leitwerte protokolliert, welche direkt zwischen den Knoten liegen. Zwischen den Knoten $K_1$ und $K_2$ liegt auf 
-		direktem Wege der in grün hervorgehobenen Zweig mit dem Leitwert $G_3$. Liegen zwischen den betrachteten Knoten weitere Knoten, 
-		so sind diese nicht direkt miteinander Verbunden und in das Element der Leitwertmatrix wird eine 0 eingetragen. Die auf diese 
-		Weise angefertigte Leitwertmatrix wird in der Gleichung \ref{GleichungLeitwertmatrix} veranschaulicht. 
+		Nach der Umwandlung der Widerstandswerte in Leitwerte, wird mit den Leitwerten die Leitwertmatrix erstellt. Hierzu werden
+		wieder die Knoten abgesehen vom Bezugsknoten untersucht. Hierfür wird das vorgestellte elektrische Netzwerk noch einmal in
+		der Abbildung \ref{BildLeitwertmatrix} mit farbig hervorgehobenen Zweigen gezeigt. Über die Hauptdiagonale werden die
+		Leitwerte der Knoten notiert. Für jeden Knoten werden die Leitwerte der direkt angrenzenden Komponenten aufgeschrieben.
+		Für den Knoten $K_1$ wären das die an dem blau hervorgehobenen Zweig angrenzenden Leitwerte $G_0$, $G_1$ und $G_3$ und
+		für den Knoten $K_2$ die Leitwerte $G_2$ und $G_3$. Abseits der Hauptdiagonalen auf den anderen Elementen der Leitwertmatrix
+		werden die Leitwerte protokolliert, welche direkt zwischen den Knoten liegen. Zwischen den Knoten $K_1$ und $K_2$ liegt auf
+		direktem Wege der in grün hervorgehobenen Zweig mit dem Leitwert $G_3$. Liegen zwischen den betrachteten Knoten weitere Knoten,
+		so sind diese nicht direkt miteinander Verbunden und in das Element der Leitwertmatrix wird eine 0 eingetragen. Die auf diese
+		Weise angefertigte Leitwertmatrix wird in der Gleichung \ref{GleichungLeitwertmatrix} veranschaulicht.
 	}
 
 	\b{
@@ -253,44 +253,44 @@
 	}
 
 	\fu{
-		\resizebox{0.6\textwidth}{!}{%  
+		\resizebox{0.6\textwidth}{!}{%
 		\input{Tikz/src/leitwertmatrix.tex}	\alttext{Die Schaltung ist das bekannte Leitwertnetz mit G_0, G_1, G_2 als vertikalen Zweigen und dem Leitwert G_3 zwischen den oberen Knoten K_1und K_2.
 Der durchgehende blaue Leiterzug markiert den Weg vom unteren linken Bezugsknoten über den Zweig mit G_0 nach oben und weiter entlang der oberen Sammelschiene bis zum Knoten K_1.
 Der grün gestrichelte Leiterzug zeigt den weiteren Verlauf vom Knoten K_1 über den Leitwert G_3 zum rechten oberen Knoten K_2.
-}	
+}
 		}
-	}{{\bf Elektrisches Netzwerk mit hervorgehobenen Zweigen.} Erstellung der Leitwertmatrix für das Knotenpotentialverfahren 
+	}{{\bf Elektrisches Netzwerk mit hervorgehobenen Zweigen.} Erstellung der Leitwertmatrix für das Knotenpotentialverfahren
 	\label{BildLeitwertmatrix}}
 
 	\b{
 		\only<1>{
 		\begin{eq}
 			G_\mathrm{K} =
-			\begin{bmatrix} 
+			\begin{bmatrix}
 				0 & 0 \\
 				\\
 				0 & 0 \\
-			\end{bmatrix} 
+			\end{bmatrix}
 		\end{eq}
 		}
 		\only<2>{
 		\begin{eq}
 			G_\mathrm{K} =
-			\begin{bmatrix} 
+			\begin{bmatrix}
 				\color{blue}{G_0 + G_1 + G_3} & 0 \\
 				\\
 				0 & G_2 + G_3 \\
-			\end{bmatrix} 
+			\end{bmatrix}
 		\end{eq}
 		}
 		\only<3>{
 		\begin{eq}
 			G_\mathrm{K} =
-			\begin{bmatrix} 
+			\begin{bmatrix}
 				\color{blue}{G_0 + G_1 + G_3} & \color{green}{-G_3} \\
 				\\
 				\color{green}{-G_3} & G_2 + G_3 \\
-			\end{bmatrix} 
+			\end{bmatrix}
 		\end{eq}
 		}
 	}
@@ -298,30 +298,30 @@ Der grün gestrichelte Leiterzug zeigt den weiteren Verlauf vom Knoten K_1 über
 	\s{
 		\begin{eq}
 			G_\mathrm{K} =
-			\begin{bmatrix} 
+			\begin{bmatrix}
 				\color{blue}{G_0 + G_1 + G_3} & \color{green}{-G_3} \\
 				\\
 				\color{green}{-G_3} & G_2 + G_3 \\
-			\end{bmatrix} 
+			\end{bmatrix}
 			\label{GleichungLeitwertmatrix}
 		\end{eq}
 	}
 
-	\speech{KnotpotLeit}{1}{Als nächstes wird die Leitwertmatrix aufgestellt. Es handelt sich bei diesem Netzwerk um eine zwei mal zwei Matrix.} 
+	\speech{KnotpotLeit}{1}{Als nächstes wird die Leitwertmatrix aufgestellt. Es handelt sich bei diesem Netzwerk um eine zwei mal zwei Matrix.}
 	\speech{KnotpotLeit}{2}{Auf der Hauptdiagonalen der Matrix werden die Leitwerte eingetragen, welche direkt an den jeweiligen Knoten angrenzen.
-	Für den Knoten Ka eins sind das beispielsweise die Leitwerte G null, G eins und G drei.} 
+	Für den Knoten Ka eins sind das beispielsweise die Leitwerte G null, G eins und G drei.}
 	\speech{KnotpotLeit}{3}{Die Übrigen Elemente der Matrix werden mit den LEitwerten gefüllt, welche direkt zwischen den Knoten liegen.
 	Da sich in diesem Beispiel nur der Leitwert G drei direkt zwischen den knoten befindet, wird dieser zwischen den Knoten eingetragen.
-	Die Leitwerte, welche sich zwischen den Knoten befinden, werden in der Matrix mit einem negativen Vorzeichen versehen.} 
+	Die Leitwerte, welche sich zwischen den Knoten befinden, werden in der Matrix mit einem negativen Vorzeichen versehen.}
 \end{frame}
 
 \begin{frame}
 	\ftb{Gleichungssystem aufstellen}
 
 	\s{
-		Nachdem der Vektor der Knotenpotentiale, der Vektor der Quellströme und die Leitwertmatrix bestimmt wurden, wird aus diesen 
-		Gleichungen das Gleichungssystem des Knotenpotentialverfahrens aufgestellt, welches in der Gleichung \ref{GleichungKnot1} 
-		angezeigt wird. 
+		Nachdem der Vektor der Knotenpotentiale, der Vektor der Quellströme und die Leitwertmatrix bestimmt wurden, wird aus diesen
+		Gleichungen das Gleichungssystem des Knotenpotentialverfahrens aufgestellt, welches in der Gleichung \ref{GleichungKnot1}
+		angezeigt wird.
 	}
 
 	\b{
@@ -331,7 +331,7 @@ Der grün gestrichelte Leiterzug zeigt den weiteren Verlauf vom Knoten K_1 über
 	}
 
 	\begin{eq}
-        \begin{bmatrix} 
+        \begin{bmatrix}
             G_0 + G_1 + G_3 & -G_3 \\
             \\
             -G_3 & G_2 + G_3 \\
@@ -351,17 +351,17 @@ Der grün gestrichelte Leiterzug zeigt den weiteren Verlauf vom Knoten K_1 über
     \end{eq} \label{GleichungKnot1}
 
 	\s{
-		Das Gleichungssystem des Knotenpotentialverfahrens kann anschließend exemplarisch mit dem Gaußschen Eliminationsverfahren 
-		gelöst werden. Durch das Umstellen der Gleichung nach den gesuchten Knotenpotentialen können diese identifiziert werden. Ist so 
-		beispielsweise in dem untersuchten Netzwerk die Spannung über den Widerstand $R_1$ berechnet worden, kann der Strom durch 
+		Das Gleichungssystem des Knotenpotentialverfahrens kann anschließend exemplarisch mit dem Gaußschen Eliminationsverfahren
+		gelöst werden. Durch das Umstellen der Gleichung nach den gesuchten Knotenpotentialen können diese identifiziert werden. Ist so
+		beispielsweise in dem untersuchten Netzwerk die Spannung über den Widerstand $R_1$ berechnet worden, kann der Strom durch
 		den Widerstand bestimmt werden. Als Alternative zum Gaußschen Eliminationsverfahren wäre noch die Cramersche Regel zu nennen
-		um lineare Gleichungssysteme zu lösen. 
+		um lineare Gleichungssysteme zu lösen.
 	}
 
-	\speech{KnotpotGleich}{1}{Mithilfe der Leitwertmatrix, dem Spannungsvektor und dem Vektor der Quellströme lässt sich nun 
-	das angegebene Gleichungssystem aufstellen. Durch das Umstellen der Gleichung nach den gesuchten Knotenpotentialen können 
-	diese identifiziert werden. Um lineare Gleichungsysteme zu lösen, kann beispielsweise das Gaußsche Eliminationsverfahren oder 
-	die Kramersche Regel verwendet werden.} 
+	\speech{KnotpotGleich}{1}{Mithilfe der Leitwertmatrix, dem Spannungsvektor und dem Vektor der Quellströme lässt sich nun
+	das angegebene Gleichungssystem aufstellen. Durch das Umstellen der Gleichung nach den gesuchten Knotenpotentialen können
+	diese identifiziert werden. Um lineare Gleichungsysteme zu lösen, kann beispielsweise das Gaußsche Eliminationsverfahren oder
+	die Kramersche Regel verwendet werden.}
 \newpage
 
 \end{frame}
@@ -371,11 +371,11 @@ Der grün gestrichelte Leiterzug zeigt den weiteren Verlauf vom Knoten K_1 über
     \begin{bsp}{Knotenpotentialverfahren}{}
 
     \s{
-        Analyse des elektrischen Netzwerk aus der Abbildung \ref{BildKnot4} mittels des Knotenpotentialverfahrens. 
+        Analyse des elektrischen Netzwerk aus der Abbildung \ref{BildKnot4} mittels des Knotenpotentialverfahrens.
     }
 
 	\begin{enumerate}
-        \only<1>{			
+        \only<1>{
             \item[]
     Die folgenden Schritte sollen für das Knotenpotentialverfahren bearbeitet werden:
 
@@ -387,34 +387,34 @@ Der grün gestrichelte Leiterzug zeigt den weiteren Verlauf vom Knoten K_1 über
 		\item[e)] Gleichungssystem aufstellen
     \end{itemize}
 
-    \fu{  
-        \resizebox{0.5\textwidth}{!}{%                                     
+    \fu{
+        \resizebox{0.5\textwidth}{!}{%
         \input{Tikz/src/knot4.tex}\alttext{Die Abbildung zeigt einen rechteckigen Stromkreis mit oberer und unterer Sammelschiene. Links befindet sich eine Spannungsquelle U_0 mit dem Serienwiderstand R_0; in der Mitte verbindet eine vertikale Reihenschaltung aus R_3 und R_4 die beiden Schienen, rechts oben liegt ein Zweig aus Spannungsquelle U_1 und Widerstand R_1. Vom Knoten zwischen R_3 und R_4 führt ein horizontaler Zweig mit dem Widerstand R_5 zum rechten Rahmen, und rechts unten ist eine Stromquelle parallel zu einem Widerstand R_2 angeordnet. An allen Widerständen und Quellen sind die zugehörigen Spannungen U_R0, U_R3, U_R4, U_R5, U_R2, U_1, U_0 sowie die Ströme I_0, I_1, I_3, I_4, I_5, I_q2, I_2 eingezeichnet.}
-        }                  
-    }{{\bf Beispiel.} Knotenpotentialverfahren an einem elektrischen Netzwerk. \label{BildKnot4}}                                            
+        }
+    }{{\bf Beispiel.} Knotenpotentialverfahren an einem elektrischen Netzwerk. \label{BildKnot4}}
 }
 
 
-        \only<2>{			
+        \only<2>{
             \item[a)] Vorbereitung des Netzwerkes:
 			\begin{figure}[H]
                 \resizebox{0.65\textwidth}{!}{%
-                    \input{Tikz/src/knot5.tex}\alttext{Die Schaltung besteht aus einer oberen und unteren Sammelschiene mit drei Hauptzweigen: links ein Leitwert G_0 parallel zu einer Stromquelle I_q0, in der Mitte die in Serie liegenden Leitwerte G_3 und G_4. Rechts ist der gemeinsame Knoten dieses Netzes über einen oberen Parallelzweig aus Leitwert G_1 und Stromquelle I_q1 sowie über einen unteren Parallelzweig aus Leitwert G_2 und Stromquelle I_q2 mit der unteren Schiene verbunden. Zwischen dem mittleren senkrechten Zweig und dem rechten Knoten liegt zusätzlich der horizontale Leitwert G_5; an allen Leitwerten sind Spannungen U_Gi und Ströme I_i mit eingezeichneter Richtung markiert.}	
-                }\centering                                                           
+                    \input{Tikz/src/knot5.tex}\alttext{Die Schaltung besteht aus einer oberen und unteren Sammelschiene mit drei Hauptzweigen: links ein Leitwert G_0 parallel zu einer Stromquelle I_q0, in der Mitte die in Serie liegenden Leitwerte G_3 und G_4. Rechts ist der gemeinsame Knoten dieses Netzes über einen oberen Parallelzweig aus Leitwert G_1 und Stromquelle I_q1 sowie über einen unteren Parallelzweig aus Leitwert G_2 und Stromquelle I_q2 mit der unteren Schiene verbunden. Zwischen dem mittleren senkrechten Zweig und dem rechten Knoten liegt zusätzlich der horizontale Leitwert G_5; an allen Leitwerten sind Spannungen U_Gi und Ströme I_i mit eingezeichneter Richtung markiert.}
+                }\centering
             \end{figure}
             }
         \only<3>{
             \item[b)] Bestimmung der Knoten und der Knotenpotentiale:
             \onslide<3>{
 			\begin{figure}[H]
-             	\resizebox{0.4\textwidth}{!}{%                                                        
+             	\resizebox{0.4\textwidth}{!}{%
                     \input{Tikz/src/knot6.tex}\alttext{Die Schaltung besitzt vier Knoten K_0, K_1, K_2 und K_3, die durch einen rechteckigen Leitungsrahmen verbunden sind. Links liegt an K_0 ein Zweig aus Leitwert G_0(Strom I_0 nach oben, Spannung U_G0) parallel zu einer Stromquelle I_q0. Zwischen K_2 und K_0 verläuft in der Mitte ein senkrechter Zweig mit den Leitwerten G_3(oben) und G_4(unten), vom Zwischenknoten K_1 führt waagrecht der Leitwert G_5 nach rechts zum Knoten K_3. An K_2 und K_0 sind jeweils weitere Zweige angeschlossen: oben G_1 parallel zu I_q1, unten G_2 parallel zu I_q2, deren Ströme und Spannungen im Bild eingetragen sind.}
-                }\centering                                                           
+                }\centering
             \end{figure}
             \pause
 
 			\begin{eq}
-				U_\mathrm{K} = 
+				U_\mathrm{K} =
 				\begin{bmatrix}
 					U_\mathrm{K1-K0} \\
 					\\
@@ -429,7 +429,7 @@ Der grün gestrichelte Leiterzug zeigt den weiteren Verlauf vom Knoten K_1 über
             \item[c)] Zuordnung der Quellströme:
             \onslide<4>{
 				\begin{eq}
-					I_\mathrm{K} = 
+					I_\mathrm{K} =
 					\begin{bmatrix}
 						0 \\
 						\\
@@ -445,7 +445,7 @@ Der grün gestrichelte Leiterzug zeigt den weiteren Verlauf vom Knoten K_1 über
             \onslide<5>{
                 \begin{eq}
 					G_\mathrm{K} =
-					\begin{bmatrix} 
+					\begin{bmatrix}
 						G_3 + G_4 + G_5 & -G_3 & -G_5 \\
 						\\
 						-G_3 & G_0 + G_1 + G_3 & -G_1 \\
@@ -459,13 +459,13 @@ Der grün gestrichelte Leiterzug zeigt den weiteren Verlauf vom Knoten K_1 über
             \item[e)] Gleichungssystem aufstellen:
             \onslide<6>{
                 \begin{eq}
-                    \begin{bmatrix} 
+                    \begin{bmatrix}
                         G_3 + G_4 + G_5 & -G_3 & -G_5 \\
 						\\
 						-G_3 & G_0 + G_1 + G_3 & -G_1 \\
 						\\
 						-G_5 & -G_1 & G_1 + G_2 + G_5 \\
-                    \end{bmatrix}   
+                    \end{bmatrix}
                     \cdot
                     \begin{bmatrix}
                         U_\mathrm{K1-K0} \\
@@ -482,24 +482,24 @@ Der grün gestrichelte Leiterzug zeigt den weiteren Verlauf vom Knoten K_1 über
 						\\
 						-I_\mathrm{q1}-I_\mathrm{q2} \\
                     \end{bmatrix}\nonumber
-                \end{eq} 
+                \end{eq}
             }
         }
-    \end{enumerate}    
+    \end{enumerate}
 \end{bsp}{}{}
 
-\speech{KnotpotBsp}{1}{Die Schritte zur Anwendung des Knotenpotentialverfahrens wurden nun erläutert. 
+\speech{KnotpotBsp}{1}{Die Schritte zur Anwendung des Knotenpotentialverfahrens wurden nun erläutert.
 Folgend wird anhand des abgebildeten Beispielnetzwerkes noch einmal die grundsätzliche Arbeitsweise wiederholt.
 Hierzu wird das Netzwerk enstprechend für das Knotenpotentialverfahren vorbereitet, die Knoten und die Knotenpotentiale bestimmt,
-die Quellströme zugeordnet, die Leitwertmatrix und anschließend das Gleichungssystem aufgestellt.} 
-\speech{KnotpotBsp}{2}{Da das Beispielnetzwerk nicht ausschließlich aus Stromquellen besteht, 
-müssen die Spannungsquellen mit Serienwiderständen in Stromquellen mit Parallelwiderständen umgewandelt werden.} 
+die Quellströme zugeordnet, die Leitwertmatrix und anschließend das Gleichungssystem aufgestellt.}
+\speech{KnotpotBsp}{2}{Da das Beispielnetzwerk nicht ausschließlich aus Stromquellen besteht,
+müssen die Spannungsquellen mit Serienwiderständen in Stromquellen mit Parallelwiderständen umgewandelt werden.}
 \speech{KnotpotBsp}{3}{Anhand des umgewandelten Netzwerkes werden die Knoten und die zugehörigen Potential definiert.
-Hieraus ergibt sich U K der Vektor der Knotenpotentiale.} 
+Hieraus ergibt sich U K der Vektor der Knotenpotentiale.}
 \speech{KnotpotBsp}{4}{Der Stromvektor der Quellströme ergibt sich entsprechend zu I K.
 Hier erfolgen keine Einströmungen oder Ausströmungen für den Knoten K Eins. Es wird eine 0 notiert.
 Beim Knoten K 2 fließt der Strom I Q 0 aus dem Knoten heraus und der Strom I Q 1 in den Knoten K 2 hinein.
-Aus dem Knoten K 3 fließen die Ströme I Q 1 und I Q 2 heraus.} 
-\speech{KnotpotBsp}{5}{Die Leitwertmatrix des Beispielnetzwerkes wird als G K dargestellt.} 
-\speech{KnotpotBsp}{6}{Zum Schluss wird das Gleichungssystem aufgestellt. Nach den gesuchten Größen umgestellt und berechnet.} 
+Aus dem Knoten K 3 fließen die Ströme I Q 1 und I Q 2 heraus.}
+\speech{KnotpotBsp}{5}{Die Leitwertmatrix des Beispielnetzwerkes wird als G K dargestellt.}
+\speech{KnotpotBsp}{6}{Zum Schluss wird das Gleichungssystem aufgestellt. Nach den gesuchten Größen umgestellt und berechnet.}
 \end{frame}

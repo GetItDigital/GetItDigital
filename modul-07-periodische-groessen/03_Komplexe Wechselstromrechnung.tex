@@ -4,32 +4,32 @@
 
 \begin{frame}
     \fta{Komplexe Wechselstromrechnung}
-    
+
     \s{
-        In Gleichstromnetzwerken wird mit konstanten Spannungsquellen und Stromquellen gearbeitet. Im Gegensatz dazu kommen bei der 
-        komplexen Wechselstromrechnung Quellen mit sinusförmigen Wechselgrößen zum Einsatz. Die elektrische Analyse von Komponenten 
-        in einem Wechselspannungsnetzwerk erfolgt komplex. 
-        Die komplexen Spannungen \underline{U} und Ströme \underline{I} erzeugen zeitabhängige Spannungswerte u(t) und Stromwerte 
+        In Gleichstromnetzwerken wird mit konstanten Spannungsquellen und Stromquellen gearbeitet. Im Gegensatz dazu kommen bei der
+        komplexen Wechselstromrechnung Quellen mit sinusförmigen Wechselgrößen zum Einsatz. Die elektrische Analyse von Komponenten
+        in einem Wechselspannungsnetzwerk erfolgt komplex.
+        Die komplexen Spannungen \underline{U} und Ströme \underline{I} erzeugen zeitabhängige Spannungswerte u(t) und Stromwerte
         i(t). Die Gleichung \ref{GleichungURIKomplex} beschreibt den angegebenen Zusammenhang zwischen komplexen und zeitabhängigen
         Strom- und Spannungswerten für einen ohmschen Widerstand.
-    
+
         Komplexe und zeitabhängige Strom- und Spannungsangaben der Wechselstromrechnung:
-    
-    
+
+
     \begin{eq}
         \underline{U} = \underline{Z}_\mathrm{R} \cdot \underline{I} \quad \rightarrow \quad u(t) = R \cdot i(t)  \label{GleichungURIKomplex}
     \end{eq}
-    
-    
+
+
         Abgesehen von der komplexität der Wechselstromrechnungen, gelten weiterhin die Regeln zur Berechnung elektrischer Netzwerke,
-        wie Maschen- und Knotenregeln, das Verhalten von Reihen- und Paralellschaltungen und die Knotenpotentialanalyse sowie die 
-        Maschenstromanalyse. Bei all diesen Beispielen ist darauf zu achten, mit den komplexen Wechselgrößen zu rechnen. Für die 
+        wie Maschen- und Knotenregeln, das Verhalten von Reihen- und Paralellschaltungen und die Knotenpotentialanalyse sowie die
+        Maschenstromanalyse. Bei all diesen Beispielen ist darauf zu achten, mit den komplexen Wechselgrößen zu rechnen. Für die
         Erläuterung von elektrische Netzwerken mit komplexen Wechselgrößen werden im Folgenden diese Tehmengebiete näher betrachtet:
-    
+
         Für die Berechnung von elektrische Netzwerken mit Wechselgrößen werden im Folgenden diese Tehmengebiete näher betrachtet:
     }
-    
-    
+
+
     \begin{Lernziele}{Wechselstromrechnung}
         Die Studierenden
         \begin{itemize}
@@ -38,29 +38,29 @@
             \item kennen Wechselquellen und die dazugehörigen Umwandlungsvorschriften.
         \end{itemize}
     \end{Lernziele}
-    
+
     \speech{WechselLrnz}{1}{Wie auch bei Gleichstromnetzwerken wird bei der Wechselstromrechnung mit einem elektrichen Widerstand gearbeitet.
     Jedoch ist der elektrische Widerstand wie schon die Größen von Strom und Spannung bei der Wechselstrombetrachtung eine komplexe Größe.
     Hier soll nun folgend erläutert werden, was die komplexe Impedanz und die komplexe Attmitanz ist.
-    Das Verständnis über das Verhalten von Bauelementen an einer Wechselspannung vermittelt werden 
+    Das Verständnis über das Verhalten von Bauelementen an einer Wechselspannung vermittelt werden
     und gezeigt werden, wie Wechselquellen ineinander umgewandelt werden können.}
 \end{frame}
 
 \begin{frame}
     \ftb{Impedanz und Attmitanz in der komplexen Ebene}
-    
+
     \s{
-        Durch eine Phasenverschiebung zwischen der Spannung und dem Strom kommt es zu einer Erzeugung eines Blindanteils der Impedanz. Der Blindanteil lässt sich jedoch 
-        auf der reellen Achse nicht darstellen, weshalb die reelle Achse um eine imaginäre Achse erweitert wird, welche gemeinsam die 
-        komplexe Ebene bilden. Die Abbildung \ref{BildKomplexeImpedanz} zeigt den Zeiger der komplexen Impedanz in der komplexen Ebene 
-        mit Imaginäranteil und Realanteil. 
-        
+        Durch eine Phasenverschiebung zwischen der Spannung und dem Strom kommt es zu einer Erzeugung eines Blindanteils der Impedanz. Der Blindanteil lässt sich jedoch
+        auf der reellen Achse nicht darstellen, weshalb die reelle Achse um eine imaginäre Achse erweitert wird, welche gemeinsam die
+        komplexe Ebene bilden. Die Abbildung \ref{BildKomplexeImpedanz} zeigt den Zeiger der komplexen Impedanz in der komplexen Ebene
+        mit Imaginäranteil und Realanteil.
+
         \fu{
             \input{Tikz/src/Komplexe_Wechselstromrechnung/Komplexe_Impedanz}\alttext{Das Bild zeigt ein komplexes Impedanzdiagramm mit Realachse Re(Z) und Imaginärachse Im(Z). Ein Zeiger stellt die Impedanz Z mit dem Betrag Ẑ und dem Phasenwinkel Phi_Z dar. Die Projektionen auf die Achsen sind als Widerstand R auf der Realachse und als Blindanteil j·X auf der Imaginärachse markiert. Zusätzlich ist die komplexe Darstellung Z = Ẑ · e^{j Phi_Z} angegeben.}
         }{{\bf Zeiger der komplexen Impedanz.} Die Impedanz in der komplexen Ebene mit der Aufteilung in Realanteil R und Imaginäranteil X. \label{BildKomplexeImpedanz}}
-        
+
     }
-    
+
     \b{
         \begin{minipage}[t]{0.4\textwidth}
             \begin{itemize}
@@ -85,24 +85,24 @@
                     \draw(1.2,0.5) node {$\varphi_Z$};
                     \draw(3,2.5) node [right] {$\underline{Z}=\hat{Z} \cdot e^{j \varphi_\mathrm{Z}}$};
                     \pause
-                    
+
                     \draw[dashed](2.5,2.5) -- (2.5,-0.2) node[below] {$R$};
                     \pause
-                    
+
                     \draw[dashed](2.5,2.5) -- (-0.2,2.5) node[left] {$j \cdot X$};
                 \end{tikzpicture}
             }{}
         \end{minipage}
     }
-    
+
     \s{
-        So besteht auch die komplexe Impedanz \underline{Z} nach Gleichung \ref{GleichungImpedanz} aus einem Realteil und aus einem Imaginärteil. Der
-        Realteil besteht aus dem ohmschen Anteil, welcher den Wirkwiderstand einer Impedanz darstellt. Der Wirkwiderstand wird auch als 
+        So besteht auch die komplexe Impedanz\index{Impedanz} \underline{Z} nach Gleichung \ref{GleichungImpedanz} aus einem Realteil und aus einem Imaginärteil. Der
+        Realteil besteht aus dem ohmschen Anteil, welcher den Wirkwiderstand einer Impedanz darstellt. Der Wirkwiderstand wird auch als
         Resistanz R bezeichnet. Zweiter Bestandteil der Impedanz ist der Imaginärteil, welcher auch als Reaktanz X bezeichnet wird.
         Die Reaktanz eines elektrischen Netzwerkes setzt sich beisplielsweise aus den kapazitiven und induktiven Auswirkungen zusammen
-        und wird mit der imaginären Einheit j versehen. Die Einheit der komplexen Impedanz ist wie in der Gleichstromtechnik Ohm $\Omega$. 
+        und wird mit der imaginären Einheit j versehen. Die Einheit der komplexen Impedanz ist wie in der Gleichstromtechnik Ohm $\Omega$.
     }
-    
+
     \only<4>{
         \begin{eq}
             Impedanz = Resistanz + j \cdot Reaktanz \quad \rightarrow \quad \underline{Z} = R + j \cdot X   \label{GleichungImpedanz}
@@ -116,7 +116,7 @@
     Die Impedanz lässt sich ebenso wie die anderen komplexen Größen in einen Realteil und einen Imaginärteil unterteilen.}
     \speech{WechselImp}{2}{Bei der Impedanz wird der Realteil auch als Wirkanteil R bezeichnet.}
     \speech{WechselImp}{3}{Der Imaginärteil der Impedanz als Blindanteil X.}
-    \speech{WechselImp}{4}{Die komplexe Impedanz setzt sich so aus dem Wirkanteil, der Resistanz, 
+    \speech{WechselImp}{4}{Die komplexe Impedanz setzt sich so aus dem Wirkanteil, der Resistanz,
     und dem Blindanteil, der Reaktanz, zusammen.
     Die Einheit der komplexen Impedanz Zett ist das Ohm.}
 \end{frame}
@@ -125,43 +125,44 @@
 
 
 \begin{frame}
-    \ftx{Impedanz und Attmitanz in der komplexen Ebene}
-    
-    \s{
+    \ftx{Impedanz und Admittanz in der komplexen Ebene}
+
+    \s{\index{Admittanz}
         Wie in der Gleichstromtechnik existiert ein Leitwert des elektrischen Widerstandes in der komplexen Wechselstromtechnik.
-        Dieser Kehrwert der komplexen Impedanz wird als Admittanz \underline{Y} bezeichnet (vlg. Gleichung \ref{GleichungImpedanzAttmitanz}). Die Einheit des komplexen Leitwertes bleibt 
-        wie in der Gleichstromtechnik Siemens S. 
+        Dieser Kehrwert der komplexen Impedanz wird als Admittanz \underline{Y} bezeichnet (vlg. Gleichung \ref{GleichungImpedanzAdmittanz}). Die Einheit des komplexen Leitwertes bleibt
+        wie in der Gleichstromtechnik Siemens S.
     }
-    
+
     \b{
         Komplexer Leitwert als Kehrwert der komplexen Impedanz:
     }
-    
+
     \begin{eq}
-        R = \frac{1}{G} \quad \rightarrow \quad \underline{Z} = \frac{1}{\underline{Y}}   \label{GleichungImpedanzAttmitanz}
+        R = \frac{1}{G} \quad \rightarrow \quad \underline{Z} = \frac{1}{\underline{Y}}   \label{GleichungImpedanzAdmittanz}
     \end{eq}
-    
+
     \s{
-        Auch die Admittanz lässt sich in einen Wirkleitwert und einen Blindleitwert differenzieren. 
-        Der Wirkleitwert G der Admittanz wird als Konduktanz und der Blindleitwert B der Admittanz wird als Suszeptanz bezeichnet (vgl. Gleichung \ref{GleichungAdmittanz} ). 
+        Auch die Admittanz lässt sich in einen Wirkleitwert\index{Wirkleitwert} und einen Blindleitwert differenzieren.
+        Der Wirkleitwert G der Admittanz wird als Konduktanz\index{Konduktanz} und der Blindleitwert\index{Blindleitwert} B der Admittanz wird als Suszeptanz\index{Suszeptanz} bezeichnet (vgl. Gleichung \ref{GleichungAdmittanz} ).
     }
-    
+
     \onslide<2->{
-    \b{
-        Wirkleitwert und Blindleitwert der Admittanz:
+        \b{
+            Wirkleitwert und Blindleitwert der Admittanz:
+        }
+
+        \begin{eq}
+            Admittanz = Konduktanz + j \cdot Suszeptanz \quad \rightarrow \quad \underline{Y} = G + j \cdot B           \label{GleichungAdmittanz}
+        \end{eq}
+
+        \begin{eq}
+            [\underline{Y}] = 1\ Siemens = 1\ S \nonumber
+        \end{eq}
     }
-    
-    \begin{eq}
-        Admittanz = Konduktanz + j \cdot Suszeptanz \quad \rightarrow \quad \underline{Y} = G + j \cdot B           \label{GleichungAdmittanz}
-    \end{eq}
-    
-    \begin{eq}
-        [\underline{Y}] = 1\ Siemens = 1\ S \nonumber
-    \end{eq}}
-    
+
     \speech{WechselAtt}{1}{Bei der Betrachtung von Gleichstromnetzwerken,
     ergibt sich der Leitwert aus dem Kehrwert des Widerstandes.
-    Der komplexe Leitwert, die Attmitanz Y, 
+    Der komplexe Leitwert, die Attmitanz Y,
     ergibt sich aus dem Kehrwert der komplexen Impedanz.}
     \speech{WechselAtt}{2}{Auch hier wird die Unterteilung in Wirkleitwert und Blindleitwert vorgenommen.
     Die Attmitanz setzt sich so aus der Konduktanz G und der Suseptanz B zusammen.
@@ -171,14 +172,14 @@
 
 \begin{frame}
     \ftx{Komplexe Impedanz und komplexe Admittanz}
-    
+
     \begin{Merksatz}{Komplexe Impedanz und komplexe Admittanz}
-        Der Gleichstromwiderstand wird bei einer {\bf Wechselspannung} zur {\bf komplexen Impedanz} \underline{Z}. Der 
+        Der Gleichstromwiderstand wird bei einer {\bf Wechselspannung} zur {\bf komplexen Impedanz} \underline{Z}. Der
         Kehrwert des Widerstandes, der Leitwert, wird bei einer Wechselspannung zur {\bf komplexen Admittanz} \underline{Y}.
     \end{Merksatz}
 
-    
-    \speech{WechselMrk1}{1}{Der Gleichstromwiderstand wird bei einer Wechselspannung zur komplexen Impedanz Z. 
+
+    \speech{WechselMrk1}{1}{Der Gleichstromwiderstand wird bei einer Wechselspannung zur komplexen Impedanz Z.
     Der Kehrwert des Widerstandes, der Leitwert, wird bei einer Wechselspannung zur komplexen Admittanz Üpsilon.
     Zur Erinnerung.
     Komplexe Größen werden durch einen Unterstrich gekennzeichnet.}
@@ -187,17 +188,17 @@
 
 \begin{frame}
     \ftb{Komplexer Widerstand}
-    
+
     \s{
-        Der komplexe Widerstand eines ohmschen Verbrauchers besteht aus dem Wirkannteil R und dem Blindanteil des des ohmschen 
+        Der komplexe Widerstand eines ohmschen Verbrauchers besteht aus dem Wirkannteil R und dem Blindanteil des des ohmschen
         Widerstandes.
-        Der ohmsche Widerstand R verkörpert die Eigenschaft leitfähiger Materialien elektrische Leistung in thermische Leistung 
-        umzuwandeln. Der Blindanteil des Widerstands wandelt die Leistung der Wechselströme nicht in Wärme um. 
+        Der ohmsche Widerstand R verkörpert die Eigenschaft leitfähiger Materialien elektrische Leistung in thermische Leistung
+        umzuwandeln. Der Blindanteil des Widerstands wandelt die Leistung der Wechselströme nicht in Wärme um.
         Der Blindanteil des elektrischen Widerstands wird als $X_\mathrm{R}$ beziechnet. Da der ideale elektrische Widerstand allerdings rein
         ohmsch und damit rein Real wirkt, wird in der Regel oft einfach das Formelzeichen R verwendet. Die Gleichung \ref{GleichungWid1}
-        erklärt diese Zusammenhänge. 
+        erklärt diese Zusammenhänge.
     }
-    
+
     \b{
         \begin{itemize}
             \item<1-> Komplexer Widerstand an einem ohmschen Verbraucher
@@ -205,23 +206,23 @@
             \item<3-> Idealer komplexer Widerstand als reiner Wirkanteil
         \end{itemize}
     }
-    
+
     \begin{eq}
         \underline{Z}_\mathrm{R} = R + j \cdot X_\mathrm{R} \onslide<2->{\quad \rightarrow \quad X_\mathrm{R-ideal} = j \cdot 0\ \Omega} \onslide<3->{\quad \rightarrow \quad \underline{Z}_\mathrm{R} = R}       \label{GleichungWid1}
     \end{eq}
-    
+
     \s{
-        An den zeitabhängigen Werten für die Spannung und den Strom ergeben sich die Zusammenhänge des idealen ohmschen Widerstandes 
-        nach Gleichung \ref{GleichungWid2}. 
+        An den zeitabhängigen Werten für die Spannung und den Strom ergeben sich die Zusammenhänge des idealen ohmschen Widerstandes
+        nach Gleichung \ref{GleichungWid2}.
     }
-    
+
     \onslide<4->{
     \begin{eq}
         \underline{U} = \underline{Z}_\mathrm{R} \cdot \underline{I} \quad \rightarrow \quad u(t) = R \cdot i(t)        \label{GleichungWid2}
     \end{eq}}
-    
+
     \speech{WechselWiderErkl}{1}{Die Impedanz an einem rein ohmschen Verbraucher wird durch Zett R beschrieben.}
-    \speech{WechselWiderErkl}{2}{Ist ein Verbraucher rein Ohmsch, wirkt kein Blindanteil. 
+    \speech{WechselWiderErkl}{2}{Ist ein Verbraucher rein Ohmsch, wirkt kein Blindanteil.
     Ix R wird somit zu Null und das Produkt der Reaktanz entfällt.}
     \speech{WechselWiderErkl}{3}{Der ideale Widerstand erfolgt auf diese Weise als reiner Wirkwiderstand}
     \speech{WechselWiderErkl}{4}{Das ohmsche Gesetz findet in der Wechselstromtechnik genauso mit komplexen Größen Verwendung.
@@ -230,17 +231,17 @@
 
 \begin{frame}
     \ftx{Komplexer Widerstand}
-    
+
     \s{
-        Ein idealer elektrischer Widerstand ist ein reiner Wirkwiderstand und weist keinerlei Blindwiderstandanteile auf. 
-        Der reale elektrische Widerstand ist mit parasitären Effekten behaftet. Die Schaltbilder eines idealen und eines 
-        realen elektrischen Widerstandes werden in der Abbildung \ref{BildRealerWiderstand} gegenübergestellt. Diese parasitären 
-        Effekte wirken sich induktiv, verdeutlicht durch die Spule, und kapazitiv, verdeutlicht durch die Kapazität, auf die 
+        Ein idealer elektrischer Widerstand ist ein reiner Wirkwiderstand und weist keinerlei Blindwiderstandanteile auf.
+        Der reale elektrische Widerstand ist mit parasitären Effekten behaftet. Die Schaltbilder eines idealen und eines
+        realen elektrischen Widerstandes werden in der Abbildung \ref{BildRealerWiderstand} gegenübergestellt. Diese parasitären
+        Effekte wirken sich induktiv, verdeutlicht durch die Spule, und kapazitiv, verdeutlicht durch die Kapazität, auf die
         Schaltung aus. Neben der Frequenzabhängikeit der parasitären Effekte, werden auch die Spannung und der Strom so aufgeteilt,
-        dass nicht mehr die gesamte Leistung am Widerstand abfällt. die Impedanz des idealen elektrischenWiderstands ist nicht 
+        dass nicht mehr die gesamte Leistung am Widerstand abfällt. die Impedanz des idealen elektrischenWiderstands ist nicht
         frequenzabhängig.
     }
-    
+
     \b{
         Elektrischer Widerstand in der Wechselstromrechnung
         \begin{itemize}
@@ -249,14 +250,14 @@
             \item<3-> Keine Phasenverschiebung beim idealen Widerstand
         \end{itemize}
     }
-    
+
     \fu{
         \input{Tikz/src/Komplexe_Wechselstromrechnung/Gegenueberstellung_idealer_realer_Widerstand}\alttext{Das Bild zeigt links einen idealen Widerstand als einfaches Schaltzeichen. Ein Pfeil weist auf eine realistischere Ersatzschaltung rechts. Diese besteht aus einem realen Widerstand mit parasitärer Induktivität in Serie und einer parasitären Kapazität parallel. Die Darstellung verdeutlicht, dass reale Bauteile zusätzliche parasitäre Eigenschaften besitzen.}
     }{{\bf Gegenüberstellung eines idealen und eines realen elektrischen Widerstandes.} Der reale Widerstand weist im
         Gegensatz zum idealen Widerstand seriell induktive und parallel kapazitive Effekte auf. \label{BildRealerWiderstand}}
 
     \speech{WechselWiderBauteil}{1}{In der Realität lässt sich diese vereinfachte Darstellung eines ohmschen Widerstandes leider nicht in gänze Nutzen.}
-    \speech{WechselWiderBauteil}{2}{Beispielsweise sorgen die Zu und Ableitungen an den Bauteilen in der Pärepherie zu parasitären Effekten, 
+    \speech{WechselWiderBauteil}{2}{Beispielsweise sorgen die Zu und Ableitungen an den Bauteilen in der Pärepherie zu parasitären Effekten,
     welche durch das Schaltbild eines Realen Widerstandes abgebildet werden.
     Die parasitären Effekte lassen sich durch die Induktivitäten von Spulen und Kapazitäten von Kondensatoren erklären.}
     \speech{WechselWiderBauteil}{3}{Wird der ohmsche Widerstand aber als rein ideales Bauteil angesehen, erfolgt keine Phasenverschiebung zwischen Strom und Spannung.}
@@ -265,13 +266,13 @@
 
 \begin{frame}
     \ftx{Komplexer Widerstand}
-    
+
     \s{
-        Zwischen der Spannung und dem Strom existiert beim idealen elektrischen Widerstand keine Phasenverschiebung. In der 
-        Abbildung \ref{BildPhasenWiderstand} werden die Sinuswellen für die Spannung und den Strom an einem idealen Widerstand 
-        aufgetragen. Sie liegen ohne Phasenverschiebung übereinander, somit befinden sie sich in Phase. 
+        Zwischen der Spannung und dem Strom existiert beim idealen elektrischen Widerstand keine Phasenverschiebung. In der
+        Abbildung \ref{BildPhasenWiderstand} werden die Sinuswellen für die Spannung und den Strom an einem idealen Widerstand
+        aufgetragen. Sie liegen ohne Phasenverschiebung übereinander, somit befinden sie sich in Phase.
     }
-    
+
     \b{
         Phasenverschiebung am idealen ohmschen Widerstand:
         \begin{itemize}
@@ -280,7 +281,7 @@
             \item<3-> Spannung und Strom am idealen ohmschen Wiederstand ohne Phasenverschiebung
         \end{itemize}
     }
-    
+
     \fu{
         \input{Tikz/src/Komplexe_Wechselstromrechnung/Sinunsschwingung_Widerstand}\alttext{Das Bild zeigt zwei sinusförmige Zeitverläufe über 𝜔𝑡. Die Spannung u_R(t) ist als blaue Linie und der Strom i_R(t) als rote gestrichelte Linie dargestellt. Beide Kurven verlaufen deckungsgleich ohne Phasenverschiebung. Darunter ist angegeben, dass die Phasendifferenz ΔPhi_R = Phi_U - Phi_I = 0 beträgt.}
     }{{\bf Sinuschwingungen an einem Widerstand.} Wechselspannung (blau) und Wechselstrom (rot) an einem idealen Widerstand. Es resultiert an dem
@@ -290,79 +291,79 @@
     Dargestellt wird die zeitabhängige Spannung U von T.}
     \speech{WechselWiderPhase}{2}{Eben auf der Spannung liegt der zeitliche Verlauf des Stromes I von T.
     Die Spannung und der Strom unterscheiden sich hier in ihrer Amplitude, jedoch nicht in ihrer Phase . .}
-    \speech{WechselWiderPhase}{3}{Die Grafische Darstellung zeigt so, 
+    \speech{WechselWiderPhase}{3}{Die Grafische Darstellung zeigt so,
     dass die Differenz zwischen den Phasenwinkeln von Spannung und Strom null ergibt.}
 \end{frame}
 
 
 \begin{frame}
     \ftx{Sinusschwingung an einem Widerstand}
-    
+
     \begin{Merksatz}{Sinusschwingung an einem Widerstand}
         Der {\bf elektrische Widerstand} weist zwischen der Wechselspannung und dem zugehörigen Wechselstrom {\bf keine
-                Phasenverschiebung} auf.     
+                Phasenverschiebung} auf.
     \end{Merksatz}
 
-    \speech{WechselMrk2Wid}{1}{Der elektrische Widerstand weist zwischen der Wechselspannung 
+    \speech{WechselMrk2Wid}{1}{Der elektrische Widerstand weist zwischen der Wechselspannung
     und dem Wechselstrom keine Phasenverschiebung auf.}
 \end{frame}
 
 
 \begin{frame}
     \ftb{Kapazität}
-    
+
     \s{
-        Der Kondesnator als Bauteil in der Elektrotechnik weist die Fähigkeit auf Energie zwischen den zwei Platten in 
-        dem elektrischen Feld zu speichern. Die Größe eines Kondensators wird in der Kapazität C angegeben. Die Einheit 
+        Der Kondesnator als Bauteil in der Elektrotechnik weist die Fähigkeit auf Energie zwischen den zwei Platten in
+        dem elektrischen Feld zu speichern. Die Größe eines Kondensators wird in der Kapazität C angegeben. Die Einheit
         der Kapazität ist das Farad F. Die komplexe Impedanz eines Kondensators lässt sich nach Gleichung \ref{GleichungKap1}
         berechnen. Im Gegensatz zum idealen Widerstand wirkt der ideale Kondensator im Wechselstromkreis nicht lediglich als
-        Wirkwiderstand. Der reale Kondensator wirkt sowohl durch einen Wirkwanteil, als auch durch einen Blindanteil. Die 
-        Kreisfrequenz $\omega$ ist frequenzabhängig. So ergeben sich bei hohen Frequenzen niedrige Impedanzwerte für den 
+        Wirkwiderstand. Der reale Kondensator wirkt sowohl durch einen Wirkwanteil, als auch durch einen Blindanteil. Die
+        Kreisfrequenz\index{Kreisfrequenz} $\omega$ ist frequenzabhängig. So ergeben sich bei hohen Frequenzen niedrige Impedanzwerte für den
         Kondensator. Andersherum ergeben sich hohe Impedanzwerte bei niedrigen Frequenzen. Der Blindanteil des Kondensators
-        wirkt sich als kapazitive Reaktanz aus. 
+        wirkt sich als kapazitive Reaktanz aus.
         Es kann beim Kondensator auch mit der komplexen Admittanz gerechnet werden. Die komplexe Admittanz ergibt sich aus
-        dem kehrwert der komplexen Impedanz des Kondensators. 
+        dem kehrwert der komplexen Impedanz des Kondensators.
     }
-    
+
     \b{
         Negativer Blindwiderstand $\leftrightarrow$ Darstellung im negativen Imaginärbereich
     }
-    
+
     \begin{eq}
         \underline{Z}_\mathrm{C} = \frac{1}{j \omega C} \quad \rightarrow \quad \underline{Y}_\mathrm{C} = j \omega C          \label{GleichungKap1}
     \end{eq}
-    
+
     \s{
-        Der ideale Kondensator wirkt rein im Blindanteil, so wird nach Gleichung \ref{GleichungKap2} aus der komplexen Notation $Z_C$ der 
-        Blindanteil des Kondensators $X_C$ mit zeitabhängiger Spannung und Strom. 
+        Der ideale Kondensator wirkt rein im Blindanteil, so wird nach Gleichung \ref{GleichungKap2} aus der komplexen Notation $Z_C$ der
+        Blindanteil des Kondensators $X_C$ mit zeitabhängiger Spannung und Strom.
     }
-    
+
     \onslide<2->{
     \b{
-        Idealer Kondensator an Wechselspannung und Wechselstrom:  
+        Idealer Kondensator an Wechselspannung und Wechselstrom:
     }
-    
+
     \begin{eq}
         \underline{U} = \underline{Z}_\mathrm{C} \cdot \underline{I} \qquad \qquad u(t) = \underline{X}_\mathrm{C} \cdot i(t)     \label{GleichungKap2}
     \end{eq}}
-    
+
     \s{
-        Es Wird davon ausgegangen, dass die Wechselspannung an einem Kondensator mit der Phasenverschiebung von 0° anliegt. 
+        Es Wird davon ausgegangen, dass die Wechselspannung an einem Kondensator mit der Phasenverschiebung von 0° anliegt.
         Mit dieser Feststellung kann die verursachte Phasenverschiebung des Stromes am Kondensator nach Gleichung \ref{GleichungKap3} festgelegt
         werden. Durch die Phasenverschiebung des Stromes gleicht der Verlauf einer Cosinusfunktion im Gegensatz zur Sinusfunktion
-        der Spannung. Sollen sowohl die Spannung als auch der Strom durch die Sinusfunktion beschrieben werden, wird die 
-        Phasenverschiebung $\Delta\varphi$ von $\pi/2$ ins Argument mit aufgenommen. 
+        der Spannung. Sollen sowohl die Spannung als auch der Strom durch die Sinusfunktion beschrieben werden, wird die
+        Phasenverschiebung $\Delta\varphi$ von $\pi/2$ ins Argument mit aufgenommen.
     }
-    
+
     \onslide<3->{
     \b{
-        Pasenverschiebung des Stromes am idealen Kondensator: 
+        Pasenverschiebung des Stromes am idealen Kondensator:
     }
-    
+
     \begin{eq}
         u(t) = \hat{U} \cdot \sin(\omega t)      \qquad      i(t) = \hat{I} \cdot \cos(\omega t) = \hat{I} \cdot \sin(\omega t + \pi/2)        \label{GleichungKap3}
     \end{eq}}
-    
+
     \speech{WechselKapaErkl}{1}{Die Impedanz einer Kapazität wird aus dem Ausdruck von Zett C gebildet.
     Hierbei steht der Ausdruck jott Omega C im Nenner.
     Zur Berechnung der kapazitiven Attmitanz wird der Kehrwert aus der kapazitiven Impedanz berechnet.
@@ -374,15 +375,15 @@
 
 \begin{frame}
     \ftx{Kapazität}
-    
+
     \s{
-        Bei Induktivitäten und Kapazitäten kommt es zu einer Phasenverschiebung zwischen der Wechselspannung und dem
-        Wechselstrom. Beim Kondensator bedeutet dies, dass der Strom der Spannung um 90° (Gradmaß) voreilt. Der beschriebene 
-        Sachverhalt der Phasenverschiebung wird in der Abbildung \ref{BildPhasenKondensator} verdeutlicht. Der in rot 
-        dargestellte Strom an einem Kondensator erreicht den Maximalwert um $2\pi$ (Bogenmaß) früher als der blau gefärbte 
-        Maximalwert der Spannung.  
+        Bei Induktivitäten und Kapazitäten kommt es zu einer Phasenverschiebung\index{Phasenverschiebung} zwischen der Wechselspannung und dem
+        Wechselstrom. Beim Kondensator bedeutet dies, dass der Strom der Spannung um 90° (Gradmaß) voreilt. Der beschriebene
+        Sachverhalt der Phasenverschiebung wird in der Abbildung \ref{BildPhasenKondensator} verdeutlicht. Der in rot
+        dargestellte Strom an einem Kondensator erreicht den Maximalwert um $2\pi$ (Bogenmaß) früher als der blau gefärbte
+        Maximalwert der Spannung.
     }
-    
+
     \b{
         Phasenverschiebung am Kondensator:
         \begin{itemize}
@@ -392,15 +393,15 @@
             \item<4-> Phasenverschiebung $\Delta\varphi$
         \end{itemize}
     }
-    
+
     \fu{
         \input{Tikz/src/Komplexe_Wechselstromrechnung/Phasenverschiebung_Kondensator}\alttext{Das Bild zeigt zwei sinusförmige Zeitverläufe über 𝜔𝑡 für einen Kondensator. Die Spannung u_C(t) ist als blaue Kurve dargestellt, der Strom i_C(t) als rote gestrichelte Kurve. Der Strom eilt der Spannung um eine Viertelperiode voraus. Angegeben ist die Phasenverschiebung ΔPhi_C = Phi_U - Phi_I = −π/2.}
     }{{\bf Phasenverschiebung zwischen Strom und Spannung an einem Kondensator.} Der Strom eilt der Spannung am Kondensator um 90° vor.
         \label{BildPhasenKondensator}}
-    
-    \speech{WechselKapaPhase}{1}{Hier wird nun der Verlauf der Wechselspannung U C an einer Kapazität dargestellt. 
+
+    \speech{WechselKapaPhase}{1}{Hier wird nun der Verlauf der Wechselspannung U C an einer Kapazität dargestellt.
     Die Wechselspannung startet im Ursprung des Grafen und hat eine Halbwelle nach Pi absolviert.}
-    \speech{WechselKapaPhase}{2}{Neben der Wechselspannung wird nun in Rot der Wechselstrom an der Kapazität dargstellt. 
+    \speech{WechselKapaPhase}{2}{Neben der Wechselspannung wird nun in Rot der Wechselstrom an der Kapazität dargstellt.
     Er startet nicht im Ursprung. Die positive Halbwelle startet um Pi halbe Phasenverschoben im Vergleich zur Wechselspannung. .}
     \speech{WechselKapaPhase}{3}{Der Verlauf des Wechselstromes erreicht den Maximalpunkt bei zwei Pi früher als der Verlauf der Wechselspannung.}
     \speech{WechselKapaPhase}{4}{Diese Phasendifferenz zwischen den beiden Phasenlagen beträgt bei einer Kapazität Pi halbe oder im Gradmaß Neunzig Grad. .}
@@ -409,9 +410,9 @@
 
 \begin{frame}
     \ftx{Sinusschwingung an einem Kondensator}
-    
+
     \begin{Merksatz}{Sinusschwingung an einem Kondensator}
-        An der idealen Kapazität eilt der Wechselstrom der Wechselspannung um 90° vor. 
+        An der idealen Kapazität eilt der Wechselstrom der Wechselspannung um 90° vor.
     \end{Merksatz}
 
     \speech{WechselMrk3Kapa}{1}{An der idealen Kapazität eilt der Wechselstrom der Wechselspannung um Neunzig Grad vor.}
@@ -420,15 +421,15 @@
 
 \begin{frame}
     \ftx{Idealer und realer Kondensator}
-    
+
     \s{
-        In der Regel wird mit idealen Bauteilen und deren Eigenschaften gerechnet. Jedoch weist der reale Kondensator, wie auch 
-        der zuvor beschriebene reale Widerstand, induktive und ohmsche parasitäre Effekte auf. Der ideale Kondensator wird in der 
-        Abbildung \ref{BildRealerKondensator} dem realen Kondensator gegenübergestellt. Die Zu- und Ableitungen weisen induktive 
-        ($L_\mathrm{paras.}$) und ohmsche ($R_\mathrm{paras.2}$) Anteile auf. Außerdem ist der Kondensator einer ständigen 
+        In der Regel wird mit idealen Bauteilen und deren Eigenschaften gerechnet. Jedoch weist der reale Kondensator, wie auch
+        der zuvor beschriebene reale Widerstand, induktive und ohmsche parasitäre Effekte auf. Der ideale Kondensator wird in der
+        Abbildung \ref{BildRealerKondensator} dem realen Kondensator gegenübergestellt. Die Zu- und Ableitungen weisen induktive
+        ($L_\mathrm{paras.}$) und ohmsche ($R_\mathrm{paras.2}$) Anteile auf. Außerdem ist der Kondensator einer ständigen
         Selbstentladung ausgesetzt. Diese Selbstentladung erfolgt symbolisch über den Paralellwiderstand $R_\mathrm{paras.1}$.
     }
-    
+
     \b{
         Idealer und realer Kondensator:
         \begin{itemize}
@@ -436,36 +437,36 @@
             \item<2-> Realer Kondensator mit parasitären Effekten
         \end{itemize}
     }
-    
+
     \fu{
         \input{Tikz/src/Komplexe_Wechselstromrechnung/Gegenueberstellung_idealer_realer_Kondensator}\alttext{Das Bild zeigt links einen idealen Kondensator als einfaches Schaltzeichen. Ein Pfeil führt zu einer realen Ersatzschaltung auf der rechten Seite. Diese enthält eine parasitäre Induktivität in Serie, einen realen Kondensator sowie parasitäre Widerstände in Reihe und parallel. Die Grafik verdeutlicht die nichtidealen Eigenschaften eines realen Kondensators.}
     }{{\bf Gegenüberstellung eines idealen und eines realen Kondensators.} Der reale Kondensator weist im
         Gegensatz zum idealen Widerstand seriell induktive und parallel kapazitive Effekte auf. \label{BildRealerKondensator}}
-    
+
     \speech{WechselKapaBauteil}{1}{Wie auch beim elektrischen Widerstand wird in der Regel von idealen Bauteilen ausgegangen.}
-    \speech{WechselKapaBauteil}{2}{Die parasitären Effekte des realen Kondensators werden unter anderem durch 
-    einen Leitungswiderstand und eine Leitungsinduktivität verdeutlicht. 
+    \speech{WechselKapaBauteil}{2}{Die parasitären Effekte des realen Kondensators werden unter anderem durch
+    einen Leitungswiderstand und eine Leitungsinduktivität verdeutlicht.
     Die Selbstentladung des Kondensators kann durch den Parallelwiderstand erklärt werden.}
 \end{frame}
 
 
 \begin{frame}
     \ftb{Induktivität}
-    
+
     \s{
         Die Spule stellt ebenso einen Energiespeicher dar, wie der Kondensator. Nur wird bei der Spule die Energie nicht in einem
         elektrischen Feld gespiechert, sondern in einem magnetischen Feld nach den Gegebenheiten der Induktionsgesetze. Die Größe
         einer Spule wird in der Induktivität L angegeben. Die Einheit der Induktivität ist Henry H. Die komplexe Impedanz einer Spule
         ergibt sich aus der Imaginären Einheit j, der Kreisfrequenz $\omega$ und der Induktivität L (vgl. Gleichung \ref{GleichungInd1}).
         die komplexe Admittanz wird durch den Kehrwert der Spulenimpedanz berechnet. Das führt zu Zusammenhängen, welche sich entgegen
-        der Impedanzberechnungen bei Kapazitäten entwickeln. Bei hohen frequenzen werden die Impedanzen bei Spulen entsprechend ihrer 
-        Induktivität ebenfalls groß und bei niedrigen Frequenzen entsprechend gering. 
+        der Impedanzberechnungen bei Kapazitäten entwickeln. Bei hohen frequenzen werden die Impedanzen bei Spulen entsprechend ihrer
+        Induktivität ebenfalls groß und bei niedrigen Frequenzen entsprechend gering.
     }
-    
+
     \b{
         Positiver Blindwiderstand $\leftrightarrow$ Darstellung im positiven Imaginärbereich
     }
-    
+
     \begin{eq}
         \underline{Z}_\mathrm{L} = j \omega L \quad \rightarrow \quad \underline{Y}_\mathrm{L} = \frac{1}{j \omega L}     \label{GleichungInd1}
     \end{eq}
@@ -473,56 +474,56 @@
     \s{
         Ebenso wie beim Kondensator wirkt die ideale Spule rein als Blindanteil der Impedanz. In der Gleichung \ref{GleichungInd2}
         wird auf der linken Seite die komplexe Notation der Spulenimpedanz $Z_L$ verwendet. Auf der rechten Seite wird die Zeitfunktion
-        lediglich mit der Schreibweise des Blindanteils der Spule $X_L$ dargestellt.     
+        lediglich mit der Schreibweise des Blindanteils der Spule $X_L$ dargestellt.
     }
-    
+
     \onslide<2->{
     \b{
-        Ideale Spule an Wechselspannung und Wechselstrom:  
+        Ideale Spule an Wechselspannung und Wechselstrom:
     }
-    
+
     \begin{eq}
         \underline{U} = \underline{Z}_\mathrm{L} \cdot \underline{I} \qquad  \qquad u(t) = \underline{X}_\mathrm{L} \cdot i(t)        \label{GleichungInd2}
     \end{eq}}
-    
+
     \s{
         Prinzipiell verhalten sich die Zeitfunktionen von Induktivitäten für die Spannung und den Strom vergleichbar, mit denen Zeitfunktionen
-        von Kapazitäten. Lediglich die Phasenverschiebung des Stromes an Spulen ist der Phasenverschiebung der Kapazitäten entgegengesetzt. 
-        Die Phasenverschiebung $\Delta\varphi$ zwischen der Spannung und dem Strom beträgt an einer Induktivität $\pi/2$. 
+        von Kapazitäten. Lediglich die Phasenverschiebung des Stromes an Spulen ist der Phasenverschiebung der Kapazitäten entgegengesetzt.
+        Die Phasenverschiebung $\Delta\varphi$ zwischen der Spannung und dem Strom beträgt an einer Induktivität $\pi/2$.
     }
-    
+
     \onslide<3->{
     \b{
-        Pasenverschiebung des Stromes an der idealen Spule: 
+        Pasenverschiebung des Stromes an der idealen Spule:
     }
-    
+
     \begin{eq}
         u(t) = \hat{U} \cdot \cos(\omega t) = \hat{U} \cdot \sin(\omega t + \pi/2)    \qquad     i(t) = \hat{I} \cdot \sin(\omega t)      \label{GleichungInd3}
     \end{eq}}
-    
+
     \speech{WechselInduErkl}{1}{Eine Induktivität, beispielsweise einer Spule, lässt eine Impedanz Zett Ell wirken.
-    Diese induktive Impedanz verfügt über einen Blindwiderstand, welcher mit einem positiven vorzeichen behaftet ist 
+    Diese induktive Impedanz verfügt über einen Blindwiderstand, welcher mit einem positiven vorzeichen behaftet ist
     und sich im Zeigerdiagramm im positiven Imaghinärbereich verortet.
     Durch den Kehrwert der induktiven Impedanz Zett L wird die induktive Attmitanz Y L gebildet.}
     \speech{WechselInduErkl}{2}{Nach dem Ohmschen Gesetz verhält sich die induktive Impedanz wie die zuvor kennengelernten Bauteile.
     Eine komplexe Spannung U ergibt sich aus dem Produkt aus der komplexen Impedanz Zett L und dem komplexen Strom Ih.
     Ebenso verhält es sich im Zeitbereich mit einer idealen Spule.}
     \speech{WechselInduErkl}{3}{Wie auch bei einer Kapazität kommt es an einer Induktivität zu einer Phasenverschiebung.
-    Jedoch verhält es sich an der Induktivität umgekehrt. 
+    Jedoch verhält es sich an der Induktivität umgekehrt.
     Während an einer Kapazität ein Strom der Spannung voreilt,
     Eilt an einer Induktivität eine Spannung dem Strom vor. .}
 \end{frame}
 
 \begin{frame}
     \ftx{Induktivität}
-    
+
     \s{
         Äquivalent zu der Phasenverschiebung an einem Kondensator existiert an der Induktivität ebenfalls eine Phasenverschiebung.
         Jedoch ist diese Phasenverschiebung des Stromes an der Induktivität der Phasenverschiebung der Kapazität entgegengerichtet.
-        Im konkreten Fall in der Abbildung \ref{BildPhasenSpule} wird gezeigt, dass der der Strom (rot) an einer Induktivität der 
-        Spannung (blau) nacheilt. 
+        Im konkreten Fall in der Abbildung \ref{BildPhasenSpule} wird gezeigt, dass der der Strom (rot) an einer Induktivität der
+        Spannung (blau) nacheilt.
     }
-    
+
     \b{
         Phasenverschiebung an der Spule:
         \begin{itemize}
@@ -532,12 +533,12 @@
             \item<4-> Phasenverschiebung $\Delta\varphi$
         \end{itemize}
     }
-    
+
     \fu{
         \input{Tikz/src/Komplexe_Wechselstromrechnung/Phasenverschiebung_Spule}\alttext{Das Bild zeigt zwei sinusförmige Zeitverläufe über 𝜔𝑡 für eine Spule. Die Spannung u_L(t) ist als blaue Kurve und der Strom i_L(t) als rote gestrichelte Kurve dargestellt. Die Spannung eilt dem Strom um eine Viertelperiode voraus. Angegeben ist die Phasenverschiebung ΔPhi_L = Phi_U - Phi_I = +π/2.}
     }{{\bf Phasenverschiebung zwischen Strom und Spannung an einer Spule.} Der Strom folgt der Spannung an der Spule um 90° nach.
         \label{BildPhasenSpule}}
-    
+
     \speech{WechselInduPhase}{1}{Die sich hieraus ergebene Phasenverschiebung an einer Spule wird nun näher betrachtet.
     Es wird bläulich der Verlauf einer Wechselspannung Uh Ell an einer Spule dargestellt}
     \speech{WechselInduPhase}{2}{Der zugehörige Verlauf des Wechselstromes wird in Rot hinterlegt.}
@@ -549,9 +550,9 @@
 
 \begin{frame}
     \ftx{Sinusschwingung an einer Spule}
-    
+
     \begin{Merksatz}{Sinusschwingung an einer Spule}
-        Bei einer idealen Induktivität folgt der Wechselstrom der Wechselspannung um 90° nach.     
+        Bei einer idealen Induktivität folgt der Wechselstrom der Wechselspannung um 90° nach.
     \end{Merksatz}
 
     \speech{WechselInduMrk}{1}{Bei einer idealen Induktivität folgt der Wechselstrom der WEchselspannung um 90 Grad oder im Radmaß um Pi Halbe nach.}
@@ -560,14 +561,14 @@
 
 \begin{frame}
     \ftx{Ideale und reale Spule}
-    
+
     \s{
-        Wie auch der ohmsche Widerstand und der Kondensator weist die reale Spule parasitäre Effekte auf. Über den Spulendraht 
-        wirkt ein ohmscher Anteil ($R_\mathrm{paras.}$) auf die komplexe Impedanz der Spule ein. Zusätzlich erzeugt die Wicklung 
-        der Spule kapazitive Effekte ($C_\mathrm{paras.}$). In der Abbildung \ref{BildRealeSpule} wird das Ersatzschaltbild einer 
-        idealen Spule und einer realen Spule dargestellt. 
+        Wie auch der ohmsche Widerstand und der Kondensator weist die reale Spule parasitäre Effekte auf. Über den Spulendraht
+        wirkt ein ohmscher Anteil ($R_\mathrm{paras.}$) auf die komplexe Impedanz der Spule ein. Zusätzlich erzeugt die Wicklung
+        der Spule kapazitive Effekte ($C_\mathrm{paras.}$). In der Abbildung \ref{BildRealeSpule} wird das Ersatzschaltbild einer
+        idealen Spule und einer realen Spule dargestellt.
     }
-    
+
     \b{
         Ideale und reale Spule:
         \begin{itemize}
@@ -575,16 +576,16 @@
             \item<2-> Reale Spule mit parasitären Effekten
         \end{itemize}
     }
-    
+
     \fu{
         \input{Tikz/src/Komplexe_Wechselstromrechnung/Gegenueberstellung_ideale_reale_Spule}\alttext{Das Bild zeigt links eine ideale Spule als einfaches Schaltzeichen. Ein Pfeil führt zu einer realen Ersatzschaltung auf der rechten Seite. Diese besteht aus einer realen Spule mit parasitärem Serienwiderstand sowie einer parasitären Kapazität parallel. Die Darstellung macht deutlich, dass reale Spulen nicht ideal sind und zusätzliche Verluste besitzen.}
     }{{\bf Gegenüberstellung einer idealen und einer realen Spule.} Die reale Spule weist serielle ohmsche und parallele
         kapazitive parasitäre Effekte auf. \label{BildRealeSpule}}
-    
+
     \speech{WechselInduBauteil}{1}{Wird von einer idealen Spule ausgegangen, wird in der Regel das einzelne Bauteil betrachtet.}
     \speech{WechselInduBauteil}{2}{In der realen Welt verhält es sich anders.
     Hier werden Beispielsweise die Ohmschen Verluste über die Zu und Ableitungen berüchsichtigt,
-    sowie mögliche parasitäre Kapazitäten. 
+    sowie mögliche parasitäre Kapazitäten.
     Je nach Komplexität lassen sich die Ersatzschaltbilder von Bauteilen aufwendiger gestalten.}
 \end{frame}
 
@@ -597,7 +598,7 @@
 	\ftx{Wechselstromrechnung 2}
 
     \begin{Lernziele}{Wechselstromrechnung 2}
-        Die Studierenden 
+        Die Studierenden
         \begin{enumerate}
             \item kennen Wechselquellen und die dazugehörigen Umwandlungsvorschriften.
             \item können Spannungsteiler und Stromteiler auf komplexe Signale anwenden.
@@ -610,15 +611,15 @@
 
 \begin{frame}
     \ftb{Quellen von Wechselgrößen}
-    
+
     \s{
         Wie bei Quellen von Gleichströmen und Gleichspannungen existieren Wechselquellen mit vergleichbaren Merkmalen. Bei der
-        idealen Wechselspannungsquelle ist die Spannung eingeprägt. Die Wechselspannung ändert sich nicht mit der Abhängigkeit 
-        des Stromes, welcher durch sie hindurchfließt. Die ideale Wechselstromquelle stellt einen eingesprägten Strom zur 
-        Verfügung. Dieser wird nicht durch die angeschlossene Last beeinflusst. Die Schaltungssymbole einer idealen 
-        Wechselspannungsquelle und einer idealen Wechselstromquelle werden in der Abbildung \ref{BildIdealeQuellen} dargestellt. 
+        idealen Wechselspannungsquelle ist die Spannung eingeprägt. Die Wechselspannung ändert sich nicht mit der Abhängigkeit
+        des Stromes, welcher durch sie hindurchfließt. Die ideale Wechselstromquelle stellt einen eingesprägten Strom zur
+        Verfügung. Dieser wird nicht durch die angeschlossene Last beeinflusst. Die Schaltungssymbole einer idealen
+        Wechselspannungsquelle und einer idealen Wechselstromquelle werden in der Abbildung \ref{BildIdealeQuellen} dargestellt.
     }
-    
+
     \b{
         Quellen von Wechselgrößen:
         \begin{itemize}
@@ -626,7 +627,7 @@
             \item<2-> Ideale Wechselstromquelle
         \end{itemize}
     }
-    
+
     \fu{
         \input{Tikz/src/Komplexe_Wechselstromrechnung/Quellen_Wechselgroessen}\alttext{Das Bild zeigt zwei einfache Wechselspannungsquellen in einem offenen Stromkreis. Links ist die Quelle mit einem Pfeil für die Spannung U dargestellt. Rechts ist dieselbe Quelle gezeigt, jedoch mit einem Pfeil für den Strom I. Die Grafik verdeutlicht die unterschiedliche Bezugsrichtung für Spannung und Strom.}
     }{{\bf Quellen von Wechselgrößen.} Ideale Wechselspannungsquelle und ideale Wechselstromquelle. \label{BildIdealeQuellen}}
@@ -639,16 +640,16 @@
 
 \begin{frame}
     \ftx{Reale Wechselspannungsquelle}
-    
+
     \s{
-        Bei den beiden vorgestellten Wechselquellen werden ideale Quellen abgebildet. Reale Wechselquellen weisen wie auch die 
-        Quellen von Gleichspannungen und Gleichströmen Innenwiderstände auf. Diese Innenwiderstände prägen sich bei Quellen von 
-        Wechselgrößen als komplexe Impedanzen aus. Die reale Wechselspannungsquelle hat also eine komplexe Innenimpedanz 
-        $\underline{Z}_\mathrm{i}$, welche mit einer idealen Wechselspannungsquelle in Serie geschaltet ist. Bei realen 
+        Bei den beiden vorgestellten Wechselquellen werden ideale Quellen abgebildet. Reale Wechselquellen weisen wie auch die
+        Quellen von Gleichspannungen und Gleichströmen Innenwiderstände auf. Diese Innenwiderstände prägen sich bei Quellen von
+        Wechselgrößen als komplexe Impedanzen aus. Die reale Wechselspannungsquelle hat also eine komplexe Innenimpedanz
+        $\underline{Z}_\mathrm{i}$, welche mit einer idealen Wechselspannungsquelle in Serie geschaltet ist. Bei realen
         Wechselspannungsquellen ist die Ausgangsspannung $\underline{U}$ von der angeschlossenen Last abhängig. Die Gegenüberstellung
-        einer idealen und einer realen Wechselspannungsquelle ist in der Abbildung \ref{BildIdealSpannung} dargestellt. 
+        einer idealen und einer realen Wechselspannungsquelle ist in der Abbildung \ref{BildIdealSpannung} dargestellt.
     }
-    
+
     \b{
         Wechselspannungsquelle:
         \begin{itemize}
@@ -656,48 +657,48 @@
             \item<2-> Reale Wechselspannungsquelle mit Innenimpedanz $\underline{Z}_\mathrm{i}$
         \end{itemize}
     }
-    
+
     \fu{
         \input{Tikz/src/Komplexe_Wechselstromrechnung/Gegenueberstellung_ideale_reale_Wechselspannungsquelle}\alttext{Das Bild zeigt links eine Wechselspannungsquelle mit markierter Spannung U an den Klemmen. Ein Pfeil weist auf eine erweiterte Schaltung rechts. Dort ist an die Quelle eine Innenimpedanz Z_i angeschlossen, durch die ein Strom I fließt. Zusätzlich sind die Quellenspannung U₀ und die Klemmenspannung U eingezeichnet.}
     }{{\bf Gegenüberstellung einer idealen und einer realen Wechselspannungsquelle.} Die reale Wechselspannungsquelle weist eine
         Serienimpedanz $\underline{Z}_\mathrm{i}$ auf. \label{BildIdealSpannung}}
-    
+
     \s{
-        Die Ausgangsspannung einer realen Wechselspannungsquelle lässt sich nach Gleichung \ref{GleichungQuel1} bestimmen. 
+        Die Ausgangsspannung einer realen Wechselspannungsquelle lässt sich nach Gleichung \ref{GleichungQuel1} bestimmen.
         Hier liegt die Wechselspannung der Wechselspannungsquelle nicht direkt an den Klemmen an. Sie wird durch die Spannung
-        über die Innenimpedanz $Z_\mathrm{i}$ reduziert. 
+        über die Innenimpedanz $Z_\mathrm{i}$ reduziert.
     }
-    
+
     \only<3>{
         \b{
             Ausgangsspannung einer realen Wechselspannungsquelle:
         }
-        
+
         \begin{eq}
             \underline{U} = \underline{U}_\mathrm{0} - \underline{Z}_\mathrm{i} \cdot \underline{I}     \label{GleichungQuel1}
         \end{eq}
     }
 
     \speech{WechselQuellenU}{1}{Hier wird eine ideale Wechselspannungsquelle dargestellt.}
-    \speech{WechselQuellenU}{2}{Die reale Wechselspannung verfügt wie auch bei der Betrachtung von Gleichstromnetzwerken einen Innenwiderstand, 
+    \speech{WechselQuellenU}{2}{Die reale Wechselspannung verfügt wie auch bei der Betrachtung von Gleichstromnetzwerken einen Innenwiderstand,
     die Innenimpedanz Zett Ih. .}
     \speech{WechselQuellenU}{3}{Die Ausgangsspannung U ist somit in der Regel geringfügig durch den Spannungsabfall an der Innenimpedanz reduziert.}
 \end{frame}
 
 \begin{frame}
     \ftx{Charakteristik von realen Wechselspannungsquellen}
-    
+
     \s{
         Reale Wechselspannungsquellen weisen gewisse Charakteristika ohne Last beim Leerlauf und bei einem Kurzschluss auf.
-        Beim Leerlauf liegt zwischen den Klemmen eine unendlich große Impedanz. Es wird kein geschlossener Stromkreis gebildet 
-        und es stellt sich kein Stromfluss ein (Gleichung \ref{GleichungQuel2}). Die gesamte Spannung der Wechselspannungsquelle 
+        Beim Leerlauf liegt zwischen den Klemmen eine unendlich große Impedanz. Es wird kein geschlossener Stromkreis gebildet
+        und es stellt sich kein Stromfluss ein (Gleichung \ref{GleichungQuel2}). Die gesamte Spannung der Wechselspannungsquelle
         liegt an den offenen Klemmen an, siehe Gleichung \ref{GleichungQuel3}.
     }
-    
+
     \b{
         Leerlauf:
     }
-    
+
     \begin{eq}
         \underline{I} = 0 \qquad \rightarrow \qquad \underline{U}_\mathrm{i} = \underline{I} \cdot \underline{Z}_\mathrm{i} = 0 \label{GleichungQuel2}
     \end{eq}
@@ -706,26 +707,26 @@
     \begin{eq}
         \underline{U}_\mathrm{0} - \underline{U}_\mathrm{i} - \underline{U} = 0 \qquad \rightarrow \qquad \underline{U} = \underline{U}_\mathrm{0} \label{GleichungQuel3}
     \end{eq}}
-    
+
     \s{
-        Beim Kurzschluss geht die Impedanz zwischen den Klemmen gegen null und es fällt dort keine Spannung ab. So stellt sich ein 
+        Beim Kurzschluss geht die Impedanz zwischen den Klemmen gegen null und es fällt dort keine Spannung ab. So stellt sich ein
         größter möglicher Kurzschlussstrom ein, welcher lediglich durch die Innenimpedanz begrenzt wird (Gleichung \ref{GleichungQuel4}).
-        Die Spannungs der Wechselspannungsquelle wirkt so in Gänze über die Innenimpedanz (Gleichung \ref{GleichungQuel5}). Der 
-        Kurzschlussstrom lässt sich nach Gleichung \ref{GleichungQuel6} aus dem Verhältnis aus der Spannung über die Innenimpedanz 
+        Die Spannungs der Wechselspannungsquelle wirkt so in Gänze über die Innenimpedanz (Gleichung \ref{GleichungQuel5}). Der
+        Kurzschlussstrom lässt sich nach Gleichung \ref{GleichungQuel6} aus dem Verhältnis aus der Spannung über die Innenimpedanz
         $\underline{U}_\mathrm{i}$ und der Innenimpedanz $\underline{Z}_\mathrm{i}$ bestimmen.
     }
-    
-    
+
+
     \onslide<3->{
     \b{
         Kurzschluss:
     }
-    
+
     \begin{eq}
         \underline{U} = 0 \qquad \rightarrow \qquad \underline{I} = \underline{I}_\mathrm{k} \label{GleichungQuel4}
     \end{eq}}
 
-    
+
     \onslide<4->{
     \begin{eq}
         \underline{U}_\mathrm{0} - \underline{U}_\mathrm{i} - \underline{U} = 0 \qquad \rightarrow \qquad \underline{U}_\mathrm{i} = \underline{U}_\mathrm{0} \label{GleichungQuel5}
@@ -733,8 +734,8 @@
     \begin{eq}
         \underline{I}_\mathrm{k} = \frac{\underline{U}_\mathrm{i}}{\underline{Z}_\mathrm{i}} \label{GleichungQuel6}
     \end{eq}}
-    
-    
+
+
     \speech{WechselQuellenUCha}{1}{Zunächst wird der Leerlauf von realen Wechselspannungsquellen betrachtet.
     Ohne einen angeschlossenen Verbraucher gibt es keinen geschlossenen Stromkreis, der Strom beträgt damit Null.
     Weiter heißt das, dass über der Innenimpedanz keine Spannung anliegt.}
@@ -751,24 +752,24 @@
 \begin{frame}
     \ftx{Beispielaufgabe}
     \begin{bsp}{Reale Spannungsquelle}{Reale Spannungsquelle:}
-        
+
         \begin{enumerate}
-            \only<1>{\item[]	
-            
-                  Eine Reale Spannungsquelle (230\ V, 50\ Hz) verfügt nach der unten stehenden Abbildung über eine Innenimpedanz $\underline{Z}_\mathrm{i}$, welche sich aus 
-                  einer Spule $L=20\ mH$ und einem ohmschen Widerstand $R=10\ m\Omega$ zusammensetzt. 
-                  
+            \only<1>{\item[]
+
+                  Eine Reale Spannungsquelle (230\ V, 50\ Hz) verfügt nach der unten stehenden Abbildung über eine Innenimpedanz $\underline{Z}_\mathrm{i}$, welche sich aus
+                  einer Spule $L=20\ mH$ und einem ohmschen Widerstand $R=10\ m\Omega$ zusammensetzt.
+
                   \fu{
                       \resizebox{0.5\textwidth}{!}{
                           \input{Tikz/src/Komplexe_Wechselstromrechnung/Beispiel_reale_Spannungsquelle}\alttext{Das Bild zeigt eine Wechselspannungsquelle U₀, die eine Reihenschaltung aus Spule L und Widerstand R speist. Durch die Schaltung fließt ein Strom I, der am rechten Anschluss markiert ist. Die Ausgangsspannung U ist an den Klemmen rechts eingezeichnet.}
                       }
                   }{{\bf Beispiel.} Wechselspannungsquelle mit einer Innenimpedanz aus einer Spule und einem Widerstand. \label{BildBeispielQuelle}}
-                  
+
                   Bestimmen Sie die {\bf Leerlaufspannung} und den {\bf Kurzschlussstrom} der Wechselspannungsquelle.
                   }
-                  
+
                   \only<2>{
-            \item[] 
+            \item[]
                   \onslide<2>{
                   \begin{eqa}
                       \underline{U}_\mathrm{0} &= 230\ V \cdot e^{\mathrm{j}0^o}          \nonumber    \\
@@ -776,13 +777,13 @@
                       \underline{Z}_\mathrm{i} &= 0,01\ \Omega + j \cdot 2\pi \cdot 50\ Hz \cdot 20\ mH      \nonumber    \\
                       \underline{Z}_\mathrm{i} &= 0,01\ \Omega + j 6,28\ \Omega       \nonumber
                   \end{eqa}
-                  
+
                   {\bf Leerlaufspannung}:
                   \begin{eqa}
                       \underline{U} &= \underline{U}_\mathrm{0}        \nonumber    \\
                       \underline{U} &= 230\ V \cdot e^{\mathrm{j}0^o}         \nonumber
                   \end{eqa}
-                  
+
                   {\bf Kurzschlussstrom}:
                   \begin{eqa}
                       \underline{I}_\mathrm{k} &= \frac{\underline{U}_\mathrm{0}}{\underline{Z}_\mathrm{i}}           \nonumber        \\
@@ -790,14 +791,14 @@
                       \underline{I}_\mathrm{k} &= (0,058 - j36,6)\ A = 36,6\ A \cdot e^{-\mathrm{j}89,9^o}    \nonumber
                   \end{eqa}
                   }
-                  }    
+                  }
         \end{enumerate}
     \end{bsp}
-    
+
     \speech{WechselBsp1}{1}{Nun wird eine reale Wechselspannungsquelle betrachtet.
     Es sollen die Leerlaufspannung und der Kurzschlussstrom bestimmt werden.}
     \speech{WechselBsp1}{2}{Die Wechselspannungsquelle verfügt über eine Spannungshöhe von Zweihundertdreißig Volt.
-    Die komplexe Innenimpedanz setzt sich aus den dem Wirkanteil des Widerstandes und den Blindanteil zusammen, 
+    Die komplexe Innenimpedanz setzt sich aus den dem Wirkanteil des Widerstandes und den Blindanteil zusammen,
     welcher widerum von der Spule hervorgerufen wird.
     Die Ausgangsspannung einer Wechselspannungquelle im Leerlauffall ist gleich der Gesamten Wechselspannung der Wechselspannungsquelle.
     Der Kurzschlussstrom wird aus den beiden Größen der Wechselspannung und der Innenimpedanz berechnet.
@@ -807,14 +808,14 @@
 
 \begin{frame}
     \ftx{Reale Wechselstromquelle}
-    
+
     \s{
-        Die reale Wechselstromquelle in der Abbildung \ref{BildIdealStrom} verfügt wie die Wechselspannungsquelle über 
-        eine Innenimpedanz $\underline{Z}_\mathrm{i}$, wobei diese Innenimpedanz nicht wie bei der Wechselspannungsquelle 
-        in serie geschlatet ist, sondern parallel zu einer idealen Wechselstromquelle liegt. Der sich ergebende Ausgangsstrom 
-        $\underline{I}$ der Quelle ist von der angeschlossenen Last, bzw. von der Ausgangsspannung $\underline{U}$ abhängig. 
+        Die reale Wechselstromquelle in der Abbildung \ref{BildIdealStrom} verfügt wie die Wechselspannungsquelle über
+        eine Innenimpedanz $\underline{Z}_\mathrm{i}$, wobei diese Innenimpedanz nicht wie bei der Wechselspannungsquelle
+        in serie geschlatet ist, sondern parallel zu einer idealen Wechselstromquelle liegt. Der sich ergebende Ausgangsstrom
+        $\underline{I}$ der Quelle ist von der angeschlossenen Last, bzw. von der Ausgangsspannung $\underline{U}$ abhängig.
     }
-    
+
     \b{
         Wechselstromquelle:
         \begin{itemize}
@@ -822,93 +823,93 @@
             \item<2-> Reale Wechselstromquelle mit Innenimpedanz $\underline{Z}_\mathrm{i}$
         \end{itemize}
     }
-    
+
     \fu{
         \input{Tikz/src/Komplexe_Wechselstromrechnung/Quellen_Wechelgroessen2}
     }{{\bf Quellen von Wechselgrößen.} Reale Wechselstromquelle und ideale Wechselstromquelle. \label{BildIdealStrom}}
-    
+
     \s{
-        Der Wechselstrom der idealen Wechselstromquelle wird durch einen Anteil durch die Innenimpedanz reduziert. Der 
-        Ausgangsstrom der realen Wechselstromquelle lässt sich über die Gleichung \ref{GleichungQuel7} bestimmen. Hier 
-        wird ausgehend vom Quellstrom $\underline{I}_\mathrm{0}$ der ausgangsspannungsabhängige ($\underline{U}$) 
+        Der Wechselstrom der idealen Wechselstromquelle wird durch einen Anteil durch die Innenimpedanz reduziert. Der
+        Ausgangsstrom der realen Wechselstromquelle lässt sich über die Gleichung \ref{GleichungQuel7} bestimmen. Hier
+        wird ausgehend vom Quellstrom $\underline{I}_\mathrm{0}$ der ausgangsspannungsabhängige ($\underline{U}$)
         Wechselstromanteil  $\underline{I}_\mathrm{i}$ durch die Innenimpedanz $\underline{Z}_\mathrm{i}$ abgezogen.
     }
-    
+
     \only<3>{
         \b{
             Ausgangswechselstrom einer realen Wechselstromquelle:
         }
-        
+
         \begin{eq}
             \underline{I} = \underline{I}_\mathrm{0} - \underline{I}_\mathrm{i} = \underline{I}_\mathrm{0} - \frac{\underline{U}}{\underline{Z}_\mathrm{i}}     \label{GleichungQuel7}
         \end{eq}
     }
 
-    
+
     \speech{WechselQuellenI}{1}{ Hier folgt die ideale Wechselstromquelle.}
     \speech{WechselQuellenI}{2}{Die reale Wechselstromquelle verfügt wie auch die Wechselspannungsquelle über eine Innenimpedanz.
     Nur das diese Innenimpedanz Zett I nicht in Reihe verschaltet ist, sondern Parallel zur Wechselstromquelle.}
     \speech{WechselQuellenI}{3}{Der Ausgangswechselstrom der reale Wechselstromquelle lässt sich durch die Knotenregel bestimmen,
-    da vom Strom der Wechselstromquelle noch der Teilstrom über die Innenimpedanz abgezogen wird. 
+    da vom Strom der Wechselstromquelle noch der Teilstrom über die Innenimpedanz abgezogen wird.
     Der Teilstrom durch die Innenimpedanz lässt sich über die Größe der Ausgangsspannung und der Innenimpedanz berechnen.}
 \end{frame}
 
 
 \begin{frame}
     \ftx{Äquivalenz von Wechselquellen}
-    
+
     \s{
         {\bf Wechselquellenumwandlung} \\
-        
-        
+
+
         Wechselstrom- und Wechselspannungsquellen können ineinander umgewandelt werden, wenn beide Wechselquellen den identischen
-        Kurzschlussstrom und die gleiche Leerlaufspannung aufweisen. 
+        Kurzschlussstrom und die gleiche Leerlaufspannung aufweisen.
     }
-    
+
     \b{
         Umwandlung von Wechselstromquellen und Wechselspannungsquellen:
     }
-    
+
     \fu{
         \input{Tikz/src/Komplexe_Wechselstromrechnung/Gegenueberstellung_reale_Wechselspannung_Wechselstromquelle}\alttext{Das Bild zeigt zwei äquivalente Ersatzschaltungen einer realen Wechselspannungsquelle und einer realen Wechselstromquelle. Links ist eine Quelle mit Serien-Innenimpedanz Zᵢ dargestellt, mit Quellspannung U₀, Innen-spannung Uᵢ und Ausgangsspannung U sowie Strom I. Rechts ist die Quelle als Parallelschaltung mit Innenimpedanz Zᵢ gezeigt, bei der sich der Quellstrom I₀ in Innenstrom Iᵢ und Außenstrom I aufteilt. Der Doppelpfeil kennzeichnet die elektrische Äquivalenz beider Darstellungen.}
     }{{\bf Gegenüberstellung einer realen Wechselspannungsquelle und einer realen Wechselstromquelle.} Die reale Wechselspannungsquelle
         und die reale Wechselstromquelle sind ineinander umwandelbar. \label{BildQuelleUmwandlung}}
-    
+
     \s{
-        Beide Wechselquellen sind äquivalent, wenn nach Gleichung \ref{GleichungQuel8} und Gleichung \ref{GleichungQuel9} das ohmsche 
-        Gesetz mit identischen Innenimpedanzen für die Wechselspannungsquelle und die Wechselstromquelle gilt. 
+        Beide Wechselquellen sind äquivalent, wenn nach Gleichung \ref{GleichungQuel8} und Gleichung \ref{GleichungQuel9} das ohmsche
+        Gesetz mit identischen Innenimpedanzen für die Wechselspannungsquelle und die Wechselstromquelle gilt.
     }
-    
-    
+
+
     \onslide<2->{
     \b{
         Äquivalente Wechselquellen, bei identischen Innenimpedanzen:
     }
-    
+
     \begin{eq}
         \underline{U}_\mathrm{0} = \underline{Z}_\mathrm{0} \cdot \underline{I}_\mathrm{0}      \label{GleichungQuel8}
     \end{eq}
     \begin{eq}
         \underline{Z}_\mathrm{i} = \underline{Z}_\mathrm{0}      \label{GleichungQuel9}
     \end{eq}}
-    
+
     \s{
-        Hierbei soll der Kurzschlussstrom $\underline{I}_\mathrm{K}$ gleich dem Quellstrom $\underline{I}_\mathrm{0}$ der 
+        Hierbei soll der Kurzschlussstrom $\underline{I}_\mathrm{K}$ gleich dem Quellstrom $\underline{I}_\mathrm{0}$ der
         Wechselstromquelle sein, welcher identisch zu dem Ausgangsstrom $\underline{I}$ ist. Die Ausgangswechselspannung
         $\underline{U}$ der Wechselquellen enspricht der Leerlaufspannung $\underline{U}_\mathrm{L}$.
     }
-    
+
     \onslide<3->{
     \b{
         Quellstrom der Stromquelle gleich dem Kurzschlussstrom. \\
         Quellspannung der Spannungsquelle gleich der Leerlaufspannung.
     }
-    
+
     \begin{eq}
         \underline{I} = \underline{I}_\mathrm{k} = \underline{I}_\mathrm{0} \qquad \text{und} \qquad \underline{U} = \underline{U}_\mathrm{L} = \underline{U}_\mathrm{0}     \label{GleichungQuel10}
     \end{eq}}
-    
-    
+
+
     \speech{WechselQuellenAqui}{1}{Die Charakteristika der realen Quellen sind jetzt grundsätzlich bekannt.
     Wechselspannungsquellen und Wechselstromquellen können auch ineinander umgewandelt werden.}
     \speech{WechselQuellenAqui}{2}{Verfügen die ineinander umzurechnenden Wechselquellen über eine identische Innenimpedanz Zett Null,
@@ -925,19 +926,19 @@
 \begin{frame}
     \ftx{Beispielaufgabe}
     \begin{bsp}{Wechselquellenumwandlung}{Wechselquellenumwandlung:}
-        
+
         \begin{enumerate}
             \only<1>{\item[]
-                  Gegeben ist eine reale Wechselspannungsquelle mit $\underline{U}_\mathrm{0} = 20\ kV \cdot \mathrm{e}^{\mathrm{j}30^o}$ und 
-                  $\underline{Z}_\mathrm{0} = (0,01 + j \cdot 2)\ \Omega$. Wandeln Sie die Wechselspannungsquelle in eine äquivalente 
+                  Gegeben ist eine reale Wechselspannungsquelle mit $\underline{U}_\mathrm{0} = 20\ kV \cdot \mathrm{e}^{\mathrm{j}30^o}$ und
+                  $\underline{Z}_\mathrm{0} = (0,01 + j \cdot 2)\ \Omega$. Wandeln Sie die Wechselspannungsquelle in eine äquivalente
                   Wechselstromquelle um, berechnen Sie hierzu den Kurzschlussstrom.\\
                   }
                   \only<2>{
-            \item[] 
+            \item[]
                   \onslide<2>{
                       {\bf Kurzschlussstrom:}
-                      
-                      
+
+
                       \begin{eq}
                           \underline{I}_\mathrm{0} = \frac{\underline{U}_\mathrm{0}}{\underline{Z}_\mathrm{0}}
                           = \frac{20\ kV \cdot \mathrm{e}^{\mathrm{j}30^o}}{(0,01 + j \cdot 2)\ \Omega}
@@ -946,7 +947,7 @@
                   }
                   }
         \end{enumerate}
-        
+
     \end{bsp}
 
     \speech{WechselBsp2}{1}{Folgend soll an einem Beispiel eine reale Wechselspannungsquelle in eine äquivalente Wechselstromquelle umgewandelt werden.
@@ -961,36 +962,36 @@
 
 \begin{frame}
     \ftb{Komplexer Spannungsteiler und komplexer Stromteiler}
-    
+
     \s{
         Wie bei der Betrachtung von Gleichstromnetzwerken gelten die Grundgesetze zur Analyse von Wechselstromnetzen.
-        Die Knotenregel und die Maschenregel sind hier äquivalent anzuwenden. Der bereits vorgestellte Beispielknoten 
-        und die Beispielmasche werden in der Abbildung \ref{BildKnotenMaschenKomplex} mit komplexen Wechselgrößen noch 
-        einmal dargestellt. Hieraus resultiert die Ausformulierung der folgenden Gleichung \ref{KnotenregelKomplex} als 
+        Die Knotenregel und die Maschenregel sind hier äquivalent anzuwenden. Der bereits vorgestellte Beispielknoten
+        und die Beispielmasche werden in der Abbildung \ref{BildKnotenMaschenKomplex} mit komplexen Wechselgrößen noch
+        einmal dargestellt. Hieraus resultiert die Ausformulierung der folgenden Gleichung \ref{KnotenregelKomplex} als
         Beispiel der komplexen Knotenregel:
-        
+
         \begin{eq}
-            \sum_{k = 1}^{N}{\underline{I}_\mathrm{k}} = 0 = \underline{I}_\mathrm{1} + \underline{I}_\mathrm{2} - 
+            \sum_{k = 1}^{N}{\underline{I}_\mathrm{k}} = 0 = \underline{I}_\mathrm{1} + \underline{I}_\mathrm{2} -
             \underline{I}_\mathrm{3} - \underline{I}_\mathrm{4} - \underline{I}_\mathrm{5}    \label{KnotenregelKomplex}
         \end{eq}
-        
+
         Sowie die Gleichung \ref{MaschengleichungKomplex} als Beispiel der komplexen Maschenregel:
-        
+
         \begin{eq}
             \sum_\mathrm{k = 1}^{N}{\underline{U}_\mathrm{k}} = \underline{U}_\mathrm{Z2} - \underline{U}_\mathrm{Z1}
             = 0  \label{MaschengleichungKomplex}
         \end{eq}
-        
-        Hier ist im Gegensatz zur Gleichstrombetrachtung, wo ausschließlich mit reellen Werten gerechnet wird, lediglich 
-        darauf zu achten, dass mit komplexen Wechselgrößen gearbeitet wird. 
+
+        Hier ist im Gegensatz zur Gleichstrombetrachtung, wo ausschließlich mit reellen Werten gerechnet wird, lediglich
+        darauf zu achten, dass mit komplexen Wechselgrößen gearbeitet wird.
     }
-    
+
     \b{
         Wie bei der Betrachtung von Gleichstromnetzwerken gelten die Grundgesetze zur Analyse von Wechselstromnetzen.\\
         \begin{itemize}
             \item<2-> Knotenregel:
                   \begin{eq}
-                      \sum_{k = 1}^{N}{\underline{I}_\mathrm{k}} = 0 = \underline{I}_\mathrm{1} + \underline{I}_\mathrm{2} - 
+                      \sum_{k = 1}^{N}{\underline{I}_\mathrm{k}} = 0 = \underline{I}_\mathrm{1} + \underline{I}_\mathrm{2} -
                       \underline{I}_\mathrm{3} - \underline{I}_\mathrm{4} - \underline{I}_\mathrm{5}   \nonumber
                   \end{eq}
             \item<3-> Maschenregel:
@@ -1000,32 +1001,32 @@
                   \end{eq}
         \end{itemize}
     }
-    
+
     \fu{
         \resizebox{0.7\textwidth}{!}{
             \input{Tikz/src/Komplexe_Wechselstromrechnung/Knoten_und_Maschenregel}\alttext{Das Bild besteht aus zwei Teilen. Links ist ein Knoten dargestellt, in den mehrere Ströme hinein- und herausfließen, beschriftet mit I₁ bis I₅. Rechts ist eine elektrische Schaltung mit einer Wechselspannungsquelle und zwei parallelen Impedanzen Z₁ und Z₂ gezeigt. Die Ströme durch die Zweige sowie die Spannungen über den Impedanzen sind markiert, und ein Pfeil kennzeichnet eine Masche zur Anwendung der Kirchhoffschen Regeln.}
         }
     }{{\bf Knotenregel und Maschenregel mit komplexen Wechselgrößen.} Die Knotenregel und die Maschenregel verhalten sich
         mit komplexen Wechselgrößen identisch wie bei Gleichstromnetzwerken. \label{BildKnotenMaschenKomplex}}
-    
+
     \speech{WechselKnotMasch}{1}{Die Grundsetzlichen Regel zur Maschenanalyse und Knotenanalyse gelten wie auch bei der Betrachtung von Gleichstromnetzwerken.
-    Hierunter fallen im Besonderen die Knotenregel und die Maschenregel.}  
+    Hierunter fallen im Besonderen die Knotenregel und die Maschenregel.}
     \speech{WechselKnotMasch}{2}{Die Knotenregel wird hier mit einem Beispielknoten und Dazugehörigen Beschreibung dargestellt.
-    Die Summe der Komplexen Ströme ist gleich Null. .}  
+    Die Summe der Komplexen Ströme ist gleich Null. .}
     \speech{WechselKnotMasch}{3}{Ebenso verhält es sich mit der Maschenregel und komplexen Größen.
-    Die Summe der komplexen Teilspannung in einem MAschenumlauf ist gleich Null. .}   
+    Die Summe der komplexen Teilspannung in einem MAschenumlauf ist gleich Null. .}
 \end{frame}
 
 \begin{frame}
     \ftx{Komplexer Spannungsteiler}
-    
+
     \s{
-        Der komplexe Spannungsteiler dient der Reduzierung einer Gesamtspannung z.B. der Anpassung eines Signalpegels an dem 
-        Eingangsspannungsbereich einer Messschaltung. In der Abbildung \ref{BildKomplxSpannungsteiler1} wird ein komplexer 
+        Der komplexe Spannungsteiler dient der Reduzierung einer Gesamtspannung z.B. der Anpassung eines Signalpegels an dem
+        Eingangsspannungsbereich einer Messschaltung. In der Abbildung \ref{BildKomplxSpannungsteiler1} wird ein komplexer
         Spannungsteiler aus zwei komplexen Impedanzen dargestellt. Die komplexe Gesamtspannung $\underline{U}_\mathrm{0}$
-        wird über die beiden Impedanzen $\underline{Z}_\mathrm{1}$ und $\underline{Z}_\mathrm{2}$ in die Teilspannungen 
-        $\underline{U}_\mathrm{1}$ und $\underline{U}_\mathrm{2}$ aufgeteilt.  
-        
+        wird über die beiden Impedanzen $\underline{Z}_\mathrm{1}$ und $\underline{Z}_\mathrm{2}$ in die Teilspannungen
+        $\underline{U}_\mathrm{1}$ und $\underline{U}_\mathrm{2}$ aufgeteilt.
+
         \fu{
             \resizebox{0.3\textwidth}{!}{
                 \input{Tikz/src/Komplexe_Wechselstromrechnung/Komplexer_Spannungsteiler}\alttext{Das Bild zeigt eine elektrische Schaltung mit einer angelegten Spannung U₀ über zwei in Reihe geschalteten Impedanzen Z₁ und Z₂. Durch die Reihenschaltung fließt ein Strom I von oben nach unten. Die Teilspannungen U₁ über Z₁ und U₂ über Z₂ sind jeweils eingezeichnet. Die Grafik veranschaulicht einen Impedanz-Spannungsteiler.}
@@ -1033,33 +1034,33 @@
         }{{\bf Ein komplexer Spannungsteiler bestehend aus zwei Impedanzen in Serie.} Die komplexe Gesamtspannung
             $\underline{U}_\mathrm{0}$ wird in die Teilspannungen $\underline{U}_\mathrm{1}$ und $\underline{U}_\mathrm{2}$
             aufgeteilt. \label{BildKomplxSpannungsteiler1}}
-        
+
         Die Gesamtspannung teilt sich im Verhältnis der komplexen Impedanzen auf (vgl. Gleichung \ref{GleichungTeiler1}). Basierend
         auf dem komplexen Strom $\underline{I}$, welcher die gesamte Serienschaltung durchströmt, lassen sich die komplexen Teilspannungen
-        $\underline{U}_\mathrm{1}$ und $\underline{U}_\mathrm{2}$ und ihre komplexen Impedanzen $\underline{Z}_\mathrm{1}$ und 
-        $\underline{Z}_\mathrm{2}$ im Verhältnis zu der komplexen Gesamtspannung $\underline{U}_\mathrm{0}$ und der gesamten komplexen 
-        Impedanz $\underline{Z}_\mathrm{1} + \underline{Z}_\mathrm{2}$ bestimmen. 
-        
+        $\underline{U}_\mathrm{1}$ und $\underline{U}_\mathrm{2}$ und ihre komplexen Impedanzen $\underline{Z}_\mathrm{1}$ und
+        $\underline{Z}_\mathrm{2}$ im Verhältnis zu der komplexen Gesamtspannung $\underline{U}_\mathrm{0}$ und der gesamten komplexen
+        Impedanz $\underline{Z}_\mathrm{1} + \underline{Z}_\mathrm{2}$ bestimmen.
+
         \begin{eq}
             \underline{I} = \frac{\underline{U}_\mathrm{0}}{\underline{Z}_\mathrm{1} + \underline{Z}_\mathrm{2}}
             = \frac{\underline{U}_\mathrm{1}}{\underline{Z}_\mathrm{1}}
             = \frac{\underline{U}_\mathrm{2}}{\underline{Z}_\mathrm{2}}     \label{GleichungTeiler1}
         \end{eq}
-        
-        Durch das Umstellen der Gleichung \ref{GleichungTeiler1} kann das komplexe Teilverhältnis $\underline{T}$ für die Gleichung 
-        \ref{GleichungTeiler2} aufgestellt werden: 
-        
+
+        Durch das Umstellen der Gleichung \ref{GleichungTeiler1} kann das komplexe Teilverhältnis $\underline{T}$ für die Gleichung
+        \ref{GleichungTeiler2} aufgestellt werden:
+
         \begin{eq}
             \underline{T} = \frac{\underline{U}_\mathrm{2}}{\underline{U}_\mathrm{0}}
             = \frac{\underline{Z}_\mathrm{2}}{\underline{Z}_\mathrm{1} + \underline{Z}_\mathrm{2}}    \label{GleichungTeiler2}
         \end{eq}
-        
-        Hier entspricht das Verhältnis aus der komplexen Teilspannung $\underline{U}_\mathrm{2}$ und der komplexen Gesamtspannung 
-        $\underline{U}_\mathrm{0}$ dem Verhältnis aus der komplexen Impedanz $\underline{Z}_\mathrm{2}$ und der gesamten komplexen 
-        Impedanz der Serienschaltung $\underline{Z}_\mathrm{1} + \underline{Z}_\mathrm{2}$. 
+
+        Hier entspricht das Verhältnis aus der komplexen Teilspannung $\underline{U}_\mathrm{2}$ und der komplexen Gesamtspannung
+        $\underline{U}_\mathrm{0}$ dem Verhältnis aus der komplexen Impedanz $\underline{Z}_\mathrm{2}$ und der gesamten komplexen
+        Impedanz der Serienschaltung $\underline{Z}_\mathrm{1} + \underline{Z}_\mathrm{2}$.
         Das Aufstellen des komplexen Teilverhältnises funktioniert in gleicher Weise für die komplexe Teilspannung $\underline{U}_\mathrm{1}$.
     }
-    
+
     \b{
         \begin{minipage}[t]{0.4\textwidth}
             \fu{
@@ -1075,9 +1076,9 @@
                         \draw[-latex, thick, draw=voltage] (3,3.8) to node[right, color=voltage] {$\underline{U}_\mathrm{1}$} (3,2.2);
                         \draw[-latex, thick, draw=voltage] (3,1.8) to node[right, color=voltage] {$\underline{U}_\mathrm{2}$} (3,0.2);
                         \pause
-                        
+
                         \draw (0,4) to [short, i, name=I, o-] (1.5,4);
-                        \iarrmore{I}{$\underline{I}$};     
+                        \iarrmore{I}{$\underline{I}$};
                     \end{circuitikz}
                 }
             }{}
@@ -1108,7 +1109,7 @@
     Der Gesamtstrom lässt sich aus dem Verhältnis der Eingangsspannung und der Summe der Impedanzen berechnen.
     Gemäß der Knotenregel muss in der Reihenschaltung der komplexe Strom überall gleich sein.
     So lässt sich der komplexe Strom auch über die Verhältnisse der Teilspannungen und den zugehörigen Impedanzen bestimmen.}
-    \speech{WechselSpannungsteiler}{3}{Um das komplexe Teilerverhältnis Tee zu bestimmen, 
+    \speech{WechselSpannungsteiler}{3}{Um das komplexe Teilerverhältnis Tee zu bestimmen,
     wird das Verhältnis einer Teilspannung zur Gesamtspannung gebildet.
     Außerdem lässt sich das Teilerverhältnis über die Impedanzen bestimmen.
     Beispielsweise wie hier das Verhältnis aus Zett zwei zur Summe der Impedanzen angezeigt.}
@@ -1117,27 +1118,27 @@
 
 \begin{frame}
     \ftx{Komplexer Spannungsteiler: Anwendungsbeispiel Hochspannungstechnik}
-    
+
     \s{
-        Der komplexe Spannungsteiler findet beispielsweise im ohmsch-kapazitiven Teiler in der Hochspannungstechnik Anwendung. 
-        In der Abbildung \ref{BildKomplxSpannungsteiler2} werden vier verschiedene Teiler dargestellt, welche beispielsweise in 
-        der Hochspannungstechnik verwendet werden. 
-        
+        Der komplexe Spannungsteiler findet beispielsweise im ohmsch-kapazitiven Teiler in der Hochspannungstechnik Anwendung.
+        In der Abbildung \ref{BildKomplxSpannungsteiler2} werden vier verschiedene Teiler dargestellt, welche beispielsweise in
+        der Hochspannungstechnik verwendet werden.
+
         \fu{
             \resizebox{0.5\textwidth}{!}{
                 \input{Tikz/src/Komplexe_Wechselstromrechnung/Gegenueberstellung_Teiler_Hochspannung}\alttext{Das Bild zeigt vier verschiedene Spannungsteiler-Schaltungen nebeneinander. Dargestellt sind ein ohmscher Teiler, ein ohmsch-kapazitiver Teiler, ein kapazitiver Teiler und ein gedämpft kapazitiver Teiler. Jede Schaltung besteht aus mehreren in Reihe angeordneten Bauelementen mit markierter Eingangsspannung U₀. Die Grafik vergleicht unterschiedliche Teilerarten und ihre Bauteilkombinationen.}
             }
         }{{\bf Gegenüberstellung von verschiedenen Teilern der Hochspannungstechnik.} Ohmscher Teiler zur Verwendung mit Gleichspannung und
-            der kapazitive Teiler und der gedämpft kapazitive Teiler zur Verwendung mit Wechselspannung. Der ohmsch-kapazitive Teiler ist für 
+            der kapazitive Teiler und der gedämpft kapazitive Teiler zur Verwendung mit Wechselspannung. Der ohmsch-kapazitive Teiler ist für
             beide Spannungsarten verwendbar. \label{BildKomplxSpannungsteiler2}}
-        
-        Neben dem ohmsch-kapazitiven Teiler werden noch der ohmsche Teiler, der 
-        kapazitive Teiler und der gedämpft kapazitive Teiler vorgestellt. Der ohmsche Teiler besteht rein aus ohmschen Widerständen, 
-        welche seriell verschaltet sind und der kapazitive Teiler besteht rein aus Kondensatoren. Der gedämpft kapazitive Teiler 
-        besteht aus mehreren Modulen mit einer vorgeschalteten Spule. Die Module setzten sich aus Reihenschaltungen aus einem 
-        ohmschen Widerstand und einem Kondensator zusammensetzten.  
+
+        Neben dem ohmsch-kapazitiven Teiler werden noch der ohmsche Teiler, der
+        kapazitive Teiler und der gedämpft kapazitive Teiler vorgestellt. Der ohmsche Teiler besteht rein aus ohmschen Widerständen,
+        welche seriell verschaltet sind und der kapazitive Teiler besteht rein aus Kondensatoren. Der gedämpft kapazitive Teiler
+        besteht aus mehreren Modulen mit einer vorgeschalteten Spule. Die Module setzten sich aus Reihenschaltungen aus einem
+        ohmschen Widerstand und einem Kondensator zusammensetzten.
     }
-    
+
     \b{
         \begin{minipage}[t]{0.55\textwidth}
             \fu{
@@ -1151,7 +1152,7 @@
                         \draw[-latex, thick, draw=voltage] (2,1.8) to node[right, color=voltage] {$\underline{U}_\mathrm{A}$} (2,0.2);
                         \draw (1,0) node [label=below:Ohmscher Teiler]{};
                         \pause
-                        
+
                         \draw (4,10) to [short, o-*] (5,10)
                         to [R] (5,8) to [R] (5,6) to [R] (5,4) to [R] (5,2) to [R] (5,0)
                         (5,10) to [short] (6,10)
@@ -1165,7 +1166,7 @@
                         \draw[-latex, thick, draw=voltage] (7,1.8) to node[right, color=voltage] {$\underline{U}_\mathrm{A}$} (7,0.2);
                         \draw (5.5,0) node [label=below:Ohmsch-kapazitiver Teiler]{};
                         \pause
-                        
+
                         \draw (9,10) to [short, o-] (10,10)
                         to [C] (10,8) to [C] (10,6) to [C] (10,4) to [C] (10,2) to [C] (10,0)
                         (10,2) to [short, *-o] (11,2)
@@ -1174,10 +1175,10 @@
                         \draw[-latex, thick, draw=voltage] (11,1.8) to node[right, color=voltage] {$\underline{U}_\mathrm{A}$} (11,0.2);
                         \draw (10,0) node [label=below:Kapazitiver Teiler]{};
                         \pause
-                        
+
                         \draw (13,10) to [short, o-] (13.5,10) to [L] (14.5,10) to [short] (15,10)
                         to [R] (15,8.6) to [C] (15,8) to [R] (15,6.6) to [C] (15,6) to [R] (15,4.6) to [C] (15,4) to [R] (15,2.6) to [C] (15,2) to [R] (15,0.6) to [C] (15,0)
-                        (15,2) to [short, *-o] (16,2) 
+                        (15,2) to [short, *-o] (16,2)
                         (13,0) to [short, o-*] (15,0) to [short, -o] (16,0);
                         \draw[-latex, thick, draw=voltage] (13,9.8) to node[left, color=voltage] {$\underline{U}_\mathrm{E}$} (13,0.2);
                         \draw[-latex, thick, draw=voltage] (16,1.8) to node[right, color=voltage] {$\underline{U}_\mathrm{A}$} (16,0.2);
@@ -1198,8 +1199,8 @@
 
     \speech{WechselSpannungsteilerHochsp}{1}{Ein Anwendungsfall eines komplexen Spannungsteiler findet man in der Hochspannungstechnik.
     Hier wird zwischen verschiedenen Arten von Spannungsteilern unterschieden.
-    Zu sehen ist ein Ohmscher Spannungsteiler. 
-    Wie gerade erklärt, setzt sich der Ohmsche Spannungsteiler durch eine Reihe von Impedanzen zusammen 
+    Zu sehen ist ein Ohmscher Spannungsteiler.
+    Wie gerade erklärt, setzt sich der Ohmsche Spannungsteiler durch eine Reihe von Impedanzen zusammen
     und ist vor allem für den Einsatz bei großen Gleichspannungen geeignet.}
     \speech{WechselSpannungsteilerHochsp}{2}{Der Ohmsch Kapazitive Spannungsteiler besteht aus einer Reihe von Er Zeh Gliedern.
     Diese Art von Spannungsteiler kann sowohl für Gleichspannungen als auch für Wechselspannungen verwendet werden.}
@@ -1209,36 +1210,36 @@
 
 \begin{frame}
     \ftx{Komplexer Spannungsteiler}
-    
+
     \s{
         Das Einfache Beispiel eines solchen ohmsch-kapazitiven Teilers
-        wird in der Abbildung \ref{BildKomplxSpannungsteiler3} gezeigt. Der ohmsch-kapazitive Teiler setzt sich aus mindestens zwei 
-        in serie geschlateten Parallelschaltungen aus einem ohmschen Widerstand und einem Kondensator, einem sogennanten RC-Glied 
-        zusammen. In der Abbildung \ref{BildKomplxSpannungsteiler3} besteht das erste RC-Glied aus dem Widerstand $R_1$ und dem 
-        Kondensator $C_1$. Das zweite RC-Glied besteht aus dem Widerstand $R_2$ und Kondensator $C_2$. Die komplexe Gesamtspannung 
-        $\underline{U}_\mathrm{0}$ liegt über beide RC-Glieder an. Die komplexe Teilspannung $\underline{U}_\mathrm{2}$ liegt über 
-        dem zweiten RC-Glied an. Das Teilverhältnis hat somit ohmsche und kapazitive Anteile. So liegt durch die Kapazität des 
-        Kondensators ein frequenzabhängiges Teilverhältnis vor. 
-        
+        wird in der Abbildung \ref{BildKomplxSpannungsteiler3} gezeigt. Der ohmsch-kapazitive Teiler setzt sich aus mindestens zwei
+        in serie geschlateten Parallelschaltungen aus einem ohmschen Widerstand und einem Kondensator, einem sogennanten RC-Glied
+        zusammen. In der Abbildung \ref{BildKomplxSpannungsteiler3} besteht das erste RC-Glied aus dem Widerstand $R_1$ und dem
+        Kondensator $C_1$. Das zweite RC-Glied besteht aus dem Widerstand $R_2$ und Kondensator $C_2$. Die komplexe Gesamtspannung
+        $\underline{U}_\mathrm{0}$ liegt über beide RC-Glieder an. Die komplexe Teilspannung $\underline{U}_\mathrm{2}$ liegt über
+        dem zweiten RC-Glied an. Das Teilverhältnis hat somit ohmsche und kapazitive Anteile. So liegt durch die Kapazität des
+        Kondensators ein frequenzabhängiges Teilverhältnis vor.
+
         \fu{
             \resizebox{0.3\textwidth}{!}{
                 \input{Tikz/src/Komplexe_Wechselstromrechnung/Spannungsteiler_ohmsch-kapazitiv}\alttext{Das Bild zeigt einen ohmsch-kapazitiven Spannungsteiler. Zwei Widerstände R₁ und R₂ sind jeweils parallel zu den Kondensatoren C₁ und C₂ geschaltet und bilden eine Reihenschaltung. Die Eingangsspannung U₀ liegt über der gesamten Schaltung an. Die Ausgangsspannung U₂ wird am unteren Teil des Teilers abgegriffen.}
             }
         }{{\bf Ein ohmsch-kapazitiver Spannungsteiler aus zwei RC-Gliedern.} Die RC-Glieder bestehen jeweils aus einer Parallelschaltung
             eines Widerstandes und eines Kondensators. \label{BildKomplxSpannungsteiler3}}
-        
-        Ein besonderer Zustand liegt vor, wenn der komplexe Spannungsteiler abgeglichen ist. Dieser Zustand beschreibt das identische 
-        Verhältnis der Bauteile zueinander. Dieser Zustand wird durch die Gleichung \ref{GleichungTeiler3} beschrieben. Hier 
-        muss das Produkt aus dem Widerstand $R_1$ und dem Kondensator $C_1$ identisch mit dem Produkt aus dem Widerstand $R_2$ und dem 
-        Kondensator $C_2$ sein. Diese Abgleichbedingung lässt sich in der Praxis durch veränderliche Bauteile, wie Trimmkondensatoren, 
-        realisieren. 
-        
+
+        Ein besonderer Zustand liegt vor, wenn der komplexe Spannungsteiler abgeglichen ist. Dieser Zustand beschreibt das identische
+        Verhältnis der Bauteile zueinander. Dieser Zustand wird durch die Gleichung \ref{GleichungTeiler3} beschrieben. Hier
+        muss das Produkt aus dem Widerstand $R_1$ und dem Kondensator $C_1$ identisch mit dem Produkt aus dem Widerstand $R_2$ und dem
+        Kondensator $C_2$ sein. Diese Abgleichbedingung lässt sich in der Praxis durch veränderliche Bauteile, wie Trimmkondensatoren,
+        realisieren.
+
         \begin{eq}
             R_1 \cdot C_1 = R_2 \cdot C_2   \label{GleichungTeiler3}
         \end{eq}
-        
+
     }
-    
+
     \b{
         \begin{minipage}[t]{0.4\textwidth}
             \fu{
@@ -1272,7 +1273,7 @@
                 \item<4-> Das Teilerverhältnis wird nur im Ausnahmefall
                       unabhängig von der Frequenz!
                       \begin{eq}
-                          R_1 \cdot C_1 = R_2 \cdot C_2   \nonumber    
+                          R_1 \cdot C_1 = R_2 \cdot C_2   \nonumber
                       \end{eq}
             \end{itemize}
         \end{minipage}
@@ -1288,40 +1289,40 @@
 
 \begin{frame}
     \ftx{Komplexer Spannungsteiler: Anwendungsbeispiel Tastkopf}
-    
+
     \s{
         Ein weiteres Anwedungsbeispiel für einen ohmsch-kapazitiven Teiler ist der Tastkopf eines Oszilloskops. Solch ein
-        Teiler wird in der Abbildung \ref{BildKomplxSpannungsteiler4} vorgestellt. Im Prinzip unterscheid sich das Bild 
-        nicht erheblich vom ohmsch-kapazitiven Teiler. Jedoch sind hier das erste und das zweite RC-Glied von einander 
-        räumlich getrennt und mit einem Gehäuse umgeben. So steht das erste RC-Glied für den Tastkopf und das zweite 
+        Teiler wird in der Abbildung \ref{BildKomplxSpannungsteiler4} vorgestellt. Im Prinzip unterscheid sich das Bild
+        nicht erheblich vom ohmsch-kapazitiven Teiler. Jedoch sind hier das erste und das zweite RC-Glied von einander
+        räumlich getrennt und mit einem Gehäuse umgeben. So steht das erste RC-Glied für den Tastkopf und das zweite
         RC-Glied für die beschaltung im Oszilloskop. Mit dem ohmsches Teilverhältnis:
         \begin{eq}
             \frac{\underline{U}_\mathrm{A}}{\underline{U}_\mathrm{E}} = \frac{R_\mathrm{2}}{R_\mathrm{1}+R_\mathrm{2}}
         \end{eq}
-        
+
         und dem kapazitiven Teilverhältnis:
         \begin{eq}
             \frac{\underline{U}_\mathrm{A}}{\underline{U}_\mathrm{E}} = \frac{C_\mathrm{2}}{C_\mathrm{1}+C_\mathrm{2}}
         \end{eq}
-        
-        kann zum Abgleichen des Tastkopfes das ohmsche und das kapazitive Teilerverhältnis gleichgesetzt werden, da die 
+
+        kann zum Abgleichen des Tastkopfes das ohmsche und das kapazitive Teilerverhältnis gleichgesetzt werden, da die
         Teilerverhältniss identisch sein müssen:
         \begin{eq}
             \frac{R_\mathrm{2}}{R_\mathrm{1}+R_\mathrm{2}} = \frac{C_\mathrm{2}}{C_\mathrm{1}+C_\mathrm{2}}
         \end{eq}
-        
+
         Die Abgleichbedingung nach Gleichung \ref{GleichungTeiler3} gilt weiterhin. Über die verstellbare Kapazität $C_1$
-        wird der Abgleich des Teilers vorgenommen. 
-        
+        wird der Abgleich des Teilers vorgenommen.
+
         \fu{
             \resizebox{0.3\textwidth}{!}{
                \input{Tikz/src/Komplexe_Wechselstromrechnung/Spannungsteiler_ohmsch-kapazitiv2}\alttext{Das Bild zeigt einen ohmsch-kapazitiven Spannungsteiler mit angeschlossenem Tastkopf und Oszilloskop. Der obere Teil mit R₁ und C₁ ist als Tastkopf markiert, der untere Teil mit R₂ und C₂ als Oszilloskop-Eingang. Die Eingangsspannung U₀ liegt über der gesamten Schaltung an. Die gemessene Ausgangsspannung U_A wird am Oszilloskop abgegriffen.}
             }
         }{{\bf Ein ohmsch-kapazitiver Spannungsteiler als Tastkopf eines Oszilloskops.} Über den Kondensator $C_1$ wird der komplexe
             Spannungsteiler abgeglichen. \label{BildKomplxSpannungsteiler4}}
-        
+
     }
-    
+
     \b{
         \begin{minipage}[t]{0.5\textwidth}
             \fu{
@@ -1342,10 +1343,10 @@
                         (3.25,2.5) to [C=$C_\mathrm{2}$] (3.25,0.5);
                         \draw[-latex, thick, draw=voltage] (0,5.8) to node[left, color=voltage] {$\underline{U}_\mathrm{E}$} (0,0.2);
                         \draw[-latex, thick, draw=voltage] (4.5,2.8) to node[right, color=voltage] {$\underline{U}_\mathrm{A}$} (4.5,0.2);
-                        
+
                         \draw [dashed] (0.5,5.75) rectangle (4.25,3.25);
                         \draw (3.25,5.5) node [label=above:Tastkopf]{};
-                        
+
                         \draw [dashed] (0.5,2.75) rectangle (4.25,0.25);
                         \draw (1.25,2.5) node [label=above:Oszilloskop]{};
                     \end{circuitikz}
@@ -1356,24 +1357,24 @@
             \begin{itemize}
                 \item<1-> Ohmsches Teilverhältnis:
                       \begin{eq}
-                          \frac{\underline{U}_\mathrm{A}}{\underline{U}_\mathrm{E}} = \frac{R_\mathrm{2}}{R_\mathrm{1}+R_\mathrm{2}}   \nonumber    
+                          \frac{\underline{U}_\mathrm{A}}{\underline{U}_\mathrm{E}} = \frac{R_\mathrm{2}}{R_\mathrm{1}+R_\mathrm{2}}   \nonumber
                       \end{eq}
                 \item<2-> Kapazitives Teilverhältnis:
                       \begin{eq}
-                          \frac{\underline{U}_\mathrm{A}}{\underline{U}_\mathrm{E}} = \frac{C_\mathrm{2}}{C_\mathrm{1}+C_\mathrm{2}}   \nonumber  
+                          \frac{\underline{U}_\mathrm{A}}{\underline{U}_\mathrm{E}} = \frac{C_\mathrm{2}}{C_\mathrm{1}+C_\mathrm{2}}   \nonumber
                       \end{eq}
                 \item<3-> Gleichsetzung von ohmschen und kapazitiven Teilverhältnis:
                       \begin{eq}
-                          \frac{R_\mathrm{2}}{R_\mathrm{1}+R_\mathrm{2}} = \frac{C_\mathrm{2}}{C_\mathrm{1}+C_\mathrm{2}}   \nonumber    
+                          \frac{R_\mathrm{2}}{R_\mathrm{1}+R_\mathrm{2}} = \frac{C_\mathrm{2}}{C_\mathrm{1}+C_\mathrm{2}}   \nonumber
                       \end{eq}
                 \item<4-> Abgleichbedingung:
                       \begin{eq}
-                          R_2 \cdot C_2 = R_1 \cdot C_1   \nonumber    
+                          R_2 \cdot C_2 = R_1 \cdot C_1   \nonumber
                       \end{eq}
             \end{itemize}
         \end{minipage}
     }
-    
+
     \speech{WechselSpannungsteilerTastk}{1}{Neben der Hochspannungstechnik,
     kommen komplexe Spannungsteiler auch beispielsweise in Tastköpfen für Oszilloskope zum Einsatz.
     Das vereinfachte Ersatzschaltbild des Aufbaus wird hier mit der Unterteilung eines Spannungsteilers in Tastkopf und Oszilloskop dargestellt.
@@ -1387,41 +1388,41 @@
 
 \begin{frame}
     \ftx{Komplexer Stromteiler}
-    
+
     \s{
-        Der komplexe Stromteiler, wie er in der Abbildung \ref{BildKomplxStromteiler} vorgestellt wird, teilt den komplexen 
+        Der komplexe Stromteiler, wie er in der Abbildung \ref{BildKomplxStromteiler} vorgestellt wird, teilt den komplexen
         Gesamtstrom $\underline{I}$ auf in die Teilströme $\underline{I}_\mathrm{1}$ und $\underline{I}_\mathrm{2}$ auf. Die beiden
         Teilströme $\underline{I}_\mathrm{1}$ und $\underline{I}_\mathrm{2}$ durchfließen die Admittanzen $\underline{Y}_\mathrm{1}$
         und $\underline{Y}_\mathrm{2}$.
-        
+
         \fu{
             \resizebox{0.3\textwidth}{!}{
                 \input{Tikz/src/Komplexe_Wechselstromrechnung/Stromteiler_komplex}\alttext{Das Bild zeigt eine Parallelschaltung aus zwei Admittanzen Y₁ und Y₂. Der Gesamtstrom I₀ teilt sich am oberen Knoten in die Teilströme I₁ und I₂ auf. Beide Zweige liegen an derselben Spannung U. Die Grafik veranschaulicht die Stromaufteilung in einer Parallelschaltung.}
             }
         }{{\bf Ein komplexer Stromteiler bestehend aus zwei Admittanzen.} Der komplexe Strom $\underline{I}$ teilt sich
             auf in die Ströme $\underline{I}_\mathrm{1}$ und $\underline{I}_\mathrm{2}$. \label{BildKomplxStromteiler}}
-        
-        Die komplexe Spannung $\underline{U}$ lässt sich nach Gleichung \ref{GleichungStromteiler1} über das Verhältnis aus 
-        dem Gesamtstrom $\underline{I}$ und der Gesamtadmittanz $\underline{Y}_\mathrm{1} + \underline{Y}_\mathrm{2}$ oder 
+
+        Die komplexe Spannung $\underline{U}$ lässt sich nach Gleichung \ref{GleichungStromteiler1} über das Verhältnis aus
+        dem Gesamtstrom $\underline{I}$ und der Gesamtadmittanz $\underline{Y}_\mathrm{1} + \underline{Y}_\mathrm{2}$ oder
         aus den Verhältnissen der einzelnen Stromzweige:
-        
+
         \begin{eq}
-            \underline{U} = \frac{\underline{I}_\mathrm{0}}{\underline{Y}_\mathrm{1}+\underline{Y}_\mathrm{2}} = 
-            \frac{\underline{I}_\mathrm{1}}{\underline{Y}_\mathrm{1}} = 
+            \underline{U} = \frac{\underline{I}_\mathrm{0}}{\underline{Y}_\mathrm{1}+\underline{Y}_\mathrm{2}} =
+            \frac{\underline{I}_\mathrm{1}}{\underline{Y}_\mathrm{1}} =
             \frac{\underline{I}_\mathrm{2}}{\underline{Y}_\mathrm{2}}   \label{GleichungStromteiler1}
         \end{eq}
-        
-        Das Teilerverhältnis lässt sich nach Gleichung \ref{GleichungStromteiler2} für die beiden Stromzweige definieren: 
-        
+
+        Das Teilerverhältnis lässt sich nach Gleichung \ref{GleichungStromteiler2} für die beiden Stromzweige definieren:
+
         \begin{eqa}
-            \underline{T}_\mathrm{i1} = \frac{\underline{I}_\mathrm{1}}{\underline{I}_\mathrm{0}} = 
-            \frac{\underline{Y}_\mathrm{1}}{\underline{Y}_\mathrm{1}+\underline{Y}_\mathrm{2}}  \label{GleichungStromteiler2}  \\ 
-            \underline{T}_\mathrm{i2} = \frac{\underline{I}_\mathrm{2}}{\underline{I}_\mathrm{0}} = 
+            \underline{T}_\mathrm{i1} = \frac{\underline{I}_\mathrm{1}}{\underline{I}_\mathrm{0}} =
+            \frac{\underline{Y}_\mathrm{1}}{\underline{Y}_\mathrm{1}+\underline{Y}_\mathrm{2}}  \label{GleichungStromteiler2}  \\
+            \underline{T}_\mathrm{i2} = \frac{\underline{I}_\mathrm{2}}{\underline{I}_\mathrm{0}} =
             \frac{\underline{Y}_\mathrm{2}}{\underline{Y}_\mathrm{1}+\underline{Y}_\mathrm{2}} \label{GleichungStromteiler3}
         \end{eqa}
-        
+
     }
-    
+
     \b{
         \begin{minipage}[t]{0.4\textwidth}
             \fu{
@@ -1429,17 +1430,17 @@
                     \begin{circuitikz}
                         \draw (0,0) to [short, o-] (2.25,0)
                         to [short, -*] (2.25,0.5)
-                        (1.25,0.5) to [short] (3.25,0.5) 
+                        (1.25,0.5) to [short] (3.25,0.5)
                         (1.25,0.5) to [R=$\underline{Y}_\mathrm{1}$, i_<, name=I1] (1.25,3.5)
                         (3.25,0.5) to [R=$\underline{Y}_\mathrm{2}$, i_<, name=I2] (3.25,3.5)
                         (1.25,3.5) to [short] (3.25,3.5)
                         (2.25,3.5) to [short, *-] (2.25,4)
                         (0,4) to [short, i, name=I, o-] (2.25,4);
                         \draw[-latex, thick, draw=voltage] (4,3.3) to node[right, color=voltage] {$\underline{U}$} (4,0.7);
-                        
-                        \iarrmore{I}{$\underline{I}_\mathrm{0}$}; 
+
+                        \iarrmore{I}{$\underline{I}_\mathrm{0}$};
                         \iarrmore{I1}{$\underline{I}_\mathrm{1}$};
-                        \iarrmore{I2}{$\underline{I}_\mathrm{2}$};  
+                        \iarrmore{I2}{$\underline{I}_\mathrm{2}$};
                     \end{circuitikz}
                 }
             }{}
@@ -1448,21 +1449,21 @@
             \begin{itemize}
                 \item<1-> Der Gesamtstrom teilt sich im Verhältnis der komplexen Admittanzen auf:
                       \begin{eq}
-                          \underline{U} = \frac{\underline{I}_\mathrm{0}}{\underline{Y}_\mathrm{1}+\underline{Y}_\mathrm{2}} = 
-                          \frac{\underline{I}_\mathrm{1}}{\underline{Y}_\mathrm{1}} = 
-                          \frac{\underline{I}_\mathrm{2}}{\underline{Y}_\mathrm{2}}   \nonumber    
+                          \underline{U} = \frac{\underline{I}_\mathrm{0}}{\underline{Y}_\mathrm{1}+\underline{Y}_\mathrm{2}} =
+                          \frac{\underline{I}_\mathrm{1}}{\underline{Y}_\mathrm{1}} =
+                          \frac{\underline{I}_\mathrm{2}}{\underline{Y}_\mathrm{2}}   \nonumber
                       \end{eq}
                 \item<2-> Impedanzen anhängig von der Frequenz
                       \begin{eqa}
-                          \underline{T}_\mathrm{i1} = \frac{\underline{I}_\mathrm{1}}{\underline{I}_\mathrm{0}} = 
-                          \frac{\underline{Y}_\mathrm{1}}{\underline{Y}_\mathrm{1}+\underline{Y}_\mathrm{2}}  \\ 
-                          \underline{T}_\mathrm{i2} = \frac{\underline{I}_\mathrm{2}}{\underline{I}_\mathrm{0}} = 
-                          \frac{\underline{Y}_\mathrm{2}}{\underline{Y}_\mathrm{1}+\underline{Y}_\mathrm{2}} \nonumber    
+                          \underline{T}_\mathrm{i1} = \frac{\underline{I}_\mathrm{1}}{\underline{I}_\mathrm{0}} =
+                          \frac{\underline{Y}_\mathrm{1}}{\underline{Y}_\mathrm{1}+\underline{Y}_\mathrm{2}}  \\
+                          \underline{T}_\mathrm{i2} = \frac{\underline{I}_\mathrm{2}}{\underline{I}_\mathrm{0}} =
+                          \frac{\underline{Y}_\mathrm{2}}{\underline{Y}_\mathrm{1}+\underline{Y}_\mathrm{2}} \nonumber
                       \end{eqa}
             \end{itemize}
         \end{minipage}
     }
-    
+
     \speech{WechselStromteiler}{1}{Neben dem komplexen Spannungsteiler gibt es noch den komplexen Stromteiler.
     Er funktioniert ähnlich wie bei der betrachtung von Gleichstromnetzwerken, aber eben mit komplexen Größen.
     Ausschlaggebend sind die Admittanzen.

@@ -1,16 +1,14 @@
-%%%%%%%%%% Leistung %%%%%%%%%%%%%%%%%%5
-
-\section{Die Leistung}
+\section{Die Leistung}\index{Leistung}
 \newvideofile{Leistung}{Leistung}
 \s{
-	Die Leistung gibt an, wie schnell Arbeit verrichtet oder Energie übertragen wird. 
-	Sie wird definiert als eine Menge an Energie, die pro Zeiteinheit umgesetzt wird. 
-	Die SI-Einheit der Leistung ist das Watt (W), wobei ein Watt einem Joule pro Sekunde entspricht. 
+	Die Leistung gibt an, wie schnell Arbeit verrichtet oder Energie übertragen wird.
+	Sie wird definiert als eine Menge an Energie, die pro Zeiteinheit umgesetzt wird.
+	Die SI-Einheit der Leistung ist das Watt (W), wobei ein Watt einem Joule pro Sekunde entspricht.
 	Anders gesagt ist die zuvor beschriebene Arbeit das Integral der Leistung über die Zeit.
 		\begin{equation}
 			W = \int P \cdot \mathrm{d}t
 		\end{equation}
-	
+
 Durch Umstellung der Formel ergibt sich, dass die Leistung $P$ die Änderung der Arbeit über die Zeit ist.
 	\begin{equation}
 			P = \frac{\mathrm{d}W}{\mathrm{d}t} \label{eq:PdWdt}
@@ -24,22 +22,22 @@ Durch Umstellung der Formel ergibt sich, dass die Leistung $P$ die Änderung der
 	\end{itemize}
 Durch Umstellung der Formel ergibt sich, dass die Leistung $P$ die Änderung der Arbeit über die Zeit ist
 \begin{equation*}
-	P = \frac{\mathrm{d}W}{\mathrm{d}t} 
+	P = \frac{\mathrm{d}W}{\mathrm{d}t}
 \end{equation*}\vspace*{0.5cm}
-	
+
 \only<2->{\textbf{Die elektrische Leistung:}\vspace*{0.5cm}
 
 Bei gleichbleibender Arbeit über die Zeit ergibt sich der folgende Ausdruck:
 \begin{equation*}
 	P = \frac{W_\mathrm{{el}}}{t} = \frac{U \cdot I \cdot \colorcancel{\phantom{t}t\phantom{t}}{red}}
-		{\colorcancel{\phantom{t}t\phantom{t}}{red}} = U \cdot I \quad \quad [P] = \text{1 Watt = 1 W} 
+		{\colorcancel{\phantom{t}t\phantom{t}}{red}} = U \cdot I \quad \quad [P] = \text{1 Watt = 1 W}
 \end{equation*}
-		
+
 }}
 \speech{03_Leistung1}{1}{Ein weiterer wichtiger Begriff in der Technik ist die Leistung. Leistung gibt an, wie schnell Arbeit verrichtet oder Energie übertragen wird. Der Zusammenhang zwischen Arbeit und Leistung wird über das Integral der Leistung, über der Zeit gegeben. Dieses Integral ergibt die verrichtete Arbeit bzw. Energie.
 Daraus folgt umgekehrt: Die Leistung ist die zeitliche Ableitung der verrichteten Arbeit.}
 
-\speech{03_Leistung1}{2}{Betrachten wir den Gleichstromfall. Wenn wir davon ausgehen, dass die verrichtete Arbeit zeitlich konstant ist, ergibt sich die elektrische Arbeit als U mal I mal T. Teilen wir diese Arbeit durch die Zeit T, erhalten wir für die elektrische Leistung im Gleichstromfall: 
+\speech{03_Leistung1}{2}{Betrachten wir den Gleichstromfall. Wenn wir davon ausgehen, dass die verrichtete Arbeit zeitlich konstant ist, ergibt sich die elektrische Arbeit als U mal I mal T. Teilen wir diese Arbeit durch die Zeit T, erhalten wir für die elektrische Leistung im Gleichstromfall:
 P ist gleich U mal I. Die Einheit der Leistung ist das Watt was einem Joule pro Sekunde entspricht.}
 
 \end{frame}
@@ -59,32 +57,11 @@ P ist gleich U mal I. Die Einheit der Leistung ist das Watt was einem Joule pro 
 	\subsection{Die verschiedenen Leistungsarten}
 \s{
 	Neben der elektrischen Leistung gibt es noch weitere Leistungsgrößen, welche sich aus den verschiedenen Energieformen ergeben.
-	Ergänzend zu den in Abschnitt \ref{sec:energieformen} erörterten Energieformen, sind in der folgenden Tabelle die entsprechenden Leistungen aufgelistet. 
+	Ergänzend zu den in Abschnitt \ref{sec:energieformen} erörterten Energieformen, sind in der folgenden Tabelle die entsprechenden Leistungen aufgelistet.
 	Dabei wird jeweils die Potentialgröße mit der Flussgröße multipliziert. Die Tabelle gilt nur für Gleichspannung.
 }
 
-	%%%%% Leistungs Tabelle einfach
-	% \begin{table}[H]
 
-	% 	\centering
-	% 	\begin{tabular}{llll} % {|l|l|l|l|} Vier Spalten, alle links ausgerichtet
-	% 	\toprule[1.5pt] % Oberste horizontale Linie, etwas dicker (1.5pt)
-	% 	\textbf{Arten} &\textbf{Potentialgröße} & \textbf{Flussgröße} & \textbf{Formel} \\ % Überschriften für jede Spalte
-	% 	\midrule[1.5pt] % Horizontale Linie unter der Überschrift
-	% 	elektrisch & Spannung (U) & Strom ($I$) & $P_{\text{el}} = U \cdot I$ \\ % Daten für die erste Zeile
-	% 	\midrule % Horizontale Linie
-	% 	translat.& Kraft (F)  & Geschwindigkeit ($v$) &  $P_{\text{tr}} = F \cdot v$ \\ % Daten für die zweite Zeile
-	% 	\midrule % Horizontale Linie
-	% 	rotatorisch & Moment (M)  & Winkelgeschw. ($\omega$) & $P_{\text{rot}} = M \cdot \omega$ \\% Daten für die dritte Zeile
-	% 	\midrule % Horizontale Linie
-	% 	thermisch &Temperaturdiff. ($\Delta T$) & Wärmedurchgang ($k\cdot A $) & $P_{\text{th}} = \Delta T \cdot k \cdot A$ \\ % Daten für die vierte Zeile
-	% 	\midrule % Horizontale Linie
-	% 	fluidisch & Druck (p) & Volumenstrom ($\dot{V}$) & $P_\mathrm{{f_{l}}} = p \cdot \dot{V}$ \\ % Daten für die fünfte Zeile
-	% 	\bottomrule % Untere horizontale Linie
-	% 	\end{tabular}
-	% 	\caption{Arten von Leistung} 
-	% 	\label{tab:groessen} % Label für Verweise
-	% 	\end{table}
 \begin{frame}
 	\ftx{Verschiedene Leistungsarten}
 	%%%%% Leistungs Tabelle Kästchen
@@ -120,7 +97,7 @@ P ist gleich U mal I. Die Einheit der Leistung ist das Watt was einem Joule pro 
 	\end{Merksatz}}
 \b{\uncover<2->{\vspace*{-0.5cm}
 	\begin{Merksatz}{Leistung}
-		
+
 	\begin{itemize}
 	\item Elektrische Arbeit ist die über die Zeit integrierte Leistung.
 	\item Leistung ist die verrichtete Arbeit pro Zeit.
@@ -129,21 +106,10 @@ P ist gleich U mal I. Die Einheit der Leistung ist das Watt was einem Joule pro 
 \speech{03_Leistung2}{1}{Vergleichen wir elektrische Leistung mit anderen physikalischen Leistungsarten. In der Elektrizitätslehre ist die Potenzialgröße die Spannung und die Flussgröße der Strom. Leistung ergibt sich aus Potenzialgröße mal Flussgröße.
 Das gilt auch in anderen Bereichen:
 In der Mechanik bei einer translatorischen Bewegung ist die Kraft F das Potential und die Geschwindigkeit der Fluss.  Also ist die Leistung dann P gleich F mal v.
-Rotatorisch gilt. Leistung gleich Drehmoment mal Winkelgeschwindigkeit. 
-Die Thermischeleistung ist gleich der Temperaturdifferenz DeltaT mal Wärmedurchgangskoeffizient K mal Fläche A. 
+Rotatorisch gilt. Leistung gleich Drehmoment mal Winkelgeschwindigkeit.
+Die Thermischeleistung ist gleich der Temperaturdifferenz DeltaT mal Wärmedurchgangskoeffizient K mal Fläche A.
 Und Fluidisch haben wir den Druck mal den Volumenstrom.}
 
 \speech{03_Leistung2}{2}{Merke also das Elektrische Arbeit die über die Zeit aufsummierte Leistung ist, und Leistung, die verrichtete Arbeit pro Zeit ist.}
 
 \end{frame}
-
-	
-
-
-	
-
-
-
-
-
-

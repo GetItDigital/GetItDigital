@@ -1,7 +1,7 @@
 \newvideofile{Modul03SpannungStromquellen1}{Spannungs- und Stromquellen 1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Einleitung in die Spannungs- und Stromquellen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Spannungs- und Stromquellen}
+\section{Spannungs- und Stromquellen}\index{Spannungsquelle}\index{Stromquelle}
 
 \s{
     Der Betrieb elektrischer Geräte ist im Regelfall mit der Umsetzung von elektrischer Leistung verbunden.
@@ -13,29 +13,6 @@
     Im Folgenden werden die Spannungs- und Stromquellen beschrieben und die jeweiligen Unterschiede erläutert.}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Lernziele für Spannungs- und Stromquellen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  \begin{Lernziele}{Spannungs- und Stromquellen}
-%         Die Studierenden können
-%         \begin{itemize}
-%             \item zwischen Spannungs- und Stromquellen unterscheiden und kennen deren Schaltsymbole.
-%             \item reale Spannungs- und Stromquellen modellieren.
-%             \item Beispiele für verschiedene Quellen benennen.
-%         \end{itemize}
-%     \end{Lernziele}
-% }
-% \b{
-% \begin{frame}
-%     \ftx{Lernziele}
-%     \begin{Lernziele}{Spannungs- und Stromquellen}
-%         Die Studierenden können
-%         \begin{itemize}
-%             \item zwischen Spannungs- und Stromquellen unterscheiden und kennen deren Schaltsymbole.
-%             \item reale Spannungs- und Stromquellen modellieren.
-%             \item Beispiele für verschiedene Quellen benennen.
-%         \end{itemize}
-%     \end{Lernziele}
-% \end{frame}
-% }
 \v{
     \begin{frame}
     \ftx{Lernziele}
@@ -47,7 +24,7 @@
             \item Beispiele für verschiedene Quellen benennen.
         \end{itemize}
     \end{Lernziele}
-    
+
     \speech{02_Spannungs_und_Stromquellen1}{1}{
         In dem nun folgenden Abschnitt des Moduls werden wir uns mit Spannungs- und Stromquellen beschäftigen. Diese sind sehr wichtig.
         Bisher haben wir uns zum Beispiel den Stromfluss vorgestellt durch einen Ladungsträgerausgleich zwischen zwei geladenen Körpern
@@ -74,9 +51,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Schaltbild ideale Spannungsquelle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%  Spannungsquelle = U0 (Generatorzählpfeil)
-%%%%%%  Im Text: U0 = Uq wenn ideal
-%%%%%%
 
 \begin{frame}[t]
     \ftx{Die ideale Spannungsquelle}
@@ -146,10 +120,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Modellierung realer Spannungsquellen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Modellierung realer Spannungsquellen}
 \label{sec:mod re spannungsquelle}
-%%%
-%%% ggfs. Ergänzung: Modellierung kann bei Wechselgrößen noch deutlich komplexer ausfallen
-%%% dann ggfs. auch bei mod. re. Stromquelle ergänzen
-%%% Erwähnen, dass es sich um ESB handelt
+
 \s{
     In Schaltbildern, also der graphischen Darstellung von elektrischen Schaltkreisen, werden immer ideale Bauteile verwendet.
     Um das reale Verhalten von Bauelementen korrekt modellieren zu können und somit das reale Schaltungsverhalten möglichst exakt nachbilden zu können,
@@ -162,11 +133,6 @@
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Schaltbild reale Spannungsquelle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%  Spannungsquelle = U0 (Generatorzählpfeil)
-%%%%%%  Ausgangsspannung = Uq (oder U_L für LL Spannung)???? (Michael ggfs. fragen)
-%%%%%%  Im Text: U0 = Ur + Uq wenn real
-%%%%%%  Kurzschlussstrom I_K erwähnen
-%%%%%%  I_K = U_0 / R_i
 
 \begin{frame}[t]
     \ftx{Die realle Spannungsquelle}
@@ -174,7 +140,7 @@
         \begin{itemize}
             \item Bei der reallen Spannungsquelle wird die Spannung $U_\mathrm{q}$ durch den Innenwiderstand \(R_\mathrm{i}\) beeinflusst und ist an den Ausgangsklemmen dadurch geringer
         \end{itemize}
-    
+
     \begin{figure}[H]
         \centering
         \centering
@@ -193,13 +159,12 @@
         \input{Tikz/src/02_Spannungs_Stromquellen/Reale_Spannungsquelle}
         \caption{\textbf{Reale Spannungsquelle mit Innenwiderstand.} Die Spannung $U_\mathrm{q}$ wird durch den Innenwiderstand \(R_\mathrm{i}\) beeinflusst und ist an den Ausgangsklemmen dadurch geringer.}
         \label{fig:re spannungsquelle}
-        \end{figure} 
+        \end{figure}
         % \begin{equation*}
         %     U_\mathrm{q} = U_\mathrm{R_i} + U
         % \end{equation*}
          }
-   
-    %speech:neuer seed bei "einfügt" wir eineinfügt gesagt
+
     \speech{02_Spannungs_und_Stromquellen3}{1}{
         Die gerade vorgestellte ideale Spannungsquelle kann es in der Realität niemals geben.
         Warum? Weil wir innerhalb der Spannungsquelle Leiter benötigen und die haben einen Widerstand wie wir gelernt haben.
@@ -327,7 +292,7 @@
     \b{
         \begin{itemize}
             \item Bei der reallen Stromquelle mit Innenwiderstand $R_\mathrm{i}$ wird der Strom $I_\mathrm{q}$ beeinflusst und ist an den Ausgangsklemmen geringer
-        \end{itemize}       
+        \end{itemize}
     }
     \begin{figure}[H]
         \centering
@@ -443,20 +408,6 @@
 
     \speech{02_Spannungs_und_Stromquellen8}{5}{
         Wenn wir nun unsere Spannungsteilerformel für U an der Spannungsquelle in die Formel für I-q einsetzen, können wir einiges kürzen und erhalten das Ergebnis i-q ist gleich u-q geteilt durch R-i.}
-        %Wenn nun R-i bei beiden Quellen gleich ist, sehen wir, das diese Quellen nun komplett äquivalent sind.
-        %Man rechnet einfach und stellt dann bei den Rechnungen fest, dass I-Q gleich U-Q durch R-I sein muss, wobei R-I in beiden Fällen gleich ist. Wenn das gegeben ist, sind diese beiden Quellen komplett äquivalent.}
-
-
-    \iffalse
-        originaler sprechtext ohne Mathematische herleitung
-        \speech{02_Spannungs_und_Stromquellen8}{2}{
-            Wir können aber genau denselben Spannungsabfall U und genau denselben Strom I durch eine Stromquelle mit einem parrallelen Widerstand R-I erreichen. Maßgeblich für die Umrechnung dieser beiden Quellen ist, dass sie dasselbe Verhalten an der Last zeigen. Das heißt, der Strom I und die Spannung U an dem Lastwiderstand R für beide Quellen gleich ist.
-            Wie kann man das jetzt erreichen? Man rechnet einfach und stellt dann bei den Rechnungen fest, dass I-Q gleich U-Q durch R-I sein muss, wobei R-I in beiden Fällen gleich ist. Wenn das gegeben ist, sind diese beiden Quellen komplett äquivalent.
-        }
-    \fi
-    %; Done: Hillgärtner: Hier steht jetzt 0 ist gleich RI mal I0. I0 taucht nirgendwo auf. Das kann also schon mal nicht sein. Das müsste dann I sein. Oder aber es bezieht sich auf die Stromquelle. Das ist dann aber auf der Folie 68 sehr verwirrend, muss man dazu sagen. Ferner liegt die Spannung U an dem Widerstand R an. Ich würde die dann, wenn, UR nennen. Das ist eindeutiger vielleicht. Oder UA für Ausgangsspannung. Und vielleicht auch den Widerstand nicht zwischen den beiden offenen Kreisen legen, sondern nochmal eine Drahtbrücke nach rechts legen, dass man deutlich sieht, dass das die Ausgangsspannung U an den Punkten belassen. Weil so könnte man meinen, dass die Formel U0 ist gleich RI mal I0 mal U. Das gibt ja überhaupt keinen Sinn. Also das Bild muss bitte nochmal angepasst werden. 
-    % ; done: Hillgärtner: Die Berechnung dazu oder die Berechnungen dazu sind jetzt hier nicht aufgeführt. Das fände ich aber durchaus sehr sinnvoll. Das macht vieles klarer. Das kann ich nicht alles über die Tonspur bringen, glaube ich. 
-
 
 \end{frame}
 
@@ -467,16 +418,13 @@
         \input{Tikz/src/02_Spannungs_Stromquellen/Umwandlung_Gleichspannung_Strom}
         \caption{\textbf{Umwandlung einer Gleichspannungsquelle in eine Stromquelle.} Der Innenwiderstand der Spannungsquelle wird dabei zum Parallelwiderstand der
             Stromquelle, wobei die resultierende Stromquelle einen konstanten Strom liefert, der durch den Widerstand bestimmt wird.}
-        \label{fig:Umrechnung2}%%ist gleiches bild wie Label{Urechnung1} 
+        \label{fig:Umrechnung2}%%ist gleiches bild wie Label{Urechnung1}
 
     \end{figure}
 }
 \begin{frame}
     \ftx{Umwandlung einer Spannungsquelle in eine Stromquelle}
     \b{
-        % \begin{itemize}
-        % \item $I=\frac{U_\mathrm{0}}{R_\mathrm{i}+R_\mathrm{L}}$ ; \quad $U_\mathrm{R_L}=\frac{U_\mathrm{0}}{R_\mathrm{L}+R_\mathrm{i}}\cdot R_\mathrm{L}$
-        %  \end{itemize}
         \begin{figure}[H]
 
             \hspace{-2cm}
@@ -491,11 +439,10 @@
             \end{minipage}
         \end{figure}
     }
-    
+
     \speech{02_Spannungs_und_Stromquellen9}{1}{
         Das ermöglicht uns aber auch, reale Quellen zu bewerten, ob sie sich eher wie eine Spannungsquelle oder eher eine Stromquelle verhalten. Wir nehmen mal als Beispiel einen reale Spannungsquelle mit einem variablen Lastwiderstand von 100 bis 1 kilo Ohm und einen Innenwiderstand von einem Ohm. Das heißt, der Lastwiderstand ist sehr, sehr viel größer als der Innenwiderstand. Damit haben wir tatsächlich eher ein Spannungsquellenverhalten.
     }
-    %; todo viel zu schnell
     \speech{02_Spannungs_und_Stromquellen9}{2}{
         Denn wenn jetzt der Innenwiderstand ein Ohm ist und der Lastwiderstand einhundert Ohm beträgt, dann fließt bei U-0 gleich zehn Volt etwa ein Strom von hundert milli-Ampere. Wenn wir jetzt den Lastwiderstand auf ein kilo-Ohm erhöhen, dann ändert sich der Strom, in rot zu sehen, aber die Spannung in blau, die an dem Lastwiderstand abfällt, bleibt, wie im graphen zu sehen ist, nahezu konstant bei etwa Zehn Volt.
         Das heißt immer dann, wenn der Lastwiderstand groß ist im Vergleich zum Innenwiderstand, haben wir eher Spannungsquellenverhalten. Völlig egal, ob wir die Schaltung einer Strom oder Spannungsquelle haben.
@@ -523,25 +470,6 @@
             \end{minipage}
         \end{figure}
 
-
-        \iffalse
-            \begin{figure}[H]
-                \centering
-
-                \begin{minipage}{0.5\textwidth}
-                    \input{Tikz/src/02_Spannungs_Stromquellen/graph_spannung_strom_Ri_1k.tex}
-                \end{minipage}%
-                \hfill
-
-
-                \begin{minipage}{0.08\textwidth}
-                    \centering
-                    \scalebox{0.5}{
-                        \input{Tikz/src/02_Spannungs_Stromquellen/reale_spannungsquelle_neben_graph.tex}
-                    }
-                \end{minipage}
-            \end{figure}
-        \fi
     }%end Beamer
 
     \speech{02_Spannungs_und_Stromquellen10}{1}{
@@ -551,13 +479,6 @@
         Wir haben nun also eine Spannungsquelle mit einem sehr großen innenwiderstand. Durch diesen großen innenwiderstand verhält sie sich aber eher wie eine Stromquelle, da der Lastwiderstand klein im Vergleich zum Innenwiderstand ist.
         Wir sehen also: Wir können eine Stromquelle in eine Spannungsquelle wandeln und umgekehrt. Und wir haben zusätzlich gelernt, wie können wir bei einer realen Quelle bewerten, ob das Verhalten eher dem einer Spannungsquelle oder einer Stromquelle entspricht – nämlich indem wir das Verhältnis zwischen Lastwiderstand und Innenwiderstand betrachten.}
 \end{frame}
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.7\textwidth]{Umrechnung_U_I}
-%     \caption{Umrechnung}
-%     \label{fig:umrechnung}
-% \end{figure}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Einleitung - Verschiedene Spannungs- und Stromquellen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -588,8 +509,6 @@
 %%%%%%%%%% neue Variable für diesen Fall
 \newlength{\mpwidth}
 \setlength{\mpwidth}{0.18\textwidth}
-%\newlength{\mpheight}
-%\setlength{\mpheight}{3.8cm}
 
 \begin{frame}[t]
     \ftx{Verschiedene Spannungs- und Stromquellen}
@@ -622,11 +541,6 @@
                     \caption*{\footnotesize Zeitlich beliebig veränderliche Spannungsquelle}
                 \end{minipage}}
 
-
-            % %%%%% Stromquellen
-            % \s{
-            %     \vspace{0.3cm}
-            % }
 
             \uncover<3->{\begin{minipage}[t]{\mpwidth}
                     \input{Tikz/src/02_Spannungs_Stromquellen/Allgemeine_Stromquelle}
@@ -761,6 +675,3 @@
     was ebenfalls einem Rechtecksignal gleicht.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Bemerkung zu den Quellen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-

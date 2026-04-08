@@ -4,32 +4,32 @@
 %Einleitung
 \newvideofile{Superpos}{Superpositionsprinzip}
 \begin{frame}
-	\fta{Superpositionsprinzip}
+	\fta{Superpositionsprinzip}\index{Superpositionsprinzip}
 
-	\s{ 
-        Nach der grundsätzlichen Analyse von Maschen und Knoten in elektrischen 
+	\s{
+        Nach der grundsätzlichen Analyse von Maschen und Knoten in elektrischen
         Netzwerken werden folgend zunehmend kompliziertere elektrische Netzwerke
-        betrachtet. Hierzu wird das Überlagerungsverfahren nach Helmholtz verwendet. 
-        Das Überlagerungsverfahren wird auch als Superpositionsprinzip bezeichnet. 
-        Beim Superpositionsprinzip werden nacheinander alle Quellen einzeln 
-        ausgewertet und die Ergebnisse der einzelnen Berechnungen überlagert. 
+        betrachtet. Hierzu wird das Überlagerungsverfahren nach Helmholtz verwendet.
+        Das Überlagerungsverfahren wird auch als Superpositionsprinzip bezeichnet.
+        Beim Superpositionsprinzip werden nacheinander alle Quellen einzeln
+        ausgewertet und die Ergebnisse der einzelnen Berechnungen überlagert.
     }
 
 
     \begin{Lernziele}{Superpositionsprinzip}
-        Die Studierenden 
+        Die Studierenden
         \begin{itemize}
-            \item verstehen die Bedingungen der Systemtheorie für die Analyse von Gleichstromnetzwerken. 
-            \item können den Überlagerungssatz (das Superpositionsprinzip) auf elektrische Netzwerke anwenden. 
-        \end{itemize}                   
+            \item verstehen die Bedingungen der Systemtheorie für die Analyse von Gleichstromnetzwerken.
+            \item können den Überlagerungssatz (das Superpositionsprinzip) auf elektrische Netzwerke anwenden.
+        \end{itemize}
     \end{Lernziele}
 
     \speech{SuperposLernz}{1}{Das Superpositionsprinzip: ,,,,
-    Verfügt ein elektrisches Netzwerk über mehr als eine Quelle, werden die Komponenten 
-    durch die Quellen gegenseitig überlagert. Diese Überlagerung wird durch das 
-    Superpositionsprinzip für jede Quelle aufgelöst analysiert. Hierfür werden zuvor 
-    ein paar Grundlagen für das Superpositionsprinzip aus der Systemtheorie erläutert, 
-    um anschließend den Überlagerungssatz zu erklären.} 
+    Verfügt ein elektrisches Netzwerk über mehr als eine Quelle, werden die Komponenten
+    durch die Quellen gegenseitig überlagert. Diese Überlagerung wird durch das
+    Superpositionsprinzip für jede Quelle aufgelöst analysiert. Hierfür werden zuvor
+    ein paar Grundlagen für das Superpositionsprinzip aus der Systemtheorie erläutert,
+    um anschließend den Überlagerungssatz zu erklären.}
 \end{frame}
 
 %Exkurs Systemtheorie
@@ -38,16 +38,16 @@
 
     \s{
         Wird in einem Modell lediglich das Einganssignal und das Ausgangssignal betrachtet, wird von
-        einer Blackbox gesprochen. Hier ist keinerlei Information darüber gegeben, was zwischen diesen 
-        beiden Signalen passiert. Die Abbildung \ref{BildBlackBox} beschreibt so ein Modell. Hier 
+        einer Blackbox gesprochen. Hier ist keinerlei Information darüber gegeben, was zwischen diesen
+        beiden Signalen passiert. Die Abbildung \ref{BildBlackBox} beschreibt so ein Modell. Hier
         wird eine Black Box betrachtet, welche als Eingansgröße $F_\mathrm{E}$ und als Ausgangsgröße $F_\mathrm{A}$
-        aufweist. In der Blackbox wird das Eingangssignal in das Ausgangssignal transformiert. 
-        Das Bildnis insgesamt wird als System bezeichnet. 
+        aufweist. In der Blackbox wird das Eingangssignal in das Ausgangssignal transformiert.
+        Das Bildnis insgesamt wird als System bezeichnet.
     }
 
     \onslide<1->{
     \b{
-    \begin{itemize}    
+    \begin{itemize}
 		\item Betrachtung einer Blackbox als System mit Eingangsgrößen und Ausgangsgrößen.
     \end{itemize}
     }
@@ -59,14 +59,14 @@
 
     \onslide<2->{
     \b{
-    \begin{itemize}    
+    \begin{itemize}
 		\item Transformation des Eingangssignals $F_\mathrm{E}$ in ein Ausgangssignal $F_\mathrm{A}$.
     \end{itemize}
     }
 
     \s{
-        Ausgehend von der vorgestellten Blackbox lässt sich das Ausgangssignal $F_\mathrm{A}$ in der Abhängigkeit 
-        des Eingangssignals $F_\mathrm{E}$ bestimmen. Diese Transformation lässt sich durch die Gleichung 
+        Ausgehend von der vorgestellten Blackbox lässt sich das Ausgangssignal $F_\mathrm{A}$ in der Abhängigkeit
+        des Eingangssignals $F_\mathrm{E}$ bestimmen. Diese Transformation lässt sich durch die Gleichung
         \ref{GleichungFunktionSystem} beschreiben.
     }
 
@@ -75,9 +75,9 @@
     \end{eq}}
 
     \speech{SuperposExkurs}{1}{Es wird ein System mit einer Eingangsgröße F E und einer Ausgangsgröße F A dargestellt.
-    Die Ausgangsgröße ergibt sich dabei aus der Transformation T der Eingangsgröße. In der Systemtheorie werden Systeme, 
+    Die Ausgangsgröße ergibt sich dabei aus der Transformation T der Eingangsgröße. In der Systemtheorie werden Systeme,
     bei denen keine Informationen über die Transformation selber angegeben werden auch Black Box gegannt.}
-    \speech{SuperposExkurs}{2}{Hierbei kann die Transformation T der Eingangsgröße zur Ausgangsgröße beispielsweise durch die 
+    \speech{SuperposExkurs}{2}{Hierbei kann die Transformation T der Eingangsgröße zur Ausgangsgröße beispielsweise durch die
     Funktion einer Spannungsquelle oder Stromquelle erfolgen.}
 \end{frame}
 
@@ -86,15 +86,15 @@
 
     \s{
         Ein elektrisches Netzwerk kann auch als solch ein System betrachtet werden. Das in der Abbildung
-        \ref{BildElektrischesSystem} dargestellte elektrische Netzwerk verfügt über eine Eingangsspannung 
-        $U_\mathrm{E}$ als Eingangsgröße und eine Ausgangsspannung $U_\mathrm{A}$ als Ausgangsgröße. Die Blackbox, welche 
-        das zu transformierende System abbildet, setzt sich aus den beiden Widerständen $R_1$ und $R_2$ 
-        zusammen.  
+        \ref{BildElektrischesSystem} dargestellte elektrische Netzwerk verfügt über eine Eingangsspannung
+        $U_\mathrm{E}$ als Eingangsgröße und eine Ausgangsspannung $U_\mathrm{A}$ als Ausgangsgröße. Die Blackbox, welche
+        das zu transformierende System abbildet, setzt sich aus den beiden Widerständen $R_1$ und $R_2$
+        zusammen.
     }
 
     \onslide<1->{
     \b{
-        \begin{itemize}    
+        \begin{itemize}
             \item Beschreibung einer Black Box als elektrischen Netzwerk mit einer Eingangsspannung
             und einer Ausgangsspannung.
         \end{itemize}
@@ -107,16 +107,16 @@
         \label{BildElektrischesSystem}}}
 
     \s{
-        Der Zusammenhang der Abhänigkeit des Ausgangssignals eines Systems vom Eingangssignal aus Gleichung \ref{GleichungFunktionSystem} gilt weiterhin. Das Ausgangssignal 
-        lässt sich als Transformation des Eingangssignales wie in der Gleichung \ref{GleichungNetzwerk} 
-        beschreiben. Das Ausgangssignal ist gleich der Spannung, welche über dem Widerstand $R_2$ abfällt. 
-        Diese Spannung lässt sich aus dem Produkt der Eingangsspannung und dem Widerstandsverhältnis berechnen. 
-        Dieser Zusammenhang wurde auch bereits beim Spannungsteiler im Kapitel 4 behandelt.    
+        Der Zusammenhang der Abhänigkeit des Ausgangssignals eines Systems vom Eingangssignal aus Gleichung \ref{GleichungFunktionSystem} gilt weiterhin. Das Ausgangssignal
+        lässt sich als Transformation des Eingangssignales wie in der Gleichung \ref{GleichungNetzwerk}
+        beschreiben. Das Ausgangssignal ist gleich der Spannung, welche über dem Widerstand $R_2$ abfällt.
+        Diese Spannung lässt sich aus dem Produkt der Eingangsspannung und dem Widerstandsverhältnis berechnen.
+        Dieser Zusammenhang wurde auch bereits beim Spannungsteiler im Kapitel 4 behandelt.
     }
 
     \onslide<3->{
     \b{
-        \begin{itemize}    
+        \begin{itemize}
             \item Transformation der Eingangsspannung $U_\mathrm{E}$ in eine Ausgangsspannung $U_\mathrm{A}$.
         \end{itemize}
     }
@@ -128,9 +128,9 @@
     \speech{SuperposBlackBox}{1}{Wird die Black Box näher betrachtet, offenbart sie das zu transformierende System. Angenommen:
     das zu Transformierende System sei ein elektrisches Netzwerk, so könnte dieses wie folgt dargestellt werden.}
     \speech{SuperposBlackBox}{2}{Das zu Transformierende System ist hier ein einfacher Spannungsteiler aus den beiden Widerständen
-    R 1 und R 2. Die Eingangsspannung U E des Spannungsteilers liegt über der Serienschaltung an. Die Ausgangsspannung U A liegt über 
+    R 1 und R 2. Die Eingangsspannung U E des Spannungsteilers liegt über der Serienschaltung an. Die Ausgangsspannung U A liegt über
     den Widerstand R 2 an.}
-    \speech{SuperposBlackBox}{3}{Die Ausgangsspannung kann so als transformiertes System in Abhängigkeit von der Eingangsspannung 
+    \speech{SuperposBlackBox}{3}{Die Ausgangsspannung kann so als transformiertes System in Abhängigkeit von der Eingangsspannung
     definiert werden. So wird in diesem Beispiel die Eingangsspannung mit dem Spannungsteilerverhältnis multipliziert, um die Ausgangsspannung
     ermitteln zu können.}
 \end{frame}
@@ -142,18 +142,18 @@
         \textbf{Kausalität}\\
 
         Beruht eine Ausgangsgröße ausschließlich aus der Transformation einer Eingangsgröße, so ergibt sich
-        ein direktes Verhältnis zwischen Ursache und Wirkung. Dies bedingt auch, dass die Ausgangsgröße vor 
-        einer Anregung keine sich ändernde Systemantwort liefert. Ein System, in welchem diese Bedingungen vorherrschen, 
-        wird als kauseles System bezeichnet (vgl. Abbildung \ref{BildKausalesSystem}). 
+        ein direktes Verhältnis zwischen Ursache und Wirkung. Dies bedingt auch, dass die Ausgangsgröße vor
+        einer Anregung keine sich ändernde Systemantwort liefert. Ein System, in welchem diese Bedingungen vorherrschen,
+        wird als kauseles System bezeichnet (vgl. Abbildung \ref{BildKausalesSystem}).
         So zeigt beispielsweise eine Gleichspannungsanregung eines Systems eine zeitlich indifferente
-        Gleichstromantwort. Ein System, welches sich anders verhält, wird als nicht kausales Systeme bezeichnet. 
-        Wenn für $t < t_0$ der Wert des Eingangssignals Null ist, muss der Wert des Ausgangssignals 
+        Gleichstromantwort. Ein System, welches sich anders verhält, wird als nicht kausales Systeme bezeichnet.
+        Wenn für $t < t_0$ der Wert des Eingangssignals Null ist, muss der Wert des Ausgangssignals
         für denselben Zeitraum ebenfalls Null sein, damit es die Bedingungen eins kausalen Systems
-        erfüllt. 
+        erfüllt.
     }
 
     \b{
-        \begin{itemize}    
+        \begin{itemize}
             \item<1-> Kausale Systeme zeigen keine Sytemantwort vor der Anregung
             \item<2-> Zeitinvariante Systeme reagieren immer gleich auf ein Eingangssignal, unabhängig vom Zeitpunkt
             \item<2-> Lineares System $\rightarrow$ endliche Ausgangsamplitude bei endlicher Eingangsamplitude
@@ -165,31 +165,31 @@
     \fu{
         \resizebox{.9\textwidth}{!}{%
         \begin{minipage}{0.2\textwidth}
-            \input{Tikz/src/transformation1.tex}\alttext{Die Abbildung zeigt links einen Zeitverlauf x(t), der bei t_0 sprunghaft von 0 auf einen konstanten Wert ansteigt (Eingangssprung).}	
+            \input{Tikz/src/transformation1.tex}\alttext{Die Abbildung zeigt links einen Zeitverlauf x(t), der bei t_0 sprunghaft von 0 auf einen konstanten Wert ansteigt (Eingangssprung).}
 		\end{minipage}
         \hspace{0.1cm}
         \begin{minipage}{0.5\textwidth}
-            \input{Tikz/src/transformation2.tex}\alttext{Dieses Signal x(t)  wird in einen Block T eingespeist.}		
+            \input{Tikz/src/transformation2.tex}\alttext{Dieses Signal x(t)  wird in einen Block T eingespeist.}
 		\end{minipage}
         \hspace{0.1cm}
         \begin{minipage}{0.2\textwidth}
-            \input{Tikz/src/transformation3.tex}\alttext{Rechts ist der Ausgangsverlauf y(t)  dargestellt: Er beginnt ebenfalls bei t_0, steigt jedoch nicht sprunghaft, sondern verzögert und kontinuierlich an, bis er sich auf einem neuen konstanten Niveau einpendelt.}		
+            \input{Tikz/src/transformation3.tex}\alttext{Rechts ist der Ausgangsverlauf y(t)  dargestellt: Er beginnt ebenfalls bei t_0, steigt jedoch nicht sprunghaft, sondern verzögert und kontinuierlich an, bis er sich auf einem neuen konstanten Niveau einpendelt.}
 		\end{minipage}
         }
 	}{{\bf Transformation eines kausalen Systems.} Aus $x(t)$ transformiertes System zu $y(t)$ für ein kausales System. \label{BildKausalesSystem}}}
 
     \s{
         \textbf{Zeitinvarianz}\\
-        
-        Reagiert das Ausgangssignal eines Systems zeitlich immer gleich auf ein Eingangssignal, so wird 
-        von einem zeitinvarianten Systemen gesprochen. Verschiebt sich der Zeitpunkt des Eingangssignals beispielsweise 
+
+        Reagiert das Ausgangssignal eines Systems zeitlich immer gleich auf ein Eingangssignal, so wird
+        von einem zeitinvarianten Systemen gesprochen. Verschiebt sich der Zeitpunkt des Eingangssignals beispielsweise
         um $t_0$, so muss weiterhin bei zeitinvarianten Systemen das Ausgangssignal immer gleich, ausgehend vom Eingangssignal,
         reagieren.
 
         Die Stabilität eines Systems beschreibt ebenfalls einen Zusammenhang zwischen dem Eingangssignal
         und dem Ausgangssignal. Stellt sich bei einem Eingangssignal mit endlicher Amplitude ein nicht über
-        alle Grenzen wachsendes Ausgangssignal ein, ist das System stabil. Wächst das Ausgangssignal nach 
-        der Inaktivierung des Eingangssignales weiter, ist das Systen instabil. 
+        alle Grenzen wachsendes Ausgangssignal ein, ist das System stabil. Wächst das Ausgangssignal nach
+        der Inaktivierung des Eingangssignales weiter, ist das Systen instabil.
 
         \begin{eq}
             T(\alpha \cdot u_\mathrm{e})=\alpha \cdot T(u_\mathrm{e})    \label{GleichungLinearität}
@@ -198,23 +198,23 @@
         \textbf{Linearität}\\
 
         Ist die Reaktion des Ausgangssignals zu der Anregung des Eingangssinals proportional, wird das
-        System als \textbf{lineares} System beschrieben (Gleichung \ref{GleichungLinearität}). Wirken zwei überlagerte 
-        Eingangssignale in ein System, so können sie in diesem Fall separat betrachtet und aufsummiert werden. Auf diese Weise 
+        System als \textbf{lineares} System beschrieben (Gleichung \ref{GleichungLinearität}). Wirken zwei überlagerte
+        Eingangssignale in ein System, so können sie in diesem Fall separat betrachtet und aufsummiert werden. Auf diese Weise
         können auch die Transformationen der Eingangssignale, wie in der Gleichung \ref{GleichungÜberlagerteSignale},
-        getrennt betrachtet werden. 
+        getrennt betrachtet werden.
 
         \begin{eq}
             T(u_1+u_2)=T(u_1)+T(u_2)    \label{GleichungÜberlagerteSignale}
         \end{eq}
 
-        Systeme, die sowohl zeitinvariant, als auch linear sind, werden als LTI-Systeme (Linear Time Invariant) 
+        Systeme, die sowohl zeitinvariant, als auch linear sind, werden als LTI-Systeme (Linear Time Invariant)
         bezeichnet. Die Systeme in diesem betrachteten Modul werden in Näherung als LTI-Systeme betrachtet. Bauelemente,
-        welche Nichtlinearitäten aufweisen, werden beispielsweise im Kapitel über periodische Größen behandelt. 
-    }   
+        welche Nichtlinearitäten aufweisen, werden beispielsweise im Kapitel über periodische Größen behandelt.
+    }
 
     \speech{SuperposLTI}{1}{Ein System lässt sich durch verschiedene Kriterien beschreiben. So zeigen kausale Systeme vor der Anregung keine Systemantwort.}
     \speech{SuperposLTI}{2}{Zeitinvariante Systeme reagieren immer gleich auf ein Eingangssignal, dabei ist es unabhängig ob der Zeitpunkt T null gewählt wird
-    oder ein früher beziehungsweise späterer Zeitpunkt. Lineare Systeme weisen eine endliche Ausgangsamplitude bei einer endlichen Eingangsamplitude auf. So 
+    oder ein früher beziehungsweise späterer Zeitpunkt. Lineare Systeme weisen eine endliche Ausgangsamplitude bei einer endlichen Eingangsamplitude auf. So
     muss die Ausgangsamplitude mit dem Abfall des Systemeinganges ebenfalls enden.}
     \speech{SuperposLTI}{3}{Systeme die sowohl linear als auch zeitlich invariant sind, werden als eL Te Ii -Systeme bezeichnet, was die Grundlage dafür bildet,
     dass der Überlagerungssatz auf Gleichstromnetzwerke angewendet werden kann.}
@@ -225,10 +225,10 @@
 
     \begin{Merksatz}{LTI-Systeme}
         LTI-Systeme stellen lineare und zeitinvariante Systeme dar. Gleichstromnetzwerke müssen als LTI-Systeme betrachtet werden, damit
-        der Überlagerungssatz auf sie angewendet werden kann. 
+        der Überlagerungssatz auf sie angewendet werden kann.
     \end{Merksatz}
 
-    \speech{SuperposLTIMrk}{1}{LTI-Systeme stellen lineare und zeitinvariante Systeme dar. Die Gleich-stromnetzwerke müssen als LTI-Systeme betrachtet werden, 
+    \speech{SuperposLTIMrk}{1}{LTI-Systeme stellen lineare und zeitinvariante Systeme dar. Die Gleich-stromnetzwerke müssen als LTI-Systeme betrachtet werden,
     damit der Überlagerungssatz auf sie angewendet werden kann.}
 \end{frame}
 
@@ -236,19 +236,19 @@
 
 %Überlagerungssatz
 \begin{frame}
-    \ftb{Überlagerungssatz}
+    \ftb{Überlagerungssatz}\index{Überlagerungssatz}
 
     \s{
-        Sind die elektrischen Netzwerke als betrachtete Systeme auf ihre vorhandene Linearität geprüft, 
-        kann der Überlagerungssatz angewendet werden. Hier können verschiedene Quellen von einander getrennt 
+        Sind die elektrischen Netzwerke als betrachtete Systeme auf ihre vorhandene Linearität geprüft,
+        kann der Überlagerungssatz angewendet werden. Hier können verschiedene Quellen von einander getrennt
         betrachtet werden. Auf diese Weise werden beim Überlagerungssatz alle Quellen
-        ausgeschaltet und reihenweise die einzelnen Quellen eingeschaltet. Beim Ausschalten von Quellen 
+        ausgeschaltet und reihenweise die einzelnen Quellen eingeschaltet. Beim Ausschalten von Quellen
         werden Stromquellen und Spannungsquellen verschieden umgewandelt. Beim Ausschalten einer idealen
-        Spannungsquelle entsteht nach Abbildung \ref{BildSpannungErsetzen} am Ort der Spannungsquelle ein Kurzschluss. 
+        Spannungsquelle entsteht nach Abbildung \ref{BildSpannungErsetzen} am Ort der Spannungsquelle ein Kurzschluss.
     }
 
     \b{
-        Bedinungen und Ausführung des Überlagerungssatzes: 
+        Bedinungen und Ausführung des Überlagerungssatzes:
         \begin{itemize}
             \item<1-> Vorausgesetzte Linearität
             \item<2-> Ausschalten der Quellen
@@ -266,20 +266,20 @@
 		\end{minipage}
         \hspace{0.1cm}
         \begin{minipage}{0.2\textwidth}
-            \input{Tikz/src/umwandlungspannungsquelle2.tex}\alttext{Ein Pfeil weist auf eine Ersatzschaltung rechts hin.}	
+            \input{Tikz/src/umwandlungspannungsquelle2.tex}\alttext{Ein Pfeil weist auf eine Ersatzschaltung rechts hin.}
 		\end{minipage}
         \hspace{0.1cm}
         \begin{minipage}{0.3\textwidth}
-            \input{Tikz/src/umwandlungspannungsquelle3.tex}\alttext{Die Ersatzschaltung rechts zeigt nur noch eine durchgehende vertikale Leitung mit zwei Klemmen. Damit wird veranschaulicht, dass eine ideale Spannungsquelle im ausgeschalteten bzw. genullten Zustand (U_q=0) durch einen Kurzschluss ersetzt werden kann.}		
+            \input{Tikz/src/umwandlungspannungsquelle3.tex}\alttext{Die Ersatzschaltung rechts zeigt nur noch eine durchgehende vertikale Leitung mit zwei Klemmen. Damit wird veranschaulicht, dass eine ideale Spannungsquelle im ausgeschalteten bzw. genullten Zustand (U_q=0) durch einen Kurzschluss ersetzt werden kann.}
 		\end{minipage}
         \hspace{0.1cm}
         }
-	}{{\bf Umwandlung einer Spannungsquelle.} Wird eine Spannungsquelle deaktiviert, verbleibt ein Kurzschluss. Mit diesem Kurzschluss erfolgt die weitere 
+	}{{\bf Umwandlung einer Spannungsquelle.} Wird eine Spannungsquelle deaktiviert, verbleibt ein Kurzschluss. Mit diesem Kurzschluss erfolgt die weitere
     Netzwerkberechnung.  \label{BildSpannungErsetzen}}}
 
     \s{
-        Eine Stromquelle hinterlässt beim Ausschalten lediglich offene Klemmen (Abbildung \ref{BildStromErsetzen}). 
-        Dieser Leerlauf verhindert die weitere Betrachtung dieses Pfades im Netzwerk. 
+        Eine Stromquelle hinterlässt beim Ausschalten lediglich offene Klemmen (Abbildung \ref{BildStromErsetzen}).
+        Dieser Leerlauf verhindert die weitere Betrachtung dieses Pfades im Netzwerk.
     }
 
     \onslide<4->{
@@ -287,21 +287,21 @@
         \resizebox{.6\textwidth}{!}{%
         \hspace{0.1cm}
         \begin{minipage}{0.3\textwidth}
-            \input{Tikz/src/umwandlungstromquelle1.tex}\alttext{Die Abbildung zeigt links eine ideale Stromquelle.}	
+            \input{Tikz/src/umwandlungstromquelle1.tex}\alttext{Die Abbildung zeigt links eine ideale Stromquelle.}
 		\end{minipage}
         \hspace{0.1cm}
         \begin{minipage}{0.2\textwidth}
-            \input{Tikz/src/umwandlungstromquelle2.tex}\alttext{Ein Pfeil weist auf die Ersatzschaltung rechts hin.}	
+            \input{Tikz/src/umwandlungstromquelle2.tex}\alttext{Ein Pfeil weist auf die Ersatzschaltung rechts hin.}
 		\end{minipage}
         \hspace{0.1cm}
         \begin{minipage}{0.3\textwidth}
-            \input{Tikz/src/umwandlungstromquelle3.tex}\alttext{Die Ersatzschaltung rechts hin zeigt nur noch zwei voneinander getrennte Klemmen ohne Verbindung. Damit wird veranschaulicht, dass eine ideale Stromquelle im genullten Zustand (I_q=0) durch einen Leerlauf, also offene Klemmen, ersetzt wird.}		
+            \input{Tikz/src/umwandlungstromquelle3.tex}\alttext{Die Ersatzschaltung rechts hin zeigt nur noch zwei voneinander getrennte Klemmen ohne Verbindung. Damit wird veranschaulicht, dass eine ideale Stromquelle im genullten Zustand (I_q=0) durch einen Leerlauf, also offene Klemmen, ersetzt wird.}
 		\end{minipage}
         \hspace{0.1cm}
         }
 	}{{\bf Umwandlung einer Stromquelle.} Die Deaktivierung einer Stromquelle hinterlässt offene Klemmen.   \label{BildStromErsetzen}}}
 
-    
+
     \speech{SuperposQuell}{1}{Beim Überlagerungssatz wird ein elektrisches Netzwerk für jede Quelle berechnet. Hierfür wird die Linearität des Systems vorausgesetzt.}
     \speech{SuperposQuell}{2}{Um ein elektrisches Netzwerk für eine Quelle berechnen zu können, müssen die übrigen Quellen deaktiviert werden. Dabei gilt folgendes zu beachten:}
     \speech{SuperposQuell}{3}{Eine ideale Spannungsquelle erzeugt beim deaktivieren einen Kurzschluss.}
@@ -312,11 +312,11 @@
     \ftx{Umwandlung von Quellen}
 
     \begin{Merksatz}{Umwandlung von Quellen}
-        Beim Ausschalten von Spannungsquellen und Stromquellen hinterlassen deaktivierte Spannungsquellen einen Kurzschluss und 
+        Beim Ausschalten von Spannungsquellen und Stromquellen hinterlassen deaktivierte Spannungsquellen einen Kurzschluss und
         deaktivierte Stromquellen einen Leerlauf.
     \end{Merksatz}
 
-    \speech{SuperposQuellMrk}{1}{Beim Ausschalten von Spannungsquellen und Stromquellen hinterlassen deaktivierte Spannungsquellen einen Kurzschluss und 
+    \speech{SuperposQuellMrk}{1}{Beim Ausschalten von Spannungsquellen und Stromquellen hinterlassen deaktivierte Spannungsquellen einen Kurzschluss und
         deaktivierte Stromquellen einen Leerlauf.}
 \end{frame}
 
@@ -325,18 +325,18 @@
 
     \s{
         Sind bis auf eine Quelle alle anderen Quellen ausgeschaltet,
-        wird das elektrische Netzwerk für die übriggebliebene Quelle analysiert. Das wird dann aufeinanderfolgend 
-        mit jeder Quelle durchgeführt. Am Ende werden die Einzelwirkungen als Summe betrachtet. 
-        Beispielsweise lässt sich der Strom $I_\mathrm{R}$ durch einen Widerstand R, welcher von zwei Quellen $Q_1$ und $Q_2$ 
-        versorgt wird, durch 
-        die Summe der Teilströme der beiden Quellen erklären (vgl. Gleichung \ref{GleichungZweiQuellen}). 
+        wird das elektrische Netzwerk für die übriggebliebene Quelle analysiert. Das wird dann aufeinanderfolgend
+        mit jeder Quelle durchgeführt. Am Ende werden die Einzelwirkungen als Summe betrachtet.
+        Beispielsweise lässt sich der Strom $I_\mathrm{R}$ durch einen Widerstand R, welcher von zwei Quellen $Q_1$ und $Q_2$
+        versorgt wird, durch
+        die Summe der Teilströme der beiden Quellen erklären (vgl. Gleichung \ref{GleichungZweiQuellen}).
     }
 
     \b{
-        Annahme: 
+        Annahme:
         \begin{itemize}
             \item Der Widerstand $R$ wird durch die beiden Quellen $Q_1$ und $Q_2$ versorgt
-            \item Separate Berechnung des Stromes durch $R$ 
+            \item Separate Berechnung des Stromes durch $R$
             \item Gesamtstrom durch $R$ ergibt sich aus der Summe der Ströme aus den beiden Quellen:
         \end{itemize}
     }
@@ -345,8 +345,8 @@
         I_\mathrm{R}=f(Q_1,Q_2)    \label{GleichungZweiQuellen}
     \end{eq}
 
-    \speech{SuperposZsm}{1}{Angenommen ein Widerstand R wird durch die beiden Quellen Q 1 und Q 2 versorgt und der resultierende Strom durch den Widerstand 
-    soll berechnet werden. Dann wird für jede Quelle der Strom durch den Widerstand bestimmt und hinterher der Gesamtstrom aus den beiden Teilströmen der 
+    \speech{SuperposZsm}{1}{Angenommen ein Widerstand R wird durch die beiden Quellen Q 1 und Q 2 versorgt und der resultierende Strom durch den Widerstand
+    soll berechnet werden. Dann wird für jede Quelle der Strom durch den Widerstand bestimmt und hinterher der Gesamtstrom aus den beiden Teilströmen der
     beiden Quellen errechnet.}
 \end{frame}
 
@@ -354,13 +354,13 @@
     \ftx{Beispiel}
 
     \s{
-        Zur Verdeutlichung des Überlagerungssatzes wird in der Abbildung \ref{BildÜberlagerungssatz} ein elektrisches Netzwerk mit zwei 
-        Spannungsquellen und drei Widerständen abgebildet. Um dieses Netzwerk mit mehr als einer Quelle zu berechnen, 
-        wird das Netzwerk für beide Spannungsquellen einzeln betrachtet. 
+        Zur Verdeutlichung des Überlagerungssatzes wird in der Abbildung \ref{BildÜberlagerungssatz} ein elektrisches Netzwerk mit zwei
+        Spannungsquellen und drei Widerständen abgebildet. Um dieses Netzwerk mit mehr als einer Quelle zu berechnen,
+        wird das Netzwerk für beide Spannungsquellen einzeln betrachtet.
     }
 
     \b{
-        Berechnung eines Beispielnetzwerks:  
+        Berechnung eines Beispielnetzwerks:
 
     }
 
@@ -372,18 +372,18 @@
     nacheinander für das elektrische Netzwerk analysiert werden. \label{BildÜberlagerungssatz}}
 
     \s{
-        Das vorgestellte elektrische Netzwerk wird in der Abbildung \ref{BildÜberlagerungssatzQuellen} noch einmal jeweils für die 
+        Das vorgestellte elektrische Netzwerk wird in der Abbildung \ref{BildÜberlagerungssatzQuellen} noch einmal jeweils für die
         Berechnung der beiden Spannungsquellen seperat angezeigt. Für die Netzwerkbetrachtung mit der Spannungsquelle
         $U_1$ wird die Spannungsquelle $U_2$ kurzgeschlossen. Die beiden Widerstände $R_2$ und $R_3$ liegen nun parallel
         zueinander. Die Spannung von $U_1$ verteilt sich nun über $R_1$ und die Parallelschaltung $R_{23}$. Äquivalent dazu wird
-        bei der Betrachtung des Netzwerkes für die Spannungsquelle $U_2$ die Spannungsquelle $U_1$ kurzgeschlossen. Nun bilden 
-        die beiden Widerstände $R_1$ und $R_2$ eine Parallelschaltung. Die Spannung der Spannungsquelle $U_2$ verteilt sich über 
-        die Parallelschaltung $R_{12}$ und den Widerstand $R_3$. 
+        bei der Betrachtung des Netzwerkes für die Spannungsquelle $U_2$ die Spannungsquelle $U_1$ kurzgeschlossen. Nun bilden
+        die beiden Widerstände $R_1$ und $R_2$ eine Parallelschaltung. Die Spannung der Spannungsquelle $U_2$ verteilt sich über
+        die Parallelschaltung $R_{12}$ und den Widerstand $R_3$.
     }
 
-    \speech{SuperposAnw}{1}{Die zuvor erklärte Überlagerung wird nun anhand eines elektrischen Netzwerkes mit drei Widerständen und 
+    \speech{SuperposAnw}{1}{Die zuvor erklärte Überlagerung wird nun anhand eines elektrischen Netzwerkes mit drei Widerständen und
     zwei Spannungsquellen Berechnet. Es soll die Spannung über den Widerstand R 2 bestimmt werden.}
-\end{frame}  
+\end{frame}
 
 
 
@@ -399,18 +399,18 @@
 
     \s{
         In der Gleichung \ref{GleichungU1} und der Gleichung \ref{GleichungU2} werden die Spannungen für die beiden Spannungsquellen
-        $U_1$ und $U_2$ am Widerstand $R_3$ separat bestimmt. In der Gleichung \ref{GleichungUR3} werden die beiden Spannungen über den 
+        $U_1$ und $U_2$ am Widerstand $R_3$ separat bestimmt. In der Gleichung \ref{GleichungUR3} werden die beiden Spannungen über den
         Widerstand $R_3$ dann nach dem Überlagerungssatz aufsummiert.
     }
-    
-    
+
+
     \onslide<1->{
     \begin{eq}
-        U_\mathrm{R3}(U_1) = U_1 \cdot \frac{R_\mathrm{23}}{R_1+R_\mathrm{23}} \label{GleichungU1} 
+        U_\mathrm{R3}(U_1) = U_1 \cdot \frac{R_\mathrm{23}}{R_1+R_\mathrm{23}} \label{GleichungU1}
     \end{eq}}
     \onslide<2->{
     \begin{eq}
-        U_\mathrm{R3}(U_2) = U_2 \cdot \frac{R_\mathrm{12}}{R_3+R_\mathrm{12}} \label{GleichungU2} 
+        U_\mathrm{R3}(U_2) = U_2 \cdot \frac{R_\mathrm{12}}{R_3+R_\mathrm{12}} \label{GleichungU2}
     \end{eq}}
     \onslide<3->{
     \begin{eq}
@@ -428,11 +428,11 @@
     \ftx{Überlagerungssatz}
 
     \begin{Merksatz}{Überlagerungssatz}
-        Lineare und zeitlich invariante elektrische Netzwerke mit mehr als einer Quelle können als Summe der Teilanalysen von jeder 
-        einzelnen Quelle bestimmt werden. 
+        Lineare und zeitlich invariante elektrische Netzwerke mit mehr als einer Quelle können als Summe der Teilanalysen von jeder
+        einzelnen Quelle bestimmt werden.
     \end{Merksatz}
 
-    \speech{SuperposUberMrk}{1}{Lineare und zeitlich invariante elektrische Netzwerke mit mehr als einer Quelle können als Summe der Teilanalysen von jeder 
+    \speech{SuperposUberMrk}{1}{Lineare und zeitlich invariante elektrische Netzwerke mit mehr als einer Quelle können als Summe der Teilanalysen von jeder
         einzelnen Quelle bestimmt werden. }
 \end{frame}
 
@@ -442,14 +442,14 @@
     \begin{bsp}{Superpositionsverfahren}{}
 
     \s{
-        Gegeben ist das elektrische Netzwerk nach Abbildung \ref{BildBeispielaufgabeSuperposition}. Die folgenden 
-        Aufgaben sollen bearbeitet werden: 
+        Gegeben ist das elektrische Netzwerk nach Abbildung \ref{BildBeispielaufgabeSuperposition}. Die folgenden
+        Aufgaben sollen bearbeitet werden:
     }
 
         \begin{enumerate}
-            \only<1>{	
+            \only<1>{
                 \item[]
-                Anwendung des Superpositionsverfahrens (Überlagerungssatz): 
+                Anwendung des Superpositionsverfahrens (Überlagerungssatz):
                 \begin{enumerate}
                     \item[a)] Einzeichnen der Ströme und Spannungen
                     \item[b)] Netzwerkberechnung $I_3$ für $U_\mathrm{g}$
@@ -457,29 +457,29 @@
                     \item[d)] Wie groß ist der Strom $I_3$
                 \end{enumerate}
 
-                
+
                 \fu{
                     \input{Tikz/src/superposition1.tex}\alttext{Die Schaltung besteht aus einem rechteckigen Rahmen mit drei senkrechten Zweigen zwischen einer gemeinsamen oberen und unteren Sammelschiene. Links liegt eine Spannungsquelle U_g mit einem Serienwiderstand R_i, in der Mitte ein Widerstand R_1, rechts ein Widerstand R_2 sowie ganz außen eine Stromquelle mit Strom I_g nach oben. Oben verbindet der Widerstand R_3 den Knoten über R_1 mit dem Knoten über R_2; durch R_3 fließt der Strom I_3 von links nach rechts.}
                 }{{\bf Beispiel.} Netzwerkanalyse mit Kirchhoffschen Regeln. \label{BildBeispielaufgabeSuperposition}}
                     }
-			\only<2>{			
+			\only<2>{
 				\item[a)] Angabe der Ströme und Spannungen:
                 \begin{figure}[H]
-                    \resizebox{0.65\textwidth}{!}{%   
+                    \resizebox{0.65\textwidth}{!}{%
                         \input{Tikz/src/superposition2.tex}\alttext{Die Schaltung besteht aus zwei horizontalen Sammelschienen (oben und unten), zwischen denen drei senkrechte Widerstandszweige liegen: links die Serienschaltung aus Spannungsquelle U_g und Innenwiderstand R_i, in der Mitte R_1, rechts R_2. Über den drei Widerständen fallen die Spannungen U_Ri, U_1 und U_2 nach unten ab, die zugehörigen Ströme I_0, I_1 und I_2 sind ebenfalls nach unten eingezeichnet. Die oberen Knoten über R_1 und R_2 sind zusätzlich durch den Widerstand R_3 mit Spannung U_3 und Strom I_3(von links nach rechts) verbunden, und ganz rechts speist eine Stromquelle mit Strom I_g nach oben die obere Sammelschiene.}
-                    }\centering                                                           
+                    }\centering
                 \end{figure}
-                    }    
+                    }
 			\only<3>{
 				\item[b)] Netzwerkberechnung $I_3(U_\mathrm{g})$ für $U_\mathrm{g}$:
 				\onslide<3>{
                     \begin{figure}[H]
-                        \resizebox{0.65\textwidth}{!}{%  
+                        \resizebox{0.65\textwidth}{!}{%
                         \input{Tikz/src/superposition3.tex}\alttext{Die Schaltung hat zwei horizontale Sammelschienen (oben und unten), dazwischen drei senkrechte Zweige. Links liegt eine Spannungsquelle U_g mit dem Serienwiderstand R_i, durch den der Strom I_0 nach oben fließt und die Spannung U_Ri nach unten abgegriffen ist. In der Mitte und rechts stehen die Widerstände R_1 und R_2 mit Spannungen U_1 und U_2 sowie Strömen I_1 und I_2, jeweils nach unten gerichtet. Der obere Knoten über R_1(Knoten K_1) ist über den Widerstand R_3 mit dem oberen Knoten über R_2 verbunden; über R_3 liegen die Spannung U_3 und der Strom I_3 von links nach rechts.}
-                        }\centering                                                           
+                        }\centering
                     \end{figure}
 					\begin{eqa}
-						K_1: I_\mathrm{ges}&=I_1+I_3 \nonumber\\                        
+						K_1: I_\mathrm{ges}&=I_1+I_3 \nonumber\\
                         I_\mathrm{ges}&=\frac{U_\mathrm{g}}{R_\mathrm{ges}}=\frac{U_\mathrm{g}}{R_\mathrm{i}+\frac{R_1\cdot(R_2+R_3)}{R_1+R_2+R_3}} \nonumber\\
                         \frac{I_3}{I_\mathrm{ges}}&=\frac{R_1}{R_1+R_2+R_3} \nonumber\\
                         I_3(U_\mathrm{g})&=I_\mathrm{ges}\cdot\frac{R_1}{R_1+R_2+R_3}=\frac{U_\mathrm{g}}{R_\mathrm{i}+\frac{R_1\cdot(R_2+R_3)}{R_1+R_2+R_3}}\cdot\frac{R_1}{R_1+R_2+R_3}\nonumber
@@ -490,19 +490,19 @@
 				\item[c)] Netzwerkberechnung $I_3(I_\mathrm{g})$ für $I_\mathrm{g}$:
 				\onslide<4>{
                     \begin{figure}[H]
-                        \resizebox{0.65\textwidth}{!}{%  
+                        \resizebox{0.65\textwidth}{!}{%
                         \input{Tikz/src/superposition4.tex}\alttext{Die Schaltung hat zwei horizontale Sammelschienen (oben und unten), zwischen denen drei senkrechte Widerstände liegen: ganz links R_i, in der Mitte R_1, rechts R_2; ganz rechts verbindet zusätzlich eine Stromquelle die untere mit der oberen Schiene. Die oberen Knoten über R_1 und R_2 heißen K_1 bzw. K_2 und sind über den Widerstand R_3 verbunden, auf dem die Spannung U_3 und der Strom I_3 von links nach rechts eingezeichnet sind. Durch R_i fließt der Strom I_0 nach oben, durch R_1 und R_2 die Ströme I_1 und I_2 nach unten, und die Stromquelle rechts speist den Strom I_g nach oben in die obere Schiene.}
-                        }\centering                                                           
+                        }\centering
                     \end{figure}
 					\begin{eqa}
-						K_2: I_\mathrm{ges}&=I_\mathrm{g}=I_2-I_3 \nonumber\\                        
+						K_2: I_\mathrm{ges}&=I_\mathrm{g}=I_2-I_3 \nonumber\\
                         \frac{-I_3}{I_\mathrm{ges}}&=\frac{R_2}{(R_1||R_\mathrm{i})+R_2+R_3} \nonumber\\
                         I_3(I_\mathrm{g})&=-I_\mathrm{g}\cdot\frac{R_2}{(R_1||R_\mathrm{i})+R_2+R_3}\nonumber
 				    \end{eqa}
 				}
 			}
             \only<5>{
-				\item[d)] Wie groß ist der Strom $I_3(U_\mathrm{g},I_\mathrm{g})$? \\ 
+				\item[d)] Wie groß ist der Strom $I_3(U_\mathrm{g},I_\mathrm{g})$? \\
 
 				\onslide<5>{
                     Superposition: \\
@@ -517,17 +517,17 @@
     \end{bsp}
 
     \speech{SuperposBsp}{1}{Anhand des folgenden Beispieles sollen die Eklärungen zum Superpositionsprinzip noch einmal verfestigt werden.
-    Hierzu sollen zu dem angezeigten elektrischen Netzwerk die Ströme und Spannungen eingezeichnet werden. 
+    Hierzu sollen zu dem angezeigten elektrischen Netzwerk die Ströme und Spannungen eingezeichnet werden.
     Der Strom I 3 durch den Widerstand R 3 soll getrennt in Abhängigkeit von der Spannungsquelle U Ge und der Stromquelle I Ge bestimmt werden.
     Der Gesamtstrom I 3 wird anschließend in Abhängigkeit beider Quellen zusammengefasst.}
     \speech{SuperposBsp}{2}{Hierzu werden die Spannungen und Ströme aller komponenten angegeben.}
     \speech{SuperposBsp}{3}{Für die Netzberechnung der Spannungsquelle U G wird die Stromquelle deaktiviert und hinterlässt die offenen Klemmen.
-    Der Stromfluss über diesen Pfad ist somit unterbrochen. Der Gesamtstrom I ges teilt sich am Knoten K 1 auf die Ströme I 1 und I 3 auf. Der Strom 
-    I 3 ist dabei gleich dem Strom I 2. Das Verhältnis von U G und dem Gesamtwiderstand R ges bestimmt I ges. Der Strom durch R 3 lässt sich hier über 
+    Der Stromfluss über diesen Pfad ist somit unterbrochen. Der Gesamtstrom I ges teilt sich am Knoten K 1 auf die Ströme I 1 und I 3 auf. Der Strom
+    I 3 ist dabei gleich dem Strom I 2. Das Verhältnis von U G und dem Gesamtwiderstand R ges bestimmt I ges. Der Strom durch R 3 lässt sich hier über
     das Verhältnis von I 3 zu I ges sowie R1 zu der Summe aus R 1, R 2 und R 3 ermitteln.}
-    \speech{SuperposBsp}{4}{Bei der Netzbetrachtung für die Stromquelle I Ge wird die Spannungsquelle nun deaktiviert und hinterlässt einen Kurzschluss. 
-    Der Gesamtstrom resultiert aus I Ge und teilt sich am Knoten Ka zwei auf die Ströme I zwei und minus I drei auf. 
-    Nun lässt sich das Verhältnis zur Berechnung von I drei aufstellen. I drei verhält sich zu I gesamt wie R zwei zu der Summe aus der Parallelschaltung 
+    \speech{SuperposBsp}{4}{Bei der Netzbetrachtung für die Stromquelle I Ge wird die Spannungsquelle nun deaktiviert und hinterlässt einen Kurzschluss.
+    Der Gesamtstrom resultiert aus I Ge und teilt sich am Knoten Ka zwei auf die Ströme I zwei und minus I drei auf.
+    Nun lässt sich das Verhältnis zur Berechnung von I drei aufstellen. I drei verhält sich zu I gesamt wie R zwei zu der Summe aus der Parallelschaltung
     von R eins und R i und R zwei und R drei.}
     \speech{SuperposBsp}{5}{Zum Schluss werden die Teilergebnisse aufaddiert.}
 \end{frame}

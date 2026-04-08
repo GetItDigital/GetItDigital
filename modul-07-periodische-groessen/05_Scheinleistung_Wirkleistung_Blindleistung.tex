@@ -5,10 +5,10 @@
 \begin{frame}
     \fta{Scheinleistung, Wirkleistung und Blindleistung}
 
-    \s{
-        In der Gleichstrombetrachtung elektrischer Netzwerke ergab sich lediglich eine Wirkleistung an den Komponenten. 
+    \s{\index{Scheinleistung}\index{Wirkleistung}\index{Blindleistung}
+        In der Gleichstrombetrachtung elektrischer Netzwerke ergab sich lediglich eine Wirkleistung an den Komponenten.
         In der Wechselstrombetrachtung elektrischer Netzwerke werden durch die resultierenden Blindströme auch Blindleistungen
-        erzeugt. Die sich daraus ergebende Scheinleistung teilt sich auf die Wirkleistung und die Blindleistung auf. 
+        erzeugt. Die sich daraus ergebende Scheinleistung teilt sich auf die Wirkleistung und die Blindleistung auf.
         Die folgenden Grundlagen und Leistungsarten, welche durch eine Wechselspannung hervorgerufen werden, werden folgend besprochen:
     }
 
@@ -21,8 +21,8 @@
     \end{Lernziele}
 
     \speech{LeistungLrnz}{1}{Durch die Verwendung von Wechselströmen sind Leistungen nicht Konstant
-    und müssen daher komplex betrachtet werden. 
-    Am Ende des Kapitels soll der Unterschied zwischen der Augenblicksleistung, 
+    und müssen daher komplex betrachtet werden.
+    Am Ende des Kapitels soll der Unterschied zwischen der Augenblicksleistung,
     der Wirkleistung und der Blindleistung bekannt sein.
     Sowie die Scheinleistung bestimmt und kategorisiert werden können.}
 \end{frame}
@@ -34,11 +34,11 @@
     \ftb{Grundlagen: Additionstheorem und Arithmetischer Mittelwert}
 
     \s{
-        Für die Berechnung des Effektivwertes wurde bereits ein Additionstheorem vorgestellt. Ein weiteres Additionstheorem 
+        Für die Berechnung des Effektivwertes wurde bereits ein Additionstheorem vorgestellt. Ein weiteres Additionstheorem
         wird in der Gleichung \ref{GleichungAdd1} vorgestellt. Hier wird aus dem Produkt zweier Sinusfunktionen mit unterschiedlichen
-        Argumenten ein Zusammenhang mit Summen und Differenzen in Cosinusfunktionen. Hierdurch wird das Produkt eliminiert und eine 
+        Argumenten ein Zusammenhang mit Summen und Differenzen in Cosinusfunktionen. Hierdurch wird das Produkt eliminiert und eine
         Summe zweier Cosinusfunktion erstellt. Das Integrieren der Summe lässt sich durch das Aufteilen der Summe in zwei separate
-        Integrationvorgänge vereinfachen. 
+        Integrationvorgänge vereinfachen.
     }
 
     \b{
@@ -50,9 +50,9 @@
     \end{eq}
 
     \s{
-        Mit dem arithmetische Mittelwert einer Funktion soll ein konstanter Wert errechnet werden, welcher nicht mehr zeitabhängig 
-        ist. In der Elektrotechnik soll dieser Wert in bestimmten Fällen, ähnlich wie der Effektivwert bei sinusförmigen Strom- und 
-        Spannungsverläufen, zur besseren Veranschaulichung herangezogen werden. Berechnet wird der arithmetische Mittelwert über 
+        Mit dem arithmetische Mittelwert einer Funktion soll ein konstanter Wert errechnet werden, welcher nicht mehr zeitabhängig
+        ist. In der Elektrotechnik soll dieser Wert in bestimmten Fällen, ähnlich wie der Effektivwert bei sinusförmigen Strom- und
+        Spannungsverläufen, zur besseren Veranschaulichung herangezogen werden. Berechnet wird der arithmetische Mittelwert über
         folgende Integralformel:
     }
 
@@ -70,10 +70,10 @@
     \end{eq}}
 
     \s{
-        In der Formel steht $T$ für die Periodenlänge. Hier ist $t$ dabei ein beliebig wählbarer Zeitpunkt, ab welchem die Betrachtung 
+        In der Formel steht $T$ für die Periodenlänge. Hier ist $t$ dabei ein beliebig wählbarer Zeitpunkt, ab welchem die Betrachtung
         starten soll (meistens $t=0$). Vereinfacht ausgedrückt steht im Integral die Fläche zwischen der Funktionskurve und der Abszisse
-        und im Nenner des Bruches die Periodenlänge. Als Beispiel soll eine sogenannte Sägezahnspannung herangezogen werden, welche in 
-        der Abbildung \ref{BildLei1} dargestellt wird. 
+        und im Nenner des Bruches die Periodenlänge. Als Beispiel soll eine sogenannte Sägezahnspannung herangezogen werden, welche in
+        der Abbildung \ref{BildLei1} dargestellt wird.
     }
 
     \onslide<3->{
@@ -82,18 +82,18 @@
         \begin{itemize}
             \item T = Periodenlänge
             \item t = belibig wählbarer Anfangszeitpunkt (meistens t=0)
-        \end{itemize} 
+        \end{itemize}
     }}
 
     \speech{LeistungAddit}{1}{Ein paar Grundlagen zuvor.
-    Zur Herleitung der Augenblicksleistung aus sinusförmigen Quellen 
+    Zur Herleitung der Augenblicksleistung aus sinusförmigen Quellen
     kann das angegebene Additionstheorem genutzt werden.}
     \speech{LeistungAddit}{2}{Über den Arithmetischen Mittelwert wird ein konstanter Wert für die Leistung bestimmt.
     Das Vorgehen ist hier ähnlich wie bei der Berechnung des Effektivwertes. .}
     \speech{LeistungAddit}{3}{Groß Tee beschreibt hier die Periodendauer und klein Tee den Startpunkt des Betrachtungszeitraumes.
     Oft wird klein Tee als Null gewählt.}
 \end{frame}
-    
+
 
 \begin{frame}
     \ftx{Arithmetischer Mittelwert: Beispiel}
@@ -113,8 +113,8 @@
         \resizebox{0.7\textwidth}{!}{
             \input{Tikz/src/Scheinleistung_Wirkleistung_Blindleistung/Saegezahnspannung_Verlauf}\alttext{Das Bild zeigt einen sägezahnförmigen Spannungsverlauf u(t) über der Zeit t. Die Spannung steigt linear von 0 V auf etwa 10 V an und fällt bei den Zeitpunkten T und 2T abrupt auf 0 V zurück. Eine rote gestrichelte Linie markiert den Mittelwert ū(t) bei etwa 5 V. Die schraffierte Fläche verdeutlicht die Mittelwertbildung über eine Periode.}
         }
-    }{{\bf Verlauf einer Sägezahnspannung.} Über die Sägezahnspannung wird die Ermittlung des rot gekennzeichneten 
-    Mittelwertes erläutert. \label{BildLei1}}    
+    }{{\bf Verlauf einer Sägezahnspannung.} Über die Sägezahnspannung wird die Ermittlung des rot gekennzeichneten
+    Mittelwertes erläutert. \label{BildLei1}}
 
     \s{
         Soll der arythmetische Mittelwert errechnet werden, muss zuerst eine Funktion über eine Periode aufgestellt werden.
@@ -124,50 +124,50 @@
             \overline{u(t)}=\frac{10~V}{T}\cdot t
         \end{eq}
 
-        Diesen Zusammenhang eingefügt in die Gleichung \ref{ArythMittel} und für die Integrationsgrenzen $t=0$ bis $T$ ergibt sich die 
+        Diesen Zusammenhang eingefügt in die Gleichung \ref{ArythMittel} und für die Integrationsgrenzen $t=0$ bis $T$ ergibt sich die
         Gleichung:
 
-        \begin{eq}            
+        \begin{eq}
             \overline{u(t)}=\frac{1}{T}\int_{0}^{T} \frac{10~V}{T}\cdot t~dt
         \end{eq}
 
         Wird das Integral aufgelöst erhält man den arythmetischen Mittelwert für die Sägezahnspannung:
 
-        \begin{eq}            
+        \begin{eq}
             \overline{u(t)}=\frac{1}{T}\left[\frac{10~V}{T}\cdot\frac{t^2}{2}\right]_0^T=\frac{1}{2}\cdot 10~V
         \end{eq}
 
-        Somit beträgt der arythmetische Mittelwert die Hälfte der maximalen Spannung. Liegt eine ideale Sinusschwingung vor, ist der 
-        arythmetische Mittelwert immer null. Relevant wird der arythmetische Mittelwert, wenn die Leistung von sinusförmigen Strömen 
+        Somit beträgt der arythmetische Mittelwert die Hälfte der maximalen Spannung. Liegt eine ideale Sinusschwingung vor, ist der
+        arythmetische Mittelwert immer null. Relevant wird der arythmetische Mittelwert, wenn die Leistung von sinusförmigen Strömen
         und Spannungen errechnet werden soll.
     }
 
-    \speech{LeistungArith}{1}{Anhand der angegebenen sonderform einer Dreickecksspannung, 
+    \speech{LeistungArith}{1}{Anhand der angegebenen sonderform einer Dreickecksspannung,
     der Sägezahnspannung, soll der Mittelwert bestimmt werden.
     Die Sägezahnspannung ist hier um einen Gleichanteil angehoben.}
     \speech{LeistungArith}{2}{Hierfür wird die Funktion über eine Periode aufgestellt.}
-    \speech{LeistungArith}{3}{Durch den gezeigten Verlauf kann bereits abgeschätzt werden, 
+    \speech{LeistungArith}{3}{Durch den gezeigten Verlauf kann bereits abgeschätzt werden,
     dass der Mittelwert bei Fünf Volt liegen sollte.}
 \end{frame}
 
 \begin{frame}
     \ftx{Arithmetischer Mittelwert: Beispiel}
-        
+
     \b{
         \begin{itemize}
             \item Diese Funktion wird in die Gleichung für den arithmetischen Mittelwert eingesetzt
         \end{itemize}
 
-        \begin{eq}            
+        \begin{eq}
             \overline{u(t)}=\frac{1}{T}\int_{0}^{T} \frac{10~V}{T}\cdot t~dt
         \end{eq}
-        
+
         \onslide<2->{
         \begin{itemize}
             \item Nach auflösen des Integrals erhält man den arithmetischen Mittelwert der Sägezahnspannung
         \end{itemize}
 
-        \begin{eq}            
+        \begin{eq}
             \overline{u(t)}=\frac{1}{T}\left[\frac{10~V}{T}\cdot\frac{t^2}{2}\right]_0^T
             =\frac{1}{2}\cdot 10~V
         \end{eq}
@@ -177,11 +177,11 @@
         \end{itemize}}
     }
 
-    \speech{LeistungArithBsp}{1}{Die bereits aufgestellte Funktion für den Verlauf der Sägezahnspannung 
+    \speech{LeistungArithBsp}{1}{Die bereits aufgestellte Funktion für den Verlauf der Sägezahnspannung
     wird in die Gleichung für den arithmetischen Mittelwert eingesetzt.}
     \speech{LeistungArithBsp}{2}{So erhält man den dargestellten Ausdruck des arithmetischen Mittelwertes für die Sägezahnspannung.
     Für die untere Grenze Null ergibt sich der Ausdruck zu Null.
-    Wird für klein Tee, Groß Tee eingesetzt, 
+    Wird für klein Tee, Groß Tee eingesetzt,
     lässt sich das Tee wegkürzen und man gelangt zu dem Ergebnis von Fünf Volt.}
     \speech{LeistungArithBsp}{3}{Bei reinen Wechselgrößen wird der Mittelwert durch die symmetrie des Verlaufes immer zu Null.}
 \end{frame}
@@ -194,7 +194,7 @@
         Wirkleistung bei Gleichstrom:
         In elektrischen Gleichstromnetzwerken wird die Leistung nach der bekannten Gleichung $P=U\cdot I$ bestimmt.
         Bei bekanntem elektrischen Widerstand kann die Gleichung dahingehend umgestellt werden, dass nach dem ohmschen
-        Gesetz entweder die Spannung oder der Stromeliminiert werden.  
+        Gesetz entweder die Spannung oder der Stromeliminiert werden.
     }
 
     \b{
@@ -207,7 +207,7 @@
     \begin{eq}
         P = U \cdot I = I^2 \cdot R = \frac{U^2}{R}     \label{GleichungLei1}
     \end{eq}
-    
+
     \speech{LeistungGleich}{1}{Die Leistung bei Gleichstrom ergibt sich aus dem Produkt der Spannung und dem Strom.
     Durch das Umstellen lässt sich die Leistung auch Über die Quadtratur des Stromes oder der Spannung bestimmen, .}
 \end{frame}
@@ -235,11 +235,11 @@
 
     \s{
         Weil die Größen der Spannung und des Stromes zeitabhängig sind, ist auch diese Funktion der Leistung zeitabhängig.
-        Aufgrund der Zeitabhängigkeit wird auch von der \textbf{Augenblicksleistung} für einen Zeitpunkt t gesprochen. 
+        Aufgrund der Zeitabhängigkeit wird auch von der \textbf{Augenblicksleistung} für einen Zeitpunkt t gesprochen.
         Die Maßeinheit der elektrischen Augenblicksleistung ist weiterhin das Watt.
-    }   
+    }
 
-    
+
     \onslide<2->{
     \b{
         \begin{itemize}
@@ -252,13 +252,13 @@
     \end{eq}}
 
     \s{
-        Werden die Augenblickswerte der Spannung und des Stromes in die Gleichung \ref{GleichungLei2} der Augenblicksleistung 
-        eingesetzt, so ergibt sich in der folgenden Gleichung \ref{GleichungLei4} die Augenblicksleistung. Hier lässt sich die 
+        Werden die Augenblickswerte der Spannung und des Stromes in die Gleichung \ref{GleichungLei2} der Augenblicksleistung
+        eingesetzt, so ergibt sich in der folgenden Gleichung \ref{GleichungLei4} die Augenblicksleistung. Hier lässt sich die
         Gleichung in einen Vorfaktor, einen konstanten Anteil und einen zeitabhängigen Anteil aufteilen. Der Vorfaktor besteht
-        aus der Hälfte des Produktes der Amplitudenwerte von Spannung und Strom. Der konstante Anteil besteht aus dem ersten 
-        Cosinussummanden, hier sind lediglich die Phasenwinkel von Spannung und Strom ausschlaggebend. Der zeitabhängige Anteil 
+        aus der Hälfte des Produktes der Amplitudenwerte von Spannung und Strom. Der konstante Anteil besteht aus dem ersten
+        Cosinussummanden, hier sind lediglich die Phasenwinkel von Spannung und Strom ausschlaggebend. Der zeitabhängige Anteil
         wird durch den zweiten Cosinus dargestellt. Hier werden neben den Phasenwinkeln auch die Kreisfrequenz und der Zeitpunkt
-        wichtig.  
+        wichtig.
     }
 
     \onslide<3->{
@@ -272,7 +272,7 @@
         \text{allgemein:} \quad p(t) &= u(t) \cdot i(t)  \\
         \text{sinusförmig:} \quad p(t) &= \frac{\hat{U}\cdot\hat{I}}{2}(\underbrace{\cos(\varphi_\mathrm{U}-\varphi_\mathrm{I})}_\text{konstanter Anteil} + \underbrace{\cos(2\omega t +\varphi_\mathrm{U}+\varphi_\mathrm{I})}_\text{zeitabhängiger Anteil})    \label{GleichungLei4}
     \end{eqa}}
-    
+
     \speech{LeistungAugenblick}{1}{Bei Wechselstrom wird die Leistung mit den zeitabhängigen Wechselgrößen berechnet, .}
     \speech{LeistungAugenblick}{2}{Die Zeitabhängigen Größen sind die Spannung Uh von Tee und der Strom Ih von Tee in der angegebenen Form.}
     \speech{LeistungAugenblick}{3}{Die Augenblicksleistung kann über das Produkt für jeden Zeitpunkt Tee berechnet werden.
@@ -286,7 +286,7 @@
     \ftx{Augenblicksleistung}
 
     \begin{Merksatz}{Augenblicksleistung}
-        Die Augenblicksleistung ist das Produkt aus den Augenlickswerten der Spannung und des Stromes. 
+        Die Augenblicksleistung ist das Produkt aus den Augenlickswerten der Spannung und des Stromes.
 
         \begin{eq}
             p(t)=u(t)\cdot i(t)      \nonumber
@@ -301,18 +301,18 @@
     \ftx{Mittlere Leistung}
 
     \s{
-        Wird die gesamte Leistung eines Systems über einen idealen ohmschen Widerstand aufgenommen, bedeutet dies, dass die 
-        Spannung in der Strom keine Phasenverschiebung aufweisen. Der Konstante Anteil der Augenblicksleistung ist positiv. 
-        Die Augenblicksleistung pulsiert mit doppelter Frequenz im Vergleich zur Frequenz von Spannung und Strom. Dabei hat 
-        die Leistung stets ein positives Vorzeichen. 
+        Wird die gesamte Leistung eines Systems über einen idealen ohmschen Widerstand aufgenommen, bedeutet dies, dass die
+        Spannung in der Strom keine Phasenverschiebung aufweisen. Der Konstante Anteil der Augenblicksleistung ist positiv.
+        Die Augenblicksleistung pulsiert mit doppelter Frequenz im Vergleich zur Frequenz von Spannung und Strom. Dabei hat
+        die Leistung stets ein positives Vorzeichen.
 
-        Häufig ist es nicht erheblich, wie der genaue zeitliche Verlauf der Augenblicksleistung ist. Vielmehr ist bei Anwendungen 
-        lediglich die im Mittel umgesetzte Leistung, beispielsweise Wärmeanwenungen, von Interesse. Die Mittlere Leistung der 
-        zeitveränderlichen Augenblicksleistung ist nach Gleichung \ref{ArythMittel} definiert. 
+        Häufig ist es nicht erheblich, wie der genaue zeitliche Verlauf der Augenblicksleistung ist. Vielmehr ist bei Anwendungen
+        lediglich die im Mittel umgesetzte Leistung, beispielsweise Wärmeanwenungen, von Interesse. Die Mittlere Leistung der
+        zeitveränderlichen Augenblicksleistung ist nach Gleichung \ref{ArythMittel} definiert.
         Für rein sinusförmige Spannungen und Ströme lässt sich eine mittlere Leistung nach Gleichung \ref{GleichungLei5}
-        bestimmen. Die Angaben der Spannung $U$ und des Stromes $I$ bilden die Effektivwerte. Der Winkel $\varphi$ ergibt 
+        bestimmen. Die Angaben der Spannung $U$ und des Stromes $I$ bilden die Effektivwerte. Der Winkel $\varphi$ ergibt
         sich aus der Phasenverschiebung zwischen der Spannung und dem Strom. Der gesamte Ausdruck  ${\bf\cos(\varphi)}$ wird auch
-        als {\bf Leistungsfaktor} bezeichnet. 
+        als {\bf Leistungsfaktor} bezeichnet.
     }
 
     \b{
@@ -329,15 +329,15 @@
     \end{eq}
 
     \s{
-        Ohne die Phasenverschiebung zwischen der Spannung und dem Strom an einem ideale Widerstand ist der Term des 
+        Ohne die Phasenverschiebung zwischen der Spannung und dem Strom an einem ideale Widerstand ist der Term des
         Leistungsfaktors Vernachlässigbar. So lässt sich die mittlere Leistung in der Wechselstromtechnik bei sinusförmigen
-        Spannungs- und Stromverläufen analog zur Gleichstromtechnik auf zwei zeitunabhängige Größen zurückführen. Der 
+        Spannungs- und Stromverläufen analog zur Gleichstromtechnik auf zwei zeitunabhängige Größen zurückführen. Der
         Effektivwert der Spannung und des Stromes werden für rein sinusförmige Größen zur Ermittlung der mittelren Leistung
         herangezogen.
 
         \begin{eq}
             \overline{p}_\mathrm{Ohm} = \frac{\hat{U}}{\sqrt{2}} \cdot \frac{\hat{I}}{\sqrt{2}} = \frac{\hat{U}\cdot\hat{I}}{2} = U \cdot I     \label{GleichungLei6}
-        \end{eq} 
+        \end{eq}
     }
 
     \b{
@@ -353,7 +353,7 @@
     \speech{LeistungMittl}{2}{Außerdem spielt hier die Phasenverschiebung zwischen der Spannung und dem Strom eine Rolle.
     Bei der Leistungsberechnung wird dieser Faktor als Leistungsfaktor bezeichnet.
     Der Leistungsfaktor gibt außerdem das Verhältnis zwischen den verschiedenen Leistungsarten an.}
-    \speech{LeistungMittl}{3}{An einem idealen Widerstand, also einen rein ohmschen Verbraucher ohne Blindanteil, 
+    \speech{LeistungMittl}{3}{An einem idealen Widerstand, also einen rein ohmschen Verbraucher ohne Blindanteil,
     Beträgt die Phasenverschiebung zwischen dem Strom und der Spannung Null.
     So beträgt der Leistungsfaktor Eins, sodass reine Wirkleistung übertragen wird.}
 \end{frame}
@@ -361,15 +361,15 @@
 
 \begin{frame}
     \ftx{Leistung Induktivität}
-    
+
     \s{
-        Ähnlich verhält es sich mit der Augenblicksleistung an Spulen und Kondensatoren. An einer Induktivität eilt der 
-        Strom der Spannung um 90° nach ($+\pi/2$). Der Verlauf der Spannung und des Stromes an einer Induktivität wird in der Abbildung 
-        \ref{BildInduktiveLast} dargestellt. Dazu wird in grün die Augenblicksleistung an der Induktivität dargestellt. Der 
-        konstante Anteil der Augenblicksleistung an einer Induktivität beträgt Null. An dem Verlauf lässt sich das Pulsieren 
-        der Augenblicksspannung mit der doppelten Frequenz der Spannung bzw. des Stromes feststellen. Die positiven und 
-        negativen Halbwellen der Augenblicksleistung heben sich gegenseitig im Mittel auf.  Das heißt, dass die aufgenommene 
-        Leistung wieder vollständig abgegeben wird und so von der Induktivität keine Leistung aufgenommen wird. 
+        Ähnlich verhält es sich mit der Augenblicksleistung an Spulen und Kondensatoren. An einer Induktivität eilt der
+        Strom der Spannung um 90° nach ($+\pi/2$). Der Verlauf der Spannung und des Stromes an einer Induktivität wird in der Abbildung
+        \ref{BildInduktiveLast} dargestellt. Dazu wird in grün die Augenblicksleistung an der Induktivität dargestellt. Der
+        konstante Anteil der Augenblicksleistung an einer Induktivität beträgt Null. An dem Verlauf lässt sich das Pulsieren
+        der Augenblicksspannung mit der doppelten Frequenz der Spannung bzw. des Stromes feststellen. Die positiven und
+        negativen Halbwellen der Augenblicksleistung heben sich gegenseitig im Mittel auf.  Das heißt, dass die aufgenommene
+        Leistung wieder vollständig abgegeben wird und so von der Induktivität keine Leistung aufgenommen wird.
     }
 
     \b{
@@ -386,7 +386,7 @@
         \resizebox{0.8\textwidth}{!}{
             \input{Tikz/src/Scheinleistung_Wirkleistung_Blindleistung/Verlauf_induktive_Last}\alttext{Das Bild zeigt drei sinusförmige Zeitverläufe über der Zeit t. Die Spannung u(t) ist blau, der Strom i(t) rot und die Leistung p(t) grün dargestellt. Spannung und Strom sind phasenverschoben, wodurch die Leistung zwischen positiven und negativen Werten schwankt. Die Zeitachse ist von 0 bis 4π beschriftet.}
         }
-    }{{\bf Verlauf des Stromes, der Spannung und der zeitabhängigen Leistung an einer induktive Last.} Die Augenblicksleistung weist die 
+    }{{\bf Verlauf des Stromes, der Spannung und der zeitabhängigen Leistung an einer induktive Last.} Die Augenblicksleistung weist die
     doppelte Frequenz gegenüber der Spannung bzw. des Stromes auf. Die positiven und negativen Halbwellen heben sich gegenseitig
     auf, die aufgenommene Leistung wird vollständig wieder abgegeben. \label{BildInduktiveLast}}
 
@@ -403,18 +403,18 @@
     \ftx{Leistung Kapazität}
 
     \s{
-        Beim Kondensator verhält es sich dem Prinzip nach äquivalent zur Induktivität. Hier eilt der Strom der Spannung um 90° ($-\pi/2$). 
-        Der konstante Anteil der Augenblicksleistung beträgt Null und die Leistung pulsiert mit doppelter Frequenz um die Nulllinie. 
-        Wie auch bei der Induktivität wird von einer Kapazität die aufgenommene Leistung wieder vollständig abgegeben, sodass im 
+        Beim Kondensator verhält es sich dem Prinzip nach äquivalent zur Induktivität. Hier eilt der Strom der Spannung um 90° ($-\pi/2$).
+        Der konstante Anteil der Augenblicksleistung beträgt Null und die Leistung pulsiert mit doppelter Frequenz um die Nulllinie.
+        Wie auch bei der Induktivität wird von einer Kapazität die aufgenommene Leistung wieder vollständig abgegeben, sodass im
         Mittel keine Leistung aufgenommen wird. Das Verhalten der zeitabhängigen Leistung an einer kapazitiven Last wird in der Abbildung
-        \ref{BildKapazitiveLast} vorgestellt. 
+        \ref{BildKapazitiveLast} vorgestellt.
     }
 
     \b{
         Augenblicksleistung an einer Kapazität:
         \begin{itemize}
             \item<1-> Spannung und Strom um $-\pi/2$ phasenverschoben
-            \item<2-> Konstanter Anteil der Augenblicksleistung gleich Null 
+            \item<2-> Konstanter Anteil der Augenblicksleistung gleich Null
             \item<2-> Augenblicksleistung pulsiert mit doppelter Frequenz
             \item<2-> Aufgenommene Leistung wird vollständig wieder abgegeben
         \end{itemize}
@@ -424,7 +424,7 @@
         \resizebox{0.8\textwidth}{!}{
             \input{Tikz/src/Scheinleistung_Wirkleistung_Blindleistung/Verlauf_kapazitive_Last}\alttext{Das Bild zeigt drei sinusförmige Zeitverläufe über der Zeit t. Die Spannung u(t) ist blau, der Strom i(t) rot und die Leistung p(t) grün dargestellt. Spannung und Strom sind gegensinnig phasenverschoben. Die Leistung schwankt um null mit abwechselnd positiven und negativen Anteilen.}
         }
-    }{{\bf Verlauf des Stromes, der Spannung und der zeitabhängigen Leistung an einer kapazitiven Last.} Die Augenblicksleistung weist die 
+    }{{\bf Verlauf des Stromes, der Spannung und der zeitabhängigen Leistung an einer kapazitiven Last.} Die Augenblicksleistung weist die
     doppelte Frequenz gegenüber der Spannung bzw. des Stromes auf. Die positiven und negativen Halbwellen heben sich gegenseitig
     auf, die aufgenommene Leistung wird vollständig wieder abgegeben. \label{BildKapazitiveLast}}
 
@@ -443,25 +443,25 @@
     \ftx{Blindleistung}
 
     \s{
-        Ist die Augenblicksleistung größer Null, wird Leistung aufgenommen. Entgegengesetzt wird Leistung abgegeben, wenn die 
+        Ist die Augenblicksleistung\index{Augenblicksleistung} größer Null, wird Leistung aufgenommen. Entgegengesetzt wird Leistung abgegeben, wenn die
         Augenblicksleistung kleiner Null ist. Durch die nicht vorhandene Phasenverschiebung zwischen dem Strom und der Spannung
-        am ohmschen Widerstand ist die mittlere Leistung stets größer null. Der ohmsche Widerstand nimmt also stets Leistung auf. 
+        am ohmschen Widerstand ist die mittlere Leistung stets größer null. Der ohmsche Widerstand nimmt also stets Leistung auf.
         Die Leistung wird hier als Wirkleistung $P$ bezeichnet, welche für Anwendungen genutzt werden kann. Sie wird anhand der
-        bereits vorgestellten Gleichung \ref{GleichungLei5} für sinusförmige Spannungen und Ströme berechnet. 
-        Die beschriebenen Leistungen erklären Wirkleistungsanteile und Blindleistungsanteile. Die Blindleistung beschreibt dabei 
-        denjenigen Anteil der Leistung, welcher für die Erzeugung von elektrischen und magnetischen Feldern notwenig ist. Ist die 
+        bereits vorgestellten Gleichung \ref{GleichungLei5} für sinusförmige Spannungen und Ströme berechnet.
+        Die beschriebenen Leistungen erklären Wirkleistungsanteile und Blindleistungsanteile. Die Blindleistung beschreibt dabei
+        denjenigen Anteil der Leistung, welcher für die Erzeugung von elektrischen und magnetischen Feldern notwenig ist. Ist die
         elektrische Impedanz rein induktiv oder kapazitiv, liegt eine Phasenverschiebung von $\pm 90^\circ$ vor. Der rein induktive
-        oder rein kapazitive Zweipol nimmt Leistung auf, welche anschließend wieder vollständig abgegeben wird. Das dadurch 
+        oder rein kapazitive Zweipol nimmt Leistung auf, welche anschließend wieder vollständig abgegeben wird. Das dadurch
         resultierende Mittel der Leistung beträgt immer null. Diese Leistung wird als Blindleistung $Q$ Bezeichnet. Es wird dabei
         zwischen induktiver und kapazitiver Blindleistung unterschieden. Für die induktive Blindleistung ergibt sich eine positive
-        Phasenverschiebung für die Leistung, was genau dem Verlauf des Sinusfunktion entspricht. Die kapazitive Blindleistung wird 
-        entgegengesetzt verschoben, sodass sich ebenfall eine Sinusfunktion, jedoch mit negativem Vorzeichen definieren lässt. 
+        Phasenverschiebung für die Leistung, was genau dem Verlauf des Sinusfunktion entspricht. Die kapazitive Blindleistung wird
+        entgegengesetzt verschoben, sodass sich ebenfall eine Sinusfunktion, jedoch mit negativem Vorzeichen definieren lässt.
         In den Gleichungen \ref{GleichungLei7} und \ref{GleichungLei8} werden die Gleichungen für die Berechnungen der induktiven
-        und kapazitiven Blindleistung vorgestellt. Die Maßeinheit für die induktive und kapazitive Blindleistung ist das 
+        und kapazitiven Blindleistung vorgestellt. Die Maßeinheit für die induktive und kapazitive Blindleistung ist das
         var (Volt-Ampere-reaktiv).
 
         \begin{eq}
-            Q_\mathrm{Ind} = U \cdot I \cos(\varphi + 90^\circ) = U \cdot I \cdot \sin(\varphi)        \label{GleichungLei7}        
+            Q_\mathrm{Ind} = U \cdot I \cos(\varphi + 90^\circ) = U \cdot I \cdot \sin(\varphi)        \label{GleichungLei7}
         \end{eq}
 
         \begin{eq}
@@ -470,7 +470,7 @@
     }
 
     \b{
-        Die Blindleistung $Q$ beschreibt denjenigen Anteil der Leistung, welcher zur Erzeugung von elektrischen und magnetischen Feldern 
+        Die Blindleistung $Q$ beschreibt denjenigen Anteil der Leistung, welcher zur Erzeugung von elektrischen und magnetischen Feldern
         benötigt wird.
         \begin{itemize}
             \item Periodischer Anteil der Augenblicksleistung mit Gleichanteil gleich Null
@@ -480,7 +480,7 @@
                 \begin{itemize}
                     \item<2-> Induktive Blindleistung: \\
                     \begin{eq}
-                        Q_\mathrm{Ind} = U \cdot I \cos(\varphi + 90^\circ) = U \cdot I \cdot \sin(\varphi)       \nonumber   
+                        Q_\mathrm{Ind} = U \cdot I \cos(\varphi + 90^\circ) = U \cdot I \cdot \sin(\varphi)       \nonumber
                     \end{eq}
                 \end{itemize}
             \end{minipage}
@@ -500,13 +500,13 @@
     \end{eq}
     }
 
-    \s{    
+    \s{
         Bei idealen kapazitiven oder induktiven Widerständen wird keine Energie in Form von Wärme umgesetzt.
-        Es ändert sich lediglich das magnetische oder elektrische Feld, so wird also Energie gespeichert oder 
+        Es ändert sich lediglich das magnetische oder elektrische Feld, so wird also Energie gespeichert oder
         abgegeben.
     }
 
-    \speech{LeistungBlind}{1}{Die Blindleistung beschreibt denjenigen Anteil der Leistung, 
+    \speech{LeistungBlind}{1}{Die Blindleistung beschreibt denjenigen Anteil der Leistung,
     welcher zur Erzeugung von elektrischen und magnetischen Feldern benötigt wird.
     Wie zuvor kennengelernt weisen die Leistungen von idealen Induktivitäten und Kapazitäten keinen Gleichanteil auf.
     Der Anteil der Augenblicksleistung ohne einen Gleichanteil beschreibt die Blindleistung Kuh.}
@@ -524,7 +524,7 @@
 
     \begin{Merksatz}{Wirkleistung und Blindleistung}
         In der komplexen Ebene wird die Leistung durch die Wirkleistung und die Blindleistung erklärt. Die Wirkleistung
-        beschreibt den Realteil und die Blindleistung den Imaginärteil der komplexen Scheinleistung. Die Wirkleistung 
+        beschreibt den Realteil und die Blindleistung den Imaginärteil der komplexen Scheinleistung. Die Wirkleistung
         und die Blindleistung werden wie folgt definiert:
 
         \begin{eq}
@@ -533,7 +533,7 @@
 
     \end{Merksatz}
 
-    \speech{LeistungMrk2}{1}{In der komplexen Ebene wird die Leistung durch die Wirkleistung und die Blindleistung erklärt. 
+    \speech{LeistungMrk2}{1}{In der komplexen Ebene wird die Leistung durch die Wirkleistung und die Blindleistung erklärt.
     Die Wirkleistung beschreibt den Realteil und die Blindleistung den Imaginärteil der komplexen Scheinleistung
     .}
 \end{frame}
@@ -548,11 +548,11 @@
     \ftb{Scheinleistung}
 
     \s{
-        Bisher wurden die Grundlagen der Leistungsbetrachtung von idealen ohmschen und induktiven/kapazitiven Impedanzen 
-        betrachtet. Jedoch treten in den meisten Netzwerken sowohl ohmsche als auch induktive oder kapazitive Impedanzen 
-        auf. In solchen Netzen wird dann unterschieden zwischen Scheinleistung, Wirkleistung und Blindleistung. Die 
-        Scheinleistung steht dabei für die Gesamtleistung des Systems. Um die Scheinleistung zu berechnen, wird mit dem 
-        Maximalwert gerechnet, also wenn keine Phasenverschiebung vorliegen würde. Damit ist dieser Wert gleich der 
+        Bisher wurden die Grundlagen der Leistungsbetrachtung von idealen ohmschen und induktiven/kapazitiven Impedanzen
+        betrachtet. Jedoch treten in den meisten Netzwerken sowohl ohmsche als auch induktive oder kapazitive Impedanzen
+        auf. In solchen Netzen wird dann unterschieden zwischen Scheinleistung, Wirkleistung und Blindleistung. Die
+        Scheinleistung steht dabei für die Gesamtleistung des Systems. Um die Scheinleistung zu berechnen, wird mit dem
+        Maximalwert gerechnet, also wenn keine Phasenverschiebung vorliegen würde. Damit ist dieser Wert gleich der
         Leistung eines idealen ohmschen Widerstands:
     }
 
@@ -567,7 +567,7 @@
     \end{eq}
 
     \s{
-        Wird die Scheinleistung in der komplexen Ebene betrachtet, kommen die Festzeiger zum Einsatz. Wird die kompexe Spannung 
+        Wird die Scheinleistung in der komplexen Ebene betrachtet, kommen die Festzeiger zum Einsatz. Wird die kompexe Spannung
         mit dem komplexen Strom multipliziert, würden nach den Regeln des kompexen rechnens die Phasenwinkel addiert werden.
         Um eine korrekte Leistungsberechnung durchzuführen, muss jedoch eine Differenz zwischen den Phasenwinkeln vorliegen.
         Um diesem Problem abhilfe zu schaffen, wird mit dem konjugierten komplex Wert des Stroms gerechnet:
@@ -578,10 +578,10 @@
             und~~~ \underline{I}^*&=I\cdot e^{-j\varphi_\mathrm{i}} \\
             folgt~~~ \underline{S}&=U\cdot e^{j\varphi_\mathrm{u}} \cdot I\cdot e^{-j\varphi_\mathrm{i}}\nonumber  \\
             &=U\cdot I\cdot e^{j(\varphi_\mathrm{u}-\varphi_\mathrm{i})} \\
-            &=U\cdot I\cdot e^{j(\varphi)} \nonumber 
+            &=U\cdot I\cdot e^{j(\varphi)} \nonumber
         \end{eqa}
     }
-     
+
     \b{
         \onslide<2->{
             \begin{minipage}[t]{0.5\textwidth}
@@ -593,7 +593,7 @@
                         und~~~ \underline{I}^*&=I\cdot e^{-j\varphi_\mathrm{i}} \\
                         folgt~~~ \underline{S}&=U\cdot e^{j\varphi_\mathrm{u}} \cdot I\cdot e^{-j\varphi_\mathrm{i}}\nonumber  \\
                         &=U\cdot I\cdot e^{j(\varphi_\mathrm{u}-\varphi_\mathrm{i})} \\
-                        &=U\cdot I\cdot e^{j(\varphi)} \nonumber 
+                        &=U\cdot I\cdot e^{j(\varphi)} \nonumber
                     \end{eqa}
                 \end{itemize}
             \end{minipage}}
@@ -622,13 +622,13 @@
                             \node at (-0.7, 2.12) {$Q$};
                         \end{tikzpicture}
                         }
-                    }{} 
-                \end{itemize}   
+                    }{}
+                \end{itemize}
             \end{minipage}}
     }
-    
+
     \speech{LeistungSchein}{1}{In der Realität gehen Wirkleistung und Blindleistung einher.
-    Die Scheinleistung setzt sich aus den beiden Leistungsarten zusammen. 
+    Die Scheinleistung setzt sich aus den beiden Leistungsarten zusammen.
     An einem idealen Widerstand entspricht die Scheinleistung, durch den rein reellen Widerstand, der Wirkleistung am Widerstand, .}
     \speech{LeistungSchein}{2}{Die komplexe Scheinleistung wird aus der Komplexen Spannung und dem Konjugiert Komplexen Strom berechnet, .}
     \speech{LeistungSchein}{3}{Hier werden alle Drei Leistungen im Zeigerdiagramm dargestellt.
@@ -652,10 +652,10 @@
     \begin{eq}
         U \cdot I \cdot e^{j\varphi}=U\cdot I\cdot(\cos\varphi+j~\sin\varphi)=P+jQ=\underline{S}
     \end{eq}
-    
+
     \s{
-        Außerdem lässt sich über den Leistungsfaktor auch direkt ein Zusammenhang zwischen der Wirkleistung bzw. der Blindleistung 
-        und der Scheinleistung nach Gleichung \ref{GleichungSch1} festlegen. 
+        Außerdem lässt sich über den Leistungsfaktor auch direkt ein Zusammenhang zwischen der Wirkleistung bzw. der Blindleistung
+        und der Scheinleistung nach Gleichung \ref{GleichungSch1} festlegen.
     }
 
     \onslide<2->{
@@ -670,9 +670,9 @@
     \end{eq}}
 
     \speech{LeistungArten}{1}{Die komplexe Scheinleistung wird durch die komplexe Spannungen und Ströme hervorgerufen.
-    Sie überträgt eine Scheinbare Leistung, 
+    Sie überträgt eine Scheinbare Leistung,
     welche sich aus einer genutzten Wirkleistung Pe und der Blindleistung Q zusammensetzt.}
-    \speech{LeistungArten}{2}{Über den Leistungsfaktor können die Wirkleistung, 
+    \speech{LeistungArten}{2}{Über den Leistungsfaktor können die Wirkleistung,
     die Blindleistung und die Scheinleistung ineinander umgerechnet werden.}
 \end{frame}
 
@@ -682,38 +682,38 @@
     \ftx{Komplexe Scheinleistung}
 
     \begin{Merksatz}{Komplexe Scheinleistung}
-        Die komplexe Scheinleistung setzt sich aus der Wirkleistung und der Blindleistung zusammen. Sie kann auf 
-        verschiedene Weisen bestimmt werden: 
+        Die komplexe Scheinleistung setzt sich aus der Wirkleistung und der Blindleistung zusammen. Sie kann auf
+        verschiedene Weisen bestimmt werden:
 
         \begin{eq}
-            \underline{S} = \underline{U} \cdot \underline{I}^* = U \cdot I\cdot e^{j(\varphi_\mathrm{u}-\varphi_\mathrm{i})} = P + jQ \nonumber 
+            \underline{S} = \underline{U} \cdot \underline{I}^* = U \cdot I\cdot e^{j(\varphi_\mathrm{u}-\varphi_\mathrm{i})} = P + jQ \nonumber
         \end{eq}
 
     \end{Merksatz}
-    
+
     \speech{LeistungMrk3}{1}{Die komplexe Scheinleistung beschreibt die Leistung, die scheinbar übertragen wird.
     Sie setzt sich aus der Wirkleistung und der Blindleistung zusammen.}
 \end{frame}
 
 
-        
+
 \begin{frame}
     \ftx{Betriebsdiagramm}
 
     \s{
-        Die Größen Wirkleistung und Blindleistung sind in der komplexen Zahlenebene zu finden. Dabei ist die Wirkleistung ein rein 
-        reeler Wert und die Blindleistung stellt einen rein imaginären Wert dar. Die Scheinleistung, welche auch eine komplexe Größe 
-        ist, kann als Betrag des Weges von Wirk- und Blindleistung dargestellt werden (vgl. Abbildung \ref{BildBetriebsdiagramm}). 
-        Die hier dargestellte Scheinleistung $S$ mit zugehörigen Phasenwinkel $\varphi$ ist im $I.$ Quadranten verortet. Dies wird 
+        Die Größen Wirkleistung und Blindleistung sind in der komplexen Zahlenebene zu finden. Dabei ist die Wirkleistung ein rein
+        reeler Wert und die Blindleistung stellt einen rein imaginären Wert dar. Die Scheinleistung, welche auch eine komplexe Größe
+        ist, kann als Betrag des Weges von Wirk- und Blindleistung dargestellt werden (vgl. Abbildung \ref{BildBetriebsdiagramm}).
+        Die hier dargestellte Scheinleistung $S$ mit zugehörigen Phasenwinkel $\varphi$ ist im $I.$ Quadranten verortet. Dies wird
         durch einen positiven Wirkleistungsanteil und einen positiven Blindleistungsanteil verursacht. Die positive Wirkleistung
         deutet an, dass von etwas elektrische Leistung aufgenommen wird, also eine elektrische Last darstellt. Deswegen wird hier
-        vom Lastbetrieb gesprochen. Die positive Blindleistung spricht für die vorherschenden Effekte einer Spule und wirkt somit 
-        induktiv. Die Scheinleistung im $I.$ Quadranten wird im induktiven Lastbetrieb betrieben. Wirkt eine negative Wirkleistung 
-        in die Scheinleistung, wird Wirkleistung abgegeben, wie bei einem Generator, welcher Leistung abgibt. Bei einer positiven 
-        Blindleistung liegt hier ein induktiver Generatorbetrieb vor ($II.$ Quadrant). Ist die Blindleistung negativ, überwiegen 
+        vom Lastbetrieb gesprochen. Die positive Blindleistung spricht für die vorherschenden Effekte einer Spule und wirkt somit
+        induktiv. Die Scheinleistung im $I.$ Quadranten wird im induktiven Lastbetrieb betrieben. Wirkt eine negative Wirkleistung
+        in die Scheinleistung, wird Wirkleistung abgegeben, wie bei einem Generator, welcher Leistung abgibt. Bei einer positiven
+        Blindleistung liegt hier ein induktiver Generatorbetrieb vor ($II.$ Quadrant). Ist die Blindleistung negativ, überwiegen
         kapazitive Effekte. Bei negativer Wirkleistung wird diese Betriebsform kapazitiver Generatorbetrieb genannt ($III.$ Quadrant).
-        Als letztes wird im $IV.$ Quadranten ein kapazitiver Lastbetrieb beschrieben. Hier wirkt eine positive Wirkleistung und eine 
-        negative Blindleistung in die Scheinleistung ein. 
+        Als letztes wird im $IV.$ Quadranten ein kapazitiver Lastbetrieb beschrieben. Hier wirkt eine positive Wirkleistung und eine
+        negative Blindleistung in die Scheinleistung ein.
     }
 
     \b{
@@ -723,7 +723,7 @@
             \item<3-> Positive Blindleistung $\rightarrow$ Induktiv
             \item<4-> Scheinleistung im I. Quadranten
             \item<5-> ~ im II. Quadranten: Induktiver Generatorbetrieb
-            \item<5-> ~ im III. Quadranten: Kapazitiver Generatorbetrieb 
+            \item<5-> ~ im III. Quadranten: Kapazitiver Generatorbetrieb
             \item<5-> ~ im IV. Quadranten: Kapazitiver Lastbetrieb
         \end{itemize}
     }
@@ -732,19 +732,19 @@
         \resizebox{0.3\textwidth}{!}{
         \input{Tikz/src/Scheinleistung_Wirkleistung_Blindleistung/Zeigerdiagramm_Leistung}\alttext{Das Bild zeigt ein komplexes Leistungsdiagramm mit Realachse Re(S) und Imaginärachse Im(S). Ein Zeiger stellt die Scheinleistung S dar, mit Wirkleistung P auf der Realachse und Blindleistung Q auf der Imaginärachse. Die vier Quadranten sind als induktiv, kapazitiv, Generatorbetrieb und Verbraucherbetrieb beschriftet. Die Grafik veranschaulicht die Beziehung zwischen Wirk-, Blind- und Scheinleistung.}
         }
-    }{{\bf Zeigerdiagramm der Leistung.} Zusammensetzung von Blind-, Wirk- und Scheinleistung in Abhängigkeit der Phasenverschiebung 
+    }{{\bf Zeigerdiagramm der Leistung.} Zusammensetzung von Blind-, Wirk- und Scheinleistung in Abhängigkeit der Phasenverschiebung
     zwischen Strom und Spannung. Hier eine induktive Last im positiven Imaginärteil. \label{BildBetriebsdiagramm}}
 
     \speech{LeistungBetrieb}{1}{Je nachdem was für Komponenten oder Verbünde betrachtet werden,
     ist die Scheinleistung eher kapazitiv oder mehr induktiv, nimmt Strom auf oder gibt Strom ab.
-    Aus der Scheinleistung kann die Betriebsart eines komplexen Zweipols identifiziert werden. 
+    Aus der Scheinleistung kann die Betriebsart eines komplexen Zweipols identifiziert werden.
     Gezeigt wird hier das Koordinatensystem der komplexen Scheinleistung.}
-    \speech{LeistungBetrieb}{2}{Wird lediglich positive Wirkleistung Übertragen, 
+    \speech{LeistungBetrieb}{2}{Wird lediglich positive Wirkleistung Übertragen,
     wird von einem Lastbetrieb gesprochen.
     Beispielsweise wird hier von etwas elektrische Wirkeistung aufgenommen.
     Die Scheinleistung entspricht hier der übertragenen Wirkleistung}
     \speech{LeistungBetrieb}{3}{Wird zusätzlich eine positive Blindleistung Übertragen,
-    verursacht zum Beispiel von einer Spule, 
+    verursacht zum Beispiel von einer Spule,
     handelt es sich um eine Induktive Blindleistung.}
     \speech{LeistungBetrieb}{4}{Die so hervorgerufene Scheinleistung verortet sich im ersten Quadranten.
     Dieser Betriebsbereich wird als Induktiver Lastbetrieb bezeichnet.}
@@ -759,17 +759,17 @@
     \ftx{Blindleistung im Generatorbetrieb}
 
     \s{
-        Die Blindleistung wird unter anderem benötigt, um Magnetfelder in elektrischen Maschinen zu erzeugen. Der 
-        Blindleistungsbedarf entsteht durch Komponenten im System, welche entweder induktiv oder kapazitiv wirken. 
-        Wenn der Strom zur Erzeugung des Magnetfeldes (Erregerstrom) höher ist, als es für die nominale Leistung des 
-        Generators erforderlich wäre, ist ein Generator übererregt. In diesem Fall ist der Generator in der Lage, 
-        Blindleistung in das Netz abzugeben. Die hierdurch erhöhte Blindleistung im Netz führt zu einer Spannungsanhebung. 
-        Steigt der Energiebedarf im Netz, kann diese Gegebenheit dafür genutzt werden, einem Absinken der Netzspannung 
-        entgegenzuwirken. 
-        Andersherum arbeitet ein Generator mit einem geringeren Erregerstrom als benötigt im untererregten Zustand. Der 
-        Generator nimmt hier Blindleistung aus dem Netz auf, um das erforderliche Magnetfeld aufrecht zu halten. Der 
-        Bezug von Blindleistung führt dann wiederum zu einer Spannungsabsenkung im Netz. Bei einer starken untererregung 
-        eines Generators kann es zum Ausfall der elektrischen Maschine kommen. 
+        Die Blindleistung wird unter anderem benötigt, um Magnetfelder in elektrischen Maschinen zu erzeugen. Der
+        Blindleistungsbedarf entsteht durch Komponenten im System, welche entweder induktiv oder kapazitiv wirken.
+        Wenn der Strom zur Erzeugung des Magnetfeldes (Erregerstrom) höher ist, als es für die nominale Leistung des
+        Generators erforderlich wäre, ist ein Generator übererregt. In diesem Fall ist der Generator in der Lage,
+        Blindleistung in das Netz abzugeben. Die hierdurch erhöhte Blindleistung im Netz führt zu einer Spannungsanhebung.
+        Steigt der Energiebedarf im Netz, kann diese Gegebenheit dafür genutzt werden, einem Absinken der Netzspannung
+        entgegenzuwirken.
+        Andersherum arbeitet ein Generator mit einem geringeren Erregerstrom als benötigt im untererregten Zustand. Der
+        Generator nimmt hier Blindleistung aus dem Netz auf, um das erforderliche Magnetfeld aufrecht zu halten. Der
+        Bezug von Blindleistung führt dann wiederum zu einer Spannungsabsenkung im Netz. Bei einer starken untererregung
+        eines Generators kann es zum Ausfall der elektrischen Maschine kommen.
     }
 
     \b{
@@ -784,15 +784,15 @@
         \end{itemize}
     }
 
-    \speech{LeistungGenBlind}{1}{Allgemein sind die Betriebsarten nun bekannt, 
+    \speech{LeistungGenBlind}{1}{Allgemein sind die Betriebsarten nun bekannt,
     folgend noch ein wenig zum Generatorbetrieb.}
-    \speech{LeistungGenBlind}{2}{Als Übererregt wird der Generatorbetrieb bezeichnet, 
-    beispielsweise wenn der Erregerstrom eines Generators größer ist, 
-    als der Bedraf des magnetischen Feldes. 
-    Die Blindleistung wird dann an das Netz abgegeben, 
-    was zu einer Anhebung der Systemspannung führt. 
+    \speech{LeistungGenBlind}{2}{Als Übererregt wird der Generatorbetrieb bezeichnet,
+    beispielsweise wenn der Erregerstrom eines Generators größer ist,
+    als der Bedraf des magnetischen Feldes.
+    Die Blindleistung wird dann an das Netz abgegeben,
+    was zu einer Anhebung der Systemspannung führt.
     Dieser Sachverhalt findet unter anderem in der Spannungshaltung als Systemdiensleistung eine Anwendung.}
-    \speech{LeistungGenBlind}{3}{Falls der Erregerstrom des Generator geringer ist, 
+    \speech{LeistungGenBlind}{3}{Falls der Erregerstrom des Generator geringer ist,
     als der Bedarf des magnetischen Feldes,
     ist der Generator Untererregt.
     Das hat einen Bezug von Blindleistung aus dem Netz zur Folge,
@@ -806,16 +806,16 @@
     \ftx{Zusammenfassung}
 
     \s{
-        Die Einheiten der drei Leistungsarten sind theoretisch alle vergleichbar. Um zwischen den Leistungsarten zu unterscheiden, 
-        wurden für die Scheinleistung und die Blindleistung neue 
-        Einheiten gewählt, welche physikalisch jedoch dasselbe aussagen. Für die Scheinleistung wurde die Einheit Volt-Ampere [VA] 
-        festgelegt und für die Blindleistung Volt-Ampere-reaktiv [var]. Die Wirkleistung wird in der bekannten Einheit Watt [W] 
+        Die Einheiten der drei Leistungsarten sind theoretisch alle vergleichbar. Um zwischen den Leistungsarten zu unterscheiden,
+        wurden für die Scheinleistung und die Blindleistung neue
+        Einheiten gewählt, welche physikalisch jedoch dasselbe aussagen. Für die Scheinleistung wurde die Einheit Volt-Ampere [VA]
+        festgelegt und für die Blindleistung Volt-Ampere-reaktiv [var]. Die Wirkleistung wird in der bekannten Einheit Watt [W]
         angegeben.
 
         %  \begin{center}
         \begin{table}[H]
             \centering
-            \caption{{\bf Zusammenfassung der Leistungsarten.} Wirkleistung, Blindleistung und Scheinleistung welche durch 
+            \caption{{\bf Zusammenfassung der Leistungsarten.} Wirkleistung, Blindleistung und Scheinleistung welche durch
             Wechselgrößen hervorgerufen werden, aufgelistet mit den Formelzeichen und Einheiten.}
             \label{TabelleLeistungsarten}
                 \begin{tabular}{  c  c  c  c }
@@ -866,11 +866,11 @@
     \ftb{Leistung und elektrische Energie}
 
     \s{
-        Neben der elektrischen Leistung ist auch die elektrische Energie eine genutzte Größe, um beispielsweise Verbräuche 
-        von Haushalten zu erfassen. Hier wird die elektrische Leistung pro Zeiteinheit gemessen. Nach der Definition aus der 
+        Neben der elektrischen Leistung ist auch die elektrische Energie eine genutzte Größe, um beispielsweise Verbräuche
+        von Haushalten zu erfassen. Hier wird die elektrische Leistung pro Zeiteinheit gemessen. Nach der Definition aus der
         Thermodynamik ist die Energie die über einen bestimmten Zeitraum aufgebrachte Leistung. Es wird also gemäß Gleichung
         \ref{GleichungEne1} die elektrische Leistung während einer Zeit zwischen $t_1$ und $t_2$ aufintegriert um die elektrische
-        Energei zu bestimmen. 
+        Energei zu bestimmen.
     }
 
     \b{
@@ -885,9 +885,9 @@
 
 
     \s{
-        Vergleichbar mit der Wirkleistung und der Blindleistung lässt sich auch die Energie in eine Wirkarbeit und eine 
+        Vergleichbar mit der Wirkleistung und der Blindleistung lässt sich auch die Energie in eine Wirkarbeit und eine
         Blindarbeit unterteilen. Die Blindarbeit beschreibt dabei denjenigen Anteil der elektrischen Energie, welcher nicht
-        in Nutzenergie, bzw. Wirkarbeit. umgewandelt wird. 
+        in Nutzenergie, bzw. Wirkarbeit. umgewandelt wird.
     }
 
     \b{
@@ -902,7 +902,7 @@
 
     \s{
         Im stationären Zustand werden lediglich die Effektivwerte von Spannung und Strom und somit auch von der Scheinleistung,
-        Wirkleistung und Blindleistung betrachtet und sind somit zeitlich konstant. 
+        Wirkleistung und Blindleistung betrachtet und sind somit zeitlich konstant.
     }
 
     \b{
@@ -929,7 +929,7 @@
 
 
     \begin{enumerate}
-        \only<1>{	
+        \only<1>{
             \item[]
 
             Gegeben sind:   \\
@@ -941,10 +941,10 @@
 
             \begin{itemize}
                 \item[\bf a)] Berechnung von Wirkleistung und Blindleistung.
-                \item[\bf b)] Berechnung der Scheinleistung mit dem konjugierten komplexen Strom.  
+                \item[\bf b)] Berechnung der Scheinleistung mit dem konjugierten komplexen Strom.
             \end{itemize}
         }
-        \only<2>{	
+        \only<2>{
             \item[\bf a)]
             Die Wirkleistung beträgt:
             \begin{eqa}
@@ -958,35 +958,35 @@
                 = \frac{12\ V}{\sqrt{2}} \cdot \frac{2\ A}{\sqrt{2}} \cdot \sin(60\degree) \nonumber \\
                 Q &= 10,392\ var    \nonumber
             \end{eqa}
-        } 
-        \only<3-4>{	
+        }
+        \only<3-4>{
             \item[\bf b)]
             Die Scheinleistung beträgt:
             \begin{eqa}
-                \underline{S} &= \underline{U} \cdot \underline{I}^* = 
+                \underline{S} &= \underline{U} \cdot \underline{I}^* =
                 \frac{\underline{\hat{U}}}{\sqrt{2}} \cdot \frac{\underline{\hat{I}}^*}{\sqrt{2}} =
                 \frac{12\ V}{\sqrt{2}} \cdot e^{j(90\degree)} \cdot \frac{2\ A}{\sqrt{2}} \cdot e^{-j(30\degree)} =
                 \frac{12\ V \cdot 2\ A}{2} \cdot e^{j(90\degree - 30\degree)} \nonumber
-            \onslide<4>{	
+            \onslide<4>{
                 \\ \underline{S} &= 12\ VA \cdot e^{j60\degree} = 6\ W + j10,392\ var    \nonumber
             }
             \end{eqa}
-            } 
+            }
     \end{enumerate}
     \end{bsp}
 
     \speech{LeistungBsp}{1}{Abschließend soll die folgende Aufgabe bearbeitet werden.
-    Gegeben ist der Scheitelwert der Spannung mit Zwölf Volt und einem Phasenwinkel von Neunzig Grad 
+    Gegeben ist der Scheitelwert der Spannung mit Zwölf Volt und einem Phasenwinkel von Neunzig Grad
     und der Scheitelwert des Stromes mit Zwei Ampere und einem Phasenwinkel von Dreißig Grad.
     Hieraus sollen unter Aufgabenteil Ah die Wirkeistung und die Blindleistung bestimmt werden.
     Außerdem soll unter B die Scheinleistung mit dem Konjugiert Komplexen Strom bestimmt werden.}
-    \speech{LeistungBsp}{2}{Die Wirkleistung wird über die Vorgestellte Gleichung berechnet. 
+    \speech{LeistungBsp}{2}{Die Wirkleistung wird über die Vorgestellte Gleichung berechnet.
     Die Scheitelwerte werden über Wurzel Zwei in die Effektivwerte umgerechnet.
     Hieraus ergibt sich eine Wirkleistung von Sechs Watt.
     Ähnlich dazu die Berechnung der Blindleistung.
     Nur wird hier die Sinusfunktion anstatt der Kosinusfunktion genutzt.
     Die Blindleistung beträgt hier Zirka Zehn Komma Vier Volt Ampere Reaktiv.}
-    \speech{LeistungBsp}{3}{Die komplexe Scheinleistung wird aus dem Produkt der komplexen Spannung 
+    \speech{LeistungBsp}{3}{Die komplexe Scheinleistung wird aus dem Produkt der komplexen Spannung
     und dem Konjugiert komplexen Strom berechnet.
     Der Imaginärteil des Stromes erfährt also einen Vorzeichenwechsel.
     Strom und Spannung können miteinander verrechnet werden und die Winkel werden subtrahiert.}

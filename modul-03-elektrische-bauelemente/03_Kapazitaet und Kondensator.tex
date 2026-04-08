@@ -5,38 +5,13 @@
 \newvideofile{03KapazitaetundKondensatoren}{Kapazität und Kondensator}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Kapazität	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Kapazität und Kondensator}
+\section{Kapazität und Kondensator}\index{Kapazität}\index{Kondensator}
 \s{
 	In der Elektrotechnik gibt es drei grundlegende Komponenten, mit denen das elektrische Verhalten von Bauteilen beschrieben werden kann.
 	Neben dem zuvor behandelten ohmschen Widerstand, gibt es noch die Kapazität und die Induktivität.
 	In diesem Abschnitt geht es um die Eigenschaft der Kapazität, sowie dem dazugehörigen Bauteil, dem Kondensator.
 	Der darauffolgende Abschnitt behandelt die Induktivität sowie das zugehörige Bauteil, die Spule.}
 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Lernziele Kapazität	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% \begin{Lernziele}{Kapazität und Kondensator}
-
-	% 	Die Studierenden können
-	% 	\begin{itemize}
-	% 		\item zwischen Kapazität und Kondensator differenzieren.
-	% 		\item die wichtigsten Parameter rund um den Kondensator und die Kapazität benennen.
-	% 		\item die Kapazität eines Kondensators berechnen.
-	% 	\end{itemize}
-
-	% \end{Lernziele}
-% \b{
-% 	\begin{frame}
-% 		\ftx{Lernziele}
-% 		\begin{Lernziele}{Kapazität und Kondensator}
-
-% 			Die Studierenden können
-% 			\begin{itemize}
-% 				\item zwischen Kapazität und Kondensator differenzieren.
-% 				\item die wichtigsten Parameter rund um den Kondensator und die Kapazität benennen.
-% 				\item die Kapazität eines Kondensators berechnen.
-% 			\end{itemize}
-% 		\end{Lernziele}
-% 	\end{frame}
-% }
 \v{
 	\begin{frame}
 		\ftx{Lernziele}
@@ -133,7 +108,7 @@
 	\ftx{Die elektrische Kapazität}
 	\b{
 		\begin{itemize}\centering
-			\item $ \displaystyle C = \frac{Q}{U} \qquad [C] =  1\,\text{Farad} = 1\, \text{F} = 1\,\frac{\text{C}}{\text{V}} = 1\,\frac{\text{A} \text{s}}{\text{V}} \label{eq:cqu_2} $
+			\item $ \displaystyle C = \frac{Q}{U} \qquad [C] =  1\,\text{Farad} = 1\, \text{F} = 1\,\frac{\text{C}}{\text{V}} = 1\,\frac{\text{A} \text{s}}{\text{V}} $
 		\end{itemize}
 	}
 	\speech{03_Kapazitaet_und_Kondensator4}{1}{
@@ -154,7 +129,7 @@
 
 	Die Kapazität ist definiert als das Verhältnis der gespeicherten elektrischen Ladung $Q$ zur angelegten Spannung $U$.
 	Je höher die Kapazität eines Kondensators ist, desto mehr Ladung kann er bei einer gegebenen Spannung speichern.
-	
+
 	\begin{equation}
 		C = \frac{Q}{U} \qquad [C] =  1\,\text{Farad} = 1\,\text{F} =  1\,\frac{\text{C}}{\text{V}} = 1\,\frac{\text{A} \text{s}}{\text{V}} \label{eq:cqu_2}
 	\end{equation}
@@ -227,7 +202,7 @@
 			\begin{figure}[H]
 				\begin{center}
 					\input{Tikz/src/03_Kapazitaet_Kondensator/Ersatzschaltbild_realer_Kondensator}
-				\alttext{Ersatzschaltbild eines realen Kondensators als Reihenschaltung. Von links nach rechts sind ein idealer Kondensator C, ein Serienwiderstand Rs und eine Serieninduktivität Ls dargestellt. Der Strom iC von t fließt nach rechts. Die Spannungsabfälle sind als Pfeile markiert: uC von t am Kondensator, uR von t am Widerstand und uL von t an der Induktivität.}	
+				\alttext{Ersatzschaltbild eines realen Kondensators als Reihenschaltung. Von links nach rechts sind ein idealer Kondensator C, ein Serienwiderstand Rs und eine Serieninduktivität Ls dargestellt. Der Strom iC von t fließt nach rechts. Die Spannungsabfälle sind als Pfeile markiert: uC von t am Kondensator, uR von t am Widerstand und uL von t an der Induktivität.}
 				\end{center}
 			\end{figure}
 		}
@@ -335,12 +310,12 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Grafik Dielektrikum	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \s{
-	Die Eigenschaften des Dielektrikums sind materialspezifisch und werden durch die Dielektrizitätszahl $\varepsilon_\mathrm{r}$ quantifiziert.
+	Die Eigenschaften des Dielektrikums\index{Dielektrikum} sind materialspezifisch und werden durch die Dielektrizitätszahl $\varepsilon_\mathrm{r}$ quantifiziert.
 	In Tabelle \ref{tab:dielektrizität} sind Beispiele einiger Dielektrika und deren $\varepsilon_\mathrm{r}$, aufgeführt:
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Tabelle epsylon	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t]
-	\ftx{Das Dielektrikum}
+	\ftx{Das Dielektrikum}\index{Dielektrizitätszahl}
 	\b{
 		\begin{itemize}
 			\item Relative Dielektrizitätszahl verschiedener Materialien
@@ -377,35 +352,7 @@
 	\silence{4}
 \end{frame}
 
-%%%%% Kästchen Tabelle
 
-% \begin{table}[H]
-%     \centering
-%     \begin{tabular}{|l|c|}
-%         \hline
-%         \textbf{Material} & \textbf{\boldmath$\varepsilon_\mathrm{r}$} \\
-%         \hline
-%         Vakuum & 1 \\
-%         \hline
-%         Luft (bei STP) & 1.0006 \\
-%         \hline
-%         Kunststoff (PE) & 2.25-2.3 \\
-%         \hline
-%         Glas & 3-10 \\
-%         \hline
-%         Keramik & 5-300 \\
-%         \hline
-%         Silizium & 11.7 \\
-%         \hline
-%         Tantaloxid & 25-30 \\
-%         \hline
-%         Wasser & 81 \\
-%         \hline
-%     \end{tabular}
-%     \caption{Dielektrizitätszahl verschiedener Materialien}
-%     \label{tab:dielektrizität}
-% \end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Tabelle epsylon	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \s{
 	Zur vollständigen Beschreibung der Materialeigenschaften des Dielektrikums wird neben der Dielektrizitätszahl noch die elektrische Feldkonstante $\varepsilon_\mathrm{0}$ benötigt.
 	Dabei handelt es sich um das dielektrische Verhalten des elektrischen Feldes im Vakuum. Während die Dielektrizitätszahl $\varepsilon_\mathrm{r}$ einheitslos ist,
@@ -605,7 +552,7 @@
 			}
 			\uncover<3->{
 				\item
-				 $ \displaystyle	\frac{\mathrm{d}Q}{\mathrm{d}t} = i(t) $\vspace{0.5cm}	
+				 $ \displaystyle	\frac{\mathrm{d}Q}{\mathrm{d}t} = i(t) $\vspace{0.5cm}
 			}
 			\uncover<4->{
 				\item
@@ -617,7 +564,7 @@
 			}
 
 		\end{itemize}
-		
+
 		\only<6->{
 
 			\vspace{-7cm}
@@ -677,10 +624,6 @@
 
 \end{frame}
 
-%%%% ggf weg
-%Im Abschnitt \ref{sec:Induktivität} wird außerdem eingeführt, dass ein elektrischer Strom ein magnetisches Feld bedingt.
-%Im Modul 2 wurde bereits erklärt, dass in beiden Feldern Energie gespeichert und transferiert werden kann.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Übergang zu den zeitabhängigen Vorgängen %%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Schaltverhalten eines Kondensators}
 \s{
@@ -720,21 +663,7 @@
 			%\end{subfigure}
 		\end{figure}
 	}
-	\iffalse %Originaler tex
-		\speech{03_Kapazitaet_und_Kondensator14}{1}{
-			a, wenn wir jetzt betrachten, was passiert denn, wenn wir einen Kondensator, einen Widerstand in Reihe schalten und wir öffnen oder schließen einen Schalter, sodass die Spannungsquelle UQ dieses System entweder mit Spannung versorgt oder nicht. Dann fällt als erstes mal auf, wir hätten ja eigentlich eine plötzliche Veränderung der Spannung – eben durch das schalten des Schalters.
-			Der Schalter hier ist am Anfang geschlossen und wird nach einer gewissen Zeit, die hier mit 5 Tau bezeichnet ist, geöffnet, sodass normalerweise wir dann ja irgendwann einen abrupten Spannungsabfall hätten. Wir wissen aber, dass die Spannung in der Kapazität sich nicht plötzlich ändern kann, weil ansonsten der Strom unendlich groß werden müsste. Hier ist der Strom aber begrenzt auf einen maximalen Strom von U-Q durch R, weil maximal ja die Spannung an R anliegen kann, und demzufolge haben wir einen maximalen Strom von I max ist gleich U-q durch R
-			%; TODO fehlender tex
-			%. Wir wissen aber, dass die Spannung in der Kapazität sich nicht plötzlich ändern kann, weil ansonsten der Strom unendlich groß werden müsste. Hier ist der Strom aber begrenzt auf einen maximalen Strom von U-Q durch R, weil maximal ja die Spannung an R anliegen kann, und demzufolge haben wir einen maximalen Strom von I max ist gleich U-q durch R. %Die Platten des Kondensators Laden sich nun weiter auf, wodurch immer mehr Spannung über den Kondensator abfällt. Das ist auch an der Formel zu sehen. Die Spannung des Kondensator ist das Integral des Stromes durch den Kondensator über die Zeit.Was passiert nun mit der Spannung am Widerstand? Sie wird kleiner, wodurch der Strom durch den Widertsand sinkt, bis er gegen 0 geht.Da es sich hierbei um eine Serienschaltung handelt, fließt der gleiche Strom durch den Kondensator. %; TODO fehlender text weiter anpassen
-		}
 
-		\speech{03_Kapazitaet_und_Kondensator14}{2}{ % ; TODO: only 2
-			Was passiert jetzt also, wenn wir den Schalter zum Zeitpunkt T = 0 Sekunden schließen? Die Kapazität war vorher nicht geladen, demzufolge ist die Spannung in der Kapazität 0. Das heißt, die gesamte Spannung UQ fällt an R ab, was einen Stromfluss bedeutet, der gleich dem maximalen Strom ist. Dadurch lädt sich aber die Kapazität auf. Es verschieben sich dort Ladungen, sodass sich eine Spannung U-C aufbaut.
-			Diese Spannung UC plus die Spannung UR müssen immer UQ ergeben. Das sagt uns dieses geschlossene Ringintegral EDS. Sodass letztlich die Spannung UR in dem Maße kleiner wird, wie die Spannung UC größer wird. Was heißt das aber im Umkehrschluss? Der Strom I, der durch beide Elemente fließt, wird kleiner. Demzufolge verlangsamt sich die Aufladung.
-
-		}
-
-	\fi
 	%Aufladen eines Kondensator
 	\speech{03_Kapazitaet_und_Kondensator14}{1}{% TODO feintuning nötig
 		Ja, wenn wir jetzt betrachten, was passiert denn, wenn wir einen Kondensator und einen Widerstand in Reihe schalten und wir öffnen oder schließen einen Schalter, sodass die Spannungsquelle U-Q dieses System entweder mit Spannung versorgt oder nicht.
@@ -752,35 +681,7 @@
 		Deshalb können auch vom Netz getrennte Schaltungen gefährlich sein, weil die verbauten Kondensatoren lange ihre Ladung halten können.
 		Was passiert jetzt, wenn wir uns das entladen einmal anschauen?
 	}
-	% ; TODO: Hillgärtner: Wenn wir aufladen, dann sollten wir das auch beim Schalter berücksichtigen. Also ich würde es so machen: Der Schalter ist geöffnet und wird zum Zeitpunkt T = 0 geschlossen. Und dass er danach nochmal geöffnet wird, würde ich hier völlig rauslassen – auch unten in den Bildern. Es geht ja um das Aufladen. Und das andere ist für die nächste Folie. 
 
-	%Entladen eines Kondensator
-	% \speech{03_Kapazitaet_und_Kondensator14}{2}{ % ; TODO: only 2
-	% Die Spannungsquelle wird nun gegen einen Kurzschluss getauscht, und bei t gleich 0 wird der Schalter geschlossen.
-	% Die Spannung U-Q treibt den Strom I-max kurzzeitig durch die Schaltung und entlädt sich dabei, der Strom I wird kleiner und geht gegen 0.
-	% Warum entläd sich der Kondensator? der Strom durch die Schaltung wir von der Spannung U-C also der Ladungsdifferenz der Platten gespeist. Durch den Strom wird die ladungsdifferenz ausgeglichen und die Spannung U-C fällt ab, bis alle Ladungen ausgeglichen sind.
-
-	% Die Fragedie sich hierbei stellt ist, wie lange dauert dieser entlade oder auflade Vorgang. Hierfür wird Tau verwendet. 1 Tau beschreibt die Zeit die die Spannung des Kondensator von 0V bis 63 Prozent benötigt. Oder bis der Strom von I-Max auf 37 Prozent abfällt.
-	% Beim entladen ist es ähnlich, 1 tau entspricht der Zeit, bis die Kondensatorspannugn auf 37 Prozent ihres Ursprungswert abfällt.
-
-	% Tau kann aber auch aus der Kapazität und dem Serienwiderstand berechent werden. Tau ist gleich C mal R.
-	% }
-
-	% ; TODO: Hillgärtner: Das würde ich so gar nicht schreiben. UQ wird ja nicht geschaltet. UQ bleibt ja immer gleich, sondern der Schalter bleibt gleich. Also UQ würde ich hier gar nicht reinzeichnen. Ich würde nur UC, eventuell noch UR und I von T reinmachen. Wie gesagt, mit dem Hinweis: Der Schalter sei zum Zeitpunkt T = 0 noch geöffnet und wird zum Zeitpunkt T = 0 geschlossen. Allerdings fehlt noch die Voraussetzung, dass UC(0) = 0 V ist. 
-
-
-	%originaler speech text ersetzt durch text oberhalb von JW
-
-
-
-	%\speech{03_Kapazitaet_und_Kondensator14}{3}{ % ; TODO: only 3
-	%Wir sehen also, dass sich die Aufladung des Kondensators verlangsamt. Warum?    
-	%}
-
-	% \speech{03_Kapazitaet_und_Kondensator14}{4}{ % ; TODO: only 4
-	% Weil eben der Strom kleiner wird. Und der Strom wird eben deshalb kleiner, weil der Strom durch die Spannung UR(t) bedingt ist. Und sobald sich UC(t) aufbaut, wird UR(t) kleiner – also wird I(t) kleiner.
-	% Sowohl der Strom als auch die Spannung an der Kapazität folgen jetzt hier einer E-Funktion. Und es gibt eben diese Zeitkonstante Tau, die abhängig ist von R und C. Und diese Zeitkonstante Tau gibt uns eben genau an, dass der Kondensator – wenn er vollständig entladen war – auf 63 Prozent aufgeladen ist, und gleichzeitig der aufladende Strom nur noch 37 Prozent seines Maximalwertes hat. 
-	%}
 
 \end{frame}
 
@@ -864,8 +765,6 @@
 		I_\mathrm{max} = \frac{U_\mathrm{q}}{R}
 	\end{equation}
 
-	% Da es dabei dennoch zu relativ hohen Stromstärken kommen kann, werden in Schaltungen mit Kondensatoren mit hohen Kapazitäten sogenannten Vorladewiderstand verbaut.
-	% Deren Aufgabe ist es, den maximalen Strom zu begrenzen.
 
 	Sobald der Schalter geöffnet wird, bleibt die Spannung über der Kapazität erhalten.
 	Dies bedeutet, dass die zugeführte Energie in der Kapazität verbleibt und sich im stationären Fall nicht mehr ändert.
@@ -877,35 +776,7 @@
 	sondern die Spannungsquelle selbst die Eingangsspannung bestimmt.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Schaltbild mit Rechteck	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\iffalse
-	\begin{frame}[t]
-		\ftx{Schaltverhalten eines Kondensators: Entladen}
 
-		% ; TODO: Hillgärtner: 	Da habe ich so mein Problem mit, weil diese Rechteckspannung in dieser Spannungsquelle würde ja heißen, dass die Spannung, wenn sie auf 0 Volt in der Spannungsquelle fällt, quasi ein Kurzschluss ist. Es führt immer zu Diskussionen. Ich würde es anders machen. Ich würde die Spannungsquelle durch einen Kurzschluss ersetzen, einen Schalter einbauen, der zum Zeitpunkt T gleich 0 geschlossen wird. Und sagen, dass die Anfangsbedingung ist, dass die Kapazität C auf eine Spannung UQ aufgeladen ist. Und dann kann man die Entladekurve aufzeichnen und den Stromfluss aufzeichnen. Das fände ich sinnvoll. Alles andere finde ich immer sehr schwierig zu erklären mit diesen Rechteckspannungsquellen, weil in der Realität ist es nicht unbedingt immer so.
-		%						Demzufolge müssten die Folien 98, 99, 100, 101, 102, 103 angepasst werden. Ich weiß nicht, ob das mit der Rechteckspannung irgendwann nochmal in weiteren Modulen kommt, aber wir sollen ja nur die Kapazität prinzipiell erläutern. Und ich finde, da reichen die Kurven völlig aus.
-
-		%wurde neu gestatltet durch JW
-
-		\b{
-			%%%%% Laden- entladen eines Kondensators
-			\begin{figure}[H]
-				\centering
-				\begin{subfigure}[h]{1\textwidth}
-					\centering
-					\input{Tikz/src/03_Kapazitaet_Kondensator/Kapazitaet_Reihenschaltung_Entladen}
-				\end{subfigure}
-				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Schaltbild mit Rechteck	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Diagramm mit Rechteck	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-				\only<2->{
-					\begin{subfigure}[b]{1\textwidth}
-						\centering
-						\input{Tikz/src/03_Kapazitaet_Kondensator/Spannungs_Stromverlauf_Kapazitaet_Entladen_Folien}
-					\end{subfigure}}
-			\end{figure}
-
-		}
-	\end{frame}
-\fi
 \s{
 	%%%%% Laden- entladen eines Kondensators
 	\begin{figure}[H]
@@ -940,21 +811,3 @@
 	%Neben der Verwendung zur Energiespeicherung, werden Kondensatoren auch für die Filterung von Frequenzen, zur Zeitmessung oder für die Signalverarbeitung genutzt.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Schaltverhalten Kondensator	 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Beispiel Rechnung Kondensator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \begin{frame}
-% 	\ftx{Beispielrechnung Kapazität}
-
-% 	\begin{bsp}{Berechnung der Kapazität}{}
-% 		\begin{itemize}
-
-% 			\item Ladung auf Platten $Q = \sigma \cdot A = \varepsilon \cdot E \cdot A$
-% 			\item Kapazität mit $C = \frac{\varepsilon \cdot A}{d}$ berechnen
-% 			\item Gespeicherte Energie $W = \frac{1}{2} \cdot C \cdot U^2 $
-% 			\item Kapazität zweier Kondensatoren mit verschiedenen $\varepsilon_{\mathrm{r}}$ über $\vec{D}$ berechnen
-
-% 		\end{itemize}
-% 	\end{bsp}
-
-% \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Beispiel Rechnung Kondensator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

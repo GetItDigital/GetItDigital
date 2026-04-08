@@ -7,18 +7,18 @@
 
 \section{Einleitung}
 
-\s{% nur im Skript
-Elektrische Bauelemente lassen sich in verschiedene Kategorien unterteilen, je nach ihrer Funktion und Arbeitsweise. 
-Es gibt Widerstände, Kondensatoren, Spulen, aber auch Dioden und Transistoren, auf welche in einem späteren Kapitel eingegangen wird. 
-Elektrische Bauelemente müssen über eine Quelle (Strom- oder Spannungsquelle) mit Energie versorgt werden, um ihre gewünschte Funktion zu erzielen.
-Abbildung \ref{fig:Bauelemente} zeigt verschiedene Bauelemente.
+\s{
+	\index{Bauelemente}
+	Elektrische Bauelemente lassen sich in verschiedene Kategorien unterteilen, je nach ihrer Funktion und Arbeitsweise.
+	Es gibt Widerstände, Kondensatoren, Spulen, aber auch Dioden und Transistoren, auf welche in einem späteren Kapitel eingegangen wird.
+	Elektrische Bauelemente müssen über eine Quelle (Strom- oder Spannungsquelle) mit Energie versorgt werden, um ihre gewünschte Funktion zu erzielen.
+	Abbildung \ref{fig:Bauelemente} zeigt verschiedene Bauelemente.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Anfang - Abbildung Bauelemente %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{figure}[H]
 	\centering
-		\includegraphics[width=0.8\textwidth, alt={Das Bild zeigt Verschiedene elektrische Bauelemnte die in Schaltungen verwendet werden, wie Widerstände, Kondensatoren, Spulen und Halbleiterbauelemente. Jedes Bauelement hat spezifische Eigenschaften und Funktionen zur Steuerung von Strom und Spannung in einem elektrischen Netzwerk.}]{ba}  
+		\includegraphics[width=0.8\textwidth, alt={Das Bild zeigt Verschiedene elektrische Bauelemnte die in Schaltungen verwendet werden, wie Widerstände, Kondensatoren, Spulen und Halbleiterbauelemente. Jedes Bauelement hat spezifische Eigenschaften und Funktionen zur Steuerung von Strom und Spannung in einem elektrischen Netzwerk.}]{ba}
 		\caption{\textbf{Verschiedene elektrische Bau­elemnte.} Zeigt elektrische Bauelemnte die in Schaltungen verwendet werden, wie Widerstände,
-		 Kondensatoren, Spulen und Halbleiterbauelemente.} 
+		 Kondensatoren, Spulen und Halbleiterbauelemente.}
 		 %Jedes Bauelement hat spezifische Eigenschaften und Funktionen zur Steuerung von Strom und Spannung in einem elektrischen Netzwerk.}
 		\label{fig:Bauelemente}
 	\end{figure}
@@ -26,67 +26,51 @@ Abbildung \ref{fig:Bauelemente} zeigt verschiedene Bauelemente.
 
 \begin{frame}
 	\ftx{Elektrische Bauelemente}
-\b{
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\textwidth, alt={Das Bild zeigt Verschiedene elektrische Bauelemnte die in Schaltungen verwendet werden, wie Widerstände, Kondensatoren, Spulen und Halbleiterbauelemente. Jedes Bauelement hat spezifische Eigenschaften und Funktionen zur Steuerung von Strom und Spannung in einem elektrischen Netzwerk.}]{ba}  
-	\end{figure}
-}
-\speech{00_Einleitung1}{1}{
-Im Modul 3 beschäftigen wir uns, wie schon gesagt, mit den elektrischen Bauelementen. Auf dieser Übersichtsdarstellung siehst du unterschiedlichste Bauelemente. Auf einige davon, oder auf die allermeisten, werden wir nun im Folgenden eingehen.
-Im linken oberen Quadrant siehst du unterschiedliche Ausführungen von Widerständen, im unteren linken Quadranten unterschiedliche Ausführungen von Kondensatoren und im oberen rechten Quadranten unterschiedliche Ausführungen von Leuchtdioden.
-All diese Bauelemente werden in Schaltungen unterschiedlichster Art verwendet, damit wir die gewünschte Funktion realisieren können. Um zu verstehen, wie Bauelemente funktionieren und wie man die gewünschten Effekte bekommt, werden wir uns zuallererst mit der Leitfähigkeit und dem elektrischen Widerstand beschäftigen.
-Anschließend kommen die Spannungs- und Stromquellen. Wir werden uns dann mit dem Kapazitätsbegriff und dem Kondensator als Bauteil beschäftigen und zum Schluss mit dem Induktivitätsbegriff und der Spule als Bauteil.
-}
-
-
+	\b{
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.8\textwidth, alt={Das Bild zeigt Verschiedene elektrische Bauelemnte die in Schaltungen verwendet werden, wie Widerstände, Kondensatoren, Spulen und Halbleiterbauelemente. Jedes Bauelement hat spezifische Eigenschaften und Funktionen zur Steuerung von Strom und Spannung in einem elektrischen Netzwerk.}]{ba}
+		\end{figure}
+	}
+	\speech{00_Einleitung1}{1}{
+		Im Modul 3 beschäftigen wir uns, wie schon gesagt, mit den elektrischen Bauelementen. Auf dieser Übersichtsdarstellung siehst du unterschiedlichste Bauelemente. Auf einige davon, oder auf die allermeisten, werden wir nun im Folgenden eingehen.
+		Im linken oberen Quadrant siehst du unterschiedliche Ausführungen von Widerständen, im unteren linken Quadranten unterschiedliche Ausführungen von Kondensatoren und im oberen rechten Quadranten unterschiedliche Ausführungen von Leuchtdioden.
+		All diese Bauelemente werden in Schaltungen unterschiedlichster Art verwendet, damit wir die gewünschte Funktion realisieren können. Um zu verstehen, wie Bauelemente funktionieren und wie man die gewünschten Effekte bekommt, werden wir uns zuallererst mit der Leitfähigkeit und dem elektrischen Widerstand beschäftigen.
+		Anschließend kommen die Spannungs- und Stromquellen. Wir werden uns dann mit dem Kapazitätsbegriff und dem Kondensator als Bauteil beschäftigen und zum Schluss mit dem Induktivitätsbegriff und der Spule als Bauteil.
+	}
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ende - Abbildung Bauelemente %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \s{% nur im Skript
-Jedes dieser Bauelemente nutzt die grundlegenden Prinzipien der Elektrotechnik, um spezifische Funktionen in einem elektrischen Schaltkreis zu erfüllen. 
-Durch die Kombination verschiedener Bauelemente können komplexe Schaltungen erstellt werden, die in der Lage sind, anspruchsvolle Aufgaben zu erfüllen, 
-wie das Verarbeiten von Daten in einem Computer oder das Regulieren der Geschwindigkeit in einem Elektromotor.
+	Jedes dieser Bauelemente nutzt die grundlegenden Prinzipien der Elektrotechnik, um spezifische Funktionen in einem elektrischen Schaltkreis zu erfüllen.
+	Durch die Kombination verschiedener Bauelemente können komplexe Schaltungen erstellt werden, die in der Lage sind, anspruchsvolle Aufgaben zu erfüllen,
+	wie das Verarbeiten von Daten in einem Computer oder das Regulieren der Geschwindigkeit in einem Elektromotor.
 
-Der Übergang von den grundlegenden physikalischen Konzepten zu den elektrischen Bauelementen ist also ein Schritt von der Theorie zur Praxis, 
-der es uns ermöglicht, unser theoretisches Wissen in realen Anwendungen umzusetzen. Dieses Kapitel führt die drei grundlegenden elektrischen 
-Eigenschaften von Bauelementen, sowie die Spannungs- und Stromquellen, ein.
+	Der Übergang von den grundlegenden physikalischen Konzepten zu den elektrischen Bauelementen ist also ein Schritt von der Theorie zur Praxis,
+	der es uns ermöglicht, unser theoretisches Wissen in realen Anwendungen umzusetzen. Dieses Kapitel führt die drei grundlegenden elektrischen
+	Eigenschaften von Bauelementen, sowie die Spannungs- und Stromquellen, ein.
 
-\begin{Lernziele}{Lernziele}
-Die Studierenden können
-\begin{itemize}
-  \item das elektrische Bauelement Widerstand sowie den spezifischen Widerstand $\rho$ und die spezifische Leitfähigkeit $\kappa$ beschreiben.
-  \item zwischen Spannungs- und Stromquellen unterscheiden und reale Quellen modellieren.
-  \item zwischen Kapazität und Kondensator differenzieren, die wichtigsten Parameter benennen, die Kapazität berechnen und die Lade- und Entladeeigenschaften erläutern.
-  \item zwischen Induktivität und Spule differenzieren, die wichtigsten Parameter benennen, die Induktivität berechnen und die Lade- und Entladeeigenschaften erläutern.
-\end{itemize}
-\end{Lernziele}
+	\begin{Lernziele}{Lernziele}
+	Die Studierenden können
+	\begin{itemize}
+	\item das elektrische Bauelement Widerstand sowie den spezifischen Widerstand $\rho$ und die spezifische Leitfähigkeit $\kappa$ beschreiben.
+	\item zwischen Spannungs- und Stromquellen unterscheiden und reale Quellen modellieren.
+	\item zwischen Kapazität und Kondensator differenzieren, die wichtigsten Parameter benennen, die Kapazität berechnen und die Lade- und Entladeeigenschaften erläutern.
+	\item zwischen Induktivität und Spule differenzieren, die wichtigsten Parameter benennen, die Induktivität berechnen und die Lade- und Entladeeigenschaften erläutern.
+	\end{itemize}
+	\end{Lernziele}
 }% nur im Skript
 \b{
-\begin{frame}
-	\ftx{Lernziele}
-\begin{Lernziele}{Elektrische Bauelemente}
-Die Studierenden können
-\begin{itemize}
-  \item das elektrische Bauelement Widerstand sowie den spezifischen Widerstand $\rho$ und die spezifische Leitfähigkeit $\kappa$ beschreiben.
-  \item zwischen Spannungs- und Stromquellen unterscheiden und reale Quellen modellieren.
-  \item zwischen Kapazität und Kondensator differenzieren, die wichtigsten Parameter benennen, die Kapazität berechnen und die Lade- und Entladeeigenschaften erläutern.
-  \item zwischen Induktivität und Spule differenzieren, die wichtigsten Parameter benennen, die Induktivität berechnen und die Lade- und Entladeeigenschaften erläutern.
-\end{itemize}
-\end{Lernziele}
-\end{frame}
+	\begin{frame}
+		\ftx{Lernziele}
+		\begin{Lernziele}{Elektrische Bauelemente}
+			Die Studierenden können
+			\begin{itemize}
+				\item das elektrische Bauelement Widerstand sowie den spezifischen Widerstand $\rho$ und die spezifische Leitfähigkeit $\kappa$ beschreiben.
+				\item zwischen Spannungs- und Stromquellen unterscheiden und reale Quellen modellieren.
+				\item zwischen Kapazität und Kondensator differenzieren, die wichtigsten Parameter benennen, die Kapazität berechnen und die Lade- und Entladeeigenschaften erläutern.
+				\item zwischen Induktivität und Spule differenzieren, die wichtigsten Parameter benennen, die Induktivität berechnen und die Lade- und Entladeeigenschaften erläutern.
+			\end{itemize}
+		\end{Lernziele}
+	\end{frame}
 }
-% \v{
-% 	\begin{frame}
-% 	\ftx{Lernziele}
-% \begin{Lernziele}{Elektrische Bauelemente}
-% Du kannst
-% \begin{itemize}
-%   \item das elektrische Bauelement Widerstand sowie den spezifischen Widerstand $\rho$ und die spezifische Leitfähigkeit $\kappa$ beschreiben.
-%   \item zwischen Spannungs- und Stromquellen unterscheiden und reale Quellen modellieren.
-%   \item zwischen Kapazität und Kondensator differenzieren, die wichtigsten Parameter benennen, die Kapazität berechnen und die Lade- und Entladeeigenschaften erläutern.
-%   \item zwischen Induktivität und Spule differenzieren, die wichtigsten Parameter benennen, die Induktivität berechnen und die Lade- und Entladeeigenschaften erläutern.
-% \end{itemize}
-% \end{Lernziele}
-% \end{frame}
-% }

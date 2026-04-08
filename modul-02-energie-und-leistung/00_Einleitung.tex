@@ -1,189 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% elektrische Ladungen üben Kräfte aufeinander aus (bspl. Luftballon & Haare)
-%%% Division dieser Kraft F(vektor) mit ihrer Ursache Q ergibt E(vektor)
-%%% elektrisches Feld besteht aus Gesamtheit aller Feldvektoren
-%%% Punktladung ergibt radial wegzeigendes Bild (Albach S.34)
-%%% Felder von mehreren Punktladungen werden addiert
-%%% el. Feldlinien beginnen bei + und enden bei - (Albach S.36)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% el. Ladungen Q üben Kräfte aufeinander aus.
-% Soll eine Ladung im Feld verschoben werden, muss eine Kraft überwunden (aufgewendet? aufgebracht?) werden
-% Es muss Arbeit verrichtet werden Wel=-Q* S Eds
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%% Daraus ergibt sich das absolute, elektrostatische Potential Phie an der Stelle P1 bezogen auf den Bezugspunkt P0
-%%% Phi(P1)=Wel(P1)/Q=-S Eds
-%%% Die Differenz aus zwei Potenzialen ergibt die elektrische Spannung U12 = Phi(P1) - Phi(P2) = S Eds
-%%% Die Spannung ist nur eine für einen Punkt im Feldraum definierte, (Hä?) (Folien S.20)
-%%% skalare Beschreibung der Verhältnisse im elektrischen Feld!		(Hä?)
-%%% zwischen zwei Körpern mit entgegengesetzen Ladungsmengen Q bildet sich ein E Feld aus
-%%% Bei leitender Verbindung wirkt Kraft auf Ladungsträger, was zu Ladungsträgerausgleich führt.
-%%% Die Bewegung der Ladungsträger wird el. Strom I genannt.
-%%% I(t) = lim(t>0) dQ/dt = dQ/dt (unterschiedliche delta Zeichen) (Legende / Verzeichnis)
-%%% Ein Strom ist positiv, wenn er vom höheren zum niedrigeren Potential fließt.
-%%% Elektronen bewegen sich entgegen der technischen Stromrichtung!
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Wieder zwei Elektronen, aber mit leitendem Material im Zwischenraum
-% Der Gesamtstrom wird mit einer ortsabhängigen Dichte verteilt (Stromdichte J)
-% Der durch die senkrecht zur Stromdichte stehende Fläche A fließende Strom ergibt sich zu I=J*A (Satz ändern)
-% Allgemein gilt= I = SS J*dA (Wann brauche ich die integrale Form, wann die skalare?) (sind skalar und integral die richtigen Bezeichnungen?)
-% Ladungsträgerbewegung im Leiter (gerichtet / ungerichtet) (Folie S.24)
-% Aufgrund des Atomaufbaus können sich Leiter frei bewegen
-% Bewegung in alle Richtungen, Mittelwert verschwindet, kein Strom
-% Anlegen eines elektrischen Feldes bewirkt gerichtete Bewegung
-% Beweglichkeit mu_e und Anzahl freier Elektronen können in der 
-% spezifischen Leitfähigkeit kappa zusammengefasst werden.
-% J(vector = \kappa \cdot E vector)
-% Ohm´sches Gesetz
-% die Bezeichnung \vec{J} = \kappa \cdot \vec{E} wird auch ohm´sches Gesetz genannt
-% Es ergibt sich durch Aufstellung der Feldgleichung und der Definition des Stromes und der Spannung, 
-% dass Strom und Spannung proportional sind: U12 = R * I
-% Der Proportionalitätsfaktor R wird auch elektrischer Widerstand genannt R = l/(kappa * A)
-% Es wird eigentlich immer in den integralen Größen U,R und I gerechnet, aber dahinter steckt imme reine Beschreibung der Felder
-% R = U/I = S EDS / SS J * dA
-% Folie 26
-% Der Begriff elektrischer Widerstand beschreibt sowohl die Eigenschaften einer leitfähigen Struktur, als auch das Bauteil
-% Da die Leitfähigkeit i.d.R. temperaturabhängig ist, ist das auch der Widerstand. Schichtwiderstände, Drahtwiderstände
-% Bauteilausführungen: Bifilare Wicklung, gewendelte Wicklung, Induktivitätsarme Wicklung
-% Schaltbildsymbole mit Phi1, Phi2, U12, I & R
-% Diagramm mit unterschiedlicher Temperatur und verändertem Widerstand, also unterschiedliche Ströme bei gleicher Spannung (in der Folie aber andersrum)
-% Folie 27
-% Festwiderstände haben eine lineare Widerstandscharakteristig und genügen dem ohm´schen gesetz
-% Bauteile liegen in definierten Werten als E-Reihe vor
-% Die Zahl der E-Reihe (E6, 12 etc.) gibt die Anzahl der Werte je Dekade an und legt die maximale Toleranz fest.
-% Widerstandsreihen Tabelle (E6,12,24)
-% Festwiderstandsreihe: Farbcode (Tabelle)
-% Leistung und Energie / Arbeit:
-% Elektronen werden durch anliegendes Feld beschleunigt
-% > Zunahme kinetischer Energie
-% Für eine transportierte Ladung dQ entspricht die dem Feld entnommene Energie dWe also:
-% dWe = (Phi_(e1) \cdot \Delta Q = U \cdot \Delta Q = $U$ \cdot $I$ \cdot \Delta $t$) [Ws oder kWh]
-% Geleistete Arbeit pro Zeit = Leistung [W]
-% P = \frac{\Delta W_e}{\Delta t} = U \cdot I
-% Die in einem Widerstand in Wärme umgewandelte elektrische Leistung (= Verlustleistung) kann also berechnet werden zu:
-% P = U \cdot I  = I^2 \cdot R = \frac{U^2}{R}
-% Beispiel Schaltbild eines Temperaturfühlers.
-% Zusammenfassung Strom, Spannung & Widerstand
-% Elektrische Netzwerke lassen sich über die Integralgrößen Spannung U, Strom I und Widerstand R beschreiben.
-% R = \frac{l}{\kappa}=\frac{U}{I}
-% U_{12} = \int_{P_1}^{P_2} \vec{E} \cdot d\vec{s} = \varphi_1 - \varphi_2
-% I(t) = \lim_{t \to 0}  \frac{\Delta Q}{\Delta t} = \frac{dQ}{dt} = \iint \vec{J} \cdot d \vec{A}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% folgende Themen werden im Foliensatz FH Aachen zuvor behandelt
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Einschub Kugelkoordinaten
-%%% Netzwerkberechnung: Knoten- und Maschenregel und ihre Anwendung
-%%% Motivation zur Analyse und Berechnung von elektronischen Schaltungen
-%%% Begriffsdefinition / Zählpfeilsysteme
-%%% Generator-/Verbraucherzählpfeilsystem
-%%% Zweitor, Schaltkreis, Schaltbild
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% es sollte zumindest kurz auf die Funktion und den Aufbau von Schaltbildern eingegangen werden,
-%% und bei weiteren Fragen auf das spätere Kapitel verweisen
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Spannungs- und Stromquellen
-% Übersichtsgrafik: Strom stellt sich ein, Spannung stellt sich ein
-% Spannungsquellen sollen nie im Kurzschluss, Stromquellen nie im Leerlauf betrieben werden,
-% da ansonsten eine unendliche Leistung abgegeben werden müsste!
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% folgende Themen werden im Foliensatz FH Aachen zuvor behandelt
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Kirchhoff´sche Regel
-%%% Maschenregel, Knotenregel Schaltbilder
-%%% Definition Knoten, Zählpfeile Kirchhoff
-%%% Zusammenfassung von einzelnen Elementen
-%%% Reihenschaltung, Parallelschaltung
-%%% Anwendungsbeispiele
-%%% Der Begriff des Spannungsabfalls
-%%% Spannungsteiler
-%%% Messbereichserweiterung Voltmeter
-%%% Stromteiler
-%%% Ampermeter
-%%% Widerstandsmessung
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Einfache elektrische Netzwerke: reale Quellen (Folie 53)
-% Modellierung realer Quellen
-% Spannung- Stromquelle
-% Umrechnung der Quellen
-% Ersatzspannungsquelle (gehört das auch schon zur Netzwerkanalyse?)
-%% Leistungsanpassung (nur anreißen. wird bestimmt ausführlich in der Netzwerkanalyse behandelt)
-%% Überlagerung (das wird doch bestimmt in einem anderen Modul behandelt.)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Berechnung umfangreicher Netzwerke: Zweige
-%%% Berechnung umfangreicher Netzwerke: Notwendige Gleichungen
-%%% Berechnung umfangreicher Netzwerke: Vollständiger Baum
-%%% Übergang zu den zeitabhängigen Vorgängen
-%%% Modellbildung: Bekannt: \vec{E} verursacht in leitfähigen Materialien $I$ und $U$
-%%% Strom und Spannung beschreibt das Feld aber nur integral
-%%% später wird gezeigt dass Strom ein magnetisches Feld bedingt
-%%% In beiden Feldern kann Energie gespeichert und transferiert werden.
-%%% Der Ohm´sche Widerstand R alleine reicht nicht aus, 
-%%% um die Verhältnisse insbesondere bei Netzwerken mit zeitlich veränderlichen Vorgängen zu beschreiben.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Einführung der Kapazität
-% Die Kapazität C eines Körpers ist ein Maß für die Fähigkeit eines Körpers, Ladungen zu speichern.
-% C = \frac{Q}{U} = \frac{\varepsilon \cdot \oiint  \vec{E} \cdot d \vec{A}}{\int \vec{E} \cdot d \vec{s}}
-% Es werden hierbei nur die integralen Größen Ladung G und Spannung U verwendet
-% Es gilt: i(t) = \frac{dq(t)}{dt} 
-% i_c(t) = C \cdot\frac{du_c(t)}{dt}
-% bzw. u_c(t) = \frac{1}{C} \cdot \int i_c(t) dt
-% Die Spannung an einer Kapazität kann sich also nicht sprunghaft ändern.
-% Einführung der Induktivität 
-% Die Induktivität L eines Körpers ist ein Maß für die Fähigkeit des Körpers, magnetische Energie zu speichern
-% Das Induktionsgesetz liefert folgenden Zusammenhang:
-% u_L = L \cdot \frac{di(t)}{dt}
-% i_L = \frac{1}{L} \cdot \int u_L(t)dt
-% Der Strom an einer Induktivität kann sich also nicht sprunghaft ändern!
-% Modelbildung: Quasistationäre Rechnung
-% Berücksichtigung parasitärer Elemente in ESB bei AC Netzwerken (Folie 68)
-% Änderungsgeschwindigkeit der Ströme & Spannungen muss so klein sein, dass trotz
-% endlicher Ausbreitungsgeschwindigkeit die Schaltung quasi gleichzeitig von der Änderung betroffen ist
-% (den obigen Text etwas umschreiben)
-% Beispielrechnung maximale Ausdehnung der Schaltung: 35 cm:
-% wie groß darf die Frequenz maximal sein, damit die Phasenverschiebung innerhalb der Schaltung <= 5° bleibt?
-% Sind alle Bauteile hinreichend genau bekannt, so dass ein vollständiges Ersatzschaltbild besteht 
-% und herrschen quasistationäre Bedingungen vor, dann gilt:
-% * Die Vorgänge innerhalb der Schaltung sind ortsunabhängig
-% * Kirchhoff‘sche Gesetzte sind weiter gültig
-% * Bei rein linearen Bauelementen kann der Überlagerungssatz weiter angewendet werden
-% was ist mit Lineare Bauelemente auf seite 70 gemeint? L und C sind doch nicht linear
-
-% Lernziele der Studierenden:
-% Die im elektrostatischen Feld gespeicherte Energie zu berechnen
-% Den Ohm´schen Widerstand von einfachen Leiteranordnungen zu bestimmen
-% Die Temperaturabhängigkeit der ohmschen Widerstände anzugeben
-% das Ohm´sche Gesetz in differentieller und integraler Form anzuwenden
-% die Energie und Leistung im stationären Strömungsfeld zu berechnen
-% Spannungs- und Stromquellen ineinander umrechnen
-% Die Verbraucherleistung bei vorgegebener Quelle zu maximieren
-% Wirkungsgradberechnung durchzuführen
-
-% Verstehen der grundlegenden Definitionen und Einheiten von Energie (Joule), Leistung (Watt) und elektrischer Arbeit (Joule oder Wattsekunde).
-% Berechnen der elektrischen Arbeit und Leistung unter Anwendung des Ohmschen Gesetzes und anderer grundlegender Formeln.
-% Erkennen des Zusammenhangs zwischen Energie, Arbeit und Leistung in verschiedenen elektrischen Systemen und Geräten.
-% Verstehen des Konzepts des Wirkungsgrads und seiner Bedeutung für die Bewertung von Systemen; Berechnung des Wirkungsgrades in einfachen Systemen.
-% Anwenden dieser Konzepte in praktischen Beispielen, wie dem Berechnen von Stromverbrauch und Kosten in Haushaltsgeräten oder industriellen Anlagen.
-
-% Definition und Unterscheidung der elektrischen Leitfähigkeit und des Widerstands, inklusive ihrer Abhängigkeit von Material und Geometrie.
-% Berechnung von Widerstandsnetzwerken in Reihen- und Parallelschaltung.
-% Verständnis von Strom- und Spannungsquellen, ihre ideale Theorie und realen Verhalten (z.B. Innenwiderstände).
-% Anwendung des Ohmschen Gesetzes und weiterführende Konzepte wie Kirchhoffsche Regeln zur Analyse einfacher Schaltungen.
-
-% Grundlegendes Verständnis von Kapazität und die Fähigkeit, die Kapazität von Kondensatoren in verschiedenen Konfigurationen zu berechnen (einschließlich Serien- und Parallelschaltungen).
-% Erklärung des Aufbaus und der Funktionsweise von Kondensatoren, und wie diese in realen Schaltkreisen wie Filtern oder Energiespeichern genutzt werden.
-% Verstehen von Induktivität und ihrer Rolle in elektrischen und magnetischen Feldern; Berechnung der Induktivität einfacher Spulen.
-% Anwendung von Spulen in praktischen Anwendungen, wie in Transformatoren oder als Teil von Schwingkreisen und Filtern.
-
-% Einheit des Leitwerts (Ohm => Mho)
-% Einführung D-Feld
-% Linearität 
-% 
-% änderung
-
-
-
 
 \section{Einleitung} % erste Kapitelebene
 
@@ -236,7 +50,7 @@ Du kannst
 \end{itemize}
 \end{Lernziele} % Infokasten Ende
 \speech{00_Einleitung1}{1}{
-	In diesem zweiten Modul, geht es um Energie und Leistung. Die Lernziele sind folgende:	
+	In diesem zweiten Modul, geht es um Energie und Leistung. Die Lernziele sind folgende:
 	Du kannst Energie, elektrische Arbeit, Leistung und den Wirkungsgrad benennen.
 	Du verstehst, wie Energie in elektrischen Systemen umgewandelt und genutzt wird.
 	Du kannst die elektrische Arbeit, Leistung und den Wirkungsgrad berechnen.
@@ -249,12 +63,6 @@ Du kannst
 	Ein Pumpspeicherkraftwerk dient dazu, elektrische Energie in potentielle Energie umzuwandeln und umgekehrt.
 	Sobald der elektrische Energiebedarf der Verbraucher geringer ist als das verfügbare Angebot,
 	pumpt die elektrische Maschine des Pumpspeicherkraftwerks Wasser von einem niedrigeren auf ein höheres Niveau.
-	% Bei diesem Prozess wird ein Elektromotor betrieben, welcher durch Magnetfelder angetrieben wird. 
-	% Um diese Magnetfelder zu schaffen, muss ein elektrischer Strom durch Spulen fließen. 
-	% Bei diesem Prozess wird elektrische Arbeit verrichtet. Die entstandenen Magnetfelder entfalten Kräfte, 
-	% welche den Motor in Bewegung versetzen und somit elektrische in mechanische Arbeit umwandeln. Sobald das Wasser 
-	% in das Oberbecken gepumpt wurde, hat es ein höheres Potential als das Wasser im Unterbecken. 
-	% Folglich dient es dort als Speichermedium für potentielle Energie.
 	Bei diesem Prozess wird die elektrische Maschine als (Pumpen)Motor betrieben. Dieser erzeugt über das magnetische Feld,
 	welches durch einen elektrischen Strom in der Motorwicklung erzeugt wird, eine Drehbewegung, mit deren Hilfe das Wasser ins Oberbecken gepumpt wird.
 	Der elektrische Motor wandelt also elektrische Energie (den Stromfluss durch die Motorwicklung) in mechanische Arbeit um (das Wasser wird in das Oberbecken gepumpt).
@@ -283,9 +91,9 @@ Du kannst
 						\fill[white,opacity=0.7](current page.south west) rectangle(current page.north east);
 			\end{tikzpicture}
 					\vspace{-8.67cm}
-				\begin{Merksatz}{Energie} 
+				\begin{Merksatz}{Energie}
 						Energie kann gespeichert werden, Arbeit wird verrichtet.
-					
+
 				\end{Merksatz}}}
 	\end{overlayarea}
 	%; seed 933424 ganz gut
@@ -349,14 +157,6 @@ Du kannst
 \end{frame}
 
 \s{
-	% Sobald die Nachfrage nach elektrischer Energie das Angebot übersteigt, wird das Wasser wieder abgelassen, 
-	% welches eine Turbine antreibt, welche über den Generator wieder elektrische Energie zur Verfügung stellt. 
-	% Je nachdem, wie groß der Bedarf ist, kann die Schleuse mehr oder weniger geöffnet werden. 
-	% Dadurch fließt weniger Wasser durch die Turbine und es wird weniger Arbeit in der gleichen Zeit verrichtet. 
-	% Dieser Zusammenhang aus Arbeit pro Zeit ist die Leistung. Bei solch einem Aufwand ist es nicht verwunderlich, dass dieser Prozess verlustbehaftet ist. 
-	% Es muss also mehr Energie in die Umwandlung und Speicherung gesteckt werden, als herauskommt. 
-	% Das Verhältnis der entnommenen zur investierten Energie ist der Wirkungsgrad.
-
 	Sobald die Nachfrage nach elektrischer Energie das Angebot übersteigt, wird das Wasser aus dem Oberbecken über eine Turbine abgelassen.
 	Die Turbine wandelt also die vorher gespeicherte potentielle Energie des Wassers im Oberbecken in mechanische Arbeit um.
 	Diese Arbeit verrichtet in der elektrischen Maschine eine Drehbewegung. Da die Maschine nun als Generator arbeitet,
@@ -374,9 +174,8 @@ Du kannst
 	Für das Verständnis werden hier die Grundlagen aus dem vorherigen Kapitel zu Ladung, elektrischem Potential und elektrischer Stromstärke vorausgesetzt.
 }
 \s{
-	\begin{Merksatz}{Energie} 
+	\begin{Merksatz}{Energie}
 		Energie kann gespeichert werden, Arbeit wird verrichtet.
-		
+
 	\end{Merksatz}
 }
-

@@ -1,42 +1,33 @@
-%\newsection{Kapitel1}
-
-%Hier den Inhalt mit \input einfügen und die folgenden Zeilen entfernen
-
-
-	\section{Die Arbeit}
+\section{Die Arbeit}
 \newvideofile{Arbeit}{Arbeit}
-	%%%%%%% erste Version %%%%%%%%
-	%%%%%%% Einleitung ARBEIT %%%%
 	\s{
 	In diesem Kapitel wird zur Unterscheidung zwischen Arbeit und Energie das Symbol $E$ für Energie (ohne Vektorpfeil) und $W$ für Arbeit (vom englischen Wort "work") verwendet.
-	Obwohl das Formelzeichen $W$ umgangssprachlich häufig sowohl für Arbeit als auch für Energie benutzt wird, ist Arbeit im Wesentlichen eine Veränderung der Energie. Beide Größen, 
+	Obwohl das Formelzeichen $W$ umgangssprachlich häufig sowohl für Arbeit als auch für Energie benutzt wird, ist Arbeit im Wesentlichen eine Veränderung der Energie. Beide Größen,
 	Arbeit und Energie, werden in der Einheit Joule (J) gemessen.
 	Wie im Abschnitt über die Energieerhaltung beschrieben, besagt der Energieerhaltungssatz, dass Energie weder erzeugt noch vernichtet werden kann.
-	Sie ändert lediglich ihre Form. % Dieser Prozess der Umwandlung wird auch als Arbeit bezeichnet. 
+	Sie ändert lediglich ihre Form. % Dieser Prozess der Umwandlung wird auch als Arbeit bezeichnet.
 	Diesen Zusammenhang beschreibt die folgende Formel:
-	
-	%%%% Unterscheidung zwischen Arbeit und Energie %%%
-	%%%% Die Arbeit ist die Änderung der Energie (von einer in eine andere Form) %%%
+
 
 	\begin{equation}
-		W = \Delta E \quad \quad [W] = \text{1 Joule = 1 J = 1 Nm}  
+		W = \Delta E \quad \quad [W] = \text{1 Joule = 1 J = 1 Nm}
 	\end{equation}}
 
 \begin{frame}[t]
-	\ftx{Die Arbeit}
+	\ftx{Die Arbeit}\index{Arbeit}
 \b{
-	
+
 	\begin{itemize}
 		\item Arbeit ist die Änderung der Energieform
 	\end{itemize}
 
 	\begin{equation*}
 		W = \Delta E \quad \quad [W] = \text{1 Joule = 1 J = 1 Nm}
-	\end{equation*}	
+	\end{equation*}
 	\vspace*{1cm}
 	\only<2->{
 			\begin{itemize}
-				\centering \item $ \displaystyle W = - \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s} $	
+				\centering \item $ \displaystyle W = - \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s} $
 			\end{itemize}}
 }% nur Folien
 
@@ -45,55 +36,45 @@
 }
 
 \s{
-	Diese Änderung der Energiemenge kann durch verschiedene physikalische Aktionen hervorgerufen werden, einschließlich der Verschiebung eines Objekts in einem Kraftfeld. 
-	Um diese Konzepte weiter zu veranschaulichen, ist im Folgenden die allgemeine Formel \ref{eq:WFds} für die Arbeit dargestellt: 
+	Diese Änderung der Energiemenge kann durch verschiedene physikalische Aktionen hervorgerufen werden, einschließlich der Verschiebung eines Objekts in einem Kraftfeld.
+	Um diese Konzepte weiter zu veranschaulichen, ist im Folgenden die allgemeine Formel \ref{eq:WFds} für die Arbeit dargestellt:
 
-	%%% W = Fds %%%
 
 	\begin{equation}
 		W = - \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \mathrm{d}\vec{s}
-		%  \quad,\quad \text{J} % Denke ist zuviel wenn da wieder J steht
 		 \label{eq:WFds}
 	\end{equation}}
-	
+
 
 	%%% Begründung des negativen Vorzeichens %%%
 \s{
-Die Gleichung berechnet Arbeit durch Integration der Kraft entlang eines Weges, wobei die Kraftausrichtung zur 
-Bewegungsrichtung des Objekts entscheidend ist. Ein Vorzeichenwechsel in der Formel deutet darauf hin, dass Energie aus 
-einem Energiespeicher für Arbeit verwendet wird. Dieses Vorzeichen ist kontextabhängig und ändert sich je nach Perspektive. 
-Wird Energie entnommen, gilt die Arbeit als negativ, da sie von der gespeicherten Gesamtenergie abgezogen wird, 
+Die Gleichung berechnet Arbeit durch Integration der Kraft entlang eines Weges, wobei die Kraftausrichtung zur
+Bewegungsrichtung des Objekts entscheidend ist. Ein Vorzeichenwechsel in der Formel deutet darauf hin, dass Energie aus
+einem Energiespeicher für Arbeit verwendet wird. Dieses Vorzeichen ist kontextabhängig und ändert sich je nach Perspektive.
+Wird Energie entnommen, gilt die Arbeit als negativ, da sie von der gespeicherten Gesamtenergie abgezogen wird,
 was eine Verringerung der Systemenergie signalisiert.
 }
 \b{\vspace*{-0.5cm}}
 \only<3->{
-	\begin{Merksatz}{Arbeit}  
+	\begin{Merksatz}{Arbeit}
 	 Das Vorzeichen der Arbeit ist kontextabhängig: % und beschreibt, ob die Arbeit ein Energieniveau anhebt oder absenkt.
 	Die Arbeit ist positiv, wenn Energie einem System hinzugefügt wird
 	und negativ, wenn Energie einem System entnommen wird.
 
 	\end{Merksatz}}
 \speech{02_Arbeit2}{2}{
-Demzufolge können wir das formelmäßig genauso beschreiben. Die Arbeit W ist gleich dem Linienintegral von P1 nach P2 über F d s. 
+Demzufolge können wir das formelmäßig genauso beschreiben. Die Arbeit W ist gleich dem Linienintegral von P1 nach P2 über F d s.
 }
 \speech{02_Arbeit2}{3}{Merke dir also dass das Vorzeichen der Arbeit abhängig ist ob einem System Energie hinzugefügt wird dann ist es Positiv, oder ob Sie entnommen wird dann ist es Negativ.
-} 
+}
 \end{frame}
 
-	%%%%%% ENDE Einleitung ARBEIT %%%%%%
-	%%%%%% START elektrische Arbeit %%%%
 
 	\subsection{Die elektrische Arbeit}
 \s{
-	% Im Bereich der Elektrodynamik, wo die Wechselwirkungen zwischen Ladungsträgern $Q$ und elektrischen Feldern $\vec{E}$
-	% untersucht werden, sind die Kräfte $\vec{F}_{\mathrm{el}}$ von besonderer Bedeutung. Diese Kräfte entstehen, wenn Ladungsträger als Quellen oder Senken der elektrischen Felder agieren.
-	% In diesem Zusammenhang wirken die Ladungen $Q$ durch die elektrischen Felder $\vec{E}$ auf andere Ladungen ein.
-	% Das elektrische Feld $\vec{E}$ wird definiert als die auf eine Ladungseinheit ausgeübte Kraft, ausgerichtet nach der Richtung dieser Kraft $\vec{F}_{\mathrm{el}}$, 
-	% und lässt sich durch die folgende Gleichung ausdrücken:
-
-	In der Elektrostatik sind die Kräfte $\vec{F}_{\mathrm{el}}$, die zwischen Ladungsträgern $Q$ und elektrischen Feldern $\vec{E}$ wirken, zentral. 
-	Diese Kräfte entstehen, wenn elektrische Felder auf Ladungsträger wirken. 
-	Das elektrische Feld $\vec{E}$ wird als Kraft pro Ladung definiert und beschreibt, 
+	In der Elektrostatik sind die Kräfte $\vec{F}_{\mathrm{el}}$, die zwischen Ladungsträgern $Q$ und elektrischen Feldern $\vec{E}$ wirken, zentral.
+	Diese Kräfte entstehen, wenn elektrische Felder auf Ladungsträger wirken.
+	Das elektrische Feld $\vec{E}$ wird als Kraft pro Ladung definiert und beschreibt,
 	wie groß die Kraft $\vec{F}_{\mathrm{el}}$ im Verhältnis zur eingebrachten Ladung $Q$ ist.
 
 }
@@ -103,73 +84,67 @@ Demzufolge können wir das formelmäßig genauso beschreiben. Die Arbeit W ist g
 
 	\b{\only<1->{
 		\begin{itemize}\centering
-  			\item $\displaystyle \vec{E} = \frac{\vec{F}_\mathrm{el}}{Q} 
-  			\quad \Rightarrow \quad 
+  			\item $\displaystyle \vec{E} = \frac{\vec{F}_\mathrm{el}}{Q}
+  			\quad \Rightarrow \quad
   			\vec{F}_\mathrm{el} = Q \cdot \vec{E}$
 		\end{itemize}
 
 		\begin{itemize}\centering
-  			\item $\displaystyle W_\mathrm{el} = \int_{P_\mathrm{1}}^{P_\mathrm{2}} - Q \cdot \vec{E} \cdot \mathrm{d}\vec{s}  
+  			\item $\displaystyle W_\mathrm{el} = \int_{P_\mathrm{1}}^{P_\mathrm{2}} - Q \cdot \vec{E} \cdot \mathrm{d}\vec{s}
 			\quad \Rightarrow \quad
 			 W_\mathrm{el} = - Q \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s} $
 		\end{itemize}
-	
+
 		\begin{itemize}\centering
-  			\item $\displaystyle W_\mathrm{{el}} = Q \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s} 
-			\quad \Rightarrow \quad 
+  			\item $\displaystyle W_\mathrm{{el}} = Q \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s}
+			\quad \Rightarrow \quad
 			W_\mathrm{{el}} = Q \cdot U $
 		\end{itemize}
-		
+
 	\begin{itemize}\centering
   			\item $\displaystyle I = \frac{\mathrm{d}Q}{\mathrm{d}t}
 			 \quad \Rightarrow \quad
 			  	Q = I \cdot t $
 		\end{itemize}}
-		
-}	
 
-\speech{02_Arbeit3}{1}{% klingt seh gut mit seed 933424
+}
+
+\speech{02_Arbeit3}{1}{
 Jetzt betrachten wir die elektrische Arbeit. Wie groß ist die Arbeit, die wir mit elektrischen Systemen verrichten? Wir fangen genauso an wie vorher auch. Wir betrachten die elektrische Energie: E ist gleich F-EL durch Q, wodurch folgt F-EL ist gleich Q mal E. Daraus abgeleitet haben wir dann die elektrische Arbeit, die letztlich minus Q mal dem Integral von P1 nach P2 über E mal D-S entspricht.
 Wenn wir jetzt die elektrische Arbeit, die wir verrichten, mit F-EL gleich Q mal E gleichsetzen, dann erhalten wir durch Einsetzen oder durch Vergleichen mit Formeln, die wir bereits vorher hergeleitet haben, dass das Integral von P1 nach P2 über E mal D-S nichts anderes ist als unsere definierte Spannung U. Das heißt, die elektrische Arbeit W-EL, die wir verrichten, ist Q mal U, die Ladung mal die Spannung.
-Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja gesagt, dass der Strom I die zeitliche Veränderung der Ladungsmenge Q ist. I ist also gleich d-Q durch d-t. Es folgt also letztlich, dass wir die Ladung Q beschreiben können als den Strom I mal die Zeit T, die der Strom fließt. 
+Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja gesagt, dass der Strom I die zeitliche Veränderung der Ladungsmenge Q ist. I ist also gleich d-Q durch d-t. Es folgt also letztlich, dass wir die Ladung Q beschreiben können als den Strom I mal die Zeit T, die der Strom fließt.
 }
 
 
 \s{
 	\begin{equation}
-		\vec{E} = \frac{\vec{F}_\mathrm{el}}{Q} \quad \Rightarrow \quad \vec{F}_\mathrm{el} = Q \cdot \vec{E} 
+		\vec{E} = \frac{\vec{F}_\mathrm{el}}{Q} \quad \Rightarrow \quad \vec{F}_\mathrm{el} = Q \cdot \vec{E}
 	\end{equation}
 
 	Wenn nun die Formel für die elektrische Kraft $\vec{F}_\mathrm{el}$ in die Formel \ref{eq:WFds} für die allgemeine Arbeit eingesetzt wird, ergibt das die elektrische Arbeit $W_\mathrm{el}$.
 	Da sich die Ladung $Q$ über die Strecke $s$ nicht verändert, kann diese vor das Integral gezogen werden.
-	% Dass $\vec{E}$ von der Strecke $s$ abhängt ist daran ersichtlich, dass das elektrische Feld eine Richtung hat und die Verhältnisse des Wegelements $\vec{ds}$ zum E-Feld $\vec{E}$ unterschiedliche Beiträge liefert.
-	Da das elektrische Feld $\vec{E}$ ein Vektor ist und somit einen Betrag und eine Richtung hat, ist das Produkt aus $\vec{E}$ und $\mathrm{d}\vec{s}$ in jedem Fall von der gewählten Strecke $s$ abhängig. 
+	Da das elektrische Feld $\vec{E}$ ein Vektor ist und somit einen Betrag und eine Richtung hat, ist das Produkt aus $\vec{E}$ und $\mathrm{d}\vec{s}$ in jedem Fall von der gewählten Strecke $s$ abhängig.
 	Daher muss über das Produkt $\vec{E}$ und $\mathrm{d}\vec{s}$ ein Linienintegral gebildet werden.
-	
+
 	\begin{equation}
 		W_\mathrm{el} = \int_{P_\mathrm{1}}^{P_\mathrm{2}} - Q \cdot \vec{E} \cdot \mathrm{d}\vec{s}  \quad \Rightarrow \quad W_\mathrm{el} = - Q \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s}
 	\end{equation}
-	
-
-	% hier evt. anstatt konstant : Gleichstromfall
 
 	Aus Modul 1 ist bekannt, dass das Integral über $\vec{E} \cdot \mathrm{d}\vec{s}$ im konstanten Fall die Spannung $U$ ergibt.
 	Für eine verbraucherunabhängige Darstellung wird in der folgenden Formel das negative Vorzeichen weggelassen, sowie für den konstanten Fall durch Einsetzen der Spannung $U$ vereinfacht dargestellt.
-	
-	%%% W=-Q Eds = QU %%%%%%%
 
 	\begin{equation}
 		W_\mathrm{{el}} = Q \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \mathrm{d}\vec{s} \quad \Rightarrow \quad W_\mathrm{{el}} = Q \cdot U\label{eq:WQU}
 		\end{equation}
 
-	
-	Da für einen elektrischen Energietransport eine elektrische Stromstärke notwendig ist, kann nun der aus Modul 1 bekannte Zusammenhang zwischen elektrischer Stromstärke $I$ und der Ladung $Q$ verwendet und umgestellt werden, 
+
+	Da für einen elektrischen Energietransport eine elektrische Stromstärke notwendig ist, kann nun der aus Modul 1 bekannte Zusammenhang zwischen elektrischer Stromstärke $I$ und der Ladung $Q$ verwendet und umgestellt werden,
 	um die Ladung $Q$ in der Formel \ref{eq:WQU} auszutauschen. Ein konstanter Stromfluss $I$ ergibt sich aus einer gleichmäßigen Bewegung der Ladungsträger $Q$ über die Zeit $t$.
 	In diesem Fall kann auf den Differentialoperator ($\mathrm{d}$) verzichtet werden. Durch Umstellung nach $Q$ ergibt sich folgende Formel:
-	\begin{equation}			
-		I = \frac{\mathrm{d}Q}{\mathrm{d}t} \quad \Rightarrow \quad 	Q = I \cdot t 
-	\end{equation}		
-			
+	\begin{equation}
+		I = \frac{\mathrm{d}Q}{\mathrm{d}t} \quad \Rightarrow \quad 	Q = I \cdot t
+	\end{equation}
+
 	Eingesetzt ergibt dies nun folgenden Ausdruck, welcher verdeutlicht, dass das Verrichten oder Aufbringen von Arbeit einen Stromfluss voraussetzt.
 
 	\begin{equation}
@@ -182,19 +157,19 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 		  \end{itemize}
 
 	\begin{equation*}
-		W_\mathrm{{el}} = U \cdot I \cdot t \quad \quad [W_\mathrm{el}] = \text{1 Joule = 1 J = 1 Ws} 
+		W_\mathrm{{el}} = U \cdot I \cdot t \quad \quad [W_\mathrm{el}] = \text{1 Joule = 1 J = 1 Ws}
 	\end{equation*}}
 
-		\only<3->{ \vspace{-7.9cm} 
+		\only<3->{ \vspace{-7.9cm}
 		\begin{tikzpicture}{remember picture,overlay}
 		\fill[white,opacity=0.7](current page.south west) rectangle(current page.north east);
 		\end{tikzpicture}
-		\vspace{-8.6cm} 
+		\vspace{-8.6cm}
 		\begin{Merksatz}{Arbeit}
 
 			\begin{itemize}
 				\item Energie beschreibt das Potential Arbeit zu verrichten.
-				\item Energie kann gespeichert werden, Arbeit nicht. 
+				\item Energie kann gespeichert werden, Arbeit nicht.
 				\item Für das Verrichten einer Arbeit wird immer eine Zeitdauer benötigt.
 				\item Ein Momentanzustand ist immer der Ist-Zustand der Energieverteilung.
 				\item Das Verrichten elektrischer Arbeit bedarf immer eines Stromflusses.
@@ -202,7 +177,7 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 
 		\end{Merksatz}}}
 	\end{overlayarea}
-		\s{\begin{Merksatz}{Arbeit}   
+		\s{\begin{Merksatz}{Arbeit}
 
 			\begin{itemize}
 				\item Energie beschreibt das Potential Arbeit zu verrichten.
@@ -213,7 +188,7 @@ Wenn wir dann weiter in die Definition des Stroms schauen, dann hatten wir ja ge
 			\end{itemize}
 
 		\end{Merksatz}}
-	
+
 
 \speech{02_Arbeit3}{2}{ %seed imer noch nicht perfekt, aber schon ok
 Wir ersetzen also das Q in der Hergeleiteten Formel durch I mal T und erhalten: W-EL ist gleich U mal I mal T. Auch hier ist die Einheit wieder Joule oder auch Wattsekunde.}
@@ -222,18 +197,11 @@ Wir ersetzen also das Q in der Hergeleiteten Formel durch I mal T und erhalten: 
 }
 \end{frame}
 
-%%%% Wegintegral %%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%
 
-		\subsection{Wegintegral der elektrischen Arbeit}
+
+\subsection{Wegintegral der elektrischen Arbeit}
 \s{
-	% Die folgende Abbildung zeigt einen Ladungsträger mit der Ladung Q, welcher von P0 zu P1 bewegt wird. 
-	% Im Kontext der elektrischen Arbeit ist es besonders aufschlussreich zu untersuchen, was geschieht, wenn eine Ladung sich in einem elektrischen Feld bewegt,
-	% das nicht ausschließlich entlang von Äquipotentiallinien verläuft. Sobald eine Ladung von einem Punkt zu einem anderen, zwischen denen eine Potentialdifferenz besteht, 
-	% bewegt wird, wird Arbeit verrichtet. Diese Art der dynamischen Wechselwirkung, in der Energie in Form von Arbeit umgesetzt wird, wird in der folgenden Grafik visualisiert.
-	% Sie zeigt, wie sich die Ladung durch das Feld bewegt.
-	
-	Die Bewegung einer Ladung im elektrischen Feld ist lediglich abhängig von der Positionsänderung entlang der elektrischen Feldlinien. 
+	Die Bewegung einer Ladung im elektrischen Feld ist lediglich abhängig von der Positionsänderung entlang der elektrischen Feldlinien.
 	Abhängig von der Bewegungsrichtung entlang oder entgegen der Feldlinien ergibt das entsprechende Vorzeichen.
 	Bewegungen entlang einer Äquipotentialfläche (Fläche mit identischem elektrischen Potential) haben keinen Einfluss auf die elektrische Arbeit.
 	In Abbildung \ref{fig:Ladung_E-Feld_Arbeit} sind die Punkte $P_\mathrm{1}$ und $P_\mathrm{2}$ auf je unterschiedlichen Potentialen dargestellt, welche jeweils durch zwei unterschiedliche Strecken $s_\mathrm{1}$ und $s_\mathrm{2}$ verbunden sind.
@@ -243,7 +211,7 @@ Wir ersetzen also das Q in der Hergeleiteten Formel durch I mal T und erhalten: 
 	\begin{overlayarea}{\textwidth}{0.9\textheight}
 	\s{
 	\begin{figure}[H]
-		
+
 		\includesvg[width=1\textwidth]{Ladung_E-Feld_Arbeit}
 		\caption{\textbf{Bewegung einer Punktladung.} Zeigt die Bewegung einer Punktladung entlang zweier Strecken. Die Arbeit die verrichtet wird entlang einer geschlossenen
 		 Strecke in einem statischen elektrischen Feld ist Null.}
@@ -256,81 +224,55 @@ Wir ersetzen also das Q in der Hergeleiteten Formel durch I mal T und erhalten: 
 	\end{figure}}
 
 
-	% Mit den zuvor genannten Formeln kann die Arbeit der bewegten Ladung wie folgt beschrieben werden. 
-	% Dabei entsprechen C1 und C2 den unterschiedlichen Wegen von P0 zu P1 und von P1 zu P0. \\
 	\s{
-
-	% Die Grafik zeigt eine Ladung, die sich entlang eines geschlossenen Pfades in einem homogenen elektrischen Feld bewegt, beginnend bei Punkt $P_1$ und 
-	% zurückkehrend zu $P_1$ über zwei unterschiedliche Strecken, $s_1$ und $s_2$. Diese Strecken repräsentieren unterschiedliche Wege zwischen denselben Punkten $P_1$ und $P_2$. Mathematisch wird die verrichtete Arbeit durch die Integration der elektrischen Feldstärke $\vec{E}$
- 	% entlang dieser Wege, multipliziert mit der Ladung $Q$, ausgedrückt. Dies verdeutlicht, dass die Integration der elektrischen Feldstärke entlang eines Pfades letztlich die Summation der
-	% infinitesimalen Arbeitselemente zwischen zwei Punkten ist.
-
 	Die Beträge zweier äquidistanter Positionsänderungen in entgegengesetzen Richtungen entlang der elektrischen Feldlinien sind identisch.
 	Diese Eigenschaften führen dazu, dass die Positionsänderung einer Ladung $Q$ von einem Punkt $P_\mathrm{1}$ zu einem Punkt $P_\mathrm{2}$ betragsmäßig gleich einer beliebig anderen Strecke von $P_\mathrm{2}$ zu $P_\mathrm{1}$ entspricht.
 
 
 	\begin{equation}
-		\left| W_\mathrm{el} \right| = \left| -Q \cdot \int_{s_\mathrm{1}} \vec{E} \cdot \mathrm{d}\vec{s}\; \right| = \left| -Q \cdot \int_{s_\mathrm{2}}\vec{E} \cdot \mathrm{d}\vec{s}\; \right| %= 
-	%- Q \cdot \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot d\vec{s} - Q \cdot \int_{P_\mathrm{2}}^{P_\mathrm{1}} \vec{E} \cdot d\vec{s}
+		\left| W_\mathrm{el} \right| = \left| -Q \cdot \int_{s_\mathrm{1}} \vec{E} \cdot \mathrm{d}\vec{s}\; \right| = \left| -Q \cdot \int_{s_\mathrm{2}}\vec{E} \cdot \mathrm{d}\vec{s}\; \right| %=
 	\end{equation}
-		%\vspace{0.5cm}
 
-		% Mathematisch lässt sich dies durch das Konzept des konservativen Kraftfeldes erklären, in dem die Kraft entlang des geschlossenen Pfades integriert wird.
-		% Da das Feld homogen und die Kraft konservativ ist, heben sich die Arbeiten entlang der Strecken $s_1$ und $s_2$ gegenseitig auf. Dies bestätigt das physikalische Prinzip der Wegunabhängigkeit
-		% in konservativen Kraftfeldern, welches besagt, dass die verrichtete Arbeit ausschließlich von den Start- und Endpunkten des Weges abhängt und unabhängig von der gewählten Route ist.
-		
-		%Wenn die Ladung den Weg entlang $s_1$ verfolgt und anschließend über $s_2$ zum Startpunkt zurückkehrt, ergibt das Wegintegral über diesen geschlossenen Pfad:
-		
 		Dieses Verhalten spiegelt wieder, dass die Arbeit gleich groß ist, jedoch in einem Fall Arbeit aufgewendet und im anderen Fall Arbeit verrichtet wird.
 		Dies führt zu entgegengesetzten Vorzeichen, was dazu führt, dass sich die Summe beider Arbeiten aufhebt.
 		Mathematisch kann dies auch so ausgedrückt werden, dass das Wegintegral entlang einer beliebigen Kontur zurück zum Ausgangspunkt Null ergibt.
 		Da sich die Ladung $Q$ außerhalb des Umlaufintegral befindet, ist das Ergebnis somit unabhängig von der Ladungsmenge.
-		
+
 	\begin{equation}
 	W_\mathrm{el} = - Q \cdot \int_{s_\mathrm{1}} \vec{E} \cdot \mathrm{d}\vec{s} -Q \cdot \int_{s_\mathrm{2}}\vec{E} \cdot \mathrm{d}\vec{s} = - Q \cdot \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} = 0
 	\rightarrow \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} = 0
 	\end{equation}
 
-Das Ergebnis des Wegintegrals verdeutlicht ein fundamentales Prinzip der Physik: In einem statischen Feld ist die über einen geschlossenen Weg verrichtete Arbeit immer Null. Dies bestätigt die Wegunabhängigkeit der Arbeit in diesen Feldern und zeigt, dass die verrichtete Arbeit ausschließlich von den Anfangs- und Endpunkten abhängt und nicht vom spezifischen Weg zwischen diesen Punkten. 
+Das Ergebnis des Wegintegrals verdeutlicht ein fundamentales Prinzip der Physik: In einem statischen Feld ist die über einen geschlossenen Weg verrichtete Arbeit immer Null. Dies bestätigt die Wegunabhängigkeit der Arbeit in diesen Feldern und zeigt, dass die verrichtete Arbeit ausschließlich von den Anfangs- und Endpunkten abhängt und nicht vom spezifischen Weg zwischen diesen Punkten.
 
-\begin{Merksatz}{Wegintegral}  
+\begin{Merksatz}{Wegintegral}
 Das geschlossene Wegintegral $ \displaystyle \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} $ ist gleich Null.
 \end{Merksatz}
-		  
-	% Wie im Abschnitt über elektrische Felder erklärt wird, beeinflussen sich zwei Ladungen Q gegenseitig, 
-	% indem sie Kräfte aufeinander ausüben, was zu einem elektrischen Feld führt. 
-	% Im Kontext der elektrischen Arbeit erfolgt die Verschiebung einer Ladung innerhalb eines elektrischen Feldes. 
-	% Um diese Kraft zu überwinden, muss Arbeit geleistet werden. 
 
-	% Elektrische Arbeit ist die Menge an Energie, die durch den Fluss von elektrischem Strom zwischen zwei Punkten \\
-	% in einem elektrischen System übertragen wird. Sie wird üblicherweise in der Einheit Joule gemessen. \\
-	% Elektrische Arbeit wird durch die Spannung (U) und die Ladung (Q) bestimmt, die durch ein elektrisches System fließen. \\
-}% nur skript	
-\b{   
-	\only<2->{                            
+
+}% nur skript
+\b{
+	\only<2->{
 	\begin{itemize} \centering
 		\item $\displaystyle \left| W_\mathrm{el} \right| = \left| -Q \cdot \int_{s_\mathrm{1}} \vec{E} \cdot \mathrm{d}\vec{s}\; \right| = \left| -Q \cdot \int_{s_\mathrm{2}}\vec{E} \cdot \mathrm{d}\vec{s}\; \right| $
 		\item  $\displaystyle W_\mathrm{el} = - Q \cdot \int_{s_\mathrm{1}} \vec{E} \cdot \mathrm{d}\vec{s} -Q \cdot \int_{s_\mathrm{2}}\vec{E} \cdot \mathrm{d}\vec{s} = - Q \cdot \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} = 0
 	\rightarrow \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} = 0 $
 	\end{itemize}}
-    
+
 	\only<3->{
-	\vspace{-7.9cm} 
+	\vspace{-7.9cm}
 		\begin{tikzpicture}{remember picture,overlay}
 		\fill[white,opacity=0.7](current page.south west) rectangle(current page.north east);
 		\end{tikzpicture}
-		\vspace{-8.5cm} 
-	\begin{Merksatz}{Wegintegral}  
-	
+		\vspace{-8.5cm}
+	\begin{Merksatz}{Wegintegral}
+
 	Das geschlossene Wegintegral $ \displaystyle \oint_{s}\vec{E} \cdot \mathrm{d}\vec{s} $ ist gleich Null.
 	\end{Merksatz}}
 
 }
 \end{overlayarea}
 	\speech{02_Arbeit4}{1}{
-	% Schauen wir uns nun an, was passiert, wenn wir eine Ladung im elektrischen Feld auf einer beliebigen Kurve bewegen und welche Arbeit wird dann verrichtet? Dass Arbeit verrichtet werden muss, wissen wir aus der Tatsache, dass hier eine Kraft auf die Ladung wirkt. Stellen wir uns vor, wir bewegen uns vom Punkt P1 über den Punkt P2 wieder zurück zum Punkt P1. Was passiert dann? Vergleichen wir das mit Höhenlinien und der potenziellen Energie: Solange die Höhe gleich bleibt, bleibt auch die potenzielle Energie gleich, völlig unabhängig vom Weg. Genauso ist es im elektrischen Feld.
-	% Wir können die elektrische Arbeit aufteilen in die Strecke S1 von P1 nach P2 und in die Strecke S2 von P2 zurück nach P1. Mathematisch ergibt sich daraus ein sogenanntes geschlossenes Wegintegral, gekennzeichnet durch den Kreis im Integralzeichen. Die insgesamt verrichtete elektrische Arbeit ist dann null.
-	% Formeltechnisch gilt: Die elektrische Arbeit ist gleich der Ladungsmenge Q multipliziert mit dem Wegintegral E mal ds. Daraus folgt unmittelbar, dass das geschlossene Wegintegral E mal ds immer gleich null sein muss. Zumindest für das elektrostatische Feld gilt diese Regel. Sie ist eine ganz elementare Grundlage der Elektrodynamik und später auch für die Netzwerktheorie in der Elektrotechnik.
 	Schauen wir uns jetzt an, wie elektrische Arbeit im elektrischen Feld beschrieben wird.
 	Auf eine Ladung wirkt im Feld eine Kraft. Bewegen wir die Ladung ein kleines Stück weiter, also um das Wegstück ds, dann ist die Arbeit Q mal das Integral über das Skalarprodukt von E mal ds. Weil Kraft und Weg Richtungen haben, also Vektoren sind, zählt für die Arbeit nur der Anteil der Kraft in Bewegungsrichtung, deshalb verwendet man das Skalarprodukt.
 	Man zerlegt den Weg in viele kleine Stücke ds und summiert über den ganzen Weg auf. Das ist das Linien- oder Wegintegral.
@@ -344,80 +286,3 @@ Das geschlossene Wegintegral $ \displaystyle \oint_{s}\vec{E} \cdot \mathrm{d}\v
 	}
 	\speech{02_Arbeit4}{3}{Wir sehen also: Im elektrostatischen Feld ist das geschlossene Wegintegral E mal ds gleich null.}
 \end{frame}
-
-	%%%%%%%%%%%%%%%% ENDE des Abschnittes ARBEIT %%%%%%%%%%%%%%%%%%%%%%%
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	%%% ab hier Herleitung der Arbeit im elektrischen Feld und der Energie
-
-
-	% \subsubsection{Herleitung der Arbeit im elektrischen Feld}
-
-	
-	%%% alte Version mit "man" %%%
-	% Ladungen $Q$ üben, wie auch das Gravitationsfeld auf Körper, Kräfte aufeinander aus.
-	% Eine Kraft $\vec{F}$ hat einen Betrag und eine Richtungen.
-	% Um mit Kräften rechnen zu können muss man verstehen, dass eine Kraft $\vec{F}$ ständig auf andere Körper wirkt und aus dem Grund eine entsprechende Kraft benötigt wird, um das Objekt eine beliebige Strecke $s$ zu bewegen.
-	% Soll beispielsweise ein schwerer Gegenstand von der Erde hochgehoben werden, so muss eine Kraft aufgewendet, und Arbeit verrichtet werden.
-	% wohingegen beim Abstellen eines Gegenstandes das Gewicht und die Anziehungskraft der Erde den Gegenstand nach unten ziehen. Man könnte es also auch einfach fallenlassen. Man müsste also keine Kraft aufbringen um einen Gegenstand abzulegen.
-	% Dieses Verhalten kann mit Hilfe eines Vorzeichens definiert werden. Wenn wir Kraft aufwenden müssen, so macht ein negatives Vorzeichen Sinn, da wir Energie aufwenden und in Form von Arbeit verrichten.
-	% Umgekehrt wird die Gravitationskraft nach unten mit einem positiven Vorzeichen gewählt. Um also ein Gegenstand in der Luft still zu halten, so muss man genausoviel Kraft aufbringen, wie die Gravitationskraft auf das System wirkt. Addiert sollte dies im idealen Fall 0 ergeben.
-	% Je nach Betrachtungsweise kann das Vorzeichen auch unterschiedlich verwendet werden. Wir einigen uns darauf, dass aufgewendete Arbeit immer ein negatives Vorzeichen hat.
-	% Fassen wir das formelmäßig nochmal zusammen. Die Strecke wird dafür als ein infinitesimales Wegstreckenelement $\vec{ds}$ mit einer Richtungsinformation definiert.
-	% Sobald eine Strecke $\vec{ds}$ gegen eine (oder mit einer) Kraft $\vec{F}$ zurückgelegt wird, wird auch Arbeit $W$ verrichtet (oder "gewonnen").
-	% Die Einheit der Arbeit ist Joule $J$. 
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	% Ladungen $Q$ üben, ähnlich wie das Gravitationsfeld, Kräfte aufeinander aus.
-	% Eine Kraft $\vec{F}$ hat einen Betrag und eine Richtung. Um ein Objekt eine Strecke $s$ zu bewegen, ist eine entsprechende Kraft erforderlich. 
-	% Beispielsweise muss zum Heben eines schweren Gegenstands von der Erde Kraft aufgewendet und Arbeit verrichtet werden. 
-	% Beim Abstellen eines Gegenstands zieht die Gewichtskraft ihn nach unten, was ohne zusätzliche Kraft möglich ist.
-	% Dieses Verhalten kann durch Vorzeichen definiert werden: Aufgewendete Kraft (negative Arbeit) und Gravitationskraft (positive Arbeit). 
-	% Um ein Objekt in der Luft zu halten, muss die aufgebrachte Kraft der Gravitationskraft entsprechen, was in Summe null ergibt. Aufgewendete Arbeit wird als negativ betrachtet.
-	% Formelmäßig wird die Strecke als infinitesimales Wegstreckenelement $\vec{ds}$ mit Richtung definiert. Wird $\vec{ds}$ gegen oder mit einer Kraft $\vec{F}$
- 	% zurückgelegt, wird Arbeit $W$ verrichtet. Die Einheit der Arbeit ist Joule $J$.
-	
-	% \begin{equation}
-	% 	W = - \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{F} \cdot \vec{ds} \quad,\quad \text{[J]}
-	% \end{equation}
-	
-	% Betrachtet man diese Definition für den elektrischen Fall, dann sind Ladungsträger $Q$ und elektrische Felder $\vec{E}$ beteiligt, welche Kräfte $\vec{F}_\mathrm{el}$ aufeinander ausüben.
-	% Die Ladungen $Q$ sind in dem Fall die Körper, welche Kraft in Form von elektrischen Feldern $\vec{E}$ auf andere Ladungen $Q$ ausüben.
-	% Das elektrische Feld $\vec{E}$ ist definiert als die Kraft mit Ihrer Richtung $\vec{F}$ geteilt durch die Ladung $Q$.
-	
-	% Im Bereich der Elektrodynamik, wo die Wechselwirkungen zwischen Ladungsträgern $Q$ und elektrischen Feldern $\vec{E}$
-	% untersucht werden, sind die Kräfte $\vec{F}_{\mathrm{el}}$ von besonderer Bedeutung. Diese Kräfte entstehen, wenn Ladungsträger als Quellen oder Senken der elektrischen Felder agieren.
-	% In diesem Zusammenhang wirken die Ladungen $Q$ durch die elektrischen Felder $\vec{E}$ auf andere Ladungen ein. 
-	% Diese Wechselwirkungen ergeben sich aus der grundlegenden Natur des elektrischen Feldes, das eine Kraftverteilung im Raum induziert.
-	% Das elektrische Feld $\vec{E}$ wird definiert als die auf eine Ladungseinheit ausgeübte Kraft, ausgerichtet nach der Richtung dieser Kraft $\vec{F}_{\mathrm{el}}$, 
-	% und lässt sich durch die Gleichung ausdrücken:
-	
-	% \begin{equation}
-	% 	\vec{E} = \frac{\vec{F}_\mathrm{el}}{Q} \quad \Rightarrow \quad \vec{F}_\mathrm{el} = Q \cdot \vec{E} 
-	% \end{equation}
-	
-	% Die Richtung von E wird allgemein in Richtung der Kraft gezählt, die auf eine positive Ladung wirkt.
-	% an dieser Stelle muss ich überlegen wo ich die integrale Form des E-Feldes einbringe, welche ich dann in die Formel einsetze.
-	
-	% Wenn nun die Formel für die elektrische Kraft $\vec{F}_\mathrm{el}$ in die Formel 1.1 für die allgemeine Arbeit eingesetzt wird, erhält man die elektrische Arbeit $W_\mathrm{el}$.\\
-	% Da sich die Ladung $Q$ über die Strecke s nicht verändert, kann diese vor das Integral gezogen werden. Daraus folgt
-	% Dass $\vec{E}$ von der Strecke $s$ abhängig ist erkennt man daran, dass das elektrische Feld eine Richtung hat, und die Verhältnisse des Wegelements $\vec{ds}$ zum E-Feld $\vec{E}$ unterschiedliche Beiträge liefert.
-
-	% \begin{equation}
-	% 	W_\mathrm{el} = \int_{P_\mathrm{1}}^{P_\mathrm{2}} - Q \cdot \vec{E} \cdot \vec{ds}  \quad \Rightarrow \quad W_\mathrm{el} = - Q \int_{P_\mathrm{1}}^{P_\mathrm{2}} \vec{E} \cdot \vec{ds}
-	% \end{equation}
-	
-	% Das elektrische Feld ist ein Vektorfeld, welches aus unterschiedlichen Ausbreitungsvarianten bestehen kann.
-	% Bei einer Punktladung liegt ein radiales E-Feld vor, welches mit wachsendem r abnimmt.
-	% Bei einem idealen Plattenkondensator ist das E-Feld homogen und an allen Stellen gleich.
-	% In einem Koaxialkabel breitet sich das E-Feld zylinderförmich aus,
-	% während das Feld bei einer gewöhnlichen 2-Draht-Leitung eine komplexer zu beschreibende Form annimmt.
-	% Sobald Energie investiert werden muss um einen Ladungsträger im E-Feld zu bewegen, dann ist die aufgebrachte Arbeit negativ.
-	% Dies bedeutet jedoch, dass dem System Energie hinzugefügt worden ist, denn dem Energieerhaltungssatz nach geht Energie nicht verloren.
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
